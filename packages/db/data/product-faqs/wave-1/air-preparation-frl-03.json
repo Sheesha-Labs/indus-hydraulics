@@ -1,0 +1,1603 @@
+{
+  "family": "air-preparation-frl-03",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Metal Work Coalescing Filters: ports 3/8\", 1/2\", 3/4\" and 1\", grades 5 micron; Metal Work Lubricators: ports 3/8\", 1/2\", 3/4\" and 1\"; Metal Work Syntesi Series Coalescing Filters: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Metal Work Syntesi Series Filter-Lubricators: ports 3/8\", 1/2\", 3/4\" and 1\", grades 20 micron; Metal Work Syntesi Series Filter-Regulator-Lubricators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", grades 20 micron; Metal Work Syntesi Series Filter-Regulators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", grades 20 micron; Metal Work Syntesi Series Filters: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", grades 20 micron; Metal Work Syntesi Series Lubricators: ports 1/8\", 1/4\" and 3/8\"; Metal Work Syntesi Series Regulators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Metal Work Syntesi Series Valve-Filter-Coalescing Filter: ports 1/8\", 1/4\" and 3/8\", grades 5 micron; Metal Work Syntesi Series Valve-Filter-Lubricators: ports 1/8\", 1/4\" and 3/8\", grades 20 micron; Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\", grades 20 micron; Norgren Excelon Plus 82 Series Air Filter Regulators: ports 1/4\" and 3/8\", grades 40 micron; Norgren Excelon Plus 82 Series Air Filters: ports 1/4\" and 3/8\", grades 0.01 micron; Norgren Excelon Plus 82 Series Air Regulators: ports 1/4\" and 3/8\"; Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators: ports 1/4\" and 3/8\", grades 40 micron; Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators: ports 3/8\", 1/2\" and 3/4\", grades 40 micron; Norgren Excelon Plus 84 Series Air Micro Fog Lubricators: ports 3/8\", 1/2\" and 3/4\"; Norgren Excelon Plus 84 Series Air Regulators: ports 3/8\", 1/2\" and 3/4\"; Norgren Plus 82 Series Air Micro Fog Lubricators: ports 1/4\" and 3/8\"; Norgren Plus 84 Series Air Filter Regulators: ports 3/8\", 1/2\" and 3/4\", grades 40 micron; Norgren Plus 84 Series Air Filters: ports 3/8\", 1/2\" and 3/4\", grades 40 micron; Norgren Plus 84 Series Air Filters, Coalescing Oil Removal: ports 3/8\", 1/2\" and 3/4\", grades 0.01 micron; Norgren Plus 84 Series Air Filters, Vapor Removal: ports 3/8\", 1/2\" and 3/4\".",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "metal-work-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Coalescing Filters do in a compressed-air line?",
+          "a": "The Metal Work Coalescing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 4 part numbers in 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are 5U23F10D103 (3/8\" port), 5U25F10D105 (3/4\" port) and 5U26F10D106 (1\" port). In these part numbers the last digit is the port size (3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Coalescing Filters come in?",
+          "a": "The Metal Work Coalescing Filters are listed in 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Metal Work Coalescing Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Coalescing Filters?",
+          "a": "The Metal Work Coalescing Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Metal Work Coalescing Filters use?",
+          "a": "The Metal Work Coalescing Filters listing gives 5 micron element grades. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Coalescing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Metal Work Coalescing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Metal Work Coalescing Filters in an air line?",
+          "a": "Fit the Metal Work Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Metal Work Coalescing Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Metal Work Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Coalescing Filters and the Metal Work Syntesi Series Coalescing Filters?",
+          "a": "The Metal Work Coalescing Filters are listed with 3/8\", 1/2\", 3/4\" and 1\" ports. The [Syntesi Series Coalescing Filters](/p/metal-work-syntesi-series-coalescing-filters) are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Coalescing Filters?",
+          "a": "The Metal Work Coalescing Filters listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metal Work Coalescing Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Metal Work Coalescing Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Lubricators do in a compressed-air line?",
+          "a": "The Metal Work Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 4 part numbers in 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U23L103 (3/8\" port), 5U25L105 (3/4\" port) and 5U26L106 (1\" port). In these part numbers the last digit is the port size (3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Lubricators come in?",
+          "a": "The Metal Work Lubricators are listed in 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Lubricators part number?",
+          "a": "For the Metal Work Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Lubricators?",
+          "a": "The Metal Work Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Metal Work Lubricators give, and which oil does it use?",
+          "a": "Check the Metal Work Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Metal Work Lubricators have?",
+          "a": "Bowl material of the Metal Work Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Metal Work Lubricators in an air line?",
+          "a": "Fit the Metal Work Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Metal Work Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Metal Work Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Metal Work Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Lubricators and the Metal Work Syntesi Series Lubricators?",
+          "a": "The Metal Work Lubricators are listed with 3/8\", 1/2\", 3/4\" and 1\" ports. The [Syntesi Series Lubricators](/p/metal-work-syntesi-series-lubricators) are listed with 1/8\", 1/4\" and 3/8\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Lubricators?",
+          "a": "The Metal Work Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Metal Work Lubricators in Dubai?",
+          "a": "Yes. We keep the Metal Work Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Metal Work Syntesi Series Coalescing Filters used for?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are 5U11D101 (1/8\" port), 5U24D104 (1/2\" port) and 5U26D106 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Coalescing Filters come in?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Metal Work Syntesi Series Coalescing Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Syntesi Series Coalescing Filters?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Metal Work Syntesi Series Coalescing Filters use?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters listing describes the element as a coalescing grade for oil removal. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Coalescing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Metal Work Syntesi Series Coalescing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Metal Work Syntesi Series Coalescing Filters in an air line?",
+          "a": "Fit the Metal Work Syntesi Series Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Metal Work Syntesi Series Coalescing Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Metal Work Syntesi Series Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Coalescing Filters and the Metal Work Syntesi Series Valve-Filter-Coalescing Filter?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. The [Syntesi Series Valve-Filter-Coalescing Filter](/p/metal-work-syntesi-series-valve-filter-coalescing-filter) is listed with 1/8\", 1/4\" and 3/8\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metal Work Syntesi Series Coalescing Filters made and how is it shipped from Dubai?",
+          "a": "The Metal Work Syntesi Series Coalescing Filters listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metal Work Syntesi Series Coalescing Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Metal Work Syntesi Series Coalescing Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-filter-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Syntesi Series Filter-Lubricators do in a compressed-air line?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators are filter/lubricator units that clean the air and feed oil mist in one body. This listing has 4 part numbers in 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Filter-Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U23F20L103 (3/8\" port), 5U25F20L105 (3/4\" port) and 5U26F20L106 (1\" port). In these part numbers the last digit is the port size (3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Filter-Lubricators come in?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators are listed in 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Filter-Lubricators part number?",
+          "a": "For the Metal Work Syntesi Series Filter-Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Metal Work Syntesi Series Filter-Lubricators have?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Metal Work Syntesi Series Filter-Lubricators?",
+          "a": "The rows show 20 micron element grades. On the Metal Work Syntesi Series Filter-Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Filter-Lubricators include a regulator?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators combines a filter and a lubricator without a regulator, so the pressure must already be set upstream or by a separate regulator. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Metal Work Syntesi Series Filter-Lubricators?",
+          "a": "Connect the Metal Work Syntesi Series Filter-Lubricators to the compressed-air line at the point of use where the pressure is already set. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Metal Work Syntesi Series Filter-Lubricators?",
+          "a": "Drain the Metal Work Syntesi Series Filter-Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Filter-Lubricators and the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators are filter/lubricator units, while the [Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Metal Work Syntesi Series Filter-Lubricators are listed with 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Syntesi Series Filter-Lubricators?",
+          "a": "The Metal Work Syntesi Series Filter-Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Metal Work Syntesi Series Filter-Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Metal Work Syntesi Series Filter-Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Metal Work Syntesi Series Filter-Regulator-Lubricators used for?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Filter-Regulator-Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U11B24L101 (1/8\" port), 5U24B24L104 (1/2\" port) and 5U26B24L106 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Filter-Regulator-Lubricators come in?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Filter-Regulator-Lubricators part number?",
+          "a": "For the Metal Work Syntesi Series Filter-Regulator-Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Metal Work Syntesi Series Filter-Regulator-Lubricators have?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "The rows show 20 micron element grades. On the Metal Work Syntesi Series Filter-Regulator-Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "Connect the Metal Work Syntesi Series Filter-Regulator-Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "Drain the Metal Work Syntesi Series Filter-Regulator-Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Filter-Regulator-Lubricators and the Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. The [Syntesi Series Valve-Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-valve-filter-regulator-lubricators) are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metal Work Syntesi Series Filter-Regulator-Lubricators made and how is it shipped from Dubai?",
+          "a": "The Metal Work Syntesi Series Filter-Regulator-Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Metal Work Syntesi Series Filter-Regulator-Lubricators in Dubai?",
+          "a": "Yes. We keep the Metal Work Syntesi Series Filter-Regulator-Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Syntesi Series Filter-Regulators do in a compressed-air line?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Filter-Regulators range and how do they differ?",
+          "a": "Examples from the listing are 5U11B241 (1/8\" port), 5U24B244 (1/2\" port) and 5U26B246 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Filter-Regulators come in?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Filter-Regulators part number?",
+          "a": "For the Metal Work Syntesi Series Filter-Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Metal Work Syntesi Series Filter-Regulators have?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Metal Work Syntesi Series Filter-Regulators?",
+          "a": "The rows show 20 micron element grades. On the Metal Work Syntesi Series Filter-Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Filter-Regulators include a lubricator?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Metal Work Syntesi Series Filter-Regulators?",
+          "a": "Connect the Metal Work Syntesi Series Filter-Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Metal Work Syntesi Series Filters](/p/metal-work-syntesi-series-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Metal Work Syntesi Series Filter-Regulators?",
+          "a": "Drain the Metal Work Syntesi Series Filter-Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Filter-Regulators and the Metal Work Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators are filter/regulators, while the [Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Metal Work Syntesi Series Filter-Regulators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Syntesi Series Filter-Regulators?",
+          "a": "The Metal Work Syntesi Series Filter-Regulators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metal Work Syntesi Series Filter-Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Metal Work Syntesi Series Filter-Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Metal Work Syntesi Series Filters used for?",
+          "a": "The Metal Work Syntesi Series Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Filters range and how do they differ?",
+          "a": "Examples from the listing are 5U11F201 (1/8\" port), 5U24F204 (1/2\" port) and 5U26F206 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Filters come in?",
+          "a": "The Metal Work Syntesi Series Filters are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Filters part number for my air line?",
+          "a": "To choose a part number from the Metal Work Syntesi Series Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Syntesi Series Filters?",
+          "a": "The Metal Work Syntesi Series Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Metal Work Syntesi Series Filters use?",
+          "a": "The Metal Work Syntesi Series Filters rows show 20 micron element grades. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Metal Work Syntesi Series Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Metal Work Syntesi Series Filters in an air line?",
+          "a": "Fit the Metal Work Syntesi Series Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Metal Work Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Metal Work Syntesi Series Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Metal Work Syntesi Series Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Filters and the Metal Work Syntesi Series Coalescing Filters?",
+          "a": "The Metal Work Syntesi Series Filters are compressed-air particulate filters, while the [Syntesi Series Coalescing Filters](/p/metal-work-syntesi-series-coalescing-filters) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Metal Work Syntesi Series Filters are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metal Work Syntesi Series Filters made and how is it shipped from Dubai?",
+          "a": "The Metal Work Syntesi Series Filters listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Metal Work Syntesi Series Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Metal Work Syntesi Series Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Syntesi Series Lubricators do in a compressed-air line?",
+          "a": "The Metal Work Syntesi Series Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers in 1/8\", 1/4\" and 3/8\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U11L101 (1/8\" port), 5U12L102 (1/4\" port) and 5U13L103 (3/8\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Lubricators come in?",
+          "a": "The Metal Work Syntesi Series Lubricators are listed in 1/8\", 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Lubricators part number?",
+          "a": "For the Metal Work Syntesi Series Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Syntesi Series Lubricators?",
+          "a": "The Metal Work Syntesi Series Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Metal Work Syntesi Series Lubricators give, and which oil does it use?",
+          "a": "Check the Metal Work Syntesi Series Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Metal Work Syntesi Series Lubricators have?",
+          "a": "Bowl material of the Metal Work Syntesi Series Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Metal Work Syntesi Series Lubricators in an air line?",
+          "a": "Fit the Metal Work Syntesi Series Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Metal Work Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Metal Work Syntesi Series Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Metal Work Syntesi Series Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Lubricators and the Metal Work Lubricators?",
+          "a": "The Metal Work Syntesi Series Lubricators are listed with 1/8\", 1/4\" and 3/8\" ports. The [Lubricators](/p/metal-work-lubricators) are listed with 3/8\", 1/2\", 3/4\" and 1\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Syntesi Series Lubricators?",
+          "a": "The Metal Work Syntesi Series Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metal Work Syntesi Series Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Metal Work Syntesi Series Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Syntesi Series Regulators do in a compressed-air line?",
+          "a": "The Metal Work Syntesi Series Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Regulators range and how do they differ?",
+          "a": "Examples from the listing are 5U11R141 (1/8\" port), 5U24R144 (1/2\" port) and 5U26R146 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Regulators come in?",
+          "a": "The Metal Work Syntesi Series Regulators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Regulators part number?",
+          "a": "For the Metal Work Syntesi Series Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Metal Work Syntesi Series Regulators?",
+          "a": "The Metal Work Syntesi Series Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Metal Work Syntesi Series Regulators relieving, and what is it made from?",
+          "a": "The Metal Work Syntesi Series Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Regulators come with a pressure gauge?",
+          "a": "The Metal Work Syntesi Series Regulators listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Metal Work Syntesi Series Regulators?",
+          "a": "Fit the Metal Work Syntesi Series Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Metal Work Syntesi Series Regulators?",
+          "a": "To set the Metal Work Syntesi Series Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Regulators and the Metal Work Syntesi Series Filter-Lubricators?",
+          "a": "The Metal Work Syntesi Series Regulators are air pressure regulators, while the [Syntesi Series Filter-Lubricators](/p/metal-work-syntesi-series-filter-lubricators) are filter/lubricator units. They do different jobs in the same air line and are often fitted together; the Metal Work Syntesi Series Regulators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Syntesi Series Regulators?",
+          "a": "The Metal Work Syntesi Series Regulators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Metal Work Syntesi Series Regulators in Dubai?",
+          "a": "Yes. We keep the Metal Work Syntesi Series Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-valve-filter-coalescing-filter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Metal Work Syntesi Series Valve-Filter-Coalescing Filter do in a compressed-air line?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter is a coalescing (oil-removal) filter that removes oil aerosol and very fine particles from compressed air. This listing has 3 part numbers in 1/8\", 1/4\" and 3/8\" NPT ports. The part-number text names it a valve-filter combination, so a valve is built into the assembly."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Valve-Filter-Coalescing Filter range and how do they differ?",
+          "a": "Examples from the listing are 5U11F10D101 (1/8\" port), 5U12F10D102 (1/4\" port) and 5U13F10D103 (3/8\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\" and 3 is 3/8\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Valve-Filter-Coalescing Filter come in?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter is listed in 1/8\", 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Valve-Filter-Coalescing Filter part number for my air line?",
+          "a": "To choose a part number from the Metal Work Syntesi Series Valve-Filter-Coalescing Filter, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Metal Work Syntesi Series Valve-Filter-Coalescing Filter?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Metal Work Syntesi Series Valve-Filter-Coalescing Filter use?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter listing gives 5 micron element grades. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Valve-Filter-Coalescing Filter give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Metal Work Syntesi Series Valve-Filter-Coalescing Filter is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Metal Work Syntesi Series Valve-Filter-Coalescing Filter in an air line?",
+          "a": "Fit the Metal Work Syntesi Series Valve-Filter-Coalescing Filter downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Metal Work Syntesi Series Valve-Filter-Coalescing Filter?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Metal Work Syntesi Series Valve-Filter-Coalescing Filter when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Valve-Filter-Coalescing Filter and the Metal Work Syntesi Series Coalescing Filters?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter is listed with 1/8\", 1/4\" and 3/8\" ports. The [Syntesi Series Coalescing Filters](/p/metal-work-syntesi-series-coalescing-filters) are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Metal Work Syntesi Series Valve-Filter-Coalescing Filter?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Coalescing Filter listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Metal Work Syntesi Series Valve-Filter-Coalescing Filter available from stock at Indus Hydraulics?",
+          "a": "Yes. The Metal Work Syntesi Series Valve-Filter-Coalescing Filter is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-valve-filter-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Metal Work Syntesi Series Valve-Filter-Lubricators used for?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators are filter/lubricator units that clean the air and feed oil mist in one body. This listing has 3 part numbers in 1/8\", 1/4\" and 3/8\" NPT ports. The part-number text names it a valve-filter combination, so a valve is built into the assembly."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Valve-Filter-Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U11F20L101 (1/8\" port), 5U12F20L102 (1/4\" port) and 5U13F20L103 (3/8\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Valve-Filter-Lubricators come in?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators are listed in 1/8\", 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Valve-Filter-Lubricators part number?",
+          "a": "For the Metal Work Syntesi Series Valve-Filter-Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Metal Work Syntesi Series Valve-Filter-Lubricators have?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Metal Work Syntesi Series Valve-Filter-Lubricators?",
+          "a": "The rows show 20 micron element grades. On the Metal Work Syntesi Series Valve-Filter-Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Metal Work Syntesi Series Valve-Filter-Lubricators include a regulator?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators combines a filter and a lubricator without a regulator, so the pressure must already be set upstream or by a separate regulator. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Metal Work Syntesi Series Valve-Filter-Lubricators?",
+          "a": "Connect the Metal Work Syntesi Series Valve-Filter-Lubricators to the compressed-air line at the point of use where the pressure is already set. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Metal Work Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Metal Work Syntesi Series Valve-Filter-Lubricators?",
+          "a": "Drain the Metal Work Syntesi Series Valve-Filter-Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Valve-Filter-Lubricators and the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators are filter/lubricator units, while the [Syntesi Series Valve-Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-valve-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Metal Work Syntesi Series Valve-Filter-Lubricators are listed with 1/8\", 1/4\" and 3/8\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metal Work Syntesi Series Valve-Filter-Lubricators made and how is it shipped from Dubai?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Metal Work Syntesi Series Valve-Filter-Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Metal Work Syntesi Series Valve-Filter-Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-syntesi-series-valve-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators used for?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 7 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. The part-number text names it a valve-filter combination, so a valve is built into the assembly."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 5U11V10B24L101 (1/8\" port), 5U24V10B24L104 (1/2\" port) and 5U26V10B24L106 (1\" port). In these part numbers the last digit is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 5 is 3/4\" and 6 is 1\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators come in?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators part number?",
+          "a": "For the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators have?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "The rows show 20 micron element grades. On the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "Connect the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Metal Work Syntesi Series Filter-Regulators](/p/metal-work-syntesi-series-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators?",
+          "a": "Drain the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators and the Syntesi Series Filter-Regulator-Lubricators?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. The [Syntesi Series Filter-Regulator-Lubricators](/p/metal-work-syntesi-series-filter-regulator-lubricators) are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators made and how is it shipped from Dubai?",
+          "a": "The Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators listing gives Italy as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Metal Work Syntesi Series Valve-Filter-Regulator-Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-82-series-air-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 82 Series Air Filter Regulators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 8 part numbers in 1/4\" and 3/8\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 82 Series Air Filter Regulators range and how do they differ?",
+          "a": "Examples from the listing are B82G-2AK-AD3-RMG (1/4\" port) and B82G-3AK-QD3-RMG (3/8\" port). In these part numbers the digit after the first dash is the port size (2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 82 Series Air Filter Regulators come in?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators are listed in 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 82 Series Air Filter Regulators part number?",
+          "a": "For the Norgren Excelon Plus 82 Series Air Filter Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Norgren Excelon Plus 82 Series Air Filter Regulators have?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Norgren Excelon Plus 82 Series Air Filter Regulators?",
+          "a": "The rows show 40 micron element grades. Specification lines: aluminum body. On the Norgren Excelon Plus 82 Series Air Filter Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Excelon Plus 82 Series Air Filter Regulators include a lubricator?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Norgren Excelon Plus 82 Series Air Filter Regulators?",
+          "a": "Connect the Norgren Excelon Plus 82 Series Air Filter Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Norgren Excelon Plus 82 Series Air Filters](/p/norgren-excelon-plus-82-series-air-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Norgren Excelon Plus 82 Series Air Filter Regulators?",
+          "a": "Drain the Norgren Excelon Plus 82 Series Air Filter Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Norgren Excelon Plus 82 Series Air Filter Regulators differ from the Excelon Plus 82 Series Combination Filter-Regulator-Lubricators range?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators are filter/regulators, while the [Excelon Plus 82 Series Combination Filter-Regulator-Lubricators](/p/norgren-excelon-plus-82-series-combination-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Norgren Excelon Plus 82 Series Air Filter Regulators are listed with 1/4\" and 3/8\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 82 Series Air Filter Regulators?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filter Regulators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Norgren Excelon Plus 82 Series Air Filter Regulators in Dubai?",
+          "a": "Yes. We keep the Norgren Excelon Plus 82 Series Air Filter Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-82-series-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Norgren Excelon Plus 82 Series Air Filters used for?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filters are compressed-air filters in three types shown in the part numbers: F82C coalescing oil removal, F82G particulate and F82V vapor removal. This listing has 20 part numbers in 1/4\" and 3/8\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 82 Series Air Filters range and how do they differ?",
+          "a": "Examples from the listing are F82C-2AD-AD0 (Filter, Coalescing Oil Removal, 1/4 Inch Female Npt Inlet) and F82V-2AN-EDA (Filter, Vapor Removal, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt ). In these part numbers the digit after the first dash is the port size (2 is 1/4\" and 3 is 3/8\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 82 Series Air Filters come in?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filters are listed in 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 82 Series Air Filters part number for my air line?",
+          "a": "To choose a part number from the Norgren Excelon Plus 82 Series Air Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Excelon Plus 82 Series Air Filters?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grades do the Norgren Excelon Plus 82 Series Air Filters cover?",
+          "a": "The part-number text names three stages: Coalescing Oil Removal on the F82C rows, Particulate on the F82G rows and Vapor Removal on the F82V rows. The listing specification gives a 0.01 micron replaceable element and a die-cast zinc bowl with a sight gauge."
+        },
+        {
+          "slot": "G",
+          "q": "Which of the Norgren Excelon Plus 82 Series Air Filters gives oil removal for ISO 8573-1 air quality?",
+          "a": "The F82C coalescing oil removal rows are the oil-removal stage and the F82V rows are the vapour stage, while the F82G rows only stop particles and liquid water. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Excelon Plus 82 Series Air Filters in an air line?",
+          "a": "Fit the Norgren Excelon Plus 82 Series Air Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Norgren Excelon Plus 82 Series Air Filter Regulators](/p/norgren-excelon-plus-82-series-air-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Norgren Excelon Plus 82 Series Air Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Norgren Excelon Plus 82 Series Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Excelon Plus 82 Series Air Filters and the Norgren Plus 84 Series Air Filters?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filters are listed with 1/4\" and 3/8\" ports. The [Plus 84 Series Air Filters](/p/norgren-plus-84-series-air-filters) are listed with 3/8\", 1/2\" and 3/4\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 82 Series Air Filters?",
+          "a": "The Norgren Excelon Plus 82 Series Air Filters listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Norgren Excelon Plus 82 Series Air Filters in Dubai?",
+          "a": "Yes. We keep the Norgren Excelon Plus 82 Series Air Filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-82-series-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 82 Series Air Regulators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 4 part numbers in 1/4\" and 3/8\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 82 Series Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are R82G-2AK-RFG (1/4\" port) and R82G-3AK-RFG (3/8\" port). In these part numbers the digit after the first dash is the port size (2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 82 Series Air Regulators come in?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators are listed in 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 82 Series Air Regulators part number?",
+          "a": "For the Norgren Excelon Plus 82 Series Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Norgren Excelon Plus 82 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Norgren Excelon Plus 82 Series Air Regulators relieving, and what is it made from?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. Specification lines: aluminum body. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Excelon Plus 82 Series Air Regulators come with a pressure gauge?",
+          "a": "The listing says it includes: Integral Gauge. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Excelon Plus 82 Series Air Regulators?",
+          "a": "Fit the Norgren Excelon Plus 82 Series Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Norgren Excelon Plus 82 Series Air Filter Regulators](/p/norgren-excelon-plus-82-series-air-filter-regulators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Norgren Excelon Plus 82 Series Air Regulators?",
+          "a": "To set the Norgren Excelon Plus 82 Series Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Excelon Plus 82 Series Air Regulators and the Norgren Excelon Plus 84 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators are listed with 1/4\" and 3/8\" ports. The [Excelon Plus 84 Series Air Regulators](/p/norgren-excelon-plus-84-series-air-regulators) are listed with 3/8\", 1/2\" and 3/4\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 82 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 82 Series Air Regulators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Excelon Plus 82 Series Air Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Excelon Plus 82 Series Air Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-82-series-combination-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 8 part numbers in 1/4\" and 3/8\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators range and how do they differ?",
+          "a": "Examples from the listing are BL82-201A (1/4\" port) and BL82-301A (3/8\" port). In these part numbers the first digit of the three-digit block is the port size (2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators come in?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators are listed in 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators part number?",
+          "a": "For the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators have?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators?",
+          "a": "The rows show 40 micron element grades. Specification lines: aluminum body. On the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators?",
+          "a": "Connect the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Norgren Excelon Plus 82 Series Air Filters](/p/norgren-excelon-plus-82-series-air-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators?",
+          "a": "Drain the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators differ from the Excelon Plus 82 Series Air Filter Regulators range?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators are filter/regulator/lubricator (FRL) units, while the [Excelon Plus 82 Series Air Filter Regulators](/p/norgren-excelon-plus-82-series-air-filter-regulators) are filter/regulators. They do different jobs in the same air line and are often fitted together; the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators are listed with 1/4\" and 3/8\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators?",
+          "a": "The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Excelon Plus 82 Series Combination Filter-Regulator-Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-84-series-air-combination-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body and bowl: long metal with liquid level indicator."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators range and how do they differ?",
+          "a": "Examples from the listing are BL84-451A (1/2\" port), BL84-301A (3/8\" port) and BL84-601A (3/4\" port). In these part numbers the first digit of the three-digit block is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators come in?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators part number?",
+          "a": "For the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators have?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators?",
+          "a": "The rows show 40 micron element grades. Specification lines: aluminum body and bowl: long metal with liquid level indicator. On the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators?",
+          "a": "Connect the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Norgren Excelon Plus 84 Series Air Regulators](/p/norgren-excelon-plus-84-series-air-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators?",
+          "a": "Drain the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators compare with its neighbouring range?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators are listed with 3/8\", 1/2\" and 3/4\" ports. The [Excelon Plus 82 Series Combination Filter-Regulator-Lubricators](/p/norgren-excelon-plus-82-series-combination-filter-regulator-lubricators) are listed with 1/4\" and 3/8\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-84-series-air-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: bowl: transparent guarded polycarbonate."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L84M-4AP-EPN (1/2\" port), L84M-6AP-EPN (3/4\" port) and L84M-3AP-EPN (3/8\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators come in?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 84 Series Air Micro Fog Lubricators part number?",
+          "a": "For the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators have?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators listing gives a transparent guarded polycarbonate bowl. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators in an air line?",
+          "a": "Fit the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Norgren Excelon Plus 84 Series Air Combination Filter Regulator Lubricators](/p/norgren-excelon-plus-84-series-air-combination-filter-regulator-lubricators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators and the Norgren Plus 82 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators are listed with 3/8\", 1/2\" and 3/4\" ports. The [Plus 82 Series Air Micro Fog Lubricators](/p/norgren-plus-82-series-air-micro-fog-lubricators) are listed with 1/4\" and 3/8\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Excelon Plus 84 Series Air Micro Fog Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-excelon-plus-84-series-air-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Excelon Plus 84 Series Air Regulators do in a compressed-air line?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 3 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Excelon Plus 84 Series Air Regulators range and how do they differ?",
+          "a": "Examples from the listing are R84G-3AK-RMG (3/8\" port), R84G-6AK-RMG (3/4\" port) and R84G-4AK-RMG (1/2\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Excelon Plus 84 Series Air Regulators come in?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Excelon Plus 84 Series Air Regulators part number?",
+          "a": "For the Norgren Excelon Plus 84 Series Air Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Norgren Excelon Plus 84 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Norgren Excelon Plus 84 Series Air Regulators relieving, and what is it made from?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. Specification lines: aluminum body. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Excelon Plus 84 Series Air Regulators come with a pressure gauge?",
+          "a": "The listing says it includes: Integral Gauge. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Excelon Plus 84 Series Air Regulators?",
+          "a": "Fit the Norgren Excelon Plus 84 Series Air Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Norgren Excelon Plus 84 Series Air Micro Fog Lubricators](/p/norgren-excelon-plus-84-series-air-micro-fog-lubricators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Norgren Excelon Plus 84 Series Air Regulators?",
+          "a": "To set the Norgren Excelon Plus 84 Series Air Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Excelon Plus 84 Series Air Regulators and the Norgren Excelon Plus 82 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators are listed with 3/8\", 1/2\" and 3/4\" ports. The [Excelon Plus 82 Series Air Regulators](/p/norgren-excelon-plus-82-series-air-regulators) are listed with 1/4\" and 3/8\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Excelon Plus 84 Series Air Regulators?",
+          "a": "The Norgren Excelon Plus 84 Series Air Regulators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Norgren Excelon Plus 84 Series Air Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Norgren Excelon Plus 84 Series Air Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-plus-82-series-air-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Plus 82 Series Air Micro Fog Lubricators do in a compressed-air line?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 4 part numbers in 1/4\" and 3/8\" NPT ports. Listed materials: metal bowl with liquid level indicator."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Plus 82 Series Air Micro Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L82M-2AP-EDN (1/4\" port) and L82M-3AP-EDN (3/8\" port). In these part numbers the digit after the first dash is the port size (2 is 1/4\" and 3 is 3/8\"). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Plus 82 Series Air Micro Fog Lubricators come in?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators are listed in 1/4\" and 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Plus 82 Series Air Micro Fog Lubricators part number?",
+          "a": "For the Norgren Plus 82 Series Air Micro Fog Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Plus 82 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Norgren Plus 82 Series Air Micro Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Norgren Plus 82 Series Air Micro Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Norgren Plus 82 Series Air Micro Fog Lubricators have?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators listing gives a metal bowl with liquid level indicator bowl. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Norgren Plus 82 Series Air Micro Fog Lubricators in an air line?",
+          "a": "Fit the Norgren Plus 82 Series Air Micro Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Norgren Excelon Plus 82 Series Air Filter Regulators](/p/norgren-excelon-plus-82-series-air-filter-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Norgren Plus 82 Series Air Micro Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Norgren Plus 82 Series Air Micro Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Plus 82 Series Air Micro Fog Lubricators and the Norgren Excelon Plus 84 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators are listed with 1/4\" and 3/8\" ports. The [Excelon Plus 84 Series Air Micro Fog Lubricators](/p/norgren-excelon-plus-84-series-air-micro-fog-lubricators) are listed with 3/8\", 1/2\" and 3/4\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Plus 82 Series Air Micro Fog Lubricators?",
+          "a": "The Norgren Plus 82 Series Air Micro Fog Lubricators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Plus 82 Series Air Micro Fog Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Plus 82 Series Air Micro Fog Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-plus-84-series-air-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Plus 84 Series Air Filter Regulators do in a compressed-air line?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 12 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: aluminum body and bowl: long polycarbonate with liquid level indicator."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Plus 84 Series Air Filter Regulators range and how do they differ?",
+          "a": "Examples from the listing are B84G-3AK-AP3-RMG (3/8\" port), B84G-4AK-AD3-RMG (1/2\" port) and B84G-6AK-AP3-RMG (3/4\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Plus 84 Series Air Filter Regulators come in?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Plus 84 Series Air Filter Regulators part number?",
+          "a": "For the Norgren Plus 84 Series Air Filter Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Norgren Plus 84 Series Air Filter Regulators have?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Norgren Plus 84 Series Air Filter Regulators?",
+          "a": "The rows show 40 micron element grades. Specification lines: aluminum body and bowl: long polycarbonate with liquid level indicator. On the Norgren Plus 84 Series Air Filter Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Plus 84 Series Air Filter Regulators include a lubricator?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Norgren Plus 84 Series Air Filter Regulators?",
+          "a": "Connect the Norgren Plus 84 Series Air Filter Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Norgren Plus 84 Series Air Filters](/p/norgren-plus-84-series-air-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Norgren Plus 84 Series Air Filter Regulators?",
+          "a": "Drain the Norgren Plus 84 Series Air Filter Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Norgren Plus 84 Series Air Filter Regulators differ from the Excelon Plus 84 Series Air Combination Filter Regulator Lubricators range?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators are filter/regulators, while the [Excelon Plus 84 Series Air Combination Filter Regulator Lubricators](/p/norgren-excelon-plus-84-series-air-combination-filter-regulator-lubricators) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Norgren Plus 84 Series Air Filter Regulators are listed with 3/8\", 1/2\" and 3/4\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Plus 84 Series Air Filter Regulators?",
+          "a": "The Norgren Plus 84 Series Air Filter Regulators listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Norgren Plus 84 Series Air Filter Regulators in Dubai?",
+          "a": "Yes. We keep the Norgren Plus 84 Series Air Filter Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-plus-84-series-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Plus 84 Series Air Filters do in a compressed-air line?",
+          "a": "The Norgren Plus 84 Series Air Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 12 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports. Listed materials: bowl: polycarbonate."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Plus 84 Series Air Filters range and how do they differ?",
+          "a": "Examples from the listing are F84G-3AN-AP3 (3/8\" port), F84G-4AN-AD3 (1/2\" port) and F84G-6AN-AD3 (3/4\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Plus 84 Series Air Filters come in?",
+          "a": "The Norgren Plus 84 Series Air Filters are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Plus 84 Series Air Filters part number for my air line?",
+          "a": "To choose a part number from the Norgren Plus 84 Series Air Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Plus 84 Series Air Filters?",
+          "a": "The Norgren Plus 84 Series Air Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Norgren Plus 84 Series Air Filters use?",
+          "a": "The Norgren Plus 84 Series Air Filters rows show 40 micron element grades. Specification lines: bowl: polycarbonate. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Plus 84 Series Air Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Norgren Plus 84 Series Air Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Plus 84 Series Air Filters in an air line?",
+          "a": "Fit the Norgren Plus 84 Series Air Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Norgren Plus 84 Series Air Filter Regulators](/p/norgren-plus-84-series-air-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Norgren Plus 84 Series Air Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Norgren Plus 84 Series Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Plus 84 Series Air Filters and the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal?",
+          "a": "The Norgren Plus 84 Series Air Filters are compressed-air particulate filters, while the [Plus 84 Series Air Filters, Coalescing Oil Removal](/p/norgren-plus-84-series-air-filters-coalescing-oil-removal) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Norgren Plus 84 Series Air Filters are listed with 3/8\", 1/2\" and 3/4\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Plus 84 Series Air Filters?",
+          "a": "The Norgren Plus 84 Series Air Filters listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Norgren Plus 84 Series Air Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Norgren Plus 84 Series Air Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-plus-84-series-air-filters-coalescing-oil-removal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal do in a compressed-air line?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal range and how do they differ?",
+          "a": "Examples from the listing are F84C-3AD-AP0 (3/8\" port), F84C-4AD-AP0 (1/2\" port) and F84C-6AD-AP0 (3/4\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal come in?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Plus 84 Series Air Filters, Coalescing Oil Removal part number for my air line?",
+          "a": "To choose a part number from the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal use?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal listing gives 0.01 micron element grades. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal in an air line?",
+          "a": "Fit the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Norgren Excelon Plus 84 Series Air Micro Fog Lubricators](/p/norgren-excelon-plus-84-series-air-micro-fog-lubricators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal and the Norgren Plus 84 Series Air Filters?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal are coalescing (oil-removal) filters, while the [Plus 84 Series Air Filters](/p/norgren-plus-84-series-air-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal are listed with 3/8\", 1/2\" and 3/4\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal?",
+          "a": "The Norgren Plus 84 Series Air Filters, Coalescing Oil Removal listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "norgren-plus-84-series-air-filters-vapor-removal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Norgren Plus 84 Series Air Filters, Vapor Removal used for?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal are activated-carbon vapour-removal filters that remove oil vapour and odour from compressed air. This listing has 6 part numbers in 3/8\", 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Norgren Plus 84 Series Air Filters, Vapor Removal range and how do they differ?",
+          "a": "Examples from the listing are F84V-3AN-EPA (3/8\" port), F84V-4AN-EPA (1/2\" port) and F84V-6AN-EPA (3/4\" port). In these part numbers the digit after the first dash is the port size (3 is 3/8\", 4 is 1/2\" and 6 is 3/4\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Norgren Plus 84 Series Air Filters, Vapor Removal come in?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal are listed in 3/8\", 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Norgren Plus 84 Series Air Filters, Vapor Removal part number for my air line?",
+          "a": "To choose a part number from the Norgren Plus 84 Series Air Filters, Vapor Removal, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Norgren Plus 84 Series Air Filters, Vapor Removal?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element does the Norgren Plus 84 Series Air Filters, Vapor Removal use?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal listing describes the element as activated carbon for vapour removal. Carbon is used after a coalescing filter, because liquid oil quickly saturates the carbon bed."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Norgren Plus 84 Series Air Filters, Vapor Removal give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Norgren Plus 84 Series Air Filters, Vapor Removal is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Norgren Plus 84 Series Air Filters, Vapor Removal in an air line?",
+          "a": "Fit the Norgren Plus 84 Series Air Filters, Vapor Removal downstream of a coalescing filter: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Norgren Plus 84 Series Air Filters](/p/norgren-plus-84-series-air-filters) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Norgren Plus 84 Series Air Filters, Vapor Removal?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Norgren Plus 84 Series Air Filters, Vapor Removal when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Norgren Plus 84 Series Air Filters, Vapor Removal and the Norgren Plus 84 Series Air Filters, Coalescing Oil Removal?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal are activated-carbon vapour-removal filters, while the [Plus 84 Series Air Filters, Coalescing Oil Removal](/p/norgren-plus-84-series-air-filters-coalescing-oil-removal) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Norgren Plus 84 Series Air Filters, Vapor Removal are listed with 3/8\", 1/2\" and 3/4\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Norgren Plus 84 Series Air Filters, Vapor Removal made and how is it shipped from Dubai?",
+          "a": "The Norgren Plus 84 Series Air Filters, Vapor Removal listing gives Mexico as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Norgren Plus 84 Series Air Filters, Vapor Removal available from stock at Indus Hydraulics?",
+          "a": "Yes. The Norgren Plus 84 Series Air Filters, Vapor Removal is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

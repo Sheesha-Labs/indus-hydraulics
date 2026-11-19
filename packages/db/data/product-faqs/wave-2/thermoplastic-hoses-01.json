@@ -1,0 +1,864 @@
+{
+  "family": "thermoplastic-hoses-01",
+  "extraFacts": [
+    {
+      "fact": "Figures of the sibling hoses in this family, as listed on their own pages: Parker 510C 69 to 224 bar; 518C 90 to 207 bar; 520N and 528N 241 to 345 bar; 53DM 207 bar; 540N 86 to 207 bar; 540P 138 to 190 bar, -10°F to +150°F; 55LT 138 to 207 bar, -40°F to +212°F; 575X 345 bar; 580N 138 to 241 bar; B9 17 bar; R7 up to 210 bar; R8 up to 350 bar.",
+      "source": "Indus Hydraulics product listings (descriptions, specs and size tables) for this family, facts dump 2026-11-18"
+    },
+    {
+      "fact": "Hose dash sizes count sixteenths of an inch of hose bore: -3 is 3/16 inch, -4 is 1/4 inch, -5 is 5/16 inch, -6 is 3/8 inch, -8 is 1/2 inch, -10 is 5/8 inch, -12 is 3/4 inch and -16 is 1 inch.",
+      "source": "SAE J517 / SAE J514 dash size convention; the Parker 56 Series size tables on this site"
+    },
+    {
+      "fact": "SAE J517 gives the general, dimensional and performance specifications for the SAE 100R series of hydraulic hose, including 100R7 (single-fibre-braid thermoplastic) and 100R8 (double-fibre-braid thermoplastic).",
+      "source": "SAE J517 Hydraulic Hose, abstract (sae.org)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-510c-series-medium-pressure-thermoplastic-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 510C Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 510C Series is a medium-pressure thermoplastic hydraulic hose from Parker's Parflex division. It is listed in 8 part numbers and the maker states 1,000 to 3,250 psi (69 to 224 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 510C Series, such as 510C-16?",
+          "a": "In 510C-16 the 510C is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -16 is 1 inch hose. 510C-6-6 repeats the number and appears as a second row of the same size with the same pressure, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 510C Series come in?",
+          "a": "The Parker 510C Series is listed in 8 part numbers: 510C-16 (69 bar), 510C-6-6 (155 bar), 510C-8 (155 bar), 510C-8-8 (155 bar), 510C-5 (172 bar), 510C-4 (207 bar), 510C-4-4 (207 bar), 510C-3 (224 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 510C hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 510C rating falls from 224 bar on 510C-3 to 69 bar on 510C-16, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 510C Series hose?",
+          "a": "The maker states 1,000 to 3,250 psi (69 to 224 bar) for the 510C Series. By part number: 224 bar on 510C-3, 207 bar on 510C-4, 207 bar on 510C-4-4, 172 bar on 510C-5, 155 bar on 510C-6-6, 155 bar on 510C-8. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 510C Series hose made from?",
+          "a": "The listing gives the material as thermoplastic and no further construction detail, so ask us for the tube and cover materials if the fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 510C Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 510C Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 510C Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 510C Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 510C Series hose?",
+          "a": "Route the 510C hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 510C Series compare with the Parker 518C Series?",
+          "a": "The Parker 510C is the standard conductive-construction hose, while the [Parker 518C Series Medium Pressure Thermoplastic Non-conductive Hydraulic Hoses](/p/parker-518c-series-medium-pressure-thermoplastic-non-conductive-hydraulic-hoses) is the non-conductive version in the 518C Series. Choose the 518C where the hose works near live electrical equipment; otherwise the 510C is rated up to 224 bar against 207 bar."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 510C Series ship from, and what are the export details?",
+          "a": "The Parker 510C Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 510C Series hose for export from Dubai?",
+          "a": "Yes. We keep the Parker 510C Series hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 510C-16 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-518c-series-medium-pressure-thermoplastic-non-conductive-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 518C Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 518C Series is a medium-pressure non-conductive thermoplastic hydraulic hose from Parker's Parflex division. It is listed in 9 part numbers and the maker states 1,300 to 3,000 psi (90 to 207 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 518C Series, such as 518C-16?",
+          "a": "In 518C-16 the 518C is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -16 is 1 inch hose. 518C-4-4 repeats the number and appears as a second row of the same size with the same pressure, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 518C Series come in?",
+          "a": "The Parker 518C Series is listed in 9 part numbers: 518C-16 (90 bar), 518C-12 (114 bar), 518C-2 (207 bar), 518C-3 (207 bar), 518C-4-4 (207 bar), 518C-5 (207 bar), 518C-6 (207 bar), 518C-6-6 (207 bar), 518C-8-8 (207 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 518C hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 518C rating falls from 207 bar on 518C-2 to 90 bar on 518C-16, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 518C Series hose?",
+          "a": "The maker states 1,300 to 3,000 psi (90 to 207 bar) for the 518C Series. By part number: 207 bar on 518C-2, 207 bar on 518C-3, 207 bar on 518C-4-4, 207 bar on 518C-5, 207 bar on 518C-6, 207 bar on 518C-6-6. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 518C Series hose made from?",
+          "a": "The listing gives the material as thermoplastic and describes the hose as non-conductive. Ask us for the tube and cover materials and for any electrical test data your application requires."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 518C Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 518C Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 518C Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 518C Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 518C Series hose?",
+          "a": "Route the 518C hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 518C Series compare with the Parker 510C Series?",
+          "a": "The Parker 518C is the non-conductive hose, rated 90 to 207 bar, whereas the [Parker 510C Series Medium Pressure Thermoplastic Hydraulic Hoses](/p/parker-510c-series-medium-pressure-thermoplastic-hydraulic-hoses) is the standard 510C, rated up to 224 bar. Choose the 518C where the hose must not carry current near electrical equipment."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 518C Series ship from, and what are the export details?",
+          "a": "The Parker 518C Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 518C Series hose for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Parker 518C Series hose, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-520n-series-high-pressure-thermoplastic-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 520N Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 520N Series is a high-pressure thermoplastic hydraulic hose with a nylon inner tube and a polyurethane cover, reinforced with aramid fibres. It is listed in 5 part numbers and the maker states 3,500 to 5,000 psi (241 to 345 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 520N Series, such as 520N-8?",
+          "a": "In 520N-8 the 520N is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -8 is 1/2 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 520N Series come in?",
+          "a": "The Parker 520N Series is listed in 5 part numbers: 520N-8 (241 bar), 520N-6 (276 bar), 520N-5 (310 bar), 520N-3 (345 bar), 520N-4 (345 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 520N hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 520N rating falls from 345 bar on 520N-3 to 241 bar on 520N-8, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 520N Series hose?",
+          "a": "The maker states 3,500 to 5,000 psi (241 to 345 bar) for the 520N Series. By part number: 345 bar on 520N-3, 345 bar on 520N-4, 310 bar on 520N-5, 276 bar on 520N-6, 241 bar on 520N-8. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 520N Series hose made from?",
+          "a": "The inner tube is nylon and the cover polyurethane, reinforced with aramid fibres, as the listing states, and sold in bulk lengths. The listing names hydraulics, air, lubrication, water and nitrogen gas as media."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 520N Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 520N Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 520N Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 520N Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 520N Series hose?",
+          "a": "Route the 520N hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 520N Series compare with the Parker 528N Series?",
+          "a": "The Parker 520N is the conductive-construction high-pressure hose, in 5 part numbers, while the [Parker 528N Series High Pressure Thermoplastic Non-conductive Hoses](/p/parker-528n-series-high-pressure-thermoplastic-non-conductive-hoses) is the non-conductive version in 3. Both are rated up to 345 bar; choose the 528N near live electrical equipment."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 520N Series ship from, and what are the export details?",
+          "a": "The Parker 520N Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 520N Series hose for export from Dubai?",
+          "a": "Yes. The Parker 520N Series hose is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 520N-8 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-528n-series-high-pressure-thermoplastic-non-conductive-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 528N Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 528N Series is a high-pressure non-conductive thermoplastic hose with a nylon inner tube and a polyurethane cover, reinforced with aramid fibres. It is listed in 3 part numbers and the maker states 3,500 to 5,000 psi (241 to 345 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 528N Series, such as 528N-8?",
+          "a": "In 528N-8 the 528N is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -8 is 1/2 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 528N Series come in?",
+          "a": "The Parker 528N Series is listed in 3 part numbers: 528N-8 (241 bar), 528N-6 (276 bar), 528N-4 (345 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 528N hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 528N rating falls from 345 bar on 528N-4 to 241 bar on 528N-8, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 528N Series hose?",
+          "a": "The maker states 3,500 to 5,000 psi (241 to 345 bar) for the 528N Series. By part number: 345 bar on 528N-4, 276 bar on 528N-6, 241 bar on 528N-8. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 528N Series hose made from?",
+          "a": "The inner tube is nylon and the cover polyurethane, reinforced with aramid fibres, as the listing states, and the hose is described as non-conductive. The listing names hydraulics, air, lubrication, water and nitrogen gas as media."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 528N Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 528N Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 528N Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 528N Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 528N Series hose?",
+          "a": "Route the 528N hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 528N Series compare with the Parker 520N Series?",
+          "a": "The Parker 528N is the non-conductive hose, in 3 part numbers, whereas the [Parker 520N Series High Pressure Thermoplastic Hydraulic Hoses](/p/parker-520n-series-high-pressure-thermoplastic-hydraulic-hoses) is the standard 520N in 5. Both are rated up to 345 bar; choose the 528N where the hose must not carry current."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 528N Series ship from, and what are the export details?",
+          "a": "The Parker 528N Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 528N Series hose for export from Dubai?",
+          "a": "Yes, we stock the Parker 528N Series hose in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-53dm-series-thermoplastic-low-temperature-constant-pressure-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 53DM Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 53DM Series is a low-temperature thermoplastic hose rated at constant pressure across its sizes. It is listed in 4 part numbers and the maker states 3,000 psi (207 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 53DM Series, such as 53DM-10?",
+          "a": "In 53DM-10 the 53DM is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -10 is 5/8 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 53DM Series come in?",
+          "a": "The Parker 53DM Series is listed in 4 part numbers: 53DM-10 (207 bar), 53DM-4 (207 bar), 53DM-6 (207 bar), 53DM-8 (207 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 53DM hose for my pressure?",
+          "a": "Every size of the 53DM Series carries the same figure, 207 bar, so choose by bore and length: take the dash number from the part number and match it to the hose bore you need, then add the fitting size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 53DM Series hose?",
+          "a": "The maker states 3,000 psi (207 bar) for the 53DM Series, which is 207 bar on every part number listed. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 53DM Series hose made from?",
+          "a": "The listing gives the material as thermoplastic and describes the hose as low-temperature, constant-pressure. It states no temperature limits, so ask us for the working range before using it in the cold."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 53DM Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 53DM Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 53DM Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 53DM Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 53DM Series hose?",
+          "a": "Route the 53DM hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 53DM Series compare with the Parker 55LT Series?",
+          "a": "The Parker 53DM holds one pressure, 207 bar, at every size, whereas the [Parker 55LT Series Medium Pressure Thermoplastic Low Temperature Hoses](/p/parker-55lt-series-medium-pressure-thermoplastic-low-temperature-hoses) is a medium-pressure low-temperature hose rated 138 to 207 bar by size and listed from -40°F to +212°F. Choose the 53DM where one rating across sizes is wanted."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 53DM Series ship from, and what are the export details?",
+          "a": "The Parker 53DM Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 53DM Series hose for export from Dubai?",
+          "a": "Yes. Stock of the Parker 53DM Series hose sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as 53DM-10 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-540n-series-medium-pressure-thermoplastic-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 540N Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 540N Series is a medium-pressure thermoplastic hydraulic hose from Parker's Parflex division. It is listed in 6 part numbers and the maker states 1,250 to 3,000 psi (86 to 207 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 540N Series, such as 540N-12?",
+          "a": "In 540N-12 the 540N is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -12 is 3/4 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 540N Series come in?",
+          "a": "The Parker 540N Series is listed in 6 part numbers: 540N-12 (86 bar), 540N-8 (138 bar), 540N-6 (155 bar), 540N-5 (172 bar), 540N-2 (207 bar), 540N-3 (207 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 540N hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 540N rating falls from 207 bar on 540N-2 to 86 bar on 540N-12, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 540N Series hose?",
+          "a": "The maker states 1,250 to 3,000 psi (86 to 207 bar) for the 540N Series. By part number: 207 bar on 540N-2, 207 bar on 540N-3, 172 bar on 540N-5, 155 bar on 540N-6, 138 bar on 540N-8, 86 bar on 540N-12. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 540N Series hose made from?",
+          "a": "The listing gives the material as thermoplastic. Ask us for the tube and cover materials and for the fluid compatibility if you use anything other than mineral hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 540N Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 540N Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 540N Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 540N Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 540N Series hose?",
+          "a": "Route the 540N hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 540N Series compare with the Parker 540P Series?",
+          "a": "The Parker 540N is the hydraulic-oil hose, rated 86 to 207 bar in 6 sizes, whereas the [Parker 540P Series Medium Pressure Thermoplastic Water Hoses](/p/parker-540p-series-medium-pressure-thermoplastic-water-hoses) is the water version, rated 138 to 190 bar in 3 sizes. Choose the 540P for water and the 540N for hydraulic oil."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 540N Series ship from, and what are the export details?",
+          "a": "The Parker 540N Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 540N Series hose for export from Dubai?",
+          "a": "Yes. We hold the Parker 540N Series hose at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-540p-series-medium-pressure-thermoplastic-water-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 540P Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 540P Series is a medium-pressure thermoplastic water hose from Parker's Parflex division, with a working temperature of -10°F to +150°F. It is listed in 3 part numbers and the maker states 2,000 to 2,750 psi (138 to 190 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 540P Series, such as 540P-8?",
+          "a": "In 540P-8 the 540P is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -8 is 1/2 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 540P Series come in?",
+          "a": "The Parker 540P Series is listed in 3 part numbers: 540P-8 (138 bar), 540P-6 (155 bar), 540P-4 (190 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 540P hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 540P rating falls from 190 bar on 540P-4 to 138 bar on 540P-8, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 540P Series hose?",
+          "a": "The maker states 2,000 to 2,750 psi (138 to 190 bar) for the 540P Series. By part number: 190 bar on 540P-4, 155 bar on 540P-6, 138 bar on 540P-8. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 540P Series hose made from?",
+          "a": "The listing gives the material as thermoplastic, the type as specialty and a working temperature of -10°F to +150°F. It is sold as a water hose, so check the fluid and temperature before using it on anything else."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 540P Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 540P Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 540P Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 540P Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 540P Series hose?",
+          "a": "Route the 540P hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 540P Series compare with the Parker 540N Series?",
+          "a": "The Parker 540P is the water hose, in 3 sizes, and the [Parker 540N Series Medium Pressure Thermoplastic Hydraulic Hoses](/p/parker-540n-series-medium-pressure-thermoplastic-hydraulic-hoses) is the hydraulic-oil hose, in 6. Choose the 540P for water at up to 190 bar and +150°F, and the 540N for hydraulic oil."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 540P Series ship from, and what are the export details?",
+          "a": "The Parker 540P Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 540P Series hose for export from Dubai?",
+          "a": "Yes. We keep the Parker 540P Series hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 540P-8 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-55lt-series-medium-pressure-thermoplastic-low-temperature-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 55LT Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 55LT Series is a medium-pressure low-temperature thermoplastic hose with a working range of -40°F to +212°F, for material handling, forestry and cold applications. It is listed in 9 part numbers and the maker states 2,000 to 3,000 psi (138 to 207 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 55LT Series, such as 55LT-8?",
+          "a": "In 55LT-8 the 55LT is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -8 is 1/2 inch hose. 55LT-8-8 repeats the number and appears as a second row of the same size with the same pressure, so quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 55LT Series come in?",
+          "a": "The Parker 55LT Series is listed in 9 part numbers: 55LT-8 (138 bar), 55LT-8-8 (138 bar), 55LT-6 (155 bar), 55LT-6-6 (155 bar), 55LT-5 (172 bar), 55LT-5-5 (172 bar), 55LT-2 (207 bar), 55LT-4 (207 bar), 55LT-4-4 (207 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 55LT hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 55LT rating falls from 207 bar on 55LT-2 to 138 bar on 55LT-8-8, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 55LT Series hose?",
+          "a": "The maker states 2,000 to 3,000 psi (138 to 207 bar) for the 55LT Series. By part number: 207 bar on 55LT-2, 207 bar on 55LT-4, 207 bar on 55LT-4-4, 172 bar on 55LT-5, 172 bar on 55LT-5-5, 155 bar on 55LT-6. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 55LT Series hose made from?",
+          "a": "The listing gives the material as thermoplastic for cold applications, with a working temperature of -40°F to +212°F. It names Parflex 56 Series fittings as compatible, and material handling, forestry, construction and pneumatics among the uses."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 55LT Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 55LT Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 55LT Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 55LT Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 55LT Series hose?",
+          "a": "Route the 55LT hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 55LT Series compare with the Parker 53DM Series?",
+          "a": "The Parker 55LT is rated 138 to 207 bar by size and states -40°F to +212°F, whereas the [Parker 53DM Series Thermoplastic Low Temperature Constant Pressure Hoses](/p/parker-53dm-series-thermoplastic-low-temperature-constant-pressure-hoses) is rated 207 bar at every size and states no temperature range. Choose the 55LT where the cold working range matters."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 55LT Series ship from, and what are the export details?",
+          "a": "The Parker 55LT Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 55LT Series hose for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Parker 55LT Series hose, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-575x-series-high-pressure-thermoplastic-fast-response-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 575X Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 575X Series is a high-pressure thermoplastic fast-response hose with a nylon inner tube and polyurethane cover, for oilfield and offshore drilling service. It is listed in 4 part numbers and the maker states 5,000 psi (345 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 575X Series, such as 575X-4?",
+          "a": "In 575X-4 the 575X is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -4 is 1/4 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 575X Series come in?",
+          "a": "The Parker 575X Series is listed in 4 part numbers: 575X-4 (345 bar), 575X-6 (345 bar), 575X-12 (345 bar), 575X-16 (345 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 575X hose for my pressure?",
+          "a": "Every size of the 575X Series carries the same figure, 345 bar, so choose by bore and length: take the dash number from the part number and match it to the hose bore you need, then add the fitting size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 575X Series hose?",
+          "a": "The maker states 5,000 psi (345 bar) for the 575X Series, which is 345 bar on every part number listed. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 575X Series hose made from?",
+          "a": "The inner tube is nylon and the cover polyurethane, reinforced with aramid fibres, as the listing states, and sold in bulk lengths. It names air, chemicals, lubrication, hydraulics and water as media."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 575X Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 575X Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 575X Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 575X Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 575X Series hose?",
+          "a": "Route the 575X hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 575X Series compare with the Parker 520N Series?",
+          "a": "The Parker 575X is rated 345 bar at all 4 sizes and is the fast-response hose for oilfield service, whereas the [Parker 520N Series High Pressure Thermoplastic Hydraulic Hoses](/p/parker-520n-series-high-pressure-thermoplastic-hydraulic-hoses) is rated 241 to 345 bar by size. Choose the 575X where quick pressure response is the requirement."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 575X Series ship from, and what are the export details?",
+          "a": "The Parker 575X Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 575X Series hose for export from Dubai?",
+          "a": "Yes. The Parker 575X Series hose is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 575X-4 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-580n-series-high-pressure-thermoplastic-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 580N Series thermoplastic hose and what is it used for?",
+          "a": "The Parker 580N Series is a high-pressure thermoplastic hydraulic hose from Parker's Parflex division, in the larger sizes. It is listed in 3 part numbers and the maker states 2,000 to 3,500 psi (138 to 241 bar), by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker 580N Series, such as 580N-16?",
+          "a": "In 580N-16 the 580N is the series and the number after it is the hose size as a dash number in sixteenths of an inch, so -16 is 1 inch hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 580N Series come in?",
+          "a": "The Parker 580N Series is listed in 3 part numbers: 580N-16 (138 bar), 580N-12 (155 bar), 580N-8 (241 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker 580N hose for my pressure?",
+          "a": "Choose the bore from the flow you need and then read the pressure for that size: the 580N rating falls from 241 bar on 580N-8 to 138 bar on 580N-16, so a bigger hose carries less pressure. Never use the figure of a smaller size for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker 580N Series hose?",
+          "a": "The maker states 2,000 to 3,500 psi (138 to 241 bar) for the 580N Series. By part number: 241 bar on 580N-8, 155 bar on 580N-12, 138 bar on 580N-16. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker 580N Series hose made from?",
+          "a": "The listing gives the material as thermoplastic. Ask us for the tube and cover materials and for the fluid compatibility if you use anything other than mineral hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker 580N Series hose follow?",
+          "a": "The listing states no hose standard for the Parker 580N Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker 580N Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the 580N Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker 580N Series hose?",
+          "a": "Route the 580N hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 580N Series compare with the Parker 520N Series?",
+          "a": "The Parker 580N covers the larger sizes, -8, -12 and -16, at 138 to 241 bar, whereas the [Parker 520N Series High Pressure Thermoplastic Hydraulic Hoses](/p/parker-520n-series-high-pressure-thermoplastic-hydraulic-hoses) covers the smaller sizes at 241 to 345 bar. Choose the 580N where the bore is above 1/2 inch."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 580N Series ship from, and what are the export details?",
+          "a": "The Parker 580N Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 580N Series hose for export from Dubai?",
+          "a": "Yes, we stock the Parker 580N Series hose in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-b9-series-low-pressure-thermoplastic-fuel-transfer-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker B9 Series thermoplastic hose and what is it used for?",
+          "a": "The Parker B9 Series is a low-pressure thermoplastic fuel transfer hose, rated 250 psi (17 bar) at every size. It is listed in 3 part numbers and the maker states 250 psi (17 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Parker B9 Series, such as B904?",
+          "a": "The three part numbers B904, B905 and B906 are consecutive sizes of the B9 Series; the Sizes & Part Numbers table lists them, and the listing gives each the same 17 bar rating."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker B9 Series come in?",
+          "a": "The Parker B9 Series is listed in 3 part numbers: B904 (17 bar), B905 (17 bar), B906 (17 bar). The Sizes & Part Numbers table lists each with its pressure, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Parker B9 hose for my pressure?",
+          "a": "Every size of the B9 Series carries the same figure, 17 bar, so choose by bore and length: take the dash number from the part number and match it to the hose bore you need, then add the fitting size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Parker B9 Series hose?",
+          "a": "The maker states 250 psi (17 bar) for the B9 Series, which is 17 bar on every part number listed. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is Parker B9 Series hose made from?",
+          "a": "The listing gives the material as thermoplastic and the type as fuel hose, rated 250 psi (17 bar). Check the fuel type, including any ethanol blends, with us before use."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does Parker B9 Series hose follow?",
+          "a": "The listing states no hose standard for the Parker B9 Series; it is a Parflex-division thermoplastic hose. Select by the working pressure in the size table, and ask us if your application calls for a standard such as SAE 100R7 or R8, which our R7 and R8 listings cover."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings go on Parker B9 Series hose?",
+          "a": "The hose takes the end fittings that Parker approves for the B9 Series, and fittings must come from that series because a crimped assembly is rated only as a matched combination. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) and the [hydraulic fittings shelf](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install Parker B9 Series hose?",
+          "a": "Route the B9 hose with the bend radius and without twist that thermoplastic hose needs, and keep it away from heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks; replace any hose with a kinked or damaged cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker B9 Series compare with the Parker 540P Series?",
+          "a": "The Parker B9 is for fuel transfer at 17 bar, whereas the [Parker 540P Series Medium Pressure Thermoplastic Water Hoses](/p/parker-540p-series-medium-pressure-thermoplastic-water-hoses) is for water at up to 190 bar. Choose the B9 for fuel at low pressure and check the fluid before using either on a different medium."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker B9 Series ship from, and what are the export details?",
+          "a": "The Parker B9 Series ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both for the lot you receive on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker B9 Series hose for export from Dubai?",
+          "a": "Yes. Stock of the Parker B9 Series hose sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as B904 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r7-thermoplastic-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R7 thermoplastic hydraulic hose (SAE 100R7) used for?",
+          "a": "The R7 thermoplastic hydraulic hose is a lightweight single-fibre-braid hose to SAE 100R7, with a polyamide tube and a polyurethane cover, used as a tighter-bending alternative to rubber R1 1SN hose. It works up to 210 bar at -03 and from -40°C to 93°C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I specify the size of R7 thermoplastic hose?",
+          "a": "This listing carries no part-number table, so quote the SAE 100R7 grade and the dash size. The dash number is the hose bore in sixteenths of an inch: -3 is 3/16 inch, -8 is 1/2 inch and -16 is 1 inch, which are the bores of 1/8 inch to 1 inch (DN3 to DN25) the listing gives."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does R7 thermoplastic hose come in?",
+          "a": "The R7 hose is listed in bores from 1/8 inch to 1 inch (DN3 to DN25), with outside diameters of 10 to 32.5 mm from -03 to -16. No size table is shown on this page, so send us the bore and length you need and we will quote."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the bore of R7 thermoplastic hydraulic hose?",
+          "a": "Choose the bore for the flow you need and read the pressure for that size: the listing gives 210 bar at -03 down to 70 bar at -16, so pressure falls as the bore rises. Also check the minimum bend radius, which is 30 mm at -03 and 200 mm at -16."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R7 thermoplastic hydraulic hose?",
+          "a": "The R7 hose is rated 210 bar at -03, falling to 70 bar at -16, with a minimum burst of 840 bar, a safety factor of 4:1. Take the working pressure for your bore, not the figure for the smallest size, and use fittings rated to match."
+        },
+        {
+          "slot": "F",
+          "q": "What is R7 thermoplastic hydraulic hose made from?",
+          "a": "The R7 hose has a polyamide (nylon) tube resistant to hydraulic fluid, one layer of synthetic-fibre braid and a smooth polyurethane cover that resists abrasion and weather. The cover is listed as non-conductive; ask for test data if you need it for work near live equipment."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does R7 thermoplastic hose conform to?",
+          "a": "The R7 hose conforms to SAE 100R7, the single-fibre-braid thermoplastic hose in the SAE 100R series that SAE J517 sets out. The listing states a safety factor of 4:1 and no approval beyond that grade."
+        },
+        {
+          "slot": "H",
+          "q": "Which end fittings suit R7 thermoplastic hose?",
+          "a": "The hose takes end fittings of the series made for thermoplastic hose, crimped or reusable, with a termination such as JIC 37°, ORFS, BSP, NPT or metric 24° as you specify. The [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) explains the match, and the [hydraulic fittings shelf](/c/hydraulic-fittings) lists the ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install R7 thermoplastic hose?",
+          "a": "Route the R7 hose with at least the minimum bend radius for its bore and without twist, and keep it clear of heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) covers the checks; ask us for assemblies if you want the ends crimped for you."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between R7 and R8 thermoplastic hydraulic hose?",
+          "a": "The R7 is a single-braid hose rated up to 210 bar, whereas the [R8 Thermoplastic Hydraulic Hose](/p/r8-thermoplastic-hydraulic-hose) is the double-braid R8, rated up to 350 bar. Choose the R7 for lighter, tighter-bending small-bore lines and the R8 where R2-class pressure is needed."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R7 thermoplastic hose ship from, and what are the export details?",
+          "a": "The R7 hose ships from our warehouse in Dubai, UAE, to buyers worldwide. We do not state a country of origin on this page: it is confirmed on the quotation and the commercial invoice for the lot you receive, together with the HS code."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R7 thermoplastic hydraulic hose for export from Dubai?",
+          "a": "Yes. We hold the R7 thermoplastic hydraulic hose at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "r8-thermoplastic-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R8 thermoplastic hydraulic hose (SAE 100R8) used for?",
+          "a": "The R8 thermoplastic hydraulic hose is a double-fibre-braid hose to SAE 100R8 with R2-class working pressure, a polyamide tube and a polyurethane cover. It works up to 350 bar at the smallest bore and from -40°C to 93°C, and is lighter than rubber hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I specify the size of R8 thermoplastic hose?",
+          "a": "This listing carries no part-number table, so quote the SAE 100R8 grade and the dash size. The dash number is the hose bore in sixteenths of an inch: -3 is 3/16 inch, -8 is 1/2 inch and -16 is 1 inch, within the 1/8 inch to 1 inch (DN3 to DN25) the listing gives."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does R8 thermoplastic hose come in?",
+          "a": "The R8 hose is listed in bores from 1/8 inch to 1 inch (DN3 to DN25). No size table is shown on this page, so send us the bore, length and fitting ends you need and we will quote; request a size-specific datasheet for the exact figures."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the bore of R8 thermoplastic hydraulic hose?",
+          "a": "Choose the bore for the flow you need and then the pressure for that size, because the 350 bar figure applies at the smallest bore and the pressure falls as the bore rises. Ask for the size-specific datasheet before you specify."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R8 thermoplastic hydraulic hose?",
+          "a": "The R8 hose is rated up to 350 bar at the smallest bore, with a minimum burst of 1400 bar, a safety factor of 4:1, and the pressure scales down at larger bores. The listing gives no figure per size, so ask us for the datasheet for your bore."
+        },
+        {
+          "slot": "F",
+          "q": "What is R8 thermoplastic hydraulic hose made from?",
+          "a": "The R8 hose has a polyamide (nylon) tube resistant to hydraulic fluid, two layers of synthetic-fibre braid and a smooth polyurethane cover that resists abrasion and weather. The cover is listed as non-conductive; ask for test data if you need it for work near live equipment."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does R8 thermoplastic hose conform to?",
+          "a": "The R8 hose conforms to SAE 100R8, the double-fibre-braid thermoplastic hose in the SAE 100R series that SAE J517 sets out. The listing states a safety factor of 4:1 and no approval beyond that grade."
+        },
+        {
+          "slot": "H",
+          "q": "Which end fittings suit R8 thermoplastic hose?",
+          "a": "The hose takes end fittings of the series made for thermoplastic hose, crimped or reusable, with a termination such as JIC 37°, ORFS, BSP, NPT or metric 24° as you specify. The [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) explains the match, and the [hydraulic fittings shelf](/c/hydraulic-fittings) lists the ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and install R8 thermoplastic hose?",
+          "a": "Route the R8 hose with at least the minimum bend radius for its bore and without twist, and keep it clear of heat and abrasion. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) covers the checks; ask us for assemblies if you want the ends crimped for you."
+        },
+        {
+          "slot": "K",
+          "q": "How does R8 thermoplastic hose compare with R7 thermoplastic hose?",
+          "a": "The R8 is a double-braid hose rated up to 350 bar, whereas the [R7 Thermoplastic Hydraulic Hose](/p/r7-thermoplastic-hydraulic-hose) is the single-braid R7, rated up to 210 bar. Choose the R8 where R2-class pressure is needed in a lighter hose, including as a replacement for rubber R2 2SN where flex life and weight matter, and the R7 for lower pressures."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R8 thermoplastic hose ship from, and what are the export details?",
+          "a": "The R8 hose ships from our warehouse in Dubai, UAE, to buyers worldwide. We do not state a country of origin on this page: it is confirmed on the quotation and the commercial invoice for the lot you receive, together with the HS code."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R8 thermoplastic hydraulic hose for export from Dubai?",
+          "a": "Yes. We keep the R8 thermoplastic hydraulic hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

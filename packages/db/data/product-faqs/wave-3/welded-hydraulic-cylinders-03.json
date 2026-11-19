@@ -1,0 +1,1124 @@
+{
+  "family": "welded-hydraulic-cylinders-03",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "magister-wbcn-welded-ag-clevis-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Magister WBCN Welded Ag Clevis 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.125\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 8\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WBCN Welded Ag Clevis 2.5\" bore cylinder part numbers run from WBCN2.5×8 to WBCN2.5×24 across 9 listed part numbers, one per stroke and rod combination. WBCN2.5×8 is the 8\" stroke and WBCN2.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 2.5\" bore cylinder comes in eight stroke lengths from 8\" to 24\", including 8\", 10\", 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WBCN Welded Ag Clevis 2.5\" bore cylinder runs from 18.25\" to 34.25\" and extended length from 26.25\" to 58.25\", depending on stroke. For example the 8\" stroke is 18.25\" retracted and 26.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WBCN Welded Ag Clevis 2.5\" bore cylinder uses the 1.125\" rod, and the listed column load is 5,500 to 12,270 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WBCN Welded Ag Clevis 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WBCN Welded Ag Clevis 2.5\" bore cylinder is listed as 5,500 to 12,270 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WBCN Welded Ag Clevis 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WBCN Welded Ag Clevis 2.5\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WBCN Welded Ag Clevis 2.5\" bore cylinder lists 5,500 to 12,270 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded ag clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 5,500 to 12,270 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. Magister WBCN Welded Ag Clevis 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wbcn-welded-ag-clevis-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Magister WBCN Welded Ag Clevis 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.125\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 8\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Magister WBCN Welded Ag Clevis 2\" bore cylinder part numbers run from WBCN2X8 to WBCN2X24 across 9 listed part numbers, one per stroke and rod combination. WBCN2X8 is the 8\" stroke and WBCN2X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 2\" bore cylinder comes in eight stroke lengths from 8\" to 24\", including 8\", 10\", 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WBCN Welded Ag Clevis 2\" bore cylinder runs from 18.25\" to 34.25\" and extended length from 26.25\" to 58.25\", depending on stroke. For example the 8\" stroke is 18.25\" retracted and 26.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WBCN Welded Ag Clevis 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 6,950 to 7,850 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WBCN Welded Ag Clevis 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WBCN Welded Ag Clevis 2\" bore cylinder is listed as 6,950 to 7,850 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WBCN Welded Ag Clevis 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WBCN Welded Ag Clevis 2\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WBCN Welded Ag Clevis 2\" bore cylinder lists 6,950 to 7,850 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2.5\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded ag clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 6,950 to 7,850 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WBCN Welded Ag Clevis 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wbcn-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore do, and what is it for?",
+          "a": "Magister WBCN Welded Ag Clevis 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3.5\" bore and a 1.25\" or 1.5\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 8\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Magister WBCN Welded Ag Clevis 3.5\" bore cylinder part numbers run from WBCN3.5×8 to WBCN3.5×24 across 9 listed part numbers, one per stroke and rod combination. WBCN3.5×8 is the 8\" stroke and WBCN3.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 3.5\" bore cylinder comes in eight stroke lengths from 8\" to 24\", including 8\", 10\", 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WBCN Welded Ag Clevis 3.5\" bore cylinder runs from 18.25\" to 34.25\" and extended length from 26.25\" to 58.25\", depending on stroke. For example the 8\" stroke is 18.25\" retracted and 26.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 3.5\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (eight part numbers, column load 10,900 to 24,000 lbs); the 1.5\" rod (one part number, column load 16,600 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WBCN Welded Ag Clevis 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Magister WBCN Welded Ag Clevis 3.5\" bore cylinder is listed as 10,900 to 24,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Magister WBCN Welded Ag Clevis 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Magister WBCN Welded Ag Clevis 3.5\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Magister WBCN Welded Ag Clevis 3.5\" bore cylinder lists 10,900 to 24,000 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded ag clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 10,900 to 24,000 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WBCN Welded Ag Clevis 3.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wbcn-welded-ag-clevis-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore do, and what is it for?",
+          "a": "Magister WBCN Welded Ag Clevis 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.25\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 8\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Magister WBCN Welded Ag Clevis 3\" bore cylinder part numbers run from WBCN3X8 to WBCN3X24 across 9 listed part numbers, one per stroke and rod combination. WBCN3X8 is the 8\" stroke and WBCN3X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 3\" bore cylinder comes in eight stroke lengths from 8\" to 24\", including 8\", 10\", 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WBCN Welded Ag Clevis 3\" bore cylinder runs from 18.25\" to 34.25\" and extended length from 26.25\" to 58.25\", depending on stroke. For example the 8\" stroke is 18.25\" retracted and 26.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister WBCN Welded Ag Clevis 3\" bore cylinder uses the 1.25\" rod, and the listed column load is 8,050 to 17,670 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WBCN Welded Ag Clevis 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister WBCN Welded Ag Clevis 3\" bore cylinder is listed as 8,050 to 17,670 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister WBCN Welded Ag Clevis 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister WBCN Welded Ag Clevis 3\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister WBCN Welded Ag Clevis 3\" bore cylinder lists 8,050 to 17,670 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded ag clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 8,050 to 17,670 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3\" Bore in Dubai for export?",
+          "a": "Yes. Magister WBCN Welded Ag Clevis 3\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wbcn-welded-ag-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Magister WBCN Welded Ag Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 4\" bore and a 1.5\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eight stroke lengths from 8\" to 24\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Magister WBCN Welded Ag Clevis 4\" bore cylinder part numbers run from WBCN4X8 to WBCN4X24 across 9 listed part numbers, one per stroke and rod combination. WBCN4X8 is the 8\" stroke and WBCN4X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Magister WBCN Welded Ag Clevis 4\" bore cylinder comes in eight stroke lengths from 8\" to 24\", including 8\", 10\", 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WBCN Welded Ag Clevis 4\" bore cylinder runs from 18.25\" to 34.25\" and extended length from 26.25\" to 58.25\", depending on stroke. For example the 8\" stroke is 18.25\" retracted and 26.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Magister WBCN Welded Ag Clevis 4\" bore cylinder uses the 1.5\" rod, and the listed column load is 16,800 to 31,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WBCN Welded Ag Clevis 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Magister WBCN Welded Ag Clevis 4\" bore cylinder is listed as 16,800 to 31,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Magister WBCN Welded Ag Clevis 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Magister WBCN Welded Ag Clevis 4\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Magister WBCN Welded Ag Clevis 4\" bore cylinder lists 16,800 to 31,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 3.5\" Bore](/p/magister-wbcn-welded-ag-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded ag clevis pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 16,800 to 31,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WBCN Welded Ag Clevis Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WBCN Welded Ag Clevis 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wcln-welded-clevis-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Magister WCLN Welded Clevis 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.25\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WCLN Welded Clevis 2.5\" bore cylinder part numbers run from WCLN2.5×4 to WCLN2.5×36 across 13 listed part numbers, one per stroke and rod combination. WCLN2.5×4 is the 4\" stroke and WCLN2.5×36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WCLN Welded Clevis 2.5\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCLN Welded Clevis 2.5\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WCLN Welded Clevis 2.5\" bore cylinder uses the 1.25\" rod, and the listed column load is 4,000 to 14,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCLN Welded Clevis 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WCLN Welded Clevis 2.5\" bore cylinder is listed as 4,000 to 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WCLN Welded Clevis 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WCLN Welded Clevis 2.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WCLN Welded Clevis 2.5\" bore cylinder lists 4,000 to 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore](/p/magister-wcln-welded-clevis-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 4,000 to 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WCLN Welded Clevis 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wcln-welded-clevis-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Magister WCLN Welded Clevis 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister WCLN Welded Clevis 2\" bore cylinder part numbers run from WCLN2X4 to WCLN2X36 across 13 listed part numbers, one per stroke and rod combination. WCLN2X4 is the 4\" stroke and WCLN2X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WCLN Welded Clevis 2\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCLN Welded Clevis 2\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WCLN Welded Clevis 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 3,900 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCLN Welded Clevis 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WCLN Welded Clevis 2\" bore cylinder is listed as 3,900 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WCLN Welded Clevis 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WCLN Welded Clevis 2\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WCLN Welded Clevis 2\" bore cylinder lists 3,900 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WCLN Welded Clevis Hydraulic Cylinder, 2.5\" Bore](/p/magister-wcln-welded-clevis-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 3,900 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WCLN Welded Clevis Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WCLN Welded Clevis 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wcln-welded-clevis-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore and what is it used for?",
+          "a": "Magister WCLN Welded Clevis 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3.5\" bore and a 1.75\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Magister WCLN Welded Clevis 3.5\" bore cylinder part numbers run from WCLN3.5×4 to WCLN3.5×36 across 13 listed part numbers, one per stroke and rod combination. WCLN3.5×4 is the 4\" stroke and WCLN3.5×36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Magister WCLN Welded Clevis 3.5\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCLN Welded Clevis 3.5\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Magister WCLN Welded Clevis 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 15,000 to 28,800 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCLN Welded Clevis 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Magister WCLN Welded Clevis 3.5\" bore cylinder is listed as 15,000 to 28,800 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Magister WCLN Welded Clevis 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Magister WCLN Welded Clevis 3.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Magister WCLN Welded Clevis 3.5\" bore cylinder lists 15,000 to 28,800 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore](/p/magister-wcln-welded-clevis-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 15,000 to 28,800 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister WCLN Welded Clevis 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wcln-welded-clevis-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore do, and what is it for?",
+          "a": "Magister WCLN Welded Clevis 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.5\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Magister WCLN Welded Clevis 3\" bore cylinder part numbers run from WCLN3X4 to WCLN3X36 across 13 listed part numbers, one per stroke and rod combination. WCLN3X4 is the 4\" stroke and WCLN3X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister WCLN Welded Clevis 3\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCLN Welded Clevis 3\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister WCLN Welded Clevis 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,200 to 21,200 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCLN Welded Clevis 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister WCLN Welded Clevis 3\" bore cylinder is listed as 8,200 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister WCLN Welded Clevis 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister WCLN Welded Clevis 3\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister WCLN Welded Clevis 3\" bore cylinder lists 8,200 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/magister-wcln-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded clevis pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,200 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCLN Welded Clevis Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Magister WCLN Welded Clevis 3\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wcln-welded-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Magister WCLN Welded Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 4\" bore and a 2\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in thirteen stroke lengths from 4\" to 36\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Magister WCLN Welded Clevis 4\" bore cylinder part numbers run from WCLN4X4 to WCLN4X36 across 14 listed part numbers, one per stroke and rod combination. WCLN4X4 is the 4\" stroke and WCLN4X36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Magister WCLN Welded Clevis 4\" bore cylinder comes in thirteen stroke lengths from 4\" to 36\", including 4\", 8\", 14\", 18\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCLN Welded Clevis 4\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Magister WCLN Welded Clevis 4\" bore cylinder uses the 2\" rod, and the listed column load is 26,000 to 37,000 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCLN Welded Clevis 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Magister WCLN Welded Clevis 4\" bore cylinder is listed as 26,000 to 37,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Magister WCLN Welded Clevis 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Magister WCLN Welded Clevis 4\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Magister WCLN Welded Clevis 4\" bore cylinder lists 26,000 to 37,000 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Magister WCLN Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/magister-wcln-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded clevis pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 26,000 to 37,000 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCLN Welded Clevis Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WCLN Welded Clevis 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore and what is it used for?",
+          "a": "Magister WCTN Welded Cross Tube 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 1.5\" bore and a 1\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in eleven stroke lengths from 4\" to 24\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 1.5\" bore cylinder part numbers run from WCTN1.5×4 to WCTN1.5×24 across 11 listed part numbers, one per stroke and rod combination. WCTN1.5×4 is the 4\" stroke and WCTN1.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 1.5\" bore cylinder comes in eleven stroke lengths from 4\" to 24\", including 4\", 8\", 12\", 16\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 1.5\" bore cylinder runs from 12\" to 32\" and extended length from 16\" to 56\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 24\" stroke is 32\" and 56\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 1.5\" bore cylinder uses the 1\" rod, and the listed column load is 4,210 to 5,300 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 1.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 1.5\" bore cylinder is listed as 4,210 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 1.5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 1.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 1.5\" bore cylinder lists 4,210 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 4,210 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WCTN Welded Cross Tube 1.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Magister WCTN Welded Cross Tube 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in twenty stroke lengths from 4\" to 60\", 20 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 2.5\" bore cylinder part numbers run from WCTN2.5×4 to WCTN2.5×60 across 20 listed part numbers, one per stroke and rod combination. WCTN2.5×4 is the 4\" stroke and WCTN2.5×60 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 2.5\" bore cylinder comes in twenty stroke lengths from 4\" to 60\", including 4\", 12\", 20\", 26\", 36\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 2.5\" bore cylinder runs from 12\" to 68\" and extended length from 16\" to 128\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 60\" stroke is 68\" and 128\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 4,200 to 14,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 2.5\" bore cylinder is listed as 4,200 to 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 2.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 2.5\" bore cylinder lists 4,200 to 14,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 4,200 to 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Magister WCTN Welded Cross Tube 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Magister WCTN Welded Cross Tube 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seventeen stroke lengths from 4\" to 48\", 17 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 2\" bore cylinder part numbers run from WCTN2X4 to WCTN2X48 across 17 listed part numbers, one per stroke and rod combination. WCTN2X4 is the 4\" stroke and WCTN2X48 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 2\" bore cylinder comes in seventeen stroke lengths from 4\" to 48\", including 4\", 10\", 16\", 24\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 2\" bore cylinder runs from 12\" to 56\" and extended length from 16\" to 104\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 48\" stroke is 56\" and 104\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 3,100 to 9,400 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 2\" bore cylinder is listed as 3,100 to 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 2\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 2\" bore cylinder lists 3,100 to 9,400 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 3,100 to 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WCTN Welded Cross Tube 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore do, and what is it for?",
+          "a": "Magister WCTN Welded Cross Tube 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3.5\" bore and a 1.75\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fourteen stroke lengths from 4\" to 36\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Magister WCTN Welded Cross Tube 3.5\" bore cylinder part numbers run from WCTN3.5×4 to WCTN3.5×36 across 14 listed part numbers, one per stroke and rod combination. WCTN3.5×4 is the 4\" stroke and WCTN3.5×36 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 3.5\" bore cylinder comes in fourteen stroke lengths from 4\" to 36\", including 4\", 10\", 14\", 20\", 28\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 3.5\" bore cylinder runs from 14\" to 46\" and extended length from 18\" to 82\", depending on stroke. For example the 4\" stroke is 14\" retracted and 18\" extended, and the 36\" stroke is 46\" and 82\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 15,300 to 28,800 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 3.5\" bore cylinder is listed as 15,300 to 28,800 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 3.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 3.5\" bore cylinder lists 15,300 to 28,800 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 15,300 to 28,800 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore in Dubai for export?",
+          "a": "Yes. Magister WCTN Welded Cross Tube 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Magister WCTN Welded Cross Tube 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in nineteen stroke lengths from 4\" to 48\", 19 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 3\" bore cylinder part numbers run from WCTN3X4 to WCTN3X48 across 19 listed part numbers, one per stroke and rod combination. WCTN3X4 is the 4\" stroke and WCTN3X48 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 3\" bore cylinder comes in nineteen stroke lengths from 4\" to 48\", including 4\", 12\", 18\", 26\", 32\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 3\" bore cylinder runs from 12\" to 56\" and extended length from 16\" to 104\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 48\" stroke is 56\" and 104\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 6,200 to 21,000 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 3\" bore cylinder is listed as 6,200 to 21,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 3\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 3\" bore cylinder lists 6,200 to 21,000 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 6,200 to 21,000 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WCTN Welded Cross Tube 3\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore and what is it used for?",
+          "a": "Magister WCTN Welded Cross Tube 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 4\" bore and a 2\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seventeen stroke lengths from 4\" to 48\", 17 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Magister WCTN Welded Cross Tube 4\" bore cylinder part numbers run from WCTN4X4 to WCTN4X48 across 17 listed part numbers, one per stroke and rod combination. WCTN4X4 is the 4\" stroke and WCTN4X48 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 4\" bore cylinder comes in seventeen stroke lengths from 4\" to 48\", including 4\", 10\", 16\", 28\", 36\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 4\" bore cylinder runs from 14\" to 58\" and extended length from 18\" to 106\", depending on stroke. For example the 4\" stroke is 14\" retracted and 18\" extended, and the 48\" stroke is 58\" and 106\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 4\" bore cylinder uses the 2\" rod, and the listed column load is 18,000 to 37,700 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 4\" bore cylinder is listed as 18,000 to 37,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 4\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 4\" bore cylinder lists 18,000 to 37,700 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded cross tube pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 18,000 to 37,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 4\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Magister WCTN Welded Cross Tube 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wctn-welded-cross-tube-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore do, and what is it for?",
+          "a": "Magister WCTN Welded Cross Tube 5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 5\" bore and a 2.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in seven stroke lengths from 12\" to 48\", 7 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore come in?",
+          "a": "The Magister WCTN Welded Cross Tube 5\" bore cylinder part numbers run from WCTN5X12 to WCTN5X48 across 7 listed part numbers, one per stroke and rod combination. WCTN5X12 is the 12\" stroke and WCTN5X48 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Magister WCTN Welded Cross Tube 5\" bore cylinder comes in seven stroke lengths from 12\" to 48\", including 12\", 16\", 20\", 24\", 30\", 36\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WCTN Welded Cross Tube 5\" bore cylinder runs from 23\" to 59\" and extended length from 35\" to 107\", depending on stroke. For example the 12\" stroke is 23\" retracted and 35\" extended, and the 48\" stroke is 59\" and 107\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore use?",
+          "a": "Every part number of the Magister WCTN Welded Cross Tube 5\" bore cylinder uses the 2.5\" rod, and the listed column load is 37,700 to 58,900 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WCTN Welded Cross Tube 5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Magister WCTN Welded Cross Tube 5\" bore cylinder is listed as 37,700 to 58,900 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Magister WCTN Welded Cross Tube 5\" bore cylinder has SAE ORB -12 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Magister WCTN Welded Cross Tube 5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Magister WCTN Welded Cross Tube 5\" bore cylinder lists 37,700 to 58,900 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore compare with the 6\" bore version?",
+          "a": "The next size up is the [Magister WCTN Welded Cross Tube Hydraulic Cylinder, 6\" Bore](/p/magister-wctn-welded-cross-tube-hydraulic-cylinder-6-in-bore) with a 6\" bore against this 5\" bore, in the same welded cross tube pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 2.5\" rod and column load of 37,700 to 58,900 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WCTN Welded Cross Tube Hydraulic Cylinder, 5\" Bore in Dubai for export?",
+          "a": "Yes. We keep Magister WCTN Welded Cross Tube 5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

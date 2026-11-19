@@ -1,0 +1,1380 @@
+{
+  "family": "quick-couplers-10",
+  "extraFacts": [
+    {
+      "fact": "BSPP is the parallel (straight) pipe thread defined by ISO 228-1; it seals on a bonded washer or O-ring face and not on the thread itself.",
+      "source": "ISO 228-1; Indus Hydraulics guide /blog/bspp-vs-bspt"
+    },
+    {
+      "fact": "ISO 7241-1 defines two dimensional series of quick-action couplings for hydraulic fluid power, Series A and Series B, and a Series A half does not mate with a Series B half; ISO 16028 covers flat-face quick-action couplings.",
+      "source": "ISO 7241-1; ISO 16028; Indus Hydraulics guide /blog/hydraulic-quick-couplers-iso-7241"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ame-international-couplers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the AME International Couplers do and where are they used?",
+          "a": "The AME International Couplers are three AME quick-connect hydraulic couplers: a 1\" straight-through coupler and two 3/8\" NPT high-flow half couplers rated 10,000 psi. The two 3/8\" high-flow halves (16050 and 16060, the latter listed as a ram half coupler) are rated 10,000 psi, and the 1\" part is a straight-through coupler. The listing has 3 part numbers: 3/8\" and 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the AME International Couplers?",
+          "a": "The three part numbers are 15097, 16050 and 16060. The rows read 15097 as a straight-through quick connect coupler in 1\", 16050 as a high-flow half coupler with a 3/8 NPT thread at 10,000 psi and 16060 as a high-flow ram half coupler of the same size and rating."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select the size and thread of the AME International Couplers?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 15097 is Straight-Through Quick Connect Coupler, 1 Inch Size. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the AME International Couplers?",
+          "a": "The AME International Couplers are listed in 3/8\" and 1\", across 3 part numbers. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "How much pressure can the AME International Couplers handle?",
+          "a": "The size table for the AME International Couplers does not carry a working pressure for every part number. Tell us your working pressure and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the AME International Couplers have?",
+          "a": "The listing for the AME International Couplers does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the AME International Couplers follow and what paperwork is available?",
+          "a": "The AME International Couplers are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the AME International Couplers?",
+          "a": "Mates with the matching AME half of the same size. The listing gives half couplers, so quote the part number of the other half you need. Quote the part number of the mating half, or tell us what it must connect to, and we confirm the match before supply. For the other half, see the [AME International Quick Connect Hydraulic Couplers](/p/ame-international-quick-connect-hydraulic-couplers)."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the AME International Couplers need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the AME International Couplers, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Hydraulic fluid injection injury: why a pinhole is a surgical emergency](/blog/hydraulic-fluid-injection-injury)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the AME International Couplers or the AME International Quick Connect Hydraulic Couplers?",
+          "a": "The Couplers is the AME high-pressure coupler, while the Quick Connect Hydraulic Couplers is the AME 3/8\" quick connect coupler set. The Couplers are listed in 3/8\" and 1\". The Quick Connect Hydraulic Couplers are listed in 3/8\". Both are options in the same family, so choose the one whose size range and end connection match your line. See the [AME International Quick Connect Hydraulic Couplers](/p/ame-international-quick-connect-hydraulic-couplers)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the AME International Couplers be exported from Dubai and what origin do they carry?",
+          "a": "Country of origin and HS code for the AME International Couplers are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the AME International Couplers from stock in Dubai, UAE?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the AME International Couplers in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "ame-international-quick-connect-hydraulic-couplers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the AME International Quick Connect Hydraulic Couplers do and where are they used?",
+          "a": "The AME International Quick Connect Hydraulic Couplers are AME 3/8\" quick-connect hydraulic couplers sold as a complete set (TC-370), a male half (TC-372) and a female half (TC-371). The set gives both halves for a new connection, and the single halves replace a worn half; the listing gives no pressure rating, so confirm it with us. The listing has 3 part numbers: 3/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the AME International Quick Connect Hydraulic Couplers?",
+          "a": "The three part numbers are TC-370, TC-371 and TC-372. The rows read TC-370 as the complete set, TC-371 as the female half and TC-372 as the male half, all in 3/8\"."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the AME International Quick Connect Hydraulic Couplers?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, TC-370 is Quick Connect Hydraulic Coupler, Complete Set. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which body sizes can I order in the AME International Quick Connect Hydraulic Couplers?",
+          "a": "The AME International Quick Connect Hydraulic Couplers are listed in 3/8\", across 3 part numbers. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the AME International Quick Connect Hydraulic Couplers?",
+          "a": "The size table for the AME International Quick Connect Hydraulic Couplers does not carry a working pressure for every part number. Tell us your working pressure and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the AME International Quick Connect Hydraulic Couplers have?",
+          "a": "The listing for the AME International Quick Connect Hydraulic Couplers does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the AME International Quick Connect Hydraulic Couplers?",
+          "a": "The AME International Quick Connect Hydraulic Couplers are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do the AME International Quick Connect Hydraulic Couplers connect to?",
+          "a": "The male half TC-372 and the female half TC-371 mate with each other, and TC-370 is the pair together. They are 3/8\" AME parts, so match the size and make. Quote the part number of the mating half, or tell us what it must connect to, and we confirm the match before supply. For the other half, see the [AME International Couplers](/p/ame-international-couplers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the AME International Quick Connect Hydraulic Couplers be installed and inspected?",
+          "a": "Depressurise both lines before connecting or disconnecting the AME International Quick Connect Hydraulic Couplers, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "AME International Quick Connect Hydraulic Couplers or AME International Couplers: which do I need?",
+          "a": "The Quick Connect Hydraulic Couplers is the AME 3/8\" quick connect coupler set, while the Couplers is the AME high-pressure couplers. The Quick Connect Hydraulic Couplers are listed in 3/8\". The Couplers are listed in 3/8\" and 1\". Both are options in the same family, so choose the one whose size range and end connection match your line. See the [AME International Couplers](/p/ame-international-couplers)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the AME International Quick Connect Hydraulic Couplers made and what is their HS code?",
+          "a": "Country of origin and HS code for the AME International Quick Connect Hydraulic Couplers are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the AME International Quick Connect Hydraulic Couplers in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the AME International Quick Connect Hydraulic Couplers in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adapt-all-9043-series-fitting-adapters-female-bspp-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling and where are they used?",
+          "a": "The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling are straight adapters in carbon steel with a female BSPP thread at each end, listed from 1/4\"-19 (-04) to 2\"-11 (-32) in 29 part numbers. They join two male BSPP ports or fittings, and the rows carry a 3,000 psi rating on the sizes that state one."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "In 9043-02-02, 9043-04-04, 9043-06-06, 9043-08-08, 9043-16-16 and 9043-32-32 the numbers are the dash size in sixteenths of an inch: 02 is 1/8\", 04 is 1/4\", 06 is 3/8\", 08 is 1/2\", 16 is 1\" and 32 is 2\". Both ends are female BSPP, so the first and second numbers give the two ends."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 9043-08-08 is Hydraulic Hose Adapter, 1/2 x 1/2 Inch Fitting Size, Female x Female, BSPP x. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling are listed in 1/4\" to 2\" BSPP, across 29 part numbers. Port threads named in the table include BSPP. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "How much pressure can the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling handle?",
+          "a": "The rows in the size table carry 3,000 psi. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids and temperatures suit the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling are made in carbon steel or steel. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "BSPP is the parallel (straight) pipe thread defined by ISO 228-1, which seals on a bonded washer or O-ring and not on the thread itself. The listing gives no certificate; ask us for the maker datasheet and any material certificate you need, and we confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling connect to?",
+          "a": "Each end takes a male BSPP thread of the same size. BSPP is a parallel thread that seals on a washer or O-ring face, so check the sealing face of the male fitting. For the other half, see the [Aeroquip Hex Socket Plug Hydraulic Hose Adapters](/p/aeroquip-hex-socket-plug-hydraulic-hose-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "Check that the male BSPP fitting you screw into the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling has a sealing washer or O-ring face, and do not use tapered pipe sealant on a parallel thread. Tighten to the fitting maker's figure and replace a washer that is cut or crushed. See our guide [BSPP vs BSPT: why a parallel thread needs a seal and a tapered one does not](/blog/bspp-vs-bspt)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling and the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling is the 9043 Series female BSPP straight adapter, while the Hex Socket Plug Hydraulic Hose Adapters is the Aeroquip hex socket plug and hose adapter. The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling are listed in 1/4\" to 2\" BSPP. The Hex Socket Plug Hydraulic Hose Adapters are listed in 1/4\" to 1 1/2\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Aeroquip Hex Socket Plug Hydraulic Hose Adapters](/p/aeroquip-hex-socket-plug-hydraulic-hose-adapters)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling are listed with China as the country of origin; the HS code is confirmed on the quotation. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-5100-series-coupling-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 5100 Series Coupling Plugs and where are they used?",
+          "a": "The Aeroquip 5100 Series Coupling Plugs are brass 5100 Series plugs with male UN ports and a nitrile seal, listed in 3/4\", 1\" and 1 1/4\" in 3 part numbers. The maker states 2,750 to 3,000 psi (190 to 207 bar) by size, with a rated flow of 18 GPM at 3/4\", 40 GPM at 1\" and 75 GPM at 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "In 5100-S2-12B, 5100-S2-16B and 5100-S2-20B the dash number is the size in sixteenths of an inch (12 is 3/4\", 16 is 1\" and 20 is 1 1/4\") and B marks brass. In these two listings the S2 rows are plugs with male ports and the S5 rows are couplings with female ports."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select the size and thread of the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 5100-S2-16B is Quick Connect Hose Coupling, 1 Inch Coupling Size, Brass, 151 lpm Max. Flow Rate. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Aeroquip 5100 Series Coupling Plugs come in?",
+          "a": "The Aeroquip 5100 Series Coupling Plugs are listed in 3/4\" to 1 1/4\", across 3 part numbers. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Aeroquip 5100 Series Coupling Plugs have?",
+          "a": "The maker states 2,750 to 3,000 psi (190 to 207 bar) by size for the Aeroquip 5100 Series Coupling Plugs. Rows in the size table carry ratings from 2,750 psi to 3,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Aeroquip 5100 Series Coupling Plugs have?",
+          "a": "The Aeroquip 5100 Series Coupling Plugs are made in brass. Seal material: Nitrile. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "The Aeroquip 5100 Series Coupling Plugs are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Aeroquip 5100 Series Coupling Plugs connect to?",
+          "a": "Mates with a 5100 Series coupling of the same size, such as the [5100 Series quick-disconnect couplings](/p/aeroquip-5100-series-quick-disconnect-couplings). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "Thread the halves of the Aeroquip 5100 Series Coupling Plugs together fully before you pressurise, keep the threads clean and undamaged, and fit dust caps when apart. Connect under pressure only within the limit the maker states, and replace seals that are cut or hardened. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Aeroquip 5100 Series Coupling Plugs and the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "The 5100 Series Coupling Plugs is the 5100 Series coupling plug, while the 5100 Series Quick Disconnect Couplings is the 5100 Series quick-disconnect coupling. They are two halves of the same system, so choose by which half your hose or port needs. See the [Aeroquip 5100 Series Quick Disconnect Couplings](/p/aeroquip-5100-series-quick-disconnect-couplings)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "The Aeroquip 5100 Series Coupling Plugs are listed with United States as the country of origin and HS code 7307995045. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Aeroquip 5100 Series Coupling Plugs available from stock and how fast can they ship?",
+          "a": "Yes. The Aeroquip 5100 Series Coupling Plugs are held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-5100-series-quick-disconnect-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 5100 Series Quick Disconnect Couplings and where are they used?",
+          "a": "The Aeroquip 5100 Series Quick Disconnect Couplings are brass 5100 Series couplings with female ports and a nitrile seal, listed in 3/4\", 1\" and 1 1/4\" in 3 part numbers. The maker states 2,750 to 3,000 psi (190 to 207 bar) by size, with a rated flow of 18 GPM at 3/4\", 40 GPM at 1\" and 75 GPM at 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "In 5100-S5-12B, 5100-S5-16B and 5100-S5-20B the dash number is the size in sixteenths of an inch (12 is 3/4\", 16 is 1\" and 20 is 1 1/4\") and B marks brass. In these two listings the S5 rows are couplings with female ports and the S2 rows are plugs with male ports."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 5100-S5-16B is Quick Connect Hose Coupling, 1 Inch Coupling Size, Brass, 151 lpm Max. Flow Rate. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "The Aeroquip 5100 Series Quick Disconnect Couplings are listed in 3/4\" to 1 1/4\", across 3 part numbers. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Aeroquip 5100 Series Quick Disconnect Couplings have?",
+          "a": "The maker states 2,750 to 3,000 psi (190 to 207 bar) by size for the Aeroquip 5100 Series Quick Disconnect Couplings. Rows in the size table carry ratings from 2,750 psi to 3,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 5100 Series Quick Disconnect Couplings made of and what seal do they use?",
+          "a": "The Aeroquip 5100 Series Quick Disconnect Couplings are made in brass or carbon steel. Seal material: Nitrile. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip 5100 Series Quick Disconnect Couplings follow and what paperwork is available?",
+          "a": "The Aeroquip 5100 Series Quick Disconnect Couplings are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "Mates with a 5100 Series plug of the same size, such as the [5100 Series coupling plugs](/p/aeroquip-5100-series-coupling-plugs). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Aeroquip 5100 Series Quick Disconnect Couplings?",
+          "a": "Thread the halves of the Aeroquip 5100 Series Quick Disconnect Couplings together fully before you pressurise, keep the threads clean and undamaged, and fit dust caps when apart. Connect under pressure only within the limit the maker states, and replace seals that are cut or hardened. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Aeroquip 5100 Series Quick Disconnect Couplings and the Aeroquip 5100 Series Coupling Plugs?",
+          "a": "The 5100 Series Quick Disconnect Couplings is the 5100 Series quick-disconnect coupling, while the 5100 Series Coupling Plugs is the 5100 Series coupling plug. They are two halves of the same system, so choose by which half your hose or port needs. See the [Aeroquip 5100 Series Coupling Plugs](/p/aeroquip-5100-series-coupling-plugs)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 5100 Series Quick Disconnect Couplings made and what is their HS code?",
+          "a": "The Aeroquip 5100 Series Quick Disconnect Couplings are listed with United States as the country of origin and HS code 7307995045. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Aeroquip 5100 Series Quick Disconnect Couplings available from stock and how fast can they ship?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Aeroquip 5100 Series Quick Disconnect Couplings in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-5600-series-coupling-bodies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 5600 Series Coupling Bodies and where are they used?",
+          "a": "The Aeroquip 5600 Series Coupling Bodies are carbon steel 5600 Series coupling bodies (the socket half) with NPT ports and a nitrile seal, from 1/4\" to 1\" in 6 part numbers. The maker states 4,000 to 5,000 psi (276 to 345 bar) by size; the rows carry 5,000 psi at 1/4\" and 4,000 psi from 3/8\" up, with flow from 1 to 50 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "In 5601-2-4S, 5601-6-6S, 5601-12-12S and 5601-16-16S the number after 5601 is the size in sixteenths of an inch (2 and 4 are 1/4\", 6 is 3/8\", 12 is 3/4\" and 16 is 1\"), and the 5601 marks the body. The size is the same on the matching plug rows."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 5601-2-4S is Quick Connect Hose Coupling, 1/4 Inch Coupling Size, Steel, 4 lpm Max. Flow Rate. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "The Aeroquip 5600 Series Coupling Bodies are listed in 1/4\" to 1\", across 6 part numbers. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "The maker states 4,000 to 5,000 psi (276 to 345 bar) by size for the Aeroquip 5600 Series Coupling Bodies. Rows in the size table carry ratings from 4,000 psi to 5,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Aeroquip 5600 Series Coupling Bodies have?",
+          "a": "The Aeroquip 5600 Series Coupling Bodies are made in carbon steel. Seal material: Nitrile. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip 5600 Series Coupling Bodies follow and what paperwork is available?",
+          "a": "The Aeroquip 5600 Series Coupling Bodies are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "Mates with a 5600 Series plug of the same size, such as the [5600 Series coupling plugs](/p/aeroquip-5600-series-coupling-plugs). Hansen 5600 push-to-connect parts appear in the rows. Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the Aeroquip 5600 Series Coupling Bodies need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Aeroquip 5600 Series Coupling Bodies, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the Aeroquip 5600 Series Coupling Bodies or the Aeroquip 5600 Series Coupling Plugs?",
+          "a": "The 5600 Series Coupling Bodies is the 5600 Series coupling body, while the 5600 Series Coupling Plugs is the 5600 Series coupling plug. They are two halves of the same system, so choose by which half your hose or port needs. See the [Aeroquip 5600 Series Coupling Plugs](/p/aeroquip-5600-series-coupling-plugs)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Aeroquip 5600 Series Coupling Bodies be exported from Dubai and what origin do they carry?",
+          "a": "The Aeroquip 5600 Series Coupling Bodies are listed with United States as the country of origin and HS code 7307995045. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip 5600 Series Coupling Bodies from stock in Dubai, UAE?",
+          "a": "Yes. The Aeroquip 5600 Series Coupling Bodies are held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-5600-series-coupling-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 5600 Series Coupling Plugs used for?",
+          "a": "The Aeroquip 5600 Series Coupling Plugs are carbon steel 5600 Series plugs (the nipple half) with NPT ports and a nitrile seal, from 1/4\" to 1\" in 6 part numbers. The maker states 4,000 to 5,000 psi (276 to 345 bar) by size; the rows carry 5,000 psi at 1/4\" and 4,000 psi from 3/8\" up, with flow from 1 to 50 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip 5600 Series Coupling Plugs?",
+          "a": "In 5602-2-4S, 5602-6-6S, 5602-12-12S and 5602-16-16S the number after 5602 is the size in sixteenths of an inch (2 and 4 are 1/4\", 6 is 3/8\", 12 is 3/4\" and 16 is 1\"), and the 5602 marks the plug. The size is the same on the matching body rows."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 5600 Series Coupling Plugs for my hose or port?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 5602-2-4S is Hansen 5600 1/4 Plug Push To Connect Carbon Steel. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Aeroquip 5600 Series Coupling Plugs?",
+          "a": "The Aeroquip 5600 Series Coupling Plugs are listed in 1/4\" to 1\", across 6 part numbers. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Aeroquip 5600 Series Coupling Plugs have?",
+          "a": "The maker states 4,000 to 5,000 psi (276 to 345 bar) by size for the Aeroquip 5600 Series Coupling Plugs. Rows in the size table carry ratings from 4,000 psi to 5,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Aeroquip 5600 Series Coupling Plugs have?",
+          "a": "The Aeroquip 5600 Series Coupling Plugs are made in carbon steel. Seal material: Nitrile. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Aeroquip 5600 Series Coupling Plugs?",
+          "a": "The Aeroquip 5600 Series Coupling Plugs are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Aeroquip 5600 Series Coupling Plugs?",
+          "a": "Mates with a 5600 Series coupling body of the same size, such as the [5600 Series coupling bodies](/p/aeroquip-5600-series-coupling-bodies). Hansen 5600 push-to-connect parts appear in the rows. Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Aeroquip 5600 Series Coupling Plugs be installed and inspected?",
+          "a": "Depressurise both lines before connecting or disconnecting the Aeroquip 5600 Series Coupling Plugs, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip 5600 Series Coupling Plugs or Aeroquip 5600 Series Coupling Bodies: which do I need?",
+          "a": "The 5600 Series Coupling Plugs is the 5600 Series coupling plug, while the 5600 Series Coupling Bodies is the 5600 Series coupling body. They are two halves of the same system, so choose by which half your hose or port needs. See the [Aeroquip 5600 Series Coupling Bodies](/p/aeroquip-5600-series-coupling-bodies)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 5600 Series Coupling Plugs made and what is their HS code?",
+          "a": "The Aeroquip 5600 Series Coupling Plugs are listed with United States as the country of origin and HS code 7307225000. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip 5600 Series Coupling Plugs from stock in Dubai, UAE?",
+          "a": "Yes. We keep the Aeroquip 5600 Series Coupling Plugs in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-fd90-series-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip FD90 Series Couplings and where are they used?",
+          "a": "The Aeroquip FD90 Series Couplings are small carbon steel quick couplings in the 1/4\" coupling size with NPTF ports, a tubular valve and a nitrile seal, in 6 part numbers. The rows carry a rated flow of 1.89 lpm, so they suit low-flow circuits."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip FD90 Series Couplings?",
+          "a": "In FD90-1012-04-04, FD90-1021-04-04, FD90-1041-04-04 and FD90-1044-06-04 the rows read 1012 and 1044 as male-port parts and 1021 and 1041 as female-port parts, and the last two numbers give the sizes. FD90-1012-02-04 is listed as the 1/8\" NPTF plug."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip FD90 Series Couplings for my hose or port?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, FD90-1012-04-04 is Quick Connect Hose Coupling, 1/4 Inch Coupling Size, Steel, 1.89 lpm Max. Flow. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Aeroquip FD90 Series Couplings?",
+          "a": "The Aeroquip FD90 Series Couplings are listed in 1/4\" coupling size with 1/8\" to 9/16\" ports, across 6 part numbers. Port threads named in the table include NPTF. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip FD90 Series Couplings?",
+          "a": "The size table for the Aeroquip FD90 Series Couplings does not carry a working pressure for every part number. Tell us your working pressure and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Aeroquip FD90 Series Couplings have?",
+          "a": "The Aeroquip FD90 Series Couplings are made in carbon steel. Seal material: Nitrile. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or documents apply to the Aeroquip FD90 Series Couplings?",
+          "a": "The Aeroquip FD90 Series Couplings are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Aeroquip FD90 Series Couplings?",
+          "a": "Mates with an FD90 Series half of the 1/4\" coupling size. Quote the part number of the other half, or tell us the port it must reach. Quote the part number of the mating half, or tell us what it must connect to, and we confirm the match before supply. For the other half, see the [Aeroquip 5600 Series Coupling Bodies](/p/aeroquip-5600-series-coupling-bodies)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Aeroquip FD90 Series Couplings?",
+          "a": "Depressurise both lines before connecting or disconnecting the Aeroquip FD90 Series Couplings, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Hydraulic fluid injection injury: why a pinhole is a surgical emergency](/blog/hydraulic-fluid-injection-injury)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Aeroquip FD90 Series Couplings and the Aeroquip 5600 Series Coupling Bodies?",
+          "a": "The FD90 Series Couplings is the FD90 Series coupling, while the 5600 Series Coupling Bodies is the 5600 Series coupling body. The FD90 Series Couplings are listed in 1/4\" coupling size with 1/8\" to 9/16\" ports. The 5600 Series Coupling Bodies are listed in 1/4\" to 1\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Aeroquip 5600 Series Coupling Bodies](/p/aeroquip-5600-series-coupling-bodies)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Aeroquip FD90 Series Couplings be exported from Dubai and what origin do they carry?",
+          "a": "The Aeroquip FD90 Series Couplings are listed with United States as the country of origin and HS code 7307929000. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Aeroquip FD90 Series Couplings available from stock and how fast can they ship?",
+          "a": "Yes. We keep the Aeroquip FD90 Series Couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hex-socket-plug-hydraulic-hose-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the Aeroquip Hex Socket Plug Hydraulic Hose Adapters do and where are they used?",
+          "a": "The Aeroquip Hex Socket Plug Hydraulic Hose Adapters are carbon steel hose plugs and one rigid hose adapter, listed from 1/4\" to 1 1/2\" in 4 part numbers. The plugs (2222-4s, 2222-6s, 2222-8s) cap NPTF ports at 9,500, 8,000 and 6,000 psi, and 2068-24-24s is an NPSM x ORB rigid adapter in 1 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "In 2222-4s, 2222-6s and 2222-8s the 2222 marks the NPTF hose plug and the rows read -4 as a 1/4\" plug at 9,500 psi, -6 as 3/8\" at 8,000 psi and -8 as 1/2\" at 6,000 psi. The 2068-24-24s row is a different part, a female NPSM x male ORB adapter in 1 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Hex Socket Plug Hydraulic Hose Adapters for my hose or port?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 2068-24-24s is Hydraulic Hose Adapter, 1 1/2 Inch x 1 1/2 Inch Size, Female x Male, NPSM x. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "The Aeroquip Hex Socket Plug Hydraulic Hose Adapters are listed in 1/4\" to 1 1/2\", across 4 part numbers. Port threads named in the table include NPTF, ORB and NPSM. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Aeroquip Hex Socket Plug Hydraulic Hose Adapters have?",
+          "a": "The maker states 1,500 to 9,500 psi (103 to 655 bar) by size for the Aeroquip Hex Socket Plug Hydraulic Hose Adapters. Rows in the size table carry ratings from 1,500 psi to 9,500 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Hex Socket Plug Hydraulic Hose Adapters made of and what seal do they use?",
+          "a": "The Aeroquip Hex Socket Plug Hydraulic Hose Adapters are made in carbon steel or steel. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or documents apply to the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "The Aeroquip Hex Socket Plug Hydraulic Hose Adapters are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "A hose plug screws into a female NPTF port or hose fitting of the same size, and the adapter joins a female NPSM thread to a male ORB. Match thread type and size before you order. For the other half, see the [Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling](/p/adapt-all-9043-series-fitting-adapters-female-bspp-coupling)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Aeroquip Hex Socket Plug Hydraulic Hose Adapters be installed and inspected?",
+          "a": "Seal tapered pipe threads on the Aeroquip Hex Socket Plug Hydraulic Hose Adapters with a sealant suited to the fluid, and tighten the plug body without over-stressing the thread. Keep it capped when disconnected, and check the seal for cuts before each connection. See our guide [JIC vs ORFS vs NPT vs BSP: the four connector families, compared](/blog/jic-vs-orfs-vs-npt-vs-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Aeroquip Hex Socket Plug Hydraulic Hose Adapters and the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling?",
+          "a": "The Hex Socket Plug Hydraulic Hose Adapters is the hex socket plug and hose adapter, while the Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling is the 9043 Series female BSPP adapter. The Hex Socket Plug Hydraulic Hose Adapters are listed in 1/4\" to 1 1/2\". The Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling is listed in 1/4\" to 2\" BSPP. They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Adapt-All 9043 Series Fitting Adapters, Female BSPP Coupling](/p/adapt-all-9043-series-fitting-adapters-female-bspp-coupling)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Aeroquip Hex Socket Plug Hydraulic Hose Adapters?",
+          "a": "The Aeroquip Hex Socket Plug Hydraulic Hose Adapters are listed with United States as the country of origin and HS code 7307929000. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip Hex Socket Plug Hydraulic Hose Adapters from stock in Dubai, UAE?",
+          "a": "Yes. We keep the Aeroquip Hex Socket Plug Hydraulic Hose Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hose-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the Aeroquip Hose Couplings do and where are they used?",
+          "a": "The Aeroquip Hose Couplings are quick-connect couplings in steel and brass, with nitrile seals and poppet valves, listed from 1/8\" to 1 1/2\" in 219 part numbers. The maker states 200 to 14,500 psi (14 to 1,000 bar) by size and series, so read the row for your part number; rows include 5600 push-to-connect, FD96 and 5100 parts."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip Hose Couplings?",
+          "a": "In 5610-6-6S, 5608-10-10S, FD96-1002-16-16 and 5100-S2-24B the prefix is the series (5600-style push-to-connect, FD96 or 5100) and the dash numbers are the size in sixteenths of an inch (6 is 3/8\", 10 is 5/8\", 16 is 1\", 24 is 1 1/2\"). The rows read FD96-1005-12-12 as a 3/4\" female SAE coupling at 7,980 psi."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select the size and thread of the Aeroquip Hose Couplings?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 5610-6-6S is Hose Coupling, 3/8 Inch Size, Push To Connect, Steel. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Aeroquip Hose Couplings come in?",
+          "a": "The Aeroquip Hose Couplings are listed in 1/8\" to 1 1/2\", across 219 part numbers. Port threads named in the table include NPT and SAE. Connection type: SAE. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "How much pressure can the Aeroquip Hose Couplings handle?",
+          "a": "The maker states 200 to 14,500 psi (14 to 1,000 bar) by size for the Aeroquip Hose Couplings. Rows in the size table carry ratings from 200 psi to 14,500 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Hose Couplings made of and what seal do they use?",
+          "a": "Seal material: Nitrile. The size table rows for the Aeroquip Hose Couplings name brass, steel, 303 stainless steel, 316 stainless steel and stainless steel bodies. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip Hose Couplings follow and what paperwork is available?",
+          "a": "The Aeroquip Hose Couplings are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the Aeroquip Hose Couplings?",
+          "a": "Mates with the matching half of the same series and size. With 219 rows across several series, quote the part number of the half you are replacing so we confirm the pair. For the other half, see the [Aeroquip ISO B Series Hydraulic Coupler Bodies](/p/aeroquip-iso-b-series-hydraulic-coupler-bodies)."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the Aeroquip Hose Couplings need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Aeroquip Hose Couplings, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "Aeroquip Hose Couplings or Aeroquip ISO B Series Hydraulic Coupler Bodies: which do I need?",
+          "a": "The Hose Couplings is the Aeroquip quick-connect coupling, while the ISO B Series Hydraulic Coupler Bodies is the Aeroquip ISO B coupler body. The Hose Couplings are listed in 1/8\" to 1 1/2\". The ISO B Series Hydraulic Coupler Bodies are listed in 1/4\" to 1\". Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Aeroquip ISO B Series Hydraulic Coupler Bodies](/p/aeroquip-iso-b-series-hydraulic-coupler-bodies)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Hose Couplings made and what is their HS code?",
+          "a": "Country of origin and HS code for the Aeroquip Hose Couplings are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip Hose Couplings from stock in Dubai, UAE?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Aeroquip Hose Couplings in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-iso-b-series-hydraulic-coupler-bodies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the Aeroquip ISO B Series Hydraulic Coupler Bodies do and where are they used?",
+          "a": "The Aeroquip ISO B Series Hydraulic Coupler Bodies are FD45 ISO B coupler bodies in steel with NPT ports, from 1/4\" to 1\" in 10 part numbers. The maker states 4,000 to 5,000 psi (276 to 345 bar) by size, with EPR or nitrile seals and flow from 3 to 50 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "In FD45-1002-0404, FD45-1002-1212, FD45-1002-1616 and FD45-1003-0810 the FD45 is the series and the last two pairs give the sizes in sixteenths of an inch (04 is 1/4\", 12 is 3/4\", 16 is 1\"). The rows carry 5,000 psi at 1/4\", 4,000 psi at 3/4\" and 1\", and 50 GPM at 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, FD45-1003-0810 is Quick Connect Hose Coupling, 5/8 Inch Coupling Size, Steel, 1/2 Inch -14. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Aeroquip ISO B Series Hydraulic Coupler Bodies come in?",
+          "a": "The Aeroquip ISO B Series Hydraulic Coupler Bodies are listed in 1/4\" to 1\", across 10 part numbers. Connection type: NPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "The maker states 4,000 to 5,000 psi (276 to 345 bar) by size for the Aeroquip ISO B Series Hydraulic Coupler Bodies. Rows in the size table carry ratings from 4,000 psi to 5,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip ISO B Series Hydraulic Coupler Bodies made of and what seal do they use?",
+          "a": "Seal material: EPR, Nitrile. Temperature range: -40°F to +250°F. The size table rows for the Aeroquip ISO B Series Hydraulic Coupler Bodies name steel bodies. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Aeroquip ISO B Series Hydraulic Coupler Bodies follow and what paperwork is available?",
+          "a": "The Aeroquip ISO B Series Hydraulic Coupler Bodies is made to the ISO B profile named in its title (ISO 7241 Series B). Series A and Series B are different profiles and do not mate. Ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "Mates with an ISO B half of the same size. ISO B halves from other makers of the same size connect with it, and ISO A halves do not. For the other half, see the [Aeroquip Hose Couplings](/p/aeroquip-hose-couplings). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "Depressurise both lines before connecting or disconnecting the Aeroquip ISO B Series Hydraulic Coupler Bodies, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the Aeroquip ISO B Series Hydraulic Coupler Bodies or the Aeroquip Hose Couplings?",
+          "a": "The ISO B Series Hydraulic Coupler Bodies is the ISO B coupler body, while the Hose Couplings is the Aeroquip quick-connect couplings across series. The ISO B Series Hydraulic Coupler Bodies are listed in 1/4\" to 1\". The Hose Couplings are listed in 1/8\" to 1 1/2\". Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Aeroquip Hose Couplings](/p/aeroquip-hose-couplings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip ISO B Series Hydraulic Coupler Bodies made and what is their HS code?",
+          "a": "The Aeroquip ISO B Series Hydraulic Coupler Bodies are listed with United States as the country of origin and HS code 7307995045. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Aeroquip ISO B Series Hydraulic Coupler Bodies available from stock and how fast can they ship?",
+          "a": "Yes. We keep the Aeroquip ISO B Series Hydraulic Coupler Bodies in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-ah-series-regular-hydraulic-couplers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac AH Series Regular Hydraulic Couplers and where are they used?",
+          "a": "The Enerpac AH Series Regular Hydraulic Couplers are Enerpac regular hydraulic couplers with NPTF ports and nitrile seals, listed as male halves in 2 part numbers, AH650 and AH654. The maker states 5,000 psi (345 bar) with a rated flow of 4 GPM and a temperature range of -40°F to +250°F, for Enerpac hydraulic equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Enerpac AH Series Regular Hydraulic Couplers?",
+          "a": "The two part numbers are AH650 and AH654. The rows read AH650 as a regular hydraulic coupler, male half, with a 1/4 NPT thread, and AH654 as a regular hydraulic coupler, male half, both at 4 GPM and 5,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Enerpac AH Series Regular Hydraulic Couplers?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, AH650 is Regular Hydraulic Coupler, Male Half, 1/4 Inch NPT. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Enerpac AH Series Regular Hydraulic Couplers come in?",
+          "a": "The Enerpac AH Series Regular Hydraulic Couplers are listed in 1/4\" NPT, across 2 part numbers. Port threads named in the table include NPT. Connection type: NPTF. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Enerpac AH Series Regular Hydraulic Couplers?",
+          "a": "The maker states 5,000 psi (345 bar) for the Enerpac AH Series Regular Hydraulic Couplers. The rows in the size table carry 5,000 psi. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Enerpac AH Series Regular Hydraulic Couplers have?",
+          "a": "Seal material: Nitrile. Temperature range: -40°F to +250°F. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Enerpac AH Series Regular Hydraulic Couplers?",
+          "a": "The Enerpac AH Series Regular Hydraulic Couplers are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Enerpac AH Series Regular Hydraulic Couplers?",
+          "a": "Mates with the female half of the Enerpac AH regular coupler range. Quote the part number of the female half you need, or tell us the pump or ram it must connect to. For the other half, see the [AME International Couplers](/p/ame-international-couplers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac AH Series Regular Hydraulic Couplers be installed and inspected?",
+          "a": "Depressurise both lines before connecting or disconnecting the Enerpac AH Series Regular Hydraulic Couplers, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Hydraulic fluid injection injury: why a pinhole is a surgical emergency](/blog/hydraulic-fluid-injection-injury)."
+        },
+        {
+          "slot": "K",
+          "q": "Enerpac AH Series Regular Hydraulic Couplers or AME International Couplers: which do I need?",
+          "a": "The Enerpac AH Series Regular Hydraulic Couplers is the Enerpac AH regular coupler, while the Couplers is the AME high-pressure coupler. The Enerpac AH Series Regular Hydraulic Couplers are listed in 1/4\" NPT. The Couplers are listed in 3/8\" and 1\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [AME International Couplers](/p/ame-international-couplers)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Enerpac AH Series Regular Hydraulic Couplers be exported from Dubai and what origin do they carry?",
+          "a": "The Enerpac AH Series Regular Hydraulic Couplers are listed with United States as the country of origin and HS code 8481803090. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Enerpac AH Series Regular Hydraulic Couplers available from stock and how fast can they ship?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Enerpac AH Series Regular Hydraulic Couplers in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-5100-series-hydraulic-quick-connect-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gates 5100 Series Hydraulic Quick Connect Couplings and where are they used?",
+          "a": "The Gates 5100 Series Hydraulic Quick Connect Couplings are four Gates automotive hydraulic couplings sold in packs of 25 or 50. The rows read 16PCTS-16FJX and 12PCTS-12FJX as packs of 25, and 3PCTS-4FJSX and 8PCTS-8FJSX as packs of 50; the listing gives no size or rating, so confirm both with us. The listing has 4 part numbers: 4 part numbers, packs of 25 and 50."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Gates 5100 Series Hydraulic Quick Connect Couplings?",
+          "a": "The four part numbers are 16PCTS-16FJX, 12PCTS-12FJX, 3PCTS-4FJSX and 8PCTS-8FJSX. The rows read the first two as 25-piece packs and the last two as 50-piece packs of an automotive hydraulic coupling; the numbers before and after PCTS look like sizes, so quote the part number and we confirm the size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select the size and thread of the Gates 5100 Series Hydraulic Quick Connect Couplings?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 16PCTS-16FJX is Automotive Hydraulic Coupling, 25PK. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Gates 5100 Series Hydraulic Quick Connect Couplings?",
+          "a": "The Gates 5100 Series Hydraulic Quick Connect Couplings are listed in 4 part numbers, packs of 25 and 50, across 4 part numbers. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Gates 5100 Series Hydraulic Quick Connect Couplings have?",
+          "a": "The listing gives no pressure rating for the Gates 5100 Series Hydraulic Quick Connect Couplings. Tell us the working pressure of your system and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Gates 5100 Series Hydraulic Quick Connect Couplings have?",
+          "a": "The listing gives no material or seal for the Gates 5100 Series Hydraulic Quick Connect Couplings. Send us your fluid and operating temperature and we confirm the body material and seal before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates 5100 Series Hydraulic Quick Connect Couplings follow and what paperwork is available?",
+          "a": "The Gates 5100 Series Hydraulic Quick Connect Couplings are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Gates 5100 Series Hydraulic Quick Connect Couplings connect to?",
+          "a": "Mates with the matching Gates half. The listing gives no thread or size in the item text, so quote the part number and the half you need and we confirm the match. For the other half, see the [Aeroquip Hose Couplings](/p/aeroquip-hose-couplings)."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the Gates 5100 Series Hydraulic Quick Connect Couplings need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Gates 5100 Series Hydraulic Quick Connect Couplings, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [How to identify any hydraulic fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "Gates 5100 Series Hydraulic Quick Connect Couplings or Aeroquip Hose Couplings: which do I need?",
+          "a": "The 5100 Series Hydraulic Quick Connect Couplings is the Gates 5100 Series coupling pack, while the Hose Couplings is the Aeroquip quick-connect coupling. The 5100 Series Hydraulic Quick Connect Couplings are listed in 4 part numbers, packs of 25 and 50. The Hose Couplings are listed in 1/8\" to 1 1/2\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Aeroquip Hose Couplings](/p/aeroquip-hose-couplings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Gates 5100 Series Hydraulic Quick Connect Couplings made and what is their HS code?",
+          "a": "Country of origin and HS code for the Gates 5100 Series Hydraulic Quick Connect Couplings are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Gates 5100 Series Hydraulic Quick Connect Couplings available from stock and how fast can they ship?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Gates 5100 Series Hydraulic Quick Connect Couplings in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hansen-hydraulic-quick-coupler-zinc-plated-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hansen Hydraulic Quick Coupler, Zinc Plated Steel and where is it used?",
+          "a": "The Hansen Hydraulic Quick Coupler, Zinc Plated Steel are zinc plated steel quick-coupler halves with UNF threads and nitrile seals, from 1/4\" to 3/4\". The listing has 12 part numbers; the maker states 5,075 to 5,800 psi (350 to 400 bar) by size with a temperature range of -4°F to +212°F, and a rated flow of 3 to 26 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Hansen Hydraulic Quick Coupler, Zinc Plated Steel?",
+          "a": "In 6FFS56UN, 6FFP56UN, 12FFS75UN and 12FFP87UN, FFS is the female half and FFP is the male half. The first number is the body size (6 is 1/4\" and 12 is 1/2\" in the rows) and the last digits give the UNF thread: 56UN is 9/16-18 and 87UN is 7/8-14."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Hansen Hydraulic Quick Coupler, Zinc Plated Steel?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, 6FFS56UN is Hydraulic Quick Coupler Female 9/16-18. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Hansen Hydraulic Quick Coupler, Zinc Plated Steel come in?",
+          "a": "The Hansen Hydraulic Quick Coupler, Zinc Plated Steel is listed in 1/4\" to 3/4\", across 12 part numbers. Connection type: UNF. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Hansen Hydraulic Quick Coupler, Zinc Plated Steel have?",
+          "a": "The maker states 5,075 to 5,800 psi (350 to 400 bar) by size for the Hansen Hydraulic Quick Coupler, Zinc Plated Steel. Rows in the size table carry ratings from 5,075 psi to 5,800 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Hansen Hydraulic Quick Coupler, Zinc Plated Steel have?",
+          "a": "Seal material: Nitrile. Temperature range: -4°F to +212°F. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Hansen Hydraulic Quick Coupler, Zinc Plated Steel?",
+          "a": "The Hansen Hydraulic Quick Coupler, Zinc Plated Steel is identified by its maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Hansen Hydraulic Quick Coupler, Zinc Plated Steel connect to?",
+          "a": "Mates with the Hansen half of the same body size: the FFP male half pairs with the FFS female half. Check the UNF thread before you order. For the other half, see the [Aeroquip ISO B Series Hydraulic Coupler Bodies](/p/aeroquip-iso-b-series-hydraulic-coupler-bodies)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Hansen Hydraulic Quick Coupler, Zinc Plated Steel need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Hansen Hydraulic Quick Coupler, Zinc Plated Steel, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Hansen Hydraulic Quick Coupler, Zinc Plated Steel and the Aeroquip ISO B Series Hydraulic Coupler Bodies?",
+          "a": "The Hydraulic Quick Coupler, Zinc Plated Steel is the Hansen zinc plated quick coupler, while the ISO B Series Hydraulic Coupler Bodies is the Aeroquip ISO B coupler body. The Hydraulic Quick Coupler, Zinc Plated Steel is listed in 1/4\" to 3/4\". The ISO B Series Hydraulic Coupler Bodies are listed in 1/4\" to 1\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Aeroquip ISO B Series Hydraulic Coupler Bodies](/p/aeroquip-iso-b-series-hydraulic-coupler-bodies)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Hansen Hydraulic Quick Coupler, Zinc Plated Steel be exported from Dubai and what origin does it carry?",
+          "a": "The Hansen Hydraulic Quick Coupler, Zinc Plated Steel is listed with United States as the country of origin and HS code 7307225000. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Hansen Hydraulic Quick Coupler, Zinc Plated Steel from stock in Dubai, UAE?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Hansen Hydraulic Quick Coupler, Zinc Plated Steel in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-coupler",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Coupler do and where is it used?",
+          "a": "The SMC Coupler are SMC couplers in 1/4\" to 1/2\" sizes, listed in 45 part numbers with T-Type and I-Type variants. The maker states 145 to 217 psi (10 to 15 bar) by size, so they are low-pressure parts; the rows include 3/4 inch N port couplers such as Y50L and Y50T."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the SMC Coupler?",
+          "a": "In Y20, Y20L, Y40L, Y50, Y50L and Y50T the Y is the series, the first digits (20, 40, 50) are the model size and the L and T endings are variants. The rows read Y50L as an I-Type, Y50T as a T-Type and Y40L as a T-Type, so the ending alone does not give the type; read the row."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC Coupler for my hose or port?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, Y40L is Coupler, T-Type, AC. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the SMC Coupler?",
+          "a": "The SMC Coupler is listed in 1/4\" to 1/2\", across 45 part numbers. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the SMC Coupler?",
+          "a": "The maker states 145 to 217 psi (10 to 15 bar) by size for the SMC Coupler. Rows in the size table carry ratings from 145 psi to 217 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids and temperatures suit the SMC Coupler?",
+          "a": "The listing for the SMC Coupler does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or documents apply to the SMC Coupler?",
+          "a": "The SMC Coupler is identified by its maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SMC Coupler connect to?",
+          "a": "Mates with the matching SMC plug or hose end of the same size and type. Check whether you need an I-Type or a T-Type before you order. For the other half, see the [Aeroquip FD90 Series Couplings](/p/aeroquip-fd90-series-couplings). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the SMC Coupler be installed and inspected?",
+          "a": "Check the SMC Coupler for leaks with soapy water after fitting, keep the halves clean, and replace a half whose seal or locking sleeve is worn. Seal tapered threads with a sealant suited to the thread and do not over-tighten the body. See our guide [How to identify any hydraulic fitting in four steps](/blog/identify-any-hydraulic-fitting)."
+        },
+        {
+          "slot": "K",
+          "q": "SMC Coupler or Aeroquip FD90 Series Couplings: which do I need?",
+          "a": "The SMC Coupler is the SMC low-pressure coupler, while the FD90 Series Couplings is the Aeroquip FD90 coupling. The SMC Coupler is listed in 1/4\" to 1/2\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Aeroquip FD90 Series Couplings](/p/aeroquip-fd90-series-couplings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC Coupler made and what is its HS code?",
+          "a": "Country of origin and HS code for the SMC Coupler are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC Coupler in Dubai?",
+          "a": "Yes. We keep the SMC Coupler in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-60-series-interchange-coupler-bodies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the Safeway 60 Series Interchange Coupler Bodies do and where are they used?",
+          "a": "The Safeway 60 Series Interchange Coupler Bodies are Safeway coupler bodies that interchange with Parker 60 Series H-62 couplings, listed from 1/8\" to 1\" in 5 part numbers. The maker states 3,000 psi with a rated flow of 50 GPM; use them to replace a Parker 60 Series female coupling."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway 60 Series Interchange Coupler Bodies?",
+          "a": "In S105-1, S105-2, S105-3, S105-4 and S105-8 the number after S105 is the size in eighths of an inch (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\" and 8 is 1\"). The rows read S105-3 as H3-62 and S105-8 as the 1\" H8-62."
+        },
+        {
+          "slot": "C",
+          "q": "What are the equivalent makes for the Safeway 60 Series Interchange Coupler Bodies?",
+          "a": "Safeway lists the Safeway 60 Series Interchange Coupler Bodies as interchangeable with Parker 60 Series H-62 couplings. The rows name the Parker part each one replaces, for example S105-3 for H3-62 and S105-8 for H8-62, so quote the Parker number you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Safeway 60 Series Interchange Coupler Bodies?",
+          "a": "The Safeway 60 Series Interchange Coupler Bodies are listed in 1/8\" to 1\" NPTF, across 5 part numbers. Port threads named in the table include NPTF. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "How much pressure can the Safeway 60 Series Interchange Coupler Bodies handle?",
+          "a": "The maker states 3,000 psi for the Safeway 60 Series Interchange Coupler Bodies. Rated flow: 50 GPM. The rows in the size table carry 3,000 psi. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Safeway 60 Series Interchange Coupler Bodies made of and what seal do they use?",
+          "a": "The listing for the Safeway 60 Series Interchange Coupler Bodies does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or documents apply to the Safeway 60 Series Interchange Coupler Bodies?",
+          "a": "The Safeway 60 Series Interchange Coupler Bodies are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the Safeway 60 Series Interchange Coupler Bodies?",
+          "a": "Mates with the matching 60 Series nipple, or a Safeway male tip, of the same size. Quote the part number of the mating half, or tell us what it must connect to, and we confirm the match before supply. For the other half, see the [Safeway Agricultural & Interchange Quick Couplers](/p/safeway-agricultural-interchange-quick-couplers)."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the Safeway 60 Series Interchange Coupler Bodies need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Safeway 60 Series Interchange Coupler Bodies, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Quick couplers: ISO 7241 A, B and flat-face, and why yours will not connect](/blog/hydraulic-quick-couplers-iso-7241)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the Safeway 60 Series Interchange Coupler Bodies or the Safeway Agricultural & Interchange Quick Couplers?",
+          "a": "The 60 Series Interchange Coupler Bodies is the 60 Series interchange coupler body, while the Agricultural & Interchange Quick Couplers is the agricultural interchange coupler. The 60 Series Interchange Coupler Bodies are listed in 1/8\" to 1\" NPTF. The Agricultural & Interchange Quick Couplers are listed in 1/8\" to 1\" and 1/2\" ag tips. They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Safeway Agricultural & Interchange Quick Couplers](/p/safeway-agricultural-interchange-quick-couplers)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Safeway 60 Series Interchange Coupler Bodies made and what is their HS code?",
+          "a": "Country of origin and HS code for the Safeway 60 Series Interchange Coupler Bodies are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Safeway 60 Series Interchange Coupler Bodies from stock in Dubai, UAE?",
+          "a": "Yes. The Safeway 60 Series Interchange Coupler Bodies are held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-agricultural-interchange-quick-couplers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Safeway Agricultural & Interchange Quick Couplers used for?",
+          "a": "The Safeway Agricultural & Interchange Quick Couplers are quick couplers, male tips and female halves, listed against the Parker or Pioneer part each replaces. The listing has 26 part numbers: 22 male halves, 2 female coupler halves and 2 dust caps, with 3,000 to 5,000 psi by size and flow from 0.8 to 50 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway Agricultural & Interchange Quick Couplers?",
+          "a": "In S101-1, S101-3, S25-8P, S71-15 and S561-4 the S marks Safeway. The rows give the interchange: S101-1 is the 1/8\" male tip for H1-63, S101-3 is the 3/8\" male tip for H3-63, S25-8P is a 1\" female body half and S71-15 is a 1/2\" ag ISO tip with ball check and 3/4-16 female ORB."
+        },
+        {
+          "slot": "C",
+          "q": "Can the Safeway Agricultural & Interchange Quick Couplers replace couplings from other makers?",
+          "a": "Safeway lists the Safeway Agricultural & Interchange Quick Couplers with the Parker or Pioneer part each one interchanges with, such as S101-1 for H1-63 and S101-3 for H3-63. Quote the Parker or Pioneer number you are replacing and we confirm the Safeway part."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Safeway Agricultural & Interchange Quick Couplers come in?",
+          "a": "The Safeway Agricultural & Interchange Quick Couplers are listed in 1/8\" to 1\" and 1/2\" ag tips, across 26 part numbers. Port threads named in the table include NPTF and ORB. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Safeway Agricultural & Interchange Quick Couplers have?",
+          "a": "The maker states 3,000 to 5,000 psi depending on size for the Safeway Agricultural & Interchange Quick Couplers. Rated flow: 0.8 to 50 GPM depending on size. Rows in the size table carry ratings from 3,000 psi to 5,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal do the Safeway Agricultural & Interchange Quick Couplers have?",
+          "a": "The listing for the Safeway Agricultural & Interchange Quick Couplers does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Safeway Agricultural & Interchange Quick Couplers follow and what paperwork is available?",
+          "a": "The Safeway Agricultural & Interchange Quick Couplers are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to complete a connection with the Safeway Agricultural & Interchange Quick Couplers?",
+          "a": "Mates with the Parker or Pioneer half the row names, in the same size. For a tractor tip, check whether the machine uses an ag ISO or an older style before you order. For the other half, see the [Safeway FF Flush-Face Couplers & Tips](/p/safeway-ff-flush-face-couplers-tips)."
+        },
+        {
+          "slot": "I",
+          "q": "What care do the Safeway Agricultural & Interchange Quick Couplers need in service?",
+          "a": "Depressurise both lines before connecting or disconnecting the Safeway Agricultural & Interchange Quick Couplers, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Tractor hydraulic fittings: what a farm workshop should stock](/blog/tractor-hydraulic-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Safeway Agricultural & Interchange Quick Couplers and the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "The Agricultural & Interchange Quick Couplers is the agricultural interchange coupler, while the FF Flush-Face Couplers & Tips is the flush-face coupler or tip. The Agricultural & Interchange Quick Couplers are listed in 1/8\" to 1\" and 1/2\" ag tips. The FF Flush-Face Couplers & Tips are listed in 3/8\" to 3/4\". They belong to different interchange profiles, so their halves do not mate with each other; pick the one that matches the half already on your line. See the [Safeway FF Flush-Face Couplers & Tips](/p/safeway-ff-flush-face-couplers-tips)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Safeway Agricultural & Interchange Quick Couplers made and what is their HS code?",
+          "a": "Country of origin and HS code for the Safeway Agricultural & Interchange Quick Couplers are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Safeway Agricultural & Interchange Quick Couplers from stock in Dubai, UAE?",
+          "a": "Yes. The Safeway Agricultural & Interchange Quick Couplers are held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-double-breakaway-clamp-1-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Safeway Double Breakaway Clamp, 1/2\" and where is it used?",
+          "a": "The Safeway Double Breakaway Clamp, 1/2\" is Safeway part S42-4, a double breakaway clamp for 1/2\" quick couplings. It holds two couplers on a bracket and releases them together if an implement separates from the tractor. The listing has 1 part numbers: 1/2\", one part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "There is one part number, S42-4. The row reads Double Breakaway Clamp 1/2\", so S42 is the clamp series and the 4 is the 1/2\" size."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, S42-4 is Double Breakaway Clamp 1/2\". Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "The Safeway Double Breakaway Clamp, 1/2\" is listed in 1/2\", one part number, across 1 part numbers. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "A breakaway clamp is a holder and not a fluid-carrying part, so the listing carries no pressure rating. Pressure is set by the couplers it holds."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids and temperatures suit the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "The listing does not state a material for the Safeway Double Breakaway Clamp, 1/2\". Send us your environment and the couplers it will hold and we confirm the clamp before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates can I ask for with the Safeway Double Breakaway Clamp, 1/2\"?",
+          "a": "The Safeway Double Breakaway Clamp, 1/2\" is identified by its maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Safeway Double Breakaway Clamp, 1/2\" connect to?",
+          "a": "Fits 1/2\" body quick couplings, such as the 1/2\" tips and female halves in the [Safeway agricultural interchange couplers](/p/safeway-agricultural-interchange-quick-couplers). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Safeway Double Breakaway Clamp, 1/2\" be installed and inspected?",
+          "a": "Fix the Safeway Double Breakaway Clamp, 1/2\" to a solid bracket on the tractor or implement, fit it over the coupler body, and check that it releases under a straight pull before use. Replace a clamp that is bent or cracked. See our guide [Tractors and implements: the couplers are older than the machine](/blog/tractor-hydraulic-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Safeway Double Breakaway Clamp, 1/2\" and the Safeway Agricultural & Interchange Quick Couplers?",
+          "a": "The Double Breakaway Clamp, 1/2\" is the double breakaway clamp, while the Agricultural & Interchange Quick Couplers is the agricultural interchange coupler. The Double Breakaway Clamp, 1/2\" is listed in 1/2\", one part number. The Agricultural & Interchange Quick Couplers are listed in 1/8\" to 1\" and 1/2\" ag tips. Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Safeway Agricultural & Interchange Quick Couplers](/p/safeway-agricultural-interchange-quick-couplers)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Safeway Double Breakaway Clamp, 1/2\" made and what is its HS code?",
+          "a": "Country of origin and HS code for the Safeway Double Breakaway Clamp, 1/2\" are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Safeway Double Breakaway Clamp, 1/2\" in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Safeway Double Breakaway Clamp, 1/2\" in stock, and orders ship worldwide with the best lead times. [Contact us](/contact) with your part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-ff-flush-face-couplers-tips",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What do the Safeway FF Flush-Face Couplers & Tips do and where are they used?",
+          "a": "The Safeway FF Flush-Face Couplers & Tips are Safeway flush-face coupler bodies and male tips that interchange with the Parker and Pioneer FF Series, with NPT or SAE O-ring boss ends, in 8 part numbers. The listing has 4 female coupler bodies (FF495) and 4 male tips (FF491) from 3/8\" to 3/4\"; the listing gives no pressure rating, so confirm it with us."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "In FF495-3, FF495-6, FF491-3 and FF491-3-8 the FF495 rows are female coupler bodies (sockets) and the FF491 rows are male tips. The number after the dash is the size code: FF495-3 is 3/8\" NPT, FF495-6 is 3/4\" NPT and FF495-3-8 is a #8 ORB female flat face."
+        },
+        {
+          "slot": "C",
+          "q": "What are the equivalent makes for the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "Safeway lists the Safeway FF Flush-Face Couplers & Tips as interchangeable with the Parker and Pioneer FF Series flush-face couplers. Quote the Parker or Pioneer part you are replacing and we confirm the Safeway number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the Safeway FF Flush-Face Couplers & Tips come in?",
+          "a": "The Safeway FF Flush-Face Couplers & Tips are listed in 3/8\" to 3/4\", across 8 part numbers. Port threads named in the table include NPT and ORB. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "The size table for the Safeway FF Flush-Face Couplers & Tips does not carry a working pressure for every part number. Tell us your working pressure and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Safeway FF Flush-Face Couplers & Tips made of and what seal do they use?",
+          "a": "The listing for the Safeway FF Flush-Face Couplers & Tips does not state the material and seal for every part number. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Safeway FF Flush-Face Couplers & Tips follow and what paperwork is available?",
+          "a": "The Safeway FF Flush-Face Couplers & Tips are identified by their maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts mate with the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "Mates with the flush-face half of the same size: a FF495 female body takes an FF491 male tip. NPT and ORB versions are separate rows, so check your port. For the other half, see the [Safeway Hydraulic Quick Coupler, Steel, 1](/p/safeway-hydraulic-quick-coupler-steel-1)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Safeway FF Flush-Face Couplers & Tips be installed and inspected?",
+          "a": "Wipe the faces of both halves of the Safeway FF Flush-Face Couplers & Tips clean before every connection and fit dust caps when they are apart, so grit stays off the flat faces. Depressurise the circuit first, seal tapered threads with a sealant suited to the thread, and replace any seal that is cut, flattened or hardened. See our guide [Skid steer and attachment circuits: the couplers are the weak point](/blog/skid-steer-hydraulic-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Safeway FF Flush-Face Couplers & Tips and the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "The FF Flush-Face Couplers & Tips is the flush-face coupler body or male tip, while the Hydraulic Quick Coupler, Steel, 1 is the 1\" steel quick coupler. The FF Flush-Face Couplers & Tips are listed in 3/8\" to 3/4\". The Hydraulic Quick Coupler, Steel, 1 is listed in 3/4\" to 1\" NPT. Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Safeway Hydraulic Quick Coupler, Steel, 1](/p/safeway-hydraulic-quick-coupler-steel-1)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Safeway FF Flush-Face Couplers & Tips made and what is their HS code?",
+          "a": "Country of origin and HS code for the Safeway FF Flush-Face Couplers & Tips are confirmed on the quotation for each order. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Safeway FF Flush-Face Couplers & Tips from stock in Dubai, UAE?",
+          "a": "Yes. We keep the Safeway FF Flush-Face Couplers & Tips in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-hydraulic-quick-coupler-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Safeway Hydraulic Quick Coupler, Steel used for?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel are steel quick-coupler bodies and plugs with ORB (SAE) ports, a ball valve and nitrile seals, in 7 part numbers. The stated temperature range is -40°F to +250°F; the rows list 3/4-16 and 7/8-14 SAE ports in body (S25) and plug (S71) halves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway Hydraulic Quick Coupler, Steel?",
+          "a": "In S25-15, S25-16, S71-15P and S71-16 the S25 rows are coupler bodies and the S71 rows are plugs, the dash number gives the SAE thread (15 is 3/4-16 and 16 is 7/8-14 in the rows) and a P suffix marks a variant in the table."
+        },
+        {
+          "slot": "D",
+          "q": "How do I select the size and thread of the Safeway Hydraulic Quick Coupler, Steel?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, S25-15 is Quick Coupler Body 3/4-16 Inch Sae. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and threads are listed for the Safeway Hydraulic Quick Coupler, Steel?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel is listed in 3/4-16 and 7/8-14 SAE ports, across 7 part numbers. Connection type: ORB. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Safeway Hydraulic Quick Coupler, Steel?",
+          "a": "The size table for the Safeway Hydraulic Quick Coupler, Steel does not carry a working pressure for every part number. Tell us your working pressure and we confirm the figure with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Safeway Hydraulic Quick Coupler, Steel have?",
+          "a": "Seal material: Nitrile. Temperature range: -40°F to +250°F. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Safeway Hydraulic Quick Coupler, Steel follow and what paperwork is available?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel is identified by its maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Safeway Hydraulic Quick Coupler, Steel connect to?",
+          "a": "Mates with the half of the same series: an S25 body takes an S71 plug of the same SAE thread. Check the thread before you order. For the other half, see the [Safeway Hydraulic Quick Coupler, Steel, 1](/p/safeway-hydraulic-quick-coupler-steel-1). Quote the part number of the half you need, or tell us what it must connect to, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Safeway Hydraulic Quick Coupler, Steel?",
+          "a": "Depressurise both lines before connecting or disconnecting the Safeway Hydraulic Quick Coupler, Steel, and keep dust caps on open halves. Seal tapered threads with a sealant suited to the port, do not hammer or over-tighten the body, and replace worn seals instead of reusing them. See our guide [Tractor hydraulic fittings: what a farm workshop should stock](/blog/tractor-hydraulic-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Safeway Hydraulic Quick Coupler, Steel and the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "The Hydraulic Quick Coupler, Steel is the steel ball-valve SAE coupler, while the Hydraulic Quick Coupler, Steel, 1 is the 1\" steel NPT quick coupler. The Hydraulic Quick Coupler, Steel is listed in 3/4-16 and 7/8-14 SAE ports. The Hydraulic Quick Coupler, Steel, 1 is listed in 3/4\" to 1\" NPT. Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Safeway Hydraulic Quick Coupler, Steel, 1](/p/safeway-hydraulic-quick-coupler-steel-1)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Safeway Hydraulic Quick Coupler, Steel made and what is its HS code?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel is listed with United States as the country of origin and HS code 7307929000. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Safeway Hydraulic Quick Coupler, Steel from stock in Dubai, UAE?",
+          "a": "Yes. The Safeway Hydraulic Quick Coupler, Steel is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "safeway-hydraulic-quick-coupler-steel-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Safeway Hydraulic Quick Coupler, Steel, 1 used for?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel, 1 are steel quick-coupler bodies and plugs with female NPT ports and Buna N seals, from 3/4\" to 1\" in 3 part numbers. The maker states 3,000 to 4,000 psi (207 to 276 bar) by size with a temperature range of -40°F to +250°F, and flow of 26 to 50 GPM."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "The three part numbers are FFE495-6-1, FFE491-6-1 and FFE491-8. The FFE495 row is a 1 inch NPT coupler body and the FFE491 rows are 1 inch NPT plugs; FFE491-6-1 is a 3/4\" body plug at 4,000 psi and FFE491-8 is a 1\" body plug at 3,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What do I need to know before ordering the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "Choose by body size first, then by port thread, then by the working pressure of your system. The mating half must come from the same interchange profile and size. For example, FFE495-6-1 is Quick Coupler Body 1 Inch Npt. Send us the thread on your hose or port and the half it mates with, and we confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which body sizes can I order in the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel, 1 is listed in 3/4\" to 1\" NPT, across 3 part numbers. Connection type: FNPT. The table gives the thread and size for each part number."
+        },
+        {
+          "slot": "E",
+          "q": "How much pressure can the Safeway Hydraulic Quick Coupler, Steel, 1 handle?",
+          "a": "The maker states 3,000 to 4,000 psi (207 to 276 bar) by size for the Safeway Hydraulic Quick Coupler, Steel, 1. Rows in the size table carry ratings from 3,000 psi to 4,000 psi, set by size and material. Read the figure on the row for your part number, and rate the assembly to its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Safeway Hydraulic Quick Coupler, Steel, 1 have?",
+          "a": "Seal material: Buna N. Temperature range: -40°F to +250°F. Send us your fluid and operating temperature and we confirm the seal and body material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or documents apply to the Safeway Hydraulic Quick Coupler, Steel, 1?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel, 1 is identified by its maker series and part number rather than a published industry standard. State the series, size and part number on your enquiry, and ask us for the maker datasheet and any material certificate you need; we confirm what is available with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Safeway Hydraulic Quick Coupler, Steel, 1 connect to?",
+          "a": "Mates with the half of the same series: the FFE495 body takes an FFE491 plug of the same size. Quote the part number of the mating half, or tell us what it must connect to, and we confirm the match before supply. For the other half, see the [Safeway FF Flush-Face Couplers & Tips](/p/safeway-ff-flush-face-couplers-tips)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Safeway Hydraulic Quick Coupler, Steel, 1 be installed and inspected?",
+          "a": "Wipe the faces of both halves of the Safeway Hydraulic Quick Coupler, Steel, 1 clean before every connection and fit dust caps when they are apart, so grit stays off the flat faces. Depressurise the circuit first, seal tapered threads with a sealant suited to the thread, and replace any seal that is cut, flattened or hardened. See our guide [Skid steer and attachment circuits: the couplers are the weak point](/blog/skid-steer-hydraulic-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the Safeway Hydraulic Quick Coupler, Steel, 1 or the Safeway FF Flush-Face Couplers & Tips?",
+          "a": "The Hydraulic Quick Coupler, Steel, 1 is the 1\" steel NPT quick coupler, while the FF Flush-Face Couplers & Tips is the flush-face coupler or tip. The Hydraulic Quick Coupler, Steel, 1 is listed in 3/4\" to 1\" NPT. The FF Flush-Face Couplers & Tips are listed in 3/8\" to 3/4\". Both are options in the same family, so choose the one whose size range and end connection match your line. See the [Safeway FF Flush-Face Couplers & Tips](/p/safeway-ff-flush-face-couplers-tips)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Safeway Hydraulic Quick Coupler, Steel, 1 be exported from Dubai and what origin does it carry?",
+          "a": "The Safeway Hydraulic Quick Coupler, Steel, 1 is listed with United States as the country of origin and HS code 7307995045. We export from Dubai, UAE, to the GCC, Africa, Asia and beyond; give us the destination and we advise on documents and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Safeway Hydraulic Quick Coupler, Steel, 1 in Dubai?",
+          "a": "Yes. The Safeway Hydraulic Quick Coupler, Steel, 1 is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For prices, send your part numbers and quantities through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

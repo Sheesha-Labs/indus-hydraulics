@@ -1,0 +1,998 @@
+{
+  "family": "steel-hose-barb-adapters-01",
+  "extraFacts": [
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for free-fitting mechanical joints under ASME B1.20.1; it does not seal on the thread but on a gasket or seat. NPSH is the straight hose-coupling thread (ASME B1.20.7) and NST is the National Standard Thread used on fire hose couplings (NFPA 1963); these couplings seal on a gasket.",
+      "source": "ASME B1.20.1; ASME B1.20.7 Hose Coupling Screw Threads; NFPA 1963 Fire Hose Connections"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread standardised in ASME B1.20.1; NPTF (Dryseal) is standardised in ASME B1.20.3 and is cut so the crests and roots close up as the joint is tightened, so it seals on the thread.",
+      "source": "ASME B1.20.1 and ASME B1.20.3 scopes"
+    },
+    {
+      "fact": "SAE J514 is the standard for 37° flared (JIC) tube fittings, whose flare seats on a 74° included cone; the 45° SAE flare is a different seat that does not mate with the 37° one.",
+      "source": "SAE J514; SAE J512 (45° flare)"
+    },
+    {
+      "fact": "Sixteenths of an inch: hose and fitting dash sizes count sixteenths, so -4 is 1/4 inch, -6 is 3/8 inch, -8 is 1/2 inch, -12 is 3/4 inch and -16 is 1 inch.",
+      "source": "SAE J514 / ISO 8434 dash size convention"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-90-degree-push-on-elbows-female-37-degree-jic-45-degree-sae-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel used for?",
+          "a": "The Dixon 90 Degree Push-on Elbows are steel elbows with a push-on hose barb on one end and a female swivel, JIC 37° or SAE 45°, on the other. The range has 6 part numbers, from 1/4\" to 3/4\" hose size, with the maker's pressure figure stated as 350 psi (24 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel, such as 2890407C?",
+          "a": "The four digits before the letter are sizes in sixteenths of an inch: in 2890407C, 04 is the 1/4\" size and 07 is the 7/16-20 thread; in 2891217C, 12 is 3/4\" and 17 is the 1-1/16-12 thread. A trailing SAE, as in 2890610CSAE, marks the SAE 45° seat version."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel range cover?",
+          "a": "The range holds 6 part numbers: 2890407C (1/4\"), 2890609C (3/8\"), 2890812C (1/2\"), 2891217C (3/4\"), plus 2890610CSAE and 2890407CSAE for the SAE 45° seat. The Sizes & Part Numbers table lists each one with its swivel thread."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel for my hose or port?",
+          "a": "Match two things: the hose size and the swivel thread on the mating part. 3/8\" push-on hose, for example, comes with a 9/16-18 JIC thread (2890609C) or a 5/8-18 SAE thread (2890610CSAE), so check the seat angle, 37° or 45°, before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel take?",
+          "a": "The maker states 350 psi (24 bar) for every part number in this range, with an operating temperature of -40°F to +150°F. A push-on joint holds only what the hose and the barb allow, so use it with push-on hose rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel made from?",
+          "a": "The range is steel, as the maker lists it, with UNF threads on the swivel end. Ask us for the plating or stainless option if the elbow will see weather or washdown."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel?",
+          "a": "The swivel ends use UNF threads and a JIC 37° or SAE 45° flare seat, as the listing states; both seats are flared and metal-to-metal. The 37° and 45° seats do not mate with each other, so confirm the angle of your port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel connect to?",
+          "a": "The barb end takes push-on hose of the listed size; the swivel end mates with a male flare of the same angle and thread. For crimped hose assemblies see the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel?",
+          "a": "Push the hose fully over the barb, check it is seated, and tighten the swivel nut by the make-up turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). Replace any elbow whose swivel nut is damaged or whose barb is worn."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon 90 Degree Push-on Elbow compare with the Dixon Push On Hose Barbs?",
+          "a": "The elbows turn the line through 90° and have a JIC or SAE female swivel on one end, while the [Dixon Push On Hose Barbs](/p/dixon-push-on-hose-barbs) are straight, listed in 6 rows including male and female rigid and tube ends. Choose the elbow where the hose must turn at the port."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel ship from, and what are the export details?",
+          "a": "The Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel for export from Dubai?",
+          "a": "Yes. We keep the Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 2890407C and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-flat-face-male-x-male-nptf-connectors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Flat Face Male x Male NPTF Connectors used for?",
+          "a": "The Dixon Flat Face Male x Male NPTF Connectors are steel connectors with a flat-face male on one end and a male NPTF thread on the other, in 5 sizes. The maker states 2,000 to 5,000 psi (138 to 345 bar) depending on the size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Flat Face Male x Male NPTF Connectors, such as FS2404-16-16?",
+          "a": "In FS2404-4-4 the two numbers are the end size in sixteenths of an inch for both ends: 4 is the -4 size and 16 in FS2404-16-16 is the -16 size. The rows range from FS2404-4-4 (5,000 psi) to FS2404-16-16 (2,000 psi)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Flat Face Male x Male NPTF Connectors range cover?",
+          "a": "Five part numbers are listed: FS2404-4-4, FS2404-6-6, FS2404-8-8, FS2404-12-12 and FS2404-16-16. The Sizes & Part Numbers table gives the thread of each, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Flat Face Male x Male NPTF Connectors for my hose or port?",
+          "a": "Choose by the end size of the flat-face port and the NPTF size you are joining to. The pressure falls as the size goes up, so FS2404-4-4 is rated higher than FS2404-16-16; read the row for the part you order."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Flat Face Male x Male NPTF Connectors take?",
+          "a": "The maker states a rating by size: 5,000 psi (345 bar) on FS2404-4-4, 4,000 psi (276 bar) on FS2404-6-6, 3,000 psi (207 bar) on FS2404-8-8, 2,500 psi (172 bar) on FS2404-12-12 and 2,000 psi (138 bar) on FS2404-16-16. Never use a larger-size figure for a smaller size."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Flat Face Male x Male NPTF Connectors made from?",
+          "a": "The listing gives the material as steel for the connectors. Ask us if you need a plating or a stainless equivalent for the environment, and tell us the fluid so we can check compatibility."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Flat Face Male x Male NPTF Connectors?",
+          "a": "The ends are a flat-face male and a male NPTF thread, as the listing states; NPTF is the Dryseal tapered thread. A flat-face end seals on its face, not on the thread, so it must meet a matching flat-face port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Flat Face Male x Male NPTF Connectors connect to?",
+          "a": "The flat-face end connects to a matching flat-face port or coupling half, and the male NPTF end screws into a female NPTF port. See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for thread-matched hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Flat Face Male x Male NPTF Connectors?",
+          "a": "Make up the NPTF end with sealant suited to the fluid, and keep the flat face clean and undamaged, because a scratched face leaks. Tighten each end separately and re-check after the first pressure cycle."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Flat Face Male x Male NPTF Connectors and the Dixon Hex Pipe Nipples?",
+          "a": "The connectors have a flat-face sealing end on one side, while the [Dixon Hex Pipe Nipples](/p/dixon-hex-pipe-nipples) are plain NPTF on both ends. Both are steel with ratings that fall with size, so choose the connector where one side meets a flat-face port."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Flat Face Male x Male NPTF Connectors ship from, and what are the export details?",
+          "a": "The Dixon Flat Face Male x Male NPTF Connectors ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Flat Face Male x Male NPTF Connectors for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Dixon Flat Face Male x Male NPTF Connectors, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hex-pipe-nipples",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hex Pipe Nipples used for?",
+          "a": "The Dixon Hex Pipe Nipples are zinc-plated steel nipples with male NPTF threads on both ends and a hex in the middle for the spanner. The range has 5 part numbers from 1/4\" to 1-1/4\", rated 1,150 to 5,000 psi (79 to 345 bar) by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Hex Pipe Nipples, such as 5404-8?",
+          "a": "The number after 5404 is the size in sixteenths of an inch: 5404-4 is the 1/4\" nipple, 5404-8 is 1/2\", 5404-12 is 3/4\", 5404-16 is 1\" and 5404-20 is 1-1/4\". The rows prove it, each with its NPTF thread."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Hex Pipe Nipples range cover?",
+          "a": "Five sizes are listed: 5404-4 (1/4-18), 5404-8 (1/2-14), 5404-12 (3/4-14), 5404-16 (1-11.5) and 5404-20 (1-1/4-11.5). The Sizes & Part Numbers table gives the pressure of each."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Hex Pipe Nipples for my hose or port?",
+          "a": "Pick the nipple by the NPTF size of the two ports it joins, and check the pressure against the row: the small 5404-4 is rated higher than the large 5404-20, so do not use a smaller size's rating for a larger one."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Hex Pipe Nipples take?",
+          "a": "The maker states 345 bar on 5404-4, 207 bar on 5404-8, 172 bar on 5404-12, 138 bar on 5404-16 and 79 bar on 5404-20, a range of 1,150 to 5,000 psi. The rating falls with size, so take the figure for the row you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Hex Pipe Nipples made from?",
+          "a": "The nipples are zinc-plated steel, as the listing states. Zinc plating suits indoor and sheltered hydraulic use; ask us for stainless if the line sees corrosive fluids or seawater."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Hex Pipe Nipples?",
+          "a": "The listing gives NPTF (Dryseal) male threads on both ends: a tapered thread that seals on the thread, with the crests and roots closing up as it is tightened. It mates with female NPT or NPTF ports; see the NPT guides for sealant practice."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Hex Pipe Nipples connect to?",
+          "a": "A hex pipe nipple joins two female NPTF ports, for example two valves or a valve and a hose end. The [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) lists matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Hex Pipe Nipples?",
+          "a": "Wrap or coat the male thread with sealant, thread it in by hand and then with a spanner on the hex, and do not back off to line up. Over-tightening splits a female port, so stop when the joint is firm and leak-tight."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Hex Pipe Nipples and the Dixon Nipples?",
+          "a": "The hex nipples have a hex section for a spanner and are rated 1,150 to 5,000 psi, while the [Dixon Nipples](/p/dixon-nipples) listing is larger and mixes zinc-plated steel, brass and polypropylene nipples in 41 part numbers. Choose the hex nipple for a hydraulic NPTF joint at a stated rating."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Hex Pipe Nipples ship from, and what are the export details?",
+          "a": "The Dixon Hex Pipe Nipples ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hex Pipe Nipples for export from Dubai?",
+          "a": "Yes. The Dixon Hex Pipe Nipples is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 5404-8 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hose-barb-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hose Barb Adapters used for?",
+          "a": "The Dixon Hose Barb Adapters range has 7 part numbers: a male NPTF x hose barb adapter, five brewery hose barb adapters from 1 inch to 3 inch, and a 5/16\" hose barb x 1/2-20 female JIC/SAE swivel. The materials are brass and stainless steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Hose Barb Adapters, such as RKHN881?",
+          "a": "The brewery adapters follow a pattern: 14MPHRL100, 14MPHRL150, 14MPHRL200, 14MPHRL250 and 14MPHRL300 end in the size in hundredths of an inch for 1, 1.5, 2, 2.5 and 3 inch. RKHN881 and 1430508K are separate series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Hose Barb Adapters range cover?",
+          "a": "Seven part numbers are listed: RKHN881, 14MPHRL100, 14MPHRL150, 14MPHRL200, 14MPHRL250, 14MPHRL300 and 1430508K. The Sizes & Part Numbers table lists them with their end descriptions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Hose Barb Adapters for my hose or port?",
+          "a": "Start from the hose I.D. and the thread on the mating part. The five brewery adapters cover 1 inch to 3 inch hose, RKHN881 is a male NPTF to hose barb adapter, and 1430508K is for 5/16\" hose to a 1/2-20 swivel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Hose Barb Adapters take?",
+          "a": "The listing states no pressure or temperature rating for this range. Tell us the working pressure, the fluid and the hose and we will check the adapter against the maker's data before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Hose Barb Adapters made from?",
+          "a": "The range is listed in brass and stainless steel. The brewery adapters suit hygienic hose lines where brass is not wanted; confirm the grade by part number, because the listing does not split material by row."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Hose Barb Adapters?",
+          "a": "The listing gives the end as hose barb x MNPT. The swivel adapter 1430508K is a 1/2-20 female with a 45° SAE or 37° JIC seat; the other parts have male NPT ends. Check the thread type of each part number before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Hose Barb Adapters connect to?",
+          "a": "The barb takes hose of the listed I.D. and the other end connects to a male NPT or JIC/SAE port as described. The [brass hose barbs shelf](/c/brass-hose-barbs) lists further barb types."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Hose Barb Adapters?",
+          "a": "Slide the hose fully over the barb and secure it with a clamp of the right size. Use sealant on the NPT thread, and do not exceed the working pressure of the hose, which is usually lower than the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Hose Barb Adapters range differ from the Dixon Hose Fittings, Male NPTF x Hose Barb?",
+          "a": "This range is a small mixed set of 7 adapters, including brewery sizes up to 3 inch, whereas the [Dixon Hose Fittings, Male NPTF x Hose Barb](/p/dixon-hose-fittings-male-nptf-x-hose-barb) listing holds many more inserts in brass and stainless steel. Choose by hose I.D. and material."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Hose Barb Adapters ship from, and what are the export details?",
+          "a": "The Dixon Hose Barb Adapters ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hose Barb Adapters for export from Dubai?",
+          "a": "Yes, we stock the Dixon Hose Barb Adapters in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-hose-fittings-male-nptf-x-hose-barb",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Hose Fittings, Male NPTF x Hose Barb used for?",
+          "a": "The Dixon Hose Fittings, Male NPTF x Hose Barb are hose barb inserts with a male NPTF thread, in brass, lead-free brass and 316 stainless steel, from 3/16\" to 1\" hose. The listing has 61 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Hose Fittings, Male NPTF x Hose Barb, such as RN22?",
+          "a": "In the 102 series the four digits before the letters are hose I.D. and NPTF size in sixteenths of an inch: in 1020604C, 06 is 3/8\" hose I.D. and 04 is a 1/4\" NPTF thread; in 1021616C both are 1\". CLF at the end marks the lead-free brass version, as in 1020604CLF. RN numbers are a separate series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Hose Fittings, Male NPTF x Hose Barb range cover?",
+          "a": "The 61 part numbers include inserts such as 1020202C (1/8\" hose x 1/8 NPTF) up to 1021616C (1\" hose x 1\" NPTF), RN-series connectors and lead-free versions. The Sizes & Part Numbers table lists each with its hose size and thread."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Hose Fittings, Male NPTF x Hose Barb for my hose or port?",
+          "a": "Match the hose I.D. first, then the NPTF thread on the port. For example 1020804C is a 1/2\" hose x 1/4\" NPTF insert and 1020808C is 1/2\" hose x 1/2\" NPTF. Choose the lead-free CLF part for drinking-water service."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Hose Fittings, Male NPTF x Hose Barb take?",
+          "a": "The listing states no pressure rating for these inserts. A barbed joint holds only as much as the hose and the clamp allow, so tell us the hose, the working pressure and the fluid and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Hose Fittings, Male NPTF x Hose Barb made from?",
+          "a": "The listing names three materials: brass, lead-free brass and 316 stainless steel. Parts with CLF in the number are the lead-free brass ones, and the specification lists Grade 316 for the stainless parts; confirm by part number when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Hose Fittings, Male NPTF x Hose Barb?",
+          "a": "The ends are a hose barb and a male NPTF (Dryseal) thread, as the listing states. NPTF is the tapered thread that seals on the thread, so it needs sealant and a matching female NPT or NPTF port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Hose Fittings, Male NPTF x Hose Barb connect to?",
+          "a": "The barb takes push-on hose of the listed I.D. and the male NPTF end screws into a female NPT or NPTF port. The [brass hose barbs shelf](/c/brass-hose-barbs) lists brass barb hose ends in other forms."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Hose Fittings, Male NPTF x Hose Barb?",
+          "a": "Push the hose fully over the barbs and fit a worm-drive or crimped clamp behind the last barb; the [hose barbs and push-lock fittings guide](/blog/hose-barbs-and-push-lock-fittings) explains the limits of a barbed joint. Seal the NPTF thread with sealant and do not over-tighten."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Hose Fittings, Male NPTF x Hose Barb and the Dixon Push On Hose Barbs?",
+          "a": "This range is a barbed insert held on by a clamp, with 61 part numbers in brass or 316 stainless, whereas the [Dixon Push On Hose Barbs](/p/dixon-push-on-hose-barbs) are for push-on hose and end in a UNF thread. Choose these for clamped hose with an NPTF port."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Hose Fittings, Male NPTF x Hose Barb ship from, and what are the export details?",
+          "a": "The Dixon Hose Fittings, Male NPTF x Hose Barb ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives China as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Hose Fittings, Male NPTF x Hose Barb for export from Dubai?",
+          "a": "Yes. Stock of the Dixon Hose Fittings, Male NPTF x Hose Barb sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as RN22 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-instrumentation-male-connectors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Instrumentation Male Connectors used for?",
+          "a": "The Dixon Instrumentation Male Connectors are stainless steel male-thread connectors for instrument and small-bore lines, with 17 part numbers in NPT sizes from 1/8\" to 1\". The listing gives a temperature range of -325°F to +1200°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Instrumentation Male Connectors, such as 16-DMC-12?",
+          "a": "The figure after DMC is the male NPT thread size in sixteenths of an inch: 4-DMC-4 and 6-DMC-4 both carry a 1/4-18 thread, 6-DMC-6 a 3/8-18 thread and every -8 part (4-DMC-8 to 12-DMC-8) a 1/2-14 thread. The figure before DMC, from 2 to 16, sets the other end, so quote the whole number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Instrumentation Male Connectors range cover?",
+          "a": "Seventeen part numbers are listed, from 2-DMC-2 (1/8-27 thread) to 16-DMC-16 (1\" thread), with threads of 1/8-27, 1/4-18, 3/8-18, 1/2-14, 3/4 and 1\". The Sizes & Part Numbers table gives each size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Instrumentation Male Connectors for my hose or port?",
+          "a": "Choose the tube size of the instrument line and the NPT thread of the port: 4-DMC-4 pairs a 1/4\" tube size with a 1/4-18 NPT thread and 12-DMC-8 pairs a 3/4\" tube size with a 1/2-14 thread. Several part numbers share a thread, so check both sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Instrumentation Male Connectors take?",
+          "a": "The listing states a temperature range of -325°F to +1200°F for these connectors and no pressure rating. Tell us the working pressure and tube wall and we will confirm the figure from the maker's data before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Instrumentation Male Connectors made from?",
+          "a": "The connectors are stainless steel, as the listing states. Ask us for the grade if the media or the environment is corrosive, and tell us the working temperature so we can check it against the listed range."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Instrumentation Male Connectors?",
+          "a": "The listing gives NPT male threads, with sizes such as 1/8-27, 1/4-18, 3/8-18 and 1/2-14. NPT is a tapered pipe thread that seals on the thread with sealant; keep it separate from parallel BSP threads."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Instrumentation Male Connectors connect to?",
+          "a": "The male NPT end screws into a female NPT port on an instrument, valve or manifold, and the other end takes the tube. For a 90° version see the [Dixon Instrumentation Male Elbows](/p/dixon-instrumentation-male-elbows)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Instrumentation Male Connectors?",
+          "a": "Seal the male thread with a sealant suitable for stainless steel and the media, tighten by the maker's turns, and do not over-tighten into a thin-walled port. Re-check for leaks after the first pressure and temperature cycle."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Instrumentation Male Connectors compare with the Dixon Instrumentation Male Elbows?",
+          "a": "The connectors are straight, in 17 part numbers, while the [Dixon Instrumentation Male Elbows](/p/dixon-instrumentation-male-elbows) turn the line through 90° and are listed in 8 part numbers. Both are stainless steel NPT with the same temperature range; choose the elbow where space is tight."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Instrumentation Male Connectors ship from, and what are the export details?",
+          "a": "The Dixon Instrumentation Male Connectors ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Instrumentation Male Connectors for export from Dubai?",
+          "a": "Yes. We hold the Dixon Instrumentation Male Connectors at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-instrumentation-male-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Instrumentation Male Elbows used for?",
+          "a": "The Dixon Instrumentation Male Elbows are stainless steel 90° male-thread elbows for instrument lines, listed in 8 part numbers with NPT threads from 1/8\" to 1\". The temperature range given is -325°F to +1200°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Instrumentation Male Elbows, such as 16-DME-12?",
+          "a": "The figure after DME is the male NPT thread size in sixteenths of an inch: 4-DME-2 carries a 1/8-27 thread, 4-DME-4 and 6-DME-4 a 1/4-18 thread, 12-DME-8 a 1/2-14 thread and 12-DME-12 a 3/4-14 thread. The figure before DME sets the other end, so quote the whole number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Instrumentation Male Elbows range cover?",
+          "a": "Eight part numbers are listed: 4-DME-2, 4-DME-4, 6-DME-4, 6-DME-6, 12-DME-8, 12-DME-12, 16-DME-12 and 16-DME-16. The Sizes & Part Numbers table lists each with its thread."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Instrumentation Male Elbows for my hose or port?",
+          "a": "Choose the tube size of the instrument line and the NPT size of the port: 4-DME-4 pairs 1/4\" with a 1/4-18 thread and 16-DME-12 pairs a 1\" tube size with a 3/4 thread. Check both figures against your ports."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Instrumentation Male Elbows take?",
+          "a": "The listing states -325°F to +1200°F and no pressure rating for these elbows. Tell us the working pressure and the tube and we will confirm the figure from the maker's data before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Instrumentation Male Elbows made from?",
+          "a": "The elbows are stainless steel, as the listing states. Ask us for the grade if the process is corrosive, and tell us the media and temperature so we can match the elbow to the duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Instrumentation Male Elbows?",
+          "a": "The listing gives NPT male threads at 90°. NPT is a tapered thread that seals on the thread with sealant, so it needs a female NPT port and sealant suited to the media."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Instrumentation Male Elbows connect to?",
+          "a": "The male NPT end goes into a female NPT port and the other end takes the instrument tube. For a straight connection use the [Dixon Instrumentation Male Connectors](/p/dixon-instrumentation-male-connectors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Instrumentation Male Elbows?",
+          "a": "Seal the thread with sealant, position the elbow by turning it into the port, and do not back it off to align it, as that breaks the seal. Re-check after the first thermal cycle."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose the Dixon Instrumentation Male Elbows instead of the male connectors?",
+          "a": "Choose the elbows, listed in 8 part numbers, where the tube must turn through 90° at the port, and the [Dixon Instrumentation Male Connectors](/p/dixon-instrumentation-male-connectors), listed in 17, where it runs straight. The material and temperature range are the same."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Instrumentation Male Elbows ship from, and what are the export details?",
+          "a": "The Dixon Instrumentation Male Elbows ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Instrumentation Male Elbows for export from Dubai?",
+          "a": "Yes. We keep the Dixon Instrumentation Male Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 16-DME-12 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-male-jic-37-degree-flare-x-male-metric-parallel-thread-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters used for?",
+          "a": "The Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters have a male JIC 37° flare on one end and a male metric parallel thread on the other, in steel. The range has 8 part numbers, from 7/16-20 to 1-5/16-12 on the flare end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters, such as M7400-16-33?",
+          "a": "In M7400-6-16 the 6 is the JIC flare size (9/16-18) and 16 is the metric thread diameter in millimetres (M16 x 1.5); M7400-16-33 is a 1-5/16-12 flare with an M33 x 2 thread. The rows give both threads for each number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters range cover?",
+          "a": "Eight part numbers are listed, such as M7400-4-10 (7/16-20 to M10 x 1), M7400-6-14, M7400-6-16, M7400-8-16, M7400-12-22, M7400-12-27 and M7400-16-33. The Sizes & Part Numbers table gives both threads."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters for my hose or port?",
+          "a": "Identify the JIC size and the metric thread: 9/16-18 can go to M14 x 1.5 (M7400-6-14) or M16 x 1.5 (M7400-6-16), and 1 1/16-12 can go to M22 x 1.5 or M27 x 2. Measure the metric port to confirm the pitch."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters take?",
+          "a": "The listing states no pressure rating for this range. A flared and parallel-thread joint holds what the weaker end and the sealing method allow, so tell us the working pressure and we will confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters made from?",
+          "a": "The range is steel, as the listing states. Ask us if you need a plated or stainless version for a corrosive environment."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters?",
+          "a": "The flare end is JIC 37°, as the listing states, and the other end is a metric parallel thread such as M16 x 1.5. A parallel metric thread is not sealed by the thread, so the joint needs a face seal or washer on the metric port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters connect to?",
+          "a": "The JIC end mates with a female JIC swivel nut and the metric end screws into a metric parallel port. See the [metric hose fittings shelf](/c/metric-hose-fittings) and the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters?",
+          "a": "Check the metric port style, whether it takes a bonded washer, an O-ring or a cone seat, before fitting. Seat the JIC flare square and tighten by the make-up turns for the size."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Male JIC 37 Degree Flare x Male Metric Parallel adapter compare with the Dixon Male x Male NPTF Flat Face connectors?",
+          "a": "This adapter changes a 37° JIC flare to a metric parallel thread, whereas the [Dixon Flat Face Male x Male NPTF Connectors](/p/dixon-flat-face-male-x-male-nptf-connectors) join a flat-face end to NPTF. They solve different thread mismatches; choose by the two standards in your system."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters ship from, and what are the export details?",
+          "a": "The Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Dixon Male JIC 37 Degree Flare x Male Metric Parallel Thread Adapters, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-nipples",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Nipples used for?",
+          "a": "The Dixon Nipples range holds 41 part numbers of pipe nipples: zinc-plated steel NPT and FNPT nipples, polypropylene nipples, brass nipples with BSPP and metric ends, octagonal nipples and cast brass. The listing gives a size range of 4 mm to 9 mm for the small brass ones."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Nipples, such as 3501?",
+          "a": "The patterns differ by family: 3501 to 3554 are the zinc-plated steel nipples (3512 is 1/2 x 1/2 MNPT, 3514 is 3/4 x 3/4), 62192 to 62226 are polypropylene with a length such as 4 or 6 inch, and BR1 numbers are brass with the thread code (BR1M2 = 1/4 MNPTF)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Nipples range cover?",
+          "a": "The 41 part numbers include steel male nipples from 1/4 to 1 inch NPT, female FNPT nipples such as 3546 and 3554, brass nipples BR1M1 and BR1GM1, polypropylene nipples 62192 to 62226 and octagonal nipples OCTOE32. The Sizes & Part Numbers table lists each."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Nipples for my hose or port?",
+          "a": "Decide the material first, then the thread on each end: 3512 is zinc-plated steel 1/2 x 1/2 MNPT, 62225 is 1 inch MNPT polypropylene at 4 inch overall length and BR1GM2-B-E-7 is brass with a 1/4 male BSPP thread. Send the thread and length if a size is not obvious."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Nipples take?",
+          "a": "The listing states no pressure rating for this range. Ratings depend on the material and size, and polypropylene is far lower than steel, so tell us the working pressure and fluid and we will confirm the part before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Nipples made from?",
+          "a": "The range mixes materials: zinc-plated steel, brass, carbon steel, polypropylene and cast brass. The material is shown in each row's description, so choose by part number, not by the listing title alone."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Nipples?",
+          "a": "The listing gives NPT and NPTF taper threads, plus BSPP and metric ends on some brass nipples. NPT and NPTF look alike but NPTF is the Dryseal form that seals on the thread; keep BSPP away from NPT ports."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Nipples connect to?",
+          "a": "A nipple joins two female ports; steel ones suit hydraulic and general pipe work, and brass ones suit instrument and air lines. The [Dixon Hex Pipe Nipples](/p/dixon-hex-pipe-nipples) have a hex and a pressure rating by size."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Nipples?",
+          "a": "Seal tapered threads with a sealant suited to the fluid, hand-start the thread and finish with a spanner. Do not mix steel and polypropylene parts in one joint, as the plastic threads strip easily."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Nipples range and the Dixon Steel 3500 Nipples With Ferrule?",
+          "a": "The [Dixon Steel 3500 Nipples With Ferrule](/p/dixon-steel-3500-nipples-with-ferrule) are steel nipples with a ferrule for hose, in 8 part numbers, whereas this range is plain pipe nipples in 41. Use the ferrule nipple on a hose end and this range for pipe-to-pipe joints."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Nipples ship from, and what are the export details?",
+          "a": "The Dixon Nipples ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Nipples for export from Dubai?",
+          "a": "Yes. The Dixon Nipples is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 3501 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-npt-threaded-one-end-pipe-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon NPT Threaded One End Pipe Fittings used for?",
+          "a": "The Dixon NPT Threaded One End Pipe Fittings are push-on hose stems with an NPT thread on one end, in carbon steel, 304 stainless steel and aluminium. The range has 22 part numbers from 1/4\" to 4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon NPT Threaded One End Pipe Fittings, such as PN750?",
+          "a": "The digits after PN are the size in thousandths: PN250 is 1/4\", PN750 is 3/4\", PN2000 is 2\" and PN4000-series sizes go to 4\". PNS means 304 stainless, as in PNS1500 (1-1/2\"), and APN means aluminium, as in APN4000."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon NPT Threaded One End Pipe Fittings range cover?",
+          "a": "The 22 part numbers run from PN250 (1/4\") to PNS4000 (4\"), in carbon steel (PN), 304 stainless (PNS) and aluminium (APN), with sizes such as 3/8\", 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\". The table lists each."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon NPT Threaded One End Pipe Fittings for my hose or port?",
+          "a": "Choose the pipe size and the material together: PN1000 is a 1\" carbon steel fitting, PNS1000 is the 304 stainless one and APN3000 is a 3\" aluminium fitting. Match the size to the hose I.D. as well as the NPT port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon NPT Threaded One End Pipe Fittings take?",
+          "a": "The listing states no pressure rating for this range. Ratings depend on the hose and the material, and aluminium is lower than steel, so tell us the working pressure and fluid and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon NPT Threaded One End Pipe Fittings made from?",
+          "a": "The listing names three materials: carbon steel (PN), 304 stainless steel (PNS) and aluminium (APN). Choose stainless for washdown or chemicals and aluminium where weight matters."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon NPT Threaded One End Pipe Fittings?",
+          "a": "The listing gives NPT threads, a tapered pipe thread that seals on the thread with sealant. No further standard is stated for the stem end."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon NPT Threaded One End Pipe Fittings connect to?",
+          "a": "The NPT end screws into a female NPT port and the stem takes hose of the matching size. See the [stainless hose barbs and push-on fittings shelf](/c/stainless-hose-barbs-push-on-fittings) for similar push-on stems."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon NPT Threaded One End Pipe Fittings?",
+          "a": "Seal the NPT thread, push the hose fully over the stem and secure it with a clamp; the [hose barbs and push-lock fittings guide](/blog/hose-barbs-and-push-lock-fittings) explains what a clamped stem can and cannot hold."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon NPT Threaded One End Pipe Fittings differ from the Dixon Hose Fittings, Male NPTF x Hose Barb?",
+          "a": "These are larger stems up to 4\" in steel, stainless and aluminium (22 part numbers), whereas the [Dixon Hose Fittings, Male NPTF x Hose Barb](/p/dixon-hose-fittings-male-nptf-x-hose-barb) are small brass and stainless inserts. Choose by hose size and material."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon NPT Threaded One End Pipe Fittings ship from, and what are the export details?",
+          "a": "The Dixon NPT Threaded One End Pipe Fittings ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon NPT Threaded One End Pipe Fittings for export from Dubai?",
+          "a": "Yes, we stock the Dixon NPT Threaded One End Pipe Fittings in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-push-on-hose-barbs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Push On Hose Barbs used for?",
+          "a": "The Dixon Push On Hose Barbs are fittings for push-on hose in brass and stainless steel, with a UNF swivel or rigid end. The range has 6 part numbers; the maker states 350 psi (24 bar) on the rows that carry a rating, with -40°F to +150°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Push On Hose Barbs, such as 2880609SS?",
+          "a": "Each number carries sizes in sixteenths of an inch before the suffix: in 2870608C the 06 is 3/8\" hose and 08 the 1/2-20 thread; in 2861217CBC the 12 is 3/4\" hose and 17 the 1-1/16-12 thread. SS marks the stainless row (2880609SS)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Push On Hose Barbs range cover?",
+          "a": "Six part numbers are listed: 2880609SS, 2861217CBC, 2870608C, 2920608C, 2900508C and 2941212C, for 5/16\", 3/8\" and 3/4\" push-on hose. The Sizes & Part Numbers table lists each end."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Push On Hose Barbs for my hose or port?",
+          "a": "Match the push-on hose I.D. and the end style: 2920608C is a 3/8\" hose with a female rigid SAE 1/2-20, 2900508C is a 5/16\" hose with a male SAE swivel and 2941212C is a 3/4\" hose with a 3/4\" rigid tube end."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Push On Hose Barbs take?",
+          "a": "The maker states 350 psi (24 bar) on five of the six rows and -40°F to +150°F for the range. 2861217CBC carries no stated rating, so ask us for it. Push-on joints suit only hose rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Push On Hose Barbs made from?",
+          "a": "The listing gives brass and stainless steel, with Grade 303 stated for the stainless parts. Part numbers ending SS, as in 2880609SS, are the stainless ones; the others are listed in brass."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Push On Hose Barbs?",
+          "a": "The listing gives UNF threads and a JIC swivel connection; the SAE and JIC seats are flared. No other standard is stated, so confirm the seat angle of your port."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Push On Hose Barbs connect to?",
+          "a": "The barb takes push-on hose of the listed size and the other end connects to a UNF port of the listed style. The [Dixon 90 Degree Push-on Elbows, Female 37 Degree JIC/45 Degree SAE Swivel](/p/dixon-90-degree-push-on-elbows-female-37-degree-jic-45-degree-sae-swivel) are the 90° version."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Push On Hose Barbs?",
+          "a": "Push the hose fully home and check it for any wobble, since push-on fittings rely on the hose barb grip. Replace the hose whenever the fitting is changed, and never exceed the lower of the hose and fitting rating."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Push On Hose Barbs compare with the Dixon Hose Barb Adapters?",
+          "a": "The push-on barbs are for push-on hose and end in UNF threads, in 6 part numbers, whereas the [Dixon Hose Barb Adapters](/p/dixon-hose-barb-adapters) are 7 mixed adapters including brewery barbs to 3 inch. Choose by the hose style and port thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Push On Hose Barbs ship from, and what are the export details?",
+          "a": "The Dixon Push On Hose Barbs ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Push On Hose Barbs for export from Dubai?",
+          "a": "Yes. Stock of the Dixon Push On Hose Barbs sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as 2880609SS and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-reducers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Reducers used for?",
+          "a": "The Dixon Reducers range has 4 part numbers: three tank truck reducers, female NPSM x male NPT 3 x 2 inch in aluminium, malleable iron and stainless steel, and one DOT push-in reducer for 1/4 x 3/8 inch tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Reducers, such as 3020-RD-AL?",
+          "a": "The tank truck reducers carry the material in the suffix: 3020-RD-AL is aluminium, 3020-RD-MI is malleable iron and 3020-RD-SS is stainless steel, all 3 x 2 inch. 31665660DOT is a separate DOT push-in series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Reducers range cover?",
+          "a": "Four part numbers are listed: 3020-RD-AL, 3020-RD-MI, 3020-RD-SS and 31665660DOT. The Sizes & Part Numbers table lists each with its description, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Reducers for my hose or port?",
+          "a": "For the 3 x 2 inch tank truck reducers choose the material for the product: aluminium for light weight, malleable iron for general use and stainless for chemicals. The DOT reducer is for 1/4 x 3/8 inch air brake tube, not for hose."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Reducers take?",
+          "a": "The listing states no pressure rating for this range. Tank truck reducers are low-pressure product-handling parts, so tell us the product and pressure and we will confirm the choice before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Reducers made from?",
+          "a": "The tank truck reducer comes in aluminium (AL), malleable iron (MI) and stainless steel (SS), and the DOT reducer is a push-in part. Pick the material that matches the product being handled."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Reducers?",
+          "a": "The tank truck reducers are female NPSM x male NPT 3 x 2 inch; NPSM is a straight pipe thread that seals on a gasket or seat, not on the thread. The DOT reducer is a push-in air brake part."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Reducers connect to?",
+          "a": "A tank truck reducer connects a 3 inch female NPSM coupling or adapter down to a 2 inch NPT port. For the push-in part see the [Dixon Union Elbows](/p/dixon-union-elbows) listing, which holds other DOT push-in fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Reducers?",
+          "a": "Seal the NPT end with sealant and use a gasket on the NPSM seat; do not rely on the straight thread to seal. Choose the stainless version for corrosive loads."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Reducers range and the Dixon Union Elbows range?",
+          "a": "The reducers change size in a line, mostly 3 x 2 inch tank truck sizes, while the [Dixon Union Elbows](/p/dixon-union-elbows) change direction in tubing, in 5 push-in part numbers. Choose the reducer to step down size and the elbow to turn a tube line."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Reducers ship from, and what are the export details?",
+          "a": "The Dixon Reducers ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Reducers for export from Dubai?",
+          "a": "Yes. We hold the Dixon Reducers at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-steel-3500-nipples-with-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Steel 3500 Nipples With Ferrule used for?",
+          "a": "The Dixon Steel 3500 Nipples With Ferrule are steel male NPT nipples with a ferrule on the hose end, for assembling hose. The range has 8 part numbers, such as 3505WF for 3/8 x 1/4 MNPT and 3518WF for 1 x 1 MNPT."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Steel 3500 Nipples With Ferrule, such as 3505WF?",
+          "a": "The four digits before WF match the plain nipple series: 3512WF is the 1/2 x 1/2 MNPT nipple with a ferrule, 3514WF is 3/4 x 3/4 and 3518WF is 1 x 1. The WF suffix adds the ferrule."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Steel 3500 Nipples With Ferrule range cover?",
+          "a": "Eight part numbers are listed: 3505WF, 3508WF, 3509WF, 3510WF, 3511WF, 3512WF, 3514WF and 3518WF, covering 3/8 x 1/4, 3/8 x 1/2, 1/2 x 1/4, 1/2 x 3/8, 1/2 x 3/4, 1/2 x 1/2, 3/4 x 3/4 and 1 x 1 inch MNPT."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Steel 3500 Nipples With Ferrule for my hose or port?",
+          "a": "Each size is hose size x MNPT size: 3510WF is a 1/2 inch hose end with a 3/8 inch MNPT thread, and 3511WF is the same hose end with a 3/4 inch thread. Match both the hose and the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Steel 3500 Nipples With Ferrule take?",
+          "a": "The listing states no pressure rating for this range; the name refers to the 3500 series. The assembly holds the lower of the hose and the fitting, so tell us the hose and working pressure and we will confirm."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Steel 3500 Nipples With Ferrule made from?",
+          "a": "The nipples are steel, as the listing states. Ask us for plating or stainless if the assembly will see weather or washdown."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Steel 3500 Nipples With Ferrule?",
+          "a": "The pipe end is male NPT, as the listing states: a tapered thread that seals on the thread with sealant. No separate standard is stated for the ferrule end; check the ferrule against the hose it is used with."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Steel 3500 Nipples With Ferrule connect to?",
+          "a": "The nipple goes into a female NPT port and the ferrule end is assembled on to hose. See the [reusable hose ends shelf](/c/reusable-hose-ends) for other hose end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Steel 3500 Nipples With Ferrule?",
+          "a": "Assemble the ferrule on hose of the matching size, thread the nipple in with sealant on the NPT end, and check the assembly before pressure is applied. Do not re-use a ferrule that has been crimped or damaged."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Steel 3500 Nipples With Ferrule compare with the plain Dixon Nipples?",
+          "a": "The ferrule nipples are for assembling hose and are listed in 8 part numbers with WF suffixes, whereas the [Dixon Nipples](/p/dixon-nipples) range is plain pipe nipples in 41 part numbers. Choose the WF nipple where it ends a hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Steel 3500 Nipples With Ferrule ship from, and what are the export details?",
+          "a": "The Dixon Steel 3500 Nipples With Ferrule ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Steel 3500 Nipples With Ferrule for export from Dubai?",
+          "a": "Yes. We keep the Dixon Steel 3500 Nipples With Ferrule in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 3505WF and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-style-n35-double-female-swivel-rocker-lugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Style N35 Double Female Swivel Rocker Lugs used for?",
+          "a": "The Dixon Style N35 Double Female Swivel Rocker Lugs are aluminium double female swivel couplings for NPSH x NST hose connections, with hard-coat anodised finish. The range has 16 part numbers from 1 inch to 6 inch swivel thread size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Style N35 Double Female Swivel Rocker Lugs, such as N35-15S15F?",
+          "a": "In N35-15S15F each size reads in tenths of an inch (15 is 1-1/2 inch) and the letter after it gives the thread: S is female NPSH and F is female NST. So N35-15S15F is NPSH x NST, N35-10F10F is NST x NST and N35-10S10S is NPSH x NPSH."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Style N35 Double Female Swivel Rocker Lugs range cover?",
+          "a": "Sixteen part numbers are listed, from N35-10S10F (1 inch) to N35-60F60F (6 inch), with sizes 1, 1-1/2, 2, 2-1/2, 3, 4, 4-1/2 and 6 inch and mixed sizes such as N35-15F25F. The Sizes & Part Numbers table lists each."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Style N35 Double Female Swivel Rocker Lugs for my hose or port?",
+          "a": "Match the swivel thread size on each end to the thread on the mating coupling: the same-size N35-15F15F fits 1-1/2 inch NST on both ends, while N35-15F25F joins 1-1/2 inch to 2-1/2 inch. Tell us the thread type, NPSH or NST, of each end."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Style N35 Double Female Swivel Rocker Lugs take?",
+          "a": "The listing states no pressure rating for this lug. Rocker lugs are for low-pressure hose couplings, so tell us the working pressure and the fluid and we will confirm the choice before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Style N35 Double Female Swivel Rocker Lugs made from?",
+          "a": "The material is aluminium or hardcoat aluminium with an anodised finish, as the listing states. Tell us the fluid and we will check it against the finish."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Style N35 Double Female Swivel Rocker Lugs?",
+          "a": "The listing gives NPSH x NST connections: NPSH is a straight hose-coupling thread and NST is the National Standard Thread used on fire hose couplings. Both seal on a gasket, not on the thread."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Style N35 Double Female Swivel Rocker Lugs connect to?",
+          "a": "The lug couples to a mating male fitting of the same thread and size, and the swivel lets the hose end turn freely. See the [Dixon Reducers](/p/dixon-reducers) for size-change adapters in the same family."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Style N35 Double Female Swivel Rocker Lugs?",
+          "a": "Fit a clean gasket in the coupling, engage the lugs squarely and tighten by hand or with a spanner on the lugs, never a wrench on the body. Replace a lug with damaged or bent lugs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Style N35 compare with the Dixon Reducers range?",
+          "a": "The N35 lug is a double female swivel coupling in aluminium with 16 part numbers up to 6 inch, whereas the [Dixon Reducers](/p/dixon-reducers) step a line down in size, mainly 3 x 2 inch. Use the lug to join hose couplings and the reducer to change size."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Style N35 Double Female Swivel Rocker Lugs ship from, and what are the export details?",
+          "a": "The Dixon Style N35 Double Female Swivel Rocker Lugs ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Style N35 Double Female Swivel Rocker Lugs for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Dixon Style N35 Double Female Swivel Rocker Lugs, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-union-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Union Elbows used for?",
+          "a": "The Dixon Union Elbows are push-to-connect elbows for tube: DOT push-in union elbows in brass, nylon Liqui-Fit union elbows and a DOT air brake union elbow. The range has 5 part numbers, from 1/4 inch to 1/2 inch tube, with a temperature range of -4°F to +175°F."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers of the Dixon Union Elbows, such as 31095618DOT?",
+          "a": "The nylon Liqui-Fit elbows end in the tube size: 63025600WP2 is 1/4 inch, 63026000WP2 is 3/8 inch and 63026200WP2 is 1/2 inch. 31095618DOT and 65NAB4 are DOT push-in and air brake parts with a thread on one end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Dixon Union Elbows range cover?",
+          "a": "Five part numbers are listed: 31095618DOT (1/4 inch tube x 3/8 MNPT), 63025600WP2, 63026000WP2, 63026200WP2 and 65NAB4 (1/4 inch tube x 7/16-24). The Sizes & Part Numbers table lists each."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Union Elbows for my hose or port?",
+          "a": "Choose by tube O.D. and end: the Liqui-Fit elbows join two tubes of the same size, while the DOT parts have a thread on one side. A 1/4 inch tube can go to a 3/8 MNPT port (31095618DOT) or a 7/16-24 port (65NAB4)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Dixon Union Elbows take?",
+          "a": "The listing gives -4°F to +175°F and states no pressure rating. DOT air brake parts are used with air; for any other fluid tell us the pressure and fluid and we will confirm."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Dixon Union Elbows made from?",
+          "a": "The listing names brass, composite and nylon. The DOT parts are brass and the Liqui-Fit elbows are nylon, so choose by the media and the environment."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and thread types apply to the Dixon Union Elbows?",
+          "a": "The listing gives push-to-connect ends. The DOT parts are for DOT-approved air brake tubing, as the names say, and the NPT or UNF threads follow standard tapers and straight threads."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Union Elbows connect to?",
+          "a": "The push-in ends take plastic tube of the listed O.D., and the threaded ends go into NPT or UNF ports. See the [Dixon Reducers](/p/dixon-reducers) for the DOT push-in reducer."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and inspect the Dixon Union Elbows?",
+          "a": "Cut the tube square, push it fully into the fitting until it stops and tug to check it has locked. Do not use push-in fittings with hot or abrasive media; check the tube material."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Union Elbows compare with the Dixon Reducers?",
+          "a": "The elbows turn a tube line through 90° and come in 5 part numbers, while the [Dixon Reducers](/p/dixon-reducers) step a size down in 4 part numbers, mostly 3 x 2 inch tank truck sizes. Use an elbow to change direction in tubing."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Dixon Union Elbows ship from, and what are the export details?",
+          "a": "The Dixon Union Elbows ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing gives United States as the country of origin and no HS code; we confirm both, with the origin of the lot you receive, on the quotation and the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Union Elbows for export from Dubai?",
+          "a": "Yes. The Dixon Union Elbows is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 31095618DOT and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

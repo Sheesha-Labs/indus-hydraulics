@@ -1,0 +1,669 @@
+{
+  "family": "japanese-hose-fittings",
+  "extraFacts": [
+    {
+      "fact": "JIS hose fittings of the B 8363 family seat on a 30° cone (60° included), while SAE J514 JIC fittings seat on a 37° flare; the two are not interchangeable even where the threads look alike, so identify the seat before ordering.",
+      "source": "JIS B 8363 as cited on the Indus JIS listings, compared with SAE J514 (37° flare)"
+    },
+    {
+      "fact": "The SAE dash number is the size in sixteenths of an inch: -04 is 1/4 in, -06 is 3/8 in, -08 is 1/2 in, -10 is 5/8 in, -12 is 3/4 in, -16 is 1 in, -20 is 1-1/4 in, -24 is 1-1/2 in, -32 is 2 in, which is how the hose dash column of the Indus JIS listings is written.",
+      "source": "SAE J517 / J514 dash-size convention, matched against the hose dash and hose inch columns of the Indus JIS size tables"
+    },
+    {
+      "fact": "SAE four-bolt split flange ports are Code 61 and Code 62 (SAE J518 / ISO 6162); the JIS flange head used on Japanese excavators and presses differs in bolt pattern and face and does not interchange with them.",
+      "source": "SAE J518 / ISO 6162, and the Indus JIS Flange Hose Fitting listing"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-jis-flange-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° JIS Flange Hose Fitting used for?",
+          "a": "The 45° JIS Flange Hose Fitting is a 45° elbow hydraulic hose fitting for Japanese-pattern equipment, with a flange face. The 45° elbow of the JIS flange family."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-FLANGE-45-12 on the 45° JIS Flange Hose Fitting?",
+          "a": "The last two digits of an Indus JIS flange part number give the hose dash: in IH-JP-FLANGE-45-12, 12 is the 3/4\" hose. All three sizes share the same 5/8\" thread entry, so the dash is the only size choice on this listing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° JIS Flange Hose Fitting come in?",
+          "a": "The 45° JIS Flange Hose Fitting is listed for hose from 1/2\" (dash -08) to 3/4\" (dash -12), and every row carries the same 5/8\" thread entry. Choose the row by the hose dash size and quote the part number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 45° JIS Flange Hose Fitting?",
+          "a": "Choose the hose dash size first; the port thread entry on this listing is the same for every size, so confirm that your flange head matches the JIS pattern before ordering. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) explains how to identify the seat and thread from the machine."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° JIS Flange Hose Fitting?",
+          "a": "No pressure rating is published for the 45° JIS Flange Hose Fitting itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° JIS Flange Hose Fitting made of, and how is it finished?",
+          "a": "The 45° JIS Flange Hose Fitting is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 45° JIS Flange Hose Fitting follow?",
+          "a": "The listing for the 45° JIS Flange Hose Fitting cites JIS B2291 for the flange head, and it is not interchangeable with an SAE Code 61 or 62 flange, because the bolt pattern and the face differ. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° JIS Flange Hose Fitting connect to?",
+          "a": "The 45° JIS Flange Hose Fitting bolts to a JIS flange port on the machine and crimps onto hose of the matching dash size; it does not fit an SAE Code 61 or 62 port. Tell us the hose grade and we specify the ferrule and crimp; see also the [SAE flange fittings](/c/sae-flange-fittings) if the port is SAE."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the 45° JIS Flange Hose Fitting?",
+          "a": "Fit the 45° JIS Flange Hose Fitting to a clean, undamaged flange face, tighten the bolts evenly, and keep it square to the port so the flange face seals. Check the face for scoring before refitting; the [inspecting fittings on arrival](/blog/inspecting-fittings-on-arrival) guide lists what to look for."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° JIS Flange Hose Fitting differ from the JIS Flange Hose Fitting?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “45°” being added in this name. The [JIS Flange Hose Fitting](/p/jis-flange-hose-fitting) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° JIS Flange Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° JIS Flange Hose Fitting is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the 45° JIS Flange Hose Fitting in stock in Dubai?",
+          "a": "Yes. We keep the 45° JIS Flange Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE deliveries arrive within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-toyota-female-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Toyota Female Hose Fitting (JIS Metric) used for?",
+          "a": "The 45° Toyota Female Hose Fitting (JIS Metric) is a 45° elbow hydraulic hose fitting for Japanese-pattern equipment, with a 30° flare seat, 60° included and a female swivel thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the right size of the 45° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The 45° Toyota Female Hose Fitting (JIS Metric) page does not yet list individual part numbers, so send the hose dash size and the thread of your port and we confirm the part number and stock. The nominal range is M14 – M30 (Toyota OEM size range), and the hose dash number is the size in sixteenths of an inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° Toyota Female Hose Fitting (JIS Metric) come in?",
+          "a": "The 45° Toyota Female Hose Fitting (JIS Metric) is specified for M14 – M30 (Toyota OEM size range), but the page does not yet list part numbers. Send the hose dash and port thread you need and we confirm what is in stock."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 45° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "No pressure rating is published for the 45° Toyota Female Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Toyota Female Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The 45° Toyota Female Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 45° Toyota Female Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the 45° Toyota Female Hose Fitting (JIS Metric) cites JIS B 8363 (analogous), Toyota OEM specification, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Toyota Female Hose Fitting (JIS Metric) connect to?",
+          "a": "The 45° Toyota Female Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [JIS Gas Male 60° Cone Hose Fitting](/p/jis-gas-male-60-cone-hose-fitting). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the 45° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "On the 45° Toyota Female Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Toyota Female Hose Fitting (JIS Metric) differ from the Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “45°” being added in this name. The [Toyota Female Hose Fitting (JIS Metric)](/p/toyota-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Toyota Female Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Toyota Female Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° Toyota Female Hose Fitting (JIS Metric) available ex-stock from Dubai?",
+          "a": "Yes. The 45° Toyota Female Hose Fitting (JIS Metric) is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part number of each item you need on [our contact page](/contact) and we reply with price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "90-jis-flange-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° JIS Flange Hose Fitting used for?",
+          "a": "The 90° JIS Flange Hose Fitting is a 90° elbow hydraulic hose fitting for Japanese-pattern equipment, with a flange face. The 90° elbow of the JIS flange family."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-FLANGE-90-12 on the 90° JIS Flange Hose Fitting?",
+          "a": "The last two digits of an Indus JIS flange part number give the hose dash: in IH-JP-FLANGE-90-12, 12 is the 3/4\" hose. All three sizes share the same 5/8\" thread entry, so the dash is the only size choice on this listing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° JIS Flange Hose Fitting come in?",
+          "a": "The 90° JIS Flange Hose Fitting is listed for hose from 1/2\" (dash -08) to 3/4\" (dash -12), and every row carries the same 5/8\" thread entry. Choose the row by the hose dash size and quote the part number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 90° JIS Flange Hose Fitting?",
+          "a": "Choose the hose dash size first; the port thread entry on this listing is the same for every size, so confirm that your flange head matches the JIS pattern before ordering. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) explains how to identify the seat and thread from the machine."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° JIS Flange Hose Fitting?",
+          "a": "No pressure rating is published for the 90° JIS Flange Hose Fitting itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° JIS Flange Hose Fitting made of, and how is it finished?",
+          "a": "The 90° JIS Flange Hose Fitting is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° JIS Flange Hose Fitting follow?",
+          "a": "The listing for the 90° JIS Flange Hose Fitting cites JIS B2291 for the flange head, and it is not interchangeable with an SAE Code 61 or 62 flange, because the bolt pattern and the face differ. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° JIS Flange Hose Fitting connect to?",
+          "a": "The 90° JIS Flange Hose Fitting bolts to a JIS flange port on the machine and crimps onto hose of the matching dash size; it does not fit an SAE Code 61 or 62 port. Tell us the hose grade and we specify the ferrule and crimp; see also the [SAE flange fittings](/c/sae-flange-fittings) if the port is SAE."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the 90° JIS Flange Hose Fitting?",
+          "a": "Fit the 90° JIS Flange Hose Fitting to a clean, undamaged flange face, tighten the bolts evenly, and keep it square to the port so the flange face seals. Check the face for scoring before refitting; the [inspecting fittings on arrival](/blog/inspecting-fittings-on-arrival) guide lists what to look for."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° JIS Flange Hose Fitting differ from the JIS Flange Hose Fitting?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “90°” being added in this name. The [JIS Flange Hose Fitting](/p/jis-flange-hose-fitting) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° JIS Flange Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° JIS Flange Hose Fitting is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° JIS Flange Hose Fitting available ex-stock from Dubai?",
+          "a": "Yes, we stock the 90° JIS Flange Hose Fitting at our warehouse in Dubai, UAE, and ship worldwide with the best lead times, with delivery inside the UAE in 3 working days. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "90-komatsu-female-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Komatsu Female Hose Fitting (JIS Metric) used for?",
+          "a": "The 90° Komatsu Female Hose Fitting (JIS Metric) is a 90° elbow hydraulic hose fitting for Japanese-pattern equipment, with a 30° cone seat, 60° included (jis b8363) and a female swivel thread. Completes the Komatsu family — the straight male and female have been on the site, the 90° elbow had not. The seat is the same 30° cone (60° included) as the rest of the family."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-KOMATSU-FEM-90-1024 on the 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The last four digits of an Indus Komatsu part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-KOMATSU-FEM-90-1024, 10 is the 5/8\" hose and 24 marks the M24×1-5 thread. In IH-JP-KOMATSU-FEM-90-2442, 24 is the 1-1/2\" hose and 42 marks the M42×1-5 thread."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are listed for the 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The 90° Komatsu Female Hose Fitting (JIS Metric) is listed for hose from 1/4\" (dash -04) to 1-1/2\" (dash -24), with thread entries from M14×1-5 to M42×1-5. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from M14×1-5 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "No pressure rating is published for the 90° Komatsu Female Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Komatsu Female Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The 90° Komatsu Female Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° Komatsu Female Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the 90° Komatsu Female Hose Fitting (JIS Metric) cites JIS B8363, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Komatsu Female Hose Fitting (JIS Metric) connect to?",
+          "a": "The 90° Komatsu Female Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [Komatsu Male Hose Fitting (JIS Metric)](/p/komatsu-male-hose-fitting-jis-metric). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "On the 90° Komatsu Female Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Komatsu Female Hose Fitting (JIS Metric) differ from the Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “90°” being added in this name. The [Komatsu Female Hose Fitting (JIS Metric)](/p/komatsu-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Komatsu Female Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Komatsu Female Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the 90° Komatsu Female Hose Fitting (JIS Metric) in stock in Dubai?",
+          "a": "Yes, we stock the 90° Komatsu Female Hose Fitting (JIS Metric) at our warehouse in Dubai, UAE, and ship worldwide with the best lead times, with delivery inside the UAE in 3 working days. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "90-toyota-female-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Toyota Female Hose Fitting (JIS Metric) used for?",
+          "a": "The 90° Toyota Female Hose Fitting (JIS Metric) is a 90° elbow hydraulic hose fitting for Japanese-pattern equipment, with a 30° flare seat, 60° included and a female swivel thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-TOYOTA-FEM-90-1212 on the 90° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The last four digits of an Indus Toyota part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-TOYOTA-FEM-90-1212, 12 is the 3/4\" hose and 12 marks the G3/4\"×14 thread. In IH-JP-TOYOTA-FEM-90-3232, 32 is the 2\" hose and 32 marks the G2\"×11 thread."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are listed for the 90° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The 90° Toyota Female Hose Fitting (JIS Metric) is listed for hose from 1/4\" (dash -04) to 2\" (dash -32), with thread entries from G1/4\"×19 to G2\"×11. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 90° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from G1/4\"×19 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Toyota Female Hose Fitting (JIS Metric) rated for?",
+          "a": "No pressure rating is published for the 90° Toyota Female Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Toyota Female Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The 90° Toyota Female Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° Toyota Female Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the 90° Toyota Female Hose Fitting (JIS Metric) cites JIS B 8363 (analogous), Toyota OEM specification, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Toyota Female Hose Fitting (JIS Metric) connect to?",
+          "a": "The 90° Toyota Female Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [JIS Gas Male 60° Cone Hose Fitting](/p/jis-gas-male-60-cone-hose-fitting). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the 90° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "On the 90° Toyota Female Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Toyota Female Hose Fitting (JIS Metric) differ from the Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “90°” being added in this name. The [Toyota Female Hose Fitting (JIS Metric)](/p/toyota-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Toyota Female Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Toyota Female Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the 90° Toyota Female Hose Fitting (JIS Metric) in stock in Dubai?",
+          "a": "Yes, we stock the 90° Toyota Female Hose Fitting (JIS Metric) at our warehouse in Dubai, UAE, and ship worldwide with the best lead times, with delivery inside the UAE in 3 working days. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "jis-flange-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Flange Hose Fitting used for?",
+          "a": "The JIS Flange Hose Fitting is a straight hydraulic hose fitting for Japanese-pattern equipment, with a flange face. The JIS flange head, used on Japanese excavators and presses. Not interchangeable with an SAE Code 61 or 62 flange — the bolt pattern and the face differ."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-FLANGE-12 on the JIS Flange Hose Fitting?",
+          "a": "The last two digits of an Indus JIS flange part number give the hose dash: in IH-JP-FLANGE-12, 12 is the 3/4\" hose. All three sizes share the same 5/8\" thread entry, so the dash is the only size choice on this listing."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are listed for the JIS Flange Hose Fitting?",
+          "a": "The JIS Flange Hose Fitting is listed for hose from 1/2\" (dash -08) to 3/4\" (dash -12), and every row carries the same 5/8\" thread entry. Choose the row by the hose dash size and quote the part number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of JIS Flange Hose Fitting?",
+          "a": "Choose the hose dash size first; the port thread entry on this listing is the same for every size, so confirm that your flange head matches the JIS pattern before ordering. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) explains how to identify the seat and thread from the machine."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Flange Hose Fitting?",
+          "a": "No pressure rating is published for the JIS Flange Hose Fitting itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Flange Hose Fitting made of, and how is it finished?",
+          "a": "The JIS Flange Hose Fitting is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the JIS Flange Hose Fitting follow?",
+          "a": "The listing for the JIS Flange Hose Fitting cites JIS B2291 for the flange head, and it is not interchangeable with an SAE Code 61 or 62 flange, because the bolt pattern and the face differ. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the JIS Flange Hose Fitting connect to?",
+          "a": "The JIS Flange Hose Fitting bolts to a JIS flange port on the machine and crimps onto hose of the matching dash size; it does not fit an SAE Code 61 or 62 port. Tell us the hose grade and we specify the ferrule and crimp; see also the [SAE flange fittings](/c/sae-flange-fittings) if the port is SAE."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the JIS Flange Hose Fitting?",
+          "a": "Fit the JIS Flange Hose Fitting to a clean, undamaged flange face, tighten the bolts evenly, and keep it square to the port so the flange face seals. Check the face for scoring before refitting; the [inspecting fittings on arrival](/blog/inspecting-fittings-on-arrival) guide lists what to look for."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Flange Hose Fitting differ from the 45° JIS Flange Hose Fitting?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “45°” being added in the other name. The [45° JIS Flange Hose Fitting](/p/45-jis-flange-hose-fitting) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Flange Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Flange Hose Fitting is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the JIS Flange Hose Fitting in stock in Dubai?",
+          "a": "Yes. The JIS Flange Hose Fitting is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part number of each item you need on [our contact page](/contact) and we reply with price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "jis-gas-male-60-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Gas Male 60° Cone Hose Fitting used for?",
+          "a": "The JIS Gas Male 60° Cone Hose Fitting is a straight hydraulic hose fitting for Japanese-pattern equipment, with a 30° cone seat, 60° included (jis b8363) and a male thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-GAS-MAL-0808 on the JIS Gas Male 60° Cone Hose Fitting?",
+          "a": "The last four digits of an Indus gas-thread part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-GAS-MAL-0808, 08 is the 1/2\" hose and 08 marks the G1/2\"×14 thread. In IH-JP-GAS-MAL-1616, 16 is the 1\" hose and 16 marks the G1\"×11 thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the JIS Gas Male 60° Cone Hose Fitting come in?",
+          "a": "The JIS Gas Male 60° Cone Hose Fitting is listed for hose from 1/4\" (dash -04) to 1\" (dash -16), with thread entries from G1/4\"×19 to G1\"×11. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of JIS Gas Male 60° Cone Hose Fitting?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from G1/4\"×19 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the JIS Gas Male 60° Cone Hose Fitting rated for?",
+          "a": "No pressure rating is published for the JIS Gas Male 60° Cone Hose Fitting itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Gas Male 60° Cone Hose Fitting made of, and how is it finished?",
+          "a": "The JIS Gas Male 60° Cone Hose Fitting is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the JIS Gas Male 60° Cone Hose Fitting follow?",
+          "a": "The listing for the JIS Gas Male 60° Cone Hose Fitting cites JIS B8363, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the JIS Gas Male 60° Cone Hose Fitting connect to?",
+          "a": "The JIS Gas Male 60° Cone Hose Fitting joins a part with the same thread and 30° cone seat, for example the [Toyota Female Hose Fitting (JIS Metric)](/p/toyota-female-hose-fitting-jis-metric). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the JIS Gas Male 60° Cone Hose Fitting?",
+          "a": "On the JIS Gas Male 60° Cone Hose Fitting, the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Gas Male 60° Cone Hose Fitting differ from the Komatsu Male Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “Gas 60° Cone” here and “Komatsu Metric” there. The [Komatsu Male Hose Fitting (JIS Metric)](/p/komatsu-male-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Gas Male 60° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Gas Male 60° Cone Hose Fitting is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the JIS Gas Male 60° Cone Hose Fitting available ex-stock from Dubai?",
+          "a": "Yes. The JIS Gas Male 60° Cone Hose Fitting is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part number of each item you need on [our contact page](/contact) and we reply with price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "komatsu-female-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Komatsu Female Hose Fitting (JIS Metric) used for?",
+          "a": "The Komatsu Female Hose Fitting (JIS Metric) is a straight hydraulic hose fitting for Japanese-pattern equipment, with a 30° flare seat, 60° included and a female swivel thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-KOMATSU-FEM-0822 on the Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The last four digits of an Indus Komatsu part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-KOMATSU-FEM-0822, 08 is the 1/2\" hose and 22 marks the M22×1-5 thread. In IH-JP-KOMATSU-FEM-2442, 24 is the 1-1/2\" hose and 42 marks the M42×1-5 thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Komatsu Female Hose Fitting (JIS Metric) come in?",
+          "a": "The Komatsu Female Hose Fitting (JIS Metric) is listed for hose from 1/4\" (dash -04) to 1-1/2\" (dash -24), with thread entries from M12×1-5 to M42×1-5. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from M12×1-5 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "No pressure rating is published for the Komatsu Female Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Komatsu Female Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The Komatsu Female Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Komatsu Female Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the Komatsu Female Hose Fitting (JIS Metric) cites JIS B 8363 (analogous), Komatsu OEM specification, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Komatsu Female Hose Fitting (JIS Metric) connect to?",
+          "a": "The Komatsu Female Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [Komatsu Male Hose Fitting (JIS Metric)](/p/komatsu-male-hose-fitting-jis-metric). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "On the Komatsu Female Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Komatsu Female Hose Fitting (JIS Metric) differ from the 90° Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “90°” being added in the other name. The [90° Komatsu Female Hose Fitting (JIS Metric)](/p/90-komatsu-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Komatsu Female Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the Komatsu Female Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Komatsu Female Hose Fitting (JIS Metric) available ex-stock from Dubai?",
+          "a": "Yes. The Komatsu Female Hose Fitting (JIS Metric) is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part number of each item you need on [our contact page](/contact) and we reply with price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "komatsu-male-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Komatsu Male Hose Fitting (JIS Metric) used for?",
+          "a": "The Komatsu Male Hose Fitting (JIS Metric) is a straight hydraulic hose fitting for Japanese-pattern equipment, with a 30° flare seat, 60° included and a male thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-KOMATSU-MAL-0822 on the Komatsu Male Hose Fitting (JIS Metric)?",
+          "a": "The last four digits of an Indus Komatsu part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-KOMATSU-MAL-0822, 08 is the 1/2\" hose and 22 marks the M22×1-5 thread. In IH-JP-KOMATSU-MAL-2442, 24 is the 1-1/2\" hose and 42 marks the M42×1-5 thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Komatsu Male Hose Fitting (JIS Metric) come in?",
+          "a": "The Komatsu Male Hose Fitting (JIS Metric) is listed for hose from 1/4\" (dash -04) to 1-1/2\" (dash -24), with thread entries from M14×1-5 to M42×1-5. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Komatsu Male Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from M14×1-5 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Komatsu Male Hose Fitting (JIS Metric)?",
+          "a": "No pressure rating is published for the Komatsu Male Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Komatsu Male Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The Komatsu Male Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Komatsu Male Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the Komatsu Male Hose Fitting (JIS Metric) cites JIS B 8363 (analogous), Komatsu OEM specification, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Komatsu Male Hose Fitting (JIS Metric) connect to?",
+          "a": "The Komatsu Male Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [Komatsu Female Hose Fitting (JIS Metric)](/p/komatsu-female-hose-fitting-jis-metric). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the Komatsu Male Hose Fitting (JIS Metric)?",
+          "a": "On the Komatsu Male Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Komatsu Male Hose Fitting (JIS Metric) differ from the Komatsu Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “Female” being added in the other name. The [Komatsu Female Hose Fitting (JIS Metric)](/p/komatsu-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Komatsu Male Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the Komatsu Male Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Komatsu Male Hose Fitting (JIS Metric) in stock in Dubai?",
+          "a": "Yes. The Komatsu Male Hose Fitting (JIS Metric) is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part number of each item you need on [our contact page](/contact) and we reply with price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "toyota-female-hose-fitting-jis-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Toyota Female Hose Fitting (JIS Metric) used for?",
+          "a": "The Toyota Female Hose Fitting (JIS Metric) is a straight hydraulic hose fitting for Japanese-pattern equipment, with a 30° flare seat, 60° included and a female swivel thread. It is crimped onto hydraulic hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-JP-TOYOTA-FEM-1010 on the Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The last four digits of an Indus Toyota part number give the two sizes: the first two are the hose dash and the last two are the thread size code. In IH-JP-TOYOTA-FEM-1010, 10 is the 5/8\" hose and 10 marks the G5/8\"×14 thread. In IH-JP-TOYOTA-FEM-3232, 32 is the 2\" hose and 32 marks the G2\"×11 thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Toyota Female Hose Fitting (JIS Metric) come in?",
+          "a": "The Toyota Female Hose Fitting (JIS Metric) is listed for hose from 3/16\" (dash -03) to 2\" (dash -32), with thread entries from G1/8\"×28 to G2\"×11. Several hose sizes come with more than one thread, so read both columns of the row you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "Choose the hose dash size from the hose inside diameter, then the thread from your port, and confirm both against the size table row; the thread entries in this listing run from G1/8\"×28 upward. The [guide to fittings on a used Japanese machine](/blog/fittings-on-a-used-japanese-machine) shows how to identify the seat and thread, and a photo of the old fitting lets us confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "No pressure rating is published for the Toyota Female Hose Fitting (JIS Metric) itself, because the hose grade and bore set the rating of the finished assembly. Tell us the hose grade, bore and working pressure on your enquiry and we confirm the figure in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Toyota Female Hose Fitting (JIS Metric) made of, and how is it finished?",
+          "a": "The Toyota Female Hose Fitting (JIS Metric) is made of carbon steel, finished Zinc-plated, Cr3+ passivated, RoHS-compliant. 316 stainless steel is available on request for corrosive or marine service, so say so on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Toyota Female Hose Fitting (JIS Metric) follow?",
+          "a": "The listing for the Toyota Female Hose Fitting (JIS Metric) cites JIS B 8363 (analogous), Toyota OEM specification, and the family seats on a 30° cone where a JIC fitting seats on a 37° flare, so the two must not be mixed. No third-party certificate is attached, so tell us any test or material document the order needs."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Toyota Female Hose Fitting (JIS Metric) connect to?",
+          "a": "The Toyota Female Hose Fitting (JIS Metric) joins a part with the same thread and 30° cone seat, for example the [JIS Gas Male 60° Cone Hose Fitting](/p/jis-gas-male-60-cone-hose-fitting). It crimps onto hose of the matching dash size, so tell us the hose grade and we specify the ferrule and crimp."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "On the Toyota Female Hose Fitting (JIS Metric), the 30° cone makes the seal, so seat it squarely, run the nut up finger-tight and then tighten by the flats or torque for the size. Do not force it onto a 37° JIC thread; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives turns from finger-tight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Toyota Female Hose Fitting (JIS Metric) differ from the 45° Toyota Female Hose Fitting (JIS Metric)?",
+          "a": "The two sit in the same Japanese-fitting family and the names differ by “45°” being added in the other name. The [45° Toyota Female Hose Fitting (JIS Metric)](/p/45-toyota-female-hose-fitting-jis-metric) has its own size table, so compare the rows to see which one lists the hose and thread you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Toyota Female Hose Fitting (JIS Metric) made, and can you export it from Dubai?",
+          "a": "The country of origin of the Toyota Female Hose Fitting (JIS Metric) is confirmed on the quotation and the commercial invoice, because it can differ by batch. We export from Dubai, UAE to the GCC, Africa, Asia and beyond and prepare the packing list and certificate of origin for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Toyota Female Hose Fitting (JIS Metric) in stock in Dubai?",
+          "a": "Yes, we stock the Toyota Female Hose Fitting (JIS Metric) at our warehouse in Dubai, UAE, and ship worldwide with the best lead times, with delivery inside the UAE in 3 working days. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    }
+  ]
+}

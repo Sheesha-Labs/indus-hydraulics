@@ -1,0 +1,76 @@
+{
+  "family": "frac-las",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-las-8-tank-ss316-tote-tanks-mass-flowmeters-trailer-mounted",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an 8-tank frac LAS (liquid additive system) used for?",
+          "a": "A frac LAS doses liquid chemical additives into the fracturing stream. This trailer-mounted unit carries eight SS316 chemical totes, each with a dedicated dosing pump, drain port and fill port, plus per-tank mass flowmeters on the discharge lines for chemical accountability."
+        },
+        {
+          "slot": "D",
+          "q": "How many tanks does the 8-tank frac LAS (liquid additive system) have?",
+          "a": "It has eight chemical totes, SS316 tote-type, on a custom trailer. Pneumatic, hydraulic or electric agitators and heating systems are available for the tanks."
+        },
+        {
+          "slot": "E",
+          "q": "How is chemical dosing measured on the 8-tank frac LAS (liquid additive system)?",
+          "a": "Each tank has a mass flowmeter on its discharge line, which gives chemical accountability per additive. The control cabin shows all tanks and discharge lines, in operator manual or automatic mode."
+        },
+        {
+          "slot": "F",
+          "q": "What power does the 8-tank frac LAS (liquid additive system) use?",
+          "a": "The power is a diesel-engine and hydraulic power pack, or a diesel genset. State the power preference on the RFQ with any area classification."
+        },
+        {
+          "slot": "G",
+          "q": "What mounting does the 8-tank frac LAS (liquid additive system) have?",
+          "a": "It is trailer mounted with country-of-registration documentation, and skid and truck variants are available. Integrated reels carry the hose runs between units."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 8-tank frac LAS (liquid additive system) connect to?",
+          "a": "Its discharge feeds the [frac blender](/p/frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system) and it can connect to the [frac data van](/p/frac-data-van-trailer-mounted-multi-screen-fleet-control-hvac-pantry). Reels are integrated for unit-to-unit hose runs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 8-tank frac LAS (liquid additive system) differ from a hydration unit?",
+          "a": "The LAS meters and doses liquid chemicals from totes, while the [hydration unit](/p/frac-hydration-unit-200-bbl-12-12-centrifugal-90-bbl-min-ss316-tote-tanks) prepares gel in a tank. A fleet normally uses both."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 8-tank frac LAS (liquid additive system) used?",
+          "a": "It is used in hydraulic fracturing fleets to dose liquid chemical additives into the fracturing stream. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac LAS quotation?",
+          "a": "Send the number of tanks, the chemicals and their dosing range, the agitation and heating needs, the power supply, the mounting and the registration country."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 8-tank frac LAS (liquid additive system) be skid or truck mounted?",
+          "a": "Yes. It is built as a trailer with country-of-registration documentation, and skid and truck variants are available, with integrated reels for the unit-to-unit hose runs. State the registration country and the site limits on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Why does each tank on the frac LAS have its own flowmeter?",
+          "a": "Per-tank mass flowmeters let each additive be dosed and recorded separately, which gives chemical accountability for the job. The control cabin shows every tank and discharge line, in operator manual or automatic mode."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 8-tank frac LAS (liquid additive system)?",
+          "a": "Yes. We list the 8-tank frac LAS (liquid additive system) as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

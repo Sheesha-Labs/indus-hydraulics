@@ -1,0 +1,71 @@
+{
+  "family": "precision-mechanical-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "precision-cold-drawn-steel-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are precision cold-drawn steel tubes and what are they used for?",
+          "a": "Precision Cold-Drawn Steel Tubes are seamless steel tubes cold drawn to close outside diameter and wall tolerances, to EN 10305-1 and EN 10305-4, DIN 2391 and ASTM A519. They are supplied normalised for hydraulic lines and in drawn or annealed conditions for cylinders and machined parts. The listing covers 28 common sizes from Dubai. See the [precision and mechanical tubes](/c/precision-mechanical-tubes) shelf for the family."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do the precision cold-drawn steel tubes come in?",
+          "a": "The size table lists 28 precision cold-drawn tube sizes from 6 to 42 mm outside diameter, in walls from 1 to 5 mm, each with its own Indus part number. The common sizes run from 6 x 1 mm to 42 x 3 mm; other sizes are made on request. The hydraulic tube range under EN 10305-4 is 4×0.5 to 80×12.5 mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between E235 and E355 precision steel tube?",
+          "a": "Choose E355 when the line needs higher strength: EN 10305-1 E355 +N has ReH of at least 355 MPa and Rm of 490-630 MPa, against at least 235 MPa and 340-480 MPa for E235 +N. Elongation is at least 22 % for E355 and 25 % for E235. Then size the tube on outside diameter and wall for the pressure, using the calculated working pressure for straight tube."
+        },
+        {
+          "slot": "E",
+          "q": "What strength do precision cold-drawn tubes have?",
+          "a": "EN 10305-1 E235 +N has a yield (ReH) of at least 235 MPa, tensile strength (Rm) of 340-480 MPa and elongation (A) of at least 25 %, and E355 +N has ReH of at least 355 MPa, Rm 490-630 MPa and A of at least 22 %. Hydraulic working pressures are calculated per DIN 2413 or AS 4041 for straight tube, and bends reduce them. Tell us the pressure and the standard and we confirm the wall."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number for precision cold-drawn tubes?",
+          "a": "In the Indus part number the first group gives the outside diameter and the last group the wall in hundredths of a millimetre. IH-TF-PM-PCD-0060-100 is 6 mm OD by 1 mm wall, IH-TF-PM-PCD-0080-150 is 8 mm by 1.5 mm, and IH-TF-PM-PCD-0420-300 is 42 mm by 3 mm. Quote the part number, or send the standard and grade, the OD and wall, the length and the quantity."
+        },
+        {
+          "slot": "C",
+          "q": "Which standards are equivalent to EN 10305 precision tube?",
+          "a": "EN 10305-1 and DIN 2391 cover cold-drawn precision tube in the same sizes and delivery conditions, ASTM A519 covers mechanical tubing, and GB/T 3639 is the Chinese equivalent. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative, so we check them against each tender. Material grades include E235, E355, St35, St45, St52 and A519 1020, 1045 and 4130. See our [guide to DIN and EN tube equivalents](/blog/din-17175-din-1629-en-10216-equivalents)."
+        },
+        {
+          "slot": "F",
+          "q": "What delivery conditions are available for precision steel tube?",
+          "a": "Precision steel tube is supplied as drawn (+C, BK), light final pass (+LC, BKW), stress relieved (+SR, BKS), annealed (+A, GBK) or normalized (+N, NBK). Hydraulic line tube to EN 10305-4 is delivered normalized (+N), in E235 or E355. Ask for the condition on the enquiry, because it sets the hardness and how the tube forms and machines."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and certificates come with precision cold-drawn tube?",
+          "a": "EN 10305-1 testing covers product analysis, tensile, dimensions and visual inspection, with NDT on agreement, and a mill test certificate to EN 10204 3.1 is available on request. Third-party inspection can be arranged against your inspection and test plan. State the tests and the standard on the enquiry."
+        },
+        {
+          "slot": "I",
+          "q": "What tolerances do precision cold-drawn tubes have?",
+          "a": "Hydraulic precision tube has an outside diameter tolerance of ±0.08 mm from 4 to 30 mm OD, ±0.15 mm at 35-38 mm, ±0.20 mm at 42-50 mm, ±0.25 mm at 55-60 mm, ±0.30 mm at 70 mm and ±0.35 mm at 80 mm. Wall tolerance is ±10 % with a minimum of ±0.1 mm. The standard hydraulic tube length is 6 m."
+        },
+        {
+          "slot": "J",
+          "q": "Where are precision cold-drawn steel tubes used?",
+          "a": "Precision cold-drawn steel tubes are used as cylinder barrels and piston rods (honed or skived tube) for oilfield and marine equipment, and for pressure lines on hydraulic power units and mobile equipment. The close tolerances suit parts that are honed, skived or machined to a fit. Other seamless tubes and pipes are on the related shelves. See our [carbon steel pipe](/c/carbon-steel-pipe) and [line pipe and OCTG](/c/line-pipe-octg)."
+        },
+        {
+          "slot": "L",
+          "q": "What lengths are precision cold-drawn steel tubes supplied in?",
+          "a": "Hydraulic precision tube is normally supplied in 6 m standard lengths, and the listing offers random or fixed lengths cut to length on request. The EN 10305-4 hydraulic range is 4×0.5 to 80×12.5 mm. Tell us the cut length and quantity."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock precision cold-drawn steel tubes in Dubai?",
+          "a": "Yes, we stock the Precision Cold-Drawn Steel Tubes at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

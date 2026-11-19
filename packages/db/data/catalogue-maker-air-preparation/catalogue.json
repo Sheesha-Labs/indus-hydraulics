@@ -1710,7 +1710,7 @@
      "partNumber": "P39223-110",
      "position": 1,
      "dimensions": {
-      "item": "Filter/regulator 8.15 Inch H 3.28 Inch Width — Max. Flow Rate 72 CFM, Overall Width 3 7/25\", Overall Height 8.15\", Bowl Material Metal, Filter Rating 0.3 µm"
+      "item": "Filter/regulator 8.15 Inch H 3.28 Inch Width — Max. Flow Rate 72 CFM, Overall Width 3.28\", Overall Height 8.15\", Bowl Material Metal, Filter Rating 0.3 µm"
      }
     },
     {
@@ -1928,7 +1928,7 @@
      "partNumber": "C38331-810",
      "position": 0,
      "dimensions": {
-      "item": "Filter/regulator/lubricator 0 To 140 Psi — Overall Width 3.55\", Overall Height 9 24/25\", Max. Flow Rate 99 CFM, Bowl Size 2.4 oz., Bowl Material Metal, Max. Pre",
+      "item": "Filter/regulator/lubricator 0 To 140 Psi — Overall Width 3.55\", Overall Height 9.96\", Max. Flow Rate 99 CFM, Bowl Size 2.4 oz., Bowl Material Metal, Max. Pre",
       "maxPsi": 250
      }
     },
@@ -4832,7 +4832,7 @@
      "partNumber": "EN41120",
      "position": 11,
      "dimensions": {
-      "item": "Modular Style Air Filter — Overall Height 1 16/25\", Bowl Capacity 0.5 oz., Bowl Material Polycarbonate, Max. Airflow 24 SCFM, Max. Operating Temp 125°F, Overall"
+      "item": "Modular Style Air Filter — Overall Height 1.64\", Bowl Capacity 0.5 oz., Bowl Material Polycarbonate, Max. Airflow 24 SCFM, Max. Operating Temp 125°F, Overall"
      }
     },
     {
@@ -4888,7 +4888,7 @@
      "partNumber": "EN71221-MG",
      "position": 19,
      "dimensions": {
-      "item": "Modular Style Air Filter — Drain Type Automatic, Overall Height 2.45\", Bowl Capacity 1.9 oz., Bowl Material Metal, Overall Width 2 17/25\""
+      "item": "Modular Style Air Filter — Drain Type Automatic, Overall Height 2.45\", Bowl Capacity 1.9 oz., Bowl Material Metal, Overall Width 2.68\""
      }
     },
     {
@@ -5033,21 +5033,21 @@
      "partNumber": "EN72240",
      "position": 13,
      "dimensions": {
-      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2 17/25\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
+      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2.68\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
      }
     },
     {
      "partNumber": "EN72220-G",
      "position": 14,
      "dimensions": {
-      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2 17/25\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
+      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2.68\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
      }
     },
     {
      "partNumber": "EN72230",
      "position": 15,
      "dimensions": {
-      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2 17/25\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
+      "item": "Standard Air Regulator — Included Options Mounting Bracket, Overall Width 2.68\", Overall Height 5.34\", Set Pressure 5 psi to 150 psi, Min. Set Pressure 150 p"
      }
     }
    ],
@@ -6011,17 +6011,7 @@
    "seoTitle": "Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators",
    "seoDescription": "Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators: 8 part numbers. Quote by Dixon part number.",
    "faqs": [],
-   "specs": [
-    {
-     "group": "Specifications",
-     "label": "Drain Type",
-     "value": "Automatic",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    }
-   ],
+   "specs": [],
    "searchAliases": [
     "Series 1 FRLs B07 Series Miniature Filters/Regulators"
    ],
@@ -6067,13 +6057,6 @@
      "dimensions": {
       "item": "Carded Miniature Filter/Regulator, 14 SCFM Flow, 1/4 Inch Port",
       "ports": "1/4\""
-     }
-    },
-    {
-     "partNumber": "PND-B07-202MGC",
-     "position": 4,
-     "dimensions": {
-      "item": "PNEUMATIC DISPLAY- 1/4 in CARDED MINI"
      }
     },
     {
@@ -9394,7 +9377,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "China",
-   "hsCode": "848110"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-NIT-AF2-SERIES-FILTERS",
@@ -11247,7 +11230,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-LUBRICATORS",
@@ -11324,7 +11307,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": null
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-COALESCING-FILTERS",
@@ -11438,7 +11421,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-FILTER-LUBRICATORS",
@@ -11524,7 +11507,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-FILTER-REGULATOR-LUBRICATORS",
@@ -11631,7 +11614,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": null
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-FILTER-REGULATORS",
@@ -11738,7 +11721,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": null
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-FILTERS",
@@ -11854,7 +11837,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-LUBRICATORS",
@@ -11924,7 +11907,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": null
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-REGULATORS",
@@ -12012,7 +11995,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": null
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-VALVE-FILTER-COALESCING-FILTER",
@@ -12091,7 +12074,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-VALVE-FILTER-LUBRICATORS",
@@ -12170,7 +12153,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-MWK-SYNTESI-SERIES-VALVE-FILTER-REGULATOR-LUBRICATORS",
@@ -12277,7 +12260,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-NOR-EXCELON-PLUS-82-SERIES-AIR-FILTER-REGULATORS",
@@ -12287,7 +12270,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren excelon plus 82 series air filter regulators",
    "descriptionShort": "Norgren Excelon Plus 82 Series Air Filter Regulators: 8 part numbers.",
-   "descriptionLong": "<p>Norgren Excelon Plus 82 Series Air Filter Regulators: 8 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Pressure stated by the maker: 4 psi (0 bar)</li><li>Part numbers: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Excelon Plus 82 Series Air Filter Regulators: 8 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Part numbers: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Excelon Plus 82 Series Air Filter Regulators",
    "seoDescription": "Norgren Excelon Plus 82 Series Air Filter Regulators: 8 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -12382,8 +12365,7 @@
      "position": 0,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "ports": "1/4\" PTF",
-      "maxPsi": 4
+      "ports": "1/4\" PTF"
      }
     },
     {
@@ -12391,8 +12373,7 @@
      "position": 1,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "ports": "1/4\" PTF",
-      "maxPsi": 4
+      "ports": "1/4\" PTF"
      }
     },
     {
@@ -12400,8 +12381,7 @@
      "position": 2,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
-      "ports": "3/8\" PTF",
-      "maxPsi": 4
+      "ports": "3/8\" PTF"
      }
     },
     {
@@ -12409,8 +12389,7 @@
      "position": 3,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
-      "ports": "3/8\" PTF",
-      "maxPsi": 4
+      "ports": "3/8\" PTF"
      }
     },
     {
@@ -12418,8 +12397,7 @@
      "position": 4,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "ports": "1/4\"",
-      "maxPsi": 4
+      "ports": "1/4\""
      }
     },
     {
@@ -12427,8 +12405,7 @@
      "position": 5,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "ports": "1/4\"",
-      "maxPsi": 4
+      "ports": "1/4\""
      }
     },
     {
@@ -12436,8 +12413,7 @@
      "position": 6,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
-      "ports": "3/8\"",
-      "maxPsi": 4
+      "ports": "3/8\""
      }
     },
     {
@@ -12445,8 +12421,7 @@
      "position": 7,
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
-      "ports": "3/8\"",
-      "maxPsi": 4
+      "ports": "3/8\""
      }
     }
    ],
@@ -12491,15 +12466,6 @@
      "value": "Excelon 82 Series Components",
      "unit": null,
      "position": 2,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Includes",
-     "value": "Service Indicator And Replaceable 0.01 Micron Filter Element",
-     "unit": null,
-     "position": 3,
      "isFilterable": false,
      "templateKey": null
     },
@@ -12713,7 +12679,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Mexico",
-   "hsCode": "848110"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-NOR-EXCELON-PLUS-82-SERIES-AIR-REGULATORS",
@@ -12723,7 +12689,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren excelon plus 82 series air regulators",
    "descriptionShort": "Norgren Excelon Plus 82 Series Air Regulators: 4 part numbers.",
-   "descriptionLong": "<p>Norgren Excelon Plus 82 Series Air Regulators: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Pressure stated by the maker: 4 psi (0 bar)</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Excelon Plus 82 Series Air Regulators: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Excelon Plus 82 Series Air Regulators",
    "seoDescription": "Norgren Excelon Plus 82 Series Air Regulators: 4 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -12791,8 +12757,7 @@
      "position": 0,
      "dimensions": {
       "item": "Pneumatic Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "type": "Regulator",
-      "maxPsi": 4
+      "type": "Regulator"
      }
     },
     {
@@ -12800,8 +12765,7 @@
      "position": 1,
      "dimensions": {
       "item": "Pneumatic Regulator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
-      "type": "Regulator",
-      "maxPsi": 4
+      "type": "Regulator"
      }
     },
     {
@@ -13092,7 +13056,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren excelon plus 84 series air micro fog lubricators",
    "descriptionShort": "Norgren Excelon Plus 84 Series Air Micro Fog Lubricators: 3 part numbers.",
-   "descriptionLong": "<p>Norgren Excelon Plus 84 Series Air Micro Fog Lubricators: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Pressure stated by the maker: 1 psi (0 bar)</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Excelon Plus 84 Series Air Micro Fog Lubricators: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Excelon Plus 84 Series Air Micro Fog Lubricators",
    "seoDescription": "Norgren Excelon Plus 84 Series Air Micro Fog Lubricators: 3 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -13170,8 +13134,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     },
     {
@@ -13180,8 +13143,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     },
     {
@@ -13190,8 +13152,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     }
    ],
@@ -13207,7 +13168,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren excelon plus 84 series air regulators",
    "descriptionShort": "Norgren Excelon Plus 84 Series Air Regulators: 3 part numbers.",
-   "descriptionLong": "<p>Norgren Excelon Plus 84 Series Air Regulators: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Pressure stated by the maker: 4 psi (0 bar)</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Excelon Plus 84 Series Air Regulators: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Excelon Plus 84 Series Air Regulators",
    "seoDescription": "Norgren Excelon Plus 84 Series Air Regulators: 3 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -13276,8 +13237,7 @@
      "dimensions": {
       "item": "Pneumatic Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Regulator",
-      "maxPsi": 4
+      "type": "Regulator"
      }
     },
     {
@@ -13286,8 +13246,7 @@
      "dimensions": {
       "item": "Pneumatic Regulator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Regulator",
-      "maxPsi": 4
+      "type": "Regulator"
      }
     },
     {
@@ -13296,8 +13255,7 @@
      "dimensions": {
       "item": "Pneumatic Regulator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Pressure Regulator",
-      "maxPsi": 4
+      "type": "Pressure Regulator"
      }
     }
    ],
@@ -13313,7 +13271,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren plus 82 series air micro fog lubricators",
    "descriptionShort": "Norgren Plus 82 Series Air Micro Fog Lubricators: 4 part numbers.",
-   "descriptionLong": "<p>Norgren Plus 82 Series Air Micro Fog Lubricators: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Pressure stated by the maker: 1 psi (0 bar)</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Plus 82 Series Air Micro Fog Lubricators: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Plus 82 Series Air Micro Fog Lubricators",
    "seoDescription": "Norgren Plus 82 Series Air Micro Fog Lubricators: 4 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -13391,8 +13349,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
       "ports": "1/4\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     },
     {
@@ -13401,8 +13358,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 1/4 Inch Female Npt Inlet, 1/4 Inch Female Npt Outlet",
       "ports": "1/4\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     },
     {
@@ -13411,8 +13367,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     },
     {
@@ -13421,8 +13376,7 @@
      "dimensions": {
       "item": "Pneumatic Micro Fog Lubricator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Lubricator",
-      "maxPsi": 1
+      "type": "Lubricator"
      }
     }
    ],
@@ -13438,7 +13392,7 @@
    "brandSlug": "norgren",
    "focusKeyword": "norgren plus 84 series air filter regulators",
    "descriptionShort": "Norgren Plus 84 Series Air Filter Regulators: 12 part numbers.",
-   "descriptionLong": "<p>Norgren Plus 84 Series Air Filter Regulators: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Pressure stated by the maker: 5 psi (0 bar)</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Norgren Plus 84 Series Air Filter Regulators: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Regulator</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Norgren part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Norgren part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Norgren Plus 84 Series Air Filter Regulators",
    "seoDescription": "Norgren Plus 84 Series Air Filter Regulators: 12 part numbers. Quote by Norgren part number.",
    "faqs": [],
@@ -13543,8 +13497,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13553,8 +13506,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13563,8 +13515,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13573,8 +13524,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13583,8 +13533,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13593,8 +13542,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13603,8 +13551,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13613,8 +13560,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/8 Inch Female Npt Inlet, 3/8 Inch Female Npt Outlet",
       "ports": "3/8\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13623,8 +13569,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 1/2 Inch Female Npt Inlet, 1/2 Inch Female Npt Outlet",
       "ports": "1/2\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13633,8 +13578,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13643,8 +13587,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     },
     {
@@ -13653,8 +13596,7 @@
      "dimensions": {
       "item": "Pneumatic Filter-Regulator, 3/4 Inch Female Npt Inlet, 3/4 Inch Female Npt Outlet",
       "ports": "3/4\"",
-      "type": "Filter, Regulator",
-      "maxPsi": 5
+      "type": "Filter, Regulator"
      }
     }
    ],
@@ -13850,7 +13792,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Mexico",
-   "hsCode": "848110"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-NOR-PLUS-84-SERIES-AIR-FILTERS-COALESCING-OIL-REMOVAL",
@@ -13986,7 +13928,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Mexico",
-   "hsCode": "848110"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-NOR-PLUS-84-SERIES-AIR-FILTERS-VAPOR-REMOVAL",
@@ -14149,7 +14091,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Mexico",
-   "hsCode": "848110"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-NUM-FILTER-ELEMENT-PARTICULATE-SCFM",
@@ -21824,14 +21766,14 @@
   {
    "sku": "IH-PAR-FILTERS",
    "slug": "parker-filters",
-   "title": "Parker Filters",
-   "category": "air-preparation-frl",
+   "title": "Parker Portable Hydraulic Filter Unit Elements",
+   "category": "hydraulic-filters",
    "brandSlug": "parker",
-   "focusKeyword": "parker filters",
-   "descriptionShort": "Parker Filters: 4 part numbers.",
-   "descriptionLong": "<p>Parker Filters: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Filter</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker Filters",
-   "seoDescription": "Parker Filters: 4 part numbers. Quote by Parker part number.",
+   "focusKeyword": "parker portable hydraulic filter unit elements",
+   "descriptionShort": "Parker Portable Hydraulic Filter Unit Elements: 4 part numbers.",
+   "descriptionLong": "<p>Parker Portable Hydraulic Filter Unit Elements: 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Filter</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker Portable Hydraulic Filter Unit Elements",
+   "seoDescription": "Parker Portable Hydraulic Filter Unit Elements: 4 part numbers. Quote by Parker part number.",
    "faqs": [],
    "specs": [
     {
@@ -22310,7 +22252,7 @@
      "partNumber": "AAPX030GNFX",
      "position": 2,
      "dimensions": {
-      "item": "Compressed Air Filter, 0.01 Micron, 1 Inch Npt, 233 Cfm, 232 PSI",
+      "item": "Compressed Air Filter, 0.01 Micron, 1 1/2 Inch Npt, 233 Cfm, 232 PSI",
       "type": "Coalescing (0.01 Micron)",
       "maxPsi": 232
      }
@@ -22392,7 +22334,7 @@
      "position": 11,
      "dimensions": {
       "item": "Compressed Air Filter, 1 1/2 Inch Npt, 233 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22401,7 +22343,7 @@
      "position": 12,
      "dimensions": {
       "item": "Compressed Air Filter, 1 1/2 Inch Npt, 339 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22410,7 +22352,7 @@
      "position": 13,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Inch Npt, 127 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22419,7 +22361,7 @@
      "position": 14,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 1 1/2 Inch Npt, 339 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22428,7 +22370,7 @@
      "position": 15,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 1 Inch Npt, 127 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22436,8 +22378,8 @@
      "partNumber": "AOPX030GNFX",
      "position": 16,
      "dimensions": {
-      "item": "Compressed Air Filter, 1 Micron, 1 Inch Npt, 233 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "item": "Compressed Air Filter, 1 Micron, 1 1/2 Inch Npt, 233 Cfm, 232 PSI",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22446,7 +22388,7 @@
      "position": 17,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 1/2 Inch Npt, 42 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22455,7 +22397,7 @@
      "position": 18,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 1/4 Inch Npt, 21 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22464,7 +22406,7 @@
      "position": 19,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 2 1/2 Inch Npt, 699 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22473,7 +22415,7 @@
      "position": 20,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 2 Inch Npt, 466 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22482,7 +22424,7 @@
      "position": 21,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 3 Inch Npt, 1, 314 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22491,7 +22433,7 @@
      "position": 22,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 3/4 Inch Npt, 64 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22500,7 +22442,7 @@
      "position": 23,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 3/8 Inch Npt, 21 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     },
@@ -22509,7 +22451,7 @@
      "position": 24,
      "dimensions": {
       "item": "Compressed Air Filter, 1/2 Inch Npt, 21 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22518,7 +22460,7 @@
      "position": 25,
      "dimensions": {
       "item": "Compressed Air Filter, 1/2 Inch Npt, 42 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22527,7 +22469,7 @@
      "position": 26,
      "dimensions": {
       "item": "Compressed Air Filter, 1/4 Inch Npt, 21 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22536,7 +22478,7 @@
      "position": 27,
      "dimensions": {
       "item": "Compressed Air Filter, 2 Inch Npt, 466 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22545,7 +22487,7 @@
      "position": 28,
      "dimensions": {
       "item": "Compressed Air Filter, 3 Inch Npt, 1, 314 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22554,7 +22496,7 @@
      "position": 29,
      "dimensions": {
       "item": "Compressed Air Filter, 3/8 Inch Npt, 21 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22563,7 +22505,7 @@
      "position": 30,
      "dimensions": {
       "item": "Compressed Air Filter, 3/4 Inch Npt, 64 Cfm, 290 PSI",
-      "type": "Activated Carbon (0.01 Micron)",
+      "type": "Activated Carbon (Oil Vapour)",
       "maxPsi": 290
      }
     },
@@ -22572,7 +22514,7 @@
      "position": 31,
      "dimensions": {
       "item": "Compressed Air Filter, 1 Micron, 1/2 Inch Npt, 21 Cfm, 232 PSI",
-      "type": "Coalescing (0.01 Micron)",
+      "type": "Coalescing (1 Micron)",
       "maxPsi": 232
      }
     }
@@ -22721,7 +22663,7 @@
     {
      "group": "Specifications",
      "label": "Design",
-     "value": "0.01 mm Coalescing Filtration Gradepulse Drain",
+     "value": "0.01 Micron Coalescing Filtration Gradepulse Drain",
      "unit": null,
      "position": 5,
      "isFilterable": false,
@@ -22897,7 +22839,7 @@
     {
      "group": "Specifications",
      "label": "Design",
-     "value": "Built In Square Pressure Gauge (Psi Scale) 5 mm Particulate Filtration Grade Manual Drain Relieving",
+     "value": "Built In Square Pressure Gauge (Psi Scale) 5 Micron Particulate Filtration Grade Manual Drain Relieving",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -23171,7 +23113,7 @@
     {
      "group": "Specifications",
      "label": "Material",
-     "value": "Polycarbonate Bowl With Nylon Guard Nitrile, Seals Aluminum Housing ABS, Body Cap Acetal, Element Retainer Acetal, Baffles Intered, Polyethylene Filter Element",
+     "value": "Polycarbonate Bowl With Nylon Guard Nitrile, Seals Aluminum Housing ABS, Body Cap Acetal, Element Retainer Acetal, Baffles Sintered, Polyethylene Filter Element",
      "unit": null,
      "position": 11,
      "isFilterable": false,
@@ -25181,14 +25123,14 @@
   {
    "sku": "IH-PAR-P3NF-H-FLOW-GENERAL-INDUSTRIAL-COALESCING-FILTERS",
    "slug": "parker-p3nf-h-flow-general-industrial-coalescing-filters",
-   "title": "Parker P3NF Hi-Flow General Industrial Coalescing Filters",
+   "title": "Parker P3NF Hi-Flow General Industrial Particulate and Coalescing Filters",
    "category": "air-preparation-frl",
    "brandSlug": "parker",
-   "focusKeyword": "parker p3nf hi-flow general industrial coalescing filters",
-   "descriptionShort": "Parker P3NF Hi-Flow General Industrial Coalescing Filters: 12 part numbers.",
-   "descriptionLong": "<p>Parker P3NF Hi-Flow General Industrial Coalescing Filters: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Particulate Filter</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker P3NF Hi-Flow General Industrial Coalescing Filters",
-   "seoDescription": "Parker P3NF Hi-Flow General Industrial Coalescing Filters: 12 part numbers. Quote by Parker part number.",
+   "focusKeyword": "parker p3nf hi-flow general industrial particulate and coalescing filters",
+   "descriptionShort": "Parker P3NF Hi-Flow General Industrial Particulate and Coalescing Filters: 12 part numbers.",
+   "descriptionLong": "<p>Parker P3NF Hi-Flow General Industrial Particulate and Coalescing Filters: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Particulate Filter</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker P3NF Hi-Flow General Industrial Particulate and Coalescing Filters",
+   "seoDescription": "Parker P3NF Hi-Flow General Industrial Particulate and Coalescing Filters: 12 part numbers. Quote by Parker part number.",
    "faqs": [],
    "specs": [
     {
@@ -25598,60 +25540,6 @@
    "specs": [
     {
      "group": "Specifications",
-     "label": "Adjustment",
-     "value": "0 psi to 125 psi",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Adjustment Knob",
-     "value": "Nonrising",
-     "unit": null,
-     "position": 1,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Adjustment Location",
-     "value": "Top",
-     "unit": null,
-     "position": 2,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Adjustment Mechanism",
-     "value": "Knob",
-     "unit": null,
-     "position": 3,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Adjustment Mechanism Material",
-     "value": "Steel",
-     "unit": null,
-     "position": 4,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Adjustment Range",
-     "value": "0 psi to 125 psi",
-     "unit": null,
-     "position": 5,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Air Inlet Gender",
      "value": "Female",
      "unit": null,
@@ -25831,7 +25719,7 @@
      "dimensions": {
       "item": "Air Regulator 3/8 Inch Npt 60 Cfm 250 Psi",
       "ports": "3/8\"",
-      "maxPsi": 125
+      "maxPsi": 250
      }
     },
     {
@@ -25840,7 +25728,7 @@
      "dimensions": {
       "item": "Air Regulator 1/2 Inch Npt 75 Cfm 250 Psi",
       "ports": "1/2\"",
-      "maxPsi": 125
+      "maxPsi": 250
      }
     },
     {
@@ -25849,7 +25737,7 @@
      "dimensions": {
       "item": "Air Regulator 1/2 Inch Npt 90 Cfm 250 Psi",
       "ports": "1/2\"",
-      "maxPsi": 125
+      "maxPsi": 250
      }
     },
     {
@@ -29375,7 +29263,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8421290015"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-SOL-LRS-SERIES-RIGHT-ANGLE-LIQUID-SEPARATORS",
@@ -30916,15 +30804,6 @@
      "dimensions": {
       "item": "Air Regulator 1/4 Inch Npt 12 Cfm 300 Psi",
       "ports": "1/4\"",
-      "maxPsi": 300
-     }
-    },
-    {
-     "partNumber": "R30-08-G00",
-     "position": 4,
-     "dimensions": {
-      "item": "Compressed Air Regulator",
-      "ports": "1\"",
       "maxPsi": 300
      }
     }
@@ -33668,7 +33547,7 @@
    "brandSlug": "wilkerson",
    "focusKeyword": "wilkerson filter/regulators",
    "descriptionShort": "Wilkerson Filter/Regulators: 6 part numbers.",
-   "descriptionLong": "<p>Wilkerson Filter/Regulators: 6 part numbers.</p><h3>Specification</h3><ul><li>Type: Filter/Regulator</li><li>Pressure stated by the maker: 150 to 300 psi (10 to 21 bar), by size</li><li>Temperature: 180°F</li><li>Seal Material: Fluorocarbon</li><li>Part numbers: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Wilkerson part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Wilkerson part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Wilkerson Filter/Regulators: 6 part numbers.</p><h3>Specification</h3><ul><li>Type: Filter/Regulator</li><li>Pressure stated by the maker: 300 psi (21 bar)</li><li>Temperature: 180°F</li><li>Seal Material: Fluorocarbon</li><li>Part numbers: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Wilkerson part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Wilkerson part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Wilkerson Filter/Regulators",
    "seoDescription": "Wilkerson Filter/Regulators: 6 part numbers. Quote by Wilkerson part number.",
    "faqs": [],
@@ -33724,24 +33603,6 @@
      "value": "NPT",
      "unit": null,
      "position": 5,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Body Material",
-     "value": "Stainless Steel",
-     "unit": null,
-     "position": 6,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Bowl Material",
-     "value": "Stainless Steel",
-     "unit": null,
-     "position": 7,
      "isFilterable": false,
      "templateKey": null
     },
@@ -33819,15 +33680,6 @@
     },
     {
      "group": "Specifications",
-     "label": "Seal Material",
-     "value": "Fluorocarbon",
-     "unit": null,
-     "position": 16,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Series",
      "value": "SB1 Series",
      "unit": null,
@@ -33873,24 +33725,6 @@
       "item": "Filter/regulator 6.25 Inch H 1.56 Inch Width",
       "ports": "1/4\"",
       "maxPsi": 300
-     }
-    },
-    {
-     "partNumber": "BB3-02-FK00",
-     "position": 2,
-     "dimensions": {
-      "item": "Filter/regulator 1/4in",
-      "ports": "1/4\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "CB6-04-F00",
-     "position": 3,
-     "dimensions": {
-      "item": "Filter Regulator, 1/2 Inch NPT, 70 cfm, 5 micron, 0 To 125 psi, 150 psi Max. Pressure",
-      "ports": "1/2\"",
-      "maxPsi": 150
      }
     },
     {
@@ -34348,6 +34182,15 @@
       "ports": "1/4\"",
       "maxPsi": 300
      }
+    },
+    {
+     "partNumber": "BB3-02-FK00",
+     "position": 6,
+     "dimensions": {
+      "item": "Filter/regulator 1/4in",
+      "ports": "1/4\"",
+      "maxPsi": 150
+     }
     }
    ],
    "crossReferences": [],
@@ -34481,6 +34324,15 @@
       "ports": "1/2\"",
       "maxPsi": 200
      }
+    },
+    {
+     "partNumber": "CB6-04-F00",
+     "position": 11,
+     "dimensions": {
+      "item": "Filter Regulator, 1/2 Inch NPT, 70 cfm, 5 micron, 0 To 125 psi, 150 psi Max. Pressure",
+      "ports": "1/2\"",
+      "maxPsi": 150
+     }
     }
    ],
    "crossReferences": [],
@@ -34588,7 +34440,7 @@
    "brandSlug": "wilkerson",
    "focusKeyword": "wilkerson frls l16 series economist compact lubricators",
    "descriptionShort": "Wilkerson FRLs L16 Series EconOmist Compact Lubricators: 24 part numbers.",
-   "descriptionLong": "<p>Wilkerson FRLs L16 Series EconOmist Compact Lubricators: 24 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Pressure stated by the maker: 150 to 250 psi (10 to 17 bar), by size</li><li>Temperature: 32°F to 125°F</li><li>Part numbers: 24</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Wilkerson part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Wilkerson part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Wilkerson FRLs L16 Series EconOmist Compact Lubricators: 24 part numbers.</p><h3>Specification</h3><ul><li>Type: Lubricator</li><li>Pressure stated by the maker: 150 to 200 psi (10 to 14 bar), by size</li><li>Temperature: 32°F to 125°F</li><li>Part numbers: 24</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Wilkerson part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Sizing air preparation</h3><p>Size filters, regulators and lubricators on port size and the air flow the downstream tools and cylinders need, not on line size alone; an undersized unit drops pressure at full flow. Quote the maker part number and we will confirm bowl, drain and gauge options before supply.</p><h3>How to order</h3><p>Quote the Wilkerson part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Wilkerson FRLs L16 Series EconOmist Compact Lubricators",
    "seoDescription": "Wilkerson FRLs L16 Series EconOmist Compact Lubricators: 24 part numbers. Quote by Wilkerson part number.",
    "faqs": [],
@@ -34687,145 +34539,11 @@
      }
     },
     {
-     "partNumber": "L18-02AMB",
-     "position": 8,
-     "dimensions": {
-      "item": "EconOmist Compact Lubricator — Flow Rate 88 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/4\"",
-      "ports": "1/4\"",
-      "maxPsi": 250
-     }
-    },
-    {
-     "partNumber": "L18-02A",
-     "position": 9,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 88 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/4\"",
-      "ports": "1/4\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L18-03AMB",
-     "position": 10,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 90 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/8\"",
-      "ports": "3/8\"",
-      "maxPsi": 250
-     }
-    },
-    {
-     "partNumber": "L18-03A",
-     "position": 11,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 90 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/8\"",
-      "ports": "3/8\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L18-04AMB",
-     "position": 12,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 96 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/2\"",
-      "ports": "1/2\"",
-      "maxPsi": 250
-     }
-    },
-    {
-     "partNumber": "L18-04A",
-     "position": 13,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 96 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/2\"",
-      "ports": "1/2\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L28-04AMB",
-     "position": 14,
-     "dimensions": {
-      "item": "EconOmist Compact Lubricator — Flow Rate 110 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/2\"",
-      "ports": "1/2\"",
-      "maxPsi": 250
-     }
-    },
-    {
-     "partNumber": "L28-03A",
-     "position": 15,
-     "dimensions": {
-      "item": "Standard Lubricator — Flow Rate 110 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/8\"",
-      "ports": "3/8\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L28-04A",
-     "position": 16,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 110 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/2\"",
-      "ports": "1/2\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L28-03AMB",
-     "position": 17,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 110 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/8\"",
-      "ports": "3/8\"",
-      "maxPsi": 250
-     }
-    },
-    {
      "partNumber": "L26-04AMB",
      "position": 18,
      "dimensions": {
       "item": "Lubricator — Flow Rate 128 SCFM, Temp 32°F to 150°F, Pressure Rating 200 psig, Bowl Material Metal",
       "type": "Lubricator",
-      "maxPsi": 200
-     }
-    },
-    {
-     "partNumber": "L28-06A",
-     "position": 19,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 150 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/4\"",
-      "ports": "3/4\"",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L28-06AMB",
-     "position": 20,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 150 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/4\"",
-      "ports": "3/4\"",
-      "maxPsi": 250
-     }
-    },
-    {
-     "partNumber": "L30-06A",
-     "position": 21,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 196 SCFM, Temp 32°F to 125°F, Pressure Rating 150 psig, Bowl Material Plastic",
-      "maxPsi": 150
-     }
-    },
-    {
-     "partNumber": "L30-06AMB",
-     "position": 22,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 196 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 200 psig, Port Size 3/4\"",
-      "ports": "3/4\"",
-      "maxPsi": 200
-     }
-    },
-    {
-     "partNumber": "L30-08AMB",
-     "position": 23,
-     "dimensions": {
-      "item": "Lubricator — Flow Rate 374 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 200 psig, Port Size 1\"",
-      "ports": "1\"",
       "maxPsi": 200
      }
     }
@@ -35165,6 +34883,60 @@
       "ports": "1/2\"",
       "maxPsi": 250
      }
+    },
+    {
+     "partNumber": "L18-02AMB",
+     "position": 6,
+     "dimensions": {
+      "item": "EconOmist Compact Lubricator — Flow Rate 88 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/4\"",
+      "ports": "1/4\"",
+      "maxPsi": 250
+     }
+    },
+    {
+     "partNumber": "L18-02A",
+     "position": 7,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 88 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/4\"",
+      "ports": "1/4\"",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L18-03AMB",
+     "position": 8,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 90 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/8\"",
+      "ports": "3/8\"",
+      "maxPsi": 250
+     }
+    },
+    {
+     "partNumber": "L18-03A",
+     "position": 9,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 90 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/8\"",
+      "ports": "3/8\"",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L18-04AMB",
+     "position": 10,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 96 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/2\"",
+      "ports": "1/2\"",
+      "maxPsi": 250
+     }
+    },
+    {
+     "partNumber": "L18-04A",
+     "position": 11,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 96 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/2\"",
+      "ports": "1/2\"",
+      "maxPsi": 150
+     }
     }
    ],
    "crossReferences": [],
@@ -35502,6 +35274,60 @@
       "ports": "3/4\"",
       "maxPsi": 250
      }
+    },
+    {
+     "partNumber": "L28-04AMB",
+     "position": 6,
+     "dimensions": {
+      "item": "EconOmist Compact Lubricator — Flow Rate 110 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 1/2\"",
+      "ports": "1/2\"",
+      "maxPsi": 250
+     }
+    },
+    {
+     "partNumber": "L28-03A",
+     "position": 7,
+     "dimensions": {
+      "item": "Standard Lubricator — Flow Rate 110 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/8\"",
+      "ports": "3/8\"",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L28-04A",
+     "position": 8,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 110 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 1/2\"",
+      "ports": "1/2\"",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L28-03AMB",
+     "position": 9,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 110 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/8\"",
+      "ports": "3/8\"",
+      "maxPsi": 250
+     }
+    },
+    {
+     "partNumber": "L28-06A",
+     "position": 10,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 150 SCFM, Temp 32°F to 125°F, Max. Operating Pressure 150 psig, Port Size 3/4\"",
+      "ports": "3/4\"",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L28-06AMB",
+     "position": 11,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 150 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 250 psig, Port Size 3/4\"",
+      "ports": "3/4\"",
+      "maxPsi": 250
+     }
     }
    ],
    "crossReferences": [],
@@ -35800,6 +35626,32 @@
      "position": 3,
      "dimensions": {
       "item": "Lubricator 1 In",
+      "ports": "1\"",
+      "maxPsi": 200
+     }
+    },
+    {
+     "partNumber": "L30-06A",
+     "position": 4,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 196 SCFM, Temp 32°F to 125°F, Pressure Rating 150 psig, Bowl Material Plastic",
+      "maxPsi": 150
+     }
+    },
+    {
+     "partNumber": "L30-06AMB",
+     "position": 5,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 196 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 200 psig, Port Size 3/4\"",
+      "ports": "3/4\"",
+      "maxPsi": 200
+     }
+    },
+    {
+     "partNumber": "L30-08AMB",
+     "position": 6,
+     "dimensions": {
+      "item": "Lubricator — Flow Rate 374 SCFM, Temp 32°F to 150°F, Max. Operating Pressure 200 psig, Port Size 1\"",
       "ports": "1\"",
       "maxPsi": 200
      }
@@ -36957,7 +36809,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8421290065"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-WLK-M35-COALESCING-FILTERS",
@@ -37207,7 +37059,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8421290015"
+   "hsCode": "8421398015"
   },
   {
    "sku": "IH-WLK-R18-REGULATORS",
@@ -37708,6 +37560,15 @@
      "dimensions": {
       "item": "Air Regulator 3/4 Inch Npt 470 Cfm 300 Psi",
       "ports": "3/4\"",
+      "maxPsi": 300
+     }
+    },
+    {
+     "partNumber": "R30-08-G00",
+     "position": 4,
+     "dimensions": {
+      "item": "Compressed Air Regulator",
+      "ports": "1\"",
       "maxPsi": 300
      }
     }

@@ -1,0 +1,1583 @@
+{
+  "family": "flow-iron-fittings-suppliers-uae",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "A ring-joint (BX or R) gasket is a single-use seal: once energised it should not be reused, and a new gasket is fitted at every flange make-up.",
+      "source": "Indus Hydraulics BOP spare parts listing, API 6A BX ring gasket set (/c/bop-spare-parts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cross rated 10,000 psi for sour service used for?",
+          "a": "A cross is a four-way flow-iron fitting that joins four line ends at one point in a frac or well-test flow line. The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration M × M × F × F (2 Male, 2 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service come in?",
+          "a": "The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is listed in 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service?",
+          "a": "On the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service, end A is 1502 Male Weco Union (×2) and end B is 1502 Female Weco Union (×2). Additional features: 1/2 in NPT instrument tap. Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service?",
+          "a": "The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service made from?",
+          "a": "The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service meet?",
+          "a": "For the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service connect to?",
+          "a": "The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 1502 Cross, FMC WECO 1502, SPM 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service used?",
+          "a": "The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is used for sour-well frac-tree distribution; pressure-monitoring tee in stimulation lines; NACE manifolds with sensor tap. It is sized for 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cross 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The cross differs from the [Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service](/p/cross-1502-series-3m-1f-with-npt-tap-15-000-psi-standard-service) in figure, pressure class or service class. The Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "elbow-lr-90-602-series-m-f-integral-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an elbow rated 6,000 psi for sour service used for?",
+          "a": "An elbow turns a flow-iron line through a fixed angle in a single forged body. The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration Long-Radius 90°, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service come in?",
+          "a": "The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is listed in 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service?",
+          "a": "On the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service, end A is 602 Male Weco Union and end B is 602 Female Weco Union. Additional features: Integral body (no welds). Bore: Same as nominal — long-radius bend."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service?",
+          "a": "The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service made from?",
+          "a": "The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service meet?",
+          "a": "For the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service connect to?",
+          "a": "The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 602 Elbow, FMC WECO 602, SPM 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service used?",
+          "a": "The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is used for sour-well production iron 90° turns; H₂S well-test manifolds; 6K sour flowback iron. It is sized for 3 in, 4 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the elbow 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The elbow differs from the [Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service](/p/elbow-lr-90-1502-series-m-f-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tee-1502-series-m-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a tee rated 15,000 psi for standard service used for?",
+          "a": "A tee splits or combines flow at a three-way junction in a frac or flow-back flow line. The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration M × M × F (2 Male / 1 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service come in?",
+          "a": "The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is listed in 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service?",
+          "a": "On the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (run inlet) and end B is 1502 Male Weco Union (run outlet). Additional features: 1502 Female Weco Union (branch). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service?",
+          "a": "The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service made from?",
+          "a": "The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service meet?",
+          "a": "For the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service connect to?",
+          "a": "The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 1502 Tee, FMC WECO 1502, SPM 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service used?",
+          "a": "The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is used for male-ended pup-joint branch take-offs; pump-truck cross-tie iron; service-tree distribution. It is sized for 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tee 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The tee differs from the [Tee, 1502 Series M × F × F, 10,000 psi, Sour Service](/p/tee-1502-series-m-f-f-10-000-psi-sour-service) in figure, pressure class or service class. The Tee, 1502 Series M × M × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Tee, 1502 Series M × M × F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wye-lateral-1502-series-m-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a lateral wye rated 15,000 psi for standard service used for?",
+          "a": "A lateral wye splits or combines flow at an angle, which reduces turbulence and erosion compared with a square tee. The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Lateral Y, Male × Female × Male."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service come in?",
+          "a": "The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is listed in 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service?",
+          "a": "On the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (×2 — straight run) and end B is 1502 Female Weco Union (lateral branch). Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service?",
+          "a": "The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service made from?",
+          "a": "The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service meet?",
+          "a": "For the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service connect to?",
+          "a": "The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 1502 Wye, FMC WECO 1502, SPM 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service used?",
+          "a": "The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is used for female-branch lateral injection points; frac-iron acid-injection wyes; stimulation iron flexibility. It is sized for 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the lateral wye 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The lateral wye differs from the [Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service](/p/wye-lateral-1502-series-f-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "studded-cross-tee-fitting-api-6bx-10k-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a studded cross/tee fitting rated 15,000 psi for standard service used for?",
+          "a": "A studded cross or tee fitting connects API flange and studded outlets in a frac tree or manifold, with studs and nuts integrated. The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is rated 15,000 psi for standard service, in the configuration Studded Cross / Tee — flange × studded × studded × studded."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service come in?",
+          "a": "The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is listed in 2-1/16 in, 3-1/16 in, 4-1/16 in (10K and 15K classes). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service?",
+          "a": "On the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service, end A is API 6BX studded ends (×3 or ×4). Additional features: Studs and nuts integrated; ring-joint gaskets sold separately. Bore: Through-bore matches the smaller flange size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service?",
+          "a": "The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service made from?",
+          "a": "The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service meet?",
+          "a": "The studded cross/tee fitting is built to API 6A and supplied API-monogrammed. The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service connect to?",
+          "a": "The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service connects at API 6BX studded ends (×3 or ×4). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Cameron Studded, FMC Wellhead 10K/15K, NOV Wellhead as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service installed and serviced?",
+          "a": "For the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service: fit a new ring gasket at every make-up, clean the ring groove first and bolt up evenly in a cross pattern. Do not reuse a ring gasket once it has been energised."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service used?",
+          "a": "The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is used for wellhead spool-piece distributions; christmas-tree branches; frac-tree integrated fittings. It is sized for 2-1/16 in, 3-1/16 in, 4-1/16 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the studded cross/tee fitting 10K 15,000 psi standard differ from similar flow iron?",
+          "a": "The studded cross/tee fitting differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blanking-cap-1502-series-male-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blanking cap rated 15,000 psi for standard service used for?",
+          "a": "A blanking cap seals the open end of a hammer-union line, for pressure testing or for isolating an unused branch. The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Male blank (caps a 1502 Female union)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service come in?",
+          "a": "The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service?",
+          "a": "On the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is Blank. Additional features: Optional 1/2 in NPT bleed tap. Bore: N/A — solid blank."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service?",
+          "a": "The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service made from?",
+          "a": "The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service meet?",
+          "a": "For the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service connect to?",
+          "a": "The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Cap, SPM 1502 Blank, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service used?",
+          "a": "The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is used for frac-iron pressure testing; line termination during make-up; service-tree blanks. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blanking cap 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The blanking cap differs from the [Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service](/p/blanking-cap-1502-series-female-15-000-psi-standard-service) in figure, pressure class or service class. The Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blanking-cap-set-male-female-602-series-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blanking cap rated 6,000 psi for sour service used for?",
+          "a": "A blanking cap seals the open end of a hammer-union line, for pressure testing or for isolating an unused branch. The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration Set of one Male blank + one Female blank."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service come in?",
+          "a": "The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service?",
+          "a": "On the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service, end A is 602 Male / Female Weco Union and end B is Blank. Bore: N/A — solid blank."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service?",
+          "a": "The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service made from?",
+          "a": "The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service meet?",
+          "a": "For the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service connect to?",
+          "a": "The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Cap, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service used?",
+          "a": "The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is used for sour-well iron pressure testing; H₂S line termination; sour service-tree blanks. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blanking cap 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The blanking cap differs from the [Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service](/p/blanking-cap-1502-series-male-15-000-psi-standard-service) in figure, pressure class or service class. The Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Blanking Cap Set (Male + Female), 602 Series, 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cross-1502-series-3f-1m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cross rated 10,000 psi for sour service used for?",
+          "a": "A cross is a four-way flow-iron fitting that joins four line ends at one point in a frac or well-test flow line. The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration F × F × F × M (3 Female, 1 Male)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service come in?",
+          "a": "The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service?",
+          "a": "On the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service, end A is 1502 Female Weco Union (×3) and end B is 1502 Male Weco Union (×1). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service?",
+          "a": "The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service made from?",
+          "a": "The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service meet?",
+          "a": "For the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service connect to?",
+          "a": "The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Cross, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service used?",
+          "a": "The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is used for sour-well frac-tree distribution; H₂S stimulation iron; NACE-compliant high-pressure manifolds. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cross 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The cross differs from the [Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service](/p/cross-1502-series-3m-1f-with-npt-tap-15-000-psi-standard-service) in figure, pressure class or service class. The Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cross-206-series-3m-1f-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cross rated 2,000 psi for standard service used for?",
+          "a": "A cross is a four-way flow-iron fitting that joins four line ends at one point in a frac or well-test flow line. The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is rated 2,000 psi for standard service, in the configuration M × M × M × F (3 Male, 1 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service come in?",
+          "a": "The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is listed in 2 in, 3 in, 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service?",
+          "a": "On the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service, end A is 206 Male Weco Union (×3) and end B is 206 Female Weco Union (×1). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service?",
+          "a": "The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is rated 2,000 psi working pressure (2K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service made from?",
+          "a": "The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service meet?",
+          "a": "For the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service connect to?",
+          "a": "The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 206 Cross, Anson 206, SPM 206 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service installed and serviced?",
+          "a": "For the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service used?",
+          "a": "The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is used for water-transfer manifolds; frac-water staging crosses; low-pressure flowback distribution. It is sized for 2 in, 3 in, 4 in lines at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cross 206 2,000 psi standard differ from similar flow iron?",
+          "a": "The cross differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service is rated 2,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service?",
+          "a": "Yes. We list the Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "elbow-lr-90-1502-series-m-f-integral-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an elbow rated 10,000 psi for sour service used for?",
+          "a": "An elbow turns a flow-iron line through a fixed angle in a single forged body. The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Long-Radius 90°, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service come in?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service?",
+          "a": "On the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Integral body (no welds). Bore: Same as nominal — long-radius bend."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service made from?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service meet?",
+          "a": "For the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service connect to?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Elbow, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service used?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is used for sour-well frac iron 90° turns; H₂S service-tree side-out runs; NACE-compliant high-pressure manifolds. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the elbow 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The elbow differs from the [Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service](/p/elbow-lr-90-1502-series-m-f-integral-15-000-psi-standard-service) in figure, pressure class or service class. The Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tee-1502-series-m-f-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a tee rated 10,000 psi for sour service used for?",
+          "a": "A tee splits or combines flow at a three-way junction in a frac or flow-back flow line. The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration M × F × F (1 Male / 2 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service come in?",
+          "a": "The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service?",
+          "a": "On the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service, end A is 1502 Male Weco Union (run inlet) and end B is 1502 Female Weco Union (run outlet, branch). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service?",
+          "a": "The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service made from?",
+          "a": "The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service meet?",
+          "a": "For the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service connect to?",
+          "a": "The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Tee, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service used?",
+          "a": "The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is used for sour-well frac iron branches; H₂S service-tree distribution; NACE high-pressure manifolds. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tee 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The tee differs from the [Tee, 1502 Series M × M × F, 15,000 psi, Standard Service](/p/tee-1502-series-m-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Tee, 1502 Series M × F × F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Tee, 1502 Series M × F × F, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wye-straight-1502-series-m-f-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a straight wye rated 15,000 psi for standard service used for?",
+          "a": "A straight-run wye splits or combines flow at an angle along a straight run, which reduces turbulence compared with a square tee. The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Straight-run Y, Male × Female × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service come in?",
+          "a": "The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is listed in 2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "On the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (run) and end B is 1502 Female Weco Union (×2 — Y branches). Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service made from?",
+          "a": "The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service meet?",
+          "a": "For the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service connect to?",
+          "a": "The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Wye, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service used?",
+          "a": "The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is used for pump-discharge merge headers; frac-iron flow combination; stimulation manifold inlets. It is sized for 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the straight wye 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The straight wye differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-ring-joint-gasket-set-bx-r-series-all-pressure-classes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a ring joint gasket set rated 20,000 psi for standard service used for?",
+          "a": "A ring joint gasket set holds the BX and R series ring gaskets used to seal API 6A and ASME RTJ flange joints. The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is rated 20,000 psi for standard service, in the configuration Ring-joint gasket set — BX-152 through BX-169, R-31 through R-46."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes come in?",
+          "a": "The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is listed in BX-152 to BX-169 (5K, 10K, 15K, 20K classes); R-12 to R-46 (API 6B and ASME flanges). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes?",
+          "a": "On the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes, end A is BX & R series, octagonal cross-section. Additional features: Material options: soft iron (default), 316SS, Inconel 625 (sour)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes?",
+          "a": "The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is rated 20,000 psi working pressure (20K class) for standard service, with a temperature rating of -50°F to 350°F. The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes made from?",
+          "a": "The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is made from Soft iron (default), 316SS or Inconel 625 (NACE) on request, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes meet?",
+          "a": "The ring joint gasket set is built to API 6A and supplied API-monogrammed. The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes connect to?",
+          "a": "The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes connects at BX & R series, octagonal cross-section. Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Galperti RJG, Crane Lamons RJG, Cameron RJG as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes installed and serviced?",
+          "a": "For the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes: fit a new ring gasket at every make-up and replace studs that show galling or corrosion. Torque the studs evenly in a cross pattern to the flange schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes used?",
+          "a": "The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is used for wellhead and Christmas-tree flange seals; API 6A pressure-rated joints; ASME B16.5 / B16.20 RTJ flanges. It is sized for BX-152 to BX-169 lines at 20,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ring joint gasket set 20,000 psi standard differ from similar flow iron?",
+          "a": "The ring joint gasket set differs from the [BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting](/p/bsl-stud-nut-set-b7-2h-api-6a-5k-to-20k-flange-bolting) in figure, pressure class or service class. The API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes is rated 20,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes?",
+          "a": "The listing states a lead time of 7 days for the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes?",
+          "a": "Yes. We list the API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blanking-cap-1502-series-female-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blanking cap rated 15,000 psi for standard service used for?",
+          "a": "A blanking cap seals the open end of a hammer-union line, for pressure testing or for isolating an unused branch. The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Female blank (caps a 1502 Male union)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service come in?",
+          "a": "The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service?",
+          "a": "On the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service, end A is 1502 Female Weco Union and end B is Blank. Additional features: Optional 1/2 in NPT bleed tap. Bore: N/A — solid blank."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service?",
+          "a": "The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service made from?",
+          "a": "The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service meet?",
+          "a": "For the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service connect to?",
+          "a": "The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Cap, SPM 1502 Blank, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service used?",
+          "a": "The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is used for frac-iron pressure testing; male-line termination; pump-truck winterization caps. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blanking cap 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The blanking cap differs from the [Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service](/p/blanking-cap-1502-series-male-15-000-psi-standard-service) in figure, pressure class or service class. The Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Blanking Cap, 1502 Series Female, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsl-stud-nut-set-b7-2h-api-6a-5k-to-20k-flange-bolting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a stud and nut bolting set rated 20,000 psi for standard service used for?",
+          "a": "A stud and nut bolting set supplies the ASTM A193 B7 studs and A194 2H nuts for API 6A flange make-ups. The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is rated 20,000 psi for standard service, in the configuration Stud-and-nut set per flange — ASTM A193 B7 studs / A194 2H nuts."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting come in?",
+          "a": "The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is listed in Per API 6B and 6BX flange schedules — 2-1/16 in to 18-3/4 in flange sizes. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting?",
+          "a": "On the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting, end A is API 6A 5K, 10K, 15K, 20K flange bolting patterns. Additional features: Sour-service variant: B7M / 2HM per NACE MR0175. Length: Per flange schedule (varies by class and size). Bore: N/A — bolting."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting?",
+          "a": "The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is rated 20,000 psi working pressure (20K class) for standard service, with a temperature rating of -50°F to 750°F. The rating is a working pressure, not a test pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting made from?",
+          "a": "The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is made from A193 B7 studs / A194 2H nuts, hot-dip galvanised or PTFE coated, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting meet?",
+          "a": "The stud and nut bolting set is built to API 6A and supplied API-monogrammed. The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting connect to?",
+          "a": "The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting connects at API 6A 5K, 10K, 15K, 20K flange bolting patterns. Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Galperti BSL, Crane Lamons Bolting, Cameron Bolting as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting installed and serviced?",
+          "a": "For the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting: fit a new ring gasket at every make-up and replace studs that show galling or corrosion. Torque the studs evenly in a cross pattern to the flange schedule."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting used?",
+          "a": "The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is used for wellhead flange make-up bolting; christmas-tree assembly hardware; surface-tree and BOP stack bolting. It is sized for Per API 6B and 6BX flange schedules — 2-1/16 in to 18-3/4 in flange sizes lines at 20,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the stud and nut bolting set 20,000 psi standard differ from similar flow iron?",
+          "a": "The stud and nut bolting set differs from the [API 6A Ring Joint Gasket Set (BX & R Series), All Pressure Classes](/p/api-6a-ring-joint-gasket-set-bx-r-series-all-pressure-classes) in figure, pressure class or service class. The BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting is rated 20,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting?",
+          "a": "The listing states a lead time of 7 days for the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting?",
+          "a": "Yes. We list the BSL Stud & Nut Set (B7/2H), API 6A 5K to 20K Flange Bolting as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cross-602-series-3m-1f-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cross rated 6,000 psi for sour service used for?",
+          "a": "A cross is a four-way flow-iron fitting that joins four line ends at one point in a frac or well-test flow line. The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration M × M × M × F (3 Male, 1 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service come in?",
+          "a": "The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is listed in 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service?",
+          "a": "On the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service, end A is 602 Male Weco Union (×3) and end B is 602 Female Weco Union (×1). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service?",
+          "a": "The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service made from?",
+          "a": "The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service meet?",
+          "a": "For the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service connect to?",
+          "a": "The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Cross, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service used?",
+          "a": "The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is used for sour-well production-tree distribution; H₂S well-test manifolds; 6K sour flowback iron. It is sized for 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cross 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The cross differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Cross, 602 Series 3M × 1F, 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "elbow-45-206-series-m-f-butt-weld-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an elbow rated 2,000 psi for sour service used for?",
+          "a": "An elbow turns a flow-iron line through a fixed angle in a single forged body. The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is rated 2,000 psi for sour service, in the configuration 45° bend, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service come in?",
+          "a": "The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is listed in 4 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service?",
+          "a": "On the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service, end A is 206 Male Weco Union and end B is 206 Female Weco Union. Additional features: S80 BW (XH schedule butt-weld) lugs available. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service?",
+          "a": "The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is rated 2,000 psi working pressure (2K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service made from?",
+          "a": "The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service meet?",
+          "a": "For the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service connect to?",
+          "a": "The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 206, Anson 206, SPM 206 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service installed and serviced?",
+          "a": "For the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service used?",
+          "a": "The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is used for sour-well water disposal; H₂S flowback offsets; tank-farm sour-fluid tie-ins. It is sized for 4 in lines at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the elbow 206 2,000 psi sour differ from similar flow iron?",
+          "a": "The elbow differs from the [Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service](/p/elbow-lr-90-602-series-m-f-integral-6-000-psi-sour-service) in figure, pressure class or service class. The Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service is rated 2,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service?",
+          "a": "Yes. We list the Elbow 45°, 206 Series M × F (Butt-Weld), 2,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hub-clamp-connector-grayloc-style-5k-to-15k-pressure-classes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a hub and clamp connector rated 15,000 psi for standard service used for?",
+          "a": "A hub and clamp connector joins two hubs with a clamp and a sealing ring, as an alternative to a bolted flange joint. The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is rated 15,000 psi for standard service, in the configuration Hub × Clamp connector pair (Grayloc-style)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes come in?",
+          "a": "The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is listed in 2 in, 3 in, 4 in (and bore-equivalent API sizes). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes?",
+          "a": "On the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes, end A is Hub (welded or studded) and end B is Hub (welded or studded). Additional features: Clamp + Sealing Ring (sold integrated). Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes?",
+          "a": "The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes made from?",
+          "a": "The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes meet?",
+          "a": "For the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes connect to?",
+          "a": "The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes connects at Hub (welded or studded) and Hub (welded or studded). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Grayloc / Oceaneering, Vector / Cameron, NOV Hub-Clamp as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes installed and serviced?",
+          "a": "For the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes: inspect the connections and seals before each job, and bleed the line to zero before breaking any joint. Follow the flow-iron make-up and test procedure of your operator."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes used?",
+          "a": "The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is used for compact wellhead skid pipework; process-plant high-pressure tie-ins; subsea / tight-tolerance assemblies. It is sized for 2 in, 3 in, 4 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the hub and clamp connector 15K 15,000 psi standard differ from similar flow iron?",
+          "a": "The hub and clamp connector differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes?",
+          "a": "The listing states a lead time of 21 days for the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes in stock in Dubai?",
+          "a": "Yes. We keep the Hub & Clamp Connector (Grayloc-style), 5K to 15K Pressure Classes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tee-1502-series-f-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a tee rated 15,000 psi for standard service used for?",
+          "a": "A tee splits or combines flow at a three-way junction in a frac or flow-back flow line. The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration F × F × M (2 Female / 1 Male)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service come in?",
+          "a": "The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is listed in 2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service?",
+          "a": "On the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (run inlet) and end B is 1502 Female Weco Union (run outlet). Additional features: 1502 Male Weco Union (branch). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service?",
+          "a": "The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service made from?",
+          "a": "The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service meet?",
+          "a": "For the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service connect to?",
+          "a": "The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Tee, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service used?",
+          "a": "The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is used for female-ended pup-joint take-offs; service-tree branch lines. It is sized for 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tee 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The tee differs from the [Tee, 1502 Series M × F × F, 10,000 psi, Sour Service](/p/tee-1502-series-m-f-f-10-000-psi-sour-service) in figure, pressure class or service class. The Tee, 1502 Series F × F × M, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Tee, 1502 Series F × F × M, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tee-602-series-m-f-f-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a tee rated 6,000 psi for sour service used for?",
+          "a": "A tee splits or combines flow at a three-way junction in a frac or flow-back flow line. The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration M × F × F (1 Male / 2 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Tee, 602 Series M × F × F, 6,000 psi, Sour Service come in?",
+          "a": "The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Tee, 602 Series M × F × F, 6,000 psi, Sour Service?",
+          "a": "On the Tee, 602 Series M × F × F, 6,000 psi, Sour Service, end A is 602 Male Weco Union (run inlet) and end B is 602 Female Weco Union (run outlet, branch). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tee, 602 Series M × F × F, 6,000 psi, Sour Service?",
+          "a": "The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tee, 602 Series M × F × F, 6,000 psi, Sour Service made from?",
+          "a": "The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Tee, 602 Series M × F × F, 6,000 psi, Sour Service meet?",
+          "a": "For the Tee, 602 Series M × F × F, 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tee, 602 Series M × F × F, 6,000 psi, Sour Service connect to?",
+          "a": "The Tee, 602 Series M × F × F, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Tee, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Tee, 602 Series M × F × F, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Tee, 602 Series M × F × F, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tee, 602 Series M × F × F, 6,000 psi, Sour Service used?",
+          "a": "The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is used for sour-well production-tree branches; H₂S well-test iron; 6K sour flow lines. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tee 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The tee differs from the [Tee, 1502 Series M × M × F, 15,000 psi, Standard Service](/p/tee-1502-series-m-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Tee, 602 Series M × F × F, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Tee, 602 Series M × F × F, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Tee, 602 Series M × F × F, 6,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Tee, 602 Series M × F × F, 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Tee, 602 Series M × F × F, 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cross-1502-series-3m-1f-with-npt-tap-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a cross rated 15,000 psi for standard service used for?",
+          "a": "A cross is a four-way flow-iron fitting that joins four line ends at one point in a frac or well-test flow line. The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration M × M × M × F (3 Male, 1 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service come in?",
+          "a": "The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service?",
+          "a": "On the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service, end A is 1502 Male Weco Union (×3) and end B is 1502 Female Weco Union (×1). Additional features: 1/2 in NPT instrument tap (optional). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service?",
+          "a": "The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service made from?",
+          "a": "The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service meet?",
+          "a": "For the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service connect to?",
+          "a": "The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Cross, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service used?",
+          "a": "The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is used for frac-tree fluid distribution; pumping-spread service-tree manifolds; high-pressure stimulation iron. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cross 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The cross differs from the [Cross, 1502 Series 2M × 2F (with NPT Tap), 10,000 psi, Sour Service](/p/cross-1502-series-2m-2f-with-npt-tap-10-000-psi-sour-service) in figure, pressure class or service class. The Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "elbow-lr-90-1502-series-m-f-integral-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an elbow rated 15,000 psi for standard service used for?",
+          "a": "An elbow turns a flow-iron line through a fixed angle in a single forged body. The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Long-Radius 90°, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service come in?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service?",
+          "a": "On the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Integral body (no welds). Bore: Same as nominal — long-radius bend."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service made from?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service meet?",
+          "a": "For the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service connect to?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Elbow, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service used?",
+          "a": "The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is used for frac iron 90° turns; service-tree side-out runs; high-pressure stimulation iron. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the elbow 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The elbow differs from the [Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service](/p/elbow-lr-90-1502-series-m-f-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Elbow LR 90°, 1502 Series M × F (Integral), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tee-1502-series-m-f-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a tee rated 15,000 psi for standard service used for?",
+          "a": "A tee splits or combines flow at a three-way junction in a frac or flow-back flow line. The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration M × F × F (1 Male / 2 Female)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service come in?",
+          "a": "The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "On the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (run inlet) and end B is 1502 Female Weco Union (run outlet, branch). Bore: Same as nominal — full bore through main run."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service made from?",
+          "a": "The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service meet?",
+          "a": "For the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service connect to?",
+          "a": "The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Tee, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service used?",
+          "a": "The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is used for frac iron branch tees; pump discharge to dual-line splits; service-tree distribution. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tee 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The tee differs from the [Tee, 1502 Series M × F × F, 10,000 psi, Sour Service](/p/tee-1502-series-m-f-f-10-000-psi-sour-service) in figure, pressure class or service class. The Tee, 1502 Series M × F × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Tee, 1502 Series M × F × F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wye-lateral-1502-series-f-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a lateral wye rated 15,000 psi for standard service used for?",
+          "a": "A lateral wye splits or combines flow at an angle, which reduces turbulence and erosion compared with a square tee. The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Lateral Y, Female × Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service come in?",
+          "a": "The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is listed in 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service?",
+          "a": "On the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (×2 — straight run) and end B is 1502 Male Weco Union (lateral branch). Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service?",
+          "a": "The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service made from?",
+          "a": "The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service meet?",
+          "a": "For the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service connect to?",
+          "a": "The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Wye Lateral, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service used?",
+          "a": "The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is used for stimulation chemical injection points; frac-iron lateral take-offs; acidizing service-tree branches. It is sized for 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the lateral wye 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The lateral wye differs from the [Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service](/p/wye-lateral-1502-series-m-f-m-15-000-psi-standard-service) in figure, pressure class or service class. The Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Wye Lateral, 1502 Series F × M × F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

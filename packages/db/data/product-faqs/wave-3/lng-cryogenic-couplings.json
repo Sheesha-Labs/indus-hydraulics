@@ -1,0 +1,340 @@
+{
+  "family": "lng-cryogenic-couplings",
+  "extraFacts": [
+    {
+      "fact": "MannTek flow capacity by size, L/min: CBC and PERC DN 25 460, DN 50 1,650, DN 65 2,800, DN 80 3,850, DN 100 6,500, DN 150 14,400, DN 200 24,200; DCC DN 25 250, DN 50 900, DN 65 2,100, DN 80 2,800, DN 100 7,000, DN 150 14,000, DN 200 24,000. ISO/TS 18683 (ASTM F3312) and ISO 21593 are the dry coupling interface standards for LNG transfer and ship-to-ship bunkering respectively; IEC 61508 and IEC 61511 are the functional safety standards cited by MannTek for its SIL2 PLC systems.",
+      "source": "MannTek product pages as reproduced in the Indus size tables"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: MannTek CBC-C Cable-Release Cryogenic Breakaway Coupling for LNG — DN 50 to DN 150 [IH-MNT-CBCC]:   XX | Coupling Family Cryogenic Breakaway Coupling; Coupling Type / Variant Cable-release type (CBC-C); End A Configuration Thread, flange or hose shank (chosen per side); End B Configuration Thread, flange or hose shank (chosen per side); Size Range DN 50 to DN 150; Materials Available Stainless steel; Working Pressure 25 bar (MannTek); Seal / Gasket PTFE; Notes For LNG and cryogenic liquefied gases down to -196 °C. Connections and order code confirmed with the quotation.; Manufacturer MannTek (Mann  | 5 part numbers (e.g. IH-MNT-CBCC-050, IH-MNT-CBCC-063, IH-MNT-CBCC-080, IH-MNT-CBCC-100); ; rows: Cable-release type. Body: stainless steel / Cable-release type. Body: stainless steel / Cable-release type. Body: stainless steel / Cable-release type. Body: stainless steel / Cable-release type. Body: stainless steel || MannTek CBC Cryogenic Breakaway Coupling for LNG, Breaking-Bolt Type — DN 25 to DN 200 [IH-MNT-CBC]:   XX | Coupling Family Cryogenic Breakaway Coupling; Coupling Type / Variant Breaking-bolt type, industrial (0 to 90°) or marine (axial pull); End A Configuration Female or male NPT thread, EN / ANSI / TW / TTMA flange or hose shank (chosen per side); End B Configuration Female or male NPT thread, EN / ANSI / TW / TTMA flange or hose shank (chosen per side); Size Range DN 25 (1\") to DN 200 (8\"); Materials Available Stainless steel; Working Pressure 25 bar (MannTek); Seal / Gasket PTFE; Notes For LNG an | 14 part numbers (e.g. IH-MNT-CBC-I-025, IH-MNT-CBC-M-025, IH-MNT-CBC-I-050, IH-MNT-CBC-M-050); mounting EN, ANSI, TW, TTMA; ports Female or male NPT; maxFlowLpm 460 to 24,200; rows: Industrial version, releases at any pull angle from 0 to 90°. Body: st / Marine version, releases on straight (axial) pull only. Body: stainles / Industrial version, releases at any pull angle from 0 to 90°. Body: st / Marine version, releases on straight (axial) pull only. Body: stainles / Industrial version, releases at any pull angle from 0 to 90°. Body: st / Marine version, releases on straight (axial) pull only. Body: stainles / Industrial version, releases at any pull angle from 0 to 90°. Body: st / Marine version, releases on straight (axial) pull only. Body: stainles || MannTek DCC Dry Cryogenic Coupling for LNG, Hose Unit — 1\" to 8\" [IH-MNT-DCC-HU]:   XX | Coupling Family Dry Cryogenic Coupling; Coupling Type / Variant Hose unit (moving half, with swivel); End A Configuration DCC bayonet interface to ISO/TS 18683, or DCC ISO interface to ISO 21593, with valve; End B Configuration NPT thread, or ANSI / EN flange; Size Range DCC DN 25 to DN 150; DCC ISO 1\" to 8\" (socket Ø 56 to 238 mm up to 6\"); Materials Available Stainless steel; Seal / Gasket PTFE; Applicable Standards ISO/TS 18683 (ASTM F3312) or ISO 21593, by version; Notes For LNG and cryogeni | 13 part numbers (e.g. IH-MNT-DCC-HU-025, IH-MNT-DCC-HU-050, IH-MNT-DCC-HU-065, IH-MNT-DCC-HU-080); mounting ANSI, EN; ports NPT; maxFlowLpm 250 to 24,000; rows: DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. LNG refuellin / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. heavy-vehicle / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks,  / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks,  / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. high-volume t / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. marine bunker / DCC ISO, ISO 21593 interface. Body: stainless steel / DCC ISO, ISO 21593 interface. Body: stainless steel || MannTek DCC Dry Cryogenic Coupling for LNG, Tank Unit — 1\" to 8\" [IH-MNT-DCC-TU]:   XX | Coupling Family Dry Cryogenic Coupling; Coupling Type / Variant Tank unit (fixed half, no swivel); End A Configuration DCC bayonet interface to ISO/TS 18683, or DCC ISO interface to ISO 21593, with valve; End B Configuration NPT thread, or ANSI / EN flange; Size Range DCC DN 25 to DN 150; DCC ISO 1\" to 8\" (socket Ø 56 to 238 mm up to 6\"); Materials Available Stainless steel; Seal / Gasket PTFE; Applicable Standards ISO/TS 18683 (ASTM F3312) or ISO 21593, by version; Notes For LNG and cryogenic l | 13 part numbers (e.g. IH-MNT-DCC-TU-025, IH-MNT-DCC-TU-050, IH-MNT-DCC-TU-065, IH-MNT-DCC-TU-080); mounting ANSI, EN; ports NPT; maxFlowLpm 250 to 24,000; rows: DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. LNG refuellin / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. heavy-vehicle / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks,  / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks,  / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. high-volume t / DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. marine bunker / DCC ISO, ISO 21593 interface. Body: stainless steel / DCC ISO, ISO 21593 interface. Body: stainless steel || MannTek PERC Powered Emergency Release Coupling for LNG Bunkering — 2-1/2\" to 8\" [IH-MNT-PERC]:   XX | Coupling Family Powered Emergency Release Coupling (PERC); Coupling Type / Variant Active release by nitrogen (ESD signal or manual override), passive breaking-bolt backup; End A Configuration Female or male NPT thread, or EN / ANSI / TW / TTMA flange (chosen per side); End B Configuration Female or male NPT thread, or EN / ANSI / TW / TTMA flange (chosen per side); Size Range 2-1/2\" (DN 65) to 8\" (DN 200); Seal / Gasket PTFE; Applicable Standards SIL2 system compliance stated by MannTek (IEC 61 | 5 part numbers (e.g. IH-MNT-PERC-065, IH-MNT-PERC-080, IH-MNT-PERC-100, IH-MNT-PERC-150); mounting EN, ANSI, TW, TTMA; ports Female or male NPT; maxFlowLpm 2,800 to 24,200; rows: Nitrogen-powered release with breaking-bolt backup. Seals: PTFE / Nitrogen-powered release with breaking-bolt backup. Seals: PTFE / Nitrogen-powered release with breaking-bolt backup. Seals: PTFE / Nitrogen-powered release with breaking-bolt backup. Seals: PTFE / Nitrogen-powered release with breaking-bolt backup. Seals: PTFE",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "manntek-cbc-c-cable-release-cryogenic-breakaway-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek CBC-C cable-release cryogenic breakaway coupling used for?",
+          "a": "The CBC-C is a cable-release breakaway coupling that protects LNG and liquid-gas hose assemblies against excessive load, releasing a clamp when a cable pulls instead of breaking bolts. MannTek recommends it for systems with a high operating pressure and a weak piping structure; see the [LNG and cryogenic couplings shelf](/c/lng-cryogenic-couplings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the MannTek CBC-C part numbers?",
+          "a": "In the rows IH-MNT-CBCC-050, -063, -080, -100 and -150 are the CBC-C in DN 50, DN 63, DN 80, DN 100 and DN 150. The last three digits are the nominal size in DN."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek CBC-C come in?",
+          "a": "Five sizes are listed: DN 50, DN 63, DN 80, DN 100 and DN 150. MannTek's product page gives 2\" to 8\" for the cable release type, so ask if you need a size that is not listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the MannTek CBC-C rated for?",
+          "a": "MannTek gives a working pressure of 25 bar and a service temperature down to -196 °C. The body is stainless steel and the seals are PTFE."
+        },
+        {
+          "slot": "F",
+          "q": "How does the MannTek CBC-C release?",
+          "a": "It has a clamp system and an external collar with an attached cable. When the cable pulls, the clamp releases; both halves have their own valve and both valves close immediately after an emergency disconnection, so the line is shut off on both sides of the break."
+        },
+        {
+          "slot": "G",
+          "q": "When should I choose the CBC-C rather than the breaking-bolt CBC or the PERC?",
+          "a": "Choose the breaking-bolt CBC where the line and its supports can carry the release force, the CBC-C where they cannot or where the release is triggered by cable from a fixed point. And the PERC where the release must also be triggered remotely by the emergency shutdown system."
+        },
+        {
+          "slot": "H",
+          "q": "What connections does the MannTek CBC-C take?",
+          "a": "Inlet and outlet connections are chosen individually: thread, flange or hose shank. Send the size, the connections, the medium and line pressure, and say where the release cable will be anchored."
+        },
+        {
+          "slot": "I",
+          "q": "Is the CBC-C suitable for liquid nitrogen as well as LNG?",
+          "a": "It is built for LNG and liquid-gas hose assemblies down to -196 °C, so it also suits other cryogenic liquefied gases such as nitrogen. Confirm the medium on your request so we check the seals and body."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the MannTek CBC-C breakaway couplings?",
+          "a": "Quote the full title, MannTek CBC-C Cable-Release Cryogenic Breakaway Coupling for LNG — DN 50 to DN 150, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the CBC-C compare with the breaking-bolt CBC?",
+          "a": "The CBC-C releases by cable and clamp in five sizes from DN 50 to DN 150, while the [breaking-bolt CBC](/p/manntek-cbc-cryogenic-breakaway-coupling-breaking-bolt) breaks bolts at a calculated load and is listed from DN 25 to DN 200 in industrial and marine versions."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus buy the CBC-C direct from the maker?",
+          "a": "Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies the MannTek CBC-C breakaway couplings direct from MannTek in Sweden. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Are MannTek CBC-C breakaway couplings in stock in Dubai?",
+          "a": "Yes. We keep MannTek CBC-C breakaway couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-cbc-cryogenic-breakaway-coupling-breaking-bolt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek CBC breaking-bolt cryogenic breakaway coupling used for?",
+          "a": "The MannTek CBC protects an LNG or liquid-gas transfer line against drive-aways and pull-aways at terminals and loading points. It is the weakest link in the hose line or loading arm: when the pull reaches a defined force the bolts break, the coupling separates and the poppet valves in both halves close; see the [LNG and cryogenic couplings shelf](/c/lng-cryogenic-couplings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the MannTek CBC part numbers?",
+          "a": "In the rows IH-MNT-CBC-I-050 is the industrial version in DN 50 and IH-MNT-CBC-M-050 is the marine version, with the last three digits the DN size from 025 to 200. The listing has 14 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek CBC come in?",
+          "a": "DN 25 (1\") to DN 200 (8\") in industrial and marine versions, 14 part numbers. MannTek publishes flow capacity from 460 L/min at DN 25 to 24,200 L/min at DN 200."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the MannTek CBC rated for?",
+          "a": "MannTek gives a working pressure of 25 bar and a service temperature down to -196 °C. The body is stainless steel with engineered PTFE seals and a poppet valve design."
+        },
+        {
+          "slot": "F",
+          "q": "Industrial or marine MannTek CBC: which version do I need?",
+          "a": "The industrial version releases at any pull angle from 0 to 90°, installed to at least one fixed point. While the marine version releases on straight axial pull only and resists torsion and bending to prevent unwanted separation between two hose strings."
+        },
+        {
+          "slot": "G",
+          "q": "How is the breaking load of the MannTek CBC set?",
+          "a": "MannTek calculates the breaking load for each installation. Send the hose size and length, the operating pressure, the medium and how the line is fixed; the breaking force is less dependent on line pressure, according to MannTek."
+        },
+        {
+          "slot": "H",
+          "q": "What connections does the MannTek CBC take?",
+          "a": "Inlet and outlet are chosen individually: female or male NPT thread, flanges to EN, ANSI, TW or TTMA, or an integrated hose shank, so no nipples or reducers are needed."
+        },
+        {
+          "slot": "I",
+          "q": "What happens after the MannTek CBC releases?",
+          "a": "Both halves close their valves as they separate, so the product stays in the hose and the pipe, and one person can reset the coupling on site in minutes without special tools. It is passive, needs no external power and has no loose parts to lose."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the MannTek CBC breakaway couplings?",
+          "a": "Quote the full title, MannTek CBC Cryogenic Breakaway Coupling for LNG, Breaking-Bolt Type — DN 25 to DN 200, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the breaking-bolt CBC compare with the CBC-C?",
+          "a": "The CBC breaks bolts at a calculated load in 14 part numbers from DN 25 to DN 200, while the [CBC-C](/p/manntek-cbc-c-cable-release-cryogenic-breakaway-coupling) releases by cable and clamp in five sizes from DN 50 to DN 150."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus buy the MannTek CBC direct from the maker?",
+          "a": "Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies the MannTek CBC breakaway couplings direct from MannTek in Sweden. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Are MannTek CBC breakaway couplings in stock in Dubai?",
+          "a": "Yes. We keep MannTek CBC breakaway couplings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-dcc-dry-cryogenic-coupling-hose-unit",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek DCC hose unit used for?",
+          "a": "The DCC hose unit is the moving half of a MannTek Dry Cryogenic Coupling, with an integrated swivel and handles, fitted to hose assemblies and loading arms for temporary connection between a storage tank and a mobile transport unit. See the [LNG and cryogenic couplings shelf](/c/lng-cryogenic-couplings). Push and turn opens the valves in both halves."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the MannTek DCC hose unit part numbers?",
+          "a": "IH-MNT-DCC-HU-050 is the hose unit (HU) in DN 50 to the ISO/TS 18683 interface, and IH-MNT-DCC-HU-ISO-050 is the same size to the ISO 21593 interface. The last three digits are the DN size, 13 part numbers in all."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek DCC hose unit come in?",
+          "a": "Six sizes in the ISO/TS 18683 version, DN 25 to DN 150, and seven in the ISO 21593 version, DN 25 to DN 200 (1\" to 8\"). MannTek publishes flow capacity from 250 L/min at 1\" to 24,000 L/min at 8\"."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure applies to the MannTek DCC?",
+          "a": "The service temperature is down to -196 °C, and the working pressure is confirmed with the quotation. MannTek reports more than 10,000 connect and disconnect cycles in cryogenic testing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the difference between the DCC and the DCC ISO?",
+          "a": "The DCC follows ISO/TS 18683 (ASTM F3312) in DN 25 to DN 150 and suits existing installations and most land-based LNG work. The DCC ISO follows ISO 21593 in 1\" to 8\", the standard for dry couplings in ship-to-ship LNG bunkering."
+        },
+        {
+          "slot": "G",
+          "q": "Which gases can the MannTek DCC handle?",
+          "a": "MannTek designs the DCC for cryogenic liquefied gases (LNG, nitrogen, oxygen, argon and ethylene) down to -196 °C. It needs no retightening during the cool-down phase."
+        },
+        {
+          "slot": "H",
+          "q": "What connections and options does the MannTek DCC hose unit have?",
+          "a": "NPT thread or ANSI or EN flange, with sockets from Ø 56 mm (1\") to Ø 238 mm (6\"). Options include colour coding and a stop-before-disconnect function that blocks separation if a valve fails to seal."
+        },
+        {
+          "slot": "I",
+          "q": "Does the MannTek DCC need retightening as it cools down?",
+          "a": "No. Unlike a flanged or threaded joint, it needs no retightening during the cool-down phase, because it uses the bayonet principle and self-sealing valve design of MannTek's Dry Disconnect Couplings."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the MannTek DCC hose units?",
+          "a": "Quote the full title, MannTek DCC Dry Cryogenic Coupling for LNG, Hose Unit — 1\" to 8\", with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DCC hose unit differ from the DCC tank unit?",
+          "a": "The hose unit has an integrated swivel and handles and is the moving half on the hose, while the [tank unit](/p/manntek-dcc-dry-cryogenic-coupling-tank-unit) is the fixed half with no swivel, mounted on the tank, tank truck, rail tanker or ship manifold."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus buy the MannTek DCC direct from the maker?",
+          "a": "Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies the MannTek DCC hose units direct from MannTek in Sweden. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Are MannTek DCC hose units in stock in Dubai?",
+          "a": "Yes. We keep MannTek DCC hose units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-dcc-dry-cryogenic-coupling-tank-unit",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek DCC tank unit used for?",
+          "a": "The DCC tank unit is the fixed half of a MannTek Dry Cryogenic Coupling, with no swivel, mounted as the filling or discharge connector on cryogenic storage tanks, tank trucks, rail tankers, containers and ship bunker manifolds. See the [LNG and cryogenic couplings shelf](/c/lng-cryogenic-couplings). A DCC hose unit couples to it with a turning motion."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the MannTek DCC tank unit part numbers?",
+          "a": "IH-MNT-DCC-TU-050 is the tank unit (TU) in DN 50 to the ISO/TS 18683 interface, and IH-MNT-DCC-TU-ISO-050 is the same size to the ISO 21593 interface. The last three digits are the DN size, 13 part numbers in all."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek DCC tank unit come in?",
+          "a": "Six sizes to ISO/TS 18683, DN 25 to DN 150, and seven to ISO 21593, DN 25 to DN 200 (1\" to 8\"). MannTek publishes flow capacity from 250 L/min at 1\" to 24,000 L/min at 8\"."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure applies to the MannTek DCC tank unit?",
+          "a": "The service temperature is down to -196 °C and the working pressure is confirmed for the size and build with the quotation. The body is stainless steel with PTFE seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the difference between the DCC and the DCC ISO tank unit?",
+          "a": "The DCC follows ISO/TS 18683 (ASTM F3312) in DN 25 to DN 150, while the DCC ISO follows ISO 21593 in 1\" to 8\", the standard for ship-to-ship LNG bunkering. Choose the one that matches the other half."
+        },
+        {
+          "slot": "G",
+          "q": "Will a MannTek DCC connect to a coupling from another maker?",
+          "a": "Only if the other coupling follows the same interface: ISO/TS 18683 for the DCC and ISO 21593 for the DCC ISO. Choose the one that matches the other half, or the standard your terminal or vessel specifies."
+        },
+        {
+          "slot": "H",
+          "q": "Where is the MannTek DCC tank unit mounted?",
+          "a": "As the filling or discharge connector on cryogenic storage tanks, tank trucks, rail tankers, containers and ship bunker manifolds. Connections are NPT thread or ANSI or EN flange."
+        },
+        {
+          "slot": "I",
+          "q": "What options does the MannTek DCC tank unit have?",
+          "a": "Colour coding, a stop-before-disconnect function, dust caps and plugs, and a vented dust and de-icing cap that leaves a clean dry sealing face within minutes."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the MannTek DCC tank units?",
+          "a": "Quote the full title, MannTek DCC Dry Cryogenic Coupling for LNG, Tank Unit — 1\" to 8\", with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DCC tank unit differ from the DCC hose unit?",
+          "a": "The tank unit is the fixed half with no swivel, while the [hose unit](/p/manntek-dcc-dry-cryogenic-coupling-hose-unit) is the moving half with an integrated swivel and handles. They are listed in the same sizes and interfaces."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus buy the MannTek DCC direct from the maker?",
+          "a": "Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies the MannTek DCC tank units direct from MannTek in Sweden. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Are MannTek DCC tank units in stock in Dubai?",
+          "a": "Yes, we hold MannTek DCC tank units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-perc-powered-emergency-release-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek PERC powered emergency release coupling used for?",
+          "a": "The MannTek PERC is a breakaway coupling for LNG transfer that can also be released on command. It uses the breaking-bolt design of MannTek's cryogenic breakaways and adds a chamber, isolated from the transferred medium, into which high-pressure nitrogen is injected to release the coupling; see the [LNG and cryogenic couplings shelf](/c/lng-cryogenic-couplings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the MannTek PERC part numbers?",
+          "a": "IH-MNT-PERC-065 is the PERC in DN 65 (2-1/2\"), and -080, -100, -150 and -200 are DN 80, DN 100, DN 150 and DN 200. The last three digits are the DN size, five part numbers in all."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek PERC come in?",
+          "a": "2-1/2\" (DN 65) to 8\" (DN 200), with female or male NPT thread or EN, ANSI, TW or TTMA flanges. MannTek publishes flow capacity from 2,800 L/min at 2-1/2\" to 24,200 L/min at 8\"."
+        },
+        {
+          "slot": "E",
+          "q": "What are the three ways to release the MannTek PERC?",
+          "a": "By an ESD signal from the ship or shore emergency shutdown system, by manual override independent of the electrical signal, and passively by breaking bolts designed to be the weakest point. If power is lost the PERC still works as a passive breakaway coupling."
+        },
+        {
+          "slot": "F",
+          "q": "What controls the MannTek PERC?",
+          "a": "MannTek's HPN2 high-pressure nitrogen unit holds the control, monitoring and release system. Its PLC is programmed for each application under third-party supervision, and MannTek states its SIL2 PLC LNG transfer systems have been assessed by DNV-GL against IEC 61508 and IEC 61511."
+        },
+        {
+          "slot": "G",
+          "q": "Is the MannTek PERC SIL rated?",
+          "a": "MannTek states that its SIL2 PLC LNG transfer systems have been assessed by DNV-GL and declared compliant to SIL2, developed in accordance with IEC 61508 and IEC 61511. Ask for the documents that apply to your system."
+        },
+        {
+          "slot": "H",
+          "q": "Where is the MannTek PERC used?",
+          "a": "On LNG bunkering ship-to-ship, shore-to-ship and truck-to-ship, and LNG cargo transfer. MannTek also lists the PERC for ammonia, methanol and carbon capture transfer systems."
+        },
+        {
+          "slot": "I",
+          "q": "What is a vessel separation device on a PERC system?",
+          "a": "A VSD can feed the PERC: two wires shorter than the hose trip VSD 1, which signals ESD 1 to stop pumps and close ESD valves, and then VSD 2, which signals ESD 2 and releases the PERC through the HPN2 unit."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the MannTek PERC couplings?",
+          "a": "Quote the full title, MannTek PERC Powered Emergency Release Coupling for LNG Bunkering — 2-1/2\" to 8\", with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the PERC differ from the CBC breakaway coupling?",
+          "a": "The PERC adds a nitrogen release on command on top of the breaking-bolt backup, in five sizes from DN 65 to DN 200, while the [CBC](/p/manntek-cbc-cryogenic-breakaway-coupling-breaking-bolt) is purely passive and goes from DN 25 to DN 200."
+        },
+        {
+          "slot": "L",
+          "q": "Does Indus buy the MannTek PERC direct from the maker?",
+          "a": "Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies the MannTek PERC couplings direct from MannTek in Sweden. We ship from Dubai, UAE."
+        },
+        {
+          "slot": "M",
+          "q": "Are MannTek PERC couplings in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock MannTek PERC couplings and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

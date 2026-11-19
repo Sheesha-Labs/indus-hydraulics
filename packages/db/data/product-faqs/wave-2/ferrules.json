@@ -1,0 +1,466 @@
+{
+  "family": "ferrules",
+  "extraFacts": [
+    {
+      "fact": "In hose-assembly practice, a skive ferrule needs the hose cover removed over the crimp length so the ferrule grips the reinforcement, while a no-skive ferrule is crimped over the cover as supplied. The crimp diameter comes from the hose-and-fitting die chart, not from the ferrule alone.",
+      "source": "Manuli ferrule dimension sheets as summarised on the Indus product pages for M00110-M03500; the crimper manufacturer's die chart"
+    }
+  ],
+  "products": [
+    {
+      "slug": "manuli-m00110-m00120-m00130-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M00110 / M00120 / M00130 skive ferrule used for?",
+          "a": "The Manuli M00110 / M00120 / M00130 is a skive crimp ferrule for wire braid hoses. The hose cover is skived back before crimping so the ferrule closes directly onto the wire reinforcement. It is sold by the piece in 11 references from DN5 – DN51 (3/16\" – 2\"); see the [Ferrules shelf](/c/ferrules) for the other series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M00110 / M00120 / M00130 ferrule part number such as M00120-10?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M00120-10 is dash -10: DN16, 5/8\" bore. The same rule holds on every row, for example M00120-03 is -3 and M00110-32 is -32. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M00110 / M00120 / M00130 ferrule cover?",
+          "a": "The Manuli M00110 / M00120 / M00130 covers DN5 – DN51 (3/16\" – 2\"), which is dash -3 to -32, in 11 part references from M00120-03 to M00110-32. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M00110 / M00120 / M00130 ferrule?",
+          "a": "Across the M00110 / M00120 / M00130 series the ferrule outside diameter D runs 17.0 – 70.0 and the length L runs 23.9 – 72.0. For example M00120-03 is D 17.0 mm by L 23.9 mm, and M00110-32 is D 70.0 mm by L 72.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M00110 / M00120 / M00130 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M00110 / M00120 / M00130 assembly is set by the wire braid hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M00110 / M00120 / M00130 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M00110 / M00120 / M00130 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M00110, M00120, M00130 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M00110 / M00120 / M00130 ferrule to make a hose assembly?",
+          "a": "A M00110 / M00120 / M00130 ferrule is crimped together with a matching hose fitting, stem or insert, on wire braid hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M00110 / M00120 / M00130 skive ferrule correctly?",
+          "a": "Skive the hose cover back over the crimp length, push the stem in, then crimp with the die set the crimper maker lists for this hose and fitting. Crimp diameter is not on the M00110 / M00120 / M00130 sheet. See [how a hose is made at Indus](/blog/getting-a-hydraulic-hose-made), or have us crimp and pressure-test the assembly."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M00110 / M00120 / M00130 ferrule typically used?",
+          "a": "The M00110 / M00120 / M00130 is Manuli's MULTIFIT series for wire braid hose, from DN5 to DN51. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M00110 / M00120 / M00130 or M00910 / M00920 ferrule: which should I choose?",
+          "a": "Choose by hose construction first: the M00110 / M00120 / M00130 is skive for wire braid hoses, while the M00910 / M00920 is skive for Manuli wire braid and spiral hoses. The M00110 / M00120 / M00130 is D 17.0 mm at its smallest bore; the other series' figures are on its own page. See the [M00910 / M00920 page](/p/manuli-m00910-m00920-skive-ferrule)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M00110 / M00120 / M00130 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M00110 / M00120 / M00130 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M00110 / M00120 / M00130 ferrule in Dubai?",
+          "a": "Yes. We keep the Manuli M00110 / M00120 / M00130 ferrule in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m00310-m00320-no-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M00310 / M00320 no-skive ferrule used for?",
+          "a": "The Manuli M00310 / M00320 is a no-skive crimp ferrule for textile braid hoses. It crimps straight over the hose cover as supplied, with no skiving step beforehand. It comes in 9 references covering DN5 – DN31 (3/16\" – 1-1/4\"); the [Ferrules shelf](/c/ferrules) lists the other Manuli series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M00310 / M00320 ferrule part number such as M00310-08?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M00310-08 is dash -8: DN12, 1/2\" bore. The same rule holds on every row, for example M00310-03 is -3 and M00310-20 is -20. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M00310 / M00320 ferrule cover?",
+          "a": "The Manuli M00310 / M00320 covers DN5 – DN31 (3/16\" – 1-1/4\"), which is dash -3 to -20, in 9 part references from M00310-03 to M00310-20. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M00310 / M00320 ferrule?",
+          "a": "Across the M00310 / M00320 series the ferrule outside diameter D runs 17.5 – 50.0 and the length L runs 27.0 – 59.0. For example M00310-03 is D 17.5 mm by L 27.0 mm, and M00310-20 is D 50.0 mm by L 59.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M00310 / M00320 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M00310 / M00320 assembly is set by the textile braid hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M00310 / M00320 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M00310 / M00320 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M00310, M00321 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M00310 / M00320 ferrule to make a hose assembly?",
+          "a": "A M00310 / M00320 ferrule is crimped together with a matching hose fitting, stem or insert, on textile braid hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M00310 / M00320 no-skive ferrule correctly?",
+          "a": "Cut the hose square, insert the stem and crimp with no skiving step; the ferrule closes over the cover as supplied. The crimp diameter is not in the M00310 / M00320 sheet, so take it from your crimper's die chart for the hose and fitting, or have Indus crimp it. Read [how we make a hose](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M00310 / M00320 ferrule typically used?",
+          "a": "The M00310 / M00320 is cut for textile braid hose, the low- and medium-pressure return, suction and lubrication lines where reinforcement is fibre rather than wire. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M00310 / M00320 or M00820 / M00830 ferrule: which should I choose?",
+          "a": "Choose by hose construction first: the M00310 / M00320 is no-skive for textile braid hoses, while the M00820 / M00830 is no-skive for Manuli compact hoses. The M00310 / M00320 is D 17.5 mm at its smallest bore; the other series' figures are on its own page. See the [M00820 / M00830 page](/p/manuli-m00820-m00830-no-skive-ferrule)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M00310 / M00320 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M00310 / M00320 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M00310 / M00320 ferrule in Dubai?",
+          "a": "Yes, we hold the Manuli M00310 / M00320 ferrule in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m00820-m00830-no-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M00820 / M00830 no-skive ferrule used for?",
+          "a": "The Manuli M00820 / M00830 is a no-skive crimp ferrule for compact hoses. It crimps straight over the hose cover as supplied, with no skiving step beforehand. It comes in 11 references covering DN5 – DN51 (3/16\" – 2\"); the [Ferrules shelf](/c/ferrules) lists the other Manuli series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M00820 / M00830 ferrule part number such as M00820-10?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M00820-10 is dash -10: DN16, 5/8\" bore. The same rule holds on every row, for example M00820-03 is -3 and M00820-32 is -32. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M00820 / M00830 ferrule cover?",
+          "a": "The Manuli M00820 / M00830 covers DN5 – DN51 (3/16\" – 2\"), which is dash -3 to -32, in 11 part references from M00820-03 to M00820-32. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M00820 / M00830 ferrule?",
+          "a": "Across the M00820 / M00830 series the ferrule outside diameter D runs 14.0 – 68.6 and the length L runs 26.4 – 70.0. For example M00820-03 is D 14.0 mm by L 26.4 mm, and M00820-32 is D 68.6 mm by L 70.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M00820 / M00830 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M00820 / M00830 assembly is set by the compact hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M00820 / M00830 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M00820 / M00830 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M00820, M00830 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M00820 / M00830 ferrule to make a hose assembly?",
+          "a": "A M00820 / M00830 ferrule is crimped together with a matching hose fitting, stem or insert, on compact hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M00820 / M00830 no-skive ferrule correctly?",
+          "a": "Cut the hose square, insert the stem and crimp with no skiving step; the ferrule closes over the cover as supplied. The crimp diameter is not in the M00820 / M00830 sheet, so take it from your crimper's die chart for the hose and fitting, or have Indus crimp it. Read [how we make a hose](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M00820 / M00830 ferrule typically used?",
+          "a": "The M00820 / M00830 suits compact hose, where the smaller ferrule outside diameter lets an assembly fit routing that a standard braid ferrule will not. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M00820 / M00830 or M03300 ferrule: which should I choose?",
+          "a": "Choose by hose construction first: the M00820 / M00830 is no-skive for compact hoses, while the M03300 is no-skive for Manuli wire braid hoses. The M00820 / M00830 is D 14.0 mm at its smallest bore; the other series' figures are on its own page. See the [M03300 page](/p/manuli-m03300-no-skive-ferrule)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M00820 / M00830 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M00820 / M00830 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M00820 / M00830 ferrule in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Manuli M00820 / M00830 ferrule, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m00910-m00920-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M00910 / M00920 skive ferrule used for?",
+          "a": "The Manuli M00910 / M00920 is a skive crimp ferrule for wire braid and spiral hoses. The hose cover is skived back before crimping so the ferrule closes directly onto the wire reinforcement. It is sold by the piece in 12 references from DN5 – DN51 (3/16\" – 2\"); see the [Ferrules shelf](/c/ferrules) for the other series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M00910 / M00920 ferrule part number such as M00910-10?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M00910-10 is dash -10: DN16, 5/8\" bore. The same rule holds on every row, for example M00910-03 is -3 and M00910-32 is -32. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M00910 / M00920 ferrule cover?",
+          "a": "The Manuli M00910 / M00920 covers DN5 – DN51 (3/16\" – 2\"), which is dash -3 to -32, in 12 part references from M00910-03 to M00910-32. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M00910 / M00920 ferrule?",
+          "a": "Across the M00910 / M00920 series the ferrule outside diameter D runs 20.6 – 79.0 and the length L runs 26.0 – 72.0. For example M00910-03 is D 20.6 mm by L 26.0 mm, and M00910-32 is D 79.0 mm by L 72.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M00910 / M00920 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M00910 / M00920 assembly is set by the wire braid and spiral hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M00910 / M00920 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M00910 / M00920 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M00910, M00920, M00930 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M00910 / M00920 ferrule to make a hose assembly?",
+          "a": "A M00910 / M00920 ferrule is crimped together with a matching hose fitting, stem or insert, on wire braid and spiral hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M00910 / M00920 skive ferrule correctly?",
+          "a": "Skive the hose cover back over the crimp length, push the stem in, then crimp with the die set the crimper maker lists for this hose and fitting. Crimp diameter is not on the M00910 / M00920 sheet. See [how a hose is made at Indus](/blog/getting-a-hydraulic-hose-made), or have us crimp and pressure-test the assembly."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M00910 / M00920 ferrule typically used?",
+          "a": "The M00910 / M00920 carries both wire braid and wire spiral hose, because its outside diameter is larger than the M00110 family at the same bore. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M00910 / M00920 or M00110 / M00120 / M00130 ferrule: which should I choose?",
+          "a": "Choose by hose construction first: the M00910 / M00920 is skive for wire braid and spiral hoses, while the M00110 / M00120 / M00130 is skive for Manuli wire braid hoses. The M00910 / M00920 is D 20.6 mm at its smallest bore; the other series' figures are on its own page. See the [M00110 / M00120 / M00130 page](/p/manuli-m00110-m00120-m00130-skive-ferrule)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M00910 / M00920 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M00910 / M00920 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M00910 / M00920 ferrule in Dubai?",
+          "a": "Yes, we stock the Manuli M00910 / M00920 ferrule in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m03300-no-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M03300 no-skive ferrule used for?",
+          "a": "The Manuli M03300 is a no-skive crimp ferrule for wire braid hoses. It crimps straight over the hose cover as supplied, with no skiving step beforehand. It comes in 5 references covering DN5 – DN12 (3/16\" – 1/2\"); the [Ferrules shelf](/c/ferrules) lists the other Manuli series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M03300 ferrule part number such as M03300-05?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M03300-05 is dash -5: DN8, 5/16\" bore. The same rule holds on every row, for example M03300-03 is -3 and M03300-08 is -8. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M03300 ferrule cover?",
+          "a": "The Manuli M03300 covers DN5 – DN12 (3/16\" – 1/2\"), which is dash -3 to -8, in 5 part references from M03300-03 to M03300-08. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M03300 ferrule?",
+          "a": "Across the M03300 series the ferrule outside diameter D runs 19.2 – 28.0 and the length L runs 22.0 – 33.0. For example M03300-03 is D 19.2 mm by L 22.0 mm, and M03300-08 is D 28.0 mm by L 33.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M03300 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M03300 assembly is set by the wire braid hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M03300 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M03300 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M03300 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M03300 ferrule to make a hose assembly?",
+          "a": "A M03300 ferrule is crimped together with a matching hose fitting, stem or insert, on wire braid hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M03300 no-skive ferrule correctly?",
+          "a": "Cut the hose square, insert the stem and crimp with no skiving step; the ferrule closes over the cover as supplied. The crimp diameter is not in the M03300 sheet, so take it from your crimper's die chart for the hose and fitting, or have Indus crimp it. Read [how we make a hose](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M03300 ferrule typically used?",
+          "a": "The M03300 is the shortest no-skive ferrule at every bore it covers, from DN5 to DN12, for tight wire braid assemblies. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M03300 or M00820 / M00830 ferrule: which should I choose?",
+          "a": "Choose by hose construction first: the M03300 is no-skive for wire braid hoses, while the M00820 / M00830 is no-skive for Manuli compact hoses. The M03300 is D 19.2 mm at its smallest bore; the other series' figures are on its own page. See the [M00820 / M00830 page](/p/manuli-m00820-m00830-no-skive-ferrule)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M03300 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M03300 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M03300 ferrule in Dubai?",
+          "a": "Yes. We keep the Manuli M03300 ferrule in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m03400-no-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M03400 no-skive ferrule used for?",
+          "a": "The Manuli M03400 is a no-skive crimp ferrule for wire braid hoses. It crimps straight over the hose cover as supplied, with no skiving step beforehand. It comes in 17 references covering DN5 – DN102 (3/16\" – 4\"); the [Ferrules shelf](/c/ferrules) lists the other Manuli series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M03400 ferrule part number such as M03400-16?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M03400-16 is dash -16: DN25, 1\" bore. The same rule holds on every row, for example M03400-03 is -3 and M03400-64 is -64. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M03400 ferrule cover?",
+          "a": "The Manuli M03400 covers DN5 – DN102 (3/16\" – 4\"), which is dash -3 to -64, in 17 part references from M03400-03 to M03400-64. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M03400 ferrule?",
+          "a": "Across the M03400 series the ferrule outside diameter D runs 21.0 – 131.0 and the length L runs 23.0 – 93.0. For example M03400-03 is D 21.0 mm by L 23.0 mm, and M03400-64 is D 131.0 mm by L 93.0 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M03400 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M03400 assembly is set by the wire braid hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M03400 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M03400 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M03400, M03450 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M03400 ferrule to make a hose assembly?",
+          "a": "A M03400 ferrule is crimped together with a matching hose fitting, stem or insert, on wire braid hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M03400 no-skive ferrule correctly?",
+          "a": "Cut the hose square, insert the stem and crimp with no skiving step; the ferrule closes over the cover as supplied. The crimp diameter is not in the M03400 sheet, so take it from your crimper's die chart for the hose and fitting, or have Indus crimp it. Read [how we make a hose](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M03400 ferrule typically used?",
+          "a": "The M03400 is the widest-spanning series in the range and the only one that runs past DN51 to DN102 (4\"), so it is the choice for large-bore wire braid hose. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M03400 or M03500 ferrule: which should I choose?",
+          "a": "The M03400 is no-skive for wire braid hose from DN5 to DN102, while the M03500 is no-skive for wire spiral hose from DN10 to DN31. Choose by hose construction, then by bore. See the [M03500 page](/p/manuli-m03500-no-skive-ferrule) for spiral hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M03400 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M03400 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M03400 ferrule in Dubai?",
+          "a": "Yes, we hold the Manuli M03400 ferrule in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "manuli-m03500-no-skive-ferrule",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Manuli M03500 no-skive ferrule used for?",
+          "a": "The Manuli M03500 is a no-skive crimp ferrule for wire spiral hoses. It crimps straight over the hose cover as supplied, with no skiving step beforehand. It comes in 6 references covering DN10 – DN31 (3/8\" – 1-1/4\"); the [Ferrules shelf](/c/ferrules) lists the other Manuli series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Manuli M03500 ferrule part number such as M03500-12?",
+          "a": "In this series the two digits after the hyphen are the hose dash size, so M03500-12 is dash -12: DN19, 3/4\" bore. The same rule holds on every row, for example M03500-06 is -6 and M03500-20 is -20. The five-digit prefix is Manuli's series reference."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the Manuli M03500 ferrule cover?",
+          "a": "The Manuli M03500 covers DN10 – DN31 (3/8\" – 1-1/4\"), which is dash -6 to -20, in 6 part references from M03500-06 to M03500-20. Match the ferrule to the bore on the hose layline, and the series to the hose construction rather than to the bore alone."
+        },
+        {
+          "slot": "D",
+          "q": "What are the outside diameter and length of the Manuli M03500 ferrule?",
+          "a": "Across the M03500 series the ferrule outside diameter D runs 29.5 – 59.3 and the length L runs 30.7 – 54.5. For example M03500-06 is D 29.5 mm by L 30.7 mm, and M03500-20 is D 59.3 mm by L 54.5 mm. These are as-supplied dimensions, not crimp dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Manuli M03500 ferrule have?",
+          "a": "A ferrule carries no pressure rating of its own: the working pressure of a M03500 assembly is set by the wire spiral hose and the fitting it is crimped to, at that bore. The sheet for this series publishes outside diameter and length only. Quote the hose grade and size and we will give the assembly's rating from the hose maker's figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are Manuli M03500 ferrules made of and what fluids can they see?",
+          "a": "The sheet for the M03500 series does not publish a material or fluid list for the ferrule, so we do not state one. Media and temperature limits are set by the hose tube and cover. No standard or certificate is stated for the ferrule either; an assembly is documented as a whole, so name the test report you need and we will quote it with the M03500 references."
+        },
+        {
+          "slot": "H",
+          "q": "What goes with a Manuli M03500 ferrule to make a hose assembly?",
+          "a": "A M03500 ferrule is crimped together with a matching hose fitting, stem or insert, on wire spiral hoses, using a crimper and the correct dies. Browse the [hydraulic fittings](/c/hydraulic-fittings) and [crimp ferrules](/c/crimp-ferrules) shelves for stems and other ferrule types, or send us the hose and end connection."
+        },
+        {
+          "slot": "I",
+          "q": "How do I crimp a Manuli M03500 no-skive ferrule correctly?",
+          "a": "Cut the hose square, insert the stem and crimp with no skiving step; the ferrule closes over the cover as supplied. The crimp diameter is not in the M03500 sheet, so take it from your crimper's die chart for the hose and fitting, or have Indus crimp it. Read [how we make a hose](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manuli M03500 ferrule typically used?",
+          "a": "The M03500 is the no-skive series cut for wire spiral reinforcement, and it starts at DN10 rather than DN5. For hose routing and bend-radius limits in service, read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Manuli M03500 or M03400 ferrule: which should I choose?",
+          "a": "The M03500 is no-skive for wire spiral hose from DN10, while the M03400 is no-skive for wire braid hose from DN5 to DN102. Spiral and braid hose are different constructions, so choose by the hose. See the [M03400 page](/p/manuli-m03400-no-skive-ferrule) for braid hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Manuli M03500 ferrules made and how are they shipped?",
+          "a": "Manuli is the brand of the M03500 series, and the country of origin is confirmed on the quotation rather than stated on the listing. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond. A ferrule is sold each, loose or crimped on a finished assembly."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Manuli M03500 ferrule in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Manuli M03500 ferrule, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1931 @@
+{
+  "family": "electric-lubrication-pumps",
+  "extraFacts": [
+    {
+      "fact": "Bijur Delimon BM-B Grease Pumps listing: Reservoir 8 Liter; 15 Liter; 30 Liter",
+      "source": "Indus Hydraulics listing for Bijur Delimon BM-B Grease Pumps"
+    },
+    {
+      "fact": "Bijur Delimon Electric Barrel Pumps (EBP and EBPD) listing: Lubricant Oil/grease",
+      "source": "Indus Hydraulics listing for Bijur Delimon Electric Barrel Pumps (EBP and EBPD)"
+    },
+    {
+      "fact": "Bijur Delimon JS and JSP DC Lubricators listing: Lubricant Oil, Grease; Lubrication system Progressive, PDI; Reservoir 1 to 2 L",
+      "source": "Indus Hydraulics listing for Bijur Delimon JS and JSP DC Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon BS-B Dualine Grease Pumps listing: Reservoir 60 Liters; 100 Liters",
+      "source": "Indus Hydraulics listing for Bijur Delimon BS-B Dualine Grease Pumps"
+    },
+    {
+      "fact": "Bijur Delimon BM-B Grease Pumps listing: Reservoir 8 Liter; 15 Liter; 30 Liter",
+      "source": "Indus Hydraulics listing for Bijur Delimon BM-B Grease Pumps"
+    },
+    {
+      "fact": "Bijur Delimon Electric Barrel Pumps (EBP and EBPD) listing: Lubricant Oil/grease; Lubrication system Progressive / Injector (PDI) / SLR / PDI / Dualine; Max pressure 3,500 psi (240 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon Electric Barrel Pumps (EBP and EBPD)"
+    },
+    {
+      "fact": "Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations listing: Lubrication system Dualine; Reservoir 200 LB, 100 LB, 30 GAL; Max pressure 3,000 psi (207 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations"
+    },
+    {
+      "fact": "Bijur Delimon JS and JSP DC Lubricators listing: Lubricant Oil, Grease; Lubrication system Progressive, PDI; Reservoir 1 to 2 L",
+      "source": "Indus Hydraulics listing for Bijur Delimon JS and JSP DC Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon CS2000 Grease Central Stations listing: Lubrication system Progressive, Dualine; Reservoir 100 LB, 6 GAL, 24 LB; Max pressure 1,500 psi (103 bar) to 3,500 psi (241 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon CS2000 Grease Central Stations"
+    },
+    {
+      "fact": "Bijur Delimon TM-1 Automatic Oil Lubricators listing: Lubricant Oil; Lubrication system SLR; Reservoir 4L, 1L, 1 pint",
+      "source": "Indus Hydraulics listing for Bijur Delimon TM-1 Automatic Oil Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon BF-E Electric Barrel Pumps listing: Lubricant Grease",
+      "source": "Indus Hydraulics listing for Bijur Delimon BF-E Electric Barrel Pumps"
+    },
+    {
+      "fact": "Bijur Delimon CSK 24 VDC Progressive Lubricators listing: Lubricant Grease; Lubrication system Progressive; Reservoir 2 L",
+      "source": "Indus Hydraulics listing for Bijur Delimon CSK 24 VDC Progressive Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon BL-3 and XV-3 PDI Lubricators listing: Lubricant Fluid grease; Lubrication system PDI; Reservoir 3 L",
+      "source": "Indus Hydraulics listing for Bijur Delimon BL-3 and XV-3 PDI Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon GPO Motor-Driven Lubricators listing: Lubrication system Progressive, PDI, SLR; Max pressure 130 psi (9 bar) to 1,000 psi (69 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon GPO Motor-Driven Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon TM-1 Automatic Oil Lubricators listing: Lubricant Oil; Lubrication system SLR; Reservoir 4L, 1L, 1 pint",
+      "source": "Indus Hydraulics listing for Bijur Delimon TM-1 Automatic Oil Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon TM-1 Automatic Oil Lubricators listing: Reservoir 4L, 1L, 1 pint; 45 listed part numbers",
+      "source": "Indus Hydraulics listing for Bijur Delimon TM-1 Automatic Oil Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors (71800 and SFX71322) listing: 22 listed part numbers",
+      "source": "Indus Hydraulics listing for Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors (71800 and SFX71322)"
+    },
+    {
+      "fact": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps listing: Lubrication system SLR, PDI; Reservoir 3 to 6 L; Max pressure 300 psi (21 bar) to 450 psi (31 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon SureFire II Three-Phase Lubrication Pumps"
+    },
+    {
+      "fact": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps listing: Lubrication system SLR, PDI; Reservoir 3 to 6 L; Max pressure 300 psi (21 bar) to 450 psi (31 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon SureFire II Three-Phase Lubrication Pumps"
+    },
+    {
+      "fact": "Bijur Delimon SureFire II Single-Phase Lubrication Pumps (SLR and PDI) listing: Lubrication system SLR, PDI, Progressive; Reservoir 2 to 12 L; Max pressure 75 psi (5 bar) to 450 psi (31 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon SureFire II Single-Phase Lubrication Pumps (SLR and PDI)"
+    },
+    {
+      "fact": "Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators listing: Reservoir 1 to 4 L; Max pressure 60 psi (4 bar); Supply voltage 115VAC, 115/230VAC, 24VDC",
+      "source": "Indus Hydraulics listing for Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon TM-1 Automatic Oil Lubricators listing: Reservoir 4L, 1L, 1 pint; Max pressure 20-50 psi (1.3-3.4 bar); Supply voltage 115VAC, 230VAC, 115/230VAC",
+      "source": "Indus Hydraulics listing for Bijur Delimon TM-1 Automatic Oil Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon GPO Motor-Driven Lubricators listing: Lubrication system Progressive, PDI, SLR; Reservoir 4 L; Max pressure 130 psi (9 bar) to 1,000 psi (69 bar)",
+      "source": "Indus Hydraulics listing for Bijur Delimon GPO Motor-Driven Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps listing: Max pressure 50 psi (3 bar) to 200 psi (14 bar); Supply voltage 115VAC, 230VAC, 230/480VAC, 24VDC, 230-260/400-460VAC, 260-280/440VAC",
+      "source": "Indus Hydraulics listing for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps"
+    },
+    {
+      "fact": "Bijur Delimon JS and JSP DC Lubricators listing: Reservoir 1 to 2 L",
+      "source": "Indus Hydraulics listing for Bijur Delimon JS and JSP DC Lubricators"
+    },
+    {
+      "fact": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps listing: Reservoir 6L, 12L, 4L, 1L, 30L and 1 more",
+      "source": "Indus Hydraulics listing for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bijur-delimon-ad-m-gear-pump-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon AD-M Gear Pump Units?",
+          "a": "AD-M units are Delimon gear pump lubrication units for oil, with or without reservoir, on three-phase AC motors. It is listed in 2 part numbers, from IH-BD-23321-2421 to IH-BD-72811-1713."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon AD-M Gear Pump Units?",
+          "a": "The order code is ADM followed by one code from each position below, in order. Bijur Delimon lists 254 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon AD-M Gear Pump Units cover?",
+          "a": "2 listed part numbers plus versions configured to order from 254 order codes (ADM…). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right AD-M Gear Pump Units for my machine?",
+          "a": "For Bijur Delimon AD-M Gear Pump Units, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon AD-M Gear Pump Units have?",
+          "a": "Bijur Delimon AD-M Gear Pump Units are listed with: reservoir 4 Liters, Plastic; 12 Liters. Aluminum. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon AD-M Gear Pump Units supplied in?",
+          "a": "The listing for Bijur Delimon AD-M Gear Pump Units does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon AD-M Gear Pump Units?",
+          "a": "The listing carries the maker's documents for Bijur Delimon AD-M Gear Pump Units, including Bijur Delimon ADM datasheet and Bijur Delimon ADM operator manual. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon AD-M Gear Pump Units be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon AD-M Gear Pump Units, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon AD-M Gear Pump Units?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon AD-M Gear Pump Units; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon AD-M Gear Pump Units typically used?",
+          "a": "Bijur Delimon AD-M Gear Pump Units are used for: oil circulation and single-line oil systems. Tell us the duty and the site conditions and we confirm it suits the job."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon AD-M Gear Pump Units differ from Bijur Delimon BM-B Grease Pumps?",
+          "a": "Bijur Delimon AD-M Gear Pump Units differ from [Bijur Delimon BM-B Grease Pumps](/p/bijur-delimon-bm-b-grease-pumps) in its reservoir 4 Liters, Plastic; 12 Liters. Aluminum against 8 Liter; 15 Liter; 30 Liter."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon AD-M Gear Pump Units in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon AD-M Gear Pump Units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-bf-e-electric-barrel-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon BF-E Electric Barrel Pumps?",
+          "a": "The BF-E is the electrically driven Delimon barrel pump that takes grease straight from the drum to feed a lubrication system."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon BF-E Electric Barrel Pumps?",
+          "a": "The order code is BFE followed by one code from each position below, in order. Bijur Delimon lists 21 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon BF-E Electric Barrel Pumps cover?",
+          "a": "Configured to order from 21 order codes (BFE…) — lubricants Grease. The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right BF-E Electric Barrel Pumps for my machine?",
+          "a": "For Bijur Delimon BF-E Electric Barrel Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon BF-E Electric Barrel Pumps have?",
+          "a": "Bijur Delimon BF-E Electric Barrel Pumps are listed with: reservoir 200 Liters. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon BF-E Electric Barrel Pumps handle?",
+          "a": "Bijur Delimon BF-E Electric Barrel Pumps handle grease. The listed viscosity or NLGI range is Up to NLGI #2. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon BF-E Electric Barrel Pumps?",
+          "a": "The listing carries the maker's documents for Bijur Delimon BF-E Electric Barrel Pumps, including Bijur Delimon BFE datasheet and Bijur Delimon BFE operator manual. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon BF-E Electric Barrel Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon BF-E Electric Barrel Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon BF-E Electric Barrel Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon BF-E Electric Barrel Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon BF-E Electric Barrel Pumps typically used?",
+          "a": "Bijur Delimon BF-E Electric Barrel Pumps are used for: plant where compressed air is not available; central grease supply from drums."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon BF-E Electric Barrel Pumps differ from Bijur Delimon Electric Barrel Pumps (EBP and EBPD)?",
+          "a": "Bijur Delimon BF-E Electric Barrel Pumps differ from [Bijur Delimon Electric Barrel Pumps (EBP and EBPD)](/p/bijur-delimon-electric-barrel-pumps) in its lubricant Grease against Oil/grease."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon BF-E Electric Barrel Pumps in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon BF-E Electric Barrel Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-bl-3-and-xv-3-pdi-oil-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon BL-3 and XV-3 PDI Lubricators?",
+          "a": "Compact 3-litre electric lubricators for injector (PDI) systems on NLGI 000–00 fluid grease, in 12 and 24 VDC (BL-3) and 220 VAC with controller (XV-3). It is listed in 4 part numbers, from IH-BD-53570-1E to IH-BD-43815E1."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-53570-1E mean for Bijur Delimon BL-3 and XV-3 PDI Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon BL-3 and XV-3 PDI Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-53570-1E is item 53570-1E (bl3 3l pdi 12vdc), and IH-BD-43815E1 is the last of the 4 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon BL-3 and XV-3 PDI Lubricators cover?",
+          "a": "4 listed part numbers — systems PDI; lubricants Fluid grease; reservoirs 3 L; supply 12VDC, 24VDC; output 120 cc/min; maximum pressure 580 psi (40 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right BL-3 and XV-3 PDI Lubricators for my machine?",
+          "a": "For Bijur Delimon BL-3 and XV-3 PDI Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon BL-3 and XV-3 PDI Lubricators have?",
+          "a": "Bijur Delimon BL-3 and XV-3 PDI Lubricators are listed with: max pressure 580 psi (40 bar); output 120 cc/min; reservoir 3 L; supply voltage 12VDC, 24VDC; operating temperature -20°C-75°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon BL-3 and XV-3 PDI Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon BL-3 and XV-3 PDI Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon BL-3 and XV-3 PDI Lubricators handle?",
+          "a": "Bijur Delimon BL-3 and XV-3 PDI Lubricators handle fluid grease. The listed viscosity or NLGI range is NLGI 000-00. They drive PDI systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon BL-3 and XV-3 PDI Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon BL-3 and XV-3 PDI Lubricators, including Bijur Delimon BL Lubricator datasheet (35583). If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon BL-3 and XV-3 PDI Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon BL-3 and XV-3 PDI Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon BL-3 and XV-3 PDI Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon BL-3 and XV-3 PDI Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon BL-3 and XV-3 PDI Lubricators differ from Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "Bijur Delimon BL-3 and XV-3 PDI Lubricators differ from [Bijur Delimon JS and JSP DC Lubricators](/p/bijur-delimon-js-and-jsp-dc-lubricators) in its lubricant Fluid grease against Oil, Grease; lubrication system PDI against Progressive, PDI. It also differs in its reservoir 3 L against 1 to 2 L."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon BL-3 and XV-3 PDI Lubricators in stock in Dubai?",
+          "a": "Yes, Bijur Delimon BL-3 and XV-3 PDI Lubricators are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-bm-b-grease-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon BM-B Grease Pumps?",
+          "a": "The BM-B is a self-contained grease pump with reduction gear and flange-mounted motor, for injector, series progressive and dual-line systems on medium and large machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon BM-B Grease Pumps?",
+          "a": "The order code is BMB followed by one code from each position below, in order. Bijur Delimon lists 60 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon BM-B Grease Pumps cover?",
+          "a": "Configured to order from 60 order codes (BMB…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right BM-B Grease Pumps for my machine?",
+          "a": "For Bijur Delimon BM-B Grease Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon BM-B Grease Pumps have?",
+          "a": "Bijur Delimon BM-B Grease Pumps are listed with: reservoir 8 Liter; 15 Liter; 30 Liter. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon BM-B Grease Pumps supplied in?",
+          "a": "The listing for Bijur Delimon BM-B Grease Pumps does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon BM-B Grease Pumps?",
+          "a": "The listing carries the maker's documents for Bijur Delimon BM-B Grease Pumps, including Bijur Delimon BM-B Lubricator datasheet (35216) and Bijur Delimon BMB operator manual. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon BM-B Grease Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon BM-B Grease Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon BM-B Grease Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon BM-B Grease Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon BM-B Grease Pumps typically used?",
+          "a": "Bijur Delimon BM-B Grease Pumps are used for: medium and large industrial machines; injector, progressive and dual-line systems."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon BM-B Grease Pumps differ from Bijur Delimon BS-B Dualine Grease Pumps?",
+          "a": "Bijur Delimon BM-B Grease Pumps differ from [Bijur Delimon BS-B Dualine Grease Pumps](/p/bijur-delimon-bs-b-dualine-grease-pumps) in its reservoir 8 Liter; 15 Liter; 30 Liter against 60 Liters; 100 Liters."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon BM-B Grease Pumps in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon BM-B Grease Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-bs-b-dualine-grease-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon BS-B Dualine Grease Pumps?",
+          "a": "The BS-B supplies large numbers of lubrication points centrally, mainly in dual-line systems with ZV-B distributors; it also serves filling duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon BS-B Dualine Grease Pumps?",
+          "a": "The order code is BSB followed by one code from each position below, in order. Bijur Delimon lists 40 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon BS-B Dualine Grease Pumps cover?",
+          "a": "Configured to order from 40 order codes (BSB…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right BS-B Dualine Grease Pumps for my machine?",
+          "a": "For Bijur Delimon BS-B Dualine Grease Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon BS-B Dualine Grease Pumps have?",
+          "a": "Bijur Delimon BS-B Dualine Grease Pumps are listed with: reservoir 60 Liters; 100 Liters. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon BS-B Dualine Grease Pumps supplied in?",
+          "a": "The listing for Bijur Delimon BS-B Dualine Grease Pumps does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon BS-B Dualine Grease Pumps?",
+          "a": "The listing carries the maker's documents for Bijur Delimon BS-B Dualine Grease Pumps, including Bijur Delimon BSB Pump Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon BS-B Dualine Grease Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon BS-B Dualine Grease Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon BS-B Dualine Grease Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon BS-B Dualine Grease Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon BS-B Dualine Grease Pumps typically used?",
+          "a": "Bijur Delimon BS-B Dualine Grease Pumps are used for: steel and rolling mills; large conveyors and stackers; dual-line systems with ZV-B valves."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon BS-B Dualine Grease Pumps differ from Bijur Delimon BM-B Grease Pumps?",
+          "a": "Bijur Delimon BS-B Dualine Grease Pumps differ from [Bijur Delimon BM-B Grease Pumps](/p/bijur-delimon-bm-b-grease-pumps) in its reservoir 60 Liters; 100 Liters against 8 Liter; 15 Liter; 30 Liter."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon BS-B Dualine Grease Pumps in stock in Dubai?",
+          "a": "Yes. Bijur Delimon BS-B Dualine Grease Pumps are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-cartridge-lube-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon Cartridge Lube Pumps?",
+          "a": "The Cartridge Lube Pump is an electric single-outlet grease pump for progressive divider systems that runs straight from standard grease cartridges — DIN 1284, Lube Shuttle and Fuchs — so refilling needs no tools and spills no grease."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon Cartridge Lube Pumps?",
+          "a": "The order code is CLP- followed by one code from each position below, in order. Bijur Delimon lists 108 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon Cartridge Lube Pumps cover?",
+          "a": "Configured to order from 396 order codes (CLP…) — systems Progressive; lubricants Grease; output 8 cc/min; maximum pressure 1,740 psi (120 bar). The order-code table below lists every option."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Cartridge Lube Pumps for my machine?",
+          "a": "For Bijur Delimon Cartridge Lube Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon Cartridge Lube Pumps have?",
+          "a": "Bijur Delimon Cartridge Lube Pumps are listed with: max pressure 1,740 psi (120 bar); output 8 cc/min; supply voltage 12VDC; 24VDC; 115/230VAC; operating temperature -20°C-50°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon Cartridge Lube Pumps handle?",
+          "a": "Bijur Delimon Cartridge Lube Pumps handle grease. The listed viscosity or NLGI range is UP TO NLGI #2. They drive Progressive systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon Cartridge Lube Pumps have?",
+          "a": "Bijur Delimon Cartridge Lube Pumps are listed with approvals CE and ingress protection IP67. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon Cartridge Lube Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon Cartridge Lube Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon Cartridge Lube Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon Cartridge Lube Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon Cartridge Lube Pumps typically used?",
+          "a": "Bijur Delimon Cartridge Lube Pumps are used for: mobile machines where clean refilling matters; food-adjacent and clean industrial plant; small progressive systems."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon Cartridge Lube Pumps differ from Bijur Delimon Electric Barrel Pumps (EBP and EBPD)?",
+          "a": "Bijur Delimon Cartridge Lube Pumps differ from [Bijur Delimon Electric Barrel Pumps (EBP and EBPD)](/p/bijur-delimon-electric-barrel-pumps) in its lubricant Grease against Oil/grease; max pressure 1,740 psi (120 bar) against 3,500 psi (240 bar). It also differs in its lubrication system Progressive against Progressive / Injector (PDI) / SLR / PDI / Dualine."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon Cartridge Lube Pumps in stock in Dubai?",
+          "a": "Yes, Bijur Delimon Cartridge Lube Pumps are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-cs2000-grease-central-stations",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon CS2000 Grease Central Stations?",
+          "a": "CS2000 stations store, pump and control grease for centralised Dualine and single-line systems — from machine tools to steel-mill equipment and large off-road machines such as shovels and drag lines. It is listed in 58 part numbers, from IH-BD-37688 to IH-BD-LD10697."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-37688 mean for Bijur Delimon CS2000 Grease Central Stations?",
+          "a": "The Indus part numbers for Bijur Delimon CS2000 Grease Central Stations start IH-BD- and carry the Bijur Delimon item number: IH-BD-37688 is item 37688 (cs2000 100lb prog ls hls), and IH-BD-LD10697 is the last of the 58 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon CS2000 Grease Central Stations cover?",
+          "a": "58 listed part numbers — systems Progressive, Dualine; lubricants Grease, Oil; reservoirs 100 LB, 6 GAL, 24 LB; supply 575VAC, 230/380VAC, 115/230VAC, 440/480VAC, 230/460VAC; output 6 in³/min; maximum pressure 1,500 psi (103 bar) to 3,500 psi (241 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right CS2000 Grease Central Stations for my machine?",
+          "a": "For Bijur Delimon CS2000 Grease Central Stations, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon CS2000 Grease Central Stations have?",
+          "a": "Bijur Delimon CS2000 Grease Central Stations are listed with: max pressure 1,500 psi (103 bar) to 3,500 psi (241 bar); output 6 in³/min; reservoir 100 LB, 6 GAL, 24 LB; supply voltage 575VAC, 230/380VAC, 115/230VAC, 440/480VAC, 230/460VAC. Operating temperature -18°C-49°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a Dualine lubrication system, and is Bijur Delimon CS2000 Grease Central Stations used in one?",
+          "a": "A two-line system: the pump pressurises one main line, the metering valves discharge, then a reversing valve switches to the second line. It reaches hundreds of points over long distances and suits steel mills and heavy plant. Bijur Delimon CS2000 Grease Central Stations work with Dualine systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon CS2000 Grease Central Stations handle?",
+          "a": "Bijur Delimon CS2000 Grease Central Stations handle grease, oil. The listed viscosity or NLGI range is Up to NLGI #2. They drive Progressive, Dualine systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon CS2000 Grease Central Stations have?",
+          "a": "Bijur Delimon CS2000 Grease Central Stations are listed with approvals CSA. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon CS2000 Grease Central Stations be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon CS2000 Grease Central Stations, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon CS2000 Grease Central Stations?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon CS2000 Grease Central Stations; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon CS2000 Grease Central Stations differ from Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations?",
+          "a": "Bijur Delimon CS2000 Grease Central Stations differ from [Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations](/p/bijur-delimon-dc4-dc40-dc41-and-dc42-dualine-central-stations) in its lubrication system Progressive, Dualine against Dualine. It also differs in its reservoir 100 LB, 6 GAL, 24 LB against 200 LB, 100 LB, 30 GAL; max pressure 1,500 psi (103 bar) to 3,500 psi (241 bar) against 3,000 psi (207 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon CS2000 Grease Central Stations in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon CS2000 Grease Central Stations in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-csk-24-vdc-progressive-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon CSK 24 VDC Progressive Lubricators?",
+          "a": "CSK lubricators are 24 VDC progressive grease pumps with an integral timer, in one- and two-element versions. It is listed in 3 part numbers, from IH-BD-50007-1E to IH-BD-50007-3E."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-50007-1E mean for Bijur Delimon CSK 24 VDC Progressive Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon CSK 24 VDC Progressive Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-50007-1E is item 50007-1E (csk 2l 24vdc prog timer 1el), and IH-BD-50007-3E is the last of the 3 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon CSK 24 VDC Progressive Lubricators cover?",
+          "a": "3 listed part numbers — systems Progressive; lubricants Grease; reservoirs 2 L; supply 24VDC; output 5.5 cc/min; maximum pressure 3,625 psi (250 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right CSK 24 VDC Progressive Lubricators for my machine?",
+          "a": "For Bijur Delimon CSK 24 VDC Progressive Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon CSK 24 VDC Progressive Lubricators have?",
+          "a": "Bijur Delimon CSK 24 VDC Progressive Lubricators are listed with: max pressure 3,625 psi (250 bar); output 5.5 cc/min; reservoir 2 L; supply voltage 24VDC; operating temperature -18°C-49°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon CSK 24 VDC Progressive Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon CSK 24 VDC Progressive Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon CSK 24 VDC Progressive Lubricators handle?",
+          "a": "Bijur Delimon CSK 24 VDC Progressive Lubricators handle grease. The listed viscosity or NLGI range is NLGI 000-2. They drive Progressive systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon CSK 24 VDC Progressive Lubricators have?",
+          "a": "Bijur Delimon CSK 24 VDC Progressive Lubricators are listed with ingress protection IP56. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon CSK 24 VDC Progressive Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon CSK 24 VDC Progressive Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon CSK 24 VDC Progressive Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon CSK 24 VDC Progressive Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon CSK 24 VDC Progressive Lubricators differ from Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "Bijur Delimon CSK 24 VDC Progressive Lubricators differ from [Bijur Delimon JS and JSP DC Lubricators](/p/bijur-delimon-js-and-jsp-dc-lubricators) in its lubricant Grease against Oil, Grease; lubrication system Progressive against Progressive, PDI. It also differs in its reservoir 2 L against 1 to 2 L."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon CSK 24 VDC Progressive Lubricators in stock in Dubai?",
+          "a": "Yes. Bijur Delimon CSK 24 VDC Progressive Lubricators are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-dc4-dc40-dc41-and-dc42-dualine-central-stations",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations?",
+          "a": "DC central stations are the pumping stations for Bijur Delimon (Farval) Dualine two-line grease and oil systems in heavy industry. It is listed in 26 part numbers, from IH-BD-37485 to IH-BD-DC42M33D4."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-37485 mean for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations?",
+          "a": "The Indus part numbers for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations start IH-BD- and carry the Bijur Delimon item number: IH-BD-37485 is item 37485 (central station, 200# res stl.), and IH-BD-DC42M33D4 is the last of the 26 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations cover?",
+          "a": "26 listed part numbers — systems Dualine; lubricants Grease, Oil; reservoirs 200 LB, 100 LB, 30 GAL; supply 230/460VAC; maximum pressure 3,000 psi (207 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right DC4, DC40, DC41 and DC42 Dualine Central Stations for my machine?",
+          "a": "For Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations have?",
+          "a": "Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations are listed with: max pressure 3,000 psi (207 bar); reservoir 200 LB, 100 LB, 30 GAL; supply voltage 230/460VAC. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a Dualine lubrication system, and is Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations used in one?",
+          "a": "A two-line system: the pump pressurises one main line, the metering valves discharge, then a reversing valve switches to the second line. It reaches hundreds of points over long distances and suits steel mills and heavy plant. Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations work with Dualine systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations handle?",
+          "a": "Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations handle grease, oil. The listed viscosity or NLGI range is Up to NLGI #2, ISO VG 32 OR HIGHER. They drive Dualine systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations?",
+          "a": "The listing carries the maker's documents for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations, including Bijur Delimon DC41-42 Station Operator Manual. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations differ from Bijur Delimon CS2000 Grease Central Stations?",
+          "a": "Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations differ from [Bijur Delimon CS2000 Grease Central Stations](/p/bijur-delimon-cs2000-grease-central-stations) in its lubrication system Dualine against Progressive, Dualine. It also differs in its reservoir 200 LB, 100 LB, 30 GAL against 100 LB, 6 GAL, 24 LB; max pressure 3,000 psi (207 bar) against 1,500 psi (103 bar) to 3,500 psi (241 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon DC4, DC40, DC41 and DC42 Dualine Central Stations in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-dynamis-maxx-mobile-grease-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon Dynamis Maxx Mobile Grease Lubricators?",
+          "a": "Dynamis Maxx is the electric grease lubricator for on-road and off-road mobile machines — loaders, excavators, articulated trucks and graders — built for construction, mining and forestry duty. It is listed in 23 part numbers, from IH-BD-37551 to IH-BD-DYXP3A200S20400."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-37551 mean for Bijur Delimon Dynamis Maxx Mobile Grease Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon Dynamis Maxx Mobile Grease Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-37551 is item 37551 (dyx 4l prog lls), and IH-BD-DYXP3A200S20400 is the last of the 23 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon Dynamis Maxx Mobile Grease Lubricators cover?",
+          "a": "23 listed part numbers — systems Progressive; lubricants Grease; reservoirs 4 to 8 L; supply 24VDC, 12VDC; output 2.9 cc/element/min; maximum pressure 2,320 psi (160 bar) to 4,351 psi (300 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dynamis Maxx Mobile Grease Lubricators for my machine?",
+          "a": "For Bijur Delimon Dynamis Maxx Mobile Grease Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon Dynamis Maxx Mobile Grease Lubricators have?",
+          "a": "Bijur Delimon Dynamis Maxx Mobile Grease Lubricators are listed with: max pressure 2,320 psi (160 bar) to 4,351 psi (300 bar); output 2.9 cc/element/min; reservoir 4 to 8 L; supply voltage 24VDC, 12VDC; operating temperature -20°C-75°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon Dynamis Maxx Mobile Grease Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon Dynamis Maxx Mobile Grease Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon Dynamis Maxx Mobile Grease Lubricators handle?",
+          "a": "Bijur Delimon Dynamis Maxx Mobile Grease Lubricators handle grease. The listed viscosity or NLGI range is NLGI 000-2. They drive Progressive systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon Dynamis Maxx Mobile Grease Lubricators have?",
+          "a": "Bijur Delimon Dynamis Maxx Mobile Grease Lubricators are listed with ingress protection IP67. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon Dynamis Maxx Mobile Grease Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon Dynamis Maxx Mobile Grease Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon Dynamis Maxx Mobile Grease Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon Dynamis Maxx Mobile Grease Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon Dynamis Maxx Mobile Grease Lubricators differ from Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "Bijur Delimon Dynamis Maxx Mobile Grease Lubricators differ from [Bijur Delimon TM-1 Automatic Oil Lubricators](/p/bijur-delimon-tm-1-automatic-oil-lubricators) in its lubricant Grease against Oil; lubrication system Progressive against SLR. It also differs in its reservoir 4 to 8 L against 4L, 1L, 1 pint."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon Dynamis Maxx Mobile Grease Lubricators in stock in Dubai?",
+          "a": "Yes. Bijur Delimon Dynamis Maxx Mobile Grease Lubricators are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-electric-barrel-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon Electric Barrel Pumps?",
+          "a": "The Electric Barrel Pump replaces air- or hydraulic-driven drum pumps on lubrication systems with a pump that wires straight into the machine's supply — rated to 300 bar (4,350 psi) and built to fit 120 lb and 400 lb (50 and 185 kg) refinery drums."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon Electric Barrel Pumps?",
+          "a": "The order code is EBP followed by one code from each position below, in order. Bijur Delimon lists 160 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon Electric Barrel Pumps cover?",
+          "a": "Configured to order from 320 order codes (EBP…, EBPD…) — systems Progressive / Injector (PDI) / SLR / PDI / Dualine; lubricants Oil/grease; output 150 cc/min; maximum pressure 3,500 psi (240 bar). The order-code table below lists every option."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Electric Barrel Pumps for my machine?",
+          "a": "For Bijur Delimon Electric Barrel Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon Electric Barrel Pumps have?",
+          "a": "Bijur Delimon Electric Barrel Pumps are listed with: max pressure 3,500 psi (240 bar); output 150 cc/min; supply voltage 24VDC; 110VAC 50/60Hz 1Ph; 220VAC 50/60Hz 1Ph; operating temperature -25°C-60°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon Electric Barrel Pumps used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon Electric Barrel Pumps work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon Electric Barrel Pumps handle?",
+          "a": "Bijur Delimon Electric Barrel Pumps handle oil/grease. The listed viscosity or NLGI range is OIL TO GREASE NLGI #000-2. They drive Progressive / Injector (PDI) / SLR / PDI / Dualine systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon Electric Barrel Pumps have?",
+          "a": "Bijur Delimon Electric Barrel Pumps are listed with ingress protection IP66. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon Electric Barrel Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon Electric Barrel Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon Electric Barrel Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon Electric Barrel Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon Electric Barrel Pumps differ from Bijur Delimon BF-E Electric Barrel Pumps?",
+          "a": "Bijur Delimon Electric Barrel Pumps differ from [Bijur Delimon BF-E Electric Barrel Pumps](/p/bijur-delimon-bf-e-electric-barrel-pumps) in its lubricant Oil/grease against Grease."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon Electric Barrel Pumps in stock in Dubai?",
+          "a": "Yes. Bijur Delimon Electric Barrel Pumps are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-fz-a-multi-line-grease-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon FZ-A Multi-Line Grease Lubricators?",
+          "a": "The FZ-A is a Delimon multi-line piston lubricator for direct feed of up to 12 lubrication points, with standard and ATEX versions for hazardous areas."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon FZ-A Multi-Line Grease Lubricators?",
+          "a": "The order code is FAX followed by one code from each position below, in order. Bijur Delimon lists 2,160 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon FZ-A Multi-Line Grease Lubricators cover?",
+          "a": "Configured to order from 27,000 order codes (FAX…, FZA…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right FZ-A Multi-Line Grease Lubricators for my machine?",
+          "a": "For Bijur Delimon FZ-A Multi-Line Grease Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon FZ-A Multi-Line Grease Lubricators have?",
+          "a": "Bijur Delimon FZ-A Multi-Line Grease Lubricators are listed with: reservoir 8 Liter; 15 Liter; 30 Liter; 30 Liter + reservoir support with base plate, 450 x 450 mm. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon FZ-A Multi-Line Grease Lubricators supplied in?",
+          "a": "The listing for Bijur Delimon FZ-A Multi-Line Grease Lubricators does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon FZ-A Multi-Line Grease Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon FZ-A Multi-Line Grease Lubricators, including Bijur Delimon FZA Lubricator Operator Manual and Bijur Delimon FZA Lubricator Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon FZ-A Multi-Line Grease Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon FZ-A Multi-Line Grease Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon FZ-A Multi-Line Grease Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon FZ-A Multi-Line Grease Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon FZ-A Multi-Line Grease Lubricators typically used?",
+          "a": "Bijur Delimon FZ-A Multi-Line Grease Lubricators are used for: cement and steel plant; crushers, mills and kilns; hazardous-area machinery (ATEX)."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to give you to quote Bijur Delimon FZ-A Multi-Line Grease Lubricators?",
+          "a": "For Bijur Delimon FZ-A Multi-Line Grease Lubricators, the Bijur Delimon part number or order code if you have it. Otherwise the machine, the number of lubrication points, the lubricant (oil grade or grease NLGI class), the supply voltage or air pressure, the reservoir size and any approval needed (CE, CSA, UL, ATEX). We confirm the part number with the manufacturer and quote with the delivery time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon FZ-A Multi-Line Grease Lubricators in stock in Dubai?",
+          "a": "Yes, Bijur Delimon FZ-A Multi-Line Grease Lubricators are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-fz-b-progressive-grease-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon FZ-B Progressive Grease Lubricators?",
+          "a": "The FZ-B is the Delimon lubricator of the FZ family built for progressive systems, with standard and ATEX versions. Tell us the size and duty you have in mind and we confirm the right part and its rating on the quotation."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon FZ-B Progressive Grease Lubricators?",
+          "a": "The order code is FBX followed by one code from each position below, in order. Bijur Delimon lists 360 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon FZ-B Progressive Grease Lubricators cover?",
+          "a": "Configured to order from 4,776 order codes (FBX…, FZB…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right FZ-B Progressive Grease Lubricators for my machine?",
+          "a": "For Bijur Delimon FZ-B Progressive Grease Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon FZ-B Progressive Grease Lubricators have?",
+          "a": "Bijur Delimon FZ-B Progressive Grease Lubricators are listed with: reservoir 8 Liter; 15 Liter; 30 Liter; 30 Liter + reservoir support with base plate, 450 x 450 mm. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon FZ-B Progressive Grease Lubricators supplied in?",
+          "a": "The listing for Bijur Delimon FZ-B Progressive Grease Lubricators does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon FZ-B Progressive Grease Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon FZ-B Progressive Grease Lubricators, including Bijur Delimon FZ-B Lubricator Operator Manual and Bijur Delimon FZ-B Lubricator Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon FZ-B Progressive Grease Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon FZ-B Progressive Grease Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon FZ-B Progressive Grease Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon FZ-B Progressive Grease Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon FZ-B Progressive Grease Lubricators typically used?",
+          "a": "Bijur Delimon FZ-B Progressive Grease Lubricators are used for: heavy industry progressive systems; gear-spray systems on open gears; hazardous areas (ATEX)."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to give you to quote Bijur Delimon FZ-B Progressive Grease Lubricators?",
+          "a": "For Bijur Delimon FZ-B Progressive Grease Lubricators, the Bijur Delimon part number or order code if you have it. Otherwise the machine, the number of lubrication points, the lubricant (oil grade or grease NLGI class), the supply voltage or air pressure, the reservoir size and any approval needed (CE, CSA, UL, ATEX). We confirm the part number with the manufacturer and quote with the delivery time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon FZ-B Progressive Grease Lubricators in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon FZ-B Progressive Grease Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-gpo-motor-driven-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "GPO lubricators are motor-driven gear pumps for single-line systems with progressive distributors or PDI injectors, with 4, 6, 12 and 30 litre reservoirs and ATEX explosion-proof versions. It is listed in 21 part numbers, from IH-BD-60742 to IH-BD-70152."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "The order code is GPO followed by one code from each position below, in order. Bijur Delimon lists 288 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon GPO Motor-Driven Lubricators cover?",
+          "a": "21 listed part numbers plus versions configured to order from 288 order codes (GPO…) — systems Progressive, PDI, SLR; lubricants Oil; reservoirs 4 L; containers 12L; supply 24VDC, 115VAC; output 132 to 250 cc/min. Maximum pressure 130 psi (9 bar) to 1,000 psi (69 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right GPO Motor-Driven Lubricators for my machine?",
+          "a": "For Bijur Delimon GPO Motor-Driven Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon GPO Motor-Driven Lubricators have?",
+          "a": "Bijur Delimon GPO Motor-Driven Lubricators are listed with: max pressure 130 psi (9 bar) to 1,000 psi (69 bar); output 132 to 250 cc/min; reservoir 4 L; supply voltage 24VDC, 115VAC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon GPO Motor-Driven Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon GPO Motor-Driven Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon GPO Motor-Driven Lubricators handle?",
+          "a": "Bijur Delimon GPO Motor-Driven Lubricators handle oil. The listed viscosity or NLGI range is 20-1500 cSt, 100-10000 SSU. They drive Progressive, PDI, SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon GPO Motor-Driven Lubricators, including Bijur Delimon GPO Lubricator Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon GPO Motor-Driven Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon GPO Motor-Driven Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon GPO Motor-Driven Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon GPO Motor-Driven Lubricators differ from Bijur Delimon CSK 24 VDC Progressive Lubricators?",
+          "a": "Bijur Delimon GPO Motor-Driven Lubricators differ from [Bijur Delimon CSK 24 VDC Progressive Lubricators](/p/bijur-delimon-csk-24-vdc-progressive-lubricators) in its lubricant Oil against Grease; lubrication system Progressive, PDI, SLR against Progressive. It also differs in its reservoir 4 L against 2 L."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon GPO Motor-Driven Lubricators in stock in Dubai?",
+          "a": "Yes, Bijur Delimon GPO Motor-Driven Lubricators are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-js-and-jsp-dc-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "JS and JSP are compact DC-motor piston pumps for oil or grease with a large output for their size, run from an external controller or PLC. It is listed in 6 part numbers, from IH-BD-35910 to IH-BD-JSPO4D2C."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-35910 mean for Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon JS and JSP DC Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-35910 is item 35910 (js 24vdc 2l prog), and IH-BD-JSPO4D2C is the last of the 6 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon JS and JSP DC Lubricators cover?",
+          "a": "6 listed part numbers — systems Progressive, PDI; lubricants Oil, Grease; reservoirs 1 to 2 L; supply 24VDC, 12VDC; output 25 cc/min; maximum pressure 435 psi (30 bar) to 1,450 psi (100 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right JS and JSP DC Lubricators for my machine?",
+          "a": "For Bijur Delimon JS and JSP DC Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon JS and JSP DC Lubricators have?",
+          "a": "Bijur Delimon JS and JSP DC Lubricators are listed with: max pressure 435 psi (30 bar) to 1,450 psi (100 bar); output 25 cc/min; reservoir 1 to 2 L; supply voltage 24VDC, 12VDC; operating temperature -20°C-60°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon JS and JSP DC Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon JS and JSP DC Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon JS and JSP DC Lubricators handle?",
+          "a": "Bijur Delimon JS and JSP DC Lubricators handle oil, grease. The listed viscosity or NLGI range is N32-N460, NLGI 000-1, NLGI 000-0. They drive Progressive, PDI systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon JS and JSP DC Lubricators, including Bijur Delimon JS JSP Lubricator Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon JS and JSP DC Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon JS and JSP DC Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon JS and JSP DC Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon JS and JSP DC Lubricators differ from Bijur Delimon BL-3 and XV-3 PDI Lubricators?",
+          "a": "Bijur Delimon JS and JSP DC Lubricators differ from [Bijur Delimon BL-3 and XV-3 PDI Lubricators](/p/bijur-delimon-bl-3-and-xv-3-pdi-oil-lubricators) in its lubricant Oil, Grease against Fluid grease; lubrication system Progressive, PDI against PDI. It also differs in its reservoir 1 to 2 L against 3 L."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon JS and JSP DC Lubricators in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon JS and JSP DC Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-motor-driven-sump-gear-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon Motor-Driven Sump Gear Pumps?",
+          "a": "A low-pressure motor-driven gear pump with two outlets, normally mounted in the machine's oil sump to circulate oil to areas of the machine and let it drain back. It is listed in 2 part numbers, from IH-BD-32671-1 to IH-BD-32671-2."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-32671-1 mean for Bijur Delimon Motor-Driven Sump Gear Pumps?",
+          "a": "The Indus part numbers for Bijur Delimon Motor-Driven Sump Gear Pumps start IH-BD- and carry the Bijur Delimon item number: IH-BD-32671-1 is item 32671-1 (motor driven gear pump 220vac harig), and IH-BD-32671-2 is the last of the 2 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon Motor-Driven Sump Gear Pumps cover?",
+          "a": "2 listed part numbers — systems SLR; lubricants Oil; containers machine reservoir; output 40 cc; maximum pressure 40 psi (3 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Motor-Driven Sump Gear Pumps for my machine?",
+          "a": "For Bijur Delimon Motor-Driven Sump Gear Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon Motor-Driven Sump Gear Pumps have?",
+          "a": "Bijur Delimon Motor-Driven Sump Gear Pumps are listed with: max pressure 40 psi (3 bar); output 40 cc. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a SLR lubrication system, and is Bijur Delimon Motor-Driven Sump Gear Pumps used in one?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units — calibrated restrictors at each point — share it out by their flow rating. Simple and low-pressure, for oil on machine tools and light machinery. Bijur Delimon Motor-Driven Sump Gear Pumps work with SLR systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon Motor-Driven Sump Gear Pumps handle?",
+          "a": "Bijur Delimon Motor-Driven Sump Gear Pumps handle oil. The listed viscosity or NLGI range is 160-1170 SUS. They drive SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon Motor-Driven Sump Gear Pumps?",
+          "a": "The listing carries the maker's documents for Bijur Delimon Motor-Driven Sump Gear Pumps, including Bijur Delimon Motor Driven Gear Pump Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon Motor-Driven Sump Gear Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon Motor-Driven Sump Gear Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon Motor-Driven Sump Gear Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon Motor-Driven Sump Gear Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon Motor-Driven Sump Gear Pumps differ from Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "Bijur Delimon Motor-Driven Sump Gear Pumps differ from [Bijur Delimon GPO Motor-Driven Lubricators](/p/bijur-delimon-gpo-motor-driven-lubricators) in its lubrication system SLR against Progressive, PDI, SLR. It also differs in its max pressure 40 psi (3 bar) against 130 psi (9 bar) to 1,000 psi (69 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon Motor-Driven Sump Gear Pumps in stock in Dubai?",
+          "a": "Yes. Bijur Delimon Motor-Driven Sump Gear Pumps are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-multiport-automatic-grease-and-oil-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon MultiPort Automatic Grease and Oil Lubricators?",
+          "a": "The MultiPort is a rugged, compact motor-driven lubricator in AC and DC voltages, built mainly to feed series progressive divider systems with grease, with oil versions available. It is listed in 54 part numbers, from IH-BD-28569-1NF to IH-BD-MULTI8BD."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-28569-1NF mean for Bijur Delimon MultiPort Automatic Grease and Oil Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon MultiPort Automatic Grease and Oil Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-28569-1NF is item 28569-1NF (mp 110vac 1ph 2l 1el), and IH-BD-MULTI8BD is the last of the 54 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon MultiPort Automatic Grease and Oil Lubricators cover?",
+          "a": "54 listed part numbers — systems Progressive, Injector (PDI); lubricants Grease, Oil; reservoirs 2 to 10 L; supply 110VAC, 220/380/440VAC, 24VDC, 115VAC, 220VAC; output 5.12 to 19.2 cc/min; maximum pressure 2,900 psi (200 bar) to 3,600 psi (248 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right MultiPort Automatic Grease and Oil Lubricators for my machine?",
+          "a": "For Bijur Delimon MultiPort Automatic Grease and Oil Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon MultiPort Automatic Grease and Oil Lubricators have?",
+          "a": "Bijur Delimon MultiPort Automatic Grease and Oil Lubricators are listed with: max pressure 2,900 psi (200 bar) to 3,600 psi (248 bar); output 5.12 to 19.2 cc/min; reservoir 2 to 10 L; supply voltage 110VAC, 220/380/440VAC, 24VDC, 115VAC, 220VAC. Operating temperature -18°C-49°C, -15°C-50°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon MultiPort Automatic Grease and Oil Lubricators used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon MultiPort Automatic Grease and Oil Lubricators work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon MultiPort Automatic Grease and Oil Lubricators handle?",
+          "a": "Bijur Delimon MultiPort Automatic Grease and Oil Lubricators handle grease, oil. The listed viscosity or NLGI range is NLGI 000-2, UP TO 5000 SUS. They drive Progressive, Injector (PDI) systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon MultiPort Automatic Grease and Oil Lubricators have?",
+          "a": "Bijur Delimon MultiPort Automatic Grease and Oil Lubricators are listed with ingress protection IP55. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon MultiPort Automatic Grease and Oil Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon MultiPort Automatic Grease and Oil Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon MultiPort Automatic Grease and Oil Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon MultiPort Automatic Grease and Oil Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon MultiPort Automatic Grease and Oil Lubricators differ from Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "Bijur Delimon MultiPort Automatic Grease and Oil Lubricators differ from [Bijur Delimon TM-1 Automatic Oil Lubricators](/p/bijur-delimon-tm-1-automatic-oil-lubricators) in its lubricant Grease, Oil against Oil; lubrication system Progressive, Injector (PDI) against SLR. It also differs in its reservoir 2 to 10 L against 4L, 1L, 1 pint."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon MultiPort Automatic Grease and Oil Lubricators in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon MultiPort Automatic Grease and Oil Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-multiport-ii-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon MultiPort II Lubricators?",
+          "a": "MultiPort II is the electric multi-outlet lubricator for mobile machinery: 12 or 24 VDC, up to three independent pumping elements, for progressive divider systems or PDI injector networks. Its listed configuration is IH-BD-85085 to IH-BD-85085."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon MultiPort II Lubricators?",
+          "a": "The order code is 55657- followed by one code from each position below, in order. Bijur Delimon lists 16 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon MultiPort II Lubricators cover?",
+          "a": "1 listed part number plus versions configured to order from 832 order codes (55657…, 55656…, 55626…, 55412…). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right MultiPort II Lubricators for my machine?",
+          "a": "For Bijur Delimon MultiPort II Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon MultiPort II Lubricators have?",
+          "a": "Bijur Delimon MultiPort II Lubricators are listed with: reservoir 3 Liter grease reservoir with mixing arm; 7 Liter grease reservoir with mixing arm. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon MultiPort II Lubricators supplied in?",
+          "a": "The listing for Bijur Delimon MultiPort II Lubricators does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon MultiPort II Lubricators?",
+          "a": "The listing carries the maker's documents for Bijur Delimon MultiPort II Lubricators, including Bijur Delimon MultiPort II PDI Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon MultiPort II Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon MultiPort II Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon MultiPort II Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon MultiPort II Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon MultiPort II Lubricators typically used?",
+          "a": "Bijur Delimon MultiPort II Lubricators are used for: trucks, trailers and refuse vehicles; construction and mining mobile plant; agricultural machines."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon MultiPort II Lubricators differ from Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "Bijur Delimon MultiPort II Lubricators differ from [Bijur Delimon TM-1 Automatic Oil Lubricators](/p/bijur-delimon-tm-1-automatic-oil-lubricators) in its reservoir 3 Liter grease reservoir with mixing arm; 7 Liter grease reservoir with mixing arm against 4L, 1L, 1 pint. It also differs in its 1 listed part numbers against 45."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon MultiPort II Lubricators in stock in Dubai?",
+          "a": "Yes, Bijur Delimon MultiPort II Lubricators are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-surefire-ii-m12-and-din-connectors-and-cables",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon SureFire II M12 and DIN Connectors and Cables?",
+          "a": "Field-wireable M12 connectors and moulded M12 and DIN power and signal cables for SureFire II pumps, in 2, 5 and 10 m lengths. It is listed in 23 part numbers, from IH-BD-23694 to IH-BD-M125S10U34."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-23694 mean for Bijur Delimon SureFire II M12 and DIN Connectors and Cables?",
+          "a": "The Indus part numbers for Bijur Delimon SureFire II M12 and DIN Connectors and Cables start IH-BD- and carry the Bijur Delimon item number: IH-BD-23694 is item 23694 (conn str m12 5-pin field wireable), and IH-BD-M125S10U34 is the last of the 23 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon SureFire II M12 and DIN Connectors and Cables cover?",
+          "a": "23 listed part numbers. The size table gives each part number's data. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SureFire II M12 and DIN Connectors and Cables for my machine?",
+          "a": "For Bijur Delimon SureFire II M12 and DIN Connectors and Cables, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon SureFire II M12 and DIN Connectors and Cables supplied in?",
+          "a": "The listing for Bijur Delimon SureFire II M12 and DIN Connectors and Cables does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals come with Bijur Delimon SureFire II M12 and DIN Connectors and Cables?",
+          "a": "Bijur Delimon's datasheets and manuals come with Bijur Delimon SureFire II M12 and DIN Connectors and Cables. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer before quoting."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon SureFire II M12 and DIN Connectors and Cables be supplied as part of a complete lubrication system?",
+          "a": "Bijur Delimon SureFire II M12 and DIN Connectors and Cables are one part of a lubrication system and are matched with distribution elements, tubing, fittings and controllers. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon SureFire II M12 and DIN Connectors and Cables?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon SureFire II M12 and DIN Connectors and Cables; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon SureFire II M12 and DIN Connectors and Cables typically used?",
+          "a": "Bijur Delimon SureFire II M12 and DIN Connectors and Cables are used for: new SureFire II installations; replacement of damaged pump cables."
+        },
+        {
+          "slot": "J",
+          "q": "What do I need to give you to quote Bijur Delimon SureFire II M12 and DIN Connectors and Cables?",
+          "a": "For Bijur Delimon SureFire II M12 and DIN Connectors and Cables, the Bijur Delimon part number or order code if you have it. Otherwise the machine, the number of lubrication points, the lubricant (oil grade or grease NLGI class), the supply voltage or air pressure, the reservoir size and any approval needed (CE, CSA, UL, ATEX). We confirm the part number with the manufacturer and quote with the delivery time."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon SureFire II M12 and DIN Connectors and Cables differ from Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors?",
+          "a": "Bijur Delimon SureFire II M12 and DIN Connectors and Cables differ from [Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors (71800 and SFX71322)](/p/bijur-delimon-surefire-ii-pdi-lubricators-with-zem-injectors) in its 23 listed part numbers against 22."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon SureFire II M12 and DIN Connectors and Cables in stock in Dubai?",
+          "a": "Yes. Bijur Delimon SureFire II M12 and DIN Connectors and Cables are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-surefire-ii-pdi-lubricators-with-zem-injectors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors?",
+          "a": "These are ready-to-install PDI lubricators: a 24 VDC SureFire II pump with timer, factory-fitted to a manifold of ZEM positive-displacement injectors, so a machine gets a measured shot at every point without a separate distribution panel. It is listed in 22 part numbers, from IH-BD-71800-B2MJ to IH-BD-SFX71322-RK."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-71800-B2MJ mean for Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors?",
+          "a": "The Indus part numbers for Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors start IH-BD- and carry the Bijur Delimon item number. IH-BD-71800-B2MJ is item 71800-B2MJ (surefire ii-zem pdi 2l timer 24vdc), and IH-BD-SFX71322-RK is the last of the 22 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors cover?",
+          "a": "22 listed part numbers — systems PDI; lubricants Oil; reservoirs 2 to 6 L; supply 24VDC, 100/115VAC, 200/230VAC, 115/230VAC; output 1 to 2.5 cc/cycle; maximum pressure 450 psi (31 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SureFire II PDI Lubricators with ZEM Injectors for my machine?",
+          "a": "For Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors have?",
+          "a": "Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors are listed with: max pressure 450 psi (31 bar); output 1 to 2.5 cc/cycle; reservoir 2 to 6 L; supply voltage 24VDC, 100/115VAC, 200/230VAC, 115/230VAC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors handle?",
+          "a": "Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors handle oil. The listed viscosity or NLGI range is 20-1500 cSt. They drive PDI systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors have?",
+          "a": "Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors are listed with approvals CE and ingress protection IP54. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors differ from Bijur Delimon SureFire II Three-Phase Lubrication Pumps?",
+          "a": "Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors differ from [Bijur Delimon SureFire II Three-Phase Lubrication Pumps](/p/bijur-delimon-surefire-ii-three-phase-lubrication-pumps) in its lubrication system PDI against SLR, PDI; reservoir 2 to 6 L against 3 to 6 L. It also differs in its max pressure 450 psi (31 bar) against 300 psi (21 bar) to 450 psi (31 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon SureFire II PDI Lubricators with ZEM Injectors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-surefire-ii-single-phase-lubrication-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon SureFire II Single-Phase Lubrication Pumps?",
+          "a": "SureFire II is Bijur Delimon's self-contained, electric motor-driven gear pump for automatic oil and fluid-grease lubrication of production machinery. One pump serves up to about 100 lubrication points. It is listed in 26 part numbers, from IH-BD-SFX23871 to IH-BD-SFXAP3607."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon SureFire II Single-Phase Lubrication Pumps?",
+          "a": "The order code is SFX followed by one code from each position below, in order. Bijur Delimon lists 71,040 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon SureFire II Single-Phase Lubrication Pumps cover?",
+          "a": "26 listed part numbers plus versions configured to order from 71,040 order codes (SFX…) — systems SLR, PDI, Progressive; lubricants Oil; reservoirs 2 to 12 L; supply 115VAC, 24VDC, 230VAC, 115/230VAC, 100/115VAC. Output 250cc/min, 500cc/min, 125cc/min, 10-18cc/min, 250 cc/min; maximum pressure 75 psi (5 bar) to 450 psi (31 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SureFire II Single-Phase Lubrication Pumps for my machine?",
+          "a": "For Bijur Delimon SureFire II Single-Phase Lubrication Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon SureFire II Single-Phase Lubrication Pumps have?",
+          "a": "Bijur Delimon SureFire II Single-Phase Lubrication Pumps are listed with: max pressure 75 psi (5 bar) to 450 psi (31 bar); output 250cc/min, 500cc/min, 125cc/min, 10-18cc/min, 250 cc/min; reservoir 2 to 12 L. Supply voltage 115VAC, 24VDC, 230VAC, 115/230VAC, 100/115VAC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon SureFire II Single-Phase Lubrication Pumps used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon SureFire II Single-Phase Lubrication Pumps work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon SureFire II Single-Phase Lubrication Pumps handle?",
+          "a": "Bijur Delimon SureFire II Single-Phase Lubrication Pumps handle oil. The listed viscosity or NLGI range is 20-1500 cSt, 5-40 cSt. They drive SLR, PDI, Progressive systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon SureFire II Single-Phase Lubrication Pumps have?",
+          "a": "Bijur Delimon SureFire II Single-Phase Lubrication Pumps are listed with approvals CE and ingress protection IP54. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon SureFire II Single-Phase Lubrication Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon SureFire II Single-Phase Lubrication Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon SureFire II Single-Phase Lubrication Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon SureFire II Single-Phase Lubrication Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon SureFire II Single-Phase Lubrication Pumps differ from Bijur Delimon SureFire II Three-Phase Lubrication Pumps?",
+          "a": "Bijur Delimon SureFire II Single-Phase Lubrication Pumps differ from [Bijur Delimon SureFire II Three-Phase Lubrication Pumps](/p/bijur-delimon-surefire-ii-three-phase-lubrication-pumps) in its lubrication system SLR, PDI, Progressive against SLR, PDI. It also differs in its reservoir 2 to 12 L against 3 to 6 L; max pressure 75 psi (5 bar) to 450 psi (31 bar) against 300 psi (21 bar) to 450 psi (31 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon SureFire II Single-Phase Lubrication Pumps in stock in Dubai?",
+          "a": "Yes, Bijur Delimon SureFire II Single-Phase Lubrication Pumps are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-surefire-ii-three-phase-lubrication-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon SureFire II Three-Phase Lubrication Pumps?",
+          "a": "The three-phase SureFire II runs the same gear pump and reservoir range as the single-phase unit from the machine's 230/480 or 330/575 VAC three-phase supply, for plants that do not want a separate single-phase feed to the lubricator. It is listed in 2 part numbers, from IH-BD-SFX29017 to IH-BD-SFX71307."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon SureFire II Three-Phase Lubrication Pumps?",
+          "a": "The order code is SFX followed by one code from each position below, in order. Bijur Delimon lists 5,368 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon SureFire II Three-Phase Lubrication Pumps cover?",
+          "a": "2 listed part numbers plus versions configured to order from 5,368 order codes (SFX…) — systems SLR, PDI; lubricants Oil; reservoirs 3 to 6 L; supply 230/480VAC, 330/575VAC; output 500 cc/min; maximum pressure 300 psi (21 bar) to 450 psi (31 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SureFire II Three-Phase Lubrication Pumps for my machine?",
+          "a": "For Bijur Delimon SureFire II Three-Phase Lubrication Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon SureFire II Three-Phase Lubrication Pumps have?",
+          "a": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps are listed with: max pressure 300 psi (21 bar) to 450 psi (31 bar); output 500 cc/min; reservoir 3 to 6 L; supply voltage 230/480VAC, 330/575VAC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a PDI lubrication system, and is Bijur Delimon SureFire II Three-Phase Lubrication Pumps used in one?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease. Bijur Delimon SureFire II Three-Phase Lubrication Pumps work with PDI systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon SureFire II Three-Phase Lubrication Pumps handle?",
+          "a": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps handle oil. The listed viscosity or NLGI range is 20-1500 cSt. They drive SLR, PDI systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon SureFire II Three-Phase Lubrication Pumps have?",
+          "a": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps are listed with approvals CE, CSA and ingress protection IP54. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon SureFire II Three-Phase Lubrication Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon SureFire II Three-Phase Lubrication Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon SureFire II Three-Phase Lubrication Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon SureFire II Three-Phase Lubrication Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon SureFire II Three-Phase Lubrication Pumps differ from Bijur Delimon SureFire II Single-Phase Lubrication Pumps (SLR and PDI)?",
+          "a": "Bijur Delimon SureFire II Three-Phase Lubrication Pumps differ from [Bijur Delimon SureFire II Single-Phase Lubrication Pumps (SLR and PDI)](/p/bijur-delimon-surefire-ii-single-phase-lubrication-pumps) in its lubrication system SLR, PDI against SLR, PDI, Progressive. It also differs in its reservoir 3 to 6 L against 2 to 12 L; max pressure 300 psi (21 bar) to 450 psi (31 bar) against 75 psi (5 bar) to 450 psi (31 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon SureFire II Three-Phase Lubrication Pumps in stock in Dubai?",
+          "a": "Yes. Bijur Delimon SureFire II Three-Phase Lubrication Pumps are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-tm-1-automatic-oil-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "The TM-1 is Bijur's motor-driven, spring-discharge piston oiler for single-line resistance (SLR) systems on small and medium machine tools. It is listed in 45 part numbers, from IH-BD-15180 to IH-BD-17676."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-15180 mean for Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon TM-1 Automatic Oil Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-15180 is item 15180 (lub tm1 w/48v 8rph), and IH-BD-17676 is the last of the 45 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon TM-1 Automatic Oil Lubricators cover?",
+          "a": "45 listed part numbers — systems SLR; lubricants Oil; reservoirs 4L, 1L, 1 pint; supply 115VAC, 230VAC, 115/230VAC; output 0.2-1cc/cycle; maximum pressure 20-50 psi (1.3-3.4 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right TM-1 Automatic Oil Lubricators for my machine?",
+          "a": "For Bijur Delimon TM-1 Automatic Oil Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon TM-1 Automatic Oil Lubricators have?",
+          "a": "Bijur Delimon TM-1 Automatic Oil Lubricators are listed with: max pressure 20-50 psi (1.3-3.4 bar); output 0.2-1cc/cycle; reservoir 4L, 1L, 1 pint; supply voltage 115VAC, 230VAC, 115/230VAC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a SLR lubrication system, and is Bijur Delimon TM-1 Automatic Oil Lubricators used in one?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units — calibrated restrictors at each point — share it out by their flow rating. Simple and low-pressure, for oil on machine tools and light machinery. Bijur Delimon TM-1 Automatic Oil Lubricators work with SLR systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon TM-1 Automatic Oil Lubricators handle?",
+          "a": "Bijur Delimon TM-1 Automatic Oil Lubricators handle oil. The listed viscosity or NLGI range is 150-8000 SSU. They drive SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon TM-1 Automatic Oil Lubricators have?",
+          "a": "Bijur Delimon TM-1 Automatic Oil Lubricators are listed with approvals CE. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon TM-1 Automatic Oil Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon TM-1 Automatic Oil Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon TM-1 Automatic Oil Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon TM-1 Automatic Oil Lubricators differ from Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators?",
+          "a": "Bijur Delimon TM-1 Automatic Oil Lubricators differ from [Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators](/p/bijur-delimon-tm-5-and-tmd-5-automatic-oil-lubricators) in its reservoir 4L, 1L, 1 pint against 1 to 4 L; max pressure 20-50 psi (1.3-3.4 bar) against 60 psi (4 bar). It also differs in its supply voltage 115VAC, 230VAC, 115/230VAC against 115VAC, 115/230VAC, 24VDC."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon TM-1 Automatic Oil Lubricators in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon TM-1 Automatic Oil Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-tm-5-and-tmd-5-automatic-oil-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators?",
+          "a": "TM-5 and TMD-5 are compact, motor-driven piston oilers with adjustable discharge for SLR systems of roughly 10 to 50 points. It is listed in 16 part numbers, from IH-BD-34819 to IH-BD-32295."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-34819 mean for Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators?",
+          "a": "The Indus part numbers for Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators start IH-BD- and carry the Bijur Delimon item number: IH-BD-34819 is item 34819 (tm5 115/230vac slr ls pf wa 27.7min), and IH-BD-32295 is the last of the 16 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators cover?",
+          "a": "16 listed part numbers — systems SLR; lubricants Oil; reservoirs 1 to 4 L; supply 115VAC, 115/230VAC, 24VDC. Output FACTORY SET 3.2cc (2.5-5cc/cycle), 1-5cc/cycle, FACTORY SET 1cc (1-5cc/cycle), FACTORY SET 1.8cc (1-5cc/cycle), FACTORY SET 1.2cc (1-5cc/cycle); maximum pressure 60 psi (4 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right TM-5 and TMD-5 Automatic Oil Lubricators for my machine?",
+          "a": "For Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators have?",
+          "a": "Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators are listed with: max pressure 60 psi (4 bar); output FACTORY SET 3.2cc (2.5-5cc/cycle), 1-5cc/cycle, FACTORY SET 1cc (1-5cc/cycle), FACTORY; reservoir 1 to 4 L. Supply voltage 115VAC, 115/230VAC, 24VDC; operating temperature 5°C-40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a SLR lubrication system, and is Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators used in one?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units — calibrated restrictors at each point — share it out by their flow rating. Simple and low-pressure, for oil on machine tools and light machinery. Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators work with SLR systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators handle?",
+          "a": "Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators handle oil. The listed viscosity or NLGI range is 150-8000 SSU, 27-1700 cSt. They drive SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators have?",
+          "a": "Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators are listed with ingress protection IP52. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators differ from Bijur Delimon TM-1 Automatic Oil Lubricators?",
+          "a": "Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators differ from [Bijur Delimon TM-1 Automatic Oil Lubricators](/p/bijur-delimon-tm-1-automatic-oil-lubricators) in its reservoir 1 to 4 L against 4L, 1L, 1 pint; max pressure 60 psi (4 bar) against 20-50 psi (1.3-3.4 bar). It also differs in its supply voltage 115VAC, 115/230VAC, 24VDC against 115VAC, 230VAC, 115/230VAC."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators in stock in Dubai?",
+          "a": "Yes, Bijur Delimon TM-5 and TMD-5 Automatic Oil Lubricators are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-v5-v5b-and-v5c-motor-driven-oil-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps?",
+          "a": "The V5 family are compact motor-driven gear pumps with a constant-volume, adjustable output for SLR oil systems on medium and large machines. It is listed in 41 part numbers, from IH-BD-27249-1 to IH-BD-70617."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-27249-1 mean for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps?",
+          "a": "The Indus part numbers for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps start IH-BD- and carry the Bijur Delimon item number: IH-BD-27249-1 is item 27249-1 (v5 6l 115vac tenv slr cv ls pf ps), and IH-BD-70617 is the last of the 41 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps cover?",
+          "a": "41 listed part numbers — systems SLR; lubricants Oil; reservoirs 6L, 12L, 4L, 1L, 30L and 1 more; containers machine reservoir, 6L, 1/2GAL, 12L, 30L, 8L; supply 115VAC, 230VAC, 230/480VAC, 24VDC, 230-260/400-460VAC, 260-280/440VAC. Output 80 to 500 cc/min; maximum pressure 50 psi (3 bar) to 200 psi (14 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right V5, V5B and V5C Motor-Driven Oil Pumps for my machine?",
+          "a": "For Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps have?",
+          "a": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps are listed with: max pressure 50 psi (3 bar) to 200 psi (14 bar); output 80 to 500 cc/min; reservoir 6L, 12L, 4L, 1L, 30L and 1 more. Supply voltage 115VAC, 230VAC, 230/480VAC, 24VDC, 230-260/400-460VAC, 260-280/440VAC; operating temperature Up to 40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a SLR lubrication system, and is Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps used in one?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units — calibrated restrictors at each point — share it out by their flow rating. Simple and low-pressure, for oil on machine tools and light machinery. Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps work with SLR systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps handle?",
+          "a": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps handle oil. The listed viscosity or NLGI range is 150-8000 SSU, 20-1500 cSt, 100-10000 SSU. They drive SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "What approvals and enclosure rating do Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps have?",
+          "a": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps are listed with approvals ATEX. If your site needs CE, CSA, UL or ATEX approval, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps differ from Bijur Delimon GPO Motor-Driven Lubricators?",
+          "a": "Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps differ from [Bijur Delimon GPO Motor-Driven Lubricators](/p/bijur-delimon-gpo-motor-driven-lubricators) in its lubrication system SLR against Progressive, PDI, SLR; reservoir 6L, 12L, 4L, 1L, 30L and 1 more against 4 L. It also differs in its max pressure 50 psi (3 bar) to 200 psi (14 bar) against 130 psi (9 bar) to 1,000 psi (69 bar)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps in stock in Dubai?",
+          "a": "Yes, Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-v5w-pump-and-motor-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon V5W Pump and Motor Assemblies?",
+          "a": "V5W pump-and-motor assemblies are the replacement units for V5W lubricators already installed on 1-gallon and 5-gallon reservoirs. It is listed in 12 part numbers, from IH-BD-60102 to IH-BD-71698."
+        },
+        {
+          "slot": "B",
+          "q": "What does an Indus part number such as IH-BD-60102 mean for Bijur Delimon V5W Pump and Motor Assemblies?",
+          "a": "The Indus part numbers for Bijur Delimon V5W Pump and Motor Assemblies start IH-BD- and carry the Bijur Delimon item number: IH-BD-60102 is item 60102 (v5w p&m 220/440vac tefc slr cv), and IH-BD-71698 is the last of the 12 listed. Quote the full part number, or the machine and lubrication points, and we confirm the item before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon V5W Pump and Motor Assemblies cover?",
+          "a": "12 listed part numbers — systems SLR; lubricants Oil; containers 1GAL, 5GAL; supply 260-280/440VAC, 115VAC, 230VAC, 24VDC; output 120 to 250 cc/min; maximum pressure 130 psi (9 bar) to 200 psi (14 bar). The size table gives each part number's data."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right V5W Pump and Motor Assemblies for my machine?",
+          "a": "For Bijur Delimon V5W Pump and Motor Assemblies, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon V5W Pump and Motor Assemblies have?",
+          "a": "Bijur Delimon V5W Pump and Motor Assemblies are listed with: max pressure 130 psi (9 bar) to 200 psi (14 bar); output 120 to 250 cc/min; supply voltage 260-280/440VAC, 115VAC, 230VAC, 24VDC; operating temperature Up to 40°C. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "J",
+          "q": "What is a SLR lubrication system, and is Bijur Delimon V5W Pump and Motor Assemblies used in one?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units — calibrated restrictors at each point — share it out by their flow rating. Simple and low-pressure, for oil on machine tools and light machinery. Bijur Delimon V5W Pump and Motor Assemblies work with SLR systems as listed in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants and viscosities can Bijur Delimon V5W Pump and Motor Assemblies handle?",
+          "a": "Bijur Delimon V5W Pump and Motor Assemblies handle oil. The listed viscosity or NLGI range is 20-1500 cSt. They drive SLR systems. Choose the oil grade in cSt or the grease NLGI class to suit the distribution system and the ambient temperature."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon V5W Pump and Motor Assemblies?",
+          "a": "The listing carries the maker's documents for Bijur Delimon V5W Pump and Motor Assemblies, including Bijur Delimon V5W Pump Datasheet. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon V5W Pump and Motor Assemblies be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon V5W Pump and Motor Assemblies, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon V5W Pump and Motor Assemblies?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon V5W Pump and Motor Assemblies; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon V5W Pump and Motor Assemblies differ from Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps?",
+          "a": "Bijur Delimon V5W Pump and Motor Assemblies differ from [Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps](/p/bijur-delimon-v5-v5b-and-v5c-motor-driven-oil-pumps) in its max pressure 130 psi (9 bar) to 200 psi (14 bar) against 50 psi (3 bar) to 200 psi (14 bar). It also differs in its supply voltage 260-280/440VAC, 115VAC, 230VAC, 24VDC against 115VAC, 230VAC, 230/480VAC, 24VDC, 230-260/400-460VAC, 260-280/440VAC."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon V5W Pump and Motor Assemblies in stock in Dubai?",
+          "a": "Yes. Bijur Delimon V5W Pump and Motor Assemblies are in stock at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Tell us the part numbers, quantities and destination on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-ws-e-chain-lubrication-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon WS-E Chain Lubrication Units?",
+          "a": "The WS-E is a gear-wheel pump unit for oiling chains, joints, rollers and hinges, and for built-in parts such as an engine crankshaft."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon WS-E Chain Lubrication Units?",
+          "a": "The order code is WSE followed by one code from each position below, in order. Bijur Delimon lists 120 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon WS-E Chain Lubrication Units cover?",
+          "a": "Configured to order from 120 order codes (WSE…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right WS-E Chain Lubrication Units for my machine?",
+          "a": "For Bijur Delimon WS-E Chain Lubrication Units, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon WS-E Chain Lubrication Units have?",
+          "a": "Bijur Delimon WS-E Chain Lubrication Units are listed with: reservoir 4 Liter Metal; 12 Liter Aluminum; supply voltage 230VAC 50Hz 1-phase; 230/400VAC 50Hz 260/460VAC 60Hz 3-phase; 480VAC 60Hz 3-phase UL. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon WS-E Chain Lubrication Units supplied in?",
+          "a": "The listing for Bijur Delimon WS-E Chain Lubrication Units does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon WS-E Chain Lubrication Units?",
+          "a": "The listing carries the maker's documents for Bijur Delimon WS-E Chain Lubrication Units, including Bijur Delimon WSE Assembly Manual and Bijur Delimon WSE Service Card. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon WS-E Chain Lubrication Units be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon WS-E Chain Lubrication Units, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon WS-E Chain Lubrication Units?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon WS-E Chain Lubrication Units; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon WS-E Chain Lubrication Units typically used?",
+          "a": "Bijur Delimon WS-E Chain Lubrication Units are used for: conveyor and drive chains; kiln and oven chains; moving joints and rollers."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon WS-E Chain Lubrication Units differ from Bijur Delimon JS and JSP DC Lubricators?",
+          "a": "Bijur Delimon WS-E Chain Lubrication Units differ from [Bijur Delimon JS and JSP DC Lubricators](/p/bijur-delimon-js-and-jsp-dc-lubricators) in its reservoir 4 Liter Metal; 12 Liter Aluminum against 1 to 2 L."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon WS-E Chain Lubrication Units in stock in Dubai?",
+          "a": "Yes, Bijur Delimon WS-E Chain Lubrication Units are held in stock at our Dubai, UAE warehouse and we ship worldwide with the best lead times. For a quotation, send the sizes and quantities you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-zp3000-zp4000-zp5000-and-zp6000-multi-line-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps?",
+          "a": "Delimon ZP pumps lubricate directly in multi-line systems — one delivery element per point — or act as the supply pump for a progressive system."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the order code for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps?",
+          "a": "The order code is ZP3 followed by one code from each position below, in order. Bijur Delimon lists 40 valid combinations; you can send us the code (or the options) and we confirm it with the manufacturer before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers and versions does Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps cover?",
+          "a": "Configured to order from 656 order codes (ZP3…, ZP4…, ZP5…, ZP6…). The order-code table below lists every option. The size table lists each part number with its own published data, and Indus part numbers are IH-BD- followed by the Bijur Delimon item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps for my machine?",
+          "a": "For Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps, start from the distribution system the pump has to drive — SLR meter units, PDI injectors, progressive dividers, Dualine valves or direct multi-line feeds — then the lubricant. Oil grade in cSt, or grease NLGI class (fluid grease for PDI). Size the reservoir for the refill interval you want, match the supply voltage and enclosure to the machine, and decide how the cycle is controlled: an integral timer or controller, an external controller, or the machine PLC. Level and pressure switches let the control system prove each cycle."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, output and reservoir ratings do Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps have?",
+          "a": "Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps are listed with: reservoir 2 Liter Aluminum; 3 Liter Plastic; 5 Liter Plastic. These are the maker's published figures for the range; the size table gives each part number's own data, so confirm the one you need."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish is Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps supplied in?",
+          "a": "The listing for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps does not state the material or the finish. Tell us the environment it will work in and any material standard or coating you need, and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which datasheets and approvals are available for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps?",
+          "a": "The listing carries the maker's documents for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps, including Bijur Delimon ZP3000 Datasheet and Bijur Delimon ZP4000 Manual. If your site needs an approval such as CE, CSA, UL or ATEX, tell us when you enquire and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "Can Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps be supplied as part of a complete lubrication system?",
+          "a": "For Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps, a pump is one part of a lubrication system. With it we supply the Bijur Delimon distribution — meter units, injectors, divider valves or Dualine valves — and the tubing, fittings, controllers and monitoring to match, sized to the number of points and the lubricant. Send us the machine and the lubrication points and we propose the full system. Related ranges are on the [Pneumatic & Hydraulic Lubrication Pumps](/c/pneumatic-lubrication-pumps) and [Lubrication Pump Spare Parts](/c/lubrication-pump-spare-parts) shelves."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts and service kits for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps?",
+          "a": "Yes. We supply genuine service parts and kits for Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps; send the part number and the part or kit you need. Spare parts are listed on the [Lubrication Pump Spare Parts shelf](/c/lubrication-pump-spare-parts). Keep the reservoir filled with clean lubricant of the grade the pump is rated for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps typically used?",
+          "a": "Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps are used for: steel, cement and mining plant; large bearings with individual feeds; progressive system supply."
+        },
+        {
+          "slot": "K",
+          "q": "How do Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps differ from Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps?",
+          "a": "Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps differ from [Bijur Delimon V5, V5B and V5C Motor-Driven Oil Pumps](/p/bijur-delimon-v5-v5b-and-v5c-motor-driven-oil-pumps) in its reservoir 2 Liter Aluminum; 3 Liter Plastic; 5 Liter Plastic against 6L, 12L, 4L, 1L, 30L and 1 more."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps in stock in Dubai?",
+          "a": "Yes. We keep Bijur Delimon ZP3000, ZP4000, ZP5000 and ZP6000 Multi-Line Pumps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1022 @@
+{
+  "family": "synthetic-slings",
+  "extraFacts": [
+    {
+      "fact": "Grade 80 Webbing Sling Hook (Indus listing): mat Alloy steel; fin Powder coated; size 1 t to 2.75 t; rate working load limit 1 to 2.75 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-webbing-sling-hook"
+    },
+    {
+      "fact": "Grade 80 Web Sling Connector B-Link (Indus listing): mat Alloy steel; fin Powder coated; size 12.5 t to 20 t; rate working load limit 12.5 to 20 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-web-sling-connector-b-link"
+    },
+    {
+      "fact": "Grade 80 Clevis Belt Hook (Indus listing): mat Alloy steel; fin Powder coated; size 2.2 t; rate working load limit 2.2 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-clevis-belt-hook"
+    },
+    {
+      "fact": "Grade 80 Webbing Connecting Link Web Sling Connector (Indus listing): mat Alloy steel; fin Powder coated; size 6 mm to 32 mm; rate working load limit 1.12 to 31.5 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-webbing-connecting-link-web-sling-connector"
+    },
+    {
+      "fact": "Grade 80 Clevis Link for Web Sling (Indus listing): mat Alloy steel; fin Powder coated; size 3.15 t; rate working load limit 3.15 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-clevis-link-for-web-sling"
+    },
+    {
+      "fact": "Grade 80 Webbing Sling Hook (Indus listing): mat Alloy steel; fin Powder coated; size 1 t to 2.75 t; rate working load limit 1 to 2.75 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-webbing-sling-hook"
+    },
+    {
+      "fact": "Grade 80 Web Sling Connector B-Link (Indus listing): mat Alloy steel; fin Powder coated; size 12.5 t to 20 t; rate working load limit 12.5 to 20 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-web-sling-connector-b-link"
+    },
+    {
+      "fact": "Grade 80 Webbing Connecting Link Web Sling Connector (Indus listing): mat Alloy steel; fin Powder coated; size 6 mm to 32 mm; rate working load limit 1.12 to 31.5 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-webbing-connecting-link-web-sling-connector"
+    },
+    {
+      "fact": "Grade 80 Web Sling Connector B-Link (Indus listing): mat Alloy steel; fin Powder coated; size 12.5 t to 20 t; rate working load limit 12.5 to 20 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-web-sling-connector-b-link"
+    },
+    {
+      "fact": "Grade 80 Twist Hook for Web Sling (Indus listing): mat Alloy steel; fin Powder coated; size 3 t; rate working load limit 3 t",
+      "source": "Indus Hydraulics product listing /p/grade-80-twist-hook-for-web-sling"
+    }
+  ],
+  "products": [
+    {
+      "slug": "braided-rope-heavy-lift-sling-with-jacket",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Braided Rope Heavy-Lift Sling with Jacket used for?",
+          "a": "The Braided Rope Heavy-Lift Sling with Jacket is a braided rope sling with a protective jacket for heavy lifts, listed in sizes 72 mm to 288 mm. The size table gives each size its minimum breaking load in kN and tonnes, weight per metre and Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Braided Rope Heavy-Lift Sling with Jacket part numbers such as IH-LR-SY-BRHSJ-72MM?",
+          "a": "IH-LR-SY-BRHSJ-72MM is the 72 mm size, 463 t minimum breaking load, IH-LR-SY-BRHSJ-182MM the 182 mm size, 2653 t minimum breaking load and IH-LR-SY-BRHSJ-288MM the 288 mm size, 6280 t minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Braided Rope Heavy-Lift Sling with Jacket come in?",
+          "a": "The Braided Rope Heavy-Lift Sling with Jacket is listed in sizes 72 mm to 288 mm, each under its own Indus part number with weight per metre and breaking load."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Braided Rope Heavy-Lift Sling with Jacket for my job?",
+          "a": "Choose by the minimum breaking load and the hitch the sling will be used in, then pick the row in the Braided Rope Heavy-Lift Sling with Jacket table: the sizes run 72 mm to 288 mm. For heavy lifts, send the load, hitch and sling angle on the RFQ so the rating is confirmed."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Braided Rope Heavy-Lift Sling with Jacket carry?",
+          "a": "The listing gives minimum breaking loads of 4,538 to 61,540 kN, set by size, rather than a working load limit. A breaking load is a test figure: the working load limit is what the manufacturer rates for the hitch, so ask on the RFQ for the working load limit you need. See [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength) for the difference."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Braided Rope Heavy-Lift Sling with Jacket made from and how is it finished?",
+          "a": "The listing for the Braided Rope Heavy-Lift Sling with Jacket gives the construction as a braided rope sling with a jacket but does not state the fibre. Ask on the RFQ and we confirm the rope material and jacket from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Braided Rope Heavy-Lift Sling with Jacket?",
+          "a": "The Braided Rope Heavy-Lift Sling with Jacket ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Braided Rope Heavy-Lift Sling with Jacket?",
+          "a": "The Braided Rope Heavy-Lift Sling with Jacket works with shackles and hooks sized for its eye; heavy-lift shackles are listed on our Lifting & Rigging pages, and lighter slings are on the [synthetic slings shelf](/c/synthetic-slings) and [wire rope slings](/c/wire-rope-slings). Quote the load and the connection you plan."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Braided Rope Heavy-Lift Sling with Jacket be fitted and inspected?",
+          "a": "Protect the Braided Rope Heavy-Lift Sling with Jacket from sharp edges and check the jacket and rope for cuts and abrasion before each lift; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) explains the inspection routine. Remove it from service if it is damaged."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Braided Rope Heavy-Lift Sling with Jacket compare with a polyester round sling?",
+          "a": "The braided rope heavy-lift sling is the heavy-duty option on the shelf, listed by minimum breaking load up to 4,538 to 61,540 kN, while the [Polyester Round Sling — Eye and Eye](/p/polyester-round-sling-eye-and-eye) lists a working load limit of 1 t to 100 t. For a stated working load limit and a standard colour code, the round sling is the simpler choice."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Braided Rope Heavy-Lift Sling with Jacket outside the UAE?",
+          "a": "Yes, Braided Rope Heavy-Lift Sling with Jacket goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Braided Rope Heavy-Lift Sling with Jacket for delivery from Dubai?",
+          "a": "Yes, we stock Braided Rope Heavy-Lift Sling with Jacket at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-clevis-belt-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Clevis Belt Hook used for?",
+          "a": "The Grade 80 Clevis Belt Hook is a clevis belt hook fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 2.2 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Clevis Belt Hook part numbers such as IH-LR-SY-G80CBH-2P2T?",
+          "a": "IH-LR-SY-G80CBH-2P2T and IH-LR-SY-G80CBH-2P2T are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Grade 80 Clevis Belt Hook cover?",
+          "a": "Sizes on the Grade 80 Clevis Belt Hook run 2.2 t. The size table gives each one its own Indus part number and dimensions, and the [synthetic slings shelf](/c/synthetic-slings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Clevis Belt Hook for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Clevis Belt Hook table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Grade 80 Clevis Belt Hook?",
+          "a": "The Grade 80 Clevis Belt Hook lists a working load limit of 2.2 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Clevis Belt Hook made from and how is it finished?",
+          "a": "The Grade 80 Clevis Belt Hook is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Clevis Belt Hook?",
+          "a": "The Grade 80 Clevis Belt Hook ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Grade 80 Clevis Belt Hook?",
+          "a": "The Grade 80 Clevis Belt Hook connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Grade 80 Clevis Belt Hook be fitted and inspected?",
+          "a": "Check the Grade 80 Clevis Belt Hook for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Clevis Belt Hook compare with the Grade 80 Webbing Sling Hook?",
+          "a": "The nearest sibling is the [Grade 80 Webbing Sling Hook](/p/grade-80-webbing-sling-hook), and the two differ on size range and rating. In detail, size range is 2.2 t here and 1 t to 2.75 t there; rating is working load limit 2.2 t here and working load limit 1 to 2.75 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Clevis Belt Hook outside the UAE?",
+          "a": "Yes, Grade 80 Clevis Belt Hook goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 80 Clevis Belt Hook available from stock in Dubai?",
+          "a": "Yes, Grade 80 Clevis Belt Hook is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-clevis-link-for-web-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Clevis Link for Web Sling and where is it used?",
+          "a": "The Grade 80 Clevis Link for Web Sling is a clevis link fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 3.15 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Clevis Link for Web Sling part numbers such as IH-LR-SY-G80CLWS-3P15T?",
+          "a": "IH-LR-SY-G80CLWS-3P15T and IH-LR-SY-G80CLWS-3P15T are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Clevis Link for Web Sling come in?",
+          "a": "Sizes on the Grade 80 Clevis Link for Web Sling run 3.15 t. The size table gives each one its own Indus part number and dimensions, and the [synthetic slings shelf](/c/synthetic-slings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 80 Clevis Link for Web Sling?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Clevis Link for Web Sling table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Clevis Link for Web Sling carry?",
+          "a": "The Grade 80 Clevis Link for Web Sling lists a working load limit of 3.15 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Clevis Link for Web Sling made from and how is it finished?",
+          "a": "The Grade 80 Clevis Link for Web Sling is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Grade 80 Clevis Link for Web Sling come with a test certificate?",
+          "a": "The Grade 80 Clevis Link for Web Sling ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Grade 80 Clevis Link for Web Sling?",
+          "a": "The Grade 80 Clevis Link for Web Sling connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Grade 80 Clevis Link for Web Sling?",
+          "a": "Check the Grade 80 Clevis Link for Web Sling for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Clevis Link for Web Sling compare with the Grade 80 Web Sling Connector B-Link?",
+          "a": "The nearest sibling is the [Grade 80 Web Sling Connector B-Link](/p/grade-80-web-sling-connector-b-link), and the two differ on size range and rating. In detail, size range is 3.15 t here and 12.5 t to 20 t there; rating is working load limit 3.15 t here and working load limit 12.5 to 20 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Grade 80 Clevis Link for Web Sling from Dubai?",
+          "a": "Yes, Grade 80 Clevis Link for Web Sling goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Grade 80 Clevis Link for Web Sling for delivery from Dubai?",
+          "a": "Yes, we stock Grade 80 Clevis Link for Web Sling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-elephant-foot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Elephant Foot used for?",
+          "a": "The Grade 80 Elephant Foot is a elephant foot fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 5 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Elephant Foot part numbers such as IH-LR-SY-G80EF-5T-C?",
+          "a": "IH-LR-SY-G80EF-5T-C is the 5 t size, Clevis, 5 t WLL and IH-LR-SY-G80EF-5T-E the 5 t size, Eye, 5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Grade 80 Elephant Foot cover?",
+          "a": "The Grade 80 Elephant Foot is listed in 5 t, rated 5 t. Every size has its own Indus part number with dimensions in the size table; the [synthetic slings shelf](/c/synthetic-slings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Elephant Foot for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Elephant Foot table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Grade 80 Elephant Foot?",
+          "a": "The Grade 80 Elephant Foot lists a working load limit of 5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Elephant Foot made from and how is it finished?",
+          "a": "The Grade 80 Elephant Foot is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Elephant Foot?",
+          "a": "The Grade 80 Elephant Foot ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Grade 80 Elephant Foot?",
+          "a": "The Grade 80 Elephant Foot connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Grade 80 Elephant Foot be fitted and inspected?",
+          "a": "Check the Grade 80 Elephant Foot for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Elephant Foot compare with the Grade 80 Clevis Belt Hook?",
+          "a": "The nearest sibling is the [Grade 80 Clevis Belt Hook](/p/grade-80-clevis-belt-hook), and the two differ on size range and rating. In detail, size range is 5 t here and 2.2 t there; rating is working load limit 5 t here and working load limit 2.2 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Elephant Foot outside the UAE?",
+          "a": "Yes. We ship Grade 80 Elephant Foot from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Grade 80 Elephant Foot for delivery from Dubai?",
+          "a": "Yes. We keep Grade 80 Elephant Foot in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-special-webbing-connector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Special Webbing Connector used for?",
+          "a": "The Grade 80 Special Webbing Connector is a special webbing connector fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 12.5 t to 20 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Special Webbing Connector part numbers such as IH-LR-SY-G80SWC-12P5T?",
+          "a": "IH-LR-SY-G80SWC-12P5T is the 12.5 t size, 12.5 t WLL, IH-LR-SY-G80SWC-15T the 15 t size, 15 t WLL and IH-LR-SY-G80SWC-20T the 20 t size, 20 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Special Webbing Connector come in?",
+          "a": "The Grade 80 Special Webbing Connector is listed in 12.5 t to 20 t, rated 12.5 to 20 t. Every size has its own Indus part number with dimensions in the size table; the [synthetic slings shelf](/c/synthetic-slings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Special Webbing Connector for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Special Webbing Connector table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Grade 80 Special Webbing Connector?",
+          "a": "The Grade 80 Special Webbing Connector lists a working load limit of 12.5 to 20 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Special Webbing Connector made from and how is it finished?",
+          "a": "The Grade 80 Special Webbing Connector is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Special Webbing Connector?",
+          "a": "The Grade 80 Special Webbing Connector ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Grade 80 Special Webbing Connector?",
+          "a": "The Grade 80 Special Webbing Connector connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Grade 80 Special Webbing Connector?",
+          "a": "Check the Grade 80 Special Webbing Connector for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Special Webbing Connector compare with the Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "The nearest sibling is the [Grade 80 Webbing Connecting Link Web Sling Connector](/p/grade-80-webbing-connecting-link-web-sling-connector), and the two differ on size range and rating. In detail, size range is 12.5 t to 20 t here and 6 mm to 32 mm there; rating is working load limit 12.5 to 20 t here and working load limit 1.12 to 31.5 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Special Webbing Connector outside the UAE?",
+          "a": "Yes. We ship Grade 80 Special Webbing Connector from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 80 Special Webbing Connector available from stock in Dubai?",
+          "a": "Yes. Grade 80 Special Webbing Connector sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-triangle-and-d-ring-for-web-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Triangle and D Ring for Web Sling and where is it used?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling is a triangle and D ring fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 1 t to 6 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Triangle and D Ring for Web Sling part numbers such as IH-LR-SY-G80TDRWS-1T-DR?",
+          "a": "IH-LR-SY-G80TDRWS-1T-DR is the 1 t size, D ring, 1 t WLL, IH-LR-SY-G80TDRWS-4T-TR the 4 t size, Triangle ring, 4 t WLL and IH-LR-SY-G80TDRWS-6T-DTR the 6 t size, Dual triangle ring, 6 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Triangle and D Ring for Web Sling come in?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling is listed in 1 t to 6 t, rated 1 to 6 t. Every size has its own Indus part number with dimensions in the size table; the [synthetic slings shelf](/c/synthetic-slings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 80 Triangle and D Ring for Web Sling?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Triangle and D Ring for Web Sling table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Triangle and D Ring for Web Sling carry?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling lists a working load limit of 1 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Grade 80 Triangle and D Ring for Web Sling have?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Grade 80 Triangle and D Ring for Web Sling come with a test certificate?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Grade 80 Triangle and D Ring for Web Sling?",
+          "a": "The Grade 80 Triangle and D Ring for Web Sling connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Grade 80 Triangle and D Ring for Web Sling?",
+          "a": "Check the Grade 80 Triangle and D Ring for Web Sling for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Triangle and D Ring for Web Sling compare with the Grade 80 Clevis Link for Web Sling?",
+          "a": "The nearest sibling is the [Grade 80 Clevis Link for Web Sling](/p/grade-80-clevis-link-for-web-sling), and the two differ on size range and rating. In detail, size range is 1 t to 6 t here and 3.15 t there; rating is working load limit 1 to 6 t here and working load limit 3.15 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Triangle and D Ring for Web Sling outside the UAE?",
+          "a": "Yes. We ship Grade 80 Triangle and D Ring for Web Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Grade 80 Triangle and D Ring for Web Sling for delivery from Dubai?",
+          "a": "Yes. We keep Grade 80 Triangle and D Ring for Web Sling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-twist-hook-for-web-sling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Twist Hook for Web Sling used for?",
+          "a": "The Grade 80 Twist Hook for Web Sling is a twist hook fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 3 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Twist Hook for Web Sling part numbers such as IH-LR-SY-G80THWS-3T?",
+          "a": "IH-LR-SY-G80THWS-3T and IH-LR-SY-G80THWS-3T are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Twist Hook for Web Sling come in?",
+          "a": "The Grade 80 Twist Hook for Web Sling is listed in 3 t, rated 3 t. Every size has its own Indus part number with dimensions in the size table; the [synthetic slings shelf](/c/synthetic-slings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 80 Twist Hook for Web Sling?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Twist Hook for Web Sling table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Twist Hook for Web Sling carry?",
+          "a": "The Grade 80 Twist Hook for Web Sling lists a working load limit of 3 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Grade 80 Twist Hook for Web Sling have?",
+          "a": "The Grade 80 Twist Hook for Web Sling is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Twist Hook for Web Sling?",
+          "a": "The Grade 80 Twist Hook for Web Sling ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Grade 80 Twist Hook for Web Sling?",
+          "a": "The Grade 80 Twist Hook for Web Sling connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Grade 80 Twist Hook for Web Sling?",
+          "a": "Check the Grade 80 Twist Hook for Web Sling for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Twist Hook for Web Sling compare with the Grade 80 Webbing Sling Hook?",
+          "a": "The nearest sibling is the [Grade 80 Webbing Sling Hook](/p/grade-80-webbing-sling-hook), and the two differ on size range and rating. In detail, size range is 3 t here and 1 t to 2.75 t there; rating is working load limit 3 t here and working load limit 1 to 2.75 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Twist Hook for Web Sling outside the UAE?",
+          "a": "Yes. We ship Grade 80 Twist Hook for Web Sling from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 80 Twist Hook for Web Sling available from stock in Dubai?",
+          "a": "Yes. Grade 80 Twist Hook for Web Sling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-web-sling-connector-alloy-steel-forged",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Web Sling Connector Alloy Steel Forged and where is it used?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged is a forged web sling connector fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 1.12 t to 31.5 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Web Sling Connector Alloy Steel Forged part numbers such as IH-LR-SY-80WSCAF-1P12T?",
+          "a": "IH-LR-SY-80WSCAF-1P12T is the 1.12 t size, 1.12 t WLL, IH-LR-SY-80WSCAF-8T the 8 t size, 8 t WLL and IH-LR-SY-80WSCAF-31P5T the 31.5 t size, 31.5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Web Sling Connector Alloy Steel Forged come in?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged is listed in 1.12 t to 31.5 t, rated 1.12 to 31.5 t. Every size has its own Indus part number with dimensions in the size table; the [synthetic slings shelf](/c/synthetic-slings) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Web Sling Connector Alloy Steel Forged for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Web Sling Connector Alloy Steel Forged table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Grade 80 Web Sling Connector Alloy Steel Forged?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged lists a working load limit of 1.12 to 31.5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Web Sling Connector Alloy Steel Forged made from and how is it finished?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Grade 80 Web Sling Connector Alloy Steel Forged come with a test certificate?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Grade 80 Web Sling Connector Alloy Steel Forged?",
+          "a": "The Grade 80 Web Sling Connector Alloy Steel Forged connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Grade 80 Web Sling Connector Alloy Steel Forged be fitted and inspected?",
+          "a": "Check the Grade 80 Web Sling Connector Alloy Steel Forged for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Web Sling Connector Alloy Steel Forged compare with the Grade 80 Web Sling Connector B-Link?",
+          "a": "The nearest sibling is the [Grade 80 Web Sling Connector B-Link](/p/grade-80-web-sling-connector-b-link), and the two differ on size range and rating. In detail, size range is 1.12 t to 31.5 t here and 12.5 t to 20 t there; rating is working load limit 1.12 to 31.5 t here and working load limit 12.5 to 20 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Web Sling Connector Alloy Steel Forged outside the UAE?",
+          "a": "Yes. We ship Grade 80 Web Sling Connector Alloy Steel Forged from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 80 Web Sling Connector Alloy Steel Forged available from stock in Dubai?",
+          "a": "Yes. Grade 80 Web Sling Connector Alloy Steel Forged sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-web-sling-connector-b-link",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Web Sling Connector B-Link and where is it used?",
+          "a": "The Grade 80 Web Sling Connector B-Link is a B-link connector fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 12.5 t to 20 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Web Sling Connector B-Link part numbers such as IH-LR-SY-G80WSCB-12P5T?",
+          "a": "IH-LR-SY-G80WSCB-12P5T is the 12.5 t size, 12.5 t WLL, IH-LR-SY-G80WSCB-15T the 15 t size, 15 t WLL and IH-LR-SY-G80WSCB-20T the 20 t size, 20 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Web Sling Connector B-Link come in?",
+          "a": "Sizes on the Grade 80 Web Sling Connector B-Link run 12.5 t to 20 t. The size table gives each one its own Indus part number and dimensions, and the [synthetic slings shelf](/c/synthetic-slings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Web Sling Connector B-Link for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Web Sling Connector B-Link table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Web Sling Connector B-Link carry?",
+          "a": "The Grade 80 Web Sling Connector B-Link lists a working load limit of 12.5 to 20 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Web Sling Connector B-Link made from and how is it finished?",
+          "a": "The Grade 80 Web Sling Connector B-Link is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Web Sling Connector B-Link?",
+          "a": "The Grade 80 Web Sling Connector B-Link ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Grade 80 Web Sling Connector B-Link?",
+          "a": "The Grade 80 Web Sling Connector B-Link connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Grade 80 Web Sling Connector B-Link be fitted and inspected?",
+          "a": "Check the Grade 80 Web Sling Connector B-Link for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Web Sling Connector B-Link compare with the Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "The nearest sibling is the [Grade 80 Webbing Connecting Link Web Sling Connector](/p/grade-80-webbing-connecting-link-web-sling-connector), and the two differ on size range and rating. In detail, size range is 12.5 t to 20 t here and 6 mm to 32 mm there; rating is working load limit 12.5 to 20 t here and working load limit 1.12 to 31.5 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Grade 80 Web Sling Connector B-Link outside the UAE?",
+          "a": "Yes, Grade 80 Web Sling Connector B-Link goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Grade 80 Web Sling Connector B-Link for delivery from Dubai?",
+          "a": "Yes, Grade 80 Web Sling Connector B-Link is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-webbing-connecting-link-web-sling-connector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Webbing Connecting Link Web Sling Connector used for?",
+          "a": "The Grade 80 Webbing Connecting Link Web Sling Connector is a webbing connecting link fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 6 mm to 32 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Webbing Connecting Link Web Sling Connector part numbers such as IH-LR-SY-G80WCLWSC-6MM?",
+          "a": "IH-LR-SY-G80WCLWSC-6MM is the 6 mm size, 1.12 t WLL, IH-LR-SY-G80WCLWSC-16MM the 16 mm size, 8 t WLL and IH-LR-SY-G80WCLWSC-32MM the 32 mm size, 31.5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Grade 80 Webbing Connecting Link Web Sling Connector come in?",
+          "a": "Sizes on the Grade 80 Webbing Connecting Link Web Sling Connector run 6 mm to 32 mm. The size table gives each one its own Indus part number and dimensions, and the [synthetic slings shelf](/c/synthetic-slings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Webbing Connecting Link Web Sling Connector table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Webbing Connecting Link Web Sling Connector carry?",
+          "a": "The Grade 80 Webbing Connecting Link Web Sling Connector lists a working load limit of 1.12 to 31.5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Webbing Connecting Link Web Sling Connector made from and how is it finished?",
+          "a": "The Grade 80 Webbing Connecting Link Web Sling Connector is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "The Grade 80 Webbing Connecting Link Web Sling Connector ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "The Grade 80 Webbing Connecting Link Web Sling Connector connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Grade 80 Webbing Connecting Link Web Sling Connector?",
+          "a": "Check the Grade 80 Webbing Connecting Link Web Sling Connector for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Webbing Connecting Link Web Sling Connector compare with the Grade 80 Web Sling Connector B-Link?",
+          "a": "The nearest sibling is the [Grade 80 Web Sling Connector B-Link](/p/grade-80-web-sling-connector-b-link), and the two differ on size range and rating. In detail, size range is 6 mm to 32 mm here and 12.5 t to 20 t there; rating is working load limit 1.12 to 31.5 t here and working load limit 12.5 to 20 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Grade 80 Webbing Connecting Link Web Sling Connector from Dubai?",
+          "a": "Yes, Grade 80 Webbing Connecting Link Web Sling Connector goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Grade 80 Webbing Connecting Link Web Sling Connector for delivery from Dubai?",
+          "a": "Yes, Grade 80 Webbing Connecting Link Web Sling Connector is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "grade-80-webbing-sling-hook",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Grade 80 Webbing Sling Hook used for?",
+          "a": "The Grade 80 Webbing Sling Hook is a webbing sling hook fitted to the eye of a web or round sling to attach it to the load or hook. It is listed in sizes 1 t to 2.75 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Grade 80 Webbing Sling Hook part numbers such as IH-LR-SY-G80WSH-2P75T-EH?",
+          "a": "IH-LR-SY-G80WSH-2P75T-EH is the 2.75 t size, Eye hook, 2.75 t WLL, IH-LR-SY-G80WSH-1P6T-EWSH the 1.6 t size, Eye webbing sling hook, 1.6 t WLL and IH-LR-SY-G80WSH-1T-WRSH the 1 t size, Webbing / round sling hook, 1 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Grade 80 Webbing Sling Hook cover?",
+          "a": "Sizes on the Grade 80 Webbing Sling Hook run 1 t to 2.75 t. The size table gives each one its own Indus part number and dimensions, and the [synthetic slings shelf](/c/synthetic-slings) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Grade 80 Webbing Sling Hook for my job?",
+          "a": "Pick the size by the working load limit the sling must carry, then check the opening and pin or eye dimensions in the Grade 80 Webbing Sling Hook table against the sling eye and the hook or ring it connects to. Quote the Indus part number."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Grade 80 Webbing Sling Hook carry?",
+          "a": "The Grade 80 Webbing Sling Hook lists a working load limit of 1 to 2.75 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Grade 80 Webbing Sling Hook made from and how is it finished?",
+          "a": "The Grade 80 Webbing Sling Hook is made from alloy steel and finished powder coated. The powder-coated alloy steel body is graded 80 as stated on the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Grade 80 Webbing Sling Hook come with a test certificate?",
+          "a": "The Grade 80 Webbing Sling Hook ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Grade 80 Webbing Sling Hook?",
+          "a": "The Grade 80 Webbing Sling Hook connects a web or round sling from the [synthetic slings shelf](/c/synthetic-slings) to the load or lifting point. For wire or chain alternatives, see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Grade 80 Webbing Sling Hook be fitted and inspected?",
+          "a": "Check the Grade 80 Webbing Sling Hook for wear, distortion and a free-moving latch or pin before each lift, and keep it within its working load limit. [Our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out what an inspection looks at."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Grade 80 Webbing Sling Hook compare with the Grade 80 Twist Hook for Web Sling?",
+          "a": "The nearest sibling is the [Grade 80 Twist Hook for Web Sling](/p/grade-80-twist-hook-for-web-sling), and the two differ on size range and rating. In detail, size range is 1 t to 2.75 t here and 3 t there; rating is working load limit 1 to 2.75 t here and working load limit 3 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Grade 80 Webbing Sling Hook from Dubai?",
+          "a": "Yes, Grade 80 Webbing Sling Hook goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Grade 80 Webbing Sling Hook available from stock in Dubai?",
+          "a": "Yes, we stock Grade 80 Webbing Sling Hook at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "polyester-flat-webbing-sling-eye-and-eye",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Polyester Flat Webbing Sling — Eye and Eye used for?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye is a flat webbing sling that spreads the load over a wider bearing surface, rated 1 to 12 t to EN 1492-1 / ASME B30.9. It is colour-coded by capacity, with sizes 1 t × 1 m to 12 t, length to order."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Polyester Flat Webbing Sling — Eye and Eye part numbers such as IH-LR-SY-PFWSEE-1TX1M?",
+          "a": "IH-LR-SY-PFWSEE-1TX1M is the 1 t × 1 m size, 1 t WLL, IH-LR-SY-PFWSEE-5TX4M the 5 t × 4 m size, 5 t WLL and IH-LR-SY-PFWSEE-12T the 12 t, length to order size, 12 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Polyester Flat Webbing Sling — Eye and Eye come in?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye is listed in sizes 1 t × 1 m to 12 t, length to order, with length and capacity in each row of the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Polyester Flat Webbing Sling — Eye and Eye for my job?",
+          "a": "For the Polyester Flat Webbing Sling — Eye and Eye, choose on the working load limit for the hitch you will use, then pick the length. The table gives each size capacity and length, and [our sling angle chart](/blog/sling-angle-chart) shows how the working load drops as the sling angle opens. Protect the sling from sharp edges and check the label and cover before every lift."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Polyester Flat Webbing Sling — Eye and Eye carry?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye lists a working load limit of 1 to 12 t, as the manufacturer rates it for each size. The working load limit is the most the sling may carry in service; the minimum breaking load is a test figure and never a working figure. See [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Polyester Flat Webbing Sling — Eye and Eye made from and how is it finished?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye is made from polyester construction. The listing gives the colour for each capacity, such as 4 t is Grey, 5 t is Red and 6 t is Brown; [our sling colour code chart](/blog/sling-colour-code-chart) sets out the colour code."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Polyester Flat Webbing Sling — Eye and Eye come with a test certificate?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye ships with the manufacturer's test certificate for each consignment and is listed to EN 1492-1 / ASME B30.9. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Polyester Flat Webbing Sling — Eye and Eye?",
+          "a": "The Polyester Flat Webbing Sling — Eye and Eye is connected to the load with hooks, rings or connectors rated at least to the sling's working load limit; Grade 80 connectors made for synthetic slings are listed on the [synthetic slings shelf](/c/synthetic-slings). For wire or chain slings see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Polyester Flat Webbing Sling — Eye and Eye be fitted and inspected?",
+          "a": "Check the label and cover of the Polyester Flat Webbing Sling — Eye and Eye before every lift, keep it away from sharp edges, and take it out of service if the cover is cut or the label is missing. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Webbing sling or round sling: how does the Polyester Flat Webbing Sling — Eye and Eye compare with the round type?",
+          "a": "A flat webbing sling spreads the load over a wider bearing surface and sits flat under the load, while the [Polyester Round Sling — Endless](/p/polyester-round-sling-endless) has a continuous yarn core in a protective cover and moulds to the load. Both are rated the same way; choose on how the load is shaped."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Polyester Flat Webbing Sling — Eye and Eye outside the UAE?",
+          "a": "Yes. We ship Polyester Flat Webbing Sling — Eye and Eye from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Polyester Flat Webbing Sling — Eye and Eye for delivery from Dubai?",
+          "a": "Yes. Polyester Flat Webbing Sling — Eye and Eye sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "polyester-round-sling-endless",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Polyester Round Sling — Endless and where is it used?",
+          "a": "The Polyester Round Sling — Endless is a round sling: a continuous core of load-bearing yarn inside a protective cover, so it is flexible and moulds to the load, rated 1 to 20 t to EN 1492. It is colour-coded by capacity, with sizes 1 t × 1 m to 20 t, length to order."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Polyester Round Sling — Endless part numbers such as IH-LR-SY-PRSE-1TX1M?",
+          "a": "IH-LR-SY-PRSE-1TX1M is the 1 t × 1 m size, 1 t WLL, IH-LR-SY-PRSE-5TX5M the 5 t × 5 m size, 5 t WLL and IH-LR-SY-PRSE-20T the 20 t, length to order size, 20 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Polyester Round Sling — Endless come in?",
+          "a": "The Polyester Round Sling — Endless is listed in sizes 1 t × 1 m to 20 t, length to order, with length and capacity in each row of the size table. Sizes are labelled by capacity and length; the 10, 12, 15 and 20 t slings in the sibling round sling listings are made to the length you need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Polyester Round Sling — Endless?",
+          "a": "For the Polyester Round Sling — Endless, choose on the working load limit for the hitch you will use, then pick the length. The table gives each size capacity and length, and [our sling angle chart](/blog/sling-angle-chart) shows how the working load drops as the sling angle opens. Protect the sling from sharp edges and check the label and cover before every lift."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Polyester Round Sling — Endless carry?",
+          "a": "The Polyester Round Sling — Endless lists a working load limit of 1 to 20 t, as the manufacturer rates it for each size. The working load limit is the most the sling may carry in service; the minimum breaking load is a test figure and never a working figure. See [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Polyester Round Sling — Endless made from and how is it finished?",
+          "a": "The Polyester Round Sling — Endless is made from 100% high tenacity polyester sleeve and inner core. The listing gives the colour for each capacity, such as 1 t is Violet, 2 t is Green and 3 t is Yellow; [our sling colour code chart](/blog/sling-colour-code-chart) sets out the colour code."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Polyester Round Sling — Endless?",
+          "a": "The Polyester Round Sling — Endless ships with the manufacturer's test certificate for each consignment and is listed to EN 1492. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Polyester Round Sling — Endless?",
+          "a": "The Polyester Round Sling — Endless is connected to the load with hooks, rings or connectors rated at least to the sling's working load limit; Grade 80 connectors made for synthetic slings are listed on the [synthetic slings shelf](/c/synthetic-slings). For wire or chain slings see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Polyester Round Sling — Endless?",
+          "a": "Check the label and cover of the Polyester Round Sling — Endless before every lift, keep it away from sharp edges, and take it out of service if the cover is cut or the label is missing. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Round sling or webbing sling: how does the Polyester Round Sling — Endless compare with the flat webbing type?",
+          "a": "A round sling has a continuous core of load-bearing yarn inside a protective cover, so it is flexible and moulds to the load, while the [Polyester Flat Webbing Sling — Eye and Eye](/p/polyester-flat-webbing-sling-eye-and-eye) spreads the load over a wider flat bearing surface. Both are rated the same way, so choose on how the load is shaped and handled."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Polyester Round Sling — Endless outside the UAE?",
+          "a": "Yes, Polyester Round Sling — Endless goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Polyester Round Sling — Endless for delivery from Dubai?",
+          "a": "Yes, we stock Polyester Round Sling — Endless at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "polyester-round-sling-eye-and-eye",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Polyester Round Sling — Eye and Eye used for?",
+          "a": "The Polyester Round Sling — Eye and Eye is a round sling: a continuous core of load-bearing yarn inside a protective cover, so it is flexible and moulds to the load, rated 1 to 100 t. It is colour-coded by capacity, with sizes 1 t to 100 t."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Polyester Round Sling — Eye and Eye part numbers such as IH-LR-SY-PRSEE-1T?",
+          "a": "IH-LR-SY-PRSEE-1T is the 1 t size, 1 t WLL, IH-LR-SY-PRSEE-15T the 15 t size, 15 t WLL and IH-LR-SY-PRSEE-100T the 100 t size, 100 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Polyester Round Sling — Eye and Eye come in?",
+          "a": "The Polyester Round Sling — Eye and Eye is listed in sizes 1 t to 100 t, with length and capacity in each row of the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Polyester Round Sling — Eye and Eye?",
+          "a": "For the Polyester Round Sling — Eye and Eye, choose on the working load limit for the hitch you will use, then pick the length. The table gives each size capacity and length, and [our sling angle chart](/blog/sling-angle-chart) shows how the working load drops as the sling angle opens. Protect the sling from sharp edges and check the label and cover before every lift."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Polyester Round Sling — Eye and Eye?",
+          "a": "The Polyester Round Sling — Eye and Eye lists a working load limit of 1 to 100 t, as the manufacturer rates it for each size. The working load limit is the most the sling may carry in service; the minimum breaking load is a test figure and never a working figure. See [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength)."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Polyester Round Sling — Eye and Eye have?",
+          "a": "The Polyester Round Sling — Eye and Eye is made from constructed from a continuous loop of 100% polyester fiber. The listing gives the colour for each capacity, such as 1 t is Violet, 2 t is Green and 3 t is Yellow; [our sling colour code chart](/blog/sling-colour-code-chart) sets out the colour code."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Polyester Round Sling — Eye and Eye come with a test certificate?",
+          "a": "The Polyester Round Sling — Eye and Eye ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Polyester Round Sling — Eye and Eye?",
+          "a": "The Polyester Round Sling — Eye and Eye is connected to the load with hooks, rings or connectors rated at least to the sling's working load limit; Grade 80 connectors made for synthetic slings are listed on the [synthetic slings shelf](/c/synthetic-slings). For wire or chain slings see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Polyester Round Sling — Eye and Eye be fitted and inspected?",
+          "a": "Check the label and cover of the Polyester Round Sling — Eye and Eye before every lift, keep it away from sharp edges, and take it out of service if the cover is cut or the label is missing. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Round sling or webbing sling: how does the Polyester Round Sling — Eye and Eye compare with the flat webbing type?",
+          "a": "A round sling has a continuous core of load-bearing yarn inside a protective cover, so it is flexible and moulds to the load, while the [Polyester Flat Webbing Sling — Eye and Eye](/p/polyester-flat-webbing-sling-eye-and-eye) spreads the load over a wider flat bearing surface. Both are rated the same way, so choose on how the load is shaped and handled."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Polyester Round Sling — Eye and Eye from Dubai?",
+          "a": "Yes. We ship Polyester Round Sling — Eye and Eye from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Polyester Round Sling — Eye and Eye available from stock in Dubai?",
+          "a": "Yes. We keep Polyester Round Sling — Eye and Eye in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "polyester-webbing-sling-endless",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Polyester Webbing Sling — Endless used for?",
+          "a": "The Polyester Webbing Sling — Endless is a flat webbing sling that spreads the load over a wider bearing surface, rated 1,000 to 12,000 kg to EN 1492-1. It is colour-coded by capacity, with sizes 1000 kg to 12000 kg."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Polyester Webbing Sling — Endless part numbers such as IH-LR-SY-PWSE-1000KG?",
+          "a": "IH-LR-SY-PWSE-1000KG is the 1000 kg size, IH-LR-SY-PWSE-5000KG the 5000 kg size and IH-LR-SY-PWSE-12000KG the 12000 kg size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Polyester Webbing Sling — Endless come in?",
+          "a": "The Polyester Webbing Sling — Endless is listed in sizes 1000 kg to 12000 kg, with length and capacity in each row of the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Polyester Webbing Sling — Endless for my job?",
+          "a": "For the Polyester Webbing Sling — Endless, choose on the working load limit for the hitch you will use, then pick the length. The table gives each size capacity and length, and [our sling angle chart](/blog/sling-angle-chart) shows how the working load drops as the sling angle opens. Protect the sling from sharp edges and check the label and cover before every lift."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Polyester Webbing Sling — Endless carry?",
+          "a": "The Polyester Webbing Sling — Endless lists a working load limit of 1,000 to 12,000 kg, as the manufacturer rates it for each size. The working load limit is the most the sling may carry in service; the minimum breaking load is a test figure and never a working figure. See [our guide to working load limit versus breaking strength](/blog/working-load-limit-vs-breaking-strength)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Polyester Webbing Sling — Endless made from and how is it finished?",
+          "a": "The Polyester Webbing Sling — Endless is made from 100% high tenacity polyester, colour-coded by capacity as set out in [our sling colour code chart](/blog/sling-colour-code-chart)."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Polyester Webbing Sling — Endless?",
+          "a": "The Polyester Webbing Sling — Endless ships with the manufacturer's test certificate for each consignment and is listed to EN 1492-1. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Polyester Webbing Sling — Endless?",
+          "a": "The Polyester Webbing Sling — Endless is connected to the load with hooks, rings or connectors rated at least to the sling's working load limit; Grade 80 connectors made for synthetic slings are listed on the [synthetic slings shelf](/c/synthetic-slings). For wire or chain slings see the [wire rope slings](/c/wire-rope-slings) and [chain slings](/c/chain-slings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Polyester Webbing Sling — Endless be fitted and inspected?",
+          "a": "Check the label and cover of the Polyester Webbing Sling — Endless before every lift, keep it away from sharp edges, and take it out of service if the cover is cut or the label is missing. Slings need periodic inspection by a competent person; [our lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) sets out the routine."
+        },
+        {
+          "slot": "K",
+          "q": "Webbing sling or round sling: how does the Polyester Webbing Sling — Endless compare with the round type?",
+          "a": "A flat webbing sling spreads the load over a wider bearing surface and sits flat under the load, while the [Polyester Round Sling — Endless](/p/polyester-round-sling-endless) has a continuous yarn core in a protective cover and moulds to the load. Both are rated the same way; choose on how the load is shaped."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Polyester Webbing Sling — Endless outside the UAE?",
+          "a": "Yes, Polyester Webbing Sling — Endless goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Polyester Webbing Sling — Endless available from stock in Dubai?",
+          "a": "Yes, Polyester Webbing Sling — Endless is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

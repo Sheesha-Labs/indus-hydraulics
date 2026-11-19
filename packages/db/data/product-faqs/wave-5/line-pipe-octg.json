@@ -1,0 +1,136 @@
+{
+  "family": "line-pipe-octg",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "casing-and-tubing-api-5ct",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is API 5CT casing and tubing and where is it used in a well?",
+          "a": "API 5CT / ISO 11960 casing and tubing is seamless steel pipe for lining oil and gas wells (casing) and carrying production fluid up the well (tubing). Our range runs from 60.32 to 339.72 mm outside diameter, in J55, K55 and N80 grades. See the [Line Pipe & OCTG shelf](/c/line-pipe-octg) for the full range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on API 5CT casing and tubing, such as IH-TF-LP-OCT-T0730-0640?",
+          "a": "In IH-TF-LP-OCT-T0730-0640, T marks tubing (C marks casing), 0730 is the outside diameter and 0640 the nominal weight, which for this row is 2-7/8 in tubing at 6.40 lb/ft. The pattern repeats across the size table, so casing C1143-0950 is 4-1/2 in at 9.50 lb/ft."
+        },
+        {
+          "slot": "D",
+          "q": "What tubing sizes are available in API 5CT, and what wall thicknesses do they have?",
+          "a": "Tubing covers 2-3/8, 2-7/8, 3-1/2, 4 and 4-1/2 in outside diameter (60.33 to 114.30 mm). For example, 2-3/8 in tubing has a 0.167 in wall at 4.00 lb/ft and 3-1/2 in tubing has a 0.216 in wall at 7.70 lb/ft. The size table gives wall and weight for every row."
+        },
+        {
+          "slot": "D",
+          "q": "Which API 5CT casing sizes and weights do you list, from 4-1/2 in to 13-3/8 in?",
+          "a": "Common casing sizes are 4-1/2, 5-1/2, 7, 8-5/8, 9-5/8, 10-3/4 and 13-3/8 in outside diameter (114.30 to 339.72 mm). For example 7 in casing is listed at 29.00 lb/ft with a 0.408 in wall, and 13-3/8 in at 54.50 lb/ft with a 0.380 in wall. Other sizes can be made on request."
+        },
+        {
+          "slot": "E",
+          "q": "What is the difference between J55, K55 and N80 in API 5CT casing and tubing?",
+          "a": "J55 and K55 share the same yield band of 379 to 552 MPa, but tensile strength is 517 MPa for J55 and 655 MPa for K55. N80 yields at 552 to 758 MPa with 689 MPa tensile. Chemistry is controlled only for phosphorus and sulphur, each at 0.030 maximum, for J55, K55 and N80."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between N80 Type 1 and N80Q casing and tubing?",
+          "a": "Both N80 Type 1 (N80-1) and N80Q have the same 552 to 758 MPa yield range and 689 MPa tensile strength. The difference is heat treatment: N80Q is quenched and tempered, while N80-1 is normalized. State the one you need on the enquiry, as the grades are listed separately."
+        },
+        {
+          "slot": "F",
+          "q": "What thread and end finish options does API 5CT casing and tubing come with?",
+          "a": "Tubing is supplied non-upset (NU) or external-upset (EU), threaded and coupled. Casing end-finish codes are P plain end, S short round thread, L long round thread, B buttress and E extreme-line. Upset tubing weighs slightly more: 2-7/8 in with a 0.217 in wall is 6.40 lb/ft NU and 6.50 lb/ft EU."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does API 5CT casing and tubing follow, and what tolerances apply?",
+          "a": "The pipe is made to API 5CT / ISO 11960 with API 5B referenced for threads. Outside diameter tolerance is plus or minus 0.79 mm below 4-1/2 in and minus 0.5 % to plus 1.0 % at 4-1/2 in and above. Wall tolerance is minus 12.5 %, and single-length mass is minus 3.5 % to plus 6.5 %."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and certificates can I get with API 5CT casing and tubing?",
+          "a": "Pipe is drift tested with an API drift mandrel and hydrostatically tested to API 5CT. A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged against your inspection and test plan. State the requirement on the RFQ."
+        },
+        {
+          "slot": "J",
+          "q": "Is API 5CT casing suitable for onshore and offshore wells, and how do I choose between casing and tubing?",
+          "a": "API 5CT pipe is used for onshore and offshore well casing strings and for production tubing. Casing lines the borehole and is larger, from 4-1/2 to 13-3/8 in outside diameter in our range, while tubing is 2-3/8 to 4-1/2 in. Send the well programme, grade and thread through [our contact page](/contact)."
+        },
+        {
+          "slot": "K",
+          "q": "API 5CT casing and tubing compared with API 5L line pipe: which do I need?",
+          "a": "API 5CT is for wells, covering casing and tubing, while [line pipe to API 5L](/p/line-pipe-api-5l) is for transmission pipelines and flowlines. They are different specifications with different grades and sizing. Our guide on [API 5L vs API 5CT](/blog/api-5l-vs-api-5ct) explains the difference in detail."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep API 5CT casing and tubing in stock, and how do I request a quotation?",
+          "a": "Yes. We keep API 5CT casing and tubing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the outside diameter, weight, grade and thread through [our contact page](/contact) for a quotation, and other sizes are made on request."
+        }
+      ]
+    },
+    {
+      "slug": "line-pipe-api-5l",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is API 5L line pipe and where is it used?",
+          "a": "API 5L / ISO 3183 line pipe is seamless carbon steel pipe for oil, gas and water transmission and flowlines. It is supplied in PSL1 and PSL2, in grades from B to X65, with sour-service PSL2 (Annex H) pipe for sour-gas gathering lines. See the [Line Pipe & OCTG shelf](/c/line-pipe-octg)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number on API 5L line pipe, such as IH-TF-LP-LNP-N0200-XSS80?",
+          "a": "In IH-TF-LP-LNP-N0200-XSS80, N0200 is nominal pipe size 2 and XSS80 is the schedule code, which here is XS / SCH 80 with a 5.54 mm wall and 60.3 mm outside diameter. Other codes are STDS40 (STD / SCH 40), S160 (SCH 160) and XXS."
+        },
+        {
+          "slot": "D",
+          "q": "Which NPS and schedules does API 5L line pipe come in?",
+          "a": "The size table lists 44 sizes from NPS 1/2 to NPS 6 (21.3 to 219.1 mm outside diameter) in STD / SCH 40, XS / SCH 80, SCH 160 and XXS. For example NPS 2 XS / SCH 80 has a 5.54 mm wall and NPS 6 XXS has a 21.95 mm wall. Other sizes are made on request."
+        },
+        {
+          "slot": "D",
+          "q": "What is the wall thickness of NPS 4 and NPS 6 API 5L line pipe?",
+          "a": "NPS 4 (114.3 mm outside diameter) in XS / SCH 80 has an 8.56 mm wall, and NPS 6 (168.3 mm) in STD / SCH 40 has a 7.11 mm wall. NPS 6 in XXS is 21.95 mm. The size table lists wall in inches and millimetres for every schedule."
+        },
+        {
+          "slot": "E",
+          "q": "What is the difference between PSL1 and PSL2 in API 5L line pipe?",
+          "a": "PSL2 adds maximum yield and tensile limits, carbon equivalent limits, sulphur at 0.015 maximum, mandatory Charpy impact testing and traceability on top of PSL1. For X52 PSL2, yield is 360 to 530 MPa and tensile 460 to 760 MPa. State PSL1 or PSL2 on the enquiry."
+        },
+        {
+          "slot": "F",
+          "q": "What grades of API 5L line pipe are available, from Grade B to X65?",
+          "a": "The base material is API 5L Grade B through X65 in PSL1 and PSL2, made seamless, cold drawn or hot finished. For X52 PSL2, carbon is 0.24 maximum (normalized) or 0.18 (quenched and tempered). Tell us the grade, PSL level and sizes and we confirm what is available."
+        },
+        {
+          "slot": "G",
+          "q": "What changes for API 5L sour-service pipe to Annex H?",
+          "a": "Annex H sour-service pipe has tighter chemistry. For X52, carbon is 0.16 maximum and sulphur 0.003 maximum, or 0.008 for seamless if agreed, with carbon equivalent IIW at 0.43 (normalized) or 0.39 (quenched and tempered). It is used for sour-gas gathering lines as PSL2."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does API 5L line pipe follow, and how are equivalent grades handled?",
+          "a": "The pipe is made to API 5L / ISO 3183. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative only, and we check them against each tender. See our guide on [DIN 17175, DIN 1629 and EN 10216 equivalents](/blog/din-17175-din-1629-en-10216-equivalents)."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates and testing can I get with API 5L line pipe?",
+          "a": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged against your inspection and test plan. Say on the RFQ what documents and witnessed tests your project needs, so they are priced in from the start."
+        },
+        {
+          "slot": "J",
+          "q": "API 5L line pipe compared with API 5CT casing and tubing: which should I order?",
+          "a": "API 5L line pipe carries oil, gas and water in pipelines and flowlines, while [API 5CT casing and tubing](/p/casing-and-tubing-api-5ct) lines and produces wells. They use different grades and sizing. Our guide on [API 5L vs API 5CT](/blog/api-5l-vs-api-5ct) sets out when to use each."
+        },
+        {
+          "slot": "I",
+          "q": "How long does API 5L line pipe come, and can it be cut to length?",
+          "a": "API 5L line pipe is supplied in random or fixed lengths and can be cut to length on request. State the length with the outside diameter, wall and grade when you enquire, so we can quote against your cutting list and confirm what is practical."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock API 5L line pipe in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep API 5L line pipe in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the NPS, schedule, grade and PSL level through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

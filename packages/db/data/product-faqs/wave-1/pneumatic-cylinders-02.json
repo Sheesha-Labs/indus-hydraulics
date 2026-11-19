@@ -1,0 +1,1725 @@
+{
+  "family": "pneumatic-cylinders-02",
+  "extraFacts": [
+    {
+      "fact": "Parker lists the 4MA Series NFPA pneumatic tie-rod cylinder in bore sizes 1-1/2 to 8 inch.",
+      "source": "Parker Hannifin product page, Pneumatic NFPA Cylinder - 4MA Series (ph.parker.com)"
+    },
+    {
+      "fact": "Parker 4MA standard ports are NPTF: 3/8\" NPTF on 1-1/2\", 2\" and 2-1/2\" bores; 1/2\" NPTF on 3-1/4\", 4\" and 5\" bores; 3/4\" NPTF on 6\" and 8\" bores. Other port styles are available to order.",
+      "source": "Parker Pneumatic Division catalogue 0900P-7, Tie Rod Cylinders section (4MA port table)"
+    },
+    {
+      "fact": "Parker gives a standard operating temperature range of -10°F to +165°F for its industrial tie-rod cylinders with standard seals, about -23°C to +74°C.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106-7; conversion °C = (°F - 32) / 1.8"
+    },
+    {
+      "fact": "Rated pressure of 250 psi is carried on every size-table row of the Parker 4MA Rod Number 2 and Rod Number 3 listings in this range; 250 psi is about 17 bar.",
+      "source": "Indus size table (ratedPsi) for the Parker 4MA Rod Number 2 and 3 listings; conversion 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "In the Indus size tables for Parker 4MA intermediate male cylinders, Rod Number 1 part numbers start 1P4MA001, Rod Number 2 part numbers start 1P4MA002 and Rod Number 3 part numbers start 1P4MA003.",
+      "source": "Indus size tables (partNumber) for the Parker 4MA intermediate male Rod Number 1, 2 and 3 listings"
+    },
+    {
+      "fact": "Linear-acting pneumatic power engines (air cylinders) are classified under HS subheading 8412.31.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12, subheading 8412.31"
+    },
+    {
+      "fact": "In Parker NFPA tie-rod cylinder catalogues the rod number (No. 1, No. 2, No. 3) is the code for one of the piston-rod diameters offered on a given bore; No. 1 is the standard rod and higher numbers are larger optional rods.",
+      "source": "Parker Industrial Cylinder Products catalogue 0106-7, rod end dimensions tables (Rod No.)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 1 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 1 1/2\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 104 built part numbers in the 1P4MA001 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018828 in the Parker 4MA 1 1/2\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 1 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018828 is a 1\" stroke cylinder with sleeve nut (MX5). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder come in?",
+          "a": "The 104 part numbers in this 1 1/2\" bore listing cover strokes from 0.5\" to 40\", with 1\", 2\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 1 1/2\" bore listing are head rectangular flange (MF1), side tap (MS4), cap fixed clevis (MP1), cap detachable clevis (MP2) and side lug (MS2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 1 1/2\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder made of?",
+          "a": "The 1 1/2\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 1 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 1 1/2\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 1 1/2\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 1 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 1 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 1 1/2\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 1 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 1 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-1-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 1 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 1 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 1 1/2\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 1 1/2\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 2 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2 1/2\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 103 built part numbers in the 1P4MA001 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018286 in the Parker 4MA 2 1/2\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 2 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018286 is a 1\" stroke cylinder with head rectangular flange (MF1). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder come in?",
+          "a": "The 103 part numbers in this 2 1/2\" bore listing cover strokes from 1\" to 48\", with 1\", 2\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 2 1/2\" bore listing are cap fixed clevis (MP1), cap detachable clevis (MP2), head rectangular flange (MF1), side lug (MS2) and side tap (MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 2 1/2\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder made of?",
+          "a": "The 2 1/2\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2 1/2\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2 1/2\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2 1/2\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 2 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-2-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2 1/2\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2 1/2\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 110 built part numbers in the 1P4MA001 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018631 in the Parker 4MA 2\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018631 is a 0.31\" stroke cylinder with head trunnion (MT1). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2\" bore Rod Number 1 cylinder come in?",
+          "a": "The 110 part numbers in this 2\" bore listing cover strokes from 0.25\" to 50\", with 2\", 3\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 2\" bore listing are head rectangular flange (MF1), cap detachable clevis (MP2), cap fixed clevis (MP1), side tap (MS4) and no mount (MX0). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 2\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 2\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 2\" bore Rod Number 1 cylinder made of?",
+          "a": "The 2\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 3 1/4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 3 1/4\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 69 built part numbers in the 1P4MA001 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018731 in the Parker 4MA 3 1/4\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 3 1/4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018731 is a 0.63\" stroke cylinder with head trunnion (MT1). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder come in?",
+          "a": "The 69 part numbers in this 3 1/4\" bore listing cover strokes from 0.63\" to 56\", with 2\", 3\", 4\" and 12\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 3 1/4\" bore listing are cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), sleeve nut with side tap (MX5, MS4) and cap rectangular flange (MF2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 3 1/4\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder made of?",
+          "a": "The 3 1/4\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 3 1/4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 3 1/4\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 3 1/4\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 3 1/4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 3 1/4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 3 1/4\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 3 1/4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 3 1/4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-3-1-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 3 1/4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 3 1/4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 3 1/4\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 3 1/4\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 4\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 61 built part numbers in the 1P4MA001 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018315 in the Parker 4MA 4\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018315 is a 1\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 4\" bore Rod Number 1 cylinder come in?",
+          "a": "The 61 part numbers in this 4\" bore listing cover strokes from 1\" to 48\", with 1\", 1.5\", 8\" and 12\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 4\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 4\" bore listing are head rectangular flange (MF1), cap detachable clevis (MP2), cap fixed clevis (MP1), cap rectangular flange (MF2) and sleeve nut with side tap (MX5, MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 4\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 4\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 4\" bore Rod Number 1 cylinder made of?",
+          "a": "The 4\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 4\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 4\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 4\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 4\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 4\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-5-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 5\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 5\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 28 built part numbers in the 1P4MA001 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018370 in the Parker 4MA 5\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 5\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018370 is a 2\" stroke cylinder with side tap (MS4). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 5\" bore Rod Number 1 cylinder come in?",
+          "a": "The 28 part numbers in this 5\" bore listing cover strokes from 1.25\" to 72\", with 2\", 3\", 6\" and 8\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 5\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 5\" bore listing are cap fixed clevis (MP1), cap detachable clevis (MP2), head trunnion (MT1), side tap (MS4) and head rectangular flange (MF1). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 5\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 5\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 5\" bore Rod Number 1 cylinder made of?",
+          "a": "The 5\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 5\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 5\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 5\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 5\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 5\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 5\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 5\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 5\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 5\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-5-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 5\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 5\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 5\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 5\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 6\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 6\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 27 built part numbers in the 1P4MA001 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018324 in the Parker 4MA 6\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 6\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018324 is a 2\" stroke cylinder with head trunnion (MT1). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 6\" bore Rod Number 1 cylinder come in?",
+          "a": "The 27 part numbers in this 6\" bore listing cover strokes from 2\" to 66\", with 4\", 28\", 29\" and 66\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 6\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 6\" bore listing are head rectangular flange (MF1), cap fixed clevis (MP1), head trunnion (MT1), side end angle (MS1) and cap trunnion (MT2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 6\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 6\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 6\" bore Rod Number 1 cylinder made of?",
+          "a": "The 6\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 6\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 6\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 6\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 6\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 6\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 6\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 6\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 6\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 6\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-6-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 6\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 6\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 6\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 6\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 1, 8\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 8\" bore, an intermediate male rod end and Parker rod code No. 1. This listing holds 7 built part numbers in the 1P4MA001 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA001 part number such as 1P4MA0018715 in the Parker 4MA 8\" bore range?",
+          "a": "Each 1P4MA001 number identifies one complete 8\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0018715 is a 5\" stroke cylinder with no mount (MX0). Every part number on this listing starts 1P4MA001; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 8\" bore Rod Number 1 cylinder come in?",
+          "a": "The 7 part numbers in this 8\" bore listing cover strokes from 0.5\" to 27\", with 5\", 7\", 8\" and 10\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 8\" bore Rod Number 1 cylinder?",
+          "a": "The most common mountings in this 8\" bore listing are head square (ME3), cap detachable clevis (MP2), no mount (MX0) and tie-rods extended head end (MX3). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What operating temperature and pressure apply to the Parker 4MA 8\" bore Rod Number 1 cylinder?",
+          "a": "Parker specifies an ambient operating temperature of -10°F to +165°F (about -23°C to +74°C) for this 8\" bore 4MA listing. The rows here do not carry a pressure figure; the companion 4MA Rod Number 2 and 3 listings are rated 250 psi, about 17 bar, and we confirm the rating of your part number with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 4MA 8\" bore Rod Number 1 cylinder made of?",
+          "a": "The 8\" bore 4MA has a hard-anodized aluminium cylinder body, an aluminium piston with a composite piston bearing, a bronze gland and rod bearing, and a hard chrome-plated carbon steel piston rod. It is a non-lube design for compressed air, so it runs on filtered, dry air without an oiler; fit a filter-regulator upstream to protect the seals."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 8\" bore Rod Number 1 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 8\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 8\" bore Rod Number 1 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 8\" bore 4MA, and this listing has an intermediate male rod end. Parker specifies a special UNF rod-end thread, so state the thread you need at order. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 8\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 8\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. Parker lists this build as repairable, with a magnetic piston and bumper seals. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 8\" bore Rod Number 1 and Rod Number 2 cylinders?",
+          "a": "They share the 8\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 2, 8\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-8-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 8\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 8\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 8\" bore Rod Number 1 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 8\" bore Rod Number 1 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA001 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA Series intermediate male Rod Number 2 listing with three part numbers?",
+          "a": "It groups three part numbers for Parker 4MA Series NFPA tie-rod air cylinders with an intermediate male rod end and Parker rod code No. 2: 1P4MA0028349, 1P4MA0028235 and 1P4MA0028644. The 4MA is a double-acting tie-rod cylinder; our [pneumatic cylinders shelf](/c/pneumatic-cylinders) lists the full bore range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the Parker 4MA cylinder behind part number 1P4MA0028349?",
+          "a": "1P4MA0028349 is a 1P4MA002 code, the prefix used for Parker 4MA intermediate male Rod Number 2 cylinders in our catalogue, and each code stands for one complete cylinder. Bore, stroke and mount are confirmed against the code at quotation, so quote the full number exactly as it appears on the cylinder label or your purchase records."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Parker 4MA Series intermediate male Rod Number 2 range cover?",
+          "a": "Parker builds the 4MA in bores from 1-1/2\" to 8\", and we list Rod Number 2 cylinders in each of those bores on separate pages. For example, the [Rod Number 2, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-2-bore) sets out every stroke and mount for that bore."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose stroke and mount for a Parker 4MA Rod Number 2 cylinder like 1P4MA0028644?",
+          "a": "Match the stroke to the travel your machine needs and the NFPA mount to the existing brackets, then pick the part number that combines both. These 1P4MA002 codes are confirmed for bore, stroke and mount when we quote, so send the code with your application details."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to Parker 4MA Rod Number 2 cylinders?",
+          "a": "Parker 4MA Rod Number 2 cylinders in our size tables are rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders; confirm with us before running hotter."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in a Parker 4MA Series Rod Number 2 tie rod cylinder?",
+          "a": "Parker 4MA cylinders in this range use a hard-anodized aluminium body, an aluminium piston, a bronze gland and rod bearing and a hard chrome-plated carbon steel rod. They are non-lube cylinders for clean, dry compressed air, and part number 1P4MA0028349 shares that construction."
+        },
+        {
+          "slot": "G",
+          "q": "Are Parker 4MA Rod Number 2 cylinders built to NFPA mounting dimensions?",
+          "a": "Yes, the Parker 4MA is an NFPA tie-rod cylinder, so a 4MA with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. No certificates sit on this listing; ask for a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which port fittings suit Parker 4MA Rod Number 2 cylinders?",
+          "a": "Parker fits NPTF ports on the 4MA as standard: 3/8\" on 1-1/2\" to 2-1/2\" bores, 1/2\" on 3-1/4\" to 5\" and 3/4\" on 6\" and 8\". Matching NPT push-in fittings and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Parker 4MA Rod Number 2 tie rod cylinder serviced?",
+          "a": "The Parker 4MA is a repairable tie-rod cylinder, so worn rod and piston seals are replaced from a seal kit rather than scrapping the cylinder. Keep the rod in line with the load to protect the gland; our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker 4MA Series intermediate male Rod Number 2 cylinders used?",
+          "a": "Parker 4MA cylinders are used on general industrial machines, conveyors, assembly lines and packaging equipment for pushing, lifting and clamping. The intermediate male rod end takes a threaded clevis, rod eye or alignment coupler for the load connection."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Parker 4MA cylinder part number 1P4MA0028349?",
+          "a": "Parker 4MA air cylinders such as 1P4MA0028349 normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export from Dubai worldwide, and the country of origin is the Parker plant that built the cylinder, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker 4MA part number 1P4MA0028349 from stock in Dubai?",
+          "a": "Yes. We keep Parker 4MA Rod Number 2 cylinders such as 1P4MA0028349 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 1 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 1 1/2\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 63 built part numbers in the 1P4MA002 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028312 in the Parker 4MA 1 1/2\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 1 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028312 is a 1\" stroke cylinder with tie-rods extended head end (MX3). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 1 1/2\" bore Rod Number 2 cylinder come in?",
+          "a": "The 63 part numbers in this 1 1/2\" bore listing cover strokes from 0.5\" to 28\", with 1\", 3\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 1 1/2\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 1 1/2\" bore listing are side lug (MS2), head rectangular flange (MF1), cap fixed clevis (MP1), cap detachable clevis (MP2) and sleeve nut with side tap (MX5, MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 1 1/2\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 1 1/2\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 1 1/2\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 1 1/2\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 1 1/2\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 1 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 1 1/2\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 1 1/2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 1 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 1 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 1 1/2\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 1 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 1 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-1-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 1 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 1 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 1 1/2\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 1 1/2\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 2 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2 1/2\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 64 built part numbers in the 1P4MA002 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028771 in the Parker 4MA 2 1/2\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 2 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028771 is a 1\" stroke cylinder with cap detachable clevis (MP2). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2 1/2\" bore Rod Number 2 cylinder come in?",
+          "a": "The 64 part numbers in this 2 1/2\" bore listing cover strokes from 0.75\" to 40\", with 2\", 3\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2 1/2\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 2 1/2\" bore listing are cap fixed clevis (MP1), cap detachable clevis (MP2), head trunnion (MT1), side tap (MS4) and head rectangular flange (MF1). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 2 1/2\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 2 1/2\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 2 1/2\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 2 1/2\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2 1/2\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2 1/2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2 1/2\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 2 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-2-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2 1/2\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2 1/2\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 74 built part numbers in the 1P4MA002 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028544 in the Parker 4MA 2\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028544 is a 1\" stroke cylinder with side tap (MS4). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2\" bore Rod Number 2 cylinder come in?",
+          "a": "The 74 part numbers in this 2\" bore listing cover strokes from 1\" to 65\", with 2\", 4\", 5\" and 8\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 2\" bore listing are head rectangular flange (MF1), cap fixed clevis (MP1), side lug (MS2), cap detachable clevis (MP2) and side tap (MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 2\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 2\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 2\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 2\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 3 1/4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 3 1/4\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 67 built part numbers in the 1P4MA002 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028200 in the Parker 4MA 3 1/4\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 3 1/4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028200 is a 1\" stroke cylinder with cap detachable clevis (MP2). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 3 1/4\" bore Rod Number 2 cylinder come in?",
+          "a": "The 67 part numbers in this 3 1/4\" bore listing cover strokes from 0.75\" to 53\", with 2\", 3\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 3 1/4\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 3 1/4\" bore listing are cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), side lug (MS2) and side tap (MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 3 1/4\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 3 1/4\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 3 1/4\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 3 1/4\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 3 1/4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 3 1/4\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 3 1/4\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 3 1/4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 3 1/4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 3 1/4\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 3 1/4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 3 1/4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-3-1-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 3 1/4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 3 1/4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 3 1/4\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 3 1/4\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 4\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 70 built part numbers in the 1P4MA002 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028351 in the Parker 4MA 4\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028351 is a 1\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 4\" bore Rod Number 2 cylinder come in?",
+          "a": "The 70 part numbers in this 4\" bore listing cover strokes from 1\" to 60\", with 2\", 3\", 4\" and 8\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 4\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 4\" bore listing are cap detachable clevis (MP2), head rectangular flange (MF1), cap fixed clevis (MP1), sleeve nut (MX5) and head trunnion (MT1). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 4\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 4\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 4\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 4\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 4\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 4\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 4\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 4\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 4\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-5-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 5\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 5\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 31 built part numbers in the 1P4MA002 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028057 in the Parker 4MA 5\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 5\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028057 is a 2\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 5\" bore Rod Number 2 cylinder come in?",
+          "a": "The 31 part numbers in this 5\" bore listing cover strokes from 0.5\" to 72\", with 3\", 6\", 12\" and 24\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 5\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 5\" bore listing are head rectangular flange (MF1), cap fixed clevis (MP1), cap detachable clevis (MP2), head trunnion (MT1) and sleeve nut (MX5). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 5\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 5\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 5\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 5\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 5\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 5\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 5\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 5\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 5\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 5\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 5\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 5\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 5\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-5-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 5\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 5\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 5\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 5\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 6\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 6\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 32 built part numbers in the 1P4MA002 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028523 in the Parker 4MA 6\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 6\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028523 is a 1\" stroke cylinder with head rectangular flange (MF1). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 6\" bore Rod Number 2 cylinder come in?",
+          "a": "The 32 part numbers in this 6\" bore listing cover strokes from 0.5\" to 40\", with 4\", 7\", 12\" and 21\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 6\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 6\" bore listing are head rectangular flange (MF1), cap fixed clevis (MP1), tie-rods extended both ends (MX1), cap detachable clevis (MP2) and sleeve nut with side tap (MX5, MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 6\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 6\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 6\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 6\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 6\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 6\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 6\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 6\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 6\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 6\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 6\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 6\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 6\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-6-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 6\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 6\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 6\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 6\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-2-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 2, 8\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 8\" bore, an intermediate male rod end and Parker rod code No. 2. This listing holds 8 built part numbers in the 1P4MA002 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA002 part number such as 1P4MA0028840 in the Parker 4MA 8\" bore range?",
+          "a": "Each 1P4MA002 number identifies one complete 8\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0028840 is a 2\" stroke cylinder with tie-rods extended both ends (MX1). Every part number on this listing starts 1P4MA002; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 8\" bore Rod Number 2 cylinder come in?",
+          "a": "The 8 part numbers in this 8\" bore listing cover strokes from 2\" to 30\", with 2\", 3\", 5\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 8\" bore Rod Number 2 cylinder?",
+          "a": "The most common mountings in this 8\" bore listing are head square (ME3), tie-rods extended both ends (MX1), sleeve nut with side tap (MX5, MS4), cap fixed clevis (MP1) and cap detachable clevis (MP2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 8\" bore Rod Number 2 air cylinder rated for?",
+          "a": "Every row in this 8\" bore Rod Number 2 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 8\" bore Rod Number 2 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 8\" bore Rod Number 2 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 8\" bore Rod Number 2 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 8\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 8\" bore Rod Number 2 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 8\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 8\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 8\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 8\" bore Rod Number 2 and Rod Number 3 cylinders?",
+          "a": "They share the 8\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 3, 8\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-8-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 8\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 8\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 8\" bore Rod Number 2 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 8\" bore Rod Number 2 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA002 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA Series intermediate male Rod Number 3 listing with one part number?",
+          "a": "It groups one part number for Parker 4MA Series NFPA tie-rod air cylinders with an intermediate male rod end and Parker rod code No. 3: 1P4MA0038228. The 4MA is a double-acting tie-rod cylinder; our [pneumatic cylinders shelf](/c/pneumatic-cylinders) lists the full bore range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the Parker 4MA cylinder behind part number 1P4MA0038228?",
+          "a": "1P4MA0038228 is a 1P4MA003 code, the prefix used for Parker 4MA intermediate male Rod Number 3 cylinders in our catalogue, and each code stands for one complete cylinder. Bore, stroke and mount are confirmed against the code at quotation, so quote the full number exactly as it appears on the cylinder label or your purchase records."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Parker 4MA Series intermediate male Rod Number 3 range cover?",
+          "a": "Parker builds the 4MA in bores from 1-1/2\" to 8\", and we list Rod Number 3 cylinders in each of those bores on separate pages. For example, the [Rod Number 3, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-2-bore) sets out every stroke and mount for that bore."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose stroke and mount for a Parker 4MA Rod Number 3 cylinder like 1P4MA0038228?",
+          "a": "Match the stroke to the travel your machine needs and the NFPA mount to the existing brackets, then pick the part number that combines both. This 1P4MA003 code is confirmed for bore, stroke and mount when we quote, so send the code with your application details."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to Parker 4MA Rod Number 3 cylinders?",
+          "a": "Parker 4MA Rod Number 3 cylinders in our size tables are rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders; confirm with us before running hotter."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in a Parker 4MA Series Rod Number 3 tie rod cylinder?",
+          "a": "Parker 4MA cylinders in this range use a hard-anodized aluminium body, an aluminium piston, a bronze gland and rod bearing and a hard chrome-plated carbon steel rod. They are non-lube cylinders for clean, dry compressed air, and part number 1P4MA0038228 shares that construction."
+        },
+        {
+          "slot": "G",
+          "q": "Are Parker 4MA Rod Number 3 cylinders built to NFPA mounting dimensions?",
+          "a": "Yes, the Parker 4MA is an NFPA tie-rod cylinder, so a 4MA with the same bore, mount, stroke and rod end fits where another NFPA cylinder of that envelope was used. No certificates sit on this listing; ask for a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which port fittings suit Parker 4MA Rod Number 3 cylinders?",
+          "a": "Parker fits NPTF ports on the 4MA as standard: 3/8\" on 1-1/2\" to 2-1/2\" bores, 1/2\" on 3-1/4\" to 5\" and 3/4\" on 6\" and 8\". Matching NPT push-in fittings and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Parker 4MA Rod Number 3 tie rod cylinder serviced?",
+          "a": "The Parker 4MA is a repairable tie-rod cylinder, so worn rod and piston seals are replaced from a seal kit rather than scrapping the cylinder. Keep the rod in line with the load to protect the gland; our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker 4MA Series intermediate male Rod Number 3 cylinders used?",
+          "a": "Parker 4MA cylinders are used on general industrial machines, conveyors, assembly lines and packaging equipment for pushing, lifting and clamping. The intermediate male rod end takes a threaded clevis, rod eye or alignment coupler for the load connection."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code applies to Parker 4MA cylinder part number 1P4MA0038228?",
+          "a": "Parker 4MA air cylinders such as 1P4MA0038228 normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export from Dubai worldwide, and the country of origin is the Parker plant that built the cylinder, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker 4MA part number 1P4MA0038228 from stock in Dubai?",
+          "a": "Yes. We keep Parker 4MA Rod Number 3 cylinders such as 1P4MA0038228 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part number and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-1-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 1 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 1 1/2\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 67 built part numbers in the 1P4MA003 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038475 in the Parker 4MA 1 1/2\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 1 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038475 is a 1\" stroke cylinder with head rectangular flange (MF1). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 1 1/2\" bore Rod Number 3 cylinder come in?",
+          "a": "The 67 part numbers in this 1 1/2\" bore listing cover strokes from 0.75\" to 69\", with 1\", 2\", 3\" and 4\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 1 1/2\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 1 1/2\" bore listing are side tap (MS4), cap fixed clevis (MP1), sleeve nut with side tap (MX5, MS4), no mount (MX0) and cap detachable clevis (MP2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 1 1/2\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 1 1/2\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 1 1/2\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 1 1/2\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 1 1/2\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 1 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 1 1/2\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 1 1/2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 1 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 1 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 1 1/2\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 1 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 1 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-1-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 1 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 1 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 1 1/2\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 1 1/2\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-2-1-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 2 1/2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2 1/2\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 91 built part numbers in the 1P4MA003 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038876 in the Parker 4MA 2 1/2\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 2 1/2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038876 is a 1\" stroke cylinder with cap detachable clevis (MP2). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2 1/2\" bore Rod Number 3 cylinder come in?",
+          "a": "The 91 part numbers in this 2 1/2\" bore listing cover strokes from 1\" to 24\", with 2\", 3\", 4\" and 6\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2 1/2\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 2 1/2\" bore listing are cap detachable clevis (MP2), cap fixed clevis (MP1), side lug (MS2), head rectangular flange (MF1) and no mount (MX0). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 2 1/2\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 2 1/2\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 2 1/2\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 2 1/2\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2 1/2\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2 1/2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2 1/2\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2 1/2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2 1/2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2 1/2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2 1/2\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 2 1/2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 2 1/2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-2-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2 1/2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2 1/2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2 1/2\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2 1/2\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-2-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 2\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 2\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 84 built part numbers in the 1P4MA003 range, used for light pushing, stopping, gating and clamping on conveyors, assembly and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038756 in the Parker 4MA 2\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 2\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038756 is a 1\" stroke cylinder with side lug (MS2). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 2\" bore Rod Number 3 cylinder come in?",
+          "a": "The 84 part numbers in this 2\" bore listing cover strokes from 1\" to 65\", with 2\", 3\", 4\" and 10\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 2\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 2\" bore listing are cap fixed clevis (MP1), side lug (MS2), side tap (MS4), head rectangular flange (MF1) and no mount (MX0). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 2\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 2\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 2\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 2\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 2\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 2\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 2\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 3/8\" NPTF ports as standard on the 2\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 2\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 2\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 2\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 2\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 2\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-2-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 2\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 2\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 2\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 2\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-3-1-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 3 1/4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 3 1/4\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 83 built part numbers in the 1P4MA003 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038707 in the Parker 4MA 3 1/4\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 3 1/4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038707 is a 1\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 3 1/4\" bore Rod Number 3 cylinder come in?",
+          "a": "The 83 part numbers in this 3 1/4\" bore listing cover strokes from 0.75\" to 56\", with 2\", 4\", 6\" and 8\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 3 1/4\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 3 1/4\" bore listing are cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), head trunnion (MT1) and sleeve nut with side tap (MX5, MS4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 3 1/4\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 3 1/4\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 3 1/4\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 3 1/4\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 3 1/4\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 3 1/4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 3 1/4\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 3 1/4\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 3 1/4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 3 1/4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 3 1/4\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 3 1/4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 3 1/4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-3-1-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 3 1/4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 3 1/4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 3 1/4\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 3 1/4\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-4-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 4\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 4\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 73 built part numbers in the 1P4MA003 range, used for pushing, lifting, diverting and clamping on conveyors, assembly lines and packaging machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038629 in the Parker 4MA 4\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 4\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038629 is a 1\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 4\" bore Rod Number 3 cylinder come in?",
+          "a": "The 73 part numbers in this 4\" bore listing cover strokes from 1\" to 60\", with 8\", 10\", 11\" and 12\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 4\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 4\" bore listing are cap detachable clevis (MP2), cap fixed clevis (MP1), head rectangular flange (MF1), head trunnion (MT1) and cap detachable eye (MP4). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 4\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 4\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 4\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 4\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 4\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 4\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 4\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 4\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 4\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 4\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 4\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 4\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 4\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-4-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 4\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 4\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 4\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 4\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-5-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 5\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 5\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 33 built part numbers in the 1P4MA003 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038916 in the Parker 4MA 5\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 5\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038916 is a 1\" stroke cylinder with no mount (MX0). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 5\" bore Rod Number 3 cylinder come in?",
+          "a": "The 33 part numbers in this 5\" bore listing cover strokes from 1\" to 79.5\", with 4\", 6\", 8\" and 12\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 5\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 5\" bore listing are cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), side lug (MS2) and no mount (MX0). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 5\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 5\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 5\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 5\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 5\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 5\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 5\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 1/2\" NPTF ports as standard on the 5\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 5\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 5\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 5\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 5\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 5\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-5-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 5\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 5\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 5\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 5\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-6-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 6\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 6\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 27 built part numbers in the 1P4MA003 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038875 in the Parker 4MA 6\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 6\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038875 is a 1\" stroke cylinder with head rectangular flange (MF1). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 6\" bore Rod Number 3 cylinder come in?",
+          "a": "The 27 part numbers in this 6\" bore listing cover strokes from 1\" to 67\", with 4\", 8\", 10\" and 12\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 6\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 6\" bore listing are cap fixed clevis (MP1), head rectangular flange (MF1), cap detachable clevis (MP2), sleeve nut with side tap (MX5, MS4) and cap trunnion (MT2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 6\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 6\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 6\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 6\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 6\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 6\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 6\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 6\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 6\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 6\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 6\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 6\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 6\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-6-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 6\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 6\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 6\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 6\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-3-8-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 4MA tie rod air cylinder with intermediate male rod end, Rod Number 3, 8\" bore?",
+          "a": "It is a double-acting, non-lube NFPA tie-rod air cylinder from the Parker 4MA Series with a 8\" bore, an intermediate male rod end and Parker rod code No. 3. This listing holds 19 built part numbers in the 1P4MA003 range, used for heavier pushing, pressing, lifting and clamping on conveyors, assembly and packaging plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a 1P4MA003 part number such as 1P4MA0038933 in the Parker 4MA 8\" bore range?",
+          "a": "Each 1P4MA003 number identifies one complete 8\" bore 4MA cylinder with its stroke, mounting and rod end already fixed, so it is ordered as a single code. For example, 1P4MA0038933 is a 6\" stroke cylinder with cap fixed clevis (MP1). Every part number on this listing starts 1P4MA003; the size table gives stroke and mount for each one."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Parker 4MA 8\" bore Rod Number 3 cylinder come in?",
+          "a": "The 19 part numbers in this 8\" bore listing cover strokes from 0.5\" to 45\", with 12\", 20\", 27\" and 45\" the most common. Stroke is fixed in each part number, so pick the row that matches the travel you need; if no row matches, send the Parker model code or the bore, stroke and mount and we will quote the nearest build."
+        },
+        {
+          "slot": "D",
+          "q": "Which NFPA mounting styles are offered on the Parker 4MA 8\" bore Rod Number 3 cylinder?",
+          "a": "The most common mountings in this 8\" bore listing are head square (ME3), cap detachable clevis (MP2), cap fixed clevis (MP1), cap square (ME4) and side lug (MS2). Every row in the size table names its NFPA mounting code, so filter by the mount your machine already uses before choosing a stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 4MA 8\" bore Rod Number 3 air cylinder rated for?",
+          "a": "Every row in this 8\" bore Rod Number 3 listing is rated 250 psi, about 17 bar, on compressed air. Parker gives -10°F to +165°F (about -23°C to +74°C) as the standard-seal temperature range for its tie-rod cylinders, so check with us before running hotter. Size the bore on the pressure actually available at the cylinder port, not on the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and air quality does the Parker 4MA 8\" bore Rod Number 3 cylinder need?",
+          "a": "The Parker 4MA listings in this range specify a hard-anodized aluminium body, aluminium piston, bronze gland and rod bearing and a hard chrome-plated carbon steel rod, and the 8\" bore Rod Number 3 build shares that construction. It is meant for clean, dry compressed air; a filter-regulator upstream protects the seals and the rod bearing."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 4MA 8\" bore Rod Number 3 cylinder interchangeable with other NFPA cylinders?",
+          "a": "Yes, the 4MA is built to NFPA tie-rod mounting conventions, so a 8\" bore 4MA with the same NFPA mount, stroke and rod end will fit where another NFPA cylinder of that envelope was used. This listing carries no certificates; if you need a certificate of conformity or test record, ask for it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and rod end does the Parker 4MA 8\" bore Rod Number 3 cylinder use?",
+          "a": "Parker fits 3/4\" NPTF ports as standard on the 8\" bore 4MA, and this listing has an intermediate male rod end. Give the rod-end thread you need when ordering. Matching NPT push-in fittings, flow controls and silencers are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4MA 8\" bore tie rod cylinder be installed and serviced?",
+          "a": "Mount the 8\" bore 4MA so the rod pushes in line with the load, using the NFPA mount it was built with, and avoid side load on the rod. The 4MA is a repairable tie-rod design, so seals can be replaced rather than the whole cylinder. Our [cylinder cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4MA 8\" bore Rod Number 3 and Rod Number 1 cylinders?",
+          "a": "They share the 8\" bore, the intermediate male rod end and the NFPA mounting options; the rod number is the Parker code for the piston-rod diameter, with No. 1 the standard rod. Compare the [Rod Number 1, 8\" bore listing](/p/parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-intermediate-male-rod-number-1-8-bore) and quote the part number you have."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and country of origin apply to Parker 4MA 8\" bore cylinders?",
+          "a": "Air cylinders such as the Parker 4MA 8\" bore normally fall under HS subheading 8412.31, linear-acting pneumatic power engines. We export them from Dubai to the GCC, Africa, Asia and beyond; the country of origin depends on the Parker plant that built the cylinder and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 4MA 8\" bore Rod Number 3 cylinders in Dubai?",
+          "a": "Yes. We keep the Parker 4MA 8\" bore Rod Number 3 range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 1P4MA003 part numbers and quantities, or bore, stroke and mount, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

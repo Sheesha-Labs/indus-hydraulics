@@ -1,0 +1,1449 @@
+{
+  "family": "pneumatic-grippers-actuators-02",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversions used in these FAQs (1 bar = 14.5038 psi): 5 psi is about 0.3 bar, 20 psi about 1.4 bar, 30 psi about 2.1 bar, 40 psi about 2.8 bar, 45 psi about 3.1 bar, 50 psi about 3.4 bar, 55 psi about 3.8 bar, 60 psi about 4.1 bar, 100 psi about 6.9 bar and 102 psi about 7 bar.",
+      "source": "Unit definition, 1 bar = 100 kPa; 1 psi = 6.894757 kPa (NIST SP 811)"
+    },
+    {
+      "fact": "Temperature conversions: -30°F is about -34°C, +180°F about +82°C, 176°F about 80°C; °C = (°F - 32) / 1.8.",
+      "source": "Unit conversion, Fahrenheit to Celsius"
+    },
+    {
+      "fact": "Pneumatic grippers are sized on grip force at the pressure available at the gripper, with the part weight, the friction between jaw and part, the acceleration of the robot and a safety margin deciding how much force is needed.",
+      "source": "Indus gripper sizing guide (/blog/pneumatic-grippers-and-vacuum-guide); manufacturer gripper sizing practice"
+    }
+  ],
+  "products": [
+    {
+      "slug": "destaco-dpg-series-general-purpose-parallel-grippers-modular-multi-position-sensing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 142 part numbers, with cylinder bores from 0.688\" to 0.688\" and jaw strokes from 0.25\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPG-10-2-O-NS in the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) listing?",
+          "a": "The size table describes DPG-10-2-O-NS as a 2-jaw, 1/2 inch stroke, 40 to 100 psi and DPG-10M-4-T as a 2-jaw, 1 inch stroke, 25.4 mm stroke. Each of the 142 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) cover?",
+          "a": "The 142 part numbers in this listing carry 1 distinct cylinder bores, from 0.688\" to 0.688\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) have?",
+          "a": "Jaw stroke in this listing runs from 0.25\" to 1\" across the 142 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) need?",
+          "a": "The row descriptions for the Destaco DPG general purpose parallel gripper (modular, multi-position sensing), such as DPG-10-2-C-T, give 40 to 100 psi, which is about 2.8 to 6.9 bar, so supply the gripper inside that range. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) need?",
+          "a": "Run the Destaco DPG general purpose parallel gripper (modular, multi-position sensing), such as DPG-10-2-C-T, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) follow a standard or carry certificates?",
+          "a": "The 142 part numbers of the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco DPG general purpose parallel gripper (modular, multi-position sensing)?",
+          "a": "A unit such as DPG-10-2-C-T needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPG-10-2-C-T?",
+          "a": "Keep DPG-10-2-C-T on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) differ from the Destaco DPG series parallel gripper?",
+          "a": "This listing holds 142 part numbers, and the Destaco DPG series parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPG series parallel gripper](/p/destaco-dpg-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) products made and how are they exported?",
+          "a": "The Destaco DPG general purpose parallel gripper (modular, multi-position sensing) listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) from stock in Dubai?",
+          "a": "Yes. We keep the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpg-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPG series parallel gripper used for?",
+          "a": "It is a Destaco pneumatic parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 12 part numbers and jaw strokes from 0.25\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPG-10M-3 in the Destaco DPG series parallel gripper listing?",
+          "a": "The size table describes DPG-10M-3 as a listed build. Each of the 12 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Destaco DPG series parallel gripper cover?",
+          "a": "The part numbers in this listing use size figures 10M and 10 after the series name, as in DPG-10M-3 and DPG-10-2-O-T. A higher size figure is a bigger gripper, and we confirm bore and stroke against the maker data for your code."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco DPG series parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.25\" to 1\" across the 12 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPG series parallel gripper need?",
+          "a": "The 12 rows of the Destaco DPG series parallel gripper listing, such as DPG-10M-3, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco DPG series parallel gripper?",
+          "a": "The Destaco DPG series parallel gripper listing gives Buna N seals, an aluminum body and carbon steel fingers. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPG series parallel gripper follow a standard or carry certificates?",
+          "a": "The 12 part numbers of the Destaco DPG series parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco DPG series parallel gripper?",
+          "a": "A unit such as DPG-10M-3 needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPG-10M-3?",
+          "a": "Inspect DPG-10M-3 regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPG series parallel gripper differ from the Destaco DPG general purpose parallel gripper (modular, multi-position sensing)?",
+          "a": "This listing holds 12 part numbers, and the Destaco DPG general purpose parallel gripper (modular, multi-position sensing) is a separate listing with its own codes and sizes. Compare the [Destaco DPG general purpose parallel gripper (modular, multi-position sensing)](/p/destaco-dpg-series-general-purpose-parallel-grippers-modular-multi-position-sensing) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPG series parallel gripper products made and how are they exported?",
+          "a": "The Destaco DPG series parallel gripper listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPG series parallel gripper from stock in Dubai?",
+          "a": "Yes. The Destaco DPG series parallel gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpl-series-high-grip-force-parallel-grippers-long-stroke",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPL high grip force long stroke parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 28 part numbers, with cylinder bores from 0.98\" to 1.57\" and jaw strokes from 1.57\" to 5.51\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPL-3250 in the Destaco DPL high grip force long stroke parallel gripper listing?",
+          "a": "The size table describes DPL-3250 as a 2-jaw, 100 mm stroke and DPL-2535 as a 2-jaw, 70 mm stroke. Each of the 28 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco DPL high grip force long stroke parallel gripper cover?",
+          "a": "The 28 part numbers in this listing carry 3 distinct cylinder bores, from 0.98\" to 1.57\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco DPL high grip force long stroke parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 1.57\" to 5.51\" across the 28 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPL high grip force long stroke parallel gripper need?",
+          "a": "The 28 rows of the Destaco DPL high grip force long stroke parallel gripper listing, such as DPL-2535-R, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPL high grip force long stroke parallel gripper need?",
+          "a": "Run the Destaco DPL high grip force long stroke parallel gripper, such as DPL-2535-R, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPL high grip force long stroke parallel gripper follow a standard or carry certificates?",
+          "a": "The 28 part numbers of the Destaco DPL high grip force long stroke parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco DPL high grip force long stroke parallel gripper?",
+          "a": "A unit such as DPL-2535-R needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPL-2535-R?",
+          "a": "Keep DPL-2535-R on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPL high grip force long stroke parallel gripper differ from the Destaco DPW long finger parallel gripper?",
+          "a": "This listing holds 28 part numbers with cylinder bores from 0.98\" to 1.57\", and the Destaco DPW long finger parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPW long finger parallel gripper](/p/destaco-dpw-series-long-finger-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPL high grip force long stroke parallel gripper products made and how are they exported?",
+          "a": "The Destaco DPL high grip force long stroke parallel gripper listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPL high grip force long stroke parallel gripper from stock in Dubai?",
+          "a": "Yes. We hold the Destaco DPL high grip force long stroke parallel gripper range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpp-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPP series precision parallel gripper used for?",
+          "a": "It is a Destaco pneumatic parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 5 part numbers, with cylinder bores from 0.406\" to 1.12\" and jaw strokes from 0.25\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPP-10M-06 in the Destaco DPP series precision parallel gripper listing?",
+          "a": "The size table describes DPP-10M-06 as a 1/4 inch stroke, 27 lbf grip force and DPP-20M-25 as a 1 inch stroke, 103 lbf grip force. Each of the 5 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco DPP series precision parallel gripper cover?",
+          "a": "The 5 part numbers in this listing carry 3 distinct cylinder bores, from 0.406\" to 1.12\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How much grip force does the Destaco DPP series precision parallel gripper give?",
+          "a": "The rows that state a grip force range from 27 lbf to 103 lbf, depending on size and finger length. Grip force falls with longer fingers and lower pressure, so check the row for your code and size it against the part weight and friction with a safety margin. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPP series precision parallel gripper need?",
+          "a": "The row descriptions for the Destaco DPP series precision parallel gripper, such as DPP-10M-06, give 20 to 100 psi, which is about 1.4 to 6.9 bar, so supply the gripper inside that range. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPP series precision parallel gripper need?",
+          "a": "Run the Destaco DPP series precision parallel gripper, such as DPP-10M-06, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPP series precision parallel gripper follow a standard or carry certificates?",
+          "a": "The 5 part numbers of the Destaco DPP series precision parallel gripper listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.0005 to +0.0005. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco DPP series precision parallel gripper?",
+          "a": "Destaco lists accessory part numbers OISP-014, OISN-014, SLKT-343, SLKT-343V and VLVF-018 for the Destaco DPP series precision parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPP-10M-06?",
+          "a": "Inspect DPP-10M-06 regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPP series precision parallel gripper differ from the Destaco DPP precision long finger parallel gripper?",
+          "a": "This listing holds 5 part numbers with cylinder bores from 0.406\" to 1.12\", and the Destaco DPP precision long finger parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPP precision long finger parallel gripper](/p/destaco-dpp-series-precision-long-finger-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPP series precision parallel gripper products made and how are they exported?",
+          "a": "The Destaco DPP series precision parallel gripper listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPP series precision parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco DPP series precision parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpp-series-precision-long-finger-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPP precision long finger parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 58 part numbers, with cylinder bores from 0.406\" to 1.12\" and jaw strokes from 0.25\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPP-10M-12-C in the Destaco DPP precision long finger parallel gripper listing?",
+          "a": "The size table describes DPP-10M-12-C as a 2-jaw, 12.7 mm stroke and DPP-20M-38-C as a 2-jaw, 38.1 mm stroke. Each of the 58 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco DPP precision long finger parallel gripper cover?",
+          "a": "The 58 part numbers in this listing carry 4 distinct cylinder bores, from 0.406\" to 1.12\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco DPP precision long finger parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.25\" to 2\" across the 58 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPP precision long finger parallel gripper need?",
+          "a": "The 58 rows of the Destaco DPP precision long finger parallel gripper listing, such as DPP-14M-15, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPP precision long finger parallel gripper need?",
+          "a": "Run the Destaco DPP precision long finger parallel gripper, such as DPP-14M-15, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPP precision long finger parallel gripper follow a standard or carry certificates?",
+          "a": "The 58 part numbers of the Destaco DPP precision long finger parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco DPP precision long finger parallel gripper?",
+          "a": "A unit such as DPP-14M-15 needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPP-14M-15?",
+          "a": "Keep DPP-14M-15 on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPP precision long finger parallel gripper differ from the Destaco DPP series precision parallel gripper?",
+          "a": "This listing holds 58 part numbers with cylinder bores from 0.406\" to 1.12\", and the Destaco DPP series precision parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPP series precision parallel gripper](/p/destaco-dpp-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPP precision long finger parallel gripper products made and how are they exported?",
+          "a": "The Destaco DPP precision long finger parallel gripper listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPP precision long finger parallel gripper from stock in Dubai?",
+          "a": "Yes. The Destaco DPP precision long finger parallel gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpw-series-long-finger-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPW long finger parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 38 part numbers, with cylinder bores from 0.625\" to 1.25\" and jaw strokes from 0.75\" to 2.5\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPW-250M-1-NS in the Destaco DPW long finger parallel gripper listing?",
+          "a": "The size table describes DPW-250M-1-NS as a 2-jaw, 0.625 inch cylinder bore, 1.480 inch size, 20 to 100 psi and DPW-375M-2-NS-W as a 2-jaw, 0.937 inch cylinder bore, 2.126 inch size, 20 to 100 psi. Each of the 38 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco DPW long finger parallel gripper cover?",
+          "a": "The 38 part numbers in this listing carry 3 distinct cylinder bores, from 0.625\" to 1.25\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco DPW long finger parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.75\" to 2.5\" across the 38 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPW long finger parallel gripper need?",
+          "a": "The row descriptions for the Destaco DPW long finger parallel gripper, such as DPW-250M-1-NS, give 20 to 100 psi, which is about 1.4 to 6.9 bar, so supply the gripper inside that range. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPW long finger parallel gripper need?",
+          "a": "Run the Destaco DPW long finger parallel gripper, such as DPW-250M-1-NS, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPW long finger parallel gripper follow a standard or carry certificates?",
+          "a": "The 38 part numbers of the Destaco DPW long finger parallel gripper listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.001\" to +0.001\". Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco DPW long finger parallel gripper?",
+          "a": "Destaco lists accessory part numbers SLKT-337, SLKT-338, OSMK-116, SLKT-337V and SLKT-197V for the Destaco DPW long finger parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPW-250M-1-NS?",
+          "a": "Inspect DPW-250M-1-NS regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPW long finger parallel gripper differ from the Destaco DPW series heavy-duty parallel gripper?",
+          "a": "This listing holds 38 part numbers with cylinder bores from 0.625\" to 1.25\", and the Destaco DPW series heavy-duty parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPW series heavy-duty parallel gripper](/p/destaco-dpw-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPW long finger parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco DPW long finger parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPW long finger parallel gripper from stock in Dubai?",
+          "a": "Yes. We hold the Destaco DPW long finger parallel gripper range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-dpw-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco DPW series heavy-duty parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 10 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPW-500M-2-W in the Destaco DPW series heavy-duty parallel gripper listing?",
+          "a": "The size table describes DPW-500M-2-W as a listed build. Each of the 10 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Destaco DPW series heavy-duty parallel gripper cover?",
+          "a": "The part numbers in this listing use size figures 375M, 500M and 250M after the series name, as in DPW-375M-2-W-V and DPW-500M-1. A higher size figure is a bigger gripper, and we confirm bore and stroke against the maker data for your code."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco DPW series heavy-duty parallel gripper?",
+          "a": "The 10 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco DPW series heavy-duty parallel gripper need?",
+          "a": "The listing for the Destaco DPW series heavy-duty parallel gripper states 100 psi and 102 psi, about 6.9 bar, as the pressure by size. Grip or rotation force depends on the pressure actually at the unit, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco DPW series heavy-duty parallel gripper need?",
+          "a": "Run the Destaco DPW series heavy-duty parallel gripper, such as DPW-375M-2-W-V, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco DPW series heavy-duty parallel gripper follow a standard or carry certificates?",
+          "a": "The 10 part numbers of the Destaco DPW series heavy-duty parallel gripper listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.0001 to +0.0001. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco DPW series heavy-duty parallel gripper?",
+          "a": "Destaco lists accessory part numbers OISP-014, OISN-014, SLKT-339, SLKT-340 and OSMK-117 for the Destaco DPW series heavy-duty parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as DPW-375M-2-W-V?",
+          "a": "Keep DPW-375M-2-W-V on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco DPW series heavy-duty parallel gripper differ from the Destaco DPW long finger parallel gripper?",
+          "a": "This listing holds 10 part numbers, and the Destaco DPW long finger parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco DPW long finger parallel gripper](/p/destaco-dpw-series-long-finger-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco DPW series heavy-duty parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco DPW series heavy-duty parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco DPW series heavy-duty parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco DPW series heavy-duty parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-fua-series-2-jaw-angular-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco FUA series 2-jaw angular gripper?",
+          "a": "Destaco angular grippers close their jaws in an arc instead of in a straight line, which suits picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 3 part numbers with cylinder bores from 1.969\" to 2.48\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as FUA-50M in the Destaco FUA series 2-jaw angular gripper listing?",
+          "a": "The size table describes FUA-50M as a listed build and FUA-63M as a 2.48 inch cylinder bore. Each of the 3 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco FUA series 2-jaw angular gripper cover?",
+          "a": "The 3 part numbers in this listing carry 2 distinct cylinder bores, from 1.969\" to 2.48\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco FUA series 2-jaw angular gripper?",
+          "a": "The 3 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco FUA series 2-jaw angular gripper need?",
+          "a": "The 3 rows of the Destaco FUA series 2-jaw angular gripper listing, such as FUA-50M, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco FUA series 2-jaw angular gripper need?",
+          "a": "Run the Destaco FUA series 2-jaw angular gripper, such as FUA-50M, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco FUA series 2-jaw angular gripper follow a standard or carry certificates?",
+          "a": "The 3 part numbers of the Destaco FUA series 2-jaw angular gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco FUA series 2-jaw angular gripper?",
+          "a": "A unit such as FUA-50M needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as FUA-50M?",
+          "a": "Inspect FUA-50M regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco FUA series 2-jaw angular gripper differ from the Destaco RA series cam driven angular gripper?",
+          "a": "This listing holds 3 part numbers with cylinder bores from 1.969\" to 2.48\", and the Destaco RA series cam driven angular gripper is a separate listing with its own codes and sizes. Compare the [Destaco RA series cam driven angular gripper](/p/destaco-ra-series-cam-driven-angular-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco FUA series 2-jaw angular gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco FUA series 2-jaw angular gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco FUA series 2-jaw angular gripper from stock in Dubai?",
+          "a": "Yes. The Destaco FUA series 2-jaw angular gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-g110-series-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Destaco G110 series gripper finger kits listing contain?",
+          "a": "This Destaco listing holds 7 part numbers, mainly extended jaw finger mounting kits, rather than complete grippers, with codes such as G110-FNGR-08M-05 and G110-FNGR-11M-10. Use it to find the accessory or spare that matches the gripper you already have."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as G110-FNGR-08M-05 in the Destaco G110 series gripper finger kits listing?",
+          "a": "G110-FNGR-08M-05 and G110-FNGR-11M-10 are separate part numbers in this listing, and the rows carry little descriptive text, so the code is the reference. Quote the full code, including any suffix letters, and we confirm the build and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers does the Destaco G110 series gripper finger kits listing include?",
+          "a": "The 7 part numbers include G110-FNGR-08M-05, G110-FNGR-11M-10 and G110-FNGR-25M-20. Send the number from the unit or the gripper model it belongs to and we confirm the match before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right part from the Destaco G110 series gripper finger kits listing?",
+          "a": "Match by the part number printed on the unit, or by the gripper model and size it belongs to, rather than by description. We confirm fit against Destaco data before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to the Destaco G110 series gripper finger kits?",
+          "a": "These are mounting kits, spares and parts rather than pressure-rated grippers, so a pressure figure belongs to the gripper they fit, not to the part. Check the operating range of the gripper itself before fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the gripper need that uses the Destaco G110 series gripper finger kits?",
+          "a": "The Destaco G110 series gripper finger kits have no air connection of their own, so air quality matters for the gripper they fit: run it on clean, dry, filtered compressed air. The listing does not state materials, so we confirm them for codes such as G110-FNGR-08M-05 from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco G110 series gripper finger kits follow a standard or carry certificates?",
+          "a": "The 7 part numbers of the Destaco G110 series gripper finger kits listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which grippers do the Destaco G110 series gripper finger kits fit?",
+          "a": "They fit the Destaco gripper model they were made for, and codes such as G110-FNGR-08M-05 are matched by number, not by size. Send the gripper code or nameplate and we confirm the kit before quoting. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit a Destaco part such as G110-FNGR-08M-05?",
+          "a": "Fit G110-FNGR-08M-05 to the gripper it was made for, following the Destaco instruction sheet for that model, with the air off and the gripper vented. After fitting, check the position and function before returning to full pressure, and replace parts with the identical number."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco G110 series gripper finger kits differ from the Destaco G110 series parallel gripper?",
+          "a": "This listing holds 7 part numbers, and the Destaco G110 series parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco G110 series parallel gripper](/p/destaco-g110-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco G110 series gripper finger kits products made and how are they exported?",
+          "a": "The country of origin of the Destaco G110 series gripper finger kits depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco G110 series gripper finger kits from stock in Dubai?",
+          "a": "Yes. We hold the Destaco G110 series gripper finger kits range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-g110-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco G110 series parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 20 part numbers and jaw strokes from 0.197\" to 1.969\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as G110-08M-05-N-B in the Destaco G110 series parallel gripper listing?",
+          "a": "The size table describes G110-08M-05-N-B as an 8 mm bore and G110-08M-15-N-B as an 8 mm bore. Each of the 20 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose a size of Destaco G110 series parallel gripper?",
+          "a": "Choose the size from the part weight and the grip force it needs, then confirm the code against the 20 part numbers in this listing, such as G110-08M-05-N-B and G110-08M-20-N-B. The rows give no bore column, so send the code or the application and we confirm the match."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco G110 series parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.197\" to 1.969\" across the 20 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco G110 series parallel gripper need?",
+          "a": "The listing for the Destaco G110 series parallel gripper states 102 psi, about 7 bar, as the pressure by size. Grip or rotation force depends on the pressure actually at the unit, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco G110 series parallel gripper need?",
+          "a": "Run the Destaco G110 series parallel gripper, such as G110-08M-05-N-B, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco G110 series parallel gripper follow a standard or carry certificates?",
+          "a": "The 20 part numbers of the Destaco G110 series parallel gripper listing state no product standard and hold no certificate documents. The specification gives an accuracy figure of 0.08. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco G110 series parallel gripper?",
+          "a": "A unit such as G110-08M-05-N-B needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as G110-08M-05-N-B?",
+          "a": "Inspect G110-08M-05-N-B regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco G110 series parallel gripper differ from the Destaco G120 series extended parallel gripper?",
+          "a": "This listing holds 20 part numbers, and the Destaco G120 series extended parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco G120 series extended parallel gripper](/p/destaco-g120-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco G110 series parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco G110 series parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco G110 series parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco G110 series parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-g120-series-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco G120 series gripper used for?",
+          "a": "It is a Destaco pneumatic parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 13 part numbers, with cylinder bores from 0.31\" to 0.98\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as G120-08M-15-N-B in the Destaco G120 series gripper listing?",
+          "a": "The size table describes G120-08M-15-N-B as a 12.3 lbf grip force and G120-18M-06-N-B as a 57.2 lbf grip force. Each of the 13 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco G120 series gripper cover?",
+          "a": "The 13 part numbers in this listing carry 4 distinct cylinder bores, from 0.31\" to 0.98\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How much grip force does the Destaco G120 series gripper give?",
+          "a": "The rows that state a grip force range from 12.3 lbf to 122.8 lbf, depending on size and finger length. Grip force falls with longer fingers and lower pressure, so check the row for your code and size it against the part weight and friction with a safety margin. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco G120 series gripper need?",
+          "a": "The 13 rows of the Destaco G120 series gripper listing, such as G120-08M-15-N-B, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco G120 series gripper?",
+          "a": "The Destaco G120 series gripper listing gives a standard temperature range of -30°F to +180°F. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco G120 series gripper follow a standard or carry certificates?",
+          "a": "The 13 part numbers of the Destaco G120 series gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco G120 series gripper?",
+          "a": "Destaco lists accessory part numbers PLFT-021, 20961-11 and SLKT-244 for the Destaco G120 series gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as G120-08M-15-N-B?",
+          "a": "Keep G120-08M-15-N-B on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco G120 series gripper differ from the Destaco G120 series extended parallel gripper?",
+          "a": "This listing holds 13 part numbers with cylinder bores from 0.31\" to 0.98\", and the Destaco G120 series extended parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco G120 series extended parallel gripper](/p/destaco-g120-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco G120 series gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco G120 series gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco G120 series gripper from stock in Dubai?",
+          "a": "Yes. The Destaco G120 series gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-g120-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco G120 series extended parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 7 part numbers, with cylinder bores from 0.31\" to 0.98\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as G120-08M-05-N-B in the Destaco G120 series extended parallel gripper listing?",
+          "a": "The size table describes G120-08M-05-N-B as an 8 mm bore and G120-11M-10-N-B as an 11 mm bore. Each of the 7 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco G120 series extended parallel gripper cover?",
+          "a": "The 7 part numbers in this listing carry 4 distinct cylinder bores, from 0.31\" to 0.98\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco G120 series extended parallel gripper?",
+          "a": "The 7 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco G120 series extended parallel gripper need?",
+          "a": "The 7 rows of the Destaco G120 series extended parallel gripper listing, such as G120-08M-05-N-B, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco G120 series extended parallel gripper?",
+          "a": "The Destaco G120 series extended parallel gripper listing gives a standard temperature range of -30°F to +180°F. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco G120 series extended parallel gripper follow a standard or carry certificates?",
+          "a": "The 7 part numbers of the Destaco G120 series extended parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco G120 series extended parallel gripper?",
+          "a": "Destaco lists accessory part numbers Plft-021, 20961-11 and Slkt-244 for the Destaco G120 series extended parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as G120-08M-05-N-B?",
+          "a": "Inspect G120-08M-05-N-B regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco G120 series extended parallel gripper differ from the Destaco G110 series parallel gripper?",
+          "a": "This listing holds 7 part numbers with cylinder bores from 0.31\" to 0.98\", and the Destaco G110 series parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco G110 series parallel gripper](/p/destaco-g110-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco G120 series extended parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco G120 series extended parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco G120 series extended parallel gripper from stock in Dubai?",
+          "a": "Yes. We hold the Destaco G120 series extended parallel gripper range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-gr84-series-modular-mini-sheet-grippers-with-self-locking-linkage",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco GR84 modular mini sheet metal gripper used for?",
+          "a": "It is a Destaco pneumatic parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 232 part numbers, with cylinder bores from 1.5\" to 1.5\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as GR84-15BE-DD-9F9-MMBS-XCXXXX in the Destaco GR84 modular mini sheet metal gripper listing?",
+          "a": "The size table describes GR84-15BE-DD-9F9-MMBS-XCXXXX as a listed build. Each of the 232 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco GR84 modular mini sheet metal gripper cover?",
+          "a": "The 232 part numbers in this listing carry 1 distinct cylinder bores, from 1.5\" to 1.5\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco GR84 modular mini sheet metal gripper?",
+          "a": "The 232 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco GR84 modular mini sheet metal gripper need?",
+          "a": "The 232 rows of the Destaco GR84 modular mini sheet metal gripper listing, such as GR84-15BE-DD-9A9-MMBS-C8XX01, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco GR84 modular mini sheet metal gripper need?",
+          "a": "Run the Destaco GR84 modular mini sheet metal gripper, such as GR84-15BE-DD-9A9-MMBS-C8XX01, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco GR84 modular mini sheet metal gripper follow a standard or carry certificates?",
+          "a": "The 232 part numbers of the Destaco GR84 modular mini sheet metal gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco GR84 modular mini sheet metal gripper?",
+          "a": "A unit such as GR84-15BE-DD-9A9-MMBS-C8XX01 needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as GR84-15BE-DD-9A9-MMBS-C8XX01?",
+          "a": "Keep GR84-15BE-DD-9A9-MMBS-C8XX01 on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco GR84 modular mini sheet metal gripper differ from the Destaco parallel grippers (84 series codes)?",
+          "a": "This listing holds 232 part numbers, and the Destaco parallel grippers (84 series codes) is a separate listing with its own codes and sizes. Compare the [Destaco parallel grippers (84 series codes)](/p/destaco-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco GR84 modular mini sheet metal gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco GR84 modular mini sheet metal gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco GR84 modular mini sheet metal gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco GR84 modular mini sheet metal gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco parallel grippers (84 series codes) used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 13 part numbers and jaw strokes from 0.16\" to 3.125\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as DPE-200-25 in the Destaco parallel grippers (84 series codes) listing?",
+          "a": "The size table describes DPE-200-25 as a listed build. Each of the 13 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Destaco parallel grippers (84 series codes) cover?",
+          "a": "The part numbers in this listing use size figures 5, 100M, 11M, 4M, 200 and 4040 after the series name, as in 84B3-120000000 and 8JW-025-1. A higher size figure is a bigger gripper, and we confirm bore and stroke against the maker data for your code."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco parallel grippers (84 series codes) have?",
+          "a": "Jaw stroke in this listing runs from 0.16\" to 3.125\" across the 13 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco parallel grippers (84 series codes) need?",
+          "a": "The 13 rows of the Destaco parallel grippers (84 series codes) listing, such as 84B3-120000000, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco parallel grippers (84 series codes) need?",
+          "a": "Run the Destaco parallel grippers (84 series codes), such as 84B3-120000000, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco parallel grippers (84 series codes) follow a standard or carry certificates?",
+          "a": "The 13 part numbers of the Destaco parallel grippers (84 series codes) listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco parallel grippers (84 series codes)?",
+          "a": "A unit such as 84B3-120000000 needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as 84B3-120000000?",
+          "a": "Inspect 84B3-120000000 regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco parallel grippers (84 series codes) differ from the Destaco GR84 modular mini sheet metal gripper?",
+          "a": "This listing holds 13 part numbers, and the Destaco GR84 modular mini sheet metal gripper is a separate listing with its own codes and sizes. Compare the [Destaco GR84 modular mini sheet metal gripper](/p/destaco-gr84-series-modular-mini-sheet-grippers-with-self-locking-linkage) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco parallel grippers (84 series codes) products made and how are they exported?",
+          "a": "The country of origin of the Destaco parallel grippers (84 series codes) depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco parallel grippers (84 series codes) from stock in Dubai?",
+          "a": "Yes. The Destaco parallel grippers (84 series codes) range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-pneumatic-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Destaco gripper sensor mounting kits listing contain?",
+          "a": "This Destaco listing holds 53 part numbers, mainly sensor mounting kits, locking valve kits, sensors and mini power slides, rather than complete grippers, with codes such as OSMK-072 and OHSN-017. Use it to find the accessory or spare that matches the gripper you already have."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as OSMK-072 in the Destaco gripper sensor mounting kits listing?",
+          "a": "OSMK-072 and OHSN-017 are separate part numbers in this listing, and the rows carry little descriptive text, so the code is the reference. Quote the full code, including any suffix letters, and we confirm the build and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which part numbers does the Destaco gripper sensor mounting kits listing include?",
+          "a": "The 53 part numbers include OSMK-072, OHSN-017 and REP-62-P-RI-C. Send the number from the unit or the gripper model it belongs to and we confirm the match before quoting."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right part from the Destaco gripper sensor mounting kits listing?",
+          "a": "Match by the part number printed on the unit, or by the gripper model and size it belongs to, rather than by description. We confirm fit against Destaco data before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to the Destaco gripper sensor mounting kits?",
+          "a": "These are mounting kits, spares and parts rather than pressure-rated grippers, so a pressure figure belongs to the gripper they fit, not to the part. Check the operating range of the gripper itself before fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the gripper need that uses the Destaco gripper sensor mounting kits?",
+          "a": "The Destaco gripper sensor mounting kits have no air connection of their own, so air quality matters for the gripper they fit: run it on clean, dry, filtered compressed air. The listing does not state materials, so we confirm them for codes such as OSMK-072 from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco gripper sensor mounting kits follow a standard or carry certificates?",
+          "a": "The 53 part numbers of the Destaco gripper sensor mounting kits listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which grippers do the Destaco gripper sensor mounting kits fit?",
+          "a": "They fit the Destaco gripper model they were made for, and codes such as OSMK-072 are matched by number, not by size. Send the gripper code or nameplate and we confirm the kit before quoting. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit a Destaco part such as OSMK-072?",
+          "a": "Fit OSMK-072 to the gripper it was made for, following the Destaco instruction sheet for that model, with the air off and the gripper vented. After fitting, check the position and function before returning to full pressure, and replace parts with the identical number."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco gripper sensor mounting kits differ from the Destaco RPS sealed parallel gripper?",
+          "a": "This listing holds 53 part numbers, and the Destaco RPS sealed parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco RPS sealed parallel gripper](/p/destaco-rps-series-parallel-grippers-sealed) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco gripper sensor mounting kits products made and how are they exported?",
+          "a": "The Destaco gripper sensor mounting kits listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco gripper sensor mounting kits from stock in Dubai?",
+          "a": "Yes. We hold the Destaco gripper sensor mounting kits range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-ppc-series-multipurpose-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco PPC multipurpose 3-jaw parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 3-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 36 part numbers, with cylinder bores from 2.48\" to 4.33\" and jaw strokes from 0.3\" to 1.181\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as PPC-25-RE in the Destaco PPC multipurpose 3-jaw parallel gripper listing?",
+          "a": "The size table describes PPC-25-RE as a 3-jaw, 3.35 inch cylinder bore, 4.92 inch size and PPC-12-RI-C-V as a 3-jaw, 2.48 inch cylinder bore, 3.86 inch size. Each of the 36 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco PPC multipurpose 3-jaw parallel gripper cover?",
+          "a": "The 36 part numbers in this listing carry 3 distinct cylinder bores, from 2.48\" to 4.33\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco PPC multipurpose 3-jaw parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.3\" to 1.181\" across the 36 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco PPC multipurpose 3-jaw parallel gripper need?",
+          "a": "The 36 rows of the Destaco PPC multipurpose 3-jaw parallel gripper listing, such as PPC-34, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco PPC multipurpose 3-jaw parallel gripper need?",
+          "a": "Run the Destaco PPC multipurpose 3-jaw parallel gripper, such as PPC-34, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco PPC multipurpose 3-jaw parallel gripper follow a standard or carry certificates?",
+          "a": "The 36 part numbers of the Destaco PPC multipurpose 3-jaw parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco PPC multipurpose 3-jaw parallel gripper?",
+          "a": "A unit such as PPC-34 needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as PPC-34?",
+          "a": "Inspect PPC-34 regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco PPC multipurpose 3-jaw parallel gripper differ from the Destaco RTH multi-purpose powerful 3-jaw parallel gripper?",
+          "a": "This listing holds 36 part numbers with cylinder bores from 2.48\" to 4.33\", and the Destaco RTH multi-purpose powerful 3-jaw parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco RTH multi-purpose powerful 3-jaw parallel gripper](/p/destaco-rth-series-multi-purpose-powerful-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco PPC multipurpose 3-jaw parallel gripper products made and how are they exported?",
+          "a": "The Destaco PPC multipurpose 3-jaw parallel gripper listing gives France as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco PPC multipurpose 3-jaw parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco PPC multipurpose 3-jaw parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-ra-series-cam-driven-angular-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco RA series cam driven angular gripper?",
+          "a": "Destaco angular grippers close their jaws in an arc instead of in a straight line, which suits picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 17 part numbers with cylinder bores from 0.75\" to 2.5\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as RA-90M in the Destaco RA series cam driven angular gripper listing?",
+          "a": "The size table describes RA-90M as a 19.9 mm bore and RA-6M as a 31.8 mm bore. Each of the 17 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco RA series cam driven angular gripper cover?",
+          "a": "The 17 part numbers in this listing carry 6 distinct cylinder bores, from 0.75\" to 2.5\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco RA series cam driven angular gripper?",
+          "a": "The 17 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco RA series cam driven angular gripper need?",
+          "a": "The 17 rows of the Destaco RA series cam driven angular gripper listing, such as RA-10, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco RA series cam driven angular gripper?",
+          "a": "The Destaco RA series cam driven angular gripper listing gives Buna N seals. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco RA series cam driven angular gripper follow a standard or carry certificates?",
+          "a": "The 17 part numbers of the Destaco RA series cam driven angular gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and accessories fit the Destaco RA series cam driven angular gripper?",
+          "a": "The rows of the Destaco RA series cam driven angular gripper listing give port sizes such as M3, M5 and g1/8\", so match fittings and tubing to your code. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as RA-10?",
+          "a": "Keep RA-10 on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco RA series cam driven angular gripper differ from the Destaco RUA 2-jaw angular gripper?",
+          "a": "This listing holds 17 part numbers with cylinder bores from 0.75\" to 2.5\", and the Destaco RUA 2-jaw angular gripper is a separate listing with its own codes and sizes. Compare the [Destaco RUA 2-jaw angular gripper](/p/destaco-rua-series-angular-grippers-2-jaws) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco RA series cam driven angular gripper products made and how are they exported?",
+          "a": "The Destaco RA series cam driven angular gripper listing gives United States as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco RA series cam driven angular gripper from stock in Dubai?",
+          "a": "Yes. The Destaco RA series cam driven angular gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-rdh-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco RDH series parallel gripper (metric sizes) used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 23 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as RDH-1M in the Destaco RDH series parallel gripper (metric sizes) listing?",
+          "a": "The size table describes RDH-1M as a 27.2 mm bore and RDH-4M-L as a 48.8 mm bore. Each of the 23 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Destaco RDH series parallel gripper (metric sizes) cover?",
+          "a": "The part numbers in this listing use size figures 2M, 3M, 4M, 5M, 6M, 8M, 1M and 7M after the series name, as in RDH-2M-L-C and RDH-3M. A higher size figure is a bigger gripper, and we confirm bore and stroke against the maker data for your code."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the grip force of a Destaco RDH series parallel gripper (metric sizes)?",
+          "a": "The 23 rows of this listing give no grip force figure, so size it from the part weight, friction and a safety margin. We confirm the force of your code from Destaco before supply, and grip force rises with bore and with air pressure. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco RDH series parallel gripper (metric sizes) need?",
+          "a": "The 23 rows of the Destaco RDH series parallel gripper (metric sizes) listing, such as RDH-2M-L-C, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco RDH series parallel gripper (metric sizes)?",
+          "a": "The Destaco RDH series parallel gripper (metric sizes) listing gives clean room versions. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco RDH series parallel gripper (metric sizes) follow a standard or carry certificates?",
+          "a": "The 23 part numbers of the Destaco RDH series parallel gripper (metric sizes) listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.0008 to +0.0008. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco RDH series parallel gripper (metric sizes)?",
+          "a": "Destaco lists accessory part numbers OISP-014, OISN-014, SLKT-417, SLKT-417V and CABL-010 for the Destaco RDH series parallel gripper (metric sizes), covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as RDH-2M-L-C?",
+          "a": "Inspect RDH-2M-L-C regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco RDH series parallel gripper (metric sizes) differ from the Destaco RDH rugged multi-purpose parallel gripper?",
+          "a": "This listing holds 23 part numbers, and the Destaco RDH rugged multi-purpose parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco RDH rugged multi-purpose parallel gripper](/p/destaco-rdh-series-rugged-multi-purpose-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco RDH series parallel gripper (metric sizes) products made and how are they exported?",
+          "a": "The country of origin of the Destaco RDH series parallel gripper (metric sizes) depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco RDH series parallel gripper (metric sizes) from stock in Dubai?",
+          "a": "Yes. We hold the Destaco RDH series parallel gripper (metric sizes) range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-rdh-series-rugged-multi-purpose-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco RDH rugged multi-purpose parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 62 part numbers, with cylinder bores from 1.07\" to 6.75\" and jaw strokes from 0.16\" to 2.76\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as RDH-2M-L-C-V in the Destaco RDH rugged multi-purpose parallel gripper listing?",
+          "a": "The size table describes RDH-2M-L-C-V as a 2-jaw, 12 mm stroke and RDH-6M-L-C-V as a 2-jaw, 32 mm stroke. Each of the 62 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco RDH rugged multi-purpose parallel gripper cover?",
+          "a": "The 62 part numbers in this listing carry 8 distinct cylinder bores, from 1.07\" to 6.75\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco RDH rugged multi-purpose parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.16\" to 2.76\" across the 62 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco RDH rugged multi-purpose parallel gripper need?",
+          "a": "The 62 rows of the Destaco RDH rugged multi-purpose parallel gripper listing, such as RDH-2M-O, carry no pressure range, so we confirm it for your code from Destaco before supply. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco RDH rugged multi-purpose parallel gripper?",
+          "a": "The Destaco RDH rugged multi-purpose parallel gripper listing gives clean room versions. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco RDH rugged multi-purpose parallel gripper follow a standard or carry certificates?",
+          "a": "The 62 part numbers of the Destaco RDH rugged multi-purpose parallel gripper listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.0008\" to +0.0008\". Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco RDH rugged multi-purpose parallel gripper?",
+          "a": "Destaco lists accessory part numbers OISP-014, OISN-014, SLKT-417, SLKT-417V and CABL-010 for the Destaco RDH rugged multi-purpose parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as RDH-2M-O?",
+          "a": "Keep RDH-2M-O on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco RDH rugged multi-purpose parallel gripper differ from the Destaco RDH series parallel gripper (metric sizes)?",
+          "a": "This listing holds 62 part numbers with cylinder bores from 1.07\" to 6.75\", and the Destaco RDH series parallel gripper (metric sizes) is a separate listing with its own codes and sizes. Compare the [Destaco RDH series parallel gripper (metric sizes)](/p/destaco-rdh-series-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco RDH rugged multi-purpose parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco RDH rugged multi-purpose parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco RDH rugged multi-purpose parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco RDH rugged multi-purpose parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-rep-2-series-cam-lever-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco REP-2 cam lever parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 48 part numbers, with cylinder bores from 1.57\" to 3\" and jaw strokes from 0.394\" to 1.181\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as REP-62-P-RE in the Destaco REP-2 cam lever parallel gripper listing?",
+          "a": "The size table describes REP-62-P-RE as a 2-jaw, 1.57 inch cylinder bore, 2.76 inch size, 30 to 100 psi and REP-82-P-RE-C-V as a 2-jaw, 2.36 inch cylinder bore, 4.25 inch size, 30 to 100 psi. Each of the 48 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco REP-2 cam lever parallel gripper cover?",
+          "a": "The 48 part numbers in this listing carry 3 distinct cylinder bores, from 1.57\" to 3\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco REP-2 cam lever parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.394\" to 1.181\" across the 48 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco REP-2 cam lever parallel gripper need?",
+          "a": "The row descriptions for the Destaco REP-2 cam lever parallel gripper, such as REP-62-P, give 30 to 100 psi, which is about 2.1 to 6.9 bar, so supply the gripper inside that range. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco REP-2 cam lever parallel gripper need?",
+          "a": "Run the Destaco REP-2 cam lever parallel gripper, such as REP-62-P, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco REP-2 cam lever parallel gripper follow a standard or carry certificates?",
+          "a": "The 48 part numbers of the Destaco REP-2 cam lever parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco REP-2 cam lever parallel gripper?",
+          "a": "A unit such as REP-62-P needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as REP-62-P?",
+          "a": "Inspect REP-62-P regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco REP-2 cam lever parallel gripper differ from the Destaco REP-3 multipurpose parallel gripper?",
+          "a": "This listing holds 48 part numbers with cylinder bores from 1.57\" to 3\", and the Destaco REP-3 multipurpose parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco REP-3 multipurpose parallel gripper](/p/destaco-rep-3-series-multipurpose-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco REP-2 cam lever parallel gripper products made and how are they exported?",
+          "a": "The Destaco REP-2 cam lever parallel gripper listing gives France as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco REP-2 cam lever parallel gripper from stock in Dubai?",
+          "a": "Yes. The Destaco REP-2 cam lever parallel gripper range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Destaco part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-rep-3-series-multipurpose-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco REP-3 multipurpose parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 3-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 73 part numbers, with cylinder bores from 1.57\" to 3\" and jaw strokes from 0.394\" to 1.118\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as REP-83-P-C in the Destaco REP-3 multipurpose parallel gripper listing?",
+          "a": "The size table describes REP-83-P-C as a listed build and REP-83-P-T-C as a 3-jaw, 2.36 inch cylinder bore, 4.25 inch size, 30 to 100 psi. Each of the 73 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco REP-3 multipurpose parallel gripper cover?",
+          "a": "The 73 part numbers in this listing carry 3 distinct cylinder bores, from 1.57\" to 3\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "What jaw stroke does the Destaco REP-3 multipurpose parallel gripper have?",
+          "a": "Jaw stroke in this listing runs from 0.394\" to 1.118\" across the 73 part numbers. Pick a stroke that clears the part plus its position tolerance, and note that a longer stroke usually means a larger body. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco REP-3 multipurpose parallel gripper need?",
+          "a": "The row descriptions for the Destaco REP-3 multipurpose parallel gripper, such as REP-83-P-C, give 30 to 100 psi, which is about 2.1 to 6.9 bar, so supply the gripper inside that range. Grip force depends on the pressure actually at the gripper, so check it after the valve and tubing, not only at the compressor."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Destaco REP-3 multipurpose parallel gripper need?",
+          "a": "Run the Destaco REP-3 multipurpose parallel gripper, such as REP-83-P-C, on clean, dry, filtered compressed air with a filter and regulator ahead of the valve. The listing does not state materials or a temperature range, so tell us the environment and we confirm the build from Destaco data. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco REP-3 multipurpose parallel gripper follow a standard or carry certificates?",
+          "a": "The 73 part numbers of the Destaco REP-3 multipurpose parallel gripper listing state no product standard and hold no certificate documents. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Destaco REP-3 multipurpose parallel gripper?",
+          "a": "A unit such as REP-83-P-C needs air fittings and tubing at its ports, a valve to drive the jaws or rotation, and your own fingers or tooling. Sensors and finger options vary by size, and we confirm them against the code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as REP-83-P-C?",
+          "a": "Keep REP-83-P-C on filtered, regulated air, check the jaws or output for play and listen for leaks at the ports and seals. Replace a worn unit with the identical part number so size, options and tooling mounting stay the same."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco REP-3 multipurpose parallel gripper differ from the Destaco REP-2 cam lever parallel gripper?",
+          "a": "This listing holds 73 part numbers with cylinder bores from 1.57\" to 3\", and the Destaco REP-2 cam lever parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco REP-2 cam lever parallel gripper](/p/destaco-rep-2-series-cam-lever-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco REP-3 multipurpose parallel gripper products made and how are they exported?",
+          "a": "The Destaco REP-3 multipurpose parallel gripper listing gives France as the country of origin. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco REP-3 multipurpose parallel gripper from stock in Dubai?",
+          "a": "Yes. We hold the Destaco REP-3 multipurpose parallel gripper range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Destaco part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-rep-series-parallel-grippers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco REP series parallel gripper used for?",
+          "a": "It is a Destaco pneumatic 2-Jaw parallel gripper whose jaws close in a straight line for picking, holding and placing parts on robots, pick-and-place units and assembly machines. This listing holds 5 part numbers, with cylinder bores from 1.57\" to 3\" and jaw strokes from 0.394\" to 1.181\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as REP-62-P-RE-V in the Destaco REP series parallel gripper listing?",
+          "a": "The size table describes REP-62-P-RE-V as a 0.394 inch stroke, 157 lbf grip force and REP-63-P-RE-C as a 0.63 inch stroke, 81 lbf grip force. Each of the 5 codes in this listing is a complete part number, so quote the full code, including any suffix letters, and we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and cylinder bores does the Destaco REP series parallel gripper cover?",
+          "a": "The 5 part numbers in this listing carry 2 distinct cylinder bores, from 1.57\" to 3\", and a larger bore gives more grip force at the same air pressure. Choose the bore from the force you need, then check the stroke and finger length."
+        },
+        {
+          "slot": "D",
+          "q": "How much grip force does the Destaco REP series parallel gripper give?",
+          "a": "The rows that state a grip force range from 81 lbf to 362 lbf, depending on size and finger length. Grip force falls with longer fingers and lower pressure, so check the row for your code and size it against the part weight and friction with a safety margin. Our [gripper and vacuum guide](/blog/pneumatic-grippers-and-vacuum-guide) covers force and stroke sizing."
+        },
+        {
+          "slot": "E",
+          "q": "What operating pressure does the Destaco REP series parallel gripper need?",
+          "a": "The rated rows of the Destaco REP series parallel gripper listing show 30 psi, which is the lower end of the working range; we confirm the upper limit for your code from Destaco before supply. Check the pressure at the unit after the valve and tubing."
+        },
+        {
+          "slot": "F",
+          "q": "What environment and air quality suit the Destaco REP series parallel gripper?",
+          "a": "The Destaco REP series parallel gripper listing gives a standard temperature range of -30°F to +180°F. Run it on clean, dry, filtered compressed air with a regulator ahead of the valve; water and particles wear the seals and slow the jaws, and our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the purity classes."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Destaco REP series parallel gripper follow a standard or carry certificates?",
+          "a": "The 5 part numbers of the Destaco REP series parallel gripper listing state no product standard and hold no certificate documents. The specification gives repeatability of -0.0008 to +0.0008. Ask for a datasheet or certificate of conformity in the enquiry and we obtain it from Destaco with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which accessories and sensors fit the Destaco REP series parallel gripper?",
+          "a": "Destaco lists accessory part numbers OISN-011, OISP-011, OHSN-006, OHSP-006 and CABL-010 for the Destaco REP series parallel gripper, covering sensor, cable and valve options. Add them to the enquiry with the gripper code. Valves to drive it are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves), and tubing fittings are on the [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Destaco gripper such as REP-62-P-RE-V?",
+          "a": "Inspect REP-62-P-RE-V regularly for play, wear on the contact faces and air leaks at the ports. Keep the air clean and dry, and when replacing a unit order the identical part number so the mounting and options match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco REP series parallel gripper differ from the Destaco REP-3 multipurpose parallel gripper?",
+          "a": "This listing holds 5 part numbers with cylinder bores from 1.57\" to 3\", and the Destaco REP-3 multipurpose parallel gripper is a separate listing with its own codes and sizes. Compare the [Destaco REP-3 multipurpose parallel gripper](/p/destaco-rep-3-series-multipurpose-parallel-grippers) page and pick by the code printed on your unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco REP series parallel gripper products made and how are they exported?",
+          "a": "The country of origin of the Destaco REP series parallel gripper depends on the Destaco plant and is stated on our commercial invoice. We export from Dubai, UAE to the GCC, Africa, Asia and beyond by air or sea, and the HS code is agreed at quotation and printed on the invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Destaco REP series parallel gripper from stock in Dubai?",
+          "a": "Yes. We keep the Destaco REP series parallel gripper range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Destaco part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

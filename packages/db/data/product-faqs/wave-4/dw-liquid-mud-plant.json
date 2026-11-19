@@ -1,0 +1,76 @@
+{
+  "family": "dw-liquid-mud-plant",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "liquid-mud-plant-lmp-modular-8-000-bbl-total-storage-iso-container-footprints",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a modular 8,000 BBL liquid mud plant used for?",
+          "a": "A liquid mud plant (LMP) prepares and stores brine and oil-based mud for drilling. This modular plant has 8,000 BBL of combined storage across base oil, brine and OBM tanks, with the per-fluid volumes adjustable to project demand."
+        },
+        {
+          "slot": "D",
+          "q": "What does the modular 8,000 BBL liquid mud plant include?",
+          "a": "It includes hoppers with Venturi suction mixing jets, a base-oil transfer pump, carbon steel and or stainless steel mixing pumps with a brine and mud circulation manifold, mud and brine mixing tanks, and base oil, brine and OBM storage tanks."
+        },
+        {
+          "slot": "D",
+          "q": "Can the storage volume of the modular 8,000 BBL liquid mud plant be changed?",
+          "a": "Yes. The 8,000 BBL is the combined storage, with the base oil, brine and OBM volumes adjustable to project demand, and capacity scales up or down by adding or removing modules. State the volume per fluid on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How are the plant modules of the modular 8,000 BBL liquid mud plant shipped?",
+          "a": "All modules are built to standard seafreight container footprints, which avoids oversize shipping surcharges. That makes the plant easier to ship to remote GCC and African sites; confirm the module count with the quotation."
+        },
+        {
+          "slot": "F",
+          "q": "What are the mixing pumps of the modular 8,000 BBL liquid mud plant made of?",
+          "a": "The mixing pumps are carbon steel and or stainless steel, chosen per the fluid circulated. Stainless is the usual choice for brine, so state the brine type and chemistry on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What safety and access features does the modular 8,000 BBL liquid mud plant have?",
+          "a": "The plant has walkways, staircases, handrails and lighting throughout. State any hazardous-area classification and the standards of the operator on the RFQ so electrical equipment is selected to match."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the modular 8,000 BBL liquid mud plant?",
+          "a": "It supplies mixed fluid to the mud tanks and the mud pump package on the rig. See [mud tanks](/c/dw-mud-tanks), [mud pump packages](/c/dw-mud-pump-package) and [mud manifolds](/c/dw-mud-manifolds)."
+        },
+        {
+          "slot": "K",
+          "q": "How does a liquid mud plant differ from a mud tank?",
+          "a": "A liquid mud plant mixes and stores several fluids with its own pumps and hoppers, while a [skid-mounted mud tank](/p/mud-tank-skid-mounted-500-bbl-40-ft-iso-footprint-manholes-sight-gauges) is a storage and transport vessel. A plant normally feeds tanks like these."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the modular 8,000 BBL liquid mud plant used?",
+          "a": "It is used for the preparation of brine and oil-based muds for drilling and workover. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for how the fluid system fits together."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a liquid mud plant quotation?",
+          "a": "Send the total storage and the volume of base oil, brine and OBM, the mixing rate, pump materials, the site and shipping route, and any area classification. Modules are added or removed to match."
+        },
+        {
+          "slot": "I",
+          "q": "How is the modular 8,000 BBL liquid mud plant installed on site?",
+          "a": "The modules are built to container footprints, so they are positioned and piped together on site, with the walkways, staircases and handrails fitted. Send the site layout through [our contact page](/contact) for a plan."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the modular 8,000 BBL liquid mud plant?",
+          "a": "Yes. We list the modular 8,000 BBL liquid mud plant as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Modules are configured to project demand. Send your capacity, configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "family": "orfs-adapters-01",
+  "extraFacts": [
+    {
+      "fact": "ORS is Eaton Aeroquip's name for the O-ring face seal connection (ORFS, SAE J1453 / ISO 8434-3): a flat-faced fitting whose face carries an O-ring that seals against the flat face of a female swivel nut; the thread holds the joint and the O-ring seals.",
+      "source": "SAE J1453 / ISO 8434-3; Eaton Aeroquip catalogue (ORS)"
+    },
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss port: a straight UN/UNF thread with an O-ring under the hex shoulder that makes the seal.",
+      "source": "SAE J1926 / ISO 11926"
+    },
+    {
+      "fact": "ASME B1.20.3 (Dryseal NPTF) is the pipe thread standard for NPTF threads, which seal on the taper with sealant.",
+      "source": "ASME B1.20.3"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aeroquip-ff1852t-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF1852T Series Straight Adapters used for?",
+          "a": "Aeroquip FF1852T Series Straight Adapters are Aeroquip straight adapters with O-ring face seal (ORS) male and SAE O-ring boss (ORB) male ends. They connect an O-ring face seal (ORS) male end to an SAE O-ring boss male thread through a rigid straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF1852T0605S on the Aeroquip FF1852T Series Straight Adapters?",
+          "a": "Every number on this listing begins with the FF1852T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF1852T0605S is listed as \"Hydraulic Hose Adapter, 3/8 Inch x 5/16 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF1852T1012S is listed as \"Hydraulic Hose Adapter, 5/8 Inch x 3/4 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF1852T2020S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x ORB, Rigid\". The four digits after the series are the two dash sizes, so FF1852T0605S is listed as a 3/8 inch by 5/16 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF1852T Series Straight Adapters come in?",
+          "a": "The Aeroquip FF1852T Series Straight Adapters lists 19 Aeroquip part numbers from 1/4\" to 1 1/2\", for example FF1852T0605S, FF1852T1012S and FF1852T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF1852T Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF1852T Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF1852T0605S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF1852T Series Straight Adapters made of?",
+          "a": "For the Aeroquip FF1852T Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The FF1852T series numbers such as FF1852T0605S and FF1852T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF1852T Series Straight Adapters?",
+          "a": "On the Aeroquip FF1852T Series Straight Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF1852T1012S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF1852T Series Straight Adapters connect to?",
+          "a": "On the Aeroquip FF1852T Series Straight Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF1852T Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF1852T Series Straight Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. The ORB end is sealed by its own O-ring under the hex."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF1852T Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Joining an ORS hose end to a boss-ported pump, valve or block. Tell us the system and the port threads and we confirm the Aeroquip FF1852T Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF1852T Series Straight Adapters differ from the Aeroquip FF2068T Series Elbow Adapters?",
+          "a": "The FF1852T is straight, while the [Aeroquip FF2068T Series Elbow Adapters](/p/aeroquip-ff2068t-series-elbow-adapters) turns the line through 45°. Both have an ORS male and an ORB male end, so choose by the routing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF1852T Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip FF1852T Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF1852T Series Straight Adapters in Dubai?",
+          "a": "Yes. We keep the Aeroquip FF1852T Series Straight Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff1868t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF1868T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF1868T Series Elbow Adapters are Aeroquip 90° elbow adapters with O-ring face seal (ORS) male and SAE O-ring boss (ORB) male ends. They connect an ORS male end to an SAE O-ring boss male thread through a 90° bend, with a 400°F temperature figure."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF1868T0404S on the Aeroquip FF1868T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF1868T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF1868T0404S is listed as \"Elbow, 90 Deg., 1/4 Inch x 1/4 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF1868T0608S is listed as \"Elbow, 90 Deg., 3/8 Inch x 1/2 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF1868T0405S is listed as \"Elbow, 90 Deg., 1/4 Inch x 5/16 Inch Size, Male x Male, ORS x ORB, Rigid\". The four digits after the series are the two dash sizes, so FF1868T0404S is listed as a 1/4 inch by 1/4 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF1868T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF1868T Series Elbow Adapters lists 17 Aeroquip part numbers from 1/4\" to 1 1/2\", for example FF1868T0404S, FF1868T1012S and FF1868T0405S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF1868T Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF1868T Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF1868T0404S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF1868T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF1868T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The FF1868T series numbers such as FF1868T0404S and FF1868T0405S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF1868T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF1868T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF1868T1012S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF1868T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF1868T Series Elbow Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF1868T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF1868T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Orient the elbow before tightening the ORB end."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF1868T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Right-angle connections from ORS lines into boss ports. Tell us the system and the port threads and we confirm the Aeroquip FF1868T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF1868T Series Elbow Adapters differ from the Aeroquip FF1852T Series Straight Adapters?",
+          "a": "The FF1868T is a 90° elbow, while the [Aeroquip FF1852T Series Straight Adapters](/p/aeroquip-ff1852t-series-straight-adapters) is straight. Both pair an ORS male end with an ORB male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF1868T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF1868T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF1868T Series Elbow Adapters in Dubai?",
+          "a": "Yes, the Aeroquip FF1868T Series Elbow Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff1898t-series-tee-y-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF1898T Series Tee/Y Adapters used for?",
+          "a": "Aeroquip FF1898T Series Tee/Y Adapters are Aeroquip tee adapters with O-ring face seal (ORS) male and O-ring face seal (ORS) male ends. They join three ORS male ports in a tee, rated by the maker from 3,600 to 9,000 psi by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF1898T1616S on the Aeroquip FF1898T Series Tee/Y Adapters?",
+          "a": "Every number on this listing begins with the FF1898T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF1898T1616S is listed as \"Hose Adapter, 1 Inch x 1 Inch x 1 Inch Size, Male x Male x Male, ORS x ORS x ORS, Rigid\"; FF1898T1212S is listed as \"Hose Adapter, 3/4 Inch x 3/4 Inch x 3/4 Inch Size, Male x Male x Male, ORS x ORS x ORS\"; FF1898T2020S is listed as \"Hose Adapter, 1 1/4 Inch x 1 1/4 Inch x 1 1/4 Inch Size, Male x Male x Male, Rigid, Tee\". The four digits after the series are the dash sizes, so FF1898T1616S is a 1 inch by 1 inch by 1 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF1898T Series Tee/Y Adapters come in?",
+          "a": "The Aeroquip FF1898T Series Tee/Y Adapters lists 7 Aeroquip part numbers from 1/4\" to 1 1/4\", for example FF1898T1616S, FF1898T1212S and FF1898T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF1898T Series Tee/Y Adapters have?",
+          "a": "The maker states 3,600 to 9,000 psi (248 to 621 bar), by size for the Aeroquip FF1898T Series Tee/Y Adapters, with a temperature figure of 400°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF1898T Series Tee/Y Adapters made of?",
+          "a": "For the Aeroquip FF1898T Series Tee/Y Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF1898T series numbers such as FF1898T1616S and FF1898T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF1898T Series Tee/Y Adapters?",
+          "a": "On the Aeroquip FF1898T Series Tee/Y Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF1898T1212S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF1898T Series Tee/Y Adapters connect to?",
+          "a": "On the Aeroquip FF1898T Series Tee/Y Adapters, all three ports are O-ring face seal (ORS) male and each seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF1898T Series Tee/Y Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF1898T Series Tee/Y Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Support the run so the third port is not loaded."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF1898T Series Tee/Y Adapters used?",
+          "a": "Splitting or joining ORS lines where a branch is needed. Tell us the system and the port threads and we confirm the Aeroquip FF1898T Series Tee/Y Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF1898T Series Tee/Y Adapters differ from the Aeroquip FF1994T Series Union Adapters?",
+          "a": "The FF1898T has three ORS ports in a tee, while the [Aeroquip FF1994T Series Union Adapters](/p/aeroquip-ff1994t-series-union-adapters) has two in a straight union. Both are rated up to 9,000 psi by the maker."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF1898T Series Tee/Y Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip FF1898T Series Tee/Y Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF1898T Series Tee/Y Adapters in Dubai?",
+          "a": "Yes. The Aeroquip FF1898T Series Tee/Y Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff1994t-series-union-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF1994T Series Union Adapters used for?",
+          "a": "Aeroquip FF1994T Series Union Adapters are Aeroquip union adapters with O-ring face seal (ORS) male and O-ring face seal (ORS) male ends. They join two ORS male ends in a rigid straight union, rated by the maker from 4,000 to 9,000 psi by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF1994T1616S on the Aeroquip FF1994T Series Union Adapters?",
+          "a": "Every number on this listing begins with the FF1994T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF1994T1616S is listed as \"Hydraulic Hose Adapter, 1 Inch x 1 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF1994T0404S is listed as \"Hydraulic Hose Adapter, 1/4 Inch x 1/4 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF1994T2020S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x ORS, Rigid\". The four digits after the series are the dash sizes, so FF1994T1616S is a 1 inch by 1 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF1994T Series Union Adapters come in?",
+          "a": "The Aeroquip FF1994T Series Union Adapters lists 6 Aeroquip part numbers from 1/4\" to 1 1/4\", for example FF1994T1616S, FF1994T0404S and FF1994T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF1994T Series Union Adapters have?",
+          "a": "The maker states 4,000 to 9,000 psi (276 to 621 bar), by size for the Aeroquip FF1994T Series Union Adapters, with a temperature figure of 250°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF1994T Series Union Adapters made of?",
+          "a": "For the Aeroquip FF1994T Series Union Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF1994T series numbers such as FF1994T1616S and FF1994T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF1994T Series Union Adapters?",
+          "a": "On the Aeroquip FF1994T Series Union Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF1994T0606S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF1994T Series Union Adapters connect to?",
+          "a": "On the Aeroquip FF1994T Series Union Adapters, both ends are O-ring face seal (ORS) male and each seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF1994T Series Union Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF1994T Series Union Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF1994T Series Union Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Connecting two female ORS hose or tube ends in a straight line. Tell us the system and the port threads and we confirm the Aeroquip FF1994T Series Union Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF1994T Series Union Adapters differ from the Aeroquip FF2000T Series Straight Adapters?",
+          "a": "The FF1994T is called a union and carries a stated 4,000 to 9,000 psi rating, while the [Aeroquip FF2000T Series Straight Adapters](/p/aeroquip-ff2000t-series-straight-adapters) is a straight adapter without a pressure figure on the listing. Both are ORS male to ORS male."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF1994T Series Union Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307995045 for the Aeroquip FF1994T Series Union Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF1994T Series Union Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip FF1994T Series Union Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2000t-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2000T Series Straight Adapters used for?",
+          "a": "Aeroquip FF2000T Series Straight Adapters are Aeroquip straight adapters with O-ring face seal (ORS) male and O-ring face seal (ORS) male ends. They join two ORS male ends in a straight rigid body, in sizes up to 2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2000T2424S on the Aeroquip FF2000T Series Straight Adapters?",
+          "a": "Every number on this listing begins with the FF2000T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2000T2424S is listed as \"Hydraulic Hose Adapter, 1 1/2 Inch x 1 1/2 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF2000T1212S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 3/4 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF2000T2020S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x ORS, Rigid\". The four digits after the series are the dash sizes, so FF2000T1616S is a 1 inch by 1 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2000T Series Straight Adapters come in?",
+          "a": "The Aeroquip FF2000T Series Straight Adapters lists 12 Aeroquip part numbers from 1/4\" to 2\", for example FF2000T2424S, FF2000T1212S and FF2000T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2000T Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF2000T Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2000T2424S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2000T Series Straight Adapters made of?",
+          "a": "For the Aeroquip FF2000T Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The FF2000T series numbers such as FF2000T2424S and FF2000T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2000T Series Straight Adapters?",
+          "a": "On the Aeroquip FF2000T Series Straight Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2000T1212S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2000T Series Straight Adapters connect to?",
+          "a": "On the Aeroquip FF2000T Series Straight Adapters, both ends are O-ring face seal (ORS) male and each seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2000T Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2000T Series Straight Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2000T Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Straight connections between two female ORS ends. Tell us the system and the port threads and we confirm the Aeroquip FF2000T Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2000T Series Straight Adapters differ from the Aeroquip FF1994T Series Union Adapters?",
+          "a": "The FF2000T has 12 part numbers up to 2 inch, while the [Aeroquip FF1994T Series Union Adapters](/p/aeroquip-ff1994t-series-union-adapters) has 6 and states a pressure range. Both are ORS male to ORS male and straight."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2000T Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip FF2000T Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2000T Series Straight Adapters in Dubai?",
+          "a": "Yes. We keep the Aeroquip FF2000T Series Straight Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2031t-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2031T Series Straight Adapters used for?",
+          "a": "Aeroquip FF2031T Series Straight Adapters are Aeroquip straight adapters with O-ring face seal (ORS) male and NPTF male ends. They connect an ORS male end to an NPTF male pipe thread in a rigid straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2031T1008S on the Aeroquip FF2031T Series Straight Adapters?",
+          "a": "Every number on this listing begins with the FF2031T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2031T1008S is listed as \"Hydraulic Hose Adapter, 5/8 Inch x 1/2 Inch Size, Male x Male, ORS x NPTF, Rigid\"; FF2031T0402S is listed as \"Hydraulic Hose Adapter, 1/4 Inch x 1/8 Inch Size, Male x Male, ORS x NPTF, Rigid\"; FF2031T2020S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x NPTF, Rigid\". The four digits after the series are the dash sizes, so FF2031T1008S is listed as a 5/8 inch by 1/2 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2031T Series Straight Adapters come in?",
+          "a": "The Aeroquip FF2031T Series Straight Adapters lists 17 Aeroquip part numbers from 1/4\" to 1 1/2\", for example FF2031T1008S, FF2031T0402S and FF2031T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2031T Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF2031T Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2031T1008S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2031T Series Straight Adapters made of?",
+          "a": "For the Aeroquip FF2031T Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The FF2031T series numbers such as FF2031T1008S and FF2031T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2031T Series Straight Adapters?",
+          "a": "On the Aeroquip FF2031T Series Straight Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the NPTF end is a Dryseal pipe thread under ASME B1.20.3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2031T0402S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2031T Series Straight Adapters connect to?",
+          "a": "On the Aeroquip FF2031T Series Straight Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The NPTF male end screws into a female NPT or NPTF pipe port, which needs sealant. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2031T Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2031T Series Straight Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2031T Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Fitting an ORS hose end to an NPT-threaded port. Tell us the system and the port threads and we confirm the Aeroquip FF2031T Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2031T Series Straight Adapters differ from the Aeroquip FF2032T Series Elbow Adapters?",
+          "a": "The FF2031T is straight, while the [Aeroquip FF2032T Series Elbow Adapters](/p/aeroquip-ff2032t-series-elbow-adapters) turns 90°. Both pair an ORS male end with an NPTF male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2031T Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2031T Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2031T Series Straight Adapters in Dubai?",
+          "a": "Yes, the Aeroquip FF2031T Series Straight Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2032t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2032T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF2032T Series Elbow Adapters are Aeroquip 90° elbow adapters with O-ring face seal (ORS) male and NPTF male ends. They connect an ORS male end to an NPTF male pipe thread through a 90° bend."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2032T0404S on the Aeroquip FF2032T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF2032T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2032T0404S is listed as \"Elbow, 90 Deg., 1/4 Inch x 1/4 Inch Size, Male x Male, ORS x NPTF, Rigid\"; FF2032T0604S is listed as \"Elbow, 90 Deg., 3/8 Inch x 1/4 Inch Size, Male x Male, ORS x NPTF, Rigid\"; FF2032T2020S is listed as \"Hydraulic Hose Adapter, Male Nptf Male Carbon Steel\". The four digits after the series are the dash sizes, so FF2032T1012S is listed as a 5/8 inch by 3/4 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2032T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF2032T Series Elbow Adapters lists 15 Aeroquip part numbers from 1/4\" to 1 1/4\", for example FF2032T0404S, FF2032T0604S and FF2032T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2032T Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF2032T Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2032T0404S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2032T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF2032T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The FF2032T series numbers such as FF2032T0404S and FF2032T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2032T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF2032T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the NPTF end is a Dryseal pipe thread under ASME B1.20.3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2032T0604S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2032T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF2032T Series Elbow Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The NPTF male end screws into a female NPT or NPTF pipe port, which needs sealant. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2032T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2032T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2032T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Right-angle connections from an ORS line into an NPT port. Tell us the system and the port threads and we confirm the Aeroquip FF2032T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2032T Series Elbow Adapters differ from the Aeroquip FF2093T Series Elbow Adapters?",
+          "a": "The FF2032T turns 90°, while the [Aeroquip FF2093T Series Elbow Adapters](/p/aeroquip-ff2093t-series-elbow-adapters) turns 45° and has a stated pressure range. Both have an ORS male and an NPTF male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2032T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2032T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2032T Series Elbow Adapters in Dubai?",
+          "a": "Yes. The Aeroquip FF2032T Series Elbow Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2035t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2035T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF2035T Series Elbow Adapters are Aeroquip 90° elbow adapters with O-ring face seal (ORS) male and O-ring face seal (ORS) male ends. They turn an ORS line through 90° between two ORS male ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2035T0404S on the Aeroquip FF2035T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF2035T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2035T0404S is listed as \"Elbow, 90 Deg., 1/4 Inch x 1/4 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF2035T1616S is listed as \"Elbow, 90 Deg., 1 Inch x 1 Inch Size, Male x Male, ORS x ORS, Rigid\"; FF2035T1010S is listed as \"Hydraulic Hose Adapter, Male Carbon Steel\". The four digits after the series are the dash sizes, so FF2035T0606S is listed as a 3/8 inch by 3/8 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2035T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF2035T Series Elbow Adapters lists 6 Aeroquip part numbers from 1/2\" to 1\", for example FF2035T0404S, FF2035T1616S and FF2035T1010S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2035T Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF2035T Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2035T0404S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2035T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF2035T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The FF2035T series numbers such as FF2035T0404S and FF2035T1010S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2035T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF2035T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2035T0808S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2035T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF2035T Series Elbow Adapters, both ends are O-ring face seal (ORS) male and each seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2035T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2035T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2035T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Changing direction in ORS lines between two female ORS ends. Tell us the system and the port threads and we confirm the Aeroquip FF2035T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2035T Series Elbow Adapters differ from the Aeroquip FF2098T Series Elbow Adapters?",
+          "a": "The FF2035T has an ORS male at both ends, while the [Aeroquip FF2098T Series Elbow Adapters](/p/aeroquip-ff2098t-series-elbow-adapters) has an ORS male at one end and an ORS female at the other. Choose by whether the second connection is a stud or a swivel nut."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2035T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2035T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2035T Series Elbow Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip FF2035T Series Elbow Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2068t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2068T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF2068T Series Elbow Adapters are Aeroquip 45° elbow adapters with O-ring face seal (ORS) male and SAE O-ring boss (ORB) male ends. They connect an ORS male end to an SAE O-ring boss male thread through a 45° bend."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2068T0806S on the Aeroquip FF2068T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF2068T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2068T0806S is listed as \"Elbow, 45 Deg., 1/2 Inch x 3/8 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF2068T0404S is listed as \"Elbow, 45 Deg., 1/4 Inch x 1/4 Inch Size, Male x Male, ORS x ORB, Rigid\"; FF2068T2020S is listed as \"Elbow, 45 Deg., 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x ORB, Rigid\". The four digits after the series are the dash sizes, so FF2068T0806S is listed as a 1/2 inch by 3/8 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2068T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF2068T Series Elbow Adapters lists 14 Aeroquip part numbers from 1/4\" to 1 7/16\", for example FF2068T0806S, FF2068T0404S and FF2068T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2068T Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF2068T Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2068T0806S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2068T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF2068T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The FF2068T series numbers such as FF2068T0806S and FF2068T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2068T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF2068T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2068T0604S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2068T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF2068T Series Elbow Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2068T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2068T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Orient the elbow before tightening the ORB end."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2068T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Shallow-angle connections from ORS lines into boss ports. Tell us the system and the port threads and we confirm the Aeroquip FF2068T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2068T Series Elbow Adapters differ from the Aeroquip FF1868T Series Elbow Adapters?",
+          "a": "The FF2068T turns 45°, while the [Aeroquip FF1868T Series Elbow Adapters](/p/aeroquip-ff1868t-series-elbow-adapters) turns 90°. Both have an ORS male and an ORB male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2068T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2068T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2068T Series Elbow Adapters in Dubai?",
+          "a": "Yes. We keep the Aeroquip FF2068T Series Elbow Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2093t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2093T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF2093T Series Elbow Adapters are Aeroquip 45° elbow adapters with O-ring face seal (ORS) male and NPTF male ends. They connect an ORS male end to an NPTF male pipe thread through a 45° bend, rated by the maker from 3,600 to 8,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2093T1616S on the Aeroquip FF2093T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF2093T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2093T1616S is listed as \"Hydraulic Hose Adapter, Male Nptf Male Carbon Steel\"; FF2093T1212S is listed as \"Hydraulic Hose Adapter, Male Nptf Male Carbon Steel\"; FF2093T2020S is listed as \"Elbow, 45 Deg., 1 1/4 Inch x 1 1/4 Inch Size, Male x Male, ORS x NPTF, Rigid\". The four digits after the series are the dash sizes, so FF2093T0808S is a 1/2 inch by 1/2 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2093T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF2093T Series Elbow Adapters lists 8 Aeroquip part numbers from 1/4\" to 1 1/2\", for example FF2093T1616S, FF2093T1212S and FF2093T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2093T Series Elbow Adapters have?",
+          "a": "The maker states 3,600 to 8,000 psi (248 to 552 bar), by size for the Aeroquip FF2093T Series Elbow Adapters, with a temperature figure of 400°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2093T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF2093T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF2093T series numbers such as FF2093T1616S and FF2093T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2093T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF2093T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3; the NPTF end is a Dryseal pipe thread under ASME B1.20.3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2093T1212S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2093T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF2093T Series Elbow Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The NPTF male end screws into a female NPT or NPTF pipe port, which needs sealant. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2093T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2093T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2093T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Shallow-angle connections from ORS lines into NPT ports. Tell us the system and the port threads and we confirm the Aeroquip FF2093T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2093T Series Elbow Adapters differ from the Aeroquip FF2032T Series Elbow Adapters?",
+          "a": "The FF2093T turns 45°, while the [Aeroquip FF2032T Series Elbow Adapters](/p/aeroquip-ff2032t-series-elbow-adapters) turns 90°. Both pair an ORS male end with an NPTF male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2093T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2093T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2093T Series Elbow Adapters in Dubai?",
+          "a": "Yes, the Aeroquip FF2093T Series Elbow Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2098t-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2098T Series Elbow Adapters used for?",
+          "a": "Aeroquip FF2098T Series Elbow Adapters are Aeroquip 90° elbow adapters with O-ring face seal (ORS) male and O-ring face seal (ORS) female ends. They turn an ORS line through 90° with an ORS male end and an ORS female end, rated by the maker from 3,600 to 9,000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2098T1616S on the Aeroquip FF2098T Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the FF2098T series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2098T1616S is listed as \"Hydraulic Hose Adapter, Female Carbon Steel\"; FF2098T1212S is listed as \"Elbow, 90 Deg., 3/4 Inch x 3/4 Inch Size, Male x Female, ORS x ORS, Rigid\"; FF2098T2020S is listed as \"Elbow, 90 Deg., 1 1/4 Inch x 1 1/4 Inch Size, Male x Female, ORS x ORS, Rigid\". The four digits after the series are the dash sizes, so FF2098T0808S is a 1/2 inch by 1/2 inch size; every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2098T Series Elbow Adapters come in?",
+          "a": "The Aeroquip FF2098T Series Elbow Adapters lists 7 Aeroquip part numbers from 1/4\" to 1 1/4\", for example FF2098T1616S, FF2098T1212S and FF2098T2020S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2098T Series Elbow Adapters have?",
+          "a": "The maker states 3,600 to 9,000 psi (248 to 621 bar), by size for the Aeroquip FF2098T Series Elbow Adapters, with a temperature figure of 400°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2098T Series Elbow Adapters made of?",
+          "a": "For the Aeroquip FF2098T Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF2098T series numbers such as FF2098T1616S and FF2098T2020S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2098T Series Elbow Adapters?",
+          "a": "On the Aeroquip FF2098T Series Elbow Adapters, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2098T1212S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2098T Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip FF2098T Series Elbow Adapters, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. The O-ring face seal (ORS) female end takes a male ORS end, whose flat face carries the O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2098T Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2098T Series Elbow Adapters, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks. The female end is a swivel nut over a flat face, so mate it to a male ORS end with its O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2098T Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Right-angle ORS connections where one end is a swivel nut. Tell us the system and the port threads and we confirm the Aeroquip FF2098T Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2098T Series Elbow Adapters differ from the Aeroquip FF2035T Series Elbow Adapters?",
+          "a": "The FF2098T has one male and one female ORS end, while the [Aeroquip FF2035T Series Elbow Adapters](/p/aeroquip-ff2035t-series-elbow-adapters) has two male ORS ends. Choose by the second connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2098T Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip FF2098T Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2098T Series Elbow Adapters in Dubai?",
+          "a": "Yes. The Aeroquip FF2098T Series Elbow Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff9863-series-ors-cap-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF9863 Series ORS Cap Assemblies used for?",
+          "a": "Aeroquip FF9863 Series ORS Cap Assemblies are Aeroquip ORS cap assemblys with O-ring face seal (ORS) female thread. They close a male ORS end with a female ORS cap, rated by the maker from 3,600 to 9,000 psi by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF9863-20S on the Aeroquip FF9863 Series ORS Cap Assemblies?",
+          "a": "Every number on this listing begins with the FF9863 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF9863-20S is listed as \"Hydraulic Hose Adapter, Female Carbon Steel\"; FF9863-16S is listed as \"Hydraulic Hose Adapter, Female Carbon Steel\"; FF9863-08S is listed as \"Hydraulic Hose Adapter, Female Carbon Steel\". A cap has one dash size, as in FF9863-20S, FF9863-10S and FF9863-08S, and every number ends in S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF9863 Series ORS Cap Assemblies come in?",
+          "a": "The Aeroquip FF9863 Series ORS Cap Assemblies lists 7 Aeroquip part numbers from 9/16\" to 1 11/16\", for example FF9863-20S, FF9863-16S and FF9863-08S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF9863 Series ORS Cap Assemblies have?",
+          "a": "The maker states 3,600 to 9,000 psi (248 to 621 bar), by size for the Aeroquip FF9863 Series ORS Cap Assemblies, with a temperature figure of 250°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF9863 Series ORS Cap Assemblies made of?",
+          "a": "For the Aeroquip FF9863 Series ORS Cap Assemblies the listing gives steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF9863 series numbers such as FF9863-20S and FF9863-08S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF9863 Series ORS Cap Assemblies?",
+          "a": "On the Aeroquip FF9863 Series ORS Cap Assemblies, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF9863-16S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF9863 Series ORS Cap Assemblies connect to?",
+          "a": "On the Aeroquip FF9863 Series ORS Cap Assemblies, the O-ring face seal (ORS) female end takes a male ORS end, whose flat face carries the O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF9863 Series ORS Cap Assemblies so it does not leak?",
+          "a": "To fit the Aeroquip FF9863 Series ORS Cap Assemblies, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF9863 Series ORS Cap Assemblies used?",
+          "a": "Capping an open male ORS connection on a line or port. Tell us the system and the port threads and we confirm the Aeroquip FF9863 Series ORS Cap Assemblies suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF9863 Series ORS Cap Assemblies differ from the Aeroquip Plug Hydraulic Hose Adapters, Male ORS?",
+          "a": "The FF9863 is a female cap that fits over a male ORS end, while the [Aeroquip Plug Hydraulic Hose Adapters, Male ORS](/p/aeroquip-plug-hydraulic-hose-adapters-male-ors) is a male plug that closes a female ORS port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF9863 Series ORS Cap Assemblies made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip FF9863 Series ORS Cap Assemblies. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF9863 Series ORS Cap Assemblies in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip FF9863 Series ORS Cap Assemblies at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-plug-hydraulic-hose-adapters-male-ors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Plug Hydraulic Hose Adapters, Male ORS used for?",
+          "a": "The Aeroquip Plug Hydraulic Hose Adapters, Male ORS is an Aeroquip male ORS plug with O-ring face seal (ORS) male thread. They close a female ORS end, rated by the maker from 3,600 to 9,000 psi by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF9767-20S on the Aeroquip Plug Hydraulic Hose Adapters, Male ORS?",
+          "a": "Every number on this listing begins with the FF9767 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF9767-20S is listed as \"Hydraulic Hose Plug, Carbon Steel, 1 1/4 Inch Size, 3, 600 psi Max. Working Pressure\"; FF976704S is listed as \"Hydraulic Hose Plug, Carbon Steel, 1/4 Inch Size, 9000 psi Max. Working Pressure, ORS\"; FF976710S is listed as \"Hydraulic Hose Plug, Carbon Steel, 5/8 Inch Size, 9000 psi Max. Working Pressure, ORS\". A plug has one dash size, as in FF9767-20S, FF976712S and FF976710S, and the rows state the working pressure in the item text."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Plug Hydraulic Hose Adapters, Male ORS come in?",
+          "a": "The Aeroquip Plug Hydraulic Hose Adapters, Male ORS lists 7 Aeroquip part numbers, for example FF9767-20S, FF976704S and FF976710S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip Plug Hydraulic Hose Adapters, Male ORS have?",
+          "a": "The maker states 3,600 to 9,000 psi (248 to 621 bar), by size for the Aeroquip Plug Hydraulic Hose Adapters, Male ORS. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Plug Hydraulic Hose Adapters, Male ORS made of?",
+          "a": "For the Aeroquip Plug Hydraulic Hose Adapters, Male ORS the listing gives carbon steel, with a Trivalent Chromate Zinc finish, in Grade 12L14, Grade 12L15. The FF9767 series numbers such as FF9767-20S and FF976710S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip Plug Hydraulic Hose Adapters, Male ORS?",
+          "a": "On the Aeroquip Plug Hydraulic Hose Adapters, Male ORS, the ORS end is the O-ring face seal connection of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF976704S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip Plug Hydraulic Hose Adapters, Male ORS connect to?",
+          "a": "On the Aeroquip Plug Hydraulic Hose Adapters, Male ORS, the O-ring face seal (ORS) male end seals on an O-ring in its flat face against the flat face of a female ORS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip Plug Hydraulic Hose Adapters, Male ORS so it does not leak?",
+          "a": "To fit the Aeroquip Plug Hydraulic Hose Adapters, Male ORS, check that the O-ring in the flat face of the male ORS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a damaged face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip Plug Hydraulic Hose Adapters, Male ORS used?",
+          "a": "Blanking a female ORS port or hose end. Tell us the system and the port threads and we confirm the Aeroquip Plug Hydraulic Hose Adapters, Male ORS suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Plug Hydraulic Hose Adapters, Male ORS differ from the Aeroquip FF9863 Series ORS Cap Assemblies?",
+          "a": "This male plug closes a female ORS end, while the [Aeroquip FF9863 Series ORS Cap Assemblies](/p/aeroquip-ff9863-series-ors-cap-assemblies) is a female cap that fits over a male ORS end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Plug Hydraulic Hose Adapters, Male ORS made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip Plug Hydraulic Hose Adapters, Male ORS. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Plug Hydraulic Hose Adapters, Male ORS in Dubai?",
+          "a": "Yes. We keep the Aeroquip Plug Hydraulic Hose Adapters, Male ORS in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

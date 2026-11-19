@@ -1,0 +1,1834 @@
+{
+  "family": "hydraulic-hoses-04",
+  "extraFacts": [
+    {
+      "fact": "Sibling listing figures: Parker 601 Series Low Pressure Rubber Hydraulic Hoses: pressure 565 to 1,250 psi (39 to 86 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 601 Series Low Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses: pressure 4,000 psi (276 bar); sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8)",
+      "source": "Indus Hydraulics product listing for Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 304 Series Medium Pressure Rubber Hydraulic Hoses: pressure 2,000 to 5,000 psi (138 to 345 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 304 Series Medium Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses: pressure 4,000 psi (276 bar); sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12)",
+      "source": "Indus Hydraulics product listing for Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 387 Series Medium Pressure Hydraulic Hoses: pressure 3,000 psi (207 bar); sizes 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 387 Series Medium Pressure Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses: pressure 3,000 psi (207 bar); sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10)",
+      "source": "Indus Hydraulics product listing for Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 424 Series Medium Pressure Rubber Hydraulic Hoses: pressure 500 to 1,000 psi (34 to 69 bar), by size; sizes 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 424 Series Medium Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses: pressure 1,000 to 2,750 psi (69 to 190 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses: pressure 2,000 to 4,000 psi (138 to 276 bar), by size; sizes 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses: pressure 2,000 to 5,000 psi (138 to 345 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses: pressure 2,500 to 5,800 psi (172 to 400 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses: pressure 2,500 to 5,800 psi (172 to 400 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses: pressure 1,275 to 3,250 psi (88 to 224 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi: pressure 4,000 psi (276 bar); sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi: pressure 4,000 psi (276 bar); sizes 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses: pressure 300 to 400 psi (21 to 28 bar), by size; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12)",
+      "source": "Indus Hydraulics product listing for Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses: pressure 1,275 to 3,250 psi (88 to 224 bar), by size; sizes 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "In SAE hose dash sizing, the dash number is the hose inside diameter in sixteenths of an inch, so -4 is 1/4\" and -8 is 1/2\".",
+      "source": "SAE J517 / SAE J514 dash-size convention; confirmed by the size tables on the Indus listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-213-series-low-pressure-rubber-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 213 Series Low Pressure Rubber Hoses used for?",
+          "a": "The Parker 213 Series Low Pressure Rubber Hoses are hydraulic hoses from Parker Hannifin, listed in 10 part numbers from 1/4\" to 2\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils Diesel Fuels Antifreeze Solutions. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 213 Series Low Pressure Rubber Hoses come in?",
+          "a": "The Parker 213 Series Low Pressure Rubber Hoses are listed in 10 hose sizes: 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), and on to 2\" (-32). The 10 part numbers run from 213-32 to 213-4. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 213-10 of the Parker 213 Series Low Pressure Rubber Hoses cover?",
+          "a": "Part number 213-10 is the Parker 213 Series Low Pressure Rubber Hoses in 5/8\" ID, 69 bar, burst 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 213 Series Low Pressure Rubber Hoses?",
+          "a": "The maker states 200 to 2,000 psi (14 to 138 bar), by size for the Parker 213 Series Low Pressure Rubber Hoses. By row: 138 bar at 1/4\"; 103 bar at 3/8\"; 69 bar at 5/8\"; 52 bar at 3/4\"; 21 bar at 1-1/4\"; 14 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 213 Series Low Pressure Rubber Hoses?",
+          "a": "The Parker 213 Series Low Pressure Rubber Hoses have a temperature range of 150°C. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils Diesel Fuels Antifreeze Solutions. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 213 Series Low Pressure Rubber Hoses meet?",
+          "a": "The listing for the Parker 213 Series Low Pressure Rubber Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 213 Series Low Pressure Rubber Hoses?",
+          "a": "End fittings for the Parker 213 Series Low Pressure Rubber Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 213 Series Low Pressure Rubber Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker 213 Series Low Pressure Rubber Hoses from 114.3 mm at 1-1/4\" to 355.6 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 213 Series Low Pressure Rubber Hoses recommended for?",
+          "a": "The listing describes the Parker 213 Series Low Pressure Rubber Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils Diesel Fuels Antifreeze Solutions. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 213 Series Low Pressure Rubber Hoses or Parker 601 Series Low Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 213 Series Low Pressure Rubber Hoses are listed at 200 to 2,000 psi (14 to 138 bar), while the Parker 601 Series Low Pressure Rubber Hydraulic Hoses are listed at 565 to 1,250 psi (39 to 86 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 601 Series Low Pressure Rubber Hydraulic Hoses page](/p/parker-601-series-low-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 213 Series Low Pressure Rubber Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 213 Series Low Pressure Rubber Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 213 Series Low Pressure Rubber Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 213 Series Low Pressure Rubber Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-304-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 304 Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 8 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 304 Series Medium Pressure Rubber Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16). The 8 part numbers run from 304-12-BX to 304-8-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 304-6 of the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 304-6 is the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses in 3/8\" ID, 276 bar, burst 1103 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses. By row: 345 bar at 1/4\"; 276 bar at 3/8\"; 241 bar at 1/2\"; 155 bar at 3/4\"; 138 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The Parker 304 Series Medium Pressure Rubber Hydraulic Hoses have maximum 158°F in air and 185°F in water. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose; the listing names the Parkrimp NO Skive Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 304 Series Medium Pressure Rubber Hydraulic Hoses or Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 304 Series Medium Pressure Rubber Hydraulic Hoses are listed at 2,000 to 5,000 psi (138 to 345 bar), while the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses are listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-351st-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-351st-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 3 part numbers from 1/4\" to 1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses are listed in 3 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8). The 3 part numbers run from 351ST-4 to 351ST-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 351ST-6 of the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 351ST-6 is the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses in 3/8\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 4,000 psi (276 bar) for the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses. Every listed size, 1/4\" to 1/2\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses or Parker 304 Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses are listed at 4,000 psi (276 bar), while the Parker 304 Series Medium Pressure Rubber Hydraulic Hoses are listed at 2,000 to 5,000 psi (138 to 345 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 304 Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-304-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-351tc-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 3/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12). The 5 part numbers run from 351TC-10 to 351TC-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 351TC-4 of the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 351TC-4 is the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses in 1/4\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 4,000 psi (276 bar) for the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses. Every listed size, 1/4\" to 3/4\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses or Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses are listed at 4,000 psi (276 bar), while the Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses are listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 351ST Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-351st-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-387-series-medium-pressure-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 387 Series Medium Pressure Hydraulic Hoses used for?",
+          "a": "The Parker 387 Series Medium Pressure Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 8 part numbers from 3/8\" to 2\". Part descriptions in the size table give pressures such as 3,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 387 Series Medium Pressure Hydraulic Hoses come in?",
+          "a": "The Parker 387 Series Medium Pressure Hydraulic Hoses are listed in 8 hose sizes: 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 8 part numbers run from 387-10 to 387-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 387-8 of the Parker 387 Series Medium Pressure Hydraulic Hoses cover?",
+          "a": "Part number 387-8 is the Parker 387 Series Medium Pressure Hydraulic Hoses in 1/2\" ID, 207 bar (3,000 psi). The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 387 Series Medium Pressure Hydraulic Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Parker 387 Series Medium Pressure Hydraulic Hoses. Every listed size, 3/8\" to 2\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 387 Series Medium Pressure Hydraulic Hoses?",
+          "a": "The listing for the Parker 387 Series Medium Pressure Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 387 Series Medium Pressure Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 387 Series Medium Pressure Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 387 Series Medium Pressure Hydraulic Hoses?",
+          "a": "End fittings for the Parker 387 Series Medium Pressure Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 387 Series Medium Pressure Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 387 Series Medium Pressure Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 387 Series Medium Pressure Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Parker 387 Series Medium Pressure Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 387 Series Medium Pressure Hydraulic Hoses or Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 387 Series Medium Pressure Hydraulic Hoses are listed at 3,000 psi (207 bar), while the Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses are listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 351TC Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-351tc-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 387 Series Medium Pressure Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 387 Series Medium Pressure Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 387 Series Medium Pressure Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 387 Series Medium Pressure Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-387st-series-medium-pressure-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 387ST Series Medium Pressure Hydraulic Hoses used for?",
+          "a": "The Parker 387ST Series Medium Pressure Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". Part descriptions in the size table give pressures such as 3,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 387ST Series Medium Pressure Hydraulic Hoses come in?",
+          "a": "The Parker 387ST Series Medium Pressure Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 9 part numbers run from 387ST-4 to 387ST-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 387ST-6 of the Parker 387ST Series Medium Pressure Hydraulic Hoses cover?",
+          "a": "Part number 387ST-6 is the Parker 387ST Series Medium Pressure Hydraulic Hoses in 3/8\" ID, 3,000 psi. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 387ST Series Medium Pressure Hydraulic Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Parker 387ST Series Medium Pressure Hydraulic Hoses. Every listed size, 1/4\" to 2\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 387ST Series Medium Pressure Hydraulic Hoses?",
+          "a": "The listing for the Parker 387ST Series Medium Pressure Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 387ST Series Medium Pressure Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 387ST Series Medium Pressure Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 387ST Series Medium Pressure Hydraulic Hoses?",
+          "a": "End fittings for the Parker 387ST Series Medium Pressure Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 387ST Series Medium Pressure Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 387ST Series Medium Pressure Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 387ST Series Medium Pressure Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 387ST Series Medium Pressure Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 387ST Series Medium Pressure Hydraulic Hoses or Parker 387 Series Medium Pressure Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 387ST Series Medium Pressure Hydraulic Hoses are listed at 3,000 psi (207 bar), while the Parker 387 Series Medium Pressure Hydraulic Hoses are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 387 Series Medium Pressure Hydraulic Hoses page](/p/parker-387-series-medium-pressure-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 387ST Series Medium Pressure Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 387ST Series Medium Pressure Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 387ST Series Medium Pressure Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 387ST Series Medium Pressure Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-387tc-487tc-and-787tc-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 17 part numbers from 1/4\" to 1-1/2\". Part descriptions in the size table give pressures such as 3,000 psi, 4,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses are listed in 8 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1-1/2\" (-24). The 17 part numbers run from 387TC-10 to 787TC-6. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487TC-10 of the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 487TC-10 is the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses in 5/8\" ID, 4,000 psi. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses?",
+          "a": "The size table for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses states 3,000 psi, 4,000 psi, 5,000 psi against its part descriptions, for example 387TC-10. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses or Parker 451ST Series: which should I choose?",
+          "a": "The Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are listed at 3,000 psi (207 bar); check the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 451ST Series page](/p/parker-451st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 387TC, 487TC and 787TC Tough Cover Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-421wc-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 1\". Listed use: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16). The 5 part numbers run from 421WC-16 to 421WC-4. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 421WC-8 of the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 421WC-8 is the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses in 1/2\" ID, 138 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 1,000 to 2,750 psi (69 to 190 bar), by size for the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses. By row: 190 bar at 1/4\"; 155 bar at 3/8\"; 138 bar at 1/2\"; 86 bar at 3/4\"; 69 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses have maximum 158°F in air and 185°F in water. Listed fluids: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose; the listing names the Parkrimp NO Skive Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 11 7/8\" for the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses as follows: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses or Parker 424 Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses are listed at 1,000 to 2,750 psi (69 to 190 bar), while the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses are listed at 500 to 1,000 psi (34 to 69 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 424 Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-424-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-424-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 424 Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 4 part numbers from 1\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 424 Series Medium Pressure Rubber Hydraulic Hoses are listed in 4 hose sizes: 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 4 part numbers run from 424-16 to 424-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 424-24 of the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 424-24 is the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses in 1-1/2\" ID, 34 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 500 to 1,000 psi (34 to 69 bar), by size for the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses. By row: 69 bar at 1\"; 43 bar at 1-1/4\"; 34 bar at 1-1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1\" (-16), and pick the same size in the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 424 Series Medium Pressure Rubber Hydraulic Hoses or Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 424 Series Medium Pressure Rubber Hydraulic Hoses are listed at 500 to 1,000 psi (34 to 69 bar), while the Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses are listed at 1,000 to 2,750 psi (69 to 190 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 421WC Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-421wc-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-426-series-medium-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 426 Series Medium Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". Listed use: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 426 Series Medium Pressure Rubber Hydraulic Hoses are listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 9 part numbers run from 426-32 to 426-4. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 426-12 of the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 426-12 is the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses in 3/4\" ID, 86 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 375 to 2,750 psi (26 to 190 bar), by size for the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses. By row: 190 bar at 1/4\"; 138 bar at 1/2\"; 103 bar at 5/8\"; 69 bar at 1\"; 43 bar at 1-1/4\"; 26 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "The Parker 426 Series Medium Pressure Rubber Hydraulic Hoses have maximum 158°F in air and 185°F in water. Listed fluids: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose; the listing names the Parkrimp NO Skive Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 25\" for the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses as follows: Hydraulic Fluids On A Mineral Oil Basis, Water Glycol, Lubricating Oils, Air, Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 426 Series Medium Pressure Rubber Hydraulic Hoses or Parker 424 Series Medium Pressure Rubber Hydraulic Hoses: which should I choose?",
+          "a": "The Parker 426 Series Medium Pressure Rubber Hydraulic Hoses are listed at 375 to 2,750 psi (26 to 190 bar), while the Parker 424 Series Medium Pressure Rubber Hydraulic Hoses are listed at 500 to 1,000 psi (34 to 69 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 424 Series Medium Pressure Rubber Hydraulic Hoses page](/p/parker-424-series-medium-pressure-rubber-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 426 Series Medium Pressure Rubber Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-431-series-medium-pressure-rubber-compact-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses used for?",
+          "a": "The Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses come in?",
+          "a": "The Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 6 part numbers run from 431-16 to 431-4. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 431-8 of the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses cover?",
+          "a": "Part number 431-8 is the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses in 1/2\" ID, 241 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses. By row: 345 bar at 1/4\"; 276 bar at 3/8\"; 241 bar at 1/2\"; 190 bar at 5/8\"; 155 bar at 3/4\"; 138 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses?",
+          "a": "The listing for the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses?",
+          "a": "End fittings for the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 431 Series or Parker 436 Series: which should I choose?",
+          "a": "The Parker 431 Series are listed at 2,000 to 5,000 psi (138 to 345 bar), while the Parker 436 Series are listed at 2,000 to 4,000 psi (138 to 276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 436 Series page](/p/parker-436-series-medium-pressure-rubber-compact-high-temperature-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 431 Series Medium Pressure Rubber Compact Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-436-series-medium-pressure-rubber-compact-high-temperature-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses used for?",
+          "a": "The Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 3/8\" to 1\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses come in?",
+          "a": "The Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses are listed in 5 hose sizes: 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 5 part numbers run from 436-10-BLU-BX to 436-12-BLU-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 436-6-BLU-BX of the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses cover?",
+          "a": "Part number 436-6-BLU-BX is the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses in 3/8\" ID, 276 bar, burst 1103 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses?",
+          "a": "The maker states 2,000 to 4,000 psi (138 to 276 bar), by size for the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses. By row: 276 bar at 3/8\"; 241 bar at 1/2\"; 190 bar at 5/8\"; 155 bar at 3/4\"; 138 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses?",
+          "a": "The Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses?",
+          "a": "End fittings for the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 436 Series or Parker 431 Series: which should I choose?",
+          "a": "The Parker 436 Series are listed at 2,000 to 4,000 psi (138 to 276 bar), while the Parker 431 Series are listed at 2,000 to 5,000 psi (138 to 345 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 431 Series page](/p/parker-431-series-medium-pressure-rubber-compact-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 436 Series Medium Pressure Rubber Compact High Temperature Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-451st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 4 part numbers from 1/4\" to 5/8\". Listed use: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are listed in 4 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10). The 4 part numbers run from 451ST-6 to 451ST-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 451ST-4 of the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 451ST-4 is the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in 1/4\" ID, 207 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses. Every listed size, 1/4\" to 5/8\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 2 1/2\" for the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses as follows: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 451ST Series or Parker 471ST Series: which should I choose?",
+          "a": "The Parker 451ST Series are listed at 3,000 psi (207 bar), while the Parker 471ST Series are listed at 2,500 to 5,800 psi (172 to 400 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 471ST Series page](/p/parker-471st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 451ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-451tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 10 part numbers from 1/4\" to 1-1/4\". Listed use: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are listed in 7 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1-1/4\" (-20). The 10 part numbers run from 451TC-4 to 451TC-8-8-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 451TC-20 of the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 451TC-20 is the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in 1-1/4\" ID, 207 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses. Every listed size, 3/8\" to 1-1/4\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as follows: Petroleum Fluids Water Glycol Based Fluids Lubricating Oils Air Water. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 451TC Series or Parker 451ST Series: which should I choose?",
+          "a": "The Parker 451TC Series are listed at 3,000 psi (207 bar), while the Parker 451ST Series are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 451ST Series page](/p/parker-451st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 451TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-471st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 6 part numbers run from 471ST-10 to 471ST-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 471ST-4 of the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 471ST-4 is the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in 1/4\" ID, 400 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 2,500 to 5,800 psi (172 to 400 bar), by size for the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses. By row: 400 bar at 1/4\"; 345 bar at 3/8\"; 250 bar at 5/8\"; 215 bar at 3/4\"; 172 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 471ST Series or Parker 451ST Series: which should I choose?",
+          "a": "The Parker 471ST Series are listed at 2,500 to 5,800 psi (172 to 400 bar), while the Parker 451ST Series are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 451ST Series page](/p/parker-451st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 471ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-471tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 15 part numbers from 1/4\" to 1\". Part descriptions in the size table give pressures such as 5,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 15 part numbers run from 471TC-10 to 471TC-10-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 471TC-8-8 of the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 471TC-8-8 is the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in 1/2\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 2,500 to 5,800 psi (172 to 400 bar), by size for the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses. By row: 400 bar at 1/4\"; 345 bar at 3/8\"; 293 bar at 1/2\"; 250 bar at 5/8\"; 215 bar at 3/4\"; 172 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses from 50.8 mm at 1/4\" to 152.4 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 471TC Series or Parker 471ST Series: which should I choose?",
+          "a": "The Parker 471TC Series are listed at 2,500 to 5,800 psi (172 to 400 bar), while the Parker 471ST Series are listed at 2,500 to 5,800 psi (172 to 400 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 471ST Series page](/p/parker-471st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 471TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-472lt-series-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 472LT Series Hoses used for?",
+          "a": "The Parker 472LT Series Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 3/8\" to 1\". Listed use: Petroleum Base Hydraulic Fluids And Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 472LT Series Hoses come in?",
+          "a": "The Parker 472LT Series Hoses are listed in 5 hose sizes: 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 5 part numbers run from 472LT-10-BX to 472LT-12-BX. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 472LT-6-BX of the Parker 472LT Series Hoses cover?",
+          "a": "Part number 472LT-6-BX is the Parker 472LT Series Hoses in 3/8\" ID, 345 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 472LT Series Hoses?",
+          "a": "The maker states 4,250 to 5,000 psi (293 to 345 bar), by size for the Parker 472LT Series Hoses. By row: 345 bar at 3/8\"; 293 bar at 1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 472LT Series Hoses?",
+          "a": "The Parker 472LT Series Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids And Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 472LT Series Hoses meet?",
+          "a": "The listing for the Parker 472LT Series Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 472LT Series Hoses?",
+          "a": "End fittings for the Parker 472LT Series Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 472LT Series Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 472LT Series Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 472LT Series Hoses recommended for?",
+          "a": "The listing describes the Parker 472LT Series Hoses as follows: Petroleum Base Hydraulic Fluids And Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 472LT Series Hoses or Parker 471TC Series: which should I choose?",
+          "a": "The Parker 472LT Series Hoses are listed at 4,250 to 5,000 psi (293 to 345 bar), while the Parker 471TC Series are listed at 2,500 to 5,800 psi (172 to 400 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 471TC Series page](/p/parker-471tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 472LT Series Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Parker 472LT Series Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 472LT Series Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 472LT Series Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-472tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 3 part numbers from 1-1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are listed in 3 hose sizes: 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 3 part numbers run from 472TC-20 to 472TC-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 472TC-24 of the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 472TC-24 is the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in 1-1/2\" ID, 124 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 1,300 to 2,250 psi (90 to 155 bar), by size for the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses. By row: 155 bar at 1-1/4\"; 124 bar at 1-1/2\"; 90 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1-1/4\" (-20), and pick the same size in the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 472TC Series or Parker 482ST Series: which should I choose?",
+          "a": "The Parker 472TC Series are listed at 1,300 to 2,250 psi (90 to 155 bar), while the Parker 482ST Series are listed at 1,275 to 3,250 psi (88 to 224 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 482ST Series page](/p/parker-482st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 472TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-482st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 1\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 1\" (-16). The 5 part numbers run from 482ST-10 to 482ST-6. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 482ST-16 of the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 482ST-16 is the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in 1\" ID, 88 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 1,275 to 3,250 psi (88 to 224 bar), by size for the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses. By row: 224 bar at 1/4\"; 207 bar at 3/8\"; 172 bar at 1/2\"; 138 bar at 5/8\"; 88 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "The Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 482ST Series or Parker 471ST Series: which should I choose?",
+          "a": "The Parker 482ST Series are listed at 1,275 to 3,250 psi (88 to 224 bar), while the Parker 471ST Series are listed at 2,500 to 5,800 psi (172 to 400 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 471ST Series page](/p/parker-471st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 482ST Series Medium Pressure Rubber Super Tough Cover Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-482tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 10 part numbers from 1/4\" to 1\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses are listed in 7 hose sizes: 1/4\" (-4), 5/16\" (-5), 3/8\" (-6), 1/2\" (-8), and on to 1\" (-16). The 10 part numbers run from 482TC-4-BX to 482TC-5. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 482TC-8 of the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 482TC-8 is the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in 1/2\" ID, 172 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 1,275 to 3,250 psi (88 to 224 bar), by size for the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses. By row: 224 bar at 1/4\"; 224 bar at 5/16\"; 207 bar at 3/8\"; 138 bar at 5/8\"; 121 bar at 3/4\"; 88 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 482TC Series or Parker 482ST Series: which should I choose?",
+          "a": "The Parker 482TC Series are listed at 1,275 to 3,250 psi (88 to 224 bar), while the Parker 482ST Series are listed at 1,275 to 3,250 psi (88 to 224 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 482ST Series page](/p/parker-482st-series-medium-pressure-rubber-super-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 482TC Series Medium Pressure Rubber Tough Cover Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-487-series-hydraulic-hoses-4000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 487 Series Hydraulic Hoses, 4000 Psi used for?",
+          "a": "The Parker 487 Series Hydraulic Hoses, 4000 Psi is a hydraulic hose from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 487 Series Hydraulic Hoses, 4000 Psi come in?",
+          "a": "The Parker 487 Series Hydraulic Hoses, 4000 Psi is listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), 1-1/2\" (-24), 2\" (-32). The 9 part numbers run from 487-4 to 487-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487-6 of the Parker 487 Series Hydraulic Hoses, 4000 Psi cover?",
+          "a": "Part number 487-6 is the Parker 487 Series Hydraulic Hoses, 4000 Psi in 3/8\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 487 Series Hydraulic Hoses, 4000 Psi?",
+          "a": "The maker states 4,000 psi (276 bar) for the Parker 487 Series Hydraulic Hoses, 4000 Psi. Every listed size, 1/4\" to 2\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 487 Series Hydraulic Hoses, 4000 Psi?",
+          "a": "The listing for the Parker 487 Series Hydraulic Hoses, 4000 Psi gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 487 Series Hydraulic Hoses, 4000 Psi meet?",
+          "a": "The listing for the Parker 487 Series Hydraulic Hoses, 4000 Psi states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 487 Series Hydraulic Hoses, 4000 Psi?",
+          "a": "End fittings for the Parker 487 Series Hydraulic Hoses, 4000 Psi must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 487 Series Hydraulic Hoses, 4000 Psi and what is the minimum bend radius?",
+          "a": "The listing for the Parker 487 Series Hydraulic Hoses, 4000 Psi gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 487 Series Hydraulic Hoses, 4000 Psi to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 487 Series Hydraulic Hoses, 4000 Psi size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 487 Series Hydraulic Hoses, 4000 Psi or Parker 487ST Series: which should I choose?",
+          "a": "The Parker 487 Series Hydraulic Hoses, 4000 Psi is listed at 4,000 psi (276 bar), while the Parker 487ST Series is listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 487ST Series page](/p/parker-487st-series-super-tough-cover-hydraulic-hoses-4000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 487 Series Hydraulic Hoses, 4000 Psi come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 487 Series Hydraulic Hoses, 4000 Psi as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 487 Series Hydraulic Hoses, 4000 Psi in Dubai?",
+          "a": "Yes. We keep the Parker 487 Series Hydraulic Hoses, 4000 Psi in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-487st-series-super-tough-cover-hydraulic-hoses-4000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi used for?",
+          "a": "The Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi is a hydraulic hose from Parker Hannifin, listed in 9 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi come in?",
+          "a": "The Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi is listed in 9 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 2\" (-32). The 9 part numbers run from 487ST-4 to 487ST-32. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 487ST-6 of the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi cover?",
+          "a": "Part number 487ST-6 is the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi in 3/8\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "The maker states 4,000 psi (276 bar) for the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi. Every listed size, 1/4\" to 1-1/2\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "The listing for the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi meet?",
+          "a": "The listing for the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "End fittings for the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi and what is the minimum bend radius?",
+          "a": "The listing for the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 487ST Series or Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi: which should I choose?",
+          "a": "The Parker 487ST Series is listed at 4,000 psi (276 bar), while the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi is listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi page](/p/parker-722tc-series-tough-cover-hydraulic-hoses-4000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi in Dubai?",
+          "a": "Yes, we hold the Parker 487ST Series Super Tough Cover Hydraulic Hoses, 4000 Psi in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-601-series-low-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 601 Series Low Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 601 Series Low Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 601 Series Low Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 601 Series Low Pressure Rubber Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16). The 5 part numbers run from 601-16 to 601-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 601-6 of the Parker 601 Series Low Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 601-6 is the Parker 601 Series Low Pressure Rubber Hydraulic Hoses in 3/8\" ID, 78 bar, minimum bend radius 101.6 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 601 Series Low Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 565 to 1,250 psi (39 to 86 bar), by size for the Parker 601 Series Low Pressure Rubber Hydraulic Hoses. By row: 86 bar at 1/4\"; 78 bar at 3/8\"; 69 bar at 1/2\"; 52 bar at 3/4\"; 39 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 601 Series Low Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 601 Series Low Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 601 Series Low Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 601 Series Low Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 601 Series Low Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 601 Series Low Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose; the listing gives Parflex 43 Series. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 601 Series Low Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker 601 Series Low Pressure Rubber Hydraulic Hoses from 76.2 mm at 1/4\" to 101.6 mm at 3/8\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 601 Series Low Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Parker 601 Series Low Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 601 Series Low Pressure Rubber Hydraulic Hoses or Parker 611HT Series: which should I choose?",
+          "a": "The Parker 601 Series Low Pressure Rubber Hydraulic Hoses are listed at 565 to 1,250 psi (39 to 86 bar), while the Parker 611HT Series are listed at 300 to 400 psi (21 to 28 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 611HT Series page](/p/parker-611ht-series-low-pressure-rubber-high-temperature-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 601 Series Low Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 601 Series Low Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 601 Series Low Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 601 Series Low Pressure Rubber Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-611ht-series-low-pressure-rubber-high-temperature-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses used for?",
+          "a": "The Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 5 part numbers from 1/4\" to 3/4\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils, Diesel Fuels, Antifreeze Solutions. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses come in?",
+          "a": "The Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12). The 5 part numbers run from 611HT-12 to 611HT-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 611HT-4 of the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses cover?",
+          "a": "Part number 611HT-4 is the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses in 1/4\" ID, 28 bar, burst 110 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses?",
+          "a": "The maker states 300 to 400 psi (21 to 28 bar), by size for the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses. By row: 28 bar at 1/4\"; 28 bar at 3/8\"; 28 bar at 1/2\"; 24 bar at 5/8\"; 21 bar at 3/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses?",
+          "a": "The Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses have no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils, Diesel Fuels, Antifreeze Solutions. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses?",
+          "a": "End fittings for the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils, Diesel Fuels, Antifreeze Solutions. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 611HT Series or Parker 436 Series: which should I choose?",
+          "a": "The Parker 611HT Series are listed at 300 to 400 psi (21 to 28 bar), while the Parker 436 Series are listed at 2,000 to 4,000 psi (138 to 276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 436 Series page](/p/parker-436-series-medium-pressure-rubber-compact-high-temperature-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Parker 611HT Series Low Pressure Rubber High Temperature Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-721-series-high-pressure-rubber-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 721 Series High Pressure Rubber Hydraulic Hoses used for?",
+          "a": "The Parker 721 Series High Pressure Rubber Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 6 part numbers from 1/2\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 721 Series High Pressure Rubber Hydraulic Hoses come in?",
+          "a": "The Parker 721 Series High Pressure Rubber Hydraulic Hoses are listed in 6 hose sizes: 1/2\" (-8), 3/4\" (-12), 1\" (-16), 1-1/4\" (-20), and on to 2\" (-32). The 6 part numbers run from 721-24 to 721-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 721-12 of the Parker 721 Series High Pressure Rubber Hydraulic Hoses cover?",
+          "a": "Part number 721-12 is the Parker 721 Series High Pressure Rubber Hydraulic Hoses in 3/4\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 721 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "The maker states 2,500 to 4,000 psi (172 to 276 bar), by size for the Parker 721 Series High Pressure Rubber Hydraulic Hoses. By row: 276 bar at 1/2\"; 276 bar at 3/4\"; 276 bar at 1\"; 207 bar at 1-1/4\"; 172 bar at 1-1/2\"; 172 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 721 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "The listing for the Parker 721 Series High Pressure Rubber Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 721 Series High Pressure Rubber Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 721 Series High Pressure Rubber Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 721 Series High Pressure Rubber Hydraulic Hoses?",
+          "a": "End fittings for the Parker 721 Series High Pressure Rubber Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 721 Series High Pressure Rubber Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 721 Series High Pressure Rubber Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 721 Series High Pressure Rubber Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/2\" (-8), and pick the same size in the Parker 721 Series High Pressure Rubber Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 721 Series High Pressure Rubber Hydraulic Hoses or Parker 611HT Series: which should I choose?",
+          "a": "The Parker 721 Series High Pressure Rubber Hydraulic Hoses are listed at 2,500 to 4,000 psi (172 to 276 bar), while the Parker 611HT Series are listed at 300 to 400 psi (21 to 28 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 611HT Series page](/p/parker-611ht-series-low-pressure-rubber-high-temperature-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 721 Series High Pressure Rubber Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 721 Series High Pressure Rubber Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 721 Series High Pressure Rubber Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Parker 721 Series High Pressure Rubber Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-721tc-series-high-pressure-rubber-tough-cover-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses used for?",
+          "a": "The Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are hydraulic hoses from Parker Hannifin, listed in 8 part numbers from 3/8\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come in?",
+          "a": "The Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses are listed in 8 hose sizes: 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), and on to 2\" (-32). The 8 part numbers run from 721TC-24 to 721TC-8. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 721TC-12 of the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses cover?",
+          "a": "Part number 721TC-12 is the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in 3/4\" ID, 276 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The maker states 2,500 to 4,000 psi (172 to 276 bar), by size for the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses. By row: 276 bar at 3/8\"; 276 bar at 1/2\"; 276 bar at 3/4\"; 276 bar at 1\"; 172 bar at 1-1/2\"; 172 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "The listing for the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses meet?",
+          "a": "The listing for the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses?",
+          "a": "End fittings for the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 721TC Series or Parker 482TC Series: which should I choose?",
+          "a": "The Parker 721TC Series are listed at 2,500 to 4,000 psi (172 to 276 bar), while the Parker 482TC Series are listed at 1,275 to 3,250 psi (88 to 224 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 482TC Series page](/p/parker-482tc-series-medium-pressure-rubber-tough-cover-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Parker 721TC Series High Pressure Rubber Tough Cover Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "parker-722tc-series-tough-cover-hydraulic-hoses-4000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi used for?",
+          "a": "The Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi is a hydraulic hose from Parker Hannifin, listed in 5 part numbers from 3/8\" to 1\". Listed use: Petroleum Base Hydraulic Fluids, Lubricating Oils. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi come in?",
+          "a": "The Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi is listed in 5 hose sizes: 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 5 part numbers run from 722TC-6 to 722TC-16. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 722TC-10 of the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi cover?",
+          "a": "Part number 722TC-10 is the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi in 5/8\" ID, 276 bar, minimum bend radius 101.6 mm, burst 1103 bar. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "The maker states 4,000 psi (276 bar) for the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi. Every listed size, 3/8\" to 1\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "The Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi has no temperature range stated in the listing. Listed fluids: Petroleum Base Hydraulic Fluids, Lubricating Oils. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi meet?",
+          "a": "The listing for the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi?",
+          "a": "End fittings for the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi from 101.6 mm at 5/8\" to 152.4 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi recommended for?",
+          "a": "The listing describes the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi as follows: Petroleum Base Hydraulic Fluids, Lubricating Oils. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi or Parker 487ST Series: which should I choose?",
+          "a": "The Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi is listed at 4,000 psi (276 bar), while the Parker 487ST Series is listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Parker 487ST Series page](/p/parker-487st-series-super-tough-cover-hydraulic-hoses-4000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Parker 722TC Series Tough Cover Hydraulic Hoses, 4000 Psi, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    }
+  ]
+}

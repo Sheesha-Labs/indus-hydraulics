@@ -1,0 +1,71 @@
+{
+  "family": "integral-low-fin-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "integral-low-fin-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are integral low-fin tubes used for?",
+          "a": "Integral low-fin tubes have low fins rolled out of the tube wall, with plain ends left unfinned. Used in condensers, chillers and shell-and-tube exchangers where the shell side limits the duty, they fit the same tube-sheet and baffle holes as plain tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an integral low-fin part number such as IH-TF-IL-ILF-0254-211-H012?",
+          "a": "IH-TF-IL-ILF-0254-211-H012 is a 1 in (25.4 mm) tube with a 2.108 mm wall at 26 FPI. The first block is the OD in tenths of a millimetre (0254 = 25.4 mm), the second the wall in hundredths (211 = 2.108 mm) and the H-block the fin height in tenths (H012 = 1.245 mm on these rows)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do integral low-fin tubes come in?",
+          "a": "The size table lists 11 sizes with plain-end OD of 15.875–25.4 mm (5/8, 3/4 and 1 in) and wall of 1.829–2.769 mm, at 19, 26 and 28 FPI. Other sizes are made on request, and fin densities 30 and 36 FPI are also offered."
+        },
+        {
+          "slot": "D",
+          "q": "What fin density should I choose for integral low-fin tubes?",
+          "a": "19 FPI has a fin height of about 1.35–1.40 mm, 26 FPI is 1.245 mm and 28 FPI is 0.889 mm. Higher density gives more surface; pick by shell-side fluid and fouling. 19 FPI rows are 748 fins per metre, 26 FPI is 1024 and 28 FPI is 1102."
+        },
+        {
+          "slot": "E",
+          "q": "What is the fin tolerance on integral low-fin tubes?",
+          "a": "FPI tolerance is +3/−2, fin height ±0.076 mm, with the transition 12.7–101.6 mm long and the plain land at least 25.4 mm. Average fin thickness is 0.28–0.36 mm."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are integral low-fin tubes made from?",
+          "a": "Carbon steel SA-179, SA-214 and SA-334 Gr 1/3/6; ferritic stainless 405, 410, 430 and 439; austenitic 304, 316, 317 and 321; duplex 2205 and 2101; 6Mo (N08367); nickel alloys; Alloy 400; and titanium Gr 1, 2, 16 and 26. The fin is the same material as the tube."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to integral low-fin tubes?",
+          "a": "The listing cites ASTM A498/A498M (carbon and alloy), A1012, B359 / ASME SB359 and B891, with A179 and A213 for the base grades. Equivalent grades in other standards are indicative, and we check them against each tender."
+        },
+        {
+          "slot": "G",
+          "q": "What tests are done on integral low-fin tubes?",
+          "a": "Under A498 every tube is pressure tested, with an air test at 250 psi (1.72 MPa) after finning on straight tubes (hydro optional), and eddy current on all tubes after finning. U-bends are hydrotested after bending. A mill test certificate to EN 10204 3.1 is on request."
+        },
+        {
+          "slot": "K",
+          "q": "Integral low-fin tube or plain tube for a shell-and-tube condenser?",
+          "a": "Choose low-fin when the shell-side coefficient limits the duty, because the fin adds outside surface within the same OD as plain tube. Our [low-fin retubing guide](/blog/integral-low-fin-tubes-condenser-retubing) and [types of finned tubes guide](/blog/types-of-finned-tubes) cover the choice."
+        },
+        {
+          "slot": "H",
+          "q": "Can integral low-fin tubes be bent into U-tubes?",
+          "a": "Yes. The [low-fin U-bend tubes](/p/low-fin-u-bend-tubes) have the fins removed at the bend and a plain land at each tangent, hydrotested after bending."
+        },
+        {
+          "slot": "J",
+          "q": "Where are integral low-fin tubes used?",
+          "a": "Cu-Ni low-fin tubes are used in seawater-cooled condensers, and shell-and-tube coolers and condensers in gas plants and refineries where shell-side coefficient is limiting. See our [heat transfer tube buyers guide](/blog/heat-transfer-tube-buyers-guide)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply integral low-fin tubes from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. The 11 listed rows are typical sizes and other sizes are made on request; send the grade, OD, wall, FPI, length and quantity through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

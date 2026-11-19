@@ -1,0 +1,149 @@
+{
+  "family": "thermoplastic-hoses-02",
+  "extraFacts": [
+    {
+      "fact": "Figures of the sibling hoses in this family, as listed on their own pages: Parker 510C 69 to 224 bar; 518C 90 to 207 bar; 520N and 528N 241 to 345 bar; 53DM 207 bar; 540N 86 to 207 bar; 540P 138 to 190 bar, -10°F to +150°F; 55LT 138 to 207 bar, -40°F to +212°F; 575X 345 bar; 580N 138 to 241 bar; B9 17 bar; R7 up to 210 bar; R8 up to 350 bar.",
+      "source": "Indus Hydraulics product listings (descriptions, specs and size tables) for this family, facts dump 2026-11-18"
+    },
+    {
+      "fact": "Hose dash sizes count sixteenths of an inch of hose bore: -3 is 3/16 inch, -4 is 1/4 inch, -5 is 5/16 inch, -6 is 3/8 inch, -8 is 1/2 inch, -10 is 5/8 inch, -12 is 3/4 inch and -16 is 1 inch.",
+      "source": "SAE J517 / SAE J514 dash size convention; the Parker 56 Series size tables on this site"
+    },
+    {
+      "fact": "SAE J517 gives the general, dimensional and performance specifications for the SAE 100R series of hydraulic hose, including 100R7 (single-fibre-braid thermoplastic) and 100R8 (double-fibre-braid thermoplastic).",
+      "source": "SAE J517 Hydraulic Hose, abstract (sae.org)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sae-100r18-non-conductive-thermoplastic-hydraulic-hose-orange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R18 non-conductive orange thermoplastic hose used for?",
+          "a": "The SAE 100R18 non-conductive orange hose is a thermoplastic hydraulic hose with a polyester elastomer tube and a low-friction non-conductive polyester cover, for equipment that works near high voltage. The listing names aerial platforms, cranes and rescue tools."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HS-R18LFNC-04 for the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange?",
+          "a": "In IH-HS-R18LFNC-04 the prefix IH-HS-R18LFNC is the non-conductive low-friction R18 hose and the last number is the bore as a dash size in sixteenths of an inch: 04 is 1/4 inch, 05 is 5/16 inch, 06 is 3/8 inch and 08 is 1/2 inch. The rows give each as a per-foot supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange come in?",
+          "a": "Four sizes are listed: IH-HS-R18LFNC-04 (1/4 inch), -05 (5/16 inch), -06 (3/8 inch) and -08 (1/2 inch), each supplied per foot. The Sizes & Part Numbers table lists them, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange?",
+          "a": "Choose the bore from the flow the tool or boom needs: the four sizes run from 1/4 inch to 1/2 inch, and the pressure is the same at each. Remember the end fittings, and the electrical test of the finished assembly, which matter as much as the hose."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange have?",
+          "a": "SAE J517 100R18 sets a working pressure of 3,000 psi for every size from 3/16 inch to 1 inch, and the manufacturer publishes no separate figure. Non-conductive service also needs the assembly tested for electrical leakage to the standard your equipment follows."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange made from, and what is its temperature range?",
+          "a": "The tube is polyester elastomer, reinforced with one or two synthetic-fibre braids, and the cover is low-friction orange polyester that is non-conductive. The temperature range is −67 °F to 212 °F (−55 °C to 100 °C), as published."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange meet?",
+          "a": "The hose is made to SAE J517 100R18, which sets 3,000 psi working pressure in every size. The listing does not state an electrical rating, so ask us for the leakage-test standard your equipment follows before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings suit the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange?",
+          "a": "Use fittings made for thermoplastic hose and crimp them to the maker's specification for 100R18. The [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) explains the match; the [thermoplastic hoses shelf](/c/thermoplastic-hoses) lists related thermoplastic hoses."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and fit the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange?",
+          "a": "Route the hose with the bend radius and without twist, and keep it clean and dry at the ends. After assembly, have the finished hose tested for electrical leakage to the standard your equipment follows; the [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) covers routing."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the non-conductive orange R18 hose and the black low-friction R18 hose?",
+          "a": "The orange hose is non-conductive and listed in 4 sizes from 1/4 inch to 1/2 inch, whereas the [SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover](/p/sae-100r18-thermoplastic-hydraulic-hose-low-friction-black-cover) has a black cover and is listed in 6 sizes from 3/16 inch to 5/8 inch. Choose the orange hose near high voltage and the black one for forklifts and cold-working machines."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange ship from, and what are the export details?",
+          "a": "The SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange ships from our warehouse in Dubai, UAE, to buyers worldwide. We do not state a country of origin on this page: it is confirmed on the quotation and the commercial invoice for the lot you receive, together with the HS code."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange for export from Dubai?",
+          "a": "Yes. We keep the SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-HS-R18LFNC-04 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sae-100r18-thermoplastic-hydraulic-hose-low-friction-black-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is SAE 100R18 thermoplastic hose with a black low-friction cover used for?",
+          "a": "The SAE 100R18 low-friction black hose is a thermoplastic hydraulic hose with a polyester elastomer tube and a black low-friction polyester cover. It is for forklifts and for industrial and agricultural machines working in the cold or through quick temperature swings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HS-R18LF-03 for the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover?",
+          "a": "In IH-HS-R18LF-04 the prefix IH-HS-R18LF is the low-friction R18 hose and the last number is the bore as a dash size in sixteenths of an inch: 03 is 3/16 inch, 04 is 1/4 inch, 05 is 5/16 inch, 06 is 3/8 inch, 08 is 1/2 inch and 10 is 5/8 inch."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover come in?",
+          "a": "Six sizes are listed: IH-HS-R18LF-03 (3/16 inch), -04 (1/4 inch), -05 (5/16 inch), -06 (3/8 inch), -08 (1/2 inch) and -10 (5/8 inch), each supplied per foot. Other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover?",
+          "a": "Choose the bore from the flow the machine needs: the six sizes run from 3/16 inch to 5/8 inch, and the pressure is the same at each. Match the end fittings to thermoplastic hose and give us the length you need per foot."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover have?",
+          "a": "SAE J517 100R18 sets a working pressure of 3,000 psi for every size from 3/16 inch to 1 inch, and the manufacturer publishes no separate figure. Use fittings made for thermoplastic hose, because the assembly is rated to the lower of the hose and the fitting."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover made from, and what is its temperature range?",
+          "a": "The tube is polyester elastomer, reinforced with one or two synthetic-fibre braids, and the cover is black low-friction polyester that is not pin-pricked. The temperature range is −67 °F to 212 °F (−55 °C to 100 °C), as published."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover meet?",
+          "a": "The hose is made to SAE J517 100R18, which sets 3,000 psi working pressure in every size. The listing states no further approval; tell us if your machine maker requires one."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings suit the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover?",
+          "a": "Use fittings made for thermoplastic hose and crimp them to the maker's specification for 100R18. See the [thermoplastic hose fittings guide](/blog/thermoplastic-hose-fittings-guide) for the match and the [thermoplastic hoses shelf](/c/thermoplastic-hoses) for related hoses."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route and fit the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover?",
+          "a": "Route the hose with the bend radius and without twist, and keep it away from heat and abrasion; the low-friction cover resists rubbing but not cuts. The [hose routing, bend radius and twist guide](/blog/hose-routing-bend-radius-twist) sets out the checks."
+        },
+        {
+          "slot": "K",
+          "q": "How does the black low-friction R18 hose compare with the non-conductive orange R18 hose?",
+          "a": "The black hose has a low-friction cover and is listed in 6 sizes from 3/16 inch to 5/8 inch, whereas the [SAE 100R18 Non-Conductive Thermoplastic Hydraulic Hose, Orange](/p/sae-100r18-non-conductive-thermoplastic-hydraulic-hose-orange) is non-conductive, orange and listed in 4 sizes. Choose the black hose for forklifts and cold machines, and the orange one near high voltage."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover ship from, and what are the export details?",
+          "a": "The SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover ships from our warehouse in Dubai, UAE, to buyers worldwide. We do not state a country of origin on this page: it is confirmed on the quotation and the commercial invoice for the lot you receive, together with the HS code."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the SAE 100R18 Thermoplastic Hydraulic Hose, Low-Friction Black Cover, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    }
+  ]
+}

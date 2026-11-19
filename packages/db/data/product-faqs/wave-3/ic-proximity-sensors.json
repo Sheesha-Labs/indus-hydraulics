@@ -1,0 +1,84 @@
+{
+  "family": "ic-proximity-sensors",
+  "extraFacts": [
+    {
+      "fact": "Related Indus instrumentation listings, as shown on their own pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available. | Analogic Pressure Sensor, 2-inch Fig.1502 Debooster, 6-inch Gauge + Adjustable Shutdown: 2-inch Fig.1502 pressure debooster providing safe transfer of HP wellhead pressure to the analogic gauge circuit. 6-inch glycerine-filled gauge for smooth pointer reading. Adjustable overpressure shutdown proximity switch enables interlock with ESD logic and shutdown sequencers.\nPressure ranges to 15,000 psi available. SS316 wetted connections; NACE MR-0175 on request. | Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants. | Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control. | Explosion-Proof Electrical Panel, Aluminium-Cast, ATEX Zone 1, 600 mm × 800 mm: Explosion-proof aluminium-cast electrical panel for ATEX Zone 1 hazardous-area deployment. 600 mm × 800 mm internal envelope; multiple sizes available. Internal mounting plate houses breakers, contactors, relays, terminal blocks, and surge protection per project schematic.\nIECEx-certified variants available. Weatherproof steel-sheet enclosure (powder-coated) for non-hazardous deployment as a lower-cost option. IP65 / IP66 sealing as standard. | Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range. | Magnetic Flowmeter, 2-inch Wafer, 600 psi, 4-20 mA Output: 2-inch wafer-style magnetic flowmeter with 600 psi MAWP and 4-20 mA loop output. Designed for water, brine, mud and acid-resistant lining where chemistry requires. Local display optional; remote display via 4-20 mA into DAQ.\nSizes 1/2 inch to 12 inch available; pressure ratings to ANSI 600. ATEX Zone 1 explosion-proof variant on request. | Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available. | Bimetal Thermometer + Thermowell Pair, 1/2-inch NPT M×F, P+U API 6A Range, SS316: Matched bimetal thermometer and thermowell pair. The thermometer has a 1/2-inch NPT male connection with selectable stem length (2.5, 4, 6, 9 inch) and an API 6A P+U temperature range (-20 °F to +250 °F).\nThe thermowell is integral construction in SS316 with 1/2-inch NPT male-to-female connections, sized to match the thermometer stem. SS304 wetted-parts variant available. Pressure rating to 15,000 psi at process side; bore size selectable. | Turbine Flowmeter, 2-inch Fig.1502 F×M, 15,000 psi, Frac / Cementing Service: 2-inch turbine flowmeter for high-pressure frac and cementing service. Fig.1502 F×M connections at 15,000 psi MAWP. Optical or magnetic pickup output with K-factor calibration certificate.\n3-inch and lower-pressure variants available. NACE MR-0175 materials on request for sour-service applications. | VFD Package, AC Motor + Drive, 500 HP, ATEX Zone 2, Frac-Pumper Compatible: VFD (Variable Frequency Drive) package supplying a 500 HP AC motor for oilfield pump duty. Replaces costly DC converter and DC motor systems on legacy units. ATEX Zone 2 enclosure; regenerative braking option for energy recovery on deceleration.\nMotor + drive system rated for offshore environment (saltwater, vibration, temperature). Sizes 100 / 250 / 500 / 750 / 1,000 HP available. Compatible with frac pumper, cementing unit, transfer pump and stimulation unit deployments.",
+      "source": "Indus Hydraulics instrumentation listings"
+    },
+    {
+      "fact": "Figures of this listing, as shown on its product page: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available.",
+      "source": "Indus Hydraulics product listing"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter [IH-PSM-MPU-58UNF-M12]:   Magnetic-pickup proximity sensor with 5/8-18 UNF mount and M12 connector. Reads pump shaft bolt counts for RPM + stroke / pump-displacement calculations. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "magnetic-pickup-proximity-sensor-5-8-18-unf-m12-connector-stroke-rpm-counter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a magnetic-pickup proximity sensor with a 5/8-18 UNF thread used for?",
+          "a": "It is a magnetic-pickup sensor used as a bolt-counter on triplex and quintuplex pump crank shafts, feeding RPM and calculated displacement to the unit data acquisition system. It has a 5/8-18 UNF body and an M12 4-pin connector; see the [proximity sensors shelf](/c/ic-proximity-sensors)."
+        },
+        {
+          "slot": "B",
+          "q": "What does the magnetic pickup sensor measure?",
+          "a": "Shaft speed: it counts the passing bolts on a pump crank shaft, which gives stroke or RPM and, calculated, displacement. The output feeds the unit DAQ."
+        },
+        {
+          "slot": "D",
+          "q": "What thread and connector does the proximity sensor have?",
+          "a": "A 5/8-18 UNF threaded body with an M12 4-pin connector. Check the mounting hole thread on your pump. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "Does the magnetic pickup sensor need a power supply?",
+          "a": "No, no onboard power is required: the output is a passive signal proportional to shaft speed. It connects straight to the DAQ input. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the magnetic pickup sensor available for hazardous areas?",
+          "a": "Hazardous-area-rated variants are available. Tell us the zone and certification when you ask. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "What signal does the proximity sensor give?",
+          "a": "A passive signal proportional to shaft speed, which a [data acquisition system](/p/multi-channel-data-acquisition-system-15-inch-touchscreen-usb-export-frac-fleet-ready) reads as a frequency input. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "H",
+          "q": "Which pumps use the magnetic pickup proximity sensor?",
+          "a": "Triplex and quintuplex pumps on frac and cementing units, where the sensor reads the crank shaft bolts. It reports stroke count for each unit."
+        },
+        {
+          "slot": "I",
+          "q": "How is the magnetic pickup sensor installed?",
+          "a": "Screw the 5/8-18 UNF body into the mounting hole so it faces the bolt heads at the right gap, and connect the M12 plug to the DAQ cable. See the [oilfield instrumentation guide](/blog/oilfield-pressure-and-flow-instrumentation)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the the magnetic-pickup proximity sensor?",
+          "a": "Quote the full title, Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "J",
+          "q": "Why count strokes on a triplex pump?",
+          "a": "Stroke count and calculated displacement tell the DAQ how much fluid the pump has moved, which is used with the [flowmeters](/c/ic-turbine-flowmeters) to check the job."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the proximity sensor supplied from?",
+          "a": "We supply it from Dubai, UAE and ship worldwide. Send the thread and connector you need. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "M",
+          "q": "Is the magnetic-pickup proximity sensor in stock in Dubai?",
+          "a": "Yes, we hold the magnetic-pickup proximity sensor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

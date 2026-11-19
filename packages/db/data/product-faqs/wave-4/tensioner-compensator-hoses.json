@@ -1,0 +1,210 @@
+{
+  "family": "tensioner-compensator-hoses",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "drill-string-compensator-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Drill String Compensator Hose used for?",
+          "a": "The Drill String Compensator Hose is used for active heave compensation of the drill string on an offshore rig. It is a tensioner compensator hose in 2\" to 4\" bore, rated 5000 psi WP, 12500 psi MBP, from the Continental range. "
+        },
+        {
+          "slot": "B",
+          "q": "What do WP and MBP mean in the 5000 psi WP, 12500 psi MBP rating of the Drill String Compensator Hose?",
+          "a": "WP is the working pressure, the continuous service rating, and MBP is the minimum burst pressure, a design margin and never a working pressure. The Drill String Compensator Hose is rated 5000 psi WP, 12500 psi MBP. The hydrotest is 1.5 times working pressure per the listing."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Drill String Compensator Hose come in?",
+          "a": "The listing gives 2\" to 4\" inside diameter for the Drill String Compensator Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Drill String Compensator Hose or the Riser Tensioner Hose?",
+          "a": "The drill string compensator hose serves the compensator that holds weight on bit as the rig heaves, while a riser tensioner hose serves the tensioner that supports the marine riser. See the [Riser Tensioner Hose](/p/riser-tensioner-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Drill String Compensator Hose?",
+          "a": "The listing gives -30°C to +82°C for the Drill String Compensator Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Drill String Compensator Hose?",
+          "a": "The liner is Hydraulic-fluid-compatible synthetic rubber and the reinforcement is multiple high-tensile steel cable plies — heavy-cycle-rated. The flanged couplings are fitted to suit the Drill String Compensator Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Drill String Compensator Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API Spec 7K for the Drill String Compensator Hose. It is supplied by API-licensed manufacturers to API 7K with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Drill String Compensator Hose use?",
+          "a": "The Drill String Compensator Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Drill String Compensator Hose?",
+          "a": "Inspect the Drill String Compensator Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/riser-tensioner-and-compensator-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Drill String Compensator Hose compare with the Riser Tensioner Hose?",
+          "a": "The drill string compensator hose serves the compensator that holds weight on bit as the rig heaves, while a riser tensioner hose serves the tensioner that supports the marine riser. See the [Riser Tensioner Hose](/p/riser-tensioner-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Drill String Compensator Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Drill String Compensator Hose, a Continental hose rated 5000 psi WP, 12500 psi MBP. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Drill String Compensator Hose in stock in Dubai?",
+          "a": "Yes. We keep the Drill String Compensator Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-tensioner-compensator-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hydraulic tensioner & compensator hose assemblies used for?",
+          "a": "The Hydraulic tensioner & compensator hose assemblies is used for hydraulic tensioner and compensator systems, delivered as complete assemblies with flanged ends and a pressure test certificate. It is a tensioner compensator hose in 1\" to 4\" bore, rated 5000 psi WP, 12500 psi MBP, from the Continental range. full-assembly delivery (hose + flanged ends + pressure test certificate) for offshore tensioner systems."
+        },
+        {
+          "slot": "B",
+          "q": "What do WP and MBP mean in the 5000 psi WP, 12500 psi MBP rating of the Hydraulic tensioner & compensator hose assemblies?",
+          "a": "WP is the working pressure, the continuous service rating, and MBP is the minimum burst pressure, a design margin and never a working pressure. The Hydraulic tensioner & compensator hose assemblies is rated 5000 psi WP, 12500 psi MBP. The hydrotest is 1.5 times working pressure per the listing."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Hydraulic tensioner & compensator hose assemblies come in?",
+          "a": "The listing gives 1\" to 4\" inside diameter for the Hydraulic tensioner & compensator hose assemblies, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Hydraulic tensioner & compensator hose assemblies or the Drill String Compensator Hose?",
+          "a": "The assembly listing is delivered complete, hose with flanged ends and test certificate, in 1 to 4 inch bores, while the drill string compensator hose is the hose type for that one duty in 2 to 4 inch bores. See the [Drill String Compensator Hose](/p/drill-string-compensator-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Hydraulic tensioner & compensator hose assemblies?",
+          "a": "The listing gives -30°C to +82°C for the Hydraulic tensioner & compensator hose assemblies. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Hydraulic tensioner & compensator hose assemblies?",
+          "a": "The liner is Hydraulic-fluid-compatible synthetic rubber and the reinforcement is multiple high-tensile steel cable plies. The flanged couplings are fitted to suit the Hydraulic tensioner & compensator hose assemblies. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Hydraulic tensioner & compensator hose assemblies meet, and is it API monogrammed?",
+          "a": "The listing gives API Spec 7K for the Hydraulic tensioner & compensator hose assemblies. It is supplied by API-licensed manufacturers to API 7K with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Hydraulic tensioner & compensator hose assemblies use?",
+          "a": "The Hydraulic tensioner & compensator hose assemblies uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Hydraulic tensioner & compensator hose assemblies?",
+          "a": "Inspect the Hydraulic tensioner & compensator hose assemblies for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/riser-tensioner-and-compensator-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydraulic tensioner & compensator hose assemblies compare with the Drill String Compensator Hose?",
+          "a": "The assembly listing is delivered complete, hose with flanged ends and test certificate, in 1 to 4 inch bores, while the drill string compensator hose is the hose type for that one duty in 2 to 4 inch bores. See the [Drill String Compensator Hose](/p/drill-string-compensator-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Hydraulic tensioner & compensator hose assemblies made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Hydraulic tensioner & compensator hose assemblies, a Continental hose rated 5000 psi WP, 12500 psi MBP. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hydraulic tensioner & compensator hose assemblies in stock in Dubai?",
+          "a": "Yes. We keep the Hydraulic tensioner & compensator hose assemblies in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "riser-tensioner-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Riser Tensioner Hose used for?",
+          "a": "The Riser Tensioner Hose is used for compensating rig motion against the marine riser on offshore drilling rigs. It is a tensioner compensator hose in 2\" to 4\" bore, rated 5000 psi WP, 12500 psi MBP, from the Continental range. "
+        },
+        {
+          "slot": "B",
+          "q": "What do WP and MBP mean in the 5000 psi WP, 12500 psi MBP rating of the Riser Tensioner Hose?",
+          "a": "WP is the working pressure, the continuous service rating, and MBP is the minimum burst pressure, a design margin and never a working pressure. The Riser Tensioner Hose is rated 5000 psi WP, 12500 psi MBP. The hydrotest is 1.5 times working pressure per the listing."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Riser Tensioner Hose come in?",
+          "a": "The listing gives 2\" to 4\" inside diameter for the Riser Tensioner Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Riser Tensioner Hose or the Drill String Compensator Hose?",
+          "a": "The riser tensioner hose supports the marine riser against rig heave, while the drill string compensator hose serves the compensator that controls the drill string. See the [Drill String Compensator Hose](/p/drill-string-compensator-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Riser Tensioner Hose?",
+          "a": "The listing gives -30°C to +82°C for the Riser Tensioner Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Riser Tensioner Hose?",
+          "a": "The liner is Hydraulic-fluid-compatible synthetic rubber and the reinforcement is multiple high-tensile steel cable plies — heavy-cycle-rated. The flanged couplings are fitted to suit the Riser Tensioner Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Riser Tensioner Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API Spec 7K (cross-reference) for the Riser Tensioner Hose. It is supplied by API-licensed manufacturers to API 7K with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Riser Tensioner Hose use?",
+          "a": "The Riser Tensioner Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Riser Tensioner Hose?",
+          "a": "Inspect the Riser Tensioner Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/riser-tensioner-and-compensator-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Riser Tensioner Hose compare with the Drill String Compensator Hose?",
+          "a": "The riser tensioner hose supports the marine riser against rig heave, while the drill string compensator hose serves the compensator that controls the drill string. See the [Drill String Compensator Hose](/p/drill-string-compensator-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Riser Tensioner Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Riser Tensioner Hose, a Continental hose rated 5000 psi WP, 12500 psi MBP. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Riser Tensioner Hose in stock in Dubai?",
+          "a": "Yes. We keep the Riser Tensioner Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

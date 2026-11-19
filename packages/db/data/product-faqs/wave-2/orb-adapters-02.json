@@ -1,0 +1,1579 @@
+{
+  "family": "orb-adapters-02",
+  "extraFacts": [
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss port: a straight UN/UNF thread with an O-ring under the hex shoulder that makes the seal; the thread only holds the fitting.",
+      "source": "SAE J1926 / ISO 11926; Indus Steel ORB listings"
+    },
+    {
+      "fact": "ASME B1.20.3 (Dryseal NPTF) is the pipe thread standard for NPTF threads, which seal on the taper with sealant.",
+      "source": "ASME B1.20.3"
+    },
+    {
+      "fact": "The 37° JIC flare end seats on a 37° cone and seals metal to metal; its standard is SAE J514 (ISO 8434-2).",
+      "source": "SAE J514 / ISO 8434-2"
+    }
+  ],
+  "products": [
+    {
+      "slug": "brennan-3474-maorb-orb-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 3474 MAORB-ORB Straight Tube Adapters used for?",
+          "a": "Brennan 3474 MAORB-ORB Straight Tube Adapters are Brennan straight tube adapters with SAE O-ring boss (ORB) and SAE O-ring boss (ORB) ends. It joins two O-ring boss connections in a straight line, and the rows are listed in both steel and SS versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 3474-08-08-NWO-SS on the Brennan 3474 MAORB-ORB Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 3474 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 3474-08-08-NWO-SS is listed as \"Straight Adapter, 3/4-16 X 3/4-16, ORB, SAE J514, SS, NBR Seal\"; 3474-08-06-nwo is listed as \"08MAORB-06MORB Straight\"; 3474-12-12-NWO-SS is listed as \"Straight Adapter, 1-1/16-12 X 1-1/16-12, ORB, SAE J514, SS\". The -NWO- in the number and the SS suffix appear in the item text as written, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 3474 MAORB-ORB Straight Tube Adapters come in?",
+          "a": "The Brennan 3474 MAORB-ORB Straight Tube Adapters lists 23 Brennan part numbers, for example 3474-08-08-NWO-SS, 3474-08-06-nwo and 3474-12-12-NWO-SS. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 3474 MAORB-ORB Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 3474 MAORB-ORB Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 3474-08-08-NWO-SS, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 3474 MAORB-ORB Straight Tube Adapters made of?",
+          "a": "The size table items for the Brennan 3474 MAORB-ORB Straight Tube Adapters describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 3474 series numbers such as 3474-08-08-NWO-SS and 3474-12-12-NWO-SS share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 3474 MAORB-ORB Straight Tube Adapters?",
+          "a": "On the Brennan 3474 MAORB-ORB Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 3474-08-06-nwo."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 3474 MAORB-ORB Straight Tube Adapters connect to?",
+          "a": "On the Brennan 3474 MAORB-ORB Straight Tube Adapters, both ends are SAE O-ring boss (ORB) and each fits an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 3474 MAORB-ORB Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 3474 MAORB-ORB Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Avoid stacking several adapters in one line, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) explains."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 3474 MAORB-ORB Straight Tube Adapters used?",
+          "a": "Straight ORB-to-ORB connections on hydraulic lines, including stainless steel SS versions for wet or corrosive sites. Tell us the system and the port threads and we confirm the Brennan 3474 MAORB-ORB Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 3474 MAORB-ORB Straight Tube Adapters differ from the Brennan 6464 MORB-MORB Straight Tube Adapters?",
+          "a": "The 3474 has 23 part numbers titled MAORB-ORB, while the [Brennan 6464 MORB-MORB Straight Tube Adapters](/p/brennan-6464-morb-morb-straight-tube-adapters) has 7 titled MORB-MORB. Both are straight ORB adapters, so choose by the series number on the part you are replacing."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 3474 MAORB-ORB Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 3474 MAORB-ORB Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 3474 MAORB-ORB Straight Tube Adapters in Dubai?",
+          "a": "Yes. We keep the Brennan 3474 MAORB-ORB Straight Tube Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-4604-hb-morb-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 4604 HB-MORB Straight Tube Adapters used for?",
+          "a": "Brennan 4604 HB-MORB Straight Tube Adapters are Brennan straight adapters with hose barb and SAE O-ring boss (ORB) male ends. It connects a hose barb to a male O-ring boss port, so a push-on or clamped hose can be fitted to a boss-ported component."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 4604-20-12-O on the Brennan 4604 HB-MORB Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 4604 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 4604-20-12-O is listed as \"Straight Adapter, Tube OD 1-1/4 X 1-1/16-12, ORB X Hose Barb, SAE J514, Steel, NBR Seal\"; 4604-16-20-o is listed as \"16HB-20MORB Straight\"; 4604-24-16-o is listed as \"24HB-16MORB Straight\". The HB in the item text, as in 12HB-16MORB, is the hose barb end and MORB is the male ORB end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 4604 HB-MORB Straight Tube Adapters come in?",
+          "a": "The Brennan 4604 HB-MORB Straight Tube Adapters lists 17 Brennan part numbers, for example 4604-20-12-O, 4604-16-20-o and 4604-24-16-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 4604 HB-MORB Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 4604 HB-MORB Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 4604-20-12-O, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 4604 HB-MORB Straight Tube Adapters made of?",
+          "a": "The size table items for the Brennan 4604 HB-MORB Straight Tube Adapters describe Brennan adapters with NBR seals. The 4604 series numbers such as 4604-20-12-O and 4604-24-16-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 4604 HB-MORB Straight Tube Adapters?",
+          "a": "On the Brennan 4604 HB-MORB Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 4604-16-20-o."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 4604 HB-MORB Straight Tube Adapters connect to?",
+          "a": "On the Brennan 4604 HB-MORB Straight Tube Adapters, the hose barb end takes a hose pushed over the barb. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 4604 HB-MORB Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 4604 HB-MORB Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Fit the hose over the barb as the hose maker directs; the listing does not state a clamp type."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 4604 HB-MORB Straight Tube Adapters used?",
+          "a": "Low-pressure hose connections to boss ports on pumps, tanks and valves. Tell us the system and the port threads and we confirm the Brennan 4604 HB-MORB Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 4604 HB-MORB Straight Tube Adapters differ from the Brennan 6401 MORB-MP Straight Tube Adapters?",
+          "a": "The 4604 has a hose barb on one end, while the [Brennan 6401 MORB-MP Straight Tube Adapters](/p/brennan-6401-morb-mp-straight-tube-adapters) has a pipe-thread end. Choose the barb to take a hose directly and the pipe-thread version to connect an NPT port."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 4604 HB-MORB Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 4604 HB-MORB Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 4604 HB-MORB Straight Tube Adapters in Dubai?",
+          "a": "Yes, the Brennan 4604 HB-MORB Straight Tube Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6401-morb-mp-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6401 MORB-MP Straight Tube Adapters used for?",
+          "a": "Brennan 6401 MORB-MP Straight Tube Adapters are Brennan straight adapters with SAE O-ring boss (ORB) male and NPTF male ends. It converts a male O-ring boss thread to a male NPTF pipe thread, with the drill sizes 0.484 and 0.719 inch listed for the two ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6401-10-12-o on the Brennan 6401 MORB-MP Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 6401 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6401-10-12-o is listed as \"10MORB-12MP Straight\"; 6401-08-06-O is listed as \"Straight Adapter, NPT X ORB\"; 6401-04-04-o is listed as \"04MORB-04MP Straight\". The listing's specification shows Male SAE O Ring Boss on one end and Male NPTF on the other."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6401 MORB-MP Straight Tube Adapters come in?",
+          "a": "The Brennan 6401 MORB-MP Straight Tube Adapters lists 32 Brennan part numbers, for example 6401-10-12-o, 6401-08-06-O and 6401-04-04-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6401 MORB-MP Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6401 MORB-MP Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6401-10-12-o, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6401 MORB-MP Straight Tube Adapters made of?",
+          "a": "For the Brennan 6401 MORB-MP Straight Tube Adapters the listing gives steel, plated CR3, with an NBR seal. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6401 series numbers such as 6401-10-12-o and 6401-04-04-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6401 MORB-MP Straight Tube Adapters?",
+          "a": "On the Brennan 6401 MORB-MP Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926; the NPTF end is a Dryseal pipe thread under ASME B1.20.3. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6401-08-06-O."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6401 MORB-MP Straight Tube Adapters connect to?",
+          "a": "On the Brennan 6401 MORB-MP Straight Tube Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The NPTF male end screws into a female NPT or NPTF pipe port, which needs sealant. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6401 MORB-MP Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6401 MORB-MP Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6401 MORB-MP Straight Tube Adapters used?",
+          "a": "Adapting a boss-ported pump or valve to an NPT-threaded line. Tell us the system and the port threads and we confirm the Brennan 6401 MORB-MP Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6401 MORB-MP Straight Tube Adapters differ from the Brennan 6405 MORB-FP Straight Tube Adapters?",
+          "a": "The 6401 has a male pipe end and 32 part numbers, while the [Brennan 6405 MORB-FP Straight Tube Adapters](/p/brennan-6405-morb-fp-straight-tube-adapters) has an FP end and 74 part numbers. Choose by whether your pipe thread is a male stud or a port."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6401 MORB-MP Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6401 MORB-MP Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6401 MORB-MP Straight Tube Adapters in Dubai?",
+          "a": "Yes. The Brennan 6401 MORB-MP Straight Tube Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6405-morb-fp-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6405 MORB-FP Straight Tube Adapters used for?",
+          "a": "Brennan 6405 MORB-FP Straight Tube Adapters are Brennan straight adapters with SAE O-ring boss (ORB) male and pipe-thread (NPT) end ends. It joins a male O-ring boss thread to a pipe-thread (NPT) end, in the largest range of the Brennan ORB adapters here."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6405-08-08-o-pc on the Brennan 6405 MORB-FP Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 6405 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6405-20-24-O is listed as \"Straight Adapter, 1-5/8-12 X 1-1/2-11-1/2, NPT X ORB, SAE J514, Steel, NBR Seal\"; 6405-16-12-O is listed as \"Straight Adapter, 1-5/16-12 X 3/4-14, NPT X ORB, SAE J514, Steel, NBR Seal\"; 6405-32-32-O-SS is listed as \"Straight Adapter, 2-1/2-12 X 2-11-1/2, NPT X ORB, SAE J514, SS, NBR Seal\". Some rows carry only the part number as their item text, so use the dash sizes in the number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6405 MORB-FP Straight Tube Adapters come in?",
+          "a": "The Brennan 6405 MORB-FP Straight Tube Adapters lists 74 Brennan part numbers, for example 6405-08-08-o-pc, 6405-16-06-O and 6405-32-32-O-SS. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6405 MORB-FP Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6405 MORB-FP Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6405-08-08-o-pc, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6405 MORB-FP Straight Tube Adapters made of?",
+          "a": "The size table items for the Brennan 6405 MORB-FP Straight Tube Adapters describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6405 series numbers such as 6405-08-08-o-pc and 6405-32-32-O-SS share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6405 MORB-FP Straight Tube Adapters?",
+          "a": "On the Brennan 6405 MORB-FP Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6405-16-08-o."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6405 MORB-FP Straight Tube Adapters connect to?",
+          "a": "On the Brennan 6405 MORB-FP Straight Tube Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The pipe-thread (NPT) end end screws into an NPT pipe port, which needs sealant. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6405 MORB-FP Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6405 MORB-FP Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Seal the NPT thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6405 MORB-FP Straight Tube Adapters used?",
+          "a": "Fitting NPT-threaded parts to boss-ported equipment across many size combinations. Tell us the system and the port threads and we confirm the Brennan 6405 MORB-FP Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6405 MORB-FP Straight Tube Adapters differ from the Brennan 6401 MORB-MP Straight Tube Adapters?",
+          "a": "The 6405 offers 74 part numbers with an FP pipe end, against 32 for the [Brennan 6401 MORB-MP Straight Tube Adapters](/p/brennan-6401-morb-mp-straight-tube-adapters) with an MP end. Check the row for the pipe-thread gender you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6405 MORB-FP Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6405 MORB-FP Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6405 MORB-FP Straight Tube Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Brennan 6405 MORB-FP Straight Tube Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6408-morb-external-hex-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6408 MORB External Hex Plugs used for?",
+          "a": "Brennan 6408 MORB External Hex Plugs are Brennan external hex plugs with SAE O-ring boss (ORB) male thread. It closes a female O-ring boss port, with an external hex to turn it, in steel and SS versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6408-02-O-SS on the Brennan 6408 MORB External Hex Plugs?",
+          "a": "Every number on this listing begins with the 6408 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6408-02-O-SS is listed as \"Plug, 5/16-24, ORB, SAE J514, SS, NBR Seal\"; 6408-12-O is listed as \"Hex Plug, ORB\"; 6408-32-O-SS is listed as \"Plug, 2-1/2-12, ORB, SAE J514, SS, NBR Seal\". A plug has one size code, which the item text gives as the thread, for example 5/16-24 and 2-1/2-12."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6408 MORB External Hex Plugs come in?",
+          "a": "The Brennan 6408 MORB External Hex Plugs lists 18 Brennan part numbers, for example 6408-02-O-SS, 6408-12-O and 6408-32-O-SS. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6408 MORB External Hex Plugs have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6408 MORB External Hex Plugs, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6408-02-O-SS, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6408 MORB External Hex Plugs made of?",
+          "a": "The size table items for the Brennan 6408 MORB External Hex Plugs describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6408 series numbers such as 6408-02-O-SS and 6408-32-O-SS share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6408 MORB External Hex Plugs?",
+          "a": "On the Brennan 6408 MORB External Hex Plugs, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6408-14-O-SS."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6408 MORB External Hex Plugs connect to?",
+          "a": "On the Brennan 6408 MORB External Hex Plugs, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6408 MORB External Hex Plugs so it does not leak?",
+          "a": "To fit the Brennan 6408 MORB External Hex Plugs, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Use a spanner on the hex and do not over-tighten."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6408 MORB External Hex Plugs used?",
+          "a": "Blanking unused boss ports on manifolds, pumps and valves. Tell us the system and the port threads and we confirm the Brennan 6408 MORB External Hex Plugs suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6408 MORB External Hex Plugs differ from the Brennan 6408 MORB Hollow Hex Plugs?",
+          "a": "This plug has a solid external hex and 18 part numbers, while the [Brennan 6408 MORB Hollow Hex Plugs](/p/brennan-6408-morb-hollow-hex-plugs) is the hollow hex type. Choose by the hex style the port allows."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6408 MORB External Hex Plugs exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6408 MORB External Hex Plugs, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6408 MORB External Hex Plugs in Dubai?",
+          "a": "Yes. We keep the Brennan 6408 MORB External Hex Plugs in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6408-morb-hollow-hex-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6408 MORB Hollow Hex Plugs used for?",
+          "a": "Brennan 6408 MORB Hollow Hex Plugs are Brennan hollow hex plugs with SAE O-ring boss (ORB) male thread. It closes a female O-ring boss port with a hollow hex head, listed in many size and finish variants."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6408-hn16-o on the Brennan 6408 MORB Hollow Hex Plugs?",
+          "a": "Every number on this listing begins with the 6408 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6408-H12-O-SS is listed as \"Hollow Hex Plug, ORB\"; 6408-H14-O is listed as \"Plug, 1-3/16-12, ORB, SAE J514, Steel, NBR Seal\"; 6408-h06-o is listed as \"Steel Hydraulic Fittings, 3/8 Inch O-Ring Bo\". Hollow plug numbers carry an H or HN code before the size, such as 6408-H12-O and 6408-HN10-O."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6408 MORB Hollow Hex Plugs come in?",
+          "a": "The Brennan 6408 MORB Hollow Hex Plugs lists 40 Brennan part numbers, for example 6408-hn16-o, 6408-12-o-solid and 6408-hn10-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6408 MORB Hollow Hex Plugs have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6408 MORB Hollow Hex Plugs, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6408-hn16-o, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6408 MORB Hollow Hex Plugs made of?",
+          "a": "The size table items for the Brennan 6408 MORB Hollow Hex Plugs describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6408 series numbers such as 6408-hn16-o and 6408-hn10-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6408 MORB Hollow Hex Plugs?",
+          "a": "On the Brennan 6408 MORB Hollow Hex Plugs, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6408-12-o-solid."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6408 MORB Hollow Hex Plugs connect to?",
+          "a": "On the Brennan 6408 MORB Hollow Hex Plugs, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6408 MORB Hollow Hex Plugs so it does not leak?",
+          "a": "To fit the Brennan 6408 MORB Hollow Hex Plugs, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Seat the hex key or driver fully before tightening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6408 MORB Hollow Hex Plugs used?",
+          "a": "Blanking boss ports where a low, hollow head is wanted. Tell us the system and the port threads and we confirm the Brennan 6408 MORB Hollow Hex Plugs suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6408 MORB Hollow Hex Plugs differ from the Brennan 6408 MORB External Hex Plugs?",
+          "a": "The hollow hex plug has 40 part numbers, while the [Brennan 6408 MORB External Hex Plugs](/p/brennan-6408-morb-external-hex-plugs) has an external hex. Both close the same ORB port, so pick by the drive style."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6408 MORB Hollow Hex Plugs exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6408 MORB Hollow Hex Plugs, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6408 MORB Hollow Hex Plugs in Dubai?",
+          "a": "Yes, the Brennan 6408 MORB Hollow Hex Plugs is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6420-forb-fp-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6420 FORB-FP Straight Tube Adapters used for?",
+          "a": "Brennan 6420 FORB-FP Straight Tube Adapters are Brennan straight adapters with SAE O-ring boss (ORB) female and pipe-thread (NPT) end ends. It joins a female O-ring boss end to a pipe-thread (NPT) end, in only three part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6420-04-04 on the Brennan 6420 FORB-FP Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 6420 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6420-04-04 is listed as \"04FORB-04FP Straight\"; 6420-06-06 is listed as \"Straight Adapter, 9/16-18 X 3/8-18, NPT X ORB, SAE J514, Steel\"; 6420-08-08 is listed as \"08FORB-08FP Straight\". Rows such as 6420-06-06 are described as 9/16-18 by 3/8-18, NPT by ORB."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6420 FORB-FP Straight Tube Adapters come in?",
+          "a": "The Brennan 6420 FORB-FP Straight Tube Adapters lists 3 Brennan part numbers, for example 6420-04-04, 6420-06-06 and 6420-08-08. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6420 FORB-FP Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6420 FORB-FP Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6420-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6420 FORB-FP Straight Tube Adapters made of?",
+          "a": "The size table items for the Brennan 6420 FORB-FP Straight Tube Adapters describe Brennan adapters with NBR seals. The 6420 series numbers such as 6420-04-04 and 6420-08-08 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6420 FORB-FP Straight Tube Adapters?",
+          "a": "On the Brennan 6420 FORB-FP Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6420-06-06."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6420 FORB-FP Straight Tube Adapters connect to?",
+          "a": "On the Brennan 6420 FORB-FP Straight Tube Adapters, the SAE O-ring boss (ORB) female end takes a male ORB stud that carries its own O-ring. The pipe-thread (NPT) end end screws into an NPT pipe port, which needs sealant. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6420 FORB-FP Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6420 FORB-FP Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. The FORB end is female, so its male mate needs its own O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6420 FORB-FP Straight Tube Adapters used?",
+          "a": "Fitting an NPT part to a male ORB stud. Tell us the system and the port threads and we confirm the Brennan 6420 FORB-FP Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6420 FORB-FP Straight Tube Adapters differ from the Brennan 6405 MORB-FP Straight Tube Adapters?",
+          "a": "The 6420 has 3 part numbers with a female ORB end, while the [Brennan 6405 MORB-FP Straight Tube Adapters](/p/brennan-6405-morb-fp-straight-tube-adapters) has a male ORB end and 74. Choose by the gender of the ORB connection you need."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6420 FORB-FP Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6420 FORB-FP Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6420 FORB-FP Straight Tube Adapters in Dubai?",
+          "a": "Yes. The Brennan 6420 FORB-FP Straight Tube Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6464-morb-morb-straight-long-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6464 MORB-MORB Straight Long Tube Adapters used for?",
+          "a": "Brennan 6464 MORB-MORB Straight Long Tube Adapters are Brennan long straight tube adapters with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) male ends. It joins two male O-ring boss connections through a longer body, for added reach between ports."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6464-l-10-08-o on the Brennan 6464 MORB-MORB Straight Long Tube Adapters?",
+          "a": "Every number on this listing begins with the 6464 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6464-l-10-08-o is listed as \"10MORB-08MORB Straight Long\"; 6464-08-06-o is listed as \"08MORB-06MORB Straight\"; 6464-l-06-06-o is listed as \"06MORB-06MORB Straight Long\". Long-body numbers include an L, such as 6464-l-10-08-o and 6464-l-06-06-o."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6464 MORB-MORB Straight Long Tube Adapters come in?",
+          "a": "The Brennan 6464 MORB-MORB Straight Long Tube Adapters lists 7 Brennan part numbers, for example 6464-l-10-08-o, 6464-08-06-o and 6464-l-06-06-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6464 MORB-MORB Straight Long Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6464 MORB-MORB Straight Long Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6464-l-10-08-o, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6464 MORB-MORB Straight Long Tube Adapters made of?",
+          "a": "The size table items for the Brennan 6464 MORB-MORB Straight Long Tube Adapters describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6464 series numbers such as 6464-l-10-08-o and 6464-l-06-06-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6464 MORB-MORB Straight Long Tube Adapters?",
+          "a": "On the Brennan 6464 MORB-MORB Straight Long Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6464-08-06-o."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6464 MORB-MORB Straight Long Tube Adapters connect to?",
+          "a": "On the Brennan 6464 MORB-MORB Straight Long Tube Adapters, both ends are SAE O-ring boss (ORB) male and each screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6464 MORB-MORB Straight Long Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6464 MORB-MORB Straight Long Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6464 MORB-MORB Straight Long Tube Adapters used?",
+          "a": "Connecting boss ports that sit further apart than a standard straight adapter reaches. Tell us the system and the port threads and we confirm the Brennan 6464 MORB-MORB Straight Long Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6464 MORB-MORB Straight Long Tube Adapters differ from the Brennan 6464 MORB-MORB Straight Tube Adapters?",
+          "a": "The long version has 7 part numbers and a longer body, while the [Brennan 6464 MORB-MORB Straight Tube Adapters](/p/brennan-6464-morb-morb-straight-tube-adapters) is the standard length with 7. Both are MORB to MORB."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6464 MORB-MORB Straight Long Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6464 MORB-MORB Straight Long Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6464 MORB-MORB Straight Long Tube Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Brennan 6464 MORB-MORB Straight Long Tube Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6464-morb-morb-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6464 MORB-MORB Straight Tube Adapters used for?",
+          "a": "Brennan 6464 MORB-MORB Straight Tube Adapters are Brennan straight tube adapters with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) male ends. It joins two male O-ring boss connections in a straight line, with drill sizes of 0.297 inch listed for both ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6464-06-06-o on the Brennan 6464 MORB-MORB Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 6464 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6464-06-06-o is listed as \"06MORB-06MORB Straight\"; 6464-08-08-O is listed as \"Straight Adapter, 3/4-16 X 3/4-16, ORB, SAE J514, Steel, NBR Seal\"; 6464-16-12-o is listed as \"16MORB-12MORB Straight\". The listing's specification shows Male SAE O Ring Boss on both ends."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6464 MORB-MORB Straight Tube Adapters come in?",
+          "a": "The Brennan 6464 MORB-MORB Straight Tube Adapters lists 7 Brennan part numbers, for example 6464-06-06-o, 6464-08-08-O and 6464-16-12-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6464 MORB-MORB Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6464 MORB-MORB Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6464-06-06-o, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6464 MORB-MORB Straight Tube Adapters made of?",
+          "a": "For the Brennan 6464 MORB-MORB Straight Tube Adapters the listing gives steel, plated CR3, with an NBR seal. The 6464 series numbers such as 6464-06-06-o and 6464-16-12-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6464 MORB-MORB Straight Tube Adapters?",
+          "a": "On the Brennan 6464 MORB-MORB Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6464-08-08-O."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6464 MORB-MORB Straight Tube Adapters connect to?",
+          "a": "On the Brennan 6464 MORB-MORB Straight Tube Adapters, both ends are SAE O-ring boss (ORB) male and each screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6464 MORB-MORB Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6464 MORB-MORB Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6464 MORB-MORB Straight Tube Adapters used?",
+          "a": "Joining two female boss ports, or extending an ORB connection, in hydraulic lines. Tell us the system and the port threads and we confirm the Brennan 6464 MORB-MORB Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6464 MORB-MORB Straight Tube Adapters differ from the Brennan 6464 MORB-MORB Straight Long Tube Adapters?",
+          "a": "The standard 6464 has 7 part numbers, while the [Brennan 6464 MORB-MORB Straight Long Tube Adapters](/p/brennan-6464-morb-morb-straight-long-tube-adapters) has a longer body with 7. Use the long version when the ports are further apart."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6464 MORB-MORB Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6464 MORB-MORB Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6464 MORB-MORB Straight Tube Adapters in Dubai?",
+          "a": "Yes. We keep the Brennan 6464 MORB-MORB Straight Tube Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-6900-morb-fps-straight-tube-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan 6900 MORB-FPS Straight Tube Adapters used for?",
+          "a": "Brennan 6900 MORB-FPS Straight Tube Adapters are Brennan straight adapters with SAE O-ring boss (ORB) male and pipe-thread (NPT) end ends. It joins a male O-ring boss thread to a pipe-thread (NPT) end, with FPS in the title for the pipe end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6900-16-20-O on the Brennan 6900 MORB-FPS Straight Tube Adapters?",
+          "a": "Every number on this listing begins with the 6900 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6900-16-20-O is listed as \"Straight Adapter, 1-5/16-12 X 1 1/4-11 1/2, NPT X ORB, SAE J514, Steel, NBR Seal\"; 6900-20-16-O is listed as \"Straight Adapter, 1-5/8-12 X 1-11-1/2, NPT X ORB, SAE J514, Steel, NBR Seal\"; 6900-12-08-o is listed as \"12MORB-08FPS Straight\". A suffix such as R.0625 appears on some numbers, as in 6900-08-08-o-r.0625, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan 6900 MORB-FPS Straight Tube Adapters come in?",
+          "a": "The Brennan 6900 MORB-FPS Straight Tube Adapters lists 31 Brennan part numbers, for example 6900-16-20-O, 6900-20-16-O and 6900-12-08-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan 6900 MORB-FPS Straight Tube Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan 6900 MORB-FPS Straight Tube Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6900-16-20-O, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan 6900 MORB-FPS Straight Tube Adapters made of?",
+          "a": "The size table items for the Brennan 6900 MORB-FPS Straight Tube Adapters describe Brennan adapters with NBR seals. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The 6900 series numbers such as 6900-16-20-O and 6900-12-08-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan 6900 MORB-FPS Straight Tube Adapters?",
+          "a": "On the Brennan 6900 MORB-FPS Straight Tube Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The item descriptions also cite SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6900-20-16-O."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan 6900 MORB-FPS Straight Tube Adapters connect to?",
+          "a": "On the Brennan 6900 MORB-FPS Straight Tube Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The pipe-thread (NPT) end end screws into an NPT pipe port, which needs sealant. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan 6900 MORB-FPS Straight Tube Adapters so it does not leak?",
+          "a": "To fit the Brennan 6900 MORB-FPS Straight Tube Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Seal the NPT thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan 6900 MORB-FPS Straight Tube Adapters used?",
+          "a": "Adapting boss-ported equipment to NPT lines. Tell us the system and the port threads and we confirm the Brennan 6900 MORB-FPS Straight Tube Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan 6900 MORB-FPS Straight Tube Adapters differ from the Brennan 6405 MORB-FP Straight Tube Adapters?",
+          "a": "The 6900 has 31 part numbers with an FPS pipe end, while the [Brennan 6405 MORB-FP Straight Tube Adapters](/p/brennan-6405-morb-fp-straight-tube-adapters) has an FP pipe end and 74. Match the code on the part you are replacing."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan 6900 MORB-FPS Straight Tube Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan 6900 MORB-FPS Straight Tube Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan 6900 MORB-FPS Straight Tube Adapters in Dubai?",
+          "a": "Yes, the Brennan 6900 MORB-FPS Straight Tube Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-o-ring-boss-adjustable-unions",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon O-ring Boss Adjustable Unions used for?",
+          "a": "Dixon O-ring Boss Adjustable Unions are Dixon adjustable unions with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) male ends. It joins two O-ring boss threads of one size and lets the body be aligned, with a male O-ring boss end and an adjustable boss union end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6403-16 on the Dixon O-ring Boss Adjustable Unions?",
+          "a": "Every number on this listing begins with the 6403 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6403-16 is listed as \"O-Ring Union, 1-5/16 Inch-12 Male O-Ring Boss x 1-5/16 Inch-12 Adjustable Boss Union\"; 6403-12 is listed as \"O-Ring Union, 1-1/16 Inch-12 Male O-Ring Boss x 1-1/16 Inch-12 Adjustable Boss Union\"; 6403-4 is listed as \"O-Ring Union, 7/16 Inch-20 Male O-Ring Boss x 7/16 Inch-20 Adjustable Boss Union\". Dixon numbers give the series and one dash size, such as 6403-16, 6403-10 and 6403-4, and the item text names the thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon O-ring Boss Adjustable Unions come in?",
+          "a": "The Dixon O-ring Boss Adjustable Unions lists 6 Dixon part numbers, for example 6403-16, 6403-12 and 6403-4. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Dixon O-ring Boss Adjustable Unions have?",
+          "a": "The maker states 2,500 to 4,500 psi (172 to 310 bar), by size for the Dixon O-ring Boss Adjustable Unions. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon O-ring Boss Adjustable Unions made of?",
+          "a": "For the Dixon O-ring Boss Adjustable Unions the listing gives steel. The 6403 series numbers such as 6403-16 and 6403-4 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dixon O-ring Boss Adjustable Unions?",
+          "a": "On the Dixon O-ring Boss Adjustable Unions, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6403-8."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon O-ring Boss Adjustable Unions connect to?",
+          "a": "On the Dixon O-ring Boss Adjustable Unions, both ends are SAE O-ring boss (ORB) male and each screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Dixon O-ring Boss Adjustable Unions so it does not leak?",
+          "a": "To fit the Dixon O-ring Boss Adjustable Unions, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Set the final alignment of the adjustable end before the last tightening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dixon O-ring Boss Adjustable Unions used?",
+          "a": "Straight connections between boss ports where the body must line up after the thread is made up. Tell us the system and the port threads and we confirm the Dixon O-ring Boss Adjustable Unions suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon O-ring Boss Adjustable Unions differ from the Dixon Port Reducers?",
+          "a": "The adjustable union keeps one size at both ends with 6 part numbers, while the [Dixon Port Reducers](/p/dixon-port-reducers) changes size across 5. Choose the reducer when the two ports differ."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon O-ring Boss Adjustable Unions made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Dixon O-ring Boss Adjustable Unions. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon O-ring Boss Adjustable Unions in Dubai?",
+          "a": "Yes. The Dixon O-ring Boss Adjustable Unions sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-port-reducers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Port Reducers used for?",
+          "a": "Dixon Port Reducers are Dixon port reducers with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) female ends. It steps an O-ring boss connection down or up in size, with a male ORB end and a female O-ring end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6410-10-8 on the Dixon Port Reducers?",
+          "a": "Every number on this listing begins with the 6410 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6410-10-8 is listed as \"Port Reducer, Steel, 7/8 Inch-14 M-SAE O-Ring Boss x 3/4 Inch-16 Female O-Ring\"; 6410-8-6 is listed as \"Port Reducer, Steel, 3/4 Inch-16 M-SAE O-Ring Boss x 9/16 Inch-18 Female O-Ring\"; 6410-6-4 is listed as \"Port Reducer, Steel, 9/16 Inch-18 M-SAE O-Ring Boss x 7/16 Inch-20 Female O-Ring\". The two codes are the dash sizes of the male and female ends, as in 6410-10-8: 7/8 inch-14 male by 3/4 inch-16 female."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Dixon Port Reducers come in?",
+          "a": "The Dixon Port Reducers lists 5 Dixon part numbers, for example 6410-10-8, 6410-8-6 and 6410-6-4. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Dixon Port Reducers have?",
+          "a": "The listing gives no single pressure rating for the Dixon Port Reducers, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6410-10-8, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Port Reducers made of?",
+          "a": "For the Dixon Port Reducers the listing gives steel. The 6410 series numbers such as 6410-10-8 and 6410-6-4 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Dixon Port Reducers?",
+          "a": "On the Dixon Port Reducers, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6410-8-6."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Port Reducers connect to?",
+          "a": "On the Dixon Port Reducers, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The SAE O-ring boss (ORB) female end takes a male ORB stud that carries its own O-ring. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Dixon Port Reducers so it does not leak?",
+          "a": "To fit the Dixon Port Reducers, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Use a single reducer rather than stacking adapters, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) advises."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dixon Port Reducers used?",
+          "a": "Adapting an ORB port to a smaller or larger ORB connection. Tell us the system and the port threads and we confirm the Dixon Port Reducers suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Port Reducers differ from the Dixon O-ring Boss Adjustable Unions?",
+          "a": "The reducer changes the ORB size across 5 part numbers, while the [Dixon O-ring Boss Adjustable Unions](/p/dixon-o-ring-boss-adjustable-unions) keeps the size and adds adjustability. Choose by whether the sizes differ."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Port Reducers made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Dixon Port Reducers. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Port Reducers in Dubai?",
+          "a": "Yes. Indus stocks the Dixon Port Reducers at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-202702-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 202702 Series Straight Adapters used for?",
+          "a": "Aeroquip 202702 Series Straight Adapters are Aeroquip straight adapters with SAE O-ring boss (ORB) male and 37° JIC male ends. It connects an SAE O-ring boss male thread to a 37° JIC male end in a straight, rigid body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 202702-10-8S on the Aeroquip 202702 Series Straight Adapters?",
+          "a": "Every number on this listing begins with the 202702 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 202702-10-8S is listed as \"Hydraulic Hose Adapter, 5/8 Inch x 1/2 Inch Size, Male x Male, ORB x JIC, Rigid\"; 202702-10-12S is listed as \"Hydraulic Hose Adapter, 5/8 Inch x 3/4 Inch Size, Male x Male, ORB x JIC, Rigid\"; 202702-5-5S is listed as \"Hydraulic Hose Adapter, 5/16 Inch x 5/16 Inch Size, Male x Male, ORB x JIC, Rigid\". Every number on the listing ends in S, and the two size codes are dash sizes: 10-8 is a 5/8 inch by 1/2 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 202702 Series Straight Adapters come in?",
+          "a": "The Aeroquip 202702 Series Straight Adapters lists 33 Aeroquip part numbers from 1/4\" to 2\", for example 202702-10-8S, 202702-10-12S and 202702-5-5S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 202702 Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 202702 Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 202702-10-8S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 202702 Series Straight Adapters made of?",
+          "a": "For the Aeroquip 202702 Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The 202702 series numbers such as 202702-10-8S and 202702-5-5S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 202702 Series Straight Adapters?",
+          "a": "On the Aeroquip 202702 Series Straight Adapters, the O-ring boss end follows SAE J1926 / ISO 11926; the 37° end is the JIC 37° flare of SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 202702-10-12S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 202702 Series Straight Adapters connect to?",
+          "a": "On the Aeroquip 202702 Series Straight Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The 37° JIC male end seats in a female 37° JIC swivel nut, sealing on the cone. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 202702 Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 202702 Series Straight Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. On the JIC end the 37° cone seals, so no sealant is used."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 202702 Series Straight Adapters used?",
+          "a": "The listing names these applications: Other- Hydraulic, Instrumentation, And Chemical Processing Systems. Hose connections on boss-ported pumps and valves that use JIC hose ends. Tell us the system and the port threads and we confirm the Aeroquip 202702 Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 202702 Series Straight Adapters differ from the Aeroquip 2266 Series Straight Adapters?",
+          "a": "The 202702 has a JIC male end, while the [Aeroquip 2266 Series Straight Adapters](/p/aeroquip-2266-series-straight-adapters) has a JIC female swivel end. Choose the male end when the hose or tube already has a female swivel nut."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 202702 Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307995045 for the Aeroquip 202702 Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 202702 Series Straight Adapters in Dubai?",
+          "a": "Yes. We keep the Aeroquip 202702 Series Straight Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2061-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2061 Series Elbow Adapters used for?",
+          "a": "Aeroquip 2061 Series Elbow Adapters are Aeroquip 45° elbow adapters with SAE O-ring boss (ORB) male and 37° JIC male ends. It connects an SAE O-ring boss male thread to a 37° JIC male end through a 45° bend, and the listing shows a 400°F temperature figure."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2061-4-4S on the Aeroquip 2061 Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the 2061 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2061-4-4S is listed as \"Elbow, 45 Deg., 1/4 Inch x 1/4 Inch Size, Male x Male, ORB x JIC, Rigid\"; 2061-6-4S is listed as \"Elbow, 45 Deg., 3/8 Inch x 1/4 Inch Size, Male x Male, ORB x JIC, Rigid\"; 2061-5-5S is listed as \"Elbow, 45 Deg., 5/16 Inch x 5/16 Inch Size, Male x Male, ORB x JIC, Rigid\". Every number ends in S, and the two codes are dash sizes, for example 2061-4-4S is a 1/4 inch by 1/4 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2061 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2061 Series Elbow Adapters lists 16 Aeroquip part numbers from 5/16\" to 1 1/4\", for example 2061-4-4S, 2061-12-12S and 2061-5-5S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2061 Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 2061 Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 2061-4-4S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2061 Series Elbow Adapters made of?",
+          "a": "For the Aeroquip 2061 Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The 2061 series numbers such as 2061-4-4S and 2061-5-5S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2061 Series Elbow Adapters?",
+          "a": "On the Aeroquip 2061 Series Elbow Adapters, the O-ring boss end follows SAE J1926 / ISO 11926; the 37° end is the JIC 37° flare of SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2061-12-12S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2061 Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip 2061 Series Elbow Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The 37° JIC male end seats in a female 37° JIC swivel nut, sealing on the cone. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2061 Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2061 Series Elbow Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Orient the bend before the final tightening of the ORB end."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2061 Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Routing a hose through a shallow bend at a boss port. Tell us the system and the port threads and we confirm the Aeroquip 2061 Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2061 Series Elbow Adapters differ from the Aeroquip 2062 Series Elbow Adapters?",
+          "a": "The 2061 turns 45°, while the [Aeroquip 2062 Series Elbow Adapters](/p/aeroquip-2062-series-elbow-adapters) turns 90°. Both have an ORB male and a JIC male end, so choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2061 Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip 2061 Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2061 Series Elbow Adapters in Dubai?",
+          "a": "Yes, the Aeroquip 2061 Series Elbow Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2062-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2062 Series Elbow Adapters used for?",
+          "a": "Aeroquip 2062 Series Elbow Adapters are Aeroquip 90° elbow adapters with SAE O-ring boss (ORB) male and 37° JIC male ends. It connects an SAE O-ring boss male thread to a 37° JIC male end through a 90° bend, and the listing shows a 400°F temperature figure."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2062-24-24S on the Aeroquip 2062 Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the 2062 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2062-20-16S is listed as \"Elbow, 90 Deg., 1 1/4 Inch x 1 Inch Size, Male x Male, ORB x JIC, Rigid\"; 2062-6-6S is listed as \"Elbow, 90 Deg., 3/8 Inch x 3/8 Inch Size, Male x Male, ORB x JIC, Rigid\"; 2062-5-5S is listed as \"Elbow, 90 Deg., 5/16 Inch x 5/16 Inch Size, Male x Male, ORB x JIC, Rigid\". Every number ends in S, and the two codes are dash sizes, as in 2062-12-8S, a 3/4 inch by 1/2 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2062 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2062 Series Elbow Adapters lists 24 Aeroquip part numbers from 1/4\" to 1 7/8\", for example 2062-24-24S, 2062-12-12S and 2062-5-5S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2062 Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 2062 Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 2062-24-24S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2062 Series Elbow Adapters made of?",
+          "a": "For the Aeroquip 2062 Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The 2062 series numbers such as 2062-24-24S and 2062-5-5S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2062 Series Elbow Adapters?",
+          "a": "On the Aeroquip 2062 Series Elbow Adapters, the O-ring boss end follows SAE J1926 / ISO 11926; the 37° end is the JIC 37° flare of SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2062-12-12S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2062 Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip 2062 Series Elbow Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The 37° JIC male end seats in a female 37° JIC swivel nut, sealing on the cone. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2062 Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2062 Series Elbow Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Orient the elbow before the final tightening of the ORB end."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2062 Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Right-angle hose connections at a boss port. Tell us the system and the port threads and we confirm the Aeroquip 2062 Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2062 Series Elbow Adapters differ from the Aeroquip 2061 Series Elbow Adapters?",
+          "a": "The 2062 turns 90° with 24 part numbers, while the [Aeroquip 2061 Series Elbow Adapters](/p/aeroquip-2061-series-elbow-adapters) turns 45° with 16. Choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2062 Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip 2062 Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2062 Series Elbow Adapters in Dubai?",
+          "a": "Yes. The Aeroquip 2062 Series Elbow Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2066-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2066 Series Straight Adapters used for?",
+          "a": "Aeroquip 2066 Series Straight Adapters are Aeroquip straight swivel adapters with NPSM female swivel and SAE O-ring boss (ORB) male ends. It connects a female NPSM swivel end to an SAE O-ring boss male thread, and it is not crimpable."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2066-16-16S on the Aeroquip 2066 Series Straight Adapters?",
+          "a": "Every number on this listing begins with the 2066 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2066-16-16S is listed as \"Hydraulic Hose Adapter, 1 Inch x 1 Inch Size, Female x Male, NPSM x ORB, Swivel\"; 2066-12-12S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 3/4 Inch Size, Female x Male, NPSM x ORB, Swivel\"; 2066-20-20S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Female x Male, NPSM x ORB, Swivel\". Every number ends in S, and the pressure follows the size code in the rows: 2066-6-8S is 345 bar, 2066-8-8S 241 bar and 2066-20-20S 138 bar."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2066 Series Straight Adapters come in?",
+          "a": "The Aeroquip 2066 Series Straight Adapters lists 10 Aeroquip part numbers from 1/4\" to 1 1/2\", for example 2066-16-16S, 2066-12-12S and 2066-20-20S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2066 Series Straight Adapters have?",
+          "a": "The maker states 1,500 to 5,000 psi (103 to 345 bar), by size for the Aeroquip 2066 Series Straight Adapters, with a temperature figure of 250°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2066 Series Straight Adapters made of?",
+          "a": "For the Aeroquip 2066 Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The 2066 series numbers such as 2066-16-16S and 2066-20-20S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2066 Series Straight Adapters?",
+          "a": "On the Aeroquip 2066 Series Straight Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2066-6-6S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2066 Series Straight Adapters connect to?",
+          "a": "On the Aeroquip 2066 Series Straight Adapters, the NPSM female swivel end takes a male NPSM thread through a swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2066 Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2066 Series Straight Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Turn the swivel nut, not the body, when you connect the NPSM end."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2066 Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Swivel connections from NPSM lines into boss ports. Tell us the system and the port threads and we confirm the Aeroquip 2066 Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2066 Series Straight Adapters differ from the Aeroquip 2216 Series Straight Adapters?",
+          "a": "The 2066 has a swivelling NPSM female end, while the [Aeroquip 2216 Series Straight Adapters](/p/aeroquip-2216-series-straight-adapters) has a fixed NPTF female end that seals on the taper. Choose by the thread on the line."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2066 Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307995045 for the Aeroquip 2066 Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2066 Series Straight Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip 2066 Series Straight Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2067-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2067 Series Elbow Adapters used for?",
+          "a": "Aeroquip 2067 Series Elbow Adapters are Aeroquip 45° swivel elbow adapters with NPSM female swivel and SAE O-ring boss (ORB) male ends. It connects a female NPSM swivel end to an SAE O-ring boss male thread through a 45° bend."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2067-12-12S on the Aeroquip 2067 Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the 2067 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2067-12-12S is listed as \"Elbow, 45 Deg., 3/4 Inch x 3/4 Inch Size, Female x Male, NPSM x ORB, Swivel\"; 2067-8-8S is listed as \"Hydraulic Hose Adapter, Npsm Female Sae Orb Male Carbon Steel\"; 2067-8-10S is listed as \"Elbow, 45 Deg., 1/2 Inch x 5/8 Inch Size, Female x Male, NPSM x ORB, Swivel\". Every number ends in S, and the codes are dash sizes: 2067-8-10S is a 1/2 inch by 5/8 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2067 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2067 Series Elbow Adapters lists 5 Aeroquip part numbers from 3/8\" to 1\", for example 2067-12-12S, 2067-8-8S and 2067-8-10S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2067 Series Elbow Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 2067 Series Elbow Adapters, only a temperature figure of 400°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 2067-12-12S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2067 Series Elbow Adapters made of?",
+          "a": "For the Aeroquip 2067 Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish. The 2067 series numbers such as 2067-12-12S and 2067-8-10S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2067 Series Elbow Adapters?",
+          "a": "On the Aeroquip 2067 Series Elbow Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2067-8-8S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2067 Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip 2067 Series Elbow Adapters, the NPSM female swivel end takes a male NPSM thread through a swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2067 Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2067 Series Elbow Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Orient the bend before tightening the swivel."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2067 Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Shallow-angle swivel connections between NPSM lines and boss ports. Tell us the system and the port threads and we confirm the Aeroquip 2067 Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2067 Series Elbow Adapters differ from the Aeroquip 2068 Series Elbow Adapters?",
+          "a": "The 2067 turns 45° in 5 part numbers, while the [Aeroquip 2068 Series Elbow Adapters](/p/aeroquip-2068-series-elbow-adapters) turns 90° in 9. Both have an NPSM swivel and an ORB male end."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2067 Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip 2067 Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2067 Series Elbow Adapters in Dubai?",
+          "a": "Yes. We keep the Aeroquip 2067 Series Elbow Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2068-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2068 Series Elbow Adapters used for?",
+          "a": "Aeroquip 2068 Series Elbow Adapters are Aeroquip 90° swivel elbow adapters with NPSM female swivel and SAE O-ring boss (ORB) male ends. It connects a female NPSM swivel end to an SAE O-ring boss male thread through a 90° bend, and it is not crimpable."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2068-16-16S on the Aeroquip 2068 Series Elbow Adapters?",
+          "a": "Every number on this listing begins with the 2068 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2068-16-16S is listed as \"Elbow, 90 Deg., 1 Inch x 1 Inch Size, Female x Male, NPSM x ORB, Swivel\"; 2068-12-12S is listed as \"Elbow, 90 Deg., 3/4 Inch x 3/4 Inch Size, Female x Male, NPSM x ORB, Swivel\"; 2068-20-20S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Female x Male, NPSM x ORB, Swivel\". Every number ends in S, and the pressure follows the size code: 2068-6-8S is 276 bar, 2068-8-8S 241 bar and 2068-20-20S 138 bar."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2068 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2068 Series Elbow Adapters lists 9 Aeroquip part numbers from 1/4\" to 1 1/4\", for example 2068-16-16S, 2068-12-12S and 2068-20-20S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2068 Series Elbow Adapters have?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Aeroquip 2068 Series Elbow Adapters, with a temperature figure of 400°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2068 Series Elbow Adapters made of?",
+          "a": "For the Aeroquip 2068 Series Elbow Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The 2068 series numbers such as 2068-16-16S and 2068-20-20S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2068 Series Elbow Adapters?",
+          "a": "On the Aeroquip 2068 Series Elbow Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2068-12-12S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2068 Series Elbow Adapters connect to?",
+          "a": "On the Aeroquip 2068 Series Elbow Adapters, the NPSM female swivel end takes a male NPSM thread through a swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2068 Series Elbow Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2068 Series Elbow Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Orient the elbow before tightening the swivel."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2068 Series Elbow Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Right-angle swivel connections between NPSM lines and boss ports. Tell us the system and the port threads and we confirm the Aeroquip 2068 Series Elbow Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2068 Series Elbow Adapters differ from the Aeroquip 2067 Series Elbow Adapters?",
+          "a": "The 2068 turns 90° and states 2,000 to 5,000 psi, while the [Aeroquip 2067 Series Elbow Adapters](/p/aeroquip-2067-series-elbow-adapters) turns 45°. Choose the bend the routing needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2068 Series Elbow Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip 2068 Series Elbow Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2068 Series Elbow Adapters in Dubai?",
+          "a": "Yes, the Aeroquip 2068 Series Elbow Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2216-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2216 Series Straight Adapters used for?",
+          "a": "Aeroquip 2216 Series Straight Adapters are Aeroquip straight adapters with NPTF female and SAE O-ring boss (ORB) male ends. It connects a female NPTF thread to an SAE O-ring boss male thread in a rigid straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2216-20-20S on the Aeroquip 2216 Series Straight Adapters?",
+          "a": "Every number on this listing begins with the 2216 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2216-20-20S is listed as \"Hydraulic Hose Adapter, 1 1/4 Inch x 1 1/4 Inch Size, Female x Male, NPTF x ORB, Rigid\"; 2216-12-12S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 3/4 Inch Size, Female x Male, NPTF x ORB, Rigid\"; 2216-4-5S is listed as \"Hydraulic Hose Adapter, 5/16 Inch x 5/16 Inch Size, Female x Male, NPTF x ORB, Rigid\". Every number ends in S, and the codes are dash sizes, for example 2216-16-16S is a 1 inch by 1 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2216 Series Straight Adapters come in?",
+          "a": "The Aeroquip 2216 Series Straight Adapters lists 16 Aeroquip part numbers from 1/8\" to 1 1/4\", for example 2216-20-20S, 2216-12-12S and 2216-4-5S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2216 Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 2216 Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 2216-20-20S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2216 Series Straight Adapters made of?",
+          "a": "For the Aeroquip 2216 Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The 2216 series numbers such as 2216-20-20S and 2216-4-5S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2216 Series Straight Adapters?",
+          "a": "On the Aeroquip 2216 Series Straight Adapters, the NPTF end is a Dryseal pipe thread under ASME B1.20.3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2216-12-12S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2216 Series Straight Adapters connect to?",
+          "a": "On the Aeroquip 2216 Series Straight Adapters, the NPTF female end takes a male NPT or NPTF pipe thread, which needs sealant. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2216 Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2216 Series Straight Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2216 Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Fitting a male pipe-threaded part to a boss port. Tell us the system and the port threads and we confirm the Aeroquip 2216 Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2216 Series Straight Adapters differ from the Aeroquip 2066 Series Straight Adapters?",
+          "a": "The 2216 has a fixed NPTF female end, while the [Aeroquip 2066 Series Straight Adapters](/p/aeroquip-2066-series-straight-adapters) has an NPSM female swivel end. Choose NPTF for a tapered pipe thread and NPSM where a swivel is wanted."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2216 Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip 2216 Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2216 Series Straight Adapters in Dubai?",
+          "a": "Yes. The Aeroquip 2216 Series Straight Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2266-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 2266 Series Straight Adapters used for?",
+          "a": "Aeroquip 2266 Series Straight Adapters are Aeroquip straight swivel adapters with SAE O-ring boss (ORB) male and 37° JIC female swivel ends. It connects an SAE O-ring boss male thread to a female 37° JIC swivel end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 2266-16-16S on the Aeroquip 2266 Series Straight Adapters?",
+          "a": "Every number on this listing begins with the 2266 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 2266-6-8S is listed as \"Hydraulic Hose Adapter, 3/8 Inch x 1/2 Inch Size, Male x Female, ORB x JIC, Swivel\"; 2266-12-12S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 3/4 Inch Size, Male x Female, ORB x JIC, Swivel\"; 2266-10-10S is listed as \"Hydraulic Hose Adapter, 5/8 Inch x 5/8 Inch Size, Male x Female, ORB x JIC, Swivel\". Every number ends in S, and the codes are dash sizes: 2266-6-8S is a 3/8 inch by 1/2 inch size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 2266 Series Straight Adapters come in?",
+          "a": "The Aeroquip 2266 Series Straight Adapters lists 5 Aeroquip part numbers from 3/8\" to 1 5/16\", for example 2266-16-16S, 2266-8-8S and 2266-10-10S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 2266 Series Straight Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip 2266 Series Straight Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 2266-16-16S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 2266 Series Straight Adapters made of?",
+          "a": "For the Aeroquip 2266 Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish. The 2266 series numbers such as 2266-16-16S and 2266-10-10S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 2266 Series Straight Adapters?",
+          "a": "On the Aeroquip 2266 Series Straight Adapters, the O-ring boss end follows SAE J1926 / ISO 11926; the 37° end is the JIC 37° flare of SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 2266-8-8S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 2266 Series Straight Adapters connect to?",
+          "a": "On the Aeroquip 2266 Series Straight Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The 37° JIC female swivel end takes a male 37° JIC end, sealing on the cone. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 2266 Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip 2266 Series Straight Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. The female JIC swivel seals on the cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 2266 Series Straight Adapters used?",
+          "a": "The listing names these applications: Other- Hydraulic, Instrumentation, And Chemical Processing Systems. Connecting a male JIC hose or tube end to a boss port. Tell us the system and the port threads and we confirm the Aeroquip 2266 Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 2266 Series Straight Adapters differ from the Aeroquip 202702 Series Straight Adapters?",
+          "a": "The 2266 has a female JIC swivel, while the [Aeroquip 202702 Series Straight Adapters](/p/aeroquip-202702-series-straight-adapters) has a male JIC end. Choose by the gender of the JIC connection on the line."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 2266 Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip 2266 Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2266 Series Straight Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip 2266 Series Straight Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-900598-series-o-ring-boss-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 900598 Series O-Ring Boss Plugs used for?",
+          "a": "Aeroquip 900598 Series O-Ring Boss Plugs are Aeroquip O-ring boss plugs with SAE O-ring boss (ORB) male thread. It blanks a female O-ring boss port, with a maximum working pressure of up to 7,500 psi stated by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 900598-5S on the Aeroquip 900598 Series O-Ring Boss Plugs?",
+          "a": "Every number on this listing begins with the 900598 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 900598-5S is listed as \"Hydraulic Hose Plug, Carbon Steel, 5/16 Inch Size, 5000 psi Max. Working Pressure, ORB\"; 900598-12S is listed as \"Hydraulic Hose Plug, Carbon Steel, 3/4 Inch Size, 5000 psi Max. Working Pressure, ORB\"; 900598-20S is listed as \"Hydraulic Hose Plug, Carbon Steel, 1 1/4 Inch Size, 2500 psi Max. Working Pressure\". Every number ends in S, and the pressure is in the row: 900598-5S is 345 bar, 900598-6S is 517 bar and 900598-20S is 172 bar."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 900598 Series O-Ring Boss Plugs come in?",
+          "a": "The Aeroquip 900598 Series O-Ring Boss Plugs lists 10 Aeroquip part numbers from 7/16\" to 2 1/2\", for example 900598-5S, 900598-12S and 900598-20S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip 900598 Series O-Ring Boss Plugs have?",
+          "a": "The maker states 2,000 to 7,500 psi (138 to 517 bar), by size for the Aeroquip 900598 Series O-Ring Boss Plugs, with a temperature figure of 250°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 900598 Series O-Ring Boss Plugs made of?",
+          "a": "For the Aeroquip 900598 Series O-Ring Boss Plugs the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The 900598 series numbers such as 900598-5S and 900598-20S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip 900598 Series O-Ring Boss Plugs?",
+          "a": "On the Aeroquip 900598 Series O-Ring Boss Plugs, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 900598-32S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip 900598 Series O-Ring Boss Plugs connect to?",
+          "a": "On the Aeroquip 900598 Series O-Ring Boss Plugs, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip 900598 Series O-Ring Boss Plugs so it does not leak?",
+          "a": "To fit the Aeroquip 900598 Series O-Ring Boss Plugs, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 900598 Series O-Ring Boss Plugs used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Closing unused boss ports on hydraulic blocks and manifolds. Tell us the system and the port threads and we confirm the Aeroquip 900598 Series O-Ring Boss Plugs suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 900598 Series O-Ring Boss Plugs differ from the Aeroquip FF2138 Series Straight Adapters?",
+          "a": "The 900598 plug has 10 part numbers, while the [Aeroquip FF2138 Series Straight Adapters](/p/aeroquip-ff2138-series-straight-adapters) has 6 and is listed with a similar 7,500 psi rating. Choose by the number on the plug you are replacing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 900598 Series O-Ring Boss Plugs made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Aeroquip 900598 Series O-Ring Boss Plugs. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 900598 Series O-Ring Boss Plugs in Dubai?",
+          "a": "Yes. We keep the Aeroquip 900598 Series O-Ring Boss Plugs in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff1010-series-reducer-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF1010 Series Reducer Adapters used for?",
+          "a": "Aeroquip FF1010 Series Reducer Adapters are Aeroquip reducer adapters with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) female ends. It changes size between an SAE O-ring boss male thread and an O-ring boss female thread in a rigid body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF1010-1610S on the Aeroquip FF1010 Series Reducer Adapters?",
+          "a": "Every number on this listing begins with the FF1010 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF1010-1216S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 1 Inch Size, Male x Female, ORB x ORB, Rigid\"; FF1010-0604S is listed as \"Hydraulic Hose Adapter, 3/8 Inch x 1/4 Inch Size, Male x Female, ORB x ORB, Rigid\"; FF1010-1210S is listed as \"Hydraulic Hose Adapter, 3/4 Inch x 5/8 Inch Size, Male x Female, ORB x ORB, Rigid\". Every number ends in S, and the codes are dash sizes: FF1010-1610S is 1 5/16 inch male by 7/8 inch female."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF1010 Series Reducer Adapters come in?",
+          "a": "The Aeroquip FF1010 Series Reducer Adapters lists 13 Aeroquip part numbers from 1/4\" to 1 5/16\", for example FF1010-1610S, FF1010-0604S and FF1010-1210S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF1010 Series Reducer Adapters have?",
+          "a": "The listing gives no single pressure rating for the Aeroquip FF1010 Series Reducer Adapters, only a temperature figure of 250°F, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF1010-1610S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF1010 Series Reducer Adapters made of?",
+          "a": "For the Aeroquip FF1010 Series Reducer Adapters the listing gives carbon steel, with a Dura Kote finish. The FF1010 series numbers such as FF1010-1610S and FF1010-1210S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF1010 Series Reducer Adapters?",
+          "a": "On the Aeroquip FF1010 Series Reducer Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF1010-0604S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF1010 Series Reducer Adapters connect to?",
+          "a": "On the Aeroquip FF1010 Series Reducer Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. The SAE O-ring boss (ORB) female end takes a male ORB stud that carries its own O-ring. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF1010 Series Reducer Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF1010 Series Reducer Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Avoid stacking reducers, as the [adapter stacking guide](/blog/stacking-hydraulic-adapters) explains."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF1010 Series Reducer Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Stepping an ORB port down or up in size. Tell us the system and the port threads and we confirm the Aeroquip FF1010 Series Reducer Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF1010 Series Reducer Adapters differ from the Dixon Port Reducers?",
+          "a": "The FF1010 has 13 part numbers, while the [Dixon Port Reducers](/p/dixon-port-reducers) has 5. Both are male-to-female ORB reducers, so choose by the series number you are replacing."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF1010 Series Reducer Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF1010 Series Reducer Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF1010 Series Reducer Adapters in Dubai?",
+          "a": "Yes, the Aeroquip FF1010 Series Reducer Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-ff2138-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip FF2138 Series Straight Adapters used for?",
+          "a": "Aeroquip FF2138 Series Straight Adapters are Aeroquip straight O-ring boss adapters with SAE O-ring boss (ORB) male thread. It has a male O-ring boss thread, with a maximum working pressure of up to 7,500 psi stated by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2138-08S on the Aeroquip FF2138 Series Straight Adapters?",
+          "a": "Every number on this listing begins with the FF2138 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2138-08S is listed as \"Hydraulic Hose Plug, Carbon Steel, 1/2 Inch Size, 7, 500 psi Max. Working Pressure, ORB\"; FF2138-04S is listed as \"Hydraulic Hose Adapter, sae Orb Male Carbon Steel\"; FF2138-16S is listed as \"Hydraulic Hose Adapter, sae Orb Male Carbon Steel\". The item text of some rows calls these hose plugs rated 7,500 psi, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip FF2138 Series Straight Adapters come in?",
+          "a": "The Aeroquip FF2138 Series Straight Adapters lists 6 Aeroquip part numbers from 7/16\" to 1 5/16\", for example FF2138-08S, FF2138-04S and FF2138-16S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Aeroquip FF2138 Series Straight Adapters have?",
+          "a": "The maker states 2,500 to 7,500 psi (172 to 517 bar), by size for the Aeroquip FF2138 Series Straight Adapters, with a temperature figure of 250°F. Pressure falls as the size rises, so read the figure on the row of the part number you order. The listing gives the rating for the fitting only, not for a hose assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip FF2138 Series Straight Adapters made of?",
+          "a": "For the Aeroquip FF2138 Series Straight Adapters the listing gives carbon steel, with a Dura Kote finish, in Grade 12L14, Grade 12L15. The FF2138 series numbers such as FF2138-08S and FF2138-16S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Aeroquip FF2138 Series Straight Adapters?",
+          "a": "On the Aeroquip FF2138 Series Straight Adapters, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2138-06S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Aeroquip FF2138 Series Straight Adapters connect to?",
+          "a": "On the Aeroquip FF2138 Series Straight Adapters, the SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Aeroquip FF2138 Series Straight Adapters so it does not leak?",
+          "a": "To fit the Aeroquip FF2138 Series Straight Adapters, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip FF2138 Series Straight Adapters used?",
+          "a": "The listing names these applications: Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. Closing or adapting boss ports in hydraulic lines. Tell us the system and the port threads and we confirm the Aeroquip FF2138 Series Straight Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip FF2138 Series Straight Adapters differ from the Aeroquip 900598 Series O-Ring Boss Plugs?",
+          "a": "The FF2138 has 6 part numbers, while the [Aeroquip 900598 Series O-Ring Boss Plugs](/p/aeroquip-900598-series-o-ring-boss-plugs) has 10 and covers 7/16 inch to 2 1/2 inch. Choose by the series number."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip FF2138 Series Straight Adapters made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and HS code 7307929000 for the Aeroquip FF2138 Series Straight Adapters. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FF2138 Series Straight Adapters in Dubai?",
+          "a": "Yes. The Aeroquip FF2138 Series Straight Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-6403-male-o-ring-boss-male-o-ring-boss-adjustable-nipple",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple used for?",
+          "a": "The Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple is a Tompkins adjustable nipple with SAE O-ring boss (ORB) male and SAE O-ring boss (ORB) male ends. It joins two male O-ring boss connections and lets the body be aligned, in sizes from 7/16-20 to 2-1/2-12 ORB."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 6403-04-04 on the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple?",
+          "a": "Every number on this listing begins with the 6403 series code and then gives the size code for each end, so the number identifies the connection. In the size table, 6403-04-04 is 7/16-20 ORB by 7/16-20 ORB; 6403-NWO-12-10 is 1-1/16-12 ORB by 7/8-14 ORB; 6403-32-32 is 2-1/2-12 ORB by 2-1/2-12 ORB. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named; an NWO row such as 6403-NWO-04-04 is a variant of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple come in?",
+          "a": "The Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple lists 25 Tompkins part numbers, for example 6403-04-04, 6403-NWO-12-10 and 6403-32-32. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple have?",
+          "a": "The listing gives no single pressure rating for the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 6403-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple made of?",
+          "a": "For the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple the listing gives carbon steel. The 6403 series numbers such as 6403-04-04 and 6403-32-32 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple?",
+          "a": "On the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple, the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 6403-NWO-12-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple connect to?",
+          "a": "On the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple, both ends are SAE O-ring boss (ORB) male and each screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple so it does not leak?",
+          "a": "To fit the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple, check that the seal is seated and undamaged, screw the ORB end in by hand until the hex meets the port face, then tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, not the thread. Set the direction of the adjustable end before the final tightening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple used?",
+          "a": "Straight connections between two boss ports, where alignment is needed. Tell us the system and the port threads and we confirm the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple differ from the Dixon O-ring Boss Adjustable Unions?",
+          "a": "The Tompkins 6403 has 25 part numbers up to 2-1/2-12, while the [Dixon O-ring Boss Adjustable Unions](/p/dixon-o-ring-boss-adjustable-unions) has 6 up to 1 5/16 inch. Choose by the size range and the make of the part you replace."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple in Dubai?",
+          "a": "Yes. Indus stocks the Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

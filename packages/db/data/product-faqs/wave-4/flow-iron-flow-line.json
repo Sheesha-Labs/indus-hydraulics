@@ -1,0 +1,1518 @@
+{
+  "family": "flow-iron-flow-line",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "A ring-joint (BX or R) gasket is a single-use seal: once energised it should not be reused, and a new gasket is fitted at every flange make-up.",
+      "source": "Indus Hydraulics BOP spare parts listing, API 6A BX ring gasket set (/c/bop-spare-parts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "pup-joint-1502-series-f-m-integral-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 10,000 psi for sour service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Integral body, Female × Male, sour-service."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service come in?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is listed in 2 in, 3 in; 2 ft, 5 ft, 10 ft, 15 ft, 20 ft. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service?",
+          "a": "On the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service, end A is 1502 Female Weco Union (integral) and end B is 1502 Male Weco Union (integral). Length: 2-20 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service made from?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service meet?",
+          "a": "For the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service connect to?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Anson 1502 Pup Sour, FMC WECO 1502 NACE, SPM 1502 Sour as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service used?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is used for sour-well frac iron flow lines; H₂S stimulation iron; NACE-compliant pumping spreads. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service](/p/pup-joint-1502-series-m-f-integral-15-000-psi-standard-service) in figure, pressure class or service class. The Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service, and gives United Kingdom as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service?",
+          "a": "Yes. We list the Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "data-header-pressure-temperature-manifold-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a data header rated 15,000 psi for standard service used for?",
+          "a": "A data header is a short manifold that carries pressure, temperature and sample instruments in a flow line. The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Multi-port instrument manifold — pressure transmitter + temperature probe + sample port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is listed in 2 in, 3 in (line bore); standard manifold body. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (line) and end B is 1502 Male Weco Union (line). Additional features: 3-4× 9/16 in Autoclave or 1/2 in NPT instrument ports. Length: 12-24 in. Bore: Same as line nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The data header is built to API 16C and supplied API-monogrammed. The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Cameron Data Header, FMC Instrument Manifold, NOV Sensor Header as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is used for frac-spread pressure monitoring; well-test data acquisition; stimulation iron sensor mounts. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the data header 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The data header differs from the [Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service](/p/data-header-pressure-manifold-602-series-6-000-psi-standard-service) in figure, pressure class or service class. The Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hose-loop-c-c-1502-series-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a hose loop rated 15,000 psi for standard service used for?",
+          "a": "A coiled and configured (C&C) hose loop is a flexible hose with integral hammer-union ends that absorbs movement between rigid iron connections. The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Coiled-and-Configured (C&C) flexible hose loop, integral hammer-union ends."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service come in?",
+          "a": "The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is listed in 2 in; 6 ft / 10 ft / 15 ft / 20 ft hose lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "On the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Stainless-steel-braid pressure carcass. Length: 6-20 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service made from?",
+          "a": "The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is made from SS-braid hose with forged hammer-union end fittings, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service meet?",
+          "a": "The hose loop is built to API 16C and supplied API-monogrammed. The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service connect to?",
+          "a": "The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Hose Loop, SPM 1502 C&C, Halliburton Frac Hose as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service used?",
+          "a": "The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is used for pump-truck flexible discharge lines; coiled-tubing surface feeds; frac-spread mobile pumping. It is sized for 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the hose loop 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The hose loop differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-1002-series-m-f-integral-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 10,000 psi for standard service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is rated 10,000 psi for standard service, in the configuration Integral body, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service come in?",
+          "a": "The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is listed in 3 in, 4 in; 2-15 ft lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service?",
+          "a": "On the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service, end A is 1002 Male Weco Union (integral) and end B is 1002 Female Weco Union (integral). Length: 2-15 ft. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service?",
+          "a": "The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service made from?",
+          "a": "The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service meet?",
+          "a": "For the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service connect to?",
+          "a": "The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1002 Pup, SPM 1002, Anson 1002 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service installed and serviced?",
+          "a": "For the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service used?",
+          "a": "The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is used for 10K flow lines; pump-truck high-volume discharge; stimulation manifolds. It is sized for 3 in, 4 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 1002 10,000 psi standard differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service?",
+          "a": "Yes. We list the Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-1502-series-m-f-integral-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 15,000 psi for standard service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Integral body, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service come in?",
+          "a": "The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is listed in 2 in, 3 in (sizes); 2 ft, 5 ft, 10 ft, 15 ft, 20 ft (lengths). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "On the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (integral) and end B is 1502 Female Weco Union (integral). Additional features: No welds — forged single-piece body. Length: 2-20 ft (specify on RFQ). Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service made from?",
+          "a": "The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service meet?",
+          "a": "For the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service connect to?",
+          "a": "The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Pup, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service used?",
+          "a": "The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is used for frac iron flow-line make-ups; service-tree fluid distribution; pump-discharge piping. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-206-series-f-m-bw-xh-det-2-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 2,000 psi for sour service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is rated 2,000 psi for sour service, in the configuration Butt-Weld XH DET, Female × Male."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service come in?",
+          "a": "The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is listed in 2 in, 3 in, 4 in; 2-20 ft. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service?",
+          "a": "On the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service, end A is 206 Female Weco Union (BW XH DET) and end B is 206 Male Weco Union (BW XH DET). Additional features: Schedule XH butt-weld between subs and pipe body. Length: 2-20 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service?",
+          "a": "The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is rated 2,000 psi working pressure (2K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service made from?",
+          "a": "The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service meet?",
+          "a": "For the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service connect to?",
+          "a": "The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 206 BW Sour, Anson 206, SPM 206 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service installed and serviced?",
+          "a": "For the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service used?",
+          "a": "The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is used for sour-well water transfer; H₂S flowback iron; NACE-compliant low-pressure manifolds. It is sized for 2 in, 3 in, 4 in lines at 2,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 206 2,000 psi sour differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service is rated 2,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service?",
+          "a": "Yes. We list the Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-602-series-m-f-integral-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 6,000 psi for standard service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is rated 6,000 psi for standard service, in the configuration Integral body, Male × Female."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service come in?",
+          "a": "The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is listed in 2 in, 3 in, 4 in; 2-20 ft. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service?",
+          "a": "On the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service, end A is 602 Male Weco Union (integral) and end B is 602 Female Weco Union (integral). Length: 2-20 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service?",
+          "a": "The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is rated 6,000 psi working pressure (6K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service made from?",
+          "a": "The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service meet?",
+          "a": "For the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service connect to?",
+          "a": "The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Pup, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service installed and serviced?",
+          "a": "For the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service used?",
+          "a": "The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is used for production well flow lines; well-test iron pup-joint runs; intermediate-pressure manifold extensions. It is sized for 2 in, 3 in, 4 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 602 6,000 psi standard differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service](/p/pup-joint-602-series-f-m-integral-6-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service is rated 6,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service?",
+          "a": "Yes. We list the Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "reel-swivel-1502-style-40-2-axis-reel-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 40 — 2-axis reel swivel (hose-reel mount)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service come in?",
+          "a": "The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is listed in 2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service?",
+          "a": "On the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service, end A is 1502 Male Weco Union (×2) and end B is 1502 Male Weco Union (×2). Additional features: Reel-end shaft for hose-reel mounting. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service?",
+          "a": "The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service made from?",
+          "a": "The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service meet?",
+          "a": "For the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service connect to?",
+          "a": "The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan Reel Style 40, SPM Reel Swivel, Halliburton Reel as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service used?",
+          "a": "The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is used for hose-reel-fed coiled-tubing service; acid-injection reel feeds; high-pressure mobile pumping spreads. It is sized for 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "spacer-spool-1502-series-m-f-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a spacer spool rated 15,000 psi for standard service used for?",
+          "a": "A spacer spool is a short integral spool that fills a gap in a flow line. The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Short-length integral spool, M×F."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service come in?",
+          "a": "The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is listed in 2 in, 3 in; 6 in / 12 in / 18 in / 24 in lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "On the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Length: 6-24 in. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service made from?",
+          "a": "The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service meet?",
+          "a": "For the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service connect to?",
+          "a": "The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Spacer, SPM 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service used?",
+          "a": "The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is used for frac-tree clearance adjustment; service-tree alignment; pump-discharge fine fitment. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the spacer spool 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The spacer spool differs from the [Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service](/p/spacer-spool-1502-series-m-f-10-000-psi-sour-service) in figure, pressure class or service class. The Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-10-1-axis-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 10 — 1-axis (single-plane rotation)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is listed in 2 in, 3 in (M×F or M×M variants). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Tungsten-carbide ball-race for high-cycle service. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan Style 10, SPM 1502 Swivel, Anson Swivel as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is used for frac iron service tree make-ups; pump-truck flow lines; coiled-tubing surface manifolds; stimulation iron flexibility. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-30-2-axis-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 30 — 2-axis (compound rotation)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan Style 30, SPM 1502 Swivel, Anson 2-Axis as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is used for frac iron complex routing; pump-truck flexible connections; stimulation iron with multi-plane offsets. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 10,000 psi for sour service used for?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Style 50 — 3-axis, sour-service variant."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service come in?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service?",
+          "a": "On the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: NACE-compliant ball-race materials and elastomers. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service made from?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan Style 50 Sour, SPM 1502 NACE, Anson Sour Swivel as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service used?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is used for sour-well frac iron flexible joints; H₂S service-tree complex routing; NACE-compliant pumping spreads. It is sized for 2 in, 3 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The swivel joint differs from the [Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service](/p/reel-swivel-1502-style-40-2-axis-reel-15-000-psi-standard-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 21 days for the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-50-3-axis-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for (Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service)?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 50 — 3-axis (full-freedom rotation)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Three ball-races give X / Y / Z rotation. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan Style 50, SPM 1502 3-Axis, Forum Beanstalk as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is used for pump-discharge to service-tree flexible joints; full-freedom flow-iron routing; coiled-tubing flexible feeds. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron (Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service)?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blast-sub-pup-joint-1502-series-m-f-integral-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a blast joint rated 15,000 psi for standard service used for?",
+          "a": "A blast joint is a heavy-walled, erosion-resistant pup joint with a hardfaced bore, placed where sand-laden flow hits the line. The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Heavy-walled erosion-resistant pup joint."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service come in?",
+          "a": "The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is listed in 2 in; 1 ft / 2 ft / 3 ft / 5 ft lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "On the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, end A is 1502 Male Weco Union (integral) and end B is 1502 Female Weco Union (integral). Additional features: Tungsten-carbide hardfaced bore for sand erosion. Length: 1-5 ft. Bore: Reduced ID with hardfacing — engineered to limit erosion."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service made from?",
+          "a": "The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is made from Forged 4140 with tungsten-carbide bore overlay. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service meet?",
+          "a": "For the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service connect to?",
+          "a": "The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Halliburton Blast Sub, FMC Erosion-Resistant, SPM Sand-Service as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service used?",
+          "a": "The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is used for frac sand-laden flow lines (proppant transport); blender-discharge sand-protection iron; high-erosion stimulation iron. It is sized for 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the blast joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The blast joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Blast Sub Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "data-header-pressure-manifold-602-series-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a data header rated 6,000 psi for standard service used for?",
+          "a": "A data header is a short manifold that carries pressure, temperature and sample instruments in a flow line. The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is rated 6,000 psi for standard service, in the configuration Pressure transmitter manifold with 2× instrument ports."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service come in?",
+          "a": "The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service?",
+          "a": "On the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service, end A is 602 Female Weco Union and end B is 602 Male Weco Union. Additional features: 2× 1/2 in NPT instrument taps. Length: 8-18 in. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service?",
+          "a": "The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is rated 6,000 psi working pressure (6K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service made from?",
+          "a": "The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service meet?",
+          "a": "For the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service connect to?",
+          "a": "The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC 602 Data Header, Cameron 602 Instrument as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service installed and serviced?",
+          "a": "For the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service used?",
+          "a": "The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is used for production well-test sensor mounts; flowback pressure monitoring; 6K well-control instrumentation. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the data header 602 6,000 psi standard differ from similar flow iron?",
+          "a": "The data header differs from the [Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service](/p/data-header-pressure-temperature-manifold-1502-series-15-000-psi-standard-service) in figure, pressure class or service class. The Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service is rated 6,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service?",
+          "a": "Yes. We list the Data Header (Pressure Manifold), 602 Series, 6,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-1502-npst-det-threaded-threaded-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 15,000 psi for standard service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration NPST double-end-tapered threaded, F×M."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service come in?",
+          "a": "The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is listed in 1 in, 2 in; 1-10 ft lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service?",
+          "a": "On the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service, end A is 1502 Female Weco (NPST) and end B is 1502 Male Weco (NPST). Additional features: Threaded subs (DET) for replaceability. Length: 1-10 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service?",
+          "a": "The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service made from?",
+          "a": "The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service meet?",
+          "a": "For the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service connect to?",
+          "a": "The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 NPST DET, Anson 1502 Threaded, SPM 1502 DET as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service used?",
+          "a": "The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is used for skid-piping make-ups; test-pump tie-ins; field-repairable flow-iron runs. It is sized for 1 in, 2 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Pup Joint, 1502 NPST DET (Threaded × Threaded), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-602-series-f-m-integral-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 6,000 psi for sour service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration Integral body, Female × Male, sour service."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service come in?",
+          "a": "The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is listed in 2 in, 3 in, 4 in; 2-20 ft. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service?",
+          "a": "On the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service, end A is 602 Female Weco Union (integral) and end B is 602 Male Weco Union (integral). Length: 2-20 ft. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service?",
+          "a": "The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service made from?",
+          "a": "The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service meet?",
+          "a": "For the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service connect to?",
+          "a": "The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Sour, Anson 602 NACE, SPM 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service used?",
+          "a": "The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is used for sour-well production flow lines; H₂S well-test iron; NACE-compliant 6K manifolds. It is sized for 2 in, 3 in, 4 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service](/p/pup-joint-602-series-m-f-integral-6-000-psi-standard-service) in figure, pressure class or service class. The Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service?",
+          "a": "Yes. We list the Pup Joint, 602 Series F×M Integral, 6,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "spacer-spool-1502-series-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a spacer spool rated 10,000 psi for sour service used for?",
+          "a": "A spacer spool is a short integral spool that fills a gap in a flow line. The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Short-length integral spool, M×F, sour."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service come in?",
+          "a": "The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is listed in 2 in; 6-24 in lengths. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "On the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Length: 6-24 in. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service made from?",
+          "a": "The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service meet?",
+          "a": "For the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service, the listing gives NACE MR0175 / ISO 15156 sour-service compliance. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service connect to?",
+          "a": "The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 1502 Sour Spacer, Anson 1502 NACE as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service used?",
+          "a": "The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is used for sour-well frac-tree alignment; H₂S service-tree clearance. It is sized for 2 in lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the spacer spool 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The spacer spool differs from the [Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service](/p/spacer-spool-1502-series-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 14 days for the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service?",
+          "a": "Yes. We list the Spacer Spool, 1502 Series M×F, 10,000 psi, Sour Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "spacer-spool-602-series-m-f-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a spacer spool rated 6,000 psi for standard service used for?",
+          "a": "A spacer spool is a short integral spool that fills a gap in a flow line. The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi for standard service, in the configuration Short-length integral spool, M×F."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service come in?",
+          "a": "The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is listed in 2 in, 3 in; 6-24 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "On the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service, end A is 602 Male Weco Union and end B is 602 Female Weco Union. Length: 6-24 in. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi working pressure (6K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service made from?",
+          "a": "The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service meet?",
+          "a": "For the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service connect to?",
+          "a": "The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC WECO 602 Spacer, SPM 602, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service installed and serviced?",
+          "a": "For the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service used?",
+          "a": "The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is used for production-tree alignment; well-test iron clearance. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the spacer spool 602 6,000 psi standard differ from similar flow iron?",
+          "a": "The spacer spool differs from the [Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service](/p/spacer-spool-1502-series-m-f-15-000-psi-standard-service) in figure, pressure class or service class. The Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service is rated 6,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service?",
+          "a": "Yes. We list the Spacer Spool, 602 Series M×F, 6,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-602-style-50-3-axis-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 6,000 psi for standard service used for?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is rated 6,000 psi for standard service, in the configuration Style 50 — 3-axis (full-freedom rotation)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service, end A is 602 Male Weco Union and end B is 602 Female Weco Union. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is rated 6,000 psi working pressure (6K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Chiksan 602, SPM 602 Swivel, Anson 602 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is used for production well-test flexible iron; flowback line offsets; intermediate-pressure manifolds. It is sized for 2 in, 3 in lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 602 6,000 psi standard differ from similar flow iron?",
+          "a": "The swivel joint differs from the [Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service](/p/reel-swivel-1502-style-40-2-axis-reel-15-000-psi-standard-service) in figure, pressure class or service class. The Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service is rated 6,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service?",
+          "a": "Yes. We list the Swivel Joint, 602 Style 50 (3-Axis), 6,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "pup-joint-1502-series-f-m-integral-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a pup joint rated 15,000 psi for standard service used for?",
+          "a": "A pup joint is a short forged length of flow-iron pipe with union ends, used to make up and adjust the length of a flow line. The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Integral body, Female × Male."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service come in?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is listed in 2 in, 3 in (sizes); 2 ft, 5 ft, 10 ft, 15 ft, 20 ft (lengths). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service?",
+          "a": "On the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (integral) and end B is 1502 Male Weco Union (integral). Additional features: No welds — forged single-piece body. Length: 2-20 ft. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service made from?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service meet?",
+          "a": "For the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service connect to?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Pup, FMC WECO 1502, Anson 1502 as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service used?",
+          "a": "The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is used for frac iron pup-joint runs; service-tree extensions; pump-discharge gauge runs. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pup joint 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The pup joint differs from the [Pup Joint, 1502 Series F×M Integral, 10,000 psi, Sour Service](/p/pup-joint-1502-series-f-m-integral-10-000-psi-sour-service) in figure, pressure class or service class. The Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 7 days for the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-100-3-axis-heavy-duty-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for (Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service)?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 100 — 3-axis heavy-duty (cyclic-load rated)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Additional features: Heavy-walled body for high-cycle frac applications. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Style 100, FMC Chiksan Style 100, Forum Beanstalk Heavy as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is used for high-cycle frac pumping spreads; repeat-stage stimulation iron; pump-discharge primary swivels. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron — Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 21 days for the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Joint, 1502 Style 100 (3-Axis Heavy-Duty), 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-joint-1502-style-20-1-axis-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a swivel joint rated 15,000 psi for standard service used for (Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service)?",
+          "a": "A swivel joint lets a flow line rotate at the joint, so the iron can be rigged between trees and manifolds that do not line up. The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Style 20 — 1-axis, 90° elbowed body."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service come in?",
+          "a": "The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "On the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service, end A is 1502 Male Weco Union and end B is 1502 Female Weco Union. Bore: Same as nominal — full bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service made from?",
+          "a": "The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service meet?",
+          "a": "For the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service, the listing gives recognised oilfield frac-iron design standards. Flow-iron parts of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order, and mill test reports to EN 10204 3.1 / 3.2 accompany each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service connect to?",
+          "a": "The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 1502 Swivel, FMC Chiksan Style 20, Anson Swivel as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service used?",
+          "a": "The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is used for frac iron 90° turns with rotation; service-tree side-out flexibility; stimulation manifolds. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swivel joint 1502 15,000 psi standard differ from similar flow iron (Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service)?",
+          "a": "The swivel joint differs from the [Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service](/p/swivel-joint-1502-style-50-3-axis-10-000-psi-sour-service) in figure, pressure class or service class. The Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 14 days for the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service?",
+          "a": "Yes. We list the Swivel Joint, 1502 Style 20 (1-Axis), 15,000 psi, Standard Service as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure class, configuration and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

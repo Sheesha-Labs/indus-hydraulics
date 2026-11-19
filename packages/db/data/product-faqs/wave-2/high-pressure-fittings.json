@@ -1,0 +1,596 @@
+{
+  "family": "high-pressure-fittings",
+  "extraFacts": [
+    {
+      "fact": "10,000 psi is about 689 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi; Enerpac states 10,000 psi on the listing"
+    }
+  ],
+  "products": [
+    {
+      "slug": "enerpac-10-000-psi-valves-and-air-filter-regulator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is in the Enerpac 10,000 psi valves and air filter-regulator range?",
+          "a": "The range is 19 Enerpac part numbers: relief, check, needle, sequence, shut-off, snubber and auto-damper valves for 10,000 psi hydraulic circuits, plus the RFL102 filter regulator for the air supply. Each part number is listed with its description and port; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac valve part numbers such as V152, V66F and V152NV?",
+          "a": "The part number is the Enerpac valve model without its hyphen: V152 is the V-152 pressure relief valve, 3/8\" NPT. Suffixes follow the listed descriptions: V66F is the fine-metering V-66, and the NV suffix on V152NV and V66NV means Viton seals."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do the Enerpac 10,000 psi valves come with?",
+          "a": "Most listed valves have 3/8\" NPT ports, including V152, V161, V17, V19, V42, V66, V82 and V8F. The V-182 needle valve and NV-251 gauge shut-off valve are 1/4\" NPT, V-10 and V-91 are 1/2\" NPT, and V-12 and V-72 are SAE #4."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac valve is the pressure relief valve, and which is the sequence valve?",
+          "a": "The V-152 is the pressure relief valve in 3/8\" NPT, with the V152NV version fitted with Viton seals. The V-161 and V-2000 are the sequence valves; the V-161 is listed in 3/8\" NPT. Ask us for the V-2000 port detail before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Enerpac V-152 and V-66 valves rated for?",
+          "a": "The listing says all parts here are rated for 10,000 psi systems unless stated otherwise, which is about 689 bar. The RFL102 filter regulator and the V-19 air check valve belong on the pump's air supply, so confirm their air-side rating with us before you rely on that figure."
+        },
+        {
+          "slot": "F",
+          "q": "What seals do the Enerpac V152NV and V66NV valves use?",
+          "a": "The V152NV pressure relief valve and V66NV manual check valve are fitted with Viton seals, as their descriptions state. Viton is chosen for fluids and temperatures where standard seals would suffer, so give us the fluid when you order. The listing gives no other seal or body material detail."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards or certificates apply to Enerpac 10,000 psi valves?",
+          "a": "The listing states no standard or certificate for the valves, only that the parts are rated for 10,000 psi systems. The V-12 and V-72 use an SAE #4 port. If your project needs a certificate of conformity or test record, say so on the enquiry and we will confirm what Enerpac supplies."
+        },
+        {
+          "slot": "H",
+          "q": "Which Enerpac valve fits where in a 10,000 psi circuit?",
+          "a": "The V-17 check valve, V-42 and V-72 pilot-operated check valves and V-66 manual check valve with built-in relief hold or release load, and the V-82 needle valve meters flow. Gauges connect through the NV-251 gauge shut-off valve; see [gauge adapters](/p/enerpac-gauge-adapters-swivel-gauge-union)."
+        },
+        {
+          "slot": "J",
+          "q": "What is the Enerpac V-91 snubber valve and the V-10 auto-damper valve used for?",
+          "a": "The V-91 is a snubber valve and the V-10 is an auto-damper valve, both in 1/2\" NPT, for damping pressure surges on a 10,000 psi line. The listing gives no flow or response data, so tell us the pump and circuit and we will confirm the choice."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac V-82 and V-8F needle valves?",
+          "a": "The V-82 is a 3/8\" NPT needle valve and the V-8F is a 3/8\" NPT needle valve with fine metering, so the V-8F gives finer flow control. The V-182 is the 1/4\" NPT needle valve. Compare with the [FZ and BFZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings) for plumbing around them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac 10,000 psi valves made and how are they shipped?",
+          "a": "Enerpac is the brand, and the listing does not state a country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [air or sea for a fittings order](/blog/air-or-sea-for-a-fittings-order)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac 10,000 psi valves and air filter-regulator in Dubai?",
+          "a": "Yes. We keep the Enerpac 10,000 psi valves and air filter-regulator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-43-series-ultra-high-pressure-fittings-tubing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac 43-Series ultra-high-pressure fittings and 45-Series tubing?",
+          "a": "They are Enerpac cone-and-thread connectors for ultra-high-pressure lines: gland nuts, sleeves, elbows, tees, a cross, couplings and gauge connectors, with matching 45-Series tubing. The range has 11 part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac part numbers such as 43-200 and 45-126?",
+          "a": "The 43- numbers are the fittings and the 45- numbers are the tubing. 43-200 is the elbow, 43-300 the tee, 43-400 the coupling and 43-600 the cross, all for .38 in cone. 45-116, 45-126 and 45-136 are the tubing lengths, and the listing shows them without a hyphen as 43200 or 45126."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Enerpac 43-Series range cover?",
+          "a": "The fittings are for .38 in cone, with the 43-301 gauge tee and 43-704 gauge connector taking a .25 in cone gauge port. The 45-Series tubing is .38 in OD in three lengths: 3.25 in (45-116), 7.25 in (45-126) and 11.25 in (45-136)."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac 43-Series part makes a tee with a gauge port?",
+          "a": "The 43-301 is the gauge tee: a tee in .38 in cone with a .25 in cone gauge port on the side. Use the plain 43-300 tee when no gauge is needed, and the 43-704 gauge connector to connect a gauge on a .25 in cone line."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Enerpac 43-Series ultra-high-pressure fittings rated for?",
+          "a": "The listing says ratings vary by size and connection and gives no figure for the 43-Series or 45-Series parts, so we do not state one. Quote the part number and your working pressure through [our contact page](/contact) and we will confirm the rating with Enerpac before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac 43-Series fittings and 45-Series tubing made of?",
+          "a": "The listing does not state the material of the 43-Series fittings or the 45-Series tubing, so we do not claim one. Ask us for the material and finish when you quote the part numbers, particularly if the line will carry a fluid other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Enerpac 43-Series range carry any certificate or standard?",
+          "a": "No standard or certificate is stated for the 43-Series cone fittings or the tubing on the listing. If your inspector needs test or material certificates, say so with the part numbers such as 43-701 or 45-126 and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to connect Enerpac 45-Series tubing to a 43-Series fitting?",
+          "a": "The tubing connects to the cone fittings through a gland nut and sleeve: the 43-701 is the gland nut with sleeve for .38 in cone, and the 43-001 is a gland nut plug for closing a port. The .38 in OD tubing matches the .38 in cone fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble an Enerpac 43-Series cone fitting?",
+          "a": "The 43-701 gland nut with sleeve is slid onto the .38 in OD tube and tightened into the cone, and the 43-001 gland nut plug blanks a cone port. Follow Enerpac's assembly torque for your fitting; tell us the part number and we will confirm the instruction before supply."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Enerpac 43-Series and FZ high-pressure fittings?",
+          "a": "The 43-Series is ultra-high-pressure cone-and-thread tube fittings, listed in .38 in cone sizes with matching tubing, while the [FZ and BFZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings) are NPTF pipe-thread fittings stated at 10,000 psi. Do not mix their ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac 43-Series fittings made and how are they shipped?",
+          "a": "Enerpac is the brand of the 43-Series, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac 43-Series ultra-high-pressure fittings and tubing in Dubai?",
+          "a": "Yes, we hold the Enerpac 43-Series ultra-high-pressure fittings and tubing in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-flush-face-hydraulic-coupler-f-604-set-halves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac F-604 flush-face hydraulic coupler?",
+          "a": "The F-604 is an Enerpac 3/8\" flush-face hydraulic coupler sold as a complete set, with the FH-604 male half and the FR-400 female half also sold separately. All three have a 3/8\"-18 NPTF connection. See the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Enerpac F-604, FH-604 and FR-400 part numbers mean?",
+          "a": "F-604 is the complete set, FH-604 is the male half (nipple) and FR-400 is the female half, as the listing describes them. The listing writes them without hyphens as F604, FH604 and FR400. All three are 3/8\" flush-face parts with a 3/8\"-18 NPTF connection."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the Enerpac F-604 flush-face coupler?",
+          "a": "The F-604 is a 3/8\" body size coupler, and each half has a 3/8\"-18 NPTF connection. The listing carries three part numbers: F604 for the set, FH604 for the male half and FR400 for the female half. There are no other bore sizes in this listing."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number do I order for a replacement female half of the Enerpac F-604?",
+          "a": "The female half is FR-400, listed as FR400, with a 3/8\"-18 NPTF connection. The male half is FH-604. Order the pair together if both are worn, because the listing says halves only seal and flow at their rating when they share the same interchange profile."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Enerpac F-604 flush-face coupler rated for?",
+          "a": "The listing does not state a pressure rating for the F-604 set or its halves, only that ratings vary by size and connection, so we do not give one. Tell us the working pressure and fluid through [our contact page](/contact) and we will confirm the rating with Enerpac."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Enerpac F-604 flush-face coupler made of?",
+          "a": "The listing gives no material or seal specification for the F-604, FH-604 or FR-400, so we do not state one. Ask us if you need the body material or the seal compound for a particular fluid, and we will confirm it before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Enerpac F-604 coupler carry a standard or certificate?",
+          "a": "No standard or certificate is stated for the F-604 flush-face coupler on the listing. If you need documents for an audit, name them in your enquiry with the part numbers F604, FH604 or FR400 and we will confirm what Enerpac can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac F-604 flush-face coupler connect to?",
+          "a": "Each half has a 3/8\"-18 NPTF connection, so it threads into a 3/8\" NPTF port or fitting. The male half FH-604 mates only with the FR-400 female half. For NPTF adapters on a 10,000 psi line see the [FZ and BFZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I keep an Enerpac F-604 flush-face coupler clean in use?",
+          "a": "Wipe both flat faces before you connect: a flush-face design is easy to wipe, but a dirty face still carries dirt into the circuit. The F-604 listing does not supply a dust cap; the [C-604 high-flow coupler](/p/enerpac-high-flow-hydraulic-coupler-c-604-set-halves-dust-cap) listing includes a dust cap."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac F-604 and the A-604 coupler?",
+          "a": "The F-604 is a flush-face coupler with an FR-400 female half, while the [A-604 regular coupler](/p/enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves) is the regular Spee-D design with an AH-604 male half. Both are 3/8\" size, but they do not mate with each other, so choose one profile."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Enerpac F-604 made and how is it shipped?",
+          "a": "Enerpac is the brand of the F-604 coupler, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE across the GCC, Africa and Asia; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac F-604 flush-face coupler in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Enerpac F-604 flush-face coupler, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-fz-bfz-10-000-psi-hydraulic-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac FZ and BFZ 10,000 psi hydraulic fittings?",
+          "a": "They are Enerpac high-pressure NPTF fittings stated by the maker at 10,000 psi: couplings, elbows, tees, a cross, reducers, hexagon nipples, a swivel, adapters and four NPTF-to-BSP adapters. The range has 24 part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac FZ and BFZ part numbers such as FZ1610 and BFZ16324?",
+          "a": "The part number is a model number, not a size code: FZ1610 is an elbow and FZ1612 a tee, both 3/8\" NPTF female. The BFZ prefix marks the street tee, reducer bushing and G-thread adapters, for example BFZ16324 is 3/8\" NPTF male to G3/8\" female."
+        },
+        {
+          "slot": "C",
+          "q": "Which Enerpac fitting joins 3/8\" NPTF to a BSP G thread?",
+          "a": "BFZ16324 goes from 3/8\" NPTF male to G3/8\" female. The other three are BFZ16323 (1/4\" NPTF male to G3/8\" female), BFZ16411 (1/4\" NPTF male to G1/4\" female) and BFZ16421 (1/8\" NPTF male to G1/4\" female). Check the G thread on your gauge or port."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac FZ fitting reduces 1/2\" NPTF to 3/8\" NPTF?",
+          "a": "FZ1625 is the reducing connector from 1/2\" NPTF female to 3/8\" NPTF female. For a male end, FZ1634 is a high-pressure adapter from 1/2\" NPTF female to 3/8\" NPTF male, and FZ1633 goes 1/2\" NPTF female to 1/4\" NPTF male."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac FZ part is the high-pressure tee, cross and swivel?",
+          "a": "FZ1612 is the 3/8\" NPTF female tee and FZ1637 the 1/4\" NPTF tee. FZ1613 is the 3/8\" NPTF female cross, and FZ1660 is the high-pressure swivel, 3/8\" NPTF male to 3/8\" NPTF female. The BFZ16312 street tee has one male 3/8\" NPTF end."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Enerpac FZ and BFZ fittings rated for?",
+          "a": "The maker states 10,000 psi for the range, which is about 689 bar, and every row is listed at 10,000 psi. The rating of an assembly is the lowest rating of any part in it, so check any hose, gauge or valve joined to these fittings."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac FZ and BFZ fittings made of?",
+          "a": "The listing does not state the body material or finish, so we do not claim one. The maker rates the range for 10,000 psi hydraulic service. Ask us for the material if your fluid or environment needs it confirmed before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do Enerpac FZ and BFZ fittings connect to?",
+          "a": "They join Enerpac 3/8\" NPTF hose ends, valves, gauges and cylinders. Pair them with the [F-604 and C-604 couplers](/p/enerpac-flush-face-hydraulic-coupler-f-604-set-halves) or the [manifolds](/p/enerpac-hydraulic-split-flow-manifolds) on a 10,000 psi circuit; the gauge connections are on the [gauge adapter](/p/enerpac-gauge-adapters-swivel-gauge-union) listing."
+        },
+        {
+          "slot": "I",
+          "q": "How do I seal an Enerpac FZ fitting without leaks?",
+          "a": "NPTF threads seal on the thread, so clean the male thread and use thread sealant suited to the fluid, and do not over-tighten. Do not add sealant to the G-thread side of a BFZ adapter without checking how that thread seals. See [stopping an NPT thread leak](/blog/stopping-an-npt-thread-leak)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Enerpac FZ1617 and FZ1619 hexagon nipples?",
+          "a": "Both are listed as 10,000 psi hexagon nipples, 3/8\" NPTF male to 3/8\" NPTF male, and the listing gives no difference between them. Send us your existing nipple's markings or dimensions and we will confirm which part number matches before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac FZ and BFZ fittings made and how are they shipped?",
+          "a": "Enerpac is the brand, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE to the GCC, Africa and Asia; see [air or sea for a fittings order](/blog/air-or-sea-for-a-fittings-order)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac FZ and BFZ 10,000 psi fittings in Dubai?",
+          "a": "Yes, we stock the Enerpac FZ and BFZ 10,000 psi fittings in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-gauge-adapters-swivel-gauge-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac GA-1 to GA-4 gauge adapters and the GA-918 swivel gauge union?",
+          "a": "They are Enerpac fittings for putting a pressure gauge into a high-pressure line: four gauge adapters, GA-1 to GA-4, and the GA-918 swivel gauge union. The listing carries five part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac gauge adapter numbers like GA-3 and GA-918?",
+          "a": "The GA number is the Enerpac model: GA-1, GA-2, GA-3 and GA-4 are the gauge adapters, and GA-918 is the swivel gauge union. The listing writes them as GA1 to GA4 and GA918. The thread size is in the row: GA-3 is 3/8\" NPT and GA-4 is 1/4\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which thread sizes do the Enerpac GA gauge adapters have?",
+          "a": "GA-1 and GA-2 are listed with 1/2\" NPT, GA-3 with 3/8\" NPT, GA-4 with 1/4\" NPT and the GA-918 swivel union with 1/2\" NPT. The listing gives only the thread, so send us your gauge connection and we will confirm the right adapter."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac adapter do I use to fit a gauge on a 1/4\" NPT port?",
+          "a": "The GA-4 is the 1/4\" NPT gauge adapter in this listing. For a 3/8\" NPT port use the GA-3, and for 1/2\" NPT the GA-1, GA-2 or the GA-918 swivel union. Check the gauge's own connection size before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Enerpac gauge adapters rated for?",
+          "a": "The listing states no pressure rating for GA-1 to GA-4 or the GA-918, only that ratings vary by size and connection, so we do not give a figure. Tell us your working pressure through [our contact page](/contact) and we will confirm the rating with Enerpac."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac gauge adapters made of?",
+          "a": "The listing does not give a material or finish for the GA-1 to GA-4 adapters or the GA-918, so we do not state one. Ask us for the material if the gauge line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Enerpac GA-918 swivel gauge union carry a standard or certificate?",
+          "a": "The listing states none for the GA-918 or the GA-1 to GA-4 adapters. The ports are NPT, the US taper pipe thread. If a certificate is needed for the gauge line, name it in your enquiry with the part number."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac GA-918 swivel gauge union connect to?",
+          "a": "The GA-918 is a swivel gauge union with a 1/2\" NPT connection, so the gauge can be turned to face you after it is tightened. It mates with a 1/2\" NPT port, such as one of the [FZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings) on a 10,000 psi circuit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an Enerpac gauge adapter without damaging the gauge?",
+          "a": "Thread the adapter into the line first with sealant suited to the fluid, then fit the gauge to the adapter, rather than turning the gauge by its case. Do not over-tighten NPT threads; see [over-tightened fitting diagnosis](/blog/over-tightened-fitting-diagnosis)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac GA-1 and GA-2 gauge adapters?",
+          "a": "Both are listed as gauge adapters with 1/2\" NPT, and the listing gives no other difference between them. Send us your gauge or the old adapter's markings and we will confirm whether the GA-1 or GA-2 is the match before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac gauge adapters made and how are they shipped?",
+          "a": "Enerpac is the brand, and the listing states no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE across the GCC, Africa and Asia; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac gauge adapters and GA-918 swivel gauge union in Dubai?",
+          "a": "Yes. We keep the Enerpac gauge adapters and GA-918 swivel gauge union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-high-flow-hydraulic-coupler-c-604-set-halves-dust-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac C-604 high-flow hydraulic coupler?",
+          "a": "The C-604 is an Enerpac 3/8\" high-flow hydraulic coupler sold as a complete set, with the CH-604 male half, the CR-400 female half and the CD-411 dust cap also sold separately. The maker states 10,000 psi. See the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Enerpac C-604, CH-604, CR-400 and CD-411 part numbers mean?",
+          "a": "C-604 is the complete set, CH-604 the male half (nipple), CR-400 the female half and CD-411 the dust cap for high-flow couplers, as the listing describes them. The listing writes them without hyphens as C604, CH604, CR400 and CD411."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the Enerpac C-604 high-flow coupler?",
+          "a": "The C-604 is a 3/8\" body size high-flow coupler, and the male and female halves carry a 3/8\"-18 NPTF connection. The listing has four part numbers: C604, CH604, CR400 and CD411. The dust cap has no thread listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac part number do I order for the C-604 dust cap?",
+          "a": "The dust cap is CD-411, listed as CD411, and it is made for the high-flow hydraulic couplers. It is sold separately from the C-604 set. Order one for each coupler half you leave unconnected, to keep dirt out of the faces."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Enerpac C-604 high-flow coupler rated for?",
+          "a": "The maker states 10,000 psi for the C-604 range, about 689 bar, and the CR-400 female half is listed at 10,000 psi. The rating of an assembly is the lowest rating of any part in it, so check the hose and fittings on each side."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Enerpac C-604 coupler made of?",
+          "a": "The listing does not state the body or seal material of the C-604, CH-604 or CR-400, so we do not claim one. Ask us for the material and seal compound if your fluid needs confirming before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Enerpac C-604 coupler carry a standard or certificate?",
+          "a": "The listing states no standard or certificate for the C-604; the 10,000 psi figure is the maker's own. If you need a test record for the coupler, name it in your enquiry with the part number, for example C604 or CR400."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac C-604 high-flow coupler connect to?",
+          "a": "Each half threads into a 3/8\"-18 NPTF port, so it connects to 3/8\" NPTF hose ends and fittings such as the [FZ and BFZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings). The CH-604 male half mates with the CR-400 female half, and the CD-411 cap fits the high-flow halves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I look after an Enerpac C-604 coupler in service?",
+          "a": "Fit the CD-411 dust caps whenever a half is disconnected, and wipe the faces before reconnecting. Keep the halves from the same interchange profile together. See [storing fittings and seals on site](/blog/storing-fittings-and-seals-on-site) for keeping couplers clean between jobs."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac C-604 high-flow and A-604 regular coupler?",
+          "a": "The C-604 is the high-flow design stated at 10,000 psi, with a CR-400 female half and a CD-411 cap, while the [A-604 regular coupler](/p/enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves) is the regular Spee-D design. Both are 3/8\" and do not mate across profiles."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Enerpac C-604 made and how is it shipped?",
+          "a": "Enerpac is the brand of the C-604, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE to the GCC, Africa and Asia; see [air or sea for a fittings order](/blog/air-or-sea-for-a-fittings-order)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac C-604 high-flow coupler in Dubai?",
+          "a": "Yes, we hold the Enerpac C-604 high-flow coupler in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hydraulic-split-flow-manifolds",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac A-64, A-65, A-66 and AM-21 manifolds?",
+          "a": "They are Enerpac manifolds for running several cylinders from one pump: A-64, A-65 and A-66 hydraulic manifolds, and AM-21, AM-41, AMGC41 and AMGC42 split-flow manifolds. The listing has 7 part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac manifold part numbers like A64 and AMGC42?",
+          "a": "The A- numbers are plain hydraulic manifolds and the AM- numbers are split-flow manifolds. AMGC41 and AMGC42 are the split-flow manifolds with gauges and a frame: AMGC41 is 5 port for single-acting cylinders and AMGC42 is 10 port for double-acting cylinders."
+        },
+        {
+          "slot": "D",
+          "q": "How many ports do the Enerpac A-64, A-65 and A-66 manifolds have?",
+          "a": "The A-64 is a 7-port manifold 7\" long and the A-65 is a 7-port manifold 14\" long, while the A-66 is a 6-port manifold. Choose the A-65 when you need the longer body for hose spacing, and the A-66 for six outlets."
+        },
+        {
+          "slot": "D",
+          "q": "What are the port sizes and counts of the Enerpac split-flow manifolds?",
+          "a": "The AM-21 is a 5-port split-flow manifold and the AM-41 a 7-port, both with 3/8\" NPTF ports in the listing. The AMGC41 is 5 port with gauges and frame, and the AMGC42 is 10 port with gauges and frame. The listing gives no port size for the AMGC models."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Enerpac manifolds rated for?",
+          "a": "The maker states 10,000 psi for the manifolds, about 689 bar, and the A-64, A-65, A-66, AM-21 and AM-41 rows show it. The AMGC41 and AMGC42 rows give no figure of their own, so confirm their rating with us before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac manifolds made of?",
+          "a": "The listing gives no material or finish for the A-series or AM-series manifolds, so we do not state one. If you need it confirmed for a particular fluid or environment, tell us the part number, such as A64 or AM41, and we will check with Enerpac."
+        },
+        {
+          "slot": "G",
+          "q": "Do Enerpac manifolds carry a standard or certificate?",
+          "a": "None is stated on the listing for the A-64, A-65, A-66, AM-21, AM-41, AMGC41 or AMGC42. The 10,000 psi rating is the maker's own. If a pressure-test record is required, name it in your enquiry with the part numbers."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an Enerpac A-64 or AM-21 manifold?",
+          "a": "Hose ends and couplers connect to the manifold ports; the AM-21 and AM-41 ports are 3/8\" NPTF, which suits the [FZ and BFZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings) and 3/8\" [couplers](/p/enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves). Gauges fit through the [gauge adapters](/p/enerpac-gauge-adapters-swivel-gauge-union)."
+        },
+        {
+          "slot": "J",
+          "q": "When do I use a split-flow manifold instead of a plain Enerpac manifold?",
+          "a": "Use a split-flow manifold such as the AM-21 or AM-41 when one pump must feed several cylinders with an even share of flow; a plain manifold like the A-64 just gives more outlets. The AMGC41 serves single-acting cylinders and the AMGC42 double-acting ones."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac AM-21 and AM-41 split-flow manifolds?",
+          "a": "The AM-21 has 5 ports and the AM-41 has 7 ports, both listed with 3/8\" NPTF and 10,000 psi. Pick by how many cylinders you need to feed; for a fully framed unit with gauges look at the AMGC41 or AMGC42."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac manifolds made and how are they shipped?",
+          "a": "Enerpac is the brand, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE across the GCC, Africa and Asia; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac hydraulic and split-flow manifolds in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Enerpac hydraulic and split-flow manifolds, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac A-604 and A-630 regular hydraulic couplers?",
+          "a": "They are Enerpac regular Spee-D hydraulic couplers: the A-604 in 3/8\" and the A-630 in 1/4\", each sold as a complete set or as separate male and female halves. The listing has 6 part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac coupler numbers such as A-604, AH-604 and AR-400?",
+          "a": "The A- number is the complete set, AH is the male half (nipple) and AR is the female half. So A-604 pairs AH-604 with AR-400 in 3/8\", and A-630 pairs AH-630 with AR-630 in 1/4\". The listing writes them as A604, AH604, AR400, A630, AH630 and AR630."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Enerpac regular couplers come in?",
+          "a": "The A-604 family is 3/8\" and the A-630 family is 1/4\", with six part numbers: A604, A630, AH604, AH630, AR400 and AR630. Rows list 3/8\" NPT or 3/8\"-18 NPTF for the 3/8\" parts and 1/4\" NPT for the 1/4\" parts."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the female half of the Enerpac 1/4\" regular coupler?",
+          "a": "The 1/4\" female half is AR-630, listed as AR630 with a 1/4\" NPT connection. The male half is AH-630 and the complete set is A-630. For the 3/8\" size the female half is AR-400."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Enerpac regular couplers rated for?",
+          "a": "The listing gives no pressure rating for the A-604, A-630 or their halves, only that ratings vary by size and connection, so we do not state one. Quote the working pressure through [our contact page](/contact) and we will confirm the rating with Enerpac."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac regular Spee-D couplers made of?",
+          "a": "The listing does not give a material or seal compound for the A-604, A-630 or their halves, so we do not state one. Ask us if the fluid or environment needs confirming before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Do Enerpac A-604 and A-630 couplers carry a standard or certificate?",
+          "a": "None is stated on the listing. The 3/8\" connections are NPT or NPTF taper pipe threads. If you need a certificate for audit, name it in your enquiry with the part numbers such as A604 or AR630."
+        },
+        {
+          "slot": "H",
+          "q": "What do Enerpac A-604 and A-630 couplers thread into?",
+          "a": "The 3/8\" halves thread into a 3/8\" NPT or NPTF port and the 1/4\" halves into a 1/4\" NPT port. Couplers only seal and flow at their rating when both halves share the same interchange profile; the [FZ fittings](/p/enerpac-fz-bfz-10-000-psi-hydraulic-fittings) supply NPTF adapters."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose the matching half for an Enerpac A-604 coupler?",
+          "a": "Check the half you have: AH-604 male pairs with AR-400 female, and AH-630 male with AR-630 female. Quote the part number of the mating half too, or send a photo, and we will confirm the match before supply."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac A-604 and T-630 couplers?",
+          "a": "The A-604 is a regular 3/8\" Spee-D coupler, while the [T-630 spin-on coupler](/p/enerpac-spin-on-hydraulic-coupler-t-630-set-halves) is a 1/4\" spin-on design. The 1/4\" regular alternative is the A-630 in this listing. The profiles are different, so the halves do not interchange."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac A-604 couplers made and how are they shipped?",
+          "a": "Enerpac is the brand, and the listing states no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE to the GCC, Africa and Asia; see [air or sea for a fittings order](/blog/air-or-sea-for-a-fittings-order)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac A-604 and A-630 regular couplers in Dubai?",
+          "a": "Yes, we stock the Enerpac A-604 and A-630 regular couplers in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-spin-on-hydraulic-coupler-t-630-set-halves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac T-630 spin-on hydraulic coupler?",
+          "a": "The T-630 is an Enerpac 1/4\" spin-on hydraulic coupler, sold as a complete set with the TH-630 male half and TR-630 female half also available separately. The listing has 3 part numbers; see the [10,000 psi couplers, fittings and manifolds shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Enerpac T-630, TH-630 and TR-630 part numbers mean?",
+          "a": "T-630 is the complete set, TH-630 is the male half (nipple) and TR-630 is the female half, as the listing describes them. The listing writes them without hyphens as T630, TH630 and TR630. All three are 1/4\" spin-on couplers."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the Enerpac T-630 spin-on coupler?",
+          "a": "The T-630 is a 1/4\" body size coupler. The listing has three part numbers, T630, TH630 and TR630, and gives no connection thread for any of them, so tell us the port on your hose or tool and we will confirm the fit."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac part number is the female half of the T-630 coupler?",
+          "a": "The female half is TR-630, listed as TR630. The male half is TH-630 and the complete set is T-630. Order the halves in pairs, because the listing says couplings seal and flow at their rating only when both halves share the same interchange profile."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Enerpac T-630 spin-on coupler rated for?",
+          "a": "The listing states no pressure rating for the T-630, TH-630 or TR-630, only that ratings vary by size and connection, so we do not give one. Tell us the working pressure through [our contact page](/contact) and we will confirm it with Enerpac."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Enerpac T-630 coupler made of?",
+          "a": "The listing does not state the material or seal compound for the T-630 family, so we do not claim one. Ask us for it if your fluid or environment needs confirming before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Enerpac T-630 coupler carry a standard or certificate?",
+          "a": "No standard or certificate is stated for the T-630 or its halves on the listing. If you need a certificate or test record, name it in your enquiry with the part numbers T630, TH630 or TR630 and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac T-630 spin-on coupler connect to?",
+          "a": "It joins a hose or tool end to a mating half of the same T-630 profile; the TH-630 male half mates with the TR-630 female half. The listing gives no thread, so confirm the port first. For other 1/4\" couplers see the [A-630 regular coupler](/p/enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I connect an Enerpac T-630 spin-on coupler?",
+          "a": "A spin-on coupler is connected by turning the halves together rather than pushing them, so keep the threads clean and fully engage them before you pressurise. Confirm the procedure for your tool with us using the part number T630."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Enerpac T-630 spin-on and A-630 regular coupler?",
+          "a": "Both are 1/4\" Enerpac couplers, but the T-630 spins on, whereas the [A-630 regular coupler](/p/enerpac-regular-hydraulic-couplers-a-604-a-630-sets-halves) is a Spee-D design with an AH-630 male half and AR-630 female half. The profiles do not mate across designs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Enerpac T-630 made and how is it shipped?",
+          "a": "Enerpac is the brand of the T-630, and the listing gives no country of origin, so origin is confirmed on the quotation. We ship from Dubai, UAE across the GCC, Africa and Asia; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac T-630 spin-on coupler in Dubai?",
+          "a": "Yes. We keep the Enerpac T-630 spin-on coupler in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

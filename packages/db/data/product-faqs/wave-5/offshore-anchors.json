@@ -1,0 +1,1319 @@
+{
+  "family": "offshore-anchors",
+  "extraFacts": [
+    {
+      "fact": "A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull.",
+      "source": "ISO 1704, Ships and marine technology - Stockless anchors (terminology and scope)"
+    },
+    {
+      "fact": "A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth.",
+      "source": "DNV-RP-E301, Design and installation of fluke anchors"
+    },
+    {
+      "fact": "A mushroom anchor has a bell-shaped head that sinks into soft seabed sediment and holds by its weight and the surrounding soil, and is used for permanent moorings.",
+      "source": "US Naval Facilities Engineering Command, Design Manual DM-26.5, Fleet Moorings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "byers-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Byers Anchor used for?",
+          "a": "The Byers Anchor is a Byers stockless anchor. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Byers Anchor have?",
+          "a": "Dimensions and weights for the Byers Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Byers Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Byers Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Byers Anchor hold?",
+          "a": "No holding capacity figure is published for the Byers Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Byers Anchor?",
+          "a": "Send the size or rating you need for the Byers Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Byers Anchor compare with the Gruson Anchor?",
+          "a": "The Byers Anchor is a Byers stockless anchor, while the Gruson Anchor is a Gruson stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Gruson Anchor](/p/gruson-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Byers Anchor come with a dimensional drawing?",
+          "a": "Yes. Tell us the size or rating you need for the Byers Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Byers Anchor?",
+          "a": "We quote the Byers Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Byers Anchor connect to?",
+          "a": "The Byers Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [anchor handling chasers](/c/anchor-handling-chasers)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Byers Anchor need in service?",
+          "a": "Install the Byers Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Byers Anchor used?",
+          "a": "The Byers Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Byers Anchor in Dubai?",
+          "a": "Yes, we stock the Byers Anchor at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "drag-embedment-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Drag Embedment Anchor used for?",
+          "a": "The Drag Embedment Anchor is a drag embedment anchor with an adjustable fluke angle. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 12 sizes, 300 kg to 18,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Drag Embedment Anchor are available?",
+          "a": "The Drag Embedment Anchor is listed in 12 sizes, 300 kg to 18,000 kg. Every size has its own Indus part number, for example IH-MR-OA-DRG-300KG (300 kg) or IH-MR-OA-DRG-18000KG (18,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Drag Embedment Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Drag Embedment Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Drag Embedment Anchor hold?",
+          "a": "No holding capacity figure is published for the Drag Embedment Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Drag Embedment Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-DRG-300KG (300 kg) or IH-MR-OA-DRG-18000KG (18,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Drag Embedment Anchor or Byers Anchor: what is the difference?",
+          "a": "The Drag Embedment Anchor is a drag embedment anchor with an adjustable fluke angle, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Drag Embedment Anchor is listed in 12 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "What do the letters in the Drag Embedment Anchor size table mean?",
+          "a": "The letters in the Drag Embedment Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Drag Embedment Anchor?",
+          "a": "We quote the Drag Embedment Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Drag Embedment Anchor connected with in a mooring?",
+          "a": "The Drag Embedment Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Drag Embedment Anchor be inspected and installed?",
+          "a": "Install the Drag Embedment Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Drag Embedment Anchor?",
+          "a": "The Drag Embedment Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Drag Embedment Anchor ex-stock from Dubai?",
+          "a": "Yes, the Drag Embedment Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "gruson-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gruson Anchor used for?",
+          "a": "The Gruson Anchor is a Gruson stockless anchor. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Gruson Anchor have?",
+          "a": "Dimensions and weights for the Gruson Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Gruson Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Gruson Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Gruson Anchor hold?",
+          "a": "No holding capacity figure is published for the Gruson Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Gruson Anchor?",
+          "a": "Send the size or rating you need for the Gruson Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Gruson Anchor or Byers Anchor: what is the difference?",
+          "a": "The Gruson Anchor is a Gruson stockless anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Gruson Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Gruson Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Gruson Anchor?",
+          "a": "We quote the Gruson Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Gruson Anchor connect to?",
+          "a": "The Gruson Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [anchor handling chasers](/c/anchor-handling-chasers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Gruson Anchor be inspected and installed?",
+          "a": "Install the Gruson Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Gruson Anchor used?",
+          "a": "The Gruson Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Gruson Anchor in Dubai?",
+          "a": "Yes, the Gruson Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "heuss-special-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Heuss Special Anchor and what is it used for?",
+          "a": "The Heuss Special Anchor is a Heuss Special anchor. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Heuss Special Anchor come in?",
+          "a": "Dimensions and weights for the Heuss Special Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Heuss Special Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Heuss Special Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Heuss Special Anchor have?",
+          "a": "No holding capacity figure is published for the Heuss Special Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Heuss Special Anchor?",
+          "a": "Send the size or rating you need for the Heuss Special Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Heuss Special Anchor or Byers Anchor: what is the difference?",
+          "a": "The Heuss Special Anchor is a Heuss Special anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Heuss Special Anchor come with a dimensional drawing?",
+          "a": "Yes. Tell us the size or rating you need for the Heuss Special Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Heuss Special Anchor?",
+          "a": "We quote the Heuss Special Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Heuss Special Anchor connect to?",
+          "a": "The Heuss Special Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Heuss Special Anchor be inspected and installed?",
+          "a": "Install the Heuss Special Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Heuss Special Anchor?",
+          "a": "The Heuss Special Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Heuss Special Anchor ex-stock from Dubai?",
+          "a": "Yes. We keep the Heuss Special Anchor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hook-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hook Anchor and what is it used for?",
+          "a": "The Hook Anchor is a Hook anchor. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Hook Anchor have?",
+          "a": "Dimensions and weights for the Hook Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Hook Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Hook Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Hook Anchor have?",
+          "a": "No holding capacity figure is published for the Hook Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Hook Anchor?",
+          "a": "Send the size or rating you need for the Hook Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Hook Anchor or Byers Anchor: what is the difference?",
+          "a": "The Hook Anchor is a Hook anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Hook Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Hook Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Hook Anchor?",
+          "a": "We quote the Hook Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Hook Anchor connected with in a mooring?",
+          "a": "The Hook Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Hook Anchor need in service?",
+          "a": "Install the Hook Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Hook Anchor used?",
+          "a": "The Hook Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Hook Anchor ex-stock from Dubai?",
+          "a": "Yes, we stock the Hook Anchor at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "lwt-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the LWT Anchor used for?",
+          "a": "The LWT Anchor is a LWT drag anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 10 sizes, 454 kg to 27,216 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the LWT Anchor come in?",
+          "a": "The LWT Anchor is listed in 10 sizes, 454 kg to 27,216 kg. Every size has its own Indus part number, for example IH-MR-OA-LWT-454KG (454 kg) or IH-MR-OA-LWT-27216KG (27,216 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the LWT Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the LWT Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the LWT Anchor hold?",
+          "a": "No holding capacity figure is published for the LWT Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the LWT Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-LWT-454KG (454 kg) or IH-MR-OA-LWT-27216KG (27,216 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "LWT Anchor or Byers Anchor: what is the difference?",
+          "a": "The LWT Anchor is a LWT drag anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The LWT Anchor is listed in 10 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Are the dimensions in the LWT Anchor size table exact?",
+          "a": "The letters in the LWT Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the LWT Anchor?",
+          "a": "We quote the LWT Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the LWT Anchor connected with in a mooring?",
+          "a": "The LWT Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the LWT Anchor need in service?",
+          "a": "Install the LWT Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the LWT Anchor?",
+          "a": "The LWT Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the LWT Anchor ex-stock from Dubai?",
+          "a": "Yes, we stock the LWT Anchor at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "moorfast-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Moorfast Anchor and what is it used for?",
+          "a": "The Moorfast Anchor is a Moorfast drag anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 10 sizes, 480 kg to 27,500 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Moorfast Anchor are available?",
+          "a": "The Moorfast Anchor is listed in 10 sizes, 480 kg to 27,500 kg. Every size has its own Indus part number, for example IH-MR-OA-MRF-480KG (480 kg) or IH-MR-OA-MRF-27500KG (27,500 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Moorfast Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Moorfast Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Moorfast Anchor hold?",
+          "a": "No holding capacity figure is published for the Moorfast Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Moorfast Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-MRF-480KG (480 kg) or IH-MR-OA-MRF-27500KG (27,500 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Moorfast Anchor or Byers Anchor: what is the difference?",
+          "a": "The Moorfast Anchor is a Moorfast drag anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Moorfast Anchor is listed in 10 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "What do the letters in the Moorfast Anchor size table mean?",
+          "a": "The letters in the Moorfast Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Moorfast Anchor?",
+          "a": "We quote the Moorfast Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Moorfast Anchor connect to?",
+          "a": "The Moorfast Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Moorfast Anchor be inspected and installed?",
+          "a": "Install the Moorfast Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Moorfast Anchor?",
+          "a": "The Moorfast Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Moorfast Anchor in Dubai?",
+          "a": "Yes, the Moorfast Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "mushroom-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Mushroom Anchor and what is it used for?",
+          "a": "The Mushroom Anchor is a Mushroom anchor. A mushroom anchor has a bell-shaped head that sinks into soft seabed sediment and holds by its weight and the surrounding soil, and is used for permanent moorings. The listing covers 7 sizes, 50 kg to 5,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Mushroom Anchor come in?",
+          "a": "The Mushroom Anchor is listed in 7 sizes, 50 kg to 5,000 kg. Every size has its own Indus part number, for example IH-MR-OA-MSH-50KG (50 kg) or IH-MR-OA-MSH-5000KG (5,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Mushroom Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Mushroom Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Mushroom Anchor hold?",
+          "a": "No holding capacity figure is published for the Mushroom Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Mushroom Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-MSH-50KG (50 kg) or IH-MR-OA-MSH-5000KG (5,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Mushroom Anchor or Byers Anchor: what is the difference?",
+          "a": "The Mushroom Anchor is a Mushroom anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Mushroom Anchor is listed in 7 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "What do the letters in the Mushroom Anchor size table mean?",
+          "a": "The letters in the Mushroom Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Mushroom Anchor?",
+          "a": "We quote the Mushroom Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Mushroom Anchor connected with in a mooring?",
+          "a": "The Mushroom Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Mushroom Anchor need in service?",
+          "a": "Install the Mushroom Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Mushroom Anchor used?",
+          "a": "The Mushroom Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A mushroom anchor has a bell-shaped head that sinks into soft seabed sediment and holds by its weight and the surrounding soil, and is used for permanent moorings. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Mushroom Anchor ex-stock from Dubai?",
+          "a": "Yes. We keep the Mushroom Anchor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "offdrill-ii-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Offdrill II Anchor used for?",
+          "a": "The Offdrill II Anchor is an Offdrill II drag anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 27 sizes, 240 kg to 29,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Offdrill II Anchor are available?",
+          "a": "The Offdrill II Anchor is listed in 27 sizes, 240 kg to 29,000 kg. Every size has its own Indus part number, for example IH-MR-OA-OFD2-240KG (240 kg) or IH-MR-OA-OFD2-29000KG (29,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Offdrill II Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Offdrill II Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Offdrill II Anchor have?",
+          "a": "No holding capacity figure is published for the Offdrill II Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Offdrill II Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-OFD2-240KG (240 kg) or IH-MR-OA-OFD2-29000KG (29,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Offdrill II Anchor or Byers Anchor: what is the difference?",
+          "a": "The Offdrill II Anchor is an Offdrill II drag anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Offdrill II Anchor is listed in 27 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "What do the letters in the Offdrill II Anchor size table mean?",
+          "a": "The letters in the Offdrill II Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Offdrill II Anchor?",
+          "a": "We quote the Offdrill II Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Offdrill II Anchor connect to?",
+          "a": "The Offdrill II Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Offdrill II Anchor be inspected and installed?",
+          "a": "Install the Offdrill II Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Offdrill II Anchor used?",
+          "a": "The Offdrill II Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Offdrill II Anchor in Dubai?",
+          "a": "Yes, the Offdrill II Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "sandig-iii-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sandig III Anchor and what is it used for?",
+          "a": "The Sandig III Anchor is a Sandig III anchor. The listing covers 10 sizes, 300 kg to 5,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Sandig III Anchor are available?",
+          "a": "The Sandig III Anchor is listed in 10 sizes, 300 kg to 5,000 kg. Every size has its own Indus part number, for example IH-MR-OA-SDG3-300KG (300 kg) or IH-MR-OA-SDG3-5000KG (5,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Sandig III Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Sandig III Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Sandig III Anchor have?",
+          "a": "No holding capacity figure is published for the Sandig III Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Sandig III Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-SDG3-300KG (300 kg) or IH-MR-OA-SDG3-5000KG (5,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Sandig III Anchor or Byers Anchor: what is the difference?",
+          "a": "The Sandig III Anchor is a Sandig III anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Sandig III Anchor is listed in 10 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Are the dimensions in the Sandig III Anchor size table exact?",
+          "a": "The letters in the Sandig III Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Sandig III Anchor?",
+          "a": "We quote the Sandig III Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Sandig III Anchor connected with in a mooring?",
+          "a": "The Sandig III Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Sandig III Anchor be inspected and installed?",
+          "a": "Install the Sandig III Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Sandig III Anchor?",
+          "a": "The Sandig III Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sandig III Anchor ex-stock from Dubai?",
+          "a": "Yes, the Sandig III Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stevfix-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevfix Anchor used for?",
+          "a": "The Stevfix Anchor is a Stevfix drag embedment anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Stevfix Anchor come in?",
+          "a": "Dimensions and weights for the Stevfix Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stevfix Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Stevfix Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Stevfix Anchor hold?",
+          "a": "No holding capacity figure is published for the Stevfix Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Stevfix Anchor?",
+          "a": "Send the size or rating you need for the Stevfix Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Stevfix Anchor or Byers Anchor: what is the difference?",
+          "a": "The Stevfix Anchor is a Stevfix drag embedment anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Stevfix Anchor come with a dimensional drawing?",
+          "a": "Yes. Tell us the size or rating you need for the Stevfix Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Stevfix Anchor?",
+          "a": "We quote the Stevfix Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stevfix Anchor connect to?",
+          "a": "The Stevfix Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [anchor handling chasers](/c/anchor-handling-chasers)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Stevfix Anchor need in service?",
+          "a": "Install the Stevfix Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Stevfix Anchor?",
+          "a": "The Stevfix Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Stevfix Anchor ex-stock from Dubai?",
+          "a": "Yes, the Stevfix Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stevin-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevin Anchor and what is it used for?",
+          "a": "The Stevin Anchor is a Stevin drag embedment anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 10 sizes, 1,000 kg to 30,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Stevin Anchor come in?",
+          "a": "The Stevin Anchor is listed in 10 sizes, 1,000 kg to 30,000 kg. Every size has its own Indus part number, for example IH-MR-OA-STVN-1000KG (1,000 kg) or IH-MR-OA-STVN-30000KG (30,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Stevin Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Stevin Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Stevin Anchor hold?",
+          "a": "No holding capacity figure is published for the Stevin Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Stevin Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-STVN-1000KG (1,000 kg) or IH-MR-OA-STVN-30000KG (30,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "Stevin Anchor or Byers Anchor: what is the difference?",
+          "a": "The Stevin Anchor is a Stevin drag embedment anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Stevin Anchor is listed in 10 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Are the dimensions in the Stevin Anchor size table exact?",
+          "a": "The letters in the Stevin Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Stevin Anchor?",
+          "a": "We quote the Stevin Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stevin Anchor connect to?",
+          "a": "The Stevin Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Stevin Anchor need in service?",
+          "a": "Install the Stevin Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stevin Anchor used?",
+          "a": "The Stevin Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Stevin Anchor in Dubai?",
+          "a": "Yes. Indus keeps the Stevin Anchor in stock in Dubai, UAE, and ships worldwide with the best lead times. For pricing, send your part numbers and quantities via [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stevmud-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevmud Anchor used for?",
+          "a": "The Stevmud Anchor is a Stevmud drag embedment anchor for soft clay. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Stevmud Anchor have?",
+          "a": "Dimensions and weights for the Stevmud Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Stevmud Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Stevmud Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Stevmud Anchor hold?",
+          "a": "No holding capacity figure is published for the Stevmud Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Stevmud Anchor?",
+          "a": "Send the size or rating you need for the Stevmud Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Stevmud Anchor or Byers Anchor: what is the difference?",
+          "a": "The Stevmud Anchor is a Stevmud drag embedment anchor for soft clay, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Stevmud Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Stevmud Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Stevmud Anchor?",
+          "a": "We quote the Stevmud Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stevmud Anchor connect to?",
+          "a": "The Stevmud Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stevmud Anchor be inspected and installed?",
+          "a": "Install the Stevmud Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stevmud Anchor used?",
+          "a": "The Stevmud Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Stevmud Anchor ex-stock from Dubai?",
+          "a": "Yes, the Stevmud Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stevpris-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevpris Anchor used for?",
+          "a": "The Stevpris Anchor is a Stevpris drag embedment anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Stevpris Anchor come in?",
+          "a": "Dimensions and weights for the Stevpris Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Stevpris Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Stevpris Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Stevpris Anchor hold?",
+          "a": "No holding capacity figure is published for the Stevpris Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Stevpris Anchor?",
+          "a": "Send the size or rating you need for the Stevpris Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stevpris Anchor compare with the Stevpris MK5 Anchor?",
+          "a": "The Stevpris Anchor and the Stevpris MK5 Anchor do different jobs in a mooring line, so compare their sizes, ratings and the certificate you need. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Stevpris MK5 Anchor](/p/stevpris-mk5-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Stevpris Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Stevpris Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Stevpris Anchor?",
+          "a": "We quote the Stevpris Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Stevpris Anchor connected with in a mooring?",
+          "a": "The Stevpris Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Stevpris Anchor need in service?",
+          "a": "Install the Stevpris Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stevpris Anchor used?",
+          "a": "The Stevpris Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Stevpris Anchor in Dubai?",
+          "a": "Yes, we stock the Stevpris Anchor at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stevpris-mk5-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevpris MK5 Anchor used for?",
+          "a": "The Stevpris MK5 Anchor is a Stevpris MK5 drag embedment anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Stevpris MK5 Anchor come in?",
+          "a": "Dimensions and weights for the Stevpris MK5 Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Stevpris MK5 Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Stevpris MK5 Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Stevpris MK5 Anchor have?",
+          "a": "No holding capacity figure is published for the Stevpris MK5 Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Stevpris MK5 Anchor?",
+          "a": "Send the size or rating you need for the Stevpris MK5 Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Stevpris MK5 Anchor or Stevpris Anchor: what is the difference?",
+          "a": "The Stevpris MK5 Anchor is a Stevpris MK5 drag embedment anchor, while the Stevpris Anchor is a Stevpris drag embedment anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Stevpris Anchor](/p/stevpris-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Stevpris MK5 Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Stevpris MK5 Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Stevpris MK5 Anchor?",
+          "a": "We quote the Stevpris MK5 Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Stevpris MK5 Anchor connected with in a mooring?",
+          "a": "The Stevpris MK5 Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Stevpris MK5 Anchor need in service?",
+          "a": "Install the Stevpris MK5 Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Stevpris MK5 Anchor used?",
+          "a": "The Stevpris MK5 Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Stevpris MK5 Anchor ex-stock from Dubai?",
+          "a": "Yes, the Stevpris MK5 Anchor is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stevpris-mk6-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevpris MK6 Anchor and what is it used for?",
+          "a": "The Stevpris MK6 Anchor is a Stevpris MK6 drag embedment anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Stevpris MK6 Anchor come in?",
+          "a": "Dimensions and weights for the Stevpris MK6 Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Stevpris MK6 Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Stevpris MK6 Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Stevpris MK6 Anchor hold?",
+          "a": "No holding capacity figure is published for the Stevpris MK6 Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Stevpris MK6 Anchor?",
+          "a": "Send the size or rating you need for the Stevpris MK6 Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Stevpris MK6 Anchor or Stevpris Anchor: what is the difference?",
+          "a": "The Stevpris MK6 Anchor is a Stevpris MK6 drag embedment anchor, while the Stevpris Anchor is a Stevpris drag embedment anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Stevpris Anchor](/p/stevpris-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Stevpris MK6 Anchor come with a dimensional drawing?",
+          "a": "Yes. Tell us the size or rating you need for the Stevpris MK6 Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Stevpris MK6 Anchor?",
+          "a": "We quote the Stevpris MK6 Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Stevpris MK6 Anchor connected with in a mooring?",
+          "a": "The Stevpris MK6 Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stevpris MK6 Anchor be inspected and installed?",
+          "a": "Install the Stevpris MK6 Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Stevpris MK6 Anchor?",
+          "a": "The Stevpris MK6 Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Stevpris MK6 Anchor ex-stock from Dubai?",
+          "a": "Yes, we stock the Stevpris MK6 Anchor at our warehouse in Dubai, UAE and ship it worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stevshark-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stevshark Anchor and what is it used for?",
+          "a": "The Stevshark Anchor is a Stevshark drag embedment anchor for hard soils. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Stevshark Anchor have?",
+          "a": "Dimensions and weights for the Stevshark Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stevshark Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Stevshark Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Stevshark Anchor have?",
+          "a": "No holding capacity figure is published for the Stevshark Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Stevshark Anchor?",
+          "a": "Send the size or rating you need for the Stevshark Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stevshark Anchor compare with the Byers Anchor?",
+          "a": "The Stevshark Anchor is a Stevshark drag embedment anchor for hard soils, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Can I get a drawing and weight for the Stevshark Anchor?",
+          "a": "Yes. Tell us the size or rating you need for the Stevshark Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Stevshark Anchor?",
+          "a": "We quote the Stevshark Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stevshark Anchor connect to?",
+          "a": "The Stevshark Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Stevshark Anchor need in service?",
+          "a": "Install the Stevshark Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Stevshark Anchor?",
+          "a": "The Stevshark Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Stevshark Anchor in Dubai?",
+          "a": "Yes. We keep the Stevshark Anchor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "superior-delta-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Superior Delta Anchor and what is it used for?",
+          "a": "The Superior Delta Anchor is a Superior Delta drag anchor. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 18 sizes, 1,000 kg to 40,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Superior Delta Anchor are available?",
+          "a": "The Superior Delta Anchor is listed in 18 sizes, 1,000 kg to 40,000 kg. Every size has its own Indus part number, for example IH-MR-OA-SPD-1000KG (1,000 kg) or IH-MR-OA-SPD-40000KG (40,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I size the Superior Delta Anchor for a mooring?",
+          "a": "The design mooring load and the seabed decide the size of the Superior Delta Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Superior Delta Anchor hold?",
+          "a": "No holding capacity figure is published for the Superior Delta Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. The size table gives anchor masses and dimensions."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Superior Delta Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-SPD-1000KG (1,000 kg) or IH-MR-OA-SPD-40000KG (40,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Superior Delta Anchor compare with the Byers Anchor?",
+          "a": "The Superior Delta Anchor is a Superior Delta drag anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Superior Delta Anchor is listed in 18 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Are the dimensions in the Superior Delta Anchor size table exact?",
+          "a": "The letters in the Superior Delta Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificate can I get for the Superior Delta Anchor?",
+          "a": "We quote the Superior Delta Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Superior Delta Anchor connect to?",
+          "a": "The Superior Delta Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Superior Delta Anchor need in service?",
+          "a": "Install the Superior Delta Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Superior Delta Anchor used?",
+          "a": "The Superior Delta Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Superior Delta Anchor in Dubai?",
+          "a": "Yes. We keep the Superior Delta Anchor in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trust-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Trust Anchor and what is it used for?",
+          "a": "The Trust Anchor is a Trust drag anchor, rated by ultimate holding capacity. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. The listing covers 11 sizes, 250 kg to 5,000 kg. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Trust Anchor come in?",
+          "a": "The Trust Anchor is listed in 11 sizes, 250 kg to 5,000 kg. Every size has its own Indus part number, for example IH-MR-OA-TRST-250KG (250 kg) or IH-MR-OA-TRST-5000KG (5,000 kg). The letters in the size table match the dimension drawing."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Trust Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Trust Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "What holding capacity does the Trust Anchor have?",
+          "a": "The Trust Anchor is rated by ultimate holding capacity, listed from 17 t to 187 t across the sizes (uhpT). Ultimate holding capacity is the maker's figure for the stated seabed; actual holding depends on soil, fluke angle and installation. Tell us the seabed and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send to get a quote for the Trust Anchor?",
+          "a": "Quote the Indus part number from the size table, for example IH-MR-OA-TRST-250KG (250 kg) or IH-MR-OA-TRST-5000KG (5,000 kg), with the quantity. State the anchor mass, the seabed type and the holding capacity you need. If you only know the load, send it with the line make-up and we match the part number."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Trust Anchor compare with the Byers Anchor?",
+          "a": "The Trust Anchor is a Trust drag anchor, rated by ultimate holding capacity, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. The Trust Anchor is listed in 11 sizes. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Are the dimensions in the Trust Anchor size table exact?",
+          "a": "The letters in the Trust Anchor size table match the dimension drawing shown with the product. Dimensions are typical and can vary slightly between production runs. The drawing sent with the quotation is final."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Trust Anchor?",
+          "a": "We quote the Trust Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Trust Anchor connect to?",
+          "a": "The Trust Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [anchor handling chasers](/c/anchor-handling-chasers)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Trust Anchor be inspected and installed?",
+          "a": "Install the Trust Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Trust Anchor used?",
+          "a": "The Trust Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A drag embedment (fluke) anchor is installed by dragging it along the seabed until the flukes dig in, and holds by the resistance of the soil; its holding capacity depends on the soil type, the fluke angle and the penetration depth. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Trust Anchor in Dubai?",
+          "a": "Yes. Indus keeps the Trust Anchor in stock in Dubai, UAE, and ships worldwide with the best lead times. For pricing, send your part numbers and quantities via [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "union-anchor",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Union Anchor and what is it used for?",
+          "a": "The Union Anchor is an Union stockless anchor. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Dimensions and weights are confirmed on request, with a drawing sent with the quotation. See the [offshore anchors](/c/offshore-anchors) shelf for the full range."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does the Union Anchor have?",
+          "a": "Dimensions and weights for the Union Anchor are confirmed on request, not tabulated on the listing. Tell us the size or the rating you need and we send the drawing with the quotation. Stating the line load, the seabed or the chain size lets us pick the right size first time."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union Anchor?",
+          "a": "The design mooring load and the seabed decide the size of the Union Anchor. Send the line load, soil data and water depth and we propose an anchor mass. State the anchor mass, the seabed type and the holding capacity you need. Holding capacity also depends on the fluke angle and the installation."
+        },
+        {
+          "slot": "E",
+          "q": "How much load can the Union Anchor hold?",
+          "a": "No holding capacity figure is published for the Union Anchor, so the holding you can rely on is confirmed with the quotation. Holding depends on the seabed, the fluke angle and the installation, so tell us the soil type and the design load. State the anchor mass, the seabed type and the holding capacity you need."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Union Anchor?",
+          "a": "Send the size or rating you need for the Union Anchor and we quote with the drawing and certificate. State the anchor mass, the seabed type and the holding capacity you need. Part numbers are confirmed with the quotation because no size table is listed."
+        },
+        {
+          "slot": "K",
+          "q": "Union Anchor or Byers Anchor: what is the difference?",
+          "a": "The Union Anchor is an Union stockless anchor, while the Byers Anchor is a Byers stockless anchor. Choose between them on the design load, the seabed or connection and the certificate you need. See the [Byers Anchor](/p/byers-anchor) for its own details."
+        },
+        {
+          "slot": "F",
+          "q": "Does the Union Anchor come with a dimensional drawing?",
+          "a": "Yes. Tell us the size or rating you need for the Union Anchor and we send the drawing and weight with the quotation. Dimensions and weights are confirmed on request because the listing does not tabulate them."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with the Union Anchor?",
+          "a": "We quote the Union Anchor with the drawing and certificate you need, so state the certificate required on the enquiry. The listing does not name a standard or class-society approval for this item, so any approval you need is confirmed with the quotation. Do not assume a class-society approval unless it is in writing."
+        },
+        {
+          "slot": "H",
+          "q": "What is the Union Anchor connected with in a mooring?",
+          "a": "The Union Anchor is connected to the mooring line through shackles and connectors rated for the line, with anchor handling chasers used when setting and recovering anchors. Check each part's rating before the line is made up. Keep the connections matched in size so the load is shared as designed. Related: [marine anchors](/c/marine-anchors)."
+        },
+        {
+          "slot": "I",
+          "q": "What care does the Union Anchor need in service?",
+          "a": "Install the Union Anchor to the mooring design, and keep the line load within the design load for the anchor and the seabed. Anchor installation methods depend on the anchor type and the project, so our engineers confirm on the quotation. Inspect the anchor and its shackle points for wear and damage after each deployment."
+        },
+        {
+          "slot": "J",
+          "q": "What are the typical uses of the Union Anchor?",
+          "a": "The Union Anchor belongs to the offshore anchor range for mooring floating units and marine structures; the type decides which seabeds it suits. A stockless anchor has no stock (cross-bar) across the shank, so it can be drawn into a hawse pipe and stowed against the hull. Our [guide](/blog/types-of-marine-anchors) gives more background."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Union Anchor in Dubai?",
+          "a": "Yes. Indus keeps the Union Anchor in stock in Dubai, UAE, and ships worldwide with the best lead times. For pricing, send your part numbers and quantities via [the contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1099 @@
+{
+  "family": "oil-chemical-purpose-hoses",
+  "extraFacts": [
+    {
+      "fact": "Indus A125 Multi-Purpose Mineral Oil & Air Hose 20 Bar: inside diameter 6 mm to 25 mm, working pressure 20 bar, minimum burst pressure 60 bar, safety factor 3:1, temperature From -40°C to +80°C, lining Black non-conductive NBR.",
+      "source": "Indus Hydraulics listing for the Multi-Purpose Mineral Oil & Air Hose 20 Bar"
+    },
+    {
+      "fact": "Indus A110 Multi-Purpose Mineral Oil Hose 10 Bar: inside diameter 5 mm to 25 mm, working pressure 10 bar, minimum burst pressure 40 bar, safety factor 4:1, temperature From -40°C to +100°C, lining Black non-conductive NBR.",
+      "source": "Indus Hydraulics listing for the Multi-Purpose Mineral Oil Hose 10 Bar"
+    },
+    {
+      "fact": "Indus A400EU Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar: inside diameter 76 mm to 203 mm, working pressure 20 bar, minimum burst pressure 80 bar, safety factor 4:1, temperature From -30°C to +90°C., lining Black oil, mud, sea water resistant NBR suitable for 50% aromatic hydrocarbons.",
+      "source": "Indus Hydraulics listing for the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar"
+    },
+    {
+      "fact": "Indus A430 Oil Suction & Delivery Hose 10 Bar: inside diameter 25 mm to 152 mm, working pressure 10 bar, minimum burst pressure 30 bar, safety factor 3:1, temperature From -35°C to +80°C, lining Black oil resistant NBR suitable for 50% aromatic hydrocarbons.",
+      "source": "Indus Hydraulics listing for the Oil Suction & Delivery Hose 10 Bar"
+    },
+    {
+      "fact": "Indus A460 Oil Suction & Delivery Hose 20 Bar: inside diameter 51 mm to 152 mm, working pressure 20 bar, minimum burst pressure 60 bar, safety factor 3:1, temperature From -40°C to +100°C, lining Black oil resistant NBR suitable for 50% aromatic hydrocarbons.",
+      "source": "Indus Hydraulics listing for the Oil Suction & Delivery Hose 20 Bar"
+    },
+    {
+      "fact": "Indus BAKU PVC Oil Suction & Delivery Hose: inside diameter 25 mm to 152 mm, working pressure 3-9 bar, minimum burst pressure 9-27 bar, safety factor 3:1 and vacuum 0.88 bar to 0.78 depending on size, temperature -10°C TO +55°C, lining PVC tube construction (no separate cover/lining).",
+      "source": "Indus Hydraulics listing for the PVC Oil Suction & Delivery Hose"
+    },
+    {
+      "fact": "Indus A104 Red Multi-Purpose Non-Conductive OGS Hose: inside diameter 6 mm to 25 mm, working pressure 20 bar, minimum burst pressure 80 bar, safety factor 4:1, temperature From -20°C to +100°C, lining Black non-conductive NBR/SBR.",
+      "source": "Indus Hydraulics listing for the Red Multi-Purpose Non-Conductive OGS Hose"
+    },
+    {
+      "fact": "Indus A420 Tanker Reeling Hose 17 Bar: inside diameter 35 mm to 38 mm, working pressure 17 bar, minimum burst pressure 51 bar, safety factor 3:1, temperature -20°C to +70°C, lining Black smooth NBR, suitable for diesel, domestic fuels including unleaded petrol.",
+      "source": "Indus Hydraulics listing for the Tanker Reeling Hose 17 Bar"
+    },
+    {
+      "fact": "Indus A410 UHMWPE Chemical Suction & Delivery Hose 10 Bar: inside diameter 19 mm to 102 mm, working pressure 10 bar, minimum burst pressure 40 bar, safety factor 4:1, temperature From -30°C to +100°C (Subject to chemical compatibility), +130°C for intermittent sterilization, lining Ultra High Molecular Weight Polyethylene.",
+      "source": "Indus Hydraulics listing for the UHMWPE Chemical Suction & Delivery Hose 10 Bar"
+    },
+    {
+      "fact": "Indus A416 UHMWPE Chemical Suction & Delivery Hose 16 Bar: inside diameter 19 mm to 102 mm, working pressure 16 bar, minimum burst pressure 48 bar, safety factor 3:1, temperature From -30°C to +100°C (Subject to chemical compatibility), +130°C for intermittent sterilization, lining Food Quality (FDA Specification) conductive Ultra.",
+      "source": "Indus Hydraulics listing for the UHMWPE Chemical Suction & Delivery Hose 16 Bar"
+    },
+    {
+      "fact": "Continental chemical hose assemblies: 1\" to 3\", 316 stainless fittings, static control wire, -40°F to +250°F; Novaflex chemical hose assemblies: 3/4\" to 3\", FEP tube, EPDM cover, no static control wire, -40°F to +300°F; Aeroquip chemical hose assemblies: 3/4\" to 4\", 150 to 300 psi (10 to 21 bar) by size, 5 to 50 ft lengths, no static control wire; Kuriyama chemical hose assemblies: 3/8\" to 3/4\", yellow, 25, 50 and 100 ft, 21 bar rows; UHMWPE lining hoses to +100°C.",
+      "source": "Indus Hydraulics listings for the branded chemical hose assemblies"
+    },
+    {
+      "fact": "Hose safety factor (design factor) is the ratio of minimum burst pressure to maximum working pressure, for example 4:1 means burst at four times the working pressure.",
+      "source": "Hose maker catalogues; see Indus guide 'Industrial hose safety factors'"
+    },
+    {
+      "fact": "SAE J30R7 is the SAE J30 specification for low-pressure fuel and oil hose with a textile braid and a Class A (oil-resistant) tube.",
+      "source": "SAE J30 Fuel and Oil Hose"
+    }
+  ],
+  "products": [
+    {
+      "slug": "multi-purpose-mineral-oil-air-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Multi-Purpose Mineral Oil & Air Hose 20 Bar (part code A125) used for?",
+          "a": "The Multi-Purpose Mineral Oil & Air Hose 20 Bar is a textile-reinforced hose with an NBR tube and an NBR/SBR cover, for mineral oil and air lines up to 20 bar. The tube is black and non-conductive, and the hose is listed in 6 to 25 mm bores."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Multi-Purpose Mineral Oil & Air Hose 20 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A125-006 is 6 mm (1/4\") and IH-IH-A125-025 is 25 mm (1\"). The code A125 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Multi-Purpose Mineral Oil & Air Hose 20 Bar come in?",
+          "a": "The Multi-Purpose Mineral Oil & Air Hose 20 Bar is listed in 7 sizes from 6 mm (1/4\") to 25 mm (1\") inside diameter. Outside diameter runs from 14 to 36 mm and weight from 0.17 to 0.73 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Multi-Purpose Mineral Oil & Air Hose 20 Bar suits my line?",
+          "a": "Choose the inside diameter from 6, 8, 10, 13, 16, 19 or 25 mm to match the flow and the fitting, because the pressure rating is the same at every size. Match the outside diameter on the size table when you pick clamps, ferrules or hose guards."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Multi-Purpose Mineral Oil & Air Hose 20 Bar?",
+          "a": "Maximum working pressure is 20 bar and minimum burst pressure is 60 bar, with a 3:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 20 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Multi-Purpose Mineral Oil & Air Hose 20 Bar?",
+          "a": "The tube is black non-conductive NBR. The reinforcement is high tensile strength textile plies. The cover is black smooth extruded, oil, abrasion, ozone and weather resistant NBR/SBR. Operating temperature is -40°C to +80°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Multi-Purpose Mineral Oil & Air Hose 20 Bar?",
+          "a": "The Multi-Purpose Mineral Oil & Air Hose 20 Bar has a listed safety factor of 3:1, so its minimum burst pressure is 3 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Multi-Purpose Mineral Oil & Air Hose 20 Bar?",
+          "a": "For the Multi-Purpose Mineral Oil & Air Hose 20 Bar in the 6 mm to 25 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Multi-Purpose Mineral Oil & Air Hose 20 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 40 mm on the 6 mm size to 150 mm on the 25 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. It works from -40°C to +80°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Multi-Purpose Mineral Oil & Air Hose 20 Bar differ from the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "Against the A110 hose, the A125 hose is different: it is rated 20 bar against 10 bar; its minimum burst pressure is 60 bar against 40 bar; its safety factor is 3:1 against 4:1. See the [Multi-Purpose Mineral Oil Hose 10 Bar](/p/multi-purpose-mineral-oil-hose-10-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Multi-Purpose Mineral Oil & Air Hose 20 Bar in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Multi-Purpose Mineral Oil & Air Hose 20 Bar in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Multi-Purpose Mineral Oil & Air Hose 20 Bar in the length and fittings I need?",
+          "a": "For the Multi-Purpose Mineral Oil & Air Hose 20 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "multi-purpose-mineral-oil-hose-10-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Multi-Purpose Mineral Oil Hose 10 Bar (part code A110) used for?",
+          "a": "The Multi-Purpose Mineral Oil Hose 10 Bar is a low-pressure, textile-reinforced hose with an NBR tube and an NBR/SBR cover, for mineral oil lines up to 10 bar. It is listed in 5 to 25 mm bores and works from -40°C to +100°C."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Multi-Purpose Mineral Oil Hose 10 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A110-005 is 5 mm (3/16\") and IH-IH-A110-025 is 25 mm (1\"). The code A110 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Multi-Purpose Mineral Oil Hose 10 Bar come in?",
+          "a": "The Multi-Purpose Mineral Oil Hose 10 Bar is listed in 8 sizes from 5 mm (3/16\") to 25 mm (1\") inside diameter. Outside diameter runs from 12 to 35 mm and weight from 0.1 to 0.62 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Multi-Purpose Mineral Oil Hose 10 Bar do I need?",
+          "a": "Choose from 5, 6, 8, 10, 13, 16, 19 or 25 mm to match the flow and the fitting. The 10 bar rating is the same at every size, so only the bore, the outside diameter and the bend radius change."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "Maximum working pressure is 10 bar and minimum burst pressure is 40 bar, with a 4:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 10 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "The tube is black non-conductive NBR. The reinforcement is high tensile strength textile plies. The cover is black smooth extruded, oil, abrasion, ozone and weather resistant NBR/SBR. Operating temperature is -40°C to +100°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "The Multi-Purpose Mineral Oil Hose 10 Bar has a listed safety factor of 4:1, so its minimum burst pressure is 4 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "For the Multi-Purpose Mineral Oil Hose 10 Bar in the 5 mm to 25 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Multi-Purpose Mineral Oil Hose 10 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 40 mm on the 5 mm size to 150 mm on the 25 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. The operating range is -40°C to +100°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Multi-Purpose Mineral Oil Hose 10 Bar differ from the Multi-Purpose Mineral Oil & Air Hose 20 Bar?",
+          "a": "Against the A125 hose, the A110 hose is different: it is rated 10 bar against 20 bar; its minimum burst pressure is 40 bar against 60 bar; its safety factor is 4:1 against 3:1. See the [Multi-Purpose Mineral Oil & Air Hose 20 Bar](/p/multi-purpose-mineral-oil-air-hose-20-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Multi-Purpose Mineral Oil Hose 10 Bar in Dubai for export?",
+          "a": "Yes. We keep the Multi-Purpose Mineral Oil Hose 10 Bar in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Multi-Purpose Mineral Oil Hose 10 Bar in the length and fittings I need?",
+          "a": "For the Multi-Purpose Mineral Oil Hose 10 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "oil-mud-sea-water-suction-delivery-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar (part code A400EU) used for?",
+          "a": "The Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar is an extra heavy duty hose for tanker loading and unloading, offshore and onshore work and petrochemical plants. It has an NBR tube suitable for 50% aromatic hydrocarbons and a CR cover resistant to hydrocarbon, mud and sea water."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A400EU-076 is 76 mm (3\") and IH-IH-A400EU-203 is 203 mm (8\"). The code A400EU is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar come in?",
+          "a": "The Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar is listed in 4 sizes from 76 mm (3\") to 203 mm (8\") inside diameter. Outside diameter runs from 94 to 235 mm and weight from 3.9 to 19.3 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Oil, Mud & Sea Water Suction & Delivery Hose do I need?",
+          "a": "Four bores are listed: 76 mm (3\"), 102 mm (4\"), 152 mm (6\") and 203 mm (8\"). Choose the bore for the flow and the coupling, and note that bend radius rises from 380 mm to 1220 mm with size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar?",
+          "a": "Maximum working pressure is 20 bar and minimum burst pressure is 80 bar, with a 4:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 20 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar?",
+          "a": "The tube is black NBR, resistant to oil, mud and sea water and suitable for 50% aromatic hydrocarbons. The reinforcement is multi-layer textile plies with a steel helix wire and anti-static wires. The cover is black mandrel-wrap CR resistant to hydrocarbon, mud, sea water, abrasion, ozone and weather."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar?",
+          "a": "The Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar has a listed safety factor of 4:1, so its minimum burst pressure is 4 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar?",
+          "a": "For the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar in the 76 mm to 203 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 380 mm on the 76 mm size to 1220 mm on the 203 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. It works from -30°C to +90°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar differ from the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "Against the A460 hose, the A400EU hose is different: its minimum burst pressure is 80 bar against 60 bar; its safety factor is 4:1 against 3:1; it covers 76 mm to 203 mm against 51 mm to 152 mm. See the [Oil Suction & Delivery Hose 20 Bar](/p/oil-suction-delivery-hose-20-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar in the length and fittings I need?",
+          "a": "For the Oil, Mud & Sea Water Suction & Delivery Hose 20 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "oil-suction-delivery-hose-10-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Oil Suction & Delivery Hose 10 Bar (part code A430) used for?",
+          "a": "The Oil Suction & Delivery Hose 10 Bar is a hose for handling unleaded fuels and hydraulic oils in petrochemical plants and dockyards. It has an NBR tube suitable for 50% aromatic hydrocarbons, textile plies, a twin steel helix and anti-static wires."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Oil Suction & Delivery Hose 10 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A430-025 is 25 mm (1\") and IH-IH-A430-152 is 152 mm (6\"). The code A430 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Oil Suction & Delivery Hose 10 Bar come in?",
+          "a": "The Oil Suction & Delivery Hose 10 Bar is listed in 8 sizes from 25 mm (1\") to 152 mm (6\") inside diameter. Outside diameter runs from 35 to 172 mm and weight from 0.7 to 9.5 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Oil Suction & Delivery Hose 10 Bar do I need?",
+          "a": "Eight bores run from 25 mm (1\") to 152 mm (6\"): 25, 32, 38, 51, 63, 76, 102 and 152 mm. Choose the bore for the flow, and check the bend radius, which rises from 178 mm to 1064 mm with size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "Maximum working pressure is 10 bar and minimum burst pressure is 30 bar, with a 3:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 10 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "The tube is black oil resistant NBR suitable for 50% aromatic hydrocarbons. The reinforcement is high tensile strength textile plies, twin steel helix and anti-static wires. The cover is black mandrel wrap, oil, abrasion, ozone and weather resistant CR/NBR. Operating temperature is -35°C to +80°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "The Oil Suction & Delivery Hose 10 Bar has a listed safety factor of 3:1, so its minimum burst pressure is 3 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "For the Oil Suction & Delivery Hose 10 Bar in the 25 mm to 152 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Oil Suction & Delivery Hose 10 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 178 mm on the 25 mm size to 1064 mm on the 152 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -35°C to +80°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Oil Suction & Delivery Hose 10 Bar differ from the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "Against the A460 hose, the A430 hose is different: it is rated 10 bar against 20 bar; its minimum burst pressure is 30 bar against 60 bar; it covers 25 mm to 152 mm against 51 mm to 152 mm. See the [Oil Suction & Delivery Hose 20 Bar](/p/oil-suction-delivery-hose-20-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Oil Suction & Delivery Hose 10 Bar from stock in the UAE and get a quotation?",
+          "a": "Yes. The Oil Suction & Delivery Hose 10 Bar sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Oil Suction & Delivery Hose 10 Bar in the length and fittings I need?",
+          "a": "For the Oil Suction & Delivery Hose 10 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "oil-suction-delivery-hose-20-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Oil Suction & Delivery Hose 20 Bar (part code A460) used for?",
+          "a": "The Oil Suction & Delivery Hose 20 Bar is a heavy duty hose for handling unleaded fuels and hydraulic oils in petrochemical plants and dockyards. It has a CR cover and an NBR tube suitable for 50% aromatic hydrocarbons, with a twin steel helix and anti-static wires."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Oil Suction & Delivery Hose 20 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A460-051 is 51 mm (2\") and IH-IH-A460-152 is 152 mm (6\"). The code A460 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Oil Suction & Delivery Hose 20 Bar come in?",
+          "a": "The Oil Suction & Delivery Hose 20 Bar is listed in 4 sizes from 51 mm (2\") to 152 mm (6\") inside diameter. Outside diameter runs from 65 to 176 mm and weight from 2.08 to 11.02 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Oil Suction & Delivery Hose 20 Bar do I need?",
+          "a": "Four bores are listed: 51 mm (2\"), 76 mm (3\"), 102 mm (4\") and 152 mm (6\"). Choose the bore for the flow and the coupling. Bend radius rises from 255 mm to 760 mm with size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "Maximum working pressure is 20 bar and minimum burst pressure is 60 bar, with a 3:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 20 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "The tube is black oil resistant NBR suitable for 50% aromatic hydrocarbons. The reinforcement is high tensile strength textile plies, twin steel helix and anti-static wires. The cover is black mandrel wrap, oil, abrasion, ozone and weather resistant CR. Operating temperature is -40°C to +100°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "The Oil Suction & Delivery Hose 20 Bar has a listed safety factor of 3:1, so its minimum burst pressure is 3 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "For the Oil Suction & Delivery Hose 20 Bar in the 51 mm to 152 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Oil Suction & Delivery Hose 20 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 255 mm on the 51 mm size to 760 mm on the 152 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -40°C to +100°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Oil Suction & Delivery Hose 20 Bar differ from the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "Against the A430 hose, the A460 hose is different: it is rated 20 bar against 10 bar; its minimum burst pressure is 60 bar against 30 bar; it covers 51 mm to 152 mm against 25 mm to 152 mm. See the [Oil Suction & Delivery Hose 10 Bar](/p/oil-suction-delivery-hose-10-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Oil Suction & Delivery Hose 20 Bar in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Oil Suction & Delivery Hose 20 Bar is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Oil Suction & Delivery Hose 20 Bar in the length and fittings I need?",
+          "a": "For the Oil Suction & Delivery Hose 20 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "pvc-oil-suction-delivery-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the PVC Oil Suction & Delivery Hose (part code BAKU) used for?",
+          "a": "The PVC Oil Suction & Delivery Hose is a PVC tube hose with a PVC spiral helix, for light fuel oils, diesels and kerosene in plants and tanker applications. It has no separate cover or lining, and works from -10°C to +55°C."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the PVC Oil Suction & Delivery Hose identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-BAKU-025 is 25 mm (1\") and IH-IH-BAKU-152 is 152 mm (6\"). The code BAKU is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the PVC Oil Suction & Delivery Hose come in?",
+          "a": "The PVC Oil Suction & Delivery Hose is listed in 8 sizes from 25 mm (1\") to 152 mm (6\") inside diameter. Outside diameter runs from 34 to 168 mm and weight from 0.49 to 4.43 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "How does the pressure of the PVC Oil Suction & Delivery Hose change with size?",
+          "a": "Working pressure falls as the bore rises: 9 bar on the 25 mm size, 8 bar on 32 and 38 mm, 7 bar on 51 mm, 6 bar on 63 and 76 mm, 4 bar on 102 mm and 3 bar on 152 mm. Vacuum rating is 0.88 bar, and 0.78 bar on the 152 mm size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the PVC Oil Suction & Delivery Hose?",
+          "a": "Working pressure runs from 9 bar on the 25 mm size down to 3 bar on the 152 mm size, and minimum burst pressure runs from 27.9 bar to 9.9 bar, a 3:1 factor. The listed vacuum is 0.88 bar, and 0.78 bar on the 152 mm size. Read the row for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the PVC Oil Suction & Delivery Hose?",
+          "a": "This is a PVC tube construction with no separate cover or lining, reinforced by a PVC spiral helix. Operating temperature is -10°C to +55°C. PVC suits light fuel oils, diesels and kerosene, but it is not a choice for hot or aromatic-rich service."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the PVC Oil Suction & Delivery Hose?",
+          "a": "The safety factor is 3:1, with vacuum 0.88 bar to 0.78 bar depending on size. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the PVC Oil Suction & Delivery Hose?",
+          "a": "For the PVC Oil Suction & Delivery Hose in the 25 mm to 152 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the PVC Oil Suction & Delivery Hose, and how should I handle it?",
+          "a": "The minimum bend radius runs from 113 mm on the 25 mm size to 684 mm on the 152 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. The bend radius is quoted per size, from 113 mm to 684 mm."
+        },
+        {
+          "slot": "K",
+          "q": "How does the PVC Oil Suction & Delivery Hose differ from the Oil Suction & Delivery Hose 20 Bar?",
+          "a": "Against the A460 hose, the BAKU hose is different: it is rated 3-9 bar against 20 bar; its minimum burst pressure is 9-27 bar against 60 bar; its safety factor is 3:1 and vacuum 0.88 bar to 0.78 depending on size against 3:1. See the [Oil Suction & Delivery Hose 20 Bar](/p/oil-suction-delivery-hose-20-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the PVC Oil Suction & Delivery Hose in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The PVC Oil Suction & Delivery Hose sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the PVC Oil Suction & Delivery Hose in the length and fittings I need?",
+          "a": "For the PVC Oil Suction & Delivery Hose, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "red-multi-purpose-non-conductive-ogs-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Red Multi-Purpose Non-Conductive OGS Hose (part code A104) used for?",
+          "a": "The Red Multi-Purpose Non-Conductive OGS Hose carries air, water, oil and other petroleum products in steel mills, shipyards, foundries, auto plants and construction. It has a red NBR/SBR cover (also available black), a black non-conductive NBR/SBR tube and textile plies, in 6 to 51 mm bores."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Red Multi-Purpose Non-Conductive OGS Hose identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A104-006 is 6 mm (1/4\") and IH-IH-A104-051 is 51 mm (2\"). The code A104 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Red Multi-Purpose Non-Conductive OGS Hose come in?",
+          "a": "The Red Multi-Purpose Non-Conductive OGS Hose is listed in 10 sizes from 6 mm (1/4\") to 51 mm (2\") inside diameter. Outside diameter runs from 16 to 67 mm and weight from 0.24 to 1.5 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore of the Red Multi-Purpose OGS Hose A104 do I need?",
+          "a": "Ten bores run from 6 mm (1/4\") to 51 mm (2\"). Pressure is 20 bar up to 25 mm, 17 bar on the 32 and 38 mm sizes and 14 bar on 51 mm, so pick the bore, then read the pressure for it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Red Multi-Purpose Non-Conductive OGS Hose?",
+          "a": "Working pressure is 20 bar up to the 25 mm size, 17 bar on 32 and 38 mm and 14 bar on 51 mm. Minimum burst pressure is 80 bar, 68 bar and 56 bar respectively, a 4:1 factor. Read the row for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Red Multi-Purpose Non-Conductive OGS Hose?",
+          "a": "The tube is black non-conductive NBR/SBR. The reinforcement is high tensile strength textile plies. The cover is red smooth extruded, oil, abrasion, ozone and weather resistant NBR/SBR (Also available with black cover). Operating temperature is -20°C to +100°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Red Multi-Purpose Non-Conductive OGS Hose?",
+          "a": "The Red Multi-Purpose Non-Conductive OGS Hose has a listed safety factor of 4:1, so its minimum burst pressure is 4 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Red Multi-Purpose Non-Conductive OGS Hose?",
+          "a": "For the Red Multi-Purpose Non-Conductive OGS Hose in the 6 mm to 25 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Red Multi-Purpose Non-Conductive OGS Hose, and how should I handle it?",
+          "a": "The minimum bend radius runs from 55 mm on the 6 mm size to 500 mm on the 51 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -20°C to +100°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Red Multi-Purpose Non-Conductive OGS Hose differ from the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "Against the A110 hose, the A104 hose is different: it is rated 20 bar against 10 bar; its minimum burst pressure is 80 bar against 40 bar; it covers 6 mm to 25 mm against 5 mm to 25 mm. See the [Multi-Purpose Mineral Oil Hose 10 Bar](/p/multi-purpose-mineral-oil-hose-10-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Red Multi-Purpose Non-Conductive OGS Hose in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Red Multi-Purpose Non-Conductive OGS Hose sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Red Multi-Purpose Non-Conductive OGS Hose in the length and fittings I need?",
+          "a": "For the Red Multi-Purpose Non-Conductive OGS Hose, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "tanker-reeling-hose-17-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tanker Reeling Hose 17 Bar (part code A420) used for?",
+          "a": "The Tanker Reeling Hose 17 Bar is a petroleum tanker delivery hose designed for use on reels. It is suitable for oil, diesel, domestic fuels and petrol, including unleaded, with a smooth NBR tube and two copper braided anti-static wires."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the Tanker Reeling Hose 17 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A420-035 is 35 mm and IH-IH-A420-038 is 38 mm (1-1/2\"). The code A420 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Tanker Reeling Hose 17 Bar come in?",
+          "a": "The Tanker Reeling Hose 17 Bar is listed in 2 sizes from 35 mm to 38 mm (1-1/2\") inside diameter. Outside diameter runs from 49 to 52 mm and weight from 1.4 to 1.6 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which size of the Tanker Reeling Hose 17 Bar do I need?",
+          "a": "Two bores are listed: 35 mm and 38 mm (1-1/2\"). Both are rated 17 bar with a 51 bar burst. Choose the bore to match the reel and the nozzle, and note the bend radius is 210 mm on the 35 mm size and 230 mm on the 38 mm size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the Tanker Reeling Hose 17 Bar?",
+          "a": "Maximum working pressure is 17 bar and minimum burst pressure is 51 bar, with a 3:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 17 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the Tanker Reeling Hose 17 Bar?",
+          "a": "The tube is black smooth NBR, suitable for diesel, domestic fuels including unleaded petrol. The reinforcement is 2 x high strength textile yarn, 2 x copper braided anti-static wires. The cover is red smooth extruded, oil, abrasion, ozone and weather resistant. Operating temperature is -20°C to +70°C."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the Tanker Reeling Hose 17 Bar?",
+          "a": "The Tanker Reeling Hose 17 Bar has a listed safety factor of 3:1, so its minimum burst pressure is 3 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the Tanker Reeling Hose 17 Bar?",
+          "a": "For the Tanker Reeling Hose 17 Bar in the 35 mm to 38 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the Tanker Reeling Hose 17 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 210 mm on the 35 mm size to 230 mm on the 38 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -20°C to +70°C."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tanker Reeling Hose 17 Bar differ from the Oil Suction & Delivery Hose 10 Bar?",
+          "a": "Against the A430 hose, the A420 hose is different: it is rated 17 bar against 10 bar; its minimum burst pressure is 51 bar against 30 bar; it covers 35 mm to 38 mm against 25 mm to 152 mm. See the [Oil Suction & Delivery Hose 10 Bar](/p/oil-suction-delivery-hose-10-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tanker Reeling Hose 17 Bar in Dubai for export?",
+          "a": "Yes. We keep the Tanker Reeling Hose 17 Bar in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the Tanker Reeling Hose 17 Bar in the length and fittings I need?",
+          "a": "For the Tanker Reeling Hose 17 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "uhmwpe-chemical-suction-delivery-hose-10-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the UHMWPE Chemical Suction & Delivery Hose 10 Bar (part code A410) used for?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 10 Bar is a chemical hose with an ultra high molecular weight polyethylene lining, used for acids and alkalines within plants and on road tankers. It has a blue EPDM cover and a twin carbon steel wire helix with a copper braided anti-static wire."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the UHMWPE Chemical Suction & Delivery Hose 10 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A410-019 is 19 mm (3/4\") and IH-IH-A410-102 is 102 mm (4\"). The code A410 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the UHMWPE Chemical Suction & Delivery Hose 10 Bar come in?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 10 Bar is listed in 8 sizes from 19 mm (3/4\") to 102 mm (4\") inside diameter. Outside diameter runs from 31 to 120 mm and weight from 0.68 to 4.11 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which size of the UHMWPE Chemical Suction & Delivery Hose 10 Bar do I need?",
+          "a": "Eight bores run from 19 mm (3/4\") to 102 mm (4\"). Choose the bore for flow and coupling, and check the chemical against the lining before ordering. Temperature range is -30°C to +100°C, subject to chemical compatibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the UHMWPE Chemical Suction & Delivery Hose 10 Bar?",
+          "a": "Maximum working pressure is 10 bar and minimum burst pressure is 40 bar, with a 4:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 10 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the UHMWPE Chemical Suction & Delivery Hose 10 Bar?",
+          "a": "The tube is ultra High Molecular Weight Polyethylene. The reinforcement is high tensile strength textile ply, twin carbon steel wire helix, copper braided anti-static wire. The cover is blue EPDM rubber ozone and weather resistant. Operating temperature is -30°C to +100°C (Subject to chemical compatibility), +130°C for intermittent sterilization."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the UHMWPE Chemical Suction & Delivery Hose 10 Bar?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 10 Bar has a listed safety factor of 4:1, so its minimum burst pressure is 4 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the UHMWPE Chemical Suction & Delivery Hose 10 Bar?",
+          "a": "For the UHMWPE Chemical Suction & Delivery Hose 10 Bar in the 19 mm to 102 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the UHMWPE Chemical Suction & Delivery Hose 10 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 125 mm on the 19 mm size to 450 mm on the 102 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -30°C to +100°C subject to chemical compatibility, and +130°C for intermittent sterilization."
+        },
+        {
+          "slot": "K",
+          "q": "How does the UHMWPE Chemical Suction & Delivery Hose 10 Bar differ from the UHMWPE Chemical Suction & Delivery Hose 16 Bar?",
+          "a": "Against the A416 hose, the A410 hose is different: it is rated 10 bar against 16 bar; its minimum burst pressure is 40 bar against 48 bar; its safety factor is 4:1 against 3:1. See the [UHMWPE Chemical Suction & Delivery Hose 16 Bar](/p/uhmwpe-chemical-suction-delivery-hose-16-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Is the UHMWPE Chemical Suction & Delivery Hose 10 Bar in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the UHMWPE Chemical Suction & Delivery Hose 10 Bar at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the UHMWPE Chemical Suction & Delivery Hose 10 Bar in the length and fittings I need?",
+          "a": "For the UHMWPE Chemical Suction & Delivery Hose 10 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "uhmwpe-chemical-suction-delivery-hose-16-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the UHMWPE Chemical Suction & Delivery Hose 16 Bar (part code A416) used for?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 16 Bar is an FDA-approved hose for acids and alkalines in plants, on road tankers and in water utilities. It has a conductive food-quality UHMWPE lining, a blue EPDM cover and a twin carbon steel wire helix with a copper braided anti-static wire."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers for the UHMWPE Chemical Suction & Delivery Hose 16 Bar identify the size?",
+          "a": "The part numbers end in the inside diameter in millimetres: IH-IH-A416-019 is 19 mm (3/4\") and IH-IH-A416-102 is 102 mm (4\"). The code A416 is the family part code printed on the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the UHMWPE Chemical Suction & Delivery Hose 16 Bar come in?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 16 Bar is listed in 8 sizes from 19 mm (3/4\") to 102 mm (4\") inside diameter. Outside diameter runs from 31 to 120 mm and weight from 0.68 to 4.11 kg/m."
+        },
+        {
+          "slot": "D",
+          "q": "Which size of the UHMWPE Chemical Suction & Delivery Hose 16 Bar do I need?",
+          "a": "Eight bores run from 19 mm (3/4\") to 102 mm (4\"), all rated 16 bar. Choose the bore for flow and coupling, and confirm the chemical against the lining. The temperature range is -30°C to +100°C, subject to chemical compatibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure and burst pressure of the UHMWPE Chemical Suction & Delivery Hose 16 Bar?",
+          "a": "Maximum working pressure is 16 bar and minimum burst pressure is 48 bar, with a 3:1 safety factor. The working pressure is the same at every listed size. Keep operating pressure at or below 16 bar, and do not read the burst figure as a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What are the tube, reinforcement and cover of the UHMWPE Chemical Suction & Delivery Hose 16 Bar?",
+          "a": "The tube is a food quality (FDA specification) conductive ultra high molecular weight polyethylene. The reinforcement is high tensile strength textile ply, twin carbon steel wire helix, copper braided anti-static wire. The cover is blue EPDM rubber ozone and weather resistant. Operating temperature is -30°C to +100°C (Subject to chemical compatibility), +130°C for intermittent sterilization."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety factor and standards apply to the UHMWPE Chemical Suction & Delivery Hose 16 Bar?",
+          "a": "The UHMWPE Chemical Suction & Delivery Hose 16 Bar has a listed safety factor of 3:1, so its minimum burst pressure is 3 times the working pressure. The range is made to EN 1761 / EN 12115 where applicable, and the listing does not name a single standard for this size range. Ask for the datasheet if your specification calls for a particular standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which couplings and clamps fit the UHMWPE Chemical Suction & Delivery Hose 16 Bar?",
+          "a": "For the UHMWPE Chemical Suction & Delivery Hose 16 Bar in the 19 mm to 102 mm bore range, pair it with matching couplings and accessories: cam and groove or Boss couplings, hose clamps, Holedall permanently-attached fittings and hose tags. See the [cam and groove couplings](/c/cam-and-groove-couplings) and [hose clamps shelf](/c/hose-clamps-sleeves-ferrules)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of the UHMWPE Chemical Suction & Delivery Hose 16 Bar, and how should I handle it?",
+          "a": "The minimum bend radius runs from 125 mm on the 19 mm size to 450 mm on the 102 mm size. Never bend the hose tighter than the figure for its size, and do not kink or crush it. Operating temperature is -30°C to +100°C subject to chemical compatibility, and +130°C for intermittent sterilization."
+        },
+        {
+          "slot": "K",
+          "q": "How does the UHMWPE Chemical Suction & Delivery Hose 16 Bar differ from the UHMWPE Chemical Suction & Delivery Hose 10 Bar?",
+          "a": "Against the A410 hose, the A416 hose is different: it is rated 16 bar against 10 bar; its minimum burst pressure is 48 bar against 40 bar; its safety factor is 3:1 against 4:1. See the [UHMWPE Chemical Suction & Delivery Hose 10 Bar](/p/uhmwpe-chemical-suction-delivery-hose-10-bar) for its full data."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the UHMWPE Chemical Suction & Delivery Hose 16 Bar from stock in the UAE and get a quotation?",
+          "a": "Yes. The UHMWPE Chemical Suction & Delivery Hose 16 Bar sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        },
+        {
+          "slot": "M",
+          "q": "How do I order the UHMWPE Chemical Suction & Delivery Hose 16 Bar in the length and fittings I need?",
+          "a": "For the UHMWPE Chemical Suction & Delivery Hose 16 Bar, specify the inner diameter from the size range, the assembly length, the end-fitting requirements and any special requirements such as Lloyd's certification or third-party witness testing.  Indus engineering confirms the assembly drawing on the RFQ through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "continental-chemical-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Continental chemical hose assemblies and what are they used for?",
+          "a": "Continental chemical hose assemblies are ready-made chemical transfer hoses with 316 stainless steel end fittings fitted to the hose, in 1\" to 3\" bores and set lengths. They have a static control wire and work from -40°F to +250°F. 240 part numbers cover the range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Continental part number such as CHX100-10CE-G or FAB200-25NN-G?",
+          "a": "The prefix gives the hose and size: CHX is the black hose and FAB the orange-stripe version, with 100 for 1\", 150 for 1-1/2\", 200 for 2\" and 300 for 3\". The next number is the length in feet (10 for 10 ft, 03 for 36 inch). The letters CE, CC and NN name the end-fitting combination, and G ends every number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths do Continental chemical hose assemblies come in?",
+          "a": "Four bores are listed: 1\", 1-1/2\", 2\" and 3\". Lengths run from 36 inch and 4 ft up to 25 ft, with sizes such as 10 ft, 12 ft, 15 ft, 20 ft and 25 ft. Bend radius rises with size, from 76.2 mm at 1\" to 228.6 mm at 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the black CHX and the orange stripe FAB Continental chemical hose assemblies?",
+          "a": "Both families cover the same four bores and lengths. The FAB version carries an orange stripe, which is a marking you can use to separate lines. Pick on the chemical, bore, length and fitting combination."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure do Continental chemical hose assemblies have?",
+          "a": "The pressure is not one figure: the working pressure is given per size in the size table, and it is the maximum for continuous duty. Burst pressure is a test figure, not a working limit. Quote the part number or the bore, length and chemical, and we confirm the rating before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the end fittings and chemical limits of Continental chemical hose assemblies?",
+          "a": "The end fittings are Grade 316 stainless steel on both ends, and the assembly has a static control wire. Not recommended chemicals are liquid ammonia, anhydrous ammonia, methyl chloride, turpentine and xylene. Check the chemical against the hose before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which safety rules apply to a Continental chemical hose assembly?",
+          "a": "Select the hose on working pressure, bore, temperature and fluid, and use only end fittings from the series the hose maker approves for that hose. The static control wire dissipates static, so keep the assembly bonded to the tank or earth. See [chemical transfer hose selection](/blog/chemical-transfer-hose-selection)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Continental chemical hose assembly?",
+          "a": "The assemblies are supplied coupled, with the fittings already attached, so connect the stainless fitting to the matching thread or flange on your pump, tank or hose reel. Quote the end-fitting letters, such as CE, CC or NN, when you reorder."
+        },
+        {
+          "slot": "I",
+          "q": "How do I handle and store a Continental chemical hose assembly?",
+          "a": "Never bend the assembly tighter than its minimum bend radius, from 76.2 mm on the 1\" size to 228.6 mm on the 3\" size, and do not kink or drag it. Drain and flush it after use, and keep it bonded when a chemical is flowing."
+        },
+        {
+          "slot": "K",
+          "q": "How do Continental chemical hose assemblies differ from the Novaflex chemical hose assemblies?",
+          "a": "The Continental assemblies are 1\" to 3\" with a static control wire and 316 stainless fittings, listed to +250°F. The [Novaflex chemical hose assemblies](/p/novaflex-chemical-hose-assemblies) are 3/4\" to 3\" with an FEP tube and an EPDM cover, listed to +300°F, with no static wire."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Continental chemical hose assemblies made, and can you ship them from Dubai?",
+          "a": "The listing does not name a country of origin for the Continental assemblies. We ship them worldwide from Dubai, UAE, with the best lead times. Send the part number and quantity through [our contact page](/contact) and we confirm the origin on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Continental chemical hose assemblies in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Continental chemical hose assemblies sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-chemical-hose-assembly",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Aeroquip chemical hose assemblies used for?",
+          "a": "Aeroquip chemical hose assemblies are ready-made chemical transfer hoses with 316 stainless steel MNPT end fittings, in 3/4\" to 4\" bores. They are used for chemical lines at 150 to 300 psi (10 to 21 bar) depending on size, from -40°F to +250°F. 307 part numbers cover colour, length and end fitting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Aeroquip part number such as H052320-PUR-5-SS-MPT?",
+          "a": "The first group is the hose size code, PUR or GRN is the hose colour (purple or green), the next number is the length in feet and SS is the stainless fitting material. The last letters, MPT, CXE or FF, give the end-fitting type, and the yellow version carries its own code."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths do Aeroquip chemical hose assemblies come in?",
+          "a": "Seven bores are listed: 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 3\" and 4\". Lengths include 5, 10, 15, 20, 25 and 50 ft, in purple, green and yellow hose. Bend radius is stated per row, for example 6\" on the 1\" size."
+        },
+        {
+          "slot": "D",
+          "q": "What do the purple, green and yellow colours of Aeroquip chemical hose mean?",
+          "a": "The colour identifies the hose construction, and the part number carries PUR for purple and GRN for green. The listing shows purple, green and yellow assemblies, so quote the colour with the size and length. The chemical you move decides which hose to choose."
+        },
+        {
+          "slot": "E",
+          "q": "What working and burst pressures do Aeroquip chemical hose assemblies have?",
+          "a": "Rows show working pressures of 10 bar and 17 bar, with 21 bar on one row, and burst pressures of 41, 48, 69 and 83 bar, giving a 4:1 safety factor on the standard rows. The maker states 150 to 300 psi (10 to 21 bar) by size, so read the row for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What are the end fittings and chemical limits of Aeroquip chemical hose assemblies?",
+          "a": "Both end fittings are 316 stainless steel, with MNPT male pipe threads on the listed assemblies, and there is no static control wire. Not recommended chemicals are liquid ammonia, concentrated nitric acid and steam. Check the chemical against the hose before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor applies to Aeroquip chemical hose assemblies?",
+          "a": "The listed safety factor is 4:1, so the minimum burst pressure is four times the working pressure, for example 41 bar burst on a 10 bar row. See [industrial hose safety factors](/blog/industrial-hose-safety-factors) for why chemicals use 4:1."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to an Aeroquip chemical hose assembly?",
+          "a": "The assemblies are supplied coupled with 316 stainless MNPT end fittings, so they screw into female NPT ports on pumps, tanks and manifolds. Use thread sealant suited to the chemical. Quote the end-fitting letters when you reorder."
+        },
+        {
+          "slot": "I",
+          "q": "How do I handle an Aeroquip chemical hose assembly?",
+          "a": "Keep to the minimum bend radius for the size, such as 6\" on the 1\" size, and do not kink or crush the hose. Because there is no static control wire, do not use it for flammable or static-sensitive fluids unless the system is bonded. Flush after use."
+        },
+        {
+          "slot": "K",
+          "q": "How do Aeroquip chemical hose assemblies differ from the Kuriyama chemical hose assemblies?",
+          "a": "The Aeroquip assemblies are 3/4\" to 4\" with maker pressures of 150 to 300 psi. The [Kuriyama chemical hose assemblies](/p/kuriyama-chemical-hose-assemblies) are 3/8\" to 3/4\" yellow PVC-covered assemblies for air, fertilizers, fresh water, fungicides and herbicides, with a smaller bend radius."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Aeroquip chemical hose assemblies made, and can you ship them from Dubai?",
+          "a": "The listing does not name a country of origin for the Aeroquip assemblies. We ship worldwide from Dubai, UAE, with the best lead times. Send the part number and quantity through [our contact page](/contact) and we confirm the origin on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Aeroquip chemical hose assemblies from stock in the UAE and get a quotation?",
+          "a": "Yes. The Aeroquip chemical hose assemblies sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "kuriyama-bulk-chemical-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Kuriyama bulk chemical hoses and what are they used for?",
+          "a": "Kuriyama bulk chemical hoses are PVC hoses with a PVC cover, supplied in 300 ft lengths without end fittings, for air, fertilizers, fresh water, fungicides and herbicides. Three bores are listed, 3/8\", 1/2\" and 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Kuriyama part numbers A1661-06-300, A1661-08-300 and A1661-12-300?",
+          "a": "The two digits after A1661 give the bore in sixteenths of an inch: 06 is 3/8\", 08 is 1/2\" and 12 is 3/4\". The 300 at the end is the 300 ft length of the bulk coil."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and bend radii do Kuriyama bulk chemical hoses come in?",
+          "a": "Three bores are listed: 3/8\" with a 2 inch bend radius, 1/2\" with a 3 inch bend radius and 3/4\" with a 4 inch bend radius. Each is sold in a 300 ft length."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose a Kuriyama bulk chemical hose for my chemical?",
+          "a": "Check the chemical against the compatible list first: air, fertilizers, fresh water, fungicides and herbicides. The tube and cover are PVC, so it is not a choice for solvents or hot fluids. Temperature range is +15°F to +160°F."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Kuriyama bulk chemical hoses have?",
+          "a": "The listing gives a 4:1 safety factor but no single working pressure figure, because ratings vary by size. Quote the bore and the application and we confirm the pressure rating with the manufacturer before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are Kuriyama bulk chemical hoses made from?",
+          "a": "The tube and cover are both PVC, and the hose has no static control wire. The temperature range is +15°F to +160°F. PVC suits the listed agricultural chemicals and fresh water but is not a general chemical hose."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor applies to Kuriyama bulk chemical hoses?",
+          "a": "The listed safety factor is 4:1, so the minimum burst pressure is four times the working pressure. There is no static control wire, so do not use the hose for flammable or static-sensitive fluids. See [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings fit a Kuriyama bulk chemical hose?",
+          "a": "The 300 ft length is supplied as bulk hose, so you cut it and fit your own end fittings and clamps. For ready-made hose with stainless MNPT ends see the [Kuriyama chemical hose assemblies](/p/kuriyama-chemical-hose-assemblies)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I cut and handle Kuriyama bulk chemical hose?",
+          "a": "Cut it square, keep it above the minimum bend radius for its size, from 2 inch on 3/8\" to 4 inch on 3/4\", and do not kink it. Because it is PVC, keep it out of hot sun and above +15°F."
+        },
+        {
+          "slot": "K",
+          "q": "How do Kuriyama bulk chemical hoses differ from the Kuriyama chemical hose assemblies?",
+          "a": "The bulk hose is 300 ft of plain hose in three bores, with no end fittings. The [assemblies](/p/kuriyama-chemical-hose-assemblies) are the same bores in 25, 50 and 100 ft lengths with 316 stainless MNPT fittings fitted, rated at 21 bar in the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Kuriyama bulk chemical hoses made, and can you ship them from Dubai?",
+          "a": "The listing does not name a country of origin for the Kuriyama bulk hose. We ship worldwide from Dubai, UAE, with the best lead times. Send the part number and quantity through [our contact page](/contact) and we confirm the origin on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Kuriyama bulk chemical hoses in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Kuriyama bulk chemical hoses at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kuriyama-chemical-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Kuriyama chemical hose assemblies and what are they used for?",
+          "a": "Kuriyama chemical hose assemblies are ready-made yellow PVC-covered hoses with 316 stainless steel MNPT end fittings, for air, fertilizers, fresh water, fungicides and herbicides. They come in 3/8\", 1/2\" and 3/4\" bores and 25, 50 and 100 ft lengths."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Kuriyama part number A1661-6-100-SSMPT?",
+          "a": "A1661 is the hose family, the next digit gives the bore in eighths of an inch (6 is 3/8\", 8 is 1/2\", 12 is 3/4\"), 100 is the length in feet, and SSMPT is the stainless steel male NPT end fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths do Kuriyama chemical hose assemblies come in?",
+          "a": "Three bores, 3/8\", 1/2\" and 3/4\", are each offered in 25, 50 and 100 ft lengths, nine part numbers in all. Bend radius is 2, 3 and 4 inches by size."
+        },
+        {
+          "slot": "D",
+          "q": "Which Kuriyama chemical hose assembly length should I choose?",
+          "a": "Choose the shortest length that reaches without tension: 25 ft, 50 ft or 100 ft. The length is part of the part number, so quote the bore and the length together. Longer hose costs more pressure drop at the same flow."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do Kuriyama chemical hose assemblies have?",
+          "a": "The size table lists 21 bar for all nine part numbers, with a 4:1 safety factor. That is the maximum for continuous duty. Burst pressure is a test figure, not a working limit, and there is no static control wire."
+        },
+        {
+          "slot": "F",
+          "q": "What are Kuriyama chemical hose assemblies made from?",
+          "a": "The hose has a PVC cover, the end fittings are Grade 316 stainless steel with MNPT male threads on both ends, and the temperature range is +15°F to +160°F. The compatible chemicals are air, fertilizers, fresh water, fungicides and herbicides."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor applies to Kuriyama chemical hose assemblies?",
+          "a": "The listed safety factor is 4:1, so the minimum burst pressure is four times the working pressure. The assemblies have no static control wire. See [industrial hose safety factors](/blog/industrial-hose-safety-factors)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Kuriyama chemical hose assembly?",
+          "a": "The 316 stainless MNPT ends screw into female NPT ports on a pump, tank or sprayer, with thread sealant suited to the chemical. For plain 300 ft bulk hose see the [Kuriyama bulk chemical hoses](/p/kuriyama-bulk-chemical-hoses)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I handle a Kuriyama chemical hose assembly?",
+          "a": "Keep to the minimum bend radius, 2 inch on 3/8\", 3 inch on 1/2\" and 4 inch on 3/4\", and do not kink it or run it hot above +160°F. Flush after use, and keep the yellow cover out of strong sun."
+        },
+        {
+          "slot": "K",
+          "q": "How do Kuriyama chemical hose assemblies differ from the Aeroquip chemical hose assemblies?",
+          "a": "The Kuriyama assemblies are 3/8\" to 3/4\" in 25, 50 and 100 ft lengths for agricultural chemicals and fresh water. The [Aeroquip chemical hose assemblies](/p/aeroquip-chemical-hose-assembly) are 3/4\" to 4\" in 5 to 50 ft lengths with a wider not-recommended list."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Kuriyama chemical hose assemblies made, and can you ship them from Dubai?",
+          "a": "The listing does not name a country of origin for the Kuriyama assemblies. We ship worldwide from Dubai, UAE, with the best lead times. Send the part number and quantity through [our contact page](/contact) and we confirm the origin on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Kuriyama chemical hose assemblies from stock in the UAE and get a quotation?",
+          "a": "Yes, the Kuriyama chemical hose assemblies are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "novaflex-chemical-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Novaflex chemical hose assemblies and what are they used for?",
+          "a": "Novaflex chemical hose assemblies are ready-made chemical hoses with an FEP tube, an EPDM cover and stainless steel end fittings, in 3/4\" to 3\" bores. The FEP tube resists aggressive chemicals, and the assemblies work from -40°F to +300°F. 56 part numbers cover the range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Novaflex part number such as 4600-01000-10-SS-MPT?",
+          "a": "4600 is the hose family, 01000 the 1\" bore, 10 the length in feet, SS stainless steel fittings, and MPT or CXE the end-fitting type. The CXPG numbers, such as CXPG100, are the other family, with 100 for 1\", 150 for 1-1/2\", 200 for 2\" and 300 for 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and lengths do Novaflex chemical hose assemblies come in?",
+          "a": "Five bores are listed: 3/4\", 1\", 1-1/2\", 2\" and 3\". Lengths include 5, 10, 15, 20, 25 and 50 ft in blue, with some bulk hose in green. Bend radius runs from 88.9 mm to 254 mm by size."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the blue and green Novaflex hose?",
+          "a": "The listing shows blue hose on the assemblies and green hose on some plain chemical hose rows. The colour is part of the row, so quote it with the size and length. The tube is FEP in each case."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure do Novaflex chemical hose assemblies have?",
+          "a": "The pressure varies by size and is read from the row in the size table, with a 4:1 safety factor. The working pressure is the maximum for continuous duty, and burst is a test figure. Quote the bore and the chemical and we confirm the rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are Novaflex chemical hose assemblies made from?",
+          "a": "The tube is FEP, the cover is EPDM and the fittings are stainless steel, with MNPT on the B end. There is no static control wire. FEP resists most chemicals but not static build-up, so bond the line for flammable fluids."
+        },
+        {
+          "slot": "G",
+          "q": "What safety factor applies to Novaflex chemical hose assemblies?",
+          "a": "The listed safety factor is 4:1: the minimum burst pressure is four times the working pressure. There is no static control wire, so do not use the assembly for flammable fluids unless the line is bonded. See [chemical transfer hose selection](/blog/chemical-transfer-hose-selection)."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a Novaflex chemical hose assembly?",
+          "a": "The assemblies come with stainless steel fittings fitted, with a male NPT thread on the B end, so they connect to female NPT ports and matching couplings. Quote the end-fitting letters, MPT or CXE, when you reorder."
+        },
+        {
+          "slot": "I",
+          "q": "How do I handle a Novaflex chemical hose assembly?",
+          "a": "Keep to the minimum bend radius for the size and do not kink it. The EPDM cover resists weather and abrasion but not oils, so keep it clear of mineral oil. Flush the FEP tube after use and check the cover and fittings for damage."
+        },
+        {
+          "slot": "K",
+          "q": "How do Novaflex chemical hose assemblies differ from the UHMWPE chemical hoses?",
+          "a": "The Novaflex assemblies have an FEP tube, an EPDM cover and fitted stainless ends, to +300°F. The [UHMWPE Chemical Suction & Delivery Hose 10 Bar](/p/uhmwpe-chemical-suction-delivery-hose-10-bar) has an ultra high molecular weight polyethylene lining and a blue EPDM cover, to +100°F equivalent, and is sold as hose. See [UHMWPE chemical hose](/blog/uhmwpe-chemical-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Novaflex chemical hose assemblies made, and can you ship them from Dubai?",
+          "a": "The listing does not name a country of origin for the Novaflex assemblies. We ship worldwide from Dubai, UAE, with the best lead times. Send the part number and quantity through [our contact page](/contact) and we confirm the origin on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Novaflex chemical hose assemblies from stock in the UAE and get a quotation?",
+          "a": "Yes. The Novaflex chemical hose assemblies sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "fuel-line-hose-sae-j30r7",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is Fuel Line Hose SAE J30R7 used for?",
+          "a": "Fuel Line Hose SAE J30R7 is a low-pressure fuel and oil hose for fuel, lubricating oil and emission lines on engines and equipment. It has a nitrile Class A tube, one textile braid and an oil- and weather-resistant cover, from 3/16\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What do the part numbers IH-HS-30R7-03 to -08 mean on the Fuel Line Hose SAE J30R7?",
+          "a": "The last digits give the size in sixteenths of an inch: 03 is 3/16\", 04 is 1/4\" and 08 is 1/2\". Each part number is one size in one supply form, listed per foot."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does Fuel Line Hose SAE J30R7 come in?",
+          "a": "Five sizes are listed: 3/16\", 1/4\", 5/16\", 3/8\" and 1/2\", sold per foot. Choose the bore that matches the barb or fitting on your engine or equipment."
+        },
+        {
+          "slot": "D",
+          "q": "How does the pressure of Fuel Line Hose SAE J30R7 change with size?",
+          "a": "Working pressure falls with size: 225 psi at 3/16\", 200 psi at 1/4\" and 175 psi from 5/16\" to 1/2\", as published. Pick the size, then keep the system pressure below that figure."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does Fuel Line Hose SAE J30R7 take?",
+          "a": "The hose works from -40°F to 250°F (-40°C to 121°C), as published. Fuel and oil systems on engines can run hot, so check the line temperature at the hose before choosing it."
+        },
+        {
+          "slot": "F",
+          "q": "What is Fuel Line Hose SAE J30R7 made from?",
+          "a": "The tube is nitrile (Class A), the reinforcement is one textile braid and the cover is oil- and weather-resistant. Nitrile resists fuel and lubricating oil, and the single braid keeps the hose flexible for engine routing."
+        },
+        {
+          "slot": "G",
+          "q": "What does SAE J30R7 mean for this fuel line hose?",
+          "a": "The hose is made to SAE J30R7, the SAE specification for low-pressure fuel and oil hose of the R7 type, with a Class A tube. Quote the specification on your drawing so we confirm that the hose meets it."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and clamps does Fuel Line Hose SAE J30R7 take?",
+          "a": "It is used with barbed fittings and hose clamps sized to the hose outside diameter, for engine and equipment fuel, oil and emission lines. See the [hose clamps shelf](/c/hose-clamps-sleeves-ferrules) for clamps and sleeves."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install Fuel Line Hose SAE J30R7?",
+          "a": "Route it away from heat sources and sharp edges, keep clamps tight on the barb, and do not exceed the published working pressure. Reel lengths are not continuous, so plan the cut lengths before you order."
+        },
+        {
+          "slot": "K",
+          "q": "How does Fuel Line Hose SAE J30R7 differ from the Multi-Purpose Mineral Oil Hose 10 Bar?",
+          "a": "The SAE J30R7 hose is a small-bore fuel line hose, 3/16\" to 1/2\", rated in psi to 225 psi. The [Multi-Purpose Mineral Oil Hose 10 Bar](/p/multi-purpose-mineral-oil-hose-10-bar) is a 5 to 25 mm industrial mineral oil hose, rated 10 bar."
+        },
+        {
+          "slot": "L",
+          "q": "Do you sell Fuel Line Hose SAE J30R7 in cut lengths?",
+          "a": "The size table lists the lengths and packs published, sold per foot, and other lengths are quoted on request. Send the bore and length through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fuel Line Hose SAE J30R7 in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Fuel Line Hose SAE J30R7 is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

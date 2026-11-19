@@ -1,0 +1,76 @@
+{
+  "family": "stimulation-nitrogen-unit",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "nitrogen-pumping-unit-360k-10-000-psi-truck-mounted-modular",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 360K 10,000 psi nitrogen pumping unit used for?",
+          "a": "A nitrogen pumping unit converts liquid nitrogen to high-pressure gas for well stimulation and clean-out. This truck-mounted unit is the 360K rate class, 360,000 scf per hour (6,000 scf/min), rated 10,000 psi, with a cryogenic high-pressure reciprocating LN2 pump."
+        },
+        {
+          "slot": "D",
+          "q": "What does 360K mean on the 360K 10,000 psi nitrogen pumping unit?",
+          "a": "360K is the pumping-rate class: 360,000 scf of nitrogen per hour, or 6,000 scf/min. Rate classes from 90K to 1000K scf per hour are built, and the highest pressures go with the smallest classes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 360K 10,000 psi nitrogen pumping unit rated for?",
+          "a": "This unit is rated 10,000 psi. The highest pressure ratings, up to 15,000 psi, go with the smallest rate classes, so a larger-rate unit would be rated lower."
+        },
+        {
+          "slot": "F",
+          "q": "What does the 360K 10,000 psi nitrogen pumping unit include?",
+          "a": "It includes a cryogenic high-pressure reciprocating LN2 pump, a hydraulic power pack, a heat-exchange vaporizer and an operator control cabin with a manual or electronic interface."
+        },
+        {
+          "slot": "G",
+          "q": "What is the modular construction of the 360K 10,000 psi nitrogen pumping unit?",
+          "a": "Three independent modules interconnect on a substructure bolted to the truck chassis, which enables rapid chassis swap and independent crane lifts for offshore installation."
+        },
+        {
+          "slot": "H",
+          "q": "What certification and climate options does the 360K 10,000 psi nitrogen pumping unit have?",
+          "a": "CE, GOST, ATEX Zone 2 and arctic winterization options are available for the nitrogen unit. State the approvals, the area classification and the ambient temperature range of the site on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the nitrogen unit differ from a frac pumper?",
+          "a": "A nitrogen unit vaporizes liquid nitrogen and pumps gas, while a [frac pumper](/p/frac-pumper-2-500-hp-trailer-mounted-fleet-networked-dnv-optional) pumps liquid fracturing fluid. Nitrogen is used for stimulation, foam and clean-out work."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 360K 10,000 psi nitrogen pumping unit used?",
+          "a": "It is used for nitrogen pumping in well stimulation and intervention. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment) and [nitrogen units](/c/stimulation-nitrogen-unit)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a nitrogen pumping unit quotation?",
+          "a": "Send the rate class, the pressure, the truck chassis and diesel engine preference, the control interface, the certification, and the area classification."
+        },
+        {
+          "slot": "L",
+          "q": "Which truck chassis can the 360K 10,000 psi nitrogen pumping unit be fitted to?",
+          "a": "Chassis options include MAN, Scania, Volvo, DAF, Renault, Iveco, Tatra, MAZ, MAZ-MAN, NZKT, Kamaz, Kenworth and Peterbilt, with diesel engines from CAT, MTU, Detroit Diesel, Cummins, Deutz and Volvo Penta."
+        },
+        {
+          "slot": "I",
+          "q": "Can the nitrogen unit be lifted offshore?",
+          "a": "Yes. The three independent modules allow independent crane lifts for offshore installation. State the crane limits on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 360K 10,000 psi nitrogen pumping unit?",
+          "a": "Yes. We list the 360K 10,000 psi nitrogen pumping unit as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Chassis and engine are quoted to your specification. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

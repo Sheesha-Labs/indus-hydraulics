@@ -1,0 +1,401 @@
+{
+  "family": "oilfield-butterfly-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "butterfly-valve-lug-style-6-in-300-lug-carbon-steel-epdm-seat-gear-operated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 6 in 300# lug butterfly valve (carbon steel, EPDM seat) used for?",
+          "a": "This is a 6 in lug-style butterfly valve rated 740 psi (ANSI 300), with a cast WCB carbon steel body, carbon steel disc, EPDM seat and gear operator. It is for mid-pressure hot-water and steam-condensate service."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) have?",
+          "a": "The valve has 6 in 300# ANSI lug ends, full port. Its 6 in 300# ANSI lug body has threaded lug holes that accept stud bolts directly, which allows dead-end service and downstream-flange removal without depressurising upstream."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 6 in 300# lug butterfly valve (carbon steel, EPDM seat)?",
+          "a": "This valve is a lug body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 6 in 300# lug butterfly valve (carbon steel, EPDM seat)?",
+          "a": "The 6 in 300# lug butterfly valve (carbon steel, EPDM seat) is rated 740 psi working pressure at ANSI 300. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) made from?",
+          "a": "On the 6 in lug valve the body is cast WCB carbon steel and the disc is carbon steel disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) have and when is it suitable?",
+          "a": "The seat on the 6 in lug valve is EPDM seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) meet?",
+          "a": "The 6 in 300# lug butterfly valve (carbon steel, EPDM seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) operated?",
+          "a": "The 6 in 300# lug butterfly valve (carbon steel, EPDM seat) is gear-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) used?",
+          "a": "It is used for hot-water utility headers, steam-condensate return, high-temperature process water and 300# refinery utility lines. It fits ANSI 300 flanges of 6 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6 in 300# lug butterfly valve (carbon steel, EPDM seat) differ from the 10 in 150# lug valve?",
+          "a": "The 6 in 300# lug butterfly valve (carbon steel, EPDM seat) is a 6 in lug valve at ANSI 300 with a EPDM seat, while the [10 in 150# lug valve](/p/butterfly-valve-lug-style-10-in-150-lug-ductile-iron-buna-n-seat-gear-operated) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 6 in 300# lug butterfly valve (carbon steel, EPDM seat)?",
+          "a": "The listing states a lead time of 28 days for the 6 in 300# lug butterfly valve (carbon steel, EPDM seat). The listing gives the United States as the country of origin. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Butterfly Valve, Lug Style, 6 in × 300# Lug, Carbon Steel + EPDM Seat, Gear-Operated in stock in Dubai?",
+          "a": "Yes. We keep the Butterfly Valve, Lug Style, 6 in × 300# Lug, Carbon Steel + EPDM Seat, Gear-Operated in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "butterfly-valve-triple-offset-4-in-600-lug-carbon-steel-inconel-625-metal-seat-gear-operated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) used for?",
+          "a": "This is a 4 in triple-offset butterfly valve rated 1,480 psi (ANSI 600), with an F6NM disc and an Inconel 625 metal seat. It is fire-safe per API 607 and gear-operated, for high-pressure, high-cycle and fire-rated service."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) have?",
+          "a": "The valve has 4 in 600# ANSI lug ends, full port. Its 4 in 600# ANSI lug body takes stud bolts directly, and the metal seat has no elastomer to burn out."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat)?",
+          "a": "This valve is a lug body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat)?",
+          "a": "The 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) is rated 1,480 psi working pressure at ANSI 600. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) made from?",
+          "a": "On the 4 in lug valve the body is forged AISI 4130 and the disc is F6NM disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) have and when is it suitable?",
+          "a": "The seat on the 4 in lug valve is Inconel 625 metal seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) meet?",
+          "a": "The 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) operated?",
+          "a": "The 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) is gear-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) used?",
+          "a": "It is used for high-pressure, high-cycle and fire-rated isolation where a resilient seat would not survive. It fits ANSI 600 flanges of 4 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) differ from the 6 in 300# lug valve with an EPDM seat?",
+          "a": "The 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat) is a 4 in lug valve at ANSI 600 with a Inconel 625 metal seat, while the [6 in 300# lug valve with an EPDM seat](/p/butterfly-valve-lug-style-6-in-300-lug-carbon-steel-epdm-seat-gear-operated) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat)?",
+          "a": "The listing states a lead time of 56 days for the 4 in 600# triple-offset butterfly valve (Inconel 625 metal seat). The listing gives the United States as the country of origin. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Butterfly Valve, Triple-Offset, 4 in × 600# Lug, Carbon Steel + Inconel 625 Metal Seat, Gear-Operate from Indus Hydraulics?",
+          "a": "The Butterfly Valve, Triple-Offset, 4 in × 600# Lug, Carbon Steel + Inconel 625 Metal Seat, Gear-Operated is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "butterfly-valve-lug-style-10-in-150-lug-ductile-iron-buna-n-seat-gear-operated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) used for?",
+          "a": "This is a 10 in lug-style butterfly valve rated 232 psi (ANSI 150), with a cast ductile iron body, ductile iron disc, Buna-N seat and gear operator. It is for large-bore tank-farm and bulk-flow isolation."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) have?",
+          "a": "The valve has 10 in 150# ANSI lug ends, full port. Its 10 in 150# ANSI lug body takes stud bolts directly, which allows dead-end service and removal of the downstream flange."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "This valve is a lug body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) is rated 232 psi working pressure at ANSI 150. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) made from?",
+          "a": "On the 10 in lug valve the body is cast ductile iron (ASTM A536) and the disc is ductile iron disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) have and when is it suitable?",
+          "a": "The seat on the 10 in lug valve is Buna-N (NBR) seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) meet?",
+          "a": "The 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) operated?",
+          "a": "The 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) is gear-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) used?",
+          "a": "It is used for large-bore tank-farm and bulk-flow isolation, where a gear operator is needed to turn the 10 in disc. It fits ANSI 150 flanges of 10 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) differ from the 4 in wafer valve?",
+          "a": "The 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) is a 10 in lug valve at ANSI 150 with a Buna-N (NBR) seat, while the [4 in wafer valve](/p/butterfly-valve-wafer-style-4-in-150-wafer-ductile-iron-buna-n-seat-lever) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The listing states a lead time of 14 days for the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat). Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "Yes. We list the 10 in 150# lug butterfly valve (ductile iron, Buna-N seat) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, class, seat and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "butterfly-valve-wafer-style-2-in-150-wafer-ductile-iron-ptfe-seat-lever",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) used for?",
+          "a": "This is a 2 in wafer-style butterfly valve rated 232 psi (ANSI 150), with a ductile iron body and disc, PTFE seat and lever operator. It is a chemical-resistant general-service utility valve."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) have?",
+          "a": "The valve has 2 in 150# ANSI wafer ends, full port. Its 2 in 150# ANSI wafer body sits between two flanges and is held by the line bolts."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat)?",
+          "a": "This valve is a wafer body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat)?",
+          "a": "The 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) is rated 232 psi working pressure at ANSI 150. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) made from?",
+          "a": "On the 2 in wafer valve the body is cast ductile iron (ASTM A536) and the disc is ductile iron disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) have and when is it suitable?",
+          "a": "The seat on the 2 in wafer valve is PTFE seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) meet?",
+          "a": "The 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) operated?",
+          "a": "The 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) is lever-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) used?",
+          "a": "It is used for chemical-resistant general-service utility lines at small bore, where a PTFE seat is wanted and the valve sits between flanges. It fits ANSI 150 flanges of 2 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) differ from the 3 in wafer valve with a Buna-N seat?",
+          "a": "The 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) is a 2 in wafer valve at ANSI 150 with a PTFE seat, while the [3 in wafer valve with a Buna-N seat](/p/butterfly-valve-wafer-style-3-in-150-wafer-ductile-iron-buna-n-seat-lever) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat)?",
+          "a": "The listing states a lead time of 7 days for the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat). Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat)?",
+          "a": "Yes. We list the 2 in 150# wafer butterfly valve (ductile iron, PTFE seat) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, class, seat and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "butterfly-valve-wafer-style-3-in-150-wafer-ductile-iron-buna-n-seat-lever",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) used for?",
+          "a": "This is a 3 in wafer-style butterfly valve rated 232 psi (ANSI 150), with a ductile iron body and disc, Buna-N seat and lever operator. It is for general-service hydrocarbon and water utility lines."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) have?",
+          "a": "The valve has 3 in 150# ANSI wafer ends, full port. Its 3 in 150# ANSI wafer body sits between two flanges and is held by the line bolts."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "This valve is a wafer body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is rated 232 psi working pressure at ANSI 150. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) made from?",
+          "a": "On the 3 in wafer valve the body is cast ductile iron (ASTM A536) and the disc is ductile iron disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) have and when is it suitable?",
+          "a": "The seat on the 3 in wafer valve is Buna-N (NBR) seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) meet?",
+          "a": "The 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) operated?",
+          "a": "The 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is lever-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) used?",
+          "a": "It is used for general-service hydrocarbon and water utility lines, where the Buna-N seat resists oil. It fits ANSI 150 flanges of 3 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) differ from the 2 in wafer valve with a PTFE seat?",
+          "a": "The 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is a 3 in wafer valve at ANSI 150 with a Buna-N (NBR) seat, while the [2 in wafer valve with a PTFE seat](/p/butterfly-valve-wafer-style-2-in-150-wafer-ductile-iron-ptfe-seat-lever) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The listing states a lead time of 7 days for the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat). Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "Yes. We list the 3 in 150# wafer butterfly valve (ductile iron, Buna-N seat) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, class, seat and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "butterfly-valve-wafer-style-4-in-150-wafer-ductile-iron-buna-n-seat-lever",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) used for?",
+          "a": "This is a 4 in wafer-style butterfly valve rated 232 psi (ANSI 150), with a ductile iron body and disc, Buna-N seat and lever operator. It is a mid-bore general-service utility valve."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) have?",
+          "a": "The valve has 4 in 150# ANSI wafer ends, full port. Its 4 in 150# ANSI wafer body sits between two flanges and is held by the line bolts."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a lug or wafer body for the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "This valve is a wafer body. Lug bodies take threaded lug holes with stud bolts and allow dead-end service and downstream-flange removal, while wafer bodies sit between two flanges and are lighter and cheaper. Choose lug if the line may be broken downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is rated 232 psi working pressure at ANSI 150. Butterfly valves are for isolation and on-off service, and throttling needs the optional positioner and actuator package; never use it above its class rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and disc of the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) made from?",
+          "a": "On the 4 in wafer valve the body is cast ductile iron (ASTM A536) and the disc is ductile iron disc, both listed for standard service, not sour service. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seat does the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) have and when is it suitable?",
+          "a": "The seat on the 4 in wafer valve is Buna-N (NBR) seat. Choose the seat from the fluid and temperature, and state both on the RFQ so the seat material is confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) meet?",
+          "a": "The 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is listed to API 609, standard service, with mill test reports to EN 10204 3.1 / 3.2. It is a utility isolation valve, not a sour-service valve, so ask for a different listing for H2S."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) operated?",
+          "a": "The 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is lever-operated. State the operator and any actuator or positioner you need on the RFQ; a lever suits small bore, while a gear operator is used where the torque is too high for a lever."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) used?",
+          "a": "It is used as a mid-bore general-service utility valve on water and hydrocarbon lines at up to 232 psi. It fits ANSI 150 flanges of 4 in nominal size; see [butterfly valves](/c/oilfield-butterfly-valves) and the [Demco butterfly valve part number guide](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) differ from the 10 in lug valve?",
+          "a": "The 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) is a 4 in wafer valve at ANSI 150 with a Buna-N (NBR) seat, while the [10 in lug valve](/p/butterfly-valve-lug-style-10-in-150-lug-ductile-iron-buna-n-seat-gear-operated) differs in size, class or seat. Compare the pressure and seat in each listing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "The listing states a lead time of 7 days for the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat). Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat)?",
+          "a": "Yes. We list the 4 in 150# wafer butterfly valve (ductile iron, Buna-N seat) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, class, seat and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

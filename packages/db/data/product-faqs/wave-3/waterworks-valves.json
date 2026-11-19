@@ -1,0 +1,864 @@
+{
+  "family": "waterworks-valves",
+  "extraFacts": [
+    {
+      "fact": "PN numbers (PN10, PN16, PN25, PN40) are nominal pressure designations in bar for flanged valves and pipework; ASME Class 125/150 and Class 150 to 2500 are pressure classes whose allowable working pressure depends on the body material and temperature.",
+      "source": "EN 1333 (PN designation); ASME B16.34 and ASME B16.5 (pressure classes)"
+    },
+    {
+      "fact": "Indus waterworks range sizes for comparison: ball check DN32 to DN400, double eccentric butterfly DN50 to DN4000, concentric butterfly DN50 to DN1800, double orifice air release DN40 to DN300, single orifice air release DN25 to DN200, flexible check DN50 to DN700, swing check DN40 to DN900, silent check DN50 to DN500, axial flow check DN50 to DN600, dual plate check DN50 to DN2000, Y strainer DN15 to DN500.",
+      "source": "Indus Hydraulics product listings for the waterworks valve range"
+    },
+    {
+      "fact": "Indus trunnion mounted ball valve range sizes for comparison: fully welded NPS 2 to 60 (to Class 1500), metal seated NPS 2 to 48 (to Class 2500, 450 °C), side entry soft seated NPS 2 to 60 (to Class 2500, 200 °C), top entry NPS 2 to 60, pigging NPS 2 to 10, double block and bleed compact NPS 2 to 24.",
+      "source": "Indus Hydraulics product listings for the trunnion mounted ball valve range"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ball-check-valve-wastewater",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ball Check Valve, Ductile Iron, for Wastewater and what is it used for?",
+          "a": "The Ball Check Valve, Ductile Iron, for Wastewater is a ductile iron ball check valve designed to EN 12334, used for sewage, sludge and wastewater pumping. It is listed in DN32 to DN400 (1-1/4\" to 16\") and PN10, PN16; Class 125/150. A rubber-coated ball rolls out of the flow path when the pump runs and back onto the seat when it stops; with no shaft or bushing there is nothing for rags and fibres to wrap around, and the ball cleans itself as it rotates."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the ductile iron ball check valve size table, such as IH-PV-WBC-PN10-0200?",
+          "a": "In the ductile iron ball check valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WBC-PN10-0200 is 2\" (DN50) in PN10, and IH-PV-WBC-PN10-0600 is 6\" (DN150) in PN10."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Ball Check Valve, Ductile Iron, for Wastewater come in?",
+          "a": "The Ball Check Valve, Ductile Iron, for Wastewater is published in DN32 to DN400 (1-1/4\" to 16\"), in PN10, PN16; Class 125/150. The size table lists 10 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the ductile iron ball check valve in the size table?",
+          "a": "The ductile iron ball check valve table gives lengths by size and class; in PN10 the face-to-face length is 200 mm at 2\" (DN50), 400 mm at 6\" (DN150) and 900 mm at 16\" (DN400). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Ball Check Valve, Ductile Iron, for Wastewater rated for?",
+          "a": "The ductile iron ball check valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Ball Check Valve, Ductile Iron, for Wastewater made from?",
+          "a": "Body material for the ductile iron ball check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: rubber-coated ball, top cover. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Ball Check Valve, Ductile Iron, for Wastewater meet and what documents come with it?",
+          "a": "The ductile iron ball check valve is designed to EN 12334. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Ball Check Valve, Ductile Iron, for Wastewater have?",
+          "a": "End connections on the ductile iron ball check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Can the ductile iron ball check valve be installed vertically, and is it suitable for clean water?",
+          "a": "It can be installed vertically with flow upward, though horizontal installation is most common. It works on clean water, but its advantage is on sewage and sludge; clean-water lines usually use swing or silent checks."
+        },
+        {
+          "slot": "J",
+          "q": "Why is a ball check valve used for sewage and sludge pumping?",
+          "a": "The rubber-coated ball rolls out of the flow path when the pump runs and back onto the seat when it stops. With no shaft or bushing there is nothing for rags and fibres to wrap around, and the ball cleans itself as it rotates, which is why the valve is used for sewage, sludge and wastewater pumping."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ball check valve differ from the silent check and swing check valves?",
+          "a": "The ball check has a rubber-coated ball as its only moving part and suits solids-laden wastewater, while the [swing check valve](/p/waterworks-swing-check-valve) is the general-purpose type and the [silent check valve](/p/silent-check-valve-ductile-iron) closes on a spring before flow reverses for clean-water pump discharges. Choose the ball check where rags and fibres are present."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Ball Check Valve, Ductile Iron, for Wastewater supplied from Dubai, and how do I order?",
+          "a": "Yes. The ductile iron ball check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "double-eccentric-butterfly-valve-water",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 and what is it used for?",
+          "a": "The Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 is a double eccentric butterfly valve designed to EN 593, AWWA C504, used for transmission mains, treatment works, pump stations. It is listed in DN50 to DN4000 (2\" to 160\") and PN10, PN16, PN25, PN40; Class 125/150. The double offset swings the disc clear of the seal as soon as it opens, so the seal wears little and torque stays low, and the valve seals in both directions at full rated pressure."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the double eccentric butterfly valve size table, such as IH-PV-WBE-S13-125-150-0200?",
+          "a": "In the double eccentric butterfly valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WBE-S13-125-150-0200 is 2\" (DN50) in Class 125/150, and IH-PV-WBE-S14-125-150-0200 is 2\" (DN50) in Class 125/150. The code before the class gives the type: S13 is EN 558 series 13; S14 is EN 558 series 14."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 come in?",
+          "a": "The Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 is published in DN50 to DN4000 (2\" to 160\"), in PN10, PN16, PN25, PN40; Class 125/150. The size table lists every standard size and class combination. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the double eccentric butterfly valve in the size table?",
+          "a": "The double eccentric butterfly valve table gives lengths by size and class; in Class 125/150 (EN 558 series 13) the face-to-face length is 108 mm at 2\" (DN50), 190 mm at 14\" (DN350) and 470 mm at 48\" (DN1200). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 rated for?",
+          "a": "The double eccentric butterfly valve is offered in PN10, PN16, PN25, PN40; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 made from?",
+          "a": "Body material for the double eccentric butterfly valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: double offset disc, EPDM seal ring, double flanged. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 meet and what documents come with it?",
+          "a": "The double eccentric butterfly valve is designed to EN 593, AWWA C504. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 have?",
+          "a": "End connections on the double eccentric butterfly valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. Operation is lever, gearbox, pneumatic or electric actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "How large can the ductile iron double eccentric butterfly valve go, and which length applies?",
+          "a": "Sizes go up to DN4000 (160 in); large sizes are built to order with the drawing issued for approval. The table gives EN 558 series 13 (long) and series 14 (short) face-to-face lengths, so match the series to the pipework you are fitting into."
+        },
+        {
+          "slot": "J",
+          "q": "What is the double eccentric butterfly valve used for in water systems?",
+          "a": "It is the large-diameter isolation valve for transmission mains, treatment works and pump stations. The double offset swings the disc clear of the seal as soon as it opens, so the seal wears little and torque stays low, and the valve seals in both directions."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double eccentric butterfly valve differ from the concentric water treatment butterfly valve?",
+          "a": "The double eccentric valve has an EPDM seal ring on a double-offset disc and goes to DN4000, while the [concentric water treatment butterfly valve](/p/water-treatment-concentric-butterfly-valve) has a rubber liner covering the whole bore and goes to DN1800. Use double eccentric for large mains and concentric for treatment-works duty."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Double Eccentric Butterfly Valve, Ductile Iron, DN50 to DN4000 supplied from Dubai, and how do I order?",
+          "a": "Yes. The double eccentric butterfly valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "double-orifice-air-release-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Double Orifice Air Release Valve, Types A, B and C and what is it used for?",
+          "a": "The Double Orifice Air Release Valve, Types A, B and C is a double orifice air release valve designed to EN 1074-4, AWWA C512, used for water transmission and distribution mains. It is listed in DN40 to DN300 (1-1/2\" to 12\") and PN10, PN16; Class 125/150. A double orifice valve vents large volumes of air as the main fills, admits air as it drains to stop vacuum collapse, and releases small pockets continuously while the main is under pressure."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Double Orifice Air Release Valve, Types A, B and C if there is no size table?",
+          "a": "The Double Orifice Air Release Valve, Types A, B and C has no part-number table. It is quoted to your specification, so send the size (DN40 to DN300 (1-1/2\" to 12\")), pressure class (PN10, PN16; Class 125/150), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Double Orifice Air Release Valve, Types A, B and C come in?",
+          "a": "The Double Orifice Air Release Valve, Types A, B and C is published in DN40 to DN300 (1-1/2\" to 12\"), in PN10, PN16; Class 125/150. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the double orifice air release valve?",
+          "a": "The double orifice air release valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Double Orifice Air Release Valve, Types A, B and C rated for?",
+          "a": "The double orifice air release valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Double Orifice Air Release Valve, Types A, B and C made from?",
+          "a": "Body material for the double orifice air release valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: float-operated large and small orifices. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Double Orifice Air Release Valve, Types A, B and C meet and what documents come with it?",
+          "a": "The double orifice air release valve is designed to EN 1074-4, AWWA C512. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Double Orifice Air Release Valve, Types A, B and C have?",
+          "a": "End connections on the double orifice air release valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, float, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Where should double orifice air valves be fitted on a water main?",
+          "a": "Fit them at every high point, at changes of gradient, at long horizontal runs (every few hundred metres) and downstream of pumps and isolating valves. A double orifice valve vents large volumes of air as the main fills and admits air as it drains, so it protects against vacuum collapse."
+        },
+        {
+          "slot": "J",
+          "q": "What do the large and small orifices of a double orifice air release valve do?",
+          "a": "The large orifice vents big volumes of air as the main fills and admits air as it drains to stop vacuum collapse, and the small orifice releases small pockets of air continuously while the main is under pressure. Both are float operated. Typical service is water transmission and distribution mains."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double orifice air release valve differ from the single orifice type?",
+          "a": "A [single orifice valve](/p/single-orifice-air-release-valve) only releases air under pressure, while the double orifice valve also vents air on filling and admits air on draining and for vacuum protection. Its range is DN40 to DN300 against DN25 to DN200 for the single orifice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Double Orifice Air Release Valve, Types A, B and C supplied from Dubai, and how do I order?",
+          "a": "Yes. The double orifice air release valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "flexible-check-valve-rubber-flapper",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Flexible (Rubber Flapper) Check Valve, Ductile Iron and what is it used for?",
+          "a": "The Flexible (Rubber Flapper) Check Valve, Ductile Iron is a flexible rubber flapper check valve designed to EN 12334, AWWA C508, used for water, raw water and wastewater pumping. It is listed in DN50 to DN700 (2\" to 28\") and PN10, PN16; Class 125/150. It flexes open with forward flow and snaps shut as flow reverses, closing quickly and quietly; the 45° seat shortens the stroke and keeps solids from lodging, so it suits raw water and wastewater."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the flexible rubber flapper check valve size table, such as IH-PV-WFX-S13-PN10-0200?",
+          "a": "In the flexible rubber flapper check valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WFX-S13-PN10-0200 is 2\" (DN50) in PN10, and IH-PV-WFX-S14-PN10-0200 is 2\" (DN50) in PN10. The code before the class gives the type: S13 is EN 558 series 13; S14 is EN 558 series 14."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Flexible (Rubber Flapper) Check Valve, Ductile Iron come in?",
+          "a": "The Flexible (Rubber Flapper) Check Valve, Ductile Iron is published in DN50 to DN700 (2\" to 28\"), in PN10, PN16; Class 125/150. The size table lists every standard size and class combination. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the flexible rubber flapper check valve in the size table?",
+          "a": "The flexible rubber flapper check valve table gives lengths by size and class; in PN10 (EN 558 series 13) the face-to-face length is 200 mm at 2\" (DN50), 600 mm at 10\" (DN250) and 1500 mm at 28\" (DN700). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Flexible (Rubber Flapper) Check Valve, Ductile Iron rated for?",
+          "a": "The flexible rubber flapper check valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Flexible (Rubber Flapper) Check Valve, Ductile Iron made from?",
+          "a": "Body material for the flexible rubber flapper check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: rubber-covered flexible disc, 45° seat. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Flexible (Rubber Flapper) Check Valve, Ductile Iron meet and what documents come with it?",
+          "a": "The flexible rubber flapper check valve is designed to EN 12334, AWWA C508. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Flexible (Rubber Flapper) Check Valve, Ductile Iron have?",
+          "a": "End connections on the flexible rubber flapper check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Can the flexible rubber flapper check valve handle wastewater, and which length applies?",
+          "a": "Yes. There is no hinge or bearing to foul, and the seat angle helps solids pass. The table gives EN 558 series 13 and series 14 face-to-face lengths for each size, so pick the series that matches your pipework."
+        },
+        {
+          "slot": "J",
+          "q": "How does the flexible rubber flapper check valve close?",
+          "a": "The reinforced rubber disc is the only moving part: it flexes open with forward flow and snaps shut as flow reverses, closing quickly and quietly. The 45° seat shortens the stroke and keeps solids from lodging, so the valve suits raw water and wastewater pumping."
+        },
+        {
+          "slot": "K",
+          "q": "How does the flexible check valve differ from the swing check valve?",
+          "a": "The flexible valve has one flexing rubber disc and no hinge, so it suits raw and waste water, while the [swing check valve](/p/waterworks-swing-check-valve) uses a hinged disc that can slam where flow reverses fast. The flexible valve is listed DN50 to DN700 against DN40 to DN900 for the swing check."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Flexible (Rubber Flapper) Check Valve, Ductile Iron supplied from Dubai, and how do I order?",
+          "a": "Yes. The flexible rubber flapper check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "metal-seated-gate-valve-ductile-iron",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y and what is it used for?",
+          "a": "The Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y is a metal seated gate valve designed to BS 5163, EN 1171, AWWA C500, used for raw and hot water, wastewater, industrial water. It is listed in DN40 to DN1200 (1-1/2\" to 48\") and PN10, PN16, PN25; Class 125/150. Bronze-faced wedge and body seats close metal to metal; the non-rising stem version suits buried and confined installations, the OS&Y version shows its position at a glance."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the metal seated gate valve size table, such as IH-PV-WGM-NB-125-150-0200?",
+          "a": "In the metal seated gate valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WGM-NB-125-150-0200 is 2\" (DN50) in Class 125/150, and IH-PV-WGM-N5-PN25-0200 is 2\" (DN50) in PN25. The code before the class gives the type: NB is NRS, BS 5163; N4 is NRS, DIN F4; N5 is NRS, DIN F5; OB is OS&Y, BS 5163; O4 is OS&Y, DIN F4; O5 is OS&Y, DIN F5."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y come in?",
+          "a": "The Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y is published in DN40 to DN1200 (1-1/2\" to 48\"), in PN10, PN16, PN25; Class 125/150. The size table lists every standard size and class combination. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the metal seated gate valve in the size table?",
+          "a": "The metal seated gate valve table gives lengths by size and class; in Class 125/150 (NRS, BS 5163) the face-to-face length is 178 mm at 2\" (DN50), 330 mm at 10\" (DN250) and 508 mm at 24\" (DN600). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y rated for?",
+          "a": "The metal seated gate valve is offered in PN10, PN16, PN25; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y made from?",
+          "a": "Body material for the metal seated gate valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: wedge gate, NRS or OS&Y. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y meet and what documents come with it?",
+          "a": "The metal seated gate valve is designed to BS 5163, EN 1171, AWWA C500. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y have?",
+          "a": "End connections on the metal seated gate valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. Operation is handwheel, cap top, gearbox, pneumatic or electric actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Should I choose a metal seated or resilient seated ductile iron gate valve, and which face-to-face length?",
+          "a": "Resilient-seated valves give drip-tight shut-off and a clear bore on clean water, while metal-seated valves suit hot water, abrasive or dirty water and higher temperatures. Match the length to the valve you are replacing or the project standard: BS 5163 (common in the Gulf and UK specifications), DIN F4 (short) or DIN F5 (long)."
+        },
+        {
+          "slot": "J",
+          "q": "What is a metal seated gate valve used for in waterworks?",
+          "a": "It is the traditional waterworks isolation valve for raw water, hot water, abrasive and high-temperature service where a rubber-encapsulated wedge would not last. Bronze-faced wedge and body seats close metal to metal, and the non-rising stem version suits buried and chamber installation."
+        },
+        {
+          "slot": "K",
+          "q": "How does the metal seated gate valve differ from the resilient seated gate valve?",
+          "a": "The metal seated valve closes bronze-faced metal to metal and suits hot, dirty or abrasive water, while the [resilient seated gate valve](/p/resilient-seated-gate-valve-ductile-iron) has an EPDM-encapsulated wedge for drip-tight shut-off on clean and drinking water. Both come in non-rising stem (NRS) and OS&Y versions."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Metal Seated Gate Valve, Ductile Iron, NRS and OS&Y supplied from Dubai, and how do I order?",
+          "a": "Yes. The metal seated gate valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "resilient-axial-flow-check-valve-water",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Resilient Axial Flow Check Valve, Ductile Iron and what is it used for?",
+          "a": "The Resilient Axial Flow Check Valve, Ductile Iron is a resilient axial flow check valve designed to EN 12334, used for high-head pumping mains, transmission lines. It is listed in DN50 to DN600 (2\" to 24\") and PN10, PN16, PN25, PN40; Class 125/150. A spring-loaded disc moves along a streamlined, venturi-shaped path and closes on a conical resilient seat just as flow stops, with low head loss when open."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Resilient Axial Flow Check Valve, Ductile Iron if there is no size table?",
+          "a": "The Resilient Axial Flow Check Valve, Ductile Iron has no part-number table. It is quoted to your specification, so send the size (DN50 to DN600 (2\" to 24\")), pressure class (PN10, PN16, PN25, PN40; Class 125/150), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Resilient Axial Flow Check Valve, Ductile Iron come in?",
+          "a": "The Resilient Axial Flow Check Valve, Ductile Iron is published in DN50 to DN600 (2\" to 24\"), in PN10, PN16, PN25, PN40; Class 125/150. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the resilient axial flow check valve?",
+          "a": "The resilient axial flow check valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Resilient Axial Flow Check Valve, Ductile Iron rated for?",
+          "a": "The resilient axial flow check valve is offered in PN10, PN16, PN25, PN40; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Resilient Axial Flow Check Valve, Ductile Iron made from?",
+          "a": "Body material for the resilient axial flow check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: spring-loaded axial disc, conical seat. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Resilient Axial Flow Check Valve, Ductile Iron meet and what documents come with it?",
+          "a": "The resilient axial flow check valve is designed to EN 12334. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Resilient Axial Flow Check Valve, Ductile Iron have?",
+          "a": "End connections on the resilient axial flow check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, spring assisted, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "When should I choose an axial flow check valve over a swing check valve?",
+          "a": "Choose an axial flow check on high-head and multi-pump systems where flow reverses fast after a trip: it closes before reversal and prevents water hammer. Face-to-face lengths by rating are confirmed with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "How does the resilient axial flow check valve prevent water hammer?",
+          "a": "A spring-loaded disc moves along a streamlined, venturi-shaped path and closes on a conical resilient seat just as flow stops, so the valve shuts before the water column reverses and head loss is low when open. It is used on high-head pumping mains and transmission lines."
+        },
+        {
+          "slot": "K",
+          "q": "How does the resilient axial flow check valve differ from the silent check valve?",
+          "a": "Both close on a spring before flow reverses. The axial flow valve uses a venturi-shaped body and conical seat for high-head mains up to DN600, while the [silent nozzle check valve](/p/silent-check-valve-ductile-iron) has a short, light body that fits pump discharges and HVAC risers up to DN500."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Resilient Axial Flow Check Valve, Ductile Iron supplied from Dubai, and how do I order?",
+          "a": "Yes. The resilient axial flow check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "resilient-dual-plate-check-valve-wafer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 and what is it used for?",
+          "a": "The Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 is a resilient dual plate check valve designed to EN 12334, API 594 pattern, used for water mains, cooling water, hvac. It is listed in DN50 to DN2000 (2\" to 80\") and PN10, PN16; Class 125/150. Two half-plates close on torsion springs against a resilient seat, faster than a single swing disc, in a wafer body a fraction of the length and weight."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 if there is no size table?",
+          "a": "The Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 has no part-number table. It is quoted to your specification, so send the size (DN50 to DN2000 (2\" to 80\")), pressure class (PN10, PN16; Class 125/150), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 come in?",
+          "a": "The Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 is published in DN50 to DN2000 (2\" to 80\"), in PN10, PN16; Class 125/150. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the resilient dual plate check valve?",
+          "a": "The resilient dual plate check valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 rated for?",
+          "a": "The resilient dual plate check valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 made from?",
+          "a": "Body material for the resilient dual plate check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: twin spring-loaded plates, resilient seat. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 meet and what documents come with it?",
+          "a": "The resilient dual plate check valve is designed to EN 12334, API 594 pattern. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 have?",
+          "a": "End connections on the resilient dual plate check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, spring assisted, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Should the dual plate check valve be wafer or flanged?",
+          "a": "Wafer bodies clamp between the pipe flanges and are the lightest option. For end-of-line or dead-end service choose a flanged or lug body. Face-to-face lengths are to EN 558 for the size, and the drawing comes with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "What is the resilient dual plate check valve used for?",
+          "a": "It is the space-saving non-return valve for water mains, cooling water and HVAC. Two half-plates close on torsion springs against a resilient seat, faster than a single swing disc, in a wafer body that is a fraction of the length and weight."
+        },
+        {
+          "slot": "K",
+          "q": "How does the dual plate check valve differ from the swing check valve?",
+          "a": "The dual plate valve closes two spring-loaded half-plates in a short wafer body, while the [swing check valve](/p/waterworks-swing-check-valve) has a single hinged disc in a full-bore flanged body. The dual plate is listed to DN2000 against DN900 for the swing check."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Resilient Dual Plate Check Valve, Wafer, DN50 to DN2000 supplied from Dubai, and how do I order?",
+          "a": "Yes. The resilient dual plate check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "resilient-seated-gate-valve-ductile-iron",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y and what is it used for?",
+          "a": "The Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y is a resilient seated gate valve designed to BS 5163, EN 1171, AWWA C509/C515, used for drinking water, fire mains, irrigation, hvac. It is listed in DN40 to DN1200 (1-1/2\" to 48\") and PN10, PN16, PN25; Class 125/150. The ductile iron wedge is fully encapsulated in EPDM, so it seals drip-tight against a smooth body without a seat groove, and the full, flat-bottomed bore leaves nowhere for grit to collect or the line to be restricted."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the resilient seated gate valve size table, such as IH-PV-WGR-NB-125-150-0150?",
+          "a": "In the resilient seated gate valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WGR-NB-125-150-0150 is 1-1/2\" (DN40) in Class 125/150, and IH-PV-WGR-N5-PN25-0250 is 2-1/2\" (DN65) in PN25. The code before the class gives the type: NB is NRS, BS 5163; N4 is NRS, DIN F4; N5 is NRS, DIN F5; OB is OS&Y, BS 5163; O4 is OS&Y, DIN F4; O5 is OS&Y, DIN F5."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y come in?",
+          "a": "The Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y is published in DN40 to DN1200 (1-1/2\" to 48\"), in PN10, PN16, PN25; Class 125/150. The size table lists every standard size and class combination. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the resilient seated gate valve in the size table?",
+          "a": "The resilient seated gate valve table gives lengths by size and class; in Class 125/150 (NRS, BS 5163) the face-to-face length is 165 mm at 1-1/2\" (DN40), 292 mm at 8\" (DN200) and 457 mm at 20\" (DN500). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y rated for?",
+          "a": "The resilient seated gate valve is offered in PN10, PN16, PN25; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y made from?",
+          "a": "Body material for the resilient seated gate valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: EPDM-encapsulated wedge, NRS or OS&Y. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y meet and what documents come with it?",
+          "a": "The resilient seated gate valve is designed to BS 5163, EN 1171, AWWA C509/C515. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y have?",
+          "a": "End connections on the resilient seated gate valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. Operation is handwheel, cap top, gearbox, pneumatic or electric actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Is the resilient seated gate valve suitable for drinking water, and can it be buried?",
+          "a": "Yes to both. The EPDM and coating are drinking-water grades, so ask for the approval your utility requires. For burial use the NRS version with a cap top, extension spindle and surface box."
+        },
+        {
+          "slot": "J",
+          "q": "What is the resilient seated gate valve used for?",
+          "a": "It is the standard isolation valve for municipal water, fire mains and building services, listed for drinking water, fire mains, irrigation and HVAC. The ductile iron wedge is fully encapsulated in EPDM, so it seals drip-tight against a smooth body without a seat groove."
+        },
+        {
+          "slot": "K",
+          "q": "How does the resilient seated gate valve differ from the metal seated gate valve?",
+          "a": "The resilient seated valve has an EPDM-encapsulated wedge and a clear flat-bottomed bore for drip-tight shut-off on clean water, while the [metal seated gate valve](/p/metal-seated-gate-valve-ductile-iron) closes bronze to metal and suits hot, abrasive or dirty water. Both come as NRS or OS&Y."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Resilient Seated Gate Valve, Ductile Iron, NRS and OS&Y supplied from Dubai, and how do I order?",
+          "a": "Yes. The resilient seated gate valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "silent-check-valve-ductile-iron",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Silent (Nozzle) Check Valve, Ductile Iron and what is it used for?",
+          "a": "The Silent (Nozzle) Check Valve, Ductile Iron is a silent nozzle check valve designed to EN 12334, used for pump discharge, booster sets, hvac. It is listed in DN50 to DN500 (2\" to 20\") and PN10, PN16, PN25; Class 125/150. The short, light body fits pump discharges, booster sets and HVAC risers where space is tight."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the silent nozzle check valve size table, such as IH-PV-WSC-125-150-0200?",
+          "a": "In the silent nozzle check valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WSC-125-150-0200 is 2\" (DN50) in Class 125/150, and IH-PV-WSC-125-150-2000 is 20\" (DN500) in Class 125/150."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Silent (Nozzle) Check Valve, Ductile Iron come in?",
+          "a": "The Silent (Nozzle) Check Valve, Ductile Iron is published in DN50 to DN500 (2\" to 20\"), in PN10, PN16, PN25; Class 125/150. The size table lists 25 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the silent nozzle check valve in the size table?",
+          "a": "The silent nozzle check valve table gives lengths by size and class; in Class 125/150 the face-to-face length is 105 mm at 2\" (DN50), 227 mm at 8\" (DN200) and 500 mm at 20\" (DN500). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Silent (Nozzle) Check Valve, Ductile Iron rated for?",
+          "a": "The silent nozzle check valve is offered in PN10, PN16, PN25; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Silent (Nozzle) Check Valve, Ductile Iron made from?",
+          "a": "Body material for the silent nozzle check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: centre-guided spring-assisted disc. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Silent (Nozzle) Check Valve, Ductile Iron meet and what documents come with it?",
+          "a": "The silent nozzle check valve is designed to EN 12334. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Silent (Nozzle) Check Valve, Ductile Iron have?",
+          "a": "End connections on the silent nozzle check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, spring assisted, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Why is the silent nozzle check valve called silent, and can it be installed vertically?",
+          "a": "It closes on the spring before the water column reverses, so there is no slam, which is why it is called silent. It can be installed vertically with flow upward, and the spring closes it in any orientation."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the silent nozzle check valve used?",
+          "a": "It is used on pump discharges, booster sets and HVAC risers where space is tight. A spring-loaded disc moves along the valve axis and closes before flow reverses, so the valve shuts without slam, noise or water hammer, in a short, light body."
+        },
+        {
+          "slot": "K",
+          "q": "How does the silent check valve differ from the swing check valve?",
+          "a": "The silent check closes on a spring before flow reverses, so it does not slam, while the [swing check valve](/p/waterworks-swing-check-valve) can slam where flow reverses fast, as after a pump trip in a high-head station. The silent valve is the shorter, lighter body."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Silent (Nozzle) Check Valve, Ductile Iron supplied from Dubai, and how do I order?",
+          "a": "Yes. The silent nozzle check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "single-orifice-air-release-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Single Orifice Air Release Valve, Threaded or Flanged and what is it used for?",
+          "a": "The Single Orifice Air Release Valve, Threaded or Flanged is a single orifice air release valve designed to EN 1074-4, used for water mains and service lines. It is listed in DN25 to DN200 (1\" to 8\") and PN10, PN16; Class 125/150. Threaded versions suit service lines and equipment; flanged versions, with or without an isolating ball valve, mount on mains."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Single Orifice Air Release Valve, Threaded or Flanged if there is no size table?",
+          "a": "The Single Orifice Air Release Valve, Threaded or Flanged has no part-number table. It is quoted to your specification, so send the size (DN25 to DN200 (1\" to 8\")), pressure class (PN10, PN16; Class 125/150), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Single Orifice Air Release Valve, Threaded or Flanged come in?",
+          "a": "The Single Orifice Air Release Valve, Threaded or Flanged is published in DN25 to DN200 (1\" to 8\"), in PN10, PN16; Class 125/150. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the single orifice air release valve?",
+          "a": "The single orifice air release valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Single Orifice Air Release Valve, Threaded or Flanged rated for?",
+          "a": "The single orifice air release valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Single Orifice Air Release Valve, Threaded or Flanged made from?",
+          "a": "Body material for the single orifice air release valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: float-operated small orifice. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Single Orifice Air Release Valve, Threaded or Flanged meet and what documents come with it?",
+          "a": "The single orifice air release valve is designed to EN 1074-4. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Single Orifice Air Release Valve, Threaded or Flanged have?",
+          "a": "End connections on the single orifice air release valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting, float, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Should I use a single orifice or double orifice air release valve?",
+          "a": "A single orifice valve only releases air under pressure. For filling, draining and vacuum protection as well, use a [double orifice valve](/p/double-orifice-air-release-valve). The drawing for the single orifice valve comes with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "What does a single orifice air release valve do on a water line?",
+          "a": "It releases the small pockets of air that collect at high points while a water line is running under pressure. Threaded versions suit service lines and equipment; flanged versions, with or without an isolating ball valve, mount on mains. Typical service is water mains and service lines."
+        },
+        {
+          "slot": "K",
+          "q": "How does the single orifice air release valve differ from the double orifice valve?",
+          "a": "The single orifice valve has one float-operated small orifice and only releases air under pressure, while the [double orifice valve](/p/double-orifice-air-release-valve) adds a large orifice that vents on filling and admits air on draining. The single orifice range is DN25 to DN200."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Single Orifice Air Release Valve, Threaded or Flanged supplied from Dubai, and how do I order?",
+          "a": "Yes. The single orifice air release valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "water-treatment-concentric-butterfly-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged and what is it used for?",
+          "a": "The Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged is a concentric butterfly valve for water treatment designed to EN 593, AWWA C504, used for water treatment, distribution, chemical dosing. It is listed in DN50 to DN1800 (2\" to 72\") and PN10, PN16, PN25. The liner covers the whole bore and seals around the disc, so the body never meets the water; a replaceable seat and anti-blow-out shaft keep maintenance simple."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged if there is no size table?",
+          "a": "The Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged has no part-number table. It is quoted to your specification, so send the size (DN50 to DN1800 (2\" to 72\")), pressure class (PN10, PN16, PN25), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged come in?",
+          "a": "The Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged is published in DN50 to DN1800 (2\" to 72\"), in PN10, PN16, PN25. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the concentric butterfly valve for water treatment?",
+          "a": "The concentric butterfly valve for water treatment has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged rated for?",
+          "a": "The concentric butterfly valve for water treatment is offered in PN10, PN16, PN25. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged made from?",
+          "a": "Body material for the concentric butterfly valve for water treatment is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: rubber-lined concentric, replaceable liner. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged meet and what documents come with it?",
+          "a": "The concentric butterfly valve for water treatment is designed to EN 593, AWWA C504. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged have?",
+          "a": "End connections on the concentric butterfly valve for water treatment are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. Operation is lever, gearbox, pneumatic or electric actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Are the water treatment concentric butterfly valves approved for drinking water, and which length applies?",
+          "a": "The design carries UL and WRAS approvals; state the approval needed so the right liner and coating are supplied. Face-to-face follows EN 558 series 20 (wafer and lug) or series 13 (flanged), and the drawing comes with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "What is the concentric butterfly valve used for in water treatment?",
+          "a": "It is used for filtration, chemical dosing, sludge handling and clear-water distribution in treatment works. The liner covers the whole bore and seals around the disc, so the body never meets the water, and a replaceable seat and anti-blow-out shaft keep maintenance simple."
+        },
+        {
+          "slot": "K",
+          "q": "How does the concentric butterfly valve differ from the double eccentric butterfly valve?",
+          "a": "The concentric valve has a rubber liner over the whole bore and a replaceable seat, and comes wafer, lug or flanged up to DN1800, while the [double eccentric valve](/p/double-eccentric-butterfly-valve-water) has an offset disc and EPDM seal ring, goes to DN4000 and is double flanged. Use double eccentric for large transmission mains."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Concentric Butterfly Valve for Water Treatment, Wafer, Lug or Flanged supplied from Dubai, and how do I order?",
+          "a": "Yes. The concentric butterfly valve for water treatment is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "waterworks-swing-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swing Check Valve, Resilient or Metal Seated, Ductile Iron and what is it used for?",
+          "a": "The Swing Check Valve, Resilient or Metal Seated, Ductile Iron is a waterworks swing check valve designed to EN 12334, BS 5153, AWWA C508, used for pump stations, water and wastewater lines. It is listed in DN40 to DN900 (1-1/2\" to 36\") and PN10, PN16; Class 125/150. A rubber-coated disc seals leak-tight at low pressure; the metal-seated version, with aluminium-bronze seats, handles higher velocities and wastewater with grit."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the waterworks swing check valve size table, such as IH-PV-WSW-125-150-0150?",
+          "a": "In the waterworks swing check valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WSW-125-150-0150 is 1-1/2\" (DN40) in Class 125/150, and IH-PV-WSW-PN16-0150 is 1-1/2\" (DN40) in PN16."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Swing Check Valve, Resilient or Metal Seated, Ductile Iron come in?",
+          "a": "The Swing Check Valve, Resilient or Metal Seated, Ductile Iron is published in DN40 to DN900 (1-1/2\" to 36\"), in PN10, PN16; Class 125/150. The size table lists 36 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the waterworks swing check valve in the size table?",
+          "a": "The waterworks swing check valve table gives lengths by size and class; in Class 125/150 the face-to-face length is 180 mm at 1-1/2\" (DN40), 698 mm at 12\" (DN300) and 1900 mm at 36\" (DN900). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Swing Check Valve, Resilient or Metal Seated, Ductile Iron rated for?",
+          "a": "The waterworks swing check valve is offered in PN10, PN16; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Swing Check Valve, Resilient or Metal Seated, Ductile Iron made from?",
+          "a": "Body material for the waterworks swing check valve is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: swing disc, full bore, bolted cover. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Swing Check Valve, Resilient or Metal Seated, Ductile Iron meet and what documents come with it?",
+          "a": "The waterworks swing check valve is designed to EN 12334, BS 5153, AWWA C508. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Swing Check Valve, Resilient or Metal Seated, Ductile Iron have?",
+          "a": "End connections on the waterworks swing check valve are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. It is self-acting; lever and weight on request, so it needs no operator."
+        },
+        {
+          "slot": "I",
+          "q": "Should the waterworks swing check valve be resilient or metal seated, and does it slam?",
+          "a": "Choose resilient for clean water and tight sealing at low pressure, and metal seated for raw water, wastewater and higher flow velocities. Swing checks can slam where flow reverses fast, as after a pump trip in a high-head station; use a silent, axial or dual-plate check there, or add a lever and weight."
+        },
+        {
+          "slot": "J",
+          "q": "What is the waterworks swing check valve used for?",
+          "a": "It is the general-purpose non-return valve for pump stations and water and wastewater lines. A rubber-coated disc seals leak-tight at low pressure, the metal-seated version with aluminium-bronze seats handles higher velocities and wastewater with grit, and the full-bore body passes flow freely."
+        },
+        {
+          "slot": "K",
+          "q": "How does the swing check valve differ from the silent check valve?",
+          "a": "The swing check uses a hinged disc and can slam when flow reverses fast, while the [silent nozzle check valve](/p/silent-check-valve-ductile-iron) closes on a spring before reversal. The swing check is listed DN40 to DN900 and the silent check DN50 to DN500."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Swing Check Valve, Resilient or Metal Seated, Ductile Iron supplied from Dubai, and how do I order?",
+          "a": "Yes. The waterworks swing check valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "y-strainer-ductile-iron-flanged",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 and what is it used for?",
+          "a": "The Y Strainer, Ductile Iron, Flanged, DN15 to DN500 is a ductile iron Y strainer designed to EN 12266-1 testing, used for pump, valve and meter protection. It is listed in DN15 to DN500 (1/2\" to 20\") and PN10, PN16, PN25; Class 125/150. Flow passes through a stainless screen held in the angled leg; the solids collect there and are flushed through the drain plug or removed with the cover."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the ductile iron Y strainer size table, such as IH-PV-WYS-PN16-0050?",
+          "a": "In the ductile iron Y strainer size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-WYS-PN16-0050 is 1/2\" (DN15) in PN16, and IH-PV-WYS-PN25-0150 is 1-1/2\" (DN40) in PN25."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 come in?",
+          "a": "The Y Strainer, Ductile Iron, Flanged, DN15 to DN500 is published in DN15 to DN500 (1/2\" to 20\"), in PN10, PN16, PN25; Class 125/150. The size table lists every standard size and class combination. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths of the ductile iron Y strainer in the size table?",
+          "a": "The ductile iron Y strainer table gives lengths by size and class; in PN16 the face-to-face length is 130 mm at 1/2\" (DN15), 730 mm at 10\" (DN250) and 1250 mm at 20\" (DN500). The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 rated for?",
+          "a": "The ductile iron Y strainer is offered in PN10, PN16, PN25; Class 125/150. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 made from?",
+          "a": "Body material for the ductile iron Y strainer is ductile iron, cast iron; carbon steel, stainless steel, duplex and super duplex on request. Construction: angled screen leg, bolted cover. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 meet and what documents come with it?",
+          "a": "The ductile iron Y strainer is designed to EN 12266-1 testing. Testing: shell and seat tests to EN 12266-1 / API 598. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 have?",
+          "a": "End connections on the ductile iron Y strainer are flanged to EN 1092-2 or ASME B16.1 / B16.5, RF or FF. Give us the flange standard and facing (raised or flat face) of the mating pipework when you enquire, so the drilling matches."
+        },
+        {
+          "slot": "I",
+          "q": "What mesh size does the flanged ductile iron Y strainer use, and how is it cleaned?",
+          "a": "Perforation is typically 1.5 to 3 mm for water mains and finer for meters and control valves, so tell us what the strainer protects. Clean it by opening the blow-off to flush, or by isolating the line and removing the cover to take out the screen."
+        },
+        {
+          "slot": "J",
+          "q": "What does a Y strainer protect on a water system?",
+          "a": "It catches debris, scale and sediment ahead of pumps, control valves, meters and heat exchangers. Flow passes through a stainless screen held in the angled leg, and the solids collect there to be flushed through the drain plug or removed with the cover."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Y strainer differ from the other waterworks valves in the range?",
+          "a": "The Y strainer is not a shut-off or check valve: it only filters, through a stainless screen in an angled leg, and has no operator. It goes ahead of a valve such as the [resilient seated gate valve](/p/resilient-seated-gate-valve-ductile-iron) or a pump to keep debris out of the seat. It is listed DN15 to DN500."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Y Strainer, Ductile Iron, Flanged, DN15 to DN500 supplied from Dubai, and how do I order?",
+          "a": "Yes. The ductile iron Y strainer is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    }
+  ]
+}

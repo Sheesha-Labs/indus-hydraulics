@@ -1,0 +1,1111 @@
+{
+  "family": "safety-relief-valves",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "balanced-bellows-safety-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Balanced Bellows Safety Relief Valve, API 526 and what is it used for?",
+          "a": "The Balanced Bellows Safety Relief Valve, API 526, relieves into closed headers where back pressure varies. A bellows between disc and bonnet balances the effect of back pressure on the disc, so the set pressure stays true, and it keeps corrosive or fouling fluid away from the spring and guide."
+        },
+        {
+          "slot": "B",
+          "q": "How does the bellows in the balanced bellows safety relief valve work?",
+          "a": "The bellows connects the disc to the bonnet and balances back pressure across the disc, so the set pressure does not move as the discharge system pressure changes. It also isolates the spring and guide from the process fluid. The bonnet vent shows a bellows leak, so keep it open."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Balanced Bellows Safety Relief Valve, API 526 cover?",
+          "a": "The Balanced Bellows Safety Relief Valve, API 526 is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "When is a balanced bellows valve needed instead of a conventional valve?",
+          "a": "Use a bellows valve when built-up or superimposed back pressure exceeds about 10 % of set pressure, or varies, or when the fluid would corrode or foul the spring. Dimensions are the same as the conventional valve of the same orifice, so it can replace it in the same envelope."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Balanced Bellows Safety Relief Valve, API 526 work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), with temperatures up to 537 °C depending on the body material. The seat is metal or soft. Set pressure and capacity are sized per case, so give us the set pressure, back pressure and fluid."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Balanced Bellows Safety Relief Valve, API 526 come in?",
+          "a": "The Balanced Bellows Safety Relief Valve, API 526 body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Balanced Bellows Safety Relief Valve, API 526, and how is it tested?",
+          "a": "The design standard of the Balanced Bellows Safety Relief Valve, API 526 is API 520, API 526, ASME VIII, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Balanced Bellows Safety Relief Valve, API 526 have?",
+          "a": "For the Balanced Bellows Safety Relief Valve, API 526, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is bellows-balanced disc, vented bonnet. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "Why must the bonnet vent of a balanced bellows valve stay open?",
+          "a": "The bellows works by venting the space behind it to atmosphere. A plugged vent defeats the balancing and hides a bellows failure, so keep the vent clear and pipe it to a safe place if the fluid is hazardous. A leak at the vent means the bellows has failed."
+        },
+        {
+          "slot": "K",
+          "q": "How does the balanced bellows valve differ from the conventional safety relief valve?",
+          "a": "The [conventional valve](/p/conventional-safety-relief-valve-api-526) set pressure is affected by back pressure, so it suits discharge to atmosphere or a low, steady header. The bellows valve keeps the same API 526 envelope but holds its set pressure against variable back pressure. Read the [safety relief valve types](/blog/safety-relief-valve-types) guide."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Balanced Bellows Safety Relief Valve, API 526, and can you supply against a project specification?",
+          "a": "Each Balanced Bellows Safety Relief Valve, API 526 comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Balanced Bellows Safety Relief Valve, API 526 supplied, and how long does it take?",
+          "a": "The Balanced Bellows Safety Relief Valve, API 526 is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "conventional-safety-relief-valve-api-526",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conventional Safety Relief Valve, API 526, Orifice D to T and what is it used for?",
+          "a": "The Conventional Safety Relief Valve, API 526, Orifice D to T, is the standard full-lift relief valve for vessels, lines and equipment in gas, vapour and steam service, and in liquid service with liquid trim. It opens fast at set pressure and recloses as pressure falls."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the API 526 orifice letters D to T on the conventional safety relief valve?",
+          "a": "The orifice letter sets the effective discharge area, from D (smallest) up to T (largest), and each letter is paired with set inlet and outlet sizes. For example Orifice D comes as 1\" x 2\", Orifice M as 4\" x 6\" and Orifice T as 8\" x 10\". The IH numbers add the inlet and outlet flange classes."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Conventional Safety Relief Valve, API 526, Orifice D to T cover?",
+          "a": "The size table lists 126 part numbers, each an API 526 combination of orifice, inlet by outlet size and flange ratings, with the centre-to-face dimensions A and B in millimetres. Orifices D to T cover inlets from 1\" to 8\" and outlets from 2\" to 10\"."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the orifice for the conventional safety relief valve?",
+          "a": "Choose the orifice from the relieving rate, set pressure, back pressure and fluid properties by the API 520 method, then take the inlet by outlet size paired with it. Some orifices are offered with a heavier alternate (A) inlet flange on the same Class 300 body for higher pressures."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the conventional API 526 safety relief valve work in?",
+          "a": "The flange ratings are listed per row, such as inlet 150 with outlet 150, inlet 300 with outlet 150 or inlet 600 with outlet 150, up to ASME Class 2500 (PN420). Temperature is up to 537 °C by body material. Set pressure is back-pressure sensitive, so it suits discharge to atmosphere or a low, steady header."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the conventional API 526 safety relief valve come in?",
+          "a": "The conventional API 526 safety relief valve body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the conventional API 526 safety relief valve, and how is it tested?",
+          "a": "The design standard of the conventional API 526 safety relief valve is API 520, API 526, ASME VIII, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the conventional API 526 safety relief valve have?",
+          "a": "For the conventional API 526 safety relief valve, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is full-lift disc, adjusting ring, closed bonnet. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends. The size table gives the centre-to-face dimensions A and B per size, and the general arrangement drawing confirms them with the quotation."
+        },
+        {
+          "slot": "I",
+          "q": "How is the conventional safety relief valve set, tested and maintained?",
+          "a": "Each valve is set on the bench, tested for seat tightness to API 527 and sealed against tampering. A soft seat is an option for tight shut-off near set pressure. Closed bonnet with a cap or lever top; an adjusting ring gives pop action and blowdown."
+        },
+        {
+          "slot": "K",
+          "q": "How does the conventional safety relief valve differ from the balanced bellows and pilot-operated valves?",
+          "a": "The conventional valve is the standard spring valve whose set pressure is affected by back pressure. The [balanced bellows valve](/p/balanced-bellows-safety-relief-valve) fixes that with a bellows, and the [pilot-operated valve](/p/pilot-operated-safety-relief-valve) is unaffected by back pressure and stays tighter near set pressure. See [safety relief valve types](/blog/safety-relief-valve-types)."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the conventional API 526 safety relief valve, and can you supply against a project specification?",
+          "a": "Each conventional API 526 safety relief valve comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the conventional API 526 safety relief valve supplied, and how long does it take?",
+          "a": "The conventional API 526 safety relief valve is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "high-performance-steam-safety-valve-asme-i",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the High-Performance Steam Safety Valve, ASME Section I and what is it used for?",
+          "a": "The High-Performance Steam Safety Valve, ASME Section I, is for boilers, superheaters and steam lines, where the code demands that the valve open within 3 % over-pressure and reseat within 4 % blowdown. Two adjusting rings tune opening and reseating."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 3 % over-pressure and 4 % blowdown figures mean on the steam safety valve?",
+          "a": "The valve reaches full lift within 3 % above set pressure and reseats within 4 % below it, as ASME Section I requires for boilers. The two adjusting rings tune the opening and reseating to meet those limits. Tell us the set pressure and capacity so we confirm the build."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the High-Performance Steam Safety Valve, ASME Section I cover?",
+          "a": "The High-Performance Steam Safety Valve, ASME Section I is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which steam safety valve do I need for a boiler, a superheater or a steam header?",
+          "a": "It is used on boiler drums, superheater outlets, reheaters and high-temperature steam headers. Choose the size from the relieving capacity and set pressure, and note the extended bonnet, which keeps the spring clear of steam above 350 °C."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the High-Performance Steam Safety Valve, ASME Section I work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), for steam above 350 °C with an extended bonnet shielding the spring. Set pressure and capacity are sized per case. Capacity certification to ASME Section I is available on request."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the High-Performance Steam Safety Valve, ASME Section I come in?",
+          "a": "The High-Performance Steam Safety Valve, ASME Section I body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the High-Performance Steam Safety Valve, ASME Section I, and how is it tested?",
+          "a": "The design standard of the High-Performance Steam Safety Valve, ASME Section I is ASME Section I. Testing is: set-pressure test on steam, seat-leakage test with no visible steam leakage, shell test to ASME Section I with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the High-Performance Steam Safety Valve, ASME Section I have?",
+          "a": "For the High-Performance Steam Safety Valve, ASME Section I, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is twin adjusting rings, extended bonnet, open yoke. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How is the steam safety valve tested and fitted?",
+          "a": "It is set on steam and checked for seat leakage with no visible steam leakage, with a shell test to ASME Section I. Fit it vertically on the boiler or header with a short, full-bore inlet and an unrestricted discharge pipe, and use the lifting lever for the periodic check."
+        },
+        {
+          "slot": "K",
+          "q": "How does the high-performance steam safety valve differ from the open lever steam valve?",
+          "a": "The ASME Section I valve is built to the boiler code, with two adjusting rings, an extended bonnet and an open yoke. The [open lever valve](/p/safety-relief-valve-open-lever-steam) is a general steam and air relief valve with API 526 dimensions, and the [high-temperature pilot-operated valve](/p/high-temperature-pilot-operated-safety-valve) is a metal-seated pilot design for large steam duties."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the High-Performance Steam Safety Valve, ASME Section I, and can you supply against a project specification?",
+          "a": "Each High-Performance Steam Safety Valve, ASME Section I comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the High-Performance Steam Safety Valve, ASME Section I supplied, and how long does it take?",
+          "a": "The High-Performance Steam Safety Valve, ASME Section I is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "high-temperature-pilot-operated-safety-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the High-Temperature Pilot-Operated Safety Valve, Steam and what is it used for?",
+          "a": "The High-Temperature Pilot-Operated Safety Valve, Steam, relieves steam at high temperature and pressure, where elastomer pilot seals cannot survive. Pilot and main valve are metal-seated, so it keeps the tight-near-set-pressure advantage of a pilot design."
+        },
+        {
+          "slot": "B",
+          "q": "Why use a pilot-operated safety valve on high-temperature steam?",
+          "a": "Large steam valves with a spring become very tall and heavy, while a pilot design is compact. Because the pilot and main valve are metal-seated, it also avoids elastomer seals that would fail in hot steam. The pilot is external, spring-loaded and has a sensing line."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the High-Temperature Pilot-Operated Safety Valve, Steam cover?",
+          "a": "The High-Temperature Pilot-Operated Safety Valve, Steam is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which standards and set-pressure data should I give for the high-temperature pilot-operated safety valve?",
+          "a": "Send the set pressure, the relieving capacity, the steam temperature and the back pressure. API 520 and 526 apply for sizing and dimensions, and ISO 4126-4 applies to pilot-operated valves. We confirm the build from the data sheet."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the High-Temperature Pilot-Operated Safety Valve, Steam work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), for high-temperature steam in power and process service, in high-temperature alloy materials. The set pressure is sensed by the pilot, so it is not affected by back pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the High-Temperature Pilot-Operated Safety Valve, Steam come in?",
+          "a": "The High-Temperature Pilot-Operated Safety Valve, Steam body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the High-Temperature Pilot-Operated Safety Valve, Steam, and how is it tested?",
+          "a": "The design standard is ASME Section I / VIII and ISO 4126-4. API 520 and 526 apply for sizing and dimensions. Testing is a set-pressure test on the bench, a seat-tightness test to API 527 and a shell test to ASME requirements, with certificates."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the High-Temperature Pilot-Operated Safety Valve, Steam have?",
+          "a": "For the High-Temperature Pilot-Operated Safety Valve, Steam, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is pilot operated. Its construction is metal-seated main valve and pilot. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I look after the pilot on a high-temperature steam valve?",
+          "a": "Keep the sensing line clear and the pilot clean, check the pilot setting at each overhaul and test it with the field test connection if fitted. Because pilot and main valve are metal-seated, no elastomer seals need replacing in service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the high-temperature pilot valve differ from the general pilot-operated safety relief valve?",
+          "a": "The high-temperature valve is metal-seated and for steam, to ISO 4126-4 with ASME Section I / VIII. The [pilot-operated safety relief valve](/p/pilot-operated-safety-relief-valve) is the general API 526 pilot design with a pop or modulating pilot, for large capacities and high back pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the High-Temperature Pilot-Operated Safety Valve, Steam, and can you supply against a project specification?",
+          "a": "Each High-Temperature Pilot-Operated Safety Valve, Steam comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the High-Temperature Pilot-Operated Safety Valve, Steam supplied, and how long does it take?",
+          "a": "The High-Temperature Pilot-Operated Safety Valve, Steam is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "jacketed-safety-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Jacketed Safety Relief Valve, Bellows Type and what is it used for?",
+          "a": "The Jacketed Safety Relief Valve, Bellows Type, protects fluids that set when they cool. A jacket over the whole body carries steam or hot oil so the fluid in the valve stays at line temperature and the valve can open when it must, with a bellows protecting the spring and cancelling back pressure."
+        },
+        {
+          "slot": "B",
+          "q": "Which fluids need a jacketed safety relief valve?",
+          "a": "Fluids that would solidify in a cold valve: molten sulphur, bitumen, heavy fuel oil, waxes, resins and polymers. The jacket keeps the fluid at line temperature so the disc cannot freeze to the seat. Steam purging can be added."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Jacketed Safety Relief Valve, Bellows Type cover?",
+          "a": "The Jacketed Safety Relief Valve, Bellows Type is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What jacket connections does the jacketed safety relief valve have?",
+          "a": "The jacket connections are sized to your heating medium, so tell us whether you use steam or thermal oil, and its pressure and temperature. A purge connection is available on request. Inlet and outlet are flanged, with API 526-based dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Jacketed Safety Relief Valve, Bellows Type work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), and the temperature is line temperature, held by the full heating jacket. The bellows balances back pressure, so set pressure stays true when the discharge pressure varies."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Jacketed Safety Relief Valve, Bellows Type come in?",
+          "a": "The Jacketed Safety Relief Valve, Bellows Type body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Jacketed Safety Relief Valve, Bellows Type, and how is it tested?",
+          "a": "The design standard of the Jacketed Safety Relief Valve, Bellows Type is API 520, API 526, ASME VIII, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Jacketed Safety Relief Valve, Bellows Type have?",
+          "a": "For the Jacketed Safety Relief Valve, Bellows Type, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is full heating jacket, bellows. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I keep a jacketed relief valve working?",
+          "a": "Keep the jacket supplied with steam or hot oil at all times, because a cold jacket lets sulphur, bitumen or polymer set inside the valve. Drain condensate from a steam jacket, and keep the bonnet vent clear to show any bellows leak."
+        },
+        {
+          "slot": "K",
+          "q": "How does the jacketed valve differ from the balanced bellows valve?",
+          "a": "Both have a bellows, but the jacketed valve adds a full body jacket for steam or thermal oil, for sulphur, bitumen, heavy oil and polymer service. The [balanced bellows valve](/p/balanced-bellows-safety-relief-valve) has no jacket and suits closed headers with varying back pressure."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Jacketed Safety Relief Valve, Bellows Type, and can you supply against a project specification?",
+          "a": "Each Jacketed Safety Relief Valve, Bellows Type comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Jacketed Safety Relief Valve, Bellows Type supplied, and how long does it take?",
+          "a": "The Jacketed Safety Relief Valve, Bellows Type is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "low-lift-safety-relief-valve-liquid",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Low-Lift Safety Relief Valve, DN15 to DN200 and what is it used for?",
+          "a": "The Low-Lift Safety Relief Valve, DN15 to DN200, protects liquid systems, where a full-lift valve would slam open and cause surge. The disc lifts only a little, in proportion to the over-pressure, so the discharge area follows the relief needed and the system is not shocked."
+        },
+        {
+          "slot": "B",
+          "q": "Why not use a full-lift valve on liquid service?",
+          "a": "A full-lift valve opening on incompressible liquid causes a pressure surge and can chatter. A low-lift valve opens in proportion to the over-pressure, so the discharge area follows the flow needed and pressure loss stays small."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Low-Lift Safety Relief Valve, DN15 to DN200 cover?",
+          "a": "The published range is DN15 to DN200 in PN10 to PN420, with flanged, threaded, socket-weld or butt-weld ends, in carbon steel, alloy steel, stainless steel, duplex and nickel alloys. Metric sizing is to ISO 4126-1."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of a low-lift safety relief valve?",
+          "a": "Choose the size from the required liquid relieving rate, set pressure and viscosity, from DN15 to DN200. Send the data sheet and we size the valve, and confirm the lift and discharge area for the duty."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Low-Lift Safety Relief Valve, DN15 to DN200 work in?",
+          "a": "Pressure class runs from PN10 to PN420 and the set pressure follows the system. The design standard is ISO 4126-1. Because the lift is proportional, the valve opens only as far as the over-pressure needs."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Low-Lift Safety Relief Valve, DN15 to DN200 come in?",
+          "a": "The Low-Lift Safety Relief Valve, DN15 to DN200 body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Low-Lift Safety Relief Valve, DN15 to DN200, and how is it tested?",
+          "a": "The design standard of the Low-Lift Safety Relief Valve, DN15 to DN200 is ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Low-Lift Safety Relief Valve, DN15 to DN200 have?",
+          "a": "For the Low-Lift Safety Relief Valve, DN15 to DN200, end connections are flanged, threaded, socket-weld, butt-weld and operation is self-acting, spring loaded. Its construction is proportional low-lift disc. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How is the low-lift valve set and checked?",
+          "a": "Each valve is set on the bench and tested for seat tightness to API 527, with a shell test to ASME requirements. After installation check the discharge for backflow, and have the set pressure re-tested at the intervals your inspection regime sets."
+        },
+        {
+          "slot": "K",
+          "q": "How does the low-lift valve differ from the conventional full-lift safety relief valve?",
+          "a": "The low-lift valve is for liquids and opens in proportion to over-pressure, in DN15 to DN200. The [conventional valve](/p/conventional-safety-relief-valve-api-526) is full-lift, for gas, vapour and steam, and for liquid only with liquid trim."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Low-Lift Safety Relief Valve, DN15 to DN200, and can you supply against a project specification?",
+          "a": "Each Low-Lift Safety Relief Valve, DN15 to DN200 comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Low-Lift Safety Relief Valve, DN15 to DN200 supplied, and how long does it take?",
+          "a": "The Low-Lift Safety Relief Valve, DN15 to DN200 is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "nuclear-msr-pilot-safety-valve-vacuum-relief",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve and what is it used for?",
+          "a": "The Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve are two large-bore valves for the conventional island and auxiliary systems of a nuclear plant. The pilot-operated valve protects the moisture separator reheater at set pressures up to 30 bar, and the vacuum relief valve opens between -1 and 0 bar."
+        },
+        {
+          "slot": "B",
+          "q": "What does the nuclear MSR pilot-operated safety valve protect?",
+          "a": "It protects the moisture separator reheater, with a high relieving capacity at set pressures up to 30 bar and temperatures to 280 °C. MSR valves are large and relieve a lot of steam at modest pressure, so a pilot design gives tight shut-off near set pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve cover?",
+          "a": "The published range is up to 20\" (DN500) and up to Class 300 (PN63), with set pressures to 30 bar or -1 to 0 bar. Bodies are carbon, alloy or stainless steel, flanged, and the vacuum relief valve is also available threaded, socket-weld or butt-weld."
+        },
+        {
+          "slot": "D",
+          "q": "What does the nuclear vacuum relief valve do, and what are its set pressures?",
+          "a": "The vacuum relief valve protects auxiliary systems against negative pressure, opening between -1 and 0 bar. It is a large-diameter, self-acting vacuum pallet valve. Both valves are engineered per system, and the data sheet and drawing are issued with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve work in?",
+          "a": "The MSR safety valve is set up to 30 bar and works to 280 °C, in up to Class 300 (PN63). The vacuum relief valve is set between -1 and 0 bar. Design follows the ASME Boiler and Pressure Vessel Code."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve come in?",
+          "a": "The Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve body can be carbon steel, alloy steel, stainless steel. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve, and how is it tested?",
+          "a": "The design standard is the ASME Boiler and Pressure Vessel Code, with materials, welding, inspection and testing documented to the plant's code requirements. Testing includes a set-pressure test on the bench, a seat-tightness test to API 527 and a shell test to ASME requirements."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve have?",
+          "a": "For the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve, end connections are flanged; threaded, socket-weld or butt-weld (vacuum relief) and operation is pilot operated; self-acting. Its construction is pilot-operated main valve; vacuum pallet valve. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How are nuclear MSR and vacuum relief valves tested before delivery?",
+          "a": "Each is set on the bench, tested for seat tightness to API 527 and shell-tested to ASME requirements, with the material certificates and the pressure-test record. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the nuclear MSR valve differ from the nuclear pressurizer and main steam safety valves?",
+          "a": "The MSR pilot-operated valve is for large, modest-pressure steam relief, to 30 bar. The [nuclear pressurizer, main steam and auxiliary safety valves](/p/nuclear-safety-valves-pressurizer-main-steam) are spring-loaded for much higher set pressures."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve, and can you supply against a project specification?",
+          "a": "Each Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve supplied, and how long does it take?",
+          "a": "The Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "nuclear-safety-valves-pressurizer-main-steam",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System and what is it used for?",
+          "a": "The Nuclear Safety Valves cover over-pressure protection for the reactor coolant loop, the main steam lines, the steam supply system and auxiliary systems of a nuclear power plant. The range includes pressurizer safety valves set to 180 bar, main steam safety valves set to 250 bar and forged steam supply valves set to 310 bar."
+        },
+        {
+          "slot": "B",
+          "q": "Which nuclear safety valve types are in the pressurizer, main steam and auxiliary range?",
+          "a": "Pressurizer safety valves are compact and set to 180 bar, to 370 °C. Main steam safety valves are set to 250 bar, flanged or butt-weld. Steam supply and auxiliary valves are forged, set to 310 bar, with flanged, threaded, socket-weld or butt-weld ends."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System cover?",
+          "a": "The published range is up to 8\" (DN200) and up to Class 2500 (PN420), with set pressures up to 310 bar. Bodies are carbon, alloy or stainless steel, cast or forged, with flanged, threaded, socket-weld or butt-weld ends."
+        },
+        {
+          "slot": "D",
+          "q": "Which code are the nuclear safety valves built to, and what do I send for a quotation?",
+          "a": "They are built to the ASME Boiler and Pressure Vessel Code requirements as applied by the plant, under nuclear quality requirements. Nuclear valves are engineered per system, so send the data sheet, set pressure, relieving capacity and project specification."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System work in?",
+          "a": "Set pressure is 180 bar on pressurizer valves (to 370 °C), 250 bar on main steam valves and 310 bar on steam supply and auxiliary valves, in up to Class 2500 (PN420). The operation is self-acting and spring loaded."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System come in?",
+          "a": "The Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System body can be carbon steel, alloy steel, stainless steel. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System, and how is it tested?",
+          "a": "The design standard of the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System is ASME Boiler and Pressure Vessel Code. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System have?",
+          "a": "For the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System, end connections are flanged, threaded, socket-weld, butt-weld and operation is self-acting, spring loaded. Its construction is spring-loaded; cast or forged body. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How are the nuclear safety valves tested and documented?",
+          "a": "Each is set on the bench, tested for seat tightness to API 527 and shell-tested to ASME requirements, with material, welding, inspection and test records documented to the plant's code. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "K",
+          "q": "How do the nuclear pressurizer and main steam valves differ from the MSR pilot-operated valve?",
+          "a": "They are spring-loaded, with set pressures up to 310 bar in sizes to 8\". The [nuclear MSR pilot-operated valve](/p/nuclear-msr-pilot-safety-valve-vacuum-relief) is a larger pilot-operated valve for modest-pressure steam relief."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System, and can you supply against a project specification?",
+          "a": "Each Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System supplied, and how long does it take?",
+          "a": "The Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "pilot-operated-safety-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pilot-Operated Safety Relief Valve, API 526 and what is it used for?",
+          "a": "The Pilot-Operated Safety Relief Valve, API 526, uses the process fluid, through a small pilot, to hold the main valve shut. As pressure rises towards set point the seating force increases, so the valve stays tight where a spring valve would simmer, and back pressure has no effect on set pressure."
+        },
+        {
+          "slot": "B",
+          "q": "What is the difference between a pop and a modulating pilot on the pilot-operated safety relief valve?",
+          "a": "A pop pilot opens the main valve fully at set pressure. A modulating pilot opens it only as far as needed, which cuts product loss and noise. Both are available, with a field test connection."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Pilot-Operated Safety Relief Valve, API 526 cover?",
+          "a": "The Pilot-Operated Safety Relief Valve, API 526 is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a pilot-operated safety relief valve?",
+          "a": "Choose it for large valves, high set pressures and processes that run close to their relief setting, because the seating force rises as pressure rises. It also suits high back pressure, since back pressure does not affect the set pressure. Pilots need clean sensing, so a filter or remote sensing point is fitted for dirty fluids."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Pilot-Operated Safety Relief Valve, API 526 work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), with temperature set by the body and seal material. The pilot senses system pressure and controls the main disc, so opening pressure is unaffected by back pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Pilot-Operated Safety Relief Valve, API 526 come in?",
+          "a": "The Pilot-Operated Safety Relief Valve, API 526 body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Pilot-Operated Safety Relief Valve, API 526, and how is it tested?",
+          "a": "The design standard of the Pilot-Operated Safety Relief Valve, API 526 is API 520, API 526, ASME VIII, ISO 4126-4. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Pilot-Operated Safety Relief Valve, API 526 have?",
+          "a": "For the Pilot-Operated Safety Relief Valve, API 526, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is pilot operated. Its construction is main valve with pop or modulating pilot. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I keep a pilot-operated safety relief valve reliable?",
+          "a": "Keep the sensing line clear and the pilot clean, because pilots need clean sensing. For dirty fluids a filter or a remote sensing point is fitted. Use the field test connection to check the set pressure without removing the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pilot-operated valve differ from the conventional safety relief valve?",
+          "a": "The pilot valve stays tight near set pressure and is not affected by back pressure, and suits large valves and high set pressures. The [conventional valve](/p/conventional-safety-relief-valve-api-526) is simpler and its set pressure moves with back pressure. For hot steam see the [high-temperature pilot-operated valve](/p/high-temperature-pilot-operated-safety-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Pilot-Operated Safety Relief Valve, API 526, and can you supply against a project specification?",
+          "a": "Each Pilot-Operated Safety Relief Valve, API 526 comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Pilot-Operated Safety Relief Valve, API 526 supplied, and how long does it take?",
+          "a": "The Pilot-Operated Safety Relief Valve, API 526 is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-vacuum-relief-valve-api-2000",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 and what is it used for?",
+          "a": "The Pressure/Vacuum Relief Valve (Conservation Vent), API 2000, is one valve on one nozzle that protects a tank both ways. It breathes out when pressure rises, lets air or gas in when vacuum develops, and stays sealed in between to conserve product."
+        },
+        {
+          "slot": "B",
+          "q": "Why is the pressure/vacuum relief valve called a conservation vent?",
+          "a": "Because it keeps the tank closed between its pressure and vacuum settings, cutting evaporation losses and emissions. Soft seals meet the API 2000 leakage requirement. A flanged pipe-away outlet can take the vapour to a recovery system."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 cover?",
+          "a": "The published range is 3/4\" to 14\" (DN20 to DN350), with 0.2 to 103.4 kPa pressure settings and -0.2 to -82 kPa vacuum settings, in carbon steel, stainless steel or carbon steel with PTFE, flanged to the tank nozzle."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a combined pressure/vacuum valve or separate valves?",
+          "a": "A combined valve is often better: one nozzle and one valve. Separate pressure and vacuum valves suit tanks that need different sizes for the two flows. Vents are sized to API 2000 for normal and emergency breathing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 work in?",
+          "a": "Pressure settings run from 0.2 to 103.4 kPa and vacuum settings from -0.2 to -82 kPa, with temperature from -46 °C to 200 °C. Storage tanks are built for only a few kilopascals of pressure or vacuum, so the settings must stay inside the tank design."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 come in?",
+          "a": "The Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 body can be carbon steel, stainless steel, carbon steel with PTFE. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000, and how is it tested?",
+          "a": "The design standard is API 2000. Testing is a set-pressure and leakage test to API 2000, with the material certificates and the pressure-test record supplied with the vent. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 have?",
+          "a": "For the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000, end connections are flanged and operation is self-acting. Its construction is pressure and vacuum pallets, soft seals. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and maintain a pressure/vacuum relief valve on a tank?",
+          "a": "Mount it on the tank nozzle with the flange gasket sealed, and keep the pipe-away outlet or hood clear. Check the pallets and seats for fouling at each inspection, because sticking pallets stop the tank breathing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the combined pressure/vacuum valve differ from the separate tank pressure and vacuum relief valves?",
+          "a": "The combined valve has separate pressure and vacuum pallets in one body, in sizes 3/4\" to 14\". The [tank pressure relief valve](/p/tank-pressure-relief-valve-api-2000) only breathes out, and the [tank vacuum relief valve](/p/tank-vacuum-relief-valve-api-2000) only lets air or gas in."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000, and can you supply against a project specification?",
+          "a": "Each Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 supplied, and how long does it take?",
+          "a": "The Pressure/Vacuum Relief Valve (Conservation Vent), API 2000 is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "safety-relief-valve-open-lever-steam",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Safety Relief Valve with Open Lever, Steam and Air and what is it used for?",
+          "a": "The Safety Relief Valve with Open Lever, Steam and Air, has the lever arrangement that many steam and boiler codes require, on an open bonnet that keeps the spring cool and lets the operator see it. It is for steam, air and other fluids that can be released safely."
+        },
+        {
+          "slot": "B",
+          "q": "Can the open lever safety relief valve be used on toxic or flammable fluids?",
+          "a": "No. The cap and bonnet are open, so fluid can escape through the top, and the valve is for steam, air and fluids that can be released safely. For toxic or flammable fluids use a packed-lever or closed-bonnet valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Safety Relief Valve with Open Lever, Steam and Air cover?",
+          "a": "The Safety Relief Valve with Open Lever, Steam and Air is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Why does the open lever valve have an open bonnet on steam?",
+          "a": "It keeps the spring cooler, so the spring rate and set pressure stay stable at steam temperature, and lets the operator see the spring. The valve can be lifted by hand above 75 % of set pressure, because the cap is not sealed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Safety Relief Valve with Open Lever, Steam and Air work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), with temperature set by the body material. The disc is full-lift with an adjusting ring, and the valve can be lifted by hand above 75 % of set pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Safety Relief Valve with Open Lever, Steam and Air come in?",
+          "a": "The Safety Relief Valve with Open Lever, Steam and Air body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Safety Relief Valve with Open Lever, Steam and Air, and how is it tested?",
+          "a": "The design standard of the Safety Relief Valve with Open Lever, Steam and Air is API 520, API 526, ASME VIII, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Safety Relief Valve with Open Lever, Steam and Air have?",
+          "a": "For the Safety Relief Valve with Open Lever, Steam and Air, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is open bonnet with open lifting lever. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I lift the open lever safety relief valve for the routine check?",
+          "a": "Operate the lever only when the operating pressure is above 75 % of set pressure, lifting it briefly to prove the disc is free and then letting it reseat. Do not use the lever to test a valve at lower pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the open lever valve differ from the packed lever valve?",
+          "a": "The open lever valve leaves the cap open, for steam, air and fluids that can be released safely. The [packed lever valve](/p/safety-relief-valve-packed-lever) seals the cap, so fluid cannot escape through the top, for toxic or flammable fluids."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Safety Relief Valve with Open Lever, Steam and Air, and can you supply against a project specification?",
+          "a": "Each Safety Relief Valve with Open Lever, Steam and Air comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Safety Relief Valve with Open Lever, Steam and Air supplied, and how long does it take?",
+          "a": "The Safety Relief Valve with Open Lever, Steam and Air is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "safety-relief-valve-packed-lever",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Safety Relief Valve with Packed Lever and what is it used for?",
+          "a": "The Safety Relief Valve with Packed Lever can be lifted by hand to prove it is free, once operating pressure is above 75 % of set pressure, as part of routine safety checks. The packed lever seals the cap, so fluid cannot escape through the top when the valve opens."
+        },
+        {
+          "slot": "B",
+          "q": "Why lift a safety relief valve by hand?",
+          "a": "To prove the disc is not stuck to the seat, as some codes and inspection regimes require. The lever lifts the disc once operating pressure is above 75 % of set pressure. Because the packed lever seals the cap, it can be used where any leakage at the cap is unacceptable."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Safety Relief Valve with Packed Lever cover?",
+          "a": "The Safety Relief Valve with Packed Lever is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a packed lever or an open lever safety relief valve?",
+          "a": "Packed levers seal the cap, for toxic or flammable fluids; open levers are for steam, air and other fluids that can be released safely. This valve has a closed bonnet, in conventional or bellows construction, with API 526 dimensions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Safety Relief Valve with Packed Lever work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 (PN10 to PN420), with temperature set by the body material. The manual lift works above 75 % of set pressure, and the bonnet is closed, in conventional or bellows construction."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the Safety Relief Valve with Packed Lever come in?",
+          "a": "The Safety Relief Valve with Packed Lever body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Safety Relief Valve with Packed Lever, and how is it tested?",
+          "a": "The design standard of the Safety Relief Valve with Packed Lever is API 520, API 526, ASME VIII, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the Safety Relief Valve with Packed Lever have?",
+          "a": "For the Safety Relief Valve with Packed Lever, end connections are flanged; threaded, socket-weld or butt-weld on request and operation is self-acting, spring loaded. Its construction is closed bonnet with packed lifting lever. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I check a packed lever safety relief valve in service?",
+          "a": "Lift the lever briefly when operating pressure is above 75 % of set pressure to prove the disc is free, then let it reseat. Keep the lever packing in good order, because the packing is what seals the cap."
+        },
+        {
+          "slot": "K",
+          "q": "How does the packed lever valve differ from the open lever valve?",
+          "a": "The packed lever seals the cap, so it suits toxic or flammable fluids. The [open lever valve](/p/safety-relief-valve-open-lever-steam) has an open bonnet and cap, for steam and air that can be released safely, and keeps the spring cooler."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the Safety Relief Valve with Packed Lever, and can you supply against a project specification?",
+          "a": "Each Safety Relief Valve with Packed Lever comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the Safety Relief Valve with Packed Lever supplied, and how long does it take?",
+          "a": "The Safety Relief Valve with Packed Lever is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "safety-valve-changeover-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Changeover Valve for Twin Safety Valves, Mechanical Interlock and what is it used for?",
+          "a": "The Changeover Valve for Twin Safety Valves, Mechanical Interlock, serves two safety valves on a common manifold, one in service and one on standby. It switches the protected system from one valve to the other, so the plant is never left unprotected while a valve is removed for testing."
+        },
+        {
+          "slot": "B",
+          "q": "Why interlock the inlet and outlet changeover valves?",
+          "a": "So a safety valve can never be isolated on its inlet while still open to a pressurised outlet header, and the system is never left without relief. A chain links the inlet and outlet changeovers so both move together from one handwheel."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Changeover Valve for Twin Safety Valves, Mechanical Interlock cover?",
+          "a": "The changeover valve for twin safety valves is published in 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500; PN10 to PN420, in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Each valve is sized to the relieving case, and the data sheet and general arrangement drawing come with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Does the changeover valve reduce the relieving capacity?",
+          "a": "It is sized so the pressure loss to the valve inlet stays within the 3 % API 520 limit, so full relieving capacity passes through either valve. The size runs from 1/2\" to 20\" (DN15 to DN500) with flanged ends."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the changeover valve for twin safety valves work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500, and PN10 to PN420. Shell and seat-leakage tests are carried out. The operation is a handwheel with a chain interlock, and the typical service is continuous plants needing on-line relief valve maintenance."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the changeover valve for twin safety valves come in?",
+          "a": "The changeover valve for twin safety valves body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the changeover valve for twin safety valves, and how is it tested?",
+          "a": "The design standard is API 520 and ASME VIII. Testing is a shell test and a seat-leakage test, with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the changeover valve for twin safety valves have?",
+          "a": "For the changeover valve for twin safety valves, end connections are flanged and operation is handwheel with chain interlock. Its construction is twin-valve manifold, interlocked inlet and outlet changeovers. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I use the changeover valve to test one safety valve on line?",
+          "a": "Turn the single handwheel to bring the standby valve into service, which also moves the outlet changeover. The valve you want to test is then isolated on both sides, so you can remove it for testing while the plant stays protected."
+        },
+        {
+          "slot": "K",
+          "q": "How does the changeover valve differ from a safety relief valve?",
+          "a": "The changeover valve is not a relief device itself: it connects two safety valves to the system and switches between them. The relief valves it serves include the [conventional valve](/p/conventional-safety-relief-valve-api-526) and the [pilot-operated valve](/p/pilot-operated-safety-relief-valve)."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the changeover valve for twin safety valves, and can you supply against a project specification?",
+          "a": "Each changeover valve for twin safety valves comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the changeover valve for twin safety valves supplied, and how long does it take?",
+          "a": "The changeover valve for twin safety valves is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "tank-emergency-vent-api-2000",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tank Emergency Vent, 16\" to 24\", API 2000 and what is it used for?",
+          "a": "The Tank Emergency Vent, 16\" to 24\", API 2000, is a large hinged or lifting cover that relieves the vapour generated when a tank is exposed to fire. It passes a flow far beyond what the breather valve can pass. Weight-loaded vents cover the usual low settings, and above 6.9 kPa a spring-loaded design is used."
+        },
+        {
+          "slot": "B",
+          "q": "Does every tank need an emergency vent?",
+          "a": "API 2000 requires emergency venting for the fire case, unless the roof-to-shell joint is frangible and fails first. The emergency vent is separate from the breather valve, which handles normal filling and thermal breathing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Tank Emergency Vent, 16\" to 24\", API 2000 cover?",
+          "a": "The published range is 16\" to 24\", with set pressures of 0.2 to 103.4 kPa and a vacuum option to -1.7 kPa, in carbon steel, stainless steel or carbon steel with PTFE, flanged to the tank manway or nozzle."
+        },
+        {
+          "slot": "D",
+          "q": "Is the tank emergency vent re-closing?",
+          "a": "Yes, it reseats once the fire-case flow stops. The cover is weight-loaded for the usual low settings, with a spring-loaded design above 6.9 kPa. The large free area is what gives the fire-case relief."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the tank emergency vent work in?",
+          "a": "Set pressure runs from 0.2 to 103.4 kPa, with a vacuum option from -0.2 to -1.7 kPa, and a temperature range of -46 °C to 200 °C. Weight-loaded construction covers the usual low settings, and a spring is used above 6.9 kPa."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the tank emergency vent come in?",
+          "a": "The tank emergency vent body can be carbon steel, stainless steel, carbon steel with PTFE. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the tank emergency vent, and how is it tested?",
+          "a": "The design standard of the tank emergency vent is API 2000. Testing is: set-pressure and leakage tests to API 2000 with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the tank emergency vent have?",
+          "a": "For the tank emergency vent, end connections are flanged and operation is self-acting. Its construction is weight- or spring-loaded cover. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check a tank emergency vent?",
+          "a": "Flange it to the tank manway or nozzle, keep the cover free to lift and check that the seat is clean at each inspection. Because it relieves only in a fire, a stuck cover is not obvious, so inspect the hinge and seat regularly."
+        },
+        {
+          "slot": "K",
+          "q": "How does the emergency vent differ from the tank pressure relief valve?",
+          "a": "The emergency vent is a large cover, in 16\" to 24\", for fire-case flow. The [tank pressure relief valve](/p/tank-pressure-relief-valve-api-2000) is a smaller breather for normal filling and thermal breathing."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the tank emergency vent, and can you supply against a project specification?",
+          "a": "Each tank emergency vent comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the tank emergency vent supplied, and how long does it take?",
+          "a": "The tank emergency vent is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "tank-pressure-relief-valve-api-2000",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tank Pressure Relief Valve (Breather), API 2000 and what is it used for?",
+          "a": "The Tank Pressure Relief Valve (Breather), API 2000, lets a storage tank breathe out as it fills or warms, opening at a set pressure of a few kilopascals and closing again. It protects the tank roof and shell and keeps vapour losses and emissions down. Disc, seat and other parts can be changed on site."
+        },
+        {
+          "slot": "B",
+          "q": "How is the tank pressure relief valve sized?",
+          "a": "From the maximum filling rate and thermal breathing per API 2000, at the tank's design pressure. Set pressure runs from 0.2 to 103.4 kPa. The valve opens at the set pressure and closes again."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Tank Pressure Relief Valve (Breather), API 2000 cover?",
+          "a": "The published range is 3/4\" to 14\" (DN20 to DN350), with set pressures of 0.2 to 103.4 kPa, in carbon steel, stainless steel or carbon steel with PTFE, flanged to the tank nozzle."
+        },
+        {
+          "slot": "D",
+          "q": "Can the tank pressure relief valve be fitted with a flame arrester?",
+          "a": "Yes, where the tank holds flammable product and the code requires one. The pallet is weight- or spring-loaded, and the disc and seat are field-replaceable, so the valve can be serviced on site."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the tank pressure relief valve work in?",
+          "a": "Set pressure runs from 0.2 to 103.4 kPa, and temperature from -46 °C to 200 °C. The pallet is weight- or spring-loaded. Atmospheric and low-pressure storage tanks are the typical service."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the tank pressure relief valve come in?",
+          "a": "The tank pressure relief valve body can be carbon steel, stainless steel, carbon steel with PTFE. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the tank pressure relief valve, and how is it tested?",
+          "a": "The design standard of the tank pressure relief valve is API 2000. Testing is: set-pressure and leakage tests to API 2000 with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the tank pressure relief valve have?",
+          "a": "For the tank pressure relief valve, end connections are flanged and operation is self-acting. Its construction is weight- or spring-loaded pallet. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I look after the tank pressure relief valve?",
+          "a": "Check the pallet and seat for fouling or sticking at each inspection, because a stuck pallet stops the tank breathing. The disc and seat can be changed on site, so a worn seat does not need a new valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tank pressure relief valve differ from the tank vacuum relief valve?",
+          "a": "The pressure valve lets the tank breathe out at a set pressure of a few kilopascals. The [vacuum relief valve](/p/tank-vacuum-relief-valve-api-2000) lets air or blanket gas in when vacuum develops, and the [combined conservation vent](/p/pressure-vacuum-relief-valve-api-2000) does both."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the tank pressure relief valve, and can you supply against a project specification?",
+          "a": "Each tank pressure relief valve comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the tank pressure relief valve supplied, and how long does it take?",
+          "a": "The tank pressure relief valve is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "tank-vacuum-relief-valve-api-2000",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tank Vacuum Relief Valve, API 2000 and what is it used for?",
+          "a": "The Tank Vacuum Relief Valve, API 2000, opens at a small negative set pressure to let air or blanket gas into a tank when it is pumped out or cools. Without it a thin-walled tank can collapse. It protects the tank if anything else in the venting system fails."
+        },
+        {
+          "slot": "B",
+          "q": "Can the tank vacuum relief valve draw in nitrogen instead of air?",
+          "a": "Yes, with a piped inlet connected to the blanket gas supply. The standard version has an inlet hood. The vacuum pallet opens below the set vacuum, and the parts are field-replaceable."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Tank Vacuum Relief Valve, API 2000 cover?",
+          "a": "The published range is 3/4\" to 14\" (DN20 to DN350), with a set vacuum from -0.2 kPa to the data sheet, in carbon steel, stainless steel or carbon steel with PTFE, flanged to the tank nozzle."
+        },
+        {
+          "slot": "D",
+          "q": "Is a combined pressure/vacuum valve better than a separate tank vacuum relief valve?",
+          "a": "Often: one nozzle and one valve. Separate valves suit tanks that need different sizes for the pressure and vacuum flows. State the tank design vacuum and pump-out rate so we size the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the tank vacuum relief valve work in?",
+          "a": "Set vacuum starts from -0.2 kPa and is given on the data sheet, with temperature from -46 °C to 200 °C. Storage tanks are built for only a few kilopascals of vacuum, so the setting must stay inside the tank design."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the tank vacuum relief valve come in?",
+          "a": "The tank vacuum relief valve body can be carbon steel, stainless steel, carbon steel with PTFE. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the tank vacuum relief valve, and how is it tested?",
+          "a": "The design standard of the tank vacuum relief valve is API 2000. Testing is: set-pressure and leakage tests to API 2000 with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the tank vacuum relief valve have?",
+          "a": "For the tank vacuum relief valve, end connections are flanged and operation is self-acting. Its construction is vacuum pallet with inlet hood. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I check a tank vacuum relief valve?",
+          "a": "Check that the vacuum pallet moves freely and the seat is clean at each inspection, and keep the inlet hood or the blanket gas line clear. A stuck pallet leaves the tank without vacuum protection."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tank vacuum relief valve differ from the tank pressure relief valve?",
+          "a": "The vacuum valve lets air or blanket gas in below a small negative set pressure. The [pressure relief valve](/p/tank-pressure-relief-valve-api-2000) lets the tank breathe out above a small positive set pressure. The [conservation vent](/p/pressure-vacuum-relief-valve-api-2000) combines both in one body."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the tank vacuum relief valve, and can you supply against a project specification?",
+          "a": "Each tank vacuum relief valve comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the tank vacuum relief valve supplied, and how long does it take?",
+          "a": "The tank vacuum relief valve is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "thermal-relief-valve-threaded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\" and what is it used for?",
+          "a": "The Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\", is a small relief valve that lets liquid trapped between closed valves expand as it warms, before the pressure damages the pipe or a gasket. A compact, often bonnetless body fits tight spaces, and the inlet can be threaded, union or welded."
+        },
+        {
+          "slot": "B",
+          "q": "Why does trapped liquid need a thermal relief valve?",
+          "a": "A blocked-in liquid line heated by the sun or the process can rise thousands of psi, because liquid cannot be compressed. A small thermal relief valve passes a small volume and holds the pressure at the set value."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\" cover?",
+          "a": "The published range is 1/2\" to 1-1/2\" (DN15 to DN40), in ASME Class 150 to 2500 and PN10 to PN420, in carbon steel, alloy steel, stainless steel, duplex and nickel alloys, with threaded ends."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the inch or the metric thermal relief valve?",
+          "a": "Both are published: 1/2\" to 1-1/2\" in Class 150 to 2500, or DN15 to DN40 in PN10 to PN420. Choose the one that matches the line standard, and set it to the line rating. The body is compact and bonnetless in the metric series."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the thermal relief valve work in?",
+          "a": "Pressure class runs from ASME Class 150 to 2500 and PN10 to PN420, with the valve set to the line rating. It is spring-loaded, with gas or liquid trim, and the inlet is threaded, with union or welded inlets on request."
+        },
+        {
+          "slot": "F",
+          "q": "What body materials does the thermal relief valve come in?",
+          "a": "The thermal relief valve body can be carbon steel, alloy steel, stainless steel, duplex, nickel alloys. Choose the material from the fluid, the temperature and the back pressure, and tell us the service so we confirm it against the data sheet. Seat and trim are chosen with it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the thermal relief valve, and how is it tested?",
+          "a": "The design standard of the thermal relief valve is API 520, ISO 4126-1. Testing is: set-pressure test on the bench, seat-tightness test to API 527 and shell test to ASME requirements with the material certificates and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operation does the thermal relief valve have?",
+          "a": "For the thermal relief valve, end connections are threaded and operation is self-acting, spring loaded. Its construction is compact spring-loaded, threaded. Match the end connection to the line or tank nozzle, and give us the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I fit a thermal relief valve?",
+          "a": "Fit it on any liquid line or vessel that can be blocked in between closed valves, close to the isolated section, and pipe the discharge to a safe place. Set it just above the normal operating pressure and below the line rating."
+        },
+        {
+          "slot": "K",
+          "q": "How does the thermal relief valve differ from the conventional safety relief valve?",
+          "a": "The thermal relief valve is a small, compact valve in 1/2\" to 1-1/2\", for blocked-in liquid. The [conventional safety relief valve](/p/conventional-safety-relief-valve-api-526) is the larger API 526 valve, for vessels and lines relieving gas, vapour, steam or liquid."
+        },
+        {
+          "slot": "L",
+          "q": "What documents come with the thermal relief valve, and can you supply against a project specification?",
+          "a": "Each thermal relief valve comes with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them. Send your specification with the enquiry and we confirm compliance line by line."
+        },
+        {
+          "slot": "M",
+          "q": "How is the thermal relief valve supplied, and how long does it take?",
+          "a": "The thermal relief valve is supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest. Send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    }
+  ]
+}

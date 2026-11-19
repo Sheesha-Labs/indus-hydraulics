@@ -1,0 +1,71 @@
+{
+  "family": "h-fin-rectangular-fin-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "h-fin-and-rectangular-fin-tubes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are H-fin and rectangular fin tubes used for?",
+          "a": "H-fin and rectangular fin tubes are used in boiler and HRSG economisers on dust-laden or fouling flue gas. Pairs of steel plates are welded across one tube (H-fin) or across two tubes side by side (double H-fin), leaving straight gas lanes that resist fouling."
+        },
+        {
+          "slot": "B",
+          "q": "How do the part numbers IH-TF-HR-HFN-0320-400 and IH-TF-HR-HFN-0510-600 break down?",
+          "a": "The two rows are the 32 mm OD tube with a 4 mm wall (IH-TF-HR-HFN-0320-400) and the 51 mm OD tube with a 6 mm wall (IH-TF-HR-HFN-0510-600). The first block is the OD in tenths of a millimetre (0320 is 32 mm) and the second the wall in hundredths (400 is 4 mm)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do H-fin tubes come in?",
+          "a": "The size table lists 2 sizes: 32 mm OD with a 4 mm wall and 51 mm OD with a 6 mm wall. Base tube OD is 25–51 mm as standard and up to 100 mm on request, with single lengths up to 20 m. Other sizes are made to order."
+        },
+        {
+          "slot": "D",
+          "q": "How big are the fin plates on an H-fin tube?",
+          "a": "The fin plate edge is about 2 × tube OD, so roughly 64 mm on the 32 mm tube and 102 mm on the 51 mm tube. Fin thickness is typically 1.5–3.5 mm, and the tubes are arranged in line."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum service temperature of carbon-steel H-fin tubes?",
+          "a": "About 600 °C for carbon-steel H-fin, set by the fin and tube material. Treat that as a typical limit and confirm the figure for your duty with the quotation, particularly for alloy or stainless fins."
+        },
+        {
+          "slot": "F",
+          "q": "Which tube and fin materials are used for H-fin tubes?",
+          "a": "Tube grades are A179, A192, A210, T11/T22 and 304/316, and fins are carbon steel, alloy or stainless. The fins are welded to the tube by resistance or induction (flash) welding."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards cover H-fin and rectangular fin tubes?",
+          "a": "The listing cites ASTM A192 and ASTM A210 for the base tube. Equivalent grades in other standards are indicative, and we check them against each tender before quoting."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and certificates come with H-fin tubes?",
+          "a": "The panel or tube is hydrotested per the boiler code, and a mill test certificate to EN 10204 3.1 is available on request. Third-party inspection can be arranged against your inspection and test plan."
+        },
+        {
+          "slot": "K",
+          "q": "H-fin tubes or spiral fin tubes for dusty flue gas?",
+          "a": "Choose H-fin when the gas is dusty, because the flat plates leave straight lanes that resist fouling. Spiral fin is the alternative when the gas is cleaner; see [high-frequency welded spiral fin tubes](/p/high-frequency-welded-spiral-fin-tubes-solid-and-serrated) and our [solid vs serrated fin guide](/blog/serrated-vs-solid-spiral-fin-tubes)."
+        },
+        {
+          "slot": "I",
+          "q": "How should H-fin tubes be cleaned?",
+          "a": "Straight gas lanes make H-fin economisers easier to keep clean than closely spaced spiral fins. Soot blowing and cleaning methods for each fin type are covered in our [finned tube fouling and cleaning guide](/blog/finned-tube-fouling-cleaning)."
+        },
+        {
+          "slot": "J",
+          "q": "Which plants use H-fin tubes?",
+          "a": "Boiler and HRSG economisers on dust-laden or fouling flue gas in oil and gas, waste-to-energy, marine and power plants. Compare the other fin types in our [types of finned tubes guide](/blog/types-of-finned-tubes)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply H-fin tubes from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. Sizes inside the listed range are made to order, so send the grade, OD, wall, length, fin thickness and quantity through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

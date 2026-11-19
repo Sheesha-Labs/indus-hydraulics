@@ -1,0 +1,1973 @@
+{
+  "family": "bsp-hydraulic-adapters-uae-03",
+  "extraFacts": [
+    {
+      "fact": "ASME B1.20.1 is the general-purpose inch pipe thread standard; it covers tapered NPT and straight NPSM pipe threads.",
+      "source": "ASME B1.20.1, Pipe Threads, General Purpose (Inch)"
+    },
+    {
+      "fact": "SAE J514 and ISO 8434-2 cover 37° flared (JIC) tube fittings, which seat on a 37° cone.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat.",
+      "source": "ISO 228-1, Pipe threads where pressure-tight joints are not made on the threads"
+    },
+    {
+      "fact": "ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads.",
+      "source": "ISO 7-1, Pipe threads where pressure-tight joints are made on the threads"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-elbow-bsp-male-60-seat-x-metric-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow BSP Male 60° Seat × Metric Male (IH-AD-BSP-062) and what does it connect?",
+          "a": "The 45° Elbow BSP Male 60° Seat × Metric Male is a 45° elbow adapter in zinc-plated carbon steel with male BSP with 60° cone seat on one end and male Metric (metric O-ring stud end) on the other. It turns a line through a 45° angle. The listing has 17 part numbers: IH-AD-BSP-062-0210OG to IH-AD-BSP-062-2448OG."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-062-1222OG on the 45° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "IH-AD-BSP-062-1222OG is IH-AD-BSP-062 followed by two size codes: 12 is the G3/4\"X14 thread and 22 is the M22X1.5. The first code is the BSP thread size in sixteenths of an inch, and the second is the metric thread size in millimetres. The letters OG at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the 45° Elbow BSP Male 60° Seat × Metric Male listed in?",
+          "a": "The 45° Elbow BSP Male 60° Seat × Metric Male is listed in 17 part numbers, IH-AD-BSP-062-0210OG to IH-AD-BSP-062-2448OG. Threads run G1/8\"X28 to G1-1/2\"X11 on the first end and M10X1 to M48X2 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 45° Elbow BSP Male 60° Seat × Metric Male for a G1/2\"X14 to M22X1.5 connection?",
+          "a": "The part number is IH-AD-BSP-062-0822OG: G1/2\"X14 on one end and M22X1.5 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 45° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "The manufacturer publishes no pressure rating for the 45° Elbow BSP Male 60° Seat × Metric Male, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-062-0210OG suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Elbow BSP Male 60° Seat × Metric Male made from and can I get it in stainless steel?",
+          "a": "The 45° Elbow BSP Male 60° Seat × Metric Male is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow BSP Male 60° Seat × Metric Male follow?",
+          "a": "The 45° Elbow BSP Male 60° Seat × Metric Male is listed to ISO 228 parallel thread, ISO 6149. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 6149 covers ports and stud ends with metric threads and O-ring sealing. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Elbow BSP Male 60° Seat × Metric Male connect to?",
+          "a": "The first end of the 45° Elbow BSP Male 60° Seat × Metric Male connects to a female swivel BSP 60° cone fitting. The second end connects to a metric stud-end port with an O-ring. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 45° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "On the 45° Elbow BSP Male 60° Seat × Metric Male, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Check the O-ring is present and undamaged before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 45° Elbow BSP Male 60° Seat × Metric Male and the 90° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "The 45° Elbow BSP Male 60° Seat × Metric Male and the [90° Elbow BSP Male 60° Seat × Metric Male](/p/90-elbow-bsp-male-60-seat-x-metric-male) have the same end types. The difference is the body: the first turns a line through a 45° angle, while the second turns a line through a right angle. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Elbow BSP Male 60° Seat × Metric Male supplied from and what are the export details?",
+          "a": "We supply the 45° Elbow BSP Male 60° Seat × Metric Male from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° Elbow BSP Male 60° Seat × Metric Male available from stock in the UAE?",
+          "a": "Yes. We keep the 45° Elbow BSP Male 60° Seat × Metric Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-elbow-jis-gas-male-60-cone-x-bspt-male-60-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat used for?",
+          "a": "The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is a 45° elbow adapter in zinc-plated carbon steel with BSP on one end and male BSPT with JIS 30° cone on the other. It turns a line through a 45° angle. The listing has 9 part numbers: IH-AD-BSP-074-02SP to IH-AD-BSP-074-32SP."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-074-20SP on the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat?",
+          "a": "IH-AD-BSP-074-20SP is IH-AD-BSP-074 followed by the size code 20, which is the G1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters SP at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat come in?",
+          "a": "The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is listed in 9 part numbers, IH-AD-BSP-074-02SP to IH-AD-BSP-074-32SP. Threads run G1/8\"X28 to G2\"X11 on the first end and R1/8\"X28 to R2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat for a G1/8\"X28 to R1/8\"X28 connection?",
+          "a": "The part number is IH-AD-BSP-074-02SP: G1/8\"X28 on one end and R1/8\"X28 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat rated to?",
+          "a": "The manufacturer publishes no pressure rating for the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-074-02SP suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat made from and can I get it in stainless steel?",
+          "a": "The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat follow?",
+          "a": "The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is listed to JIS B8363. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat connect to?",
+          "a": "The first end of the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat connects to the matching BSP thread listed in the size table. The second end connects to a Japanese JIS gas port or hose end with a 30° cone. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat be installed?",
+          "a": "On the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat, the JIS 30° cone seat seals on the cone, not on the thread. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat and the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat?",
+          "a": "The two differ in their ends. The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat has BSP and male BSPT with JIS 30° cone; the [90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat](/p/90-elbow-jis-gas-male-60-cone-x-bspt-male-60-seat) has male BSP with JIS 30° cone and male BSPT with 60° cone seat. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat supplied from and what are the export details?",
+          "a": "We supply the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat available from stock in the UAE?",
+          "a": "Yes. The 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bsp-male-60-seat-bulkhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow BSP Male 60° Seat Bulkhead (IH-AD-BSP-059) and what does it connect?",
+          "a": "The 90° Elbow BSP Male 60° Seat Bulkhead is a 90° elbow bulkhead adapter in zinc-plated carbon steel with male BSP with 60° cone seat on one end and male BSP with 60° cone seat on the other. It turns a line through a right angle. The listing has 7 part numbers: IH-AD-BSP-059-04LN to IH-AD-BSP-059-24LN."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-059-16LN mean on the 90° Elbow BSP Male 60° Seat Bulkhead?",
+          "a": "IH-AD-BSP-059-16LN is IH-AD-BSP-059 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters LN at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the 90° Elbow BSP Male 60° Seat Bulkhead listed in?",
+          "a": "The 90° Elbow BSP Male 60° Seat Bulkhead is listed in 7 part numbers, IH-AD-BSP-059-04LN to IH-AD-BSP-059-24LN, with threads from G1/4\"X19 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSP Male 60° Seat Bulkhead for a G3/4\"X14 thread?",
+          "a": "The part number is IH-AD-BSP-059-12LN for the G3/4\"X14 thread. Each size has its own part number, IH-AD-BSP-059-04LN to IH-AD-BSP-059-24LN, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSP Male 60° Seat Bulkhead?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSP Male 60° Seat Bulkhead, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-059-04LN suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSP Male 60° Seat Bulkhead made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSP Male 60° Seat Bulkhead is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSP Male 60° Seat Bulkhead follow?",
+          "a": "The 90° Elbow BSP Male 60° Seat Bulkhead is listed to ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSP Male 60° Seat Bulkhead connect to?",
+          "a": "The first end of the 90° Elbow BSP Male 60° Seat Bulkhead connects to a female swivel BSP 60° cone fitting. The second end connects to a female swivel BSP 60° cone fitting. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow BSP Male 60° Seat Bulkhead?",
+          "a": "On the 90° Elbow BSP Male 60° Seat Bulkhead, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSP Male 60° Seat Bulkhead and the 90° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "The two differ in their ends. The 90° Elbow BSP Male 60° Seat Bulkhead has male BSP with 60° cone seat and male BSP with 60° cone seat; the [90° Elbow BSP Male 60° Seat × Metric Male](/p/90-elbow-bsp-male-60-seat-x-metric-male) has male BSP with 60° cone seat and male Metric (metric O-ring stud end). Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSP Male 60° Seat Bulkhead supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSP Male 60° Seat Bulkhead from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the 90° Elbow BSP Male 60° Seat Bulkhead in stock in Dubai?",
+          "a": "Yes, the 90° Elbow BSP Male 60° Seat Bulkhead is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-059-04LN, and the quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bsp-male-60-seat-x-bsp-male-o-ring-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End used for?",
+          "a": "The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End is a 90° elbow adapter in zinc-plated carbon steel with male BSP with 60° cone seat on one end and male BSP on the other. It turns a line through a right angle. The listing has 12 part numbers: IH-AD-BSP-055-04OG to IH-AD-BSP-055-24OG."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-055-16OG on the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End?",
+          "a": "IH-AD-BSP-055-16OG is IH-AD-BSP-055 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters OG at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End listed in?",
+          "a": "The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End is listed in 12 part numbers, IH-AD-BSP-055-04OG to IH-AD-BSP-055-24OG, with threads from G1/4\"X19 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End for a G1/2\"X14 to G3/4\"X14 connection?",
+          "a": "The part number is IH-AD-BSP-055-0812OG: G1/2\"X14 on one end and G3/4\"X14 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-055-04OG suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End follow?",
+          "a": "The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End is listed to ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End connect to?",
+          "a": "The first end of the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End connects to a female swivel BSP 60° cone fitting. The second end connects to the matching BSP thread listed in the size table. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End?",
+          "a": "On the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End and the 90° Elbow BSP Male 60° Seat Bulkhead?",
+          "a": "The two differ in their ends. The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End has male BSP with 60° cone seat and male BSP; the [90° Elbow BSP Male 60° Seat Bulkhead](/p/90-elbow-bsp-male-60-seat-bulkhead) has male BSP with 60° cone seat and male BSP with 60° cone seat. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End from stock in Dubai?",
+          "a": "Yes. The 90° Elbow BSP Male 60° Seat × BSP Male O-Ring Adjustable Stud End is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bsp-male-60-seat-x-metric-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow BSP Male 60° Seat × Metric Male (IH-AD-BSP-063) and what does it connect?",
+          "a": "The 90° Elbow BSP Male 60° Seat × Metric Male is a 90° elbow adapter in zinc-plated carbon steel with male BSP with 60° cone seat on one end and male Metric (metric O-ring stud end) on the other. It turns a line through a right angle. The listing has 17 part numbers: IH-AD-BSP-063-0210OG to IH-AD-BSP-063-2448OG."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-063-1222OG mean on the 90° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "IH-AD-BSP-063-1222OG is IH-AD-BSP-063 followed by two size codes: 12 is the G3/4\"X14 thread and 22 is the M22X1.5. The first code is the BSP thread size in sixteenths of an inch, and the second is the metric thread size in millimetres. The letters OG at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the 90° Elbow BSP Male 60° Seat × Metric Male listed in?",
+          "a": "The 90° Elbow BSP Male 60° Seat × Metric Male is listed in 17 part numbers, IH-AD-BSP-063-0210OG to IH-AD-BSP-063-2448OG. Threads run G1/8\"X28 to G1-1/2\"X11 on the first end and M10X1 to M48X2 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSP Male 60° Seat × Metric Male for a G1/2\"X14 to M22X1.5 connection?",
+          "a": "The part number is IH-AD-BSP-063-0822OG: G1/2\"X14 on one end and M22X1.5 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSP Male 60° Seat × Metric Male, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-063-0210OG suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSP Male 60° Seat × Metric Male made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSP Male 60° Seat × Metric Male is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSP Male 60° Seat × Metric Male follow?",
+          "a": "The 90° Elbow BSP Male 60° Seat × Metric Male is listed to ISO 228 parallel thread, ISO 6149. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 6149 covers ports and stud ends with metric threads and O-ring sealing. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSP Male 60° Seat × Metric Male connect to?",
+          "a": "The first end of the 90° Elbow BSP Male 60° Seat × Metric Male connects to a female swivel BSP 60° cone fitting. The second end connects to a metric stud-end port with an O-ring. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "On the 90° Elbow BSP Male 60° Seat × Metric Male, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Check the O-ring is present and undamaged before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSP Male 60° Seat × Metric Male and the 45° Elbow BSP Male 60° Seat × Metric Male?",
+          "a": "The 90° Elbow BSP Male 60° Seat × Metric Male and the [45° Elbow BSP Male 60° Seat × Metric Male](/p/45-elbow-bsp-male-60-seat-x-metric-male) have the same end types. The difference is the body: the first turns a line through a right angle, while the second turns a line through a 45° angle. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSP Male 60° Seat × Metric Male supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSP Male 60° Seat × Metric Male from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow BSP Male 60° Seat × Metric Male from stock in Dubai?",
+          "a": "Yes, the 90° Elbow BSP Male 60° Seat × Metric Male is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-063-0210OG, and the quantities on [our quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bspt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow BSPT Female (IH-AD-BSP-068) and what does it connect?",
+          "a": "The 90° Elbow BSPT Female is a 90° elbow adapter in zinc-plated carbon steel with female BSPT on one end and female BSPT on the other. It turns a line through a right angle. The listing has 9 part numbers: IH-AD-BSP-068-02 to IH-AD-BSP-068-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-068-20 mean on the 90° Elbow BSPT Female?",
+          "a": "IH-AD-BSP-068-20 is IH-AD-BSP-068 followed by the size code 20, which is the Rc1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Elbow BSPT Female come in?",
+          "a": "The 90° Elbow BSPT Female is listed in 9 part numbers, IH-AD-BSP-068-02 to IH-AD-BSP-068-32, with threads from Rc1/8\"X28 to Rc2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSPT Female for a Rc3/4\"X14 thread?",
+          "a": "The part number is IH-AD-BSP-068-12 for the Rc3/4\"X14 thread. Each size has its own part number, IH-AD-BSP-068-02 to IH-AD-BSP-068-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSPT Female?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-068-02 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSPT Female made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSPT Female follow?",
+          "a": "The 90° Elbow BSPT Female is listed to ISO 7-1. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSPT Female connect to?",
+          "a": "The first end of the 90° Elbow BSPT Female connects to a male BSP taper (R) thread. The second end connects to a male BSP taper (R) thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow BSPT Female?",
+          "a": "On the 90° Elbow BSPT Female, the tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSPT Female and the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "The two differ in their ends. The 90° Elbow BSPT Female has female BSPT and female BSPT; the [90° Elbow BSPT Male 60° Seat × BSPT Female](/p/90-elbow-bspt-male-60-seat-x-bspt-female) has male BSPT with 60° cone seat and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSPT Female supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the 90° Elbow BSPT Female in stock in Dubai?",
+          "a": "Yes, the 90° Elbow BSPT Female is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-068-02, and the quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bspt-male-60-seat-x-bspt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow BSPT Male 60° Seat × BSPT Female used for?",
+          "a": "The 90° Elbow BSPT Male 60° Seat × BSPT Female is a 90° elbow adapter in zinc-plated carbon steel with male BSPT with 60° cone seat on one end and female BSPT on the other. It turns a line through a right angle. The listing has 8 part numbers: IH-AD-BSP-069-02SP to IH-AD-BSP-069-24SP."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-069-16SP mean on the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "IH-AD-BSP-069-16SP is IH-AD-BSP-069 followed by the size code 16, which is the R1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters SP at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Elbow BSPT Male 60° Seat × BSPT Female come in?",
+          "a": "The 90° Elbow BSPT Male 60° Seat × BSPT Female is listed in 8 part numbers, IH-AD-BSP-069-02SP to IH-AD-BSP-069-24SP. Threads run R1/8\"X28 to R1-1/2\"X11 on the first end and Rc1/8\"X28 to Rc1-1/2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSPT Male 60° Seat × BSPT Female for a R1/8\"X28 to Rc1/8\"X28 connection?",
+          "a": "The part number is IH-AD-BSP-069-02SP: R1/8\"X28 on one end and Rc1/8\"X28 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSPT Male 60° Seat × BSPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-069-02SP suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSPT Male 60° Seat × BSPT Female made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSPT Male 60° Seat × BSPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSPT Male 60° Seat × BSPT Female follow?",
+          "a": "The 90° Elbow BSPT Male 60° Seat × BSPT Female is listed to ISO 228 parallel thread, ISO 7-1. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSPT Male 60° Seat × BSPT Female connect to?",
+          "a": "The first end of the 90° Elbow BSPT Male 60° Seat × BSPT Female connects to a female swivel BSP 60° cone fitting. The second end connects to a male BSP taper (R) thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "On the 90° Elbow BSPT Male 60° Seat × BSPT Female, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. The tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSPT Male 60° Seat × BSPT Female and the 90° Elbow BSPT Male × BSP Female 60° Cone?",
+          "a": "The two differ in their ends. The 90° Elbow BSPT Male 60° Seat × BSPT Female has male BSPT with 60° cone seat and female BSPT; the [90° Elbow BSPT Male × BSP Female 60° Cone](/p/90-elbow-bspt-male-x-bsp-female-60-cone) has male BSPT and female BSP with 60° cone seat. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSPT Male 60° Seat × BSPT Female supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSPT Male 60° Seat × BSPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the 90° Elbow BSPT Male 60° Seat × BSPT Female in stock in Dubai?",
+          "a": "Yes. We keep the 90° Elbow BSPT Male 60° Seat × BSPT Female in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-bspt-male-x-bsp-female-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the 90° Elbow BSPT Male × BSP Female 60° Cone do?",
+          "a": "The 90° Elbow BSPT Male × BSP Female 60° Cone is a 90° elbow adapter in zinc-plated carbon steel with male BSPT on one end and female BSP with 60° cone seat on the other. It turns a line through a right angle. The listing has 12 part numbers: IH-AD-BSP-066-02SP to IH-AD-BSP-066-24SP."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-066-12SP on the 90° Elbow BSPT Male × BSP Female 60° Cone?",
+          "a": "IH-AD-BSP-066-12SP is IH-AD-BSP-066 followed by the size code 12, which is the R3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters SP at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the 90° Elbow BSPT Male × BSP Female 60° Cone listed in?",
+          "a": "The 90° Elbow BSPT Male × BSP Female 60° Cone is listed in 12 part numbers, IH-AD-BSP-066-02SP to IH-AD-BSP-066-24SP. Threads run R1/8\"X28 to R1-1/2\"X11 on the first end and G1/8\"X28 to G1-1/2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow BSPT Male × BSP Female 60° Cone for a R1-1/4\"X11 to G1-1/4\"X11 connection?",
+          "a": "The part number is IH-AD-BSP-066-20SP: R1-1/4\"X11 on one end and G1-1/4\"X11 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the 90° Elbow BSPT Male × BSP Female 60° Cone?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow BSPT Male × BSP Female 60° Cone, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-066-02SP suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow BSPT Male × BSP Female 60° Cone made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow BSPT Male × BSP Female 60° Cone is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow BSPT Male × BSP Female 60° Cone follow?",
+          "a": "The 90° Elbow BSPT Male × BSP Female 60° Cone is listed to ISO 7-1, ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow BSPT Male × BSP Female 60° Cone connect to?",
+          "a": "The first end of the 90° Elbow BSPT Male × BSP Female 60° Cone connects to a female BSP taper (Rc) port. The second end connects to a male BSP 60° cone port or hose end. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 90° Elbow BSPT Male × BSP Female 60° Cone be installed?",
+          "a": "On the 90° Elbow BSPT Male × BSP Female 60° Cone, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. The tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow BSPT Male × BSP Female 60° Cone and the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "The two differ in their ends. The 90° Elbow BSPT Male × BSP Female 60° Cone has male BSPT and female BSP with 60° cone seat; the [90° Elbow BSPT Male 60° Seat × BSPT Female](/p/90-elbow-bspt-male-60-seat-x-bspt-female) has male BSPT with 60° cone seat and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow BSPT Male × BSP Female 60° Cone supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow BSPT Male × BSP Female 60° Cone from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the 90° Elbow BSPT Male × BSP Female 60° Cone in stock in Dubai?",
+          "a": "Yes. The 90° Elbow BSPT Male × BSP Female 60° Cone is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-jis-gas-male-60-cone-x-bspt-male-60-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat used for?",
+          "a": "The 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is a 90° elbow adapter in zinc-plated carbon steel with male BSP with JIS 30° cone on one end and male BSPT with 60° cone seat on the other. It turns a line through a right angle. The listing has 9 part numbers: IH-AD-BSP-075-02SP to IH-AD-BSP-075-32SP."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-075-20SP mean on the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat?",
+          "a": "IH-AD-BSP-075-20SP is IH-AD-BSP-075 followed by the size code 20, which is the G1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters SP at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat come in?",
+          "a": "The 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is listed in 9 part numbers, IH-AD-BSP-075-02SP to IH-AD-BSP-075-32SP. Threads run G1/8\"X28 to G2\"X11 on the first end and R1/8\"X28 to R2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat for a G1\"X11 to R1\"X11 connection?",
+          "a": "The part number is IH-AD-BSP-075-16SP: G1\"X11 on one end and R1\"X11 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat rated to?",
+          "a": "The manufacturer publishes no pressure rating for the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-075-02SP suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat made from and can I get it in stainless steel?",
+          "a": "The 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat follow?",
+          "a": "The 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat is listed to JIS B8363, ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat connect to?",
+          "a": "The first end of the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat connects to a Japanese JIS gas port or hose end with a 30° cone. The second end connects to a female swivel BSP 60° cone fitting. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat?",
+          "a": "On the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. The JIS 30° cone seat seals on the cone, not on the thread. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat and the 45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat?",
+          "a": "The two differ in their ends. The 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat has male BSP with JIS 30° cone and male BSPT with 60° cone seat; the [45° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat](/p/45-elbow-jis-gas-male-60-cone-x-bspt-male-60-seat) has BSP and male BSPT with JIS 30° cone. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat supplied from and what are the export details?",
+          "a": "We supply the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat from stock in Dubai?",
+          "a": "Yes. We keep the 90° Elbow JIS Gas Male 60° Cone × BSPT Male 60° Seat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "blanking-plug-for-ports-with-ed-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Blanking Plug for Ports with ED Seal used for?",
+          "a": "The Blanking Plug for Ports with ED Seal is a plug in zinc-plated carbon steel with one male BSPP with ED seal end. It closes off a BSP port. The listing has 8 part numbers: IH-AD-BSP-013-02WD to IH-AD-BSP-013-24WD."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-013-16WD on the Blanking Plug for Ports with ED Seal?",
+          "a": "IH-AD-BSP-013-16WD is IH-AD-BSP-013 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters WD at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Blanking Plug for Ports with ED Seal come in?",
+          "a": "The Blanking Plug for Ports with ED Seal is listed in 8 part numbers, IH-AD-BSP-013-02WD to IH-AD-BSP-013-24WD, with threads from G1/8\"X28 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Blanking Plug for Ports with ED Seal for a G1-1/2\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-013-24WD for the G1-1/2\"X11 thread. Each size has its own part number, IH-AD-BSP-013-02WD to IH-AD-BSP-013-24WD, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Blanking Plug for Ports with ED Seal?",
+          "a": "The listing gives the Blanking Plug for Ports with ED Seal a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Blanking Plug for Ports with ED Seal made from and can I get it in stainless steel?",
+          "a": "The Blanking Plug for Ports with ED Seal is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Blanking Plug for Ports with ED Seal follow?",
+          "a": "The Blanking Plug for Ports with ED Seal is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Blanking Plug for Ports with ED Seal connect to?",
+          "a": "The Blanking Plug for Ports with ED Seal connects to a port machined for an ED seal. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the Blanking Plug for Ports with ED Seal?",
+          "a": "On the Blanking Plug for Ports with ED Seal, fit the ED seal in the port seat before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Blanking Plug for Ports with ED Seal and the BSP Plug?",
+          "a": "The two differ in their ends. The Blanking Plug for Ports with ED Seal has male BSPP with ED seal; the [BSP Plug](/p/bsp-plug-plug) has male BSPP with bonded seal. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Blanking Plug for Ports with ED Seal supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Blanking Plug for Ports with ED Seal. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Blanking Plug for Ports with ED Seal in stock in Dubai?",
+          "a": "Yes, the Blanking Plug for Ports with ED Seal is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-013-02WD, and the quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-female-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BSP Female 60° Cone do?",
+          "a": "The BSP Female 60° Cone is a straight adapter in zinc-plated carbon steel with female BSP with 60° cone seat on one end and female BSP with 60° cone seat on the other. It joins one thread or seat type to another in line. The listing has 12 part numbers: IH-AD-BSP-054-04 to IH-AD-BSP-054-24."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-054-12 mean on the BSP Female 60° Cone?",
+          "a": "IH-AD-BSP-054-12 is IH-AD-BSP-054 followed by the size code 12, which is the G3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSP Female 60° Cone listed in?",
+          "a": "The BSP Female 60° Cone is listed in 12 part numbers, IH-AD-BSP-054-04 to IH-AD-BSP-054-24. Threads run G1/4\"X19 to G1-1/2\"X11 on the first end and G1/4\"X19 to G1-1/2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Female 60° Cone for a G3/4\"X14 thread?",
+          "a": "The part number is IH-AD-BSP-054-12 for the G3/4\"X14 thread. Each size has its own part number, IH-AD-BSP-054-04 to IH-AD-BSP-054-24, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Female 60° Cone rated to?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Female 60° Cone, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-054-04 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Female 60° Cone made from and can I get it in stainless steel?",
+          "a": "The BSP Female 60° Cone is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Female 60° Cone follow?",
+          "a": "The BSP Female 60° Cone is listed to ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Female 60° Cone connect to?",
+          "a": "The first end of the BSP Female 60° Cone connects to a male BSP 60° cone port or hose end. The second end connects to a male BSP 60° cone port or hose end. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Female 60° Cone be installed?",
+          "a": "On the BSP Female 60° Cone, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Our guide [BSP hydraulic adapters](/blog/bsp-hydraulic-adapters-guide) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Female 60° Cone and the Butt-Weld Tube × BSP Female 60° Cone?",
+          "a": "The two differ in their ends. The BSP Female 60° Cone has female BSP with 60° cone seat and female BSP with 60° cone seat; the [Butt-Weld Tube × BSP Female 60° Cone](/p/butt-weld-tube-x-bsp-female-60-cone) has BSP (butt-weld tube end). Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Female 60° Cone supplied from and what are the export details?",
+          "a": "We supply the BSP Female 60° Cone from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Female 60° Cone available from stock in the UAE?",
+          "a": "Yes. We keep the BSP Female 60° Cone in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-female-connector",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BSP Female Connector do?",
+          "a": "The BSP Female Connector is a straight connector in zinc-plated carbon steel with one BSP end. It joins a BSP thread to a matching thread in line. The listing runs IH-AD-BSP-017-02 to IH-AD-BSP-017-32."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-017-1620 on the BSP Female Connector?",
+          "a": "IH-AD-BSP-017-1620 is IH-AD-BSP-017 followed by two size codes: 16 is the G1\"X11 thread and 20 is the G1-1/4\"X11. The first code is the BSP thread size in sixteenths of an inch, and the second is the second port size in sixteenths of an inch."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Female Connector come in?",
+          "a": "The BSP Female Connector is listed from IH-AD-BSP-017-02 to IH-AD-BSP-017-32, with threads from G1/8\"X28 to G2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Female Connector for a G1\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-017-16 for the G1\"X11 thread. Each size has its own part number, IH-AD-BSP-017-02 to IH-AD-BSP-017-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Female Connector rated to?",
+          "a": "The listing gives the BSP Female Connector a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Female Connector made from and can I get it in stainless steel?",
+          "a": "The BSP Female Connector is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Female Connector follow?",
+          "a": "The BSP Female Connector is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Female Connector connect to?",
+          "a": "The BSP Female Connector connects to the matching BSP thread listed in the size table. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Female Connector be installed?",
+          "a": "On the BSP Female Connector, clean the threads and seats and check the thread type on each end against the size table before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Female Connector and the BSP Female 60° Cone?",
+          "a": "The two differ in their ends. The BSP Female Connector has BSP; the [BSP Female 60° Cone](/p/bsp-female-60-cone) has female BSP with 60° cone seat and female BSP with 60° cone seat. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Female Connector supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the BSP Female Connector. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSP Female Connector from stock in Dubai?",
+          "a": "Yes. We keep the BSP Female Connector in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-60-seat-or-bonded-seal-x-bspt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × BSPT Female used for?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × BSPT Female is a straight adapter in zinc-plated carbon steel with male BSP with bonded seal on one end and female BSPT on the other. It joins one thread or seat type to another in line. The listing has 15 part numbers: IH-AD-BSP-057-0402 to IH-AD-BSP-057-24."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-057-12 on the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "IH-AD-BSP-057-12 is IH-AD-BSP-057 followed by the size code 12, which is the G3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSP Male 60° Seat or Bonded Seal × BSPT Female listed in?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × BSPT Female is listed in 15 part numbers, IH-AD-BSP-057-0402 to IH-AD-BSP-057-24. Threads run G1/4\"X19 to G1-1/2\"X11 on the first end and Rc1/8\"X28 to Rc1-1/2\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male 60° Seat or Bonded Seal × BSPT Female for a G1\"X11 to Rc3/4\"X14 connection?",
+          "a": "The part number is IH-AD-BSP-057-1612: G1\"X11 on one end and Rc3/4\"X14 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male 60° Seat or Bonded Seal × BSPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-057-0402 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × BSPT Female made from and can I get it in stainless steel?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × BSPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male 60° Seat or Bonded Seal × BSPT Female follow?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × BSPT Female is listed to ISO 7-1. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male 60° Seat or Bonded Seal × BSPT Female connect to?",
+          "a": "The first end of the BSP Male 60° Seat or Bonded Seal × BSPT Female connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. The second end connects to a male BSP taper (R) thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "On the BSP Male 60° Seat or Bonded Seal × BSPT Female, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. The tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Male 60° Seat or Bonded Seal × BSPT Female and the BSP Male 60° Seat or Bonded Seal × NPT Female?",
+          "a": "The two differ in their ends. The BSP Male 60° Seat or Bonded Seal × BSPT Female has male BSP with bonded seal and female BSPT; the [BSP Male 60° Seat or Bonded Seal × NPT Female](/p/bsp-male-60-seat-or-bonded-seal-x-npt-female) has male BSP with bonded seal and female NPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male 60° Seat or Bonded Seal × BSPT Female supplied from and what are the export details?",
+          "a": "We supply the BSP Male 60° Seat or Bonded Seal × BSPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Male 60° Seat or Bonded Seal × BSPT Female available from stock in the UAE?",
+          "a": "Yes. The BSP Male 60° Seat or Bonded Seal × BSPT Female is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-60-seat-or-bonded-seal-x-butt-weld-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube (IH-AD-BSP-060) and what does it connect?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube is a straight adapter in zinc-plated carbon steel with one male BSP with bonded seal end. It joins one thread or seat type to another in line. The listing has 13 part numbers: IH-AD-BSP-060-0410 to IH-AD-BSP-060-2450."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-060-2036 mean on the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube?",
+          "a": "IH-AD-BSP-060-2036 is IH-AD-BSP-060 followed by two size codes: 20 is the G1-1/4\"X11 thread and 36 is the second port. The first code is the BSP thread size in sixteenths of an inch, and the second is the second port size in sixteenths of an inch."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube listed in?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube is listed in 13 part numbers, IH-AD-BSP-060-0410 to IH-AD-BSP-060-2450, with threads from G1/4\"X19 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube for a G1-1/2\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-060-2436 for the G1-1/2\"X11 thread. Each size has its own part number, IH-AD-BSP-060-0410 to IH-AD-BSP-060-2450, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube rated to?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-060-0410 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube made from and can I get it in stainless steel?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube follow?",
+          "a": "The listing names no standard for the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube; the BSP and metric threads on it are made to the usual ISO thread standards, and the size table gives the thread on each end. No test or material certificate is attached to this listing; if you need one, say so in the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube connect to?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube?",
+          "a": "On the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube differ from the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal?",
+          "a": "The two differ in their ends. The BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube has male BSP with bonded seal; the [BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal](/p/bsp-male-60-seat-or-bonded-seal-x-metric-male-60-seat-or-bonded-seal) has male BSP with bonded seal and male Metric with bonded seal. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube supplied from and what are the export details?",
+          "a": "We supply the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube in stock in Dubai?",
+          "a": "Yes. We keep the BSP Male 60° Seat or Bonded Seal × Butt-Weld Tube in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-60-seat-or-bonded-seal-x-jic-female-74-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat (IH-AD-BSP-065) and what does it connect?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat is a straight adapter in zinc-plated carbon steel with male BSP with bonded seal on one end and female UN/UNF with 37° JIC cone on the other. It joins one thread or seat type to another in line. The listing has 39 part numbers: IH-AD-BSP-065-0204 to IH-AD-BSP-065-24WD."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-065-0408WD on the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat?",
+          "a": "IH-AD-BSP-065-0408WD is IH-AD-BSP-065 followed by two size codes: 04 is the G1/4\"X19 thread and 08 is the 3/4\"X16. The first code is the BSP thread size in sixteenths of an inch. The letters WD at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat come in?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat is listed in 39 part numbers, IH-AD-BSP-065-0204 to IH-AD-BSP-065-24WD. Threads run G1/8\"X28 to G2\"X11 on the first end and 7/16\"X20 to 2-1/2\"X12 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat for a G3/8\"X19 to 9/16\"X18 connection?",
+          "a": "The part number is IH-AD-BSP-065-06: G3/8\"X19 on one end and 9/16\"X18 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-065-0204 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat made from and can I get it in stainless steel?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat follow?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat is listed to SAE J514, ISO 8434-2. SAE J514 and ISO 8434-2 cover 37° flared (JIC) tube fittings, which seat on a 37° cone. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat connect to?",
+          "a": "The first end of the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. The second end connects to a 37° JIC male flare. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat be installed?",
+          "a": "On the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. The 37° JIC cone seals metal to metal, not on the thread. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat and the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "The two differ in their ends. The BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat has male BSP with bonded seal and female UN/UNF with 37° JIC cone; the [BSP Male 60° Seat or Bonded Seal × BSPT Female](/p/bsp-male-60-seat-or-bonded-seal-x-bspt-female) has male BSP with bonded seal and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat supplied from and what are the export details?",
+          "a": "We supply the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat available from stock in the UAE?",
+          "a": "Yes. We keep the BSP Male 60° Seat or Bonded Seal × JIC Female 74° Seat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-60-seat-or-bonded-seal-x-metric-male-60-seat-or-bonded-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal used for?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal is a straight adapter in zinc-plated carbon steel with male BSP with bonded seal on one end and male Metric with bonded seal on the other. It joins one thread or seat type to another in line. The listing has 33 part numbers: IH-AD-BSP-064-0210 to IH-AD-BSP-064-1230D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-064-1022 on the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal?",
+          "a": "IH-AD-BSP-064-1022 is IH-AD-BSP-064 followed by two size codes: 10 is the G5/8\"X14 thread and 22 is the M22X1.5. The first code is the BSP thread size in sixteenths of an inch, and the second is the metric thread size in millimetres."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal come in?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal is listed in 33 part numbers, IH-AD-BSP-064-0210 to IH-AD-BSP-064-1230D. Threads run G1/8\"X28 to G3/4\"X14 on the first end and M10X1 to M30X2 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal for a G3/4\"X14 to M27X2 connection?",
+          "a": "The part number is IH-AD-BSP-064-1227: G3/4\"X14 on one end and M27X2 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal rated to?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-064-0210 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal made from and can I get it in stainless steel?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal follow?",
+          "a": "The listing names no standard for the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal; the BSP and metric threads on it are made to the usual ISO thread standards, and the size table gives the thread on each end. No test or material certificate is attached to this listing; if you need one, say so in the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal connect to?",
+          "a": "The first end of the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. The second end connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal?",
+          "a": "On the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal differ from the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "The two differ in their ends. The BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal has male BSP with bonded seal and male Metric with bonded seal; the [BSP Male 60° Seat or Bonded Seal × BSPT Female](/p/bsp-male-60-seat-or-bonded-seal-x-bspt-female) has male BSP with bonded seal and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal supplied from and what are the export details?",
+          "a": "We supply the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal from stock in Dubai?",
+          "a": "Yes, the BSP Male 60° Seat or Bonded Seal × Metric Male 60° Seat or Bonded Seal is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-064-0210, and the quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-60-seat-or-bonded-seal-x-npt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × NPT Female used for?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × NPT Female is a straight adapter in zinc-plated carbon steel with male BSP with bonded seal on one end and female NPT on the other. It joins one thread or seat type to another in line. The listing has 8 part numbers: IH-AD-BSP-056-04 to IH-AD-BSP-056-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-056-20 mean on the BSP Male 60° Seat or Bonded Seal × NPT Female?",
+          "a": "IH-AD-BSP-056-20 is IH-AD-BSP-056 followed by the size code 20, which is the G1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSP Male 60° Seat or Bonded Seal × NPT Female listed in?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × NPT Female is listed in 8 part numbers, IH-AD-BSP-056-04 to IH-AD-BSP-056-32. Threads run G1/4\"X19 to G2\"X11 on the first end and NPT1/4\"X18 to NPT2\"X11.5 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male 60° Seat or Bonded Seal × NPT Female for a G2\"X11 to NPT2\"X11.5 connection?",
+          "a": "The part number is IH-AD-BSP-056-32: G2\"X11 on one end and NPT2\"X11.5 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Male 60° Seat or Bonded Seal × NPT Female rated to?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male 60° Seat or Bonded Seal × NPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-056-04 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male 60° Seat or Bonded Seal × NPT Female made from and can I get it in stainless steel?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × NPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male 60° Seat or Bonded Seal × NPT Female follow?",
+          "a": "The BSP Male 60° Seat or Bonded Seal × NPT Female is listed to ANSI/ASME B1.20.1. ASME B1.20.1 is the general-purpose inch pipe thread standard; it covers tapered NPT and straight NPSM pipe threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male 60° Seat or Bonded Seal × NPT Female connect to?",
+          "a": "The first end of the BSP Male 60° Seat or Bonded Seal × NPT Female connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. The second end connects to a male NPT pipe thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Male 60° Seat or Bonded Seal × NPT Female be installed?",
+          "a": "On the BSP Male 60° Seat or Bonded Seal × NPT Female, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. The tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Male 60° Seat or Bonded Seal × NPT Female and the BSP Male 60° Seat or Bonded Seal × BSPT Female?",
+          "a": "The two differ in their ends. The BSP Male 60° Seat or Bonded Seal × NPT Female has male BSP with bonded seal and female NPT; the [BSP Male 60° Seat or Bonded Seal × BSPT Female](/p/bsp-male-60-seat-or-bonded-seal-x-bspt-female) has male BSP with bonded seal and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male 60° Seat or Bonded Seal × NPT Female supplied from and what are the export details?",
+          "a": "We supply the BSP Male 60° Seat or Bonded Seal × NPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSP Male 60° Seat or Bonded Seal × NPT Female from stock in Dubai?",
+          "a": "Yes. The BSP Male 60° Seat or Bonded Seal × NPT Female is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [our quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-o-ring-x-bsp-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Male O-Ring × BSP Female used for?",
+          "a": "The BSP Male O-Ring × BSP Female is a straight adapter in zinc-plated carbon steel with male BSP on one end and female BSP (BSP O-ring stud end) on the other. It joins one thread or seat type to another in line. The listing has 10 part numbers: IH-AD-BSP-058-04 to IH-AD-BSP-058-16."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-058-12 mean on the BSP Male O-Ring × BSP Female?",
+          "a": "IH-AD-BSP-058-12 is IH-AD-BSP-058 followed by the size code 12, which is the G3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Male O-Ring × BSP Female come in?",
+          "a": "The BSP Male O-Ring × BSP Female is listed in 10 part numbers, IH-AD-BSP-058-04 to IH-AD-BSP-058-16, with threads from G1/4\"X19 to G1\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male O-Ring × BSP Female for a G3/8\"X19 to G1/2\"X14 connection?",
+          "a": "The part number is IH-AD-BSP-058-0608: G3/8\"X19 on one end and G1/2\"X14 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSP Male O-Ring × BSP Female?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male O-Ring × BSP Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-058-04 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male O-Ring × BSP Female made from and can I get it in stainless steel?",
+          "a": "The BSP Male O-Ring × BSP Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male O-Ring × BSP Female follow?",
+          "a": "The BSP Male O-Ring × BSP Female is listed to ISO 1179. ISO 1179 covers ports and stud ends with BSP threads and O-ring or elastomeric sealing. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male O-Ring × BSP Female connect to?",
+          "a": "The first end of the BSP Male O-Ring × BSP Female connects to the matching BSP thread listed in the size table. The second end connects to a BSP port or fitting that accepts an O-ring stud end. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the BSP Male O-Ring × BSP Female?",
+          "a": "On the BSP Male O-Ring × BSP Female, check the O-ring is present and undamaged before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Male O-Ring × BSP Female and the BSP Male O-Ring × BSPT Female?",
+          "a": "The two differ in their ends. The BSP Male O-Ring × BSP Female has male BSP and female BSP (BSP O-ring stud end); the [BSP Male O-Ring × BSPT Female](/p/bsp-male-o-ring-x-bspt-female) has male BSP and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male O-Ring × BSP Female supplied from and what are the export details?",
+          "a": "We supply the BSP Male O-Ring × BSP Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BSP Male O-Ring × BSP Female available from stock in the UAE?",
+          "a": "Yes. We keep the BSP Male O-Ring × BSP Female in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-male-o-ring-x-bspt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BSP Male O-Ring × BSPT Female do?",
+          "a": "The BSP Male O-Ring × BSPT Female is a straight adapter in zinc-plated carbon steel with male BSP on one end and female BSPT on the other. It joins one thread or seat type to another in line. The listing has 7 part numbers: IH-AD-BSP-070-02 to IH-AD-BSP-070-16."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-070-08 on the BSP Male O-Ring × BSPT Female?",
+          "a": "IH-AD-BSP-070-08 is IH-AD-BSP-070 followed by the size code 08, which is the G1/2\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSP Male O-Ring × BSPT Female come in?",
+          "a": "The BSP Male O-Ring × BSPT Female is listed in 7 part numbers, IH-AD-BSP-070-02 to IH-AD-BSP-070-16. Threads run G1/8\"X28 to G1\"X11 on the first end and Rc1/8\"X28 to Rc1\"X11 on the second. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Male O-Ring × BSPT Female for a G1/2\"X14 to Rc3/8\"X19 connection?",
+          "a": "The part number is IH-AD-BSP-070-0806: G1/2\"X14 on one end and Rc3/8\"X19 on the other. Other combinations are separate part numbers in the size table, so match both ends rather than the nominal size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSP Male O-Ring × BSPT Female rated to?",
+          "a": "The manufacturer publishes no pressure rating for the BSP Male O-Ring × BSPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-070-02 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Male O-Ring × BSPT Female made from and can I get it in stainless steel?",
+          "a": "The BSP Male O-Ring × BSPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Male O-Ring × BSPT Female follow?",
+          "a": "The BSP Male O-Ring × BSPT Female is listed to ISO 7-1. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Male O-Ring × BSPT Female connect to?",
+          "a": "The first end of the BSP Male O-Ring × BSPT Female connects to the matching BSP thread listed in the size table. The second end connects to a male BSP taper (R) thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the BSP Male O-Ring × BSPT Female?",
+          "a": "On the BSP Male O-Ring × BSPT Female, the tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Male O-Ring × BSPT Female and the BSP Male O-Ring × BSP Female?",
+          "a": "The two differ in their ends. The BSP Male O-Ring × BSPT Female has male BSP and female BSPT; the [BSP Male O-Ring × BSP Female](/p/bsp-male-o-ring-x-bsp-female) has male BSP and female BSP (BSP O-ring stud end). Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Male O-Ring × BSPT Female supplied from and what are the export details?",
+          "a": "We supply the BSP Male O-Ring × BSPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the BSP Male O-Ring × BSPT Female in stock in Dubai?",
+          "a": "Yes. We keep the BSP Male O-Ring × BSPT Female in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bsp-plug-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSP Plug used for?",
+          "a": "The BSP Plug is a plug in zinc-plated carbon steel with one male BSPP with bonded seal end. It closes off a BSP port. The listing runs IH-AD-BSP-016-04 to IH-AD-BSP-016-16."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-016-12 on the BSP Plug?",
+          "a": "IH-AD-BSP-016-12 is IH-AD-BSP-016 followed by the size code 12, which is the G3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSP Plug listed in?",
+          "a": "The BSP Plug is listed from IH-AD-BSP-016-04 to IH-AD-BSP-016-16, with threads from G1/4\"X19 to G1\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSP Plug for a G3/4\"X14 thread?",
+          "a": "The part number is IH-AD-BSP-016-12 for the G3/4\"X14 thread. Each size has its own part number, IH-AD-BSP-016-04 to IH-AD-BSP-016-16, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSP Plug?",
+          "a": "The listing gives the BSP Plug a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSP Plug made from and can I get it in stainless steel?",
+          "a": "The BSP Plug is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSP Plug follow?",
+          "a": "The BSP Plug is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSP Plug connect to?",
+          "a": "The BSP Plug connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSP Plug be installed?",
+          "a": "On the BSP Plug, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSP Plug and the BSP Female Connector?",
+          "a": "The BSP Plug and the [BSP Female Connector](/p/bsp-female-connector) have the same end types. The difference is the body: the first closes off a BSP port, while the second joins a BSP thread to a matching thread in line. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSP Plug supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the BSP Plug. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the BSP Plug in stock in Dubai?",
+          "a": "Yes. We keep the BSP Plug in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bspt-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSPT Female used for?",
+          "a": "The BSPT Female is a straight adapter in zinc-plated carbon steel with female BSPT on one end and female BSPT on the other. It joins one thread or seat type to another in line. The listing has 17 part numbers: IH-AD-BSP-067-02 to IH-AD-BSP-067-32."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-067-1216 on the BSPT Female?",
+          "a": "IH-AD-BSP-067-1216 is IH-AD-BSP-067 followed by two size codes: 12 is the Rc3/4\"X14 thread and 16 is the Rc1\"X11. The first code is the BSP thread size in sixteenths of an inch, and the second is the second port size in sixteenths of an inch."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the BSPT Female listed in?",
+          "a": "The BSPT Female is listed in 17 part numbers, IH-AD-BSP-067-02 to IH-AD-BSP-067-32, with threads from Rc1/8\"X28 to Rc2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSPT Female for a Rc1\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-067-16 for the Rc1\"X11 thread. Each size has its own part number, IH-AD-BSP-067-02 to IH-AD-BSP-067-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSPT Female?",
+          "a": "The manufacturer publishes no pressure rating for the BSPT Female, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-067-02 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSPT Female made from and can I get it in stainless steel?",
+          "a": "The BSPT Female is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSPT Female follow?",
+          "a": "The BSPT Female is listed to ISO 7-1. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSPT Female connect to?",
+          "a": "The first end of the BSPT Female connects to a male BSP taper (R) thread. The second end connects to a male BSP taper (R) thread. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSPT Female be installed?",
+          "a": "On the BSPT Female, the tapered BSPT thread seals on the thread, so tighten it forward until it seals rather than backing off to align. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSPT Female and the 90° Elbow BSPT Female?",
+          "a": "The BSPT Female and the [90° Elbow BSPT Female](/p/90-elbow-bspt-female) have the same end types. The difference is the body: the first joins one thread or seat type to another in line, while the second turns a line through a right angle. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSPT Female supplied from and what are the export details?",
+          "a": "We supply the BSPT Female from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSPT Female from stock in Dubai?",
+          "a": "Yes, the BSPT Female is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-067-02, and the quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bspt-male-60-seat-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSPT Male 60° Seat Plug used for?",
+          "a": "The BSPT Male 60° Seat Plug is a plug in zinc-plated carbon steel with one male BSPT with 60° cone seat end. It closes off a BSP port. The listing has 9 part numbers: IH-AD-BSP-071-02SP to IH-AD-BSP-071-32SP."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-071-20SP mean on the BSPT Male 60° Seat Plug?",
+          "a": "IH-AD-BSP-071-20SP is IH-AD-BSP-071 followed by the size code 20, which is the R1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters SP at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the BSPT Male 60° Seat Plug come in?",
+          "a": "The BSPT Male 60° Seat Plug is listed in 9 part numbers, IH-AD-BSP-071-02SP to IH-AD-BSP-071-32SP, with threads from R1/8\"X28 to R2X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the BSPT Male 60° Seat Plug for a R1-1/2\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-071-24SP for the R1-1/2\"X11 thread. Each size has its own part number, IH-AD-BSP-071-02SP to IH-AD-BSP-071-32SP, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the BSPT Male 60° Seat Plug?",
+          "a": "The manufacturer publishes no pressure rating for the BSPT Male 60° Seat Plug, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-071-02SP suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BSPT Male 60° Seat Plug made from and can I get it in stainless steel?",
+          "a": "The BSPT Male 60° Seat Plug is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSPT Male 60° Seat Plug follow?",
+          "a": "The BSPT Male 60° Seat Plug is listed to ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BSPT Male 60° Seat Plug connect to?",
+          "a": "The BSPT Male 60° Seat Plug connects to a female swivel BSP 60° cone fitting. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the BSPT Male 60° Seat Plug be installed?",
+          "a": "On the BSPT Male 60° Seat Plug, the 60° cone seats metal to metal and the thread only draws it up, so the seat must be clean and undamaged. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BSPT Male 60° Seat Plug and the 90° Elbow BSPT Male 60° Seat × BSPT Female?",
+          "a": "The two differ in their ends. The BSPT Male 60° Seat Plug has male BSPT with 60° cone seat; the [90° Elbow BSPT Male 60° Seat × BSPT Female](/p/90-elbow-bspt-male-60-seat-x-bspt-female) has male BSPT with 60° cone seat and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSPT Male 60° Seat Plug supplied from and what are the export details?",
+          "a": "We supply the BSPT Male 60° Seat Plug from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the BSPT Male 60° Seat Plug from stock in Dubai?",
+          "a": "Yes, the BSPT Male 60° Seat Plug is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-071-02SP, and the quantities on [our quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bulkhead-locknut",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Bulkhead Locknut do?",
+          "a": "The Bulkhead Locknut is a locknut in zinc-plated carbon steel for a BSPP bulkhead fitting; it locks a bulkhead fitting in place against the panel. The listing has 4 part numbers: IH-ST-9041-16 to IH-ST-9041-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-ST-9041-20 mean on the Bulkhead Locknut?",
+          "a": "IH-ST-9041-20 is IH-ST-9041 followed by the size code 20, which is the 1-1/4\" BSPP thread in sixteenths of an inch. The same code pattern runs through IH-ST-9041-16 to IH-ST-9041-32, so quote the full part number from the size table."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Bulkhead Locknut come in?",
+          "a": "The Bulkhead Locknut is listed in 4 part numbers, IH-ST-9041-16 to IH-ST-9041-32, with threads from 1\" BSPP to 2\" BSPP. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Bulkhead Locknut for a 2\" BSPP thread?",
+          "a": "The part number is IH-ST-9041-32 for the 2\" BSPP thread. Each size has its own part number, IH-ST-9041-16 to IH-ST-9041-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bulkhead Locknut rated to?",
+          "a": "The manufacturer publishes no pressure rating for the Bulkhead Locknut, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-ST-9041-16 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Bulkhead Locknut made from and can I get it in stainless steel?",
+          "a": "The Bulkhead Locknut is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Bulkhead Locknut follow?",
+          "a": "The Bulkhead Locknut is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Bulkhead Locknut connect to?",
+          "a": "The Bulkhead Locknut threads onto the body of a bulkhead fitting that matches it, and the size table lists the BSPP thread for each part number. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Bulkhead Locknut be installed?",
+          "a": "On the Bulkhead Locknut, tighten the nut against the panel without turning the fitting body. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Bulkhead Locknut and the Bulkhead Union?",
+          "a": "The bulkhead union passes through the panel and joins two BSP threads, while the locknut clamps such a fitting to the panel wall. The Bulkhead Locknut and the [Bulkhead Union](/p/bulkhead-union) are used together, so order the nut and the fitting to the same BSPP thread size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Bulkhead Locknut supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Bulkhead Locknut. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bulkhead Locknut available from stock in the UAE?",
+          "a": "Yes. We keep the Bulkhead Locknut in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bulkhead-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Bulkhead Union do?",
+          "a": "The Bulkhead Union is a bulkhead union in zinc-plated carbon steel with male BSPP with bonded seal on one end and male BSPP with bonded seal on the other. It joins two threaded ends through a panel wall. The listing has 8 part numbers: IH-AD-BSP-031-04LN to IH-AD-BSP-031-24LN."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-031-16LN mean on the Bulkhead Union?",
+          "a": "IH-AD-BSP-031-16LN is IH-AD-BSP-031 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order. The letters LN at the end are part of the part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the Bulkhead Union listed in?",
+          "a": "The Bulkhead Union is listed in 8 part numbers, IH-AD-BSP-031-04LN to IH-AD-BSP-031-24LN, with threads from G1/4\"X19 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Bulkhead Union for a G1-1/2\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-031-24LN for the G1-1/2\"X11 thread. Each size has its own part number, IH-AD-BSP-031-04LN to IH-AD-BSP-031-24LN, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bulkhead Union rated to?",
+          "a": "The listing gives the Bulkhead Union a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Bulkhead Union made from and can I get it in stainless steel?",
+          "a": "The Bulkhead Union is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Bulkhead Union follow?",
+          "a": "The Bulkhead Union is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Bulkhead Union connect to?",
+          "a": "The first end of the Bulkhead Union connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. The second end connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the Bulkhead Union?",
+          "a": "On the Bulkhead Union, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Bulkhead Union and the Bulkhead Locknut?",
+          "a": "The bulkhead union passes through the panel and joins two BSP threads, while the locknut clamps such a fitting to the panel wall. The Bulkhead Union and the [Bulkhead Locknut](/p/bulkhead-locknut) are used together, so order the nut and the fitting to the same BSPP thread size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Bulkhead Union supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Bulkhead Union. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bulkhead Union in stock in Dubai?",
+          "a": "Yes. We keep the Bulkhead Union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our quotation form](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "butt-weld-tube-x-bsp-female-60-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Butt-Weld Tube × BSP Female 60° Cone (IH-AD-BSP-061) and what does it connect?",
+          "a": "The Butt-Weld Tube × BSP Female 60° Cone is a straight adapter in zinc-plated carbon steel with one BSP (butt-weld tube end) end. It joins one thread or seat type to another in line. The listing has 9 part numbers: IH-AD-BSP-061-1004 to IH-AD-BSP-061-5024."
+        },
+        {
+          "slot": "B",
+          "q": "What does the family number IH-AD-BSP-061 mean on the Butt-Weld Tube × BSP Female 60° Cone and how do I order a size?",
+          "a": "IH-AD-BSP-061 is the Indus family number for the Butt-Weld Tube × BSP Female 60° Cone, and each size has its own part number, IH-AD-BSP-061-1004 to IH-AD-BSP-061-5024. Quote the full part number from the size table, or send the thread and size on each end and Indus engineering will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the Butt-Weld Tube × BSP Female 60° Cone listed in?",
+          "a": "The Butt-Weld Tube × BSP Female 60° Cone is listed in 9 part numbers, IH-AD-BSP-061-1004 to IH-AD-BSP-061-5024, with threads from G1/4\"X19 to G1-1/2\". The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Butt-Weld Tube × BSP Female 60° Cone for a G1-1/4\" thread?",
+          "a": "The part number is IH-AD-BSP-061-3420 for the G1-1/4\" thread. Each size has its own part number, IH-AD-BSP-061-1004 to IH-AD-BSP-061-5024, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Butt-Weld Tube × BSP Female 60° Cone?",
+          "a": "The manufacturer publishes no pressure rating for the Butt-Weld Tube × BSP Female 60° Cone, so we do not quote one. Send the working pressure, medium and temperature of your line and Indus engineering will confirm that IH-AD-BSP-061-1004 suits it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Butt-Weld Tube × BSP Female 60° Cone made from and can I get it in stainless steel?",
+          "a": "The Butt-Weld Tube × BSP Female 60° Cone is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Butt-Weld Tube × BSP Female 60° Cone follow?",
+          "a": "The Butt-Weld Tube × BSP Female 60° Cone is listed to ISO 228 parallel thread. ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Butt-Weld Tube × BSP Female 60° Cone connect to?",
+          "a": "The Butt-Weld Tube × BSP Female 60° Cone connects to a tube welded to the butt-weld end. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Butt-Weld Tube × BSP Female 60° Cone be installed?",
+          "a": "On the Butt-Weld Tube × BSP Female 60° Cone, weld the tube end by a qualified welder before fitting. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Butt-Weld Tube × BSP Female 60° Cone and the BSP Female 60° Cone?",
+          "a": "The two differ in their ends. The Butt-Weld Tube × BSP Female 60° Cone has BSP (butt-weld tube end); the [BSP Female 60° Cone](/p/bsp-female-60-cone) has female BSP with 60° cone seat and female BSP with 60° cone seat. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Butt-Weld Tube × BSP Female 60° Cone supplied from and what are the export details?",
+          "a": "We supply the Butt-Weld Tube × BSP Female 60° Cone from our warehouse in Dubai, UAE, and ship to buyers across the GCC, Africa, Asia and beyond. The listing does not state a country of origin or HS code, so we confirm both on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Butt-Weld Tube × BSP Female 60° Cone from stock in Dubai?",
+          "a": "Yes, the Butt-Weld Tube × BSP Female 60° Cone is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-061-1004, and the quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "female-swivel-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Female Swivel Cap do?",
+          "a": "The Female Swivel Cap is a cap in zinc-plated carbon steel with one female swivel BSPP with bonded seal end. It caps off a male BSP thread end. The listing runs IH-AD-BSP-011-02 to IH-AD-BSP-011-24."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-011-16 on the Female Swivel Cap?",
+          "a": "IH-AD-BSP-011-16 is IH-AD-BSP-011 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Female Swivel Cap come in?",
+          "a": "The Female Swivel Cap is listed from IH-AD-BSP-011-02 to IH-AD-BSP-011-24, with threads from G1/8\"X28 to G1-1/2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Female Swivel Cap for a G3/4\"X14 thread?",
+          "a": "The part number is IH-AD-BSP-011-12 for the G3/4\"X14 thread. Each size has its own part number, IH-AD-BSP-011-02 to IH-AD-BSP-011-24, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Female Swivel Cap?",
+          "a": "The listing gives the Female Swivel Cap a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Swivel Cap made from and can I get it in stainless steel?",
+          "a": "The Female Swivel Cap is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Swivel Cap follow?",
+          "a": "The Female Swivel Cap is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Female Swivel Cap connect to?",
+          "a": "The Female Swivel Cap connects to a male BSP thread sealed by a bonded seal. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the Female Swivel Cap?",
+          "a": "On the Female Swivel Cap, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Female Swivel Cap and the BSPT Female?",
+          "a": "The two differ in their ends. The Female Swivel Cap has female swivel BSPP with bonded seal; the [BSPT Female](/p/bspt-female) has female BSPT and female BSPT. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Swivel Cap supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Female Swivel Cap. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Female Swivel Cap in stock in Dubai?",
+          "a": "Yes, the Female Swivel Cap is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-011-02, and the quantities on [our quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "female-thread-cross",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Female Thread Cross (IH-AD-BSP-002) and what does it connect?",
+          "a": "The Female Thread Cross is a cross in zinc-plated carbon steel with one female BSP end. It joins four BSP ports at one junction. The listing has 7 part numbers: IH-AD-BSP-002-02 to IH-AD-BSP-002-20."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-002-12 mean on the Female Thread Cross?",
+          "a": "IH-AD-BSP-002-12 is IH-AD-BSP-002 followed by the size code 12, which is the Rc3/4\"X14 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Female Thread Cross come in?",
+          "a": "The Female Thread Cross is listed in 7 part numbers, IH-AD-BSP-002-02 to IH-AD-BSP-002-20, with threads from Rc1/8\"X28 to Rc1-1/4\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Female Thread Cross for a Rc1\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-002-16 for the Rc1\"X11 thread. Each size has its own part number, IH-AD-BSP-002-02 to IH-AD-BSP-002-20, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Female Thread Cross?",
+          "a": "The listing gives the Female Thread Cross a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Thread Cross made from and can I get it in stainless steel?",
+          "a": "The Female Thread Cross is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Thread Cross follow?",
+          "a": "The Female Thread Cross is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Female Thread Cross connect to?",
+          "a": "The Female Thread Cross connects to the matching BSP thread listed in the size table. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Female Thread Cross be installed?",
+          "a": "On the Female Thread Cross, clean the threads and seats and check the thread type on each end against the size table before tightening. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Female Thread Cross and the Female Thread Elbow?",
+          "a": "The two differ in their ends. The Female Thread Cross has female BSP; the [Female Thread Elbow](/p/female-thread-elbow) has female BSPP with bonded seal and female BSPP with bonded seal. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Thread Cross supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Female Thread Cross. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Female Thread Cross in stock in Dubai?",
+          "a": "Yes, the Female Thread Cross is a stock item at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Tell us the part numbers, such as IH-AD-BSP-002-02, and the quantities on [our quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "female-thread-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Female Thread Elbow used for?",
+          "a": "The Female Thread Elbow is a 90° elbow adapter in zinc-plated carbon steel with female BSPP with bonded seal on one end and female BSPP with bonded seal on the other. It turns a line through a right angle. The listing runs IH-AD-BSP-015-02 to IH-AD-BSP-015-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-015-20 mean on the Female Thread Elbow?",
+          "a": "IH-AD-BSP-015-20 is IH-AD-BSP-015 followed by the size code 20, which is the G1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Female Thread Elbow come in?",
+          "a": "The Female Thread Elbow is listed from IH-AD-BSP-015-02 to IH-AD-BSP-015-32, with threads from G1/8\"X28 to G2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Female Thread Elbow for a G1/8\"X28 thread?",
+          "a": "The part number is IH-AD-BSP-015-02 for the G1/8\"X28 thread. Each size has its own part number, IH-AD-BSP-015-02 to IH-AD-BSP-015-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Female Thread Elbow?",
+          "a": "The listing gives the Female Thread Elbow a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Thread Elbow made from and can I get it in stainless steel?",
+          "a": "The Female Thread Elbow is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Thread Elbow follow?",
+          "a": "The Female Thread Elbow is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Female Thread Elbow connect to?",
+          "a": "The first end of the Female Thread Elbow connects to a male BSP thread sealed by a bonded seal. The second end connects to a male BSP thread sealed by a bonded seal. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Female Thread Elbow be installed?",
+          "a": "On the Female Thread Elbow, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Female Thread Elbow and the Female Thread Cross?",
+          "a": "The two differ in their ends. The Female Thread Elbow has female BSPP with bonded seal and female BSPP with bonded seal; the [Female Thread Cross](/p/female-thread-cross) has female BSPP with bonded seal. Match the seat on each end to your port first, because a BSP thread that fits can still leak on the wrong seat."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Thread Elbow supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Female Thread Elbow. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Female Thread Elbow from stock in Dubai?",
+          "a": "Yes. The Female Thread Elbow is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "female-thread-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Female Thread Tee (IH-AD-BSP-004) and what does it connect?",
+          "a": "The Female Thread Tee is a branch tee in zinc-plated carbon steel with one female BSPP with bonded seal end. It joins three BSP ports at a T. The listing runs IH-AD-BSP-004-02 to IH-AD-BSP-004-32."
+        },
+        {
+          "slot": "B",
+          "q": "What do the digits in IH-AD-BSP-004-20 mean on the Female Thread Tee?",
+          "a": "IH-AD-BSP-004-20 is IH-AD-BSP-004 followed by the size code 20, which is the G1-1/4\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Female Thread Tee come in?",
+          "a": "The Female Thread Tee is listed from IH-AD-BSP-004-02 to IH-AD-BSP-004-32, with threads from G1/8\"X28 to G2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Female Thread Tee for a G1-1/2\"X11 thread?",
+          "a": "The part number is IH-AD-BSP-004-24 for the G1-1/2\"X11 thread. Each size has its own part number, IH-AD-BSP-004-02 to IH-AD-BSP-004-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Female Thread Tee rated to?",
+          "a": "The listing gives the Female Thread Tee a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Female Thread Tee made from and can I get it in stainless steel?",
+          "a": "The Female Thread Tee is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Female Thread Tee follow?",
+          "a": "The Female Thread Tee is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Female Thread Tee connect to?",
+          "a": "The Female Thread Tee connects to a male BSP thread sealed by a bonded seal. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and seal the Female Thread Tee?",
+          "a": "On the Female Thread Tee, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Female Thread Tee and the Female Thread Cross?",
+          "a": "The Female Thread Tee and the [Female Thread Cross](/p/female-thread-cross) have the same end types. The difference is the body: the first joins three BSP ports at a T, while the second joins four BSP ports at one junction. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Female Thread Tee supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Female Thread Tee. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Female Thread Tee in stock in Dubai?",
+          "a": "Yes. The Female Thread Tee is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Hex Head Plug used for?",
+          "a": "The Hex Head Plug is a plug in zinc-plated carbon steel with one male BSPP with bonded seal end. It closes off a BSP port. The listing has 10 part numbers: IH-AD-BSP-014-02 to IH-AD-BSP-014-32."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-BSP-014-16 on the Hex Head Plug?",
+          "a": "IH-AD-BSP-014-16 is IH-AD-BSP-014 followed by the size code 16, which is the G1\"X11 thread in sixteenths of an inch; with a single code both ends are the same size. A two-code part number gives the two ends in order."
+        },
+        {
+          "slot": "D",
+          "q": "What thread sizes is the Hex Head Plug listed in?",
+          "a": "The Hex Head Plug is listed in 10 part numbers, IH-AD-BSP-014-02 to IH-AD-BSP-014-32, with threads from G1/8\"X28 to G2\"X11. The Sizes & Part Numbers tab lists the dimensions of each part number, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which part number is the Hex Head Plug for a G1/8\"X28 thread?",
+          "a": "The part number is IH-AD-BSP-014-02 for the G1/8\"X28 thread. Each size has its own part number, IH-AD-BSP-014-02 to IH-AD-BSP-014-32, so match the thread on your port to the row."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Hex Head Plug?",
+          "a": "The listing gives the Hex Head Plug a working pressure of up to 400 bar at smaller sizes, with the rating falling as the size increases. The rating of a joint is that of its lowest-rated component, so check the host port, hose and ferrule too before you size the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Hex Head Plug made from and can I get it in stainless steel?",
+          "a": "The Hex Head Plug is made from carbon steel, zinc-plated, Cr3+ passivated and RoHS-compliant. Stainless steel in 316 is available on request for marine, chemical or food-grade service: add -SS to the part number when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Hex Head Plug follow?",
+          "a": "The Hex Head Plug is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers BSP parallel pipe threads, on which a pressure-tight joint is not made; the seal is made by a washer, O-ring or seat. ISO 7-1 covers BSP taper pipe threads (R and Rc), on which a pressure-tight joint is made on the threads. No test or material certificate is attached to this listing; if you need one, say so in the enquiry and we will confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Hex Head Plug connect to?",
+          "a": "The Hex Head Plug connects to a flat-faced BSP port, with a bonded seal washer under the shoulder. More BSP adapters are on the [BSP adapters shelf](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Hex Head Plug be installed?",
+          "a": "On the Hex Head Plug, fit the bonded seal washer under the shoulder before tightening, because a parallel BSP thread does not seal on its threads. Our guide [BSPP bonded seals and dowty washers](/blog/bspp-bonded-seal-sizing) covers the seal types in more detail."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Hex Head Plug and the BSP Plug?",
+          "a": "The Hex Head Plug and the [BSP Plug](/p/bsp-plug-plug) have the same end types. The difference is the body: the first closes off a BSP port, while the second closes off a BSP port. Pick by how the line must turn, then match the seat on each end to your port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Hex Head Plug supplied from and what are the export details?",
+          "a": "The listing gives UAE as the country of origin of the Hex Head Plug. We ship from our warehouse in Dubai, UAE, to buyers across the GCC, Africa, Asia and beyond, and the HS code is confirmed on the quotation and commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hex Head Plug in stock in Dubai?",
+          "a": "Yes. The Hex Head Plug is held in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times, with delivery within 3 working days inside the UAE. Request a quotation through [the contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

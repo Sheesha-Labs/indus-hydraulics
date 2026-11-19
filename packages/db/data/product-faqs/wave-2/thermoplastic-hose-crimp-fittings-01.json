@@ -1,0 +1,1136 @@
+{
+  "family": "thermoplastic-hose-crimp-fittings-01",
+  "extraFacts": [
+    {
+      "fact": "SAE J514 is the standard for 37° flared (JIC) tube fittings, whose flare seats on a 74° included cone; SAE J512 covers the 45° SAE flare, a different seat that does not seal against the 37° flare.",
+      "source": "SAE J514; SAE J512"
+    },
+    {
+      "fact": "NPTF (Dryseal) is standardised in ASME B1.20.3: a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread. NPSM is a straight (parallel) pipe thread under ASME B1.20.1 and does not seal on the thread.",
+      "source": "ASME B1.20.3 and ASME B1.20.1 scopes"
+    },
+    {
+      "fact": "SAE J1453 covers O-ring face seal (ORFS) fittings, and SAE J1926 / ISO 11926 covers straight-thread O-ring boss (ORB) ports; both seal on an O-ring, not on the thread.",
+      "source": "SAE J1453; SAE J1926 / ISO 11926-1"
+    },
+    {
+      "fact": "ISO 228-1 covers BSP parallel pipe threads, which do not seal on the thread; a 60° cone BSPP connection seals on the cone (ISO 8434-6).",
+      "source": "ISO 228-1; ISO 8434-6 (60° cone connectors)"
+    },
+    {
+      "fact": "DIN 2353 / ISO 8434-1 covers metric tube fittings with a 24° cone; the L series is the light series and the S series the heavy series, each with its own tube sizes and threads.",
+      "source": "DIN 2353; ISO 8434-1:2018"
+    },
+    {
+      "fact": "Hose and fitting dash sizes count sixteenths of an inch: -3 is 3/16 inch, -4 is 1/4 inch, -6 is 3/8 inch, -8 is 1/2 inch, -12 is 3/4 inch and -16 is 1 inch.",
+      "source": "SAE J514 / ISO 8434 dash size convention; row data of the Parker 56 Series listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-10156-male-nptf-pipe-crimp-fitting-rigid-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10156 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10156 is a 56 Series permanent crimp hose fitting with a Male NPTF Pipe end in a rigid, straight body, for Parker (Parflex) thermoplastic hose. It has 15 part numbers for hose -2 (1/8\") to -16 (1\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10156-2-2 on the Parker 10156 fitting?",
+          "a": "In 10156-2-2 the 10156 is the style and series, the first number is the end size and the last is the hose size: 2 is the end size, here a 1/8-27 NPTF thread on 1/8\" (-2) hose. 10156-6-5 puts a 3/8-18 NPTF end on 5/16\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10156 Male NPTF Pipe crimp fitting come in?",
+          "a": "The Parker 10156 is listed in 15 sizes, from 10156-2-2 (1/8\" hose) to 10156-16-16 (1\" hose), covering hose -2 (1/8\") to -16 (1\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10156 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10156-6-5 fits 5/16\" hose with a 3/8-18 NPTF end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10156 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10156 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10156 fitting made from?",
+          "a": "The Parker 10156 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10156 follow?",
+          "a": "The end of the 10156 fitting is NPTF (Dryseal) to ASME B1.20.3, a taper pipe thread cut so the crests and roots close up as it is tightened, so it seals on the thread. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10156 Male NPTF Pipe end connect to?",
+          "a": "On the Parker 10156 the Male NPTF Pipe end connects to a female NPT or NPTF port, such as a valve, pump or tank connection, and the crimped end goes on to Parflex thermoplastic hose in -2 (1/8\") to -16 (1\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10156 on thermoplastic hose?",
+          "a": "Crimp the 10156 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seal the NPTF thread with a sealant suited to the fluid and tighten it until firm; do not back off to align the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10156 compare with the Parker 11356 crimp fitting?",
+          "a": "The Parker 10156 is rigid, straight and the 11356 is swivel, straight. Both have a Male NPTF Pipe end, and the swivel nut lets the hose stay still while the fitting is made up, whereas a rigid fitting has to be turned as a whole, so choose the swivel where the hose must not twist. See the [Parker 11356 Male NPTF Pipe Crimp Fitting, Swivel, Straight (56 Series)](/p/parker-11356-male-nptf-pipe-crimp-fitting-swivel-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10156 ship from, and what are the export details?",
+          "a": "The Parker 10156 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10156 crimp fitting for export from Dubai?",
+          "a": "Yes. We keep the Parker 10156 fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 10156-2-2 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10256-female-nptf-pipe-crimp-fitting-rigid-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10256 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10256 is a 56 Series permanent crimp hose fitting with a Female NPTF Pipe end in a rigid, straight body, for Parker (Parflex) thermoplastic hose. It has 3 part numbers for hose -4 (1/4\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10256-4-4 on the Parker 10256 fitting?",
+          "a": "In 10256-4-4 the 10256 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 1/4-18 NPTF thread on 1/4\" (-4) hose. 10256-6-6 puts a 3/8-18 NPTF end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10256 Female NPTF Pipe crimp fitting come in?",
+          "a": "The Parker 10256 is listed in 3 sizes: 10256-4-4 (1/4\" hose), 10256-6-6 (3/8\" hose), 10256-8-8 (1/2\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10256 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10256-6-6 fits 3/8\" hose with a 3/8-18 NPTF end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10256 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10256 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10256 fitting made from?",
+          "a": "The Parker 10256 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10256 follow?",
+          "a": "The end of the 10256 fitting is NPTF (Dryseal) to ASME B1.20.3, a taper pipe thread cut so the crests and roots close up as it is tightened, so it seals on the thread. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10256 Female NPTF Pipe end connect to?",
+          "a": "On the Parker 10256 the Female NPTF Pipe end connects to a male NPT or NPTF thread, such as a pipe nipple, a gauge or a plug, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -8 (1/2\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10256 on thermoplastic hose?",
+          "a": "Crimp the 10256 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seal the NPTF thread with a sealant suited to the fluid and tighten it until firm; do not back off to align the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10256 compare with the Parker 10156 crimp fitting?",
+          "a": "The Parker 10256 is rigid, straight and the 10156 is rigid, straight. Their ends differ, Female NPTF Pipe on the 10256 and Male NPTF Pipe on the 10156, and the end connection is different, so choose the one that matches the thread and seat of the port you are connecting to. See the [Parker 10156 Male NPTF Pipe Crimp Fitting, Rigid, Straight (56 Series)](/p/parker-10156-male-nptf-pipe-crimp-fitting-rigid-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10256 ship from, and what are the export details?",
+          "a": "The Parker 10256 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10256 crimp fitting for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Parker 10256 fitting, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10356-male-jic-37-crimp-fitting-rigid-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10356 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10356 is a 56 Series permanent crimp hose fitting with a Male JIC 37° end in a rigid, straight body, for Parker (Parflex) thermoplastic hose. It has 12 part numbers for hose -3 (3/16\") to -12 (3/4\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10356-4-3 on the Parker 10356 fitting?",
+          "a": "In 10356-4-3 the 10356 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 3/16\" (-3) hose. 10356-5-6 puts a 1/2-20 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10356 Male JIC 37° crimp fitting come in?",
+          "a": "The Parker 10356 is listed in 12 sizes, from 10356-4-3 (3/16\" hose) to 10356-12-12 (3/4\" hose), covering hose -3 (3/16\") to -12 (3/4\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10356 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10356-5-6 fits 3/8\" hose with a 1/2-20 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10356 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10356 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10356 fitting made from?",
+          "a": "The Parker 10356 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10356 follow?",
+          "a": "The end of the 10356 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10356 Male JIC 37° end connect to?",
+          "a": "On the Parker 10356 the Male JIC 37° end connects to a female JIC 37° swivel nut or port, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -12 (3/4\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10356 on thermoplastic hose?",
+          "a": "Crimp the 10356 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10356 compare with the Parker 13E56 crimp fitting?",
+          "a": "The Parker 10356 is rigid, straight and the 13E56 is rigid, straight, long. Both have a Male JIC 37° end, and long and short describe the length of the body, so the long one gives more room for the nut and the short one saves length. See the [Parker 13E56 Male JIC 37° Crimp Fitting, Rigid, Straight, Long (56 Series)](/p/parker-13e56-male-jic-37-crimp-fitting-rigid-straight-long)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10356 ship from, and what are the export details?",
+          "a": "The Parker 10356 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10356 crimp fitting for export from Dubai?",
+          "a": "Yes. The Parker 10356 fitting is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 10356-4-3 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10456-male-sae-45-crimp-fitting-rigid-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10456 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10456 is a 56 Series permanent crimp hose fitting with a Male SAE 45° end in a rigid, straight body, for Parker (Parflex) thermoplastic hose. It has 2 part numbers for hose -3 (3/16\") to -6 (3/8\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10456-4-3 on the Parker 10456 fitting?",
+          "a": "In 10456-4-3 the 10456 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 SAE 45° thread on 3/16\" (-3) hose. 10456-6-6 puts a 5/8-18 SAE 45° end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10456 Male SAE 45° crimp fitting come in?",
+          "a": "The Parker 10456 is listed in 2 sizes: 10456-4-3 (3/16\" hose), 10456-6-6 (3/8\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10456 fitting?",
+          "a": "The two sizes differ in the hose bore and the end thread: 10456-4-3 is 3/16\" hose with a 7/16-20 SAE 45° end and 10456-6-6 is 3/8\" hose with a 5/8-18 SAE 45° end. Check the bore of your Parflex hose and the thread of the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10456 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10456 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10456 fitting made from?",
+          "a": "The Parker 10456 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10456 follow?",
+          "a": "The end of the 10456 fitting is SAE 45° flare (SAE J512), a 45° seat that does not mate with the 37° JIC flare even though some threads match. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10456 Male SAE 45° end connect to?",
+          "a": "On the Parker 10456 the Male SAE 45° end connects to a female SAE 45° flare nut or port, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -6 (3/8\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10456 on thermoplastic hose?",
+          "a": "Crimp the 10456 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check that the mating seat is 45°, not 37°, before tightening; the threads can look the same, but the two seats do not seal together."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10456 compare with the Parker 10856 crimp fitting?",
+          "a": "The Parker 10456 is rigid, straight and the 10856 is swivel, straight. Their ends differ, Male SAE 45° on the 10456 and Female SAE 45° on the 10856, and the end connection is different, so choose the one that matches the thread and seat of the port you are connecting to. See the [Parker 10856 Female SAE 45° Crimp Fitting, Swivel, Straight (56 Series)](/p/parker-10856-female-sae-45-crimp-fitting-swivel-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10456 ship from, and what are the export details?",
+          "a": "The Parker 10456 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10456 crimp fitting for export from Dubai?",
+          "a": "Yes, we stock the Parker 10456 fitting in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10556-male-sae-o-ring-boss-orb-crimp-fitting-rigid-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10556 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10556 is a 56 Series permanent crimp hose fitting with a Male SAE O-Ring Boss (ORB) end in a rigid, straight body, for Parker (Parflex) thermoplastic hose. It has 9 part numbers for hose -3 (3/16\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10556-4-3 on the Parker 10556 fitting?",
+          "a": "In 10556-4-3 the 10556 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 ORB thread on 3/16\" (-3) hose. 10556-5-5 puts a 1/2-20 ORB end on 5/16\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10556 Male SAE O-Ring Boss (ORB) crimp fitting come in?",
+          "a": "The Parker 10556 is listed in 9 sizes, from 10556-4-3 (3/16\" hose) to 10556-10-8 (1/2\" hose), covering hose -3 (3/16\") to -8 (1/2\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10556 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10556-5-5 fits 5/16\" hose with a 1/2-20 ORB end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10556 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10556 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10556 fitting made from?",
+          "a": "The Parker 10556 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10556 follow?",
+          "a": "The end of the 10556 fitting is SAE O-ring boss (ORB) to SAE J1926, a straight thread that seals on an O-ring under the hex, not on the thread. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10556 Male SAE O-Ring Boss (ORB) end connect to?",
+          "a": "On the Parker 10556 the Male SAE O-Ring Boss (ORB) end connects to a female SAE O-ring boss port, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -8 (1/2\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10556 on thermoplastic hose?",
+          "a": "Crimp the 10556 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Lubricate the O-ring, screw the fitting in until the O-ring is seated on the boss face, and tighten to the make-up in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). Do not use thread sealant."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10556 compare with the Parker 10356 crimp fitting?",
+          "a": "The Parker 10556 is rigid, straight and the 10356 is rigid, straight. Their ends differ, Male SAE O-Ring Boss (ORB) on the 10556 and Male JIC 37° on the 10356, and the end connection is different, so choose the one that matches the thread and seat of the port you are connecting to. See the [Parker 10356 Male JIC 37° Crimp Fitting, Rigid, Straight (56 Series)](/p/parker-10356-male-jic-37-crimp-fitting-rigid-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10556 ship from, and what are the export details?",
+          "a": "The Parker 10556 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10556 crimp fitting for export from Dubai?",
+          "a": "Yes. Stock of the Parker 10556 fitting sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as 10556-4-3 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10656-female-jic-37-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10656 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10656 is a 56 Series permanent crimp hose fitting with a Female JIC 37° end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 21 part numbers for hose -2 (1/8\") to -16 (1\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10656-4-2 on the Parker 10656 fitting?",
+          "a": "In 10656-4-2 the 10656 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 1/8\" (-2) hose. 10656-6-6 puts a 9/16-18 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10656 Female JIC 37° crimp fitting come in?",
+          "a": "The Parker 10656 is listed in 21 sizes, from 10656-4-2 (1/8\" hose) to 10656-16-16 (1\" hose), covering hose -2 (1/8\") to -16 (1\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10656 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10656-6-6 fits 3/8\" hose with a 9/16-18 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10656 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10656 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10656 fitting made from?",
+          "a": "The Parker 10656 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10656 follow?",
+          "a": "The end of the 10656 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10656 Female JIC 37° end connect to?",
+          "a": "On the Parker 10656 the Female JIC 37° end connects to a male JIC 37° flare, such as a JIC adapter or a flared tube end, and the crimped end goes on to Parflex thermoplastic hose in -2 (1/8\") to -16 (1\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10656 on thermoplastic hose?",
+          "a": "Crimp the 10656 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10656 compare with the Parker 13956 crimp fitting?",
+          "a": "The Parker 10656 is swivel, straight and the 13956 is swivel, 90° elbow, short drop. Both have a Female JIC 37° end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 13956 Female JIC 37° Crimp Fitting, Swivel, 90° Elbow, Short Drop (56 Series)](/p/parker-13956-female-jic-37-crimp-fitting-swivel-90-elbow-short-drop)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10656 ship from, and what are the export details?",
+          "a": "The Parker 10656 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10656 crimp fitting for export from Dubai?",
+          "a": "Yes. We hold the Parker 10656 fitting at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10756-female-npsm-pipe-60-cone-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10756 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10756 is a 56 Series permanent crimp hose fitting with a Female NPSM Pipe (60° Cone) end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 3 part numbers for hose -4 (1/4\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10756-4-4 on the Parker 10756 fitting?",
+          "a": "In 10756-4-4 the 10756 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 1/4-18 NPSM thread on 1/4\" (-4) hose. 10756-6-6 puts a 3/8-18 NPSM end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10756 Female NPSM Pipe (60° Cone) crimp fitting come in?",
+          "a": "The Parker 10756 is listed in 3 sizes: 10756-4-4 (1/4\" hose), 10756-6-6 (3/8\" hose), 10756-8-8 (1/2\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10756 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 10756-6-6 fits 3/8\" hose with a 3/8-18 NPSM end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10756 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10756 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10756 fitting made from?",
+          "a": "The Parker 10756 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10756 follow?",
+          "a": "The end of the 10756 fitting is NPSM, a straight pipe thread to ASME B1.20.1, with a 60° cone seat; the joint seals on the cone, not on the thread. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10756 Female NPSM Pipe (60° Cone) end connect to?",
+          "a": "On the Parker 10756 the Female NPSM Pipe (60° Cone) end connects to a male NPSM nipple with a 60° cone, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -8 (1/2\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10756 on thermoplastic hose?",
+          "a": "Crimp the 10756 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 60° cone against the mating nipple and tighten the swivel nut; the straight thread does not seal, so do not add sealant to it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10756 compare with the Parker 19256 crimp fitting?",
+          "a": "The Parker 10756 is swivel, straight and the 19256 is swivel, straight. Their ends differ, Female NPSM Pipe (60° Cone) on the 10756 and Female BSP Parallel Pipe (60° Cone) on the 19256, and the end connection is different, so choose the one that matches the thread and seat of the port you are connecting to. See the [Parker 19256 Female BSP Parallel Pipe (60° Cone) Crimp Fitting, Swivel, Straight (56 Series)](/p/parker-19256-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10756 ship from, and what are the export details?",
+          "a": "The Parker 10756 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10756 crimp fitting for export from Dubai?",
+          "a": "Yes. We keep the Parker 10756 fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 10756-4-4 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-10856-female-sae-45-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 10856 crimp fitting and what hose does it fit?",
+          "a": "The Parker 10856 is a 56 Series permanent crimp hose fitting with a Female SAE 45° end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 2 part numbers for hose -4 (1/4\") to -6 (3/8\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 10856-6-4 on the Parker 10856 fitting?",
+          "a": "In 10856-6-4 the 10856 is the style and series, the first number is the end size and the last is the hose size: 6 is the end size, here a 5/8-18 SAE 45° thread on 1/4\" (-4) hose. 10856-6-6 puts a 5/8-18 SAE 45° end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 10856 Female SAE 45° crimp fitting come in?",
+          "a": "The Parker 10856 is listed in 2 sizes: 10856-6-4 (1/4\" hose), 10856-6-6 (3/8\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 10856 fitting?",
+          "a": "The two sizes differ in the hose bore and the end thread: 10856-6-4 is 1/4\" hose with a 5/8-18 SAE 45° end and 10856-6-6 is 3/8\" hose with a 5/8-18 SAE 45° end. Check the bore of your Parflex hose and the thread of the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 10856 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 10856 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 10856 fitting made from?",
+          "a": "The Parker 10856 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 10856 follow?",
+          "a": "The end of the 10856 fitting is SAE 45° flare (SAE J512), a 45° seat that does not mate with the 37° JIC flare even though some threads match. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 10856 Female SAE 45° end connect to?",
+          "a": "On the Parker 10856 the Female SAE 45° end connects to a male SAE 45° flare end, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -6 (3/8\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 10856 on thermoplastic hose?",
+          "a": "Crimp the 10856 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check that the mating seat is 45°, not 37°, before tightening; the threads can look the same, but the two seats do not seal together."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 10856 compare with the Parker 10456 crimp fitting?",
+          "a": "The Parker 10856 is swivel, straight and the 10456 is rigid, straight. Their ends differ, Female SAE 45° on the 10856 and Male SAE 45° on the 10456, and the end connection is different, so choose the one that matches the thread and seat of the port you are connecting to. See the [Parker 10456 Male SAE 45° Crimp Fitting, Rigid, Straight (56 Series)](/p/parker-10456-male-sae-45-crimp-fitting-rigid-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 10856 ship from, and what are the export details?",
+          "a": "The Parker 10856 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 10856 crimp fitting for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Parker 10856 fitting, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-11356-male-nptf-pipe-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 11356 crimp fitting and what hose does it fit?",
+          "a": "The Parker 11356 is a 56 Series permanent crimp hose fitting with a Male NPTF Pipe end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 7 part numbers for hose -2 (1/8\") to -12 (3/4\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 11356-2-2 on the Parker 11356 fitting?",
+          "a": "In 11356-2-2 the 11356 is the style and series, the first number is the end size and the last is the hose size: 2 is the end size, here a 1/8-27 NPTF thread on 1/8\" (-2) hose. 11356-6-6 puts a 3/8-18 NPTF end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 11356 Male NPTF Pipe crimp fitting come in?",
+          "a": "The Parker 11356 is listed in 7 sizes, from 11356-2-2 (1/8\" hose) to 11356-12-12 (3/4\" hose), covering hose -2 (1/8\") to -12 (3/4\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 11356 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 11356-6-6 fits 3/8\" hose with a 3/8-18 NPTF end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 11356 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 11356 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 11356 fitting made from?",
+          "a": "The Parker 11356 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 11356 follow?",
+          "a": "The end of the 11356 fitting is NPTF (Dryseal) to ASME B1.20.3, a taper pipe thread cut so the crests and roots close up as it is tightened, so it seals on the thread. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 11356 Male NPTF Pipe end connect to?",
+          "a": "On the Parker 11356 the Male NPTF Pipe end connects to a female NPT or NPTF port, such as a valve, pump or tank connection, and the crimped end goes on to Parflex thermoplastic hose in -2 (1/8\") to -12 (3/4\"). See the [NPT, NPSM and SAE hose fittings shelf](/c/npt-npsm-sae-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 11356 on thermoplastic hose?",
+          "a": "Crimp the 11356 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seal the NPTF thread with a sealant suited to the fluid and tighten it until firm; do not back off to align the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 11356 compare with the Parker 10156 crimp fitting?",
+          "a": "The Parker 11356 is swivel, straight and the 10156 is rigid, straight. Both have a Male NPTF Pipe end, and the swivel nut lets the hose stay still while the fitting is made up, whereas a rigid fitting has to be turned as a whole, so choose the swivel where the hose must not twist. See the [Parker 10156 Male NPTF Pipe Crimp Fitting, Rigid, Straight (56 Series)](/p/parker-10156-male-nptf-pipe-crimp-fitting-rigid-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 11356 ship from, and what are the export details?",
+          "a": "The Parker 11356 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 11356 crimp fitting for export from Dubai?",
+          "a": "Yes. The Parker 11356 fitting is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 11356-2-2 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-13756-female-jic-37-crimp-fitting-swivel-45-elbow-short-drop",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 13756 crimp fitting and what hose does it fit?",
+          "a": "The Parker 13756 is a 56 Series permanent crimp hose fitting with a Female JIC 37° end in a swivel, 45° elbow, short drop body, for Parker (Parflex) thermoplastic hose. It has 10 part numbers for hose -3 (3/16\") to -12 (3/4\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 13756-4-3 on the Parker 13756 fitting?",
+          "a": "In 13756-4-3 the 13756 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 3/16\" (-3) hose. 13756-6-6 puts a 9/16-18 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 13756 Female JIC 37° crimp fitting come in?",
+          "a": "The Parker 13756 is listed in 10 sizes, from 13756-4-3 (3/16\" hose) to 13756-12-12 (3/4\" hose), covering hose -3 (3/16\") to -12 (3/4\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 13756 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 13756-6-6 fits 3/8\" hose with a 9/16-18 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 13756 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 13756 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 13756 fitting made from?",
+          "a": "The Parker 13756 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 13756 follow?",
+          "a": "The end of the 13756 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 13756 Female JIC 37° end connect to?",
+          "a": "On the Parker 13756 the Female JIC 37° end connects to a male JIC 37° flare, such as a JIC adapter or a flared tube end, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -12 (3/4\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 13756 on thermoplastic hose?",
+          "a": "Crimp the 13756 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 13756 compare with the Parker 13956 crimp fitting?",
+          "a": "The Parker 13756 is swivel, 45° elbow, short drop and the 13956 is swivel, 90° elbow, short drop. Both have a Female JIC 37° end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 13956 Female JIC 37° Crimp Fitting, Swivel, 90° Elbow, Short Drop (56 Series)](/p/parker-13956-female-jic-37-crimp-fitting-swivel-90-elbow-short-drop)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 13756 ship from, and what are the export details?",
+          "a": "The Parker 13756 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 13756 crimp fitting for export from Dubai?",
+          "a": "Yes, we stock the Parker 13756 fitting in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-13956-female-jic-37-crimp-fitting-swivel-90-elbow-short-drop",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 13956 crimp fitting and what hose does it fit?",
+          "a": "The Parker 13956 is a 56 Series permanent crimp hose fitting with a Female JIC 37° end in a swivel, 90° elbow, short drop body, for Parker (Parflex) thermoplastic hose. It has 10 part numbers for hose -3 (3/16\") to -12 (3/4\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 13956-4-3 on the Parker 13956 fitting?",
+          "a": "In 13956-4-3 the 13956 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 3/16\" (-3) hose. 13956-6-6 puts a 9/16-18 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 13956 Female JIC 37° crimp fitting come in?",
+          "a": "The Parker 13956 is listed in 10 sizes, from 13956-4-3 (3/16\" hose) to 13956-12-12 (3/4\" hose), covering hose -3 (3/16\") to -12 (3/4\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 13956 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 13956-6-6 fits 3/8\" hose with a 9/16-18 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 13956 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 13956 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 13956 fitting made from?",
+          "a": "The Parker 13956 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 13956 follow?",
+          "a": "The end of the 13956 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 13956 Female JIC 37° end connect to?",
+          "a": "On the Parker 13956 the Female JIC 37° end connects to a male JIC 37° flare, such as a JIC adapter or a flared tube end, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -12 (3/4\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 13956 on thermoplastic hose?",
+          "a": "Crimp the 13956 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 13956 compare with the Parker 14156 crimp fitting?",
+          "a": "The Parker 13956 is swivel, 90° elbow, short drop and the 14156 is swivel, 90° elbow, long drop. Both have a Female JIC 37° end, and the drop describes the length of the leg that carries the thread, so a longer drop gives more clearance for the nut and a shorter drop saves space. See the [Parker 14156 Female JIC 37° Crimp Fitting, Swivel, 90° Elbow, Long Drop (56 Series)](/p/parker-14156-female-jic-37-crimp-fitting-swivel-90-elbow-long-drop)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 13956 ship from, and what are the export details?",
+          "a": "The Parker 13956 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 13956 crimp fitting for export from Dubai?",
+          "a": "Yes. Stock of the Parker 13956 fitting sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as 13956-4-3 and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-13e56-male-jic-37-crimp-fitting-rigid-straight-long",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 13E56 crimp fitting and what hose does it fit?",
+          "a": "The Parker 13E56 is a 56 Series permanent crimp hose fitting with a Male JIC 37° end in a rigid, straight, long body, for Parker (Parflex) thermoplastic hose. It has 3 part numbers for hose -4 (1/4\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 13E56-4-4 on the Parker 13E56 fitting?",
+          "a": "In 13E56-4-4 the 13E56 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 1/4\" (-4) hose. 13E56-6-6 puts a 9/16-18 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 13E56 Male JIC 37° crimp fitting come in?",
+          "a": "The Parker 13E56 is listed in 3 sizes: 13E56-4-4 (1/4\" hose), 13E56-6-6 (3/8\" hose), 13E56-8-8 (1/2\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 13E56 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 13E56-6-6 fits 3/8\" hose with a 9/16-18 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 13E56 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 13E56 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 13E56 fitting made from?",
+          "a": "The Parker 13E56 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 13E56 follow?",
+          "a": "The end of the 13E56 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 13E56 Male JIC 37° end connect to?",
+          "a": "On the Parker 13E56 the Male JIC 37° end connects to a female JIC 37° swivel nut or port, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -8 (1/2\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 13E56 on thermoplastic hose?",
+          "a": "Crimp the 13E56 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 13E56 compare with the Parker 10356 crimp fitting?",
+          "a": "The Parker 13E56 is rigid, straight, long and the 10356 is rigid, straight. Both have a Male JIC 37° end, and long and short describe the length of the body, so the long one gives more room for the nut and the short one saves length. See the [Parker 10356 Male JIC 37° Crimp Fitting, Rigid, Straight (56 Series)](/p/parker-10356-male-jic-37-crimp-fitting-rigid-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 13E56 ship from, and what are the export details?",
+          "a": "The Parker 13E56 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 13E56 crimp fitting for export from Dubai?",
+          "a": "Yes. We hold the Parker 13E56 fitting at our warehouse in Dubai, UAE and ship worldwide with the best lead times; confirm price and delivery by sending your sizes and quantities to us on the [contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-14156-female-jic-37-crimp-fitting-swivel-90-elbow-long-drop",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 14156 crimp fitting and what hose does it fit?",
+          "a": "The Parker 14156 is a 56 Series permanent crimp hose fitting with a Female JIC 37° end in a swivel, 90° elbow, long drop body, for Parker (Parflex) thermoplastic hose. It has 9 part numbers for hose -3 (3/16\") to -12 (3/4\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 14156-4-3 on the Parker 14156 fitting?",
+          "a": "In 14156-4-3 the 14156 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a 7/16-20 JIC thread on 3/16\" (-3) hose. 14156-6-6 puts a 9/16-18 JIC end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 14156 Female JIC 37° crimp fitting come in?",
+          "a": "The Parker 14156 is listed in 9 sizes, from 14156-4-3 (3/16\" hose) to 14156-12-12 (3/4\" hose), covering hose -3 (3/16\") to -12 (3/4\"). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 14156 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 14156-6-6 fits 3/8\" hose with a 9/16-18 JIC end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 14156 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 14156 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 14156 fitting made from?",
+          "a": "The Parker 14156 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 14156 follow?",
+          "a": "The end of the 14156 fitting is JIC 37° to SAE J514, a 37° flare that seats metal-to-metal on a 74° included cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 14156 Female JIC 37° end connect to?",
+          "a": "On the Parker 14156 the Female JIC 37° end connects to a male JIC 37° flare, such as a JIC adapter or a flared tube end, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -12 (3/4\"). See the [JIC 37° hose fittings shelf](/c/jic-37-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 14156 on thermoplastic hose?",
+          "a": "Crimp the 14156 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Seat the 37° flare squarely and make the nut up by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque); do not use thread sealant, because the seat does the sealing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 14156 compare with the Parker 1L956 crimp fitting?",
+          "a": "The Parker 14156 is swivel, 90° elbow, long drop and the 1L956 is swivel, 90° elbow, medium drop. Both have a Female JIC 37° end, and the drop describes the length of the leg that carries the thread, so a longer drop gives more clearance for the nut and a shorter drop saves space. See the [Parker 1L956 Female JIC 37° Crimp Fitting, Swivel, 90° Elbow, Medium Drop (56 Series)](/p/parker-1l956-female-jic-37-crimp-fitting-swivel-90-elbow-medium-drop)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 14156 ship from, and what are the export details?",
+          "a": "The Parker 14156 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 14156 crimp fitting for export from Dubai?",
+          "a": "Yes. We keep the Parker 14156 fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as 14156-4-3 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-19256-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 19256 crimp fitting and what hose does it fit?",
+          "a": "The Parker 19256 is a 56 Series permanent crimp hose fitting with a Female BSP Parallel Pipe (60° Cone) end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 3 part numbers for hose -4 (1/4\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 19256-4-4 on the Parker 19256 fitting?",
+          "a": "In 19256-4-4 the 19256 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a G1/4 BSPP thread on 1/4\" (-4) hose. 19256-6-6 puts a G3/8 BSPP end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 19256 Female BSP Parallel Pipe (60° Cone) crimp fitting come in?",
+          "a": "The Parker 19256 is listed in 3 sizes: 19256-4-4 (1/4\" hose), 19256-6-6 (3/8\" hose), 19256-8-8 (1/2\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 19256 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 19256-6-6 fits 3/8\" hose with a G3/8 BSPP end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 19256 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 19256 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 19256 fitting made from?",
+          "a": "The Parker 19256 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 19256 follow?",
+          "a": "The end of the 19256 fitting is BSP parallel (BSPP, ISO 228-1) with a 60° cone seat, a thread that does not seal on its flanks and relies on the cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 19256 Female BSP Parallel Pipe (60° Cone) end connect to?",
+          "a": "On the Parker 19256 the Female BSP Parallel Pipe (60° Cone) end connects to a male BSPP 60° cone nipple, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -8 (1/2\"). See the [BSP hose fittings shelf](/c/bsp-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 19256 on thermoplastic hose?",
+          "a": "Crimp the 19256 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check the mating cone angle before tightening, because BSPP threads also come with a flat seat or a bonded seal that do not match a 60° cone."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 19256 compare with the Parker 1B256 crimp fitting?",
+          "a": "The Parker 19256 is swivel, straight and the 1B256 is swivel, 90° elbow. Both have a Female BSP Parallel Pipe (60° Cone) end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 1B256 Female BSP Parallel Pipe (60° Cone) Crimp Fitting, Swivel, 90° Elbow (56 Series)](/p/parker-1b256-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-90-elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 19256 ship from, and what are the export details?",
+          "a": "The Parker 19256 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 19256 crimp fitting for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Parker 19256 fitting, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-1b256-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 1B256 crimp fitting and what hose does it fit?",
+          "a": "The Parker 1B256 is a 56 Series permanent crimp hose fitting with a Female BSP Parallel Pipe (60° Cone) end in a swivel, 90° elbow body, for Parker (Parflex) thermoplastic hose. It has 2 part numbers for hose -4 (1/4\") to -6 (3/8\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 1B256-4-4 on the Parker 1B256 fitting?",
+          "a": "In 1B256-4-4 the 1B256 is the style and series, the first number is the end size and the last is the hose size: 4 is the end size, here a G1/4 BSPP thread on 1/4\" (-4) hose. 1B256-6-6 puts a G3/8 BSPP end on 3/8\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 1B256 Female BSP Parallel Pipe (60° Cone) crimp fitting come in?",
+          "a": "The Parker 1B256 is listed in 2 sizes: 1B256-4-4 (1/4\" hose), 1B256-6-6 (3/8\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 1B256 fitting?",
+          "a": "The two sizes differ in the hose bore and the end thread: 1B256-4-4 is 1/4\" hose with a G1/4 BSPP end and 1B256-6-6 is 3/8\" hose with a G3/8 BSPP end. Check the bore of your Parflex hose and the thread of the port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 1B256 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 1B256 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 1B256 fitting made from?",
+          "a": "The Parker 1B256 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 1B256 follow?",
+          "a": "The end of the 1B256 fitting is BSP parallel (BSPP, ISO 228-1) with a 60° cone seat, a thread that does not seal on its flanks and relies on the cone. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 1B256 Female BSP Parallel Pipe (60° Cone) end connect to?",
+          "a": "On the Parker 1B256 the Female BSP Parallel Pipe (60° Cone) end connects to a male BSPP 60° cone nipple, and the crimped end goes on to Parflex thermoplastic hose in -4 (1/4\") to -6 (3/8\"). See the [BSP hose fittings shelf](/c/bsp-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 1B256 on thermoplastic hose?",
+          "a": "Crimp the 1B256 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check the mating cone angle before tightening, because BSPP threads also come with a flat seat or a bonded seal that do not match a 60° cone."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 1B256 compare with the Parker 19256 crimp fitting?",
+          "a": "The Parker 1B256 is swivel, 90° elbow and the 19256 is swivel, straight. Both have a Female BSP Parallel Pipe (60° Cone) end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 19256 Female BSP Parallel Pipe (60° Cone) Crimp Fitting, Swivel, Straight (56 Series)](/p/parker-19256-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 1B256 ship from, and what are the export details?",
+          "a": "The Parker 1B256 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 1B256 crimp fitting for export from Dubai?",
+          "a": "Yes. The Parker 1B256 fitting is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as 1B256-4-4 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-1c356-female-metric-l-ball-nose-crimp-fitting-swivel-straight",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 1C356 crimp fitting and what hose does it fit?",
+          "a": "The Parker 1C356 is a 56 Series permanent crimp hose fitting with a Female Metric L (Ball Nose) end in a swivel, straight body, for Parker (Parflex) thermoplastic hose. It has 5 part numbers for hose -3 (3/16\") to -8 (1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 1C356-6-3 on the Parker 1C356 fitting?",
+          "a": "In 1C356-6-3 the 1C356 is the style and series, the first number is the end size and the last is the hose size: 6 is a 6 mm tube, L series end on 3/16\" (-3) hose. 1C356-10-5 puts a 10 mm tube, L series end on 5/16\" hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 1C356 Female Metric L (Ball Nose) crimp fitting come in?",
+          "a": "The Parker 1C356 is listed in 5 sizes: 1C356-6-3 (3/16\" hose), 1C356-8-4 (1/4\" hose), 1C356-10-5 (5/16\" hose), 1C356-12-6 (3/8\" hose), 1C356-15-8 (1/2\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 1C356 fitting?",
+          "a": "Choose the hose bore first and then the end size: the same hose can take different end sizes, so 1C356-10-5 fits 5/16\" hose with a 10 mm tube, L series end. Measure the bore of the Parflex hose you are using, not the outside diameter, and quote the full part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 1C356 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 1C356 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 1C356 fitting made from?",
+          "a": "The Parker 1C356 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 1C356 follow?",
+          "a": "The end of the 1C356 fitting is a metric thread with a ball-nose seat, in the series stated in the title. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 1C356 Female Metric L (Ball Nose) end connect to?",
+          "a": "On the Parker 1C356 the Female Metric L (Ball Nose) end connects to a male metric stud end of the same series and tube size, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\") to -8 (1/2\"). See the [metric hose fittings shelf](/c/metric-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 1C356 on thermoplastic hose?",
+          "a": "Crimp the 1C356 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check the series, L or S, and the tube size of the mating part before tightening, because L and S threads of different tube sizes can look alike."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 1C356 compare with the Parker 1C456 crimp fitting?",
+          "a": "The Parker 1C356 is swivel, straight and the 1C456 is swivel, 45° elbow. Both have a Female Metric L (Ball Nose) end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 1C456 Female Metric L (Ball Nose) Crimp Fitting, Swivel, 45° Elbow (56 Series)](/p/parker-1c456-female-metric-l-ball-nose-crimp-fitting-swivel-45-elbow)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 1C356 ship from, and what are the export details?",
+          "a": "The Parker 1C356 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 1C356 crimp fitting for export from Dubai?",
+          "a": "Yes, we stock the Parker 1C356 fitting in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-1c456-female-metric-l-ball-nose-crimp-fitting-swivel-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 1C456 crimp fitting and what hose does it fit?",
+          "a": "The Parker 1C456 is a 56 Series permanent crimp hose fitting with a Female Metric L (Ball Nose) end in a swivel, 45° elbow body, for Parker (Parflex) thermoplastic hose. It has 1 part number for hose -3 (3/16\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number 1C456-6-3 on the Parker 1C456 fitting?",
+          "a": "In 1C456-6-3 the 1C456 is the style and series, the first number is the end size and the last is the hose size: 6 is a 6 mm tube, L series end on 3/16\" (-3) hose. It is the only size listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 1C456 Female Metric L (Ball Nose) crimp fitting come in?",
+          "a": "The Parker 1C456 is listed in 1 size: 1C456-6-3 (3/16\" hose). The Sizes & Part Numbers table gives each end thread, and other sizes are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Parker 1C456 fitting?",
+          "a": "The Parker 1C456 is listed in one size, 1C456-6-3, with a 6 mm tube, L series end on 3/16\" hose. Check the bore of your Parflex hose and the thread of the port against it; for another size, send us the hose and the port and we will find the part."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker 1C456 crimp fitting have?",
+          "a": "The listing states no pressure rating for the 1C456 fitting. A crimped assembly is rated only as a matched combination of Parker hose, fitting and crimp, so tell us the Parflex hose series, the working pressure and the temperature and we will confirm before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 1C456 fitting made from?",
+          "a": "The Parker 1C456 fitting is steel, as the listing states for the 56 Series. For corrosive, marine or washdown duty, tell us the fluid and the environment before you order and we will check whether the steel and its finish suit the job."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread and seat standard does the Parker 1C456 follow?",
+          "a": "The end of the 1C456 fitting is a metric thread with a ball-nose seat, in the series stated in the title. The 56 Series is listed for Parker (Parflex) thermoplastic hose; the listing states no further standard for the crimp."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker 1C456 Female Metric L (Ball Nose) end connect to?",
+          "a": "On the Parker 1C456 the Female Metric L (Ball Nose) end connects to a male metric stud end of the same series and tube size, and the crimped end goes on to Parflex thermoplastic hose in -3 (3/16\"). See the [metric hose fittings shelf](/c/metric-hose-fittings) for matching hose ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I assemble and fit the Parker 1C456 on thermoplastic hose?",
+          "a": "Crimp the 1C456 onto an approved Parflex hose with the die setting Parker publishes, then make up the connection. Check the series, L or S, and the tube size of the mating part before tightening, because L and S threads of different tube sizes can look alike."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 1C456 compare with the Parker 1C356 crimp fitting?",
+          "a": "The Parker 1C456 is swivel, 45° elbow and the 1C356 is swivel, straight. Both have a Female Metric L (Ball Nose) end, and the body shape sets how the hose leaves the port: straight keeps it in line, 45° gives a gentle bend and 90° a tight corner, so choose by the room behind the port. See the [Parker 1C356 Female Metric L (Ball Nose) Crimp Fitting, Swivel, Straight (56 Series)](/p/parker-1c356-female-metric-l-ball-nose-crimp-fitting-swivel-straight)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Parker 1C456 ship from, and what are the export details?",
+          "a": "The Parker 1C456 ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 1C456 crimp fitting for export from Dubai?",
+          "a": "Yes. Stock of the Parker 1C456 fitting sits in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Request pricing by sending the part numbers such as 1C456-6-3 and quantities through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

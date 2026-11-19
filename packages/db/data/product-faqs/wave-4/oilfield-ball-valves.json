@@ -1,0 +1,925 @@
+{
+  "family": "oilfield-ball-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "floating-ball-valve-2-in-1502-m-f-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 M×F floating ball valve (10,000 psi, sour) used for?",
+          "a": "This is a 2 in floating ball valve rated 10,000 psi for sour service, with a 1502 male Weco union inlet and a female union outlet. The reverse end orientation suits tee-to-line flow direction on frac iron."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 M×F floating ball valve (10,000 psi, sour) have?",
+          "a": "The valve has a 2 in 1502 male Weco union inlet and a 2 in 1502 female Weco union outlet, full port. The inlet is the male half and the outlet the female half, which is the reverse of the standard F×M valve. Pick the orientation that lets the line connect without a crossover."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 1502 M×F floating ball valve (10,000 psi, sour)?",
+          "a": "The 2 in 1502 M×F floating ball valve (10,000 psi, sour) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 M×F floating ball valve (10,000 psi, sour)?",
+          "a": "The 2 in 1502 M×F floating ball valve (10,000 psi, sour) is rated 10,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 M×F floating ball valve (10,000 psi, sour) made from?",
+          "a": "The body is forged alloy steel (4130), listed as NACE-compliant, with a 316SS ball with 17-4PH stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 1502 M×F floating ball valve (10,000 psi, sour) use?",
+          "a": "The 2 in 1502 M×F floating ball valve (10,000 psi, sour) has Devlon seats with HNBR O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 M×F floating ball valve (10,000 psi, sour) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 2 in 1502 M×F floating ball valve (10,000 psi, sour), and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 M×F floating ball valve (10,000 psi, sour) connect to?",
+          "a": "The 2 in 1502 M×F floating ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 M×F floating ball valve (10,000 psi, sour) used?",
+          "a": "It is used on frac iron tee-to-line connections, service-tree manifolds (reverse-flow leg), coiled-tubing kill lines and sour-service flow-back assemblies. Choose it only for the 10,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 M×F floating ball valve (10,000 psi, sour) differ from the 2 in 1502 F×M version?",
+          "a": "The 2 in 1502 M×F floating ball valve (10,000 psi, sour) is a 2 in floating valve rated 10,000 psi, while the [2 in 1502 F×M version](/p/floating-ball-valve-2-in-1502-f-m-10-000-psi-sour-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 M×F floating ball valve (10,000 psi, sour)?",
+          "a": "The listing states a lead time of 14 days for the 2 in 1502 M×F floating ball valve (10,000 psi, sour), and gives the United Kingdom as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 1502 M×F floating ball valve (10,000 psi, sour)?",
+          "a": "Yes. We list the 2 in 1502 M×F floating ball valve (10,000 psi, sour) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "floating-ball-valve-2-in-602-f-m-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 602 F×M floating ball valve (6,000 psi, sour) used for?",
+          "a": "This is a 2 in floating ball valve rated 6,000 psi for sour service with 602 Weco union ends. The 602 union pattern is the standard 6K low-torque connection for production and well-test iron."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 602 F×M floating ball valve (6,000 psi, sour) have?",
+          "a": "The valve has a 2 in 602 female Weco union inlet and a 2 in 602 male Weco union outlet, full port. It has 602 female and male Weco unions, so it joins only to 602 unions of the same size. Never connect it to a 206 or 1502 union."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 602 F×M floating ball valve (6,000 psi, sour)?",
+          "a": "The 2 in 602 F×M floating ball valve (6,000 psi, sour) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 602 F×M floating ball valve (6,000 psi, sour)?",
+          "a": "The 2 in 602 F×M floating ball valve (6,000 psi, sour) is rated 6,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 602 F×M floating ball valve (6,000 psi, sour) made from?",
+          "a": "The body is forged carbon steel (LF2), listed as NACE-compliant, with a 316SS ball with 17-4PH stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 602 F×M floating ball valve (6,000 psi, sour) use?",
+          "a": "The 2 in 602 F×M floating ball valve (6,000 psi, sour) has Devlon seats with HNBR O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 602 F×M floating ball valve (6,000 psi, sour) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 2 in 602 F×M floating ball valve (6,000 psi, sour), and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 602 F×M floating ball valve (6,000 psi, sour) connect to?",
+          "a": "The 2 in 602 F×M floating ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 602 F×M floating ball valve (6,000 psi, sour) used?",
+          "a": "It is used on production and well-test iron where 6,000 psi and sour service apply, and in sour-service flow lines built with 602 unions. Choose it only for the 6,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 602 F×M floating ball valve (6,000 psi, sour) differ from the 2 in 206 F×M valve?",
+          "a": "The 2 in 602 F×M floating ball valve (6,000 psi, sour) is a 2 in floating valve rated 6,000 psi, while the [2 in 206 F×M valve](/p/floating-ball-valve-2-in-206-f-m-2-000-psi-standard-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 602 F×M floating ball valve (6,000 psi, sour)?",
+          "a": "The listing states a lead time of 14 days for the 2 in 602 F×M floating ball valve (6,000 psi, sour), and gives the United Kingdom as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 602 F×M floating ball valve (6,000 psi, sour)?",
+          "a": "Yes. We list the 2 in 602 F×M floating ball valve (6,000 psi, sour) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-ball-valve-3-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 1502 F×M trunnion ball valve (15,000 psi) used for?",
+          "a": "This is a 3 in trunnion-mounted ball valve rated 15,000 psi, standard service, with 1502 Weco union ends. The larger 3 in bore suits high-rate frac discharge and cement-unit pump-off lines."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3 in 1502 F×M trunnion ball valve (15,000 psi) have?",
+          "a": "The valve has a 3 in 1502 female Weco union inlet and a 3 in 1502 male Weco union outlet, full port. It has 1502 female and male Weco unions at 3 in, so it joins only to 1502 unions of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 3 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The 3 in 1502 F×M trunnion ball valve (15,000 psi) is a 3 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The 3 in 1502 F×M trunnion ball valve (15,000 psi) is rated 15,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3 in 1502 F×M trunnion ball valve (15,000 psi) made from?",
+          "a": "The body is forged alloy steel (4130), with a 316SS ball with 17-4PH stem, trunnion mounted. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 3 in 1502 F×M trunnion ball valve (15,000 psi) use?",
+          "a": "The 3 in 1502 F×M trunnion ball valve (15,000 psi) has RPTFE seats with FKM O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3 in 1502 F×M trunnion ball valve (15,000 psi) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 3 in 1502 F×M trunnion ball valve (15,000 psi). It is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3 in 1502 F×M trunnion ball valve (15,000 psi) connect to?",
+          "a": "The 3 in 1502 F×M trunnion ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3 in 1502 F×M trunnion ball valve (15,000 psi) used?",
+          "a": "It is used on high-rate frac discharge lines and cement-unit pump-off lines, where a full-port 3 in quarter-turn isolation valve is needed. Choose it only for the 15,000 psi class and 3 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3 in 1502 F×M trunnion ball valve (15,000 psi) differ from the 2 in 1502 trunnion valve?",
+          "a": "The 3 in 1502 F×M trunnion ball valve (15,000 psi) is a 3 in trunnion valve rated 15,000 psi, while the [2 in 1502 trunnion valve](/p/trunnion-ball-valve-2-in-1502-f-m-15-000-psi-standard-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The listing states a lead time of 21 days for the 3 in 1502 F×M trunnion ball valve (15,000 psi), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Trunnion Ball Valve, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Trunnion Ball Valve, 3 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-ball-valve-4-in-600-rf-1-480-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 600# RF trunnion ball valve (1,480 psi, sour) used for?",
+          "a": "This is a 4 in trunnion-mounted ball valve rated 1,480 psi for sour service per API 6D, with ANSI 600 raised-face flanges. It is for gas-processing and pipeline-inlet manifold service."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4 in 600# RF trunnion ball valve (1,480 psi, sour) have?",
+          "a": "The valve has a 4 in 600# ANSI raised-face flange inlet and a 4 in 600# ANSI raised-face flange outlet, full port. It has ANSI 600 raised-face flanges, so it bolts to a matching 600# raised-face flange and not to a union or an API 6A flange."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 4 in 600# RF trunnion ball valve (1,480 psi, sour)?",
+          "a": "The 4 in 600# RF trunnion ball valve (1,480 psi, sour) is a 4 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4 in 600# RF trunnion ball valve (1,480 psi, sour)?",
+          "a": "The 4 in 600# RF trunnion ball valve (1,480 psi, sour) is rated 1,480 psi working pressure (ANSI 600 class). The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 4 in 600# RF trunnion ball valve (1,480 psi, sour) made from?",
+          "a": "The body is ASTM A350 LF2, listed as NACE-compliant, with a 316L ball with Inconel-625 overlay seats. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 4 in 600# RF trunnion ball valve (1,480 psi, sour) use?",
+          "a": "The 4 in 600# RF trunnion ball valve (1,480 psi, sour) has PEEK back-up with Viton (FKM) primary seals. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 4 in 600# RF trunnion ball valve (1,480 psi, sour) carry?",
+          "a": "The 4 in 600# RF trunnion ball valve (1,480 psi, sour) is listed to API 6D, and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4 in 600# RF trunnion ball valve (1,480 psi, sour) connect to?",
+          "a": "The 4 in 600# RF trunnion ball valve joins mating flanges or welded pipe of the same size and class. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 4 in 600# RF trunnion ball valve (1,480 psi, sour) used?",
+          "a": "It is used on gas-processing and pipeline-inlet manifolds, where ANSI flanged isolation at 1,480 psi in sour service is needed. Choose it only for the 1,480 psi class and 4 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 in 600# RF trunnion ball valve (1,480 psi, sour) differ from the 2 in 150# RF floating valve?",
+          "a": "The 4 in 600# RF trunnion ball valve (1,480 psi, sour) is a 4 in trunnion valve rated 1,480 psi, while the [2 in 150# RF floating valve](/p/floating-ball-valve-2-in-150-rf-285-psi-standard-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 4 in 600# RF trunnion ball valve (1,480 psi, sour)?",
+          "a": "The listing states a lead time of 35 days for the 4 in 600# RF trunnion ball valve (1,480 psi, sour), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Trunnion Ball Valve, 4 in × 600# RF, 1,480 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Trunnion Ball Valve, 4 in × 600# RF, 1,480 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "floating-ball-valve-2-in-150-rf-285-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 150# RF floating ball valve (285 psi, standard) used for?",
+          "a": "This is a 2 in floating ball valve rated 285 psi, standard service, per API 608 and ASME B16.34, with ANSI 150 raised-face flanges. It is for general-purpose isolation in utility, instrument-air and low-pressure process service."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 150# RF floating ball valve (285 psi, standard) have?",
+          "a": "The valve has a 2 in 150# ANSI raised-face flange inlet and a 2 in 150# ANSI raised-face flange outlet, full port. It has ANSI 150 raised-face flanges and is a cast carbon steel WCB body, so it bolts to a matching 150# raised-face flange."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 150# RF floating ball valve (285 psi, standard)?",
+          "a": "The 2 in 150# RF floating ball valve (285 psi, standard) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 150# RF floating ball valve (285 psi, standard)?",
+          "a": "The 2 in 150# RF floating ball valve (285 psi, standard) is rated 285 psi working pressure (ANSI 150 class). The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 150# RF floating ball valve (285 psi, standard) made from?",
+          "a": "The body is cast carbon steel (WCB), with a 316SS ball and 316SS stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 150# RF floating ball valve (285 psi, standard) use?",
+          "a": "The 2 in 150# RF floating ball valve (285 psi, standard) has RPTFE seats with Viton (FKM) O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 150# RF floating ball valve (285 psi, standard) carry?",
+          "a": "The 2 in 150# RF floating ball valve (285 psi, standard) is listed to API 608 and ASME B16.34. It is a standard-service valve, not for sour wells. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 150# RF floating ball valve (285 psi, standard) connect to?",
+          "a": "The 2 in 150# RF floating ball valve joins mating flanges or welded pipe of the same size and class. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 150# RF floating ball valve (285 psi, standard) used?",
+          "a": "It is used for general isolation on utility, instrument-air and low-pressure process lines. Choose it only for the 285 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 150# RF floating ball valve (285 psi, standard) differ from the 4 in 600# RF trunnion valve?",
+          "a": "The 2 in 150# RF floating ball valve (285 psi, standard) is a 2 in floating valve rated 285 psi, while the [4 in 600# RF trunnion valve](/p/trunnion-ball-valve-4-in-600-rf-1-480-psi-sour-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 150# RF floating ball valve (285 psi, standard)?",
+          "a": "The listing states a lead time of 7 days for the 2 in 150# RF floating ball valve (285 psi, standard), and gives the UAE as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 150# RF floating ball valve (285 psi, standard)?",
+          "a": "Yes. We list the 2 in 150# RF floating ball valve (285 psi, standard) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "floating-ball-valve-2-in-206-f-m-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 206 F×M floating ball valve (2,000 psi, standard) used for?",
+          "a": "This is a 2 in floating ball valve rated 2,000 psi, standard service, with 206 Weco union ends. The 206 union is the low-pressure standard for cementing, kill-fluid and test lines."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 206 F×M floating ball valve (2,000 psi, standard) have?",
+          "a": "The valve has a 2 in 206 female Weco union inlet and a 2 in 206 male Weco union outlet, full port. It has 206 female and male Weco unions, so it joins only to 206 unions of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 206 F×M floating ball valve (2,000 psi, standard)?",
+          "a": "The 2 in 206 F×M floating ball valve (2,000 psi, standard) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 206 F×M floating ball valve (2,000 psi, standard)?",
+          "a": "The 2 in 206 F×M floating ball valve (2,000 psi, standard) is rated 2,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 206 F×M floating ball valve (2,000 psi, standard) made from?",
+          "a": "The body is forged carbon steel (A105N), with a 316SS ball with 17-4PH stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 206 F×M floating ball valve (2,000 psi, standard) use?",
+          "a": "The 2 in 206 F×M floating ball valve (2,000 psi, standard) has RPTFE seats with FKM O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 206 F×M floating ball valve (2,000 psi, standard) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 2 in 206 F×M floating ball valve (2,000 psi, standard). It is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 206 F×M floating ball valve (2,000 psi, standard) connect to?",
+          "a": "The 2 in 206 F×M floating ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 206 F×M floating ball valve (2,000 psi, standard) used?",
+          "a": "It is used on cementing, kill-fluid and test lines where 2,000 psi standard service is enough. Choose it only for the 2,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 206 F×M floating ball valve (2,000 psi, standard) differ from the 2 in 602 sour valve?",
+          "a": "The 2 in 206 F×M floating ball valve (2,000 psi, standard) is a 2 in floating valve rated 2,000 psi, while the [2 in 602 sour valve](/p/floating-ball-valve-2-in-602-f-m-6-000-psi-sour-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 206 F×M floating ball valve (2,000 psi, standard)?",
+          "a": "The listing states a lead time of 14 days for the 2 in 206 F×M floating ball valve (2,000 psi, standard), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 206 F×M floating ball valve (2,000 psi, standard)?",
+          "a": "Yes. We list the 2 in 206 F×M floating ball valve (2,000 psi, standard) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "floating-ball-valve-2-in-butt-weld-schedule-160-5-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) used for?",
+          "a": "This is a 2 in floating ball valve rated 5,000 psi for sour service per API 6D, with butt-weld Schedule 160 ends. It is for permanent in-line installation with no flange or union joint at the valve body."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) have?",
+          "a": "The valve has a 2 in butt-weld Schedule 160 (ASME B16.25) inlet and a 2 in butt-weld Schedule 160 (ASME B16.25) outlet, full port. It has butt-weld Schedule 160 ends (ASME B16.25) welded into the line, so no union or flange mates with it."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour)?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour)?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) is rated 5,000 psi working pressure (5K class). The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) made from?",
+          "a": "The body is forged AISI 4130, listed as NACE-compliant, with a 316SS ball with 17-4PH stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) use?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) has PEEK back-up with HNBR primary seals. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) carry?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) is listed to API 6D, and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) connect to?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve joins mating flanges or welded pipe of the same size and class. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) used?",
+          "a": "It is used for permanent in-line isolation in sour-service lines where a welded body is wanted instead of a flange or union. Choose it only for the 5,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) differ from the 2 in 1502 F×M sour valve?",
+          "a": "The 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour) is a 2 in floating valve rated 5,000 psi, while the [2 in 1502 F×M sour valve](/p/floating-ball-valve-2-in-1502-f-m-10-000-psi-sour-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour)?",
+          "a": "The listing states a lead time of 21 days for the 2 in Sch 160 butt-weld floating ball valve (5,000 psi, sour), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Floating Ball Valve, 2 in × Butt-Weld Schedule 160, 5,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Floating Ball Valve, 2 in × Butt-Weld Schedule 160, 5,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "floating-ball-valve-2-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M floating ball valve (10,000 psi, sour) used for?",
+          "a": "This is a 2 in full-port floating ball valve rated 10,000 psi for sour service with NACE MR0175 trim and 1502 Weco union ends. It is for frac iron service trees and high-pressure flow lines."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M floating ball valve (10,000 psi, sour) have?",
+          "a": "The valve has a 2 in 1502 female Weco union inlet and a 2 in 1502 male Weco union outlet, full port. It has a 1502 female inlet and a 1502 male outlet, the standard F×M orientation. The M×F version reverses this for tee-to-line flow direction."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 1502 F×M floating ball valve (10,000 psi, sour)?",
+          "a": "The 2 in 1502 F×M floating ball valve (10,000 psi, sour) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M floating ball valve (10,000 psi, sour)?",
+          "a": "The 2 in 1502 F×M floating ball valve (10,000 psi, sour) is rated 10,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M floating ball valve (10,000 psi, sour) made from?",
+          "a": "The body is forged alloy steel (4130), listed as NACE-compliant, with a 316SS ball with 17-4PH stem. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 1502 F×M floating ball valve (10,000 psi, sour) use?",
+          "a": "The 2 in 1502 F×M floating ball valve (10,000 psi, sour) has Devlon seats with HNBR O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M floating ball valve (10,000 psi, sour) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 2 in 1502 F×M floating ball valve (10,000 psi, sour), and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M floating ball valve (10,000 psi, sour) connect to?",
+          "a": "The 2 in 1502 F×M floating ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M floating ball valve (10,000 psi, sour) used?",
+          "a": "It is used on frac iron service trees and high-pressure flow lines in sour service. Choose it only for the 10,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F×M floating ball valve (10,000 psi, sour) differ from the 2 in 1502 M×F reverse valve?",
+          "a": "The 2 in 1502 F×M floating ball valve (10,000 psi, sour) is a 2 in floating valve rated 10,000 psi, while the [2 in 1502 M×F reverse valve](/p/floating-ball-valve-2-in-1502-m-f-10-000-psi-sour-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M floating ball valve (10,000 psi, sour)?",
+          "a": "The listing states a lead time of 14 days for the 2 in 1502 F×M floating ball valve (10,000 psi, sour), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2 in 1502 F×M floating ball valve (10,000 psi, sour)?",
+          "a": "Yes. We list the 2 in 1502 F×M floating ball valve (10,000 psi, sour) as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and service through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-ball-valve-2-in-1502-f-m-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2 in 1502 F×M trunnion ball valve (15,000 psi) used for?",
+          "a": "This is a 2 in trunnion-mounted ball valve rated 15,000 psi, standard service, with 1502 Weco union ends. The trunnion design lowers operating torque and supports double block-and-bleed."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2 in 1502 F×M trunnion ball valve (15,000 psi) have?",
+          "a": "The valve has a 2 in 1502 female Weco union inlet and a 2 in 1502 male Weco union outlet, full port. It has 1502 female and male Weco unions at 2 in, so it joins only to 1502 unions of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 2 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The 2 in 1502 F×M trunnion ball valve (15,000 psi) is a 2 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The 2 in 1502 F×M trunnion ball valve (15,000 psi) is rated 15,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 2 in 1502 F×M trunnion ball valve (15,000 psi) made from?",
+          "a": "The body is forged alloy steel (4130), with a 316SS ball with 17-4PH stem, trunnion mounted. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 2 in 1502 F×M trunnion ball valve (15,000 psi) use?",
+          "a": "The 2 in 1502 F×M trunnion ball valve (15,000 psi) has RPTFE seats with FKM O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 2 in 1502 F×M trunnion ball valve (15,000 psi) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 2 in 1502 F×M trunnion ball valve (15,000 psi). It is a standard-service valve, not for sour wells. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2 in 1502 F×M trunnion ball valve (15,000 psi) connect to?",
+          "a": "The 2 in 1502 F×M trunnion ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2 in 1502 F×M trunnion ball valve (15,000 psi) used?",
+          "a": "It is used on high-pressure frac iron where low-torque quarter-turn isolation at 15,000 psi is wanted. Choose it only for the 15,000 psi class and 2 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2 in 1502 F×M trunnion ball valve (15,000 psi) differ from the 3 in 1502 trunnion valve?",
+          "a": "The 2 in 1502 F×M trunnion ball valve (15,000 psi) is a 2 in trunnion valve rated 15,000 psi, while the [3 in 1502 trunnion valve](/p/trunnion-ball-valve-3-in-1502-f-m-15-000-psi-standard-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 2 in 1502 F×M trunnion ball valve (15,000 psi)?",
+          "a": "The listing states a lead time of 21 days for the 2 in 1502 F×M trunnion ball valve (15,000 psi), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Trunnion Ball Valve, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Trunnion Ball Valve, 2 in × 1502 F×M, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-ball-valve-3-1-8-in-5m-flanged-5-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) used for?",
+          "a": "This is a 3-1/8 in trunnion-mounted ball valve per API 6A PSL 3 and PR1 for sour service, rated 5,000 psi, with API 6A 5M flanged RTJ ends. It is for wellhead service on production trees and Christmas trees."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) have?",
+          "a": "The valve has a 3-1/8 in API 6A 5M flanged (RTJ) inlet and a 3-1/8 in API 6A 5M flanged (RTJ) outlet, full port. It has API 6A 5M flanged RTJ ends, so it bolts to a matching API 6A 5M flange with the correct ring gasket."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour)?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) is a 3-1/8 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour)?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) is rated 5,000 psi working pressure (5K class). The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) made from?",
+          "a": "The body is forged AISI 4130, listed as NACE-compliant, with a 410SS ball with Inconel-625 overlay seats. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) use?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) has PEEK back-up with HNBR primary seals. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) carry?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) is listed to API 6A, PSL 3 and PR1, and the NACE MR0175 / ISO 15156 sour-service compliance is stated. It is supplied as an API-certified, API-monogrammed API 6A valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) connect to?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve joins mating flanges or welded pipe of the same size and class. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) used?",
+          "a": "It is used for wellhead service on production trees and Christmas trees, bolted to API 6A 5M RTJ flanges. Choose it only for the 5,000 psi class and 3-1/8 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) differ from the configurable API 6A trunnion ball valve?",
+          "a": "The 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour) is a 3-1/8 in trunnion valve rated 5,000 psi, while the [configurable API 6A trunnion ball valve](/p/api-6a-trunnion-ball-valve) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour)?",
+          "a": "The listing states a lead time of 28 days for the 3-1/8 in 5M flanged trunnion ball valve (5,000 psi, sour), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Trunnion Ball Valve, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Trunnion Ball Valve, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-ball-valve-4-in-1502-f-m-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) used for?",
+          "a": "This is a 4 in trunnion-mounted ball valve rated 10,000 psi for sour service with 1502 Weco union ends. The large bore suits frac flow iron for high-rate stimulation and sand-water blender discharge."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) have?",
+          "a": "The valve has a 4 in 1502 female Weco union inlet and a 4 in 1502 male Weco union outlet, full port. It has 1502 female and male Weco unions at 4 in, so it joins only to 1502 unions of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the bore of the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour)?",
+          "a": "The 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) is a 4 in full-port valve, so the bore matches the line size and pressure drop is low. State the nominal size and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour)?",
+          "a": "The 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) is rated 10,000 psi working pressure. The rating is the working pressure of the valve, not the test pressure, and the connecting iron must match it; the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) explains the basis."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body and trim of the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) made from?",
+          "a": "The body is forged alloy steel (4130), listed as NACE-compliant, with a 316SS ball with 17-4PH stem, trunnion mounted. Confirm the materials against your line specification on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What seats and seals does the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) use?",
+          "a": "The 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) has Devlon seats with HNBR O-rings. State the fluid, temperature and H2S level on the RFQ so the elastomers are confirmed."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard and sour-service rating does the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) carry?",
+          "a": "The listing gives recognised oilfield flow-iron design standards for the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour), and the NACE MR0175 / ISO 15156 sour-service compliance is stated. Flow-iron valves of this kind are supplied to API 16C by API-licensed manufacturers, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each unit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) connect to?",
+          "a": "The 4 in 1502 F×M trunnion ball valve joins unions of the same pattern and size. Never connect it to a different union figure, as mismatched unions are a known failure cause. See [flow iron adapters](/c/flow-iron-adapters), [ball valves](/c/oilfield-ball-valves) and [hammer unions](/c/hammer-unions-sour-gas-service)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) used?",
+          "a": "It is used on large-bore frac flow iron for high-rate stimulation and on sand-water blender discharge. Choose it only for the 10,000 psi class and 4 in size it is built for; see the [ball valve pressure rating guide](/blog/ball-valve-pressure-ratings-cwp-wog) for the rating basis."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) differ from the 3 in 1502 trunnion valve?",
+          "a": "The 4 in 1502 F×M trunnion ball valve (10,000 psi, sour) is a 4 in trunnion valve rated 10,000 psi, while the [3 in 1502 trunnion valve](/p/trunnion-ball-valve-3-in-1502-f-m-15-000-psi-standard-service) differs in end connection, size or rating. Compare the pressure and end connections in each listing before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour)?",
+          "a": "The listing states a lead time of 21 days for the 4 in 1502 F×M trunnion ball valve (10,000 psi, sour), and gives the USA as the country of origin. Sour-service variants and unusual sizes take longer. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Trunnion Ball Valve, 4 in × 1502 F×M, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Trunnion Ball Valve, 4 in × 1502 F×M, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-double-block-and-bleed-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A double block and bleed ball valve used for?",
+          "a": "An API 6A double block and bleed ball valve is two isolation valves and a bleed in one compact body, for wellhead and manifold isolation where a single valve is not enough. Each ball operates on its own, so if one leaks the other still holds and downstream maintenance can proceed safely."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A double block and bleed ball valve cover?",
+          "a": "The published range is 1-13/16\" to 11\" bore and 2,000 to 10,000 psi working pressure, with API 6A flanged or studded ends. Each unit is built to order, so send the bore, pressure and end connections on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What seat configurations does the double block and bleed ball valve have?",
+          "a": "The valve has DIB-2 or DBB seat configurations. DBB seats each seal against pressure from one side and relieve cavity pressure, while DIB-2 has one bidirectional seat, so the cavity is isolated in both directions. Your specification will name one."
+        },
+        {
+          "slot": "E",
+          "q": "What leakage and fire-safe rating does the double block and bleed ball valve have?",
+          "a": "It is rated ISO 5208 rate A (zero leakage), with a hardened, coated ball and seats, and fire-safe design to API 6FA. Hydrostatic body and seat tests follow API 6A at the PSL ordered, with gas tests at PSL 3G and 4."
+        },
+        {
+          "slot": "F",
+          "q": "What material classes does the API 6A double block and bleed ball valve offer?",
+          "a": "The listing gives API 6A material classes AA to HH, with DD to HH for sour service, temperature classes L to X, and PSL 1, 2, 3/3G with PR1 or PR2. State the H2S content and temperature on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Is the double block and bleed ball valve made to API 6A?",
+          "a": "Yes. It is built to API 6A and API 6FA, and supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. CE-PED is also listed."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 6A double block and bleed ball valve?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party witness is confirmed with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "How is the double block and bleed ball valve operated?",
+          "a": "Each ball has its own handwheel or gear operator, and an actuator is available on request. Blow-out proof stems and seat self-relief of cavity over-pressure are part of the design."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A double block and bleed ball valve used?",
+          "a": "It is used for wellhead and manifold isolation where double isolation is required for safe maintenance. See [ball valves](/c/oilfield-ball-valves) and [gate valves](/c/oilfield-gate-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double block and bleed ball valve differ from a single trunnion ball valve?",
+          "a": "It has two balls in one body with a bleed, while the [API 6A trunnion ball valve](/p/api-6a-trunnion-ball-valve) is a single-ball valve with lower torque. Choose double block and bleed where one valve cannot give the isolation you need."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a double block and bleed ball valve quotation?",
+          "a": "Send the nominal bore and working pressure, the end connections, the material and temperature class, PSL and PR level, the DIB-2 or DBB seat choice and the operator. Give H2S content for sour wells."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A double block and bleed ball valve?",
+          "a": "Yes. We list the API 6A double block and bleed ball valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to order, so send the bore, pressure and seat type through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-floating-ball-valve-2000-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A floating ball valve used for?",
+          "a": "An API 6A floating ball valve is a small, light quarter-turn valve for wellhead instrument, bleed, sample and small-bore lines. It is smaller and lighter than a gate or globe valve of the same rating, opens and closes with a quarter turn, and locks in either position."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A floating ball valve cover?",
+          "a": "The published range is 1-13/16\" to 4-1/16\" bore and 2,000 to 10,000 psi working pressure, with threaded or welded ends. Each unit is built to order, so send the bore, pressure and end connections on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Full port or reduced port for the API 6A floating ball valve?",
+          "a": "Reduced port is standard and lighter; choose full port where the line must be rodded or pigged, or pressure drop matters. The listing offers full or reduced port."
+        },
+        {
+          "slot": "E",
+          "q": "What does the API 6A floating ball valve have for locking and safety?",
+          "a": "It has lock holes at full open and full closed, so a padlock through the handle stops the valve being moved by mistake, which matters on bleed and isolation points. It also has an anti-static device and a blow-out proof stem."
+        },
+        {
+          "slot": "F",
+          "q": "What material classes does the API 6A floating ball valve offer?",
+          "a": "The listing gives API 6A material classes AA to HH, with DD to HH for sour service, temperature classes L to X, and PSL 1 to 3 with PR1. State the H2S content and temperature on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus floating ball valve made to API 6A?",
+          "a": "Yes. It is built to API 6A and supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 6A floating ball valve?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party witness is confirmed with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can the API 6A floating ball valve have?",
+          "a": "The listing gives threaded or welded ends, lever operation and a compact body to suit the line. Send the thread type or weld preparation on the RFQ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A floating ball valve used?",
+          "a": "It is used on instrument, bleed, sample and small-bore wellhead lines, where a compact lever-operated valve that locks open or closed is wanted. See [instrumentation valves](/c/oilfield-instrumentation-valves) and [ball valves](/c/oilfield-ball-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 6A floating ball valve differ from the trunnion ball valve?",
+          "a": "The floating valve is compact and lever operated to 4-1/16\", while the [API 6A trunnion ball valve](/p/api-6a-trunnion-ball-valve) holds the ball on trunnions so torque stays low at higher pressures to 15,000 psi. Choose floating for small-bore lines."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a floating ball valve quotation?",
+          "a": "Send the nominal bore and working pressure, the end connections (threaded or welded), the port type, the material and temperature class, PSL, and the H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A floating ball valve?",
+          "a": "Yes. We list the API 6A floating ball valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to order, so send the bore, pressure and ends through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-trunnion-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A trunnion ball valve used for?",
+          "a": "An API 6A trunnion ball valve is quarter-turn isolation on wellheads, manifolds and flowlines, with the ball held on trunnions so torque stays low at pressure. It comes in two-piece, three-piece and top-entry designs for 2,000 to 15,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the API 6A trunnion ball valve cover?",
+          "a": "Sizes start from 1-13/16\" and are confirmed per order, with working pressure from 2,000 to 15,000 psi and API 6A flanged or studded ends. Send the bore and working pressure on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "Soft or metal seats for an API 6A trunnion ball valve?",
+          "a": "Soft seats seal bubble-tight on clean fluids and are fire-safe, backed by metal seats that seal if the soft seat burns out. Metal seats, hard-faced with nickel alloy or HVOF coating, handle sand, scale and high temperature."
+        },
+        {
+          "slot": "E",
+          "q": "What fugitive emissions and fire-safe features does the trunnion ball valve have?",
+          "a": "It has an ISO 15848 stem seal, dual stem O-rings, a stepped, blow-out proof stem, spring-loaded seats and cavity relief, and a fire-safe design. Hydrostatic body and seat tests follow API 6A at the PSL ordered."
+        },
+        {
+          "slot": "F",
+          "q": "What material classes does the API 6A trunnion ball valve offer?",
+          "a": "The listing gives API 6A material classes AA to HH, with DD to HH for sour service, temperature classes L to X, and PSL 1 to 4 with PR1 or PR2F. State the H2S content and temperature on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Indus trunnion ball valve made to API 6A?",
+          "a": "Yes. It is built to API 6A, with CE-PED and ISO 15848 listed, and supplied as an API-certified, API-monogrammed valve from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an API 6A trunnion ball valve?",
+          "a": "You receive API 6A documentation for the PSL ordered: material certificates, heat-treatment and NDE records, the hydrostatic test record (and gas test at PSL 3G and 4), and the dimensional report. Third-party witness is confirmed with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A trunnion ball valve operated?",
+          "a": "It can be operated by lever, gear operator, or pneumatic or hydraulic actuator. See [valve actuators](/c/valve-actuators) and [ball valves](/c/oilfield-ball-valves) for the actuator options."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the API 6A trunnion ball valve used?",
+          "a": "It is used on wellheads, manifolds and flowlines for isolation. The two-piece, three-piece and top-entry designs suit different line access and maintenance needs."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 6A trunnion ball valve differ from the 3-1/8 in 5M valve?",
+          "a": "The configurable API 6A trunnion valve is built to your size and pressure from 2,000 to 15,000 psi, while the [3-1/8 in 5M flanged trunnion valve](/p/trunnion-ball-valve-3-1-8-in-5m-flanged-5-000-psi-sour-service) is a fixed 5,000 psi sour-service unit with a stated lead time."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a trunnion ball valve quotation?",
+          "a": "Send the nominal bore and working pressure, the end connections, the material and temperature class, PSL and PR level, the seat type and the operator. Give H2S content for sour wells."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the API 6A trunnion ball valve?",
+          "a": "Yes. We list the API 6A trunnion ball valve as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to order, so send the bore, pressure and design through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

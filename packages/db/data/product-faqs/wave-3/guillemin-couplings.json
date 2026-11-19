@@ -1,0 +1,628 @@
+{
+  "family": "guillemin-couplings",
+  "extraFacts": [
+    {
+      "fact": "Guillemin Adapter-Female Thread: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Adapter-Female Thread; End A Configuration Guillemin head without a lock ring; End B Configuration Female thread; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Female thread adapter without lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-adapter-female-thread"
+    },
+    {
+      "fact": "Guillemin Adapter-Male Thread: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Adapter-Male Thread; End A Configuration Guillemin head, with or without a lock ring; End B Configuration Male thread; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Male Thread Adapter with lock ring. Guillemin Male Thread Adapter without lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-adapter-male-thread"
+    },
+    {
+      "fact": "Guillemin adapter-Reducing Type: 14 listed part numbers; sizes 1-1/4\" × 1\" to 4\" × 3\"; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin adapter-Reducing Type; End A Configuration Larger Guillemin head; End B Configuration Smaller Guillemin head; Size Range 3/4\"-4\"; Materials Available Not stated by the manufacturer for the reducer; its other Guillemin parts are aluminium or stainless steel.",
+      "source": "Indus Hydraulics product listing, /p/guillemin-adapter-reducing-type"
+    },
+    {
+      "fact": "Guillemin Coupling-Female Thread: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Coupling-Female Thread; End A Configuration Guillemin head; End B Configuration Female thread; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Female Thread adapter (MKF)..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-coupling-female-thread"
+    },
+    {
+      "fact": "Guillemin Coupling-Long Hose Shank: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Coupling-Long Hose Shank; End A Configuration Guillemin head with a lock ring; End B Configuration Long hose shank; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Coupling with Long hose shank with lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-coupling-long-hose-shank"
+    },
+    {
+      "fact": "Guillemin Coupling-Male thread X Spiral Hose Tail: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Coupling-Male thread X Spiral Hose Tail; End A Configuration Male thread; End B Configuration Spiral hose tail; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel.",
+      "source": "Indus Hydraulics product listing, /p/guillemin-coupling-male-thread-x-spiral-hose-tail"
+    },
+    {
+      "fact": "Guillemin Coupling-Short Shank: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Coupling-Short Shank; End A Configuration Guillemin head with a lock ring; End B Configuration Short hose shank; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Short shank with lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-coupling-short-shank"
+    },
+    {
+      "fact": "Guillemin Coupling-Spiral Hose Tail: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Coupling-Spiral Hose Tail; End A Configuration Guillemin head with a lock ring; End B Configuration Spiral hose tail, for suction hose with a rigid helix; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Coupling with Spiral hose tail with lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-coupling-spiral-hose-tail"
+    },
+    {
+      "fact": "Guillemin Dust Cap: 0 listed part numbers; Coupling Family Guillemin Coupling; Coupling Type / Variant Guillemin Type — Guillemin Dust Cap; End A Configuration Guillemin head with a lock ring; Size Range 3/4\"-4\"; Materials Available Aluminum; Stainless Steel; Notes Guillemin Dust cap with lock ring..",
+      "source": "Indus Hydraulics product listing, /p/guillemin-dust-cap"
+    }
+  ],
+  "products": [
+    {
+      "slug": "guillemin-adapter-female-thread",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin female thread adapter used for?",
+          "a": "The Guillemin female thread adapter has a Guillemin head without a lock ring on one end and a female pipe thread on the other, so a Guillemin hose line can be tied to a male threaded nipple, valve or pump port."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin female thread adapter available in?",
+          "a": "The Guillemin female thread adapter is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Guillemin female thread adapter for my application?",
+          "a": "Choose the size, 3/4\" to 4\", then the thread type and size of the male fitting it must take, and the body material. This adapter has no lock ring; if you want one on the Guillemin head, see the coupling with female thread."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin female thread adapter?",
+          "a": "The maker publishes no working pressure for the Guillemin female thread adapter. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Guillemin female thread adapter offered in?",
+          "a": "The Guillemin female thread adapter is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Guillemin female thread adapter?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin female thread adapter is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Guillemin female thread adapter connect to?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the female thread takes a male pipe nipple. See [the Guillemin male thread adapter](/p/guillemin-adapter-male-thread) for the other gender and [the Guillemin short shank coupling](/p/guillemin-coupling-short-shank) for the hose side."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guillemin female thread adapter be installed and maintained?",
+          "a": "Check the gasket in the Guillemin female thread adapter at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Guillemin female thread adapter used?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin female thread adapter suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin female thread adapter differ from the Guillemin coupling with female thread?",
+          "a": "The adapter has a Guillemin head without a lock ring, while [the Guillemin coupling with female thread](/p/guillemin-coupling-female-thread) has a Guillemin head listed as the coupling version of the same female-thread connection, with the maker's MKF note. Both end in a female thread; choose by whether you want the plain head or the coupling pattern."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin female thread adapter?",
+          "a": "We ship the Guillemin female thread adapter from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Guillemin female thread adapter available from stock in Dubai for export?",
+          "a": "Yes, the Guillemin female thread adapter is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-adapter-male-thread",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Guillemin male thread adapter used?",
+          "a": "The Guillemin male thread adapter has a Guillemin head, with or without a lock ring, on one end and a male pipe thread on the other, so a Guillemin hose line can screw into a female port, valve or tank outlet."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin male thread adapter available in?",
+          "a": "The Guillemin male thread adapter is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Guillemin male thread adapter?",
+          "a": "Choose the size, 3/4\" to 4\", the thread type and size of the female port, the body material, and whether the Guillemin head needs a lock ring. The listing covers versions with and without a lock ring, so state which you want."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Guillemin male thread adapter have?",
+          "a": "The maker publishes no working pressure for the Guillemin male thread adapter. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Guillemin male thread adapter offered in?",
+          "a": "The Guillemin male thread adapter is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Guillemin male thread adapter?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin male thread adapter is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Guillemin male thread adapter mate with?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the male thread screws into a female pipe port. See [the Guillemin female thread adapter](/p/guillemin-adapter-female-thread) for the other gender and [the Guillemin dust cap](/p/guillemin-dust-cap) for blanking."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guillemin male thread adapter be installed and maintained?",
+          "a": "Check the gasket in the Guillemin male thread adapter at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Guillemin male thread adapter used?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin male thread adapter suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin male thread adapter differ from the Guillemin female thread adapter?",
+          "a": "The male thread adapter screws into a female port and is listed with or without a lock ring, while [the Guillemin female thread adapter](/p/guillemin-adapter-female-thread) takes a male nipple and has no lock ring. Pick by the gender of the fixed connection."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin male thread adapter?",
+          "a": "We ship the Guillemin male thread adapter from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Guillemin male thread adapter in stock in Dubai?",
+          "a": "Yes. We keep the Guillemin male thread adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-adapter-reducing-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin reducing adapter used for?",
+          "a": "The Guillemin reducing adapter joins a larger Guillemin head to a smaller one, so two Guillemin hose lines of different sizes can be connected without a thread or hose tail in between. This listing carries 14 part numbers, covering 1-1/4\" × 1\" to 4\" × 3\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Guillemin reducing adapter?",
+          "a": "The Guillemin reducing adapter is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Guillemin reducing adapter?",
+          "a": "Pick the pair of sizes from the table: it lists 14 combinations running from 1-1/4\" x 1\" up to 4\" x 3\". Name the larger head first, as the table does, and confirm whether either head needs a lock ring."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin reducing adapter?",
+          "a": "The maker publishes no working pressure for the Guillemin reducing adapter. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guillemin reducing adapter made from?",
+          "a": "The maker does not state the reducer's material; its other Guillemin parts are aluminium or stainless steel. Give us the body material you need when you enquire, and we confirm what the maker can supply for the reducer before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Guillemin reducing adapter?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin reducing adapter is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Guillemin reducing adapter connect to?",
+          "a": "Each head joins a Guillemin head of its own size: the larger end mates with a head of the bigger size and the smaller end with the smaller. See [the Guillemin coupling with short shank](/p/guillemin-coupling-short-shank) for a hose coupling."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Guillemin reducing adapter?",
+          "a": "Check the gasket in the Guillemin reducing adapter at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Guillemin reducing adapter used?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin reducing adapter suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin reducing adapter differ from the Guillemin male thread adapter?",
+          "a": "The reducing adapter has a Guillemin head at both ends, a larger one and a smaller one, with 14 listed size pairs, while [the Guillemin male thread adapter](/p/guillemin-adapter-male-thread) has a head at one end and a male thread at the other. Use the reducer to change hose size and the male thread adapter to reach a port."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Guillemin reducing adapter shipped from, and what origin and HS code apply?",
+          "a": "We ship the Guillemin reducing adapter from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Guillemin reducing adapter available from stock in Dubai for export?",
+          "a": "Yes. We stock the Guillemin reducing adapter at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-coupling-female-thread",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Guillemin coupling with female thread used?",
+          "a": "The Guillemin coupling with female thread has a Guillemin head on one end and a female pipe thread on the other, and the maker notes it as the MKF type. It connects a Guillemin hose line to a male threaded nipple or fitting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin coupling with female thread available in?",
+          "a": "The Guillemin coupling with female thread is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Guillemin coupling with female thread?",
+          "a": "Choose the size, 3/4\" to 4\", the thread type and size of the male fitting, and the body material. State the thread standard in the enquiry, because the part number follows both the Guillemin size and the thread."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin coupling with female thread?",
+          "a": "The maker publishes no working pressure for the Guillemin coupling with female thread. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Guillemin coupling with female thread offered in?",
+          "a": "The Guillemin coupling with female thread is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Guillemin coupling with female thread?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin coupling with female thread is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Guillemin coupling with female thread connect to?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the female thread takes a male pipe nipple. For the lock-ring-free adapter version see [the Guillemin female thread adapter](/p/guillemin-adapter-female-thread)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Guillemin coupling with female thread?",
+          "a": "Check the gasket in the Guillemin coupling with female thread at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Guillemin coupling with female thread used?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin coupling with female thread suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin coupling with female thread differ from the Guillemin female thread adapter?",
+          "a": "The coupling is the MKF-type part with a Guillemin head, while [the Guillemin female thread adapter](/p/guillemin-adapter-female-thread) is the adapter version with a head that has no lock ring. Both end in a female thread; choose by whether your line needs the lock ring pattern."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin coupling with female thread?",
+          "a": "We ship the Guillemin coupling with female thread from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Guillemin coupling with female thread from stock in the UAE?",
+          "a": "Yes. We keep the Guillemin coupling with female thread in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-coupling-long-hose-shank",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin coupling with long hose shank used for?",
+          "a": "The Guillemin coupling with long hose shank has a Guillemin head with a lock ring on one end and a long hose shank on the other, so it can be clamped onto a hose to give a longer bearing length than the short shank."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin coupling with long hose shank available in?",
+          "a": "The Guillemin coupling with long hose shank is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Guillemin coupling with long hose shank for my application?",
+          "a": "Choose the size from 3/4\" to 4\" to match the hose bore, then the body material. A long shank grips more hose length, which suits heavier or less flexible hose; use the short shank where space is tight."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin coupling with long hose shank?",
+          "a": "The maker publishes no working pressure for the Guillemin coupling with long hose shank. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Guillemin coupling with long hose shank offered in?",
+          "a": "The Guillemin coupling with long hose shank is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Guillemin coupling with long hose shank?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin coupling with long hose shank is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Guillemin coupling with long hose shank mate with?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the shank goes into a hose secured with a clamp. See [the Guillemin short shank coupling](/p/guillemin-coupling-short-shank) for the shorter version and [the spiral hose tail](/p/guillemin-coupling-spiral-hose-tail) for suction hose."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Guillemin coupling with long hose shank?",
+          "a": "Check the gasket in the Guillemin coupling with long hose shank at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Guillemin coupling with long hose shank used?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin coupling with long hose shank suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin coupling with long hose shank differ from the Guillemin coupling with short shank?",
+          "a": "The long shank gives a longer hose bearing length, while [the Guillemin coupling with short shank](/p/guillemin-coupling-short-shank) has a short shank for tight spaces. Both have a Guillemin head with a lock ring in 3/4\" to 4\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Guillemin coupling with long hose shank shipped from, and what origin and HS code apply?",
+          "a": "We ship the Guillemin coupling with long hose shank from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Guillemin coupling with long hose shank available from stock in Dubai for export?",
+          "a": "Yes. We stock the Guillemin coupling with long hose shank at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-coupling-male-thread-x-spiral-hose-tail",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin coupling with male thread and spiral hose tail used for?",
+          "a": "This Guillemin coupling has a male pipe thread on one end and a spiral hose tail on the other. It screws into a female port and takes rigid-helix suction hose."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin coupling with male thread and spiral hose tail available in?",
+          "a": "The Guillemin coupling with male thread and spiral hose tail is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Guillemin coupling with male thread and spiral hose tail for my application?",
+          "a": "Choose the size, 3/4\" to 4\", the male thread type and size, and the hose it must fit. The spiral tail suits hose with a rigid helix; for a plain hose use a shank coupling instead."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "The maker publishes no working pressure for the Guillemin coupling with male thread and spiral hose tail. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guillemin coupling with male thread and spiral hose tail made from?",
+          "a": "The Guillemin coupling with male thread and spiral hose tail is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin coupling with male thread and spiral hose tail is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Guillemin coupling with male thread and spiral hose tail mate with?",
+          "a": "The male thread screws into a female pipe port and the spiral tail takes a rigid-helix hose; it does not itself carry a Guillemin head. See [the Guillemin coupling with spiral hose tail](/p/guillemin-coupling-spiral-hose-tail) for the version with a Guillemin head."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "Check the gasket in the Guillemin coupling with male thread and spiral hose tail at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin coupling with male thread and spiral hose tail suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin coupling with male thread and spiral hose tail differ from the Guillemin coupling with spiral hose tail?",
+          "a": "This part has a male thread at one end, while [the Guillemin coupling with spiral hose tail](/p/guillemin-coupling-spiral-hose-tail) has a Guillemin head with a lock ring. Both finish in a spiral hose tail; choose the male thread version to screw into a port and the head version to connect to another Guillemin coupling."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "We ship the Guillemin coupling with male thread and spiral hose tail from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Guillemin coupling with male thread and spiral hose tail from stock in the UAE?",
+          "a": "Yes, we hold the Guillemin coupling with male thread and spiral hose tail in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-coupling-short-shank",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin coupling with short shank used for?",
+          "a": "The Guillemin coupling with short shank has a Guillemin head with a lock ring on one end and a short hose shank on the other, for clamping onto a hose where space is tight or the hose is flexible."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin coupling with short shank available in?",
+          "a": "The Guillemin coupling with short shank is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Guillemin coupling with short shank?",
+          "a": "Choose the size from 3/4\" to 4\" to match the hose bore, then the body material. A short shank suits flexible hose and tight spaces; where the hose needs more support use the long shank."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Guillemin coupling with short shank have?",
+          "a": "The maker publishes no working pressure for the Guillemin coupling with short shank. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guillemin coupling with short shank made from?",
+          "a": "The Guillemin coupling with short shank is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Guillemin coupling with short shank?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin coupling with short shank is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Guillemin coupling with short shank connect to?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the shank goes into a hose secured with a clamp. See [the Guillemin coupling with long hose shank](/p/guillemin-coupling-long-hose-shank) for the longer version."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guillemin coupling with short shank be installed and maintained?",
+          "a": "Check the gasket in the Guillemin coupling with short shank at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Guillemin coupling with short shank?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin coupling with short shank suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin coupling with short shank differ from the Guillemin coupling with long hose shank?",
+          "a": "The short shank saves length and suits flexible hose, while [the Guillemin coupling with long hose shank](/p/guillemin-coupling-long-hose-shank) has a longer shank for more hose support. Both have a Guillemin head with a lock ring in 3/4\" to 4\"."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin coupling with short shank?",
+          "a": "We ship the Guillemin coupling with short shank from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Guillemin coupling with short shank available from stock in Dubai for export?",
+          "a": "Yes, we hold the Guillemin coupling with short shank in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-coupling-spiral-hose-tail",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin coupling with spiral hose tail used for?",
+          "a": "The Guillemin coupling with spiral hose tail has a Guillemin head with a lock ring and a spiral hose tail made for suction hose with a rigid helix, so the hose screws onto the tail and seals along its length."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes is the Guillemin coupling with spiral hose tail available in?",
+          "a": "The Guillemin coupling with spiral hose tail is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Guillemin coupling with spiral hose tail for my application?",
+          "a": "Choose the size from 3/4\" to 4\" to match the suction hose, then the body material. The spiral tail is for rigid-helix hose; for plain flexible hose use a short or long shank coupling instead."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin coupling with spiral hose tail?",
+          "a": "The maker publishes no working pressure for the Guillemin coupling with spiral hose tail. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Guillemin coupling with spiral hose tail offered in?",
+          "a": "The Guillemin coupling with spiral hose tail is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Guillemin coupling with spiral hose tail?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin coupling with spiral hose tail is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Guillemin coupling with spiral hose tail mate with?",
+          "a": "The Guillemin head joins any Guillemin head of the same size, and the spiral tail takes a rigid-helix suction hose. See [the Guillemin male thread and spiral tail coupling](/p/guillemin-coupling-male-thread-x-spiral-hose-tail) to screw into a port."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Guillemin coupling with spiral hose tail?",
+          "a": "Check the gasket in the Guillemin coupling with spiral hose tail at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Guillemin coupling with spiral hose tail?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin coupling with spiral hose tail suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin coupling with spiral hose tail differ from the Guillemin coupling with male thread and spiral hose tail?",
+          "a": "This part has a Guillemin head with a lock ring, while [the Guillemin coupling with male thread and spiral hose tail](/p/guillemin-coupling-male-thread-x-spiral-hose-tail) has a male thread at the head end. Both finish in a spiral hose tail for rigid-helix suction hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Guillemin coupling with spiral hose tail shipped from, and what origin and HS code apply?",
+          "a": "We ship the Guillemin coupling with spiral hose tail from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Guillemin coupling with spiral hose tail in stock in Dubai?",
+          "a": "Yes, we hold the Guillemin coupling with spiral hose tail in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "guillemin-dust-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Guillemin dust cap used for?",
+          "a": "The Guillemin dust cap closes an open Guillemin head, with a lock ring, so dust, dirt and drips stay out of an idle coupling and the gasket face is protected between connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Guillemin dust cap?",
+          "a": "The Guillemin dust cap is listed in sizes from 3/4\" to 4\" (the maker's published Guillemin size range). This listing has no size table, so quote the size you need and the hose or thread it connects to, and we confirm the match and the manufacturer part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Guillemin dust cap for my application?",
+          "a": "Match the cap to the coupling size, 3/4\" to 4\", and the body material of the head it closes. One cap is needed for each open head; it carries no flow, so size and material are the only choices."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Guillemin dust cap?",
+          "a": "The maker publishes no working pressure for the Guillemin dust cap. The pressure the joint can carry depends on the size, the gasket and the hose tail, so give us your working pressure and medium through [our contact page](/contact) and we check it with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Guillemin dust cap made from?",
+          "a": "The Guillemin dust cap is made in aluminium or stainless steel. Choose aluminium for light handling on water, fire and general transfer and stainless steel where the fluid or the environment is corrosive. Confirm the body material in the enquiry because the part number depends on it."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Guillemin dust cap?",
+          "a": "The Guillemin system is standardised in France as NF E 29-572, but the maker does not state which standard the Guillemin dust cap is made to, and no certificates are held on this listing. If you need a conformity statement or material report, say so in the enquiry and we ask the maker what it can issue. Our [guide to Guillemin couplings](/blog/guillemin-couplings-explained) explains the system."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Guillemin dust cap connect to?",
+          "a": "The dust cap fits a Guillemin head of the same size, and its lock ring keeps it from turning off. See [the Guillemin coupling with short shank](/p/guillemin-coupling-short-shank) for a head it can close and [our Guillemin couplings guide](/blog/guillemin-couplings-explained) for the system."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Guillemin dust cap be installed and maintained?",
+          "a": "Check the gasket in the Guillemin dust cap at each make-up, because it is the wear part of the joint. Guillemin heads are quarter-turn and symmetrical, and a lock ring stops the joint turning apart in service where one is fitted. Clamp any hose tail for the pressure the hose will see. Guillemin does not interchange with Storz, cam and groove or Barcelona couplings."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Guillemin dust cap?",
+          "a": "Guillemin couplings are widely used in France on fire, water and industrial transfer hose. The Guillemin dust cap suits the same duties, including water supply, fire-fighting hose lines and general industrial fluid transfer where a symmetrical quarter-turn joint is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Guillemin dust cap differ from the Guillemin male thread adapter?",
+          "a": "The cap only closes a Guillemin head and carries no flow, while [the Guillemin male thread adapter](/p/guillemin-adapter-male-thread) connects a Guillemin head to a male thread and passes flow. Fit a cap on each head left open between jobs."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Guillemin dust cap?",
+          "a": "We ship the Guillemin dust cap from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Guillemin dust cap from stock in the UAE?",
+          "a": "Yes, we hold the Guillemin dust cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

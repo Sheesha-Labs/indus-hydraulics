@@ -1,0 +1,336 @@
+{
+  "family": "bop-annular",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "annular-bop-hydril-gk-style-11-10-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Hydril GK style 11\" 10,000 psi annular BOP used for?",
+          "a": "The Hydril GK style 11\" 10,000 psi annular BOP is a sour-service (NACE MR0175) annular preventer with a spherical packer that seals around pipe or the open hole. It is used for workover and slim-hole infill drilling on sour wells, and as the top annular for coiled tubing and snubbing work. Cold working pressure is 10,000 psi (10K class)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hydril GK style 11\" 10,000 psi annular BOP?",
+          "a": "The Hydril GK style 11\" 10,000 psi annular BOP is rated 10,000 psi cold working pressure, 10K class, at a 11\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Hydril GK style 11\" 10,000 psi annular BOP have?",
+          "a": "This unit has a 11\" vertical bore with API 6A 11\" 10K connections: studded top and flanged bottom, with both ends studded on request. Confirm the connection style on your RFQ so it matches your wellhead and adjacent stack parts. Approximate transport weight is 5,200 kg."
+        },
+        {
+          "slot": "D",
+          "q": "Which 11\" 10K ring gasket fits the Hydril GK style 11\" 10,000 psi annular BOP?",
+          "a": "The 11\" 10K flanges on this unit take BX-158 ring gaskets. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service from [BOP spare parts](/c/bop-spare-parts), together with the studs and nuts for the flange joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Hydril GK style 11\" 10,000 psi annular BOP suitable for sour (H2S) service?",
+          "a": "Yes, the Hydril GK style 11\" 10,000 psi annular BOP is listed as sour service to NACE MR0175 / ISO 15156, with body, trim and bolting hardness controlled. The forged AISI 4130 alloy steel body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "F",
+          "q": "What packer elastomer should I choose for the Hydril GK style 11\" 10,000 psi annular BOP?",
+          "a": "Specify the packer elastomer on the RFQ: HNBR or AFLAS are the compounds listed for sour-service annulars for the 11\" 10K unit. Elastomer kits for the first redress are available from [BOP spare parts and elastomers](/c/bop-spare-parts), which keeps the packing element on the same sour-service basis as the body."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM annular BOPs is the Hydril GK style 11\" 10,000 psi annular BOP equivalent to?",
+          "a": "The Hydril GK style 11\" 10,000 psi annular BOP is listed as a matched-pressure equivalent to Hydril GK 11\" 10K, Cameron DL 11\" 10K and Shaffer Spherical 11\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. If your programme needs an OEM-stamped unit, send the wellhead programme and stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Hydril GK style 11\" 10,000 psi annular BOP?",
+          "a": "The Hydril GK style 11\" 10,000 psi annular BOP is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the Hydril GK style 11\" 10,000 psi annular BOP for a complete stack?",
+          "a": "A complete installation also needs an accumulator control unit sized to the closing volume, a choke and kill manifold matched to the 10K class, ring gaskets and studs, and a drilling spool or crossover to the wellhead. See [BOP control units](/c/bop-control-units) and [choke and kill manifolds](/c/bop-choke-kill) for matching equipment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydril GK style 11\" 10,000 psi annular BOP differ from the 11\" 5,000 psi version?",
+          "a": "The Hydril GK style 11\" 10,000 psi annular BOP is rated 10,000 psi at 11\" and weighs about 5,200 kg; the [11\" 5,000 psi sibling](/p/annular-bop-hydril-gk-style-11-5-000-psi-wp-sour-service-nace-mr0175) is a different bore or pressure class with its own ring gasket and stack-up. Read the pressure class from the spec table, and see [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each type seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hydril GK style 11\" 10,000 psi annular BOP?",
+          "a": "The listing states a lead time of 90 days for the Hydril GK style 11\" 10,000 psi annular BOP, and closing time on the largest cavity is under 30 s per API STD 53. Exact timing depends on configuration and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Annular BOP, Hydril GK Style, 11\" 10,000 psi WP, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Annular BOP, Hydril GK Style, 11\" 10,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 90 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "annular-bop-hydril-gk-style-11-5-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Hydril GK style 11\" 5,000 psi annular BOP used for?",
+          "a": "The Hydril GK style 11\" 5,000 psi annular BOP is a sour-service (NACE MR0175) annular preventer with a spherical packer that seals around pipe or the open hole. It is used for workover stacks on shallow and mature wells, including heavy-oil workovers and mature-field intervention. Cold working pressure is 5,000 psi (5K class)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hydril GK style 11\" 5,000 psi annular BOP?",
+          "a": "The Hydril GK style 11\" 5,000 psi annular BOP is rated 5,000 psi cold working pressure, 5K class, at a 11\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Hydril GK style 11\" 5,000 psi annular BOP have?",
+          "a": "This unit has a 11\" vertical bore with API 6A 11\" 5K connections: studded top and studded bottom. Confirm the connection style on your RFQ so it matches your wellhead and adjacent stack parts. Approximate transport weight is 3,800 kg."
+        },
+        {
+          "slot": "D",
+          "q": "Which 11\" 5K ring gasket fits the Hydril GK style 11\" 5,000 psi annular BOP?",
+          "a": "The 11\" 5K flanges on this unit take R-54 or RX-54 ring gaskets. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service from [BOP spare parts](/c/bop-spare-parts), together with the studs and nuts for the flange joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Hydril GK style 11\" 5,000 psi annular BOP suitable for sour (H2S) service?",
+          "a": "Yes, the Hydril GK style 11\" 5,000 psi annular BOP is listed as sour service to NACE MR0175 / ISO 15156, with body, trim and bolting hardness controlled. The forged AISI 4130 alloy steel body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "F",
+          "q": "What packer elastomer should I choose for the Hydril GK style 11\" 5,000 psi annular BOP?",
+          "a": "Specify the packer elastomer on the RFQ: HNBR or AFLAS are the compounds listed for sour-service annulars for the 11\" 5K unit. Elastomer kits for the first redress are available from [BOP spare parts and elastomers](/c/bop-spare-parts), which keeps the packing element on the same sour-service basis as the body."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM annular BOPs is the Hydril GK style 11\" 5,000 psi annular BOP equivalent to?",
+          "a": "The Hydril GK style 11\" 5,000 psi annular BOP is listed as a matched-pressure equivalent to Hydril GK 11\" 5K, Cameron D 11\" 5K and Shaffer Spherical 11\" 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. If your programme needs an OEM-stamped unit, send the wellhead programme and stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Hydril GK style 11\" 5,000 psi annular BOP?",
+          "a": "The Hydril GK style 11\" 5,000 psi annular BOP is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the Hydril GK style 11\" 5,000 psi annular BOP for a complete stack?",
+          "a": "A complete installation also needs an accumulator control unit sized to the closing volume, a choke and kill manifold matched to the 5K class, ring gaskets and studs, and a drilling spool or crossover to the wellhead. See [BOP control units](/c/bop-control-units) and [choke and kill manifolds](/c/bop-choke-kill) for matching equipment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydril GK style 11\" 5,000 psi annular BOP differ from the 11\" 10,000 psi version?",
+          "a": "The Hydril GK style 11\" 5,000 psi annular BOP is rated 5,000 psi at 11\" and weighs about 3,800 kg; the [11\" 10,000 psi sibling](/p/annular-bop-hydril-gk-style-11-10-000-psi-wp-sour-service-nace-mr0175) is a different bore or pressure class with its own ring gasket and stack-up. Read the pressure class from the spec table, and see [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each type seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hydril GK style 11\" 5,000 psi annular BOP?",
+          "a": "The listing states a lead time of 60 days for the Hydril GK style 11\" 5,000 psi annular BOP, and closing time on the largest cavity is under 30 s per API STD 53. Exact timing depends on configuration and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Annular BOP, Hydril GK Style, 11\" 5,000 psi WP, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Annular BOP, Hydril GK Style, 11\" 5,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 60 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "annular-bop-hydril-gk-style-13-5-8-10-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Hydril GK style 13-5/8\" 10,000 psi annular BOP used for?",
+          "a": "The Hydril GK style 13-5/8\" 10,000 psi annular BOP is a sour-service (NACE MR0175) annular preventer with a spherical packer that seals around pipe or the open hole. It is used for surface BOP stacks for onshore sour-service oil and gas development drilling at 10K working pressure. Cold working pressure is 10,000 psi (10K class)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hydril GK style 13-5/8\" 10,000 psi annular BOP?",
+          "a": "The Hydril GK style 13-5/8\" 10,000 psi annular BOP is rated 10,000 psi cold working pressure, 10K class, at a 13-5/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Hydril GK style 13-5/8\" 10,000 psi annular BOP have?",
+          "a": "This unit has a 13-5/8\" vertical bore with API 6A 13-5/8\" 10K connections: studded top and flanged bottom, with both ends studded on request. Confirm the connection style on your RFQ so it matches your wellhead and adjacent stack parts. Approximate transport weight is 6,800 kg."
+        },
+        {
+          "slot": "D",
+          "q": "Which 13-5/8\" 10K ring gasket fits the Hydril GK style 13-5/8\" 10,000 psi annular BOP?",
+          "a": "The 13-5/8\" 10K flanges on this unit take BX-159 ring gaskets. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service from [BOP spare parts](/c/bop-spare-parts), together with the studs and nuts for the flange joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Hydril GK style 13-5/8\" 10,000 psi annular BOP suitable for sour (H2S) service?",
+          "a": "Yes, the Hydril GK style 13-5/8\" 10,000 psi annular BOP is listed as sour service to NACE MR0175 / ISO 15156, with body, trim and bolting hardness controlled. The forged AISI 4130 alloy steel body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "F",
+          "q": "What packer elastomer should I choose for the Hydril GK style 13-5/8\" 10,000 psi annular BOP?",
+          "a": "Specify the packer elastomer on the RFQ: HNBR or AFLAS are the compounds listed for sour-service annulars for the 13-5/8\" 10K unit. Elastomer kits for the first redress are available from [BOP spare parts and elastomers](/c/bop-spare-parts), which keeps the packing element on the same sour-service basis as the body."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM annular BOPs is the Hydril GK style 13-5/8\" 10,000 psi annular BOP equivalent to?",
+          "a": "The Hydril GK style 13-5/8\" 10,000 psi annular BOP is listed as a matched-pressure equivalent to Hydril GK 13-5/8\" 10K, Cameron DL 13-5/8\" 10K and Shaffer Spherical 13-5/8\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. If your programme needs an OEM-stamped unit, send the wellhead programme and stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Hydril GK style 13-5/8\" 10,000 psi annular BOP?",
+          "a": "The Hydril GK style 13-5/8\" 10,000 psi annular BOP is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the Hydril GK style 13-5/8\" 10,000 psi annular BOP for a complete stack?",
+          "a": "A complete installation also needs an accumulator control unit sized to the closing volume, a choke and kill manifold matched to the 10K class, ring gaskets and studs, and a drilling spool or crossover to the wellhead. See [BOP control units](/c/bop-control-units) and [choke and kill manifolds](/c/bop-choke-kill) for matching equipment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydril GK style 13-5/8\" 10,000 psi annular BOP differ from the 13-5/8\" 5,000 psi version?",
+          "a": "The Hydril GK style 13-5/8\" 10,000 psi annular BOP is rated 10,000 psi at 13-5/8\" and weighs about 6,800 kg; the [13-5/8\" 5,000 psi sibling](/p/annular-bop-hydril-gk-style-13-5-8-5-000-psi-wp-sour-service-nace-mr0175) is a different bore or pressure class with its own ring gasket and stack-up. Read the pressure class from the spec table, and see [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each type seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hydril GK style 13-5/8\" 10,000 psi annular BOP?",
+          "a": "The listing states a lead time of 90 days for the Hydril GK style 13-5/8\" 10,000 psi annular BOP, and closing time on the largest cavity is under 30 s per API STD 53. Exact timing depends on configuration and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Annular BOP, Hydril GK Style, 13-5/8\" 10,000 psi WP, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Annular BOP, Hydril GK Style, 13-5/8\" 10,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 90 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "annular-bop-hydril-gk-style-13-5-8-5-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Hydril GK style 13-5/8\" 5,000 psi annular BOP used for?",
+          "a": "The Hydril GK style 13-5/8\" 5,000 psi annular BOP is a sour-service (NACE MR0175) annular preventer with a spherical packer that seals around pipe or the open hole. It is used for surface BOP stacks on shallow onshore land rigs, workover top pieces and stripper-mode drilling through slim-hole intervals. Cold working pressure is 5,000 psi (5K class)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hydril GK style 13-5/8\" 5,000 psi annular BOP?",
+          "a": "The Hydril GK style 13-5/8\" 5,000 psi annular BOP is rated 5,000 psi cold working pressure, 5K class, at a 13-5/8\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Hydril GK style 13-5/8\" 5,000 psi annular BOP have?",
+          "a": "This unit has a 13-5/8\" vertical bore with API 6A 13-5/8\" 5K connections: studded top and studded bottom, with flanged available on request. Confirm the connection style on your RFQ so it matches your wellhead and adjacent stack parts. Approximate transport weight is 4,500 kg."
+        },
+        {
+          "slot": "D",
+          "q": "Which 13-5/8\" 5K ring gasket fits the Hydril GK style 13-5/8\" 5,000 psi annular BOP?",
+          "a": "The 13-5/8\" 5K flanges on this unit take BX-160 ring gaskets. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service from [BOP spare parts](/c/bop-spare-parts), together with the studs and nuts for the flange joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Hydril GK style 13-5/8\" 5,000 psi annular BOP suitable for sour (H2S) service?",
+          "a": "Yes, the Hydril GK style 13-5/8\" 5,000 psi annular BOP is listed as sour service to NACE MR0175 / ISO 15156, with body, trim and bolting hardness controlled. The forged AISI 4130 alloy steel body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "F",
+          "q": "What packer elastomer should I choose for the Hydril GK style 13-5/8\" 5,000 psi annular BOP?",
+          "a": "Specify the packer elastomer on the RFQ: HNBR or AFLAS are the compounds listed for sour-service annulars for the 13-5/8\" 5K unit. Elastomer kits for the first redress are available from [BOP spare parts and elastomers](/c/bop-spare-parts), which keeps the packing element on the same sour-service basis as the body."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM annular BOPs is the Hydril GK style 13-5/8\" 5,000 psi annular BOP equivalent to?",
+          "a": "The Hydril GK style 13-5/8\" 5,000 psi annular BOP is listed as a matched-pressure equivalent to Hydril GK 13-5/8\" 5K, Cameron D 13-5/8\" 5K and Shaffer Spherical 13-5/8\" 5K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. If your programme needs an OEM-stamped unit, send the wellhead programme and stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Hydril GK style 13-5/8\" 5,000 psi annular BOP?",
+          "a": "The Hydril GK style 13-5/8\" 5,000 psi annular BOP is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the Hydril GK style 13-5/8\" 5,000 psi annular BOP for a complete stack?",
+          "a": "A complete installation also needs an accumulator control unit sized to the closing volume, a choke and kill manifold matched to the 5K class, ring gaskets and studs, and a drilling spool or crossover to the wellhead. See [BOP control units](/c/bop-control-units) and [choke and kill manifolds](/c/bop-choke-kill) for matching equipment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydril GK style 13-5/8\" 5,000 psi annular BOP differ from the 13-5/8\" 10,000 psi version?",
+          "a": "The Hydril GK style 13-5/8\" 5,000 psi annular BOP is rated 5,000 psi at 13-5/8\" and weighs about 4,500 kg; the [13-5/8\" 10,000 psi sibling](/p/annular-bop-hydril-gk-style-13-5-8-10-000-psi-wp-sour-service-nace-mr0175) is a different bore or pressure class with its own ring gasket and stack-up. Read the pressure class from the spec table, and see [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each type seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hydril GK style 13-5/8\" 5,000 psi annular BOP?",
+          "a": "The listing states a lead time of 60 days for the Hydril GK style 13-5/8\" 5,000 psi annular BOP, and closing time on the largest cavity is under 30 s per API STD 53. Exact timing depends on configuration and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Annular BOP, Hydril GK Style, 13-5/8\" 5,000 psi WP, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Annular BOP, Hydril GK Style, 13-5/8\" 5,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 60 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "subsea-annular-bop-hydril-gx-style-18-3-4-10-000-psi-wp-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP used for?",
+          "a": "The Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is a sour-service (NACE MR0175) annular preventer with a spherical packer that seals around pipe or the open hole. It is used for the LMRP annular on jack-up and platform offshore stacks, and new-build offshore stack-ups. Cold working pressure is 10,000 psi (10K class)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP?",
+          "a": "The Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is rated 10,000 psi cold working pressure, 10K class, at a 18-3/4\" vertical bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What bore size and end connections does the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP have?",
+          "a": "This unit has a 18-3/4\" vertical bore with API 6A 18-3/4\" 10K connections: flanged top and flanged bottom for subsea LMRP and LRP integration. Confirm the connection style on your RFQ so it matches your wellhead and adjacent stack parts. Approximate transport weight is 14,500 kg."
+        },
+        {
+          "slot": "D",
+          "q": "Which 18-3/4\" 10K ring gasket fits the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP?",
+          "a": "The 18-3/4\" 10K flanges on this unit take BX-164 ring gaskets. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service from [BOP spare parts](/c/bop-spare-parts), together with the studs and nuts for the flange joint."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP suitable for sour (H2S) service?",
+          "a": "Yes, the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is listed as sour service to NACE MR0175 / ISO 15156, with body, trim and bolting hardness controlled. The forged AISI 4130 alloy steel body has a maximum hardness of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure, temperature and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "F",
+          "q": "What packer elastomer should I choose for the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP?",
+          "a": "Specify the packer elastomer on the RFQ: HNBR or AFLAS are the compounds listed for sour-service annulars for the 18-3/4\" 10K unit. Elastomer kits for the first redress are available from [BOP spare parts and elastomers](/c/bop-spare-parts), which keeps the packing element on the same sour-service basis as the body."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM annular BOPs is the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP equivalent to?",
+          "a": "The Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is listed as a matched-pressure equivalent to Hydril GX 18-3/4\" 10K, the Cameron 18-3/4\" 10K subsea annular and the Shaffer 18-3/4\" 10K. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability. If your programme needs an OEM-stamped unit, send the wellhead programme and stack-up drawing through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP?",
+          "a": "The Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is API 16A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. The package also lists a hydrostatic test certificate, EN 10204 3.1 / 3.2 mill test reports, a function-test report per API STD 53 and heat-number traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP for a complete stack?",
+          "a": "A complete installation also needs an accumulator control unit sized to the closing volume, a choke and kill manifold matched to the 10K class, ring gaskets and studs, and a drilling spool or crossover to the wellhead. See [BOP control units](/c/bop-control-units) and [choke and kill manifolds](/c/bop-choke-kill) for matching equipment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP differ from the 13-5/8\" 10,000 psi version?",
+          "a": "The Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP is rated 10,000 psi at 18-3/4\" and weighs about 14,500 kg; the [13-5/8\" 10,000 psi sibling](/p/annular-bop-hydril-gk-style-13-5-8-10-000-psi-wp-sour-service-nace-mr0175) is a different bore or pressure class with its own ring gasket and stack-up. Read the pressure class from the spec table, and see [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each type seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP?",
+          "a": "The listing states a lead time of 180 days for the Hydril GX style 18-3/4\" 10,000 psi subsea annular BOP, and closing time on the largest cavity is under 45 s per API STD 53. Exact timing depends on configuration and certification scope, and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Subsea Annular BOP, Hydril GX Style, 18-3/4\" 10,000 psi WP, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Subsea Annular BOP, Hydril GX Style, 18-3/4\" 10,000 psi WP, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 180 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

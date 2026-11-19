@@ -1,0 +1,145 @@
+{
+  "family": "industrial-globe-valves",
+  "extraFacts": [
+    {
+      "fact": "API 598 covers the inspection and testing of valves, including shell, backseat and seat tests; API 609 covers butterfly valves (lug, wafer and double-flanged types, Category A and Category B); API 600 covers bolted-bonnet steel gate valves; API 602 covers compact steel gate, globe and check valves of small bore; API 603 covers corrosion-resistant bolted-bonnet gate valves; API 6D covers pipeline valves; API 594 covers wafer, lug and flanged check valves; API 599 covers metal plug valves; API 607 is the fire test for valves with non-metallic seats; BS 1868 covers steel check valves and BS 1873 steel globe valves; ASME B16.34 covers valve pressure-temperature ratings and ASME B16.10 covers valve face-to-face lengths; EN 10204 3.1 is the inspection certificate type for material certificates; ISO 15848 covers fugitive emissions of valves.",
+      "source": "API 598, API 609, API 600, API 602, API 603, API 6D, API 594, API 599, API 607; BS 1868; BS 1873; ASME B16.34; ASME B16.10; EN 10204; ISO 15848 (standard titles)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Cast Steel Globe Valve, BS 1873 [IH-PV-GLC]:   Cast steel globe valves to BS 1873 and ASME B16.34: NPS 2\" to 36\" (BS 1873 to NPS 16, larger sizes to ASME B16.34), Class 150 to 2500, T, Y or angle pattern, bolted bonnet, for throttling and tight shut-off with handwheel, gear or actuator. | Valve type Globe valve; Construction Bolted bonnet, T, Y or angle pattern, rising stem; Design standard BS 1873, ASME B16.34; Size range NPS 2\" to 36\" (DN50 to DN900); Pressure class ASME Class 150 to 2500; Body material Carbon steel, alloy steel, stainless steel, duplex; Seat and trim Hardfaced seat and disc; plug, parabolic or needle disc; End connections RF, RTJ flanged; butt-weld; Operation Handwheel, gear operator or actuator; Face-to-face / end-to-end ASME B16.10; Pressure testing Shell, b | 71 part numbers (e.g. IH-PV-GLC-150-0200, IH-PV-GLC-150-0250, IH-PV-GLC-150-0300, IH-PV-GLC-150-0350); H 333 to 1,310; W 200 to 800; lBw 203 to 1,423; lRf 203 to 1,423; weightBwKg 16 to 4,835; weightRfKg 19 to 6,320; W1 305 to 1,200; lRtj 295 to 1,445; H1 521 to 2,039; rows:  /  /  /  /  /  /  /  || Forged Steel Globe Valve, API 602 [IH-PV-FGL]:   Forged steel globe valves to API 602: NPS 1/2\" to 2\", Class 800 and Class 150 to 1500 (Class 2500 to ASME B16.34), T, Y and angle pattern, bolted or welded bonnet, socket-weld, threaded or flanged ends. | Valve type Globe valve, forged; Construction Forged body, T, Y or angle pattern, bolted, welded or pressure-seal bonnet; Design standard API 602, ASME B16.34; Size range NPS 1/2\" to 2\" (DN15 to DN50); Pressure class Class 800, ASME Class 150 to 2500; Body material Forged carbon steel, alloy, stainless, duplex, nickel alloys; Seat and trim Hardfaced seat; plug or needle disc; End connections Socket weld, NPT, butt-weld, RF or RTJ flanged; Operation Handwheel or actuator; Pressure testing Shell, b | 51 part numbers (e.g. IH-PV-FGL-800-0025F, IH-PV-FGL-800-0038F, IH-PV-FGL-800-0038, IH-PV-FGL-800-0050F); H 150.8 to 446.2; L 76 to 279; W 90 to 350; d 6.5 to 38; port Full bore and Regular bore; pressureClass Class 800, Class 900, Class 900/1500 and Class 2500; weightKg 2 to 36; rows:  /  /  /  /  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cast-steel-globe-valve-bs-1873",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BS 1873 cast steel globe valve used for?",
+          "a": "The BS 1873 cast steel globe valve is a globe valve built to BS 1873, ASME B16.34, used for steam, feedwater, bypass, drain and control duty. It is made in NPS 2\" to 36\" (DN50 to DN900) and ASME Class 150 to 2500, and is built to order and supplied from Dubai; see the [globe valves](/c/industrial-globe-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the BS 1873 cast steel globe valve part numbers such as IH-PV-GLC-600-0600?",
+          "a": "In the size table IH-PV-GLC-600-0600 is the 6\" valve in Class 600: the number before the size is the class, and the last four digits are the size in hundredths of an inch. The table lists 71 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the BS 1873 cast steel globe valve available in?",
+          "a": "The published range for the BS 1873 cast steel globe valve is NPS 2\" to 36\" (DN50 to DN900), in ASME Class 150 to 2500. The size table lists 71 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the BS 1873 cast steel globe valve take?",
+          "a": "The BS 1873 cast steel globe valve is rated ASME Class 150 to 2500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the BS 1873 cast steel globe valve made in?",
+          "a": "The body is available in carbon steel, alloy steel, stainless steel, duplex, with hardfaced seat and disc; plug, parabolic or needle disc. The construction is Bolted bonnet, T, Y or angle pattern, rising stem."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the BS 1873 cast steel globe valve?",
+          "a": "Each BS 1873 cast steel globe valve has shell, backseat and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the BS 1873 cast steel globe valve operated, and what end connections does it have?",
+          "a": "The BS 1873 cast steel globe valve has RF, RTJ flanged; butt-weld ends and is operated by handwheel, gear operator or actuator. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "BS 1873 cast steel globe valve: Which disc should I choose?",
+          "a": "A flat or swivel disc suits on-off duty. A plug or parabolic disc gives finer control over a wider opening and resists erosion when throttling. A needle disc is for small, precise flows. Tell us the flow range and pressure drop."
+        },
+        {
+          "slot": "J",
+          "q": "BS 1873 cast steel globe valve: Can the flow go either way?",
+          "a": "Globe valves are usually installed with the flow under the disc, so the packing sees downstream pressure when the valve is closed. On steam and high-pressure lines flow over the disc is sometimes specified; the body is marked with the direction."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BS 1873 cast steel globe valve compare with the API 602 forged steel globe valve?",
+          "a": "The BS 1873 cast steel globe valve differs from the [API 602 forged steel globe valve](/p/forged-steel-globe-valve-api-602) in construction: bolted bonnet, T, Y or angle pattern, rising stem here, forged body, T, Y or angle pattern, bolted, welded or pressure-seal bo on the other. Also, standard: BS 1873, ASME B16.34 here, API 602, ASME B16.34 on the other. This valve is for steam, feedwater, bypass, drain and control duty; the other is for drains, vents, sampling, bypass and steam lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BS 1873 cast steel globe valve supplied from?",
+          "a": "The BS 1873 cast steel globe valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BS 1873 cast steel globe valve in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the BS 1873 cast steel globe valve and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "forged-steel-globe-valve-api-602",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the API 602 forged steel globe valve used for?",
+          "a": "The API 602 forged steel globe valve is a globe valve, forged built to API 602, ASME B16.34, used for drains, vents, sampling, bypass and steam lines. It is made in NPS 1/2\" to 2\" (DN15 to DN50) and Class 800, ASME Class 150 to 2500, and is built to order and supplied from Dubai; see the [globe valves](/c/industrial-globe-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the API 602 forged steel globe valve part numbers such as IH-PV-FGL-900-1500-0050F?",
+          "a": "In the size table IH-PV-FGL-900-1500-0050F is the 1/2\" valve in Class 900/1500: the number before the size is the class, and the last four digits are the size in hundredths of an inch. The table lists 51 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the API 602 forged steel globe valve available in?",
+          "a": "The published range for the API 602 forged steel globe valve is NPS 1/2\" to 2\" (DN15 to DN50), in Class 800, ASME Class 150 to 2500. The size table lists 51 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the API 602 forged steel globe valve take?",
+          "a": "The API 602 forged steel globe valve is rated Class 800, ASME Class 150 to 2500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the API 602 forged steel globe valve made in?",
+          "a": "The body is available in forged carbon steel, alloy, stainless, duplex, nickel alloys, with hardfaced seat; plug or needle disc. The construction is Forged body, T, Y or angle pattern, bolted, welded or pressure-seal bonnet."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the API 602 forged steel globe valve?",
+          "a": "Each API 602 forged steel globe valve has shell, backseat and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 602 forged steel globe valve operated, and what end connections does it have?",
+          "a": "The API 602 forged steel globe valve has socket weld, NPT, butt-weld, RF or RTJ flanged ends and is operated by handwheel or actuator. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "API 602 forged steel globe valve: Plug disc or needle disc?",
+          "a": "A plug disc gives steady throttling and tight shut-off for general duty. A needle disc gives fine control of very small flows, as on sample and instrument lines."
+        },
+        {
+          "slot": "J",
+          "q": "API 602 forged steel globe valve: Can it be used on steam?",
+          "a": "Yes. Forged globe valves are common on steam drains and traps. Specify the steam pressure and temperature so the body material and bonnet type match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 602 forged steel globe valve compare with the BS 1873 cast steel globe valve?",
+          "a": "The API 602 forged steel globe valve differs from the [BS 1873 cast steel globe valve](/p/cast-steel-globe-valve-bs-1873) in construction: forged body, T, Y or angle pattern, bolted, welded or pressure-seal bo here, bolted bonnet, T, Y or angle pattern, rising stem on the other. Also, standard: API 602, ASME B16.34 here, BS 1873, ASME B16.34 on the other. This valve is for drains, vents, sampling, bypass and steam lines; the other is for steam, feedwater, bypass, drain and control duty."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the API 602 forged steel globe valve supplied from?",
+          "a": "The API 602 forged steel globe valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the API 602 forged steel globe valve in stock in Dubai?",
+          "a": "Yes. We keep the API 602 forged steel globe valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "family": "finned-tubes",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "finned-tubes-for-air-cooled-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are finned tubes for air-cooled exchangers and what standard covers them?",
+          "a": "Finned tubes for air-cooled exchangers are round tubes with fins on the outside, covered by API 661 / ISO 13706. This listing is for buyers who have not yet chosen the fin type, and covers the usual air-cooler geometry across every common fin type."
+        },
+        {
+          "slot": "D",
+          "q": "What tube outside diameters and lengths are available for air-cooler finned tubes?",
+          "a": "Tube OD runs from 15.9 to 152.4 mm (5/8–6 in), with 25.4 mm (1 in) the most common, in single lengths from 1.8 to 18.3 m (6–60 ft). The size table gives these as limits, and any size inside the range is made to order."
+        },
+        {
+          "slot": "D",
+          "q": "What fin heights, thicknesses and densities do air-cooler finned tubes have?",
+          "a": "Fin height is 7.9–25.4 mm (5/16–1 in), thickness 0.25–0.89 mm (0.010–0.035 in) and density 7–11 FPI. Extended-to-prime surface ratio runs from 7:1 to 25:1, so a taller, denser fin gives more outside surface per metre of tube."
+        },
+        {
+          "slot": "B",
+          "q": "How is the part number IH-TF-FT-FIN-R1 for finned tubes organised?",
+          "a": "IH-TF-FT-FIN-R1 is the single range row of this listing: the base IH-TF-FT-FIN identifies finned tubes for air-cooled exchangers and R1 stands for the range. The row gives limits (OD 5/8–6 in, 7–11 FPI) rather than one fixed size."
+        },
+        {
+          "slot": "F",
+          "q": "What tube and fin materials are used for air-cooler finned tubes?",
+          "a": "Tube material can be carbon steel, stainless, admiralty or exotic alloys, and the fin is aluminium almost always, with steel used for very high temperature. The fin material sets the temperature limit, so state the process temperature when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "How many tube rows and what pitch does an air-cooler bundle with finned tubes use?",
+          "a": "Typical bundles run 2–10 rows (up to 30) on a triangular pitch of 2–2.5 tube diameters, with about 50% net free area. Those figures describe the usual air-cooler layout, and the actual layout comes from the thermal design on your data sheet."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard covers finned tubes for air-cooled exchangers?",
+          "a": "API 661 / ISO 13706 governs air-cooled heat exchangers and their finned tube bundles. Equivalent grades across ASTM, EN, DIN, JIS and GB/T standards are indicative only, and we check them against each tender before quoting."
+        },
+        {
+          "slot": "G",
+          "q": "What certificate comes with finned tubes for air-cooled exchangers?",
+          "a": "A mill test certificate to EN 10204 3.1 is available on request, and third-party inspection can be arranged against your inspection and test plan. Read our [EN 10204 3.1 guide](/blog/en-10204-3-1-mill-test-certificate) before you decide which certificate your order needs."
+        },
+        {
+          "slot": "K",
+          "q": "Which fin type should I choose for air-cooled exchanger finned tubes?",
+          "a": "Choose the fin type from temperature, fouling and the corrosion risk of the air; this listing is the starting page when that is open. Compare the options in our [types of finned tubes guide](/blog/types-of-finned-tubes), and see the [extruded fin tubes shelf](/c/extruded-fin-tubes) for coastal service."
+        },
+        {
+          "slot": "I",
+          "q": "How are air-cooler finned tubes kept clean in service?",
+          "a": "Fin fouling lowers air-side performance, so plan the cleaning method with the fin spacing and pitch. Wider fin pitch suits dirty air, and the [finned tube fouling and cleaning guide](/blog/finned-tube-fouling-cleaning) covers what works for each fin type."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply air-cooler finned tubes from Dubai?",
+          "a": "Yes, we supply finned tubes from Dubai, UAE and ship worldwide with the best lead times. Sizes inside the listed range are made to order, so send the standard and grade, OD, wall, length, quantity and fin geometry through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What should I send to get a quotation for finned tubes?",
+          "a": "Send the standard and grade, OD and wall (BWG or millimetres, minimum or average wall), length and quantity, with the fin type, material, height, thickness, fins per inch and the bare length at each end. We quote with the mill certificates and inspection you need."
+        }
+      ]
+    }
+  ]
+}

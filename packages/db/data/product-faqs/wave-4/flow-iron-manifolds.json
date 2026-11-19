@@ -1,0 +1,868 @@
+{
+  "family": "flow-iron-manifolds",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "A ring-joint (BX or R) gasket is a single-use seal: once energised it should not be reused, and a new gasket is fitted at every flange make-up.",
+      "source": "Indus Hydraulics BOP spare parts listing, API 6A BX ring gasket set (/c/bop-spare-parts)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "choke-manifold-single-stage-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 15,000 psi for standard service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Single-stage choke — fixed or adjustable bean."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service come in?",
+          "a": "The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is listed in 2 in, 3 in line bore; bean sizes 1/16 in to 1 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "On the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (inlet) and end B is 1502 Male Weco Union (outlet). Additional features: Optional 1/2 in NPT bypass and gauge taps. Bore: Choke bean (engineered per flow-rate spec)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service made from?",
+          "a": "The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is made from Forged 4130 body with tungsten-carbide choke bean and seat, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service meet?",
+          "a": "The choke manifold is built to API 16C and supplied API-monogrammed. The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service connect to?",
+          "a": "The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Cameron Choke 15K, FMC Choke Manifold, NOV Choke as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service used?",
+          "a": "The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is used for frac flowback control; well-test rate management; drilling-fluid pressure-relief. It is sized for 2 in, 3 in line bore lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service](/p/choke-manifold-dual-stage-1502-10-000-psi-sour-service) in figure, pressure class or service class. The Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "choke-manifold-dual-stage-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 15,000 psi for standard service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Dual-stage — primary positive choke + secondary adjustable choke."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service come in?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is listed in 2 in, 3 in line bore; bean sizes 1/16 in to 1-1/2 in (per stage). Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "On the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (inlet) and end B is 1502 Male Weco Union (outlet). Additional features: Inlet / outlet gauge ports + emergency-shutdown bypass. Bore: Two-stage bean configuration."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service made from?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is made from Forged 4130 body with tungsten-carbide bean / seat at both stages, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service meet?",
+          "a": "The choke manifold is built to API 16C and supplied API-monogrammed. The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service connect to?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC Dual Choke, Cameron Two-Stage Choke, NOV Choke as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service used?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is used for high-rate frac flowback control; two-step pressure management; sand-laden well-test. It is sized for 2 in, 3 in line bore lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service](/p/choke-manifold-dual-stage-1502-10-000-psi-sour-service) in figure, pressure class or service class. The Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "choke-manifold-dual-stage-1502-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 10,000 psi for sour service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Dual-stage NACE choke (positive + adjustable)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service come in?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is listed in 2 in line bore; bean sizes 1/16 in to 1-1/2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "On the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service, end A is 1502 Female Weco Union (inlet) and end B is 1502 Male Weco Union (outlet). Additional features: NACE gauge ports + emergency bypass. Bore: Two-stage bean configuration."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service made from?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is made from Forged 4130 NACE-controlled with tungsten-carbide trim, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service meet?",
+          "a": "The choke manifold is built to API 16C and supplied API-monogrammed. The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service connect to?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Forum Energy Sour Choke, Halliburton Dual Sour, Cameron NACE Choke as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service used?",
+          "a": "The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is used for sour-well high-rate flowback; two-step NACE pressure control; H₂S sand-laden well-test. It is sized for 2 in line bore lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service](/p/choke-manifold-single-stage-1502-15-000-psi-standard-service) in figure, pressure class or service class. The Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 35 days for the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "diverter-manifold-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a diverter manifold rated 15,000 psi for standard service used for?",
+          "a": "A diverter manifold routes one inlet to two outlets through isolation valves, so flow can be switched between lines. The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Diverter manifold — 1 inlet × 2 outlets with isolation valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is listed in 2 in, 3 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (inlet) and end B is 1502 Male Weco Union (×2 outlets). Additional features: 2× plug-valve isolation per outlet. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The diverter manifold is built to API 16C and supplied API-monogrammed. The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Forum Energy Diverter, Halliburton Bypass, FMC Diverter as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is used for frac-spread bypass routing; two-tank flowback diversion; pressure-test isolation. It is sized for 2 in, 3 in lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the diverter manifold 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The diverter manifold differs from the [Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service](/p/choke-manifold-dual-stage-1502-10-000-psi-sour-service) in figure, pressure class or service class. The Diverter Manifold, 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 28 days for the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Diverter Manifold, 1502 Series, 15,000 psi, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manifold-skid-package-frac-iron-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a manifold skid package rated 15,000 psi for standard service used for?",
+          "a": "A manifold skid package is a skid-mounted frac iron assembly of distribution manifold, chokes, plug valves and isolation. The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Skid-mounted frac iron package — distribution manifold + chokes + plug valves + isolation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is listed in Engineered to spread requirements — typical 20-40 ft skid footprints. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (multiple inlets) and end B is 1502 Male Weco Union (multiple outlets). Additional features: Engineered to customer flow-path spec; includes structural skid, lifting points, walkways. Length: 20-40 ft skid. Bore: Per branch spec."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The manifold skid package is built to API 16C and supplied API-monogrammed. The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Forum Energy Manifold Skid, Halliburton Frac Skid, NOV Pad Skid as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is used for turnkey frac-spread iron packages; pre-fabricated pumping skids; mobile pressure-control packages. It is sized for Engineered to spread requirements — typical 20-40 ft skid footprints lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the manifold skid package 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The manifold skid package differs from the [Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service](/p/choke-manifold-dual-stage-1502-10-000-psi-sour-service) in figure, pressure class or service class. The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 84 days for the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "choke-manifold-single-stage-1502-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 10,000 psi for sour service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration Single-stage choke, NACE-compliant."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service come in?",
+          "a": "The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is listed in 2 in line bore; bean sizes 1/16 in to 1 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "On the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service, end A is 1502 Female Weco Union (inlet) and end B is 1502 Male Weco Union (outlet). Additional features: NACE-compliant gauge ports. Bore: Choke bean (engineered)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service made from?",
+          "a": "The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is made from Forged 4130 NACE-controlled with tungsten-carbide trim, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service meet?",
+          "a": "The choke manifold is built to API 16C and supplied API-monogrammed. The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service connect to?",
+          "a": "The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Halliburton Sour Choke, Cameron NACE Choke, FMC Sour Choke as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service used?",
+          "a": "The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is used for sour-well frac flowback; H₂S well-test rate management; NACE-compliant flowback iron. It is sized for 2 in line bore lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service](/p/choke-manifold-single-stage-1502-15-000-psi-standard-service) in figure, pressure class or service class. The Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 35 days for the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "multi-well-manifold-8-well-1502-series-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a multi-well manifold rated 10,000 psi for sour service used for?",
+          "a": "A multi-well manifold distributes flow from a spread to several wells, with isolation on each branch. The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is rated 10,000 psi for sour service, in the configuration 8-well NACE-compliant distribution manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service come in?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is listed in 3 in trunk × 2 in branches — engineered per spread. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service?",
+          "a": "On the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service, end A is 1502 Female Weco Union (×8 inlets) — sour service and end B is 1502 Male Weco Union (×2-4 trunk outlets). Additional features: NACE plug-valve and check-valve isolation per branch. Length: Skid-mounted, 12-20 ft footprint. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is rated 10,000 psi working pressure (10K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service made from?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is made from Forged alloy steel (4130) — NACE MR0175 hardness controlled, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service meet?",
+          "a": "The multi-well manifold is built to API 16C and supplied API-monogrammed. The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service connect to?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names Halliburton Sour 8-Well, NOV NACE Manifold, SPM Sour Pad as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service installed and serviced?",
+          "a": "For the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service used?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is used for sour-well multi-well frac pads; H₂S simul-frac spreads; NACE-compliant pumping pads. It is sized for 3 in trunk × 2 in branches — engineered per spread lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the multi-well manifold 1502 10,000 psi sour differ from similar flow iron?",
+          "a": "The multi-well manifold differs from the [Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service](/p/multi-well-manifold-4-well-1502-series-15-000-psi-standard-service) in figure, pressure class or service class. The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is rated 10,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 112 days for the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 112 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "choke-manifold-single-stage-602-6-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 6,000 psi for sour service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is rated 6,000 psi for sour service, in the configuration Single-stage NACE choke, compact."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service come in?",
+          "a": "The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is listed in 2 in, 3 in line bore; bean 1/16 in to 1 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service?",
+          "a": "On the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service, end A is 602 Female Weco Union (inlet) and end B is 602 Male Weco Union (outlet). Bore: Choke bean."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service?",
+          "a": "The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is rated 6,000 psi working pressure (6K class) for sour service, with a temperature rating of -20°F to 180°F (-29°C to 82°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service made from?",
+          "a": "The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is made from Forged 4130 NACE-controlled with tungsten-carbide trim, API 6A material class EE. It is NACE-compliant with hardness controlled, so it suits H2S service; give the H2S partial pressure on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service meet?",
+          "a": "The choke manifold is built to API 16C and supplied API-monogrammed. The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service connect to?",
+          "a": "The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names FMC 602 Choke, Cameron 602 NACE, Halliburton 6K Sour as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service installed and serviced?",
+          "a": "For the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service used?",
+          "a": "The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is used for sour-well production flowback; H₂S well-test choking; 6K sour-service control. It is sized for 2 in, 3 in line bore lines at 6,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 602 6,000 psi sour differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service](/p/choke-manifold-single-stage-1502-15-000-psi-standard-service) in figure, pressure class or service class. The Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service is rated 6,000 psi for sour service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service?",
+          "a": "The listing states a lead time of 28 days for the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, Single-Stage 602, 6,000 psi, Sour Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "flow-line-package-engineered-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a flow line package rated 15,000 psi for standard service used for?",
+          "a": "A flow line package is a custom-engineered assembly of pup joints, swivel joints, crosses, tees and chokes for a spread. The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration Custom-engineered flow line package — pup joints + swivel joints + crosses + tees + chokes per spread."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is listed in Engineered to spread spec. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service, end A is Customer-specified and end B is Customer-specified. Additional features: Full bill-of-materials engineered to operational data sheet. Bore: Per branch."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The flow line package is built to API 16C and supplied API-monogrammed. The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service connects at Customer-specified and Customer-specified. Check the flange class, ring groove or connection size against your equipment before ordering. The listing names Frac Iron Package, Halliburton Spread, FMC Spread as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service: inspect the connections and seals before each job, and bleed the line to zero before breaking any joint. Follow the flow-iron make-up and test procedure of your operator."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is used for frac-spread turnkey iron packages; new-rig commissioning kits; stimulation-iron renewal. It is sized for Engineered to spread spec lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the flow line package 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The flow line package differs from the [Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service](/p/choke-manifold-dual-stage-1502-10-000-psi-sour-service) in figure, pressure class or service class. The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 56 days for the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Flow Line Package (Engineered), 1502 Series, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "choke-manifold-api-6bx-10k-flanged-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a choke manifold rated 10,000 psi for standard service used for?",
+          "a": "A choke manifold controls flow rate and pressure by routing flow through chokes, for frac flowback and well testing. The Choke Manifold, API 6BX 10K Flanged, Standard Service is rated 10,000 psi for standard service, in the configuration Single-stage choke, API 6BX flanged inlet / outlet."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Choke Manifold, API 6BX 10K Flanged, Standard Service come in?",
+          "a": "The Choke Manifold, API 6BX 10K Flanged, Standard Service is listed in 3-1/16 in flange bore; bean 1/16 in to 1-1/2 in. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Choke Manifold, API 6BX 10K Flanged, Standard Service?",
+          "a": "On the Choke Manifold, API 6BX 10K Flanged, Standard Service, end A is API 6BX 10K flange (inlet) and end B is API 6BX 10K flange (outlet). Additional features: Optional 1502 Weco-union outlet on request. Bore: Choke bean."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Choke Manifold, API 6BX 10K Flanged, Standard Service?",
+          "a": "The Choke Manifold, API 6BX 10K Flanged, Standard Service is rated 10,000 psi working pressure (10K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Choke Manifold, API 6BX 10K Flanged, Standard Service made from?",
+          "a": "The Choke Manifold, API 6BX 10K Flanged, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Choke Manifold, API 6BX 10K Flanged, Standard Service meet?",
+          "a": "The choke manifold is built to API 6A and supplied API-monogrammed. The Choke Manifold, API 6BX 10K Flanged, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Choke Manifold, API 6BX 10K Flanged, Standard Service connect to?",
+          "a": "The Choke Manifold, API 6BX 10K Flanged, Standard Service connects at API 6BX 10K flange (inlet) and API 6BX 10K flange (outlet). Check the flange class, ring groove or connection size against your equipment before ordering. The listing names NOV 10K Choke, Cameron API Choke, FMC Wellhead Choke as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [API flanges](/c/flow-iron-flanges-api) and [ring joint gaskets](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Choke Manifold, API 6BX 10K Flanged, Standard Service installed and serviced?",
+          "a": "For the Choke Manifold, API 6BX 10K Flanged, Standard Service: inspect the connections and seals before each job, and bleed the line to zero before breaking any joint. Follow the flow-iron make-up and test procedure of your operator."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Choke Manifold, API 6BX 10K Flanged, Standard Service used?",
+          "a": "The Choke Manifold, API 6BX 10K Flanged, Standard Service is used for production-tree integrated choke; wellhead-mounted flowback control; 10K permanent surface installations. It is sized for 3-1/16 in flange bore lines at 10,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the choke manifold 10K 10,000 psi standard differ from similar flow iron?",
+          "a": "The choke manifold differs from the [Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service](/p/choke-manifold-single-stage-1502-15-000-psi-standard-service) in figure, pressure class or service class. The Choke Manifold, API 6BX 10K Flanged, Standard Service is rated 10,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Choke Manifold, API 6BX 10K Flanged, Standard Service?",
+          "a": "The listing states a lead time of 35 days for the Choke Manifold, API 6BX 10K Flanged, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Choke Manifold, API 6BX 10K Flanged, Standard Service in stock in Dubai?",
+          "a": "Yes. We keep the Choke Manifold, API 6BX 10K Flanged, Standard Service in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "multi-well-manifold-4-well-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a multi-well manifold rated 15,000 psi for standard service used for?",
+          "a": "A multi-well manifold distributes flow from a spread to several wells, with isolation on each branch. The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration 4-well frac-spread distribution manifold with plug-valve isolation per well."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is listed in 3 in trunk × 2 in branches (typical) — engineered per spread. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (×4 inlets — one per well) and end B is 1502 Male Weco Union (×1-2 trunk outlets). Additional features: Plug-valve isolation per well + check-valve on each branch. Length: Skid-mounted, 8-12 ft footprint. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The multi-well manifold is built to API 16C and supplied API-monogrammed. The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names NOV 4-Well Manifold, SPM Multi-Well, Forum Energy Pad Iron as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is used for multi-well frac pad distribution; zipper-frac pumping spreads; coiled-tubing multi-well operations. It is sized for 3 in trunk × 2 in branches lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the multi-well manifold 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The multi-well manifold differs from the [Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service](/p/multi-well-manifold-8-well-1502-series-10-000-psi-sour-service) in figure, pressure class or service class. The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 56 days for the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "multi-well-manifold-8-well-1502-series-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a multi-well manifold rated 15,000 psi for standard service used for?",
+          "a": "A multi-well manifold distributes flow from a spread to several wells, with isolation on each branch. The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, in the configuration 8-well frac-spread distribution manifold — engineered to order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service come in?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is listed in 4 in trunk × 3 in branches (typical) — engineered per spread. Other sizes in the same series and pressure class can be sourced build-to-order at 8 to 14 weeks, so send the line specification on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "On the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service, end A is 1502 Female Weco Union (×8 inlets) and end B is 1502 Male Weco Union (×2-4 trunk outlets). Additional features: Plug-valve isolation per well + check-valve on each branch. Length: Skid-mounted, 12-20 ft footprint. Bore: Same as nominal."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi working pressure (15K class) for standard service, with a temperature rating of -20°F to 250°F (-29°C to 121°C). Every unit is hydrotested at 1.5 times shell pressure, which is a test figure and not an operating limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service made from?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is made from Forged alloy steel (4130/4140), tempered, API 6A material class AA. It is standard service, not for H2S, so request the sour listing for sour wells."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service meet?",
+          "a": "The multi-well manifold is built to API 16C and supplied API-monogrammed. The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service comes from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Mill test reports to EN 10204 3.1 / 3.2 are supplied with each shipment."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service connect to?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service has Weco hammer-union ends and joins unions of the same figure and size only. Never connect different figure numbers, as mismatched unions are a known failure cause. The listing names SPM 8-Well Manifold, NOV Multi-Well, Halliburton Pad Manifold as matched-pressure equivalents; confirm the figure, size and rating match before you connect. See [hammer unions](/c/hammer-unions-sour-gas-service) and [flow line iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service installed and serviced?",
+          "a": "For the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service: make up the unions by striking the wing nut lugs with a hammer, and bleed the line to zero before breaking it out. Never hammer on a pressurised union, and replace seal rings that are cut, flattened or hardened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service used?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is used for large-pad zipper-frac operations; multi-well simul-frac spreads; high-throughput pumping pads. It is sized for 4 in trunk × 3 in branches lines at 15,000 psi."
+        },
+        {
+          "slot": "K",
+          "q": "How does the multi-well manifold 1502 15,000 psi standard differ from similar flow iron?",
+          "a": "The multi-well manifold differs from the [Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service](/p/multi-well-manifold-8-well-1502-series-10-000-psi-sour-service) in figure, pressure class or service class. The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is rated 15,000 psi for standard service, so match the figure, size and service class to the line before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service?",
+          "a": "The listing states a lead time of 84 days for the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service, and gives USA as the country of origin. Other sizes are built to order at 8 to 14 weeks. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Multi-Well Manifold (8-Well), 1502 Series, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "well-testing-choke-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a well testing choke manifold used for?",
+          "a": "A well testing choke manifold is installed downstream of the flowhead and controls rate and pressure during clean-up and testing. One branch carries an adjustable choke for clean-up and drawdown, the other a fixed choke for steady test rates, and the full-bore centre branch is used for heating and blow-down."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the well testing choke manifold cover?",
+          "a": "The published range is 1-13/16\" to 7-1/16\" bore and 3,000 to 20,000 psi working pressure. Each unit is configured to the job, and the general arrangement drawing and data book index come with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What material classes does the well testing choke manifold offer?",
+          "a": "The listing gives API 6A material classes DD to HH. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. Send the H2S content and temperature on the RFQ so the class is chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What valves and chokes are on the well testing choke manifold?",
+          "a": "It has an adjustable choke branch, a fixed choke branch and a full-bore bypass, with single-slab gate valves certified to PR2F. Monitoring ports for pressure, flow and temperature are fitted."
+        },
+        {
+          "slot": "G",
+          "q": "Is the well testing choke manifold made to API 6A?",
+          "a": "Yes. It is built to API 6A, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Material certificates and the pressure-test record are included."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can the well testing choke manifold have?",
+          "a": "The manifold is listed with API 6A flanged or hammer union ends. Match them to the flowhead outlet and the downstream line; see [flow iron adapters](/c/flow-iron-adapters) and [API flanges](/c/flow-iron-flanges-api)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the well testing choke manifold operated?",
+          "a": "The listing gives manual and remote-controlled operation, with a control cabinet for remote operation. State whether you need remote control, and the supply available, on the RFQ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the well testing choke manifold used?",
+          "a": "It is used for clean-up and testing downstream of the flowhead, to control rate and pressure while the well is flowed. See [well testing equipment](/c/surface-test-trees) and [flow iron](/c/flow-iron-manifolds)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the well testing choke manifold differ from a frac choke manifold?",
+          "a": "The well testing manifold has an adjustable branch for clean-up, a fixed branch for steady test rates and a full-bore bypass, built to API 6A. See the frac [choke manifolds](/c/flow-iron-manifolds) for 1502 union frac iron."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a well testing choke manifold quotation?",
+          "a": "Send the working pressure, bore sizes, end connections, material and temperature class, PSL, the fluids and H2S content, and the layout. We review the data sheet before quoting."
+        },
+        {
+          "slot": "L",
+          "q": "Can the well testing choke manifold be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed. Third-party inspection can be added to the order."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the well testing choke manifold?",
+          "a": "Yes. We list the well testing choke manifold as ex-stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most are built to the order specification, so send the bore, pressure and choke configuration through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

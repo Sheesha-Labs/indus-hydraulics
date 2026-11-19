@@ -1,0 +1,136 @@
+{
+  "family": "cylinders",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "iso-tie-rod-cylinder-100x70x500",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) and where is it used?",
+          "a": "The Rexroth CDT3 100/70 × 500 mm cylinder (MS2) is a Bosch Rexroth CDT3 tie-rod differential cylinder with a 100 mm piston, 70 mm rod and 500 mm stroke, with foot mounting MS2. CDT3 is Rexroth's tie-rod series with installation dimensions to ISO 6020-2. See [hydraulic cylinders](/c/cylinders)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Rexroth type code of the Rexroth CDT3 100/70 × 500 mm cylinder (MS2), CDT3MS2/100/70/500Z3X?",
+          "a": "Rexroth's code starts CDT3MS2/100/70/500Z3X/…: CD is the differential cylinder, T3 the tie-rod series, then the mounting (MS2), piston (100), rod (70) and stroke (500), Z the tie-rod design and 3X the component series. The rest of the code sets the line connections, rod end, cushioning, seals and rod finish, so give the full code from your nameplate or the options you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters and strokes are offered on the Rexroth CDT3 100/70 × 500 mm cylinder (MS2)?",
+          "a": "For the 100 mm piston the rods offered are 45, 56 or 70 mm. The stroke here is 500 mm, with a maximum available 2000 mm, subject to a buckling check. Changing the rod changes the pull force and the buckling limit, so state the rod with the bore and stroke."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) give?",
+          "a": "The theoretical force at 160 bar is 125.7 kN push, 64.1 kN pull for the Rexroth CDT3 100/70 × 500 mm cylinder (MS2). These are theoretical values with the 70 mm rod; see [hydraulic cylinder force and speed](/blog/hydraulic-cylinder-force-and-speed) for how to size bore, rod and stroke from first principles."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) rated for?",
+          "a": "Rexroth rates the CDT3 at 160 bar nominal. It allows 210 bar maximum only for static loads, meaning fewer than 10,000 load cycles, and for dynamic loads the limit is 75 % of that. The static test pressure is 240 bar."
+        },
+        {
+          "slot": "F",
+          "q": "Which seals and fluids does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) take?",
+          "a": "Rexroth offers seal system M as standard for HL, HLP and HFA fluids, T for servo quality and low friction (also HFC), and S for HFDR phosphate ester and up to +120 °C. With seal system M on mineral oil the fluid may run from −20 to +80 °C. Rexroth asks for ISO 4406 20/18/15 cleanliness or better and at least 10 bar operating pressure with no load."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) follow, and is it interchangeable?",
+          "a": "The CDT3 follows ISO 6020-2 installation dimensions, so the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) is interchangeable with other ISO 6020-2 cylinders of the same bore, rod, stroke and mounting. Rexroth lists the series for 160 bar."
+        },
+        {
+          "slot": "H",
+          "q": "What line connections and speed does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) have?",
+          "a": "The line connections are G3/4 standard, G1 enlarged, and the maximum stroke velocity is 0.30 m/s with standard ports, 0.50 m/s enlarged. Larger ports allow a higher speed, so choose them when the stroke time matters."
+        },
+        {
+          "slot": "I",
+          "q": "Which mounting does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) have and what are the alternatives?",
+          "a": "The Rexroth CDT3 100/70 × 500 mm cylinder (MS2) is supplied with foot mounting MS2. Rexroth offers the CDT3 in 13 mounting types, and for this size the alternatives named are the other mountings in the type code. See [hydraulic cylinder mounting styles](/blog/hydraulic-cylinder-mounting-styles) for the codes that name them."
+        },
+        {
+          "slot": "J",
+          "q": "How do I check the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) for buckling at full stroke?",
+          "a": "Rexroth states a maximum available stroke of 2000 mm for this bore, subject to a buckling check, so check the rod diameter and mounting against the load before ordering a long stroke. The guide [hydraulic cylinders: types, parts, seals and selection](/blog/hydraulic-cylinder-guide) covers the selection."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) differ from the Rexroth CDT3 63/45 × 200 cylinder (MP1)?",
+          "a": "The Rexroth CDT3 100/70 × 500 mm cylinder (MS2) has a 100 mm piston, 70 mm rod, 500 mm stroke and foot mounting MS2 mounting, while the [Rexroth CDT3 63/45 × 200 cylinder (MP1)](/p/iso-tie-rod-cylinder-63x45x200) has a 63 piston, 45 rod. 200 stroke and clevis mounting MP1. Both are CDT3 at 160 bar nominal; choose by the force, stroke and mounting your machine needs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Rexroth CDT3 100/70 × 500 mm cylinder (MS2) at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "iso-tie-rod-cylinder-63x45x200",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) and where is it used?",
+          "a": "The Rexroth CDT3 63/45 × 200 mm cylinder (MP1) is a Bosch Rexroth CDT3 tie-rod differential cylinder with a 63 mm piston, 45 mm rod and 200 mm stroke, with clevis mounting MP1. CDT3 is Rexroth's tie-rod series with installation dimensions to ISO 6020-2. See [hydraulic cylinders](/c/cylinders)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Rexroth type code of the Rexroth CDT3 63/45 × 200 mm cylinder (MP1), CDT3MP1/63/45/200Z3X?",
+          "a": "Rexroth's code starts CDT3MP1/63/45/200Z3X/…: CD is the differential cylinder, T3 the tie-rod series, then the mounting (MP1), piston (63), rod (45) and stroke (200), Z the tie-rod design and 3X the component series. The rest of the code sets the line connections, rod end, cushioning, seals and rod finish, so give the full code from your nameplate or the options you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters and strokes are offered on the Rexroth CDT3 63/45 × 200 mm cylinder (MP1)?",
+          "a": "For the 63 mm piston the rods offered are 28, 36 or 45 mm. The stroke here is 200 mm, with a maximum available 1400 mm, subject to a buckling check. Changing the rod changes the pull force and the buckling limit, so state the rod with the bore and stroke."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) give?",
+          "a": "The theoretical force at 160 bar is 49.9 kN push, 24.4 kN pull for the Rexroth CDT3 63/45 × 200 mm cylinder (MP1). These are theoretical values with the 45 mm rod; see [hydraulic cylinder force and speed](/blog/hydraulic-cylinder-force-and-speed) for how to size bore, rod and stroke from first principles."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) rated for?",
+          "a": "Rexroth rates the CDT3 at 160 bar nominal. It allows 210 bar maximum only for static loads, meaning fewer than 10,000 load cycles, and for dynamic loads the limit is 75 % of that. The static test pressure is 240 bar."
+        },
+        {
+          "slot": "F",
+          "q": "Which seals and fluids does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) take?",
+          "a": "Rexroth offers seal system M as standard for HL, HLP and HFA fluids, T for servo quality and low friction (also HFC), and S for HFDR phosphate ester and up to +120 °C. With seal system M on mineral oil the fluid may run from −20 to +80 °C. Rexroth asks for ISO 4406 20/18/15 cleanliness or better and at least 10 bar operating pressure with no load."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) follow, and is it interchangeable?",
+          "a": "The CDT3 follows ISO 6020-2 installation dimensions, so the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) is interchangeable with other ISO 6020-2 cylinders of the same bore, rod, stroke and mounting. Rexroth lists the series for 160 bar."
+        },
+        {
+          "slot": "H",
+          "q": "What line connections and speed does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) have?",
+          "a": "The line connections are G1/2 standard, G3/4 enlarged, and the maximum stroke velocity is 0.50 m/s with standard ports, 0.70 m/s enlarged. Larger ports allow a higher speed, so choose them when the stroke time matters."
+        },
+        {
+          "slot": "I",
+          "q": "Which mounting does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) have and what are the alternatives?",
+          "a": "The Rexroth CDT3 63/45 × 200 mm cylinder (MP1) is supplied with clevis mounting MP1. Rexroth offers the CDT3 in 13 mounting types, and for this size the alternatives named are MP5 for a self-aligning clevis, MP3 for a swivel eye. See [hydraulic cylinder mounting styles](/blog/hydraulic-cylinder-mounting-styles) for the codes that name them."
+        },
+        {
+          "slot": "J",
+          "q": "How do I check the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) for buckling at full stroke?",
+          "a": "Rexroth states a maximum available stroke of 1400 mm for this bore, subject to a buckling check, so check the rod diameter and mounting against the load before ordering a long stroke. The guide [hydraulic cylinders: types, parts, seals and selection](/blog/hydraulic-cylinder-guide) covers the selection."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) differ from the Rexroth CDT3 100/70 × 500 cylinder (MS2)?",
+          "a": "The Rexroth CDT3 63/45 × 200 mm cylinder (MP1) has a 63 mm piston, 45 mm rod, 200 mm stroke and clevis mounting MP1 mounting, while the [Rexroth CDT3 100/70 × 500 cylinder (MS2)](/p/iso-tie-rod-cylinder-100x70x500) has a 100 piston, 70 rod. 500 stroke and foot mounting MS2. Both are CDT3 at 160 bar nominal; choose by the force, stroke and mounting your machine needs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Rexroth CDT3 63/45 × 200 mm cylinder (MP1) at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

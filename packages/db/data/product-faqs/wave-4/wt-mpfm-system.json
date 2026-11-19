@@ -1,0 +1,84 @@
+{
+  "family": "wt-mpfm-system",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "mpfm-system-skid-mounted-roxar-emerson-compact-upstream-downstream-piping",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a skid-mounted MPFM system used for in well testing?",
+          "a": "A skid-mounted multiphase flow meter (MPFM) system measures oil, gas and water flow from a well without separating the phases. This package puts the client-selected MPFM head on a transport skid with upstream and downstream piping and manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "What does Roxar-Emerson Compact mean in this MPFM system title?",
+          "a": "Roxar-Emerson Compact names the MPFM head fitted in this configuration. The package can instead integrate Haimo, Agar, Medeng, ABB or Roxar-Emerson heads, chosen by the client."
+        },
+        {
+          "slot": "D",
+          "q": "Which MPFM heads can be fitted to the skid?",
+          "a": "The skid integrates the client-selected MPFM head: Haimo, Agar, Medeng, ABB or Roxar-Emerson. The listed configuration uses the Roxar-Emerson Compact head, with upstream and downstream piping and manifolds."
+        },
+        {
+          "slot": "D",
+          "q": "What comes with the MPFM skid besides the meter?",
+          "a": "The package includes upstream and downstream piping and manifolds, and a calibration loop and isolation valves as standard. Give the line size, pressure and fluids on the RFQ so the piping is sized."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the MPFM skid have?",
+          "a": "The listing does not give a pressure rating for the skid; it follows the meter head and piping chosen. State the working pressure on the RFQ and we confirm the rating of the head, valves and piping."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the MPFM skid built from?",
+          "a": "Materials depend on the piping and the MPFM head chosen; the listing does not give a grade. State the fluid, H2S level and pressure on the RFQ so the wetted materials are selected."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates apply to the MPFM skid?",
+          "a": "The listing gives a DNV-certified offshore skid variant and CE and GOST options, plus arctic and desert envelopes. State the approvals your site requires on the RFQ and we confirm them on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the MPFM skid connect to on a well-test spread?",
+          "a": "It connects into the test flowline through the upstream and downstream piping and manifolds, with isolation valves. See the [3-phase separator](/c/wt-3-phase-separator) shelf for the separator alternative and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "Why does the MPFM skid include a calibration loop?",
+          "a": "The calibration loop lets the meter be checked against a reference without breaking the flowline, and the isolation valves allow the head to be isolated for service."
+        },
+        {
+          "slot": "K",
+          "q": "MPFM or 3-phase separator for well testing: how do they differ?",
+          "a": "An MPFM measures the multiphase stream directly on a compact skid, while a 3-phase separator splits gas, oil and water first. See the [3-phase well-test separator](/c/wt-3-phase-separator) for the separation route."
+        },
+        {
+          "slot": "L",
+          "q": "Can the MPFM skid be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide, including a trailer-mounted variant on a registration-ready custom trailer. Tell us the destination and the head you choose and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the skid-mounted MPFM system in Dubai?",
+          "a": "Yes. We keep the skid-mounted MPFM system in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the meter head, line size and pressure through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

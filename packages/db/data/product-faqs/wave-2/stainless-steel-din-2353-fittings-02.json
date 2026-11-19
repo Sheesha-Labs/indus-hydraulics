@@ -1,0 +1,998 @@
+{
+  "family": "stainless-steel-din-2353-fittings-02",
+  "extraFacts": [
+    {
+      "fact": "316L is the low-carbon grade of 316 stainless steel; 316 contains molybdenum, which improves resistance to chlorides and pitting, so it is chosen for sea water, coastal plant and chloride-bearing process fluids.",
+      "source": "ASTM A276 grade designations; Indus Hydraulics guide /blog/304-vs-316-stainless-steel-fittings"
+    },
+    {
+      "fact": "Stainless steel threads can gall (seize and tear) when made up dry, so threads on stainless fittings are lubricated before assembly.",
+      "source": "Indus Hydraulics guide /blog/stainless-jic-fittings (galling section)"
+    },
+    {
+      "fact": "DIN 2353 / ISO 8434-1 24° cone fittings seal with a cutting ring that bites into the tube when the nut is tightened; the tube is cut square and deburred and the ring is pre-assembled before final tightening.",
+      "source": "DIN 2353; ISO 8434-1"
+    },
+    {
+      "fact": "For 10 mm tube the DIN 2353 thread is M14×1.0 in the extra-light (LL) series, M16×1.5 in the light (L) series and M18×1.5 in the heavy (S) series; the series are not interchangeable.",
+      "source": "Indus Hydraulics DIN 2353 stainless size tables (extra-light, light and heavy series listings)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stainless-steel-din-2353-union-90-elbow-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series is a right-angle elbow that turns a line through 90 degrees. It carries two male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 38 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5055S-16 on the DIN 2353 Union 90° Elbow, Heavy Series?",
+          "a": "IH-SS-5055S-16 reads as the base number IH-SS-5055S followed by the size code 16 = M24×1.5 (16 mm tube). The last row, IH-SS-5055S-38, is M52×2.0 (38 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union 90° Elbow, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series is listed in 10 part numbers, 6 mm to 38 mm tube. For example, IH-SS-5055S-06 is M14×1.5 (6 mm tube) on every end; IH-SS-5055S-16 is M24×1.5 (16 mm tube) on every end; IH-SS-5055S-38 is M52×2.0 (38 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union 90° Elbow, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 16 mm tube takes M24×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union 90° Elbow, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union 90° Elbow, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union 90° Elbow, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union 90° Elbow, Heavy Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union 90° Elbow, Heavy Series connect to?",
+          "a": "On the DIN 2353 Union 90° Elbow, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union 90° Elbow, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 Union 90° Elbow?",
+          "a": "The [light-series DIN 2353 Union 90° Elbow](/p/stainless-steel-din-2353-union-90-elbow-light-series) and this heavy-series DIN 2353 Union 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 38 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union 90° Elbow, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes. The Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union 90° Elbow, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union 90° Elbow, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5055S-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-90-elbow-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union 90° Elbow, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Light Series is a right-angle elbow that turns a line through 90 degrees. It carries two male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 42 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5055L-18 on the DIN 2353 Union 90° Elbow, Light Series?",
+          "a": "IH-SS-5055L-18 reads as the base number IH-SS-5055L followed by the size code 18 = M26×1.5 (18 mm tube). The last row, IH-SS-5055L-42, is M52×2.0 (42 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union 90° Elbow, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Light Series is listed in 10 part numbers, 6 mm to 42 mm tube. For example, IH-SS-5055L-06 is M12×1.5 (6 mm tube) on every end; IH-SS-5055L-18 is M26×1.5 (18 mm tube) on every end; IH-SS-5055L-42 is M52×2.0 (42 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union 90° Elbow, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union 90° Elbow, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 18 mm tube takes M26×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union 90° Elbow, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union 90° Elbow, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union 90° Elbow, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union 90° Elbow, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union 90° Elbow, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union 90° Elbow, Light Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union 90° Elbow, Light Series connect to?",
+          "a": "On the DIN 2353 Union 90° Elbow, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union 90° Elbow, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union 90° Elbow, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 Union 90° Elbow?",
+          "a": "The [heavy-series DIN 2353 Union 90° Elbow](/p/stainless-steel-din-2353-union-90-elbow-heavy-series) and this light-series DIN 2353 Union 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 42 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union 90° Elbow, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, we stock the Stainless Steel DIN 2353 Union 90° Elbow, Light Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union 90° Elbow, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union 90° Elbow, Light Series, quote the Indus part number from the size table, for example IH-SS-5055L-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-cross-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union Cross, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Heavy Series is a four-port cross that joins four lines at one point. It carries four male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 4 part numbers from 6 mm to 12 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5096S-10 on the DIN 2353 Union Cross, Heavy Series?",
+          "a": "IH-SS-5096S-10 reads as the base number IH-SS-5096S followed by the size code 10 = M18×1.5 (10 mm tube). The last row, IH-SS-5096S-12, is M20×1.5 (12 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union Cross, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Heavy Series is listed in 4 part numbers, 6 mm to 12 mm tube. For example, IH-SS-5096S-06 is M14×1.5 (6 mm tube) on every end; IH-SS-5096S-10 is M18×1.5 (10 mm tube) on every end; IH-SS-5096S-12 is M20×1.5 (12 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union Cross, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union Cross, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 10 mm tube takes M18×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union Cross, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union Cross, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union Cross, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. The zinc-plated carbon steel version is listed separately as Union Cross. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union Cross, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union Cross, Heavy Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union Cross, Heavy Series connect to?",
+          "a": "On the DIN 2353 Union Cross, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union Cross, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union Cross, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 Union Cross?",
+          "a": "The [light-series DIN 2353 Union Cross](/p/stainless-steel-din-2353-union-cross-light-series) and this heavy-series DIN 2353 Union Cross are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 4 part numbers, 6 mm to 12 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union Cross, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes, the Stainless Steel DIN 2353 Union Cross, Heavy Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union Cross, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union Cross, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5096S-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-cross-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union Cross, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Light Series is a four-port cross that joins four lines at one point. It carries four male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 4 part numbers from 6 mm to 12 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5096L-10 on the DIN 2353 Union Cross, Light Series?",
+          "a": "IH-SS-5096L-10 reads as the base number IH-SS-5096L followed by the size code 10 = M16×1.5 (10 mm tube). The last row, IH-SS-5096L-12, is M18×1.5 (12 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union Cross, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Light Series is listed in 4 part numbers, 6 mm to 12 mm tube. For example, IH-SS-5096L-06 is M12×1.5 (6 mm tube) on every end; IH-SS-5096L-10 is M16×1.5 (10 mm tube) on every end; IH-SS-5096L-12 is M18×1.5 (12 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union Cross, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union Cross, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 10 mm tube takes M16×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union Cross, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union Cross, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union Cross, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union Cross, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. The zinc-plated carbon steel version is listed separately as Union Cross. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union Cross, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union Cross, Light Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union Cross, Light Series connect to?",
+          "a": "On the DIN 2353 Union Cross, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union Cross, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union Cross, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 Union Cross?",
+          "a": "The [heavy-series DIN 2353 Union Cross](/p/stainless-steel-din-2353-union-cross-heavy-series) and this light-series DIN 2353 Union Cross are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 4 part numbers, 6 mm to 12 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union Cross, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes. The Stainless Steel DIN 2353 Union Cross, Light Series sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union Cross, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union Cross, Light Series, quote the Indus part number from the size table, for example IH-SS-5096L-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-tee-extra-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union Tee, Extra-Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Extra-Light Series is a three-port tee that splits or combines a line. It carries three male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 5 part numbers from 4 mm to 12 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5080LL-08 on the DIN 2353 Union Tee, Extra-Light Series?",
+          "a": "IH-SS-5080LL-08 reads as the base number IH-SS-5080LL followed by the size code 08 = M12×1.0 (8 mm tube). The last row, IH-SS-5080LL-12, is M16×1.0 (12 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union Tee, Extra-Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Extra-Light Series is listed in 5 part numbers, 4 mm to 12 mm tube. For example, IH-SS-5080LL-04 is M8×1.0 (4 mm tube) on every end; IH-SS-5080LL-08 is M12×1.0 (8 mm tube) on every end; IH-SS-5080LL-12 is M16×1.0 (12 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union Tee, Extra-Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union Tee, Extra-Light Series by tube outside diameter and series, not by thread alone. On this listing 4 mm tube takes M8×1.0 and 8 mm tube takes M12×1.0. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union Tee, Extra-Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union Tee, Extra-Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union Tee, Extra-Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Extra-Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union Tee, Extra-Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union Tee, Extra-Light Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union Tee, Extra-Light Series connect to?",
+          "a": "On the DIN 2353 Union Tee, Extra-Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [extra-light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-extra-light-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union Tee, Extra-Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union Tee, Extra-Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the extra-light and light series DIN 2353 Union Tee?",
+          "a": "The [light-series DIN 2353 Union Tee](/p/stainless-steel-din-2353-union-tee-light-series) and this extra-light-series DIN 2353 Union Tee are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 5 part numbers, 4 mm to 12 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union Tee, Extra-Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, we stock the Stainless Steel DIN 2353 Union Tee, Extra-Light Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union Tee, Extra-Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union Tee, Extra-Light Series, quote the Indus part number from the size table, for example IH-SS-5080LL-04. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-tee-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union Tee, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Heavy Series is a three-port tee that splits or combines a line. It carries three male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 38 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5080S-16 on the DIN 2353 Union Tee, Heavy Series?",
+          "a": "IH-SS-5080S-16 reads as the base number IH-SS-5080S followed by the size code 16 = M24×1.5 (16 mm tube). The last row, IH-SS-5080S-38, is M52×2.0 (38 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union Tee, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Heavy Series is listed in 10 part numbers, 6 mm to 38 mm tube. For example, IH-SS-5080S-06 is M14×1.5 (6 mm tube) on every end; IH-SS-5080S-16 is M24×1.5 (16 mm tube) on every end; IH-SS-5080S-38 is M52×2.0 (38 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union Tee, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union Tee, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 16 mm tube takes M24×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union Tee, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union Tee, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union Tee, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union Tee, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union Tee, Heavy Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union Tee, Heavy Series connect to?",
+          "a": "On the DIN 2353 Union Tee, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union Tee, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union Tee, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 Union Tee?",
+          "a": "The [light-series DIN 2353 Union Tee](/p/stainless-steel-din-2353-union-tee-light-series) and this heavy-series DIN 2353 Union Tee are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 38 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union Tee, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes, the Stainless Steel DIN 2353 Union Tee, Heavy Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union Tee, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union Tee, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5080S-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-union-tee-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 Union Tee, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Light Series is a three-port tee that splits or combines a line. It carries three male DIN 2353 24° cone ends in stainless steel, forged, and this listing holds 28 part numbers from 6 mm to 42 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5080L-18 on the DIN 2353 Union Tee, Light Series?",
+          "a": "IH-SS-5080L-18 reads as the base number IH-SS-5080L followed by the size code 18 = M26×1.5 (18 mm tube). The last row, IH-SS-5080L-42, is M52×2.0 (42 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 Union Tee, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Light Series is listed in 28 part numbers, 6 mm to 42 mm tube. For example, IH-SS-5080L-06 is M12×1.5 (6 mm tube) on every end; IH-SS-5080L-18 is M26×1.5 (18 mm tube) on every end; IH-SS-5080L-42 is M52×2.0 (42 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 Union Tee, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 Union Tee, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 18 mm tube takes M26×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 Union Tee, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 Union Tee, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 Union Tee, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 Union Tee, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 Union Tee, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 Union Tee, Light Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 Union Tee, Light Series connect to?",
+          "a": "On the DIN 2353 Union Tee, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series). Both sides of a joint must be the same thread and seat type, so send the mating part number or a thread description and we will confirm the match before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 Union Tee, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 Union Tee, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 Union Tee?",
+          "a": "The [heavy-series DIN 2353 Union Tee](/p/stainless-steel-din-2353-union-tee-heavy-series) and this light-series DIN 2353 Union Tee are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 28 part numbers, 6 mm to 42 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 Union Tee, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Stainless Steel DIN 2353 Union Tee, Light Series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 Union Tee, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 Union Tee, Light Series, quote the Indus part number from the size table, for example IH-SS-5080L-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-female-swivel-90-elbow-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series is a right-angle elbow that turns a line through 90 degrees. It carries a male DIN 2353 24° cone end and a female swivel DIN 2353 24° cone end in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 38 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5360S-16 on the DIN 2353 × Female Swivel 90° Elbow, Heavy Series?",
+          "a": "IH-SS-5360S-16 reads as the base number IH-SS-5360S followed by the size code 16 = M24×1.5 (16 mm tube). The last row, IH-SS-5360S-38, is M52×2.0 (38 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × Female Swivel 90° Elbow, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series is listed in 10 part numbers, 6 mm to 38 mm tube. For example, IH-SS-5360S-06 is M14×1.5 (6 mm tube) on every end; IH-SS-5360S-16 is M24×1.5 (16 mm tube) on every end; IH-SS-5360S-38 is M52×2.0 (38 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × Female Swivel 90° Elbow, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 16 mm tube takes M24×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × Female Swivel 90° Elbow, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × Female Swivel 90° Elbow, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × Female Swivel 90° Elbow, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × Female Swivel 90° Elbow, Heavy Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × Female Swivel 90° Elbow, Heavy Series connect to?",
+          "a": "On the DIN 2353 × Female Swivel 90° Elbow, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The DIN 2353 swivel nut screws onto a male 24° cone end. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × Female Swivel 90° Elbow, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 × Female Swivel 90° Elbow?",
+          "a": "The [light-series DIN 2353 × Female Swivel 90° Elbow](/p/stainless-steel-din-2353-x-female-swivel-90-elbow-light-series) and this heavy-series DIN 2353 × Female Swivel 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 38 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × Female Swivel 90° Elbow, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes, we stock the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × Female Swivel 90° Elbow, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5360S-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-female-swivel-90-elbow-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series is a right-angle elbow that turns a line through 90 degrees. It carries a male DIN 2353 24° cone end and a female swivel DIN 2353 24° cone end in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 42 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5360L-18 on the DIN 2353 × Female Swivel 90° Elbow, Light Series?",
+          "a": "IH-SS-5360L-18 reads as the base number IH-SS-5360L followed by the size code 18 = M26×1.5 (18 mm tube). The last row, IH-SS-5360L-42, is M52×2.0 (42 mm tube) on every end. Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × Female Swivel 90° Elbow, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series is listed in 10 part numbers, 6 mm to 42 mm tube. For example, IH-SS-5360L-06 is M12×1.5 (6 mm tube) on every end; IH-SS-5360L-18 is M26×1.5 (18 mm tube) on every end; IH-SS-5360L-42 is M52×2.0 (42 mm tube) on every end. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × Female Swivel 90° Elbow, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 18 mm tube takes M26×1.5. The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × Female Swivel 90° Elbow, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × Female Swivel 90° Elbow, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × Female Swivel 90° Elbow, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × Female Swivel 90° Elbow, Light Series is listed to DIN 2353 and ISO 8434-1. They cover 24° cone tube fittings with a cutting ring and 24° cone tube fittings. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × Female Swivel 90° Elbow, Light Series connect to?",
+          "a": "On the DIN 2353 × Female Swivel 90° Elbow, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The DIN 2353 swivel nut screws onto a male 24° cone end. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × Female Swivel 90° Elbow, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 × Female Swivel 90° Elbow?",
+          "a": "The [heavy-series DIN 2353 × Female Swivel 90° Elbow](/p/stainless-steel-din-2353-x-female-swivel-90-elbow-heavy-series) and this light-series DIN 2353 × Female Swivel 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 42 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × Female Swivel 90° Elbow, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, we stock the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × Female Swivel 90° Elbow, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 × Female Swivel 90° Elbow, Light Series, quote the Indus part number from the size table, for example IH-SS-5360L-06. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-90-elbow-extra-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series is a right-angle elbow that turns a line through 90 degrees. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 5 part numbers from 4 mm to 12 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5070LL-04-02 on the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series?",
+          "a": "IH-SS-5070LL-04-02 reads as the base number IH-SS-5070LL followed by one size code per port in order: 04 = M8×1.0 (4 mm tube) on end 1 and 02 = 1/8\" NPT (1/8-27) on end 2. The last row, IH-SS-5070LL-12-06, is M16×1.0 (12 mm tube) to 3/8\" NPT (3/8-18). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series is listed in 5 part numbers, 4 mm to 12 mm tube. For example, IH-SS-5070LL-04-02 is M8×1.0 (4 mm tube) to 1/8\" NPT (1/8-27); IH-SS-5070LL-08-02 is M12×1.0 (8 mm tube) to 1/8\" NPT (1/8-27); IH-SS-5070LL-12-06 is M16×1.0 (12 mm tube) to 3/8\" NPT (3/8-18). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male 90° Elbow, Extra-Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series by tube outside diameter and series, not by thread alone. On this listing 4 mm tube takes M8×1.0 and 8 mm tube takes M12×1.0. The second end is sized separately: 02 = 1/8\" NPT (1/8-27), 04 = 1/4\" NPT (1/4-18). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male 90° Elbow, Extra-Light Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series connect to?",
+          "a": "On the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [extra-light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-extra-light-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the extra-light and light series DIN 2353 × NPT Male 90° Elbow?",
+          "a": "The [light-series DIN 2353 × NPT Male 90° Elbow](/p/stainless-steel-din-2353-x-npt-male-90-elbow-light-series) and this extra-light-series DIN 2353 × NPT Male 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 5 part numbers, 4 mm to 12 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, we stock the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male 90° Elbow, Extra-Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Extra-Light Series, quote the Indus part number from the size table, for example IH-SS-5070LL-04-02. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-90-elbow-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series is a right-angle elbow that turns a line through 90 degrees. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 9 part numbers from 6 mm to 30 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5070S-06-04 on the DIN 2353 × NPT Male 90° Elbow, Heavy Series?",
+          "a": "IH-SS-5070S-06-04 reads as the base number IH-SS-5070S followed by one size code per port in order: 06 = M14×1.5 (6 mm tube) on end 1 and 04 = 1/4\" NPT (1/4-18) on end 2. The last row, IH-SS-5070S-30-20, is M42×2.0 (30 mm tube) to 1-1/4\" NPT (1-1/4-11.5). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male 90° Elbow, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series is listed in 9 part numbers, 6 mm to 30 mm tube. For example, IH-SS-5070S-06-04 is M14×1.5 (6 mm tube) to 1/4\" NPT (1/4-18); IH-SS-5070S-14-08 is M22×1.5 (14 mm tube) to 1/2\" NPT (1/2-14); IH-SS-5070S-30-20 is M42×2.0 (30 mm tube) to 1-1/4\" NPT (1-1/4-11.5). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male 90° Elbow, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 14 mm tube takes M22×1.5. The second end is sized separately: 04 = 1/4\" NPT (1/4-18), 12 = 3/4\" NPT (3/4-14). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male 90° Elbow, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male 90° Elbow, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male 90° Elbow, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male 90° Elbow, Heavy Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male 90° Elbow, Heavy Series connect to?",
+          "a": "On the DIN 2353 × NPT Male 90° Elbow, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male 90° Elbow, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 × NPT Male 90° Elbow?",
+          "a": "The [light-series DIN 2353 × NPT Male 90° Elbow](/p/stainless-steel-din-2353-x-npt-male-90-elbow-light-series) and this heavy-series DIN 2353 × NPT Male 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 9 part numbers, 6 mm to 30 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male 90° Elbow, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male 90° Elbow, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5070S-06-04. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-90-elbow-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series is a right-angle elbow that turns a line through 90 degrees. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 10 part numbers from 6 mm to 35 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5070L-06-02 on the DIN 2353 × NPT Male 90° Elbow, Light Series?",
+          "a": "IH-SS-5070L-06-02 reads as the base number IH-SS-5070L followed by one size code per port in order: 06 = M12×1.5 (6 mm tube) on end 1 and 02 = 1/8\" NPT (1/8-27) on end 2. The last row, IH-SS-5070L-35-20, is M45×2.0 (35 mm tube) to 1-1/4\" NPT (1-1/4-11.5). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male 90° Elbow, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series is listed in 10 part numbers, 6 mm to 35 mm tube. For example, IH-SS-5070L-06-02 is M12×1.5 (6 mm tube) to 1/8\" NPT (1/8-27); IH-SS-5070L-15-08 is M22×1.5 (15 mm tube) to 1/2\" NPT (1/2-14); IH-SS-5070L-35-20 is M45×2.0 (35 mm tube) to 1-1/4\" NPT (1-1/4-11.5). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male 90° Elbow, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 15 mm tube takes M22×1.5. The second end is sized separately: 02 = 1/8\" NPT (1/8-27), 08 = 1/2\" NPT (1/2-14). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male 90° Elbow, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male 90° Elbow, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male 90° Elbow, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male 90° Elbow, Light Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male 90° Elbow, Light Series connect to?",
+          "a": "On the DIN 2353 × NPT Male 90° Elbow, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male 90° Elbow, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 × NPT Male 90° Elbow?",
+          "a": "The [heavy-series DIN 2353 × NPT Male 90° Elbow](/p/stainless-steel-din-2353-x-npt-male-90-elbow-heavy-series) and this light-series DIN 2353 × NPT Male 90° Elbow are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 10 part numbers, 6 mm to 35 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male 90° Elbow, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male 90° Elbow, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male 90° Elbow, Light Series, quote the Indus part number from the size table, for example IH-SS-5070L-06-02. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-connector-extra-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series is a straight connector that joins two different thread types in a straight run. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 2 part numbers from 6 mm to 10 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5007LL-06-02 on the DIN 2353 × NPT Male Connector, Extra-Light Series?",
+          "a": "IH-SS-5007LL-06-02 reads as the base number IH-SS-5007LL followed by one size code per port in order: 06 = M10×1.0 (6 mm tube) on end 1 and 02 = 1/8\" NPT (1/8-27) on end 2. The last row, IH-SS-5007LL-10-04, is M10×1.0 (10 mm tube) to 1/4\" NPT (1/4-18). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male Connector, Extra-Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series is listed in 2 part numbers, 6 mm to 10 mm tube. For example, IH-SS-5007LL-06-02 is M10×1.0 (6 mm tube) to 1/8\" NPT (1/8-27); IH-SS-5007LL-10-04 is M10×1.0 (10 mm tube) to 1/4\" NPT (1/4-18). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male Connector, Extra-Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M10×1.0 and 10 mm tube takes M10×1.0. The second end is sized separately: 02 = 1/8\" NPT (1/8-27), 04 = 1/4\" NPT (1/4-18). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male Connector, Extra-Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male Connector, Extra-Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. The zinc-plated carbon steel version is listed separately as Male Stud Connector NPT (DIN 2353). Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male Connector, Extra-Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male Connector, Extra-Light Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male Connector, Extra-Light Series connect to?",
+          "a": "On the DIN 2353 × NPT Male Connector, Extra-Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [extra-light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-extra-light-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male Connector, Extra-Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the extra-light and light series DIN 2353 × NPT Male Connector?",
+          "a": "The [light-series DIN 2353 × NPT Male Connector](/p/stainless-steel-din-2353-x-npt-male-connector-light-series) and this extra-light-series DIN 2353 × NPT Male Connector are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 2 part numbers, 6 mm to 10 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male Connector, Extra-Light Series in stock, and how do I get a quotation?",
+          "a": "Yes. The Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male Connector, Extra-Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male Connector, Extra-Light Series, quote the Indus part number from the size table, for example IH-SS-5007LL-06-02. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-connector-heavy-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series is a straight connector that joins two different thread types in a straight run. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 13 part numbers from 6 mm to 38 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5007S-06-04 on the DIN 2353 × NPT Male Connector, Heavy Series?",
+          "a": "IH-SS-5007S-06-04 reads as the base number IH-SS-5007S followed by one size code per port in order: 06 = M14×1.5 (6 mm tube) on end 1 and 04 = 1/4\" NPT (1/4-18) on end 2. The last row, IH-SS-5007S-38-24, is M52×2.0 (38 mm tube) to 1-1/2\" NPT (1-1/2-11.5). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male Connector, Heavy Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series is listed in 13 part numbers, 6 mm to 38 mm tube. For example, IH-SS-5007S-06-04 is M14×1.5 (6 mm tube) to 1/4\" NPT (1/4-18); IH-SS-5007S-12-08 is M20×1.5 (12 mm tube) to 1/2\" NPT (1/2-14); IH-SS-5007S-38-24 is M52×2.0 (38 mm tube) to 1-1/2\" NPT (1-1/2-11.5). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male Connector, Heavy Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M14×1.5 and 16 mm tube takes M24×1.5. The second end is sized separately: 04 = 1/4\" NPT (1/4-18), 12 = 3/4\" NPT (3/4-14). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male Connector, Heavy Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male Connector, Heavy Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. The zinc-plated carbon steel version is listed separately as Male Stud Connector NPT (DIN 2353). Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male Connector, Heavy Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male Connector, Heavy Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male Connector, Heavy Series connect to?",
+          "a": "On the DIN 2353 × NPT Male Connector, Heavy Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [heavy-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-heavy-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male Connector, Heavy Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the heavy and light series DIN 2353 × NPT Male Connector?",
+          "a": "The [light-series DIN 2353 × NPT Male Connector](/p/stainless-steel-din-2353-x-npt-male-connector-light-series) and this heavy-series DIN 2353 × NPT Male Connector are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 13 part numbers, 6 mm to 38 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male Connector, Heavy Series in stock, and how do I get a quotation?",
+          "a": "Yes. The Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male Connector, Heavy Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male Connector, Heavy Series, quote the Indus part number from the size table, for example IH-SS-5007S-06-04. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-din-2353-x-npt-male-connector-light-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel DIN 2353 × NPT Male Connector, Light Series used for?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Light Series is a straight connector that joins two different thread types in a straight run. It carries a male DIN 2353 24° cone end and a male NPT end in stainless steel, forged, and this listing holds 14 part numbers from 6 mm to 42 mm tube. Typical homes are offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-SS-5007L-06-02 on the DIN 2353 × NPT Male Connector, Light Series?",
+          "a": "IH-SS-5007L-06-02 reads as the base number IH-SS-5007L followed by one size code per port in order: 06 = M12×1.5 (6 mm tube) on end 1 and 02 = 1/8\" NPT (1/8-27) on end 2. The last row, IH-SS-5007L-42-24, is M52×2.0 (42 mm tube) to 1-1/2\" NPT (1-1/2-11.5). Quote the full number, or send the thread on each end and we will confirm it."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the DIN 2353 × NPT Male Connector, Light Series come in?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Light Series is listed in 14 part numbers, 6 mm to 42 mm tube. For example, IH-SS-5007L-06-02 is M12×1.5 (6 mm tube) to 1/8\" NPT (1/8-27); IH-SS-5007L-12-08 is M18×1.5 (12 mm tube) to 1/2\" NPT (1/2-14); IH-SS-5007L-42-24 is M52×2.0 (42 mm tube) to 1-1/2\" NPT (1-1/2-11.5). Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of DIN 2353 × NPT Male Connector, Light Series?",
+          "a": "Choose the Stainless Steel DIN 2353 × NPT Male Connector, Light Series by tube outside diameter and series, not by thread alone. On this listing 6 mm tube takes M12×1.5 and 18 mm tube takes M26×1.5. The second end is sized separately: 02 = 1/8\" NPT (1/8-27), 12 = 3/4\" NPT (3/4-14). The light, heavy and extra-light series use different threads for the same tube, so a nut from one series will not fit another."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the DIN 2353 × NPT Male Connector, Light Series?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel DIN 2353 × NPT Male Connector, Light Series, so we do not quote one. Pressure capability depends on the series, the tube size and the tube material, so send the working pressure and temperature of your line and Indus engineering will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DIN 2353 × NPT Male Connector, Light Series made from, and when should I choose stainless over carbon steel?",
+          "a": "The Stainless Steel DIN 2353 × NPT Male Connector, Light Series is made from stainless steel, forged. Stainless is chosen where zinc-plated carbon steel would corrode, as in offshore and marine lines, chemical and petroleum plant, and food and beverage process equipment. The zinc-plated carbon steel version is listed separately as Male Stud Connector NPT (DIN 2353). Tell us the fluid and temperature if the medium is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the DIN 2353 × NPT Male Connector, Light Series follow, and can I get certificates?",
+          "a": "The DIN 2353 × NPT Male Connector, Light Series is listed to DIN 2353, ISO 8434-1 and ASME B1.20.1. They cover 24° cone tube fittings with a cutting ring, 24° cone tube fittings and general-purpose inch pipe threads. This listing holds no test certificate or declaration; if your job needs a material certificate, ask for it in the enquiry so it can be requested before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the DIN 2353 × NPT Male Connector, Light Series connect to?",
+          "a": "On the DIN 2353 × NPT Male Connector, Light Series, the male DIN 2353 end takes a tube nut and cutting ring on the tube. The NPT male thread screws into a female NPT port or fitting. Matching parts: [light-series DIN 2353 tube nut](/p/stainless-steel-din-2353-tube-nut-light-series)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the DIN 2353 × NPT Male Connector, Light Series without leaks or galling?",
+          "a": "To fit the Stainless Steel DIN 2353 × NPT Male Connector, Light Series: cut the tube square, deburr it and pre-assemble the nut and cutting ring so the ring bites into the tube before final tightening. Stainless threads can gall if made up dry, so lubricate them. See our [stainless DIN 2353 guide](/blog/stainless-din-2353-and-flareless-bite-fittings)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the light and heavy series DIN 2353 × NPT Male Connector?",
+          "a": "The [heavy-series DIN 2353 × NPT Male Connector](/p/stainless-steel-din-2353-x-npt-male-connector-heavy-series) and this light-series DIN 2353 × NPT Male Connector are the same part in two DIN 2353 series, and they are not interchangeable. For 10 mm tube the thread is M14×1.0 in the extra-light series, M16×1.5 in the light series and M18×1.5 in the heavy series. This listing has 14 part numbers, 6 mm to 42 mm tube."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DIN 2353 × NPT Male Connector, Light Series in stock, and how do I get a quotation?",
+          "a": "Yes, the Stainless Steel DIN 2353 × NPT Male Connector, Light Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "What do I send to order the DIN 2353 × NPT Male Connector, Light Series?",
+          "a": "To order the Stainless Steel DIN 2353 × NPT Male Connector, Light Series, quote the Indus part number from the size table, for example IH-SS-5007L-06-02. If you only have the fitting, send the thread or tube size on each end and the material, and Indus engineering will confirm the part number. Price and lead time are confirmed with the quotation; see [what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "family": "well-service-hoses",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "burner-flare-boom-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Burner/Flare Boom Hose used for?",
+          "a": "The Burner/Flare Boom Hose is used for offshore well-test flowback to the flare boom, carrying hot produced fluids. It is a well service hose in 2\" to 6\" bore, rated 5000 psi WP (well test flare line), from the Continental range. "
+        },
+        {
+          "slot": "B",
+          "q": "What does the 5000 psi WP (well test flare line) rating of the Burner/Flare Boom Hose mean?",
+          "a": "The rating is a working pressure (WP), the continuous service rating, so the Burner/Flare Boom Hose is rated 5000 psi WP (well test flare line) in 2\" to 6\". The hydrotest is 1.5 times working pressure per the listing; a test pressure is never a working pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Burner/Flare Boom Hose come in?",
+          "a": "The listing gives 2\" to 6\" inside diameter for the Burner/Flare Boom Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Burner/Flare Boom Hose or the Well Test Production Hose?",
+          "a": "The burner and flare boom hose has a heat-resistant liner rated to 200 °C in 2 to 6 inch, while the well test production hose is the sour-service 100 °C hose in 2 to 4 inch. See the [Well Test Production Hose](/p/well-test-production-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Burner/Flare Boom Hose?",
+          "a": "The listing gives -30°C to +200°C (high-temp produced fluids) for the Burner/Flare Boom Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Burner/Flare Boom Hose?",
+          "a": "The liner is Heat-resistant FKM / HNBR and the reinforcement is multiple high-tensile steel cable plies + heat-shielding. The flanged couplings are fitted to suit the Burner/Flare Boom Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Burner/Flare Boom Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API Spec 7K-equivalent for the Burner/Flare Boom Hose. It is supplied by API-licensed manufacturers to API 7K with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Burner/Flare Boom Hose use?",
+          "a": "The Burner/Flare Boom Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Burner/Flare Boom Hose?",
+          "a": "Inspect the Burner/Flare Boom Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/well-service-and-stimulation-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Burner/Flare Boom Hose compare with the Well Test Production Hose?",
+          "a": "The burner and flare boom hose has a heat-resistant liner rated to 200 °C in 2 to 6 inch, while the well test production hose is the sour-service 100 °C hose in 2 to 4 inch. See the [Well Test Production Hose](/p/well-test-production-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Burner/Flare Boom Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Burner/Flare Boom Hose, a Continental hose rated 5000 psi WP (well test flare line). We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Burner/Flare Boom Hose in stock in Dubai?",
+          "a": "Yes. We keep the Burner/Flare Boom Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "frac-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Frac hose assemblies used for?",
+          "a": "The Frac hose assemblies is used for high-pressure hydraulic fracturing with proppant and abrasive frac fluid. It is a well service hose in 3\" to 5\" bore, rated 15000 psi WP (frac service), from the Continental range. proppant + abrasive frac fluid up to 15000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What does the 15000 psi WP (frac service) rating of the Frac hose assemblies mean?",
+          "a": "The rating is a working pressure (WP), the continuous service rating, so the Frac hose assemblies is rated 15000 psi WP (frac service) in 3\" to 5\". The hydrotest is 1.5 times working pressure per the listing; a test pressure is never a working pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Frac hose assemblies come in?",
+          "a": "The listing gives 3\" to 5\" inside diameter for the Frac hose assemblies, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Frac hose assemblies or the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The frac hose assembly has an abrasion-resistant rubber liner for proppant, while the acidizing hose has a fluoropolymer liner for acid. See the [Offshore Well Stimulation / Intervention / Acidizing Hose](/p/offshore-well-stimulation-intervention-acidizing-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Frac hose assemblies?",
+          "a": "The listing gives -30°C to +100°C for the Frac hose assemblies. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Frac hose assemblies?",
+          "a": "The liner is Abrasion-resistant rubber and the reinforcement is multiple high-tensile steel cable plies — frac-rated. The flanged couplings are fitted to suit the Frac hose assemblies. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Frac hose assemblies meet, and is it API monogrammed?",
+          "a": "The listing gives API 7K, API 16C (cross-reference) for the Frac hose assemblies. It is supplied by API-licensed manufacturers to API 16C with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Frac hose assemblies use?",
+          "a": "The Frac hose assemblies uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Frac hose assemblies?",
+          "a": "Inspect the Frac hose assemblies for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/well-service-and-stimulation-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Frac hose assemblies compare with the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The frac hose assembly has an abrasion-resistant rubber liner for proppant, while the acidizing hose has a fluoropolymer liner for acid. See the [Offshore Well Stimulation / Intervention / Acidizing Hose](/p/offshore-well-stimulation-intervention-acidizing-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Frac hose assemblies made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Frac hose assemblies, a Continental hose rated 15000 psi WP (frac service). We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Frac hose assemblies in stock in Dubai?",
+          "a": "Yes. We keep the Frac hose assemblies in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "offshore-well-stimulation-intervention-acidizing-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Offshore Well Stimulation / Intervention / Acidizing Hose used for?",
+          "a": "The Offshore Well Stimulation / Intervention / Acidizing Hose is used for offshore well stimulation, intervention and acidizing with HCl, HF and organic acids. It is a well service hose in 2\" to 3\" bore, rated 15000 psi WP (acidizing service), from the Continental range. fluoropolymer-lined for HCl, HF, organic-acid pumping at 15000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What does the 15000 psi WP (acidizing service) rating of the Offshore Well Stimulation / Intervention / Acidizing Hose mean?",
+          "a": "The rating is a working pressure (WP), the continuous service rating, so the Offshore Well Stimulation / Intervention / Acidizing Hose is rated 15000 psi WP (acidizing service) in 2\" to 3\". The hydrotest is 1.5 times working pressure per the listing; a test pressure is never a working pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Offshore Well Stimulation / Intervention / Acidizing Hose come in?",
+          "a": "The listing gives 2\" to 3\" inside diameter for the Offshore Well Stimulation / Intervention / Acidizing Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Offshore Well Stimulation / Intervention / Acidizing Hose or the Onshore Well Stimulation Hose?",
+          "a": "The offshore acidizing hose has a fluoropolymer liner rated to 130 °C, while the onshore stimulation hose has an acid-resistant synthetic rubber liner rated to 100 °C. See the [Onshore Well Stimulation Hose](/p/onshore-well-stimulation-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The listing gives -30°C to +130°C for the Offshore Well Stimulation / Intervention / Acidizing Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The liner is Acid-resistant FKM / fluoropolymer and the reinforcement is multiple high-tensile steel cable plies. The flanged couplings are fitted to suit the Offshore Well Stimulation / Intervention / Acidizing Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Offshore Well Stimulation / Intervention / Acidizing Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API 17J, NACE MR-0175 for the Offshore Well Stimulation / Intervention / Acidizing Hose. It is supplied by API-licensed manufacturers to API 17J with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Offshore Well Stimulation / Intervention / Acidizing Hose use?",
+          "a": "The Offshore Well Stimulation / Intervention / Acidizing Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "Inspect the Offshore Well Stimulation / Intervention / Acidizing Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/well-service-and-stimulation-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Offshore Well Stimulation / Intervention / Acidizing Hose compare with the Onshore Well Stimulation Hose?",
+          "a": "The offshore acidizing hose has a fluoropolymer liner rated to 130 °C, while the onshore stimulation hose has an acid-resistant synthetic rubber liner rated to 100 °C. See the [Onshore Well Stimulation Hose](/p/onshore-well-stimulation-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Offshore Well Stimulation / Intervention / Acidizing Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Offshore Well Stimulation / Intervention / Acidizing Hose, a Continental hose rated 15000 psi WP (acidizing service). We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Offshore Well Stimulation / Intervention / Acidizing Hose in stock in Dubai?",
+          "a": "Yes. We keep the Offshore Well Stimulation / Intervention / Acidizing Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "onshore-well-stimulation-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Onshore Well Stimulation Hose used for?",
+          "a": "The Onshore Well Stimulation Hose is used for onshore acidizing and stimulation pumping. It is a well service hose in 2\" to 3\" bore, rated 15000 psi WP (stimulation service), from the Continental range. "
+        },
+        {
+          "slot": "B",
+          "q": "What does the 15000 psi WP (stimulation service) rating of the Onshore Well Stimulation Hose mean?",
+          "a": "The rating is a working pressure (WP), the continuous service rating, so the Onshore Well Stimulation Hose is rated 15000 psi WP (stimulation service) in 2\" to 3\". The hydrotest is 1.5 times working pressure per the listing; a test pressure is never a working pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Onshore Well Stimulation Hose come in?",
+          "a": "The listing gives 2\" to 3\" inside diameter for the Onshore Well Stimulation Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Onshore Well Stimulation Hose or the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The onshore stimulation hose has an acid-resistant synthetic rubber liner rated to 100 °C, while the offshore acidizing hose has a fluoropolymer liner for hotter service. See the [Offshore Well Stimulation / Intervention / Acidizing Hose](/p/offshore-well-stimulation-intervention-acidizing-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Onshore Well Stimulation Hose?",
+          "a": "The listing gives -30°C to +100°C for the Onshore Well Stimulation Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Onshore Well Stimulation Hose?",
+          "a": "The liner is Acid-resistant synthetic rubber and the reinforcement is multiple high-tensile steel cable plies. The flanged couplings are fitted to suit the Onshore Well Stimulation Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Onshore Well Stimulation Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API Spec 7K, NACE MR-0175 for the Onshore Well Stimulation Hose. It is supplied by API-licensed manufacturers to API 7K with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Onshore Well Stimulation Hose use?",
+          "a": "The Onshore Well Stimulation Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Onshore Well Stimulation Hose?",
+          "a": "Inspect the Onshore Well Stimulation Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/well-service-and-stimulation-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Onshore Well Stimulation Hose compare with the Offshore Well Stimulation / Intervention / Acidizing Hose?",
+          "a": "The onshore stimulation hose has an acid-resistant synthetic rubber liner rated to 100 °C, while the offshore acidizing hose has a fluoropolymer liner for hotter service. See the [Offshore Well Stimulation / Intervention / Acidizing Hose](/p/offshore-well-stimulation-intervention-acidizing-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Onshore Well Stimulation Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Onshore Well Stimulation Hose, a Continental hose rated 15000 psi WP (stimulation service). We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Onshore Well Stimulation Hose in stock in Dubai?",
+          "a": "Yes. We keep the Onshore Well Stimulation Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "well-test-production-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Well Test Production Hose used for?",
+          "a": "The Well Test Production Hose is used for surface flowback and well-test operations, with sour-service rating. It is a well service hose in 2\" to 4\" bore, rated 10000 psi WP, 15000 psi MBP, from the Continental range. "
+        },
+        {
+          "slot": "B",
+          "q": "What do WP and MBP mean in the 10000 psi WP, 15000 psi MBP rating of the Well Test Production Hose?",
+          "a": "WP is the working pressure, the continuous service rating, and MBP is the minimum burst pressure, a design margin and never a working pressure. The Well Test Production Hose is rated 10000 psi WP, 15000 psi MBP. The hydrotest is 1.5 times working pressure per the listing."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes does the Well Test Production Hose come in?",
+          "a": "The listing gives 2\" to 4\" inside diameter for the Well Test Production Hose, with flanged end fittings. Sizes outside the range can be quoted with a longer lead time. Give the inside diameter and assembly length on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the Well Test Production Hose or the Burner/Flare Boom Hose?",
+          "a": "The well test production hose is the sour-service hose at 10,000 psi WP, while the burner and flare boom hose has a heat-resistant liner for hot produced fluids to the flare. See the [Burner/Flare Boom Hose](/p/burner-flare-boom-hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature range of the Well Test Production Hose?",
+          "a": "The listing gives -30°C to +100°C for the Well Test Production Hose. Sour-service and high-temperature variants exist for most families, so give the wellbore conditions on the RFQ for an engineering review."
+        },
+        {
+          "slot": "F",
+          "q": "What are the liner and reinforcement of the Well Test Production Hose?",
+          "a": "The liner is HNBR / sour-service rubber and the reinforcement is multiple high-tensile steel cable plies. The flanged couplings are fitted to suit the Well Test Production Hose. Match the liner to the fluid, because the liner decides chemical resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which API standard does the Well Test Production Hose meet, and is it API monogrammed?",
+          "a": "The listing gives API 16C, NACE MR-0175 for the Well Test Production Hose. It is supplied by API-licensed manufacturers to API 16C with the API certificate and monogram documentation issued with the order, and a test certificate with each assembly. Read the [API 7K, 16C and 16D guide](/blog/api-7k-16c-16d-which-standard)."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings does the Well Test Production Hose use?",
+          "a": "The Well Test Production Hose uses flanged end fittings. Flanges are API 6A or API 6BX, raised-face or ring-joint, so state the flange size, pressure class and gasket type on the RFQ; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets). See the [oilfield hose guide](/blog/oilfield-hose-guide)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I inspect and replace the Well Test Production Hose?",
+          "a": "Inspect the Well Test Production Hose for cover damage, kinks, leaks and end-fitting movement at each rig move or as your procedure requires, and retire it per the maker's guidance and your records. Plan replacements around permits; see the [rig-site hose replacement guide](/blog/rig-site-hose-replacement-abu-dhabi) and the [guide for this hose type](/blog/well-service-and-stimulation-hose)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Well Test Production Hose compare with the Burner/Flare Boom Hose?",
+          "a": "The well test production hose is the sour-service hose at 10,000 psi WP, while the burner and flare boom hose has a heat-resistant liner for hot produced fluids to the flare. See the [Burner/Flare Boom Hose](/p/burner-flare-boom-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Well Test Production Hose made and can it be exported from Dubai?",
+          "a": "The listing gives Germany as the country of origin of the Well Test Production Hose, a Continental hose rated 10000 psi WP, 15000 psi MBP. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test certificate; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Well Test Production Hose in stock in Dubai?",
+          "a": "Yes. We keep the Well Test Production Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

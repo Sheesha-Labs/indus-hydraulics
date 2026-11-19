@@ -1,0 +1,1465 @@
+{
+  "family": "metric-adapters-03",
+  "extraFacts": [
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "A JIC 37° flare end (SAE J514, ISO 8434-2) seals metal-to-metal on a 74° included cone and is not interchangeable with a 45° SAE flare.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "ISO 6149-1 metric stud ends and ports carry an O-ring seal and a metric thread.",
+      "source": "ISO 6149-1"
+    },
+    {
+      "fact": "DIN 2353 (ISO 8434-1) is the 24° cone bite-type tube fitting standard; the light (L) and heavy (S) series differ in tube outside diameter and thread.",
+      "source": "ISO 8434-1; DIN 2353"
+    },
+    {
+      "fact": "BSPP (ISO 228-1) is a parallel thread sealed by a bonded seal, O-ring or cone seat rather than on the thread, while BSPT (ISO 7-1, R) is a taper thread that seals on the thread.",
+      "source": "ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "JIS B 8363 covers the Japanese 30° cone (60° included) metric and BSP fittings used on Komatsu and other Japanese and Korean machines.",
+      "source": "JIS B 8363; Indus Hydraulics JIS 30° adapter listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "jis-metric-male-60-cone-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone Tee used for and which ports does it connect?",
+          "a": "The JIS Metric Male 60° Cone Tee is a tee hydraulic adapter that splits or combines a line through three ports. Ports A and B are male Metric M14×1.5 to M33×1.5, sealing as JIS 30° cone (60° included), metric thread; Port C is Metric M14×1.5 to M33×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 on every port in the JIS Metric Male 60° Cone Tee?",
+          "a": "Quote IH-AD-MET-051-14 for M14×1.5 on every port, IH-AD-MET-051-22 for M22×1.5 on every port and IH-AD-MET-051-33 for M33×1.5 on every port. The JIS Metric Male 60° Cone Tee lists 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the JIS Metric Male 60° Cone Tee come in?",
+          "a": "The JIS Metric Male 60° Cone Tee comes in 7 part numbers covering -14 to -33. Examples from the table: IH-AD-MET-051-16 (M16×1.5 on every port), IH-AD-MET-051-18 (M18×1.5 on every port) and IH-AD-MET-051-30 (M30×1.5 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right JIS Metric Male 60° Cone Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the JIS Metric Male 60° Cone Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-051-16 (M16×1.5 on every port) and IH-AD-MET-051-30 (M30×1.5 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Metric Male 60° Cone Tee?",
+          "a": "The maker publishes no pressure rating for the JIS Metric Male 60° Cone Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Metric Male 60° Cone Tee made from, and is it suitable for my fluid?",
+          "a": "The JIS Metric Male 60° Cone Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the JIS Metric Male 60° Cone Tee conform to, and can I get test certificates?",
+          "a": "The JIS Metric Male 60° Cone Tee is listed to JIS B8363. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the JIS Metric Male 60° Cone Tee, and which fittings do I pair it with?",
+          "a": "On the JIS Metric Male 60° Cone Tee, its male Metric M14×1.5 to M33×1.5 end takes a female port or fitting of the same thread and seat. Its threaded Metric M14×1.5 to M33×1.5 end takes a matching port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the JIS Metric Male 60° Cone Tee seal, and what should I check when fitting it?",
+          "a": "The JIS Metric Male 60° Cone Tee seals on JIS 30° cone (60° included). For port A: JIS 30° cone (60° included), metric thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Metric Male 60° Cone Tee differ from the JIS Metric Male 60° Cone?",
+          "a": "The JIS Metric Male 60° Cone Tee carries Tee in its name where the [JIS Metric Male 60° Cone](/p/jis-metric-male-60-cone) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Metric Male 60° Cone Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIS Metric Male 60° Cone Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the JIS Metric Male 60° Cone Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "jis-metric-male-60-cone-x-bsp-male-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone × BSP Male O-Ring used for and which ports does it connect?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M33×1.5, sealing as JIS 30° cone (60° included), metric thread; Port B is male BSP (G) G1/4-19 to G1-11."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × G1/4-19 in the JIS Metric Male 60° Cone × BSP Male O-Ring?",
+          "a": "Quote IH-AD-MET-057-1404 for M14×1.5 × G1/4-19, IH-AD-MET-057-2208 for M22×1.5 × G1/2-14 and IH-AD-MET-057-3316 for M33×1.5 × G1-11. The JIS Metric Male 60° Cone × BSP Male O-Ring lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the JIS Metric Male 60° Cone × BSP Male O-Ring come in?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring comes in 8 part numbers covering -14 to -33. Examples from the table: IH-AD-MET-057-1406 (M14×1.5 × G3/8-19), IH-AD-MET-057-1606 (M16×1.5 × G3/8-19) and IH-AD-MET-057-3312 (M30×1.5 × G3/4-14). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right JIS Metric Male 60° Cone × BSP Male O-Ring for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the JIS Metric Male 60° Cone × BSP Male O-Ring only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-057-1606 (M16×1.5 × G3/8-19) and IH-AD-MET-057-3312 (M30×1.5 × G3/4-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Metric Male 60° Cone × BSP Male O-Ring?",
+          "a": "The maker publishes no pressure rating for the JIS Metric Male 60° Cone × BSP Male O-Ring, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Metric Male 60° Cone × BSP Male O-Ring made from, and is it suitable for my fluid?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the JIS Metric Male 60° Cone × BSP Male O-Ring conform to, and can I get test certificates?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring is listed to JIS B8363. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the JIS Metric Male 60° Cone × BSP Male O-Ring, and which fittings do I pair it with?",
+          "a": "On the JIS Metric Male 60° Cone × BSP Male O-Ring, its male Metric M14×1.5 to M33×1.5 end takes a female port or fitting of the same thread and seat; its male BSP (G) G1/4-19 to G1-11 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the JIS Metric Male 60° Cone × BSP Male O-Ring seal, and what should I check when fitting it?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring seals on JIS 30° cone (60° included). For port A: JIS 30° cone (60° included), metric thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Metric Male 60° Cone × BSP Male O-Ring differ from the Metric Male 74° Cone × BSP Male O-Ring?",
+          "a": "The JIS Metric Male 60° Cone × BSP Male O-Ring has 60° where the [Metric Male 74° Cone × BSP Male O-Ring](/p/metric-male-74-cone-x-bsp-male-o-ring) has 74°. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Metric Male 60° Cone × BSP Male O-Ring made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone × BSP Male O-Ring is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIS Metric Male 60° Cone × BSP Male O-Ring in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The JIS Metric Male 60° Cone × BSP Male O-Ring is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "jis-metric-male-60-cone-x-bspt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone × BSPT Male used for and which ports does it connect?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M42×1.5, sealing as JIS 30° cone (60° included), metric thread; Port B is male BSPT (R) R1/4-29 to R1-1/2-11, sealing as BSPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × R1/4-29 in the JIS Metric Male 60° Cone × BSPT Male?",
+          "a": "Quote IH-AD-MET-052-1404SP for M14×1.5 × R1/4-29, IH-AD-MET-052-2208SP for M22×1.5 × R1/2-14 and IH-AD-MET-052-4224SP for M42×1.5 × R1-1/2-11. The JIS Metric Male 60° Cone × BSPT Male lists 13 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the JIS Metric Male 60° Cone × BSPT Male are available?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male comes in 13 part numbers covering -14 to -42. Examples from the table: IH-AD-MET-052-1406SP (M14×1.5 × R3/8-19), IH-AD-MET-052-2006SP (M20×1.5 × R3/8-19) and IH-AD-MET-052-3620SP (M36×1.5 × R1-1/4-11). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right JIS Metric Male 60° Cone × BSPT Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the JIS Metric Male 60° Cone × BSPT Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-052-1806SP (M18×1.5 × R3/8-19) and IH-AD-MET-052-3012SP (M30×1.5 × R3/4-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Metric Male 60° Cone × BSPT Male?",
+          "a": "The maker publishes no pressure rating for the JIS Metric Male 60° Cone × BSPT Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Metric Male 60° Cone × BSPT Male made from, and is it suitable for my fluid?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the JIS Metric Male 60° Cone × BSPT Male conform to, and can I get test certificates?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male is listed to JIS B8363, ISO 7-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the JIS Metric Male 60° Cone × BSPT Male, and which fittings do I pair it with?",
+          "a": "On the JIS Metric Male 60° Cone × BSPT Male, its male Metric M14×1.5 to M42×1.5 end takes a female port or fitting of the same thread and seat; its male BSPT (R) R1/4-29 to R1-1/2-11 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the JIS Metric Male 60° Cone × BSPT Male seal, and what should I check when fitting it?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male seals on JIS 30° cone (60° included) at port A and on BSPT taper thread at port B. For port A: JIS 30° cone (60° included), metric thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Metric Male 60° Cone × BSPT Male differ from the JIS Metric Male 60° Cone × BSP Male O-Ring?",
+          "a": "The JIS Metric Male 60° Cone × BSPT Male has BSPT where the [JIS Metric Male 60° Cone × BSP Male O-Ring](/p/jis-metric-male-60-cone-x-bsp-male-o-ring) has BSP. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Metric Male 60° Cone × BSPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone × BSPT Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIS Metric Male 60° Cone × BSPT Male in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the JIS Metric Male 60° Cone × BSPT Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "jis-metric-male-60-cone-x-metric-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIS Metric Male 60° Cone × Metric Male used for and which ports does it connect?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M36×1.5, sealing as JIS 30° cone (60° included), metric thread; Port B is male Metric M12×1.5 to M33×2, sealing as Metric O-ring stud end."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × M12×1.5 in the JIS Metric Male 60° Cone × Metric Male?",
+          "a": "Quote IH-AD-MET-053-1412 for M14×1.5 × M12×1.5, IH-AD-MET-053-2018 for M20×1.5 × M18×1.5 and IH-AD-MET-053-3633 for M36×1.5 × M33×2. The JIS Metric Male 60° Cone × Metric Male lists 13 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the JIS Metric Male 60° Cone × Metric Male come in?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male comes in 13 part numbers covering -14 to -36. Examples from the table: IH-AD-MET-053-14 (M14×1.5 on every port), IH-AD-MET-053-1816 (M18×1.5 × M16×1.5) and IH-AD-MET-053-33 (M33×1.5 × M33×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right JIS Metric Male 60° Cone × Metric Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the JIS Metric Male 60° Cone × Metric Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-053-1814 (M18×1.5 × M14×1.5) and IH-AD-MET-053-2422 (M24×1.5 × M22×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIS Metric Male 60° Cone × Metric Male?",
+          "a": "The maker publishes no pressure rating for the JIS Metric Male 60° Cone × Metric Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIS Metric Male 60° Cone × Metric Male made from, and is it suitable for my fluid?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the JIS Metric Male 60° Cone × Metric Male conform to, and can I get test certificates?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male is listed to JIS B8363, ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the JIS Metric Male 60° Cone × Metric Male, and which fittings do I pair it with?",
+          "a": "On the JIS Metric Male 60° Cone × Metric Male, its male Metric M14×1.5 to M36×1.5 end takes a female port or fitting of the same thread and seat; its male Metric M12×1.5 to M33×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the JIS Metric Male 60° Cone × Metric Male seal, and what should I check when fitting it?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male seals on JIS 30° cone (60° included) at port A and on metric O-ring stud end at port B. For port A: JIS 30° cone (60° included), metric thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the JIS Metric Male 60° Cone × Metric Male differ from the JIS Metric Male 60° Cone × BSPT Male?",
+          "a": "The JIS Metric Male 60° Cone × Metric Male has Metric where the [JIS Metric Male 60° Cone × BSPT Male](/p/jis-metric-male-60-cone-x-bspt-male) has BSPT. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the JIS Metric Male 60° Cone × Metric Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the JIS Metric Male 60° Cone × Metric Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIS Metric Male 60° Cone × Metric Male in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the JIS Metric Male 60° Cone × Metric Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-komatsu",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m Komatsu used for and which ports does it connect?",
+          "a": "The Male Connector m Komatsu is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m Komatsu (SKU IH-AD-MET-015)?",
+          "a": "Quote the SKU IH-AD-MET-015 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m Komatsu against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m Komatsu come in?",
+          "a": "The Male Connector m Komatsu is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m Komatsu for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m Komatsu only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m Komatsu?",
+          "a": "The working pressure of the Male Connector m Komatsu depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m Komatsu made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m Komatsu is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m Komatsu conform to, and can I get test certificates?",
+          "a": "The Male Connector m Komatsu is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m Komatsu, and which fittings do I pair it with?",
+          "a": "On the Male Connector m Komatsu, its male Metric M10×1 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m Komatsu seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Male Connector m Komatsu, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m Komatsu differ from the Male Connector m NPT X m Komatsu?",
+          "a": "The [Male Connector m NPT X m Komatsu](/p/male-connector-m-npt-x-m-komatsu) carries NPT X m in its name where the Male Connector m Komatsu does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m Komatsu made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m Komatsu is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m Komatsu in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Connector m Komatsu sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-metric-flat-x-m-komatsu",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m Metric Flat X m Komatsu used for and which ports does it connect?",
+          "a": "The Male Connector m Metric Flat X m Komatsu is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M42×2 (flat-face), sealing as a flat face; Port B is male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare)."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m Metric Flat X m Komatsu (SKU IH-AD-MET-013)?",
+          "a": "Quote the SKU IH-AD-MET-013 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m Metric Flat X m Komatsu against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m Metric Flat X m Komatsu come in?",
+          "a": "The Male Connector m Metric Flat X m Komatsu is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m Metric Flat X m Komatsu for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m Metric Flat X m Komatsu only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m Metric Flat X m Komatsu?",
+          "a": "The working pressure of the Male Connector m Metric Flat X m Komatsu depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m Metric Flat X m Komatsu made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m Metric Flat X m Komatsu is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m Metric Flat X m Komatsu conform to, and can I get test certificates?",
+          "a": "The Male Connector m Metric Flat X m Komatsu is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m Metric Flat X m Komatsu, and which fittings do I pair it with?",
+          "a": "On the Male Connector m Metric Flat X m Komatsu, its male Metric M10×1 to M42×2 (flat-face) end takes a female port or fitting of the same thread and seat. Its male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m Metric Flat X m Komatsu seal, and what should I check when fitting it?",
+          "a": "The Male Connector m Metric Flat X m Komatsu seals on a flat face. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m Metric Flat X m Komatsu differ from the Male Connector m Metric X m Komatsu?",
+          "a": "The Male Connector m Metric Flat X m Komatsu carries Flat in its name where the [Male Connector m Metric X m Komatsu](/p/male-connector-m-metric-x-m-komatsu) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m Metric Flat X m Komatsu made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m Metric Flat X m Komatsu is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m Metric Flat X m Komatsu in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Male Connector m Metric Flat X m Komatsu is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-metric-x-m-komatsu",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m Metric X m Komatsu used for and which ports does it connect?",
+          "a": "The Male Connector m Metric X m Komatsu is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M42×2 (24° cone); Port B is male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare)."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m Metric X m Komatsu (SKU IH-AD-MET-011)?",
+          "a": "Quote the SKU IH-AD-MET-011 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m Metric X m Komatsu against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m Metric X m Komatsu come in?",
+          "a": "The Male Connector m Metric X m Komatsu is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m Metric X m Komatsu for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m Metric X m Komatsu only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m Metric X m Komatsu?",
+          "a": "The working pressure of the Male Connector m Metric X m Komatsu depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m Metric X m Komatsu made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m Metric X m Komatsu is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m Metric X m Komatsu conform to, and can I get test certificates?",
+          "a": "The Male Connector m Metric X m Komatsu is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m Metric X m Komatsu, and which fittings do I pair it with?",
+          "a": "On the Male Connector m Metric X m Komatsu, its male Metric M10×1 to M42×2 (24° cone) end takes a female port or fitting of the same thread and seat. Its male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m Metric X m Komatsu seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Male Connector m Metric X m Komatsu, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m Metric X m Komatsu differ from the Male Connector m Metric Flat X m Komatsu?",
+          "a": "The [Male Connector m Metric Flat X m Komatsu](/p/male-connector-m-metric-flat-x-m-komatsu) carries Flat in its name where the Male Connector m Metric X m Komatsu does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m Metric X m Komatsu made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m Metric X m Komatsu is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m Metric X m Komatsu in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Male Connector m Metric X m Komatsu in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-metric-x-m-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m Metric X m Metric used for and which ports does it connect?",
+          "a": "The Male Connector m Metric X m Metric is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Ports A and B are male Metric M10×1 to M42×2 (24° cone)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.25 on every port in the Male Connector m Metric X m Metric?",
+          "a": "Quote IH-AD-MET-017-12 for M12×1.25 on every port, IH-AD-MET-017-36 for M36×2 on every port and IH-AD-MET-017-64 for M64×2 on every port. The Male Connector m Metric X m Metric lists 14 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Male Connector m Metric X m Metric come in?",
+          "a": "The Male Connector m Metric X m Metric comes in 14 part numbers covering M12×1.25 to M64×2. Examples from the table: IH-AD-MET-017-14 (M14×1.5 on every port), IH-AD-MET-017-22 (M22×1.5 on every port) and IH-AD-MET-017-60 (M60×2 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m Metric X m Metric for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m Metric X m Metric only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-017-18 (M18×1.5 on every port) and IH-AD-MET-017-45 (M45×2 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m Metric X m Metric?",
+          "a": "The working pressure of the Male Connector m Metric X m Metric depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m Metric X m Metric made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m Metric X m Metric is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m Metric X m Metric conform to, and can I get test certificates?",
+          "a": "The Male Connector m Metric X m Metric is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m Metric X m Metric, and which fittings do I pair it with?",
+          "a": "On the Male Connector m Metric X m Metric, its male Metric M10×1 to M42×2 (24° cone) end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m Metric X m Metric seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Male Connector m Metric X m Metric, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m Metric X m Metric differ from the Male Connector m Metric X m SAE?",
+          "a": "The Male Connector m Metric X m Metric has Metric where the [Male Connector m Metric X m SAE](/p/male-connector-m-metric-x-m-sae) has SAE. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m Metric X m Metric made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m Metric X m Metric is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m Metric X m Metric in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Connector m Metric X m Metric sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-metric-x-m-sae",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m Metric X m SAE used for and which ports does it connect?",
+          "a": "The Male Connector m Metric X m SAE is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M42×2 (24° cone); Port B is male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12), sealing as an O-ring boss seal."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m Metric X m SAE (SKU IH-AD-MET-016)?",
+          "a": "Quote the SKU IH-AD-MET-016 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m Metric X m SAE against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m Metric X m SAE come in?",
+          "a": "The Male Connector m Metric X m SAE is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m Metric X m SAE for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m Metric X m SAE only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m Metric X m SAE?",
+          "a": "The working pressure of the Male Connector m Metric X m SAE depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m Metric X m SAE made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m Metric X m SAE is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m Metric X m SAE conform to, and can I get test certificates?",
+          "a": "The Male Connector m Metric X m SAE is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m Metric X m SAE, and which fittings do I pair it with?",
+          "a": "On the Male Connector m Metric X m SAE, its male Metric M10×1 to M42×2 (24° cone) end takes a female port or fitting of the same thread and seat. Its male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [ORB Adapters](/c/orb-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m Metric X m SAE seal, and what should I check when fitting it?",
+          "a": "The Male Connector m Metric X m SAE seals on an O-ring boss seal. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m Metric X m SAE differ from the Male Connector m Metric X m Metric?",
+          "a": "The Male Connector m Metric X m SAE has SAE where the [Male Connector m Metric X m Metric](/p/male-connector-m-metric-x-m-metric) has Metric. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m Metric X m SAE made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m Metric X m SAE is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m Metric X m SAE in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Connector m Metric X m SAE sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-npt-x-m-komatsu",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m NPT X m Komatsu used for and which ports does it connect?",
+          "a": "The Male Connector m NPT X m Komatsu is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare)."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m NPT X m Komatsu (SKU IH-AD-MET-012)?",
+          "a": "Quote the SKU IH-AD-MET-012 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m NPT X m Komatsu against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m NPT X m Komatsu come in?",
+          "a": "The Male Connector m NPT X m Komatsu is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m NPT X m Komatsu for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m NPT X m Komatsu only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m NPT X m Komatsu?",
+          "a": "The working pressure of the Male Connector m NPT X m Komatsu depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m NPT X m Komatsu made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m NPT X m Komatsu is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m NPT X m Komatsu conform to, and can I get test certificates?",
+          "a": "The Male Connector m NPT X m Komatsu is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m NPT X m Komatsu, and which fittings do I pair it with?",
+          "a": "On the Male Connector m NPT X m Komatsu, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. Its male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m NPT X m Komatsu seal, and what should I check when fitting it?",
+          "a": "The Male Connector m NPT X m Komatsu seals on an NPT taper thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m NPT X m Komatsu differ from the Male Connector m SAE X m Komatsu?",
+          "a": "The Male Connector m NPT X m Komatsu has NPT where the [Male Connector m SAE X m Komatsu](/p/male-connector-m-sae-x-m-komatsu) has SAE. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m NPT X m Komatsu made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m NPT X m Komatsu is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m NPT X m Komatsu in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Male Connector m NPT X m Komatsu is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "male-connector-m-sae-x-m-komatsu",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Connector m SAE X m Komatsu used for and which ports does it connect?",
+          "a": "The Male Connector m SAE X m Komatsu is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12), sealing as an O-ring boss seal; Port B is male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare)."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Male Connector m SAE X m Komatsu (SKU IH-AD-MET-014)?",
+          "a": "Quote the SKU IH-AD-MET-014 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Male Connector m SAE X m Komatsu against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Male Connector m SAE X m Komatsu come in?",
+          "a": "The Male Connector m SAE X m Komatsu is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Connector m SAE X m Komatsu for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Connector m SAE X m Komatsu only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Connector m SAE X m Komatsu?",
+          "a": "The working pressure of the Male Connector m SAE X m Komatsu depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Connector m SAE X m Komatsu made from, and is it suitable for my fluid?",
+          "a": "The Male Connector m SAE X m Komatsu is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Connector m SAE X m Komatsu conform to, and can I get test certificates?",
+          "a": "The Male Connector m SAE X m Komatsu is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Connector m SAE X m Komatsu, and which fittings do I pair it with?",
+          "a": "On the Male Connector m SAE X m Komatsu, its male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12) end takes a female port or fitting of the same thread and seat. Its male JIS Komatsu metric (M14×1.5 to M33×2, 30° flare) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Connector m SAE X m Komatsu seal, and what should I check when fitting it?",
+          "a": "The Male Connector m SAE X m Komatsu seals on an O-ring boss seal. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Connector m SAE X m Komatsu differ from the Male Connector m NPT X m Komatsu?",
+          "a": "The Male Connector m SAE X m Komatsu has SAE where the [Male Connector m NPT X m Komatsu](/p/male-connector-m-npt-x-m-komatsu) has NPT. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Connector m SAE X m Komatsu made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Connector m SAE X m Komatsu is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Connector m SAE X m Komatsu in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Male Connector m SAE X m Komatsu in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-cross-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Cross Metric used for and which ports does it connect?",
+          "a": "The Male Cross Metric is a cross hydraulic adapter that brings four ports together at one point. Port A is male Metric M10×1 to M42×2, sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 in the Male Cross Metric?",
+          "a": "Quote IH-AD-MET-002-14 for M14×1.5, IH-AD-MET-002-30 for M30×1.5 and IH-AD-MET-002-52 for M52×2. The Male Cross Metric lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Male Cross Metric are available?",
+          "a": "The Male Cross Metric comes in 11 part numbers covering M14×1.5 to M52×2. Examples from the table: IH-AD-MET-002-16 (M16×1.5), IH-AD-MET-002-22 (M22×1.5) and IH-AD-MET-002-45 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Cross Metric for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Cross Metric only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this cross also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-002-18 (M18×1.5) and IH-AD-MET-002-42 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Cross Metric?",
+          "a": "The working pressure of the Male Cross Metric depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Cross Metric made from, and is it suitable for my fluid?",
+          "a": "The Male Cross Metric is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Cross Metric conform to, and can I get test certificates?",
+          "a": "The Male Cross Metric is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Cross Metric, and which fittings do I pair it with?",
+          "a": "On the Male Cross Metric, its male Metric M10×1 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Cross Metric seal, and what should I check when fitting it?",
+          "a": "The Male Cross Metric seals on a flat face. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Cross Metric differ from the Male Metric Tee?",
+          "a": "The Male Cross Metric and the [Male Metric Tee](/p/male-metric-tee) are separate listings with different end combinations. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Cross Metric made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Cross Metric is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Cross Metric in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Cross Metric sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "male-metric-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Male Metric Tee used for and which ports does it connect?",
+          "a": "The Male Metric Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is male Metric M10×1 to M42×2, sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 in the Male Metric Tee?",
+          "a": "Quote IH-AD-MET-004-14 for M14×1.5, IH-AD-MET-004-30 for M30×1.5 and IH-AD-MET-004-52 for M52×2. The Male Metric Tee lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Male Metric Tee are available?",
+          "a": "The Male Metric Tee comes in 11 part numbers covering M14×1.5 to M52×2. Examples from the table: IH-AD-MET-004-16 (M16×1.5), IH-AD-MET-004-22 (M22×1.5) and IH-AD-MET-004-45 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Male Metric Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Male Metric Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-004-18 (M18×1.5) and IH-AD-MET-004-42 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Male Metric Tee?",
+          "a": "The working pressure of the Male Metric Tee depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Male Metric Tee made from, and is it suitable for my fluid?",
+          "a": "The Male Metric Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Male Metric Tee conform to, and can I get test certificates?",
+          "a": "The Male Metric Tee is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Male Metric Tee, and which fittings do I pair it with?",
+          "a": "On the Male Metric Tee, its male Metric M10×1 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Male Metric Tee seal, and what should I check when fitting it?",
+          "a": "The Male Metric Tee seals on a flat face. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Male Metric Tee differ from the Male Cross Metric?",
+          "a": "The Male Metric Tee and the [Male Cross Metric](/p/male-cross-metric) are separate listings with different end combinations. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Male Metric Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Male Metric Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Male Metric Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. The Male Metric Tee sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Ports A and B are male Metric M10×1 to M45×2, sealing as Metric 37° cone (74° included)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M10×1 on every port in the Metric Male 74° Cone?",
+          "a": "Quote IH-AD-MET-030-10 for M10×1 on every port, IH-AD-MET-030-27 for M27×1.5 on every port and IH-AD-MET-030-45 for M45×2 on every port. The Metric Male 74° Cone lists 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone come in?",
+          "a": "The Metric Male 74° Cone comes in 15 part numbers covering -10 to -45. Examples from the table: IH-AD-MET-030-12 (M12×1.5 on every port), IH-AD-MET-030-22 (M22×1.5 on every port) and IH-AD-MET-030-42 (M42×2 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-030-16 (M16×1.5 on every port) and IH-AD-MET-030-36 (M36×2 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone, its male Metric M10×1 to M45×2 end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone seals on metric 37° cone (74° included). Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone differ from the Metric Male 74° Cone Tee?",
+          "a": "The [Metric Male 74° Cone Tee](/p/metric-male-74-cone-tee) carries Tee in its name where the Metric Male 74° Cone does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-bulkhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone Bulkhead used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone Bulkhead is a hydraulic bulkhead that passes a line through a panel or wall and is locked in place with a nut. Ports A and B are male Metric M10×1 to M45×2, sealing as Metric 37° cone (74° included)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M10×1 on every port in the Metric Male 74° Cone Bulkhead?",
+          "a": "Quote IH-AD-MET-047-10LN for M10×1 on every port, IH-AD-MET-047-27LN for M27×1.5 on every port and IH-AD-MET-047-45LN for M45×2 on every port. The Metric Male 74° Cone Bulkhead lists 14 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone Bulkhead are available?",
+          "a": "The Metric Male 74° Cone Bulkhead comes in 14 part numbers covering -10 to -45. Examples from the table: IH-AD-MET-047-12LN (M12×1.5 on every port), IH-AD-MET-047-18LN (M18×1.5 on every port) and IH-AD-MET-047-42LN (M42×2 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone Bulkhead for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone Bulkhead only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-047-16LN (M16×1.5 on every port) and IH-AD-MET-047-36LN (M36×2 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone Bulkhead?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone Bulkhead, from 100 bar (IH-AD-MET-047-45LN) to 350 bar (IH-AD-MET-047-10LN). The maker states up to 350 bar (5,076 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone Bulkhead made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone Bulkhead is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone Bulkhead conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone Bulkhead is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone Bulkhead, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone Bulkhead, its male Metric M10×1 to M45×2 end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone Bulkhead seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone Bulkhead seals on metric 37° cone (74° included). Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone Bulkhead differ from the 90° Elbow Metric Male 74° Cone Bulkhead?",
+          "a": "The [90° Elbow Metric Male 74° Cone Bulkhead](/p/90-elbow-metric-male-74-cone-bulkhead) carries 90° Elbow in its name where the Metric Male 74° Cone Bulkhead does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone Bulkhead made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone Bulkhead is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone Bulkhead in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone Bulkhead is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone Plug used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone Plug is a hydraulic plug that closes off a port or the end of a line. Port A is male Metric M10×1 to M45×2, sealing as Metric 37° cone (74° included)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M10×1 in the Metric Male 74° Cone Plug?",
+          "a": "Quote IH-AD-MET-043-10 for M10×1, IH-AD-MET-043-27 for M27×1.5 and IH-AD-MET-043-45 for M45×2. The Metric Male 74° Cone Plug lists 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone Plug are available?",
+          "a": "The Metric Male 74° Cone Plug comes in 15 part numbers covering -10 to -45. Examples from the table: IH-AD-MET-043-12 (M12×1.5), IH-AD-MET-043-22 (M22×1.5) and IH-AD-MET-043-42 (M42×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone Plug for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone Plug only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes. Then pick the row: IH-AD-MET-043-16 (M16×1.5) and IH-AD-MET-043-36 (M36×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone Plug?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone Plug, from 100 bar (IH-AD-MET-043-45) to 350 bar (IH-AD-MET-043-10). The maker states up to 350 bar (5,076 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone Plug made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone Plug is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone Plug conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone Plug is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone Plug, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone Plug, its male Metric M10×1 to M45×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone Plug seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone Plug seals on metric 37° cone (74° included). Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone Plug differ from the Metric Male 74° Cone?",
+          "a": "The Metric Male 74° Cone Plug carries Plug in its name where the [Metric Male 74° Cone](/p/metric-male-74-cone) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone Plug made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone Plug is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone Plug in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male 74° Cone Plug in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone Tee used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone Tee is a tee hydraulic adapter that splits or combines a line through three ports. Ports A and B are male Metric M14×1.5 to M33×2, sealing as Metric 37° cone (74° included); Port C is Metric M14×1.5 to M33×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 on every port in the Metric Male 74° Cone Tee?",
+          "a": "Quote IH-AD-MET-045-14 for M14×1.5 on every port, IH-AD-MET-045-22 for M22×1.5 on every port and IH-AD-MET-045-33 for M33×2 on every port. The Metric Male 74° Cone Tee lists 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone Tee are available?",
+          "a": "The Metric Male 74° Cone Tee comes in 7 part numbers covering -14 to -33. Examples from the table: IH-AD-MET-045-16 (M16×1.5 on every port), IH-AD-MET-045-18 (M18×1.5 on every port) and IH-AD-MET-045-30 (M30×1.5 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-045-16 (M16×1.5 on every port) and IH-AD-MET-045-30 (M30×1.5 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone Tee?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone Tee, from 160 bar (IH-AD-MET-045-33) to 350 bar (IH-AD-MET-045-14). The maker states up to 350 bar (5,076 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone Tee made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone Tee conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone Tee is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone Tee, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone Tee, its male Metric M14×1.5 to M33×2 end takes a female port or fitting of the same thread and seat. Its threaded Metric M14×1.5 to M33×2 end takes a matching port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone Tee seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone Tee seals on metric 37° cone (74° included). Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone Tee differ from the Metric Male 74° Cone?",
+          "a": "The Metric Male 74° Cone Tee carries Tee in its name where the [Metric Male 74° Cone](/p/metric-male-74-cone) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-bsp-male-o-ring",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × BSP Male O-Ring used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M45×2, sealing as Metric 37° cone (74° included); Port B is male BSP (G) G1/4-19 to G1-1/4-11."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × G1/4-19 in the Metric Male 74° Cone × BSP Male O-Ring?",
+          "a": "Quote IH-AD-MET-040-1404 for M14×1.5 × G1/4-19, IH-AD-MET-040-2712 for M27×1.5 × G3/4-14 and IH-AD-MET-040-4520 for M45×2 × G1-1/4-11. The Metric Male 74° Cone × BSP Male O-Ring lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × BSP Male O-Ring come in?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring comes in 11 part numbers covering -14 to -45. Examples from the table: IH-AD-MET-040-1606 (M16×1.5 × G3/8-19), IH-AD-MET-040-1808 (M18×1.5 × G1/2-14) and IH-AD-MET-040-3916 (M39×2 × G1-11). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × BSP Male O-Ring for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × BSP Male O-Ring only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-040-1806 (M18×1.5 × G3/8-19) and IH-AD-MET-040-3616 (M36×2 × G1-11)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × BSP Male O-Ring?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone × BSP Male O-Ring, from 100 bar (IH-AD-MET-040-4520) to 350 bar (IH-AD-MET-040-1404). The maker states up to 350 bar (5,076 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × BSP Male O-Ring made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × BSP Male O-Ring conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × BSP Male O-Ring, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × BSP Male O-Ring, its male Metric M14×1.5 to M45×2 end takes a female port or fitting of the same thread and seat; its male BSP (G) G1/4-19 to G1-1/4-11 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × BSP Male O-Ring seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring seals on metric 37° cone (74° included). Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × BSP Male O-Ring differ from the JIS Metric Male 60° Cone × BSP Male O-Ring?",
+          "a": "The Metric Male 74° Cone × BSP Male O-Ring has 74° where the [JIS Metric Male 60° Cone × BSP Male O-Ring](/p/jis-metric-male-60-cone-x-bsp-male-o-ring) has 60°. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × BSP Male O-Ring made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × BSP Male O-Ring is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × BSP Male O-Ring in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone × BSP Male O-Ring is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-bspt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × BSPT Male used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × BSPT Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M45×2, sealing as Metric 37° cone (74° included); Port B is male BSPT (R) R1/8-28 to R1-1/4-11, sealing as BSPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M10×1 × R1/8-28 in the Metric Male 74° Cone × BSPT Male?",
+          "a": "Quote IH-AD-MET-031-1002SP for M10×1 × R1/8-28, IH-AD-MET-031-2208SP for M22×1.5 × R1/2-14 and IH-AD-MET-031-4520SP for M45×2 × R1-1/4-11. The Metric Male 74° Cone × BSPT Male lists 14 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × BSPT Male come in?",
+          "a": "The Metric Male 74° Cone × BSPT Male comes in 14 part numbers covering -10 to -45. Examples from the table: IH-AD-MET-031-1404SP (M14×1.5 × R1/4-19), IH-AD-MET-031-1606SP (M16×1.5 × R3/8-19) and IH-AD-MET-031-3916SP (M39×2 × R1-11). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × BSPT Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × BSPT Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-031-1604SP (M16×1.5 × R1/4-19) and IH-AD-MET-031-3012SP (M30×1.5 × R3/4-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × BSPT Male?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone × BSPT Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × BSPT Male made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × BSPT Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × BSPT Male conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × BSPT Male is listed to ISO 8434-2 profile, metric thread, ISO 7-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × BSPT Male, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × BSPT Male, its male Metric M10×1 to M45×2 end takes a female port or fitting of the same thread and seat; its male BSPT (R) R1/8-28 to R1-1/4-11 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × BSPT Male seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × BSPT Male seals on metric 37° cone (74° included) at port A and on BSPT taper thread at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × BSPT Male differ from the Metric Male 74° Cone × NPT Male?",
+          "a": "The Metric Male 74° Cone × BSPT Male has BSPT where the [Metric Male 74° Cone × NPT Male](/p/metric-male-74-cone-x-npt-male) has NPT. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × BSPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × BSPT Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × BSPT Male in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male 74° Cone × BSPT Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-metric-male-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M45×2, sealing as Metric 37° cone (74° included); Port B is male Metric M12×1.5 to M42×2, sealing as Metric O-ring stud end."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × M12×1.5 in the Metric Male 74° Cone × Metric Male Adjustable Stud End?",
+          "a": "Quote IH-AD-MET-039-1412 for M14×1.5 × M12×1.5, IH-AD-MET-039-3027 for M30×1.5 × M27×2 and IH-AD-MET-039-4542 for M45×2 × M42×2. The Metric Male 74° Cone × Metric Male Adjustable Stud End lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone × Metric Male Adjustable Stud End are available?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End comes in 10 part numbers covering -14 to -45. Examples from the table: IH-AD-MET-039-1614 (M16×1.5 × M14×1.5), IH-AD-MET-039-2218 (M22×1.5 × M18×1.5) and IH-AD-MET-039-3933 (M39×2 × M33×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × Metric Male Adjustable Stud End for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × Metric Male Adjustable Stud End only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-039-1816 (M18×1.5 × M16×1.5) and IH-AD-MET-039-3633 (M36×2 × M33×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × Metric Male Adjustable Stud End?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone × Metric Male Adjustable Stud End, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × Metric Male Adjustable Stud End conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End is listed to ISO 8434-2 profile, metric thread, ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × Metric Male Adjustable Stud End, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × Metric Male Adjustable Stud End, its male Metric M14×1.5 to M45×2 end takes a female port or fitting of the same thread and seat. Its male Metric M12×1.5 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End seals on metric 37° cone (74° included) at port A and on metric O-ring stud end at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End differ from the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee?",
+          "a": "The [Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee](/p/metric-male-74-cone-x-metric-male-adjustable-stud-end-run-tee) carries Run Tee in its name where the Metric Male 74° Cone × Metric Male Adjustable Stud End does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × Metric Male Adjustable Stud End made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × Metric Male Adjustable Stud End is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × Metric Male Adjustable Stud End in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone × Metric Male Adjustable Stud End is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-metric-male-adjustable-stud-end-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is male Metric M14×1.5 to M45×2, sealing as Metric 37° cone (74° included); Port B is male Metric M12×1.5 to M42×2, sealing as Metric O-ring stud end; Port C is Metric M14×1.5 to M45×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × M12×1.5 × M14×1.5 in the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee?",
+          "a": "Quote IH-AD-MET-046-141214OG for M14×1.5 × M12×1.5 × M14×1.5, IH-AD-MET-046-302730OG for M30×1.5 × M27×2 × M30×1.5 and IH-AD-MET-046-454245OG for M45×2 × M42×2 × M45×2. The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee come in?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee comes in 10 part numbers covering -14 to -45. Examples from the table: IH-AD-MET-046-161416OG (M16×1.5 × M14×1.5 × M16×1.5), IH-AD-MET-046-221822OG (M22×1.5 × M18×1.5 × M22×1.5) and IH-AD-MET-046-393339OG (M39×2 × M33×2 × M39×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-046-181618OG (M18×1.5 × M16×1.5 × M18×1.5) and IH-AD-MET-046-363336OG (M36×2 × M33×2 × M36×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee, from 100 bar (IH-AD-MET-046-454245OG) to 315 bar (IH-AD-MET-046-141214OG). The maker states up to 315 bar (4,569 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee is listed to ISO 8434-2 profile, metric thread, ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee, its male Metric M14×1.5 to M45×2 end takes a female port or fitting of the same thread and seat. Its male Metric M12×1.5 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee seals on metric 37° cone (74° included) at port A and on metric O-ring stud end at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee differ from its nearest sibling?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee has Branch where the [Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee](/p/metric-male-74-cone-x-metric-male-adjustable-stud-end-run-tee) has Run. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-metric-male-adjustable-stud-end-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee is a run tee hydraulic adapter that carries the line through the run and takes a side branch. Port A is male Metric M14×1.5 to M45×2, sealing as Metric 37° cone (74° included); Port B is male Metric M14×1.5 to M45×2, sealing as Metric O-ring stud end; Port C is Metric M12×1.5 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × M14×1.5 × M12×1.5 in the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee?",
+          "a": "Quote IH-AD-MET-048-141412OG for M14×1.5 × M14×1.5 × M12×1.5, IH-AD-MET-048-303027OG for M30×1.5 × M30×1.5 × M27×2 and IH-AD-MET-048-454542OG for M45×2 × M45×2 × M42×2. The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee come in?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee comes in 10 part numbers covering -14 to -45. Examples from the table: IH-AD-MET-048-161614OG (M16×1.5 × M16×1.5 × M14×1.5), IH-AD-MET-048-222218OG (M22×1.5 × M22×1.5 × M18×1.5) and IH-AD-MET-048-393933OG (M39×2 × M39×2 × M33×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this run tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-048-181816OG (M18×1.5 × M18×1.5 × M16×1.5) and IH-AD-MET-048-363633OG (M36×2 × M36×2 × M33×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee?",
+          "a": "The size table prints a working pressure against each size of the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee, from 100 bar (IH-AD-MET-048-454542OG) to 315 bar (IH-AD-MET-048-141412OG). The maker states up to 315 bar (4,569 psi). Use the figure on your own row; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee is listed to ISO 8434-2 profile, metric thread, ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee, its male Metric M14×1.5 to M45×2 end takes a female port or fitting of the same thread and seat. Its threaded Metric M12×1.5 to M42×2 end takes a matching port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee seals on metric 37° cone (74° included) at port A and on metric O-ring stud end at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee differ from its nearest sibling?",
+          "a": "The Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee has Run where the [Metric Male 74° Cone × Metric Male Adjustable Stud End Branch Tee](/p/metric-male-74-cone-x-metric-male-adjustable-stud-end-branch-tee) has Branch. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male 74° Cone × Metric Male Adjustable Stud End Run Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

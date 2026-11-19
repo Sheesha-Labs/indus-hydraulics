@@ -1,0 +1,1660 @@
+{
+  "family": "tie-rod-cylinders",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    },
+    {
+      "fact": "HS 8412.21 covers hydraulic power engines and motors, linear acting (hydraulic cylinders).",
+      "source": "WCO Harmonized System, heading 8412.21"
+    },
+    {
+      "fact": "NFPA tie-rod hydraulic cylinders follow the NFPA T3.6.7 mounting-dimension standard, so cylinders of the same bore, rod and mounting style are dimensionally interchangeable between makers that build to it.",
+      "source": "NFPA T3.6.7 (hydraulic fluid power cylinders, mounting dimensions)"
+    },
+    {
+      "fact": "Tie-rod cylinders clamp the end caps onto a barrel tube with external tie rods and can be dismantled for seal replacement; welded-body cylinders have the end caps welded to the tube and are compact and sealed against dismantling.",
+      "source": "Indus guide: welded vs tie-rod hydraulic cylinders; maker cylinder catalogues"
+    },
+    {
+      "fact": "Telescopic cylinders extend in nested stages; each added stage lengthens the stroke for a given retracted length, and a single-acting telescopic cylinder retracts under load or gravity rather than by oil pressure.",
+      "source": "Indus guide: telescopic hydraulic cylinders; Enerpac telescopic cylinder catalogue"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bailey-tie-rod-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Bailey Tie-Rod 2.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Bailey International, with a 2.5\" bore and a 1.25\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in one stroke length (32\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Bailey Tie-Rod 2.5\" bore cylinder part numbers run from 211335 to 211335 across 1 listed part number, one per stroke and rod combination. 211335 is the 32\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Bailey Tie-Rod 2.5\" bore cylinder is listed in a single 32\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Bailey Tie-Rod 2.5\" bore cylinder runs from 42.25\" to 42.25\" and extended length from 74.25\" to 74.25\", depending on stroke. For example the 32\" stroke is 42.25\" retracted and 74.25\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Bailey Tie-Rod 2.5\" bore cylinder uses the 1.25\" rod, and the listed column load is 4,970 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Bailey Tie-Rod 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Bailey Tie-Rod 2.5\" bore cylinder is listed as 4,970 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Bailey Tie-Rod 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Bailey Tie-Rod 2.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Bailey Tie-Rod 2.5\" bore cylinder lists 4,970 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 2.5\" bore, in the same tie-rod pattern from Bailey International. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 4,970 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Bailey Tie-Rod 2.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bailey-tie-rod-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore, and where is it used?",
+          "a": "Bailey Tie-Rod 3.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Bailey International, with a 3.5\" bore and a 1.25\" or 1.5\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in three stroke lengths from 12\" to 30\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Bailey Tie-Rod 3.5\" bore cylinder part numbers run from 218351 to 218327 across 3 listed part numbers, one per stroke and rod combination. 218351 is the 12\" stroke and 218327 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Bailey Tie-Rod 3.5\" bore cylinder comes in three stroke lengths from 12\" to 30\", including 12\", 16\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Bailey Tie-Rod 3.5\" bore cylinder runs from 22.25\" to 40.25\" and extended length from 34.25\" to 70.25\", depending on stroke. For example the 12\" stroke is 22.25\" retracted and 34.25\" extended, and the 30\" stroke is 40.25\" and 70.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Bailey Tie-Rod 3.5\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (one part number, column load 24,050 lbs); the 1.5\" rod (two part numbers, column load 11,480 to 22,050 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Bailey Tie-Rod 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Bailey Tie-Rod 3.5\" bore cylinder is listed as 11,480 to 24,050 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Bailey Tie-Rod 3.5\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Bailey Tie-Rod 3.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Bailey Tie-Rod 3.5\" bore cylinder lists 11,480 to 24,050 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same tie-rod pattern from Bailey International. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 11,480 to 24,050 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore in Dubai for export?",
+          "a": "Yes. Bailey Tie-Rod 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "bailey-tie-rod-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore do, and what is it for?",
+          "a": "Bailey Tie-Rod 4\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Bailey International, with a 4\" bore and a 1.5\" or 2\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in two stroke lengths from 10\" to 16\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Bailey Tie-Rod 4\" bore cylinder part numbers run from 218361 to 211401 across 2 listed part numbers, one per stroke and rod combination. 218361 is the 10\" stroke and 211401 the 16\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Bailey Tie-Rod 4\" bore cylinder comes in two stroke lengths from 10\" to 16\", including 10\" and 16\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Bailey Tie-Rod 4\" bore cylinder runs from 20.25\" to 31.5\" and extended length from 30.25\" to 47.5\", depending on stroke. For example the 10\" stroke is 20.25\" retracted and 30.25\" extended, and the 16\" stroke is 31.5\" and 47.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Bailey Tie-Rod 4\" bore cylinder is listed with two rod diameters, 1.5\" and 2\". Per rod: the 1.5\" rod (one part number, column load 31,410 lbs); the 2\" rod (one part number, column load 37,690 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Bailey Tie-Rod 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Bailey Tie-Rod 4\" bore cylinder is listed as 31,410 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Bailey Tie-Rod 4\" bore cylinder has NPT 1/2\", SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Bailey Tie-Rod 4\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Bailey Tie-Rod 4\" bore cylinder lists 31,410 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Bailey Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same tie-rod pattern from Bailey International. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" or 2\" rod and column load of 31,410 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Bailey Tie-Rod 4\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bailey-tie-rod-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore, and where is it used?",
+          "a": "Bailey Tie-Rod 5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Bailey International, with a 5\" bore. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in one stroke length (18\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore organised?",
+          "a": "The Bailey Tie-Rod 5\" bore cylinder part numbers run from TRC5X18 B to TRC5X18 B across 1 listed part number, one per stroke and rod combination. TRC5X18 B is the 18\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Bailey Tie-Rod 5\" bore cylinder is listed in a single 18\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Bailey Tie-Rod 5\" bore cylinder runs from 30.25\" to 30.25\" and extended length from 48.25\" to 48.25\", depending on stroke. For example the 18\" stroke is 30.25\" retracted and 48.25\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "How does column load change with stroke on the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "Ask us to confirm the rod diameter for your part number of the Bailey Tie-Rod 5\" bore cylinder before you size it against a long stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,000 psi for the Bailey Tie-Rod 5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "The Bailey Tie-Rod 5\" bore cylinder lists no column load figure in its table. Column load is the compressive load the extended rod can carry before it buckles, so ask us for the maker figure if your application pushes on a long stroke."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Bailey Tie-Rod 5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Bailey Tie-Rod 5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke. Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore compare with the 4\" bore version?",
+          "a": "The next size down is the [Bailey Tie-Rod Hydraulic Cylinder, 4\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 5\" bore, in the same tie-rod pattern from Bailey International. A smaller bore gives less push force at the same pressure but a more compact body; this one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Bailey Tie-Rod Hydraulic Cylinder, 5\" Bore in Dubai for export?",
+          "a": "Yes. Indus stocks Bailey Tie-Rod 5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Chief Tie-Rod 2.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 2.5\" bore and a 1.125\" or 1.25\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in fourteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Chief Tie-Rod 2.5\" bore cylinder part numbers run from 211320 to 211338 across 15 listed part numbers, one per stroke and rod combination. 211320 is the 4\" stroke and 211338 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Tie-Rod 2.5\" bore cylinder comes in fourteen stroke lengths from 4\" to 48\", including 4\", 10\", 14\", 20\", 28\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 2.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Tie-Rod 2.5\" bore cylinder is listed with two rod diameters, 1.125\" and 1.25\". Per rod: the 1.125\" rod (six part numbers, column load 14,720 lbs); the 1.25\" rod (nine part numbers, column load 2,430 to 14,720 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Tie-Rod 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 2.5\" bore cylinder is listed as 2,430 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Tie-Rod 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 2.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 2.5\" bore cylinder lists 2,430 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Chief Tie-Rod Hydraulic Cylinder, 3\" Bore](/p/chief-tie-rod-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same tie-rod pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" or 1.25\" rod and column load of 2,430 to 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. Indus stocks Chief Tie-Rod 2.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore and what is it used for?",
+          "a": "Chief Tie-Rod 2\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 2\" bore and a 1.125\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in twelve stroke lengths from 4\" to 36\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Chief Tie-Rod 2\" bore cylinder part numbers run from 211300 to 211315 across 14 listed part numbers, one per stroke and rod combination. 211300 is the 4\" stroke and 211315 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Tie-Rod 2\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 22\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 2\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Chief Tie-Rod 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 2,630 to 9,420 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Chief Tie-Rod 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 2\" bore cylinder is listed as 2,630 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Tie-Rod 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 2\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 2\" bore cylinder lists 2,630 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/chief-tie-rod-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same tie-rod pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 2,630 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Tie-Rod Hydraulic Cylinder, 2\" Bore in Dubai for export?",
+          "a": "Yes. We keep Chief Tie-Rod 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore and what is it used for?",
+          "a": "Chief Tie-Rod 3.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 3.5\" bore and a 1.5\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in thirteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Chief Tie-Rod 3.5\" bore cylinder part numbers run from 211370 to 211389 across 15 listed part numbers, one per stroke and rod combination. 211370 is the 4\" stroke and 211389 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Chief Tie-Rod 3.5\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 3.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Chief Tie-Rod 3.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 5,080 to 28,860 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Chief Tie-Rod 3.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 3.5\" bore cylinder is listed as 5,080 to 28,860 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Chief Tie-Rod 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 3.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 3.5\" bore cylinder lists 5,080 to 28,860 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Chief Tie-Rod Hydraulic Cylinder, 4\" Bore](/p/chief-tie-rod-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same tie-rod pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 5,080 to 28,860 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Chief Tie-Rod 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore do, and what is it for?",
+          "a": "Chief Tie-Rod 3\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 3\" bore and a 1.25\" or 1.5\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in fifteen stroke lengths from 4\" to 60\", 17 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Chief Tie-Rod 3\" bore cylinder part numbers run from 211345 to 211365 across 17 listed part numbers, one per stroke and rod combination. 211345 is the 4\" stroke and 211365 the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Tie-Rod 3\" bore cylinder comes in fifteen stroke lengths from 4\" to 60\", including 4\", 10\", 16\", 20\", 30\" and 60\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 3\" bore cylinder runs from 14.25\" to 70.25\" and extended length from 18.25\" to 130.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 60\" stroke is 70.25\" and 130.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Chief Tie-Rod 3\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (six part numbers, column load 21,200 lbs); the 1.5\" rod (eleven part numbers, column load 3,320 to 21,200 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Tie-Rod 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 3\" bore cylinder is listed as 3,320 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Chief Tie-Rod 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 3\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 3\" bore cylinder lists 3,320 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/chief-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same tie-rod pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 3,320 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Tie-Rod Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Chief Tie-Rod 3\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore and what is it used for?",
+          "a": "Chief Tie-Rod 4\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 4\" bore and a 1.5\" or 2\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in fourteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Chief Tie-Rod 4\" bore cylinder part numbers run from 211394 to 211417 across 15 listed part numbers, one per stroke and rod combination. 211394 is the 4\" stroke and 211417 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Tie-Rod 4\" bore cylinder comes in fourteen stroke lengths from 4\" to 48\", including 4\", 10\", 14\", 20\", 26\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 4\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Chief Tie-Rod 4\" bore cylinder is listed with two rod diameters, 1.5\" and 2\". Per rod: the 1.5\" rod (six part numbers, column load 37,690 lbs); the 2\" rod (nine part numbers, column load 15,790 to 37,690 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Tie-Rod 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 4\" bore cylinder is listed as 15,790 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Chief Tie-Rod 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 4\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 4\" bore cylinder lists 15,790 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Chief Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/chief-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same tie-rod pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" or 2\" rod and column load of 15,790 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Tie-Rod Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Chief Tie-Rod 4\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore and what is it used for?",
+          "a": "Chief Tie-Rod 5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Chief, with a 5\" bore and a 2\" or 2.25\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in thirteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore organised?",
+          "a": "The Chief Tie-Rod 5\" bore cylinder part numbers run from 211418 to 211433 across 14 listed part numbers, one per stroke and rod combination. 211418 is the 4\" stroke and 211433 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Chief Tie-Rod 5\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Tie-Rod 5\" bore cylinder runs from 16.25\" to 60.25\" and extended length from 20.25\" to 108.25\", depending on stroke. For example the 4\" stroke is 16.25\" retracted and 20.25\" extended, and the 48\" stroke is 60.25\" and 108.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Chief Tie-Rod 5\" bore cylinder is listed with two rod diameters, 2\" and 2.25\". Per rod: the 2\" rod (ten part numbers, column load 58,900 lbs); the 2.25\" rod (four part numbers, column load 25,020 to 58,900 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Tie-Rod 5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Chief Tie-Rod 5\" bore cylinder is listed as 25,020 to 58,900 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Chief Tie-Rod 5\" bore cylinder has SAE ORB -12 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Chief Tie-Rod 5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Chief Tie-Rod 5\" bore cylinder lists 25,020 to 58,900 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore compare with the 4\" bore version?",
+          "a": "The next size down is the [Chief Tie-Rod Hydraulic Cylinder, 4\" Bore](/p/chief-tie-rod-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 5\" bore, in the same tie-rod pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" or 2.25\" rod and column load of 25,020 to 58,900 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Tie-Rod Hydraulic Cylinder, 5\" Bore in Dubai for export?",
+          "a": "Yes. Indus stocks Chief Tie-Rod 5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-tie-rod-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Tie Rod Hydraulic Cylinders and what is it used for?",
+          "a": "Chief Tie Rod Hydraulic Cylinders is a range of double-acting tie-rod hydraulic cylinders from Chief in six bore sizes, 16 part numbers in all. It covers 2\" bore with 1.125\" rod (3 part numbers), 2.5\" bore with 1.125\" rod (2 part numbers), 3\" bore with 1.25\" or 1.5\" rod (3 part numbers), 3.5\" bore with 1.5\" rod (2 part numbers), 4\" bore with 1.5\" or 2\" rod (3 part numbers) and 5\" bore with 2\" or 2.25\" rod (3 part numbers)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers in the Chief Tie Rod Hydraulic Cylinders range organised?",
+          "a": "The 16 part numbers in the Chief Tie Rod Hydraulic Cylinders range each carry one bore, rod and stroke, for example 200411TCU3 is 2\" bore, 1.125\" rod and 4\" stroke, and 502422TCU4 is 5\" bore, 2.25\" rod and 24\" stroke. The size table lists the rest."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes and strokes does the Chief Tie Rod Hydraulic Cylinders range offer?",
+          "a": "The Chief Tie Rod Hydraulic Cylinders range offers bores of 2\", 2.5\", 3\", 3.5\", 4\" and 5\" and strokes from 4\" to 24\", including 4\", 8\", 12\", 20\" and 24\". Pick the bore from the force you need and the stroke from the travel, then check the retracted length."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Tie Rod Hydraulic Cylinders?",
+          "a": "On the Chief Tie Rod Hydraulic Cylinders range the retracted length runs from 14.25\" to 36.25\" depending on bore and stroke. For example 200411TCU3 is 14.25\" retracted and 18.25\" extended, and 502422TCU4 is 36.25\" and 60.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters come with the Chief Tie Rod Hydraulic Cylinders?",
+          "a": "Rod size follows the bore on the Chief Tie Rod Hydraulic Cylinders: 2\" bore takes 1.125\", 2.5\" bore takes 1.125\", 3\" bore takes 1.25\" or 1.5\", 3.5\" bore takes 1.5\", 4\" bore takes 1.5\" or 2\" and 5\" bore takes 2\" or 2.25\". Choose the larger rod for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Tie Rod Hydraulic Cylinders rated for?",
+          "a": "The listing for the Chief Tie Rod Hydraulic Cylinders gives each part number's load figure in its description but no rated pressure. Ask us for the maker's pressure rating for your part number before setting the relief valve, and note that a circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range is the Chief Tie Rod Hydraulic Cylinders rated for?",
+          "a": "The listing gives an operating temperature of -20°F to +180°F for the Chief Tie Rod Hydraulic Cylinders. Its tube is steel, its tie rods are high tensile and the rod seals use polyurethane. Stay inside that range, and check your hydraulic fluid is compatible with the seal material."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Chief Tie Rod Hydraulic Cylinders be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Chief Tie Rod Hydraulic Cylinders can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Chief Tie Rod Hydraulic Cylinders range have?",
+          "a": "The listing for the Chief Tie Rod Hydraulic Cylinders gives bore, rod, stroke and the retracted and extended lengths, but not the port thread or the mounting style. Send us the part number and the mounting your machine needs, and we confirm both against Chief's data before supply."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order the right bore, rod and stroke from the Chief Tie Rod Hydraulic Cylinders range?",
+          "a": "Give us the part number, or the bore, rod and stroke you need, plus the mounting style your machine uses; the listing says pins and clips are included. We then confirm the Chief part number before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Tie Rod Hydraulic Cylinders range compare with a single-bore Chief tie-rod cylinder?",
+          "a": "The Chief Tie Rod Hydraulic Cylinders range packs several bores and strokes into one listing, while single-bore listings such as the [Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-2-5-in-bore) cover one bore only. Use the range listing to compare bores, or the single-bore page to see every stroke for one bore."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Tie Rod Hydraulic Cylinders in Dubai for export?",
+          "a": "Yes, Chief Tie Rod Hydraulic Cylinders is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-trcn-tie-rod-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Magister TRCN Tie-Rod 2.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.125\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in nine stroke lengths from 4\" to 24\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister TRCN Tie-Rod 2.5\" bore cylinder part numbers run from TRCN2.5×4 to TRCN2.5×24 across 11 listed part numbers, one per stroke and rod combination. TRCN2.5×4 is the 4\" stroke and TRCN2.5×24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister TRCN Tie-Rod 2.5\" bore cylinder comes in nine stroke lengths from 4\" to 24\", including 4\", 8\", 10\", 14\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister TRCN Tie-Rod 2.5\" bore cylinder runs from 14.25\" to 34.25\" and extended length from 18.25\" to 58.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister TRCN Tie-Rod 2.5\" bore cylinder uses the 1.125\" rod, and the listed column load is 5,500 to 12,270 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister TRCN Tie-Rod 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister TRCN Tie-Rod 2.5\" bore cylinder is listed as 5,500 to 12,270 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister TRCN Tie-Rod 2.5\" bore cylinder has NPT 3/8\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister TRCN Tie-Rod 2.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister TRCN Tie-Rod 2.5\" bore cylinder lists 5,500 to 12,270 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore](/p/magister-trcn-tie-rod-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same tie-rod pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 5,500 to 12,270 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Magister TRCN Tie-Rod 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-trcn-tie-rod-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Magister TRCN Tie-Rod 2\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.125\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in ten stroke lengths from 4\" to 24\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister TRCN Tie-Rod 2\" bore cylinder part numbers run from TRCN2X4 to TRCN2X24 across 11 listed part numbers, one per stroke and rod combination. TRCN2X4 is the 4\" stroke and TRCN2X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister TRCN Tie-Rod 2\" bore cylinder comes in ten stroke lengths from 4\" to 24\", including 4\", 8\", 12\", 14\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister TRCN Tie-Rod 2\" bore cylinder runs from 14.25\" to 34.25\" and extended length from 18.25\" to 58.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister TRCN Tie-Rod 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 6,950 to 7,850 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister TRCN Tie-Rod 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister TRCN Tie-Rod 2\" bore cylinder is listed as 6,950 to 7,850 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister TRCN Tie-Rod 2\" bore cylinder has NPT 3/8\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister TRCN Tie-Rod 2\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister TRCN Tie-Rod 2\" bore cylinder lists 6,950 to 7,850 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/magister-trcn-tie-rod-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same tie-rod pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 6,950 to 7,850 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister TRCN Tie-Rod Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Magister TRCN Tie-Rod 2\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-trcn-tie-rod-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Magister TRCN Tie-Rod 3\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Magister Hydraulics, with a 3\" bore and a 1.25\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in nine stroke lengths from 4\" to 24\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Magister TRCN Tie-Rod 3\" bore cylinder part numbers run from TRCN3X4 to TRCN3X24 across 11 listed part numbers, one per stroke and rod combination. TRCN3X4 is the 4\" stroke and TRCN3X24 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Magister TRCN Tie-Rod 3\" bore cylinder comes in nine stroke lengths from 4\" to 24\", including 4\", 10\", 12\", 16\", 18\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister TRCN Tie-Rod 3\" bore cylinder runs from 14.25\" to 34.25\" and extended length from 18.25\" to 58.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 24\" stroke is 34.25\" and 58.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Magister TRCN Tie-Rod 3\" bore cylinder uses the 1.25\" rod, and the listed column load is 8,050 to 17,670 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister TRCN Tie-Rod 3\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Magister TRCN Tie-Rod 3\" bore cylinder is listed as 8,050 to 17,670 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Magister TRCN Tie-Rod 3\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Magister TRCN Tie-Rod 3\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Magister TRCN Tie-Rod 3\" bore cylinder lists 8,050 to 17,670 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size down is the [Magister TRCN Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/magister-trcn-tie-rod-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 3\" bore, in the same tie-rod pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.25\" rod and column load of 8,050 to 17,670 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister TRCN Tie-Rod Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Magister TRCN Tie-Rod 3\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-tie-rod-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore do, and what is it for?",
+          "a": "Maxim Tie-Rod 2.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Maxim, with a 2.5\" bore and a 1.125\" or 1.25\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in thirteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Maxim Tie-Rod 2.5\" bore cylinder part numbers run from 218316 to 218331 across 15 listed part numbers, one per stroke and rod combination. 218316 is the 4\" stroke and 218331 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Tie-Rod 2.5\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Tie-Rod 2.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Tie-Rod 2.5\" bore cylinder is listed with two rod diameters, 1.125\" and 1.25\". Per rod: the 1.125\" rod (twelve part numbers, column load 5,300 to 12,270 lbs); the 1.25\" rod (three part numbers, column load 2,410 to 5,500 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Tie-Rod 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Maxim Tie-Rod 2.5\" bore cylinder is listed as 2,410 to 12,270 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Maxim Tie-Rod 2.5\" bore cylinder has NPT 3/8\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Maxim Tie-Rod 2.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Maxim Tie-Rod 2.5\" bore cylinder lists 2,410 to 12,270 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore](/p/maxim-tie-rod-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same tie-rod pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" or 1.25\" rod and column load of 2,410 to 12,270 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. We keep Maxim Tie-Rod 2.5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-tie-rod-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Maxim Tie-Rod 2\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Maxim, with a 2\" bore and a 1.125\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in thirteen stroke lengths from 4\" to 48\", 16 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Maxim Tie-Rod 2\" bore cylinder part numbers run from 218297 to 218315 across 16 listed part numbers, one per stroke and rod combination. 218297 is the 4\" stroke and 218315 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Maxim Tie-Rod 2\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Tie-Rod 2\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Maxim Tie-Rod 2\" bore cylinder uses the 1.125\" rod, and the listed column load is 1,570 to 7,850 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Tie-Rod 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Maxim Tie-Rod 2\" bore cylinder is listed as 1,570 to 7,850 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Maxim Tie-Rod 2\" bore cylinder has NPT 3/8\", SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Maxim Tie-Rod 2\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Maxim Tie-Rod 2\" bore cylinder lists 1,570 to 7,850 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Maxim Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/maxim-tie-rod-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same tie-rod pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.125\" rod and column load of 1,570 to 7,850 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Tie-Rod Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Maxim Tie-Rod 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-tie-rod-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore, and where is it used?",
+          "a": "Maxim Tie-Rod 3.5\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Maxim, with a 3.5\" bore and a 1.25\" or 1.5\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in eleven stroke lengths from 4\" to 48\", 12 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Maxim Tie-Rod 3.5\" bore cylinder part numbers run from 218347 to 218357 across 12 listed part numbers, one per stroke and rod combination. 218347 is the 4\" stroke and 218357 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Maxim Tie-Rod 3.5\" bore cylinder comes in eleven stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 24\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Tie-Rod 3.5\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Maxim Tie-Rod 3.5\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (nine part numbers, column load 10,920 to 24,050 lbs); the 1.5\" rod (three part numbers, column load 5,040 to 16,650 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Tie-Rod 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Maxim Tie-Rod 3.5\" bore cylinder is listed as 5,040 to 24,050 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Maxim Tie-Rod 3.5\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Maxim Tie-Rod 3.5\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Maxim Tie-Rod 3.5\" bore cylinder lists 5,040 to 24,050 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore](/p/maxim-tie-rod-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same tie-rod pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 5,040 to 24,050 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Maxim Tie-Rod 3.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-tie-rod-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore, and where is it used?",
+          "a": "Maxim Tie-Rod 3\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Maxim, with a 3\" bore and a 1.25\" or 1.5\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in thirteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Maxim Tie-Rod 3\" bore cylinder part numbers run from 218333 to 218346 across 15 listed part numbers, one per stroke and rod combination. 218333 is the 4\" stroke and 218346 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Tie-Rod 3\" bore cylinder comes in thirteen stroke lengths from 4\" to 48\", including 4\", 8\", 14\", 18\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Tie-Rod 3\" bore cylinder runs from 14.25\" to 58.25\" and extended length from 18.25\" to 106.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Tie-Rod 3\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (twelve part numbers, column load 8,050 to 17,670 lbs); the 1.5\" rod (three part numbers, column load 4,950 to 11,240 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Tie-Rod 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Maxim Tie-Rod 3\" bore cylinder is listed as 4,950 to 17,670 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Maxim Tie-Rod 3\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Maxim Tie-Rod 3\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Maxim Tie-Rod 3\" bore cylinder lists 4,950 to 17,670 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/maxim-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same tie-rod pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 4,950 to 17,670 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Tie-Rod Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Maxim Tie-Rod 3\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-tie-rod-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Maxim Tie-Rod 4\" bore cylinder is a double-acting tie-rod hydraulic cylinder from Maxim, with a 4\" bore and a 1.5\" or 2\" rod. Its mounting is a tie-rod body, where tie rods clamp the end caps onto the barrel tube. It is listed in eleven stroke lengths from 8\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Maxim Tie-Rod 4\" bore cylinder part numbers run from 218304 to 218370 across 14 listed part numbers, one per stroke and rod combination. 218304 is the 8\" stroke and 218370 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Maxim Tie-Rod 4\" bore cylinder comes in eleven stroke lengths from 8\" to 48\", including 8\", 14\", 18\", 24\", 36\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Tie-Rod 4\" bore cylinder runs from 18.25\" to 58.25\" and extended length from 26.25\" to 106.25\", depending on stroke. For example the 8\" stroke is 20.25\" retracted and 28.25\" extended, and the 48\" stroke is 58.25\" and 106.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Maxim Tie-Rod 4\" bore cylinder is listed with two rod diameters, 1.5\" and 2\". Per rod: the 1.5\" rod (eight part numbers, column load 16,870 to 31,410 lbs); the 2\" rod (six part numbers, column load 15,560 to 31,410 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Tie-Rod 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Maxim Tie-Rod 4\" bore cylinder is listed as 15,560 to 31,410 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Maxim Tie-Rod 4\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Maxim Tie-Rod 4\" bore cylinder has a tie-rod body, where tie rods clamp the end caps onto the barrel tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Maxim Tie-Rod 4\" bore cylinder lists 15,560 to 31,410 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Maxim Tie-Rod Hydraulic Cylinder, 3.5\" Bore](/p/maxim-tie-rod-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same tie-rod pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" or 2\" rod and column load of 15,560 to 31,410 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Tie-Rod Hydraulic Cylinder, 4\" Bore in Dubai for export?",
+          "a": "Yes. Maxim Tie-Rod 4\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "miller-fluid-power-double-acting-tie-rod-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders and what is it used for?",
+          "a": "Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders is a range of double-acting nfpa tie rod hydraulic cylinders from Miller Fluid Power in five bore sizes, 43 part numbers in all. It covers 1.5\" bore with 0.625\" rod (8 part numbers), 2\" bore with 1\" rod (8 part numbers), 2.5\" bore with 1\" rod (7 part numbers), 3.25\" bore with 1.375\" rod (9 part numbers) and 4\" bore with 1.75\" rod (10 part numbers)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers in the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range organised?",
+          "a": "The 43 part numbers in the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range each carry one bore, rod and stroke, for example 1HHV3B15001000 is 1.5\" bore, 0.625\" rod and 1\" stroke, and 1HHV3B4001200M is 4\" bore, 1.75\" rod and 12\" stroke. The size table lists the rest."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes and strokes does the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range offer?",
+          "a": "The Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range offers bores of 1.5\", 2\", 2.5\", 3.25\" and 4\" and strokes from 1\" to 12\", including 1\", 3\", 6\", 8\" and 12\". Pick the bore from the force you need and the stroke from the travel, then check the retracted length."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders?",
+          "a": "On the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range the retracted length runs from 6.625\" to 19.625\" depending on bore and stroke. For example 1HHV3B15001000 is 6.625\" retracted and 7.625\" extended, and 1HHV3B4001200M is 19.625\" and 31.625\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters come with the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders?",
+          "a": "Rod size follows the bore on the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders: 1.5\" bore takes 0.625\", 2\" bore takes 1\", 2.5\" bore takes 1\", 3.25\" bore takes 1.375\" and 4\" bore takes 1.75\". Choose the larger rod for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders rated for?",
+          "a": "The listing for the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders gives each part number's load figure in its description but no rated pressure. Ask us for the maker's pressure rating for your part number before setting the relief valve, and note that a circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "What temperature range is the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders rated for?",
+          "a": "The listing gives an operating temperature of -10°F to +165°F for the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders. Its tube is steel, its tie rods are steel and the rod seals use polyurethane. Stay inside that range, and check your hydraulic fluid is compatible with the seal material."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range have?",
+          "a": "The listing for the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders gives bore, rod, stroke and the retracted and extended lengths, but not the port thread or the mounting style. Send us the part number and the mounting your machine needs, and we confirm both against Miller Fluid Power's data before supply."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order the right bore, rod and stroke from the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range?",
+          "a": "Give us the part number, or the bore, rod and stroke you need, plus the mounting style your machine uses. We then confirm the Miller Fluid Power part number before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range compare with a single-bore Miller Fluid Power tie-rod cylinder?",
+          "a": "The Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders range packs several bores and strokes into one listing, while single-bore listings such as the [Bailey Tie-Rod Hydraulic Cylinder, 2.5\" Bore](/p/bailey-tie-rod-hydraulic-cylinder-2-5-in-bore) cover one bore only. Use the range listing to compare bores, or the single-bore page to see every stroke for one bore."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders from stock in the UAE and get a quotation?",
+          "a": "Yes, Miller Fluid Power Double Acting Tie Rod Hydraulic Cylinders is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "peninsular-hydraulic-cylinders-1-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Peninsular HP hydraulic cylinder with a 1-1/2 inch bore?",
+          "a": "Peninsular 1-1/2\" bore tie-rod cylinder is an NFPA tie-rod hydraulic cylinder from Peninsular, made in the United States, with a 1-1/2\" bore. The listing has 26 part numbers: two rod sizes, 5/8\" and 1\", each in stroke lengths from 1\" to 24\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Peninsular part numbers such as HP16150A1S and HP16150B10S on the 1-1/2\" bore cylinder?",
+          "a": "On the Peninsular 1-1/2\" bore tie-rod cylinder, the letter after the bore code (A or B) marks the rod size and the number gives the stroke in inches. HP16150A1S is the 5/8\" rod with a 1\" stroke, HP16150A4S the 5/8\" rod with a 4\" stroke, and HP16150B10S the 1\" rod with a 10\" stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod sizes can I get on the Peninsular 1-1/2\" bore tie-rod cylinder?",
+          "a": "The Peninsular 1-1/2\" bore tie-rod cylinder comes with a 5/8\" rod (A part numbers) or a 1\" rod (B part numbers). Take the larger 1\" rod for long strokes or compressive loads, because a thicker rod resists buckling better, and the smaller 5/8\" rod where weight or a faster retract matters more."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Peninsular Hydraulic Cylinders, 1-1/2 Inch Bore come in?",
+          "a": "The Peninsular 1-1/2\" bore tie-rod cylinder is listed in thirteen stock stroke lengths: 1\", 2\", 3\", 4\", 5\", 6\", 8\", 10\", 12\", 14\", 16\", 20\" and 24\". Each is available with either rod, giving 26 part numbers, so choose the stroke from the travel your load needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Peninsular Hydraulic Cylinders, 1-1/2 Inch Bore rated for?",
+          "a": "The listing for the Peninsular 1-1/2\" bore tie-rod cylinder publishes no pressure rating, only that it is an NFPA tie-rod cylinder. Ask us for the maker's rated pressure for your part number before you set the relief valve, and remember the circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "G",
+          "q": "What does NFPA mean on the Peninsular 1-1/2\" bore hydraulic cylinder?",
+          "a": "NFPA means the Peninsular 1-1/2\" bore tie-rod cylinder is a tie-rod cylinder built to the NFPA mounting-dimension standard, T3.6.7, so a same-bore, same-rod, same-mount NFPA cylinder from another maker bolts to the same footprint. Confirm the mounting style and rod-end thread against your machine before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Peninsular Hydraulic Cylinders, 1-1/2 Inch Bore be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Peninsular 1-1/2\" bore tie-rod cylinder can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order a Peninsular 1-1/2\" bore cylinder with the right rod and stroke?",
+          "a": "Quote the part number, or give us the 1-1/2\" bore, the rod (5/8\" or 1\") and the stroke in inches from 1\" to 24\", and the mounting style your machine uses. We then confirm the Peninsular part number against the maker's list before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1-1/2\" bore Peninsular cylinder compare with the 2\" bore one?",
+          "a": "The nearest size is the [Peninsular Hydraulic Cylinders, 2 Inch Bore](/p/peninsular-hydraulic-cylinders-2-inch-bore), a 2\" bore against this 1-1/2\" bore in the same HP tie-rod range. Rod sizes change with the bore, so this one offers 5/8\" and 1\" rods; a larger bore gives more push force at the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Peninsular 1-1/2\" bore tie-rod cylinder have?",
+          "a": "The listing for the Peninsular 1-1/2\" bore tie-rod cylinder gives only the bore, rod and stroke, and does not state the port thread or the mounting style (flange, foot, clevis or other). Send us the part number and the mounting your machine needs, and we confirm both against Peninsular's data before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Peninsular 1-1/2\" bore tie-rod cylinder made, and what is its HS code?",
+          "a": "The Peninsular 1-1/2\" bore tie-rod cylinder is listed with United States as the country of origin and HS code 841221, the heading for hydraulic linear-acting engines and motors. We export from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Peninsular 1-1/2\" bore tie-rod cylinder in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Peninsular 1-1/2\" bore tie-rod cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "peninsular-hydraulic-cylinders-2-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Peninsular HP hydraulic cylinder with a 2-1/2 inch bore?",
+          "a": "Peninsular 2-1/2\" bore tie-rod cylinder is an NFPA tie-rod hydraulic cylinder from Peninsular, made in the United States, with a 2-1/2\" bore. The listing has 26 part numbers: two rod sizes, 1\" and 1-3/8\", each in stroke lengths from 1\" to 24\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Peninsular part numbers such as HP16250A1S and HP16250B10S on the 2-1/2\" bore cylinder?",
+          "a": "On the Peninsular 2-1/2\" bore tie-rod cylinder, the letter after the bore code (A or B) marks the rod size and the number gives the stroke in inches. HP16250A1S is the 1\" rod with a 1\" stroke, HP16250A4S the 1\" rod with a 4\" stroke, and HP16250B10S the 1-3/8\" rod with a 10\" stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod sizes can I get on the Peninsular 2-1/2\" bore tie-rod cylinder?",
+          "a": "The Peninsular 2-1/2\" bore tie-rod cylinder comes with a 1\" rod (A part numbers) or a 1-3/8\" rod (B part numbers). Take the larger 1-3/8\" rod for long strokes or compressive loads, because a thicker rod resists buckling better, and the smaller 1\" rod where weight or a faster retract matters more."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Peninsular Hydraulic Cylinders, 2-1/2 Inch Bore come in?",
+          "a": "The Peninsular 2-1/2\" bore tie-rod cylinder is listed in thirteen stock stroke lengths: 1\", 2\", 3\", 4\", 5\", 6\", 8\", 10\", 12\", 14\", 16\", 20\" and 24\". Each is available with either rod, giving 26 part numbers, so choose the stroke from the travel your load needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Peninsular Hydraulic Cylinders, 2-1/2 Inch Bore rated for?",
+          "a": "The listing for the Peninsular 2-1/2\" bore tie-rod cylinder publishes no pressure rating, only that it is an NFPA tie-rod cylinder. Ask us for the maker's rated pressure for your part number before you set the relief valve, and remember the circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "G",
+          "q": "What does NFPA mean on the Peninsular 2-1/2\" bore hydraulic cylinder?",
+          "a": "NFPA means the Peninsular 2-1/2\" bore tie-rod cylinder is a tie-rod cylinder built to the NFPA mounting-dimension standard, T3.6.7, so a same-bore, same-rod, same-mount NFPA cylinder from another maker bolts to the same footprint. Confirm the mounting style and rod-end thread against your machine before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Peninsular Hydraulic Cylinders, 2-1/2 Inch Bore be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Peninsular 2-1/2\" bore tie-rod cylinder can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order a Peninsular 2-1/2\" bore cylinder with the right rod and stroke?",
+          "a": "Quote the part number, or give us the 2-1/2\" bore, the rod (1\" or 1-3/8\") and the stroke in inches from 1\" to 24\", and the mounting style your machine uses. We then confirm the Peninsular part number against the maker's list before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/2\" bore Peninsular cylinder compare with the 2\" bore one?",
+          "a": "The nearest size is the [Peninsular Hydraulic Cylinders, 2 Inch Bore](/p/peninsular-hydraulic-cylinders-2-inch-bore), a 2\" bore against this 2-1/2\" bore in the same HP tie-rod range. Rod sizes change with the bore, so this one offers 1\" and 1-3/8\" rods; a larger bore gives more push force at the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Peninsular 2-1/2\" bore tie-rod cylinder have?",
+          "a": "The listing for the Peninsular 2-1/2\" bore tie-rod cylinder gives only the bore, rod and stroke, and does not state the port thread or the mounting style (flange, foot, clevis or other). Send us the part number and the mounting your machine needs, and we confirm both against Peninsular's data before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Peninsular 2-1/2\" bore tie-rod cylinder made, and what is its HS code?",
+          "a": "The Peninsular 2-1/2\" bore tie-rod cylinder is listed with United States as the country of origin and HS code 841221, the heading for hydraulic linear-acting engines and motors. We export from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Peninsular 2-1/2\" bore tie-rod cylinder in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Peninsular 2-1/2\" bore tie-rod cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "peninsular-hydraulic-cylinders-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Peninsular HP hydraulic cylinder with a 2 inch bore?",
+          "a": "Peninsular 2\" bore tie-rod cylinder is an NFPA tie-rod hydraulic cylinder from Peninsular, made in the United States, with a 2\" bore. The listing has 26 part numbers: two rod sizes, 1\" and 1-3/8\", each in stroke lengths from 1\" to 24\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Peninsular part numbers such as HP16200A1S and HP16200B10S on the 2\" bore cylinder?",
+          "a": "On the Peninsular 2\" bore tie-rod cylinder, the letter after the bore code (A or B) marks the rod size and the number gives the stroke in inches. HP16200A1S is the 1\" rod with a 1\" stroke, HP16200A4S the 1\" rod with a 4\" stroke, and HP16200B10S the 1-3/8\" rod with a 10\" stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod sizes can I get on the Peninsular 2\" bore tie-rod cylinder?",
+          "a": "The Peninsular 2\" bore tie-rod cylinder comes with a 1\" rod (A part numbers) or a 1-3/8\" rod (B part numbers). Take the larger 1-3/8\" rod for long strokes or compressive loads, because a thicker rod resists buckling better, and the smaller 1\" rod where weight or a faster retract matters more."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Peninsular Hydraulic Cylinders, 2 Inch Bore come in?",
+          "a": "The Peninsular 2\" bore tie-rod cylinder is listed in thirteen stock stroke lengths: 1\", 2\", 3\", 4\", 5\", 6\", 8\", 10\", 12\", 14\", 16\", 20\" and 24\". Each is available with either rod, giving 26 part numbers, so choose the stroke from the travel your load needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Peninsular Hydraulic Cylinders, 2 Inch Bore rated for?",
+          "a": "The listing for the Peninsular 2\" bore tie-rod cylinder publishes no pressure rating, only that it is an NFPA tie-rod cylinder. Ask us for the maker's rated pressure for your part number before you set the relief valve, and remember the circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "G",
+          "q": "What does NFPA mean on the Peninsular 2\" bore hydraulic cylinder?",
+          "a": "NFPA means the Peninsular 2\" bore tie-rod cylinder is a tie-rod cylinder built to the NFPA mounting-dimension standard, T3.6.7, so a same-bore, same-rod, same-mount NFPA cylinder from another maker bolts to the same footprint. Confirm the mounting style and rod-end thread against your machine before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Peninsular Hydraulic Cylinders, 2 Inch Bore be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Peninsular 2\" bore tie-rod cylinder can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order a Peninsular 2\" bore cylinder with the right rod and stroke?",
+          "a": "Quote the part number, or give us the 2\" bore, the rod (1\" or 1-3/8\") and the stroke in inches from 1\" to 24\", and the mounting style your machine uses. We then confirm the Peninsular part number against the maker's list before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2\" bore Peninsular cylinder compare with the 2-1/2\" bore one?",
+          "a": "The nearest size is the [Peninsular Hydraulic Cylinders, 2-1/2 Inch Bore](/p/peninsular-hydraulic-cylinders-2-1-2-inch-bore), a 2-1/2\" bore against this 2\" bore in the same HP tie-rod range. Rod sizes change with the bore, so this one offers 1\" and 1-3/8\" rods; a larger bore gives more push force at the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Peninsular 2\" bore tie-rod cylinder have?",
+          "a": "The listing for the Peninsular 2\" bore tie-rod cylinder gives only the bore, rod and stroke, and does not state the port thread or the mounting style (flange, foot, clevis or other). Send us the part number and the mounting your machine needs, and we confirm both against Peninsular's data before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Peninsular 2\" bore tie-rod cylinder made, and what is its HS code?",
+          "a": "The Peninsular 2\" bore tie-rod cylinder is listed with United States as the country of origin and HS code 841221, the heading for hydraulic linear-acting engines and motors. We export from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Peninsular 2\" bore tie-rod cylinder from stock in the UAE and get a quotation?",
+          "a": "Yes, Peninsular 2\" bore tie-rod cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "peninsular-hydraulic-cylinders-3-1-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Peninsular HP hydraulic cylinder with a 3-1/4 inch bore?",
+          "a": "Peninsular 3-1/4\" bore tie-rod cylinder is an NFPA tie-rod hydraulic cylinder from Peninsular, made in the United States, with a 3-1/4\" bore. The listing has 26 part numbers: two rod sizes, 1-3/8\" and 1-3/4\", each in stroke lengths from 1\" to 24\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Peninsular part numbers such as HP0325A1S and HP0325B10S on the 3-1/4\" bore cylinder?",
+          "a": "On the Peninsular 3-1/4\" bore tie-rod cylinder, the letter after the bore code (A or B) marks the rod size and the number gives the stroke in inches. HP0325A1S is the 1-3/8\" rod with a 1\" stroke, HP0325A4S the 1-3/8\" rod with a 4\" stroke, and HP0325B10S the 1-3/4\" rod with a 10\" stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod sizes can I get on the Peninsular 3-1/4\" bore tie-rod cylinder?",
+          "a": "The Peninsular 3-1/4\" bore tie-rod cylinder comes with a 1-3/8\" rod (A part numbers) or a 1-3/4\" rod (B part numbers). Take the larger 1-3/4\" rod for long strokes or compressive loads, because a thicker rod resists buckling better, and the smaller 1-3/8\" rod where weight or a faster retract matters more."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Peninsular Hydraulic Cylinders, 3-1/4 Inch Bore come in?",
+          "a": "The Peninsular 3-1/4\" bore tie-rod cylinder is listed in thirteen stock stroke lengths: 1\", 2\", 3\", 4\", 5\", 6\", 8\", 10\", 12\", 14\", 16\", 20\" and 24\". Each is available with either rod, giving 26 part numbers, so choose the stroke from the travel your load needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Peninsular Hydraulic Cylinders, 3-1/4 Inch Bore rated for?",
+          "a": "The listing for the Peninsular 3-1/4\" bore tie-rod cylinder publishes no pressure rating, only that it is an NFPA tie-rod cylinder. Ask us for the maker's rated pressure for your part number before you set the relief valve, and remember the circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "G",
+          "q": "What does NFPA mean on the Peninsular 3-1/4\" bore hydraulic cylinder?",
+          "a": "NFPA means the Peninsular 3-1/4\" bore tie-rod cylinder is a tie-rod cylinder built to the NFPA mounting-dimension standard, T3.6.7, so a same-bore, same-rod, same-mount NFPA cylinder from another maker bolts to the same footprint. Confirm the mounting style and rod-end thread against your machine before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Peninsular Hydraulic Cylinders, 3-1/4 Inch Bore be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Peninsular 3-1/4\" bore tie-rod cylinder can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order a Peninsular 3-1/4\" bore cylinder with the right rod and stroke?",
+          "a": "Quote the part number, or give us the 3-1/4\" bore, the rod (1-3/8\" or 1-3/4\") and the stroke in inches from 1\" to 24\", and the mounting style your machine uses. We then confirm the Peninsular part number against the maker's list before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/4\" bore Peninsular cylinder compare with the 4\" bore one?",
+          "a": "The nearest size is the [Peninsular Hydraulic Cylinders, 4 Inch Bore](/p/peninsular-hydraulic-cylinders-4-inch-bore), a 4\" bore against this 3-1/4\" bore in the same HP tie-rod range. Rod sizes change with the bore, so this one offers 1-3/8\" and 1-3/4\" rods; a larger bore gives more push force at the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Peninsular 3-1/4\" bore tie-rod cylinder have?",
+          "a": "The listing for the Peninsular 3-1/4\" bore tie-rod cylinder gives only the bore, rod and stroke, and does not state the port thread or the mounting style (flange, foot, clevis or other). Send us the part number and the mounting your machine needs, and we confirm both against Peninsular's data before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Peninsular 3-1/4\" bore tie-rod cylinder made, and what is its HS code?",
+          "a": "The Peninsular 3-1/4\" bore tie-rod cylinder is listed with United States as the country of origin and HS code 841221, the heading for hydraulic linear-acting engines and motors. We export from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Peninsular 3-1/4\" bore tie-rod cylinder from stock in the UAE and get a quotation?",
+          "a": "Yes. Peninsular 3-1/4\" bore tie-rod cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "peninsular-hydraulic-cylinders-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Peninsular HP hydraulic cylinder with a 4 inch bore?",
+          "a": "Peninsular 4\" bore tie-rod cylinder is an NFPA tie-rod hydraulic cylinder from Peninsular, made in the United States, with a 4\" bore. The listing has 26 part numbers: two rod sizes, 1-3/4\" and 2\", each in stroke lengths from 1\" to 24\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Peninsular part numbers such as HP0400A1S and HP0400B10S on the 4\" bore cylinder?",
+          "a": "On the Peninsular 4\" bore tie-rod cylinder, the letter after the bore code (A or B) marks the rod size and the number gives the stroke in inches. HP0400A1S is the 1-3/4\" rod with a 1\" stroke, HP0400A4S the 1-3/4\" rod with a 4\" stroke, and HP0400B10S the 2\" rod with a 10\" stroke."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod sizes can I get on the Peninsular 4\" bore tie-rod cylinder?",
+          "a": "The Peninsular 4\" bore tie-rod cylinder comes with a 1-3/4\" rod (A part numbers) or a 2\" rod (B part numbers). Take the larger 2\" rod for long strokes or compressive loads, because a thicker rod resists buckling better, and the smaller 1-3/4\" rod where weight or a faster retract matters more."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths does the Peninsular Hydraulic Cylinders, 4 Inch Bore come in?",
+          "a": "The Peninsular 4\" bore tie-rod cylinder is listed in thirteen stock stroke lengths: 1\", 2\", 3\", 4\", 5\", 6\", 8\", 10\", 12\", 14\", 16\", 20\" and 24\". Each is available with either rod, giving 26 part numbers, so choose the stroke from the travel your load needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Peninsular Hydraulic Cylinders, 4 Inch Bore rated for?",
+          "a": "The listing for the Peninsular 4\" bore tie-rod cylinder publishes no pressure rating, only that it is an NFPA tie-rod cylinder. Ask us for the maker's rated pressure for your part number before you set the relief valve, and remember the circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "G",
+          "q": "What does NFPA mean on the Peninsular 4\" bore hydraulic cylinder?",
+          "a": "NFPA means the Peninsular 4\" bore tie-rod cylinder is a tie-rod cylinder built to the NFPA mounting-dimension standard, T3.6.7, so a same-bore, same-rod, same-mount NFPA cylinder from another maker bolts to the same footprint. Confirm the mounting style and rod-end thread against your machine before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "Can the Peninsular Hydraulic Cylinders, 4 Inch Bore be rebuilt, and how is it different from a welded cylinder?",
+          "a": "Yes, a tie-rod cylinder such as the Peninsular 4\" bore tie-rod cylinder can be dismantled by removing the tie rods, so seals can be replaced; a welded-body cylinder cannot be taken apart that way. Our [welded vs tie-rod guide](/blog/welded-vs-tie-rod-hydraulic-cylinders) sets out when each is the better choice."
+        },
+        {
+          "slot": "J",
+          "q": "How do I order a Peninsular 4\" bore cylinder with the right rod and stroke?",
+          "a": "Quote the part number, or give us the 4\" bore, the rod (1-3/4\" or 2\") and the stroke in inches from 1\" to 24\", and the mounting style your machine uses. We then confirm the Peninsular part number against the maker's list before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4\" bore Peninsular cylinder compare with the 3-1/4\" bore one?",
+          "a": "The nearest size is the [Peninsular Hydraulic Cylinders, 3-1/4 Inch Bore](/p/peninsular-hydraulic-cylinders-3-1-4-inch-bore), a 3-1/4\" bore against this 4\" bore in the same HP tie-rod range. Rod sizes change with the bore, so this one offers 1-3/4\" and 2\" rods; a larger bore gives more push force at the same pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What port size and mounting style does the Peninsular 4\" bore tie-rod cylinder have?",
+          "a": "The listing for the Peninsular 4\" bore tie-rod cylinder gives only the bore, rod and stroke, and does not state the port thread or the mounting style (flange, foot, clevis or other). Send us the part number and the mounting your machine needs, and we confirm both against Peninsular's data before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Peninsular 4\" bore tie-rod cylinder made, and what is its HS code?",
+          "a": "The Peninsular 4\" bore tie-rod cylinder is listed with United States as the country of origin and HS code 841221, the heading for hydraulic linear-acting engines and motors. We export from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Peninsular 4\" bore tie-rod cylinder from stock in the UAE and get a quotation?",
+          "a": "Yes, Peninsular 4\" bore tie-rod cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

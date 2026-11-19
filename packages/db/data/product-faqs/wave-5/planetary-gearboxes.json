@@ -1,0 +1,271 @@
+{
+  "family": "planetary-gearboxes",
+  "extraFacts": [
+    {
+      "fact": "Dinamic Oil GB in-line heavy-duty planetary gearbox: peak torque 281,000 to 3,620,000 Nm, 1 to 5 stages. GBA right-angle: 281,000 to 2,720,000 Nm, 3 to 6 stages. RE in-line: 1,780 to 198,000 Nm, 1 to 5 stages. RA right-angle: 1,780 to 198,000 Nm, 2 to 4 stages.",
+      "source": "Indus Hydraulics listings for the Dinamic Oil planetary gearbox ranges"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dinamic-oil-gb-heavy-duty-planetary-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil GB Heavy-Duty Planetary Gearboxes used for?",
+          "a": "The Dinamic Oil GB Heavy-Duty Planetary Gearboxes are heavy-duty in-line planetary gearboxes for the largest drives. The range has 15 frame sizes, GB 12010 to 235000, with peak output torque (T2max) of 281,000 Nm to 3,620,000 Nm and ratios of 3.43:1 to 3,673.37:1 in 1, 2, 3, 4 and 5 stages; typical uses are sugar-cane mills, shredders, steel-plant and mining machinery, thickeners and large winch and slewing drives."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as GB 12012?",
+          "a": "The first part is the frame size and the last digit is the number of planetary stages: in the size table GB 12011 is the 1-stage model and GB 235005 the 5-stage model. An L suffix marks the light composition, available for some ratios; the table lists all 75 stage models."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and torque ratings do the Dinamic Oil GB Heavy-Duty Planetary Gearboxes cover?",
+          "a": "The Dinamic Oil GB Heavy-Duty Planetary Gearboxes cover 15 frame sizes, GB 12010 to 235000, with peak output torque (T2max) of 281,000 Nm to 3,620,000 Nm by frame. The size table gives each stage model its ratio range, for example GB 12011 at 4.09 – 6.23 and GB 235005 at 891.47 – 2902.95. The ratio-by-ratio table of output speed, input power and torque at 750, 900, 1,450 and 2,900 rpm input is in Dinamic Oil's catalogue, and we send the page for the model you shortlist."
+        },
+        {
+          "slot": "D",
+          "q": "Is T2max the torque to select the Dinamic Oil GB Heavy-Duty Planetary Gearboxes on?",
+          "a": "No. For the Dinamic Oil GB Heavy-Duty Planetary Gearboxes, T2max (281,000 Nm to 3,620,000 Nm) is the peak torque the gearbox may see occasionally. Select on the continuous output torque the application needs multiplied by its service factor, keep starting and braking peaks below the peak rating, and check thermal power and the radial and axial loads on the output shaft; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) walks through it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated torque and what is it rated to for the Dinamic Oil GB Heavy-Duty Planetary Gearboxes?",
+          "a": "Peak output torque is 281,000 Nm to 3,620,000 Nm by frame, and Dinamic Oil rates the range to ISO 6336 for the gears and ISO 281 for the bearings. Where the transmitted power exceeds the thermal power, as on continuous duty in a hot climate, Dinamic Oil supplies oil/water (URO/W) and oil/air (URO/A) cooling units that dissipate up to 50 kW."
+        },
+        {
+          "slot": "F",
+          "q": "What oil does the Dinamic Oil GB Heavy-Duty Planetary Gearboxes need and how is it supplied?",
+          "a": "The Dinamic Oil GB Heavy-Duty Planetary Gearboxes ship unpainted and without oil, so fill with an EP gear oil of ISO VG 220 to 320 before start-up. The first oil change is after 150 hours, then at the catalogue interval or at least every 2 years; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) covers hot-climate oil."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil GB Heavy-Duty Planetary Gearboxes carry a class approval?",
+          "a": "The Dinamic Oil GB Heavy-Duty Planetary Gearboxes listing gives a project or unit certificate on request (DNV, ABS, LR, BV) rather than a standing type approval. Tell us the class society and project on the enquiry and we ask Dinamic Oil for the certificate before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which motors, brakes and outputs fit the Dinamic Oil GB Heavy-Duty Planetary Gearboxes?",
+          "a": "Inputs are a universal ST input for most hydraulic motors, SAE flanges for orbital and axial piston motors, electric-motor adapters and male input shafts. Brakes are negative multi-disc, spring applied and hydraulically released (F1, F2, F5, F6, F8, F9 and MD); related items are on the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [planetary gearboxes](/c/planetary-gearboxes)."
+        },
+        {
+          "slot": "I",
+          "q": "How are the Dinamic Oil GB Heavy-Duty Planetary Gearboxes installed and run in hot weather?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. The GB mounts horizontally and vertically, which sets the fill, level and drain plugs, and [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) gives the lubricant guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil GB differ from the GBA planetary gearbox?",
+          "a": "The GB is the in-line, heavy-duty range. The sibling [Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes — 281 kNm to 2.72 MNm](/p/dinamic-oil-gba-heavy-duty-right-angle-planetary-gearboxes) is the right-angle GBA, which adds a CC bevel input head so the motor sits at 90° to the output. Pick on the layout the machine allows and the torque and ratio you need; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) compares the ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil GB Heavy-Duty Planetary Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship the Dinamic Oil GB Heavy-Duty Planetary Gearboxes from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil GB Heavy-Duty Planetary Gearboxes in stock in Dubai?",
+          "a": "Yes. We keep Dinamic Oil GB Heavy-Duty Planetary Gearboxes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-gba-heavy-duty-right-angle-planetary-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes used for?",
+          "a": "The Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes are heavy-duty right-angle planetary gearboxes, the GB with a CC bevel input head. The range has 12 frame sizes, GBA 12010 to 130000, with peak output torque (T2max) of 281,000 Nm to 2,720,000 Nm and ratios of 45.55:1 to 21,647.68:1 in 3, 4, 5 and 6 stages; typical uses are the same large drives as the GB where the motor must sit at 90° to the output."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as GBA 12013?",
+          "a": "The first part is the frame size and the last digit is the number of planetary stages: in the size table GBA 12013 is the 3-stage model and GBA 130006 the 6-stage model. An L suffix marks the light composition, available for some ratios; the table lists all 30 stage models."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and torque ratings do the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes cover?",
+          "a": "The Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes cover 12 frame sizes, GBA 12010 to 130000, with peak output torque (T2max) of 281,000 Nm to 2,720,000 Nm by frame. The size table gives each stage model its ratio range, for example GBA 12013 at 45.55 – 136.83 and GBA 130006 at 2566.98 – 10967.19. The ratio-by-ratio table of output speed, input power and torque at 750, 900, 1,450 and 2,900 rpm input is in Dinamic Oil's catalogue, and we send the page for the model you shortlist."
+        },
+        {
+          "slot": "D",
+          "q": "Is T2max the torque to select the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes on?",
+          "a": "No. For the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes, T2max (281,000 Nm to 2,720,000 Nm) is the peak torque the gearbox may see occasionally. Select on the continuous output torque the application needs multiplied by its service factor, keep starting and braking peaks below the peak rating, and check thermal power and the radial and axial loads on the output shaft; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) walks through it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated torque and what is it rated to for the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes?",
+          "a": "Peak output torque is 281,000 Nm to 2,720,000 Nm by frame, and Dinamic Oil rates the range to ISO 6336 for the gears and ISO 281 for the bearings. Where the transmitted power exceeds the thermal power, as on continuous duty in a hot climate, Dinamic Oil supplies oil/water (URO/W) and oil/air (URO/A) cooling units that dissipate up to 50 kW."
+        },
+        {
+          "slot": "F",
+          "q": "What oil does the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes need and how is it supplied?",
+          "a": "The Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes ship unpainted and without oil, so fill with an EP gear oil of ISO VG 220 to 320 before start-up. The first oil change is after 150 hours, then at the catalogue interval or at least every 2 years; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) covers hot-climate oil."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes carry a class approval?",
+          "a": "The Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes listing gives a project or unit certificate on request (DNV, ABS, LR, BV) rather than a standing type approval. Tell us the class society and project on the enquiry and we ask Dinamic Oil for the certificate before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which motors, brakes and outputs fit the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes?",
+          "a": "Inputs are a universal ST input for most hydraulic motors, SAE flanges for orbital and axial piston motors, electric-motor adapters and male input shafts. Brakes are negative multi-disc, spring applied and hydraulically released (F1, F2, F5, F6, F8 and F9); related items are on the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [planetary gearboxes](/c/planetary-gearboxes)."
+        },
+        {
+          "slot": "I",
+          "q": "How are the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes installed and run in hot weather?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. The GBA mounts horizontally and vertically, which sets the fill, level and drain plugs, and [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) gives the lubricant guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil GBA differ from the GB planetary gearbox?",
+          "a": "The GBA is the right-angle, heavy-duty range. The sibling [Dinamic Oil GB Heavy-Duty Planetary Gearboxes — 281 kNm to 3.62 MNm](/p/dinamic-oil-gb-heavy-duty-planetary-gearboxes) is the in-line GB, which has 1 to 5 stages with peak torque to 3,620,000 Nm. Pick on the layout the machine allows and the torque and ratio you need; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) compares the ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes in stock in Dubai?",
+          "a": "Yes. We keep Dinamic Oil GBA Heavy-Duty Right-Angle Planetary Gearboxes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-ra-right-angle-planetary-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil RA Right-Angle Planetary Gearboxes used for?",
+          "a": "The Dinamic Oil RA Right-Angle Planetary Gearboxes are right-angle planetary gearboxes, the RE planetary gearbox with a CC bevel input head. The range has 16 frame sizes, RA 110 to 8000, with peak output torque (T2max) of 1,780 Nm to 198,000 Nm and ratios of 10.03:1 to 1,244.16:1 in 2, 3 and 4 stages; typical uses are machine drives where a straight drive line will not fit and the motor must sit at 90° to the output."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as RA 112?",
+          "a": "The first part is the frame size and the last digit is the number of planetary stages: in the size table RA 112 is the 2-stage model and RA 8004 the 4-stage model. An L suffix marks the light composition, available for some ratios; the table lists all 48 stage models."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and torque ratings do the Dinamic Oil RA Right-Angle Planetary Gearboxes cover?",
+          "a": "The Dinamic Oil RA Right-Angle Planetary Gearboxes cover 16 frame sizes, RA 110 to 8000, with peak output torque (T2max) of 1,780 Nm to 198,000 Nm by frame. The size table gives each stage model its ratio range, for example RA 112 at 11.14 – 23.04 and RA 8004 at 151.00 – 800.00. The ratio-by-ratio table of output speed, input power and torque at 750, 900, 1,450 and 2,900 rpm input is in Dinamic Oil's catalogue, and we send the page for the model you shortlist."
+        },
+        {
+          "slot": "D",
+          "q": "Is T2max the torque to select the Dinamic Oil RA Right-Angle Planetary Gearboxes on?",
+          "a": "No. For the Dinamic Oil RA Right-Angle Planetary Gearboxes, T2max (1,780 Nm to 198,000 Nm) is the peak torque the gearbox may see occasionally. Select on the continuous output torque the application needs multiplied by its service factor, keep starting and braking peaks below the peak rating, and check thermal power and the radial and axial loads on the output shaft; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) walks through it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated torque and what is it rated to for the Dinamic Oil RA Right-Angle Planetary Gearboxes?",
+          "a": "Peak output torque is 1,780 Nm to 198,000 Nm by frame, and Dinamic Oil rates the range to ISO 6336 for the gears and ISO 281 for the bearings. Where the transmitted power exceeds the thermal power, as on continuous duty in a hot climate, Dinamic Oil supplies oil/water (URO/W) and oil/air (URO/A) cooling units that dissipate up to 50 kW."
+        },
+        {
+          "slot": "F",
+          "q": "What oil does the Dinamic Oil RA Right-Angle Planetary Gearboxes need and how is it supplied?",
+          "a": "The Dinamic Oil RA Right-Angle Planetary Gearboxes ship unpainted and without oil, so fill with an EP gear oil of ISO VG 220 to 320 before start-up. The first oil change is after 150 hours, then at the catalogue interval or at least every 2 years; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) covers hot-climate oil."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil RA Right-Angle Planetary Gearboxes carry a class approval?",
+          "a": "The Dinamic Oil RA Right-Angle Planetary Gearboxes listing gives a project or unit certificate on request (DNV, ABS, LR, BV) rather than a standing type approval. Tell us the class society and project on the enquiry and we ask Dinamic Oil for the certificate before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which motors, brakes and outputs fit the Dinamic Oil RA Right-Angle Planetary Gearboxes?",
+          "a": "Inputs are a universal ST input for most hydraulic motors, SAE flanges for orbital and axial piston motors, electric-motor adapters and male input shafts. Brakes are negative multi-disc, spring applied and hydraulically released (F1, F2, F5, F6, F8 and F9); related items are on the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [planetary gearboxes](/c/planetary-gearboxes)."
+        },
+        {
+          "slot": "I",
+          "q": "How are the Dinamic Oil RA Right-Angle Planetary Gearboxes installed and run in hot weather?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. The RA mounts horizontally and vertically, which sets the fill, level and drain plugs, and [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) gives the lubricant guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil RA differ from the RE planetary gearbox?",
+          "a": "The RA is the right-angle range. The sibling [Dinamic Oil RE In-Line Planetary Gearboxes — 1,780 Nm to 198 kNm](/p/dinamic-oil-re-in-line-planetary-gearboxes) is the in-line RE, which keeps the motor coaxial with the output and also offers 1 and 5 stage builds. Pick on the layout the machine allows and the torque and ratio you need; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) compares the ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil RA Right-Angle Planetary Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship the Dinamic Oil RA Right-Angle Planetary Gearboxes from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil RA Right-Angle Planetary Gearboxes in stock in Dubai?",
+          "a": "Yes, we stock Dinamic Oil RA Right-Angle Planetary Gearboxes at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-re-in-line-planetary-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil RE In-Line Planetary Gearboxes used for?",
+          "a": "The Dinamic Oil RE In-Line Planetary Gearboxes are in-line (coaxial) planetary gearboxes. The range has 16 frame sizes, RE 110 to 8000, with peak output torque (T2max) of 1,780 Nm to 198,000 Nm and ratios of 3.48:1 to 3,164.84:1 in 1, 2, 3, 4 and 5 stages; typical uses are slewing and travel drives, winches, mixers, conveyors, augers and pipe tensioners on mobile, marine, drilling, mining and industrial machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model number such as RE 112?",
+          "a": "The first part is the frame size and the last digit is the number of planetary stages: in the size table RE 111 is the 1-stage model and RE 8005 the 5-stage model. An L suffix marks the light composition, available for some ratios; the table lists all 65 stage models."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and torque ratings do the Dinamic Oil RE In-Line Planetary Gearboxes cover?",
+          "a": "The Dinamic Oil RE In-Line Planetary Gearboxes cover 16 frame sizes, RE 110 to 8000, with peak output torque (T2max) of 1,780 Nm to 198,000 Nm by frame. The size table gives each stage model its ratio range, for example RE 111 at 3.48 – 7.20 and RE 8005 at 647.15 – 3164.84. The ratio-by-ratio table of output speed, input power and torque at 750, 900, 1,450 and 2,900 rpm input is in Dinamic Oil's catalogue, and we send the page for the model you shortlist."
+        },
+        {
+          "slot": "D",
+          "q": "Is T2max the torque to select the Dinamic Oil RE In-Line Planetary Gearboxes on?",
+          "a": "No. For the Dinamic Oil RE In-Line Planetary Gearboxes, T2max (1,780 Nm to 198,000 Nm) is the peak torque the gearbox may see occasionally. Select on the continuous output torque the application needs multiplied by its service factor, keep starting and braking peaks below the peak rating, and check thermal power and the radial and axial loads on the output shaft; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) walks through it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated torque and what is it rated to for the Dinamic Oil RE In-Line Planetary Gearboxes?",
+          "a": "Peak output torque is 1,780 Nm to 198,000 Nm by frame, and Dinamic Oil rates the range to ISO 6336 for the gears and ISO 281 for the bearings. Where the transmitted power exceeds the thermal power, as on continuous duty in a hot climate, Dinamic Oil supplies oil/water (URO/W) and oil/air (URO/A) cooling units that dissipate up to 50 kW."
+        },
+        {
+          "slot": "F",
+          "q": "What oil does the Dinamic Oil RE In-Line Planetary Gearboxes need and how is it supplied?",
+          "a": "The Dinamic Oil RE In-Line Planetary Gearboxes ship unpainted and without oil, so fill with an EP gear oil of ISO VG 220 to 320 before start-up. The first oil change is after 150 hours, then at the catalogue interval or at least every 2 years; [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) covers hot-climate oil."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil RE In-Line Planetary Gearboxes carry a class approval?",
+          "a": "DNV type approval TAS00000NE covers the RE 3513 (and RE 3513 HRS) rotating-housing gearbox for shipboard and offshore lifting appliances, valid to March 2030; other models can be approved on request ([our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes))."
+        },
+        {
+          "slot": "H",
+          "q": "Which motors, brakes and outputs fit the Dinamic Oil RE In-Line Planetary Gearboxes?",
+          "a": "Inputs are a universal ST input for most hydraulic motors, SAE flanges for orbital and axial piston motors, electric-motor adapters and male input shafts. Brakes are negative multi-disc, spring applied and hydraulically released (F1, F2, F5, F6, F8, F9 and MD); related items are on the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [planetary gearboxes](/c/planetary-gearboxes)."
+        },
+        {
+          "slot": "I",
+          "q": "How are the Dinamic Oil RE In-Line Planetary Gearboxes installed and run in hot weather?",
+          "a": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked. The RE mounts horizontally and vertically, which sets the fill, level and drain plugs, and [our guide to planetary gearbox oil in hot climates](/blog/planetary-gearbox-oil-in-hot-climates) gives the lubricant guidance."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dinamic Oil RE differ from the RA planetary gearbox?",
+          "a": "The RE is the in-line range. The sibling [Dinamic Oil RA Right-Angle Planetary Gearboxes — 1,780 Nm to 198 kNm](/p/dinamic-oil-ra-right-angle-planetary-gearboxes) is the right-angle RA, with the same planetary stages but a CC bevel input head that puts the motor at 90° to the output. Pick on the layout the machine allows and the torque and ratio you need; [our guide to selecting a planetary gearbox](/blog/how-to-select-a-planetary-gearbox) compares the ranges."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil RE In-Line Planetary Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship the Dinamic Oil RE In-Line Planetary Gearboxes from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil RE In-Line Planetary Gearboxes in stock in Dubai?",
+          "a": "Yes. We keep Dinamic Oil RE In-Line Planetary Gearboxes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

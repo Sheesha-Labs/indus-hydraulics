@@ -1,0 +1,1441 @@
+{
+  "family": "butterfly-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Wet-opening torque is the torque a butterfly valve needs to open under line pressure and flow; actuators and gear operators are sized against it.",
+      "source": "General butterfly valve practice; the Indus listing states actuators are sized against the valve's wet-opening torque table"
+    }
+  ],
+  "products": [
+    {
+      "slug": "demco-10-position-locking-handle-for-butterfly-valves-2-12",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO 10-position locking handle for butterfly valves used for?",
+          "a": "The DEMCO 10-position locking handle is a manual lever for 2″ to 12″ DEMCO butterfly valves that locks the disc at ten positions between closed and open. It allows flow throttling at fixed positions, with a positive latch at every detent."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve sizes does the DEMCO 10-position handle fit?",
+          "a": "It comes in three frame sizes, 2″–4″ (small), 5″–6″ (medium) and 8″–12″ (large), matched to the valve size. It mounts directly on the DEMCO top flange via the flatted double-D upper stem, with no adapter."
+        },
+        {
+          "slot": "H",
+          "q": "Which DEMCO butterfly valves is the 10-position handle compatible with?",
+          "a": "It fits NE-C, NE-I, NE-I Sanitary, NE-D and NEI-T valves, which is any 2″–12″ DEMCO butterfly valve, such as the [NE-C wafer valve in 4″](/p/demco-series-ne-c-wafer-butterfly-valve-4-inch-200-psi). With the optional utility-top stem it also fits competitive valves."
+        },
+        {
+          "slot": "F",
+          "q": "What trim levels and materials does the 10-position handle come in?",
+          "a": "Three trim levels: standard (zinc-plated steel parts on a ductile-iron handle), corrosion-resistant (stainless throughout) and sanitary (bronze hub with stainless fasteners for caustic wash-down). State the trim when you order; stainless trim suits marine and wash-down service."
+        },
+        {
+          "slot": "E",
+          "q": "How much torque can the 10-position handle deliver?",
+          "a": "The listing does not give a torque figure; it says the lever is hand-operable across the 2″–6″ range and recommends a gear operator for 8″–12″. For 8″ and larger valves see the [DEMCO worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36)."
+        },
+        {
+          "slot": "K",
+          "q": "10-position handle or 2-position handle: which one should I choose?",
+          "a": "Choose the 10-position handle where you need to throttle flow at fixed positions, and the [2-position handle](/p/demco-2-position-locking-handle-for-butterfly-valves-2-12) for on/off duty only. With 2 detents the operator cannot leave the valve part-open by mistake."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 10-position handle be padlocked for lockout?",
+          "a": "Yes. The handle has a 0.25″ padlock hole for security lockout and the latch holds each detent so the handle cannot drift under flow forces. It suits lockout/tagout safety isolation."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical uses of the DEMCO 10-position locking handle?",
+          "a": "Typical uses are general industrial isolation and throttling, process plant manual flow control, marine and offshore valve operation with the stainless trim, and food and beverage utility lines with the sanitary trim."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 10-position handle be fitted to a valve already in service?",
+          "a": "Yes. DEMCO valve actuation is field-changeable through the top-flange standard, so the handle mounts directly to the flatted double-D stem of a compatible valve. Specify the valve series and size and the trim level when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "What is the environmental rating of the DEMCO 10-position handle?",
+          "a": "It is outdoor-rated, and the stainless-steel trim is for marine and wash-down service. The listing gives no IP or NEMA rating for the handle, so state any chemical exposure or temperature on the enquiry."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO 10-position handle made and how long does it take?",
+          "a": "The DEMCO 10-position handle is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO 10-position locking handle?",
+          "a": "Typically dispatched within 14 working days. Send the valve series and size and the trim level through [our contact page](/contact) and we return an estimate against the matching DEMCO base part number."
+        }
+      ]
+    },
+    {
+      "slug": "demco-2-position-locking-handle-for-butterfly-valves-2-12",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO 2-position locking handle for butterfly valves used for?",
+          "a": "The DEMCO 2-position locking handle is a manual lever for 2″ to 12″ DEMCO butterfly valves that locks only at full-closed and full-open. It is chosen for on/off isolation where an intermediate position would risk operator-induced throttling."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve sizes does the DEMCO 2-position handle fit?",
+          "a": "It comes in the same three frame sizes as the other lever handles, 2″–4″, 5″–6″ and 8″–12″, matched to the valve size. It mounts directly on the DEMCO top flange via the flatted double-D stem."
+        },
+        {
+          "slot": "H",
+          "q": "Which DEMCO butterfly valves is the 2-position handle compatible with?",
+          "a": "It fits NE-C, NE-I, NE-I Sanitary, NE-D and NEI-T valves, which is any 2″–12″ DEMCO butterfly valve, for example the [NE-I wafer valve in 4″](/p/demco-series-ne-i-wafer-butterfly-valve-4-inch-200-psi)."
+        },
+        {
+          "slot": "F",
+          "q": "What trim levels does the DEMCO 2-position handle come in?",
+          "a": "Three: standard (zinc-plated steel), corrosion-resistant (stainless throughout) and sanitary (bronze hub with stainless fasteners). It has the same construction as the 10-position handle but with a 2-position throttle plate instead of a 10-detent plate."
+        },
+        {
+          "slot": "K",
+          "q": "2-position handle or 10-position handle: what is the difference?",
+          "a": "The 2-position handle locks only at closed (0°) and open (90°), so it cannot throttle, while the [10-position handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12) has ten intermediate detents. Pick the 2-position handle where throttling must be physically prevented."
+        },
+        {
+          "slot": "E",
+          "q": "How much torque can the 2-position handle deliver?",
+          "a": "The listing gives no torque figure; the lever is hand-operable across the 2″–6″ range, and a gear operator is recommended for 8″–12″. See the [DEMCO worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) for larger valves."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 2-position handle be padlocked?",
+          "a": "Yes. It has a 0.25″ padlock hole for lockout, and the latch engages positively at each end position. That suits safety-shutdown manual block valves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DEMCO 2-position handle used?",
+          "a": "Typical uses are critical on/off isolation where throttling must be prevented, pump suction and discharge isolation, tank-farm bulk-loading lines, safety-shutdown manual block valves and loadout and offloading block service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the DEMCO 2-position handle outdoor-rated?",
+          "a": "Yes, it is outdoor-rated, with a stainless trim for marine and wash-down service. The listing gives no IP or NEMA rating, so state any chemical exposure on the enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "Can the 2-position handle be fitted to a DEMCO valve already installed?",
+          "a": "Yes. DEMCO valve actuation is field-changeable through the top-flange standard. Give us the valve series and size and the trim level you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO 2-position handle made and how long does it take?",
+          "a": "The DEMCO 2-position handle is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO 2-position locking handle?",
+          "a": "Typically dispatched within 14 working days. Send the valve series and size and the trim level through [our contact page](/contact) and we return an estimate against the matching DEMCO base part number."
+        }
+      ]
+    },
+    {
+      "slug": "demco-memory-stop-throttling-handle-for-butterfly-valves-2-12",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO memory-stop throttling handle for butterfly valves used for?",
+          "a": "The DEMCO memory-stop throttling handle gives infinitely adjustable manual throttling between closed and open, with a lock-nut stop that holds a preset open position. It is used for manual flow balancing in branch lines and hose stations."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve sizes does the DEMCO memory-stop handle fit?",
+          "a": "It comes in three frame sizes, 2″–4″, 5″–6″ and 8″–12″, for any 2″–12″ DEMCO butterfly valve. It mounts directly on the DEMCO top flange."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set the memory stop on the DEMCO throttling handle?",
+          "a": "Loosen the wing nut, turn the handle to the throttle position you want and tighten the wing nut again. The valve can then be closed and reopened to the memory stop without resetting, and the adjustment is done in service without removing the handle."
+        },
+        {
+          "slot": "K",
+          "q": "Memory-stop handle or 10-position handle for throttling?",
+          "a": "The memory-stop handle is infinitely adjustable between 0° and 90° and returns to a preset open position, while the [10-position handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12) throttles only at ten fixed detents. Use the memory stop where the same open position must be repeated."
+        },
+        {
+          "slot": "F",
+          "q": "What trim levels does the memory-stop handle come in?",
+          "a": "Three trim levels: standard, corrosion-resistant (stainless) and sanitary (bronze hub with stainless fasteners). State the trim and the frame size matching your valve when you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which DEMCO butterfly valves fit the memory-stop handle?",
+          "a": "It fits NE-C, NE-I, NE-I Sanitary, NE-D and NEI-T valves in 2″–12″, for example the [NE-D wafer valve in 4″](/p/demco-series-ne-d-wafer-butterfly-valve-4-inch-200-psi), through the DEMCO top flange and its double-D stem."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DEMCO memory-stop handle used?",
+          "a": "Typical uses are manual flow balancing on branch lines, hose-station and wash-down outlets needing repeatable flow, process trim adjustment, building HVAC balancing and cooling-water flow trim."
+        },
+        {
+          "slot": "E",
+          "q": "What is the torque rating of the memory-stop handle?",
+          "a": "The listing gives no torque figure; it is hand-operable across 2″–6″ and a gear operator is recommended for 8″–12″. See the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36)."
+        },
+        {
+          "slot": "G",
+          "q": "Is the memory-stop handle outdoor-rated?",
+          "a": "Yes, it is outdoor-rated, with a stainless trim for marine and wash-down service. The listing gives no IP or NEMA rating."
+        },
+        {
+          "slot": "H",
+          "q": "Does the memory-stop handle need special tools to recalibrate?",
+          "a": "No. The throttle plate uses a carriage bolt and wing nut, so the memory stop is recalibrated without tools. It is one of the tool-free adjustments the design is built for."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO memory-stop handle made and how long does it take?",
+          "a": "The DEMCO memory-stop handle is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO memory-stop throttling handle?",
+          "a": "Typically dispatched within 14 working days. Send the valve series and size and the trim level through [our contact page](/contact) and we return an estimate."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO Series DR double-acting pneumatic actuator used for?",
+          "a": "The DEMCO Series DR double-acting actuator turns a 2″ to 24″ butterfly valve through 90° using air or hydraulic pressure on either side of two opposed pistons. It is the most economical Series DR variant and leaves the valve in its last position if supply is lost."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and torques does the Series DR double-acting actuator come in?",
+          "a": "It comes in ten frame sizes from EDA40 to PDA4000. Listed torques run from 620 in-lb for the EDA40 at 120 psi, 3,071 in-lb for the EDA200 and 22,379 in-lb for the EDA1600, up to 60,623 in-lb for the PDA4000."
+        },
+        {
+          "slot": "E",
+          "q": "What supply pressure does the DEMCO DR double-acting actuator need?",
+          "a": "It runs on 40 to 120 psi air or hydraulic supply, in steps of 40, 60, 80, 100 or 120 psi. Specify the supply pressure so the actuator is sized against the valve's wet-opening torque table."
+        },
+        {
+          "slot": "H",
+          "q": "Which DEMCO valves does the Series DR double-acting actuator fit?",
+          "a": "It fits NE-C, NE-I, NE-D and NF-C valves from 2″ to 24″, mounted directly through a splined aluminium stem adapter on 2″–12″ valves and a keyed stem on 14″–24″ NF-C valves. See the [NE-C 4″ wafer valve](/p/demco-series-ne-c-wafer-butterfly-valve-4-inch-200-psi) for an example."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DR double-acting actuator made of?",
+          "a": "The body, pistons and end caps are aluminium, and the central drive shaft is hard-anodised Aluminium Alloy 70-75. Seals are Buna-N, fasteners are plated steel, and carbon-filled Teflon guide bands carry the pistons."
+        },
+        {
+          "slot": "K",
+          "q": "DR double-acting or spring-return actuator: which should I choose?",
+          "a": "The double-acting actuator needs pressure to move the valve in both directions and fails in the last position, while the [spring-return actuator](/p/demco-series-dr-spring-return-pneumatic-actuator-for-butterfly-valves-2-24) drives the valve to a safe position on loss of air. Use spring-return for shutdown duty."
+        },
+        {
+          "slot": "I",
+          "q": "How is a DR double-acting actuator specified for a valve?",
+          "a": "Give the valve series and size, the supply medium and pressure, and the orientation of the flow axis relative to the actuator body. We size it against the valve's wet-opening torque table; the part number suffix encodes valve size, orientation and accessories."
+        },
+        {
+          "slot": "G",
+          "q": "What enclosure rating does the Series DR actuator have?",
+          "a": "It is totally enclosed with gaskets, giving a weatherproof body, and NEMA 4 or NEMA 7 enclosures are available for accessories. The listing gives no other rating for the actuator."
+        },
+        {
+          "slot": "H",
+          "q": "Can the DR double-acting actuator be fitted to an existing manual valve?",
+          "a": "Yes. The top-flange standard makes DEMCO valve actuation field-changeable, so the actuator mounts directly or through an adapter plate or bracket kit on the largest valves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DEMCO DR double-acting actuator used?",
+          "a": "It is used on automated installations of 2″ to 24″ DEMCO butterfly valves for remote on/off or modulating service where a fail-last-position action is acceptable."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO DR actuator made and how long does it take?",
+          "a": "The DEMCO DR actuator is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO DR double-acting pneumatic actuator?",
+          "a": "Typically dispatched within 14 working days. Send the valve series and size, the supply pressure and the orientation through [our contact page](/contact) and we return an estimate."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-dr-spring-return-pneumatic-actuator-for-butterfly-valves-2-24",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO Series DR spring-return pneumatic actuator used for?",
+          "a": "The DEMCO Series DR spring-return actuator turns a 2″ to 24″ butterfly valve with air pressure against compression springs, so on loss of air the springs drive the valve to a fail-open or fail-closed position. It is the standard choice for emergency shutdown, blow-down and fire-water valves."
+        },
+        {
+          "slot": "D",
+          "q": "Which frame sizes and spring sets does the Series DR spring-return actuator come in?",
+          "a": "It comes from ESA40 to PSA4004, with spring sets 2–6 on ESA40–ESA1600 and sets 8–14 on PSA2500–PSA4004. We recommend the spring set against the valve's wet-opening torque."
+        },
+        {
+          "slot": "E",
+          "q": "What supply pressure does the DR spring-return actuator need?",
+          "a": "It runs on 40 to 120 psi air, in steps of 40, 60, 80, 100 or 120 psi. The listed torques include 322 in-lb for the ESA40 spring-set 5 at 120 psi and 47,613 in-lb for the PSA4000."
+        },
+        {
+          "slot": "H",
+          "q": "Which DEMCO valves does the Series DR spring-return actuator fit?",
+          "a": "It fits NE-C, NE-I, NE-D and NF-C valves from 2″ to 24″, mounted directly on a splined stem for 2″–12″ or a keyed stem for 14″–24″, for example the [NE-I 6″ wafer valve](/p/demco-series-ne-i-wafer-butterfly-valve-6-inch-200-psi)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DR spring-return actuator made of?",
+          "a": "The body, pistons and end caps are aluminium with a hard-anodised drive shaft, compression springs sized to the application, plated-steel fasteners and Buna-N seals."
+        },
+        {
+          "slot": "K",
+          "q": "DR spring-return or double-acting actuator: which should I choose?",
+          "a": "Choose spring-return where loss of air must drive the valve to a defined position, and the [double-acting actuator](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24) where the valve may stay in its last position. Spring-return costs more but is the fail-safe choice."
+        },
+        {
+          "slot": "I",
+          "q": "What does fail-open or fail-closed mean on a spring-return actuator?",
+          "a": "It is the position the spring drives the valve to when supply air is lost. The fail position depends on the spring orientation, so state it when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Can the DR spring-return actuator have a manual override?",
+          "a": "Yes. A declutchable manual override is available across the range, from size 40 to 4004, so a handwheel can hold the valve in its last position until the actuator returns to automatic. Explosion-proof solenoids and position switches to NEMA 7 can be specified."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DEMCO spring-return actuator used?",
+          "a": "It is used on emergency shutdown valves, blow-down lines, fire-water valves and any application where loss of control air must drive the valve to a defined position."
+        },
+        {
+          "slot": "I",
+          "q": "How is a DR spring-return actuator specified?",
+          "a": "Give the valve series and size, the supply pressure, the fail position and the spring set. We size the actuator against the valve's wet-opening torque table before we quote."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO DR spring-return actuator made and how long does it take?",
+          "a": "The DEMCO DR spring-return actuator is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO DR spring-return pneumatic actuator?",
+          "a": "Typically dispatched within 14 working days. Send the valve series and size, the supply pressure and the fail position through [our contact page](/contact) and we return an estimate."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-general-purpose-butterfly-valve-2-12",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the DEMCO Series NE-C general-purpose butterfly valve used for?",
+          "a": "The DEMCO Series NE-C is a long-neck, resilient-seated butterfly valve for 2″ to 12″ lines, in wafer and lug bodies. The long neck clears two inches of insulation on ASME Class 150 flanges, making it the default choice for insulated and steam-jacketed process lines."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and body styles does the DEMCO NE-C come in?",
+          "a": "It comes in 2″ through 12″ (50 – 300 mm), in wafer and lug bodies, with ASME Class 125/150 flange connections. The size-specific pages, such as the [4″ NE-C wafer valve](/p/demco-series-ne-c-wafer-butterfly-valve-4-inch-200-psi), list the factory trims in stock."
+        },
+        {
+          "slot": "E",
+          "q": "What shut-off ratings does the DEMCO NE-C have?",
+          "a": "Three drop-tight ratings: 200 psi standard, 285 psi high-pressure and 50 psi low-torque, plus a throttling option. The body is rated ASME Class 150 at 285 psi non-shock, and the valve seals against vacuum down to 10 microns."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the DEMCO NE-C cover?",
+          "a": "The range is −30°F to +300°F (−34°C to +149°C), depending on the seat elastomer. Choose Buna-N, EPDM, Viton or another seat to suit the fluid and temperature."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the DEMCO NE-C come in?",
+          "a": "Body materials include cast iron (wafer), ductile iron (lug), aluminium bronze, carbon steel (WCB), aluminium, nickel-plated ductile iron, 316 stainless steel (CF8M) and PVF-coated ductile iron. Stems are 416 stainless, 316 stainless or Monel, and seats include Buna-N, Viton and EPDM."
+        },
+        {
+          "slot": "D",
+          "q": "What is the flow coefficient of the DEMCO NE-C?",
+          "a": "The Cv at 90° open runs from 145 for the 2″ to 7,500 for the 12″. Use the Cv for the size you choose when you work out pressure drop."
+        },
+        {
+          "slot": "K",
+          "q": "DEMCO NE-C or NE-I butterfly valve: what is the difference?",
+          "a": "The NE-C has a long neck that clears two inches of insulation, while the [NE-I short-neck valve](/p/demco-series-ne-i-short-neck-butterfly-valve-2-12) is the standard-installation version with the widest range of body materials. Use the NE-C on lagged piping."
+        },
+        {
+          "slot": "I",
+          "q": "Can the DEMCO NE-C be used for end-of-line service?",
+          "a": "Yes, in the lug body: it can isolate the end of a line with the downstream piping removed, using weld-neck or socket flanges only. The wafer body cannot."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the DEMCO NE-C?",
+          "a": "Lever handles (10-position, 2-position, memory-stop, square nut), weatherproof worm-gear operators and Series DR double-acting and spring-return pneumatic actuators. See the [10-position handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12) and the [DR actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24)."
+        },
+        {
+          "slot": "G",
+          "q": "Is the DEMCO NE-C fire-safe or NACE rated?",
+          "a": "No. DEMCO NE-series valves are resilient-seated process butterfly valves without API 607 fire-safe or NACE MR0175 certification. Choose a metal-seated valve where those are required."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the DEMCO NE-C made and how long does it take?",
+          "a": "The DEMCO NE-C is listed with the USA as its country of origin and is typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the DEMCO NE-C butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the size, body style, trim and seat through [our contact page](/contact) and we confirm the DEMCO part number and the price."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-12-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 12″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 12″ (300 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022127-5114311 on the 12″ NE-C lug valve?",
+          "a": "In J022127-5114311, J022127 is the DEMCO base number for a 12″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 12″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "3 factory configurations are listed, from J022127-5114311 to J022127-5122341. Bodies are ductile iron, discs aluminium bronze and 316 stainless steel and seats Buna-N and Viton (FKM)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 12″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 12″ NE-C lug valve the body is ductile iron; the disc is aluminium bronze and 316 stainless steel; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N and Viton (FKM). The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 12″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 12″ NE-C lug valve, for example J022127-5114311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 12″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 12″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); Viton (FKM) seat +20°F to +300°F (−7°C to +149°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 12″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 12″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 12″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 12″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 12″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 12″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. DEMCO recommends a worm-gear operator at 8 inch and larger. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "12″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-12-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 12″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 12″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 12″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 12″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022127-5114311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 12″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-16-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 16″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 16″ (400 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J023821-511531A on the 16″ NE-C lug valve?",
+          "a": "In J023821-511531A, J023821 is the base number Cameron assigned to this 16″ unit. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (5 = nickel-plated ductile iron) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 16″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "One configuration is listed, J023821-511531A: ductile iron body, nickel-plated ductile iron disc, 416 stainless steel stem and Buna-N seat. Ask us for the other trims in NE-C 16″ if you need them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 16″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 16″ NE-C lug valve the body is ductile iron; the disc is nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 16″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 16″ NE-C lug valve, for example J023821-511531A, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg). The 16 inch rating of 200 psi is taken from the unit's label; confirm it against the nameplate before you specify."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 16″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 16″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 16″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 16″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 16″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes, but DEMCO limits end-of-line service to 150 psi at 14 inch and larger, so the 16 inch lug valve is not good for 200 psi at the end of a line. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 16″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 16″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. DEMCO recommends a worm-gear operator at 8 inch and larger. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "DEMCO NE-C butterfly valve in 16″: when do I need a larger series?",
+          "a": "For bores above 12 inch DEMCO uses the NF-C large-bore series; see the [NF-C 14 to 36 inch valve](/p/demco-series-nf-c-large-bore-butterfly-valve-14-36). Within NE-C the 16″ size is rated 200 psi drop-tight."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 16″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 16″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 16″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J023821-511531A, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 16″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-2-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 2″ (50 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022119-5113311 on the 2″ NE-C lug valve?",
+          "a": "In J022119-5113311, J022119 is the DEMCO base number for a 2″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (3 = Monel) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 2″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "2 factory configurations are listed, from J022119-5113311 to J022119-5114341. Bodies are ductile iron, discs monel and aluminium bronze and seats Buna-N and Viton (FKM)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 2″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 2″ NE-C lug valve the body is ductile iron; the disc is monel and aluminium bronze; the stem is 416 stainless steel; and the seat is Buna-N and Viton (FKM). The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 2″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 2″ NE-C lug valve, for example J022119-5113311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 2″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 2″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); Viton (FKM) seat +20°F to +300°F (−7°C to +149°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 2″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 2″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 2″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 2″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 2″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 2″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "2″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-2-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 2″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 2″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 2″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022119-5113311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 2″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-3-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 3″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 3″ (80 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022121-5112311 on the 3″ NE-C lug valve?",
+          "a": "In J022121-5112311, J022121 is the DEMCO base number for a 3″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (2 = 316 stainless steel) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 3″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "4 factory configurations are listed, from J022121-5112311 to J022121-5122311. Bodies are ductile iron, discs 316 stainless steel, aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 3″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 3″ NE-C lug valve the body is ductile iron; the disc is 316 stainless steel, aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 3″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 3″ NE-C lug valve, for example J022121-5112311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 3″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 3″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 3″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 3″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 3″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 3″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 3″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 3″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "3″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-3-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 3″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 3″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 3″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022121-5112311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 3″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-4-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 4″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 4″ (100 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022122-5115311 on the 4″ NE-C lug valve?",
+          "a": "In J022122-5115311, J022122 is the DEMCO base number for a 4″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (5 = nickel-plated ductile iron) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 4″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "3 factory configurations are listed, from J022122-5115311 to J022122-5125311. Bodies are ductile iron, discs nickel-plated ductile iron and 316 stainless steel and seats Buna-N and EPDM."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 4″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 4″ NE-C lug valve the body is ductile iron; the disc is nickel-plated ductile iron and 316 stainless steel; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N and EPDM. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 4″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 4″ NE-C lug valve, for example J022122-5115311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 4″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 4″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); EPDM seat +20°F to +275°F (−7°C to +135°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 4″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 4″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 4″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 4″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 4″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 4″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "4″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-4-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 4″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 4″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 4″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 4″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022122-5115311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 4″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-5-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 5″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 5″ (125 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022123-5114311 on the 5″ NE-C lug valve?",
+          "a": "In J022123-5114311, J022123 is the DEMCO base number for a 5″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 5″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "2 factory configurations are listed, from J022123-5114311 to J022123-5122311. Bodies are ductile iron, discs aluminium bronze and 316 stainless steel and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 5″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 5″ NE-C lug valve the body is ductile iron; the disc is aluminium bronze and 316 stainless steel; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 5″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 5″ NE-C lug valve, for example J022123-5114311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 5″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 5″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 5″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 5″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 5″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 5″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 5″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 5″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "5″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-5-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 5″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 5″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 5″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 5″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022123-5114311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 5″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-6-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 6″ (150 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022124-5114311 on the 6″ NE-C lug valve?",
+          "a": "In J022124-5114311, J022124 is the DEMCO base number for a 6″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 6″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "3 factory configurations are listed, from J022124-5114311 to J022124-5122351. Bodies are ductile iron, discs aluminium bronze, nickel-plated ductile iron and 316 stainless steel and seats Buna-N and EPDM."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 6″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 6″ NE-C lug valve the body is ductile iron; the disc is aluminium bronze, nickel-plated ductile iron and 316 stainless steel; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N and EPDM. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 6″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 6″ NE-C lug valve, for example J022124-5114311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 6″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 6″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); EPDM seat +20°F to +275°F (−7°C to +135°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 6″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 6″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 6″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 6″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 6″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 6″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "6″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-6-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 6″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 6″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 6″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 6″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022124-5114311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 6″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-lug-butterfly-valve-8-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 8″ DEMCO NE-C lug butterfly valve rated 200 psi used for?",
+          "a": "The 8″ (200 mm) DEMCO NE-C lug butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022125-5112311 on the 8″ NE-C lug valve?",
+          "a": "In J022125-5112311, J022125 is the DEMCO base number for a 8″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (5 = lug), body material (1 = ductile iron), stem (1 = 416 stainless steel), disc (2 = 316 stainless steel) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 8″ DEMCO NE-C lug butterfly valve can Indus supply?",
+          "a": "5 factory configurations are listed, from J022125-5112311 to J022125-5115311. Bodies are ductile iron, discs 316 stainless steel, aluminium bronze and nickel-plated ductile iron and seats Buna-N and Viton (FKM)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 8″ DEMCO NE-C lug butterfly valve?",
+          "a": "In the 8″ NE-C lug valve the body is ductile iron; the disc is 316 stainless steel, aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N and Viton (FKM). The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 8″ DEMCO NE-C lug butterfly valve hold?",
+          "a": "The 8″ NE-C lug valve, for example J022125-5112311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 8″ DEMCO NE-C lug butterfly valve cover?",
+          "a": "For this 8″ NE-C lug valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); Viton (FKM) seat +20°F to +300°F (−7°C to +149°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 8″ DEMCO NE-C lug butterfly valve?",
+          "a": "The 8″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 8″ DEMCO NE-C lug butterfly valve be used as an end-of-line valve?",
+          "a": "Yes. The lug body has threaded bolt holes, so the 8″ NE-C valve can stay in service as an end-of-line isolator in liquid service up to 200 psi, with a blind flange attached and the downstream pipe removed. Use weld-neck or socket flanges upstream; slip-on and threaded flanges are not supported."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 8″ DEMCO NE-C lug butterfly valve?",
+          "a": "The DEMCO top flange on the 8″ NE-C lug valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. DEMCO recommends a worm-gear operator at 8 inch and larger. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "8″ NE-C lug or wafer butterfly valve: what is the difference?",
+          "a": "The lug body has threaded bolt holes for end-of-line service, while the [wafer body](/p/demco-series-ne-c-wafer-butterfly-valve-8-inch-200-psi) is clamped on through-bolts and cannot hold pressure with a flange removed. Both are rated 200 psi drop-tight in the NE-C 8″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 8″ DEMCO NE-C lug butterfly valve made and what lead time applies?",
+          "a": "The 8″ NE-C lug valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 8″ DEMCO NE-C lug butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022125-5112311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 8″ NE-C lug valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-12-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 12″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 12″ (300 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022127-1214311 on the 12″ NE-C wafer valve?",
+          "a": "In J022127-1214311, J022127 is the DEMCO base number for a 12″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 12″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "3 factory configurations are listed, from J022127-1214311 to J022127-1215316. Bodies are grey cast iron, discs aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 12″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 12″ NE-C wafer valve the body is grey cast iron; the disc is aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 12″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 12″ NE-C wafer valve, for example J022127-1214311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 12″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 12″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 12″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 12″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 12″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 12″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 12″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 12″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. DEMCO recommends a worm-gear operator at 8 inch and larger. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "12″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-12-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 12″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 12″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 12″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 12″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022127-1214311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 12″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-2-1-2-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2½″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 2½″ (65 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022120-1222316 on the 2½″ NE-C wafer valve?",
+          "a": "In J022120-1222316, J022120 is the DEMCO base number for a 2½″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (2 = 316 stainless steel), disc (2 = 316 stainless steel) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 2½″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "One configuration is listed, J022120-1222316: grey cast iron body, 316 stainless steel disc, 316 stainless steel stem and Buna-N seat. Ask us for the other trims in NE-C 2½″ if you need them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 2½″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 2½″ NE-C wafer valve the body is grey cast iron; the disc is 316 stainless steel; the stem is 316 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 2½″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 2½″ NE-C wafer valve, for example J022120-1222316, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 2½″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 2½″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 2½″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 2½″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 2½″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 2½″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 2½″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 2½″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "2½″ DEMCO NE-C or NE-I wafer butterfly valve: which one?",
+          "a": "The NE-C is the long-neck valve that clears two inches of insulation, while the [NE-I wafer valve](/p/demco-series-ne-i-wafer-butterfly-valve-2-1-2-inch-200-psi) is the short-neck standard-installation valve. Both are rated 200 psi drop-tight in an ASME Class 150 body at 2½″."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2½″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 2½″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 2½″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022120-1222316, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 2½″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-2-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 2″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 2″ (50 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022119-1125311 on the 2″ NE-C wafer valve?",
+          "a": "In J022119-1125311, J022119 is the DEMCO base number for a 2″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (1 = ductile iron), stem (2 = 316 stainless steel), disc (5 = nickel-plated ductile iron) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 2″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "6 factory configurations are listed, from J022119-1125311 to J022119-1225311. Bodies are ductile iron and grey cast iron, discs nickel-plated ductile iron, aluminium bronze and 316 stainless steel and seats Buna-N and Viton (FKM)."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 2″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 2″ NE-C wafer valve the body is ductile iron and grey cast iron; the disc is nickel-plated ductile iron, aluminium bronze and 316 stainless steel; the stem is 316 stainless steel and 416 stainless steel; and the seat is Buna-N and Viton (FKM). The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 2″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 2″ NE-C wafer valve, for example J022119-1125311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 2″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 2″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C); Viton (FKM) seat +20°F to +300°F (−7°C to +149°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 2″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 2″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 2″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 2″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 2″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 2″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "2″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-2-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 2″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 2″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 2″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022119-1125311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 2″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-3-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 3″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 3″ (80 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022121-1214311 on the 3″ NE-C wafer valve?",
+          "a": "In J022121-1214311, J022121 is the DEMCO base number for a 3″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 3″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "2 factory configurations are listed, from J022121-1214311 to J022121-1215311. Bodies are grey cast iron, discs aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 3″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 3″ NE-C wafer valve the body is grey cast iron; the disc is aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 3″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 3″ NE-C wafer valve, for example J022121-1214311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 3″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 3″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 3″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 3″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 3″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 3″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 3″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 3″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "3″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-3-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 3″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 3″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 3″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022121-1214311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 3″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-4-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 4″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 4″ (100 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022122-1212311 on the 4″ NE-C wafer valve?",
+          "a": "In J022122-1212311, J022122 is the DEMCO base number for a 4″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (2 = 316 stainless steel) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 4″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "4 factory configurations are listed, from J022122-1212311 to J022122-1222311. Bodies are grey cast iron, discs 316 stainless steel, aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 4″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 4″ NE-C wafer valve the body is grey cast iron; the disc is 316 stainless steel, aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel and 316 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 4″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 4″ NE-C wafer valve, for example J022122-1212311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 4″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 4″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 4″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 4″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 4″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 4″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 4″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 4″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "4″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-4-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 4″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 4″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 4″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 4″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022122-1212311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 4″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-5-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 5″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 5″ (125 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022123-1214311 on the 5″ NE-C wafer valve?",
+          "a": "In J022123-1214311, J022123 is the DEMCO base number for a 5″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 5″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "3 factory configurations are listed, from J022123-1214311 to J022123-1215361. Bodies are grey cast iron, discs aluminium bronze and nickel-plated ductile iron and seats Buna-N and Natural rubber."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 5″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 5″ NE-C wafer valve the body is grey cast iron; the disc is aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N and Natural rubber. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 5″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 5″ NE-C wafer valve, for example J022123-1214311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 5″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 5″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 5″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 5″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 5″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 5″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 5″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 5″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "5″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-5-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 5″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 5″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 5″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 5″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022123-1214311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 5″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-6-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 6″ (150 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022124-1214311 on the 6″ NE-C wafer valve?",
+          "a": "In J022124-1214311, J022124 is the DEMCO base number for a 6″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 6″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "2 factory configurations are listed, from J022124-1214311 to J022124-1215311. Bodies are grey cast iron, discs aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 6″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 6″ NE-C wafer valve the body is grey cast iron; the disc is aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 6″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 6″ NE-C wafer valve, for example J022124-1214311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 6″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 6″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 6″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 6″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 6″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 6″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 6″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 6″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "6″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-6-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 6″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 6″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 6″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 6″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022124-1214311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 6″ NE-C wafer valve."
+        }
+      ]
+    },
+    {
+      "slug": "demco-series-ne-c-wafer-butterfly-valve-8-inch-200-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 8″ DEMCO NE-C wafer butterfly valve rated 200 psi used for?",
+          "a": "The 8″ (200 mm) DEMCO NE-C wafer butterfly valve is a resilient-seated long-neck, general-purpose valve whose neck clears two inches of insulation on ASME Class 150 pipe flanges. It gives 200 psi drop-tight, bi-directional shut-off in an ASME Class 150 body, for general process lines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read DEMCO part number J022125-1214311 on the 8″ NE-C wafer valve?",
+          "a": "In J022125-1214311, J022125 is the DEMCO base number for a 8″ Series NE-C valve at 200 psi. The suffix reads left to right: body configuration (1 = wafer), body material (2 = grey cast iron), stem (1 = 416 stainless steel), disc (4 = aluminium bronze) and seat (31 = Buna-N). The last character is the operator code. See [DEMCO butterfly valve part numbers decoded](/blog/demco-butterfly-valve-part-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "Which configurations of the 8″ DEMCO NE-C wafer butterfly valve can Indus supply?",
+          "a": "2 factory configurations are listed, from J022125-1214311 to J022125-1215311. Bodies are grey cast iron, discs aluminium bronze and nickel-plated ductile iron and seats Buna-N."
+        },
+        {
+          "slot": "F",
+          "q": "What are the body, disc and seat materials of the 8″ DEMCO NE-C wafer butterfly valve?",
+          "a": "In the 8″ NE-C wafer valve the body is grey cast iron; the disc is aluminium bronze and nickel-plated ductile iron; the stem is 416 stainless steel; and the seat is Buna-N. The seat is a hard-backed cartridge, bonded to a rigid ring so it can be replaced in the field without special tools."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the 8″ DEMCO NE-C wafer butterfly valve hold?",
+          "a": "The 8″ NE-C wafer valve, for example J022125-1214311, is rated 200 psi drop-tight, identical from either flow direction, in an ASME Class 150 body with a 285 psi non-shock body rating. It seals against vacuum down to 10 microns (29.9 in Hg)."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the 8″ DEMCO NE-C wafer butterfly valve cover?",
+          "a": "For this 8″ NE-C wafer valve the range depends on the seat: Buna-N seat 0°F to +180°F (−18°C to +82°C). Match the elastomer to the fluid and temperature; Buna-N is the general oil and hydrocarbon seat, and Viton is the high-temperature chemical seat."
+        },
+        {
+          "slot": "G",
+          "q": "Which flange standard and marking apply to the 8″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The 8″ NE-C fits between ASME Class 125/150 flanges, raised- or flat-face, and every valve carries MSS SP-25 marking. DEMCO NE-series valves carry no API 607 fire-safe or NACE MR0175 certification, so ask for a metal-seated valve where those are required."
+        },
+        {
+          "slot": "I",
+          "q": "Can the 8″ DEMCO NE-C wafer butterfly valve be used at the end of a line?",
+          "a": "No. The 8″ NE-C wafer valve is held in place by through-bolts between two flanges, so it cannot hold pressure with one flange removed. Choose the lug body for end-of-line duty."
+        },
+        {
+          "slot": "H",
+          "q": "Which operators fit the 8″ DEMCO NE-C wafer butterfly valve?",
+          "a": "The DEMCO top flange on the 8″ NE-C wafer valve takes the [10-position locking handle](/p/demco-10-position-locking-handle-for-butterfly-valves-2-12), the [worm-gear operator](/p/demco-worm-gear-operator-for-butterfly-valves-2-36) and the [Series DR pneumatic actuators](/p/demco-series-dr-double-acting-pneumatic-actuator-for-butterfly-valves-2-24), so it can be automated later. DEMCO recommends a worm-gear operator at 8 inch and larger. Confirm the operator supplied with each part number when we quote."
+        },
+        {
+          "slot": "K",
+          "q": "8″ NE-C wafer or lug butterfly valve: which should I choose?",
+          "a": "Choose the wafer body for lower cost between two flanges, and the [lug body](/p/demco-series-ne-c-lug-butterfly-valve-8-inch-200-psi) when the valve must isolate the end of a line or let the downstream pipe be removed. Both are rated 200 psi drop-tight in the NE-C 8″ size."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 8″ DEMCO NE-C wafer butterfly valve made and what lead time applies?",
+          "a": "The 8″ NE-C wafer valve is listed with the USA as its country of origin. Typically dispatched within 14 working days. We export from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination for the invoice and origin papers."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the 8″ DEMCO NE-C wafer butterfly valve?",
+          "a": "Typically dispatched within 14 working days. Send the part number, for example J022125-1214311, with quantity and delivery point through [our contact page](/contact) and we confirm the price and the delivery for the 8″ NE-C wafer valve."
+        }
+      ]
+    }
+  ]
+}

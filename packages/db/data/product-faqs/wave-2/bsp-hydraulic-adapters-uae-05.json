@@ -1,0 +1,1981 @@
+{
+  "family": "bsp-hydraulic-adapters-uae-05",
+  "extraFacts": [
+    {
+      "fact": "ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat.",
+      "source": "ISO 228-1 (Pipe threads where pressure-tight joints are not made on the threads)"
+    },
+    {
+      "fact": "SAE J1926 and ISO 11926 cover straight-thread O-ring ports and stud ends, the ORB type, sealed by an O-ring rather than by the thread.",
+      "source": "SAE J1926; ISO 11926 (Straight thread O-ring ports)"
+    },
+    {
+      "fact": "ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape.",
+      "source": "ISO 7-1 (Pipe threads where pressure-tight joints are made on the threads)"
+    },
+    {
+      "fact": "ASME B1.20.3 covers Dryseal pipe threads (NPTF), which are cut to seal on the thread without a separate sealing element.",
+      "source": "ASME B1.20.3 (Dryseal pipe threads, inch)"
+    },
+    {
+      "fact": "ISO 8434-2 covers 37° flared tube fittings such as JIC.",
+      "source": "ISO 8434-2:2007 (Metallic tube connections, Part 2: 37° flared fittings)"
+    },
+    {
+      "fact": "SAE J514 covers hydraulic tube fittings, including the 37° flare used by JIC.",
+      "source": "SAE J514 (Hydraulic tube fittings)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "steel-bspp-male-x-orb-adjustable-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPP Male × ORB Adjustable Run Tee and what is it used for?",
+          "a": "The Steel BSPP Male × ORB Adjustable Run Tee is a three-way connector with the stud on the run. The stud or swivel sits on one end of the straight run, with the branch coming off at the side, so a tee can be put into an existing line. It is listed in the Indus BSP Adapters range with 6 part numbers, from 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20) to 1\" BSPP (G1-11) × 1\" BSPP (G1-11) × 1\" ORB (1-5/16-12)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9078-02-02-04 on the Steel BSPP Male × ORB Adjustable Run Tee?",
+          "a": "IH-ST-9078-02-02-04 is the Steel BSPP Male × ORB Adjustable Run Tee (listing code IH-ST-9078) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9078-02-02-04 (suffix 02-02-04) is 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20); IH-ST-9078-12-12-10 (suffix 12-12-10) is 3/4\" BSPP (G3/4-14) × 3/4\" BSPP (G3/4-14) × 5/8\" ORB (7/8-14); IH-ST-9078-16-16-16 (suffix 16-16-16) is 1\" BSPP (G1-11) × 1\" BSPP (G1-11) × 1\" ORB (1-5/16-12). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel BSPP Male × ORB Adjustable Run Tee do you list?",
+          "a": "The Steel BSPP Male × ORB Adjustable Run Tee is listed in 6 sizes, running from 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20) to 1\" BSPP (G1-11) × 1\" BSPP (G1-11) × 1\" ORB (1-5/16-12). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPP Male × ORB Adjustable Run Tee for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9078-12-12-10 is 3/4\" BSPP (G3/4-14) × 3/4\" BSPP (G3/4-14) × 5/8\" ORB (7/8-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPP Male × ORB Adjustable Run Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPP Male × ORB Adjustable Run Tee, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPP Male × ORB Adjustable Run Tee made from and how is it finished?",
+          "a": "The Steel BSPP Male × ORB Adjustable Run Tee is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPP Male × ORB Adjustable Run Tee follow?",
+          "a": "The Steel BSPP Male × ORB Adjustable Run Tee is listed to ISO 228-1, SAE J1926, ISO 11926. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. SAE J1926 and ISO 11926 cover straight-thread O-ring ports and stud ends, the ORB type, sealed by an O-ring rather than by the thread. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPP Male × ORB Adjustable Run Tee connect to?",
+          "a": "On the Steel BSPP Male × ORB Adjustable Run Tee, port A is male BSPP, 1/8\" to 1\" (G1/8-28 to G1-11) and port B is male BSPP, 1/8\" to 1\" (G1/8-28 to G1-11). Each end mates with a part of the same thread and the same seat. The [ORB Adapters](/c/orb-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPP Male × ORB Adjustable Run Tee so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPP Male × ORB Adjustable Run Tee. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPP Male × ORB Adjustable Run Tee and the Steel BSPP Male × ORB Adjustable Branch Tee?",
+          "a": "The Steel BSPP Male × ORB Adjustable Run Tee and the [Steel BSPP Male × ORB Adjustable Branch Tee](/p/steel-bspp-male-x-orb-adjustable-branch-tee) are separate listings with their own size tables. The first is marked by run, the second by branch. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPP Male × ORB Adjustable Run Tee made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPP Male × ORB Adjustable Run Tee are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPP Male × ORB Adjustable Run Tee in stock in Dubai?",
+          "a": "Yes, the Steel BSPP Male × ORB Adjustable Run Tee is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspp-male-x-orb-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPP Male × ORB Female Adapter and what is it used for?",
+          "a": "The Steel BSPP Male × ORB Female Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 10 part numbers, from 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20) to 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" ORB (1-5/8-12)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9036-02-04 on the Steel BSPP Male × ORB Female Adapter?",
+          "a": "IH-ST-9036-02-04 is the Steel BSPP Male × ORB Female Adapter (listing code IH-ST-9036) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9036-02-04 (suffix 02-04) is 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20); IH-ST-9036-08-08 (suffix 08-08) is 1/2\" BSPP (G1/2-14) × 1/2\" ORB (3/4-16); IH-ST-9036-20-20 (suffix 20-20) is 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" ORB (1-5/8-12). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel BSPP Male × ORB Female Adapter come in?",
+          "a": "The Steel BSPP Male × ORB Female Adapter is listed in 10 sizes, running from 1/8\" BSPP (G1/8-28) × 1/4\" ORB (7/16-20) to 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" ORB (1-5/8-12). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPP Male × ORB Female Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9036-08-08 is 1/2\" BSPP (G1/2-14) × 1/2\" ORB (3/4-16). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPP Male × ORB Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPP Male × ORB Female Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPP Male × ORB Female Adapter made from and how is it finished?",
+          "a": "The Steel BSPP Male × ORB Female Adapter is listed in carbon steel. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPP Male × ORB Female Adapter follow?",
+          "a": "The Steel BSPP Male × ORB Female Adapter is listed to ISO 228-1, SAE J1926, ISO 11926. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. SAE J1926 and ISO 11926 cover straight-thread O-ring ports and stud ends, the ORB type, sealed by an O-ring rather than by the thread. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPP Male × ORB Female Adapter connect to?",
+          "a": "On the Steel BSPP Male × ORB Female Adapter, port A is male BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11) and port B is female SAE O-ring boss (ORB), 1/4\" to 1-1/4\" (7/16-20 to 1-5/8-12). Each end mates with a part of the same thread and the same seat. The [ORB Adapters](/c/orb-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPP Male × ORB Female Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPP Male × ORB Female Adapter. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stopping a taper-thread leak](/blog/stopping-an-npt-thread-leak) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPP Male × ORB Female Adapter and the Steel BSPP Male × BSPP Female Swivel Adapter Tee?",
+          "a": "The Steel BSPP Male × ORB Female Adapter and the [Steel BSPP Male × BSPP Female Swivel Adapter Tee](/p/steel-bspp-male-x-bspp-female-swivel-adapter-tee) are separate listings with different ends. The first has male BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11) and female SAE O-ring boss (ORB), 1/4\" to 1-1/4\" (7/16-20 to 1-5/8-12), while the second has male BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11) and female swivel BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPP Male × ORB Female Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPP Male × ORB Female Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPP Male × ORB Female Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel BSPP Male × ORB Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspp-test-port-tee-male-x-female-swivel-x-1-8-bsp-port",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port and what is it used for?",
+          "a": "The Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port is a tee with a test port. The extra port is there to fit a pressure gauge or diagnostic point into the line without breaking it. It is listed in the Indus BSP Adapters range with 8 part numbers, from 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/8\" BSP (1/8-28) to 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" BSPP (G1-1/4-11) × 1/4\" BSP (1/4-19)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9015TP-02-02-02 on the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port?",
+          "a": "IH-ST-9015TP-02-02-02 is the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port (listing code IH-ST-9015TP) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9015TP-02-02-02 (suffix 02-02-02) is 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/8\" BSP (1/8-28); IH-ST-9015TP-12-12-02 (suffix 12-12-02) is 3/4\" BSPP (G3/4-14) × 3/4\" BSPP (G3/4-14) × 1/8\" BSP (1/8-28); IH-ST-9015TP-20-20-04 (suffix 20-20-04) is 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" BSPP (G1-1/4-11) × 1/4\" BSP (1/4-19). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port do you list?",
+          "a": "The Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port is listed in 8 sizes, running from 1/8\" BSPP (G1/8-28) × 1/8\" BSPP (G1/8-28) × 1/8\" BSP (1/8-28) to 1-1/4\" BSPP (G1-1/4-11) × 1-1/4\" BSPP (G1-1/4-11) × 1/4\" BSP (1/4-19). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9015TP-12-12-02 is 3/4\" BSPP (G3/4-14) × 3/4\" BSPP (G3/4-14) × 1/8\" BSP (1/8-28). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port made from and how is it finished?",
+          "a": "The Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port follow?",
+          "a": "The Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port is listed to ISO 228-1. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port connect to?",
+          "a": "On the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port, port A is male BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11) and port B is female swivel BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11). Each end mates with a part of the same thread and the same seat. The [ORB Adapters](/c/orb-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to a cross-threaded port](/blog/cross-threaded-hydraulic-port) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port and the Steel BSPP Male × BSPP Female Swivel Adapter Tee?",
+          "a": "The Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port and the [Steel BSPP Male × BSPP Female Swivel Adapter Tee](/p/steel-bspp-male-x-bspp-female-swivel-adapter-tee) are separate listings with their own size tables. The first is marked by 1, 8, bsp, port and test, the second by adapter. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port in stock in Dubai?",
+          "a": "Yes. We keep the Steel BSPP Test Port Tee, Male × Female Swivel × 1/8\" BSP Port in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspt-male-x-bsp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPT Male × BSP Female Adapter and what is it used for?",
+          "a": "The Steel BSPT Male × BSP Female Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 16 part numbers, from 1/4\" BSPT (R1/4-19) × 1/8\" BSP (1/8-28) to 1-1/2\" BSPT (R1-1/2-11) × 1-1/4\" BSP (1-1/4-11)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9032-04-02 on the Steel BSPT Male × BSP Female Adapter?",
+          "a": "IH-ST-9032-04-02 is the Steel BSPT Male × BSP Female Adapter (listing code IH-ST-9032) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9032-04-02 (suffix 04-02) is 1/4\" BSPT (R1/4-19) × 1/8\" BSP (1/8-28); IH-ST-9032-12-08 (suffix 12-08) is 3/4\" BSPT (R3/4-14) × 1/2\" BSP (1/2-14); IH-ST-9032-24-20 (suffix 24-20) is 1-1/2\" BSPT (R1-1/2-11) × 1-1/4\" BSP (1-1/4-11). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel BSPT Male × BSP Female Adapter do you list?",
+          "a": "The Steel BSPT Male × BSP Female Adapter is listed in 16 sizes, running from 1/4\" BSPT (R1/4-19) × 1/8\" BSP (1/8-28) to 1-1/2\" BSPT (R1-1/2-11) × 1-1/4\" BSP (1-1/4-11). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPT Male × BSP Female Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9032-12-08 is 3/4\" BSPT (R3/4-14) × 1/2\" BSP (1/2-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPT Male × BSP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPT Male × BSP Female Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPT Male × BSP Female Adapter made from and how is it finished?",
+          "a": "The Steel BSPT Male × BSP Female Adapter is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPT Male × BSP Female Adapter follow?",
+          "a": "The Steel BSPT Male × BSP Female Adapter is listed to ISO 7-1. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPT Male × BSP Female Adapter connect to?",
+          "a": "On the Steel BSPT Male × BSP Female Adapter, port A is male BSPT, 1/4\" to 1-1/2\" (R1/4-19 to R1-1/2-11) and port B is female BSP, 1/8\" to 1-1/4\" (1/8-28 to 1-1/4-11). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPT Male × BSP Female Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPT Male × BSP Female Adapter. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPT Male × BSP Female Adapter and the Steel BSPT Male × NPTF Female Adapter?",
+          "a": "The Steel BSPT Male × BSP Female Adapter and the [Steel BSPT Male × NPTF Female Adapter](/p/steel-bspt-male-x-nptf-female-adapter) are separate listings with their own size tables. The first is marked by bsp, the second by nptf. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPT Male × BSP Female Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPT Male × BSP Female Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPT Male × BSP Female Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel BSPT Male × BSP Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspt-male-x-nptf-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel BSPT Male × NPTF Female Adapter do and where is it used?",
+          "a": "The Steel BSPT Male × NPTF Female Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 18 part numbers, from 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27) to 3\" BSPT (R3-11) × 3\" NPTF (3-8)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9042-02-02 on the Steel BSPT Male × NPTF Female Adapter?",
+          "a": "IH-ST-9042-02-02 is the Steel BSPT Male × NPTF Female Adapter (listing code IH-ST-9042) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9042-02-02 (suffix 02-02) is 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27); IH-ST-9042-12-12 (suffix 12-12) is 3/4\" BSPT (R3/4-14) × 3/4\" NPTF (3/4-14); IH-ST-9042-48-48 (suffix 48-48) is 3\" BSPT (R3-11) × 3\" NPTF (3-8). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel BSPT Male × NPTF Female Adapter do you list?",
+          "a": "The Steel BSPT Male × NPTF Female Adapter is listed in 18 sizes, running from 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27) to 3\" BSPT (R3-11) × 3\" NPTF (3-8). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPT Male × NPTF Female Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9042-12-12 is 3/4\" BSPT (R3/4-14) × 3/4\" NPTF (3/4-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPT Male × NPTF Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPT Male × NPTF Female Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPT Male × NPTF Female Adapter made from and how is it finished?",
+          "a": "The Steel BSPT Male × NPTF Female Adapter is listed in forged carbon steel, trivalent zinc plated. A stainless-steel version of the same configuration is listed separately. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPT Male × NPTF Female Adapter follow?",
+          "a": "The Steel BSPT Male × NPTF Female Adapter is listed to ISO 7-1, ASME B1.20.3. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. ASME B1.20.3 covers Dryseal pipe threads (NPTF), which are cut to seal on the thread without a separate sealing element. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPT Male × NPTF Female Adapter connect to?",
+          "a": "On the Steel BSPT Male × NPTF Female Adapter, port A is male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and port B is female NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8). Each end mates with a part of the same thread and the same seat. The [NPT Adapters](/c/npt-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPT Male × NPTF Female Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPT Male × NPTF Female Adapter. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPT Male × NPTF Female Adapter and the Steel BSPT Male × NPTF Male Adapter?",
+          "a": "The Steel BSPT Male × NPTF Female Adapter and the [Steel BSPT Male × NPTF Male Adapter](/p/steel-bspt-male-x-nptf-male-adapter) are separate listings with different ends. The first has male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and female NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8), while the second has male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and male NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPT Male × NPTF Female Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPT Male × NPTF Female Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPT Male × NPTF Female Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel BSPT Male × NPTF Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspt-male-x-nptf-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPT Male × NPTF Male Adapter and what is it used for?",
+          "a": "The Steel BSPT Male × NPTF Male Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 15 part numbers, from 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27) to 3\" BSPT (R3-11) × 3\" NPTF (3-8)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9008-02-02 on the Steel BSPT Male × NPTF Male Adapter?",
+          "a": "IH-ST-9008-02-02 is the Steel BSPT Male × NPTF Male Adapter (listing code IH-ST-9008) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9008-02-02 (suffix 02-02) is 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27); IH-ST-9008-08-08 (suffix 08-08) is 1/2\" BSPT (R1/2-14) × 1/2\" NPTF (1/2-14); IH-ST-9008-48-48 (suffix 48-48) is 3\" BSPT (R3-11) × 3\" NPTF (3-8). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel BSPT Male × NPTF Male Adapter do you list?",
+          "a": "The Steel BSPT Male × NPTF Male Adapter is listed in 15 sizes, running from 1/8\" BSPT (R1/8-28) × 1/8\" NPTF (1/8-27) to 3\" BSPT (R3-11) × 3\" NPTF (3-8). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel BSPT Male × NPTF Male Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9008-08-08 is 1/2\" BSPT (R1/2-14) × 1/2\" NPTF (1/2-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel BSPT Male × NPTF Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel BSPT Male × NPTF Male Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPT Male × NPTF Male Adapter made from and how is it finished?",
+          "a": "The Steel BSPT Male × NPTF Male Adapter is listed in forged carbon steel, trivalent zinc plated. A stainless-steel version of the same configuration is listed separately. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPT Male × NPTF Male Adapter follow?",
+          "a": "The Steel BSPT Male × NPTF Male Adapter is listed to ISO 7-1, ASME B1.20.3. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. ASME B1.20.3 covers Dryseal pipe threads (NPTF), which are cut to seal on the thread without a separate sealing element. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel BSPT Male × NPTF Male Adapter connect to?",
+          "a": "On the Steel BSPT Male × NPTF Male Adapter, port A is male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and port B is male NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8). Each end mates with a part of the same thread and the same seat. The [NPT Adapters](/c/npt-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel BSPT Male × NPTF Male Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel BSPT Male × NPTF Male Adapter. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel BSPT Male × NPTF Male Adapter and the Steel BSPT Male × NPTF Female Adapter?",
+          "a": "The Steel BSPT Male × NPTF Male Adapter and the [Steel BSPT Male × NPTF Female Adapter](/p/steel-bspt-male-x-nptf-female-adapter) are separate listings with different ends. The first has male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and male NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8), while the second has male BSPT, 1/8\" to 3\" (R1/8-28 to R3-11) and female NPTF (Dryseal), 1/8\" to 3\" (1/8-27 to 3-8). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPT Male × NPTF Male Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel BSPT Male × NPTF Male Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel BSPT Male × NPTF Male Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel BSPT Male × NPTF Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bsp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIC 37° Male × BSP Female Adapter do and where is it used?",
+          "a": "The Steel JIC 37° Male × BSP Female Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 11 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/8\" BSP (1/8-28) to 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSP (1-1/2-11)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9009-04-02 on the Steel JIC 37° Male × BSP Female Adapter?",
+          "a": "IH-ST-9009-04-02 is the Steel JIC 37° Male × BSP Female Adapter (listing code IH-ST-9009) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9009-04-02 (suffix 04-02) is 1/4\" JIC 37° (7/16-20) × 1/8\" BSP (1/8-28); IH-ST-9009-08-02 (suffix 08-02) is 1/2\" JIC 37° (3/4-16) × 1/8\" BSP (1/8-28); IH-ST-9009-24-24 (suffix 24-24) is 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSP (1-1/2-11). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel JIC 37° Male × BSP Female Adapter come in?",
+          "a": "The Steel JIC 37° Male × BSP Female Adapter is listed in 11 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/8\" BSP (1/8-28) to 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSP (1-1/2-11). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSP Female Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9009-08-02 is 1/2\" JIC 37° (3/4-16) × 1/8\" BSP (1/8-28). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSP Female Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSP Female Adapter made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSP Female Adapter is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSP Female Adapter follow?",
+          "a": "The Steel JIC 37° Male × BSP Female Adapter is listed to SAE J514, ISO 8434-2. ISO 8434-2 covers 37° flared tube fittings such as JIC. SAE J514 covers hydraulic tube fittings, including the 37° flare used by JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSP Female Adapter connect to?",
+          "a": "On the Steel JIC 37° Male × BSP Female Adapter, port A is male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and port B is female BSP, 1/8\" to 1-1/2\" (1/8-28 to 1-1/2-11). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSP Female Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSP Female Adapter. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to fitting make-up torque](/blog/hydraulic-fitting-make-up-torque) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSP Female Adapter and the Steel JIC 37° Male × BSPP Female Swivel Adapter?",
+          "a": "The Steel JIC 37° Male × BSP Female Adapter and the [Steel JIC 37° Male × BSPP Female Swivel Adapter](/p/steel-jic-37-male-x-bspp-female-swivel-adapter) are separate listings with different ends. The first has male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and female BSP, 1/8\" to 1-1/2\" (1/8-28 to 1-1/2-11), while the second has male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and female swivel BSPP, 1/8\" to 1-1/2\" (G1/8-28 to G1-1/2-11). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSP Female Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSP Female Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSP Female Adapter in stock in Dubai?",
+          "a": "Yes, the Steel JIC 37° Male × BSP Female Adapter is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspp-adjustable-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × BSPP Adjustable Branch Tee and what is it used for?",
+          "a": "The Steel JIC 37° Male × BSPP Adjustable Branch Tee is a three-way connector with the side port as the branch. The stud or swivel sits on the side (branch) port of the tee, so one line can be split into two from a single point in the run. It is listed in the Indus BSP Adapters range with 9 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 1\" JIC 37° (1-5/16-12) × 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9159-04-04-04 on the Steel JIC 37° Male × BSPP Adjustable Branch Tee?",
+          "a": "IH-ST-9159-04-04-04 is the Steel JIC 37° Male × BSPP Adjustable Branch Tee (listing code IH-ST-9159) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9159-04-04-04 (suffix 04-04-04) is 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19); IH-ST-9159-08-08-06 (suffix 08-08-06) is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPP (G3/8-19); IH-ST-9159-16-16-16 (suffix 16-16-16) is 1\" JIC 37° (1-5/16-12) × 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPP Adjustable Branch Tee do you list?",
+          "a": "The Steel JIC 37° Male × BSPP Adjustable Branch Tee is listed in 9 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 1\" JIC 37° (1-5/16-12) × 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPP Adjustable Branch Tee for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9159-08-08-06 is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPP (G3/8-19). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPP Adjustable Branch Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPP Adjustable Branch Tee, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPP Adjustable Branch Tee made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPP Adjustable Branch Tee is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPP Adjustable Branch Tee follow?",
+          "a": "The Steel JIC 37° Male × BSPP Adjustable Branch Tee is listed to SAE J514, ISO 8434-2, ISO 228-1. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPP Adjustable Branch Tee connect to?",
+          "a": "On the Steel JIC 37° Male × BSPP Adjustable Branch Tee, port A is male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12) and port B is male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPP Adjustable Branch Tee so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPP Adjustable Branch Tee. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to fitting make-up torque](/blog/hydraulic-fitting-make-up-torque) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPP Adjustable Branch Tee and the Steel BSPP Male × ORB Adjustable Branch Tee?",
+          "a": "The Steel JIC 37° Male × BSPP Adjustable Branch Tee and the [Steel BSPP Male × ORB Adjustable Branch Tee](/p/steel-bspp-male-x-orb-adjustable-branch-tee) are separate listings with different ends. The first has male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12) and male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12), while the second has male BSPP, 1/8\" to 1\" (G1/8-28 to G1-11) and male BSPP, 1/8\" to 1\" (G1/8-28 to G1-11). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPP Adjustable Branch Tee made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPP Adjustable Branch Tee are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPP Adjustable Branch Tee in stock in Dubai?",
+          "a": "Yes. We keep the Steel JIC 37° Male × BSPP Adjustable Branch Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspp-female-flat-face-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter and what is it used for?",
+          "a": "The Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter is a connector with a rotating nut. The swivel nut turns freely, so the fitting can be tightened without twisting the hose or tube already attached. It is listed in the Indus BSP Adapters range with 14 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9210-04-04 on the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter?",
+          "a": "IH-ST-9210-04-04 is the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter (listing code IH-ST-9210) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9210-04-04 (suffix 04-04) is 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19); IH-ST-9210-08-12 (suffix 08-12) is 1/2\" JIC 37° (3/4-16) × 3/4\" BSPP (G3/4-14); IH-ST-9210-16-16 (suffix 16-16) is 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter do you list?",
+          "a": "The Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter is listed in 14 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 1\" JIC 37° (1-5/16-12) × 1\" BSPP (G1-11). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9210-08-12 is 1/2\" JIC 37° (3/4-16) × 3/4\" BSPP (G3/4-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter follow?",
+          "a": "The Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter is listed to SAE J514, ISO 8434-2, ISO 228-1. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter connect to?",
+          "a": "On the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter, port A is male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12) and port B is female swivel BSPP, 1/4\" to 1\" (G1/4-19 to G1-11). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter and the Steel JIC 37° Male × BSPP Female Swivel Adapter?",
+          "a": "The Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter and the [Steel JIC 37° Male × BSPP Female Swivel Adapter](/p/steel-jic-37-male-x-bspp-female-swivel-adapter) are separate listings with different ends. The first has male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12) and female swivel BSPP, 1/4\" to 1\" (G1/4-19 to G1-11), while the second has male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and female swivel BSPP, 1/8\" to 1-1/2\" (G1/8-28 to G1-1/2-11). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel JIC 37° Male × BSPP Female Flat-Face Swivel Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspp-female-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow do and where is it used?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel 90° Elbow is a 90° elbow adapter. It turns a line through a right angle at the port so the hose or tube can run along the machine instead of pointing straight out. It is listed in the Indus BSP Adapters range with 5 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPP (G3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9056-04-04 on the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow?",
+          "a": "IH-ST-9056-04-04 is the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow (listing code IH-ST-9056) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9056-04-04 (suffix 04-04) is 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19); IH-ST-9056-08-06 (suffix 08-06) is 1/2\" JIC 37° (3/4-16) × 3/8\" BSPP (G3/8-19); IH-ST-9056-12-12 (suffix 12-12) is 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPP (G3/4-14). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPP Female Swivel 90° Elbow do you list?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel 90° Elbow is listed in 5 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/4\" BSPP (G1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPP (G3/4-14). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPP Female Swivel 90° Elbow for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9056-08-06 is 1/2\" JIC 37° (3/4-16) × 3/8\" BSPP (G3/8-19). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel 90° Elbow is listed in carbon steel. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow follow?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel 90° Elbow is listed to SAE J514, ISO 8434-2, ISO 228-1. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow connect to?",
+          "a": "On the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow, port A is male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12) and port B is female swivel BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to a cross-threaded port](/blog/cross-threaded-hydraulic-port) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow and the Steel BSPP Male × JIC 37° Female Swivel 90° Elbow?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel 90° Elbow and the [Steel BSPP Male × JIC 37° Female Swivel 90° Elbow](/p/steel-bspp-male-x-jic-37-female-swivel-90-elbow) are separate listings with different ends. The first has male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12) and female swivel BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14), while the second has male BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14) and female swivel 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow in stock in Dubai?",
+          "a": "Yes, the Steel JIC 37° Male × BSPP Female Swivel 90° Elbow is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspp-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel JIC 37° Male × BSPP Female Swivel Adapter do and where is it used?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel Adapter is a connector with a rotating nut. The swivel nut turns freely, so the fitting can be tightened without twisting the hose or tube already attached. It is listed in the Indus BSP Adapters range with 23 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/8\" BSPP (G1/8-28) to 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSPP (G1-1/2-11)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9240-04-02 on the Steel JIC 37° Male × BSPP Female Swivel Adapter?",
+          "a": "IH-ST-9240-04-02 is the Steel JIC 37° Male × BSPP Female Swivel Adapter (listing code IH-ST-9240) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9240-04-02 (suffix 04-02) is 1/4\" JIC 37° (7/16-20) × 1/8\" BSPP (G1/8-28); IH-ST-9240-08-10 (suffix 08-10) is 1/2\" JIC 37° (3/4-16) × 5/8\" BSPP (G5/8-14); IH-ST-9240-24-24 (suffix 24-24) is 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSPP (G1-1/2-11). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPP Female Swivel Adapter do you list?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel Adapter is listed in 23 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/8\" BSPP (G1/8-28) to 1-1/2\" JIC 37° (1-7/8-12) × 1-1/2\" BSPP (G1-1/2-11). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPP Female Swivel Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9240-08-10 is 1/2\" JIC 37° (3/4-16) × 5/8\" BSPP (G5/8-14). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPP Female Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPP Female Swivel Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPP Female Swivel Adapter made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel Adapter is listed in forged carbon steel, trivalent zinc plated. A stainless-steel version of the same configuration is listed separately. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPP Female Swivel Adapter follow?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel Adapter is listed to SAE J514, ISO 8434-2, ISO 228-1. ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPP Female Swivel Adapter connect to?",
+          "a": "On the Steel JIC 37° Male × BSPP Female Swivel Adapter, port A is male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and port B is female swivel BSPP, 1/8\" to 1-1/2\" (G1/8-28 to G1-1/2-11). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPP Female Swivel Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPP Female Swivel Adapter. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to fitting make-up torque](/blog/hydraulic-fitting-make-up-torque) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPP Female Swivel Adapter and the Steel BSPP Female Swivel × JIC 37° Female Swivel Adapter?",
+          "a": "The Steel JIC 37° Male × BSPP Female Swivel Adapter and the [Steel BSPP Female Swivel × JIC 37° Female Swivel Adapter](/p/steel-bspp-female-swivel-x-jic-37-female-swivel-adapter) are separate listings with different ends. The first has male 37° JIC, 1/4\" to 1-1/2\" (7/16-20 to 1-7/8-12) and female swivel BSPP, 1/8\" to 1-1/2\" (G1/8-28 to G1-1/2-11), while the second has female swivel BSPP, 1/4\" to 1-1/4\" (G1/4-19 to G1-1/4-11) and female swivel 37° JIC, 1/4\" to 1-1/4\" (7/16-20 to 1-5/8-12). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPP Female Swivel Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPP Female Swivel Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPP Female Swivel Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel JIC 37° Male × BSPP Female Swivel Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspt-male-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × BSPT Male Branch Tee and what is it used for?",
+          "a": "The Steel JIC 37° Male × BSPT Male Branch Tee is a three-way connector with the side port as the branch. The stud or swivel sits on the side (branch) port of the tee, so one line can be split into two from a single point in the run. It is listed in the Indus BSP Adapters range with 5 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9164-04-04-04 on the Steel JIC 37° Male × BSPT Male Branch Tee?",
+          "a": "IH-ST-9164-04-04-04 is the Steel JIC 37° Male × BSPT Male Branch Tee (listing code IH-ST-9164) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9164-04-04-04 (suffix 04-04-04) is 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19); IH-ST-9164-08-08-06 (suffix 08-08-06) is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPT (R3/8-19); IH-ST-9164-12-12-12 (suffix 12-12-12) is 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPT Male Branch Tee do you list?",
+          "a": "The Steel JIC 37° Male × BSPT Male Branch Tee is listed in 5 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPT Male Branch Tee for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9164-08-08-06 is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPT (R3/8-19). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPT Male Branch Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPT Male Branch Tee, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPT Male Branch Tee made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPT Male Branch Tee is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPT Male Branch Tee follow?",
+          "a": "The Steel JIC 37° Male × BSPT Male Branch Tee is listed to SAE J514, ISO 8434-2, ISO 7-1. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPT Male Branch Tee connect to?",
+          "a": "On the Steel JIC 37° Male × BSPT Male Branch Tee, port A is male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12) and port B is male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPT Male Branch Tee so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPT Male Branch Tee. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stopping a taper-thread leak](/blog/stopping-an-npt-thread-leak) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPT Male Branch Tee and the Steel JIC 37° Male × BSPT Male Run Tee?",
+          "a": "The Steel JIC 37° Male × BSPT Male Branch Tee and the [Steel JIC 37° Male × BSPT Male Run Tee](/p/steel-jic-37-male-x-bspt-male-run-tee) are separate listings with their own size tables. The first is marked by branch, the second by run. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPT Male Branch Tee made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPT Male Branch Tee are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPT Male Branch Tee in stock in Dubai?",
+          "a": "Yes, the Steel JIC 37° Male × BSPT Male Branch Tee is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-bspt-male-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × BSPT Male Run Tee and what is it used for?",
+          "a": "The Steel JIC 37° Male × BSPT Male Run Tee is a three-way connector with the stud on the run. The stud or swivel sits on one end of the straight run, with the branch coming off at the side, so a tee can be put into an existing line. It is listed in the Indus BSP Adapters range with 5 part numbers, from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-9163-04-04-04 on the Steel JIC 37° Male × BSPT Male Run Tee?",
+          "a": "IH-ST-9163-04-04-04 is the Steel JIC 37° Male × BSPT Male Run Tee (listing code IH-ST-9163) followed by a size suffix that the size table ties to the ends shown. In the table: IH-ST-9163-04-04-04 (suffix 04-04-04) is 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19); IH-ST-9163-08-08-06 (suffix 08-08-06) is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPT (R3/8-19); IH-ST-9163-12-12-12 (suffix 12-12-12) is 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Steel JIC 37° Male × BSPT Male Run Tee do you list?",
+          "a": "The Steel JIC 37° Male × BSPT Male Run Tee is listed in 5 sizes, running from 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × 1/4\" BSPT (R1/4-19) to 3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × 3/4\" BSPT (R3/4-14). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel JIC 37° Male × BSPT Male Run Tee for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9163-08-08-06 is 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × 3/8\" BSPT (R3/8-19). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel JIC 37° Male × BSPT Male Run Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel JIC 37° Male × BSPT Male Run Tee, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × BSPT Male Run Tee made from and how is it finished?",
+          "a": "The Steel JIC 37° Male × BSPT Male Run Tee is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × BSPT Male Run Tee follow?",
+          "a": "The Steel JIC 37° Male × BSPT Male Run Tee is listed to SAE J514, ISO 8434-2, ISO 7-1. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. ISO 8434-2 covers 37° flared tube fittings such as JIC. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel JIC 37° Male × BSPT Male Run Tee connect to?",
+          "a": "On the Steel JIC 37° Male × BSPT Male Run Tee, port A is male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12) and port B is male 37° JIC, 1/4\" to 3/4\" (7/16-20 to 1-1/16-12). Each end mates with a part of the same thread and the same seat. The [JIC Adapters](/c/jic-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel JIC 37° Male × BSPT Male Run Tee so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel JIC 37° Male × BSPT Male Run Tee. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to a cross-threaded port](/blog/cross-threaded-hydraulic-port) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel JIC 37° Male × BSPT Male Run Tee and the Steel JIC 37° Male × BSPT Male Branch Tee?",
+          "a": "The Steel JIC 37° Male × BSPT Male Run Tee and the [Steel JIC 37° Male × BSPT Male Branch Tee](/p/steel-jic-37-male-x-bspt-male-branch-tee) are separate listings with their own size tables. The first is marked by run, the second by branch. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × BSPT Male Run Tee made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel JIC 37° Male × BSPT Male Run Tee are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel JIC 37° Male × BSPT Male Run Tee in stock in Dubai?",
+          "a": "Yes. We keep the Steel JIC 37° Male × BSPT Male Run Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-komatsu-m16-male-x-bspt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Steel Komatsu M16 Male × BSPT Male Adapter do and where is it used?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 1 part numbers, from M16×1.5 Komatsu × 1/4\" BSPT (R1/4-19) to M16×1.5 Komatsu × 1/4\" BSPT (R1/4-19)."
+        },
+        {
+          "slot": "B",
+          "q": "What part number do I quote for the Steel Komatsu M16 Male × BSPT Male Adapter, listing code IH-ST-9233?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter is listed under code IH-ST-9233. Size part numbers are quoted against that code, so send the thread or tube size on each end of the line you are matching and we will confirm the part number before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel Komatsu M16 Male × BSPT Male Adapter come in?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter is listed in 1 sizes, running from M16×1.5 Komatsu × 1/4\" BSPT (R1/4-19) to M16×1.5 Komatsu × 1/4\" BSPT (R1/4-19). The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Komatsu M16 Male × BSPT Male Adapter for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-ST-9233-16-04 is M16×1.5 Komatsu × 1/4\" BSPT (R1/4-19). A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Steel Komatsu M16 Male × BSPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel Komatsu M16 Male × BSPT Male Adapter, so this page does not state one. Tell us the working pressure your line sees and we will confirm the fitting is suitable before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Komatsu M16 Male × BSPT Male Adapter made from and how is it finished?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter is listed in forged carbon steel, trivalent zinc plated. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Komatsu M16 Male × BSPT Male Adapter follow?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter is listed to ISO 7-1. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel Komatsu M16 Male × BSPT Male Adapter connect to?",
+          "a": "On the Steel Komatsu M16 Male × BSPT Male Adapter, port A is male Komatsu metric 30° flare, M16×1.5 and port B is male BSPT, 1/4\" (R1/4-19). Each end mates with a part of the same thread and the same seat. The [Japanese JIS 30° Adapters](/c/jis-30-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Steel Komatsu M16 Male × BSPT Male Adapter so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Steel Komatsu M16 Male × BSPT Male Adapter. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel Komatsu M16 Male × BSPT Male Adapter and the Steel BSPT Male × NPTF Male Adapter?",
+          "a": "The Steel Komatsu M16 Male × BSPT Male Adapter and the [Steel BSPT Male × NPTF Male Adapter](/p/steel-bspt-male-x-nptf-male-adapter) are separate listings with their own size tables. The first is marked by komatsu and m16, the second by nptf. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Komatsu M16 Male × BSPT Male Adapter made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Steel Komatsu M16 Male × BSPT Male Adapter are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Steel Komatsu M16 Male × BSPT Male Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Steel Komatsu M16 Male × BSPT Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-male-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Swivel Male 45° Elbow do and where is it used?",
+          "a": "The Swivel Male 45° Elbow is a 45° elbow adapter. It changes the direction of a line through 45° where a 90° elbow would put the hose or tube under too tight a bend. It is listed in the Indus BSP Adapters range in a range of sizes, from G1/4-19 × G1/4-19 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-029-04 on the Swivel Male 45° Elbow?",
+          "a": "IH-AD-BSP-029-04 is the Swivel Male 45° Elbow (listing code IH-AD-BSP-029) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-029-04 (suffix 04) is G1/4-19 × G1/4-19; IH-AD-BSP-029-1008 (suffix 1008) is G5/8-14 × G1/2-14; IH-AD-BSP-029-32 (suffix 32) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Male 45° Elbow come in?",
+          "a": "The Swivel Male 45° Elbow is listed in a range of sizes, running from G1/4-19 × G1/4-19 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Male 45° Elbow for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-029-1008 is G5/8-14 × G1/2-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Male 45° Elbow rated for?",
+          "a": "The listing for the Swivel Male 45° Elbow gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Male 45° Elbow made from and how is it finished?",
+          "a": "The Swivel Male 45° Elbow is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Male 45° Elbow follow?",
+          "a": "The Swivel Male 45° Elbow is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Male 45° Elbow connect to?",
+          "a": "On the Swivel Male 45° Elbow, port A is male BSPP G1/8 to G2 (parallel) and port B is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Male 45° Elbow so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Male 45° Elbow. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Male 45° Elbow and the Swivel Male Elbow NPT?",
+          "a": "The Swivel Male 45° Elbow and the [Swivel Male Elbow NPT](/p/swivel-male-elbow-npt) are separate listings with different ends. The first has male BSPP G1/8 to G2 (parallel) and male BSPP G1/8 to G2 (parallel), while the second has male BSPP G1/8 to G2 (parallel) and male NPT taper 1/8\" to 2\". Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Male 45° Elbow made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Male 45° Elbow are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Male 45° Elbow in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Male 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-male-elbow-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Male Elbow NPT and what is it used for?",
+          "a": "The Swivel Male Elbow NPT is an elbow adapter. It turns a line through an angle at the port so the hose or tube can be routed past an obstruction. It is listed in the Indus BSP Adapters range with 16 part numbers, from NPT1/8-27 × G1/8-28 to NPT2-11.5 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-027-02 on the Swivel Male Elbow NPT?",
+          "a": "IH-AD-BSP-027-02 is the Swivel Male Elbow NPT (listing code IH-AD-BSP-027) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-027-02 (suffix 02) is NPT1/8-27 × G1/8-28; IH-AD-BSP-027-1208 (suffix 1208) is NPT3/4-14 × G1/2-14; IH-AD-BSP-027-32 (suffix 32) is NPT2-11.5 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Male Elbow NPT come in?",
+          "a": "The Swivel Male Elbow NPT is listed in 16 sizes, running from NPT1/8-27 × G1/8-28 to NPT2-11.5 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Male Elbow NPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-027-1208 is NPT3/4-14 × G1/2-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Male Elbow NPT rated for?",
+          "a": "The listing for the Swivel Male Elbow NPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Male Elbow NPT made from and how is it finished?",
+          "a": "The Swivel Male Elbow NPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Male Elbow NPT follow?",
+          "a": "The Swivel Male Elbow NPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Male Elbow NPT connect to?",
+          "a": "On the Swivel Male Elbow NPT, port A is male BSPP G1/8 to G2 (parallel) and port B is male NPT taper 1/8\" to 2\". Each end mates with a part of the same thread and the same seat. The [NPT Adapters](/c/npt-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Male Elbow NPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Male Elbow NPT. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Male Elbow NPT and the Swivel Male 45° Elbow?",
+          "a": "The Swivel Male Elbow NPT and the [Swivel Male 45° Elbow](/p/swivel-male-45-elbow) are separate listings with different ends. The first has male BSPP G1/8 to G2 (parallel) and male NPT taper 1/8\" to 2\", while the second has male BSPP G1/8 to G2 (parallel) and male BSPP G1/8 to G2 (parallel). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Male Elbow NPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Male Elbow NPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Male Elbow NPT in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Male Elbow NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-male-stud-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Swivel Male Stud BSPT do and where is it used?",
+          "a": "The Swivel Male Stud BSPT is a swivel adapter. The swivel nut turns freely, so the fitting can be tightened without twisting the hose or tube already attached. It is listed in the Indus BSP Adapters range with 17 part numbers, from R1/8-28 × G1/8-28 to R2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-026-02SP on the Swivel Male Stud BSPT?",
+          "a": "IH-AD-BSP-026-02SP is the Swivel Male Stud BSPT (listing code IH-AD-BSP-026) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-026-02SP (suffix 02SP) is R1/8-28 × G1/8-28; IH-AD-BSP-026-1208SP (suffix 1208SP) is R3/4-14 × G1/2-14; IH-AD-BSP-026-32SP (suffix 32SP) is R2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Male Stud BSPT come in?",
+          "a": "The Swivel Male Stud BSPT is listed in 17 sizes, running from R1/8-28 × G1/8-28 to R2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Male Stud BSPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-026-1208SP is R3/4-14 × G1/2-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Male Stud BSPT rated for?",
+          "a": "The listing for the Swivel Male Stud BSPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Male Stud BSPT made from and how is it finished?",
+          "a": "The Swivel Male Stud BSPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Male Stud BSPT follow?",
+          "a": "The Swivel Male Stud BSPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Male Stud BSPT connect to?",
+          "a": "On the Swivel Male Stud BSPT, port A is male BSPT R1/8 to R2 (taper). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Male Stud BSPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Male Stud BSPT. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Male Stud BSPT and the Swivel Male Stud NPT?",
+          "a": "The Swivel Male Stud BSPT and the [Swivel Male Stud NPT](/p/swivel-male-stud-npt) are separate listings with different ends. The first has male BSPT R1/8 to R2 (taper), while the second has male BSPP G1/8 to G2 (parallel) and male NPT taper 1/8\" to 2\". Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Male Stud BSPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Male Stud BSPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Male Stud BSPT in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Male Stud BSPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-male-stud-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Swivel Male Stud NPT do and where is it used?",
+          "a": "The Swivel Male Stud NPT is a swivel adapter. The swivel nut turns freely, so the fitting can be tightened without twisting the hose or tube already attached. It is listed in the Indus BSP Adapters range with 17 part numbers, from NPT1/8-27 × G1/8-28 to NPT2-11.5 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-028-02 on the Swivel Male Stud NPT?",
+          "a": "IH-AD-BSP-028-02 is the Swivel Male Stud NPT (listing code IH-AD-BSP-028) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-028-02 (suffix 02) is NPT1/8-27 × G1/8-28; IH-AD-BSP-028-08 (suffix 08) is NPT1/2-14 × G1/2-14; IH-AD-BSP-028-32 (suffix 32) is NPT2-11.5 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Swivel Male Stud NPT do you list?",
+          "a": "The Swivel Male Stud NPT is listed in 17 sizes, running from NPT1/8-27 × G1/8-28 to NPT2-11.5 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Male Stud NPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-028-08 is NPT1/2-14 × G1/2-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Male Stud NPT rated for?",
+          "a": "The listing for the Swivel Male Stud NPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Male Stud NPT made from and how is it finished?",
+          "a": "The Swivel Male Stud NPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Male Stud NPT follow?",
+          "a": "The Swivel Male Stud NPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Male Stud NPT connect to?",
+          "a": "On the Swivel Male Stud NPT, port A is male BSPP G1/8 to G2 (parallel) and port B is male NPT taper 1/8\" to 2\". Each end mates with a part of the same thread and the same seat. The [NPT Adapters](/c/npt-adapters) range lists the matching family for the other side."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Male Stud NPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Male Stud NPT. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Male Stud NPT and the Swivel Male Elbow NPT?",
+          "a": "The Swivel Male Stud NPT and the [Swivel Male Elbow NPT](/p/swivel-male-elbow-npt) are separate listings with their own size tables. The first is marked by stud, the second by elbow. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Male Stud NPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Male Stud NPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Male Stud NPT in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Male Stud NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-nut-branch-tee-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Nut Branch Tee (BSP) and what is it used for?",
+          "a": "The Swivel Nut Branch Tee (BSP) is a three-way connector with the side port as the branch. The stud or swivel sits on the side (branch) port of the tee, so one line can be split into two from a single point in the run. It is listed in the Indus BSP Adapters range with 8 part numbers, from G1/8-28 × G1/8-28 × G1/8-28 to G1-1/4\" × G1-1/4\" × G1-1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-005-02 on the Swivel Nut Branch Tee (BSP)?",
+          "a": "IH-AD-BSP-005-02 is the Swivel Nut Branch Tee (BSP) (listing code IH-AD-BSP-005) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-005-02 (suffix 02) is G1/8-28 × G1/8-28 × G1/8-28; IH-AD-BSP-005-10 (suffix 10) is G5/8-14 × G5/8-14 × G5/8-14; IH-AD-BSP-005-20 (suffix 20) is G1-1/4\" × G1-1/4\" × G1-1/4\". Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Nut Branch Tee (BSP) come in?",
+          "a": "The Swivel Nut Branch Tee (BSP) is listed in 8 sizes, running from G1/8-28 × G1/8-28 × G1/8-28 to G1-1/4\" × G1-1/4\" × G1-1/4\". The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Nut Branch Tee (BSP) for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-005-10 is G5/8-14 × G5/8-14 × G5/8-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Nut Branch Tee (BSP) rated for?",
+          "a": "The listing for the Swivel Nut Branch Tee (BSP) gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Nut Branch Tee (BSP) made from and how is it finished?",
+          "a": "The Swivel Nut Branch Tee (BSP) is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Nut Branch Tee (BSP) follow?",
+          "a": "The Swivel Nut Branch Tee (BSP) is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Nut Branch Tee (BSP) connect to?",
+          "a": "On the Swivel Nut Branch Tee (BSP), port A is female-swivel BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Nut Branch Tee (BSP) so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Nut Branch Tee (BSP). On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Nut Branch Tee (BSP) and the Swivel Nut Run Tee (BSP)?",
+          "a": "The Swivel Nut Branch Tee (BSP) and the [Swivel Nut Run Tee (BSP)](/p/swivel-nut-run-tee-bsp) are separate listings with their own size tables. The first is marked by branch, the second by run. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Nut Branch Tee (BSP) made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Nut Branch Tee (BSP) are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Nut Branch Tee (BSP) in stock in Dubai?",
+          "a": "Yes. We keep the Swivel Nut Branch Tee (BSP) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-nut-run-tee-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Swivel Nut Run Tee (BSP) do and where is it used?",
+          "a": "The Swivel Nut Run Tee (BSP) is a three-way connector with the stud on the run. The stud or swivel sits on one end of the straight run, with the branch coming off at the side, so a tee can be put into an existing line. It is listed in the Indus BSP Adapters range with 8 part numbers, from G1/8-28 × G1/8-28 × G1/8-28 to G1.1/4-11 × G1.1/4-11 × G1.1/4-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-006-02 on the Swivel Nut Run Tee (BSP)?",
+          "a": "IH-AD-BSP-006-02 is the Swivel Nut Run Tee (BSP) (listing code IH-AD-BSP-006) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-006-02 (suffix 02) is G1/8-28 × G1/8-28 × G1/8-28; IH-AD-BSP-006-10 (suffix 10) is G5/8-14 × G5/8-14 × G5/8-14; IH-AD-BSP-006-20 (suffix 20) is G1.1/4-11 × G1.1/4-11 × G1.1/4-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Nut Run Tee (BSP) come in?",
+          "a": "The Swivel Nut Run Tee (BSP) is listed in 8 sizes, running from G1/8-28 × G1/8-28 × G1/8-28 to G1.1/4-11 × G1.1/4-11 × G1.1/4-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Nut Run Tee (BSP) for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-006-10 is G5/8-14 × G5/8-14 × G5/8-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Nut Run Tee (BSP) rated for?",
+          "a": "The listing for the Swivel Nut Run Tee (BSP) gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Nut Run Tee (BSP) made from and how is it finished?",
+          "a": "The Swivel Nut Run Tee (BSP) is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Nut Run Tee (BSP) follow?",
+          "a": "The Swivel Nut Run Tee (BSP) is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Nut Run Tee (BSP) connect to?",
+          "a": "On the Swivel Nut Run Tee (BSP), port A is female-swivel BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Nut Run Tee (BSP) so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Nut Run Tee (BSP). On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Nut Run Tee (BSP) and the Swivel Nut Branch Tee (BSP)?",
+          "a": "The Swivel Nut Run Tee (BSP) and the [Swivel Nut Branch Tee (BSP)](/p/swivel-nut-branch-tee-bsp) are separate listings with their own size tables. The first is marked by run, the second by branch. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Nut Run Tee (BSP) made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Nut Run Tee (BSP) are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Nut Run Tee (BSP) in stock in Dubai?",
+          "a": "Yes, the Swivel Nut Run Tee (BSP) is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-nut-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Nut Union and what is it used for?",
+          "a": "The Swivel Nut Union is a straight connector between two lines. It joins two lines or fittings end to end in a straight line and can be taken apart again for service. It is listed in the Indus BSP Adapters range with 21 part numbers, from G1/4-19 × G1/4-19 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-025-04 on the Swivel Nut Union?",
+          "a": "IH-AD-BSP-025-04 is the Swivel Nut Union (listing code IH-AD-BSP-025) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-025-04 (suffix 04) is G1/4-19 × G1/4-19; IH-AD-BSP-025-12 (suffix 12) is G3/4-14 × G3/4-14; IH-AD-BSP-025-32 (suffix 32) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Swivel Nut Union do you list?",
+          "a": "The Swivel Nut Union is listed in 21 sizes, running from G1/4-19 × G1/4-19 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Nut Union for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-025-12 is G3/4-14 × G3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Swivel Nut Union rated for?",
+          "a": "The listing for the Swivel Nut Union gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Nut Union made from and how is it finished?",
+          "a": "The Swivel Nut Union is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Nut Union follow?",
+          "a": "The Swivel Nut Union is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Nut Union connect to?",
+          "a": "On the Swivel Nut Union, port A is female-swivel BSPP G1/8 to G2 (parallel) and port B is female-swivel BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Swivel Nut Union so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Swivel Nut Union. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stopping a taper-thread leak](/blog/stopping-an-npt-thread-leak) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Swivel Nut Union and the Swivel Nut Branch Tee (BSP)?",
+          "a": "The Swivel Nut Union and the [Swivel Nut Branch Tee (BSP)](/p/swivel-nut-branch-tee-bsp) are separate listings with different ends. The first has female-swivel BSPP G1/8 to G2 (parallel) and female-swivel BSPP G1/8 to G2 (parallel), while the second has female-swivel BSPP G1/8 to G2 (parallel). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Nut Union made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Swivel Nut Union are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Swivel Nut Union in stock in Dubai?",
+          "a": "Yes, the Swivel Nut Union is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thread-adaptor-bsp-ed-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Thread Adaptor BSP ED Seal do and where is it used?",
+          "a": "The Thread Adaptor BSP ED Seal is a straight adapter. It joins two different threads in line, so a hose, tube or component with one connection can be fitted to a port with another. It is listed in the Indus BSP Adapters range with 9 part numbers, from G1/8-28 × G1/8-28 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-020-02WD on the Thread Adaptor BSP ED Seal?",
+          "a": "IH-AD-BSP-020-02WD is the Thread Adaptor BSP ED Seal (listing code IH-AD-BSP-020) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-020-02WD (suffix 02WD) is G1/8-28 × G1/8-28; IH-AD-BSP-020-12WD (suffix 12WD) is G3/4-14 × G3/4-14; IH-AD-BSP-020-32WD (suffix 32WD) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Thread Adaptor BSP ED Seal do you list?",
+          "a": "The Thread Adaptor BSP ED Seal is listed in 9 sizes, running from G1/8-28 × G1/8-28 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Thread Adaptor BSP ED Seal for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-020-12WD is G3/4-14 × G3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Thread Adaptor BSP ED Seal rated for?",
+          "a": "The listing for the Thread Adaptor BSP ED Seal gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thread Adaptor BSP ED Seal made from and how is it finished?",
+          "a": "The Thread Adaptor BSP ED Seal is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Thread Adaptor BSP ED Seal follow?",
+          "a": "The Thread Adaptor BSP ED Seal is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Thread Adaptor BSP ED Seal connect to?",
+          "a": "On the Thread Adaptor BSP ED Seal, port A is male BSPP G1/8 to G2 with ED seal. Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Thread Adaptor BSP ED Seal so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Thread Adaptor BSP ED Seal. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to fitting make-up torque](/blog/hydraulic-fitting-make-up-torque) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Thread Adaptor BSP ED Seal and the Blanking Plug for Ports with ED Seal?",
+          "a": "The Thread Adaptor BSP ED Seal and the [Blanking Plug for Ports with ED Seal](/p/blanking-plug-for-ports-with-ed-seal) are separate listings with their own size tables. The first is marked by adaptor, bsp and thread, the second by blanking, plug and ports. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Thread Adaptor BSP ED Seal made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Thread Adaptor BSP ED Seal are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Thread Adaptor BSP ED Seal in stock in Dubai?",
+          "a": "Yes. We keep the Thread Adaptor BSP ED Seal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "thread-reducer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thread Reducer and what is it used for?",
+          "a": "The Thread Reducer is a connector that steps down to a smaller thread. It connects a larger thread to a smaller one, so a line can be reduced to a smaller port without changing the hose. It is listed in the Indus BSP Adapters range with 24 part numbers, from G1/8-28 × G1/4-19 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-019-0204 on the Thread Reducer?",
+          "a": "IH-AD-BSP-019-0204 is the Thread Reducer (listing code IH-AD-BSP-019) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-019-0204 (suffix 0204) is G1/8-28 × G1/4-19; IH-AD-BSP-019-1208 (suffix 1208) is G3/4-14 × G1/2-14; IH-AD-BSP-019-32 (suffix 32) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Thread Reducer come in?",
+          "a": "The Thread Reducer is listed in 24 sizes, running from G1/8-28 × G1/4-19 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Thread Reducer for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-019-1208 is G3/4-14 × G1/2-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Thread Reducer rated for?",
+          "a": "The listing for the Thread Reducer gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thread Reducer made from and how is it finished?",
+          "a": "The Thread Reducer is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Thread Reducer follow?",
+          "a": "The Thread Reducer is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Thread Reducer connect to?",
+          "a": "On the Thread Reducer, port A is male BSPP G1/8 to G2 (parallel) and port B is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Thread Reducer so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Thread Reducer. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Thread Reducer and the Female Thread Cross?",
+          "a": "The Thread Reducer and the [Female Thread Cross](/p/female-thread-cross) are separate listings with different ends. The first has male BSPP G1/8 to G2 (parallel) and male BSPP G1/8 to G2 (parallel), while the second has female BSPP G1/8 to G2 (parallel). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Thread Reducer made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Thread Reducer are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Thread Reducer in stock in Dubai?",
+          "a": "Yes, the Thread Reducer is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Union do and where is it used?",
+          "a": "The Union is a straight connector between two lines. It joins two lines or fittings end to end in a straight line and can be taken apart again for service. It is listed in the Indus BSP Adapters range with 22 part numbers, from G1/8-28 × G1/8-28 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-053-02 on the Union?",
+          "a": "IH-AD-BSP-053-02 is the Union (listing code IH-AD-BSP-053) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-053-02 (suffix 02) is G1/8-28 × G1/8-28; IH-AD-BSP-053-12 (suffix 12) is G3/4-14 × G3/4-14; IH-AD-BSP-053-32 (suffix 32) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Union come in?",
+          "a": "The Union is listed in 22 sizes, running from G1/8-28 × G1/8-28 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-053-12 is G3/4-14 × G3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union rated for?",
+          "a": "The listing for the Union gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union made from and how is it finished?",
+          "a": "The Union is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union follow?",
+          "a": "The Union is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union connect to?",
+          "a": "On the Union, port A is male BSPP G1/8 to G2 (parallel) and port B is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union and the Bulkhead Union?",
+          "a": "The Union and the [Bulkhead Union](/p/bulkhead-union) are separate listings with their own size tables. The second adds bulkhead to the name. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union in stock in Dubai?",
+          "a": "Yes, the Union is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, quote the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "union-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Union 45° Elbow and what is it used for?",
+          "a": "The Union 45° Elbow is a 45° elbow adapter. It changes the direction of a line through 45° where a 90° elbow would put the hose or tube under too tight a bend. It is listed in the Indus BSP Adapters range with 10 part numbers, from G1/8-28 × G1/8-28 to G2-11 × G2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-051-02 on the Union 45° Elbow?",
+          "a": "IH-AD-BSP-051-02 is the Union 45° Elbow (listing code IH-AD-BSP-051) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-051-02 (suffix 02) is G1/8-28 × G1/8-28; IH-AD-BSP-051-12 (suffix 12) is G3/4-14 × G3/4-14; IH-AD-BSP-051-32 (suffix 32) is G2-11 × G2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Union 45° Elbow come in?",
+          "a": "The Union 45° Elbow is listed in 10 sizes, running from G1/8-28 × G1/8-28 to G2-11 × G2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union 45° Elbow for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-051-12 is G3/4-14 × G3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union 45° Elbow rated for?",
+          "a": "The listing for the Union 45° Elbow gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union 45° Elbow made from and how is it finished?",
+          "a": "The Union 45° Elbow is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union 45° Elbow follow?",
+          "a": "The Union 45° Elbow is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union 45° Elbow connect to?",
+          "a": "On the Union 45° Elbow, port A is male BSPP G1/8 to G2 (parallel) and port B is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union 45° Elbow so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union 45° Elbow. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to a cross-threaded port](/blog/cross-threaded-hydraulic-port) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union 45° Elbow and the Union Elbow?",
+          "a": "The Union 45° Elbow and the [Union Elbow](/p/union-elbow) are separate listings with their own size tables. The first adds 45 to the name. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union 45° Elbow made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union 45° Elbow are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union 45° Elbow in stock in Dubai?",
+          "a": "Yes. We keep the Union 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "union-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Union BSPT do and where is it used?",
+          "a": "The Union BSPT is a straight connector between two lines. It joins two lines or fittings end to end in a straight line and can be taken apart again for service. It is listed in the Indus BSP Adapters range with 17 part numbers, from R1/8-28 × R1/8-28 to R2-11 × R2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-034-02SP on the Union BSPT?",
+          "a": "IH-AD-BSP-034-02SP is the Union BSPT (listing code IH-AD-BSP-034) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-034-02SP (suffix 02SP) is R1/8-28 × R1/8-28; IH-AD-BSP-034-12SP (suffix 12SP) is R3/4-14 × R3/4-14; IH-AD-BSP-034-32SP (suffix 32SP) is R2-11 × R2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Union BSPT do you list?",
+          "a": "The Union BSPT is listed in 17 sizes, running from R1/8-28 × R1/8-28 to R2-11 × R2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union BSPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-034-12SP is R3/4-14 × R3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union BSPT rated for?",
+          "a": "The listing for the Union BSPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union BSPT made from and how is it finished?",
+          "a": "The Union BSPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union BSPT follow?",
+          "a": "The Union BSPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union BSPT connect to?",
+          "a": "On the Union BSPT, port A is male BSPT R1/8 to R2 (taper) and port B is male BSPT R1/8 to R2 (taper). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union BSPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union BSPT. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union BSPT and the Union Elbow BSPT?",
+          "a": "The Union BSPT and the [Union Elbow BSPT](/p/union-elbow-bspt) are separate listings with their own size tables. The second adds elbow to the name. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union BSPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union BSPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union BSPT in stock in Dubai?",
+          "a": "Yes. We keep the Union BSPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "union-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Union Elbow do and where is it used?",
+          "a": "The Union Elbow is an elbow adapter. It turns a line through an angle at the port so the hose or tube can be routed past an obstruction. It is listed in the Indus BSP Adapters range with 9 part numbers, from G1/8-28 × G1/8-28 to G1.1/2-11 × G1.1/2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-052-02 on the Union Elbow?",
+          "a": "IH-AD-BSP-052-02 is the Union Elbow (listing code IH-AD-BSP-052) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-052-02 (suffix 02) is G1/8-28 × G1/8-28; IH-AD-BSP-052-10 (suffix 10) is G5/8-14 × G5/8-14; IH-AD-BSP-052-24 (suffix 24) is G1.1/2-11 × G1.1/2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Union Elbow come in?",
+          "a": "The Union Elbow is listed in 9 sizes, running from G1/8-28 × G1/8-28 to G1.1/2-11 × G1.1/2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union Elbow for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-052-10 is G5/8-14 × G5/8-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union Elbow rated for?",
+          "a": "The listing for the Union Elbow gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union Elbow made from and how is it finished?",
+          "a": "The Union Elbow is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union Elbow follow?",
+          "a": "The Union Elbow is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union Elbow connect to?",
+          "a": "On the Union Elbow, port A is male BSPP G1/8 to G2 (parallel) and port B is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union Elbow so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union Elbow. On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stacking adapters](/blog/stacking-hydraulic-adapters) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union Elbow and the Union 45° Elbow?",
+          "a": "The Union Elbow and the [Union 45° Elbow](/p/union-45-elbow) are separate listings with their own size tables. The second adds 45 to the name. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union Elbow made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union Elbow are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union Elbow in stock in Dubai?",
+          "a": "Yes. We keep the Union Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "union-elbow-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Union Elbow BSPT and what is it used for?",
+          "a": "The Union Elbow BSPT is an elbow adapter. It turns a line through an angle at the port so the hose or tube can be routed past an obstruction. It is listed in the Indus BSP Adapters range in a range of sizes, from R1/8-28 × R1/8-28 to R2-11 × R2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-033-02SP on the Union Elbow BSPT?",
+          "a": "IH-AD-BSP-033-02SP is the Union Elbow BSPT (listing code IH-AD-BSP-033) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-033-02SP (suffix 02SP) is R1/8-28 × R1/8-28; IH-AD-BSP-033-0812SP (suffix 0812SP) is R1/2-14 × R3/4-14; IH-AD-BSP-033-32SP (suffix 32SP) is R2-11 × R2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Union Elbow BSPT do you list?",
+          "a": "The Union Elbow BSPT is listed in a range of sizes, running from R1/8-28 × R1/8-28 to R2-11 × R2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union Elbow BSPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-033-0812SP is R1/2-14 × R3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union Elbow BSPT rated for?",
+          "a": "The listing for the Union Elbow BSPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union Elbow BSPT made from and how is it finished?",
+          "a": "The Union Elbow BSPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union Elbow BSPT follow?",
+          "a": "The Union Elbow BSPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union Elbow BSPT connect to?",
+          "a": "On the Union Elbow BSPT, port A is male BSPT R1/8 to R2 (taper) and port B is male BSPT R1/8 to R2 (taper). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union Elbow BSPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union Elbow BSPT. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to stopping a taper-thread leak](/blog/stopping-an-npt-thread-leak) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union Elbow BSPT and the Union BSPT?",
+          "a": "The Union Elbow BSPT and the [Union BSPT](/p/union-bspt) are separate listings with their own size tables. The first adds elbow to the name. Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union Elbow BSPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union Elbow BSPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union Elbow BSPT in stock in Dubai?",
+          "a": "Yes. We keep the Union Elbow BSPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "union-tee-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Union Tee (BSP) and what is it used for?",
+          "a": "The Union Tee (BSP) is a tee adapter. It splits one line into two, or lets a third connection such as a gauge or a branch hose join a run. It is listed in the Indus BSP Adapters range with 9 part numbers, from G1/8-28 × G1/8-28 × G1/8-28 to G1-1/2\" × G1-1/2\" × G1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-009-02 on the Union Tee (BSP)?",
+          "a": "IH-AD-BSP-009-02 is the Union Tee (BSP) (listing code IH-AD-BSP-009) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-009-02 (suffix 02) is G1/8-28 × G1/8-28 × G1/8-28; IH-AD-BSP-009-10 (suffix 10) is G5/8-14 × G5/8-14 × G5/8-14; IH-AD-BSP-009-24 (suffix 24) is G1-1/2\" × G1-1/2\" × G1-1/2\". Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Union Tee (BSP) come in?",
+          "a": "The Union Tee (BSP) is listed in 9 sizes, running from G1/8-28 × G1/8-28 × G1/8-28 to G1-1/2\" × G1-1/2\" × G1-1/2\". The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union Tee (BSP) for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-009-10 is G5/8-14 × G5/8-14 × G5/8-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union Tee (BSP) rated for?",
+          "a": "The listing for the Union Tee (BSP) gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union Tee (BSP) made from and how is it finished?",
+          "a": "The Union Tee (BSP) is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union Tee (BSP) follow?",
+          "a": "The Union Tee (BSP) is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union Tee (BSP) connect to?",
+          "a": "On the Union Tee (BSP), port A is male BSPP G1/8 to G2 (parallel). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union Tee (BSP) so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union Tee (BSP). On a BSP parallel (BSPP) end the bonded seal, O-ring or cone seat does the sealing, not the thread, so seat the seal square and do not rely on tape to stop a leak. Clean the port first and never force a joint that does not start by hand. See our [guide to stopping a taper-thread leak](/blog/stopping-an-npt-thread-leak) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union Tee (BSP) and the Union Tee BSPT?",
+          "a": "The Union Tee (BSP) and the [Union Tee BSPT](/p/union-tee-bspt) are separate listings with different ends. The first has male BSPP G1/8 to G2 (parallel), while the second has male BSPT R1/8 to R2 (taper). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union Tee (BSP) made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union Tee (BSP) are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union Tee (BSP) in stock in Dubai?",
+          "a": "Yes. We keep the Union Tee (BSP) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "union-tee-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Union Tee BSPT and what is it used for?",
+          "a": "The Union Tee BSPT is a tee adapter. It splits one line into two, or lets a third connection such as a gauge or a branch hose join a run. It is listed in the Indus BSP Adapters range with 9 part numbers, from Rc1/8-28 × Rc1/8-28 × Rc1/8-28 to Rc2-11 × Rc2-11 × Rc2-11."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-AD-BSP-007-02 on the Union Tee BSPT?",
+          "a": "IH-AD-BSP-007-02 is the Union Tee BSPT (listing code IH-AD-BSP-007) followed by a size suffix that the size table ties to the ends shown. In the table: IH-AD-BSP-007-02 (suffix 02) is Rc1/8-28 × Rc1/8-28 × Rc1/8-28; IH-AD-BSP-007-12 (suffix 12) is Rc3/4-14 × Rc3/4-14 × Rc3/4-14; IH-AD-BSP-007-32 (suffix 32) is Rc2-11 × Rc2-11 × Rc2-11. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Union Tee BSPT do you list?",
+          "a": "The Union Tee BSPT is listed in 9 sizes, running from Rc1/8-28 × Rc1/8-28 × Rc1/8-28 to Rc2-11 × Rc2-11 × Rc2-11. The Sizes & Part Numbers tab gives the thread on each end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Union Tee BSPT for my port?",
+          "a": "Identify the thread type and the seat at each end first, then the size. For example, IH-AD-BSP-007-12 is Rc3/4-14 × Rc3/4-14 × Rc3/4-14. A thread that engages against the wrong seat will weep under pressure, so confirm both before ordering. Our [checklist of what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) shows what to measure."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure is the Union Tee BSPT rated for?",
+          "a": "The listing for the Union Tee BSPT gives its rating as \"up to 400 bar at smaller sizes; derates with size\", so the rating is highest at the smallest sizes and falls as the size grows. The pressure rating of a line tracks the lowest-rated component in it, so check the host port, hose and ferrule as well as the adapter."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Union Tee BSPT made from and how is it finished?",
+          "a": "The Union Tee BSPT is listed in carbon steel with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel can be supplied on request for marine, chemical or food-grade service; ask for it when you enquire. Match the material to the fluid and the environment, and tell us if the line carries anything other than hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Union Tee BSPT follow?",
+          "a": "The Union Tee BSPT is listed to ISO 228-1 (BSPP), ISO 7-1 (BSPT). ISO 228-1 covers pipe threads where pressure-tight joints are not made on the threads (the parallel G thread, for example BSPP), so the joint is sealed by a washer, O-ring or cone seat. ISO 7-1 covers pipe threads where pressure-tight joints are made on the threads (the taper R thread, for example BSPT), so the thread flanks seal with sealant or tape. No test certificate is attached to the listing; tell us the documents your inspection or project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Union Tee BSPT connect to?",
+          "a": "On the Union Tee BSPT, port A is male BSPT R1/8 to R2 (taper). Each end mates with a part of the same thread and the same seat. The [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range lists the matching parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Union Tee BSPT so it does not leak?",
+          "a": "Match the thread and the seat before you tighten the Union Tee BSPT. On a taper pipe end the thread flanks do the sealing, so use a thread sealant or tape, bring it up to a firm hand-tight and a controlled further turn, and avoid over-tightening, which can crack a port. Clean the port first and never force a joint that does not start by hand. See our [guide to diagnosing an over-tightened fitting](/blog/over-tightened-fitting-diagnosis) for more."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Union Tee BSPT and the Union BSPT?",
+          "a": "The Union Tee BSPT and the [Union BSPT](/p/union-bspt) are separate listings with different ends. The first has male BSPT R1/8 to R2 (taper), while the second has male BSPT R1/8 to R2 (taper) and male BSPT R1/8 to R2 (taper). Choose by the thread and seat at each port you are connecting, not by the name, because adapters with similar names can have different ends."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Union Tee BSPT made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the Union Tee BSPT are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the Union Tee BSPT in stock in Dubai?",
+          "a": "Yes. We keep the Union Tee BSPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}
