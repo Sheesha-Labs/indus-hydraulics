@@ -1,0 +1,2271 @@
+{
+ "source": "Maker catalogue and part data 2026-11-19 — Oteco Wave 3 (swivel washpipe and packing)",
+ "imageDir": "",
+ "brandSlug": "oteco",
+ "specTemplate": {
+  "slug": "rig-equipment-spec",
+  "name": "Rig Floor & Rig Hardware",
+  "position": 42,
+  "description": "Rig-floor consumables and rig hardware: product type, model, sizes, what it fits, compound or material, rating and maker.",
+  "fields": [
+   {
+    "key": "product_type",
+    "label": "Product type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 0
+   },
+   {
+    "key": "model",
+    "label": "Model",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 1
+   },
+   {
+    "key": "sizes",
+    "label": "Sizes",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "fits",
+    "label": "Fits",
+    "dataType": "text",
+    "group": "Compatibility",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 3
+   },
+   {
+    "key": "material",
+    "label": "Material / compound",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 4
+   },
+   {
+    "key": "rating",
+    "label": "Rating",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 5
+   },
+   {
+    "key": "connection",
+    "label": "Connection",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 6
+   },
+   {
+    "key": "maker",
+    "label": "Maker",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 7
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "drilling-workover-systems",
+   "name": "Drilling & Workover Systems",
+   "parentSlug": null,
+   "position": 14,
+   "shortDescription": "Drilling & workover packaged systems — mud pump packages, mud manifolds, degassers, mud / workover tanks, liquid mud plants, and mobile labs / workshops.",
+   "seoTitle": "Drilling & Workover Systems — Mud Pumps",
+   "seoDescription": "Engineered drilling & workover packaged systems: mud pump packages, mud manifolds, mud degassers, mud + workover tanks, liquid mud plants",
+   "focusKeyword": "workover systems"
+  },
+  {
+   "slug": "swivel-washpipe-packing",
+   "name": "Swivel Washpipe & Packing",
+   "parentSlug": "drilling-workover-systems",
+   "position": 11,
+   "shortDescription": "Replacement washpipe and washpipe packing for Emsco, National, Oilwell, Ideco, Skytop Brewster, Gray, King and Gardner-Denver swivels, from Oteco — authorised distributor, stock in the UAE.",
+   "seoTitle": "Swivel Washpipe & Packing — Emsco, National, Oilwell",
+   "seoDescription": "Oteco washpipe and packing for Emsco, National, Oilwell, Ideco, Skytop Brewster, Gray, King and Gardner-Denver swivels. UAE stock.",
+   "focusKeyword": "swivel washpipe packing",
+   "bands": {
+    "hero": {
+     "intro": "Washpipe and packing sets for the land-rig swivels most often found in the region."
+    },
+    "guidance": {
+     "heading": "Find it by swivel make and model",
+     "body": "Each listing covers one swivel make and lists the models every washpipe and packing set fits. If your swivel model is not shown, order by the Oteco part number or send the swivel make, model and serial number."
+    },
+    "standards": {
+     "heading": "Wear parts, made to the swivel",
+     "body": "Washpipe is a hardened, ground tube and packing a set of elastomer rings, some with metal rings, cut to each swivel's dimensions. Replace packing routinely and inspect the washpipe at every packing change."
+    },
+    "service": {
+     "heading": "Oteco, stocked in the UAE",
+     "body": "Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Tell us the part number, or the pump or swivel model and the size, and we confirm it before quoting."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Which washpipe fits my swivel?",
+       "a": "Open the listing for your swivel make: the size table gives each washpipe and packing part number with the swivel models Oteco lists it for."
+      },
+      {
+       "q": "Do you supply washpipe and packing together?",
+       "a": "Yes. Order the washpipe and the matching packing set together; several swivels also need separate upper and lower packing."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-OTC-WP-SKYTOP",
+   "slug": "oteco-skytop-brewster-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Skytop Brewster Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "skytop brewster swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Skytop Brewster swivels, models 3-S, 3-TS, 6-HD, 6-S, 6-SX, 7-SX, 8-SX, 6-BX, 6-SBX, 7-BX, 8-BX and 9-SX — 13 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Skytop Brewster swivels. The size table lists every part with the Skytop Brewster swivel models Oteco lists it for: 3-S, 3-TS, 6-HD, 6-S, 6-SX, 7-SX, 8-SX, 6-BX, 6-SBX, 7-BX, 8-BX and 9-SX.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>6 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Skytop Brewster Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Skytop Brewster swivels (3-S, 3-TS, 6-HD, 6-S, 6-SX, 7-SX, 8-SX, 6-BX, 6-SBX, 7-BX, 8…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Skytop Brewster swivels: 3-S, 3-TS, 6-HD, 6-S, 6-SX, 7-SX, 8-SX, 6-BX, 6-SBX, 7-BX, 8-BX and 9-SX",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Skytop Brewster washpipe",
+    "Skytop Brewster swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630204",
+    "630212",
+    "630213",
+    "630227",
+    "630228",
+    "630237",
+    "630271",
+    "680081",
+    "680082",
+    "680083",
+    "680084",
+    "680085",
+    "680087"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Skytop Brewster range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630204",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10204, set",
+      "fits": "Skytop Brewster 3-S & 3-TS"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630212",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10210, set",
+      "fits": "Skytop Brewster 6-HD & 6-S"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630213",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10206, set",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630227",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10212, set",
+      "fits": "Skytop Brewster 6-SX, 7-SX, & 8-SX"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630228",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10208, set",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630237",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe packing WP10214, set",
+      "fits": "Skytop Brewster 6-BX, 6-SBX, 7-BX, 8-BX, & 9-SX"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630271",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe packing WP10208A, set",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680081",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe 067010204",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680082",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe 067010206",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680083",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe 067010208",
+      "fits": "Skytop Brewster swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680084",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe 067010210",
+      "fits": "Skytop Brewster 6-HD & 6-S"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680085",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe 067010212",
+      "fits": "Skytop Brewster 6-SX, 7-SX, & 8-SX"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680087",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe 067010214",
+      "fits": "Skytop Brewster 6-BX, 6-SBX, 7-BX, 8-BX, 9-SX"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-EMSCO",
+   "slug": "oteco-emsco-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Emsco Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "emsco swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Emsco swivels, models AE-4, L-200 to L-400, LA-200 to LA-400, LB-140, LB-200 to LB-650 and L-650 — 33 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Emsco swivels. The size table lists every part with the Emsco swivel models Oteco lists it for: AE-4, L-200 to L-400, LA-200 to LA-400, LB-140, LB-200 to LB-650 and L-650.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>22 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Emsco Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Emsco swivels (AE-4, L-200 to L-400, LA-200 to LA-400, LB-140, LB-200 to LB…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Emsco swivels: AE-4, L-200 to L-400, LA-200 to LA-400, LB-140, LB-200 to LB-650 and L-650",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Emsco washpipe",
+    "Emsco swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630200",
+    "630201",
+    "630209",
+    "630211",
+    "630217",
+    "630232",
+    "630233",
+    "630247",
+    "630248",
+    "630249",
+    "630250",
+    "630251",
+    "630259",
+    "630260",
+    "680021",
+    "680022",
+    "680023",
+    "680024",
+    "680025",
+    "680026",
+    "680028",
+    "680029",
+    "680030",
+    "680032",
+    "680033",
+    "680034",
+    "680037",
+    "680038",
+    "680040",
+    "680041",
+    "680042",
+    "680043",
+    "680044"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Emsco range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630200",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10304, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630201",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10308, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630209",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10310, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630211",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10312, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630217",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10306, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630232",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe packing WP10320, set",
+      "fits": "Emsco LA-200, LB-200, LA-300, LB-300, & LA-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630233",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe packing WP10324, set",
+      "fits": "Emsco LB-400, LB-500, L-650, & LB-650"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630247",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe packing WP10306S, set",
+      "fits": "Emsco AE-4 (New Style)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630248",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe packing WP10322S, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630249",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe packing WP10314S, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630250",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe packing WP10320S, set",
+      "fits": "Emsco L-200, L-300, & L-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630251",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe packing WP10310S, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630259",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe packing WP10340, set",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630260",
+     "position": 13,
+     "dimensions": {
+      "item": "Washpipe packing WP10339, set",
+      "fits": "Emsco LB-140"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680021",
+     "position": 14,
+     "dimensions": {
+      "item": "Washpipe 067010322",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680022",
+     "position": 15,
+     "dimensions": {
+      "item": "Washpipe 067010324",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680023",
+     "position": 16,
+     "dimensions": {
+      "item": "Washpipe 067010304",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680024",
+     "position": 17,
+     "dimensions": {
+      "item": "Washpipe 067010306",
+      "fits": "Emsco AE-4 (New Style)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680025",
+     "position": 18,
+     "dimensions": {
+      "item": "Washpipe 067010308",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680026",
+     "position": 19,
+     "dimensions": {
+      "item": "Washpipe 067010310",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680028",
+     "position": 20,
+     "dimensions": {
+      "item": "Washpipe 067010326",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680029",
+     "position": 21,
+     "dimensions": {
+      "item": "Washpipe 067010312",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680030",
+     "position": 22,
+     "dimensions": {
+      "item": "Washpipe 067010316",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680032",
+     "position": 23,
+     "dimensions": {
+      "item": "Washpipe 067010314",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680033",
+     "position": 24,
+     "dimensions": {
+      "item": "Washpipe 067010320",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680034",
+     "position": 25,
+     "dimensions": {
+      "item": "Washpipe 067010318",
+      "fits": "Emsco L-200, L-300, & L400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680037",
+     "position": 26,
+     "dimensions": {
+      "item": "Washpipe 067010335",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680038",
+     "position": 27,
+     "dimensions": {
+      "item": "Washpipe 067010330A",
+      "fits": "Emsco LA-200, LA-300, & LA-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680040",
+     "position": 28,
+     "dimensions": {
+      "item": "Washpipe 067010342",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680041",
+     "position": 29,
+     "dimensions": {
+      "item": "Washpipe 067010340",
+      "fits": "Emsco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680042",
+     "position": 30,
+     "dimensions": {
+      "item": "Washpipe 067010339",
+      "fits": "Emsco LB-140"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680043",
+     "position": 31,
+     "dimensions": {
+      "item": "Washpipe 067010338",
+      "fits": "Emsco LB-200 & LB-300"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680044",
+     "position": 32,
+     "dimensions": {
+      "item": "Washpipe 067010336",
+      "fits": "Emsco LB-400, LB-500, & LB-650"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-GRAY",
+   "slug": "oteco-gray-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Gray Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "gray swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Gray swivels, models Type A, B, B-41, B-44, B-44-M quick change, C, F and FM — 10 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Gray swivels. The size table lists every part with the Gray swivel models Oteco lists it for: Type A, B, B-41, B-44, B-44-M quick change, C, F and FM.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>4 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Gray Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Gray swivels (Type A, B, B-41, B-44, B-44-M quick change, C, F and FM…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Gray swivels: Type A, B, B-41, B-44, B-44-M quick change, C, F and FM",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Gray washpipe",
+    "Gray swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630226",
+    "630240",
+    "630241",
+    "630246",
+    "680035",
+    "680049",
+    "680050",
+    "680051",
+    "680052",
+    "680053"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Gray range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630226",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10508, set",
+      "fits": "Gray swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630240",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10504, set",
+      "fits": "Gray Type A, B, B-41, B-44, & C"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630241",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10506, set",
+      "fits": "Gray Type F & FM"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630246",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10512, set",
+      "fits": "Gray B-44-M (Type A) Quick Change"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680035",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe 067010514",
+      "fits": "Gray swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680049",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe 067010510",
+      "fits": "Gray swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680050",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe 067010504",
+      "fits": "Gray B-41, B-44, & Type B"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680051",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe 067010512",
+      "fits": "Gray B-44-M (Type A) Quick Change"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680052",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe 067010506",
+      "fits": "Gray Type F & FM"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680053",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe 067010508",
+      "fits": "Gray swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-NATIONAL",
+   "slug": "oteco-national-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for National Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "national swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for National swivels, models Type A, AA, D (including 8\" D), DF, DFC, E-3, F, M-3, 85-C3, N-24, N-35, N-47, N-69, N-815, N-1324, MUB, RB-3 and P-200 to P-650 — 21 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for National swivels. The size table lists every part with the National swivel models Oteco lists it for: Type A, AA, D (including 8\" D), DF, DFC, E-3, F, M-3, 85-C3, N-24, N-35, N-47, N-69, N-815, N-1324, MUB, RB-3 and P-200 to P-650.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>12 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for National Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for National swivels (Type A, AA, D (including 8\" D), DF, DFC, E-3, F, M-3, 85-C3,…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "National swivels: Type A, AA, D (including 8\" D), DF, DFC, E-3, F, M-3, 85-C3, N-24, N-35, N-47, N-69, N-815, N-1324, MUB, RB-3 and P-200 to P-650",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "National washpipe",
+    "National swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630202",
+    "630206",
+    "630210",
+    "630223",
+    "630224",
+    "630234",
+    "630235",
+    "630236",
+    "630267",
+    "630268",
+    "680062",
+    "680063",
+    "680064",
+    "680065",
+    "680066",
+    "680067",
+    "680068",
+    "680069",
+    "680070",
+    "680071",
+    "680097"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the National range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630202",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10604, set",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630206",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10606, set",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630210",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10614, set",
+      "fits": "National Types A, AA, D (including 8\" D), DF, DFC, E-3, F, M-3, & 85-C3"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630223",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10618, set",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630224",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10614A, set",
+      "fits": "National Type D, DF, E-3, & M-3"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630234",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe packing WP10620, set",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630235",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe packing WP10624, set",
+      "fits": "National P-200, P-300, P-400, P-500, & P-650"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630236",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe packing WP10622, set",
+      "fits": "National MUB, N-47, N-69, N-815, N-1324, & RB-3"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630267",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe packing WP10617, set",
+      "fits": "National N-24 & N-35"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630268",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe packing WP10608, set",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680062",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe 067010616",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680063",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe 067010604",
+      "fits": "National Type D. Type DF, Type DFC, Type E-3, Type F, & Type M-3"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680064",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe 067010618",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680065",
+     "position": 13,
+     "dimensions": {
+      "item": "Washpipe 067010620",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680066",
+     "position": 14,
+     "dimensions": {
+      "item": "Washpipe 067010614",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680067",
+     "position": 15,
+     "dimensions": {
+      "item": "Washpipe 067010608",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680068",
+     "position": 16,
+     "dimensions": {
+      "item": "Washpipe 067010610",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680069",
+     "position": 17,
+     "dimensions": {
+      "item": "Washpipe 067010612",
+      "fits": "National N-47, N-69, N-815, N-1324, MUB, & RB-3"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680070",
+     "position": 18,
+     "dimensions": {
+      "item": "Washpipe 067010622",
+      "fits": "National N-24 & N-35"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680071",
+     "position": 19,
+     "dimensions": {
+      "item": "Washpipe 067010624",
+      "fits": "National P-200, P-300, P-400, P-500, & P-650"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680097",
+     "position": 20,
+     "dimensions": {
+      "item": "Washpipe 067010606",
+      "fits": "National swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-IDECO",
+   "slug": "oteco-ideco-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Ideco Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "ideco swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Ideco swivels, models SS-150, SS-250, SS-300, SS-625, SS-830, DSS-300, TSS-150, TL-120, TL-200, TL-300, TL-400, TL-500 and TL-650 — 17 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Ideco swivels. The size table lists every part with the Ideco swivel models Oteco lists it for: SS-150, SS-250, SS-300, SS-625, SS-830, DSS-300, TSS-150, TL-120, TL-200, TL-300, TL-400, TL-500 and TL-650.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>10 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Ideco Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Ideco swivels (SS-150, SS-250, SS-300, SS-625, SS-830, DSS-300, TSS-150, TL…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Ideco swivels: SS-150, SS-250, SS-300, SS-625, SS-830, DSS-300, TSS-150, TL-120, TL-200, TL-300, TL-400, TL-500 and TL-650",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ideco washpipe",
+    "Ideco swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630239",
+    "630261",
+    "630262",
+    "630263",
+    "630264",
+    "630265",
+    "630266",
+    "630272",
+    "630273",
+    "630274",
+    "630275",
+    "630276",
+    "630277",
+    "680054",
+    "680055",
+    "680056",
+    "680057"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Ideco range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630239",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10716, set",
+      "fits": "Ideco SS-150, TL-120, & TSS-150"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630261",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, upper",
+      "fits": "Ideco DSS-300, SS-250, SS-300, SS-625, SS-830, TL-300, TL-400, TL-500, TL-650, TSS-250, & TSS-300"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630262",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10718, upper, without metal ring",
+      "fits": "Ideco TL-200"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630263",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10712, lower",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630264",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, lower",
+      "fits": "Ideco TL-300, TL-400,TL-500, & TL-650"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630265",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe packing WP10718, upper, with metal ring",
+      "fits": "Ideco TL-200"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630266",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe packing WP10709, lower",
+      "fits": "Ideco TL-200"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630272",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, lower, with metal ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630273",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe packing WP10709, upper, with metal ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630274",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, lower, middle ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630275",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, lower, upper ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630276",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe packing WP10703, lower, lower ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630277",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe packing WP10717, upper, with metal ring",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680054",
+     "position": 13,
+     "dimensions": {
+      "item": "Washpipe 067010704",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680055",
+     "position": 14,
+     "dimensions": {
+      "item": "Washpipe 067010706",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680056",
+     "position": 15,
+     "dimensions": {
+      "item": "Washpipe 067010712",
+      "fits": "Ideco TL-200, TL-300, & TL-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680057",
+     "position": 16,
+     "dimensions": {
+      "item": "Washpipe 067010710",
+      "fits": "Ideco swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-OILWELL",
+   "slug": "oteco-oilwell-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Oilwell Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "oilwell swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Oilwell swivels, models 60-A, 60-B, 60-C, S-100 to S-425, SA-100, SA-150, S-370, S-4-100, S-5-200, 100-C, 150-A to 150-C, 300-C, 300-D and PC-100 to PC-650 — 14 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Oilwell swivels. The size table lists every part with the Oilwell swivel models Oteco lists it for: 60-A, 60-B, 60-C, S-100 to S-425, SA-100, SA-150, S-370, S-4-100, S-5-200, 100-C, 150-A to 150-C, 300-C, 300-D and PC-100 to PC-650.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>6 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Oilwell Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Oilwell swivels (60-A, 60-B, 60-C, S-100 to S-425, SA-100, SA-150, S-370, S-4…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Oilwell swivels: 60-A, 60-B, 60-C, S-100 to S-425, SA-100, SA-150, S-370, S-4-100, S-5-200, 100-C, 150-A to 150-C, 300-C, 300-D and PC-100 to PC-650",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Oilwell washpipe",
+    "Oilwell swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630238",
+    "630242",
+    "630252",
+    "630253",
+    "630270",
+    "680072",
+    "680073",
+    "680074",
+    "680075",
+    "680076",
+    "680077",
+    "680078",
+    "680079",
+    "680080"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Oilwell range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630238",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10918, set",
+      "fits": "Oilwell PC-225, PC-300, PC-425, PC-500, PC-650"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630242",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10916, set",
+      "fits": "Oilwell PC-100 & PC-150"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630252",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10910, set",
+      "fits": "Oilwell 100-C, 150-A, 150-B, 150-C, S-225, S-300, 300-C, 300-D, S-425, S-5-200, S-6-300, & S-6-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630253",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10906, set",
+      "fits": "Oilwell 60-A, 60-B, 60-C, S-100, SA-100, S-150, SA-150,,S-370, & S-4-100"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630270",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10912, set",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680072",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe 067010904",
+      "fits": "Oilwell 60-A, 60-B, 60-C, S150, & S-4-100"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680073",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe 067010906",
+      "fits": "Oilwell 100-C, 150-A, 150-B,150-C, 300-C, 300-D, S-225, S-300, S-425, S-5-200, S-6-300, S-6-400"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680074",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe 067010908",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680075",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe 067010914",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680076",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe 067010914D",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680077",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe 067010912A",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680078",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe 067010912",
+      "fits": "Oilwell swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680079",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe 067010916",
+      "fits": "Oilwell PC-100 & PC-150"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680080",
+     "position": 13,
+     "dimensions": {
+      "item": "Washpipe 067010918",
+      "fits": "Oilwell PC-225, PC-300, PC-425, PC-500, PC-650"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-KING",
+   "slug": "oteco-king-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for King Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "king swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for King swivels, models 20-GW, 32-GA and 53-GA — 9 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for King swivels. The size table lists every part with the King swivel models Oteco lists it for: 20-GW, 32-GA and 53-GA.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>5 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for King Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for King swivels (20-GW, 32-GA and 53-GA…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "King swivels: 20-GW, 32-GA and 53-GA",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "King washpipe",
+    "King swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630203",
+    "630208",
+    "630215",
+    "630216",
+    "680036",
+    "680058",
+    "680059",
+    "680060",
+    "680061"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the King range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630203",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10804, set",
+      "fits": "King 53-GA"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630208",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10808, set",
+      "fits": "King swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630215",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10807, set",
+      "fits": "King swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630216",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10806, set",
+      "fits": "King 20-GW & 32-GA"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680036",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe 067011118",
+      "fits": "King swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680058",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe 067011104",
+      "fits": "King 20-GW & 32-GA"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680059",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe 067011106",
+      "fits": "King 53-GA"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680060",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe 067011107",
+      "fits": "King swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680061",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe 067011108",
+      "fits": "King swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-GD",
+   "slug": "oteco-gardner-denver-swivel-washpipe-packing",
+   "title": "Oteco Washpipe & Packing for Gardner-Denver Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "gardner-denver swivel washpipe",
+   "descriptionShort": "Oteco replacement washpipe and washpipe packing for Gardner-Denver swivels, models SW-75, SW-125, SW-200, SW-300, SW-400 and SW-550 — 7 part numbers. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco replacement washpipe and washpipe packing for Gardner-Denver swivels. The size table lists every part with the Gardner-Denver swivel models Oteco lists it for: SW-75, SW-125, SW-200, SW-300, SW-400 and SW-550.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>1 of the part numbers here name no swivel model in the source data; their make is inferred from Oteco's code numbering and the <em>Fits</em> column says so. We confirm the swivel model before shipping.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Other swivels</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-swivel-washpipe-packing-other\">Oteco washpipe and packing for other swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Washpipe & Packing for Gardner-Denver Swivels",
+   "seoDescription": "Oteco washpipe and washpipe packing for Gardner-Denver swivels (SW-75, SW-125, SW-200, SW-300, SW-400 and SW-550…). Stock in the UAE.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Gardner-Denver swivels: SW-75, SW-125, SW-200, SW-300, SW-400 and SW-550",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Gardner-Denver washpipe",
+    "Gardner-Denver swivel packing",
+    "washpipe packing",
+    "swivel washpipe",
+    "630243",
+    "630244",
+    "630245",
+    "680046",
+    "680047",
+    "680048",
+    "680086"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs — representative of the Gardner-Denver range",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630243",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP11604, set",
+      "fits": "Gardner-Denver SW-200 & SW-300"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630244",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP11606, set",
+      "fits": "Gardner-Denver SW-75 & SW-125"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630245",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP11602, set",
+      "fits": "Gardner-Denver SW-400 & SW-550"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680046",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe 067011606",
+      "fits": "Gardner-Denver SW-75 & SW-125"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680047",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe 067011604",
+      "fits": "Gardner-Denver SW-200 & SW-300"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680048",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe 067011602",
+      "fits": "Gardner-Denver SW-400 & SW-550"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680086",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe 067011608",
+      "fits": "Gardner-Denver swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  },
+  {
+   "sku": "IH-OTC-WP-OTHER",
+   "slug": "oteco-swivel-washpipe-packing-other",
+   "title": "Oteco Swivel Washpipe & Packing — Other Swivels",
+   "category": "swivel-washpipe-packing",
+   "focusKeyword": "swivel washpipe packing",
+   "descriptionShort": "Oteco washpipe, washpipe packing and snap rings for further swivels, including the Walker Neer water-well swivel — 45 part numbers, matched by Oteco part number. Authorised Oteco distributor, UAE stock.",
+   "descriptionLong": "<p>Oteco washpipe, packing sets and snap rings that the source data does not tie to a swivel model, plus washpipe for the Walker Neer water-well swivel. Order by the Oteco part number on your bill of materials, or send the swivel make, model and serial number and we identify the washpipe and packing with Oteco.</p><p>The washpipe is the hardened, ground tube that carries drilling fluid from the swivel gooseneck into the rotating stem, and the washpipe packing is the stack of rings that seals it. Both wear with every hour of circulation, so a swivel crew replaces packing routinely and washpipe at intervals. Oteco makes washpipe and packing sets for the main land-rig swivels, including split upper and lower packing rings with or without metal rings where the swivel needs them.</p><p>Pump and swivel makers' names are trademarks of their owners. Oteco parts are replacement parts made to fit that equipment; Indus Hydraulics is not affiliated with those makers.</p><h3>Swivels by make</h3><ul><li><a href=\"/p/oteco-skytop-brewster-swivel-washpipe-packing\">Oteco washpipe for Skytop Brewster swivels</a></li><li><a href=\"/p/oteco-emsco-swivel-washpipe-packing\">Oteco washpipe for Emsco swivels</a></li><li><a href=\"/p/oteco-gray-swivel-washpipe-packing\">Oteco washpipe for Gray swivels</a></li><li><a href=\"/p/oteco-national-swivel-washpipe-packing\">Oteco washpipe for National swivels</a></li><li><a href=\"/p/oteco-ideco-swivel-washpipe-packing\">Oteco washpipe for Ideco swivels</a></li><li><a href=\"/p/oteco-oilwell-swivel-washpipe-packing\">Oteco washpipe for Oilwell swivels</a></li><li><a href=\"/p/oteco-king-swivel-washpipe-packing\">Oteco washpipe for King swivels</a></li><li><a href=\"/p/oteco-gardner-denver-swivel-washpipe-packing\">Oteco washpipe for Gardner-Denver swivels</a></li></ul><h3>Supply from the UAE</h3><p>Indus Hydraulics is an authorised Oteco distributor for the Middle East. We hold Oteco stock in the UAE and supply across the GCC and the wider region, with the maker's documentation and part numbers. Send the Oteco part number, or the pump or swivel make and model and the liner size, and we confirm the part and the delivery.</p>",
+   "seoTitle": "Oteco Swivel Washpipe & Packing — Other Swivels",
+   "seoDescription": "Oteco washpipe, packing and snap rings for further swivels, ordered by Oteco part number; Walker Neer washpipe. UAE stock.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Swivel washpipe and packing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Compatibility",
+     "label": "Fits",
+     "value": "Swivels identified by Oteco part number",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "fits"
+    },
+    {
+     "group": "Construction",
+     "label": "Material / compound",
+     "value": "Hardened steel washpipe; elastomer packing rings",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Oteco Inc., Houston, Texas, USA",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "washpipe",
+    "washpipe packing",
+    "swivel packing",
+    "630205",
+    "630207",
+    "630214",
+    "630218",
+    "630219",
+    "630220",
+    "630221",
+    "630222",
+    "630225",
+    "630229",
+    "630230",
+    "630231",
+    "630254",
+    "630255",
+    "630256",
+    "630257",
+    "630258",
+    "630269",
+    "680000",
+    "680002",
+    "680004",
+    "680007",
+    "680010",
+    "680014",
+    "680020",
+    "680039",
+    "680045",
+    "680088",
+    "680089",
+    "680090",
+    "680091",
+    "680092",
+    "680093",
+    "680094",
+    "680095",
+    "680096",
+    "680098",
+    "680099",
+    "680200",
+    "680201",
+    "680202",
+    "680203",
+    "680204",
+    "680205",
+    "680206"
+   ],
+   "images": [
+    {
+     "file": "oteco-ov-washpipe.jpg",
+     "alt": "Oteco swivel washpipe, hardened steel tube with drive lugs, representative image",
+     "caption": "Oteco products brochure photo, used under the Oteco agency agreement (Ayush, 2026-11-19)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-OTC-630205",
+     "position": 0,
+     "dimensions": {
+      "item": "Washpipe packing WP10110, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630207",
+     "position": 1,
+     "dimensions": {
+      "item": "Washpipe packing WP10404, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630214",
+     "position": 2,
+     "dimensions": {
+      "item": "Washpipe packing WP10116, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630218",
+     "position": 3,
+     "dimensions": {
+      "item": "Washpipe packing WP10120, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630219",
+     "position": 4,
+     "dimensions": {
+      "item": "Washpipe packing WP10122, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630220",
+     "position": 5,
+     "dimensions": {
+      "item": "Washpipe packing WP10118, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630221",
+     "position": 6,
+     "dimensions": {
+      "item": "Washpipe packing WP11018, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630222",
+     "position": 7,
+     "dimensions": {
+      "item": "Washpipe packing WP11008, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630225",
+     "position": 8,
+     "dimensions": {
+      "item": "Washpipe packing WP11016, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630229",
+     "position": 9,
+     "dimensions": {
+      "item": "Washpipe packing WP11012, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630230",
+     "position": 10,
+     "dimensions": {
+      "item": "Washpipe packing WP11022, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630231",
+     "position": 11,
+     "dimensions": {
+      "item": "Washpipe packing WP11024, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630254",
+     "position": 12,
+     "dimensions": {
+      "item": "Washpipe packing WP10106, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630255",
+     "position": 13,
+     "dimensions": {
+      "item": "Washpipe packing WP10104, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630256",
+     "position": 14,
+     "dimensions": {
+      "item": "Washpipe packing WP10108, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630257",
+     "position": 15,
+     "dimensions": {
+      "item": "Washpipe packing WP10114, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630258",
+     "position": 16,
+     "dimensions": {
+      "item": "Washpipe packing WP11702, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-630269",
+     "position": 17,
+     "dimensions": {
+      "item": "Washpipe packing WP10112, set",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680000",
+     "position": 18,
+     "dimensions": {
+      "item": "Washpipe 067010104",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680002",
+     "position": 19,
+     "dimensions": {
+      "item": "Washpipe 067010108",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680004",
+     "position": 20,
+     "dimensions": {
+      "item": "Washpipe 067010110",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680007",
+     "position": 21,
+     "dimensions": {
+      "item": "Washpipe 067010112",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680010",
+     "position": 22,
+     "dimensions": {
+      "item": "Washpipe 067010113",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680014",
+     "position": 23,
+     "dimensions": {
+      "item": "Washpipe 067010114",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680020",
+     "position": 24,
+     "dimensions": {
+      "item": "Washpipe 067010106",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680039",
+     "position": 25,
+     "dimensions": {
+      "item": "Washpipe 067011306",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680045",
+     "position": 26,
+     "dimensions": {
+      "item": "Washpipe 067010404",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680088",
+     "position": 27,
+     "dimensions": {
+      "item": "Washpipe 067011004",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680089",
+     "position": 28,
+     "dimensions": {
+      "item": "Washpipe 067011006",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680090",
+     "position": 29,
+     "dimensions": {
+      "item": "Washpipe 067011008",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680091",
+     "position": 30,
+     "dimensions": {
+      "item": "Washpipe 067011014",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680092",
+     "position": 31,
+     "dimensions": {
+      "item": "Washpipe 067011016",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680093",
+     "position": 32,
+     "dimensions": {
+      "item": "Washpipe 067011010",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680094",
+     "position": 33,
+     "dimensions": {
+      "item": "Washpipe 067011702",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680095",
+     "position": 34,
+     "dimensions": {
+      "item": "Washpipe 067011204",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680096",
+     "position": 35,
+     "dimensions": {
+      "item": "Washpipe 067011404",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680098",
+     "position": 36,
+     "dimensions": {
+      "item": "Washpipe 067011804",
+      "fits": "Walker Neer water-well swivel"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680099",
+     "position": 37,
+     "dimensions": {
+      "item": "Washpipe 067011802",
+      "fits": "Walker Neer swivel — model to confirm (make inferred from the Oteco code group)"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680200",
+     "position": 38,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002200",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680201",
+     "position": 39,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002201",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680202",
+     "position": 40,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002202",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680203",
+     "position": 41,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002203",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680204",
+     "position": 42,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002204",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680205",
+     "position": 43,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002205",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    },
+    {
+     "partNumber": "IH-OTC-680206",
+     "position": 44,
+     "dimensions": {
+      "item": "Washpipe snap ring DD40002206",
+      "fits": "Swivel to confirm with the Oteco part number"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "United States"
+  }
+ ],
+ "hold": []
+}
