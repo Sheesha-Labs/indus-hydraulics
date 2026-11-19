@@ -1,0 +1,76 @@
+{
+  "family": "frac-transfer-pumps",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-transfer-pump-centrifugal-12-12-300-hp-diesel-hydraulic-drive-skid-mounted",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 12x12 300 HP frac transfer pump used for?",
+          "a": "A frac transfer pump feeds the frac pumpers from the blenders or from storage at the required suction flow rate. This high-flow centrifugal pump has a 12-inch suction and 12-inch discharge, 300 HP, on a transport skid with a diesel-hydraulic drive."
+        },
+        {
+          "slot": "D",
+          "q": "What size and power is the 12x12 300 HP frac transfer pump?",
+          "a": "It is a centrifugal pump with a 12-inch suction by 12-inch discharge, rated 300 HP, driven by a diesel-hydraulic drive on a transport skid. State the required flow and head on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pump makes can the 12x12 300 HP frac transfer pump use?",
+          "a": "The centrifugal pump make is selectable from Gardner Denver, MCM, NOV or Serva. Choose to match your spares and the duty on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What drive options does the 12x12 300 HP frac transfer pump offer?",
+          "a": "Drive options are an electric motor (ABB, WEG or Valiadis), a diesel engine (CAT, Deutz, Cummins, Perkins, Detroit Diesel or Volvo Penta), or a hydraulic motor (Denison or Veljan). This listing is the diesel-hydraulic version."
+        },
+        {
+          "slot": "G",
+          "q": "How is the 12x12 300 HP frac transfer pump mounted?",
+          "a": "It is skid-mounted, and trailer-mounted and truck-mounted variants are available on registration-ready chassis. State the transport needs on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 12x12 300 HP frac transfer pump connect to?",
+          "a": "It takes fluid from the [frac blender](/p/frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system) or from storage such as a [frac tank](/p/frac-tank-500-bbl-insulated-trailer-mounted-road-registered) and feeds the frac pumpers. See [frac transfer pumps](/c/frac-transfer-pumps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 12x12 300 HP frac transfer pump differ from a frac pumper?",
+          "a": "The transfer pump is a low-pressure, high-flow centrifugal booster, while the [frac pumper](/p/frac-pumper-2-500-hp-trailer-mounted-fleet-networked-dnv-optional) is a high-pressure triplex unit. The transfer pump keeps the pumpers fed."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 12x12 300 HP frac transfer pump used?",
+          "a": "It is used on hydraulic fracturing fleets to deliver slurry or fluid to the suction of the pumpers. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac transfer pump quotation?",
+          "a": "Send the required flow and suction pressure, the pump make, the drive type and make, and the mounting (skid, trailer or truck)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 12x12 300 HP frac transfer pump be driven electrically?",
+          "a": "Yes, the listing offers an electric motor drive (ABB, WEG or Valiadis) as an alternative to the diesel-hydraulic drive. State the supply and area classification on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Why is a transfer pump needed on a frac fleet?",
+          "a": "The pumpers need a steady, pressurised suction supply, and the transfer pump provides it at the required suction flow rate."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 12x12 300 HP frac transfer pump?",
+          "a": "Yes. We list the 12x12 300 HP frac transfer pump as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Pump make and drive are quoted to your specification. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

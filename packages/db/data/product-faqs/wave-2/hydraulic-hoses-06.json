@@ -1,0 +1,1042 @@
+{
+  "family": "hydraulic-hoses-06",
+  "extraFacts": [
+    {
+      "fact": "R2 2SN Double Wire Braid Hydraulic Hose: 400 bar at -04 down to 80 bar at -32; standard SAE 100R2AT / EN 853 2SN.",
+      "source": "Indus Hydraulics product listing for R2 2SN Double Wire Braid Hydraulic Hose"
+    },
+    {
+      "fact": "R3 Two-Fibre Braid Hydraulic Hose: up to 85 bar; standard SAE 100R3.",
+      "source": "Indus Hydraulics product listing for R3 Two-Fibre Braid Hydraulic Hose"
+    },
+    {
+      "fact": "R6 Single Fibre Braid Low-Pressure Hose: 28 bar at -04 down to 20 bar at -16; standard SAE 100R6.",
+      "source": "Indus Hydraulics product listing for R6 Single Fibre Braid Low-Pressure Hose"
+    },
+    {
+      "fact": "R1 1SN Single Wire Braid Hydraulic Hose: 225 bar at -04 down to 40 bar at -32; standard SAE 100R1AT / EN 853 1SN.",
+      "source": "Indus Hydraulics product listing for R1 1SN Single Wire Braid Hydraulic Hose"
+    },
+    {
+      "fact": "Sibling listing figures: Enerpac High-Pressure Hydraulic Hoses (H, HA, HB and HC Series): sizes ",
+      "source": "Indus Hydraulics product listing for Enerpac High-Pressure Hydraulic Hoses (H, HA, HB and HC Series), facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: R2 2SN Double Wire Braid Hydraulic Hose: ",
+      "source": "Indus Hydraulics product listing for R2 2SN Double Wire Braid Hydraulic Hose, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: R1 1SN Single Wire Braid Hydraulic Hose: ",
+      "source": "Indus Hydraulics product listing for R1 1SN Single Wire Braid Hydraulic Hose, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: R3 Two-Fibre Braid Hydraulic Hose: ",
+      "source": "Indus Hydraulics product listing for R3 Two-Fibre Braid Hydraulic Hose, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Enerpac HT Series Hydraulic Hoses: sizes ",
+      "source": "Indus Hydraulics product listing for Enerpac HT Series Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Texas Pneumatic Tools Hydraulic Hoses: sizes 1/2\" (-8), 5/8\" (-10)",
+      "source": "Indus Hydraulics product listing for Texas Pneumatic Tools Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses: temperature -40°F to +212°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses: pressure 150 to 300 psi (10 to 21 bar), by size; temperature -40°F to +275°F; sizes 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24)",
+      "source": "Indus Hydraulics product listing for Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses: pressure 2,800 to 6,000 psi (193 to 414 bar), by size; temperature -70°F to +212°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses: pressure 2,000 to 6,500 psi (138 to 448 bar), by size; temperature 260°F; sizes 1/4\" (-4), 1/2\" (-8), 5/8\" (-10), 1\" (-16), 1 1/2\" (-24)",
+      "source": "Indus Hydraulics product listing for Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "In SAE hose dash sizing, the dash number is the hose inside diameter in sixteenths of an inch, so -4 is 1/4\" and -8 is 1/2\".",
+      "source": "SAE J517 / SAE J514 dash-size convention; confirmed by the size tables on the Indus listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "ame-international-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the AME International Hydraulic Hoses used for?",
+          "a": "The AME International Hydraulic Hoses are hydraulic hoses, listed in 27 part numbers. Part descriptions in the size table give lengths such as 12 Feet, 18 Feet, 6 Feet and pressures such as 10,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the AME International Hydraulic Hoses come in?",
+          "a": "The AME International Hydraulic Hoses are listed in 27 part numbers, from 16010 to 16160-TC. Lengths in the descriptions include 12 Feet, 18 Feet, 6 Feet. Each description is in the size table; send us the bore and length you need and we will confirm the part number."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 16100-TC of the AME International Hydraulic Hoses cover?",
+          "a": "Part number 16100-TC is the AME International Hydraulic Hoses in 10,000 psi, length 8 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the AME International Hydraulic Hoses?",
+          "a": "The size table for the AME International Hydraulic Hoses states 10,000 psi against its part descriptions, for example 16010. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the AME International Hydraulic Hoses?",
+          "a": "The listing for the AME International Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the AME International Hydraulic Hoses meet?",
+          "a": "The listing for the AME International Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the AME International Hydraulic Hoses?",
+          "a": "End fittings for the AME International Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the AME International Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the AME International Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "D",
+          "q": "What do I send to order the AME International Hydraulic Hoses?",
+          "a": "Quote the part number from the size table, for example 16010 or 16160-TC. If you only have the old hose, send its length, bore and end fittings and we will identify the match; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details."
+        },
+        {
+          "slot": "K",
+          "q": "AME International Hydraulic Hoses or Enerpac High-Pressure Hydraulic Hoses: which should I choose?",
+          "a": "The AME International Hydraulic Hoses run 27 part numbers, so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Enerpac High-Pressure Hydraulic Hoses page](/p/enerpac-high-pressure-hydraulic-hoses-h-ha-hb-and-hc-series)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the AME International Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the AME International Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the AME International Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the AME International Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "r1-1sn-single-wire-braid-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R1 1SN Single Wire Braid Hydraulic Hose used for?",
+          "a": "R1 1SN Single Wire Braid Hydraulic Hose: Single-wire braid medium-pressure hydraulic hose for general industrial and mobile hydraulics. Conforms to SAE 100R1AT / EN 853 1SN. It has a synthetic rubber (NBR), oil-resistant tube, one layer of high-tensile steel wire braid and a synthetic rubber, abrasion- and weather-resistant, MSHA-accepted cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R1 1SN Single Wire Braid Hydraulic Hose come in?",
+          "a": "R1 1SN Single Wire Braid Hydraulic Hose is listed for 1/4\" – 2\" (DN6 – DN51), with outside diameters of 13.2–63.6 mm (-04 to -32). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R1 1SN Single Wire Braid Hydraulic Hose by size and length?",
+          "a": "Give the bore (1/4\" – 2\" (DN6 – DN51)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R1 1SN Single Wire Braid Hydraulic Hose?",
+          "a": "The listing gives 225 bar at -04 down to 40 bar at -32, with a minimum burst of 900 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R1 1SN Single Wire Braid Hydraulic Hose handle?",
+          "a": "R1 1SN Single Wire Braid Hydraulic Hose is rated for continuous service from -40°C to 100°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is synthetic rubber (NBR), oil-resistant, and the cover is synthetic rubber, abrasion- and weather-resistant, MSHA-accepted. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R1 1SN Single Wire Braid Hydraulic Hose conform to?",
+          "a": "The listing says R1 1SN Single Wire Braid Hydraulic Hose conforms to SAE 100R1AT / EN 853 1SN. The cover is stated as MSHA-accepted. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R1 1SN Single Wire Braid Hydraulic Hose?",
+          "a": "R1 1SN Single Wire Braid Hydraulic Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R1 1SN Single Wire Braid Hydraulic Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of 100–630 mm by bore (100 mm at -04, 630 mm at -32). Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R1 1SN Single Wire Braid Hydraulic Hose recommended for?",
+          "a": "The listing names general-purpose hydraulics on machine tools and power units, mobile equipment — agricultural, light construction, materials handling and hydraulic return-line and pilot-line service for R1 1SN Single Wire Braid Hydraulic Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R1 1SN Single Wire Braid Hydraulic Hose or R2 2SN Double Wire Braid Hydraulic Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R1 1SN Single Wire Braid Hydraulic Hose is stated at 225 bar at -04 down to 40 bar at -32, while R2 2SN Double Wire Braid Hydraulic Hose is stated at 400 bar at -04 down to 80 bar at -32. The listing adds: For higher pressures see R2 2SN. For tighter routing see the 1SC compact equivalent. See the [R2 2SN Double Wire Braid Hydraulic Hose page](/p/r2-2sn-double-wire-braid-hydraulic-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R1 1SN Single Wire Braid Hydraulic Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R1 1SN Single Wire Braid Hydraulic Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R1 1SN Single Wire Braid Hydraulic Hose in Dubai?",
+          "a": "Yes, we hold R1 1SN Single Wire Braid Hydraulic Hose in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "r2-2sn-double-wire-braid-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R2 2SN Double Wire Braid Hydraulic Hose used for?",
+          "a": "R2 2SN Double Wire Braid Hydraulic Hose: Two-wire braid medium-to-high-pressure hydraulic hose — the workhorse of general hydraulics. Conforms to SAE 100R2AT / EN 853 2SN. It has a synthetic rubber (NBR), oil-resistant tube, two layers of high-tensile steel wire braid and a synthetic rubber, abrasion- and weather-resistant, MSHA-accepted cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R2 2SN Double Wire Braid Hydraulic Hose come in?",
+          "a": "R2 2SN Double Wire Braid Hydraulic Hose is listed for 1/4\" – 2\" (DN6 – DN51), with outside diameters of 15–66.7 mm (-04 to -32). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R2 2SN Double Wire Braid Hydraulic Hose by size and length?",
+          "a": "Give the bore (1/4\" – 2\" (DN6 – DN51)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R2 2SN Double Wire Braid Hydraulic Hose?",
+          "a": "The listing gives 400 bar at -04 down to 80 bar at -32, with a minimum burst of 1600 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R2 2SN Double Wire Braid Hydraulic Hose handle?",
+          "a": "R2 2SN Double Wire Braid Hydraulic Hose is rated for continuous service from -40°C to 100°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is synthetic rubber (NBR), oil-resistant, and the cover is synthetic rubber, abrasion- and weather-resistant, MSHA-accepted. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R2 2SN Double Wire Braid Hydraulic Hose conform to?",
+          "a": "The listing says R2 2SN Double Wire Braid Hydraulic Hose conforms to SAE 100R2AT / EN 853 2SN. The cover is stated as MSHA-accepted. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R2 2SN Double Wire Braid Hydraulic Hose?",
+          "a": "R2 2SN Double Wire Braid Hydraulic Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R2 2SN Double Wire Braid Hydraulic Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of 100–630 mm by bore (100 mm at -04, 630 mm at -32). Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R2 2SN Double Wire Braid Hydraulic Hose recommended for?",
+          "a": "The listing names mobile hydraulics — construction, agricultural, materials handling for R2 2SN Double Wire Braid Hydraulic Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R2 2SN Double Wire Braid Hydraulic Hose or R3 Two-Fibre Braid Hydraulic Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R2 2SN Double Wire Braid Hydraulic Hose is stated at 400 bar at -04 down to 80 bar at -32, while R3 Two-Fibre Braid Hydraulic Hose is stated at up to 85 bar. The listing adds: For higher pressures see R12 / R13 / R15 multi-spiral. For tighter routing see the 2SC compact two-wire equivalent. See the [R3 Two-Fibre Braid Hydraulic Hose page](/p/r3-two-fibre-braid-hydraulic-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R2 2SN Double Wire Braid Hydraulic Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R2 2SN Double Wire Braid Hydraulic Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R2 2SN Double Wire Braid Hydraulic Hose in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks R2 2SN Double Wire Braid Hydraulic Hose, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "r3-two-fibre-braid-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R3 Two-Fibre Braid Hydraulic Hose used for?",
+          "a": "R3 Two-Fibre Braid Hydraulic Hose: Two-fibre-braid low-to-medium-pressure hydraulic hose for return-line and low-pressure delivery. Conforms to SAE 100R3. It has a synthetic rubber (NBR), oil-resistant tube, two textile braids (high-tensile yarn) and a synthetic rubber, weather-resistant cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R3 Two-Fibre Braid Hydraulic Hose come in?",
+          "a": "R3 Two-Fibre Braid Hydraulic Hose is listed for 1/4\" – 1-1/2\" (DN6 – DN38). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R3 Two-Fibre Braid Hydraulic Hose by size and length?",
+          "a": "Give the bore (1/4\" – 1-1/2\" (DN6 – DN38)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R3 Two-Fibre Braid Hydraulic Hose?",
+          "a": "The listing gives up to 85 bar, with a minimum burst of 340 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R3 Two-Fibre Braid Hydraulic Hose handle?",
+          "a": "R3 Two-Fibre Braid Hydraulic Hose is rated for continuous service from -40°C to 100°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is synthetic rubber (NBR), oil-resistant, and the cover is synthetic rubber, weather-resistant. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R3 Two-Fibre Braid Hydraulic Hose conform to?",
+          "a": "The listing says R3 Two-Fibre Braid Hydraulic Hose conforms to SAE 100R3. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R3 Two-Fibre Braid Hydraulic Hose?",
+          "a": "R3 Two-Fibre Braid Hydraulic Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R3 Two-Fibre Braid Hydraulic Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of per size table. Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R3 Two-Fibre Braid Hydraulic Hose recommended for?",
+          "a": "The listing names return-line service on hydraulic systems, low-pressure delivery and tank lines and light-duty agricultural and industrial hydraulics for R3 Two-Fibre Braid Hydraulic Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R3 Two-Fibre Braid Hydraulic Hose or R6 Single Fibre Braid Low-Pressure Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R3 Two-Fibre Braid Hydraulic Hose is stated at up to 85 bar, while R6 Single Fibre Braid Low-Pressure Hose is stated at 28 bar at -04 down to 20 bar at -16. The listing adds: For higher pressures step up to R1 1SN (single wire braid). For lower-pressure air/water applications see R6. See the [R6 Single Fibre Braid Low-Pressure Hose page](/p/r6-single-fibre-braid-low-pressure-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R3 Two-Fibre Braid Hydraulic Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R3 Two-Fibre Braid Hydraulic Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R3 Two-Fibre Braid Hydraulic Hose in Dubai?",
+          "a": "Yes, we stock R3 Two-Fibre Braid Hydraulic Hose in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "r6-single-fibre-braid-low-pressure-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is R6 Single Fibre Braid Low-Pressure Hose used for?",
+          "a": "R6 Single Fibre Braid Low-Pressure Hose: Single-fibre-braid low-pressure hose for fuel, oil, air, and mild hydraulic service. Conforms to SAE 100R6. It has a synthetic rubber (NBR), oil-resistant tube, one textile braid and a synthetic rubber, weather-resistant cover. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does R6 Single Fibre Braid Low-Pressure Hose come in?",
+          "a": "R6 Single Fibre Braid Low-Pressure Hose is listed for 1/4\" – 1\" (DN6 – DN25), with outside diameters of 12.3–33.2 mm (-04 to -16). Sizes are given as dash sizes: the dash number is the inside diameter in sixteenths of an inch. It is sold per-metre, cut to length; see [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I order R6 Single Fibre Braid Low-Pressure Hose by size and length?",
+          "a": "Give the bore (1/4\" – 1\" (DN6 – DN25)), the cut length and the end fittings, and we will quote the hose per metre or as a made-up assembly with crimped ends. If you are unsure of the size, send the layline text or a photo; [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) lists the details we need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of R6 Single Fibre Braid Low-Pressure Hose?",
+          "a": "The listing gives 28 bar at -04 down to 20 bar at -16, with a minimum burst of 112 bar and a 4:1 safety factor. Take the figure for your bore from the size data, because working pressure falls as the bore grows, and check the end fittings carry the same rating."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids can R6 Single Fibre Braid Low-Pressure Hose handle?",
+          "a": "R6 Single Fibre Braid Low-Pressure Hose is rated for continuous service from -40°C to 100°C, with the upper limit reduced for aggressive fluids such as phosphate-ester, water-glycol or some biodegradables. The tube is synthetic rubber (NBR), oil-resistant, and the cover is synthetic rubber, weather-resistant. Ask for a fluid compatibility chart if your fluid is unusual."
+        },
+        {
+          "slot": "G",
+          "q": "What standard does R6 Single Fibre Braid Low-Pressure Hose conform to?",
+          "a": "The listing says R6 Single Fibre Braid Low-Pressure Hose conforms to SAE 100R6. Name any certificate or test report you need on the order; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r) for how the families compare."
+        },
+        {
+          "slot": "H",
+          "q": "What end fittings go on R6 Single Fibre Braid Low-Pressure Hose?",
+          "a": "R6 Single Fibre Braid Low-Pressure Hose takes crimped or reusable fittings in JIC 37°, ORFS, BSP, NPT and metric 24° forms; name your termination and we will recommend a matched ferrule and crimp die. See [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "What is the minimum bend radius of R6 Single Fibre Braid Low-Pressure Hose and how do I route it?",
+          "a": "The listing gives a minimum bend radius of 65–170 mm by bore (65 mm at -04, 170 mm at -16). Keep every bend at or above the figure for your bore, avoid twisting the hose and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is R6 Single Fibre Braid Low-Pressure Hose recommended for?",
+          "a": "The listing names fuel and lubricating oil transfer, compressed-air lines on light-duty equipment and anti-static drain lines on agricultural machinery for R6 Single Fibre Braid Low-Pressure Hose. The [hose guide](/blog/hydraulic-hose-guide) explains how to match hose to duty."
+        },
+        {
+          "slot": "K",
+          "q": "R6 Single Fibre Braid Low-Pressure Hose or R1 1SN Single Wire Braid Hydraulic Hose: which should I choose?",
+          "a": "Choose by pressure and construction: R6 Single Fibre Braid Low-Pressure Hose is stated at 28 bar at -04 down to 20 bar at -16, while R1 1SN Single Wire Braid Hydraulic Hose is stated at 225 bar at -04 down to 40 bar at -32. The listing adds: For higher hydraulic pressures see R3 (two-fibre) or step up to R1 1SN (wire braid). See the [R1 1SN Single Wire Braid Hydraulic Hose page](/p/r1-1sn-single-wire-braid-hydraulic-hose)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does R6 Single Fibre Braid Low-Pressure Hose come from and how is it shipped?",
+          "a": "The listing does not confirm a country of origin for R6 Single Fibre Braid Low-Pressure Hose, so origin is stated on the quotation. We supply from Dubai, UAE to buyers across the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock R6 Single Fibre Braid Low-Pressure Hose in Dubai?",
+          "a": "Yes. We keep R6 Single Fibre Braid Low-Pressure Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-atex-certified-10-000-psi-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac ATEX-certified 10,000 psi hose assemblies?",
+          "a": "They are Enerpac hose assemblies described on the listing as ATEX certified and stated at 10,000 psi, in three lengths: 6.56 ft, 13.12 ft and 19.68 ft. The three part numbers are 144000801, 144001301 and 144001401. See the [hydraulic hoses shelf](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers 144000801 and 1440013-01?",
+          "a": "The size table gives the Enerpac numbers as 1440008-01, 1440013-01 and 1440014-01, written without the hyphen as 144000801, 144001301 and 144001401. The base number identifies the length: 1440008 is 6.56 ft, 1440013 is 13.12 ft and 1440014 is 19.68 ft."
+        },
+        {
+          "slot": "D",
+          "q": "What lengths do Enerpac ATEX hose assemblies come in?",
+          "a": "The listing has three lengths: 6.56 ft (1440008-01), 13.12 ft (1440013-01) and 19.68 ft (1440014-01). These are the metric 2 m, 4 m and 6 m hoses expressed in feet. Send the distance between pump and tool and we will advise on the length."
+        },
+        {
+          "slot": "D",
+          "q": "Which Enerpac ATEX hose assembly is the longest?",
+          "a": "The longest is 1440014-01, listed as 144001401, at 19.68 ft. The shortest is 1440008-01 at 6.56 ft, and 1440013-01 is the middle length at 13.12 ft. The listing gives no bore size, so tell us your pump and tool to confirm the fit."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Enerpac ATEX hose assemblies rated for?",
+          "a": "The listing states 10,000 psi for each of the three ATEX-certified assemblies. The rating of a hydraulic circuit is the lowest rating of any part in it, so check the pump, couplers and tool on either end before you run it at that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac ATEX hose assemblies made of?",
+          "a": "The listing gives no tube, cover or fitting material, and no temperature range, for the ATEX-certified assemblies, so we do not state them. Ask us for the construction and fluid limits for your part number before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What does ATEX certified mean for the Enerpac hose assemblies?",
+          "a": "The listing describes the three assemblies as ATEX certified, which means they are intended for explosive atmospheres. It does not give the equipment category or zone, so send us the zone you need and we will confirm it with Enerpac, with the certificate, before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do Enerpac ATEX hose assemblies connect to?",
+          "a": "The listing does not give the end connections, so quote the part number, for example 1440008-01, and we will confirm the ends with Enerpac. For high-pressure couplers and fittings see the [Enerpac 10,000 psi shelf](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I handle an Enerpac ATEX hose assembly?",
+          "a": "Avoid kinks, crushing and sharp bends, keep the dust caps fitted when the hose is disconnected, and follow the certificate's conditions of use in the hazardous area. The listing gives no bend radius, so ask us for the figure; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose an ATEX hose assembly or a standard Enerpac HT hose?",
+          "a": "Choose the ATEX assembly where the work is in an explosive atmosphere and a certified hose is required, and the [Enerpac HT series hoses](/p/enerpac-ht-series-hydraulic-hoses) for general use. The ATEX range has three part numbers from 6.56 ft to 19.68 ft."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac ATEX hose assemblies made?",
+          "a": "The listing gives no country of origin or HS code for the ATEX-certified assemblies, so origin is confirmed on the quotation. We ship from Dubai, UAE to the GCC, Africa and Asia; see [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Enerpac ATEX hose assemblies in Dubai?",
+          "a": "Yes, we hold the Enerpac ATEX hose assemblies in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-high-pressure-hydraulic-hoses-h-ha-hb-and-hc-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac H, HA, HB and HC series high-pressure hydraulic hoses?",
+          "a": "They are Enerpac high-pressure hydraulic hoses in yellow thermoplastic and heavy-duty rubber, in .25 in and .38 in diameters and lengths from 2 ft to 50 ft. The range has 64 part numbers, such as H7202, H9206 and HC9310. See the [hydraulic hoses shelf](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Enerpac hose part numbers such as H7206 and HC9310?",
+          "a": "In the rows the last two digits give the length in feet: H7206 is 6 ft and HC9310 is 10 ft. The third character gives the construction and size: 72 is yellow thermoplastic .25 in, 73 is thermoplastic .38 in, 92 is heavy-duty rubber .25 in and 93 is rubber .38 in. The letters before are the series."
+        },
+        {
+          "slot": "D",
+          "q": "Which lengths and diameters do Enerpac H series hoses come in?",
+          "a": "The size table lists lengths of 2, 3, 6, 8, 10, 20, 30 and 50 ft, in .25 in and .38 in diameters. The .38 in size is listed as H7306 to H7350, H9306 to H9350, HC7306, HC7310 and HC9306 to HC9310, with the rest in .25 in."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Enerpac H7206 and H9206 hoses?",
+          "a": "Both are 6 ft hoses of .25 in diameter: H7206 is yellow thermoplastic and H9206 is heavy-duty rubber. The H9206 also has Q and S variants, H9206Q and H9206S, in the size table. Choose rubber for rougher handling and thermoplastic where you want a lighter, more flexible hose."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Enerpac H, HA, HB and HC series hoses?",
+          "a": "The listing gives no working pressure for the 64 part numbers, so we do not state one here. Send us the part number, for example H7206 or HC9210B, and we will confirm its working pressure with Enerpac in the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac H series hoses made of?",
+          "a": "The size table lists two constructions: yellow thermo-plastic (the 72 and 73 numbers) and heavy-duty rubber (the 92 and 93 numbers). The listing gives no tube, reinforcement, fluid or temperature data, so we do not state it. Tell us the fluid and temperature and we will confirm with Enerpac."
+        },
+        {
+          "slot": "G",
+          "q": "Do Enerpac H, HA, HB and HC series hoses carry a standard or certificate?",
+          "a": "The listing states no standard or certificate for these hoses. The ATEX-certified assemblies are a separate range: see the [Enerpac ATEX-certified hose assemblies](/p/enerpac-atex-certified-10-000-psi-hose-assemblies). Name any certificate you need with the part number and we will check with Enerpac."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and couplers go with Enerpac H series hoses?",
+          "a": "The listing does not give the end fittings of each part number, so quote the part number, for example HA7206 or HB9206Q, and we will confirm the ends. For couplers and adapters on a 10,000 psi circuit see the [Enerpac high-pressure couplers and fittings](/c/high-pressure-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I look after and route an Enerpac H series hose?",
+          "a": "Avoid kinks, sharp bends and crushing, and do not use the hose to pull equipment. The listing gives no bend radius, so ask us for the figure for your part number. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "What do the B, C, Q and S suffixes mean on Enerpac hoses such as HC9206B and H9206Q?",
+          "a": "The size table lists them as separate part numbers of the same length and diameter, for example HC9206, HC9206B, HC9206C and HC9206Q, but does not say what each suffix changes. Send us the suffix you need and we will confirm what it means with Enerpac."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac H series hoses made?",
+          "a": "The listing gives no country of origin or HS code for the Enerpac H, HA, HB and HC series, so origin is confirmed on the quotation. We ship from Dubai, UAE to the GCC, Africa and Asia; see [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Enerpac H series hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Enerpac H, HA, HB and HC series hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-ht-series-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac HT series hydraulic hoses used for?",
+          "a": "Enerpac HT series hoses are hydraulic hoses sold as 1 m and 3 m lengths, with or without quick-disconnect couplings and dust caps. The range has 4 part numbers: HT1503, HT1503HR, HT1510 and HT1510HR. See the [hydraulic hoses shelf](/c/hydraulic-hoses)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Enerpac HT part numbers HT1503HR and HT1510?",
+          "a": "In the rows the digits give the length: HT1503 and HT1503HR are 1 m hoses, and HT1510 and HT1510HR are 3 m hoses. The HR suffix marks the hose supplied with quick-disconnect couplings and a dust cap, so HT1503HR is the 1 m hose with couplings and dust cap."
+        },
+        {
+          "slot": "D",
+          "q": "Which lengths do Enerpac HT series hoses come in?",
+          "a": "The listing has two lengths: 1 m (HT1503 and HT1503HR) and 3 m (HT1510 and HT1510HR). The listing gives no bore size, so tell us your pump, tool and coupler and we will confirm which hose suits before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Enerpac HT1503 and HT1503HR?",
+          "a": "HT1503 is the 1 m HT series hose on its own, while HT1503HR is the same 1 m hose with quick-disconnect couplings and a dust cap. Choose HT1503HR if you want the hose ready to plug into a coupled pump or cylinder."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Enerpac HT series hoses?",
+          "a": "We confirm the working pressure of each HT series part number with Enerpac in the quotation rather than quoting a general figure here. Send us the part number, for example HT1503 or HT1510HR, and the pressure you need, and we will state the rating before you buy."
+        },
+        {
+          "slot": "F",
+          "q": "What are Enerpac HT series hoses made of, and what fluid do they carry?",
+          "a": "The listing gives no tube or cover material or temperature range for the HT series, so we do not state them. They are hydraulic hoses, so hydraulic oil is the normal fluid. Ask us for the construction and fluid limits for your part number."
+        },
+        {
+          "slot": "G",
+          "q": "Do Enerpac HT series hoses carry a standard or certificate?",
+          "a": "The listing states no standard or certificate for the HT series; the ATEX-certified assemblies are a separate range, the [Enerpac ATEX-certified hose assemblies](/p/enerpac-atex-certified-10-000-psi-hose-assemblies). Name any certificate you need with the part number and we will check with Enerpac."
+        },
+        {
+          "slot": "H",
+          "q": "What do Enerpac HT series hoses connect to?",
+          "a": "The HT1503HR and HT1510HR ship with quick-disconnect couplings and a dust cap, and the HT1503 and HT1510 are the plain hose. For the coupler halves see the [Enerpac high-pressure couplers and fittings](/c/high-pressure-fittings), and match both halves to the same interchange profile."
+        },
+        {
+          "slot": "I",
+          "q": "How should I look after an Enerpac HT series hose?",
+          "a": "Fit the dust caps whenever the hose is disconnected, avoid kinks and sharp bends, and never drag or crush the hose. The listing gives no bend radius, so ask us for the figure for your part number. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I buy the 1 m or 3 m Enerpac HT series hose?",
+          "a": "Pick the shortest length that reaches without tension: HT1503 and HT1503HR are 1 m, while HT1510 and HT1510HR are 3 m. A longer hose adds flow resistance and a pressure drop at the same bore, so use 3 m only where the pump has to stand away."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Enerpac HT series hoses made?",
+          "a": "The listing gives the country of origin as the United States for the Enerpac HT series, and no HS code. We ship from Dubai, UAE to the GCC, Africa and Asia; see [what to send for a hose quote](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Enerpac HT series hoses in Dubai?",
+          "a": "Yes, we stock the Enerpac HT series hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Texas Pneumatic Tools Hydraulic Hoses used for?",
+          "a": "The Texas Pneumatic Tools Hydraulic Hoses are hydraulic hoses, listed in 11 part numbers from 1/2\" to 5/8\". Part descriptions in the size table give lengths such as 8 Feet, 10 Feet and pressures such as 2,000 psi. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Texas Pneumatic Tools Hydraulic Hoses come in?",
+          "a": "The Texas Pneumatic Tools Hydraulic Hoses are listed in 2 hose sizes: 1/2\" (-8), 5/8\" (-10). The 11 part numbers run from TX-22000 to TX-122000-1212-10. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number TX-122000-1212-8 of the Texas Pneumatic Tools Hydraulic Hoses cover?",
+          "a": "Part number TX-122000-1212-8 is the Texas Pneumatic Tools Hydraulic Hoses in 1/2\" ID, length 8 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Texas Pneumatic Tools Hydraulic Hoses?",
+          "a": "The size table for the Texas Pneumatic Tools Hydraulic Hoses states 2,000 psi against its part descriptions, for example TX-22000. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Texas Pneumatic Tools Hydraulic Hoses?",
+          "a": "The listing for the Texas Pneumatic Tools Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Texas Pneumatic Tools Hydraulic Hoses meet?",
+          "a": "The listing for the Texas Pneumatic Tools Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Texas Pneumatic Tools Hydraulic Hoses?",
+          "a": "End fittings for the Texas Pneumatic Tools Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Texas Pneumatic Tools Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Texas Pneumatic Tools Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Texas Pneumatic Tools Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/2\" (-8), and pick the same size in the Texas Pneumatic Tools Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Texas Pneumatic Tools Hydraulic Hoses or Enerpac HT Series Hydraulic Hoses: which should I choose?",
+          "a": "The Texas Pneumatic Tools Hydraulic Hoses run 1/2\" (-8), 5/8\" (-10), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Enerpac HT Series Hydraulic Hoses page](/p/enerpac-ht-series-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Texas Pneumatic Tools Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Texas Pneumatic Tools Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Texas Pneumatic Tools Hydraulic Hoses in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Hydraulic Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "vestil-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Vestil Hydraulic Hoses used for?",
+          "a": "The Vestil Hydraulic Hoses are hydraulic hoses, listed in 4 part numbers from 1/4\" to 1/2\". Part descriptions in the size table give lengths such as 10 Feet, 20 Feet. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Vestil Hydraulic Hoses come in?",
+          "a": "The Vestil Hydraulic Hoses are listed in 2 hose sizes: 1/4\" (-4), 1/2\" (-8). The 4 part numbers run from ADDL-HH-50-10 to ADDL-HH-25-20. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number ADDL-HH-25-10 of the Vestil Hydraulic Hoses cover?",
+          "a": "Part number ADDL-HH-25-10 is the Vestil Hydraulic Hoses in 1/4\" ID, length 10 Feet. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Vestil Hydraulic Hoses?",
+          "a": "The listing for the Vestil Hydraulic Hoses gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Vestil Hydraulic Hoses?",
+          "a": "The listing for the Vestil Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Vestil Hydraulic Hoses meet?",
+          "a": "The listing for the Vestil Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Vestil Hydraulic Hoses?",
+          "a": "End fittings for the Vestil Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Vestil Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Vestil Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Vestil Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Vestil Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Vestil Hydraulic Hoses or Texas Pneumatic Tools Hydraulic Hoses: which should I choose?",
+          "a": "The Vestil Hydraulic Hoses run 1/4\" (-4), 1/2\" (-8), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Texas Pneumatic Tools Hydraulic Hoses page](/p/texas-pneumatic-tools-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Vestil Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing gives the country of origin of the Vestil Hydraulic Hoses as United States. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Vestil Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Vestil Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-danfoss-h039-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses are hydraulic hoses, listed in 8 part numbers from 3/4\" to 1 1/2\". Listed use: Suction Applications For Hydraulics, Crude Fuel And Lubricating Oils, Gasoline, Air, Water And Chemical Transfer. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses are listed in 4 hose sizes: 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24). The 8 part numbers run from H03916-100 to H03920-150. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H03924-100 of the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H03924-100 is the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses in 1 1/2\" ID, 10 bar (150 psi), burst 41 bar, length 100 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 150 to 300 psi (10 to 21 bar), by size for the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses. By row: 21 bar at 3/4\"; 17 bar at 1\"; 14 bar at 1 1/4\"; 10 bar at 1 1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses have a temperature range of -40°F to +275°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives U, S, 039 K, Z, 430 U. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses as follows: Suction Applications For Hydraulics, Crude Fuel And Lubricating Oils, Gasoline, Air, Water And Chemical Transfer. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses or Weatherhead Danfoss H145R Series: which should I choose?",
+          "a": "The Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses run 3/4\" (-12), 1\" (-16), 1 1/4\" (-20), 1 1/2\" (-24), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Weatherhead Danfoss H145R Series page](/p/weatherhead-danfoss-h145r-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-danfoss-h145r-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses are hydraulic hoses, listed in 6 part numbers from 1/4\" to 1\". Listed use: Refined Petroleum Based Fluids. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 6 part numbers run from H145R16-250R to H145R10-250R. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H145R12-250R of the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H145R12-250R is the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses in 3/4\" ID, minimum bend radius 119.9 mm, 3,045 psi, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses?",
+          "a": "The size table for the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses states 3,045 psi against its part descriptions, for example H145R16-250R. Rows without a pressure in their description are not rated here, so quote your part number and we will confirm the working pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses have a temperature range of -40°F to +212°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives Z. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses from 50 mm at 1/4\" to 150.1 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses as follows: Refined Petroleum Based Fluids. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Weatherhead Danfoss H145R Series or Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses are listed at 150 to 300 psi (10 to 21 bar), by size; check the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Weatherhead Danfoss H039 Series Rubber Hydraulic Braided Hoses page](/p/weatherhead-danfoss-h039-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes, we stock the Weatherhead Danfoss H145R Series Rubber Hydraulic Braided Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-danfoss-h245l-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses are hydraulic hoses, listed in 6 part numbers from 1/4\" to 1\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses are listed in 6 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), and on to 1\" (-16). The 6 part numbers run from H245L16-250R to H245L10-250R. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H245L12-250R of the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H245L12-250R is the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses in 3/4\" ID, 241 bar (3,500 psi), burst 965 bar, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 2,800 to 6,000 psi (193 to 414 bar), by size for the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses. By row: 414 bar at 1/4\"; 345 bar at 3/8\"; 310 bar at 1/2\"; 276 bar at 5/8\"; 241 bar at 3/4\"; 193 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses have a temperature range of -70°F to +212°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives Z. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 6\" for the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Weatherhead Danfoss H245L Series or Weatherhead Danfoss H145R Series: which should I choose?",
+          "a": "The Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses run 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1\" (-16), so compare the size tables of both. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Weatherhead Danfoss H145R Series page](/p/weatherhead-danfoss-h145r-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. We keep the Weatherhead Danfoss H245L Series Rubber Hydraulic Braided Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-danfoss-h280-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses are hydraulic hoses, listed in 7 part numbers from 1/4\" to 1 1/2\". Listed use: Hydraulics, Construction, Agriculture. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses are listed in 5 hose sizes: 1/4\" (-4), 1/2\" (-8), 5/8\" (-10), 1\" (-16), 1 1/2\" (-24). The 7 part numbers run from H28012-250R to H28024-150. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H28004-250R of the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H28004-250R is the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses in 1/4\" ID, 448 bar (6,500 psi), burst 1793 bar, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 2,000 to 6,500 psi (138 to 448 bar), by size for the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses. By row: 448 bar at 1/4\"; 345 bar at 1/2\"; 276 bar at 5/8\"; 207 bar at 1\"; 138 bar at 1 1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses have a temperature range of 260°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives Z. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The listing gives a minimum bend radius of 4 3/4\" for the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses. Keep every bend at or above it and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses recommended for?",
+          "a": "The listing describes the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses as follows: Hydraulics, Construction, Agriculture. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses or Weatherhead Danfoss H245L Series: which should I choose?",
+          "a": "The Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses are listed at 2,000 to 6,500 psi (138 to 448 bar), while the Weatherhead Danfoss H245L Series are listed at 2,800 to 6,000 psi (193 to 414 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Weatherhead Danfoss H245L Series page](/p/weatherhead-danfoss-h245l-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes, we hold the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-danfoss-h290-series-rubber-hydraulic-braided-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses used for?",
+          "a": "The Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses are hydraulic hoses, listed in 8 part numbers from 1/4\" to 3/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses come in?",
+          "a": "The Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12). The 8 part numbers run from H29008-250R to H29010-250R. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number H29012-250R of the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses cover?",
+          "a": "Part number H29012-250R is the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses in 3/4\" ID, 215 bar (3,125 psi), burst 965 bar, length 250 ft. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The maker states 3,125 to 5,800 psi (215 to 400 bar), by size for the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses. By row: 400 bar at 1/4\"; 331 to 345 bar at 3/8\"; 293 bar at 1/2\"; 252 bar at 5/8\"; 215 bar at 3/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses?",
+          "a": "The Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses have a temperature range of Petroleum-Based Hydraulic Fluids-40°F to 260°F, Water-Based Hydraulic Fluids-40°F to 158°F. Listed fluids: Air, Automatic Transmission Fluid, Diesel Fuel, Ethylene Glycol, Fresh Water, Fuel Oil, Gasoline, Hydraulic Fluid (Petroleum), Hydraulic Fluid (Synthetic), Kerosene. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses meet?",
+          "a": "The listing for the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses states a safety factor of 4:1 but no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses?",
+          "a": "End fittings for the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses must be from the series the hose maker approves for that hose; the listing gives Z. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses or Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses: which should I choose?",
+          "a": "The Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses are listed at 3,125 to 5,800 psi (215 to 400 bar), while the Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses are listed at 2,000 to 6,500 psi (138 to 448 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Weatherhead Danfoss H280 Series Rubber Hydraulic Braided Hoses page](/p/weatherhead-danfoss-h280-series-rubber-hydraulic-braided-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses made and what is its HS code?",
+          "a": "The listing gives the country of origin of the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses as United States and the HS code as 4009410000. We ship from Dubai, UAE to the GCC, Africa and Asia; see [GCC import documents for hose](/blog/gcc-import-documents-for-hose)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Weatherhead Danfoss H290 Series Rubber Hydraulic Braided Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    }
+  ]
+}

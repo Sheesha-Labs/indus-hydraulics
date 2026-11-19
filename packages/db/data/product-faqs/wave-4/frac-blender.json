@@ -1,0 +1,76 @@
+{
+  "family": "frac-blender",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an MFR-50 frac blender (50 BBL/min) used for?",
+          "a": "A frac blender mixes proppant, fluid and additives into the slurry that the frac pumpers pump downhole. The MFR-50 is a Mixing and Flow Regulated blender with 50 BBL/min slurry discharge, automatic tub-level regulation and slurry-density control."
+        },
+        {
+          "slot": "D",
+          "q": "What do the MFR variants of the MFR-50 frac blender (50 BBL/min) cover?",
+          "a": "The MFR series offers MFR-10, MFR-15 and MFR-20 for gravel pack, and MFR-50 and MFR-100 for fracturing. This listing is the MFR-50 at 50 BBL/min, so choose the variant from the job rate you need."
+        },
+        {
+          "slot": "E",
+          "q": "How does the MFR-50 frac blender (50 BBL/min) meter proppant?",
+          "a": "It uses calibrated sand screw (auger) metering or a rotating bulk-material metering valve, with inlet and outlet flowmeters. Automatic tub-level regulation and slurry-density control hold the mix steady."
+        },
+        {
+          "slot": "F",
+          "q": "What additive system does the MFR-50 frac blender (50 BBL/min) include?",
+          "a": "It has an integrated Chemical Additive System (CAS) with automatic dosing pumps for liquid and dry additives. That lets the blender dose additives to the slurry rate without manual adjustment."
+        },
+        {
+          "slot": "G",
+          "q": "How does the MFR-50 frac blender (50 BBL/min) connect to the rest of the fleet?",
+          "a": "It can run standalone or connect by wire or wifi to the frac data van, so one operator can see and control it with the rest of the fleet. See the [frac data van](/p/frac-data-van-trailer-mounted-multi-screen-fleet-control-hvac-pantry) for fleet control and recording."
+        },
+        {
+          "slot": "H",
+          "q": "What truck chassis and engines can the MFR-50 frac blender (50 BBL/min) use?",
+          "a": "Chassis options include MAN, Mercedes, Scania, DAF, Volvo, Renault, Tatra, MAZ, MAZ-MAN, Kamaz, NZKT, Kenworth and Peterbilt, and engines include CAT, Mercedes, Deutz, MTU, Detroit Diesel and Volvo Penta. State your preference on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the MFR-50 frac blender (50 BBL/min) differ from a hydration unit?",
+          "a": "The blender adds proppant and additives and discharges slurry to the pumpers, while the [hydration unit](/p/frac-hydration-unit-200-bbl-12-12-centrifugal-90-bbl-min-ss316-tote-tanks) prepares the gel beforehand. They run in sequence in a frac fleet."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the MFR-50 frac blender (50 BBL/min) used?",
+          "a": "It is used in hydraulic fracturing fleets for slurry preparation ahead of the frac pumpers. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment) and the [frac pumpers](/c/frac-pumpers) it feeds."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac blender quotation?",
+          "a": "Send the slurry rate, proppant metering type, additive requirements, truck chassis and engine preference, the certification needed and the data-van connection. The unit is configured to your specification."
+        },
+        {
+          "slot": "L",
+          "q": "What are the sizes of the blender range for the MFR-50 frac blender (50 BBL/min)?",
+          "a": "The range runs from MFR-10 to MFR-100, with the 50 BBL/min MFR-50 as this listing. Larger rates use the MFR-100 for fracturing."
+        },
+        {
+          "slot": "I",
+          "q": "How is the frac blender controlled?",
+          "a": "Control is local or through the frac data van, which receives readings by wire or wifi. The blender has automatic tub-level regulation and density control, with inlet and outlet flowmeters."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the MFR-50 frac blender (50 BBL/min)?",
+          "a": "Yes. We list the MFR-50 frac blender (50 BBL/min) as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Chassis and engine are quoted to your specification. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

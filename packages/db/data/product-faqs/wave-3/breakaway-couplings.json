@@ -1,0 +1,210 @@
+{
+  "family": "breakaway-couplings",
+  "extraFacts": [
+    {
+      "fact": "1 bar = 14.5038 psi; 360 psi is about 25 bar, 230 psi about 16 bar and 150 psi about 10 bar.",
+      "source": "Unit conversion"
+    },
+    {
+      "fact": "In a tank-truck or marine loading context, a breakaway coupling is the weak link that separates under a defined pull and closes both ends, protecting hose, loading arm and manifold when a vehicle drives off or a vessel moves.",
+      "source": "MannTek SBC product description (as listed by Indus Hydraulics for the SBC and SBC-C)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-break-away-couplings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Dixon break away coupling used for?",
+          "a": "A Dixon break away coupling is a safety coupling in a hose or pipe transfer line that separates under excessive pull, such as a vehicle driving off or a vessel moving, to protect hose and equipment. The listing has 47 part numbers in 316 stainless steel and aluminium, from 2\" to 8\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon break away coupling part numbers such as MSBC400SSFL?",
+          "a": "In MSBC400SSFL, MSBC marks the marine version and SBC the industrial one, 400 is the 4\" size, SS is 316 stainless steel (AL is aluminium) and FL is a 150# flange x flange end; MNPT means male NPT. SBC200SS is the 2\" industrial stainless coupling with FNPT ends."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and end connections does the Dixon break away coupling come in?",
+          "a": "The listing covers 2\", 3\", 4\", 5\", 6\" and 8\" bodies with FNPT, MNPT or 150# flange ends. The 8\" is listed only as the 316 stainless flanged coupling, and the table gives a flow figure per size in gpm."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon break away couplings?",
+          "a": "The maker states 150 to 360 psi (10 to 25 bar) by size and material: 316 stainless steel couplings are rated 360 psi, aluminium ones 230 psi and the 4\" TTMA aluminium version 150 psi. Read the row for the exact part number."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity do Dixon break away couplings have by size?",
+          "a": "The table gives 200 gpm for the 2\" size, 650 gpm for 3\", 800 gpm for 4\", 1100 gpm for 5\", 1500 gpm for 6\" and 3700 gpm for 8\". Size the coupling to the line flow; the 4\" TTMA part has no flow figure listed."
+        },
+        {
+          "slot": "F",
+          "q": "What are Dixon break away couplings made of?",
+          "a": "The listing gives 316 stainless steel and aluminium bodies with FKM seals. Stainless steel suits marine and corrosive service, aluminium is lighter and rated lower, so pick the body material to match the product and the pressure."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon industrial or marine break away coupling: which version do I need?",
+          "a": "The SBC part numbers are the industrial coupling and the MSBC part numbers the marine coupling, both in 2\" to 8\" in this listing. Choose by how the line is installed; our [guide to choosing a safety breakaway coupling](/blog/how-to-choose-a-safety-breakaway-coupling) explains the difference between the two release types."
+        },
+        {
+          "slot": "K",
+          "q": "Dixon break away coupling or MannTek SBC: which should I choose?",
+          "a": "The Dixon couplings come in six standard sizes, 2\" to 8\", with fixed NPT or flange ends and a 150 to 360 psi rating, while the [MannTek SBC](/p/manntek-sbc-safety-breakaway-coupling-breaking-bolt) runs from DN 25 to DN 300 with a breaking load calculated for each installation. Choose the MannTek where that calculation is needed."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Dixon break away coupling?",
+          "a": "The ends are FNPT, MNPT or 150# flanges, so the coupling screws or bolts into hose end fittings, loading arms and pipe stubs of the same size. State the connection you need on the enquiry; see [shank couplings](/c/shank-couplings) for hose ends."
+        },
+        {
+          "slot": "G",
+          "q": "Which approvals does the Dixon break away coupling carry?",
+          "a": "The listing gives no certificates or approvals for the Dixon break away couplings, so we do not claim any. If your terminal or marine operator needs one, ask us for the maker's documents before you order."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Dixon break away couplings made and can they be exported from Dubai?",
+          "a": "The listing gives the United States as the country of origin. We export them from Dubai, UAE to the GCC, Africa, Asia and beyond; [certificate of origin and GCC duty](/blog/certificate-of-origin-gcc-duty) explains the paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Dixon break away couplings in Dubai?",
+          "a": "Yes. Dixon break away couplings sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-sbc-c-cable-release-breakaway-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek SBC-C cable-release safety breakaway coupling used for?",
+          "a": "The MannTek SBC-C is a safety breakaway coupling that separates when a release cable is pulled, closing a valve in each half so the line is shut off at both ends. MannTek recommends it for transfer systems with high operating pressure and weak piping, in DN 50 to DN 150."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek SBC-C come in?",
+          "a": "The SBC-C is listed in DN 50, DN 63, DN 80, DN 100 and DN 150, as part numbers IH-MNT-SBCC-050 to IH-MNT-SBCC-150. Ask us if you need another size."
+        },
+        {
+          "slot": "K",
+          "q": "MannTek SBC-C cable release or SBC breaking-bolt coupling: which one should I choose?",
+          "a": "Choose the [breaking-bolt SBC](/p/manntek-sbc-safety-breakaway-coupling-breaking-bolt) where the line and its supports can carry the release force, and the SBC-C where they cannot, or where the release must be triggered from a fixed point by cable. Send the line pressure, size and layout and we propose the type."
+        },
+        {
+          "slot": "I",
+          "q": "How does the MannTek SBC-C cable release work?",
+          "a": "The coupling has two halves, each with its own valve, held open in service. When the cable pulls the release, the halves separate and both valves close immediately, so the line is shut off at both ends of the break. See [how to choose a safety breakaway coupling](/blog/how-to-choose-a-safety-breakaway-coupling)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the MannTek SBC-C made of?",
+          "a": "The body is stainless steel 1.4408 (AISI 316) as standard, or aluminium, in every listed size. Seals are chosen for the medium and confirmed with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What connections can the MannTek SBC-C have?",
+          "a": "Inlet and outlet connections are chosen individually, as thread, flange or hose shank, so no nipples or reducers are needed. State the thread type and size or the flange standard and rating for each side when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the MannTek SBC-C?",
+          "a": "The listing does not give a single pressure; seals and working pressure are confirmed for the medium and the line with the quotation. Send the line pressure, medium and temperature and we confirm the rating with MannTek before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents does MannTek publish for the SBC-C?",
+          "a": "MannTek publishes an operating manual and service instructions for the 2\", 3\", 4\" and 6\" sizes of the cable-release coupling, which are in the Documents tab. Download them before the coupling arrives so the site team has the procedure."
+        },
+        {
+          "slot": "I",
+          "q": "Where is the release cable anchored on an SBC-C?",
+          "a": "The cable is anchored at a fixed point so that the pull releases the coupling, and we need to know where when you enquire. Describe the layout and anchor point and we confirm the installation with MannTek."
+        },
+        {
+          "slot": "J",
+          "q": "When is a cable-release breakaway coupling better than breaking bolts?",
+          "a": "When the line runs at high pressure on piping that cannot take the pull needed to break bolts. The cable triggers the release at a much lower load on the pipework, which is the case MannTek recommends the SBC-C for."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the MannTek SBC-C made and can it be exported from Dubai?",
+          "a": "MannTek (Mann Teknik AB) is based in Mariestad, Sweden, and Indus is its authorised distributor in the UAE. We export from Dubai to the GCC, Africa, Asia and beyond; see [certificate of origin and GCC duty](/blog/certificate-of-origin-gcc-duty)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the MannTek SBC-C breakaway coupling in Dubai?",
+          "a": "Yes. The MannTek SBC-C breakaway coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "manntek-sbc-safety-breakaway-coupling-breaking-bolt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the MannTek SBC breaking-bolt safety breakaway coupling used for?",
+          "a": "The MannTek SBC is a safety breakaway coupling installed in a transfer line as its weakest link: when the pull reaches a defined force the breaking bolts break and the valves in both halves close. It stops a drive-away or pull-away tearing a hose or loading arm off its connection, in DN 25 to DN 300."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the MannTek SBC come in?",
+          "a": "The SBC is listed from DN 25 (1\") to DN 300 (12\"), in industrial and marine versions: 1\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\", 10\" and 12\". There are 20 part numbers, for example IH-MNT-SBC-I-050 and IH-MNT-SBC-M-050."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read MannTek SBC part numbers such as IH-MNT-SBC-I-050?",
+          "a": "In IH-MNT-SBC-I-050 the letter I is the industrial version and M the marine version, and 050 is the DN size, here DN 50 (2\"). So IH-MNT-SBC-M-300 is the marine coupling in DN 300 (12\")."
+        },
+        {
+          "slot": "K",
+          "q": "MannTek SBC industrial or marine version: which do I need?",
+          "a": "Use the industrial version where the coupling is fixed to one point, such as a truck or loading arm, and may be pulled at any angle from 0 to 90°. Use the marine version between two hose strings, as in ship-to-shore transfer; it releases on straight axial pull only. See [how to choose a safety breakaway coupling](/blog/how-to-choose-a-safety-breakaway-coupling)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the MannTek SBC breakaway coupling?",
+          "a": "MannTek states 25 bar working pressure, which varies with body material. Confirm the figure for your size, body material and seal when you enquire, because 25 bar is the upper figure and not every combination reaches it."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the MannTek SBC have?",
+          "a": "MannTek publishes flow from 380 L/min at DN 25 to 44,500 L/min at DN 300, rising with size: 1400 L/min at DN 50 and 8100 L/min at DN 150. Choose the size from the line flow as well as the hose bore."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and seals does the MannTek SBC use?",
+          "a": "The body is stainless steel 1.4408 (AISI 316) as standard, with aluminium, brass, gun metal and Hastelloy / PVDF in smaller sizes and stainless steel only at 10\" and 12\". Seals are FKM, NBR, EPDM or FFKM, with low-temperature FKM for all LPG qualities."
+        },
+        {
+          "slot": "H",
+          "q": "What connections can the MannTek SBC have?",
+          "a": "Inlet and outlet are chosen individually: female or male BSP or NPT thread up to 8\", flanges to EN, ANSI, TW or TTMA, Victaulic or an integrated hose shank. That avoids nipples and reducers; see [how to choose a safety breakaway coupling](/blog/how-to-choose-a-safety-breakaway-coupling)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the breaking load of a MannTek SBC set?",
+          "a": "MannTek calculates it for each installation so the coupling separates before the hose, arm or manifold is overloaded. Send the hose size and length, the operating pressure, the medium and how the line is fixed."
+        },
+        {
+          "slot": "I",
+          "q": "What happens after a MannTek SBC releases and can it be reset?",
+          "a": "Both halves close their valves as they separate, limiting the spill to what is between them. After the cause is cleared the unit can be reset in minutes without special tools, with a new breaking-bolt kit; MannTek's service instruction for replacing the kit is in the Documents tab."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the MannTek SBC made and can it be exported from Dubai?",
+          "a": "MannTek (Mann Teknik AB) is based in Mariestad, Sweden, and Indus is its authorised distributor in the UAE. We export from Dubai to the GCC, Africa, Asia and beyond; see [certificate of origin and GCC duty](/blog/certificate-of-origin-gcc-duty)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the MannTek SBC breaking-bolt coupling in Dubai?",
+          "a": "Yes, we stock the MannTek SBC breaking-bolt coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

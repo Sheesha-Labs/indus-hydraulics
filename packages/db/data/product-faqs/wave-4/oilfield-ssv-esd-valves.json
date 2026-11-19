@@ -1,0 +1,352 @@
+{
+  "family": "oilfield-ssv-esd-valves",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined: the male half of a 602 or 1002 union can make up into a 1502 wing nut and look made up, then separate under pressure. Mismatched unions have caused fatalities and IADC recommends colour coding, go/no-go gauges and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 and 03-16 (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "surface-safety-valve-hydraulic-2-1-16-in-15m-flanged-each-fe-15-000-psi-api-6a-psl-3-ssv-class-ii-ee-0-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in 15,000 psi surface safety valve used for?",
+          "a": "A 2-1/16 in 15,000 psi surface safety valve (15K, sour service) is a hydraulically actuated fail-close gate valve that shuts the well in on loss of control pressure or an ESD signal, fitted to a Christmas tree. Compact HP tree shutdown."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in 15,000 psi valve use?",
+          "a": "The surface safety valve inlet is a 2-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this surface safety valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 15,000 psi surface safety valve have?",
+          "a": "On the 2-1/16 in 15,000 psi surface safety valve (sour service) the inlet is 2-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 15M Flanged (RTJ). Check the inlet and outlet styles against the tree and the frac iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 15,000 psi surface safety valve or the 3-1/16 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in at 15,000 psi (sour service); the [3-1/16 in 10,000 psi surface safety valve](/p/surface-safety-valve-hydraulic-3-1-16-in-10m-flanged-inlet-3-in-1502-f-m-outlet-10-000-psi-api-6a-psl-3-pr1-ee-1-5) is rated 10,000 psi with 3-1/16 in API 6A 10M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in 15,000 psi surface safety valve, and how is it tested?",
+          "a": "The 2-1/16 in 15,000 psi surface safety valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow API 6A at the PSL on the listing; the SSV shell and seat tests are proof tests and never working pressures. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in 15,000 psi surface safety valve made from?",
+          "a": "The 2-1/16 in 15,000 psi surface safety valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-0.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 15,000 psi surface safety valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2-1/16 in 15,000 psi surface safety valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-0.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in 15,000 psi surface safety valve connect to?",
+          "a": "The inlet is 2-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 15M Flanged (RTJ), so it connects to the tree and to the flowline or frac iron on those ends. Browse the [SSV and ESD valves shelf](/c/oilfield-ssv-esd-valves) for the other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in 15,000 psi surface safety valve operated and maintained?",
+          "a": "On the 2-1/16 in 15,000 psi surface safety valve, the hydraulic actuator holds the gate open against its spring, and loss of control pressure closes it. Function-test the valve with the control system at the interval in your well procedure, and read the [surface safety valve and ESD guide](/blog/surface-safety-valves-and-esd-systems)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in 15,000 psi surface safety valve compare with a manual gate valve?",
+          "a": "The 2-1/16 in 15,000 psi surface safety valve is actuated and closes on loss of hydraulic pressure, giving automatic shut-in, while a manual gate valve only isolates when an operator turns it. See the [gate valves shelf](/c/oilfield-gate-valves)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2-1/16 in 15,000 psi surface safety valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron surface safety valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Surface Safety Valve, Hydraulic, 2-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV, EE from Indus Hydraulics?",
+          "a": "The Surface Safety Valve, Hydraulic, 2-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV, EE-0.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-safety-valve-hydraulic-3-1-16-in-10m-flanged-inlet-3-in-1502-f-m-outlet-10-000-psi-api-6a-psl-3-pr1-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10,000 psi surface safety valve used for?",
+          "a": "A 3-1/16 in 10,000 psi surface safety valve (10K, sour service) is a hydraulically actuated fail-close gate valve that shuts the well in on loss of control pressure or an ESD signal, fitted to a Christmas tree. Frac-iron-to-tree adapter SSV."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 10,000 psi valve use — Surface Safety Valve, Hydraulic, 3-1/16 in × 10M Flanged Inl?",
+          "a": "The surface safety valve inlet is a 3-1/16 in API 6A 10M Flanged (RTJ), an API 6A flange with ring-type joint, so on this surface safety valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10,000 psi surface safety valve have?",
+          "a": "On the 3-1/16 in 10,000 psi surface safety valve (sour service) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3 in 1502 F×M Weco Union. Check the inlet and outlet styles against the tree and the frac iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 10,000 psi surface safety valve or the 2-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 10,000 psi (sour service); the [2-1/16 in 15,000 psi surface safety valve](/p/surface-safety-valve-hydraulic-2-1-16-in-15m-flanged-each-fe-15-000-psi-api-6a-psl-3-ssv-class-ii-ee-0-5) is rated 15,000 psi with 2-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10,000 psi surface safety valve, and how is it tested?",
+          "a": "The 3-1/16 in 10,000 psi surface safety valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). Test pressures follow API 6A at the PSL on the listing; the SSV shell and seat tests are proof tests and never working pressures. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 10,000 psi surface safety valve made from?",
+          "a": "The 3-1/16 in 10,000 psi surface safety valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 10,000 psi surface safety valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 10,000 psi surface safety valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10,000 psi surface safety valve connect to?",
+          "a": "The inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3 in 1502 F×M Weco Union, so it connects to the tree and to the flowline or frac iron on those ends. Browse the [SSV and ESD valves shelf](/c/oilfield-ssv-esd-valves) for the other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 10,000 psi surface safety valve operated and maintained?",
+          "a": "On the 3-1/16 in 10,000 psi surface safety valve, the hydraulic actuator holds the gate open against its spring, and loss of control pressure closes it. Function-test the valve with the control system at the interval in your well procedure, and read the [surface safety valve and ESD guide](/blog/surface-safety-valves-and-esd-systems)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10,000 psi surface safety valve compare with a manual gate valve?",
+          "a": "The 3-1/16 in 10,000 psi surface safety valve is actuated and closes on loss of hydraulic pressure, giving automatic shut-in, while a manual gate valve only isolates when an operator turns it. See the [gate valves shelf](/c/oilfield-gate-valves)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 10,000 psi surface safety valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron surface safety valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Surface Safety Valve, Hydraulic, 3-1/16 in × 10M Flanged Inlet × 3 in 1502 F×M Outlet, 10,000 psi, A from Indus Hydraulics?",
+          "a": "The Surface Safety Valve, Hydraulic, 3-1/16 in × 10M Flanged Inlet × 3 in 1502 F×M Outlet, 10,000 psi, API 6A PSL 3 PR2, EE-1.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 70 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-safety-valve-hydraulic-sah-3-1-16-in-15m-flanged-each-fe-15-000-psi-api-6a-psl-3-ssv-class-ii-ee-hf",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15,000 psi surface safety valve used for?",
+          "a": "A 3-1/16 in 15,000 psi surface safety valve (15K, sour service) is a hydraulically actuated fail-close gate valve that shuts the well in on loss of control pressure or an ESD signal, fitted to a Christmas tree. Premium Christmas tree ESD."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 15,000 psi valve use — Surface Safety Valve, Hydraulic SAH, 3-1/16 in × 15M Flanged?",
+          "a": "The surface safety valve inlet is a 3-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this surface safety valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15,000 psi surface safety valve have?",
+          "a": "On the 3-1/16 in 15,000 psi surface safety valve (sour service) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). Check the inlet and outlet styles against the tree and the frac iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 15,000 psi surface safety valve or the 3-1/16 in 10,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 15,000 psi (sour service); the [3-1/16 in 10,000 psi surface safety valve](/p/surface-safety-valve-hydraulic-3-1-16-in-10m-flanged-inlet-3-in-1502-f-m-outlet-10-000-psi-api-6a-psl-3-pr1-ee-1-5) is rated 10,000 psi with 3-1/16 in API 6A 10M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15,000 psi surface safety valve, and how is it tested?",
+          "a": "The 3-1/16 in 15,000 psi surface safety valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). Test pressures follow API 6A at the PSL on the listing; the SSV shell and seat tests are proof tests and never working pressures. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 15,000 psi surface safety valve made from?",
+          "a": "The 3-1/16 in 15,000 psi surface safety valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + FFKM primary seals (high-temp). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-HF. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 15,000 psi surface safety valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 15,000 psi surface safety valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-HF, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15,000 psi surface safety valve connect to?",
+          "a": "The inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ), so it connects to the tree and to the flowline or frac iron on those ends. Browse the [SSV and ESD valves shelf](/c/oilfield-ssv-esd-valves) for the other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 15,000 psi surface safety valve operated and maintained?",
+          "a": "On the 3-1/16 in 15,000 psi surface safety valve, the hydraulic actuator holds the gate open against its spring, and loss of control pressure closes it. Function-test the valve with the control system at the interval in your well procedure, and read the [surface safety valve and ESD guide](/blog/surface-safety-valves-and-esd-systems)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15,000 psi surface safety valve compare with a manual gate valve?",
+          "a": "The 3-1/16 in 15,000 psi surface safety valve is actuated and closes on loss of hydraulic pressure, giving automatic shut-in, while a manual gate valve only isolates when an operator turns it. See the [gate valves shelf](/c/oilfield-gate-valves)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 15,000 psi surface safety valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies surface safety valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Surface Safety Valve, Hydraulic SAH, 3-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV from Indus Hydraulics?",
+          "a": "The Surface Safety Valve, Hydraulic SAH, 3-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV, EE is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "hipps-high-integrity-pressure-protection-system",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a HIPPS high integrity pressure protection system used for?",
+          "a": "High integrity pressure protection systems (HIPPS), SIL 3: pressure transmitters, redundant logic solver and HIPPS ball valves 5\" to 28\", 1,000 to 15,000 psi, shut-off within 2 seconds."
+        },
+        {
+          "slot": "B",
+          "q": "What do the HIPPS ball valve sizes 5 to 28 inches mean?",
+          "a": "The listing gives HIPPS ball valves from 5\" to 28\" and a pressure class of 1,000 to 15,000 psi, flanged. Choose the bore from the line size and the class from the maximum source pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the HIPPS high integrity pressure protection system come in?",
+          "a": "The listing covers HIPPS ball valves 5\" to 28\" nominal bore at 1,000 to 15,000 psi, with flanged. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Is a HIPPS different from a surface safety valve?",
+          "a": "Yes. A HIPPS is a complete instrumented system: pressure transmitters, a redundant logic solver and fast-closing HIPPS ball valves. A [surface safety valve](/p/surface-safety-valve-hydraulic-api-6a) is a single actuated wellhead valve."
+        },
+        {
+          "slot": "E",
+          "q": "How is the HIPPS high integrity pressure protection system tested?",
+          "a": "For the HIPPS high integrity pressure protection system (HIPPS ball valves 5\" to 28\", 1,000 to 15,000 psi): factory acceptance test of the panel or system, with function and pressure tests of every circuit. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and ambient range does the HIPPS panel use?",
+          "a": "The panel and tubing are stainless steel 304, 316 or 316L, with an ambient range of -40 °C to 60 °C. The cabinet is explosion-proof with IP65 minimum protection, per the listing."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the SIL 3 HIPPS meet?",
+          "a": "The HIPPS is designed to IEC 61508 and IEC 61511 at SIL 3. Factory acceptance testing of the panel or system, with function and pressure tests, is part of supply. Confirm the certificate scope on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "How is the HIPPS high integrity pressure protection system operated?",
+          "a": "The HIPPS high integrity pressure protection system is operated by fast-acting actuators, closure within 2 seconds. Fast-acting actuators close the HIPPS ball valves within 2 seconds. End connections on the listing are flanged."
+        },
+        {
+          "slot": "I",
+          "q": "What does SIL 3 mean for a HIPPS?",
+          "a": "SIL 3 is a safety integrity level under IEC 61508 and IEC 61511, the highest level normally used in process plants, and the listing is designed to it. A factory acceptance test of the panel or system is part of supply. Read the [surface safety valve and ESD guide](/blog/surface-safety-valves-and-esd-systems)."
+        },
+        {
+          "slot": "K",
+          "q": "HIPPS or surface safety valve: which protects the line from over-pressure?",
+          "a": "A HIPPS is a rated SIL 3 instrumented system that shuts the line within 2 seconds on over-pressure, while a surface safety valve shuts in a wellhead on loss of control pressure or an ESD signal. See the [Surface Safety Valve (SSV), Hydraulic, API 6A, 1-13/16\" to 7-1/16\"](/p/surface-safety-valve-hydraulic-api-6a)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the HIPPS high integrity pressure protection system be supplied from Dubai with test records?",
+          "a": "For the HIPPS high integrity pressure protection system: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the HIPPS high integrity pressure protection system in Dubai?",
+          "a": "Yes. We keep the HIPPS high integrity pressure protection system in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "surface-safety-valve-hydraulic-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A hydraulic surface safety valve used for?",
+          "a": "Surface safety valves to API 6A and 6FA: slab gate with compact single-acting hydraulic actuator, 1-13/16\" to 7-1/16\", 2,000 to 20,000 psi, PR2F, skid-mounted, -46 °C to 180 °C."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A hydraulic surface safety valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A hydraulic surface safety valve the listing gives PSL 2 to 4; PR2F. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A hydraulic surface safety valve come in?",
+          "a": "The listing covers 1-13/16\" to 7-1/16\" nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged or studded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What does PR2F mean on an API 6A surface safety valve?",
+          "a": "PR2F is the PR level on the listing, with PSL 2 to 4, with API 6FA fire-safe design. Pick the PSL for the well and the fire test where the valve may see fire at the wellhead. See the [API 6A nameplate guide](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A hydraulic surface safety valve tested?",
+          "a": "For the API 6A hydraulic surface safety valve (1-13/16\" to 7-1/16\", 2,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A hydraulic surface safety valve offer?",
+          "a": "On the API 6A hydraulic surface safety valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is -46 °C to 180 °C (L to X). For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A hydraulic surface safety valve to API specification, and what documents are supplied?",
+          "a": "The API 6A hydraulic surface safety valve is built to API 6A, API 6FA by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A hydraulic surface safety valve operated?",
+          "a": "The API 6A hydraulic surface safety valve is operated by single-acting hydraulic actuator, fail close. A single-acting hydraulic actuator holds it open and a spring closes it on loss of pressure. End connections on the listing are aPI 6A flanged or studded."
+        },
+        {
+          "slot": "I",
+          "q": "How does the actuator close a surface safety valve?",
+          "a": "A single-acting hydraulic actuator holds the slab gate open with control pressure; when that pressure is lost or vented by the ESD system the actuator closes the gate. Read the [surface safety valve and ESD guide](/blog/surface-safety-valves-and-esd-systems)."
+        },
+        {
+          "slot": "K",
+          "q": "Surface safety valve or HIPPS: how do they differ?",
+          "a": "A surface safety valve is a single actuated slab-gate valve that shuts the well in on loss of control pressure, while a HIPPS is a complete SIL 3 instrumented over-pressure system. See the [HIPPS High Integrity Pressure Protection System, SIL 3](/p/hipps-high-integrity-pressure-protection-system)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A hydraulic surface safety valve be supplied from Dubai with test records?",
+          "a": "For the API 6A hydraulic surface safety valve: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A hydraulic surface safety valve in Dubai?",
+          "a": "Yes. We keep the API 6A hydraulic surface safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

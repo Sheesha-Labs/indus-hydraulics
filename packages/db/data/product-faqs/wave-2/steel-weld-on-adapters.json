@@ -1,0 +1,291 @@
+{
+  "family": "steel-weld-on-adapters",
+  "extraFacts": [
+    {
+      "fact": "SAE J514 is the standard for 37° flared tube fittings (JIC): the male flare and the female swivel nut seat against each other on a 74° included cone.",
+      "source": "SAE J514 Hydraulic Tube Fittings, scope; ISO 8434-2 (37° flared fittings)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread standardised in ASME B1.20.1; it seals on the thread with sealant such as PTFE tape or paste.",
+      "source": "ASME B1.20.1 Pipe Threads, General Purpose (Inch), scope"
+    },
+    {
+      "fact": "SAE J1453 covers O-ring face seal (ORFS) fittings: a flat-faced male carries an O-ring in its face and the female swivel nut pulls it against the mating face.",
+      "source": "SAE J1453 Fitting - O-Ring Face Seal, scope; ISO 8434-3"
+    },
+    {
+      "fact": "ISO 228-1 covers parallel (non-taper) pipe threads, the G or BSPP thread; the seal is made by a seat, bonded washer or O-ring at the face, not by the thread flanks.",
+      "source": "ISO 228-1:2000 Pipe threads where pressure-tight joints are not made on the threads, scope"
+    },
+    {
+      "fact": "ASTM B633 specifies electrodeposited zinc coatings on iron and steel; trivalent zinc plating is a chromium-VI-free finish on that coating.",
+      "source": "ASTM B633 Electrodeposited Coatings of Zinc on Iron and Steel, scope"
+    },
+    {
+      "fact": "Zinc plating gives mild corrosion protection but vaporises at the weld, so on a zinc-plated part the coating is cleared from the weld zone and the weld area is ventilated.",
+      "source": "American Welding Society safety and health fact sheets on welding zinc-coated steel"
+    }
+  ],
+  "products": [
+    {
+      "slug": "steel-weld-on-tube-x-jic-37-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Weld-On Tube × JIC 37° Female Swivel Adapter used for?",
+          "a": "The Steel Weld-On Tube × JIC 37° Female Swivel Adapter is a straight swivel adapter welded onto a tube, a metal hose or a manifold to give it a JIC 37° female swivel connection. It is forged carbon steel, trivalent zinc plated (ASTM B633), listed in 9 sizes from 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-WO-FJX-04-04 for the Steel Weld-On Tube × JIC 37° Female Swivel Adapter?",
+          "a": "In IH-ST-WO-FJX-04-04 the prefix IH-ST-WO-FJX identifies the product and the two numbers are sizes in sixteenths of an inch: the first is the weld end (1/4\" tube O.D.) and the second the JIC 37° female swivel thread (1/4\" JIC 37° female swivel). So IH-ST-WO-FJX-32-32 pairs a 2\" tube O.D. weld end with a 2\" JIC 37° female swivel end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Weld-On Tube × JIC 37° Female Swivel Adapter come in?",
+          "a": "The Steel Weld-On Tube × JIC 37° Female Swivel Adapter is listed in 9 part numbers from 1/4\" to 2\". The Sizes & Part Numbers table gives both ends for every one, from IH-ST-WO-FJX-04-04 to IH-ST-WO-FJX-32-32; other sizes are quoted on request. The [JIC adapters](/c/jic-adapters) lists matching hose and tube connectors."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Steel Weld-On Tube × JIC 37° Female Swivel Adapter?",
+          "a": "Choose the weld end for your tube O.D. first, then check the thread against the port or hose end it meets. In this table the weld end and the thread share one dash size, so IH-ST-WO-FJX-12-12 welds to 3/4\" and carries a 3/4\" JIC 37° female swivel end (thread 1-1/16-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel Weld-On Tube × JIC 37° Female Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel Weld-On Tube × JIC 37° Female Swivel Adapter. The finished joint holds what the weld, the tube or hose and the JIC 37° female swivel end allow, so tell us the working pressure and we will confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Weld-On Tube × JIC 37° Female Swivel Adapter made from, and is it suitable for corrosive service?",
+          "a": "The Steel Weld-On Tube × JIC 37° Female Swivel Adapter is forged carbon steel with a trivalent zinc plating to ASTM B633, which protects it from rust in normal workshop and field use. It is not meant for seawater or chemical service; for those, choose stainless steel from the [stainless steel adapters](/c/stainless-steel-jic-adapters) shelf."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Steel Weld-On Tube × JIC 37° Female Swivel Adapter?",
+          "a": "The JIC 37° female swivel end of the Steel Weld-On Tube × JIC 37° Female Swivel Adapter is made to SAE J514: it is a 37° flare seat on a 74° included cone, with a swivel nut that turns freely on the body. The weld end has no standard stated; the weld procedure and filler are chosen to suit the material."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel Weld-On Tube × JIC 37° Female Swivel Adapter connect to?",
+          "a": "The JIC 37° female swivel end connects to a male JIC 37° flare end, such as a JIC male hose end, a JIC male adapter or a flared tube end. The weld end joins a tube, a metal hose or a manifold of the matching size. Matching adapters are on the [JIC adapters](/c/jic-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I weld and fit the Steel Weld-On Tube × JIC 37° Female Swivel Adapter?",
+          "a": "Clean the weld end and clear the zinc plating from the weld zone, weld it to the tube or hose with a procedure and filler to suit the base material, and ventilate the area because zinc fume is released. Keep heat and spatter off the 37° flare seat and swivel nut, and re-protect the weld afterwards. Make up the joint to the torque in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Weld-On Tube × JIC 37° Female Swivel Adapter compare with the male JIC weld-on adapter?",
+          "a": "The Steel Weld-On Tube × JIC 37° Female Swivel Adapter carries a swivel nut, so it lines up with a male flare without turning the welded body; the [Steel Weld-On Tube × JIC 37° Male Adapter](/p/steel-weld-on-tube-x-jic-37-male-adapter) has a fixed male flare and mates with a swivel nut instead. Both are 9 ranges from 1/4\" to 2\" with the same SAE J514 seat. Choose by which half of the JIC joint is already on the other part."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Steel Weld-On Tube × JIC 37° Female Swivel Adapter ship from, and what are the export details?",
+          "a": "The Steel Weld-On Tube × JIC 37° Female Swivel Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Weld-On Tube × JIC 37° Female Swivel Adapter for export from Dubai?",
+          "a": "Yes. We keep the Steel Weld-On Tube × JIC 37° Female Swivel Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers such as IH-ST-WO-FJX-04-04 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-weld-on-tube-x-jic-37-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Weld-On Tube × JIC 37° Male Adapter used for?",
+          "a": "The Steel Weld-On Tube × JIC 37° Male Adapter is a straight rigid adapter welded onto a tube, a metal hose or a manifold to give it a JIC 37° male connection. It is forged carbon steel, trivalent zinc plated (ASTM B633), listed in 9 sizes from 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-WO-MJ-04-04 for the Steel Weld-On Tube × JIC 37° Male Adapter?",
+          "a": "In IH-ST-WO-MJ-04-04 the prefix IH-ST-WO-MJ identifies the product and the two numbers are sizes in sixteenths of an inch: the first is the weld end (1/4\" tube O.D.) and the second the JIC 37° male thread (1/4\" JIC 37° male). So IH-ST-WO-MJ-32-32 pairs a 2\" tube O.D. weld end with a 2\" JIC 37° male end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Weld-On Tube × JIC 37° Male Adapter come in?",
+          "a": "The Steel Weld-On Tube × JIC 37° Male Adapter is listed in 9 part numbers from 1/4\" to 2\". The Sizes & Part Numbers table gives both ends for every one, from IH-ST-WO-MJ-04-04 to IH-ST-WO-MJ-32-32; other sizes are quoted on request. The [JIC adapters](/c/jic-adapters) lists matching hose and tube connectors."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Steel Weld-On Tube × JIC 37° Male Adapter?",
+          "a": "Choose the weld end for your tube O.D. first, then check the thread against the port or hose end it meets. In this table the weld end and the thread share one dash size, so IH-ST-WO-MJ-12-12 welds to 3/4\" and carries a 3/4\" JIC 37° male end (thread 1-1/16-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel Weld-On Tube × JIC 37° Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel Weld-On Tube × JIC 37° Male Adapter. The finished joint holds what the weld, the tube or hose and the JIC 37° male end allow, so tell us the working pressure and we will confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Weld-On Tube × JIC 37° Male Adapter made from, and is it suitable for corrosive service?",
+          "a": "The Steel Weld-On Tube × JIC 37° Male Adapter is forged carbon steel with a trivalent zinc plating to ASTM B633, which protects it from rust in normal workshop and field use. It is not meant for seawater or chemical service; for those, choose stainless steel from the [stainless steel adapters](/c/stainless-steel-jic-adapters) shelf."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Steel Weld-On Tube × JIC 37° Male Adapter?",
+          "a": "The JIC 37° male end of the Steel Weld-On Tube × JIC 37° Male Adapter is made to SAE J514: it is a 37° flare seat on a 74° included cone. The weld end has no standard stated; the weld procedure and filler are chosen to suit the material."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel Weld-On Tube × JIC 37° Male Adapter connect to?",
+          "a": "The JIC 37° male end connects to a female JIC 37° swivel nut, such as a JIC female swivel hose end or a female swivel adapter. The weld end joins a tube, a metal hose or a manifold of the matching size. Matching adapters are on the [JIC adapters](/c/jic-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I weld and fit the Steel Weld-On Tube × JIC 37° Male Adapter?",
+          "a": "Clean the weld end and clear the zinc plating from the weld zone, weld it to the tube or hose with a procedure and filler to suit the base material, and ventilate the area because zinc fume is released. Keep heat and spatter off the 37° flare seat, and re-protect the weld afterwards. Seat the flare squarely and tighten the nut by the turns in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose the Steel Weld-On Tube × JIC 37° Male Adapter or the female swivel version?",
+          "a": "The Steel Weld-On Tube × JIC 37° Male Adapter has a fixed male 37° flare and needs a female swivel nut on the mating part, whereas the [Steel Weld-On Tube × JIC 37° Female Swivel Adapter](/p/steel-weld-on-tube-x-jic-37-female-swivel-adapter) carries the swivel nut itself. Both are 1/4\" to 2\" with the same SAE J514 seat; pick the one whose gender is opposite to the hose end or tube fitting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Steel Weld-On Tube × JIC 37° Male Adapter ship from, and what are the export details?",
+          "a": "The Steel Weld-On Tube × JIC 37° Male Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Weld-On Tube × JIC 37° Male Adapter for export from Dubai?",
+          "a": "Yes, it is held ex-stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. For a price on the Steel Weld-On Tube × JIC 37° Male Adapter, send the sizes and quantities to us via the [quotation form](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-weld-on-tube-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Weld-On Tube × NPT Female Adapter used for?",
+          "a": "The Steel Weld-On Tube × NPT Female Adapter is a straight rigid adapter welded onto a tube, a metal hose or a manifold to give it an NPT female connection. It is forged carbon steel, trivalent zinc plated (ASTM B633), listed in 8 sizes from 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-WO-FP-04-04 for the Steel Weld-On Tube × NPT Female Adapter?",
+          "a": "In IH-ST-WO-FP-04-04 the prefix IH-ST-WO-FP identifies the product and the two numbers are sizes in sixteenths of an inch: the first is the weld end (1/4\" tube O.D.) and the second the NPT female thread (1/4\" NPT female). So IH-ST-WO-FP-32-32 pairs a 2\" tube O.D. weld end with a 2\" NPT female end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Weld-On Tube × NPT Female Adapter come in?",
+          "a": "The Steel Weld-On Tube × NPT Female Adapter is listed in 8 part numbers from 1/4\" to 2\". The Sizes & Part Numbers table gives both ends for every one, from IH-ST-WO-FP-04-04 to IH-ST-WO-FP-32-32; other sizes are quoted on request. The [NPT adapters](/c/npt-adapters) lists matching hose and tube connectors."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Steel Weld-On Tube × NPT Female Adapter?",
+          "a": "Choose the weld end for your tube O.D. first, then check the thread against the port or hose end it meets. In this table the weld end and the thread share one dash size, so IH-ST-WO-FP-16-16 welds to 1\" and carries a 1\" NPT female end (thread 1-11.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel Weld-On Tube × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel Weld-On Tube × NPT Female Adapter. The finished joint holds what the weld, the tube or hose and the NPT female end allow, so tell us the working pressure and we will confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Weld-On Tube × NPT Female Adapter made from, and is it suitable for corrosive service?",
+          "a": "The Steel Weld-On Tube × NPT Female Adapter is forged carbon steel with a trivalent zinc plating to ASTM B633, which protects it from rust in normal workshop and field use. It is not meant for seawater or chemical service; for those, choose stainless steel from the [stainless steel adapters](/c/stainless-steel-npt-pipe-adapters) shelf."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Steel Weld-On Tube × NPT Female Adapter?",
+          "a": "The NPT female end of the Steel Weld-On Tube × NPT Female Adapter is made to ASME B1.20.1: it is a tapered pipe thread that seals on the thread with sealant. The weld end has no standard stated; the weld procedure and filler are chosen to suit the material."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel Weld-On Tube × NPT Female Adapter connect to?",
+          "a": "The NPT female end connects to a male NPT thread, such as a pipe nipple, a gauge or a male NPT hose end. The weld end joins a tube, a metal hose or a manifold of the matching size. Matching adapters are on the [NPT adapters](/c/npt-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I weld and fit the Steel Weld-On Tube × NPT Female Adapter?",
+          "a": "Clean the weld end and clear the zinc plating from the weld zone, weld it to the tube or hose with a procedure and filler to suit the base material, and ventilate the area because zinc fume is released. Keep heat and spatter off the internal thread, and re-protect the weld afterwards. Seal the thread with sealant; [stopping an NPT leak](/blog/stopping-an-npt-thread-leak) covers tape, paste and when to use neither."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Steel Weld-On Tube × NPT Female Adapter and the male NPT weld-on adapter?",
+          "a": "The Steel Weld-On Tube × NPT Female Adapter has a female NPT thread and takes a male nipple, gauge or hose end, while the [Steel Weld-On Tube × NPT Male Adapter](/p/steel-weld-on-tube-x-npt-male-adapter) has a male thread and screws into a female port. Both weld onto tube from 1/4\" to 2\" and seal on the thread with sealant; pick by the gender of the NPT part you are joining."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Steel Weld-On Tube × NPT Female Adapter ship from, and what are the export details?",
+          "a": "The Steel Weld-On Tube × NPT Female Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Weld-On Tube × NPT Female Adapter for export from Dubai?",
+          "a": "Yes. The Steel Weld-On Tube × NPT Female Adapter is stocked at our Dubai, UAE warehouse, so most orders ship worldwide on the best lead times we can offer. Tell us the part numbers such as IH-ST-WO-FP-04-04 and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-weld-on-tube-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Weld-On Tube × NPT Male Adapter used for?",
+          "a": "The Steel Weld-On Tube × NPT Male Adapter is a straight rigid adapter welded onto a tube, a metal hose or a manifold to give it an NPT male connection. It is forged carbon steel, trivalent zinc plated (ASTM B633), listed in 8 sizes from 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-WO-MP-04-04 for the Steel Weld-On Tube × NPT Male Adapter?",
+          "a": "In IH-ST-WO-MP-04-04 the prefix IH-ST-WO-MP identifies the product and the two numbers are sizes in sixteenths of an inch: the first is the weld end (1/4\" tube O.D.) and the second the NPT male thread (1/4\" NPT male). So IH-ST-WO-MP-32-32 pairs a 2\" tube O.D. weld end with a 2\" NPT male end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Weld-On Tube × NPT Male Adapter come in?",
+          "a": "The Steel Weld-On Tube × NPT Male Adapter is listed in 8 part numbers from 1/4\" to 2\". The Sizes & Part Numbers table gives both ends for every one, from IH-ST-WO-MP-04-04 to IH-ST-WO-MP-32-32; other sizes are quoted on request. The [NPT adapters](/c/npt-adapters) lists matching hose and tube connectors."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of Steel Weld-On Tube × NPT Male Adapter?",
+          "a": "Choose the weld end for your tube O.D. first, then check the thread against the port or hose end it meets. In this table the weld end and the thread share one dash size, so IH-ST-WO-MP-16-16 welds to 1\" and carries a 1\" NPT male end (thread 1-11.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Steel Weld-On Tube × NPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Steel Weld-On Tube × NPT Male Adapter. The finished joint holds what the weld, the tube or hose and the NPT male end allow, so tell us the working pressure and we will confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Weld-On Tube × NPT Male Adapter made from, and is it suitable for corrosive service?",
+          "a": "The Steel Weld-On Tube × NPT Male Adapter is forged carbon steel with a trivalent zinc plating to ASTM B633, which protects it from rust in normal workshop and field use. It is not meant for seawater or chemical service; for those, choose stainless steel from the [stainless steel adapters](/c/stainless-steel-npt-pipe-adapters) shelf."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Steel Weld-On Tube × NPT Male Adapter?",
+          "a": "The NPT male end of the Steel Weld-On Tube × NPT Male Adapter is made to ASME B1.20.1: it is a tapered pipe thread that seals on the thread with sealant. The weld end has no standard stated; the weld procedure and filler are chosen to suit the material."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel Weld-On Tube × NPT Male Adapter connect to?",
+          "a": "The NPT male end connects to a female NPT port, such as a valve, pump or tank connection tapped in NPT. The weld end joins a tube, a metal hose or a manifold of the matching size. Matching adapters are on the [NPT adapters](/c/npt-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How do I weld and fit the Steel Weld-On Tube × NPT Male Adapter?",
+          "a": "Clean the weld end and clear the zinc plating from the weld zone, weld it to the tube or hose with a procedure and filler to suit the base material, and ventilate the area because zinc fume is released. Keep heat and spatter off the external thread, and re-protect the weld afterwards. Seal the thread with sealant and do not over-tighten into a cast port; the [NPT and NPSM adapters guide](/blog/npt-and-npsm-adapters-guide) explains the thread and its limits."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose the Steel Weld-On Tube × NPT Male Adapter or the female NPT weld-on adapter?",
+          "a": "The Steel Weld-On Tube × NPT Male Adapter has a male NPT thread and screws into a female port, while the [Steel Weld-On Tube × NPT Female Adapter](/p/steel-weld-on-tube-x-npt-female-adapter) is the female version for a male nipple or gauge. Both weld onto tube from 1/4\" to 2\"; choose by the gender of the part you are connecting, and keep to NPT on both sides."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Steel Weld-On Tube × NPT Male Adapter ship from, and what are the export details?",
+          "a": "The Steel Weld-On Tube × NPT Male Adapter ships from our warehouse in Dubai, UAE, to buyers worldwide. The listing states no country of origin or HS code, so we confirm both on the quotation and the commercial invoice for the part numbers you order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Weld-On Tube × NPT Male Adapter for export from Dubai?",
+          "a": "Yes, we stock the Steel Weld-On Tube × NPT Male Adapter in Dubai, UAE, and ship worldwide with the best lead times. Use the [contact page](/contact) to send the sizes and quantities you need and we will reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

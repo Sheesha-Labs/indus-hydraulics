@@ -1,0 +1,1587 @@
+{
+  "family": "npt-npsm-sae-hose-fittings-01",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for mechanical joints (ASME B1.20.1): it does not seal on the thread, so an NPSM swivel end seals on its seat, which on these Dixon swivels is a 30° seat.",
+      "source": "ASME B1.20.1; Dixon swivel listing feature note (female NPSM swivel seals on a 30° seat)"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "A crimp fitting is rated only on the hose series it is designed for; the fitting, ferrule and crimp specification are checked against the hose before supply.",
+      "source": "Indus Hydraulics Aeroquip/Dixon crimp fitting listings (Hose and fitting match note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-45-degree-male-nptf-x-female-npsm-swivel-nut-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows used for?",
+          "a": "The Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows are elbows from Dixon Valve & Coupling that turn the line through 45 degrees. The maker notes: Designed To Prevent Hose Stress Due To Twisting During Assembly, Compact Design Provides Ease Of Assembly In Confining Areas, Female NPSM Swivel Seals On A 30° Seat. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\"-18 NPTF × 1/4\"-18 NPSM in the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "Quote 1503-4-4 for 1/4\"-18 NPTF × 1/4\"-18 NPSM, 1503-6-6 for 3/8\"-18 NPSM and 1503-8-8 for 1/2\"-14 NPTF × 1/2\"-14 NPSM. The Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows come in?",
+          "a": "The Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows come in 3 part numbers. Examples from the table: 1503-4-4 (1/4\"-18 NPTF × 1/4\"-18 NPSM), 1503-6-6 (3/8\"-18 NPSM) and 1503-8-8 (1/2\"-14 NPTF × 1/2\"-14 NPSM). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1503-4-4 (1/4\"-18 NPTF × 1/4\"-18 NPSM) and 1503-8-8 (1/2\"-14 NPTF × 1/2\"-14 NPSM)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "The maker states 3,000 to 4,500 psi (207 to 310 bar), by size for the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows. For example 1503-4-4 is listed at 310 bar and 1503-8-8 at 207 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows seal, and what should I check when fitting them?",
+          "a": "The Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows seal on a 30° seat at the NPSM swivel end, as the maker's feature note states, and on the thread at an NPTF male end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows differ from the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "They are different catalogue series: the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows is 45 and the [Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows](/p/dixon-90-degree-male-nptf-x-female-npsm-swivel-nut-elbows) is 90, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon 45 Degree Male NPTF x Female NPSM Swivel Nut Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-45-degree-npt-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 45 Degree NPT Street Elbows used for?",
+          "a": "The Dixon 45 Degree NPT Street Elbows are elbows from Dixon Valve & Coupling that turn the line through 45 degrees. They come in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Street Elbow, Size 1/4 Inch MNPTF x 1/4 Inch FNPTF in the Dixon 45 Degree NPT Street Elbows?",
+          "a": "Quote 3060404C for Street Elbow, Size 1/4 Inch MNPTF x 1/4 Inch FNPTF, 45 Degree and 3060808C for Street Elbow, Size 1/2 Inch MNPTF x 1/2 Inch FNPTF, 45 Degree. The Dixon 45 Degree NPT Street Elbows list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 45 Degree NPT Street Elbows come in?",
+          "a": "The Dixon 45 Degree NPT Street Elbows come in 4 part numbers. Examples from the table: 3060606C (Street Elbow, 3/8 Inch MNPTF x 3/8 Inch FNPTF, 45 Deg. Bend) and 3060808C (Street Elbow, Size 1/2 Inch MNPTF x 1/2 Inch FNPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 45 Degree NPT Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 45 Degree NPT Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 3060606C (Street Elbow, 3/8 Inch MNPTF x 3/8 Inch FNPTF, 45 Deg. Bend) and 3061212C (Street Elbow, Brass Extruded)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 45 Degree NPT Street Elbows?",
+          "a": "The maker states 1,000 psi (69 bar) for the Dixon 45 Degree NPT Street Elbows. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: -65°F to +250°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 45 Degree NPT Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon 45 Degree NPT Street Elbows in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 45 Degree NPT Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 45 Degree NPT Street Elbows names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 45 Degree NPT Street Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 45 Degree NPT Street Elbows: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 45 Degree NPT Street Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon 45 Degree NPT Street Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 45 Degree NPT Street Elbows differ from the Dixon 90 Degree Street Elbows?",
+          "a": "The Dixon 45 Degree NPT Street Elbows has 45 where the [Dixon 90 Degree Street Elbows](/p/dixon-90-degree-street-elbows) has 90. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 45 Degree NPT Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 45 Degree NPT Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 45 Degree NPT Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 45 Degree NPT Street Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-female-nptf-pipe-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Female NPTF Pipe Elbows used for?",
+          "a": "The Dixon 90 Degree Female NPTF Pipe Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\"-11-1/2 NPTF (female) in the Dixon 90 Degree Female NPTF Pipe Elbows?",
+          "a": "Quote 5504-16 for 1\"-11-1/2 NPTF (female), 5504-4 for 1/4\"-18 NPTF (female) and 5504-2 for 1/8\"-27 NPTF (female). The Dixon 90 Degree Female NPTF Pipe Elbows list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon 90 Degree Female NPTF Pipe Elbows are available?",
+          "a": "The Dixon 90 Degree Female NPTF Pipe Elbows come in 6 part numbers. Examples from the table: 5504-8 (1/2\"-14 NPTF (female)), 5504-6 (3/8\"-18 NPTF (female)) and 5504-12 (3/4\"-14 NPTF (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Female NPTF Pipe Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Female NPTF Pipe Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5504-8 (1/2\"-14 NPTF (female)) and 5504-12 (3/4\"-14 NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Female NPTF Pipe Elbows?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Dixon 90 Degree Female NPTF Pipe Elbows. For example 5504-4 is listed at 345 bar and 5504-16 at 138 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Female NPTF Pipe Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon 90 Degree Female NPTF Pipe Elbows in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Female NPTF Pipe Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Female NPTF Pipe Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Female NPTF Pipe Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree Female NPTF Pipe Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Female NPTF Pipe Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon 90 Degree Female NPTF Pipe Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Female NPTF Pipe Elbows differ from the Dixon 90 Degree NPTF Male Pipe Elbows?",
+          "a": "The Dixon 90 Degree Female NPTF Pipe Elbows and the [Dixon 90 Degree NPTF Male Pipe Elbows](/p/dixon-90-degree-nptf-male-pipe-elbows) are separate listings with different end combinations. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Female NPTF Pipe Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Female NPTF Pipe Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Female NPTF Pipe Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 90 Degree Female NPTF Pipe Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-female-nptf-x-female-npsm-swivel-nut-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows used for?",
+          "a": "The Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 2 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/8\"-183/8\"-18 NPTF x NPSM (female) in the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "Quote 1502-6-6 for 3/8\"-183/8\"-18 NPTF x NPSM (female) and 1502-4-4 for 1/4\"-181/4\"-18 NPTF x NPSM (female). The Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows list 2 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows are available?",
+          "a": "The Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows come in 2 part numbers. Examples from the table: 1502-6-6 (3/8\"-183/8\"-18 NPTF x NPSM (female)) and 1502-4-4 (1/4\"-181/4\"-18 NPTF x NPSM (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1502-6-6 (3/8\"-183/8\"-18 NPTF x NPSM (female)) and 1502-4-4 (1/4\"-181/4\"-18 NPTF x NPSM (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "The maker states 4,000 to 4,500 psi (276 to 310 bar), by size for the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows. For example 1502-4-4 is listed at 310 bar and 1502-6-6 at 276 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows differ from the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "The Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows has Female where the [Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows](/p/dixon-90-degree-male-nptf-x-female-npsm-swivel-nut-elbows) has Male. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-male-nptf-x-female-npsm-swivel-nut-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows used for?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 9 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/8\"-18 NPTF × 1/2\"-14 NPSM in the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "Quote 1501-8-6 for 3/8\"-18 NPTF × 1/2\"-14 NPSM, 1501-6-8 for 1/2\"-14 NPTF × 3/8\"-18 NPSM and 1501-2-2 for 1/8\"-27. The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows list 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows come in?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows come in 9 part numbers. Examples from the table: 1501-8-12 (3/4\"-14 NPTF × 1/2\"-14 NPSM), 1501-6-6 (3/8\"-18 NPTF × 3/8\"-18 NPSM) and 1501-12-8 (1/2\"-14 NPTF × 3/4\"-14 NPSM). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1501-4-4 (1/4\"-18 NPTF × 1/4\"-18 NPSM) and 1501-8-8 (1/2\"-14 NPTF × 1/2\"-14 NPSM)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows. For example 1501-2-2 is listed at 345 bar and 1501-12-8 at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows differ from the Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows has Male where the [Dixon 90 Degree Female NPTF x Female NPSM Swivel Nut Elbows](/p/dixon-90-degree-female-nptf-x-female-npsm-swivel-nut-elbows) has Female. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 90 Degree Male NPTF x Female NPSM Swivel Nut Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-male-nptf-x-female-nptf-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows used for?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1 1/4\"-11.5 NPTF in the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows?",
+          "a": "Quote 5502-20 for 1 1/4\"-11.5 NPTF, 5502-8 for 1/2\"-14 NPTF and 5502-4 for 1/4\"-18 NPTF. The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows come in?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows come in 6 part numbers. Examples from the table: 5502-12 (3/4\"-14 NPTF), 5502-6 (3/8\"-18 NPTF) and 5502-16 (1\"-11.5 NPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Male NPTF x Female NPTF Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5502-12 (3/4\"-14 NPTF) and 5502-16 (1\"-11.5 NPTF)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows?",
+          "a": "The maker states 1,150 to 5,000 psi (79 to 345 bar), by size for the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows. For example 5502-4 is listed at 345 bar and 5502-20 at 79 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows differ from the Dixon 90 Degree Male NPTF x Male NPTF Elbows?",
+          "a": "The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows has Female where the [Dixon 90 Degree Male NPTF x Male NPTF Elbows](/p/dixon-90-degree-male-nptf-x-male-nptf-elbows) has Male. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 90 Degree Male NPTF x Female NPTF Street Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-male-nptf-x-male-nptf-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Male NPTF x Male NPTF Elbows used for?",
+          "a": "The Dixon 90 Degree Male NPTF x Male NPTF Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/4\"-14 NPTF (male) in the Dixon 90 Degree Male NPTF x Male NPTF Elbows?",
+          "a": "Quote 5500-12 for 3/4\"-14 NPTF (male), 5500-8 for 1/2\"-14 NPTF (male) and 5500-4 for 1/4\"-18 NPTF (male). The Dixon 90 Degree Male NPTF x Male NPTF Elbows list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon 90 Degree Male NPTF x Male NPTF Elbows are available?",
+          "a": "The Dixon 90 Degree Male NPTF x Male NPTF Elbows come in 4 part numbers. Examples from the table: 5500-16 (1\"-11.5 NPTF (male)) and 5500-8 (1/2\"-14 NPTF (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Male NPTF x Male NPTF Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Male NPTF x Male NPTF Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 5500-16 (1\"-11.5 NPTF (male)) and 5500-4 (1/4\"-18 NPTF (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Male NPTF x Male NPTF Elbows?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Dixon 90 Degree Male NPTF x Male NPTF Elbows. For example 5500-4 is listed at 345 bar and 5500-16 at 138 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Male NPTF x Male NPTF Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon 90 Degree Male NPTF x Male NPTF Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Male NPTF x Male NPTF Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Male NPTF x Male NPTF Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Male NPTF x Male NPTF Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree Male NPTF x Male NPTF Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Male NPTF x Male NPTF Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon 90 Degree Male NPTF x Male NPTF Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Male NPTF x Male NPTF Elbows differ from the Dixon 90 Degree Male NPTF x Female NPTF Street Elbows?",
+          "a": "The Dixon 90 Degree Male NPTF x Male NPTF Elbows has Male where the [Dixon 90 Degree Male NPTF x Female NPTF Street Elbows](/p/dixon-90-degree-male-nptf-x-female-nptf-street-elbows) has Female. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Male NPTF x Male NPTF Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Male NPTF x Male NPTF Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Male NPTF x Male NPTF Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 90 Degree Male NPTF x Male NPTF Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-nptf-male-pipe-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree NPTF Male Pipe Elbows used for?",
+          "a": "The Dixon 90 Degree NPTF Male Pipe Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Pipe Elbow, 1/4 Inch MNPTF, Brass, 90 Degree, Forged in the Dixon 90 Degree NPTF Male Pipe Elbows?",
+          "a": "Quote 1690404C for Pipe Elbow, 1/4 Inch MNPTF, Brass, 90 Degree, Forged, 1690808C for Pipe Elbow, 1/2 Inch MNPTF, Brass, 90 Degree, Forged and 1690202C for Forged Pipe Elbow, Male, 90 Degree, 1/8 Inch NPTF Size, Brass. The Dixon 90 Degree NPTF Male Pipe Elbows list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 90 Degree NPTF Male Pipe Elbows come in?",
+          "a": "The Dixon 90 Degree NPTF Male Pipe Elbows come in 3 part numbers. Examples from the table: 1690404C (Pipe Elbow, 1/4 Inch MNPTF, Brass, 90 Degree, Forged), 1690808C (Pipe Elbow, 1/2 Inch MNPTF, Brass, 90 Degree, Forged) and 1690202C (Forged Pipe Elbow, Male, 90 Degree, 1/8 Inch NPTF Size). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree NPTF Male Pipe Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree NPTF Male Pipe Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1690404C (Pipe Elbow, 1/4 Inch MNPTF, Brass, 90 Degree, Forged) and 1690202C (Forged Pipe Elbow, Male, 90 Degree, 1/8 Inch NPTF Size)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree NPTF Male Pipe Elbows?",
+          "a": "No working pressure is published for the Dixon 90 Degree NPTF Male Pipe Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree NPTF Male Pipe Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon 90 Degree NPTF Male Pipe Elbows in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree NPTF Male Pipe Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree NPTF Male Pipe Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree NPTF Male Pipe Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon 90 Degree NPTF Male Pipe Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree NPTF Male Pipe Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon 90 Degree NPTF Male Pipe Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree NPTF Male Pipe Elbows differ from the Dixon 90 Degree Female NPTF Pipe Elbows?",
+          "a": "The Dixon 90 Degree NPTF Male Pipe Elbows and the [Dixon 90 Degree Female NPTF Pipe Elbows](/p/dixon-90-degree-female-nptf-pipe-elbows) are separate listings with different end combinations. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree NPTF Male Pipe Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree NPTF Male Pipe Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree NPTF Male Pipe Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon 90 Degree NPTF Male Pipe Elbows are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-90-degree-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon 90 Degree Street Elbows used for?",
+          "a": "The Dixon 90 Degree Street Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 12 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Street Elbow, Size 1/8 Inch FNPTF x 1/8 Inch MNPTF in the Dixon 90 Degree Street Elbows?",
+          "a": "Quote 3040202C for Street Elbow, Size 1/8 Inch FNPTF x 1/8 Inch MNPTF, 90 Degree, 3040806C for Street Elbow, 1/2 Inch FNPTF x 3/8 Inch MNPT, 90 Degree, Brass and 3040606CLF for 3/8\" FNPT x FNPT. The Dixon 90 Degree Street Elbows list 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon 90 Degree Street Elbows come in?",
+          "a": "The Dixon 90 Degree Street Elbows come in 12 part numbers. Examples from the table: 3040404C (Extruded Street Elbow, 1/4 Inch FNPTF x 1/4 Inch MNPTF), 3041212C (Street Elbow, Size 3/4 Inch FNPTF x 3/4 Inch MNPTF) and 3040808CLF (1/2\" FNPT x FNPT). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon 90 Degree Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon 90 Degree Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 3040808C (Street Elbow, 1/2 Inch FNPTF x 1/2 Inch MNPT, 90 Degree) and 3040404CLF (1/4\" FNPT x FNPT)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon 90 Degree Street Elbows?",
+          "a": "No working pressure is published for the Dixon 90 Degree Street Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon 90 Degree Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon 90 Degree Street Elbows in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon 90 Degree Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon 90 Degree Street Elbows names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon 90 Degree Street Elbows, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon 90 Degree Street Elbows must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon 90 Degree Street Elbows seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon 90 Degree Street Elbows, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon 90 Degree Street Elbows differ from the Dixon 45 Degree NPT Street Elbows?",
+          "a": "The Dixon 90 Degree Street Elbows has 90 where the [Dixon 45 Degree NPT Street Elbows](/p/dixon-45-degree-npt-street-elbows) has 45. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon 90 Degree Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon 90 Degree Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon 90 Degree Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon 90 Degree Street Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-boss-male-flat-face-x-male-sae-o-ring-adapters-with-90-degree-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow used for?",
+          "a": "The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow is an elbow from Dixon Valve & Coupling that turns the line through 90 degrees. It comes in 5 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1 3/16\"-12 x 1 1/16\"-12 Flat Face in the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow?",
+          "a": "Quote FS6801-12-12 for 1 3/16\"-12 x 1 1/16\"-12 Flat Face, FS6801-4-4 for 9/16\"-18 x 7/16\"-20 Flat Face and FS6801-8-8 for 13/16\"-16 x 3/4\"-16 Flat Face. The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow lists 5 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow are available?",
+          "a": "The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow comes in 5 part numbers. Examples from the table: FS6801-10-10 (1\"-14 x 7/8\"-14 Flat Face) and FS6801-16-16 (1 7/16\"-12 x 1 5/16\"-12 Flat Face). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: FS6801-10-10 (1\"-14 x 7/8\"-14 Flat Face) and FS6801-16-16 (1 7/16\"-12 x 1 5/16\"-12 Flat Face)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow?",
+          "a": "The maker states 3,000 to 5,000 psi (207 to 345 bar), by size for the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow. For example FS6801-4-4 is listed at 345 bar and FS6801-16-16 at 207 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow made from, and is it suitable for my fluid?",
+          "a": "The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow is made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow names no product standard beyond the thread type. ORB ports follow SAE J1926. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow, and which fittings do I pair it with?",
+          "a": "For the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow: O-ring boss ends screw into SAE O-ring boss ports and seal on the O-ring. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow seal, and what should I check when fitting it?",
+          "a": "An O-ring boss end of the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow seals on its O-ring, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow differ from the Dixon Male NPTF x Female NPSM Swivel Adapters?",
+          "a": "The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow and the [Dixon Male NPTF x Female NPSM Swivel Adapters](/p/dixon-male-nptf-x-female-npsm-swivel-adapters) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow made, and can you export it from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Boss Male Flat Face x Male SAE O-Ring Adapters With 90 Degree Elbow sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-domestic-male-swivel-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Domestic Male Swivel Adapters used for?",
+          "a": "The Dixon Domestic Male Swivel Adapters are adapters from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. They come in 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Swivel Adapter, Domestic Female Swivel x Male Brass in the Dixon Domestic Male Swivel Adapters?",
+          "a": "Quote SM150F-D for Swivel Adapter, Domestic Female Swivel x Male Brass, SM250F-D for Swivel Adapter, Domestic Female Swivel x Male Brass and SM25F20T-D for Swivel Adapter, Domestic Female Swivel x Male Brass. The Dixon Domestic Male Swivel Adapters list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Domestic Male Swivel Adapters are available?",
+          "a": "The Dixon Domestic Male Swivel Adapters come in 4 part numbers. Examples from the table: SM25F30T-D (Swivel Adapter, Domestic Female Swivel x Male Brass) and SM250F-D (Swivel Adapter, Domestic Female Swivel x Male Brass). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Domestic Male Swivel Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Domestic Male Swivel Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SM25F30T-D (Swivel Adapter, Domestic Female Swivel x Male Brass) and SM25F20T-D (Swivel Adapter, Domestic Female Swivel x Male Brass)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Domestic Male Swivel Adapters?",
+          "a": "No working pressure is published for the Dixon Domestic Male Swivel Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Domestic Male Swivel Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Domestic Male Swivel Adapters in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Domestic Male Swivel Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Domestic Male Swivel Adapters names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Domestic Male Swivel Adapters, and which fittings do I pair them with?",
+          "a": "For the Dixon Domestic Male Swivel Adapters: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Domestic Male Swivel Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Domestic Male Swivel Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Domestic Male Swivel Adapters differ from the Dixon Open Snoot Brass Female Swivel Adapters?",
+          "a": "The Dixon Domestic Male Swivel Adapters and the [Dixon Open Snoot Brass Female Swivel Adapters](/p/dixon-open-snoot-brass-female-swivel-adapters) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Domestic Male Swivel Adapters made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Domestic Male Swivel Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Domestic Male Swivel Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Domestic Male Swivel Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-female-nptf-x-female-npsm-swivel-nuts",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Female NPTF x Female NPSM Swivel Nuts used for?",
+          "a": "The Dixon Female NPTF x Female NPSM Swivel Nuts are nuts from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. They come in 7 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/4\"-14 × 1/2\"-14 in the Dixon Female NPTF x Female NPSM Swivel Nuts?",
+          "a": "Quote 1405-12-8 for 3/4\"-14 × 1/2\"-14, 1405-6-6 for 3/8\"-18 NPTF x NPSM (female) and 1405-2-2 for 1/8\"-27 NPTF x NPSM (female). The Dixon Female NPTF x Female NPSM Swivel Nuts list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Female NPTF x Female NPSM Swivel Nuts are available?",
+          "a": "The Dixon Female NPTF x Female NPSM Swivel Nuts come in 7 part numbers. Examples from the table: 1405-8-8 (1/2\"-14 NPTF x NPSM (female)), 1405-6-4 (3/8\"-18 × 1/4\"-18) and 1405-4-4 (1/4\"-18 NPTF x NPSM (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Female NPTF x Female NPSM Swivel Nuts for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Female NPTF x Female NPSM Swivel Nuts only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1405-8-8 (1/2\"-14 NPTF x NPSM (female)) and 1405-4-4 (1/4\"-18 NPTF x NPSM (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Female NPTF x Female NPSM Swivel Nuts?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Dixon Female NPTF x Female NPSM Swivel Nuts. For example 1405-2-2 is listed at 345 bar and 1405-12-8 at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Female NPTF x Female NPSM Swivel Nuts made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Female NPTF x Female NPSM Swivel Nuts in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Female NPTF x Female NPSM Swivel Nuts conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Female NPTF x Female NPSM Swivel Nuts names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Female NPTF x Female NPSM Swivel Nuts, and which fittings do I pair them with?",
+          "a": "For the Dixon Female NPTF x Female NPSM Swivel Nuts: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Female NPTF x Female NPSM Swivel Nuts seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon Female NPTF x Female NPSM Swivel Nuts does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Female NPTF x Female NPSM Swivel Nuts differ from the Dixon Male NPTF x Female NPSM Swivel Adapters?",
+          "a": "The Dixon Female NPTF x Female NPSM Swivel Nuts has Female where the [Dixon Male NPTF x Female NPSM Swivel Adapters](/p/dixon-male-nptf-x-female-npsm-swivel-adapters) has Male, and Nuts where it has Adapters. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Female NPTF x Female NPSM Swivel Nuts made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Female NPTF x Female NPSM Swivel Nuts as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Female NPTF x Female NPSM Swivel Nuts in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Female NPTF x Female NPSM Swivel Nuts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-male-npsm-x-female-nptf-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Male NPSM x Female NPTF Adapters used for?",
+          "a": "The Dixon Male NPSM x Female NPTF Adapters are adapters from Dixon Valve & Coupling that connect the two end types named in its title and size table. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Threaded Adapter, 3/8 Inch Male NPSM x 3/8 Inch FNPTF in the Dixon Male NPSM x Female NPTF Adapters?",
+          "a": "Quote 1740606C for Threaded Adapter, 3/8 Inch Male NPSM x 3/8 Inch FNPTF, Brass, 1740404C for Threaded Adpater, Size 1/4 Inch Male NPSM x 1/4 Inch FNPTF and 1740808C for Threaded Adpater, Size 1/2 Inch Male NPSM x 1/2 Inch FNPTF. The Dixon Male NPSM x Female NPTF Adapters list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Male NPSM x Female NPTF Adapters come in?",
+          "a": "The Dixon Male NPSM x Female NPTF Adapters come in 3 part numbers. Examples from the table: 1740606C (Threaded Adapter, 3/8 Inch Male NPSM x 3/8 Inch FNPTF, Brass), 1740404C (Threaded Adpater, Size 1/4 Inch Male NPSM x 1/4 Inch FNPTF) and 1740808C (Threaded Adpater, Size 1/2 Inch Male NPSM x 1/2 Inch FNPTF). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Male NPSM x Female NPTF Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Male NPSM x Female NPTF Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1740606C (Threaded Adapter, 3/8 Inch Male NPSM x 3/8 Inch FNPTF, Brass) and 1740808C (Threaded Adpater, Size 1/2 Inch Male NPSM x 1/2 Inch FNPTF)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Male NPSM x Female NPTF Adapters?",
+          "a": "No working pressure is published for the Dixon Male NPSM x Female NPTF Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Male NPSM x Female NPTF Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Male NPSM x Female NPTF Adapters in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Male NPSM x Female NPTF Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Male NPSM x Female NPTF Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Male NPSM x Female NPTF Adapters, and which fittings do I pair them with?",
+          "a": "For the Dixon Male NPSM x Female NPTF Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Male NPSM x Female NPTF Adapters seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon Male NPSM x Female NPTF Adapters does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Male NPSM x Female NPTF Adapters differ from the Dixon Male NPTF x Female NPSM Swivel Adapters?",
+          "a": "The Dixon Male NPSM x Female NPTF Adapters has NPSM where the [Dixon Male NPTF x Female NPSM Swivel Adapters](/p/dixon-male-nptf-x-female-npsm-swivel-adapters) has NPTF, and NPTF where it has NPSM Swivel. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Male NPSM x Female NPTF Adapters made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Male NPSM x Female NPTF Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Male NPSM x Female NPTF Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Male NPSM x Female NPTF Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-male-nptf-x-female-npsm-swivel-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Male NPTF x Female NPSM Swivel Adapters used for?",
+          "a": "The Dixon Male NPTF x Female NPSM Swivel Adapters are adapters from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. The maker notes: Designed To Prevent Hose Stress Due To Twisting During Assembly, Compact Design Provides Ease Of Assembly In Confining Areas, Female NPSM Swivel Seals On A 30Â° Seat. They come in 8 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\"-18 NPSM in the Dixon Male NPTF x Female NPSM Swivel Adapters?",
+          "a": "Quote 1404-4-4 for 1/4\"-18 NPSM, 1404-4-6 for 1/4\"-18 NPSM and 1404-6-4 for 1/4\"-18 NPTF × 3/8\"-18 NPSM. The Dixon Male NPTF x Female NPSM Swivel Adapters list 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Male NPTF x Female NPSM Swivel Adapters are available?",
+          "a": "The Dixon Male NPTF x Female NPSM Swivel Adapters come in 8 part numbers. Examples from the table: 1404-12-8 (1/2\"-14 NPTF × 3/4\"-14 NPSM), 1404-2-2 (1/8\"-27 NPSM) and 1404-6-8 (1/2\"-14 NPTF × 3/8\"-18 NPSM). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Male NPTF x Female NPSM Swivel Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Male NPTF x Female NPSM Swivel Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1404-2-2 (1/8\"-27 NPSM) and 1404-6-8 (1/2\"-14 NPTF × 3/8\"-18 NPSM)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Male NPTF x Female NPSM Swivel Adapters?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Dixon Male NPTF x Female NPSM Swivel Adapters. For example 1404-2-2 is listed at 345 bar and 1404-12-8 at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Male NPTF x Female NPSM Swivel Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Male NPTF x Female NPSM Swivel Adapters in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Male NPTF x Female NPSM Swivel Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Male NPTF x Female NPSM Swivel Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Male NPTF x Female NPSM Swivel Adapters, and which fittings do I pair them with?",
+          "a": "For the Dixon Male NPTF x Female NPSM Swivel Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Male NPTF x Female NPSM Swivel Adapters seal, and what should I check when fitting them?",
+          "a": "The Dixon Male NPTF x Female NPSM Swivel Adapters seal on a 30° seat at the NPSM swivel end, as the maker's feature note states, and on the thread at an NPTF male end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Male NPTF x Female NPSM Swivel Adapters differ from the Dixon Female NPTF x Female NPSM Swivel Nuts?",
+          "a": "The Dixon Male NPTF x Female NPSM Swivel Adapters has Male where the [Dixon Female NPTF x Female NPSM Swivel Nuts](/p/dixon-female-nptf-x-female-npsm-swivel-nuts) has Female, and Adapters where it has Nuts. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Male NPTF x Female NPSM Swivel Adapters made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Male NPTF x Female NPSM Swivel Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Male NPTF x Female NPSM Swivel Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Male NPTF x Female NPSM Swivel Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-npt-threaded-45-degree-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon NPT Threaded 45 Degree Street Elbows used for?",
+          "a": "The Dixon NPT Threaded 45 Degree Street Elbows are elbows from Dixon Valve & Coupling that turn the line through 45 degrees. They come in 19 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Street Elbow, NPT Thread, 45 Deg. Bend in the Dixon NPT Threaded 45 Degree Street Elbows?",
+          "a": "Quote SE45150 for Street Elbow, NPT Thread, 45 Deg. Bend, SE4550 for Street Elbow, NPT Thread, 45 Deg. Bend and SE4575G for Street Elbow, NPT Thread, 45 Deg. Bend. The Dixon NPT Threaded 45 Degree Street Elbows list 19 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon NPT Threaded 45 Degree Street Elbows are available?",
+          "a": "The Dixon NPT Threaded 45 Degree Street Elbows come in 19 part numbers. Examples from the table: SE4518 (Street Elbow, NPT Thread, 45 Deg. Bend), SE45250G (Street Elbow, NPT Thread, 45 Deg. Bend) and SE4575 (Street Elbow, NPT Thread, 45 Deg. Bend). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon NPT Threaded 45 Degree Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon NPT Threaded 45 Degree Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SE4525G (Street Elbow, NPT Thread, 45 Deg. Bend) and SE45150G (Street Elbow, NPT Thread, 45 Deg. Bend)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon NPT Threaded 45 Degree Street Elbows?",
+          "a": "The maker states 150 psi (10 bar) for the Dixon NPT Threaded 45 Degree Street Elbows. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon NPT Threaded 45 Degree Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon NPT Threaded 45 Degree Street Elbows are made from iron. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon NPT Threaded 45 Degree Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon NPT Threaded 45 Degree Street Elbows names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon NPT Threaded 45 Degree Street Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon NPT Threaded 45 Degree Street Elbows: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon NPT Threaded 45 Degree Street Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon NPT Threaded 45 Degree Street Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon NPT Threaded 45 Degree Street Elbows differ from the Dixon NPT Threaded 90 Degree Street Elbows?",
+          "a": "They are different catalogue series: the Dixon NPT Threaded 45 Degree Street Elbows is 45 and the [Dixon NPT Threaded 90 Degree Street Elbows](/p/dixon-npt-threaded-90-degree-street-elbows) is 90, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon NPT Threaded 45 Degree Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon NPT Threaded 45 Degree Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon NPT Threaded 45 Degree Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon NPT Threaded 45 Degree Street Elbows are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-npt-threaded-90-degree-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon NPT Threaded 90 Degree Street Elbows used for?",
+          "a": "The Dixon NPT Threaded 90 Degree Street Elbows are elbows from Dixon Valve & Coupling that turn the line through 90 degrees. They come in 41 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Street Elbow, NPT Thread, 90 Deg. Bend in the Dixon NPT Threaded 90 Degree Street Elbows?",
+          "a": "Quote SE9050G for Street Elbow, NPT Thread, 90 Deg. Bend, SE9015 for Street Elbow, NPT Thread, 90 Deg. Bend and SE9075SS for Street Elbow, NPT Thread, 90 Deg. Bend. The Dixon NPT Threaded 90 Degree Street Elbows list 41 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon NPT Threaded 90 Degree Street Elbows come in?",
+          "a": "The Dixon NPT Threaded 90 Degree Street Elbows come in 41 part numbers. Examples from the table: SE9025G (Street Elbow, NPT Thread, 90 Deg. Bend), SE9012SS (Street Elbow, NPT Thread, 90 Deg. Bend) and SE9075G (Street Elbow, NPT Thread, 90 Deg. Bend). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon NPT Threaded 90 Degree Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon NPT Threaded 90 Degree Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SE9010 (Street Elbow, NPT Thread, 90 Deg. Bend) and SE9038 (Street Elbow, NPT Thread, 90 Deg. Bend)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon NPT Threaded 90 Degree Street Elbows?",
+          "a": "The maker states 125 to 3,000 psi (9 to 207 bar), by size for the Dixon NPT Threaded 90 Degree Street Elbows. For example SE9010FS is listed at 207 bar and SE9075B at 9 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon NPT Threaded 90 Degree Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon NPT Threaded 90 Degree Street Elbows are made from brass, iron, stainless steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon NPT Threaded 90 Degree Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon NPT Threaded 90 Degree Street Elbows names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon NPT Threaded 90 Degree Street Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon NPT Threaded 90 Degree Street Elbows: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon NPT Threaded 90 Degree Street Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon NPT Threaded 90 Degree Street Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon NPT Threaded 90 Degree Street Elbows differ from the Dixon NPT Threaded 45 Degree Street Elbows?",
+          "a": "They are different catalogue series: the Dixon NPT Threaded 90 Degree Street Elbows is 90 and the [Dixon NPT Threaded 45 Degree Street Elbows](/p/dixon-npt-threaded-45-degree-street-elbows) is 45, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon NPT Threaded 90 Degree Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon NPT Threaded 90 Degree Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon NPT Threaded 90 Degree Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon NPT Threaded 90 Degree Street Elbows are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-nptf-pipe-crosses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon NPTF Pipe Crosses used for?",
+          "a": "The Dixon NPTF Pipe Crosses are crosses from Dixon Valve & Coupling that bring four ports together at one point. They come in 5 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Pipe Cross, 1/4 Inch FNPTF, Brass, Extruded in the Dixon NPTF Pipe Crosses?",
+          "a": "Quote 2280404C for Pipe Cross, 1/4 Inch FNPTF, Brass, Extruded, 2280808C for Pipe Cross, 1/2 Inch FNPTF, Brass, Extruded and 2281212C for Pipe Cross, 3/4 Inch FNPTF, Brass Extruded. The Dixon NPTF Pipe Crosses list 5 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon NPTF Pipe Crosses come in?",
+          "a": "The Dixon NPTF Pipe Crosses come in 5 part numbers. Examples from the table: 2280606C (Brass Pipe, 3/8 Inch Size3/8 Inch Size) and 2280202C (Pipe Cross, 1/8 Inch FNPTF, Brass Extruded). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon NPTF Pipe Crosses for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon NPTF Pipe Crosses only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this cross also say which port is the run and which is the branch. Then pick the row: 2280606C (Brass Pipe, 3/8 Inch Size3/8 Inch Size) and 2280202C (Pipe Cross, 1/8 Inch FNPTF, Brass Extruded)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon NPTF Pipe Crosses?",
+          "a": "No working pressure is published for the Dixon NPTF Pipe Crosses, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon NPTF Pipe Crosses made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon NPTF Pipe Crosses in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon NPTF Pipe Crosses conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon NPTF Pipe Crosses names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon NPTF Pipe Crosses, and which fittings do I pair them with?",
+          "a": "For the Dixon NPTF Pipe Crosses: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon NPTF Pipe Crosses seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon NPTF Pipe Crosses seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon NPTF Pipe Crosses differ from the Dixon Nut Elbows?",
+          "a": "The Dixon NPTF Pipe Crosses has NPTF Pipe Crosses where the [Dixon Nut Elbows](/p/dixon-nut-elbows) has Nut Elbows. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon NPTF Pipe Crosses made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon NPTF Pipe Crosses as made in Taiwan. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon NPTF Pipe Crosses in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Dixon NPTF Pipe Crosses are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-nut-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Nut Elbows used for?",
+          "a": "The Dixon Nut Elbows are elbows from Dixon Valve & Coupling that turn the line through an angle. They come in 10 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Nut Elbow, 9/16 Inch-18 in the Dixon Nut Elbows?",
+          "a": "Quote 6901-6-6 for Nut Elbow, 9/16 Inch-18, 6901-6-4 for Nut Elbow, 9/16 Inch-18 and 6901-8-6 for Nut Elbow, 3/4 Inch-16. The Dixon Nut Elbows list 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Nut Elbows are available?",
+          "a": "The Dixon Nut Elbows come in 10 part numbers. Examples from the table: 6901-4-4 (Nut Elbow, 7/16 Inch-20), 6901-4-6 (Nut Elbow, 7/16 Inch-20) and 6901-12-8 (Swivel Nut Elbow, 1-1/16-12 Inch Size, 90 Degree). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Nut Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Nut Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 6901-8-8 (Nut Elbow, 3/4 Inch-16) and 6901-10-8 (Nut Elbow, 7/8 Inch-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Nut Elbows?",
+          "a": "No working pressure is published for the Dixon Nut Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Nut Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon Nut Elbows are made from zinc plated steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Nut Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Nut Elbows names no product standard beyond the thread type. NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Nut Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon Nut Elbows: NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Nut Elbows seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon Nut Elbows does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Nut Elbows differ from the Dixon Swivel Nut Elbows?",
+          "a": "The [Dixon Swivel Nut Elbows](/p/dixon-swivel-nut-elbows) carries Swivel in its name where the Dixon Nut Elbows does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Nut Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Nut Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Nut Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Nut Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-open-snoot-brass-female-swivel-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Open Snoot Brass Female Swivel Adapters used for?",
+          "a": "The Dixon Open Snoot Brass Female Swivel Adapters are adapters from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. They come in 19 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Rocker Lug Swivel, FNST x FNPT, 1-1/2 Inch Size in the Dixon Open Snoot Brass Female Swivel Adapters?",
+          "a": "Quote RSF150F for Rocker Lug Swivel, FNST x FNPT, 1-1/2 Inch Size, SF250NYFD for Swivel Adapter, Open Snoot, Brass, Female, Pin Lug and SF400F for Swivel Adapter, Open Snoot, Brass, Female, Pin Lug. The Dixon Open Snoot Brass Female Swivel Adapters list 19 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Open Snoot Brass Female Swivel Adapters are available?",
+          "a": "The Dixon Open Snoot Brass Female Swivel Adapters come in 19 part numbers. Examples from the table: RSF250F (Rocker Lug Swivel, FNST x FNPT, 2-1/2 Inch Size), SF150S (Swivel Adapter, Open Snoot, Brass, Female, Pin Lug) and SF300NYFD (Swivel Adapter, Open Snoot, Brass, Female, Pin Lug). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Open Snoot Brass Female Swivel Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Open Snoot Brass Female Swivel Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SF25F20T (Swivel Adapter, Open Snoot, Brass, Female, Pin Lug) and SF25NYFD30T (2 1/2 NPT x NH)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Open Snoot Brass Female Swivel Adapters?",
+          "a": "No working pressure is published for the Dixon Open Snoot Brass Female Swivel Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Open Snoot Brass Female Swivel Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Open Snoot Brass Female Swivel Adapters in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Open Snoot Brass Female Swivel Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Open Snoot Brass Female Swivel Adapters names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Open Snoot Brass Female Swivel Adapters, and which fittings do I pair them with?",
+          "a": "For the Dixon Open Snoot Brass Female Swivel Adapters: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Open Snoot Brass Female Swivel Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Open Snoot Brass Female Swivel Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Open Snoot Brass Female Swivel Adapters differ from the Dixon Domestic Male Swivel Adapters?",
+          "a": "The Dixon Open Snoot Brass Female Swivel Adapters and the [Dixon Domestic Male Swivel Adapters](/p/dixon-domestic-male-swivel-adapters) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Open Snoot Brass Female Swivel Adapters made, and what HS code and export terms apply?",
+          "a": "Dixon Valve & Coupling lists the Dixon Open Snoot Brass Female Swivel Adapters as made in China. The HS code on the listing is 7412200035. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Open Snoot Brass Female Swivel Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Dixon Open Snoot Brass Female Swivel Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-push-in-female-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Push-In Female Elbows used for?",
+          "a": "The Dixon Push-In Female Elbows are elbows from Dixon Valve & Coupling that turn the line through an angle. They come in 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread in the Dixon Push-In Female Elbows?",
+          "a": "Quote 705X4 for Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread, 708X4 for Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread and 708X8 for Push-In Female Elbow, NPTF Thread, 1/4 Inch Thread. The Dixon Push-In Female Elbows list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Push-In Female Elbows are available?",
+          "a": "The Dixon Push-In Female Elbows come in 3 part numbers. Examples from the table: 705X4 (Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread), 708X4 (Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread) and 708X8 (Push-In Female Elbow, NPTF Thread, 1/4 Inch Thread). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Push-In Female Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Push-In Female Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 705X4 (Push-In Female Elbow, NPTF Thread, 1/8 Inch Thread) and 708X8 (Push-In Female Elbow, NPTF Thread, 1/4 Inch Thread)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Push-In Female Elbows?",
+          "a": "No working pressure is published for the Dixon Push-In Female Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Push-In Female Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon Push-In Female Elbows are made from forged brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Push-In Female Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Push-In Female Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Push-In Female Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon Push-In Female Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Push-In Female Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Push-In Female Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Push-In Female Elbows differ from the Dixon Swivel Elbows?",
+          "a": "The Dixon Push-In Female Elbows has Push-In Female where the [Dixon Swivel Elbows](/p/dixon-swivel-elbows) has Swivel. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Push-In Female Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Push-In Female Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Push-In Female Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Push-In Female Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-street-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Street Elbows used for?",
+          "a": "The Dixon Street Elbows are elbows from Dixon Valve & Coupling that turn the line through an angle. They come in 9 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Street Elbow, Size 1/8 Inch MNPTF x 1/8 Inch FNPTF in the Dixon Street Elbows?",
+          "a": "Quote 3060202C for Street Elbow, Size 1/8 Inch MNPTF x 1/8 Inch FNPTF, 45 Degree, 3040402C for Extruded Street Elbow, 1/4 Inch FNPTF x 1/8 Inch MNPTF and SE45250 for Street Elbow, NPT Thread, 45 Deg. Bend. The Dixon Street Elbows list 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Street Elbows are available?",
+          "a": "The Dixon Street Elbows come in 9 part numbers. Examples from the table: SE9012 (Street Elbow, NPT Thread, 90 Deg. Bend), SE90250 (Street Elbow, NPT Thread, 90 Deg. Bend) and SE9050 (Street Elbow, NPT Thread, 90 Deg. Bend). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Street Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Street Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: SE45300 (Street Elbow, NPT Thread, 45 Deg. Bend) and SE9015G (Street Elbow, NPT Thread, 90 Deg. Bend)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Street Elbows?",
+          "a": "The maker states 150 psi (10 bar) for the Dixon Street Elbows. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: -65°F to +250°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Street Elbows made from, and is it suitable for my fluid?",
+          "a": "The material of the Dixon Street Elbows depends on the row: brass (2 part numbers) and polypropylene (1 part number), shown in the item description of each part number. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Street Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Street Elbows names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Street Elbows, and which fittings do I pair them with?",
+          "a": "Each end of the Dixon Street Elbows must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Street Elbows seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Dixon Street Elbows, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Street Elbows differ from the Dixon Nut Elbows?",
+          "a": "The Dixon Street Elbows has Street where the [Dixon Nut Elbows](/p/dixon-nut-elbows) has Nut. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Street Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Street Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Street Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Street Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-swivel-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Swivel Elbows used for?",
+          "a": "The Dixon Swivel Elbows are elbows from Dixon Valve & Coupling that turn the line through an angle. They come in 15 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Swivel Elbow, Size 1-1/2 Inch FNPT x 1-1/2 Inch MNST in the Dixon Swivel Elbows?",
+          "a": "Quote CSES150F for Swivel Elbow, Size 1-1/2 Inch FNPT x 1-1/2 Inch MNST, Brass, 6506-4-4 for Elbow Adapter and 6505-4-4 for Elbow Adapter. The Dixon Swivel Elbows list 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Swivel Elbows are available?",
+          "a": "The Dixon Swivel Elbows come in 15 part numbers. Examples from the table: 6505-8-6 (Elbow Adapter), 6505-6-4 (Elbow Adapter) and 6505-5-4 (Swivel, 1/2-20 Inch FJIC x 1/4 -18 Inch MNPTF, 37 Degree). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Swivel Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Swivel Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 6506-10-8 (Elbow Adapter) and 6505-10-8 (Elbow Adapter)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Swivel Elbows?",
+          "a": "No working pressure is published for the Dixon Swivel Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Swivel Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Swivel Elbows in brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Swivel Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Swivel Elbows names no product standard beyond the thread type. NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Swivel Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon Swivel Elbows: NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Swivel Elbows seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Dixon Swivel Elbows seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Swivel Elbows differ from the Dixon Swivel Nut Elbows?",
+          "a": "The [Dixon Swivel Nut Elbows](/p/dixon-swivel-nut-elbows) carries Nut in its name where the Dixon Swivel Elbows does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Swivel Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Swivel Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Swivel Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Swivel Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-swivel-nut-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Swivel Nut Elbows used for?",
+          "a": "The Dixon Swivel Nut Elbows are elbows from Dixon Valve & Coupling that turn the line through an angle. They come in 2 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\"-141/2\"-14 in the Dixon Swivel Nut Elbows?",
+          "a": "Quote 1502-8-8 for 1/2\"-141/2\"-14 and 1501-6-4 for 1/4\"-18 NPTF × 3/8\"-18 NPSM. The Dixon Swivel Nut Elbows list 2 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Dixon Swivel Nut Elbows come in?",
+          "a": "The Dixon Swivel Nut Elbows come in 2 part numbers. Examples from the table: 1502-8-8 (1/2\"-141/2\"-14) and 1501-6-4 (1/4\"-18 NPTF × 3/8\"-18 NPSM). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Swivel Nut Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Swivel Nut Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1502-8-8 (1/2\"-141/2\"-14) and 1501-6-4 (1/4\"-18 NPTF × 3/8\"-18 NPSM)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Swivel Nut Elbows?",
+          "a": "The maker states 3,000 to 4,000 psi (207 to 276 bar), by size for the Dixon Swivel Nut Elbows. For example 1501-6-4 is listed at 276 bar and 1502-8-8 at 207 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Swivel Nut Elbows made from, and is it suitable for my fluid?",
+          "a": "The Dixon Swivel Nut Elbows are made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Swivel Nut Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Swivel Nut Elbows names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Swivel Nut Elbows, and which fittings do I pair them with?",
+          "a": "For the Dixon Swivel Nut Elbows: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Swivel Nut Elbows seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon Swivel Nut Elbows does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Swivel Nut Elbows differ from the Dixon Swivel Elbows?",
+          "a": "The Dixon Swivel Nut Elbows carries Nut in its name where the [Dixon Swivel Elbows](/p/dixon-swivel-elbows) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Swivel Nut Elbows made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Swivel Nut Elbows as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Swivel Nut Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Swivel Nut Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-swivel-nuts",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Swivel Nuts used for?",
+          "a": "The Dixon Swivel Nuts are nuts from Dixon Valve & Coupling that join two ports where one end must turn freely while it is made up. They come in 2 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\"-14 NPTF x NPSM (female) in the Dixon Swivel Nuts?",
+          "a": "Quote 1404-8-8 for 1/2\"-14 NPTF x NPSM (female) and 1404-8-6 for 1/2\"-14 NPTF x NPSM (female). The Dixon Swivel Nuts list 2 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Dixon Swivel Nuts are available?",
+          "a": "The Dixon Swivel Nuts come in 2 part numbers. Examples from the table: 1404-8-8 (1/2\"-14 NPTF x NPSM (female)) and 1404-8-6 (1/2\"-14 NPTF x NPSM (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Swivel Nuts for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Dixon Swivel Nuts only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1404-8-8 (1/2\"-14 NPTF x NPSM (female)) and 1404-8-6 (1/2\"-14 NPTF x NPSM (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Dixon Swivel Nuts?",
+          "a": "The maker states 3,000 psi (207 bar) for the Dixon Swivel Nuts. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Swivel Nuts made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Dixon Swivel Nuts in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Dixon Swivel Nuts conform to, and can I get test certificates?",
+          "a": "The listing for the Dixon Swivel Nuts names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Dixon Swivel Nuts, and which fittings do I pair them with?",
+          "a": "For the Dixon Swivel Nuts: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Dixon Swivel Nuts seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Dixon Swivel Nuts does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dixon Swivel Nuts differ from the Dixon Swivel Nut Elbows?",
+          "a": "The Dixon Swivel Nuts has Nuts where the [Dixon Swivel Nut Elbows](/p/dixon-swivel-nut-elbows) has Nut Elbows. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dixon Swivel Nuts made, and can you export them from Dubai?",
+          "a": "Dixon Valve & Coupling lists the Dixon Swivel Nuts as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Swivel Nuts in Dubai, and how do I get a quote?",
+          "a": "Yes. The Dixon Swivel Nuts sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    }
+  ]
+}

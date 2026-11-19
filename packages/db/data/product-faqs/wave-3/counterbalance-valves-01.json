@@ -1,0 +1,1306 @@
+{
+  "family": "counterbalance-valves-01",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve (CWCK, CWEK, CWGK and others) and what does it do?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CWCK, CWEK, CWGK and others. A 4-port counterbalance valve whose spring chamber is vented to its own port 4. Free flow passes into the actuator through the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 1:1 Pilot Ratio Vented Counterbalance Valve (CWCK, CWEK, CWGK and others)?",
+          "a": "The first letters of a Sun model code are the base model, CWCK, CWEK, CWGK and others for the Sun 1:1 Pilot Ratio Vented Counterbalance Valve; the letters after it choose the options. In CWCKLHN, CWCK is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve come in?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve is listed in 4 sizes: CWCK (series 1, 15 gpm (60 L/min)), CWEK (series 2, 30 gpm (120 L/min)), CWGK (series 3, 60 gpm (240 L/min)) and CWIK (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve have?",
+          "a": "For the Sun CWCK, CWEK, CWGK and others valve, maximum setting is 4000 psi (280 bar), pilot ratio is 1:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve come with?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CWCK, CWEK, CWGK and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 1:1 Pilot Ratio Vented Counterbalance Valve (CWCK, CWEK, CWGK and others)?",
+          "a": "Seal kits for the Sun CWCK, CWEK, CWGK and others cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve need?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve used?",
+          "a": "Typical use of the Sun 1:1 Pilot Ratio Vented Counterbalance Valve: circuits with back-pressure at the valve port: regeneration circuits, master–slave cylinders, and circuits driven by proportional or servo directional valves. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 does not affect the setting; port 4 must be vented to tank."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve differ from the Sun 2:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve and the [Sun 2:1 Pilot Ratio Vented Counterbalance Valve](/p/sun-hydraulics-2-1-pilot-ratio-vented-counterbalance-valve) differ in their names by \"1:1\" here against \"2:1\" there. By the data, pilot ratio 1:1 against 2:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 1:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun CWCK, CWEK, CWGK and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun 1:1 Pilot Ratio Vented Counterbalance Valve from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Sun 1:1 Pilot Ratio Vented Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve-atmospherically",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABK, CACK, CAEK and others) and what does it do?",
+          "a": "The Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced is a screw-in cartridge valve from Sun Hydraulics, listed as CABK, CACK, CAEK and others. A 3-port counterbalance valve with its spring chamber open to atmosphere, so it fits the standard 3-port cavity yet ignores back-pressure in the return line. Free flow into the actuator passes the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABK, CACK, CAEK and others)?",
+          "a": "The first letters of a Sun model code are the base model, CABK, CACK, CAEK and others for the Sun CABK valve; the letters after it choose the options. In CACKLHN, CACK is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come in?",
+          "a": "The Sun CABK valve is listed in 5 sizes: CABK (series 1, 7.5 gpm (30 L/min)), CAEK (series 2, 30 gpm (120 L/min)) and CAIK (series 4, 120 gpm (480 L/min)), among 5 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced have?",
+          "a": "For the Sun CABK, CACK, CAEK and others valve, maximum setting is 4000 psi (280 bar), pilot ratio is 1:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come with?",
+          "a": "The Sun CABK valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced adjusted, and which control options are offered?",
+          "a": "The Sun CABK, CACK, CAEK and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABK, CACK, CAEK and others)?",
+          "a": "Seal kits for the Sun CABK, CACK, CAEK and others cartridge are series 1 (Buna 990011007, Viton 990011006, Buna 990211007, Viton 990211006); series 4 (Buna 990119007, Viton 990119006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced need?",
+          "a": "The Sun CABK valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced used?",
+          "a": "Typical use of the Sun CABK valve: load-holding circuits with back-pressure at the valve where only a 3-port cavity is available — regeneration and proportional-valve circuits on mobile machines. Back-pressure at port 2 does not change the setting. Roughly one drop of oil seeps past the pilot into the open spring chamber per 4,000 cycles, so mount it where that small weep is acceptable."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun CABK valve differ from the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "The Sun CABK valve and the [Sun CACL valve](/p/sun-hydraulics-2-1-pilot-ratio-vented-counterbalance-valve-atmospherically) differ in their names by \"1:1\" here against \"2:1\" there. By the data, pilot ratio 1:1 against 2:1; capacity 7.5 gpm to 120 gpm (30 L/min to 480 L/min) against 15 gpm to 120 gpm (60 L/min to 480 L/min). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "How is an atmospherically vented counterbalance different from a 4-port vented one on the Sun CABK valve?",
+          "a": "Both ignore back-pressure at port 2. The atmospheric version vents its spring chamber to air and fits the 3-port cavity; the 4-port version vents to a fourth port piped to tank. For the Sun CABK, CACK, CAEK and others valve the flow capacity is 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-1-5-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 1.5:1 Pilot Ratio Counterbalance Valve (CBAB, CBBB, CBCB and others) and what does it do?",
+          "a": "The Sun 1.5:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBAB, CBBB, CBCB and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 1.5:1 Pilot Ratio Counterbalance Valve (CBAB, CBBB, CBCB and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBAB, CBBB, CBCB and others for the Sun 1.5:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCBLHN, CBCB is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 1.5:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 1.5:1 Pilot Ratio Counterbalance Valve is listed in 8 sizes: CBAB (series 1, 2.5 gpm (10 L/min)), CBEB (series 2, 30 gpm (120 L/min)) and CBIB (series 4, 120 gpm (480 L/min)), among 8 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 1.5:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBAB, CBBB, CBCB and others valve, maximum setting is 4000 psi (280 bar), pilot ratio is 1.5:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example A — 1000 - 4000 psi w/4 psi Check (70 - 280 bar w/ 0,3 bar Check). 4 setting ranges are offered. Flow capacity runs 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 1.5:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 1.5:1 Pilot Ratio Counterbalance Valve is offered with seal codes L — Extended Temp. Buna, N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. EPDM seals are not allowed on modifier /AP or /LH; If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 1.5:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBAB, CBBB, CBCB and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 1.5:1 Pilot Ratio Counterbalance Valve (CBAB, CBBB, CBCB and others)?",
+          "a": "Seal kits for the Sun CBAB, CBBB, CBCB and others cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 1.5:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 1.5:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 1.5:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 1.5:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 1.5:1 Pilot Ratio Counterbalance Valve differ from the Sun 4.5:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The Sun 1.5:1 Pilot Ratio Counterbalance Valve and the [Sun 4.5:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-4-5-1-pilot-ratio-counterbalance-valve) differ in their names by \"1.5:1\" here against \"4.5:1\" there. By the data, pilot ratio 1.5:1 against 4.5:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 1.5:1 Pilot Ratio Counterbalance Valve?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun CBAB, CBBB, CBCB and others valve the flow capacity is 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun 1.5:1 Pilot Ratio Counterbalance Valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun 1.5:1 Pilot Ratio Counterbalance Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-1-5-1-pilot-ratio-load-reactive-load-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBGB, MBIB) and what does it do?",
+          "a": "The Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve is a screw-in cartridge valve from Sun Hydraulics, listed as MBGB, MBIB. A 3-port load control valve that works like a counterbalance valve: an integral check gives free flow into the actuator (port 2 to port 1) and a pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers its setting by the pilot ratio. It seats as a poppet for tight holding and meters as a spool for smooth lowering. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBGB, MBIB)?",
+          "a": "The first letters of a Sun model code are the base model, MBGB, MBIB for the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve; the letters after it choose the options. In MBIBLHN, MBIB is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve come in?",
+          "a": "The Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve is listed in 2 sizes: MBGB (series 3, 60 gpm (240 L/min)) and MBIB (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve have?",
+          "a": "For the Sun MBGB, MBIB valve, maximum operating pressure is 5000 psi (350 bar), pilot ratio is 1.5:1, check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 60 gpm to 120 gpm (240 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve come with?",
+          "a": "The Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve adjusted, and which control options are offered?",
+          "a": "The Sun MBGB, MBIB valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBGB, MBIB)?",
+          "a": "Seal kits for the Sun MBGB, MBIB cartridge are series 3 (Buna 990017007, Polyurethane 990017002, Viton 990017006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve need?",
+          "a": "The Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve screws into a cavity machined to Sun's drawing for its series: T-17A and T-19A. Valve hex size is 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve used?",
+          "a": "Typical use of the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve: load holding on large cylinders and motors in mobile and industrial machines, where higher flow is needed. Set it at least 1.3 times the highest load-induced pressure, or 1.5 times where the setting is below 2,000 psi (140 bar). Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — the vented versions avoid this."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve differ from the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "The Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve and the [Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve](/p/sun-hydraulics-4-5-1-pilot-ratio-load-reactive-load-control-valve) differ in their names by \"1.5:1\" here against \"4.5:1\" there. By the data, pilot ratio 1.5:1 against 4.5:1; capacity 60 gpm to 120 gpm (240 L/min to 480 L/min) against 30 gpm to 120 gpm (120 L/min to 480 L/min). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Which pilot ratio should I choose on the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "Most applications run well on 3:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady. Sun advises avoiding 10:1 unless the load is very stable. For the Sun MBGB, MBIB valve the flow capacity is 60 gpm to 120 gpm (240 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun 1.5:1 Pilot Ratio Load-Reactive Load Control Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-10-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 10:1 Pilot Ratio Counterbalance Valve (CBAH, CBCH, CBEH and others) and what does it do?",
+          "a": "The Sun 10:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBAH, CBCH, CBEH and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 10:1 Pilot Ratio Counterbalance Valve (CBAH, CBCH, CBEH and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBAH, CBCH, CBEH and others for the Sun 10:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCHLJN, CBCH is the base model and L is the control (Standard Screw Adjustment), J is the setting range (2000 - 5000 psi w/25 psi Check (140 - 350 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 10:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 10:1 Pilot Ratio Counterbalance Valve is listed in 5 sizes: CBAH (series 1, 2.5 gpm (10 L/min)), CBEH (series 2, 30 gpm (120 L/min)) and CBIH (series 4, 120 gpm (480 L/min)), among 5 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 10:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBAH, CBCH, CBEH and others valve, maximum setting is 5000 psi (350 bar), pilot ratio is 10:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example C — 2000 - 5000 psi w/4 psi Check (140 - 350 bar w/ 0,3 bar Check). 4 setting ranges are offered. Flow capacity runs 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 10:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 10:1 Pilot Ratio Counterbalance Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C, L or R; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 10:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBAH, CBCH, CBEH and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 10:1 Pilot Ratio Counterbalance Valve (CBAH, CBCH, CBEH and others)?",
+          "a": "Seal kits for the Sun CBAH, CBCH, CBEH and others cartridge are series 1 (Buna 990011007, Viton 990011006); series 4 (Buna 990019007, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 10:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 10:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 10:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 10:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 10:1 Pilot Ratio Counterbalance Valve differ from the Sun Fixed-Setting 10:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The [Sun Fixed-Setting 10:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-fixed-setting-10-1-pilot-ratio-counterbalance-valve) adds Fixed-Setting compared with the Sun 10:1 Pilot Ratio Counterbalance Valve. This valve (CBAH, CBCH, CBEH and others): A counterbalance valve stops an overrunning load from running away and lowers it under control. The other (CBCHX, CBDHX) is this is the 3-port counterbalance valve with its setting fixed at the factory instead of a field adjustment."
+        },
+        {
+          "slot": "L",
+          "q": "Will the Sun 10:1 Pilot Ratio Counterbalance Valve stop the load drifting?",
+          "a": "Yes, when set correctly. The leakage in the data is measured at reseat, about 85% of the cracking pressure; a valve set 30% above the load never sees more than about 77% of cracking, where it holds without drift. A load that creeps through a counterbalance valve usually points to a damaged seat. For the Sun CBAH, CBCH, CBEH and others valve the flow capacity is 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun 10:1 Pilot Ratio Counterbalance Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Sun 10:1 Pilot Ratio Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 2:1 Pilot Ratio Counterbalance Valve (CBBY, CBCY, CBEY and others) and what does it do?",
+          "a": "The Sun 2:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBBY, CBCY, CBEY and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 2:1 Pilot Ratio Counterbalance Valve (CBBY, CBCY, CBEY and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBBY, CBCY, CBEY and others for the Sun 2:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCYLHN, CBCY is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 2:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 2:1 Pilot Ratio Counterbalance Valve is listed in 5 sizes: CBBY (series 1, 5 gpm (20 L/min)), CBEY (series 2, 30 gpm (120 L/min)) and CBIY (series 4, 120 gpm (480 L/min)), among 5 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 2:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBBY, CBCY, CBEY and others valve, maximum setting is 4000 psi (280 bar), pilot ratio is 2:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example A — 1000 - 4000 psi w/4 psi Check (70 - 280 bar w/ 0,3 bar Check). 4 setting ranges are offered. Flow capacity runs 5 gpm to 120 gpm (20 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 2:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 2:1 Pilot Ratio Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C, L or R; If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 2:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBBY, CBCY, CBEY and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 2:1 Pilot Ratio Counterbalance Valve (CBBY, CBCY, CBEY and others)?",
+          "a": "Seal kits for the Sun CBBY, CBCY, CBEY and others cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 2:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 2:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 2:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 2:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 2:1 Pilot Ratio Counterbalance Valve differ from the Sun 2:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "The [Sun 2:1 Pilot Ratio Vented Counterbalance Valve](/p/sun-hydraulics-2-1-pilot-ratio-vented-counterbalance-valve) adds Vented compared with the Sun 2:1 Pilot Ratio Counterbalance Valve. By the data, capacity 5 gpm to 120 gpm (20 L/min to 480 L/min) against 15 gpm to 120 gpm (60 L/min to 480 L/min). The other (CWCL, CWEL and others) is a 4-port counterbalance valve whose spring chamber is vented to its own port 4."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 2:1 Pilot Ratio Counterbalance Valve?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun CBBY, CBCY, CBEY and others valve the flow capacity is 5 gpm to 120 gpm (20 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 2:1 Pilot Ratio Counterbalance Valve in Dubai for export?",
+          "a": "Yes. We keep the Sun 2:1 Pilot Ratio Counterbalance Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-1-pilot-ratio-vented-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve (CWCL, CWEL, CWGL and others) and what does it do?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CWCL, CWEL, CWGL and others. A 4-port counterbalance valve whose spring chamber is vented to its own port 4. Free flow passes into the actuator through the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 2:1 Pilot Ratio Vented Counterbalance Valve (CWCL, CWEL, CWGL and others)?",
+          "a": "The first letters of a Sun model code are the base model, CWCL, CWEL, CWGL and others for the Sun 2:1 Pilot Ratio Vented Counterbalance Valve; the letters after it choose the options. In CWCLLGN, CWCL is the base model and L is the control (Standard Screw Adjustment), G is the setting range (2000 - 6000 psi (140 - 420 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve come in?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve is listed in 4 sizes: CWCL (series 1, 15 gpm (60 L/min)), CWEL (series 2, 30 gpm (120 L/min)), CWGL (series 3, 60 gpm (240 L/min)) and CWIL (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve have?",
+          "a": "For the Sun CWCL, CWEL, CWGL and others valve, maximum setting is 6000 psi (420 bar), pilot ratio is 2:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example F — 1000 - 2500 psi (70 - 175 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve come with?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CWCL, CWEL, CWGL and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 2:1 Pilot Ratio Vented Counterbalance Valve (CWCL, CWEL, CWGL and others)?",
+          "a": "Seal kits for the Sun CWCL, CWEL, CWGL and others cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve need?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve used?",
+          "a": "Typical use of the Sun 2:1 Pilot Ratio Vented Counterbalance Valve: circuits with back-pressure at the valve port: regeneration circuits, master–slave cylinders, and circuits driven by proportional or servo directional valves. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 does not affect the setting; port 4 must be vented to tank."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve differ from the Sun 1:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve and the [Sun 1:1 Pilot Ratio Vented Counterbalance Valve](/p/sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve) differ in their names by \"2:1\" here against \"1:1\" there. By the data, pilot ratio 2:1 against 1:1; maximum setting 6000 psi (420 bar) against 4000 psi (280 bar). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Which pilot ratio should I choose on the Sun 2:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "Most applications run well on 3:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady. Sun advises avoiding 10:1 unless the load is very stable. For the Sun CWCL, CWEL, CWGL and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 2:1 Pilot Ratio Vented Counterbalance Valve in Dubai for export?",
+          "a": "Yes, we stock the Sun 2:1 Pilot Ratio Vented Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-1-pilot-ratio-vented-counterbalance-valve-atmospherically",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACL, CAEL, CAGL and others) and what does it do?",
+          "a": "The Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced is a screw-in cartridge valve from Sun Hydraulics, listed as CACL, CAEL, CAGL and others. A 3-port counterbalance valve with its spring chamber open to atmosphere, so it fits the standard 3-port cavity yet ignores back-pressure in the return line. Free flow into the actuator passes the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACL, CAEL, CAGL and others)?",
+          "a": "The first letters of a Sun model code are the base model, CACL, CAEL, CAGL and others for the Sun CACL valve; the letters after it choose the options. In CACLLFN, CACL is the base model and L is the control (Standard Screw Adjustment), F is the setting range (1000 - 2500 psi (70 - 175 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come in?",
+          "a": "The Sun CACL valve is listed in 4 sizes: CACL (series 1, 15 gpm (60 L/min)), CAEL (series 2, 30 gpm (120 L/min)), CAGL (series 3, 60 gpm (240 L/min)) and CAIL (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced have?",
+          "a": "For the Sun CACL, CAEL, CAGL and others valve, maximum setting is 6000 psi (420 bar), pilot ratio is 2:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example F — 1000 - 2500 psi (70 - 175 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come with?",
+          "a": "The Sun CACL valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced adjusted, and which control options are offered?",
+          "a": "The Sun CACL, CAEL, CAGL and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACL, CAEL, CAGL and others)?",
+          "a": "Seal kits for the Sun CACL, CAEL, CAGL and others cartridge are series 1 (Buna 990211007, Viton 990211006); series 4 (Buna 990119007, Polyurethane 990119002, Viton 990119006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced need?",
+          "a": "The Sun CACL valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced used?",
+          "a": "Typical use of the Sun CACL valve: load-holding circuits with back-pressure at the valve where only a 3-port cavity is available — regeneration and proportional-valve circuits on mobile machines. Back-pressure at port 2 does not change the setting. Roughly one drop of oil seeps past the pilot into the open spring chamber per 4,000 cycles, so mount it where that small weep is acceptable."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun CACL valve differ from the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "The Sun CACL valve and the [Sun CABK valve](/p/sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve-atmospherically) differ in their names by \"2:1\" here against \"1:1\" there. By the data, pilot ratio 2:1 against 1:1; maximum setting 6000 psi (420 bar) against 4000 psi (280 bar). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Which pilot ratio should I choose on the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "Most applications run well on 3:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady. Sun advises avoiding 10:1 unless the load is very stable. For the Sun CACL, CAEL, CAGL and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in Dubai for export?",
+          "a": "Yes, we hold the Sun 2:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-3-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 2.3:1 Pilot Ratio Counterbalance Valve (CBBL, CBCL, CBDL and others) and what does it do?",
+          "a": "The Sun 2.3:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBBL, CBCL, CBDL and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 2.3:1 Pilot Ratio Counterbalance Valve (CBBL, CBCL, CBDL and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBBL, CBCL, CBDL and others for the Sun 2.3:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCLLJN, CBCL is the base model and L is the control (Standard Screw Adjustment), J is the setting range (2000 - 5000 psi w/25 psi Check (140 - 350 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 2.3:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 2.3:1 Pilot Ratio Counterbalance Valve is listed in 7 sizes: CBBL (series 1, 10 gpm (40 L/min)), CBEL (series 2, 30 gpm (120 L/min)) and CBIL (series 4, 120 gpm (480 L/min)), among 7 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 2.3:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBBL, CBCL, CBDL and others valve, maximum setting is 5000 psi (350 bar), pilot ratio is 2.3:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example J — 2000 - 5000 psi w/25 psi Check (140 - 350 bar w/ 1,7 bar Check). 4 setting ranges are offered. Flow capacity runs 10 gpm to 120 gpm (40 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 2.3:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 2.3:1 Pilot Ratio Counterbalance Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C, L or R; If the modifier is /LH, the control must be L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 2.3:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBBL, CBCL, CBDL and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment, C — Tamper Resistant - Factory Set and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 2.3:1 Pilot Ratio Counterbalance Valve (CBBL, CBCL, CBDL and others)?",
+          "a": "Seal kits for the Sun CBBL, CBCL, CBDL and others cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006, EPDM 990011014); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 2.3:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 2.3:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 2.3:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 2.3:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 2.3:1 Pilot Ratio Counterbalance Valve differ from the Sun 2:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The Sun 2.3:1 Pilot Ratio Counterbalance Valve and the [Sun 2:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-2-1-pilot-ratio-counterbalance-valve) differ in their names by \"2.3:1\" here against \"2:1\" there. By the data, pilot ratio 2.3:1 against 2:1; capacity 10 gpm to 120 gpm (40 L/min to 480 L/min) against 5 gpm to 120 gpm (20 L/min to 480 L/min). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Will the Sun 2.3:1 Pilot Ratio Counterbalance Valve stop the load drifting?",
+          "a": "Yes, when set correctly. The leakage in the data is measured at reseat, about 85% of the cracking pressure; a valve set 30% above the load never sees more than about 77% of cracking, where it holds without drift. A load that creeps through a counterbalance valve usually points to a damaged seat. For the Sun CBBL, CBCL, CBDL and others valve the flow capacity is 10 gpm to 120 gpm (40 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun 2.3:1 Pilot Ratio Counterbalance Valve from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Sun 2.3:1 Pilot Ratio Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-3-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 3:1 Pilot Ratio Counterbalance Valve (CBZA, CBAA, CBBA and others) and what does it do?",
+          "a": "The Sun 3:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBZA, CBAA, CBBA and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 3:1 Pilot Ratio Counterbalance Valve (CBZA, CBAA, CBBA and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBZA, CBAA, CBBA and others for the Sun 3:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCALHN, CBCA is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 3:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 3:1 Pilot Ratio Counterbalance Valve is listed in 13 sizes: CBZA (series 0, 7.5 gpm (30 L/min)), CBDC (series 2, 20 gpm (80 L/min)) and CBIA (series 4, 120 gpm (480 L/min)), among more than nine sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 3:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBZA, CBAA, CBBA and others valve, maximum setting is 6000 psi (420 bar), 4000 psi (280 bar), pilot ratio is 3:1, check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1,7 bar Check). 4 setting ranges are offered. Flow capacity runs 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 3:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 3:1 Pilot Ratio Counterbalance Valve is offered with seal codes N — Buna-N, L — Extended Temp. Buna, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. EPDM seals are not allowed on modifier /LH; If the modifier is /AP, the control must be C, L or R; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 3:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBZA, CBAA, CBBA and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment, C — Tamper Resistant - Factory Set and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 3:1 Pilot Ratio Counterbalance Valve (CBZA, CBAA, CBBA and others)?",
+          "a": "Seal kits for the Sun CBZA, CBAA, CBBA and others cartridge are series 0 (Buna 990163007, Viton 990163006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 5 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 3:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 3:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-163A, T-11A, T-2A, T-17A and T-19A. Valve hex size is 3/4 in. (19,1 mm), 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 20 - 25 lbf ft (27 - 33 Nm), 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 3:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 3:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 3:1 Pilot Ratio Counterbalance Valve differ from the Sun 2.3:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The Sun 3:1 Pilot Ratio Counterbalance Valve and the [Sun 2.3:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-2-3-1-pilot-ratio-counterbalance-valve) differ in their names by \"3:1\" here against \"2.3:1\" there. By the data, pilot ratio 3:1 against 2.3:1; capacity 2.5 gpm to 120 gpm (10 L/min to 480 L/min) against 10 gpm to 120 gpm (40 L/min to 480 L/min). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Should I choose the biggest capacity that fits on the Sun 3:1 Pilot Ratio Counterbalance Valve?",
+          "a": "No. A counterbalance valve works on pressure drop rather than flow, so the smallest frame that passes the flow gives the stiffest, most stable circuit. Oversizing tends to make the load hunt. For the Sun CBZA, CBAA, CBBA and others valve the flow capacity is 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun 3:1 Pilot Ratio Counterbalance Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We hold the Sun 3:1 Pilot Ratio Counterbalance Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-3-1-pilot-ratio-load-reactive-load-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve (MBDA, MBEA, MBGA and others) and what does it do?",
+          "a": "The Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve is a screw-in cartridge valve from Sun Hydraulics, listed as MBDA, MBEA, MBGA and others. A 3-port load control valve that works like a counterbalance valve: an integral check gives free flow into the actuator (port 2 to port 1) and a pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers its setting by the pilot ratio. It seats as a poppet for tight holding and meters as a spool for smooth lowering. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve (MBDA, MBEA, MBGA and others)?",
+          "a": "The first letters of a Sun model code are the base model, MBDA, MBEA, MBGA and others for the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve; the letters after it choose the options. In MBDALHN, MBDA is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve come in?",
+          "a": "The Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve is listed in 4 sizes: MBDA (series 1, 15 gpm (60 L/min)), MBEA (series 2, 30 gpm (120 L/min)), MBGA (series 3, 60 gpm (240 L/min)) and MBIA (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve have?",
+          "a": "For the Sun MBDA, MBEA, MBGA and others valve, maximum operating pressure is 5000 psi (350 bar), pilot ratio is 3:1, check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve come with?",
+          "a": "The Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve adjusted, and which control options are offered?",
+          "a": "The Sun MBDA, MBEA, MBGA and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve (MBDA, MBEA, MBGA and others)?",
+          "a": "Seal kits for the Sun MBDA, MBEA, MBGA and others cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve need?",
+          "a": "The Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve used?",
+          "a": "Typical use of the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve: load holding on large cylinders and motors in mobile and industrial machines, where higher flow is needed. Set it at least 1.3 times the highest load-induced pressure, or 1.5 times where the setting is below 2,000 psi (140 bar). Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — the vented versions avoid this."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve differ from the Sun Vented 3:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "The [Sun Vented 3:1 Pilot Ratio Load-Reactive Load Control Valve](/p/sun-hydraulics-mwea-load-reactive-load-control-valve) adds Vented compared with the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve. By the data, capacity 15 gpm to 120 gpm (60 L/min to 480 L/min) against 30 gpm (120 L/min); cavities T-11A, T-2A, T-17A, T-19A against T-22A, so the two do not swap."
+        },
+        {
+          "slot": "L",
+          "q": "Which pilot ratio should I choose on the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "Most applications run well on 3:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady. Sun advises avoiding 10:1 unless the load is very stable. For the Sun MBDA, MBEA, MBGA and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Sun 3:1 Pilot Ratio Load-Reactive Load Control Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-3-1-pilot-ratio-loadadaptive-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve (CEBA, CEBC, CECA) and what does it do?",
+          "a": "The Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CEBA, CEBC, CECA. A counterbalance valve whose pilot ratio changes with the duty. While the load is held and not yet moving, or when the load is being driven rather than overrunning, the effective pilot ratio is higher, so less pilot pressure is needed; once the load overruns, the valve controls it at its base ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve (CEBA, CEBC, CECA)?",
+          "a": "The first letters of a Sun model code are the base model, CEBA, CEBC, CECA for the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve; the letters after it choose the options. In CECALHN, CECA is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1500 - 4000 psi w/ 25 psi check (105 - 280 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve come in?",
+          "a": "The Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve is listed in 3 sizes: CEBA (series 1, 5 gpm (20 L/min)), CEBC (series 1, 10 gpm (40 L/min)) and CECA (series 1, 15 gpm (60 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve have?",
+          "a": "For the Sun CEBA, CEBC, CECA valve, maximum setting is 4000 psi (280 bar), pilot ratio is 3:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example A — 1500 - 4000 psi w/ 4 psi check (105 - 280 bar w/ 0,3 bar Check). 2 setting ranges are offered. Flow capacity runs 5 gpm to 15 gpm (20 L/min to 60 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve come with?",
+          "a": "The Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CEBA, CEBC, CECA valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve (CEBA, CEBC, CECA)?",
+          "a": "Seal kits for the Sun CEBA, CEBC, CECA cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve need?",
+          "a": "The Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve used?",
+          "a": "Typical use of the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve: cranes, aerial platforms and handling machines that alternate between driving and lowering loads, where both stability and energy use matter. Base pilot ratio as listed; the adaptive ratio is shown on Sun's performance curves. Set it at least 1.3 times the highest load-induced pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve differ from the Sun 3:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve adds LoadAdaptive™ compared with the [Sun 3:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-3-1-pilot-ratio-counterbalance-valve). This valve (CEBA, CEBC, CECA): A counterbalance valve whose pilot ratio changes with the duty. The other (CBZA, CBAA and others) is a counterbalance valve stops an overrunning load from running away and lowers it under control."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun CEBA, CEBC, CECA valve the flow capacity is 5 gpm to 15 gpm (20 L/min to 60 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve in Dubai for export?",
+          "a": "Yes, we stock the Sun 3:1 Pilot Ratio LoadAdaptive™ Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-3-1-pilot-ratio-vented-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve (CWCA, CWEA, CWGA and others) and what does it do?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CWCA, CWEA, CWGA and others. A 4-port counterbalance valve whose spring chamber is vented to its own port 4. Free flow passes into the actuator through the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 3:1 Pilot Ratio Vented Counterbalance Valve (CWCA, CWEA, CWGA and others)?",
+          "a": "The first letters of a Sun model code are the base model, CWCA, CWEA, CWGA and others for the Sun 3:1 Pilot Ratio Vented Counterbalance Valve; the letters after it choose the options. In CWCALHN, CWCA is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve come in?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve is listed in 4 sizes: CWCA (series 1, 15 gpm (60 L/min)), CWEA (series 2, 30 gpm (120 L/min)), CWGA (series 3, 60 gpm (240 L/min)) and CWIA (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve have?",
+          "a": "For the Sun CWCA, CWEA, CWGA and others valve, maximum setting is 4000 psi (280 bar), pilot ratio is 3:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve come with?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CWCA, CWEA, CWGA and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment and C — Tamper Resistant - Factory Set. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 3:1 Pilot Ratio Vented Counterbalance Valve (CWCA, CWEA, CWGA and others)?",
+          "a": "Seal kits for the Sun CWCA, CWEA, CWGA and others cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve need?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve used?",
+          "a": "Typical use of the Sun 3:1 Pilot Ratio Vented Counterbalance Valve: circuits with back-pressure at the valve port: regeneration circuits, master–slave cylinders, and circuits driven by proportional or servo directional valves. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 does not affect the setting; port 4 must be vented to tank."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve differ from the Sun 1:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve and the [Sun 1:1 Pilot Ratio Vented Counterbalance Valve](/p/sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve) differ in their names by \"3:1\" here against \"1:1\" there. By the data, pilot ratio 3:1 against 1:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "When do I need a vented counterbalance valve on the Sun 3:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "When there is back-pressure at the valve's port 2 — typical in regeneration circuits, master–slave circuits and circuits with proportional or servo valves. A non-vented valve would add that back-pressure to its setting. For the Sun CWCA, CWEA, CWGA and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 3:1 Pilot Ratio Vented Counterbalance Valve in Dubai for export?",
+          "a": "Yes. We keep the Sun 3:1 Pilot Ratio Vented Counterbalance Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-3-1-pilot-ratio-vented-counterbalance-valve-atmospherically",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CAZA, CACA, CAEA and others) and what does it do?",
+          "a": "The Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced is a screw-in cartridge valve from Sun Hydraulics, listed as CAZA, CACA, CAEA and others. A 3-port counterbalance valve with its spring chamber open to atmosphere, so it fits the standard 3-port cavity yet ignores back-pressure in the return line. Free flow into the actuator passes the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CAZA, CACA, CAEA and others)?",
+          "a": "The first letters of a Sun model code are the base model, CAZA, CACA, CAEA and others for the Sun CAZA valve; the letters after it choose the options. In CACALHN, CACA is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come in?",
+          "a": "The Sun CAZA valve is listed in 5 sizes: CAZA (series 0, 7.5 gpm (30 L/min)), CAEA (series 2, 30 gpm (120 L/min)) and CAIA (series 4, 120 gpm (480 L/min)), among 5 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced have?",
+          "a": "For the Sun CAZA, CACA, CAEA and others valve, maximum setting is 6000 psi (420 bar), 4000 psi (280 bar), pilot ratio is 3:1, check cracking pressure is 25 psi (1,7 bar), 40 psi (2,8 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come with?",
+          "a": "The Sun CAZA valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced adjusted, and which control options are offered?",
+          "a": "The Sun CAZA, CACA, CAEA and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CAZA, CACA, CAEA and others)?",
+          "a": "Seal kits for the Sun CAZA, CACA, CAEA and others cartridge are series 0 (Buna 990163007, Viton 990163006); series 4 (Buna 990119007, Polyurethane 990119002, Viton 990119006), with kits listed for 5 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced need?",
+          "a": "The Sun CAZA valve screws into a cavity machined to Sun's drawing for its series: T-163A, T-11A, T-2A, T-17A and T-19A. Valve hex size is 3/4 in. (19,1 mm), 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 20 - 25 lbf ft (27 - 33 Nm), 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced used?",
+          "a": "Typical use of the Sun CAZA valve: load-holding circuits with back-pressure at the valve where only a 3-port cavity is available — regeneration and proportional-valve circuits on mobile machines. Back-pressure at port 2 does not change the setting. Roughly one drop of oil seeps past the pilot into the open spring chamber per 4,000 cycles, so mount it where that small weep is acceptable."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun CAZA valve differ from the Sun 1:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "The Sun CAZA valve and the [Sun CABK valve](/p/sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve-atmospherically) differ in their names by \"3:1\" here against \"1:1\" there. By the data, pilot ratio 3:1 against 1:1; maximum setting 6000 psi (420 bar), 4000 psi (280 bar) against 4000 psi (280 bar). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Which pilot ratio should I choose on the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "Most applications run well on 3:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady. Sun advises avoiding 10:1 unless the load is very stable. For the Sun CAZA, CACA, CAEA and others valve the flow capacity is 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in Dubai for export?",
+          "a": "Yes, we hold the Sun 3:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-4-5-1-pilot-ratio-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 4.5:1 Pilot Ratio Counterbalance Valve (CBAG, CBBG, CBBD and others) and what does it do?",
+          "a": "The Sun 4.5:1 Pilot Ratio Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CBAG, CBBG, CBBD and others. A counterbalance valve stops an overrunning load from running away and lowers it under control. Flow into the actuator passes freely through an integral check (port 2 to port 1). See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 4.5:1 Pilot Ratio Counterbalance Valve (CBAG, CBBG, CBBD and others)?",
+          "a": "The first letters of a Sun model code are the base model, CBAG, CBBG, CBBD and others for the Sun 4.5:1 Pilot Ratio Counterbalance Valve; the letters after it choose the options. In CBCGLJN, CBCG is the base model and L is the control (Standard Screw Adjustment), J is the setting range (2000 - 5000 psi w/25 psi Check (140 - 350 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 4.5:1 Pilot Ratio Counterbalance Valve come in?",
+          "a": "The Sun 4.5:1 Pilot Ratio Counterbalance Valve is listed in 12 sizes: CBAG (series 1, 2.5 gpm (10 L/min)), CBEG (series 2, 30 gpm (120 L/min)) and CBIG (series 4, 120 gpm (480 L/min)), among more than nine sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 4.5:1 Pilot Ratio Counterbalance Valve have?",
+          "a": "For the Sun CBAG, CBBG, CBBD and others valve, maximum setting is 5000 psi (350 bar), pilot ratio is 4.5:1 and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example J — 2000 - 5000 psi w/25 psi Check (140 - 350 bar w/ 1,7 bar Check). 4 setting ranges are offered. Flow capacity runs 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 4.5:1 Pilot Ratio Counterbalance Valve come with?",
+          "a": "The Sun 4.5:1 Pilot Ratio Counterbalance Valve is offered with seal codes N — Buna-N, L — Buna (low temp), V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C, L or R; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 4.5:1 Pilot Ratio Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CBAG, CBBG, CBBD and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment, C — Tamper Resistant - Factory Set and R — Lockwired Screw Adjustment. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 4.5:1 Pilot Ratio Counterbalance Valve (CBAG, CBBG, CBBD and others)?",
+          "a": "Seal kits for the Sun CBAG, CBBG, CBBD and others cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006, EPDM 990011014); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 4.5:1 Pilot Ratio Counterbalance Valve need?",
+          "a": "The Sun 4.5:1 Pilot Ratio Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 4.5:1 Pilot Ratio Counterbalance Valve used?",
+          "a": "Typical use of the Sun 4.5:1 Pilot Ratio Counterbalance Valve: booms, jibs and winches on mobile cranes, aerial work platforms and man-lifts, drilling-rig and deck-machinery cylinders, and any actuator that can be driven by its load. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — use a vented version where the return line carries back-pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 4.5:1 Pilot Ratio Counterbalance Valve differ from the Sun 1.5:1 Pilot Ratio Counterbalance Valve?",
+          "a": "The Sun 4.5:1 Pilot Ratio Counterbalance Valve and the [Sun 1.5:1 Pilot Ratio Counterbalance Valve](/p/sun-hydraulics-1-5-1-pilot-ratio-counterbalance-valve) differ in their names by \"4.5:1\" here against \"1.5:1\" there. By the data, pilot ratio 4.5:1 against 1.5:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "Should I choose the biggest capacity that fits on the Sun 4.5:1 Pilot Ratio Counterbalance Valve?",
+          "a": "No. A counterbalance valve works on pressure drop rather than flow, so the smallest frame that passes the flow gives the stiffest, most stable circuit. Oversizing tends to make the load hunt. For the Sun CBAG, CBBG, CBBD and others valve the flow capacity is 2.5 gpm to 120 gpm (10 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 4.5:1 Pilot Ratio Counterbalance Valve in Dubai for export?",
+          "a": "Yes. We hold the Sun 4.5:1 Pilot Ratio Counterbalance Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-4-5-1-pilot-ratio-load-reactive-load-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBEG, MBGG, MBIG) and what does it do?",
+          "a": "The Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve is a screw-in cartridge valve from Sun Hydraulics, listed as MBEG, MBGG, MBIG. A 3-port load control valve that works like a counterbalance valve: an integral check gives free flow into the actuator (port 2 to port 1) and a pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers its setting by the pilot ratio. It seats as a poppet for tight holding and meters as a spool for smooth lowering. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBEG, MBGG, MBIG)?",
+          "a": "The first letters of a Sun model code are the base model, MBEG, MBGG, MBIG for the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve; the letters after it choose the options. In MBIGLHN, MBIG is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi (70 - 280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve come in?",
+          "a": "The Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve is listed in 3 sizes: MBEG (series 2, 30 gpm (120 L/min)), MBGG (series 3, 60 gpm (240 L/min)) and MBIG (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve have?",
+          "a": "For the Sun MBEG, MBGG, MBIG valve, maximum operating pressure is 5000 psi (350 bar), pilot ratio is 4.5:1, check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi (70 - 280 bar). 2 setting ranges are offered. Flow capacity runs 30 gpm to 120 gpm (120 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve come with?",
+          "a": "The Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve adjusted, and which control options are offered?",
+          "a": "The Sun MBEG, MBGG, MBIG valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve (MBEG, MBGG, MBIG)?",
+          "a": "Seal kits for the Sun MBEG, MBGG, MBIG cartridge are series 2 (Buna 990202007, Polyurethane 990002002, Viton 990202006); series 4 (Buna 990019007, Polyurethane 990019002, Viton 990019006), with kits listed for 3 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve need?",
+          "a": "The Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve screws into a cavity machined to Sun's drawing for its series: T-2A, T-17A and T-19A. Valve hex size is 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve used?",
+          "a": "Typical use of the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve: load holding on large cylinders and motors in mobile and industrial machines, where higher flow is needed. Set it at least 1.3 times the highest load-induced pressure, or 1.5 times where the setting is below 2,000 psi (140 bar). Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — the vented versions avoid this."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve differ from the Sun Vented 4.5:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "The [Sun Vented 4.5:1 Pilot Ratio Load-Reactive Load Control Valve](/p/sun-hydraulics-vented-4-5-1-pilot-ratio-load-reactive-load-control-valve) adds Vented compared with the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve. Back-pressure at port 2 adds to the effective setting, multiplied by one plus the pilot ratio — the vented versions avoid this."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun MBEG, MBGG, MBIG valve the flow capacity is 30 gpm to 120 gpm (120 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun 4.5:1 Pilot Ratio Load-Reactive Load Control Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-5-1-pilot-ratio-vented-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve (CWCG, CWEG, CWGG and others) and what does it do?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as CWCG, CWEG, CWGG and others. A 4-port counterbalance valve whose spring chamber is vented to its own port 4. Free flow passes into the actuator through the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 5:1 Pilot Ratio Vented Counterbalance Valve (CWCG, CWEG, CWGG and others)?",
+          "a": "The first letters of a Sun model code are the base model, CWCG, CWEG, CWGG and others for the Sun 5:1 Pilot Ratio Vented Counterbalance Valve; the letters after it choose the options. In CWCGLGN, CWCG is the base model and L is the control (Standard Screw Adjustment), G is the setting range (2000 - 6000 psi (140 - 420 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve come in?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve is listed in 4 sizes: CWCG (series 1, 15 gpm (60 L/min)), CWEG (series 2, 30 gpm (120 L/min)), CWGG (series 3, 60 gpm (240 L/min)) and CWIG (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve have?",
+          "a": "For the Sun CWCG, CWEG, CWGG and others valve, maximum setting is 6000 psi (420 bar), pilot ratio is 5:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example G — 2000 - 6000 psi (140 - 420 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve come with?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun CWCG, CWEG, CWGG and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment and C — Tamper Resistant - Factory Set. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 5:1 Pilot Ratio Vented Counterbalance Valve (CWCG, CWEG, CWGG and others)?",
+          "a": "Seal kits for the Sun CWCG, CWEG, CWGG and others cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve need?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve used?",
+          "a": "Typical use of the Sun 5:1 Pilot Ratio Vented Counterbalance Valve: circuits with back-pressure at the valve port: regeneration circuits, master–slave cylinders, and circuits driven by proportional or servo directional valves. Set it at least 1.3 times the highest load-induced pressure. Back-pressure at port 2 does not affect the setting; port 4 must be vented to tank."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve differ from the Sun 1:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve and the [Sun 1:1 Pilot Ratio Vented Counterbalance Valve](/p/sun-hydraulics-1-1-pilot-ratio-vented-counterbalance-valve) differ in their names by \"5:1\" here against \"1:1\" there. By the data, pilot ratio 5:1 against 1:1; maximum setting 6000 psi (420 bar) against 4000 psi (280 bar). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "When do I need a vented counterbalance valve on the Sun 5:1 Pilot Ratio Vented Counterbalance Valve?",
+          "a": "When there is back-pressure at the valve's port 2 — typical in regeneration circuits, master–slave circuits and circuits with proportional or servo valves. A non-vented valve would add that back-pressure to its setting. For the Sun CWCG, CWEG, CWGG and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we hold the Sun 5:1 Pilot Ratio Vented Counterbalance Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-5-1-pilot-ratio-vented-counterbalance-valve-atmospherically",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACG, CAEG, CAGG and others) and what does it do?",
+          "a": "The Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced is a screw-in cartridge valve from Sun Hydraulics, listed as CACG, CAEG, CAGG and others. A 3-port counterbalance valve with its spring chamber open to atmosphere, so it fits the standard 3-port cavity yet ignores back-pressure in the return line. Free flow into the actuator passes the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACG, CAEG, CAGG and others)?",
+          "a": "The first letters of a Sun model code are the base model, CACG, CAEG, CAGG and others for the Sun CACG valve; the letters after it choose the options. In CACGLGN, CACG is the base model and L is the control (Standard Screw Adjustment), G is the setting range (2000 - 6000 psi (140 - 420 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come in?",
+          "a": "The Sun CACG valve is listed in 4 sizes: CACG (series 1, 15 gpm (60 L/min)), CAEG (series 2, 30 gpm (120 L/min)), CAGG (series 3, 60 gpm (240 L/min)) and CAIG (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced have?",
+          "a": "For the Sun CACG, CAEG, CAGG and others valve, maximum setting is 6000 psi (420 bar), pilot ratio is 5:1, check cracking pressure is 40 psi (2,8 bar), 25 psi (1,7 bar), 20 psi (1,5 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example F — 1000 - 2500 psi (70 - 175 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come with?",
+          "a": "The Sun CACG valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be L; If the seal is E, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced adjusted, and which control options are offered?",
+          "a": "The Sun CACG, CAEG, CAGG and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CACG, CAEG, CAGG and others)?",
+          "a": "Seal kits for the Sun CACG, CAEG, CAGG and others cartridge are series 1 (Buna 990211007, EPDM 990011014, Viton 990211006); series 4 (Buna 990119007, Polyurethane 990119002, Viton 990119006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced need?",
+          "a": "The Sun CACG valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced used?",
+          "a": "Typical use of the Sun CACG valve: load-holding circuits with back-pressure at the valve where only a 3-port cavity is available — regeneration and proportional-valve circuits on mobile machines. Back-pressure at port 2 does not change the setting. Roughly one drop of oil seeps past the pilot into the open spring chamber per 4,000 cycles, so mount it where that small weep is acceptable."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun CACG valve differ from the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "The Sun CACG valve and the [Sun CABG valve](/p/sun-hydraulics-cabg-atmospherically-vented-counterbalance-valve) differ in their names by \"5:1\" here against \"4.5:1\" there. By the data, pilot ratio 5:1 against 4.5:1; maximum setting 6000 psi (420 bar) against 4000 psi (280 bar). A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "How is an atmospherically vented counterbalance different from a 4-port vented one on the Sun CACG valve?",
+          "a": "Both ignore back-pressure at port 2. The atmospheric version vents its spring chamber to air and fits the 3-port cavity; the 4-port version vents to a fourth port piped to tank. For the Sun CACG, CAEG, CAGG and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in Dubai for export?",
+          "a": "Yes, we stock the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-atmospherically-referenced-loadmatch-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve (MADP, MAEP) and what does it do?",
+          "a": "The Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve is a screw-in cartridge valve from Sun Hydraulics, listed as MADP, MAEP. A self-setting counterbalance valve. Instead of a fixed setting it moves its working setting to roughly 1.3× the pressure the load induces, capped by a fixed thermal relief setting, and combines reverse free flow, load control and thermal relief in one cartridge. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve (MADP, MAEP)?",
+          "a": "The first letters of a Sun model code are the base model, MADP, MAEP for the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve; the letters after it choose the options. In MADPDHN, MADP is the base model and D is the control (LoadMatch™), H is the setting range (4000 psi (280 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve come in?",
+          "a": "The Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve is listed in 2 sizes: MADP (series 1, 15 gpm (60 L/min)) and MAEP (series 2, 30 gpm (120 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve have?",
+          "a": "For the Sun MADP, MAEP valve, maximum operating pressure is 5000 psi (350 bar), check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 4000 psi (280 bar). 3 setting ranges are offered. Flow capacity runs 15 gpm to 30 gpm (60 L/min to 120 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve come with?",
+          "a": "The Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve adjusted, and which control options are offered?",
+          "a": "The Sun MADP, MAEP valve is set by the control chosen by code letter: D — LoadMatch™. The setting range is a separate letter, with 3 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve (MADP, MAEP)?",
+          "a": "Seal kits for the Sun MADP, MAEP cartridge are series 1 (Buna 990011007, Viton 990011006); series 2 (Buna 990202007, Polyurethane 990002002, Viton 990202006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve need?",
+          "a": "The Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve screws into a cavity machined to Sun's drawing for its series: T-11A and T-2A. Valve hex size is 1.00 in. (25,4 mm), 1 3/8 in. (34,9 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve used?",
+          "a": "Typical use of the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve: mobile machines whose loads vary widely, where lower pilot pressure saves energy and fuel. Ordered by the factory-set thermal relief pressure. Reseats at or above 77% of the setting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve differ from the Sun LoadMatch™ Counterbalance Valve?",
+          "a": "The Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve adds Atmospherically Referenced compared with the [Sun LoadMatch™ Counterbalance Valve](/p/sun-hydraulics-loadmatch-counterbalance-valve). This valve (MADP, MAEP): A self-setting counterbalance valve."
+        },
+        {
+          "slot": "L",
+          "q": "Why does the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve save energy?",
+          "a": "Its working setting follows the load instead of sitting at a fixed high value, so the pilot pressure needed to lower the load is usually lower. For the Sun MADP, MAEP valve the flow capacity is 15 gpm to 30 gpm (60 L/min to 120 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Sun Atmospherically Referenced LoadMatch™ Counterbalance Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-cabg-atmospherically-vented-counterbalance-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABG) and what does it do?",
+          "a": "The Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced is a screw-in cartridge valve from Sun Hydraulics, listed as CABG. A 3-port counterbalance valve with its spring chamber open to atmosphere, so it fits the standard 3-port cavity yet ignores back-pressure in the return line. Free flow into the actuator passes the check (port 2 to port 1); the pilot-assisted relief stage holds the load (port 1 to port 2) until pilot pressure at port 3 lowers the setting by the pilot ratio. See the full [counterbalance & load-holding valves](/c/counterbalance-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABG)?",
+          "a": "The first letters of a Sun model code are the base model, CABG for the Sun CABG valve; the letters after it choose the options. In CABGLHN, CABG is the base model and L is the control (Standard Screw Adjustment), H is the setting range (1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come in?",
+          "a": "The Sun CABG valve is listed in 1 size: CABG (series 1, 7.5 gpm (30 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced have?",
+          "a": "For the Sun CABG valve, maximum setting is 4000 psi (280 bar), pilot ratio is 4.5:1, check cracking pressure is 25 psi (1,7 bar) and leakage is up to 5 drops/min. (0,3 cc/min). Setting ranges are chosen by code letter, for example H — 1000 - 4000 psi w/25 psi Check (70 - 280 bar w/ 1,7 bar Check). Flow capacity runs 7.5 gpm (30 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced come with?",
+          "a": "The Sun CABG valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced adjusted, and which control options are offered?",
+          "a": "The Sun CABG valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set and L — Standard Screw Adjustment. The setting range is a separate letter, with 1 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced (CABG)?",
+          "a": "Seal kits for the Sun CABG cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [counterbalance & load-holding valves](/c/counterbalance-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced need?",
+          "a": "The Sun CABG valve screws into a cavity machined to Sun's drawing for its series: T-11A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced used?",
+          "a": "Typical use of the Sun CABG valve: load-holding circuits with back-pressure at the valve where only a 3-port cavity is available — regeneration and proportional-valve circuits on mobile machines. Back-pressure at port 2 does not change the setting. Roughly one drop of oil seeps past the pilot into the open spring chamber per 4,000 cycles, so mount it where that small weep is acceptable."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun CABG valve differ from the Sun 5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "The Sun CABG valve and the [Sun CACG valve](/p/sun-hydraulics-5-1-pilot-ratio-vented-counterbalance-valve-atmospherically) differ in their names by \"4.5:1\" here against \"5:1\" there. By the data, pilot ratio 4.5:1 against 5:1. A lower ratio makes a swinging or flexible load more stable; a higher ratio needs less pilot pressure and wastes less energy where the load is steady."
+        },
+        {
+          "slot": "L",
+          "q": "How high should a counterbalance valve be set on the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced?",
+          "a": "At least 1.3 times the highest pressure the load can induce, so the valve never opens on the load alone. Pilot pressure from the other side of the actuator then opens it to lower the load. For the Sun CABG valve the flow capacity is 7.5 gpm (30 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced in Dubai for export?",
+          "a": "Yes, we stock the Sun 4.5:1 Pilot Ratio Vented Counterbalance Valve, Atmospherically Referenced at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "family": "cementing-on-the-fly-mixer",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "on-the-fly-cement-mixer-20-bbl-surge-tank-2-5-sg-max-auto-density",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 20 BBL on-the-fly cement mixer used for?",
+          "a": "An on-the-fly cement mixer mixes slurry continuously while it is being pumped, rather than in batches. This unit has a 20 BBL surge tank, a dry-cement surge tank for steady delivery, and a mixing tub rated to 2.5 SG maximum slurry density."
+        },
+        {
+          "slot": "D",
+          "q": "What density can the 20 BBL on-the-fly cement mixer mix?",
+          "a": "The mixing tub is rated to a maximum slurry density of 2.5 SG. Choose the cement slurry design within that limit, and tell us the density range and pumping rate on the RFQ so the mixer is sized to the job."
+        },
+        {
+          "slot": "D",
+          "q": "What is the surge tank size on the 20 BBL on-the-fly cement mixer?",
+          "a": "The standard configuration includes a 20 BBL surge tank and a dry-cement surge tank for steady delivery to the mixing tub. State the pumping rate on the RFQ if you need a different surge volume."
+        },
+        {
+          "slot": "E",
+          "q": "How is density controlled on the 20 BBL on-the-fly cement mixer?",
+          "a": "Choose either a manual ground-mixing system or an automatic density control loop. The automatic loop holds slurry density during the job without an operator adjusting valves, and the unit is listed with Auto Density."
+        },
+        {
+          "slot": "F",
+          "q": "What drive options does the 20 BBL on-the-fly cement mixer offer?",
+          "a": "The drive is a diesel engine or an ATEX electric motor. Choose from the area classification and the available supply, and state it on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications and winterization does the 20 BBL on-the-fly cement mixer have?",
+          "a": "The listing offers CE and GOST certifications and pre-heating winterization. State the approvals and ambient temperature range on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 20 BBL on-the-fly cement mixer connect to?",
+          "a": "It takes dry cement from silos or a cutting bottle and feeds a cementing pump. See [cement silos](/c/cementing-silos), [cutting bottles](/c/cementing-cutting-bottle) and [cementing units](/c/cementing-units)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 20 BBL on-the-fly cement mixer differ from a batch mixer?",
+          "a": "An on-the-fly mixer mixes continuously during pumping, while the [twin-tank batch mixer](/p/cement-batch-mixer-twin-2-100-bbl-coriolis-density-hydraulic-drive) mixes slurry in tanks first. On-the-fly suits long jobs, and batch gives density verification before pumping."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 20 BBL on-the-fly cement mixer used?",
+          "a": "It is used on cementing jobs that need continuous mixing during pumping, onshore or offshore, mounted on a skid, trailer or truck. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for an on-the-fly cement mixer quotation?",
+          "a": "Send the pumping rate, density range, manual or automatic density control, the drive type, the mounting (skid, trailer or truck) and the area classification and certifications needed."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 20 BBL on-the-fly cement mixer be skid, trailer or truck mounted?",
+          "a": "Yes, the listing offers onshore or offshore skid, trailer or truck mounting. Choose from how the unit is moved between jobs."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 20 BBL on-the-fly cement mixer?",
+          "a": "Yes. We list the 20 BBL on-the-fly cement mixer as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most units are configured to specification. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

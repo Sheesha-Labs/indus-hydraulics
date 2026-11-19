@@ -1,0 +1,1530 @@
+{
+  "family": "pneumatic-safety-lockout-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    },
+    {
+      "fact": "Pressure vessel rules require a safety (pop) valve to be set at or below the maximum allowable working pressure of the vessel or system it protects, and its flow capacity to be at least the maximum the compressor can deliver. Set pressure is chosen by the user from the preset values offered.",
+      "source": "ASME Boiler and Pressure Vessel Code Section VIII Division 1, paragraph UG-134 (pressure setting of pressure relief devices) and UG-125"
+    },
+    {
+      "fact": "In a soft seat safety valve a resilient seat seals against a metal disc so the valve reseats tight close to its set pressure; in a hard seat (metal-to-metal) valve both parts are metal, which tolerates higher temperature. Conrader part numbers carry the set pressure in psi as the last field, and the SRV and SRH prefixes mark soft seat and hard seat.",
+      "source": "Conrader SRV (soft seat) and SRH (hard seat) safety valve part numbers in Indus size tables; Kingston soft and hard seat pop valve descriptions"
+    },
+    {
+      "fact": "A soft start valve pressurises the downstream line slowly and then opens fully; a dump valve exhausts the downstream line when its signal is removed; a combined soft start/dump valve does both and is fitted ahead of the equipment. Parker Global modular soft start and dump valves are available with solenoid or external or internal air pilot operators. A lockout valve shuts the supply and vents the downstream air and can be locked off with a padlock so the machine cannot be re-pressurised during maintenance.",
+      "source": "Parker Hannifin Global air preparation catalogue (soft start, dump and lockout valves); ISO 4414:2010"
+    }
+  ],
+  "products": [
+    {
+      "slug": "conrader-air-safety-valve-with-hard-seat-valve-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRH hard seat air safety valve used for?",
+          "a": "Conrader SRH hard seat air safety valves are brass pop valves with a stainless steel ball and spring that open at a preset pressure to protect an air receiver or line. The listing has 51 part numbers with set pressures from 50 to 300 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRH hard seat air safety valve part numbers such as SRH250-1/4 100 SST mean?",
+          "a": "Read SRH250-1/4 100 SST as hard seat body 250, 1/4 inch port, 100 psi preset and stainless steel spring; SRH375 numbers are the larger 1/2 inch body. The last figure is the set pressure in psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRH hard seat air safety valve come in?",
+          "a": "Ports of 1/8, 1/4, 3/8 and 1/2 inch, male NPT inlet and female NPT outlet, in presets from 50 to 300 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRH hard seat air safety valve?",
+          "a": "Choose the preset at or below the maximum working pressure of the vessel, then the size for the flow needed; rows give a rated CFM at set pressure, such as 529 CFM for SRH375-1/2-275 SST."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRH hard seat air safety valve have?",
+          "a": "Preset settings run from 50 to 300 psi (about 3 to 21 bar) and rated flow is given per row, for example 149 CFM for the 1/8 inch valve at 175 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRH hard seat air safety valve made of?",
+          "a": "The body is brass, the ball is stainless steel and the spring is grade 302 stainless steel; the listing covers air and gas. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRH hard seat air safety valve come with certificates?",
+          "a": "We hold no certificate data for the Conrader SRH hard seat air safety valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for SRH250-1/4 100 SST and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRH hard seat air safety valve?",
+          "a": "The male NPT inlet screws into the receiver or line and the female NPT outlet takes a discharge pipe. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRH hard seat air safety valve?",
+          "a": "Fit it upright in the highest point of the receiver, with no valve between it and the vessel, and test it by pulling the ring only if fitted. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRH hard seat air safety valve differ from its sibling listings?",
+          "a": "The hard seat suits higher temperatures, while the [SRV soft seat air safety valve](/p/conrader-air-safety-valve-with-soft-seat-valve-type) has a soft seat. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRH hard seat air safety valve made and which HS code applies?",
+          "a": "The recorded country of origin is USA. No HS code is recorded; safety valves fall in subheading 8481.40. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRH hard seat air safety valve in Dubai?",
+          "a": "Yes, the Conrader SRH hard seat air safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-air-safety-valve-with-soft-seat-valve-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV soft seat air safety valve used for?",
+          "a": "Conrader SRV soft seat air safety valves are brass pop valves with a 17-7 stainless steel spring and soft seat that open at a preset pressure and reseat tightly. The listing has 94 part numbers from 50 to 300 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV soft seat air safety valve part numbers such as SRV250-14 125 SST mean?",
+          "a": "Read SRV250-14 125 SST as body 250, 1/4 inch port, 125 psi set pressure; SRV530 numbers are 1/2 inch and 3/4 inch, SRV765 numbers 1 inch and 1 1/4 inch bodies, SRV390 1/2 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV soft seat air safety valve come in?",
+          "a": "Bodies SRV250, SRV390, SRV530 and SRV765 with ports from 1/8 inch to 1 1/4 inch, male NPT inlet and female NPT outlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV soft seat air safety valve?",
+          "a": "Choose the preset below the vessel's maximum working pressure, then the body for flow: rows show 112 CFM at 125 psi for SRV250-14 and 1869 CFM at 225 psi for SRV765-114."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV soft seat air safety valve have?",
+          "a": "Preset settings from 50 to 300 psi (about 3 to 21 bar); rated CFM at set pressure is given per row, such as 132 CFM at 150 psi and 214 CFM at 250 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV soft seat air safety valve made of?",
+          "a": "The body is brass with a 17-7 stainless steel spring and a soft seat, for air and gas. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV soft seat air safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader SRV soft seat air safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for SRV250-14 125 SST, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV soft seat air safety valve?",
+          "a": "Male NPT inlet to the vessel, female NPT outlet for a discharge pipe. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV soft seat air safety valve?",
+          "a": "Fit upright at the highest point with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV soft seat air safety valve differ from its sibling listings?",
+          "a": "The soft seat reseats tighter than the [SRH hard seat valve](/p/conrader-air-safety-valve-with-hard-seat-valve-type) but the hard seat takes more heat. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV soft seat air safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV soft seat air safety valve: the recorded country of origin is USA. No HS code is recorded; safety valves fall in subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV soft seat air safety valve in Dubai?",
+          "a": "Yes. the Conrader SRV soft seat air safety valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-cpr-series-pressure-relief-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader CPR series pressure relief valve used for?",
+          "a": "Conrader CPR series pressure relief valves are adjustable relief valves in 1/8 to 1 inch inlet sizes, with four pressure bands. The listing has 14 part numbers such as CPR25, CPR75 and CPR25 (50-125psi)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader CPR series pressure relief valve part numbers such as CPR25 (10-60psi) mean?",
+          "a": "CPR is followed by the inlet size (25 is 1/4 inch, 38 is 3/8, 50 is 1/2, 75 is 3/4, CPR1 is 1 inch) and -1/8 marks the 1/8 inch inlet; the bracket gives the adjustment band in psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader CPR series pressure relief valve come in?",
+          "a": "Inlets of 1/8, 1/4, 3/8, 1/2, 3/4 and 1 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader CPR series pressure relief valve?",
+          "a": "Choose the adjustment band that contains your working pressure: 0-20, 10-60, 50-125 or 100-200 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader CPR series pressure relief valve have?",
+          "a": "The adjustment bands are 0 to 20, 10 to 60, 50 to 125 and 100 to 200 psi (the last about 14 bar at its upper end). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader CPR series pressure relief valve made of?",
+          "a": "Materials are not recorded on this listing; ask us for the specification. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader CPR series pressure relief valve come with certificates?",
+          "a": "The listing for the Conrader CPR series pressure relief valve states no certificates and we do not claim any. Certificate of conformity or origin requests for CPR25 (10-60psi) should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader CPR series pressure relief valve?",
+          "a": "The inlet is sized in inches with NPT threads; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader CPR series pressure relief valve?",
+          "a": "Fit it upright and set it at the working pressure using a gauge, then lock it. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader CPR series pressure relief valve differ from its sibling listings?",
+          "a": "The [Conrader fixed-setting pressure relief valve](/p/conrader-pressure-relief-valve) is a soft seat valve with three presets, whereas the CPR is adjustable. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader CPR series pressure relief valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader CPR series pressure relief valve in Dubai?",
+          "a": "Yes, we stock the Conrader CPR series pressure relief valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-pressure-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV187 pressure relief valve used for?",
+          "a": "The Conrader SRV187 pressure relief valve is a small brass soft seat relief valve with a 3/16 inch female NPT outlet. The listing has 3 part numbers: SRV187-60, SRV187-75 and SRV187-100."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV187 pressure relief valve part numbers such as SRV187-75 mean?",
+          "a": "The number after SRV187 is the set pressure in psi: SRV187-60 is 60 psi, SRV187-75 is 75 psi and SRV187-100 is 100 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV187 pressure relief valve come in?",
+          "a": "Three presets of 60, 75 and 100 psi with a 3/16 inch outlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV187 pressure relief valve?",
+          "a": "Choose the preset at or below the working limit of the equipment, for example 100 psi (about 7 bar). Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV187 pressure relief valve have?",
+          "a": "Presets are 60, 75 and 100 psi. Temperature is not recorded for this listing. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV187 pressure relief valve made of?",
+          "a": "The body is brass with a soft seat. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV187 pressure relief valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader SRV187 pressure relief valve. If your buyer needs paperwork for SRV187-75, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV187 pressure relief valve?",
+          "a": "The outlet is 3/16 inch female NPT; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV187 pressure relief valve?",
+          "a": "Fit upright in the system, with no valve between it and the pressure source. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV187 pressure relief valve differ from its sibling listings?",
+          "a": "The [CPR series](/p/conrader-cpr-series-pressure-relief-valves) is adjustable, while the SRV187 is fixed. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV187 pressure relief valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481400000. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV187 pressure relief valve in Dubai?",
+          "a": "Yes. We keep the Conrader SRV187 pressure relief valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-safety-valve-hard-seat-stainless-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRH stainless steel hard seat safety valve used for?",
+          "a": "Conrader stainless steel hard seat safety valves are all-stainless pop valves for air and gas, with a stainless steel body, ball and seat. The listing has 25 part numbers, from SRH250-SS-050 to the 1/2 inch SRH375 range."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRH stainless steel hard seat safety valve part numbers such as SRH250-SS-150 mean?",
+          "a": "SRH250-SS-150 is the 250 body, 1/4 inch, stainless steel, 150 psi preset; SRH375-1/2-SS-075 is the 375 body, 1/2 inch, 75 psi. The last figure is the set pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRH stainless steel hard seat safety valve come in?",
+          "a": "Two body sizes, 1/4 inch (SRH250) and 1/2 inch (SRH375), with presets from 50 to 350 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRH stainless steel hard seat safety valve?",
+          "a": "Pick the preset at or below the vessel's maximum working pressure and the size for the flow. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRH stainless steel hard seat safety valve have?",
+          "a": "Presets run from 50 to 350 psi (about 3 to 24 bar), and the maximum temperature is 400°F (about 204°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRH stainless steel hard seat safety valve made of?",
+          "a": "The body, seat and spring (grade 302) are stainless steel and the ball is steel. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRH stainless steel hard seat safety valve come with certificates?",
+          "a": "the Conrader SRH stainless steel hard seat safety valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for SRH250-SS-150."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRH stainless steel hard seat safety valve?",
+          "a": "Male NPT inlet to the vessel; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRH stainless steel hard seat safety valve?",
+          "a": "Fit upright with no valve between it and the vessel. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRH stainless steel hard seat safety valve differ from its sibling listings?",
+          "a": "Unlike the brass [SRH hard seat valve](/p/conrader-air-safety-valve-with-hard-seat-valve-type) this is all stainless steel. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRH stainless steel hard seat safety valve made and which HS code applies?",
+          "a": "For the Conrader SRH stainless steel hard seat safety valve: the recorded country of origin is United States and the recorded HS code is 8481400000."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRH stainless steel hard seat safety valve in Dubai?",
+          "a": "Yes, the Conrader SRH stainless steel hard seat safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader safety valves with five-digit codes used for?",
+          "a": "This Conrader listing holds 206 safety valves with soft seat or hard seat construction and brass bodies, with numbers such as 5663W-CE-125 and 0938R-CE-325. Each ends in the preset pressure in psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader safety valves with five-digit codes part numbers such as 1299B-CE-275 mean?",
+          "a": "The rows show a four-digit model, a letter, -CE- and the preset in psi: 5663W-CE-125 is a 3/8 inch soft seat valve at 125 psi and 0938R-CE-325 a 1/2 inch hard seat valve at 325 psi. The CE here is part of the number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader safety valves with five-digit codes come in?",
+          "a": "Inlet sizes from 1/8 inch to 1 inch male NPT with 1/4 to 5/8 inch female NPT outlets, soft seat 134 and hard seat 70 rows. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader safety valves with five-digit codes?",
+          "a": "Pick the model for the inlet and outlet you need, hard or soft seat, and the preset pressure. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader safety valves with five-digit codes have?",
+          "a": "Rows carry presets such as 60, 125, 150, 225, 275 and 300 psi, and the listing gives a maximum temperature of 400°F (about 204°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader safety valves with five-digit codes made of?",
+          "a": "The body is brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader safety valves with five-digit codes come with certificates?",
+          "a": "We hold no certificate data for the Conrader safety valves with five-digit codes, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 1299B-CE-275 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader safety valves with five-digit codes?",
+          "a": "Male NPT inlet, female NPT outlet; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader safety valves with five-digit codes?",
+          "a": "Fit upright with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader safety valves with five-digit codes differ from its sibling listings?",
+          "a": "This listing groups both seats, where the [SRV soft seat listing](/p/conrader-air-safety-valve-with-soft-seat-valve-type) has soft seat only. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader safety valves with five-digit codes made and which HS code applies?",
+          "a": "The recorded country of origin is not stated for this listing; ask us to confirm. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader safety valves with five-digit codes in Dubai?",
+          "a": "Yes. the Conrader safety valves with five-digit codes is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srh-hard-seat-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRH hard seat series safety valve used for?",
+          "a": "Conrader SRH hard seat series safety valves are hard seat pop valves in 1/8 to 1 inch sizes, with 6 part numbers and flow bands of 50-287 SCFM to 142-1147 SCFM."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRH hard seat series safety valve part numbers such as SRH375-12 mean?",
+          "a": "SRH250-18 and SRH250-14 are the 1/8 and 1/4 inch valves (50 to 287 SCFM, 25 to 350 psi), SRH375-38 and SRH375-12 the 3/8 and 1/2 inch (116 to 667 SCFM, 50 to 350 psi) and SRH580-34 and SRH580-1 the 3/4 and 1 inch (142 to 1147 SCFM, 25 to 300 psi)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRH hard seat series safety valve come in?",
+          "a": "Six sizes from 1/8 to 1 inch inlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRH hard seat series safety valve?",
+          "a": "Choose by the set-pressure band you need (25 to 350 psi) and by the SCFM capacity. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRH hard seat series safety valve have?",
+          "a": "Set pressures run 25 to 350 psi (about 2 to 24 bar), with flow bands per size. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRH hard seat series safety valve made of?",
+          "a": "The listing does not record the material; the preset listings are hard seat. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRH hard seat series safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader SRH hard seat series safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for SRH375-12, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRH hard seat series safety valve?",
+          "a": "Use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRH hard seat series safety valve?",
+          "a": "For the Conrader SRH hard seat series safety valve: fit upright with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRH hard seat series safety valve differ from its sibling listings?",
+          "a": "This listing is by body size, while the [SRH hard seat air safety valve](/p/conrader-air-safety-valve-with-hard-seat-valve-type) listing is by preset. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRH hard seat series safety valve made and which HS code applies?",
+          "a": "For the Conrader SRH hard seat series safety valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRH hard seat series safety valve in Dubai?",
+          "a": "Yes, we stock the Conrader SRH hard seat series safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-250-safety-valve-soft-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV 250 stainless soft seat safety valve used for?",
+          "a": "The Conrader SRV 250 is a 1/4 inch male NPT stainless steel soft seat safety valve with a 17-7 spring. The listing has 14 part numbers, from SRV250-V-SS-050 to SRV250-V-SS-350."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV 250 stainless soft seat safety valve part numbers such as SRV250-V-SS-150 mean?",
+          "a": "The last three digits are the set pressure in psi: SRV250-V-SS-150 is 150 psi and SRV250-V-SS-350 is 350 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV 250 stainless soft seat safety valve come in?",
+          "a": "One size, 1/4 inch male NPT, with 14 presets from 50 to 350 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV 250 stainless soft seat safety valve?",
+          "a": "Choose the preset at or below the working limit. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV 250 stainless soft seat safety valve have?",
+          "a": "Presets run from 50 to 350 psi (about 3 to 24 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV 250 stainless soft seat safety valve made of?",
+          "a": "The body and seat are stainless steel and the spring is 17-7. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV 250 stainless soft seat safety valve come with certificates?",
+          "a": "The listing for the Conrader SRV 250 stainless soft seat safety valve states no certificates and we do not claim any. Certificate of conformity or origin requests for SRV250-V-SS-150 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV 250 stainless soft seat safety valve?",
+          "a": "Male NPT inlet; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV 250 stainless soft seat safety valve?",
+          "a": "For the Conrader SRV 250 stainless soft seat safety valve: fit upright with no valve between it and the vessel. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV 250 stainless soft seat safety valve differ from its sibling listings?",
+          "a": "The [SRV 390](/p/conrader-srv-390-safety-valve-soft-seat) is the next body size up, listed separately. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV 250 stainless soft seat safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV 250 stainless soft seat safety valve: the recorded country of origin is United States and the recorded HS code is 8481400000."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV 250 stainless soft seat safety valve in Dubai?",
+          "a": "Yes. We keep the Conrader SRV 250 stainless soft seat safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-390-safety-valve-soft-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV 390 stainless soft seat safety valve used for?",
+          "a": "The Conrader SRV 390 is a 1/2 inch stainless steel soft seat safety valve with 11 part numbers from SRV390-1/2-V-SS-050 to -300. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV 390 stainless soft seat safety valve part numbers such as SRV390-1/2-V-SS-100 mean?",
+          "a": "The last three digits are the set pressure in psi: -100 is 100 psi, -250 is 250 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV 390 stainless soft seat safety valve come in?",
+          "a": "One size, 1/2 inch, with presets from 50 to 300 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV 390 stainless soft seat safety valve?",
+          "a": "For the Conrader SRV 390 stainless soft seat safety valve: choose the preset at or below the working limit. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV 390 stainless soft seat safety valve have?",
+          "a": "Presets run 50 to 300 psi (about 3 to 21 bar) and the maximum temperature is 400°F (about 204°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV 390 stainless soft seat safety valve made of?",
+          "a": "For the Conrader SRV 390 stainless soft seat safety valve: the body and seat are stainless steel and the spring is 17-7. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV 390 stainless soft seat safety valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader SRV 390 stainless soft seat safety valve. If your buyer needs paperwork for SRV390-1/2-V-SS-100, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV 390 stainless soft seat safety valve?",
+          "a": "NPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV 390 stainless soft seat safety valve?",
+          "a": "For the Conrader SRV 390 stainless soft seat safety valve: fit upright with no valve between it and the vessel. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV 390 stainless soft seat safety valve differ from its sibling listings?",
+          "a": "The [SRV 250](/p/conrader-srv-250-safety-valve-soft-seat) is the smaller body size, listed separately. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV 390 stainless soft seat safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV 390 stainless soft seat safety valve: the recorded country of origin is United States and the recorded HS code is 8481400000."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV 390 stainless soft seat safety valve in Dubai?",
+          "a": "Yes, the Conrader SRV 390 stainless soft seat safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-530-safety-valve-soft-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV 530 soft seat safety valve used for?",
+          "a": "The Conrader SRV 530 is a stainless steel soft seat safety valve in 1/2 and 3/4 inch sizes with 34 part numbers. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV 530 soft seat safety valve part numbers such as SRV530-3/4-V-SS-100 mean?",
+          "a": "The size is in the number and the last digits are the set pressure: SRV530-3/4-V-SS-100 is 3/4 inch at 100 psi and SRV530-1/2-075 is 1/2 inch at 75 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV 530 soft seat safety valve come in?",
+          "a": "Two sizes, 1/2 and 3/4 inch, with presets from 50 to 300 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV 530 soft seat safety valve?",
+          "a": "Choose the preset at or below the working limit and the size for flow. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV 530 soft seat safety valve have?",
+          "a": "Presets run 50 to 300 psi (about 3 to 21 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV 530 soft seat safety valve made of?",
+          "a": "The body is stainless steel with a Grade 17-7 spring. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV 530 soft seat safety valve come with certificates?",
+          "a": "the Conrader SRV 530 soft seat safety valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for SRV530-3/4-V-SS-100."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV 530 soft seat safety valve?",
+          "a": "For the Conrader SRV 530 soft seat safety valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV 530 soft seat safety valve?",
+          "a": "For the Conrader SRV 530 soft seat safety valve: fit upright with no valve between it and the vessel. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV 530 soft seat safety valve differ from its sibling listings?",
+          "a": "The [SRV 765](/p/conrader-srv-765-safety-valve-soft-seat) is the larger brass body range, listed separately. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV 530 soft seat safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV 530 soft seat safety valve: the recorded country of origin is United States and the recorded HS code is 8481400000."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV 530 soft seat safety valve in Dubai?",
+          "a": "Yes. the Conrader SRV 530 soft seat safety valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-765-safety-valve-soft-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV 765 soft seat safety valve used for?",
+          "a": "The Conrader SRV 765 is a brass soft seat safety valve in 1 and 1 1/4 inch sizes with 22 part numbers, from SRV765-1-050 to -300. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV 765 soft seat safety valve part numbers such as SRV765-114-100 mean?",
+          "a": "The size is in the number and the last digits the set pressure: SRV765-1-100 is 1 inch at 100 psi and SRV765-114-100 is 1 1/4 inch at 100 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV 765 soft seat safety valve come in?",
+          "a": "Two sizes, 1 and 1 1/4 inch, with presets from 50 to 300 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV 765 soft seat safety valve?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: choose the preset at or below the working limit and the size for flow. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV 765 soft seat safety valve have?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: presets run 50 to 300 psi (about 3 to 21 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV 765 soft seat safety valve made of?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: the body is brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV 765 soft seat safety valve come with certificates?",
+          "a": "We hold no certificate data for the Conrader SRV 765 soft seat safety valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for SRV765-114-100 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV 765 soft seat safety valve?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV 765 soft seat safety valve?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: fit upright with no valve between it and the vessel. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV 765 soft seat safety valve differ from its sibling listings?",
+          "a": "The [SRV 530](/p/conrader-srv-530-safety-valve-soft-seat) is the smaller stainless steel range. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV 765 soft seat safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV 765 soft seat safety valve: the recorded country of origin is United States and the recorded HS code is 8481400000."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV 765 soft seat safety valve in Dubai?",
+          "a": "Yes, we stock the Conrader SRV 765 soft seat safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV series stainless safety valve used for?",
+          "a": "Conrader SRV series stainless safety valves are four stainless soft seat valves with flow bands up to 1154 SCFM: SRV250-SS, SRV390-SS, SRV530-12-SS and SRV530-34-SS."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV series stainless safety valve part numbers such as SRV530-34-SS mean?",
+          "a": "SRV250-SS is 1/4 inch (31 to 377 SCFM, 25 to 350 psi), SRV390-SS is 1/2 inch (66 to 534 SCFM), and SRV530-12-SS and SRV530-34-SS are 1/2 and 3/4 inch (143 to 1154 SCFM, 25 to 300 psi)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV series stainless safety valve come in?",
+          "a": "Four valves, 1/4, 1/2 and 3/4 inch inlets. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV series stainless safety valve?",
+          "a": "Choose by set-pressure band and the SCFM capacity. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV series stainless safety valve have?",
+          "a": "Set pressures run 25 to 350 psi (about 2 to 24 bar) with flow bands per size. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV series stainless safety valve made of?",
+          "a": "Materials are not recorded on this listing; the series is stainless steel by name. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV series stainless safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Conrader SRV series stainless safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for SRV530-34-SS, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV series stainless safety valve?",
+          "a": "For the Conrader SRV series stainless safety valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV series stainless safety valve?",
+          "a": "For the Conrader SRV series stainless safety valve: fit upright with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV series stainless safety valve differ from its sibling listings?",
+          "a": "This listing is by body size, while the [SRV soft seat series](/p/conrader-srv-soft-seat-series-safety-valves) listing covers brass sizes up to 1 inch. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV series stainless safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV series stainless safety valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV series stainless safety valve in Dubai?",
+          "a": "Yes. We keep the Conrader SRV series stainless safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-srv-soft-seat-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Conrader SRV soft seat series safety valve used for?",
+          "a": "Conrader SRV soft seat series safety valves are soft seat pop valves from 1/8 to 1 inch with flow bands from 17-118 SCFM to 304-2458 SCFM. The listing has 13 part numbers such as SRV187-14 and SRV765-1."
+        },
+        {
+          "slot": "B",
+          "q": "What do Conrader SRV soft seat series safety valve part numbers such as SRV765-1 mean?",
+          "a": "The digits after SRV give the body: SRV187 is 1/8 and 1/4 inch (17 to 118 SCFM, 25 to 250 psi), SRV390 is 3/8 and 1/2 inch (66 to 534 SCFM), SRV530 is 1/2 and 3/4 inch (143 to 1154 SCFM) and SRV765-1 is 1 inch (304 to 2458 SCFM)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Conrader SRV soft seat series safety valve come in?",
+          "a": "Sizes from 1/8 to 1 inch inlet, with 13 part numbers across the four bodies. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Conrader SRV soft seat series safety valve?",
+          "a": "Choose by the set-pressure band (25 to 300 psi) and the SCFM capacity, then match the inlet size to the vessel port. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Conrader SRV soft seat series safety valve have?",
+          "a": "Set pressures run 25 to 300 psi (about 2 to 21 bar) with flow bands per body. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Conrader SRV soft seat series safety valve made of?",
+          "a": "Materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Conrader SRV soft seat series safety valve come with certificates?",
+          "a": "The listing for the Conrader SRV soft seat series safety valve states no certificates and we do not claim any. Certificate of conformity or origin requests for SRV765-1 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Conrader SRV soft seat series safety valve?",
+          "a": "For the Conrader SRV soft seat series safety valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Conrader SRV soft seat series safety valve?",
+          "a": "For the Conrader SRV soft seat series safety valve: fit upright with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader SRV soft seat series safety valve differ from its sibling listings?",
+          "a": "This listing is the soft seat range by body, and the [SRH hard seat series](/p/conrader-srh-hard-seat-series-safety-valves) is the hard seat equivalent. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader SRV soft seat series safety valve made and which HS code applies?",
+          "a": "For the Conrader SRV soft seat series safety valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Conrader SRV soft seat series safety valve in Dubai?",
+          "a": "Yes, the Conrader SRV soft seat series safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-ez-series-inline-valve-valves-push-pull-handle-3-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker EZ series push/pull inline valve used for?",
+          "a": "Parker EZ series inline valves are 3-way, 2-position push/pull handle valves that shut the supply and vent the downstream air, often used as a lockable isolator. The listing has 5 part numbers: EZ03NB6, EZ04NB6, EZ06NBA, EZ08NBA and EZ0ANBA."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker EZ series push/pull inline valve part numbers such as EZ04NB6 mean?",
+          "a": "The digits after EZ give the port size code: EZ03, EZ04, EZ06, EZ08 and EZ0A, followed by NB6 or NBA. Quote the full number. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker EZ series push/pull inline valve come in?",
+          "a": "Five part numbers, EZ03 to EZ0A, all 3-way 2-position. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker EZ series push/pull inline valve?",
+          "a": "Choose the size to match the line. Our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves) explains isolating and venting. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker EZ series push/pull inline valve have?",
+          "a": "Maker pressure and temperature ratings are not held on this listing, so we do not state any. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker EZ series push/pull inline valve made of?",
+          "a": "For the Parker EZ series push/pull inline valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker EZ series push/pull inline valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Parker EZ series push/pull inline valve. If your buyer needs paperwork for EZ04NB6, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker EZ series push/pull inline valve?",
+          "a": "Use fittings of the port thread from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker EZ series push/pull inline valve?",
+          "a": "Fit in the supply line and use the handle to shut and vent before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker EZ series push/pull inline valve differ from its sibling listings?",
+          "a": "The [Parker LV series](/p/parker-lv-series-inline-valves-push-pull-handle-3-way-2-position) is the same push/pull inline concept in a different body. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker EZ series push/pull inline valve made and which HS code applies?",
+          "a": "For the Parker EZ series push/pull inline valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker EZ series push/pull inline valve in Dubai?",
+          "a": "Yes. the Parker EZ series push/pull inline valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-fc601-push-to-connect-port-lock-out-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker FC601 push-to-connect lock out valve used for?",
+          "a": "Parker FC601 push-to-connect port lock out valves are brass valves that lock off the supply to a cylinder or tube run, with an NBR seal and push-in connection. The listing has 9 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker FC601 push-to-connect lock out valve part numbers such as FC601-8M-6G mean?",
+          "a": "The FC601 code combines the tube size and the port thread, as in FC601-8M-6G, FC601-6M-4G and FC601-6-6. Quote the full number so we can confirm the exact tube and thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker FC601 push-to-connect lock out valve come in?",
+          "a": "Nine part numbers, from FC601-4-4 and FC601-6M-2G up to FC601-12M-8G, covering a range of tube sizes and port threads. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker FC601 push-to-connect lock out valve?",
+          "a": "Choose the tube OD and port thread to match. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker FC601 push-to-connect lock out valve have?",
+          "a": "For the Parker FC601 push-to-connect lock out valve: maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker FC601 push-to-connect lock out valve made of?",
+          "a": "The body is brass with an NBR seal. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker FC601 push-to-connect lock out valve come with certificates?",
+          "a": "the Parker FC601 push-to-connect lock out valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for FC601-8M-6G."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker FC601 push-to-connect lock out valve?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker FC601 push-to-connect lock out valve?",
+          "a": "Fit in the line, lock the valve off and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker FC601 push-to-connect lock out valve differ from its sibling listings?",
+          "a": "The [Parker FC608](/p/parker-fc608-threaded-port-lock-out-valves) has threaded ports instead of push-in. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker FC601 push-to-connect lock out valve made and which HS code applies?",
+          "a": "For the Parker FC601 push-to-connect lock out valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker FC601 push-to-connect lock out valve in Dubai?",
+          "a": "Yes, we stock the Parker FC601 push-to-connect lock out valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-fc608-threaded-port-lock-out-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker FC608 threaded port lock out valve used for?",
+          "a": "Parker FC608 threaded port lock out valves lock off and vent a line through threaded G-thread ports. The listing has 4 part numbers: FC608-4G-2G, FC608-4G-4G, FC608-6G-6G and FC608-8G-8G."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker FC608 threaded port lock out valve part numbers such as FC608-4G-2G mean?",
+          "a": "The FC608 code gives the two port threads, with a G for the thread standard, as in FC608-4G-2G, FC608-4G-4G, FC608-6G-6G and FC608-8G-8G. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker FC608 threaded port lock out valve come in?",
+          "a": "Four part numbers with G-coded threaded ports, from FC608-4G-2G to FC608-8G-8G. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker FC608 threaded port lock out valve?",
+          "a": "Choose the code whose port threads match your pipework, and ask us to confirm the thread sizes. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker FC608 threaded port lock out valve have?",
+          "a": "For the Parker FC608 threaded port lock out valve: maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker FC608 threaded port lock out valve made of?",
+          "a": "For the Parker FC608 threaded port lock out valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker FC608 threaded port lock out valve come with certificates?",
+          "a": "We hold no certificate data for the Parker FC608 threaded port lock out valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for FC608-4G-2G and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker FC608 threaded port lock out valve?",
+          "a": "Use G-thread fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker FC608 threaded port lock out valve?",
+          "a": "Fit in the line, lock the valve off and exhaust the line before service. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker FC608 threaded port lock out valve differ from its sibling listings?",
+          "a": "The [Parker FC601](/p/parker-fc601-push-to-connect-port-lock-out-valves) has push-to-connect ports. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker FC608 threaded port lock out valve made and which HS code applies?",
+          "a": "For the Parker FC608 threaded port lock out valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker FC608 threaded port lock out valve in Dubai?",
+          "a": "Yes. We keep the Parker FC608 threaded port lock out valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-global-modular-combined-soft-start-dump-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global modular combined soft start/dump valve used for?",
+          "a": "Parker Global modular combined soft start/dump valves pressurise a line slowly then dump it when the signal goes, in 1/4 and 1/2 inch sizes. The listing has 5 part numbers from P31TA92PPN to P32TA94SCNA3GN."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global modular combined soft start/dump valve part numbers such as P31TA92PPN mean?",
+          "a": "P31 numbers are 1/4 inch and P32 numbers 1/2 inch; PPN is external air pilot, SGNC and SCNA are solenoid with cable plug, and the pressure range 44-150 or 44-250 psig is in the title."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global modular combined soft start/dump valve come in?",
+          "a": "Two sizes, 1/4 inch (P31) and 1/2 inch (P32). Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global modular combined soft start/dump valve?",
+          "a": "Choose air pilot or solenoid operation and the pressure range. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global modular combined soft start/dump valve have?",
+          "a": "Supply pressure ranges are 44-150 psig and 44-250 psig, about 3 to 10 bar and 3 to 17 bar. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global modular combined soft start/dump valve made of?",
+          "a": "For the Parker Global modular combined soft start/dump valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global modular combined soft start/dump valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Parker Global modular combined soft start/dump valve. Tell us what documents your project needs, such as a certificate of conformity or origin for P31TA92PPN, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global modular combined soft start/dump valve?",
+          "a": "Part of the Global modular range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global modular combined soft start/dump valve?",
+          "a": "Fit ahead of the equipment on the Global modular system. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global modular combined soft start/dump valve differ from its sibling listings?",
+          "a": "The [soft start valve](/p/parker-global-modular-soft-start-valves) and [dump valve](/p/parker-global-modular-dump-valves) do one function each. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global modular combined soft start/dump valve made and which HS code applies?",
+          "a": "For the Parker Global modular combined soft start/dump valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global modular combined soft start/dump valve in Dubai?",
+          "a": "Yes, the Parker Global modular combined soft start/dump valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-global-modular-dump-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global modular dump valve used for?",
+          "a": "Parker Global modular dump valves exhaust the downstream air when the signal is removed, for safe shutdown. The listing has 5 part numbers in 1/4 inch (36 SCFM) and 1/2 inch (97 SCFM)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global modular dump valve part numbers such as P31DA92PPN mean?",
+          "a": "P31 is the 1/4 inch valve at 36 SCFM and P32 the 1/2 inch at 97 SCFM; PPN is external air pilot, SGNC solenoid and SCNA coil. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global modular dump valve come in?",
+          "a": "Two sizes, 1/4 inch (P31 numbers) and 1/2 inch (P32 numbers), five part numbers in all. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global modular dump valve?",
+          "a": "Choose pilot or solenoid operation and the supply range, 44 to 150 or 44 to 250 psig, then the size for the flow you need. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global modular dump valve have?",
+          "a": "Supply pressure is 44 to 250 psig (about 3 to 17 bar) on air pilot types and 44 to 150 psig on solenoid types, with operating temperature 80°C or 50°C on the rows."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global modular dump valve made of?",
+          "a": "For the Parker Global modular dump valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global modular dump valve come with certificates?",
+          "a": "The listing for the Parker Global modular dump valve states no certificates and we do not claim any. Certificate of conformity or origin requests for P31DA92PPN should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global modular dump valve?",
+          "a": "For the Parker Global modular dump valve: part of the Global modular range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global modular dump valve?",
+          "a": "Fit on the Global modular system. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global modular dump valve differ from its sibling listings?",
+          "a": "The [combined valve](/p/parker-global-modular-combined-soft-start-dump-valves) adds soft start. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global modular dump valve made and which HS code applies?",
+          "a": "For the Parker Global modular dump valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global modular dump valve in Dubai?",
+          "a": "Yes. the Parker Global modular dump valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-global-modular-soft-start-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global modular soft start valve used for?",
+          "a": "Parker Global modular soft start valves bring pressure up slowly to the downstream line and then open fully, to stop cylinders and tools lurching on start-up. The listing has 7 part numbers in 1/4 and 1/2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global modular soft start valve part numbers such as P32SA94PPN mean?",
+          "a": "P31 is 1/4 inch at 36 SCFM and P32 is 1/2 inch at 97 SCFM, with PPN external air pilot, SGNC and SCNA solenoid and Y0N internal pilot. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global modular soft start valve come in?",
+          "a": "Two sizes, 1/4 inch (P31 numbers) and 1/2 inch (P32 numbers), in seven part numbers. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global modular soft start valve?",
+          "a": "Choose internal pilot, external pilot or solenoid and the supply range, 44 to 150 or 44 to 250 psig, then the size for your flow. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global modular soft start valve have?",
+          "a": "Supply pressure is 44 to 250 psig (about 3 to 17 bar) on air pilot types and 44 to 150 psig on solenoid types. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global modular soft start valve made of?",
+          "a": "For the Parker Global modular soft start valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global modular soft start valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Parker Global modular soft start valve. If your buyer needs paperwork for P32SA94PPN, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global modular soft start valve?",
+          "a": "For the Parker Global modular soft start valve: part of the Global modular range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global modular soft start valve?",
+          "a": "For the Parker Global modular soft start valve: fit on the Global modular system. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global modular soft start valve differ from its sibling listings?",
+          "a": "The [dump valve](/p/parker-global-modular-dump-valves) exhausts the line; this valve pressurises it slowly. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global modular soft start valve made and which HS code applies?",
+          "a": "For the Parker Global modular soft start valve, country of origin is not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global modular soft start valve in Dubai?",
+          "a": "Yes, we stock the Parker Global modular soft start valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-global-soft-start-dump-valves-p3yt-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global P3YT soft start/dump valve used for?",
+          "a": "Parker Global P3YT soft start/dump valves are high-flow combined valves in 3/4 and 1 inch sizes. The listing has 5 part numbers: P3YTA18PPN, P3YTA16SCNA2CN, P3YTA16SCNB2CN, P3YTA18SCNA2CN and P3YTA18SCNB2CN."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global P3YT soft start/dump valve part numbers such as P3YTA18PPN mean?",
+          "a": "A16 is the 3/4 inch size and A18 the 1 inch, and PPN is the air pilot while SCN is the solenoid version. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global P3YT soft start/dump valve come in?",
+          "a": "Two sizes, 3/4 inch (A16) and 1 inch (A18), in air pilot and solenoid versions. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global P3YT soft start/dump valve?",
+          "a": "Choose air pilot or solenoid operation and the size to suit the flow of your line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global P3YT soft start/dump valve have?",
+          "a": "For the Parker Global P3YT soft start/dump valve: maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global P3YT soft start/dump valve made of?",
+          "a": "For the Parker Global P3YT soft start/dump valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global P3YT soft start/dump valve come with certificates?",
+          "a": "the Parker Global P3YT soft start/dump valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for P3YTA18PPN."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global P3YT soft start/dump valve?",
+          "a": "Part of the Global range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global P3YT soft start/dump valve?",
+          "a": "Fit ahead of the equipment. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global P3YT soft start/dump valve differ from its sibling listings?",
+          "a": "The [P3YS](/p/parker-p3ys-series-global-soft-start-valves-high-flow) is the soft start only version. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global P3YT soft start/dump valve made and which HS code applies?",
+          "a": "For the Parker Global P3YT soft start/dump valve, country of origin is not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global P3YT soft start/dump valve in Dubai?",
+          "a": "Yes. We keep the Parker Global P3YT soft start/dump valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-global-soft-start-valves-p32s-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global P32S compact soft start valve used for?",
+          "a": "Parker Global P32S compact soft start valves are 1/2 inch 2-way soft start valves with 3 part numbers: P32SA14PPN, P32SA14SCNA2CN and P32SA14Y0N."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global P32S compact soft start valve part numbers such as P32SA14PPN mean?",
+          "a": "PPN is external air pilot, SCN is solenoid and Y0N is internal pilot, all on the A14 compact 1/2 inch body. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global P32S compact soft start valve come in?",
+          "a": "One size, 1/2 inch, in compact form, with three operator versions. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global P32S compact soft start valve?",
+          "a": "Choose external pilot, solenoid or internal pilot operation to match your control scheme. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global P32S compact soft start valve have?",
+          "a": "The listing records 44 psi (3 bar) as the lower end of its supply range; ask us for the upper limit. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global P32S compact soft start valve made of?",
+          "a": "For the Parker Global P32S compact soft start valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global P32S compact soft start valve come with certificates?",
+          "a": "We hold no certificate data for the Parker Global P32S compact soft start valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for P32SA14PPN and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global P32S compact soft start valve?",
+          "a": "For the Parker Global P32S compact soft start valve: part of the Global range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global P32S compact soft start valve?",
+          "a": "For the Parker Global P32S compact soft start valve: fit ahead of the equipment. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global P32S compact soft start valve differ from its sibling listings?",
+          "a": "The [Global modular soft start valve](/p/parker-global-modular-soft-start-valves) offers both sizes. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global P32S compact soft start valve made and which HS code applies?",
+          "a": "For the Parker Global P32S compact soft start valve, country of origin is not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global P32S compact soft start valve in Dubai?",
+          "a": "Yes, the Parker Global P32S compact soft start valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-lv-series-inline-valves-push-pull-handle-3-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker LV series push/pull inline valve used for?",
+          "a": "Parker LV series inline valves are 3-way, 2-position push/pull handle valves for shutting off and venting a line. The listing has 6 part numbers: LV3N6B, LV4N6B, LV6NAB, LV6N6B, LVANAB and LV8NAB."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker LV series push/pull inline valve part numbers such as LV4N6B mean?",
+          "a": "The digit after LV gives the size code (3, 4, 6, 8, A) and the letters the port type. Quote the full number. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker LV series push/pull inline valve come in?",
+          "a": "Six part numbers across five size codes. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker LV series push/pull inline valve?",
+          "a": "Choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker LV series push/pull inline valve have?",
+          "a": "For the Parker LV series push/pull inline valve: maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker LV series push/pull inline valve made of?",
+          "a": "For the Parker LV series push/pull inline valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker LV series push/pull inline valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Parker LV series push/pull inline valve. Tell us what documents your project needs, such as a certificate of conformity or origin for LV4N6B, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker LV series push/pull inline valve?",
+          "a": "Use fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker LV series push/pull inline valve?",
+          "a": "Fit in the line and use the handle to isolate and vent before service. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker LV series push/pull inline valve differ from its sibling listings?",
+          "a": "The [Parker EZ series](/p/parker-ez-series-inline-valve-valves-push-pull-handle-3-way-2-position) has the same function in an EZ body. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker LV series push/pull inline valve made and which HS code applies?",
+          "a": "For the Parker LV series push/pull inline valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker LV series push/pull inline valve in Dubai?",
+          "a": "Yes. the Parker LV series push/pull inline valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p3ys-series-global-soft-start-valves-high-flow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Global P3YS high flow soft start valve used for?",
+          "a": "Parker Global P3YS high flow soft start valves bring up pressure slowly on large air lines, in BSPP and NPT threads. The listing has 4 part numbers: P3YSA16Y0N, P3YSA18Y0N, P3YSA96Y0N and P3YSA98Y0N."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Global P3YS high flow soft start valve part numbers such as P3YSA98Y0N mean?",
+          "a": "A16 and A18 are the BSPP versions and A96 and A98 the NPT ones, and all four carry the Y0N internal pilot code. Quote the full number. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Global P3YS high flow soft start valve come in?",
+          "a": "Two body sizes (A16 or A96 and A18 or A98) in two thread types, BSPP and NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Global P3YS high flow soft start valve?",
+          "a": "Choose BSPP or NPT to match your pipework, because BSPP and NPT threads do not mate. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Global P3YS high flow soft start valve have?",
+          "a": "For the Parker Global P3YS high flow soft start valve: maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Global P3YS high flow soft start valve made of?",
+          "a": "For the Parker Global P3YS high flow soft start valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Global P3YS high flow soft start valve come with certificates?",
+          "a": "The listing for the Parker Global P3YS high flow soft start valve states no certificates and we do not claim any. Certificate of conformity or origin requests for P3YSA98Y0N should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Global P3YS high flow soft start valve?",
+          "a": "For the Parker Global P3YS high flow soft start valve: part of the Global range; see our [air preparation shelf](/c/air-preparation-frl). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Global P3YS high flow soft start valve?",
+          "a": "For the Parker Global P3YS high flow soft start valve: fit ahead of the equipment. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Global P3YS high flow soft start valve differ from its sibling listings?",
+          "a": "The [P3YT](/p/parker-global-soft-start-dump-valves-p3yt-series) adds dump function. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Global P3YS high flow soft start valve made and which HS code applies?",
+          "a": "For the Parker Global P3YS high flow soft start valve, country of origin is not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Global P3YS high flow soft start valve in Dubai?",
+          "a": "Yes, we stock the Parker Global P3YS high flow soft start valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

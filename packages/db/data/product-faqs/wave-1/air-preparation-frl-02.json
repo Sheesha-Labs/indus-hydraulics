@@ -1,0 +1,1603 @@
+{
+  "family": "air-preparation-frl-02",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Dixon Filter Elements: grades 5 micron and 40 micron; Dixon Filter/Regulators: ports 1/8\" and 1/4\", rated 125 and 300 psi; Dixon FRL Combinations: ports 1/8\", 1/4\", 1/2\", 1\" and 1 1/2\", rated 150, 200 and 250 psi; Dixon In-Line Lubricators: ports 1/2\", 3/4\" and 1\", flow 70 to 100 scfm, rated 200, 250, 300 and 500 psi; Dixon Mini In-Line Lubricators: ports 1/4\" and 3/8\", flow 22 to 22 scfm, rated 200 psi; Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators: ports 1/8\" and 1/4\", flow 14 to 14 scfm, rated 150 psi; Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators: ports 1/4\", rated 150 and 250 psi; Dixon Series 1 FRLs B73 Series Compact Filters/Regulators: ports 1/4\" and 1/2\", rated 150 and 250 psi; Dixon Series 1 FRLs B74 Series Standard Filters/Regulators: ports 1/2\"; Dixon Series 1 FRLs Filter Elements: grades 5 micron, 25 micron, 40 micron and 50 micron; Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators: ports 3/4\", 1\" and 1 1/2\", flow 160 to 275 scfm; Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators: flow 160 to 275 scfm, rated 250 psi; Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators: ports 1/2\", flow 70 to 70 scfm, rated 150 and 250 psi; Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators: flow 114 to 154 scfm, rated 150 and 250 psi; Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators: flow 118 to 192 scfm, rated 150 and 250 psi; Dixon Series 1 FRLs P1A Series Miniature Combination Units: ports 1/8\" and 1/4\", flow 10 to 14 scfm, rated 150 psi; Dixon Series 1 FRLs Pipe Adapter PTF Connections: ports 1/4\", 3/8\", 1/2\" and 3/4\"; Dixon Series 1 L74 Series Standard Micro-Fog Lubricators: flow 114 to 154 scfm, rated 250 psi.",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Filter Elements used for?",
+          "a": "The Dixon Filter Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 9 part numbers, with 5 micron and 40 micron grades listed. The listing names its use as F17 Series Filters."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Filter Elements listing?",
+          "a": "Examples from the listing are 5311-03 (40 Micron Filter Element), PS403 (Filter) and 5925-03 (5 Micron Filter Element). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Dixon Filter Elements?",
+          "a": "The rows show 5 micron and 40 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Dixon Filter Elements to my filter housing?",
+          "a": "The listing names F17 Series Filters; match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Dixon FRL Combinations](/p/dixon-frl-combinations) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Dixon Filter Elements?",
+          "a": "The working pressure and temperature of the Dixon Filter Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Dixon Filter Elements use?",
+          "a": "Media for the Dixon Filter Elements is described per part number in the size table. The rows also name the grades 5 micron and 40 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Dixon Filter Elements part number?",
+          "a": "Where the Dixon Filter Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Filter Elements fit and what goes with it?",
+          "a": "The Dixon Filter Elements fit the housing named in each row (F17 Series Filters). Replace the bowl seal at the same service so the bowl does not leak. [Dixon FRL Combinations](/p/dixon-frl-combinations) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Dixon Filter Elements?",
+          "a": "Replace the Dixon Filter Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Filter Elements and the Dixon Series 1 FRLs Filter Elements?",
+          "a": "The Dixon Filter Elements and the [Dixon Series 1 FRLs Filter Elements](/p/dixon-series-1-frls-filter-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Filter Elements made and how is it shipped from Dubai?",
+          "a": "The Dixon Filter Elements listing gives China as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Filter Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Filter Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Filter/Regulators do in a compressed-air line?",
+          "a": "The Dixon Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 5 part numbers in 1/8\" and 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are BB3-01AG (1/8\" port, 125 psi, polycarbonate bowl, auto drain), B73G-2AG (1/4\" port, polycarbonate bowl, auto drain) and B74G-3AG-MB (metal bowl). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Filter/Regulators come in?",
+          "a": "The Dixon Filter/Regulators are listed in 1/8\" and 1/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Filter/Regulators part number?",
+          "a": "For the Dixon Filter/Regulators, choose by port size, pressure rating, bowl type and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Filter/Regulators have?",
+          "a": "The Dixon Filter/Regulators rows are rated 125 psi (about 9 bar) and 300 psi (about 21 bar). The listing gives a temperature of 40°F to 125°F. Check whether the Dixon Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon Filter/Regulators?",
+          "a": "On the Dixon Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon Filter/Regulators include a lubricator?",
+          "a": "The Dixon Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Filter/Regulators?",
+          "a": "Connect the Dixon Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon FRL Combinations](/p/dixon-frl-combinations) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Filter/Regulators?",
+          "a": "Drain the Dixon Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Filter/Regulators and the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators?",
+          "a": "The Dixon Filter/Regulators are listed with 1/8\" and 1/4\" ports and ratings of 125 and 300 psi. The [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) are listed with 1/8\" and 1/4\" ports, flow up to 14 scfm and ratings of 150 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Filter/Regulators?",
+          "a": "The Dixon Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Filter/Regulators in Dubai?",
+          "a": "Yes. We keep the Dixon Filter/Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-frl-combinations",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon FRL Combinations used for?",
+          "a": "The Dixon FRL Combinations are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 31 part numbers in 1/8\", 1/4\", 1/2\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon FRL Combinations range and how do they differ?",
+          "a": "Examples from the listing are C08-02M (1/4\" port, 150 psi, polycarbonate bowl), C119-08AMB (1\" port, 250 psi, auto drain) and C18-04MMB (1/2\" port, 250 psi, metal bowl). In these part numbers M marks a manual drain and A an automatic drain, and MB marks the metal-bowl version rated 200 or 250 psi depending on the model, against 150 psi for the transparent bowl. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon FRL Combinations come in?",
+          "a": "The Dixon FRL Combinations are listed in 1/8\", 1/4\", 1/2\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon FRL Combinations part number?",
+          "a": "For the Dixon FRL Combinations, choose by port size, pressure rating, bowl type and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon FRL Combinations have?",
+          "a": "The Dixon FRL Combinations rows are rated 150 psi (about 10 bar), 200 psi (about 14 bar) and 250 psi (about 17 bar). Check whether the Dixon FRL Combinations part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon FRL Combinations?",
+          "a": "On the Dixon FRL Combinations, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Dixon FRL Combinations?",
+          "a": "The Dixon FRL Combinations puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon FRL Combinations?",
+          "a": "Connect the Dixon FRL Combinations to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Filter/Regulators](/p/dixon-filter-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon FRL Combinations?",
+          "a": "Drain the Dixon FRL Combinations bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon FRL Combinations and the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "The Dixon FRL Combinations are listed with 1/8\", 1/4\", 1/2\", 1\" and 1 1/2\" ports and ratings of 150, 200 and 250 psi. The [Dixon Series 1 FRLs P1A Series Miniature Combination Units](/p/dixon-series-1-frls-p1a-series-miniature-combination-units) are listed with 1/8\" and 1/4\" ports, flow up to 14 scfm and ratings of 150 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon FRL Combinations made and how is it shipped from Dubai?",
+          "a": "The Dixon FRL Combinations listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon FRL Combinations available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon FRL Combinations is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-in-line-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon In-Line Lubricators do in a compressed-air line?",
+          "a": "The Dixon In-Line Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 6 part numbers in 1/2\", 3/4\" and 1\" NPT ports. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon In-Line Lubricators range and how do they differ?",
+          "a": "Examples from the listing are PL300 (1/2\" port, 500 psi), PL400L (300 psi) and PL500 (1\" port, 250 psi, 100 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon In-Line Lubricators come in?",
+          "a": "The Dixon In-Line Lubricators are listed in 1/2\", 3/4\" and 1\" NPT ports. Listed flow runs from 70 to 100 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon In-Line Lubricators part number?",
+          "a": "For the Dixon In-Line Lubricators, choose by port size and pressure rating, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon In-Line Lubricators?",
+          "a": "The Dixon In-Line Lubricators rows are rated 200 psi (about 14 bar), 250 psi (about 17 bar), 300 psi (about 21 bar) and 500 psi (about 34 bar). Check whether the Dixon In-Line Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What oil capacities and lubrication does the Dixon In-Line Lubricators range give?",
+          "a": "The listing gives oil capacities from 1.4 fluid oz. to 16.0 fluid oz. across the range, for example 3.7 fluid oz. on PL400 and 11.0 fluid oz. on PL400LWF. Pressure ratings run from 200 to 500 psi by size, so check the row for the part you order."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon In-Line Lubricators have?",
+          "a": "Bowl material of the Dixon In-Line Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon In-Line Lubricators in an air line?",
+          "a": "Fit the Dixon In-Line Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon FRL Combinations](/p/dixon-frl-combinations) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon In-Line Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon In-Line Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon In-Line Lubricators and the Dixon Mini In-Line Lubricators?",
+          "a": "The Dixon In-Line Lubricators are listed with 1/2\", 3/4\" and 1\" ports, flow up to 100 scfm and ratings of 200, 250, 300 and 500 psi. The [Dixon Mini In-Line Lubricators](/p/dixon-mini-in-line-lubricators) are listed with 1/4\" and 3/8\" ports, flow up to 22 scfm and ratings of 200 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon In-Line Lubricators?",
+          "a": "The Dixon In-Line Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon In-Line Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon In-Line Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-mini-in-line-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Mini In-Line Lubricators do in a compressed-air line?",
+          "a": "The Dixon Mini In-Line Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers in 1/4\" and 3/8\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Mini In-Line Lubricators range and how do they differ?",
+          "a": "Examples from the listing are ML200 (1/4\" port, 200 psi, 22 cfm) and ML300M (3/8\" port, 200 psi, 22 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Mini In-Line Lubricators come in?",
+          "a": "The Dixon Mini In-Line Lubricators are listed in 1/4\" and 3/8\" NPT ports. The listed flow is 22 scfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Mini In-Line Lubricators part number?",
+          "a": "For the Dixon Mini In-Line Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Mini In-Line Lubricators?",
+          "a": "The Dixon Mini In-Line Lubricators rows are rated 200 psi (about 14 bar). The listing gives a temperature of 150°F. Check whether the Dixon Mini In-Line Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Mini In-Line Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Mini In-Line Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Mini In-Line Lubricators have?",
+          "a": "Bowl material of the Dixon Mini In-Line Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Mini In-Line Lubricators in an air line?",
+          "a": "Fit the Dixon Mini In-Line Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill and look after the Dixon Mini In-Line Lubricators?",
+          "a": "The listing says these lubricators can be refilled under line pressure, which saves shutting the line down for a top-up. They hold 1/4 fluid oz. of oil, so check the level often and refill with the oil the maker recommends."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Mini In-Line Lubricators and the Dixon In-Line Lubricators?",
+          "a": "The Dixon Mini In-Line Lubricators are listed with 1/4\" and 3/8\" ports, flow up to 22 scfm and ratings of 200 psi. The [Dixon In-Line Lubricators](/p/dixon-in-line-lubricators) are listed with 1/2\", 3/4\" and 1\" ports, flow up to 100 scfm and ratings of 200, 250, 300 and 500 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Mini In-Line Lubricators?",
+          "a": "The Dixon Mini In-Line Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Mini In-Line Lubricators in Dubai?",
+          "a": "Yes. We keep the Dixon Mini In-Line Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-b07-series-miniature-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators used for?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 8 part numbers in 1/8\" and 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B07-202AGC (1/4\" port, 14 cfm), B07-102AG (1/8\" port, 150 psi, polycarbonate bowl, auto drain) and B07-202MG (1/4\" port, 150 psi, polycarbonate bowl, manual drain). In these part numbers the first digit of the three-digit block is the port size (1 is 1/8 inch and 2 is 1/4 inch), AG is the automatic-drain and MG the manual-drain version. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators come in?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators are listed in 1/8\" and 1/4\" NPT ports. The listed flow is 14 scfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators part number?",
+          "a": "For the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators, choose by port size and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators have?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators rows are rated 150 psi (about 10 bar). The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators?",
+          "a": "On the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators include a lubricator?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators?",
+          "a": "Connect the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators?",
+          "a": "Drain the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators differ from the Dixon Series 1 FRLs P1A Series Miniature Combination Units range?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators are filter/regulators, while the [Dixon Series 1 FRLs P1A Series Miniature Combination Units](/p/dixon-series-1-frls-p1a-series-miniature-combination-units) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators are listed with 1/8\" and 1/4\" ports, flow up to 14 scfm and ratings of 150 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators listing gives Mexico as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-b72-series-sub-compact-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators do in a compressed-air line?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 5 part numbers in 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B72G-2AG (1/4\" port, 150 psi, polycarbonate bowl, auto drain), B72G-3AG-MB (250 psi, metal bowl) and B72G-2MG-MB (1/4\" port, 250 psi, metal bowl, manual drain). In these part numbers the digit after the series is the port size (2 is 1/4\"), AG is the automatic-drain and MG the manual-drain version, and MB marks the metal bowl with sight glass. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators come in?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators are listed in 1/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators part number?",
+          "a": "For the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators, choose by pressure rating, bowl type and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators have?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 125°F. Check whether the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators?",
+          "a": "On the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators include a lubricator?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators?",
+          "a": "Connect the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators](/p/dixon-series-1-frls-l73-series-compact-micro-fog-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators?",
+          "a": "Drain the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators differ from the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators range?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators are listed with 1/4\" ports and ratings of 150 and 250 psi. The [Dixon Series 1 FRLs B73 Series Compact Filters/Regulators](/p/dixon-series-1-frls-b73-series-compact-filters-regulators) are listed with 1/4\" and 1/2\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators?",
+          "a": "The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators listing gives Mexico as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-b73-series-compact-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators used for?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 11 part numbers in 1/4\" and 1/2\" NPT ports. Listed materials: bowl: metal."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B73G-2MG-MB (1/4\" port, 250 psi, metal bowl, manual drain), B73G-4AG-MB (1/2\" port, 250 psi, metal bowl) and B73G-3MG (150 psi, polycarbonate bowl, manual drain). In these part numbers the digit after the series is the port size (2 is 1/4\" and 4 is 1/2\"), AG is the automatic-drain and MG the manual-drain version, and MB marks the metal bowl with sight glass. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators come in?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators are listed in 1/4\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs B73 Series Compact Filters/Regulators part number?",
+          "a": "For the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators, choose by port size, pressure rating, bowl type and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators have?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators?",
+          "a": "Specification lines: bowl: metal. On the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators include a lubricator?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators?",
+          "a": "Connect the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators](/p/dixon-series-1-frls-l73-series-compact-micro-fog-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators?",
+          "a": "Drain the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators differ from the Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators range?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators are listed with 1/4\" and 1/2\" ports and ratings of 150 and 250 psi. The [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) are listed with 1/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs B73 Series Compact Filters/Regulators listing gives Mexico as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs B73 Series Compact Filters/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-b74-series-standard-filters-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators used for?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 9 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B74G-3MG-MB (metal bowl, manual drain), B74G-6MG (polycarbonate bowl, manual drain) and B74G-4MG (1/2\" port, polycarbonate bowl, manual drain). In these part numbers the digit after the series is the port size (4 is 1/2\"), AG is the automatic-drain and MG the manual-drain version, and MB marks the metal bowl with sight glass. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators come in?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators are listed in 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs B74 Series Standard Filters/Regulators part number?",
+          "a": "For the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators, choose by bowl type and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators have?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators?",
+          "a": "On the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators include a lubricator?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators?",
+          "a": "Connect the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators](/p/dixon-series-1-frls-l74-series-standard-micro-fog-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators?",
+          "a": "Drain the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators differ from the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators range?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators are listed with 1/2\" ports. The [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) are listed with 1/8\" and 1/4\" ports, flow up to 14 scfm and ratings of 150 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs B74 Series Standard Filters/Regulators listing gives Mexico as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs B74 Series Standard Filters/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-filter-bowl-bowl-guards",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Filter Bowl/Bowl Guards used for?",
+          "a": "The Dixon Series 1 FRLs Filter Bowl/Bowl Guards are replacement bowls for air filters and lubricators, holding the condensate or the oil. This listing has 9 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Filter Bowl/Bowl Guards listing?",
+          "a": "Examples from the listing are 3646-53 (polycarbonate bowl, manual drain), 3646-51 (polycarbonate bowl, auto drain) and 5390-77 (metal bowl). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What bowl types and drain options are in the Dixon Series 1 FRLs Filter Bowl/Bowl Guards listing?",
+          "a": "The rows describe the bowl material and the drain type for each part number. Choose polycarbonate or transparent bowls for visibility and metal bowls with a sight glass where the pressure, temperature or chemical exposure calls for it."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Dixon Series 1 FRLs Filter Bowl/Bowl Guards to my filter or lubricator?",
+          "a": "Match the bowl by the housing series or model on the body and quote that, because a bowl from another range will not seat or seal. A bowl for a filter and a bowl for a lubricator are different parts. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Series 1 FRLs Filter Bowl/Bowl Guards have?",
+          "a": "The rating follows the bowl material and the housing: polycarbonate or transparent bowls are usually rated lower than metal ones, and the figure is set by the maker per series. Quote the housing part number and we confirm the rating from the maker data."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Series 1 FRLs Filter Bowl/Bowl Guards made of?",
+          "a": "The rows describe the bowl as polycarbonate, transparent or metal depending on the part number. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, which is the main reason to choose a metal bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Which drain is fitted to the Dixon Series 1 FRLs Filter Bowl/Bowl Guards?",
+          "a": "The row text states manual, automatic or petcock drain for each part number, so pick the drain that matches how often the bowl will be emptied. An automatic drain removes the daily chore but needs checking that it still dumps."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Series 1 FRLs Filter Bowl/Bowl Guards connect to?",
+          "a": "The Dixon Series 1 FRLs Filter Bowl/Bowl Guards thread or bayonet-fit onto the filter or lubricator body named in the listing. Replace the bowl seal at the same time so the new bowl does not weep. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Dixon Series 1 FRLs Filter Bowl/Bowl Guards?",
+          "a": "Depressurise the line, remove the old bowl and guard, check the seal and the sight glass, and refit the bowl by hand without tools. Clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Series 1 FRLs Filter Bowl/Bowl Guards and the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards?",
+          "a": "The Dixon Series 1 FRLs Filter Bowl/Bowl Guards and the [Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards](/p/dixon-series-1-frls-lubricator-bowl-bowl-guards) are different parts: one is a bowl and the other serves another stage of the air line. Quote the housing model so we match the right part."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs Filter Bowl/Bowl Guards?",
+          "a": "The Dixon Series 1 FRLs Filter Bowl/Bowl Guards listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Series 1 FRLs Filter Bowl/Bowl Guards in Dubai?",
+          "a": "Yes. We keep the Dixon Series 1 FRLs Filter Bowl/Bowl Guards in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Filter Elements used for?",
+          "a": "The Dixon Series 1 FRLs Filter Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 13 part numbers, with 5 micron, 25 micron, 40 micron and 50 micron grades listed. The listing names its use as F18 Series Filters."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Filter Elements listing?",
+          "a": "Examples from the listing are 5882-11 (5 micron), 5882-13 (50 micron) and 4338-05 (40\" port, 40 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Dixon Series 1 FRLs Filter Elements?",
+          "a": "The rows show 5 micron, 25 micron, 40 micron and 50 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Dixon Series 1 FRLs Filter Elements to my filter housing?",
+          "a": "The listing names F18 Series Filters; match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Dixon Series 1 FRLs Filter Elements?",
+          "a": "The working pressure and temperature of the Dixon Series 1 FRLs Filter Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Dixon Series 1 FRLs Filter Elements use?",
+          "a": "Media for the Dixon Series 1 FRLs Filter Elements is described per part number in the size table. The rows also name the grades 5 micron, 25 micron, 40 micron and 50 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Dixon Series 1 FRLs Filter Elements part number?",
+          "a": "Where the Dixon Series 1 FRLs Filter Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Series 1 FRLs Filter Elements fit and what goes with it?",
+          "a": "The Dixon Series 1 FRLs Filter Elements fit the housing named in each row (F18 Series Filters). Replace the bowl seal at the same service so the bowl does not leak. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Dixon Series 1 FRLs Filter Elements?",
+          "a": "Replace the Dixon Series 1 FRLs Filter Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Series 1 FRLs Filter Elements and the Dixon Filter Elements?",
+          "a": "The Dixon Series 1 FRLs Filter Elements and the [Dixon Filter Elements](/p/dixon-filter-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs Filter Elements made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs Filter Elements listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs Filter Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs Filter Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators do in a compressed-air line?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers in 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L17-600A (3/4\" port, 160 cfm), L17-B00A (1 1/2\" port, 275 cfm) and L17-800A (1\" port, 275 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators are listed in 3/4\", 1\" and 1 1/2\" NPT ports. Listed flow runs from 160 to 275 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "How do the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators lubricate?",
+          "a": "The listing says micro-fog lubricators, identified by a red adjusting screw, serve applications with one or more points of lubrication, cylinders and multiple or single tools. These have a metal bowl with sight glass, a 1 qt. reservoir and an oil level sight gauge."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators differ from the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators range?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators are listed with 3/4\", 1\" and 1 1/2\" ports and flow up to 275 scfm. The [Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-oil-fog-lubricators) are listed with flow up to 275 scfm and ratings of 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-l17-series-jumbo-oil-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators used for?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L17-600D (250 psi, 160 cfm) and L17-800D (250 psi, 275 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators are listed by part number, with the port size in each row. Listed flow runs from 160 to 275 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators rows are rated 250 psi (about 17 bar). The listing gives a temperature of 175°F. Check whether the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators differ from the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators range?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators are listed with flow up to 275 scfm and ratings of 250 psi. The [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) are listed with 3/4\", 1\" and 1 1/2\" ports and flow up to 275 scfm. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 FRLs L17 Series Jumbo Oil-Fog Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-l73-series-compact-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators used for?",
+          "a": "The Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 6 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L73M-3MBPX (250 psi), L73M-2MB (250 psi, 70 cfm, metal bowl) and L73M-4 (1/2\" port, 150 psi, 70 cfm, polycarbonate bowl). In these part numbers MB marks the metal-bowl version rated 250 psi, against 150 psi for the transparent bowl. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators are listed in 1/2\" NPT ports. The listed flow is 70 scfm. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators, choose by pressure rating and bowl type, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 175°F. Check whether the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators differ from the Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators range?",
+          "a": "The Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators are listed with 1/2\" ports, flow up to 70 scfm and ratings of 150 and 250 psi. The [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) are listed with 3/4\", 1\" and 1 1/2\" ports and flow up to 275 scfm. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs L73 Series Compact Micro-Fog Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-l74-series-standard-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators do in a compressed-air line?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L74M-3MB (250 psi, 114 cfm, metal bowl), L74M-6 (150 psi, 142 cfm, polycarbonate bowl) and L74M-4MB (250 psi, 154 cfm, metal bowl). In these part numbers MB marks the metal-bowl version rated 250 psi, against 150 psi for the transparent bowl. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators are listed by part number, with the port size in each row. Listed flow runs from 114 to 154 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators, choose by pressure rating and bowl type, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 175°F. Check whether the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B74 Series Standard Filters/Regulators](/p/dixon-series-1-frls-b74-series-standard-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators differ from the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators range?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators are listed with flow up to 154 scfm and ratings of 150 and 250 psi. The [Dixon Series 1 L74 Series Standard Micro-Fog Lubricators](/p/dixon-series-1-l74-series-standard-micro-fog-lubricators) are listed with flow up to 154 scfm and ratings of 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-l74-series-standard-oil-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators used for?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 8 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L74C-3MB (250 psi, 118 cfm, metal bowl), L74C-6 (150 psi, 186 cfm, polycarbonate bowl) and L74C-4MB (250 psi, 192 cfm, metal bowl). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators are listed by part number, with the port size in each row. Listed flow runs from 118 to 192 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators, choose by pressure rating and bowl type, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B74 Series Standard Filters/Regulators](/p/dixon-series-1-frls-b74-series-standard-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators compare with its neighbouring range?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators are listed with flow up to 192 scfm and ratings of 150 and 250 psi. The [Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators](/p/dixon-series-1-frls-l74-series-standard-micro-fog-lubricators) are listed with flow up to 154 scfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators in Dubai?",
+          "a": "Yes. We keep the Dixon Series 1 FRLs L74 Series Standard Oil-Fog Lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-lubricator-bowl-bowl-guards",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards used for?",
+          "a": "The Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards are replacement bowls for air filters and lubricators, holding the condensate or the oil. This listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards listing?",
+          "a": "Examples from the listing are 3646-54 (Polycarbonate Bowl, With Drain), 4425-50RL (Transparent Bowl with Manual Drain) and 4303-77R (Frl Lubricator Bowl/Bowl Guard). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What bowl types and drain options are in the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards listing?",
+          "a": "The rows describe the bowl material and the drain type for each part number. Choose polycarbonate or transparent bowls for visibility and metal bowls with a sight glass where the pressure, temperature or chemical exposure calls for it."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards to my filter or lubricator?",
+          "a": "Match the bowl by the housing series or model on the body and quote that, because a bowl from another range will not seat or seal. A bowl for a filter and a bowl for a lubricator are different parts. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards have?",
+          "a": "The rating follows the bowl material and the housing: polycarbonate or transparent bowls are usually rated lower than metal ones, and the figure is set by the maker per series. Quote the housing part number and we confirm the rating from the maker data."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards made of?",
+          "a": "The rows describe the bowl as polycarbonate, transparent or metal depending on the part number. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, which is the main reason to choose a metal bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Which drain is fitted to the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards?",
+          "a": "The row text states manual, automatic or petcock drain for each part number, so pick the drain that matches how often the bowl will be emptied. An automatic drain removes the daily chore but needs checking that it still dumps."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards connect to?",
+          "a": "The Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards thread or bayonet-fit onto the filter or lubricator body named in the listing. Replace the bowl seal at the same time so the new bowl does not weep. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards?",
+          "a": "Depressurise the line, remove the old bowl and guard, check the seal and the sight glass, and refit the bowl by hand without tools. Clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards and the Dixon Series 1 FRLs Filter Bowl/Bowl Guards?",
+          "a": "The Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards and the [Dixon Series 1 FRLs Filter Bowl/Bowl Guards](/p/dixon-series-1-frls-filter-bowl-bowl-guards) are different parts: one is a bowl and the other serves another stage of the air line. Quote the housing model so we match the right part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards in Dubai?",
+          "a": "Yes. We keep the Dixon Series 1 FRLs Lubricator Bowl/Bowl Guards in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-lubricator-seal-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Lubricator Seal Kits used for?",
+          "a": "The Dixon Series 1 FRLs Lubricator Seal Kits are service kits that replace worn seals, diaphragms or valve parts so the regulator or lubricator works as new. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Lubricator Seal Kits listing?",
+          "a": "Examples from the listing are 5771-02 (O-Ring Seal and Gasket Kit). Each row names the model it is used on, so quote the model printed on your regulator or lubricator."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right kit from the Dixon Series 1 FRLs Lubricator Seal Kits?",
+          "a": "Pick by the model named in each row, for example the R or L series number on the body. A kit for one series will not fit another, so the model matters more than the port size. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are covered by the Dixon Series 1 FRLs Lubricator Seal Kits listing?",
+          "a": "The rows name the models each kit is used on, so read the 'used on' text for the part number you need. If your model is not named, send us the nameplate and we check with the maker data."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Series 1 FRLs Lubricator Seal Kits have?",
+          "a": "The kit restores the original unit, so the working pressure is still set by the regulator or lubricator body, not by the kit. Quote the unit model and we confirm its rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is in the Dixon Series 1 FRLs Lubricator Seal Kits?",
+          "a": "The listing describes the contents as o-rings, seals, and gaskets. Seals are normally nitrile or similar elastomers, so check the oil and media compatibility if you use anything unusual in the air line."
+        },
+        {
+          "slot": "G",
+          "q": "When is a kit better than replacing the unit when using the Dixon Series 1 FRLs Lubricator Seal Kits?",
+          "a": "A kit is the cheaper route when the body, threads and adjusting parts are sound and only the diaphragm, seal or valve has worn. Replace the whole unit when the body is cracked or the threads are damaged."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon Series 1 FRLs Lubricator Seal Kits fit?",
+          "a": "The Dixon Series 1 FRLs Lubricator Seal Kits fit the regulator or lubricator models named in each row. Replace the bowl seal and gaskets in the same service. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Series 1 FRLs Lubricator Seal Kits?",
+          "a": "Depressurise the line, remove the unit or the bonnet as the model requires, replace the parts in the kit, lightly lubricate the seals with a compatible grease, and refit. Check the regulator holds its set pressure and the lubricator feeds before returning it to service."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Series 1 FRLs Lubricator Seal Kits and the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits?",
+          "a": "The Dixon Series 1 FRLs Lubricator Seal Kits and the [Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits](/p/dixon-series-1-frls-regulator-diaphragm-relieving-kits) are different service kits for different parts of the FRL line. Match the kit to the model named in the row."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs Lubricator Seal Kits made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs Lubricator Seal Kits listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 FRLs Lubricator Seal Kits available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 FRLs Lubricator Seal Kits is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-p1a-series-miniature-combination-units",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Dixon Series 1 FRLs P1A Series Miniature Combination Units do in a compressed-air line?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 3 part numbers in 1/8\" and 1/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs P1A Series Miniature Combination Units range and how do they differ?",
+          "a": "Examples from the listing are P1A-100M (1/8\" port, 150 psi, 10 cfm, manual drain), P1A-200M (1/4\" port, 150 psi, 14 cfm, manual drain) and P1A-200A (1/4\" port, 150 psi, 14 cfm, auto drain). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 FRLs P1A Series Miniature Combination Units come in?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units are listed in 1/8\" and 1/4\" NPT ports. Listed flow runs from 10 to 14 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 FRLs P1A Series Miniature Combination Units part number?",
+          "a": "For the Dixon Series 1 FRLs P1A Series Miniature Combination Units, choose by port size and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Dixon Series 1 FRLs P1A Series Miniature Combination Units have?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units rows are rated 150 psi (about 10 bar). Check whether the Dixon Series 1 FRLs P1A Series Miniature Combination Units part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "On the Dixon Series 1 FRLs P1A Series Miniature Combination Units, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "Connect the Dixon Series 1 FRLs P1A Series Miniature Combination Units to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Dixon Series 1 FRLs B73 Series Compact Filters/Regulators](/p/dixon-series-1-frls-b73-series-compact-filters-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "Drain the Dixon Series 1 FRLs P1A Series Miniature Combination Units bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 FRLs P1A Series Miniature Combination Units differ from the Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators range?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units are filter/regulator/lubricator (FRL) units, while the [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) are filter/regulators. They do different jobs in the same air line and are often fitted together; the Dixon Series 1 FRLs P1A Series Miniature Combination Units are listed with 1/8\" and 1/4\" ports, flow up to 14 scfm and ratings of 150 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs P1A Series Miniature Combination Units?",
+          "a": "The Dixon Series 1 FRLs P1A Series Miniature Combination Units listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs P1A Series Miniature Combination Units ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs P1A Series Miniature Combination Units in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-pipe-adapter-ptf-connections",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Pipe Adapter PTF Connections used for?",
+          "a": "The Dixon Series 1 FRLs Pipe Adapter PTF Connections are pipe adapters that give a modular air preparation unit threaded pipe ports so it can be piped into the line. This listing has 6 part numbers in 1/4\", 3/8\", 1/2\" and 3/4\" PTF ports. The listing names its use as R73, R74, L73, L74, F73, And F74 Regulators."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Pipe Adapter PTF Connections listing?",
+          "a": "Examples from the listing are 4315-03 (1/2\" port), 4315-01 (1/4\" port) and 4315-02 (3/8\" port). Quote the unit model and the pipe size and we confirm the adapter."
+        },
+        {
+          "slot": "D",
+          "q": "Which pipe sizes do the Dixon Series 1 FRLs Pipe Adapter PTF Connections come in?",
+          "a": "The rows list 1/4\", 3/8\", 1/2\" and 3/4\" PTF adapters. Match the adapter to the pipe size of your line and to the modular unit series it is listed for."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right adapter from the Dixon Series 1 FRLs Pipe Adapter PTF Connections?",
+          "a": "Choose by the series of the filter, regulator or lubricator and by the pipe size, because the adapter bolts to that body. Two adapters per unit are needed for the inlet and the outlet. [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can the Dixon Series 1 FRLs Pipe Adapter PTF Connections take?",
+          "a": "The adapter sits in the same air path as the unit, so the working pressure is set by the filter, regulator or lubricator body, not by the adapter. Quote the unit model and we confirm its rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Dixon Series 1 FRLs Pipe Adapter PTF Connections made from?",
+          "a": "The listing gives the material per part number. Aluminum adapters suit compressed air and are light, but check compatibility if the air carries aggressive condensate."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do the Dixon Series 1 FRLs Pipe Adapter PTF Connections use?",
+          "a": "The listing names these as PTF connections, the Dryseal pipe thread form, for the R73, R74, L73, L74, F73 and F74 units. Check the thread form on the pipe you are connecting before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon Series 1 FRLs Pipe Adapter PTF Connections connect to?",
+          "a": "Each adapter fits between the modular body and the pipe, for the unit series named in the listing. Our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) has the fittings and silencers for the rest of the circuit. [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Series 1 FRLs Pipe Adapter PTF Connections?",
+          "a": "Fit the adapter to the unit with its seal in place, then thread the pipe into the adapter using thread sealant suitable for compressed air. Support the pipe so its weight does not load the unit body."
+        },
+        {
+          "slot": "K",
+          "q": "Do I need pipe adapters like the Dixon Series 1 FRLs Pipe Adapter PTF Connections or can the unit be mounted directly?",
+          "a": "Units that have threaded ports of their own do not need adapters, while modular bodies need them to take pipe. Check the listing of the unit you are buying."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Dixon Series 1 FRLs Pipe Adapter PTF Connections?",
+          "a": "The Dixon Series 1 FRLs Pipe Adapter PTF Connections listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Series 1 FRLs Pipe Adapter PTF Connections in Dubai?",
+          "a": "Yes. We keep the Dixon Series 1 FRLs Pipe Adapter PTF Connections in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-regulator-diaphragm-relieving-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits used for?",
+          "a": "The Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits are service kits that replace worn seals, diaphragms or valve parts so the regulator or lubricator works as new. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits listing?",
+          "a": "Examples from the listing are 3407-02 (Relieving Diaphragm Kit) and 5298-14 (Frl Regulator Diaphragm Relieving Kit). Each row names the model it is used on, so quote the model printed on your regulator or lubricator."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right kit from the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits?",
+          "a": "Pick by the model named in each row, for example the R or L series number on the body. A kit for one series will not fit another, so the model matters more than the port size. [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are covered by the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits listing?",
+          "a": "The rows name the models each kit is used on, so read the 'used on' text for the part number you need. If your model is not named, send us the nameplate and we check with the maker data."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits have?",
+          "a": "The kit restores the original unit, so the working pressure is still set by the regulator or lubricator body, not by the kit. Quote the unit model and we confirm its rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is in the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits?",
+          "a": "The listing describes each kit by what it replaces, such as a relieving diaphragm and valve parts or the seals and gaskets of a lubricator. Seals are normally nitrile or similar elastomers, so check the oil and media compatibility if you use anything unusual in the air line."
+        },
+        {
+          "slot": "G",
+          "q": "When is a kit better than replacing the unit when using the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits?",
+          "a": "A kit is the cheaper route when the body, threads and adjusting parts are sound and only the diaphragm, seal or valve has worn. Replace the whole unit when the body is cracked or the threads are damaged."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits fit?",
+          "a": "The Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits fit the regulator or lubricator models named in each row. Replace the bowl seal and gaskets in the same service. [Dixon Series 1 FRLs B72 Series Sub-Compact Filters/Regulators](/p/dixon-series-1-frls-b72-series-sub-compact-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits?",
+          "a": "Depressurise the line, remove the unit or the bonnet as the model requires, replace the parts in the kit, lightly lubricate the seals with a compatible grease, and refit. Check the regulator holds its set pressure and the lubricator feeds before returning it to service."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits and the Dixon Series 1 FRLs Lubricator Seal Kits?",
+          "a": "The Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits and the [Dixon Series 1 FRLs Lubricator Seal Kits](/p/dixon-series-1-frls-lubricator-seal-kits) are different service kits for different parts of the FRL line. Match the kit to the model named in the row."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-frls-regulator-panel-nuts",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 FRLs Regulator Panel Nuts used for?",
+          "a": "The Dixon Series 1 FRLs Regulator Panel Nuts are panel nuts that hold a regulator in a panel cut-out so the knob and gauge sit on the front of the panel. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 FRLs Regulator Panel Nuts listing?",
+          "a": "Examples from the listing are 2962-89 (Plastic Panel Nut), 4248-89 (Frl Regulator Panel Nut, Plastic) and 5226-97 (Frl Regulator Panel Nut, Metal). Quote the regulator model and we confirm which panel nut fits."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right panel nut from the Dixon Series 1 FRLs Regulator Panel Nuts?",
+          "a": "Pick by the regulator series the nut is listed for and by the material you want, metal or plastic. A nut for one series will not thread onto another. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "D",
+          "q": "What materials are the Dixon Series 1 FRLs Regulator Panel Nuts made from?",
+          "a": "The listing shows plastic, zinc and metal versions. Zinc and metal nuts are stronger under repeated tightening, while plastic nuts are lighter and do not corrode."
+        },
+        {
+          "slot": "E",
+          "q": "What load can the Dixon Series 1 FRLs Regulator Panel Nuts carry?",
+          "a": "The listing gives no load or torque figure for the panel nuts, and the regulator weight is light, so they only need to hold it in the panel. Quote the regulator model if you need the maker's tightening guidance."
+        },
+        {
+          "slot": "F",
+          "q": "Do the Dixon Series 1 FRLs Regulator Panel Nuts corrode in damp or coastal air?",
+          "a": "Plastic panel nuts do not corrode, and zinc ones can show white corrosion in damp or salt-laden air. Choose plastic for coastal plants unless the nut needs the strength of metal."
+        },
+        {
+          "slot": "G",
+          "q": "Does a panel nut come with the regulator when using the Dixon Series 1 FRLs Regulator Panel Nuts?",
+          "a": "Many regulators are supplied with a panel nut and some part-number rows say 'included panel nut', but a replacement or a second nut is sold separately. Check the row text for the regulator you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon Series 1 FRLs Regulator Panel Nuts fit?",
+          "a": "The panel nuts fit the regulator bonnet threads of the series named in each row. Use them with the regulator and gauge ports in the same range. [Dixon Series 1 FRLs B07 Series Miniature Filters/Regulators](/p/dixon-series-1-frls-b07-series-miniature-filters-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and tighten the Dixon Series 1 FRLs Regulator Panel Nuts?",
+          "a": "Pass the regulator bonnet through the panel cut-out, thread the nut on from the back and tighten by hand or with light tool pressure. Over-tightening a plastic nut can strip it, so stop when the regulator is firm."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a zinc or a plastic nut from the Dixon Series 1 FRLs Regulator Panel Nuts?",
+          "a": "Choose zinc for strength and plastic for corrosion resistance and light weight. The rows state which material each part number is."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 FRLs Regulator Panel Nuts made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 FRLs Regulator Panel Nuts listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Series 1 FRLs Regulator Panel Nuts in Dubai?",
+          "a": "Yes. We keep the Dixon Series 1 FRLs Regulator Panel Nuts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-series-1-l74-series-standard-micro-fog-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators used for?",
+          "a": "The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators range and how do they differ?",
+          "a": "Examples from the listing are L74M-3MBPX (250 psi, 114 cfm), L74M-6MBPX (250 psi, 142 cfm) and L74M-4MBPX (250 psi, 154 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators come in?",
+          "a": "The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators are listed by part number, with the port size in each row. Listed flow runs from 114 to 154 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon Series 1 L74 Series Standard Micro-Fog Lubricators part number?",
+          "a": "For the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators?",
+          "a": "The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators rows are rated 250 psi (about 17 bar). The listing gives a temperature of 175°F. The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators give, and which oil does it use?",
+          "a": "Check the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators have?",
+          "a": "Bowl material of the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators in an air line?",
+          "a": "Fit the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Dixon Series 1 FRLs B74 Series Standard Filters/Regulators](/p/dixon-series-1-frls-b74-series-standard-filters-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators differ from the Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators range?",
+          "a": "The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators are listed with flow up to 154 scfm and ratings of 250 psi. The [Dixon Series 1 FRLs L74 Series Standard Micro-Fog Lubricators](/p/dixon-series-1-frls-l74-series-standard-micro-fog-lubricators) are listed with flow up to 154 scfm and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators made and how is it shipped from Dubai?",
+          "a": "The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Dixon Series 1 L74 Series Standard Micro-Fog Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Dixon Series 1 L74 Series Standard Micro-Fog Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-watts-frl-regulator-diaphragm-relieving-kit-and-valve-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies used for?",
+          "a": "The Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies are service kits that replace worn seals, diaphragms or valve parts so the regulator or lubricator works as new. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies listing?",
+          "a": "Examples from the listing are RKR10Y (Watts Frl Regulator Diaphragm Relieving Kit And Valve Assembly). Each row names the model it is used on, so quote the model printed on your regulator or lubricator."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right kit from the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies?",
+          "a": "Pick by the model named in each row, for example the R or L series number on the body. A kit for one series will not fit another, so the model matters more than the port size. [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are covered by the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies listing?",
+          "a": "The rows name the models each kit is used on, so read the 'used on' text for the part number you need. If your model is not named, send us the nameplate and we check with the maker data."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies have?",
+          "a": "The kit restores the original unit, so the working pressure is still set by the regulator or lubricator body, not by the kit. Quote the unit model and we confirm its rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is in the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies?",
+          "a": "The listing describes each kit by what it replaces, such as a relieving diaphragm and valve parts or the seals and gaskets of a lubricator. Seals are normally nitrile or similar elastomers, so check the oil and media compatibility if you use anything unusual in the air line."
+        },
+        {
+          "slot": "G",
+          "q": "When is a kit better than replacing the unit when using the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies?",
+          "a": "A kit is the cheaper route when the body, threads and adjusting parts are sound and only the diaphragm, seal or valve has worn. Replace the whole unit when the body is cracked or the threads are damaged."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies fit?",
+          "a": "The Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies fit the regulator or lubricator models named in each row. Replace the bowl seal and gaskets in the same service. [Dixon Series 1 FRLs L17 Series Jumbo Micro-Fog Lubricators](/p/dixon-series-1-frls-l17-series-jumbo-micro-fog-lubricators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies?",
+          "a": "Depressurise the line, remove the unit or the bonnet as the model requires, replace the parts in the kit, lightly lubricate the seals with a compatible grease, and refit. Check the regulator holds its set pressure and the lubricator feeds before returning it to service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies differ from a related range?",
+          "a": "The Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies and the [Dixon Series 1 FRLs Regulator Diaphragm Relieving Kits](/p/dixon-series-1-frls-regulator-diaphragm-relieving-kits) are different service kits for different parts of the FRL line. Match the kit to the model named in the row."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies made and how is it shipped from Dubai?",
+          "a": "The Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies in Dubai?",
+          "a": "Yes. We keep the Dixon Watts FRL Regulator Diaphragms, Relieving Kits and Valve Assemblies in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

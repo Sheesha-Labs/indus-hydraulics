@@ -1,0 +1,1460 @@
+{
+  "family": "jic-adapters-03",
+  "extraFacts": [
+    {
+      "fact": "SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port.",
+      "source": "SAE J514 (Hydraulic Tube Fittings)"
+    },
+    {
+      "fact": "ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare.",
+      "source": "ISO 8434-2 (Metallic tube connections for fluid power, Part 2: 37° flared connections)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-elbow-jic-male-74-cone-bulkhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow JIC Male 74° Cone Bulkhead and where is it used?",
+          "a": "The 45° Elbow JIC Male 74° Cone Bulkhead is an Indus 45° elbow adapter with a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) end and a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 9 sizes, -04 to -20."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-040-04LN mean for the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "IH-AD-JIC-040-04LN is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the 45° Elbow JIC Male 74° Cone Bulkhead range. The size table lists every number with its connections. IH-AD-JIC-040-24LN is listed as \"1-7/8\"X12\"."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The size table lists a Tompkins cross-reference for 9 of the 9 sizes of the 45° Elbow JIC Male 74° Cone Bulkhead. Examples: IH-AD-JIC-040-04LN against Tompkins 2702-04-04; IH-AD-JIC-040-10LN against Tompkins 2702-10-10; IH-AD-JIC-040-24LN against Tompkins 2702-24-24. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 45° Elbow JIC Male 74° Cone Bulkhead cover?",
+          "a": "The 45° Elbow JIC Male 74° Cone Bulkhead is listed in 9 part numbers, -04 to -20. Examples: IH-AD-JIC-040-04LN (7/16\"X20 x 7/16\"X20); IH-AD-JIC-040-08LN (3/4\"X16 x 3/4\"X16); IH-AD-JIC-040-12LN (1-1/16\"X12 x 1-1/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "Choose the 45° Elbow JIC Male 74° Cone Bulkhead by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) and male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12). Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [90° Elbow JIC Male 74° Cone Bulkhead](/p/90-elbow-jic-male-74-cone-bulkhead)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The maker states up to 345 bar (5,004 psi), manufacturer stated for the 45° Elbow JIC Male 74° Cone Bulkhead. The size table gives the figure per size, from 170 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° Elbow JIC Male 74° Cone Bulkhead have?",
+          "a": "The material shown for the 45° Elbow JIC Male 74° Cone Bulkhead is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow JIC Male 74° Cone Bulkhead follow?",
+          "a": "The 45° Elbow JIC Male 74° Cone Bulkhead is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The 45° Elbow JIC Male 74° Cone Bulkhead connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 45° Elbow JIC Male 74° Cone Bulkhead without leaks?",
+          "a": "For the 45° Elbow JIC Male 74° Cone Bulkhead: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The country of origin of the 45° Elbow JIC Male 74° Cone Bulkhead is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Elbow JIC Male 74° Cone Bulkhead in Dubai?",
+          "a": "Yes, the 45° Elbow JIC Male 74° Cone Bulkhead is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "45-elbow-jic-male-74-cone-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the 45° Elbow JIC Male 74° Cone × NPT Male do in a hydraulic line?",
+          "a": "The 45° Elbow JIC Male 74° Cone × NPT Male is an Indus 45° elbow adapter with a male JIC 37° cone (UN/UNF 7/16-20 to 1.7/8-12) end and a male NPT 1/8-27 to 1.1/2-11.5 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 32 sizes, -04 to -24."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-041-0402 on the 45° Elbow JIC Male 74° Cone × NPT Male?",
+          "a": "IH-AD-JIC-041-0402 is the 45° Elbow JIC Male 74° Cone × NPT Male with 7/16\"X20 and NPT1/8\"X27. After the series code the size figures follow the order of the ends, so IH-AD-JIC-041-0302 is 3/8\"X24 and NPT1/8\"X27. IH-AD-JIC-041-04 carries a single size figure and is listed with 7/16\"X20 and NPT1/4\"X18. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 45° Elbow JIC Male 74° Cone × NPT Male?",
+          "a": "The size table lists a Tompkins cross-reference for 31 of the 32 sizes of the 45° Elbow JIC Male 74° Cone × NPT Male. Examples: IH-AD-JIC-041-0402 against Tompkins 2503-04-02; IH-AD-JIC-041-1012 against Tompkins 2503-10-12; IH-AD-JIC-041-02 against Tompkins 2503-02-02. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° Elbow JIC Male 74° Cone × NPT Male do you list?",
+          "a": "The 45° Elbow JIC Male 74° Cone × NPT Male is listed in 32 part numbers, -04 to -24. Examples: IH-AD-JIC-041-0402 (7/16\"X20 x NPT1/8\"X27); IH-AD-JIC-041-0804 (3/4\"X16 x NPT1/4\"X18); IH-AD-JIC-041-16 (1-5/16\"X12 x NPT1\"X11.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 45° Elbow JIC Male 74° Cone × NPT Male to my port or hose?",
+          "a": "Choose the 45° Elbow JIC Male 74° Cone × NPT Male by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° cone (UN/UNF 7/16-20 to 1.7/8-12) and male NPT 1/8-27 to 1.1/2-11.5. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [45° JIC Male 74° Cone](/p/45-jic-male-74-cone)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Elbow JIC Male 74° Cone × NPT Male?",
+          "a": "The maker states up to 345 bar (5,004 psi), manufacturer stated for the 45° Elbow JIC Male 74° Cone × NPT Male. The size table gives the figure per size, from 70 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Elbow JIC Male 74° Cone × NPT Male made from, and is stainless available?",
+          "a": "The material shown for the 45° Elbow JIC Male 74° Cone × NPT Male is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow JIC Male 74° Cone × NPT Male follow?",
+          "a": "The 45° Elbow JIC Male 74° Cone × NPT Male is listed against SAE J514, ISO 8434-2, ASME B1.20.1. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° Elbow JIC Male 74° Cone × NPT Male connect to?",
+          "a": "The 45° Elbow JIC Male 74° Cone × NPT Male connects to a female JIC 37° flare end of the same size on one end and a female NPT/NPTF pipe thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 45° Elbow JIC Male 74° Cone × NPT Male without leaks?",
+          "a": "For the 45° Elbow JIC Male 74° Cone × NPT Male: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. NPT and NPTF are taper threads that seal on the thread, so do not over-tighten them. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Elbow JIC Male 74° Cone × NPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Elbow JIC Male 74° Cone × NPT Male is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° Elbow JIC Male 74° Cone × NPT Male available from stock in the UAE?",
+          "a": "Yes, the 45° Elbow JIC Male 74° Cone × NPT Male is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "45-elbow-m-jic-x-m-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Elbow m JIC X m BSPT used for?",
+          "a": "The 45° Elbow m JIC X m BSPT is an Indus 45° elbow adapter with a male JIC 37° UN/UNF end and a male BSPT R1/8 to R2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 11 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9064-04-02 on the 45° Elbow m JIC X m BSPT?",
+          "a": "IH-ST-9064-04-02 is the 45° Elbow m JIC X m BSPT with 1/4\" JIC 37° male (7/16-20) and 1/8\" BSPT male (R1/8-28). After the series code the size figures follow the order of the ends, so IH-ST-9064-16-12 is 1\" JIC 37° male (1-5/16-12) and 3/4\" BSPT male (R3/4-14). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° Elbow m JIC X m BSPT do you list?",
+          "a": "The 45° Elbow m JIC X m BSPT is listed in 11 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-ST-9064-04-02 (1/4\" JIC 37° male (7/16-20) x 1/8\" BSPT male (R1/8-28)); IH-ST-9064-06-06 (3/8\" JIC 37° male (9/16-18) x 3/8\" BSPT male (R3/8-19)); IH-ST-9064-12-12 (3/4\" JIC 37° male (1-1/16-12) x 3/4\" BSPT male (R3/4-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 45° Elbow m JIC X m BSPT for my line?",
+          "a": "Choose the 45° Elbow m JIC X m BSPT by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male BSPT R1/8 to R2. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Elbow m JIC X m BSPT?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 45° Elbow m JIC X m BSPT. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Elbow m JIC X m BSPT made from, and is stainless available?",
+          "a": "The material shown for the 45° Elbow m JIC X m BSPT is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Elbow m JIC X m BSPT follow?",
+          "a": "The 45° Elbow m JIC X m BSPT is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Elbow m JIC X m BSPT?",
+          "a": "The 45° Elbow m JIC X m BSPT connects to a female JIC 37° flare end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 45° Elbow m JIC X m BSPT?",
+          "a": "For the 45° Elbow m JIC X m BSPT: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° Elbow m JIC X m BSPT?",
+          "a": "The country of origin of the 45° Elbow m JIC X m BSPT is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 45° Elbow m JIC X m BSPT from stock in Dubai?",
+          "a": "Yes, the 45° Elbow m JIC X m BSPT is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "45-female-swivel-connector-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Female Swivel Connector JIC and where is it used?",
+          "a": "The 45° Female Swivel Connector JIC is an Indus straight adapter with a female swivel JIC 37° UN/UNF end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. Sizes run -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to quote to order the 45° Female Swivel Connector JIC?",
+          "a": "To order the 45° Female Swivel Connector JIC, quote the size and thread on each end (-04 to -32 (1/4\" to 2\")) and tell us whether you need carbon steel or stainless. Engineering confirms the part number against your equipment before supply, so a photo or the mating port is enough to start."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Female Swivel Connector JIC differ from the 45° Swivel Connector m JIC X f JIC?",
+          "a": "The 45° Female Swivel Connector JIC and the [45° Swivel Connector m JIC X f JIC](/p/45-swivel-connector-m-jic-x-f-jic) differ in their end connections. The 45° Female Swivel Connector JIC has female swivel JIC 37° UN/UNF; the other has male JIC 37° UN/UNF and female swivel JIC 37° UN/UNF. Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° Female Swivel Connector JIC come in?",
+          "a": "The 45° Female Swivel Connector JIC covers -04 to -32 (1/4\" to 2\"). Send the thread on each end and the size you need, and we confirm the exact part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 45° Female Swivel Connector JIC for my line?",
+          "a": "Choose the 45° Female Swivel Connector JIC by the thread and seat on each end, not by the hose or tube size alone: here that is female swivel JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Female Swivel Connector JIC?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 45° Female Swivel Connector JIC. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Female Swivel Connector JIC made from, and is stainless available?",
+          "a": "The material shown for the 45° Female Swivel Connector JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Female Swivel Connector JIC follow?",
+          "a": "The 45° Female Swivel Connector JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Female Swivel Connector JIC?",
+          "a": "The 45° Female Swivel Connector JIC connects to a male JIC 37° flare end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 45° Female Swivel Connector JIC?",
+          "a": "For the 45° Female Swivel Connector JIC: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° Female Swivel Connector JIC?",
+          "a": "The country of origin of the 45° Female Swivel Connector JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Female Swivel Connector JIC in Dubai?",
+          "a": "Yes. We keep the 45° Female Swivel Connector JIC in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-jic-male-74-cone",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° JIC Male 74° Cone used for?",
+          "a": "The 45° JIC Male 74° Cone is an Indus straight adapter with a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/16-12) end and a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/16-12) end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 7 sizes, -04 to -16."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-039-04 mean for the 45° JIC Male 74° Cone?",
+          "a": "IH-AD-JIC-039-04 is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the 45° JIC Male 74° Cone range. The size table lists every number with its connections. IH-AD-JIC-039-16 is listed as \"1-5/16\"X12 / 1-5/16\"X12\"."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 45° JIC Male 74° Cone?",
+          "a": "The size table lists a Tompkins cross-reference for 6 of the 7 sizes of the 45° JIC Male 74° Cone. Examples: IH-AD-JIC-039-04 against Tompkins 2504-04-04; IH-AD-JIC-039-08 against Tompkins 2504-08-08; IH-AD-JIC-039-16 against Tompkins 2504-16-16. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° JIC Male 74° Cone do you list?",
+          "a": "The 45° JIC Male 74° Cone is listed in 7 part numbers, -04 to -16. Examples: IH-AD-JIC-039-04 (7/16\"X20 x 7/16\"X20); IH-AD-JIC-039-06 (9/16\"X18 x 9/16\"X18); IH-AD-JIC-039-10 (7/8\"X14 x 7/8\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the 45° JIC Male 74° Cone?",
+          "a": "Choose the 45° JIC Male 74° Cone by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° cone (UN/UNF 7/16-20 to 1.5/16-12) and male JIC 37° cone (UN/UNF 7/16-20 to 1.5/16-12). Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [45° Elbow JIC Male 74° Cone × NPT Male](/p/45-elbow-jic-male-74-cone-x-npt-male)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 45° JIC Male 74° Cone rated for?",
+          "a": "The maker states up to 345 bar (5,004 psi), manufacturer stated for the 45° JIC Male 74° Cone. The size table gives the figure per size, from 210 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° JIC Male 74° Cone have?",
+          "a": "The material shown for the 45° JIC Male 74° Cone is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° JIC Male 74° Cone follow?",
+          "a": "The 45° JIC Male 74° Cone is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° JIC Male 74° Cone connect to?",
+          "a": "The 45° JIC Male 74° Cone connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 45° JIC Male 74° Cone without leaks?",
+          "a": "For the 45° JIC Male 74° Cone: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° JIC Male 74° Cone?",
+          "a": "The country of origin of the 45° JIC Male 74° Cone is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° JIC Male 74° Cone available from stock in the UAE?",
+          "a": "Yes. The 45° JIC Male 74° Cone is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-jic-male-74-cone-x-bsp-male-o-ring-adjustable-stud-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End and where is it used?",
+          "a": "The 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End is an Indus straight adapter with a male JIC 37° cone (UN/UNF 7/16-20 to 1.7/8-12) end and a male BSP end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 15 sizes, -04 to -24."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-044-0504OG on the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End?",
+          "a": "IH-AD-JIC-044-0504OG is the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End with 1/2\"X20 and G1/4\"X19. After the series code the size figures follow the order of the ends, so IH-AD-JIC-044-1612OG is 1-5/16\"X12 and G3/4\"X14. IH-AD-JIC-044-04OG carries a single size figure and is listed with 7/16\"X20 and G1/4\"X19. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End cover?",
+          "a": "The 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End is listed in 15 part numbers, -04 to -24. Examples: IH-AD-JIC-044-04OG (7/16\"X20 x G1/4\"X19); IH-AD-JIC-044-08OG (3/4\"X16 x G1/2\"X14); IH-AD-JIC-044-1216OG (1-1/16\"X12 x G1\"X11). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End to my port or hose?",
+          "a": "Choose the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° cone (UN/UNF 7/16-20 to 1.7/8-12) and male BSP. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End rated for?",
+          "a": "The maker states up to 315 bar (4,569 psi), manufacturer stated for the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End. The size table gives the figure per size, from 140 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End made from, and is stainless available?",
+          "a": "The material shown for the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End follow?",
+          "a": "The 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End?",
+          "a": "The 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End connects to a female JIC 37° flare end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End without leaks?",
+          "a": "For the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End?",
+          "a": "The country of origin of the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End in Dubai?",
+          "a": "Yes. We keep the 45° JIC Male 74° Cone × BSP Male O-Ring Adjustable Stud End in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-swivel-connector-m-jic-x-f-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Swivel Connector m JIC X f JIC and where is it used?",
+          "a": "The 45° Swivel Connector m JIC X f JIC is an Indus straight adapter with a male JIC 37° UN/UNF end and a female swivel JIC 37° UN/UNF end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-6502-02-02 on the 45° Swivel Connector m JIC X f JIC?",
+          "a": "IH-ST-6502-02-02 is the 45° Swivel Connector m JIC X f JIC with 1/8\" JIC 37° male (5/16-24) and 1/8\" JIC 37° female swivel (5/16-24). After the series code the size figures follow the order of the ends, so IH-ST-6502-32-32 is 2\" JIC 37° male (2-1/2-12) and 2\" JIC 37° female swivel (2-1/2-12). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 45° Swivel Connector m JIC X f JIC?",
+          "a": "The size table lists a Tompkins cross-reference for 12 of the 12 sizes of the 45° Swivel Connector m JIC X f JIC. Examples: IH-ST-6502-02-02 against Tompkins 6502-02-02; IH-ST-6502-12-12 against Tompkins 6502-12-12; IH-ST-6502-32-32 against Tompkins 6502-32-32. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 45° Swivel Connector m JIC X f JIC do you list?",
+          "a": "The 45° Swivel Connector m JIC X f JIC is listed in 12 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-ST-6502-02-02 (1/8\" JIC 37° male (5/16-24) x 1/8\" JIC 37° female swivel (5/16-24)); IH-ST-6502-08-08 (1/2\" JIC 37° male (3/4-16) x 1/2\" JIC 37° female swivel (3/4-16)); IH-ST-6502-14-14 (7/8\" JIC 37° male (1-3/16-12) x 7/8\" JIC 37° female swivel (1-3/16-12)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 45° Swivel Connector m JIC X f JIC to my port or hose?",
+          "a": "Choose the 45° Swivel Connector m JIC X f JIC by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and female swivel JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [Male Female Connector m JIC X f JIC](/p/male-female-connector-m-jic-x-f-jic)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Swivel Connector m JIC X f JIC?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 45° Swivel Connector m JIC X f JIC. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° Swivel Connector m JIC X f JIC have?",
+          "a": "The material shown for the 45° Swivel Connector m JIC X f JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Swivel Connector m JIC X f JIC follow?",
+          "a": "The 45° Swivel Connector m JIC X f JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Swivel Connector m JIC X f JIC?",
+          "a": "The 45° Swivel Connector m JIC X f JIC connects to a female JIC 37° flare end of the same size on one end and a male JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 45° Swivel Connector m JIC X f JIC without leaks?",
+          "a": "For the 45° Swivel Connector m JIC X f JIC: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Swivel Connector m JIC X f JIC made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Swivel Connector m JIC X f JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 45° Swivel Connector m JIC X f JIC available from stock in the UAE?",
+          "a": "Yes. The 45° Swivel Connector m JIC X f JIC is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-connector-m-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow Connector m JIC used for?",
+          "a": "The 90° Elbow Connector m JIC is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male JIC 37° UN/UNF end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 18 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-037-1612 on the 90° Elbow Connector m JIC?",
+          "a": "IH-AD-JIC-037-1612 is the 90° Elbow Connector m JIC with 1-5/16\"X12 and 1-1/16\"X12. After the series code the size figures follow the order of the ends, so IH-AD-JIC-037-0604 is 9/16\"X18 and 7/16\"X20. IH-AD-JIC-037-04 carries a single size figure and is listed with 7/16\"X20 and 7/16\"X20. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 90° Elbow Connector m JIC?",
+          "a": "The size table lists a Tompkins cross-reference for 18 of the 18 sizes of the 90° Elbow Connector m JIC. Examples: IH-AD-JIC-037-04 against Tompkins 2500-04-04; IH-AD-JIC-037-20 against Tompkins 2500-20-20; IH-AD-JIC-037-02 against Tompkins 2500-02-02. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 90° Elbow Connector m JIC cover?",
+          "a": "The 90° Elbow Connector m JIC is listed in 18 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-037-04 (7/16\"X20 x 7/16\"X20); IH-AD-JIC-037-14 (1-3/16\"X12 x 1-3/16\"X12); IH-AD-JIC-037-1612 (1-5/16\"X12 x 1-1/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow Connector m JIC for my line?",
+          "a": "Choose the 90° Elbow Connector m JIC by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [90° Elbow m JIC X m BSPT](/p/90-elbow-m-jic-x-m-bspt)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow Connector m JIC?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 90° Elbow Connector m JIC. The size table gives the figure per size, from 105 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Connector m JIC made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Connector m JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Connector m JIC follow?",
+          "a": "The 90° Elbow Connector m JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Elbow Connector m JIC connect to?",
+          "a": "The 90° Elbow Connector m JIC connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Elbow Connector m JIC without leaks?",
+          "a": "For the 90° Elbow Connector m JIC: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Connector m JIC made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Connector m JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Connector m JIC available from stock in the UAE?",
+          "a": "Yes. The 90° Elbow Connector m JIC is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-connector-m-jic-x-m-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the 90° Elbow Connector m JIC X m NPT do in a hydraulic line?",
+          "a": "The 90° Elbow Connector m JIC X m NPT is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male NPT taper 1/8\" to 2\" end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 57 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-027-0402 on the 90° Elbow Connector m JIC X m NPT?",
+          "a": "IH-AD-JIC-027-0402 is the 90° Elbow Connector m JIC X m NPT with 7/16\"X20 and NPT1/8\"X27. After the series code the size figures follow the order of the ends, so IH-AD-JIC-027-0302 is 3/8\"X24 and NPT1/8\"X27. IH-AD-JIC-027-04 carries a single size figure and is listed with 7/16\"X20 and NPT1/4\"X18. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 90° Elbow Connector m JIC X m NPT?",
+          "a": "The size table lists a Tompkins cross-reference for 43 of the 57 sizes of the 90° Elbow Connector m JIC X m NPT. Examples: IH-AD-JIC-027-04 against Tompkins 2501-04-04; IH-AD-JIC-027-16 against Tompkins 2501-16-16; IH-AD-JIC-027-02 against Tompkins 2501-02-02. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow Connector m JIC X m NPT come in?",
+          "a": "The 90° Elbow Connector m JIC X m NPT is listed in 57 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-027-04 (7/16\"X20 x NPT1/4\"X18); IH-AD-JIC-027-1220 (1-1/16\"X12 x NPT1-1/4\"X11.5); IH-AD-JIC-027-0806L (3/4\"X16 x NPT3/8\"X18). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow Connector m JIC X m NPT for my line?",
+          "a": "Choose the 90° Elbow Connector m JIC X m NPT by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male NPT taper 1/8\" to 2\". Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [90° Elbow m JIC X m BSPT](/p/90-elbow-m-jic-x-m-bspt)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow Connector m JIC X m NPT rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 90° Elbow Connector m JIC X m NPT. The size table gives the figure per size, from 50 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow Connector m JIC X m NPT made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow Connector m JIC X m NPT is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow Connector m JIC X m NPT follow?",
+          "a": "The 90° Elbow Connector m JIC X m NPT is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow Connector m JIC X m NPT?",
+          "a": "The 90° Elbow Connector m JIC X m NPT connects to a female JIC 37° flare end of the same size on one end and a female NPT/NPTF pipe thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow Connector m JIC X m NPT?",
+          "a": "For the 90° Elbow Connector m JIC X m NPT: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. NPT and NPTF are taper threads that seal on the thread, so do not over-tighten them. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow Connector m JIC X m NPT made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow Connector m JIC X m NPT is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 90° Elbow Connector m JIC X m NPT available from stock in the UAE?",
+          "a": "Yes. The 90° Elbow Connector m JIC X m NPT is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-jic-male-74-cone-bulkhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow JIC Male 74° Cone Bulkhead used for?",
+          "a": "The 90° Elbow JIC Male 74° Cone Bulkhead is an Indus 90° elbow adapter with a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) end and a male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 12 sizes, -04 to -20."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-038-04LN mean for the 90° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "IH-AD-JIC-038-04LN is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the 90° Elbow JIC Male 74° Cone Bulkhead range. The size table lists every number with its connections. IH-AD-JIC-038-03LN is listed as \"3/8\"X24\"."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 90° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The size table lists a Tompkins cross-reference for 11 of the 12 sizes of the 90° Elbow JIC Male 74° Cone Bulkhead. Examples: IH-AD-JIC-038-04LN against Tompkins 2701-04-04; IH-AD-JIC-038-12LN against Tompkins 2701-12-12; IH-AD-JIC-038-03LN against Tompkins 2701-03-03. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Elbow JIC Male 74° Cone Bulkhead do you list?",
+          "a": "The 90° Elbow JIC Male 74° Cone Bulkhead is listed in 12 part numbers, -04 to -20. Examples: IH-AD-JIC-038-04LN (7/16\"X20 x 7/16\"X20); IH-AD-JIC-038-10LN (7/8\"X14 x 7/8\"X14); IH-AD-JIC-038-16LN (1-5/16\"X12 x 1-5/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow JIC Male 74° Cone Bulkhead for my line?",
+          "a": "Choose the 90° Elbow JIC Male 74° Cone Bulkhead by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) and male JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12). Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [45° Elbow JIC Male 74° Cone × NPT Male](/p/45-elbow-jic-male-74-cone-x-npt-male)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The maker states up to 310 bar (4,496 psi), manufacturer stated for the 90° Elbow JIC Male 74° Cone Bulkhead. The size table gives the figure per size, from 170 bar to 310 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° Elbow JIC Male 74° Cone Bulkhead have?",
+          "a": "The material shown for the 90° Elbow JIC Male 74° Cone Bulkhead is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow JIC Male 74° Cone Bulkhead follow?",
+          "a": "The 90° Elbow JIC Male 74° Cone Bulkhead is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "The 90° Elbow JIC Male 74° Cone Bulkhead connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow JIC Male 74° Cone Bulkhead?",
+          "a": "For the 90° Elbow JIC Male 74° Cone Bulkhead: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Elbow JIC Male 74° Cone Bulkhead made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Elbow JIC Male 74° Cone Bulkhead is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow JIC Male 74° Cone Bulkhead from stock in Dubai?",
+          "a": "Yes. The 90° Elbow JIC Male 74° Cone Bulkhead is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-elbow-m-jic-x-m-bspt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Elbow m JIC X m BSPT and where is it used?",
+          "a": "The 90° Elbow m JIC X m BSPT is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male BSPT R1/8 to R2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 20 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-022-0402SP on the 90° Elbow m JIC X m BSPT?",
+          "a": "IH-AD-JIC-022-0402SP is the 90° Elbow m JIC X m BSPT with 7/16\"X24 and R1/8\"X28. After the series code the size figures follow the order of the ends, so IH-AD-JIC-022-2016SP is 1-5/8\"X12 and R1\"X11. IH-AD-JIC-022-04SP carries a single size figure and is listed with 7/16\"X24 and R1/4\"X19. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° Elbow m JIC X m BSPT come in?",
+          "a": "The 90° Elbow m JIC X m BSPT is listed in 20 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-022-0402SP (7/16\"X24 x R1/8\"X28); IH-AD-JIC-022-0608SP (9/16\"X18 x R1/2\"X14); IH-AD-JIC-022-1208SP (1-1/16\"X12 x R1/2\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct 90° Elbow m JIC X m BSPT for my line?",
+          "a": "Choose the 90° Elbow m JIC X m BSPT by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male BSPT R1/8 to R2. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Elbow m JIC X m BSPT rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 90° Elbow m JIC X m BSPT. The size table gives the figure per size, from 105 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Elbow m JIC X m BSPT made from, and is stainless available?",
+          "a": "The material shown for the 90° Elbow m JIC X m BSPT is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Elbow m JIC X m BSPT follow?",
+          "a": "The 90° Elbow m JIC X m BSPT is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Elbow m JIC X m BSPT?",
+          "a": "The 90° Elbow m JIC X m BSPT connects to a female JIC 37° flare end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the 90° Elbow m JIC X m BSPT?",
+          "a": "For the 90° Elbow m JIC X m BSPT: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Elbow m JIC X m BSPT?",
+          "a": "The country of origin of the 90° Elbow m JIC X m BSPT is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the 90° Elbow m JIC X m BSPT from stock in Dubai?",
+          "a": "Yes, the 90° Elbow m JIC X m BSPT is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "90-male-female-connector-m-jic-x-f-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Male Female Connector m JIC X f JIC and where is it used?",
+          "a": "The 90° Male Female Connector m JIC X f JIC is an Indus straight adapter with a male JIC 37° UN/UNF end and a female JIC 37° UN/UNF end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 24 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-011-0608 on the 90° Male Female Connector m JIC X f JIC?",
+          "a": "IH-AD-JIC-011-0608 is the 90° Male Female Connector m JIC X f JIC with 9/16\"X18 and 3/4\"X16. After the series code the size figures follow the order of the ends, so IH-AD-JIC-011-0604 is 9/16\"X18 and 7/16\"X20. IH-AD-JIC-011-04 carries a single size figure and is listed with 7/16\"X20 and 7/16\"X20. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the 90° Male Female Connector m JIC X f JIC?",
+          "a": "The size table lists a Tompkins cross-reference for 16 of the 24 sizes of the 90° Male Female Connector m JIC X f JIC. Examples: IH-AD-JIC-011-04 against Tompkins 6500-04-04; IH-AD-JIC-011-1210 against Tompkins 6500-12-10; IH-AD-JIC-011-02 against Tompkins 6500-02-02. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the 90° Male Female Connector m JIC X f JIC do you list?",
+          "a": "The 90° Male Female Connector m JIC X f JIC is listed in 24 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-011-04 (7/16\"X20 x 7/16\"X20); IH-AD-JIC-011-1008 (7/8\"X14 x 3/4\"X16); IH-AD-JIC-011-1620 (1-5/16\"X12 x 1-5/8\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the 90° Male Female Connector m JIC X f JIC to my port or hose?",
+          "a": "Choose the 90° Male Female Connector m JIC X f JIC by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and female JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [Male Connector m JIC X m BSPT](/p/male-connector-m-jic-x-m-bspt)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 90° Male Female Connector m JIC X f JIC rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the 90° Male Female Connector m JIC X f JIC. The size table gives the figure per size, from 105 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Male Female Connector m JIC X f JIC made from, and is stainless available?",
+          "a": "The material shown for the 90° Male Female Connector m JIC X f JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Male Female Connector m JIC X f JIC follow?",
+          "a": "The 90° Male Female Connector m JIC X f JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° Male Female Connector m JIC X f JIC connect to?",
+          "a": "The 90° Male Female Connector m JIC X f JIC connects to a female JIC 37° flare end of the same size on one end and a male JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the 90° Male Female Connector m JIC X f JIC without leaks?",
+          "a": "For the 90° Male Female Connector m JIC X f JIC: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the 90° Male Female Connector m JIC X f JIC?",
+          "a": "The country of origin of the 90° Male Female Connector m JIC X f JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Male Female Connector m JIC X f JIC in Dubai?",
+          "a": "Yes, the 90° Male Female Connector m JIC X f JIC is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-45-elbow-m-jic-x-m-metric-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable 45° Elbow m JIC X m Metric Flat and where is it used?",
+          "a": "The Adjustable 45° Elbow m JIC X m Metric Flat is an Indus 45° elbow adapter with a male JIC 37° UN/UNF end and a male Metric M10×1 to M42×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 18 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-031-0410OG on the Adjustable 45° Elbow m JIC X m Metric Flat?",
+          "a": "IH-AD-JIC-031-0410OG is the Adjustable 45° Elbow m JIC X m Metric Flat with 7/16\"X20 and M10X1. After the series code the size figures follow the order of the ends, so IH-AD-JIC-031-2448OG is 1-7/8\"X12 and M48X2. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Adjustable 45° Elbow m JIC X m Metric Flat cover?",
+          "a": "The Adjustable 45° Elbow m JIC X m Metric Flat is listed in 18 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-031-0410OG (7/16\"X20 x M10X1); IH-AD-JIC-031-0616OG (9/16\"X18 x M16X1.5); IH-AD-JIC-031-1022OG (7/8\"X14 x M22X1.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Adjustable 45° Elbow m JIC X m Metric Flat to my port or hose?",
+          "a": "Choose the Adjustable 45° Elbow m JIC X m Metric Flat by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male Metric M10×1 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable 45° Elbow m JIC X m Metric Flat rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable 45° Elbow m JIC X m Metric Flat. The size table gives the figure per size, from 140 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Adjustable 45° Elbow m JIC X m Metric Flat have?",
+          "a": "The material shown for the Adjustable 45° Elbow m JIC X m Metric Flat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable 45° Elbow m JIC X m Metric Flat follow?",
+          "a": "The Adjustable 45° Elbow m JIC X m Metric Flat is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adjustable 45° Elbow m JIC X m Metric Flat connect to?",
+          "a": "The Adjustable 45° Elbow m JIC X m Metric Flat connects to a female JIC 37° flare end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Adjustable 45° Elbow m JIC X m Metric Flat without leaks?",
+          "a": "For the Adjustable 45° Elbow m JIC X m Metric Flat: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adjustable 45° Elbow m JIC X m Metric Flat?",
+          "a": "The country of origin of the Adjustable 45° Elbow m JIC X m Metric Flat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Adjustable 45° Elbow m JIC X m Metric Flat available from stock in the UAE?",
+          "a": "Yes. We keep the Adjustable 45° Elbow m JIC X m Metric Flat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-45-elbow-m-jic-x-m-sae",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable 45° Elbow m JIC X m SAE used for?",
+          "a": "The Adjustable 45° Elbow m JIC X m SAE is an Indus 45° elbow adapter with a male JIC 37° UN/UNF end and a male SAE J1926 ORB UN/UNF end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 28 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-034-0406OG on the Adjustable 45° Elbow m JIC X m SAE?",
+          "a": "IH-AD-JIC-034-0406OG is the Adjustable 45° Elbow m JIC X m SAE with 7/16\"X20 and 9/16\"X18. After the series code the size figures follow the order of the ends, so IH-AD-JIC-034-2024OG is 1-5/8\"X12 and 1-7/8\"X12. IH-AD-JIC-034-04OG carries a single size figure and is listed with 7/16\"X20 and 7/16\"X20. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Adjustable 45° Elbow m JIC X m SAE come in?",
+          "a": "The Adjustable 45° Elbow m JIC X m SAE is listed in 28 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-034-04OG (7/16\"X20 x 7/16\"X20); IH-AD-JIC-034-0610OG (9/16\"X18 x 7/8\"X14); IH-AD-JIC-034-1210OG (1-1/16\"X12 x 7/8\"X14). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Adjustable 45° Elbow m JIC X m SAE for my line?",
+          "a": "Choose the Adjustable 45° Elbow m JIC X m SAE by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male SAE J1926 ORB UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Adjustable 45° Elbow m JIC X m SAE?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable 45° Elbow m JIC X m SAE. The size table gives the figure per size, from 105 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable 45° Elbow m JIC X m SAE made from, and is stainless available?",
+          "a": "The material shown for the Adjustable 45° Elbow m JIC X m SAE is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable 45° Elbow m JIC X m SAE follow?",
+          "a": "The Adjustable 45° Elbow m JIC X m SAE is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Adjustable 45° Elbow m JIC X m SAE?",
+          "a": "The Adjustable 45° Elbow m JIC X m SAE connects to a female JIC 37° flare end of the same size on one end and a female SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable 45° Elbow m JIC X m SAE?",
+          "a": "For the Adjustable 45° Elbow m JIC X m SAE: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Adjustable 45° Elbow m JIC X m SAE made, and can you export it from Dubai?",
+          "a": "The country of origin of the Adjustable 45° Elbow m JIC X m SAE is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Adjustable 45° Elbow m JIC X m SAE available from stock in the UAE?",
+          "a": "Yes, the Adjustable 45° Elbow m JIC X m SAE is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-90-elbow-m-jic-x-m-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Adjustable 90° Elbow m JIC X m BSP do in a hydraulic line?",
+          "a": "The Adjustable 90° Elbow m JIC X m BSP is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male BSPP G1/8 to G2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. Sizes run -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to quote to order the Adjustable 90° Elbow m JIC X m BSP?",
+          "a": "To order the Adjustable 90° Elbow m JIC X m BSP, quote the size and thread on each end (-04 to -32 (1/4\" to 2\")) and tell us whether you need carbon steel or stainless. Engineering confirms the part number against your equipment before supply, so a photo or the mating port is enough to start."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Adjustable 90° Elbow m JIC X m BSP do you list?",
+          "a": "The Adjustable 90° Elbow m JIC X m BSP covers -04 to -32 (1/4\" to 2\"). Send the thread on each end and the size you need, and we confirm the exact part number before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Adjustable 90° Elbow m JIC X m BSP to my port or hose?",
+          "a": "Choose the Adjustable 90° Elbow m JIC X m BSP by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male BSPP G1/8 to G2. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable 90° Elbow m JIC X m BSP rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable 90° Elbow m JIC X m BSP. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable 90° Elbow m JIC X m BSP made from, and is stainless available?",
+          "a": "The material shown for the Adjustable 90° Elbow m JIC X m BSP is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable 90° Elbow m JIC X m BSP follow?",
+          "a": "The Adjustable 90° Elbow m JIC X m BSP is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adjustable 90° Elbow m JIC X m BSP connect to?",
+          "a": "The Adjustable 90° Elbow m JIC X m BSP connects to a female JIC 37° flare end of the same size on one end and a female BSP thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Adjustable 90° Elbow m JIC X m BSP without leaks?",
+          "a": "For the Adjustable 90° Elbow m JIC X m BSP: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Adjustable 90° Elbow m JIC X m BSP made, and can you export it from Dubai?",
+          "a": "The country of origin of the Adjustable 90° Elbow m JIC X m BSP is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Adjustable 90° Elbow m JIC X m BSP from stock in Dubai?",
+          "a": "Yes. We keep the Adjustable 90° Elbow m JIC X m BSP in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-90-elbow-m-jic-x-m-metric-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable 90° Elbow m JIC X m Metric Flat and where is it used?",
+          "a": "The Adjustable 90° Elbow m JIC X m Metric Flat is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male Metric M10×1 to M42×2 end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 10 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-028-0410OG on the Adjustable 90° Elbow m JIC X m Metric Flat?",
+          "a": "IH-AD-JIC-028-0410OG is the Adjustable 90° Elbow m JIC X m Metric Flat with 7/16\"X20 and M10X1. After the series code the size figures follow the order of the ends, so IH-AD-JIC-028-1633OG is 1-5/16\" and M33X2. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Adjustable 90° Elbow m JIC X m Metric Flat cover?",
+          "a": "The Adjustable 90° Elbow m JIC X m Metric Flat is listed in 10 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-028-0410OG (7/16\"X20 x M10X1); IH-AD-JIC-028-0816OG (3/4\"X16 x M16X1.5); IH-AD-JIC-028-1022OG (7/8\"X14 x M22X1.5). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Adjustable 90° Elbow m JIC X m Metric Flat to my port or hose?",
+          "a": "Choose the Adjustable 90° Elbow m JIC X m Metric Flat by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male Metric M10×1 to M42×2. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable 90° Elbow m JIC X m Metric Flat rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable 90° Elbow m JIC X m Metric Flat. The size table gives the figure per size, from 160 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable 90° Elbow m JIC X m Metric Flat made from, and is stainless available?",
+          "a": "The material shown for the Adjustable 90° Elbow m JIC X m Metric Flat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable 90° Elbow m JIC X m Metric Flat follow?",
+          "a": "The Adjustable 90° Elbow m JIC X m Metric Flat is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adjustable 90° Elbow m JIC X m Metric Flat connect to?",
+          "a": "The Adjustable 90° Elbow m JIC X m Metric Flat connects to a female JIC 37° flare end of the same size on one end and a female metric thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable 90° Elbow m JIC X m Metric Flat?",
+          "a": "For the Adjustable 90° Elbow m JIC X m Metric Flat: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Adjustable 90° Elbow m JIC X m Metric Flat made, and can you export it from Dubai?",
+          "a": "The country of origin of the Adjustable 90° Elbow m JIC X m Metric Flat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Adjustable 90° Elbow m JIC X m Metric Flat in Dubai?",
+          "a": "Yes. We keep the Adjustable 90° Elbow m JIC X m Metric Flat in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-90-elbow-m-jic-x-m-sae",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable 90° Elbow m JIC X m SAE and where is it used?",
+          "a": "The Adjustable 90° Elbow m JIC X m SAE is an Indus 90° elbow adapter with a male JIC 37° UN/UNF end and a male SAE J1926 ORB UN/UNF end. It is used to change the direction of a line where a straight fitting would not clear the frame, tank or hose route. It is listed in 51 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-032-04OG mean for the Adjustable 90° Elbow m JIC X m SAE?",
+          "a": "IH-AD-JIC-032-04OG is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the Adjustable 90° Elbow m JIC X m SAE range. The size table lists every number with its connections. IH-AD-JIC-032-02OG is listed as \"5/16\"X24 / 5/16\"X24\"."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the Adjustable 90° Elbow m JIC X m SAE?",
+          "a": "The size table lists a Tompkins cross-reference for 50 of the 51 sizes of the Adjustable 90° Elbow m JIC X m SAE. Examples: IH-AD-JIC-032-04OG against Tompkins 6801-04-04; IH-AD-JIC-032-1614OG against Tompkins 6801-16-14; IH-AD-JIC-032-02OG against Tompkins 6801-02-02. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Adjustable 90° Elbow m JIC X m SAE come in?",
+          "a": "The Adjustable 90° Elbow m JIC X m SAE is listed in 51 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-032-04OG (7/16\"X20 x 7/16\"X20); IH-AD-JIC-032-1012OG (7/8\"X14 x 1-1/16\"X12); IH-AD-JIC-032-3224OG (2-1/2\"X12 x 1-7/8\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Adjustable 90° Elbow m JIC X m SAE?",
+          "a": "Choose the Adjustable 90° Elbow m JIC X m SAE by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male SAE J1926 ORB UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [Adjustable 90° Elbow m JIC X m BSP](/p/adjustable-90-elbow-m-jic-x-m-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable 90° Elbow m JIC X m SAE rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable 90° Elbow m JIC X m SAE. The size table gives the figure per size, from 105 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable 90° Elbow m JIC X m SAE made from, and is stainless available?",
+          "a": "The material shown for the Adjustable 90° Elbow m JIC X m SAE is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable 90° Elbow m JIC X m SAE follow?",
+          "a": "The Adjustable 90° Elbow m JIC X m SAE is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adjustable 90° Elbow m JIC X m SAE connect to?",
+          "a": "The Adjustable 90° Elbow m JIC X m SAE connects to a female JIC 37° flare end of the same size on one end and a female SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable 90° Elbow m JIC X m SAE?",
+          "a": "For the Adjustable 90° Elbow m JIC X m SAE: where the elbow is adjustable or swivelling, set the direction first and tighten the locking nut; a rigid elbow must be made up in the right orientation. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adjustable 90° Elbow m JIC X m SAE?",
+          "a": "The country of origin of the Adjustable 90° Elbow m JIC X m SAE is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Adjustable 90° Elbow m JIC X m SAE available from stock in the UAE?",
+          "a": "Yes. We keep the Adjustable 90° Elbow m JIC X m SAE in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Delivery inside the UAE is within 3 working days. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-branch-tee-m-jic-x-m-npt-x-m-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable Branch Tee m JIC X m NPT X m JIC used for?",
+          "a": "The Adjustable Branch Tee m JIC X m NPT X m JIC is an Indus tee with a male JIC 37° UN/UNF end and a male NPT taper 1/8\" to 2\" end. It is used to split a line into a branch or join two lines into one. It is listed in 25 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-2601-02-02-02 on the Adjustable Branch Tee m JIC X m NPT X m JIC?",
+          "a": "IH-ST-2601-02-02-02 is the Adjustable Branch Tee m JIC X m NPT X m JIC with 1/8\" JIC 37° male (5/16-24) and 1/8\" JIC 37° male (5/16-24) and 1/8\" NPTF male (1/8-27). After the series code the size figures follow the order of the ends, so IH-ST-2601-32-32-32 is 2\" JIC 37° male (2-1/2-12) and 2\" JIC 37° male (2-1/2-12) and 2\" NPTF male (2-11.5). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the Adjustable Branch Tee m JIC X m NPT X m JIC?",
+          "a": "The size table lists a Tompkins cross-reference for 19 of the 25 sizes of the Adjustable Branch Tee m JIC X m NPT X m JIC. Examples: IH-ST-2601-03-03-02 against Tompkins 2601-03-03-02; IH-ST-2601-08-08-08 against Tompkins 2601-08-08-08; IH-ST-2601-32-32-32 against Tompkins 2601-32-32-32. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Adjustable Branch Tee m JIC X m NPT X m JIC cover?",
+          "a": "The Adjustable Branch Tee m JIC X m NPT X m JIC is listed in 25 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-ST-2601-02-02-02 (1/8\" JIC 37° male (5/16-24) x 1/8\" JIC 37° male (5/16-24) x 1/8\" NPTF male (1/8-27)); IH-ST-2601-06-06-04 (3/8\" JIC 37° male (9/16-18) x 3/8\" JIC 37° male (9/16-18) x 1/4\" NPTF male (1/4-18)); IH-ST-2601-10-10-12 (5/8\" JIC 37° male (7/8-14) x 5/8\" JIC 37° male (7/8-14) x 3/4\" NPTF male (3/4-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the correct Adjustable Branch Tee m JIC X m NPT X m JIC for my line?",
+          "a": "Choose the Adjustable Branch Tee m JIC X m NPT X m JIC by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male NPT taper 1/8\" to 2\". Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [Adjustable Run Tee m JIC X m JIC X m BSP](/p/adjustable-run-tee-m-jic-x-m-jic-x-m-bsp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable Branch Tee m JIC X m NPT X m JIC rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable Branch Tee m JIC X m NPT X m JIC. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Adjustable Branch Tee m JIC X m NPT X m JIC have?",
+          "a": "The material shown for the Adjustable Branch Tee m JIC X m NPT X m JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable Branch Tee m JIC X m NPT X m JIC follow?",
+          "a": "The Adjustable Branch Tee m JIC X m NPT X m JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Adjustable Branch Tee m JIC X m NPT X m JIC?",
+          "a": "The Adjustable Branch Tee m JIC X m NPT X m JIC connects to a female JIC 37° flare end of the same size on one end and a female NPT/NPTF pipe thread end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [NPT adapters](/c/npt-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable Branch Tee m JIC X m NPT X m JIC?",
+          "a": "For the Adjustable Branch Tee m JIC X m NPT X m JIC: orient the branch before final tightening and make up each end with its own sealing type. NPT and NPTF are taper threads that seal on the thread, so do not over-tighten them. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adjustable Branch Tee m JIC X m NPT X m JIC?",
+          "a": "The country of origin of the Adjustable Branch Tee m JIC X m NPT X m JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Adjustable Branch Tee m JIC X m NPT X m JIC available from stock in the UAE?",
+          "a": "Yes, the Adjustable Branch Tee m JIC X m NPT X m JIC is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-branch-tee-m-jic-x-m-sae-x-m-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Adjustable Branch Tee m JIC X m SAE X m JIC do in a hydraulic line?",
+          "a": "The Adjustable Branch Tee m JIC X m SAE X m JIC is an Indus tee with a male JIC 37° UN/UNF end and a male SAE J1926 ORB UN/UNF end. It is used to split a line into a branch or join two lines into one. It is listed in 9 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-008-04OG mean for the Adjustable Branch Tee m JIC X m SAE X m JIC?",
+          "a": "IH-AD-JIC-008-04OG is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the Adjustable Branch Tee m JIC X m SAE X m JIC range. The size table lists every number with its connections. IH-AD-JIC-008-24OG is listed as \"1-7/8\"X12 / 1-7/8\"X12\"."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Adjustable Branch Tee m JIC X m SAE X m JIC come in?",
+          "a": "The Adjustable Branch Tee m JIC X m SAE X m JIC is listed in 9 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-008-04OG (7/16\"X20 x 7/16\"X20 x 7/16\"X20); IH-AD-JIC-008-08OG (3/4\"X16 x 3/4\"X16 x 3/4\"X16); IH-AD-JIC-008-12OG (1-1/16\"X12 x 1-1/16\"X12 x 1-1/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Adjustable Branch Tee m JIC X m SAE X m JIC?",
+          "a": "Choose the Adjustable Branch Tee m JIC X m SAE X m JIC by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male SAE J1926 ORB UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable Branch Tee m JIC X m SAE X m JIC rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable Branch Tee m JIC X m SAE X m JIC. The size table gives the figure per size, from 140 bar to 315 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable Branch Tee m JIC X m SAE X m JIC made from, and is stainless available?",
+          "a": "The material shown for the Adjustable Branch Tee m JIC X m SAE X m JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable Branch Tee m JIC X m SAE X m JIC follow?",
+          "a": "The Adjustable Branch Tee m JIC X m SAE X m JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Adjustable Branch Tee m JIC X m SAE X m JIC?",
+          "a": "The Adjustable Branch Tee m JIC X m SAE X m JIC connects to a female JIC 37° flare end of the same size on one end and a female SAE O-ring boss end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [ORB adapters](/c/orb-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable Branch Tee m JIC X m SAE X m JIC?",
+          "a": "For the Adjustable Branch Tee m JIC X m SAE X m JIC: orient the branch before final tightening and make up each end with its own sealing type. O-ring ends seal on the O-ring in the port, so keep the O-ring undamaged and the port face clean. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adjustable Branch Tee m JIC X m SAE X m JIC?",
+          "a": "The country of origin of the Adjustable Branch Tee m JIC X m SAE X m JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Adjustable Branch Tee m JIC X m SAE X m JIC in Dubai?",
+          "a": "Yes, the Adjustable Branch Tee m JIC X m SAE X m JIC is held ex-stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-run-tee-m-jic-x-m-jic-x-m-bsp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable Run Tee m JIC X m JIC X m BSP used for?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m BSP is an Indus tee with a male JIC 37° UN/UNF end and a male JIC 37° UN/UNF end. It is used to split a line into a branch or join two lines into one. It is listed in 10 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9158-04-04-04 on the Adjustable Run Tee m JIC X m JIC X m BSP?",
+          "a": "IH-ST-9158-04-04-04 is the Adjustable Run Tee m JIC X m JIC X m BSP with 1/4\" JIC 37° male (7/16-20) and 1/4\" JIC 37° male (7/16-20) and 1/4\" BSPP male, adjustable (G1/4-19). After the series code the size figures follow the order of the ends, so IH-ST-9158-20-20-20 is 1-1/4\" JIC 37° male (1-5/8-12) and 1-1/4\" JIC 37° male (1-5/8-12) and 1-1/4\" BSPP male, adjustable (G1-1/4-11). Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Adjustable Run Tee m JIC X m JIC X m BSP cover?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m BSP is listed in 10 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-ST-9158-04-04-04 (1/4\" JIC 37° male (7/16-20) x 1/4\" JIC 37° male (7/16-20) x 1/4\" BSPP male, adjustable (G1/4-19)); IH-ST-9158-06-06-06 (3/8\" JIC 37° male (9/16-18) x 3/8\" JIC 37° male (9/16-18) x 3/8\" BSPP male, adjustable (G3/8-19)); IH-ST-9158-10-10-08 (5/8\" JIC 37° male (7/8-14) x 5/8\" JIC 37° male (7/8-14) x 1/2\" BSPP male, adjustable (G1/2-14)). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Adjustable Run Tee m JIC X m JIC X m BSP?",
+          "a": "Choose the Adjustable Run Tee m JIC X m JIC X m BSP by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Adjustable Run Tee m JIC X m JIC X m BSP rated for?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable Run Tee m JIC X m JIC X m BSP. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable Run Tee m JIC X m JIC X m BSP made from, and is stainless available?",
+          "a": "The material shown for the Adjustable Run Tee m JIC X m JIC X m BSP is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable Run Tee m JIC X m JIC X m BSP follow?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m BSP is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Adjustable Run Tee m JIC X m JIC X m BSP connect to?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m BSP connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable Run Tee m JIC X m JIC X m BSP?",
+          "a": "For the Adjustable Run Tee m JIC X m JIC X m BSP: orient the branch before final tightening and make up each end with its own sealing type. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Adjustable Run Tee m JIC X m JIC X m BSP made, and can you export it from Dubai?",
+          "a": "The country of origin of the Adjustable Run Tee m JIC X m JIC X m BSP is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Adjustable Run Tee m JIC X m JIC X m BSP in Dubai?",
+          "a": "Yes. The Adjustable Run Tee m JIC X m JIC X m BSP is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "adjustable-run-tee-m-jic-x-m-jic-x-m-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Adjustable Run Tee m JIC X m JIC X m Metric and where is it used?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m Metric is an Indus tee with a male JIC 37° UN/UNF end and a male JIC 37° UN/UNF end. It is used to split a line into a branch or join two lines into one. It is listed in 6 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-ST-9168-04-04-12 on the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "IH-ST-9168-04-04-12 is the Adjustable Run Tee m JIC X m JIC X m Metric with 1/4\" JIC 37° male (7/16-20) and 1/4\" JIC 37° male (7/16-20) and M12×1.5 male metric, adjustable. After the series code the size figures follow the order of the ends, so IH-ST-9168-12-12-27 is 3/4\" JIC 37° male (1-1/16-12) and 3/4\" JIC 37° male (1-1/16-12) and M27×1.5 male metric, adjustable. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Adjustable Run Tee m JIC X m JIC X m Metric cover?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m Metric is listed in 6 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-ST-9168-04-04-12 (1/4\" JIC 37° male (7/16-20) x 1/4\" JIC 37° male (7/16-20) x M12×1.5 male metric, adjustable); IH-ST-9168-08-08-16 (1/2\" JIC 37° male (3/4-16) x 1/2\" JIC 37° male (3/4-16) x M16×1.5 male metric, adjustable); IH-ST-9168-08-08-18 (1/2\" JIC 37° male (3/4-16) x 1/2\" JIC 37° male (3/4-16) x M18×1.5 male metric, adjustable). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "Choose the Adjustable Run Tee m JIC X m JIC X m Metric by the thread and seat on each end, not by the hose or tube size alone: here that is male JIC 37° UN/UNF and male JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Adjustable Run Tee m JIC X m JIC X m Metric. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Adjustable Run Tee m JIC X m JIC X m Metric made from, and is stainless available?",
+          "a": "The material shown for the Adjustable Run Tee m JIC X m JIC X m Metric is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Adjustable Run Tee m JIC X m JIC X m Metric follow?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m Metric is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "The Adjustable Run Tee m JIC X m JIC X m Metric connects to a female JIC 37° flare end of the same size on one end and a female JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [metric adapters](/c/metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "For the Adjustable Run Tee m JIC X m JIC X m Metric: orient the branch before final tightening and make up each end with its own sealing type. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Adjustable Run Tee m JIC X m JIC X m Metric?",
+          "a": "The country of origin of the Adjustable Run Tee m JIC X m JIC X m Metric is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Adjustable Run Tee m JIC X m JIC X m Metric from stock in Dubai?",
+          "a": "Yes. The Adjustable Run Tee m JIC X m JIC X m Metric is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "branch-tee-swivel-connector-jic",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Branch Tee Swivel Connector JIC used for?",
+          "a": "The Branch Tee Swivel Connector JIC is an Indus tee with a female swivel JIC 37° UN/UNF end. It is used to split a line into a branch or join two lines into one. It is listed in 11 sizes, -04 to -32 (1/4\" to 2\")."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-AD-JIC-006-04 mean for the Branch Tee Swivel Connector JIC?",
+          "a": "IH-AD-JIC-006-04 is the Indus number for \"7/16\"X20 / 7/16\"X20\" in the Branch Tee Swivel Connector JIC range. The size table lists every number with its connections. IH-AD-JIC-006-32 is listed as \"2-1/2\"X12 / 2-1/2\"X12\"."
+        },
+        {
+          "slot": "C",
+          "q": "Which Tompkins part numbers match the Branch Tee Swivel Connector JIC?",
+          "a": "The size table lists a Tompkins cross-reference for 11 of the 11 sizes of the Branch Tee Swivel Connector JIC. Examples: IH-AD-JIC-006-04 against Tompkins 6600-04-04-04; IH-AD-JIC-006-12 against Tompkins 6600-12-12-12; IH-AD-JIC-006-32 against Tompkins 6600-32-32-32. Check the thread and seat against your own part before you substitute."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Branch Tee Swivel Connector JIC come in?",
+          "a": "The Branch Tee Swivel Connector JIC is listed in 11 part numbers, -04 to -32 (1/4\" to 2\"). Examples: IH-AD-JIC-006-04 (7/16\"X20 x 7/16\"X20 x 7/16\"X20); IH-AD-JIC-006-08 (3/4\"X16 x 3/4\"X16 x 3/4\"X16); IH-AD-JIC-006-16 (1-5/16\"X12 x 1-5/16\"X12 x 1-5/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of the Branch Tee Swivel Connector JIC?",
+          "a": "Choose the Branch Tee Swivel Connector JIC by the thread and seat on each end, not by the hose or tube size alone: here that is female swivel JIC 37° UN/UNF. Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread. If the other end needs a different connection, see the [45° Female Swivel Connector JIC](/p/45-female-swivel-connector-jic)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Branch Tee Swivel Connector JIC?",
+          "a": "The maker states up to 350 bar (5000 psi) for the Branch Tee Swivel Connector JIC. The size table gives the figure per size, from 105 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Branch Tee Swivel Connector JIC have?",
+          "a": "The material shown for the Branch Tee Swivel Connector JIC is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Branch Tee Swivel Connector JIC follow?",
+          "a": "The Branch Tee Swivel Connector JIC is listed against SAE J514, ISO 8434-2. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Branch Tee Swivel Connector JIC connect to?",
+          "a": "The Branch Tee Swivel Connector JIC connects to a male JIC 37° flare end of the same size. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How should I fit and seal the Branch Tee Swivel Connector JIC?",
+          "a": "For the Branch Tee Swivel Connector JIC: orient the branch before final tightening and make up each end with its own sealing type. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of the Branch Tee Swivel Connector JIC?",
+          "a": "The country of origin of the Branch Tee Swivel Connector JIC is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Branch Tee Swivel Connector JIC from stock in Dubai?",
+          "a": "Yes. The Branch Tee Swivel Connector JIC is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bspt-male-x-jic-female-74-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BSPT Male × JIC Female 74° Seat and where is it used?",
+          "a": "The BSPT Male × JIC Female 74° Seat is an Indus straight adapter with a male BSPT end and a female JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12) end. It is used to join a hose or tube end to a port or to another fitting of a different thread or seat. It is listed in 12 sizes, -04 to -20."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-AD-JIC-046-0405 on the BSPT Male × JIC Female 74° Seat?",
+          "a": "IH-AD-JIC-046-0405 is the BSPT Male × JIC Female 74° Seat with R1/4\"X19 and 1/2\"X20. After the series code the size figures follow the order of the ends, so IH-AD-JIC-046-1216 is R3/4\"X14 and 1-5/16\"X12. IH-AD-JIC-046-04 carries a single size figure and is listed with R1/4\"X19 and 7/16\"X20. Letters at the end of a number are part of the listed part number, so quote it in full."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BSPT Male × JIC Female 74° Seat differ from the Metric Male × JIC Female 74° Seat?",
+          "a": "The BSPT Male × JIC Female 74° Seat and the [Metric Male × JIC Female 74° Seat](/p/metric-male-x-jic-female-74-seat) differ in their end connections. The BSPT Male × JIC Female 74° Seat has male BSPT and female JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12); the other has male Metric M10×1 to M33×1.5 and female JIC 37° cone (UN/UNF 7/16-20 to 1.5/16-12). Compare the end types and sizes in each size table and pick the one whose threads and seats match your ports."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BSPT Male × JIC Female 74° Seat come in?",
+          "a": "The BSPT Male × JIC Female 74° Seat is listed in 12 part numbers, -04 to -20. Examples: IH-AD-JIC-046-04 (R1/4\"X19 x 7/16\"X20); IH-AD-JIC-046-0408 (R1/4\"X19 x 3/4\"X16); IH-AD-JIC-046-0812 (R1/2\"X14 x 1-1/16\"X12). The size table gives the connection on each end of every part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the BSPT Male × JIC Female 74° Seat to my port or hose?",
+          "a": "Choose the BSPT Male × JIC Female 74° Seat by the thread and seat on each end, not by the hose or tube size alone: here that is male BSPT and female JIC 37° cone (UN/UNF 7/16-20 to 1.5/8-12). Measure the port thread and check the seat shape before ordering; the [thread size and pitch reference](/blog/hydraulic-thread-size-and-pitch-reference) helps identify an unknown thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BSPT Male × JIC Female 74° Seat rated for?",
+          "a": "The maker states up to 345 bar (5,004 psi), manufacturer stated for the BSPT Male × JIC Female 74° Seat. The size table gives the figure per size, from 170 bar to 345 bar. The assembly is limited by the lowest-rated part in it, so check the hose, tube and port rating too."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the BSPT Male × JIC Female 74° Seat have?",
+          "a": "The material shown for the BSPT Male × JIC Female 74° Seat is Carbon steel (stainless on request), with a zinc-plated, Cr3+ passivated, RoHS-compliant finish. Stainless steel suits marine, chemical or food-grade duty; see our [stainless steel JIC adapters](/c/stainless-steel-jic-adapters) for stocked stainless ranges."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the BSPT Male × JIC Female 74° Seat follow?",
+          "a": "The BSPT Male × JIC Female 74° Seat is listed against SAE J514, ISO 8434-2, ISO 7-1. SAE J514 is the SAE standard for hydraulic tube fittings, including the 37° flare (JIC) connection and the straight-thread O-ring boss port. ISO 8434-2 is the ISO standard for 37° flared tube connections for fluid power, the international counterpart of the JIC flare. Standards cover dimensions and threads; ask for the material certificate if you need traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the BSPT Male × JIC Female 74° Seat?",
+          "a": "The BSPT Male × JIC Female 74° Seat connects to a female BSP thread end of the same size on one end and a male JIC 37° flare end of the same size on the other. A male end threads into a female port or a female swivel; a female swivel nut takes a male end of the same thread and seat. For the other end of the run see [BSP adapters](/c/bsp-hydraulic-adapters-uae)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the BSPT Male × JIC Female 74° Seat without leaks?",
+          "a": "For the BSPT Male × JIC Female 74° Seat: make up each end against its own seat or thread; a straight adapter has no flexibility, so line it up before tightening. The JIC 37° flare seals metal to metal, so no O-ring or thread sealant is used on the seat. Tighten to the maker's make-up torque for the size; the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains how to read a joint after the fact."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BSPT Male × JIC Female 74° Seat made, and can you export it from Dubai?",
+          "a": "The country of origin of the BSPT Male × JIC Female 74° Seat is confirmed on the quotation for your order. We ship from Dubai, UAE to destinations worldwide, and the [air or sea guide](/blog/air-or-sea-for-a-fittings-order) helps pick the lane."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the BSPT Male × JIC Female 74° Seat in Dubai?",
+          "a": "Yes. The BSPT Male × JIC Female 74° Seat is in stock at our Dubai, UAE warehouse and goes worldwide with the best lead times, within 3 working days inside the UAE. [Contact us](/contact) with the part numbers and quantities for a quotation."
+        }
+      ]
+    }
+  ]
+}

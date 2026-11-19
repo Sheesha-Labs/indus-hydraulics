@@ -1,0 +1,76 @@
+{
+  "family": "frac-pumpers",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-pumper-2-500-hp-trailer-mounted-fleet-networked-dnv-optional",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2,500 HP trailer-mounted frac pumper used for?",
+          "a": "A frac pumper is the high-pressure pump unit that injects fracturing fluid and proppant into the well. This one is packaged on a custom-built trailer with 2,500 HP nominal continuous duty and a fleet-networked DAQ."
+        },
+        {
+          "slot": "D",
+          "q": "What power sizes does the frac pumper range cover?",
+          "a": "Sizes available are 1,500 HP, 2,000 HP, 2,250 HP, 2,500 HP and 3,000 HP. This listing is the 2,500 HP unit, so choose from the pressure and rate your treatment needs."
+        },
+        {
+          "slot": "E",
+          "q": "What pump and engine can the 2,500 HP trailer-mounted frac pumper use?",
+          "a": "The triplex pump is selectable from SPM, Gardner Denver, MSI or Serva, with a deck engine from CAT, MTU, Deutz, Cummins or Volvo Penta and a CAT or Allison transmission. State the make on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What fleet networking does the 2,500 HP trailer-mounted frac pumper have?",
+          "a": "The fleet-networked DAQ connects by wire or wifi to the frac data van for fleet coordination. A standalone-pumper variant for single-well work is also available."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications does the 2,500 HP trailer-mounted frac pumper offer?",
+          "a": "DNV certification is optional for the offshore module, and CE and GOST certifications are optional. State the approvals on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2,500 HP trailer-mounted frac pumper connect to?",
+          "a": "It takes slurry from the blender and discharges into the frac manifold and treating iron. See the [frac blender](/p/frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system), [frac manifolds](/c/frac-manifold) and [flow iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the frac pumper differ from a cementing unit?",
+          "a": "A frac pumper is built for very high power and rate with proppant, while a [cementing unit](/p/single-pump-cementing-unit-skid-mounted-triplex-600-hp-auto-density-control) is a lower-power single-pump package for cement. Choose by the service."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 2,500 HP trailer-mounted frac pumper used?",
+          "a": "It is used in hydraulic fracturing fleets onshore, with a DNV-certified offshore module for platform work. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac pumper quotation?",
+          "a": "Send the horsepower, pump, engine and transmission make, networking, the certification, and whether the unit is for a fleet or single-well work."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2,500 HP trailer-mounted frac pumper be lifted offshore?",
+          "a": "Yes. A DNV-certified offshore module variant splits the unit across multiple lifts to comply with rig crane load envelopes. State the crane limits on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Can the frac pumper run without a data van?",
+          "a": "Yes, a standalone-pumper variant for single-well work is available. In a fleet, the DAQ connects by wire or wifi to the frac data van."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 2,500 HP trailer-mounted frac pumper?",
+          "a": "Yes. We list the 2,500 HP trailer-mounted frac pumper as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Pump and engine make are quoted to your specification. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

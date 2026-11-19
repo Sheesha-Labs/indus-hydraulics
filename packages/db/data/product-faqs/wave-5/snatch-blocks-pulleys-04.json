@@ -1,0 +1,1732 @@
+{
+  "family": "snatch-blocks-pulleys-04",
+  "extraFacts": [
+    {
+      "fact": "Swivel Eye Single Hook Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-single-hook-block"
+    },
+    {
+      "fact": "Steel Pulley Block (Indus listing): mat Steel; size 1-1/2″ to 3-1/2″; rate working load limit 300 to 450 kg",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block"
+    },
+    {
+      "fact": "Steel Cable Pulley Block (Indus listing): size 60 mm to 95 mm; rate working load limit 150 to 200 lbs",
+      "source": "Indus Hydraulics product listing /p/steel-cable-pulley-block"
+    },
+    {
+      "fact": "Steel Pulley Block (Indus listing): mat Steel; size 1-1/2″ to 3-1/2″; rate working load limit 300 to 450 kg",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block"
+    },
+    {
+      "fact": "Steel Pulley Block, Closed Shell — 7511 Series (Indus listing): size 2″ to 12″; rate working load limit 0.25 to 6 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block-closed-shell-7511-series"
+    },
+    {
+      "fact": "Steel Pulley Block, Closed Shell — 7411 Series (Indus listing): size 2″ to 12″; rate working load limit 0.25 to 6 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block-closed-shell-7411-series"
+    },
+    {
+      "fact": "Steel Pulley Block, Open Shell — 7311 Series (Indus listing): size 2″ to 12″; rate working load limit 0.25 to 6 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block-open-shell-7311-series"
+    },
+    {
+      "fact": "Steel Pulley Block, Open Shell — 7111 / 7211 Series (Indus listing): size 2″ to 12″; rate working load limit 0.25 to 6 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block-open-shell-7111-7211-series"
+    },
+    {
+      "fact": "Steel Pulley with Single Sheave Red Painted Type 5 (Indus listing): mat Carbon steel; size 2.5 t; rate working load limit 2.5 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-with-single-sheave-red-painted-type-5"
+    },
+    {
+      "fact": "Steel Pulley Block (Indus listing): mat Steel; size 1-1/2″ to 3-1/2″; rate working load limit 300 to 450 kg",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block"
+    },
+    {
+      "fact": "Steel Pulley Block, Open Shell — 7311 Series (Indus listing): size 2″ to 12″; rate working load limit 0.25 to 6 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-block-open-shell-7311-series"
+    },
+    {
+      "fact": "Steel Pulley Single Sheave, ST Type (Indus listing): size 140 mm to 160 mm; rate working load limit 2.5 to 5 t",
+      "source": "Indus Hydraulics product listing /p/steel-pulley-single-sheave-st-type"
+    },
+    {
+      "fact": "Swivel Eye Snatch Block (Indus listing): mat Steel; fin Hot dipped galvanized; size 1-1/2″ to 5″; rate working load limit 400 to 1,900 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-snatch-block"
+    },
+    {
+      "fact": "Swivel Eye Flat Block (Indus listing): mat Stainless stell; rate working load limit 525 to 1,850 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-flat-block"
+    },
+    {
+      "fact": "Swivel Eye Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-block"
+    },
+    {
+      "fact": "Swivel Hook Flat Double Sheave Block (Indus listing): mat Stainless steel; rate working load limit 525 to 1,850 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-hook-flat-double-sheave-block"
+    },
+    {
+      "fact": "Swivel Eye Single Hook Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-single-hook-block"
+    },
+    {
+      "fact": "Swivel Eye Single Sheave Block (Indus listing): mat Stainless stell; rate working load limit 525 to 1,850 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-single-sheave-block"
+    },
+    {
+      "fact": "Swivel Eye Single Hook Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-single-hook-block"
+    },
+    {
+      "fact": "Swivel Eye Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-block"
+    },
+    {
+      "fact": "Swivel Eye Flat Double Sheave Block (Indus listing): mat Stainless stell; rate working load limit 525 to 1,850 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-flat-double-sheave-block"
+    },
+    {
+      "fact": "Swivel Eye Single Hook Block (Indus listing): rate working load limit 420 to 1,250 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-single-hook-block"
+    },
+    {
+      "fact": "Swivel Eye Snatch Block (Indus listing): mat Steel; fin Hot dipped galvanized; size 1-1/2″ to 5″; rate working load limit 400 to 1,900 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-snatch-block"
+    },
+    {
+      "fact": "Stainless Steel Swivel Eye Pulley Single Wheel (Indus listing): mat Type 304 or type 316 stainless steel; fin Polished / electrophoretic coating; size 15 mm to 100 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-swivel-eye-pulley-single-wheel"
+    },
+    {
+      "fact": "Swivel Eye Snatch Block (Indus listing): mat Steel; fin Hot dipped galvanized; size 1-1/2″ to 5″; rate working load limit 400 to 1,900 lbs",
+      "source": "Indus Hydraulics product listing /p/swivel-eye-snatch-block"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stainless-steel-swivel-eye-pulley-single-wheel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Swivel Eye Pulley Single Wheel and where is it used?",
+          "a": "The Stainless Steel Swivel Eye Pulley Single Wheel is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 15 mm to 100 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Swivel Eye Pulley Single Wheel part numbers such as IH-LR-BP-SEPSWSS-15MM?",
+          "a": "IH-LR-BP-SEPSWSS-15MM is the 15 mm size, IH-LR-BP-SEPSWSS-32MM the 32 mm size and IH-LR-BP-SEPSWSS-100MM the 100 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Swivel Eye Pulley Single Wheel cover?",
+          "a": "Sizes on the Stainless Steel Swivel Eye Pulley Single Wheel run 15 mm to 100 mm. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Swivel Eye Pulley Single Wheel for my job?",
+          "a": "Size the Stainless Steel Swivel Eye Pulley Single Wheel from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (4 mm, 5 mm, 6 mm and 8 mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Stainless Steel Swivel Eye Pulley Single Wheel?",
+          "a": "No load rating is published on the Stainless Steel Swivel Eye Pulley Single Wheel listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Swivel Eye Pulley Single Wheel have?",
+          "a": "The Stainless Steel Swivel Eye Pulley Single Wheel is made from type 304 or type 316 stainless steel and offered with these finishes: polished / electrophoretic coating. Stainless suits wet and corrosive sites."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Swivel Eye Pulley Single Wheel?",
+          "a": "The listing for the Stainless Steel Swivel Eye Pulley Single Wheel names neither a standard nor a certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Swivel Eye Pulley Single Wheel?",
+          "a": "Rig the Stainless Steel Swivel Eye Pulley Single Wheel with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Swivel Eye Pulley Single Wheel?",
+          "a": "Before use, spin the Stainless Steel Swivel Eye Pulley Single Wheel sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Swivel Eye Pulley Single Wheel compare with the Swivel Eye Single Hook Block?",
+          "a": "The nearest sibling is the [Swivel Eye Single Hook Block](/p/swivel-eye-single-hook-block), and the two differ on material and finish. In detail, material is type 304 or type 316 stainless steel here and not stated there; finish is polished / electrophoretic coating here and not stated there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Stainless Steel Swivel Eye Pulley Single Wheel outside the UAE?",
+          "a": "Yes, Stainless Steel Swivel Eye Pulley Single Wheel goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Swivel Eye Pulley Single Wheel for delivery from Dubai?",
+          "a": "Yes, Stainless Steel Swivel Eye Pulley Single Wheel is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-cable-pulley-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Cable Pulley Block and where is it used?",
+          "a": "The Steel Cable Pulley Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 60 mm to 95 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Cable Pulley Block part numbers such as IH-LR-BP-CPB-60MM?",
+          "a": "IH-LR-BP-CPB-60MM is the 60 mm size, 150 lb WLL and IH-LR-BP-CPB-95MM the 95 mm size, 200 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Cable Pulley Block come in?",
+          "a": "Sizes on the Steel Cable Pulley Block run 60 mm to 95 mm. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Steel Cable Pulley Block for my job?",
+          "a": "Size the Steel Cable Pulley Block from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (30 mm and 50 mm)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Cable Pulley Block?",
+          "a": "The Steel Cable Pulley Block lists a working load limit of 150 to 200 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Cable Pulley Block made from and how is it finished?",
+          "a": "The listing for the Steel Cable Pulley Block does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Steel Cable Pulley Block?",
+          "a": "The Steel Cable Pulley Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Steel Cable Pulley Block?",
+          "a": "Rig the Steel Cable Pulley Block with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Cable Pulley Block?",
+          "a": "Before use, spin the Steel Cable Pulley Block sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Cable Pulley Block compare with the Steel Pulley Block?",
+          "a": "The nearest sibling is the [Steel Pulley Block](/p/steel-pulley-block), and the two differ on material, size range and rating. In detail, material is not stated here and steel there; size range is 60 mm to 95 mm here and 1-1/2″ to 3-1/2″ there; rating is working load limit 150 to 200 lbs here and working load limit 300 to 450 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Steel Cable Pulley Block outside the UAE?",
+          "a": "Yes, Steel Cable Pulley Block goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Cable Pulley Block available from stock in Dubai?",
+          "a": "Yes, Steel Cable Pulley Block is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block used for?",
+          "a": "The Steel Pulley Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1-1/2″ to 3-1/2″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block part numbers such as IH-LR-BP-STP-150?",
+          "a": "IH-LR-BP-STP-150 is the 1-1/2″ size, 300 kg WLL, IH-LR-BP-STP-350-A the 3-1/2″ size, Type A, 450 kg WLL and IH-LR-BP-STP-350-B the 3-1/2″ size, Type B, 450 kg WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Pulley Block come in?",
+          "a": "The Steel Pulley Block is listed in 1-1/2″ to 3-1/2″, rated 300 to 450 kg. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range. It comes as Type A and Type B."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley Block?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Steel Pulley Block table (rope sizes 5 mm and 12 mm)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley Block?",
+          "a": "The Steel Pulley Block lists a working load limit of 300 to 450 kg, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Block have?",
+          "a": "The Steel Pulley Block is made from steel. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Steel Pulley Block?",
+          "a": "The Steel Pulley Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Steel Pulley Block?",
+          "a": "The Steel Pulley Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Steel Pulley Block be fitted and inspected?",
+          "a": "Check that the Steel Pulley Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block compare with the Steel Cable Pulley Block?",
+          "a": "The nearest sibling is the [Steel Cable Pulley Block](/p/steel-cable-pulley-block), and the two differ on material, size range and rating. In detail, material is steel here and not stated there; size range is 1-1/2″ to 3-1/2″ here and 60 mm to 95 mm there; rating is working load limit 300 to 450 kg here and working load limit 150 to 200 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Steel Pulley Block outside the UAE?",
+          "a": "Yes. We ship Steel Pulley Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Steel Pulley Block for delivery from Dubai?",
+          "a": "Yes. We keep Steel Pulley Block in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block-7011-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block — 7011 Series used for?",
+          "a": "The Steel Pulley Block — 7011 Series is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block — 7011 Series part numbers such as IH-LR-BP-PB7011-200-SSE?",
+          "a": "IH-LR-BP-PB7011-200-SSE is the 2″ size, Single sheave, eye, 0.25 t WLL, IH-LR-BP-PB7011-200-DSH the 2″ size, Double sheave, hook, 0.25 t WLL and IH-LR-BP-PB7011-1200-TSH the 12″ size, Triple sheave, hook, 6 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel Pulley Block — 7011 Series cover?",
+          "a": "The Steel Pulley Block — 7011 Series is listed in 2″ to 12″, rated 0.25 to 6 t. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range. It comes as Single sheave, eye, Single sheave, hook, Double sheave, eye, Double sheave, hook, Triple sheave, eye and Triple sheave, hook."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley Block — 7011 Series?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Steel Pulley Block — 7011 Series table (rope sizes 6 mm, 8 mm, 10 mm and 13 mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley Block — 7011 Series?",
+          "a": "The Steel Pulley Block — 7011 Series lists a working load limit of 0.25 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Pulley Block — 7011 Series made from and how is it finished?",
+          "a": "The Steel Pulley Block — 7011 Series is made from mild steel. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Steel Pulley Block — 7011 Series?",
+          "a": "The Steel Pulley Block — 7011 Series ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley Block — 7011 Series?",
+          "a": "The Steel Pulley Block — 7011 Series runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Pulley Block — 7011 Series?",
+          "a": "Check that the Steel Pulley Block — 7011 Series sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block — 7011 Series compare with the Steel Pulley Block?",
+          "a": "The nearest sibling is the [Steel Pulley Block](/p/steel-pulley-block), and the two differ on material, size range and rating. In detail, material is mild steel here and steel there; size range is 2″ to 12″ here and 1-1/2″ to 3-1/2″ there; rating is working load limit 0.25 to 6 t here and working load limit 300 to 450 kg there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley Block — 7011 Series from Dubai?",
+          "a": "Yes. We ship Steel Pulley Block — 7011 Series from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Steel Pulley Block — 7011 Series for delivery from Dubai?",
+          "a": "Yes. Steel Pulley Block — 7011 Series sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block-closed-shell-7411-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block, Closed Shell — 7411 Series used for?",
+          "a": "The Steel Pulley Block, Closed Shell — 7411 Series is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block, Closed Shell — 7411 Series part numbers such as IH-LR-BP-PBCS7411-200-SSE?",
+          "a": "IH-LR-BP-PBCS7411-200-SSE is the 2″ size, Single sheave, eye, 0.25 t WLL, IH-LR-BP-PBCS7411-200-DSH the 2″ size, Double sheave, hook, 0.25 t WLL and IH-LR-BP-PBCS7411-1200-TSH the 12″ size, Triple sheave, hook, 6 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel Pulley Block, Closed Shell — 7411 Series cover?",
+          "a": "The Steel Pulley Block, Closed Shell — 7411 Series is listed in 2″ to 12″, rated 0.25 to 6 t. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range. It comes as Single sheave, eye, Single sheave, hook, Double sheave, eye, Double sheave, hook, Triple sheave, eye and Triple sheave, hook."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Steel Pulley Block, Closed Shell — 7411 Series for my job?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Steel Pulley Block, Closed Shell — 7411 Series table (rope sizes 6mm, 8mm, 10mm and 13mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Steel Pulley Block, Closed Shell — 7411 Series carry?",
+          "a": "The Steel Pulley Block, Closed Shell — 7411 Series lists a working load limit of 0.25 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Block, Closed Shell — 7411 Series have?",
+          "a": "The listing for the Steel Pulley Block, Closed Shell — 7411 Series does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley Block, Closed Shell — 7411 Series come with a test certificate?",
+          "a": "The Steel Pulley Block, Closed Shell — 7411 Series ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley Block, Closed Shell — 7411 Series?",
+          "a": "The Steel Pulley Block, Closed Shell — 7411 Series runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Steel Pulley Block, Closed Shell — 7411 Series be fitted and inspected?",
+          "a": "Check that the Steel Pulley Block, Closed Shell — 7411 Series sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block, Closed Shell — 7411 Series compare with the Steel Pulley Block, Closed Shell — 7511 Series?",
+          "a": "The nearest sibling is the [Steel Pulley Block, Closed Shell — 7511 Series](/p/steel-pulley-block-closed-shell-7511-series), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Steel Pulley Block, Closed Shell — 7411 Series outside the UAE?",
+          "a": "Yes. We ship Steel Pulley Block, Closed Shell — 7411 Series from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley Block, Closed Shell — 7411 Series available from stock in Dubai?",
+          "a": "Yes. We keep Steel Pulley Block, Closed Shell — 7411 Series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block-closed-shell-7511-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block, Closed Shell — 7511 Series and where is it used?",
+          "a": "The Steel Pulley Block, Closed Shell — 7511 Series is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block, Closed Shell — 7511 Series part numbers such as IH-LR-BP-PBCS7511-200-SSE?",
+          "a": "IH-LR-BP-PBCS7511-200-SSE is the 2″ size, Single sheave, eye, 0.25 t WLL, IH-LR-BP-PBCS7511-200-DSH the 2″ size, Double sheave, hook, 0.25 t WLL and IH-LR-BP-PBCS7511-1200-TSH the 12″ size, Triple sheave, hook, 6 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel Pulley Block, Closed Shell — 7511 Series cover?",
+          "a": "Sizes on the Steel Pulley Block, Closed Shell — 7511 Series run 2″ to 12″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products. It comes as Single sheave, eye, Single sheave, hook, Double sheave, eye, Double sheave, hook, Triple sheave, eye and Triple sheave, hook."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley Block, Closed Shell — 7511 Series?",
+          "a": "Size the Steel Pulley Block, Closed Shell — 7511 Series from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (6mm, 8mm, 10mm and 13mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley Block, Closed Shell — 7511 Series?",
+          "a": "The Steel Pulley Block, Closed Shell — 7511 Series lists a working load limit of 0.25 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Block, Closed Shell — 7511 Series have?",
+          "a": "The listing for the Steel Pulley Block, Closed Shell — 7511 Series does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley Block, Closed Shell — 7511 Series come with a test certificate?",
+          "a": "The Steel Pulley Block, Closed Shell — 7511 Series ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley Block, Closed Shell — 7511 Series?",
+          "a": "Rig the Steel Pulley Block, Closed Shell — 7511 Series with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Steel Pulley Block, Closed Shell — 7511 Series be fitted and inspected?",
+          "a": "Before use, spin the Steel Pulley Block, Closed Shell — 7511 Series sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block, Closed Shell — 7511 Series compare with the Steel Pulley Block, Closed Shell — 7411 Series?",
+          "a": "The nearest sibling is the [Steel Pulley Block, Closed Shell — 7411 Series](/p/steel-pulley-block-closed-shell-7411-series), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley Block, Closed Shell — 7511 Series from Dubai?",
+          "a": "Yes, Steel Pulley Block, Closed Shell — 7511 Series goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley Block, Closed Shell — 7511 Series available from stock in Dubai?",
+          "a": "Yes, Steel Pulley Block, Closed Shell — 7511 Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block-open-shell-7111-7211-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block, Open Shell — 7111 / 7211 Series and where is it used?",
+          "a": "The Steel Pulley Block, Open Shell — 7111 / 7211 Series is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block, Open Shell — 7111 / 7211 Series part numbers such as IH-LR-BP-PBOS71117-200-SSE?",
+          "a": "IH-LR-BP-PBOS71117-200-SSE is the 2″ size, Single sheave, eye, 0.25 lb WLL, IH-LR-BP-PBOS71117-600-DSH the 6″ size, Double sheave, hook, 2 t WLL and IH-LR-BP-PBOS71117-1200-TSH the 12″ size, Triple sheave, hook, 6 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel Pulley Block, Open Shell — 7111 / 7211 Series cover?",
+          "a": "Sizes on the Steel Pulley Block, Open Shell — 7111 / 7211 Series run 2″ to 12″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products. It comes as Single sheave, eye, Single sheave, hook, Double sheave, hook, Triple sheave, eye and Triple sheave, hook."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Steel Pulley Block, Open Shell — 7111 / 7211 Series for my job?",
+          "a": "Size the Steel Pulley Block, Open Shell — 7111 / 7211 Series from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (6mm, 8mm, 10mm and 13mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Steel Pulley Block, Open Shell — 7111 / 7211 Series carry?",
+          "a": "The Steel Pulley Block, Open Shell — 7111 / 7211 Series lists a working load limit of 0.25 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Block, Open Shell — 7111 / 7211 Series have?",
+          "a": "The listing for the Steel Pulley Block, Open Shell — 7111 / 7211 Series does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley Block, Open Shell — 7111 / 7211 Series come with a test certificate?",
+          "a": "The Steel Pulley Block, Open Shell — 7111 / 7211 Series ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley Block, Open Shell — 7111 / 7211 Series?",
+          "a": "Rig the Steel Pulley Block, Open Shell — 7111 / 7211 Series with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Pulley Block, Open Shell — 7111 / 7211 Series?",
+          "a": "Before use, spin the Steel Pulley Block, Open Shell — 7111 / 7211 Series sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block, Open Shell — 7111 / 7211 Series compare with the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "The nearest sibling is the [Steel Pulley Block, Open Shell — 7311 Series](/p/steel-pulley-block-open-shell-7311-series), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley Block, Open Shell — 7111 / 7211 Series from Dubai?",
+          "a": "Yes, Steel Pulley Block, Open Shell — 7111 / 7211 Series goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley Block, Open Shell — 7111 / 7211 Series available from stock in Dubai?",
+          "a": "Yes, we stock Steel Pulley Block, Open Shell — 7111 / 7211 Series at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-block-open-shell-7311-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Block, Open Shell — 7311 Series used for?",
+          "a": "The Steel Pulley Block, Open Shell — 7311 Series is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Block, Open Shell — 7311 Series part numbers such as IH-LR-BP-PBOS7311-200-SSE?",
+          "a": "IH-LR-BP-PBOS7311-200-SSE is the 2″ size, Single sheave, eye, 0.25 t WLL, IH-LR-BP-PBOS7311-200-DSH the 2″ size, Double sheave, hook, 0.25 t WLL and IH-LR-BP-PBOS7311-1200-TSH the 12″ size, Triple sheave, hook, 6 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Pulley Block, Open Shell — 7311 Series come in?",
+          "a": "Sizes on the Steel Pulley Block, Open Shell — 7311 Series run 2″ to 12″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products. It comes as Single sheave, eye, Single sheave, hook, Double sheave, eye, Double sheave, hook, Triple sheave, eye and Triple sheave, hook."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "Size the Steel Pulley Block, Open Shell — 7311 Series from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (6mm, 8mm, 10mm and 13mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "The Steel Pulley Block, Open Shell — 7311 Series lists a working load limit of 0.25 to 6 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Block, Open Shell — 7311 Series have?",
+          "a": "The listing for the Steel Pulley Block, Open Shell — 7311 Series does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "The Steel Pulley Block, Open Shell — 7311 Series ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "Rig the Steel Pulley Block, Open Shell — 7311 Series with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "Before use, spin the Steel Pulley Block, Open Shell — 7311 Series sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Block, Open Shell — 7311 Series compare with the Steel Pulley Block, Open Shell — 7111 / 7211 Series?",
+          "a": "The nearest sibling is the [Steel Pulley Block, Open Shell — 7111 / 7211 Series](/p/steel-pulley-block-open-shell-7111-7211-series), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley Block, Open Shell — 7311 Series from Dubai?",
+          "a": "Yes, Steel Pulley Block, Open Shell — 7311 Series goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley Block, Open Shell — 7311 Series available from stock in Dubai?",
+          "a": "Yes, Steel Pulley Block, Open Shell — 7311 Series is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-single-sheave-st-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley Single Sheave, ST Type and where is it used?",
+          "a": "The Steel Pulley Single Sheave, ST Type is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 140 mm to 160 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley Single Sheave, ST Type part numbers such as IH-LR-BP-PSS-140MM?",
+          "a": "IH-LR-BP-PSS-140MM is the 140 mm size, 2.5 t WLL and IH-LR-BP-PSS-160MM the 160 mm size, 5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Pulley Single Sheave, ST Type come in?",
+          "a": "Sizes on the Steel Pulley Single Sheave, ST Type run 140 mm to 160 mm. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley Single Sheave, ST Type?",
+          "a": "Size the Steel Pulley Single Sheave, ST Type from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (14 mm and 16 mm)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley Single Sheave, ST Type?",
+          "a": "The Steel Pulley Single Sheave, ST Type lists a working load limit of 2.5 to 5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley Single Sheave, ST Type have?",
+          "a": "The listing for the Steel Pulley Single Sheave, ST Type does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley Single Sheave, ST Type come with a test certificate?",
+          "a": "The Steel Pulley Single Sheave, ST Type ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley Single Sheave, ST Type?",
+          "a": "Rig the Steel Pulley Single Sheave, ST Type with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Steel Pulley Single Sheave, ST Type be fitted and inspected?",
+          "a": "Before use, spin the Steel Pulley Single Sheave, ST Type sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley Single Sheave, ST Type compare with the Steel Pulley with Single Sheave Red Painted Type 5?",
+          "a": "The nearest sibling is the [Steel Pulley with Single Sheave Red Painted Type 5](/p/steel-pulley-with-single-sheave-red-painted-type-5), and the two differ on material, size range and rating. In detail, material is not stated here and carbon steel there; size range is 140 mm to 160 mm here and 2.5 t there; rating is working load limit 2.5 to 5 t here and working load limit 2.5 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Steel Pulley Single Sheave, ST Type outside the UAE?",
+          "a": "Yes, Steel Pulley Single Sheave, ST Type goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Steel Pulley Single Sheave, ST Type for delivery from Dubai?",
+          "a": "Yes, Steel Pulley Single Sheave, ST Type is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-types-03-to-08",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley — Types 03 to 08 and where is it used?",
+          "a": "The Steel Pulley — Types 03 to 08 is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 3″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley — Types 03 to 08 part numbers such as IH-LR-BP-PT0308-400-T03?",
+          "a": "IH-LR-BP-PT0308-400-T03 is the 4″ size, Type 03, 1.5 t WLL, IH-LR-BP-PT0308-500-T06 the 5″ size, Type 06, 2 t WLL and IH-LR-BP-PT0308-400-T08 the 4″ size, Type 08, 2 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Pulley — Types 03 to 08 come in?",
+          "a": "Sizes on the Steel Pulley — Types 03 to 08 run 3″ to 5″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products. It comes as Type 03, Type 04, black painted, Type 06, Type 07 and Type 08."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Steel Pulley — Types 03 to 08?",
+          "a": "Size the Steel Pulley — Types 03 to 08 from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (10 mm, 12 mm and 8 mm)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Steel Pulley — Types 03 to 08?",
+          "a": "The Steel Pulley — Types 03 to 08 lists a working load limit of 1 to 3 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley — Types 03 to 08 have?",
+          "a": "The Steel Pulley — Types 03 to 08 is made from carbon steel and finished zinc plated. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Steel Pulley — Types 03 to 08?",
+          "a": "The Steel Pulley — Types 03 to 08 ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Steel Pulley — Types 03 to 08?",
+          "a": "Rig the Steel Pulley — Types 03 to 08 with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Pulley — Types 03 to 08?",
+          "a": "Before use, spin the Steel Pulley — Types 03 to 08 sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley — Types 03 to 08 compare with the Steel Pulley Block?",
+          "a": "The nearest sibling is the [Steel Pulley Block](/p/steel-pulley-block), and the two differ on material, finish and size range. In detail, material is carbon steel here and steel there; finish is zinc plated here and not stated there; size range is 3″ to 5″ here and 1-1/2″ to 3-1/2″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley — Types 03 to 08 from Dubai?",
+          "a": "Yes, Steel Pulley — Types 03 to 08 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Steel Pulley — Types 03 to 08 for delivery from Dubai?",
+          "a": "Yes, we stock Steel Pulley — Types 03 to 08 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-with-hook-open-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley with Hook Open Type and where is it used?",
+          "a": "The Steel Pulley with Hook Open Type is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 140 mm to 220 mm, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley with Hook Open Type part numbers such as IH-LR-BP-PHO-140MM?",
+          "a": "IH-LR-BP-PHO-140MM is the 140 mm size, 2 t WLL, IH-LR-BP-PHO-180MM the 180 mm size, 3.2 t WLL and IH-LR-BP-PHO-220MM the 220 mm size, 5 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Steel Pulley with Hook Open Type come in?",
+          "a": "Sizes on the Steel Pulley with Hook Open Type run 140 mm to 220 mm. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Steel Pulley with Hook Open Type for my job?",
+          "a": "Size the Steel Pulley with Hook Open Type from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (10 mm, 12 mm and 16 mm)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Steel Pulley with Hook Open Type carry?",
+          "a": "The Steel Pulley with Hook Open Type lists a working load limit of 2 to 5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley with Hook Open Type have?",
+          "a": "The Steel Pulley with Hook Open Type is made from carbon steel and finished red painted. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley with Hook Open Type come with a test certificate?",
+          "a": "The Steel Pulley with Hook Open Type ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley with Hook Open Type?",
+          "a": "Rig the Steel Pulley with Hook Open Type with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Steel Pulley with Hook Open Type be fitted and inspected?",
+          "a": "Before use, spin the Steel Pulley with Hook Open Type sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley with Hook Open Type compare with the Steel Pulley Block, Open Shell — 7311 Series?",
+          "a": "The nearest sibling is the [Steel Pulley Block, Open Shell — 7311 Series](/p/steel-pulley-block-open-shell-7311-series), and the two differ on material, finish and size range. In detail, material is carbon steel here and not stated there; finish is red painted here and not stated there; size range is 140 mm to 220 mm here and 2″ to 12″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley with Hook Open Type from Dubai?",
+          "a": "Yes, Steel Pulley with Hook Open Type goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley with Hook Open Type available from stock in Dubai?",
+          "a": "Yes, we stock Steel Pulley with Hook Open Type at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "steel-pulley-with-single-sheave-red-painted-type-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Pulley with Single Sheave Red Painted Type 5 and where is it used?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 2.5 t, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Steel Pulley with Single Sheave Red Painted Type 5 part numbers such as IH-LR-BP-PSSRP5-2P5T?",
+          "a": "IH-LR-BP-PSSRP5-2P5T and IH-LR-BP-PSSRP5-2P5T are two of the part numbers in the size table, each with its own dimensions. Quote the full Indus part number from the table, or the size you need, so the right row is supplied."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Steel Pulley with Single Sheave Red Painted Type 5 cover?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 is listed in 2.5 t, rated 2.5 t. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Steel Pulley with Single Sheave Red Painted Type 5 for my job?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Steel Pulley with Single Sheave Red Painted Type 5 table (rope sizes Φ10-16)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Steel Pulley with Single Sheave Red Painted Type 5 carry?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 lists a working load limit of 2.5 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Steel Pulley with Single Sheave Red Painted Type 5 have?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 is made from carbon steel. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Steel Pulley with Single Sheave Red Painted Type 5 come with a test certificate?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Steel Pulley with Single Sheave Red Painted Type 5?",
+          "a": "The Steel Pulley with Single Sheave Red Painted Type 5 runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Steel Pulley with Single Sheave Red Painted Type 5?",
+          "a": "Check that the Steel Pulley with Single Sheave Red Painted Type 5 sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Pulley with Single Sheave Red Painted Type 5 compare with the Steel Pulley Single Sheave, ST Type?",
+          "a": "The nearest sibling is the [Steel Pulley Single Sheave, ST Type](/p/steel-pulley-single-sheave-st-type), and the two differ on material, size range and rating. In detail, material is carbon steel here and not stated there; size range is 2.5 t here and 140 mm to 160 mm there; rating is working load limit 2.5 t here and working load limit 2.5 to 5 t there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Steel Pulley with Single Sheave Red Painted Type 5 from Dubai?",
+          "a": "Yes. We ship Steel Pulley with Single Sheave Red Painted Type 5 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Steel Pulley with Single Sheave Red Painted Type 5 available from stock in Dubai?",
+          "a": "Yes. We keep Steel Pulley with Single Sheave Red Painted Type 5 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "super-champion-snatch-block-430-431-407-pattern",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Super Champion Snatch Block — 430 / 431 / 407 Pattern and where is it used?",
+          "a": "The Super Champion Snatch Block — 430 / 431 / 407 Pattern is a snatch block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 8″ to 24″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Super Champion Snatch Block — 430 / 431 / 407 Pattern part numbers such as IH-LR-BP-SCSB43043-800-H430?",
+          "a": "IH-LR-BP-SCSB43043-800-H430 is the 8″ size, Hook, 430, 20 t WLL, IH-LR-BP-SCSB43043-1600-S431 the 16″ size, Shackle, 431, 20 t WLL and IH-LR-BP-SCSB43043-2400-T407 the 24″ size, Tailboard, 407, 40 t WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Super Champion Snatch Block — 430 / 431 / 407 Pattern cover?",
+          "a": "Sizes on the Super Champion Snatch Block — 430 / 431 / 407 Pattern run 8″ to 24″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products. It comes as Hook, 430, Shackle, 431 and Tailboard, 407."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Super Champion Snatch Block — 430 / 431 / 407 Pattern?",
+          "a": "Size the Super Champion Snatch Block — 430 / 431 / 407 Pattern from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (1-1/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Super Champion Snatch Block — 430 / 431 / 407 Pattern carry?",
+          "a": "The Super Champion Snatch Block — 430 / 431 / 407 Pattern lists a working load limit of 20 to 40 t, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Super Champion Snatch Block — 430 / 431 / 407 Pattern made from and how is it finished?",
+          "a": "The Super Champion Snatch Block — 430 / 431 / 407 Pattern is made from steel and offered with these finishes: galvanized or painted."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Super Champion Snatch Block — 430 / 431 / 407 Pattern?",
+          "a": "The Super Champion Snatch Block — 430 / 431 / 407 Pattern ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Super Champion Snatch Block — 430 / 431 / 407 Pattern?",
+          "a": "Rig the Super Champion Snatch Block — 430 / 431 / 407 Pattern with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Super Champion Snatch Block — 430 / 431 / 407 Pattern be fitted and inspected?",
+          "a": "Before use, spin the Super Champion Snatch Block — 430 / 431 / 407 Pattern sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "C",
+          "q": "Which Crosby block patterns does the Super Champion Snatch Block 430 / 431 / 407 match?",
+          "a": "It is listed as compatible with Crosby patterns 407, 430 and 431, matching the three variants on this listing: tailboard 407, hook 430 and shackle 431. Rated with a 4:1 design factor between working load limit and minimum breaking load, it carries 20 to 40 t by size; quote the Indus part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Super Champion Snatch Block — 430 / 431 / 407 Pattern outside the UAE?",
+          "a": "Yes, Super Champion Snatch Block — 430 / 431 / 407 Pattern goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Super Champion Snatch Block — 430 / 431 / 407 Pattern for delivery from Dubai?",
+          "a": "Yes, we stock Super Champion Snatch Block — 430 / 431 / 407 Pattern at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Block used for?",
+          "a": "The Swivel Eye Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 3½″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Block part numbers such as IH-LR-BP-SEB-1?",
+          "a": "IH-LR-BP-SEB-1 is the 1½″ size, 420 lb WLL, IH-LR-BP-SEB-2 the 2½″ size, 550 lb WLL and IH-LR-BP-SEB-3 the 3½″ size, 1250 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Eye Block cover?",
+          "a": "Sizes on the Swivel Eye Block run 1½″ to 3½″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Eye Block?",
+          "a": "Size the Swivel Eye Block from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (3/16″, 1/4″ and 5/16″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swivel Eye Block carry?",
+          "a": "The Swivel Eye Block lists a working load limit of 420 to 1,250 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Eye Block made from and how is it finished?",
+          "a": "The listing for the Swivel Eye Block does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Eye Block come with a test certificate?",
+          "a": "The Swivel Eye Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Swivel Eye Block?",
+          "a": "Rig the Swivel Eye Block with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Eye Block?",
+          "a": "Before use, spin the Swivel Eye Block sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Block compare with the Swivel Eye Flat Block?",
+          "a": "The nearest sibling is the [Swivel Eye Flat Block](/p/swivel-eye-flat-block), and the two differ on material and rating. In detail, material is not stated here and stainless stell there; rating is working load limit 420 to 1,250 lbs here and working load limit 525 to 1,850 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Eye Block from Dubai?",
+          "a": "Yes, Swivel Eye Block goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swivel Eye Block for delivery from Dubai?",
+          "a": "Yes, Swivel Eye Block is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-flat-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Flat Block and where is it used?",
+          "a": "The Swivel Eye Flat Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Flat Block part numbers such as IH-LR-BP-SEFB-1?",
+          "a": "IH-LR-BP-SEFB-1 is the 1½″ size, 525 lb WLL, IH-LR-BP-SEFB-300 the 3″ size, 800 lb WLL and IH-LR-BP-SEFB-500 the 5″ size, 1850 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Eye Flat Block cover?",
+          "a": "The Swivel Eye Flat Block is listed in 1½″ to 5″, rated 525 to 1,850 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Eye Flat Block?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Eye Flat Block table (rope sizes 3/16″, 1/4″, 5/16″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Swivel Eye Flat Block?",
+          "a": "The Swivel Eye Flat Block lists a working load limit of 525 to 1,850 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Eye Flat Block made from and how is it finished?",
+          "a": "The Swivel Eye Flat Block is made from stainless stell. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Eye Flat Block come with a test certificate?",
+          "a": "The Swivel Eye Flat Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Eye Flat Block?",
+          "a": "The Swivel Eye Flat Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Swivel Eye Flat Block be fitted and inspected?",
+          "a": "Check that the Swivel Eye Flat Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Flat Block compare with the Swivel Eye Block?",
+          "a": "The nearest sibling is the [Swivel Eye Block](/p/swivel-eye-block), and the two differ on material and rating. In detail, material is stainless stell here and not stated there; rating is working load limit 525 to 1,850 lbs here and working load limit 420 to 1,250 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Eye Flat Block from Dubai?",
+          "a": "Yes. We ship Swivel Eye Flat Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Swivel Eye Flat Block available from stock in Dubai?",
+          "a": "Yes. Swivel Eye Flat Block sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-flat-double-sheave-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Flat Double Sheave Block used for?",
+          "a": "The Swivel Eye Flat Double Sheave Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Flat Double Sheave Block part numbers such as IH-LR-BP-SEFDSB-1?",
+          "a": "IH-LR-BP-SEFDSB-1 is the 1½″ size, 525 lb WLL, IH-LR-BP-SEFDSB-300 the 3″ size, 800 lb WLL and IH-LR-BP-SEFDSB-500 the 5″ size, 1850 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Eye Flat Double Sheave Block cover?",
+          "a": "Sizes on the Swivel Eye Flat Double Sheave Block run 1½″ to 5″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Swivel Eye Flat Double Sheave Block for my job?",
+          "a": "Size the Swivel Eye Flat Double Sheave Block from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (3/16″, 1/4″, 5/16″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swivel Eye Flat Double Sheave Block carry?",
+          "a": "The Swivel Eye Flat Double Sheave Block lists a working load limit of 525 to 1,850 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Eye Flat Double Sheave Block made from and how is it finished?",
+          "a": "The Swivel Eye Flat Double Sheave Block is made from stainless stell. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Swivel Eye Flat Double Sheave Block?",
+          "a": "The Swivel Eye Flat Double Sheave Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Eye Flat Double Sheave Block?",
+          "a": "Rig the Swivel Eye Flat Double Sheave Block with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Eye Flat Double Sheave Block?",
+          "a": "Before use, spin the Swivel Eye Flat Double Sheave Block sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Flat Double Sheave Block compare with the Swivel Hook Flat Double Sheave Block?",
+          "a": "The nearest sibling is the [Swivel Hook Flat Double Sheave Block](/p/swivel-hook-flat-double-sheave-block), and the two differ on material. In detail, material is stainless stell here and stainless steel there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Swivel Eye Flat Double Sheave Block outside the UAE?",
+          "a": "Yes, Swivel Eye Flat Double Sheave Block goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Swivel Eye Flat Double Sheave Block available from stock in Dubai?",
+          "a": "Yes, we stock Swivel Eye Flat Double Sheave Block at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-scissor-double-hook-pulley",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Scissor Double Hook Pulley and where is it used?",
+          "a": "The Swivel Eye Scissor Double Hook Pulley is a pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 3½″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Scissor Double Hook Pulley part numbers such as IH-LR-BP-SESDHP-1?",
+          "a": "IH-LR-BP-SESDHP-1 is the 1½″ size, 420 lb WLL, IH-LR-BP-SESDHP-2 the 2½″ size, 550 lb WLL and IH-LR-BP-SESDHP-3 the 3½″ size, 1250 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Eye Scissor Double Hook Pulley come in?",
+          "a": "The Swivel Eye Scissor Double Hook Pulley is listed in 1½″ to 3½″, rated 420 to 1,250 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Eye Scissor Double Hook Pulley?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Eye Scissor Double Hook Pulley table (rope sizes 3/16″, 1/4″ and 5/16″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swivel Eye Scissor Double Hook Pulley carry?",
+          "a": "The Swivel Eye Scissor Double Hook Pulley lists a working load limit of 420 to 1,250 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Eye Scissor Double Hook Pulley made from and how is it finished?",
+          "a": "The listing for the Swivel Eye Scissor Double Hook Pulley does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Eye Scissor Double Hook Pulley come with a test certificate?",
+          "a": "The Swivel Eye Scissor Double Hook Pulley ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Swivel Eye Scissor Double Hook Pulley?",
+          "a": "The Swivel Eye Scissor Double Hook Pulley runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Eye Scissor Double Hook Pulley?",
+          "a": "Check that the Swivel Eye Scissor Double Hook Pulley sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Scissor Double Hook Pulley compare with the Swivel Eye Single Hook Block?",
+          "a": "The nearest sibling is the [Swivel Eye Single Hook Block](/p/swivel-eye-single-hook-block), and the listed data is close, so the choice comes down to the dimensions in each size table. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Eye Scissor Double Hook Pulley from Dubai?",
+          "a": "Yes. We ship Swivel Eye Scissor Double Hook Pulley from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swivel Eye Scissor Double Hook Pulley for delivery from Dubai?",
+          "a": "Yes. We keep Swivel Eye Scissor Double Hook Pulley in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-single-hook-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Single Hook Block and where is it used?",
+          "a": "The Swivel Eye Single Hook Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 3½″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Single Hook Block part numbers such as IH-LR-BP-SESHB-1?",
+          "a": "IH-LR-BP-SESHB-1 is the 1½″ size, 420 lb WLL, IH-LR-BP-SESHB-2 the 2½″ size, 550 lb WLL and IH-LR-BP-SESHB-3 the 3½″ size, 1250 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Eye Single Hook Block come in?",
+          "a": "The Swivel Eye Single Hook Block is listed in 1½″ to 3½″, rated 420 to 1,250 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Eye Single Hook Block?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Eye Single Hook Block table (rope sizes 3/16″, 1/4″ and 5/16″)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Swivel Eye Single Hook Block?",
+          "a": "The Swivel Eye Single Hook Block lists a working load limit of 420 to 1,250 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Swivel Eye Single Hook Block have?",
+          "a": "The listing for the Swivel Eye Single Hook Block does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Eye Single Hook Block come with a test certificate?",
+          "a": "The Swivel Eye Single Hook Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Swivel Eye Single Hook Block?",
+          "a": "The Swivel Eye Single Hook Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Eye Single Hook Block?",
+          "a": "Check that the Swivel Eye Single Hook Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Single Hook Block compare with the Swivel Eye Single Sheave Block?",
+          "a": "The nearest sibling is the [Swivel Eye Single Sheave Block](/p/swivel-eye-single-sheave-block), and the two differ on material and rating. In detail, material is not stated here and stainless stell there; rating is working load limit 420 to 1,250 lbs here and working load limit 525 to 1,850 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Eye Single Hook Block from Dubai?",
+          "a": "Yes. We ship Swivel Eye Single Hook Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swivel Eye Single Hook Block for delivery from Dubai?",
+          "a": "Yes. Swivel Eye Single Hook Block sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-single-sheave-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Single Sheave Block and where is it used?",
+          "a": "The Swivel Eye Single Sheave Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Single Sheave Block part numbers such as IH-LR-BP-SESSB-1?",
+          "a": "IH-LR-BP-SESSB-1 is the 1½″ size, 525 lb WLL, IH-LR-BP-SESSB-300 the 3″ size, 800 lb WLL and IH-LR-BP-SESSB-500 the 5″ size, 1850 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Eye Single Sheave Block cover?",
+          "a": "The Swivel Eye Single Sheave Block is listed in 1½″ to 5″, rated 525 to 1,850 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Swivel Eye Single Sheave Block for my job?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Eye Single Sheave Block table (rope sizes 3/16″, 1/4″, 5/16″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Swivel Eye Single Sheave Block?",
+          "a": "The Swivel Eye Single Sheave Block lists a working load limit of 525 to 1,850 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Swivel Eye Single Sheave Block have?",
+          "a": "The Swivel Eye Single Sheave Block is made from stainless stell. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Eye Single Sheave Block come with a test certificate?",
+          "a": "The Swivel Eye Single Sheave Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Eye Single Sheave Block?",
+          "a": "The Swivel Eye Single Sheave Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Eye Single Sheave Block?",
+          "a": "Check that the Swivel Eye Single Sheave Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Single Sheave Block compare with the Swivel Eye Single Hook Block?",
+          "a": "The nearest sibling is the [Swivel Eye Single Hook Block](/p/swivel-eye-single-hook-block), and the two differ on material and rating. In detail, material is stainless stell here and not stated there; rating is working load limit 525 to 1,850 lbs here and working load limit 420 to 1,250 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Swivel Eye Single Sheave Block outside the UAE?",
+          "a": "Yes. We ship Swivel Eye Single Sheave Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Swivel Eye Single Sheave Block available from stock in Dubai?",
+          "a": "Yes. We keep Swivel Eye Single Sheave Block in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-eye-snatch-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Eye Snatch Block and where is it used?",
+          "a": "The Swivel Eye Snatch Block is a snatch block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1-1/2″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Eye Snatch Block part numbers such as IH-LR-BP-SESB-150?",
+          "a": "IH-LR-BP-SESB-150 is the 1-1/2″ size, 400 lb WLL, IH-LR-BP-SESB-300 the 3″ size, 1700 lb WLL and IH-LR-BP-SESB-500 the 5″ size, 1900 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Eye Snatch Block cover?",
+          "a": "The Swivel Eye Snatch Block is listed in 1-1/2″ to 5″, rated 400 to 1,900 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Eye Snatch Block?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Eye Snatch Block table (rope sizes 1/8″, 3/16″, 1/4″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swivel Eye Snatch Block carry?",
+          "a": "The Swivel Eye Snatch Block lists a working load limit of 400 to 1,900 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Eye Snatch Block made from and how is it finished?",
+          "a": "The Swivel Eye Snatch Block is made from steel and finished hot dipped galvanized. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Swivel Eye Snatch Block?",
+          "a": "The Swivel Eye Snatch Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Eye Snatch Block?",
+          "a": "The Swivel Eye Snatch Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Swivel Eye Snatch Block be fitted and inspected?",
+          "a": "Check that the Swivel Eye Snatch Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Eye Snatch Block compare with the Swivel Eye Block?",
+          "a": "The nearest sibling is the [Swivel Eye Block](/p/swivel-eye-block), and the two differ on material, finish and rating. In detail, material is steel here and not stated there; finish is hot dipped galvanized here and not stated there; rating is working load limit 400 to 1,900 lbs here and working load limit 420 to 1,250 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Swivel Eye Snatch Block outside the UAE?",
+          "a": "Yes. We ship Swivel Eye Snatch Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Swivel Eye Snatch Block available from stock in Dubai?",
+          "a": "Yes. We keep Swivel Eye Snatch Block in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-hook-flat-double-sheave-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Hook Flat Double Sheave Block used for?",
+          "a": "The Swivel Hook Flat Double Sheave Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Hook Flat Double Sheave Block part numbers such as IH-LR-BP-SHFDSB-1?",
+          "a": "IH-LR-BP-SHFDSB-1 is the 1½″ size, 525 lb WLL, IH-LR-BP-SHFDSB-300 the 3″ size, 800 lb WLL and IH-LR-BP-SHFDSB-500 the 5″ size, 1850 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Swivel Hook Flat Double Sheave Block come in?",
+          "a": "Sizes on the Swivel Hook Flat Double Sheave Block run 1½″ to 5″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Swivel Hook Flat Double Sheave Block for my job?",
+          "a": "Size the Swivel Hook Flat Double Sheave Block from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (3/16″, 1/4″, 5/16″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Swivel Hook Flat Double Sheave Block?",
+          "a": "The Swivel Hook Flat Double Sheave Block lists a working load limit of 525 to 1,850 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Hook Flat Double Sheave Block made from and how is it finished?",
+          "a": "The Swivel Hook Flat Double Sheave Block is made from stainless steel. Ask on the RFQ if your specification needs the material grade or coating confirmed before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Hook Flat Double Sheave Block come with a test certificate?",
+          "a": "The Swivel Hook Flat Double Sheave Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Hook Flat Double Sheave Block?",
+          "a": "Rig the Swivel Hook Flat Double Sheave Block with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Swivel Hook Flat Double Sheave Block be fitted and inspected?",
+          "a": "Before use, spin the Swivel Hook Flat Double Sheave Block sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Hook Flat Double Sheave Block compare with the Swivel Eye Flat Double Sheave Block?",
+          "a": "The nearest sibling is the [Swivel Eye Flat Double Sheave Block](/p/swivel-eye-flat-double-sheave-block), and the two differ on material. In detail, material is stainless steel here and stainless stell there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Swivel Hook Flat Double Sheave Block outside the UAE?",
+          "a": "Yes, Swivel Hook Flat Double Sheave Block goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swivel Hook Flat Double Sheave Block for delivery from Dubai?",
+          "a": "Yes, we stock Swivel Hook Flat Double Sheave Block at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-hook-single-sheave-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Hook Single Sheave Block and where is it used?",
+          "a": "The Swivel Hook Single Sheave Block is a pulley block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 1½″ to 5″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Hook Single Sheave Block part numbers such as IH-LR-BP-SHSSB-1?",
+          "a": "IH-LR-BP-SHSSB-1 is the 1½″ size, 525 lb WLL, IH-LR-BP-SHSSB-300 the 3″ size, 800 lb WLL and IH-LR-BP-SHSSB-500 the 5″ size, 1850 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Hook Single Sheave Block cover?",
+          "a": "Sizes on the Swivel Hook Single Sheave Block run 1½″ to 5″. The size table gives each one its own Indus part number and dimensions, and the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) lists the neighbouring products."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Swivel Hook Single Sheave Block?",
+          "a": "Size the Swivel Hook Single Sheave Block from the load on the block, not the line pull: turned through 180° the rope loads the block with about twice the line pull. Then pick the row whose rope size fits your rope (3/16″, 1/4″, 5/16″ and 3/8″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Swivel Hook Single Sheave Block carry?",
+          "a": "The Swivel Hook Single Sheave Block lists a working load limit of 525 to 1,850 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Swivel Hook Single Sheave Block have?",
+          "a": "The Swivel Hook Single Sheave Block is made from stainless steel. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Swivel Hook Single Sheave Block come with a test certificate?",
+          "a": "The Swivel Hook Single Sheave Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Swivel Hook Single Sheave Block?",
+          "a": "Rig the Swivel Hook Single Sheave Block with [steel wire rope](/c/steel-wire-rope) of the matching size and connect its hook or eye to [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). The [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys) lists the other blocks and pulleys."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Swivel Hook Single Sheave Block?",
+          "a": "Before use, spin the Swivel Hook Single Sheave Block sheave by hand, check the hook, eye and pin for wear or distortion, and rate the anchor point for the full load on the block. See [our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) for how block types differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Hook Single Sheave Block compare with the Swivel Eye Single Hook Block?",
+          "a": "The nearest sibling is the [Swivel Eye Single Hook Block](/p/swivel-eye-single-hook-block), and the two differ on material and rating. In detail, material is stainless steel here and not stated there; rating is working load limit 525 to 1,850 lbs here and working load limit 420 to 1,250 lbs there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Hook Single Sheave Block from Dubai?",
+          "a": "Yes, Swivel Hook Single Sheave Block goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Swivel Hook Single Sheave Block for delivery from Dubai?",
+          "a": "Yes, we stock Swivel Hook Single Sheave Block at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-hook-snatch-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Hook Snatch Block used for?",
+          "a": "The Swivel Hook Snatch Block is a snatch block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 3″ to 6″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Swivel Hook Snatch Block part numbers such as IH-LR-BP-SHSB-300?",
+          "a": "IH-LR-BP-SHSB-300 is the 3″ size, 2000 lb WLL, IH-LR-BP-SHSB-400 the 4″ size, 3000 lb WLL and IH-LR-BP-SHSB-600 the 6″ size, 6000 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Swivel Hook Snatch Block cover?",
+          "a": "The Swivel Hook Snatch Block is listed in 3″ to 6″, rated 2,000 to 6,000 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Swivel Hook Snatch Block for my job?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Swivel Hook Snatch Block table (rope sizes 3/8″, 5/8″ and 3/4″)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Swivel Hook Snatch Block?",
+          "a": "The Swivel Hook Snatch Block lists a working load limit of 2,000 to 6,000 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Hook Snatch Block made from and how is it finished?",
+          "a": "The Swivel Hook Snatch Block is made from carbon steel and finished galvanized. If your specification needs more detail on the material or coating, say so on the RFQ and we confirm it with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Swivel Hook Snatch Block?",
+          "a": "The Swivel Hook Snatch Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Swivel Hook Snatch Block?",
+          "a": "The Swivel Hook Snatch Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Swivel Hook Snatch Block be fitted and inspected?",
+          "a": "Check that the Swivel Hook Snatch Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Hook Snatch Block compare with the Swivel Eye Snatch Block?",
+          "a": "The nearest sibling is the [Swivel Eye Snatch Block](/p/swivel-eye-snatch-block), and the two differ on material, finish and size range. In detail, material is carbon steel here and steel there; finish is galvanized here and hot dipped galvanized there; size range is 3″ to 6″ here and 1-1/2″ to 5″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Swivel Hook Snatch Block from Dubai?",
+          "a": "Yes. We ship Swivel Hook Snatch Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Swivel Hook Snatch Block available from stock in Dubai?",
+          "a": "Yes. We keep Swivel Hook Snatch Block in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wooden-pulley-with-eye-fixed-bow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Wooden Pulley with Eye Fixed Bow and where is it used?",
+          "a": "The Wooden Pulley with Eye Fixed Bow is a wooden pulley that changes the direction of a rope or multiplies a line pull. It is listed in sizes 3″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Wooden Pulley with Eye Fixed Bow part numbers such as IH-LR-BP-WPEFB-300?",
+          "a": "IH-LR-BP-WPEFB-300 is the 3″ size, 330 lb WLL, IH-LR-BP-WPEFB-800 the 8″ size, 2800 lb WLL and IH-LR-BP-WPEFB-1200 the 12″ size, 6600 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Wooden Pulley with Eye Fixed Bow cover?",
+          "a": "The Wooden Pulley with Eye Fixed Bow is listed in 3″ to 12″, rated 330 to 6,600 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Wooden Pulley with Eye Fixed Bow?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Wooden Pulley with Eye Fixed Bow table (rope sizes 6mm, 9mm, 12mm and 14mm and others)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Wooden Pulley with Eye Fixed Bow?",
+          "a": "The Wooden Pulley with Eye Fixed Bow lists a working load limit of 330 to 6,600 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wooden Pulley with Eye Fixed Bow made from and how is it finished?",
+          "a": "The listing for the Wooden Pulley with Eye Fixed Bow does not state a material or finish. Ask on the RFQ and we confirm both from the maker before you order."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Wooden Pulley with Eye Fixed Bow?",
+          "a": "The Wooden Pulley with Eye Fixed Bow ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Wooden Pulley with Eye Fixed Bow?",
+          "a": "The Wooden Pulley with Eye Fixed Bow runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Wooden Pulley with Eye Fixed Bow?",
+          "a": "Check that the Wooden Pulley with Eye Fixed Bow sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Wooden Pulley with Eye Fixed Bow compare with the Stainless Steel Swivel Eye Pulley Single Wheel?",
+          "a": "The nearest sibling is the [Stainless Steel Swivel Eye Pulley Single Wheel](/p/stainless-steel-swivel-eye-pulley-single-wheel), and the two differ on material, finish and size range. In detail, material is not stated here and type 304 or type 316 stainless steel there; finish is not stated here and polished / electrophoretic coating there; size range is 3″ to 12″ here and 15 mm to 100 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Wooden Pulley with Eye Fixed Bow outside the UAE?",
+          "a": "Yes. We ship Wooden Pulley with Eye Fixed Bow from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Wooden Pulley with Eye Fixed Bow for delivery from Dubai?",
+          "a": "Yes. We keep Wooden Pulley with Eye Fixed Bow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wooden-shell-snatch-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Wooden Shell Snatch Block and where is it used?",
+          "a": "The Wooden Shell Snatch Block is a snatch block that changes the direction of a rope or multiplies a line pull. It is listed in sizes 6″ to 12″, each size under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Wooden Shell Snatch Block part numbers such as IH-LR-BP-WSSB-600-E?",
+          "a": "IH-LR-BP-WSSB-600-E is the 6″ size, Eye, 2400 lb WLL, IH-LR-BP-WSSB-600-ES the 6″ size, Eye, self-locking, 2400 lb WLL and IH-LR-BP-WSSB-1200-HS the 12″ size, Hook, self-locking, 7600 lb WLL. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Wooden Shell Snatch Block come in?",
+          "a": "The Wooden Shell Snatch Block is listed in 6″ to 12″, rated 2,400 to 7,600 lbs. Every size has its own Indus part number with dimensions in the size table; the [snatch blocks & pulleys shelf](/c/snatch-blocks-pulleys) shows the rest of the range. It comes as Eye, Hook, Eye, self-locking and Hook, self-locking."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Wooden Shell Snatch Block for my job?",
+          "a": "Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Then match the sheave to the rope diameter from the Wooden Shell Snatch Block table (rope sizes 7/8″, 11/8″, 11/4″ and 11/2″)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Wooden Shell Snatch Block carry?",
+          "a": "The Wooden Shell Snatch Block lists a working load limit of 2,400 to 7,600 lbs, set per size in the table in the unit the manufacturer rates it in. The working load limit is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Wooden Shell Snatch Block made from and how is it finished?",
+          "a": "The Wooden Shell Snatch Block is made from wood/carbon steel. The wooden shell is paired with steel hardware as the listing states."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Wooden Shell Snatch Block come with a test certificate?",
+          "a": "The Wooden Shell Snatch Block ships with the manufacturer's test certificate for each consignment. For third-party certification or witnessed proof testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Wooden Shell Snatch Block?",
+          "a": "The Wooden Shell Snatch Block runs on [steel wire rope](/c/steel-wire-rope) of the rope size in its table, and its hook or eye needs a matching anchor such as [shackles](/c/shackles) or [lifting hooks](/c/lifting-hooks). Related hoisting gear is on the [snatch blocks and pulleys shelf](/c/snatch-blocks-pulleys)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Wooden Shell Snatch Block?",
+          "a": "Check that the Wooden Shell Snatch Block sheave turns freely and the rope sits in the groove, and rate the hook or eye and the anchor point for the load on the block. [Our snatch block versus pulley block guide](/blog/snatch-block-vs-pulley-block) explains where each block type is used."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Wooden Shell Snatch Block compare with the Swivel Eye Snatch Block?",
+          "a": "The nearest sibling is the [Swivel Eye Snatch Block](/p/swivel-eye-snatch-block), and the two differ on material, finish and size range. In detail, material is wood/carbon steel here and steel there; finish is not stated here and hot dipped galvanized there; size range is 6″ to 12″ here and 1-1/2″ to 5″ there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Wooden Shell Snatch Block from Dubai?",
+          "a": "Yes. We ship Wooden Shell Snatch Block from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Wooden Shell Snatch Block available from stock in Dubai?",
+          "a": "Yes. Wooden Shell Snatch Block sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

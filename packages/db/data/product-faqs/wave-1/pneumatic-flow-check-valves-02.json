@@ -1,0 +1,1144 @@
+{
+  "family": "pneumatic-flow-check-valves-02",
+  "extraFacts": [
+    {
+      "fact": "SMC AS-F series speed controller with One-touch fitting (elbow type AS1201F-AS4201F, universal type AS2301F, in-line type AS2002F-AS4002F): part number AS + body size digit + flow-direction digit (0 = meter-out, 1 = meter-in, e.g. AS2201F meter-out, AS2211F meter-in) + 1F; thread prefix none = R (BSPT taper), N = NPT, M5 = M5 x 0.8, U10/32 = 10-32 UNF; thread size 01 = 1/8, 02 = 1/4, 03 = 3/8, 04 = 1/2; tube code 04, 06, 08, 10, 12 = metric OD in mm, 01 = 1/8\", 03 = 5/32\", 05 = 3/16\", 07 = 1/4\", 09 = 5/16\", 11 = 3/8\", 13 = 1/2\"; suffix S = thread with sealant. Fluid: air. Operating pressure 0.1 to 1 MPa. Ambient and fluid temperature -5 to 60°C (no freezing). Applicable tubing: nylon, soft nylon and polyurethane. Seals NBR; threaded body brass, electroless nickel plated.",
+      "source": "SMC Best Pneumatics catalogue, Flow Control Equipment, Speed Controller with One-touch Fitting Series AS-F (How to Order and Specifications)"
+    },
+    {
+      "fact": "Meter-out speed control throttles the air leaving the cylinder and gives steady piston speed under varying load; it is the normal choice for double-acting cylinders. Meter-in throttles the supply air and is used for single-acting cylinders. Adjustment: close the needle fully (clockwise), then open it gradually (counter-clockwise) until the cylinder reaches the required speed, and lock it with the lock nut. Insert tube fully into the One-touch fitting; release by pressing the release button. Check that the flow-direction mark matches the circuit.",
+      "source": "SMC Best Pneumatics catalogue, Flow Control Equipment, Speed Controller technical data and specific product precautions"
+    },
+    {
+      "fact": "SMC ASV series speed exhaust controller combines a speed controller and a quick exhaust valve in one body, so the cylinder exhausts directly at its port. SMC ASP series is a speed controller with pilot check valve: when the pilot signal is exhausted the check valve closes and holds the cylinder at an intermediate stop; the pilot port is piped to the opposite cylinder line. SMC ASN2 series is an exhaust throttle valve screwed into the exhaust port of a directional valve to meter the exhaust air.",
+      "source": "SMC Best Pneumatics catalogue, Flow Control Equipment, Series ASV, ASP and ASN2"
+    },
+    {
+      "fact": "SMC AK series check valve: body sizes AK2000 (1/8, 1/4), AK4000 (1/4, 3/8, 1/2), AK6000 (3/4, 1); port thread prefix none = Rc, N = NPT, F = G; port code 06 = 3/4, 10 = 1. SMC AKM series is the modular check valve for the SMC modular air-preparation line; size AKM2000, AKM3000, AKM4000 matches modular units of size 2000, 3000, 4000. Fluid: air. Flow direction is marked on the body by an arrow.",
+      "source": "SMC Best Pneumatics catalogue, Check Valve Series AK and modular Series AKM"
+    },
+    {
+      "fact": "SMC VR1210 (1/8) and VR1220 (1/4) are shuttle valves: the outlet takes air from whichever of the two inlets is pressurised (OR function); VR1210F and VR1220F carry built-in One-touch fittings. Female port prefix none = Rc, N = NPT, F = G.",
+      "source": "SMC Best Pneumatics catalogue, Shuttle Valve Series VR1210/VR1220"
+    },
+    {
+      "fact": "Pipe thread standards: R/Rc (BSPT) taper threads to ISO 7-1; G (BSPP) parallel threads to ISO 228-1; NPT taper threads to ASME B1.20.1. Inch tube outside diameters: 5/32\" = 3.97 mm, 1/4\" = 6.35 mm, 5/16\" = 7.94 mm, 3/8\" = 9.53 mm, 1/2\" = 12.7 mm (1 in = 25.4 mm).",
+      "source": "ISO 7-1:1994; ISO 228-1:2000; ASME B1.20.1-2013; inch-to-mm conversion"
+    },
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi, so 1 MPa = 10 bar = about 145 psi and 0.1 MPa = 1 bar = about 14.5 psi; +23°F to +140°F = -5 to +60°C; 140°F = 60°C.",
+      "source": "Standard unit conversion (NIST SP 811)"
+    },
+    {
+      "fact": "HS 2022 heading 84.81: subheading 8481.20 = valves for oleohydraulic or pneumatic transmissions; 8481.30 = check (non-return) valves. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    }
+  ],
+  "products": [
+    {
+      "slug": "smc-air-cylinder-speed-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are SMC air cylinder speed controls used for?",
+          "a": "SMC air cylinder speed controls are flow controls with push-in tube fittings that set how fast a pneumatic cylinder extends and retracts by throttling its air. This listing holds 215 SMC part numbers: AS1201F to AS4211F elbow controllers, AS2002F to AS4002F in-line types and ASV speed exhaust controllers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC AS2211F-02-06SD speed controller part number?",
+          "a": "AS2211F-02-06SD is an AS2 body, 1 = meter-in, F = push-in fitting, 02 = 1/4 R (BSPT) thread and 06 = 6 mm tube, with S marking thread sealant. An N before the thread code means NPT (AS2201F-N01-07SD), M5 and U10/32 are the small metric and 10-32 UNF threads, and 0 in place of the second 1 gives meter-out."
+        },
+        {
+          "slot": "D",
+          "q": "What thread and tube sizes do SMC air cylinder speed controls cover?",
+          "a": "The range runs from M5 and 10-32 UNF ports up to 1/8, 1/4, 3/8 and 1/2 R or NPT, with tube from 3.2 to 12 mm and 1/8\" to 1/2\". For a single tube size, see listings such as the [SMC 6 mm tube speed controller](/p/smc-speed-control-valve-with-6mm-tube-size) or the [SMC 1/4\" tube speed controller](/p/smc-speed-control-valve-with-1-4-tube-size)."
+        },
+        {
+          "slot": "D",
+          "q": "Meter-out or meter-in: which SMC air cylinder speed control should I choose?",
+          "a": "Choose meter-out (AS2201F, with 0 as the flow digit) for nearly every double-acting cylinder, because throttling the exhaust air gives the steadiest speed under changing load. Meter-in (AS2211F) suits single-acting cylinders. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) sets out the circuits."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SMC air cylinder speed controls have?",
+          "a": "Most rows in our size table give 145 psi (1 MPa, about 10 bar) as the maximum, and SMC rates the AS-F controllers from 0.1 MPa (about 14.5 psi) upward. Temperature is +23°F to +140°F (-5 to +60°C) without freezing; check the row for the part you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards apply to SMC air cylinder speed controls?",
+          "a": "SMC air cylinder speed controls come with R (BSPT) taper threads to ISO 7-1, NPT to ASME B1.20.1, or M5 and 10-32 UNF on the smallest bodies, so match the code to the cylinder port. No certificates are held on this listing; ask for a certificate of conformity with the order if needed."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing and cylinders connect to SMC air cylinder speed controls?",
+          "a": "SMC speed controls take nylon, soft nylon or polyurethane tube of the OD in the part number and screw straight into the cylinder port. Matching tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing) and cylinders on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set an SMC air cylinder speed control?",
+          "a": "Close the needle fully clockwise, then open it slowly counter-clockwise until the cylinder reaches the speed you need, and tighten the lock nut. Fit one controller in each cylinder port, check the flow-direction mark first, and push the tube fully into the fitting."
+        },
+        {
+          "slot": "K",
+          "q": "What is an SMC ASV speed exhaust controller?",
+          "a": "An SMC ASV speed exhaust controller combines a speed controller and a quick exhaust valve in one body, so the cylinder dumps air at its port for a fast return stroke. This listing has ASV310F, ASV410F and ASV510F sizes, for example ASV310F-01-06S (1/8 R, 6 mm tube); a separate quick exhaust is the [Parker 0R series quick exhaust valve](/p/parker-0r-series-quick-exhaust-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC elbow and in-line speed controllers?",
+          "a": "An SMC elbow speed controller such as AS2201F screws into the cylinder port, while an in-line type such as AS2002F-06 has push-in fittings at both ends and sits in the tube run. Use in-line where the port is hard to reach or the cylinder has a fitting already."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC air cylinder speed controls shipped from and which HS code applies?",
+          "a": "We ship SMC air cylinder speed controls from our Dubai warehouse to the GCC, Africa, Asia and beyond. Pneumatic flow valves normally fall under HS 8481.20; the country of origin depends on the SMC plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC air cylinder speed controls in Dubai?",
+          "a": "Yes. We keep SMC air cylinder speed controls in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SMC part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ak-series-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC AK series check valve used for?",
+          "a": "The SMC AK series is an in-line check valve that lets compressed air flow one way and blocks it in reverse, for example to hold pressure downstream when the supply drops. It has an aluminium die-cast body and NBR seal, and this listing carries 16 part numbers in AK2000, AK4000 and AK6000 sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC AK check valve part number such as AK4000-N02?",
+          "a": "AK4000-N02 is body size AK4000 with a 1/4 NPT port: N means NPT, F means G (BSPP) and no letter means Rc (BSPT). Port codes are 01 = 1/8, 02 = 1/4, 03 = 3/8, 04 = 1/2, 06 = 3/4 and 10 = 1, so AK6000-F10 is a 1 inch G-thread valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do SMC AK2000, AK4000 and AK6000 check valves have?",
+          "a": "SMC AK2000 check valves have 1/8 and 1/4 ports, AK4000 has 1/4, 3/8 and 1/2, and AK6000 has 3/4 and 1 inch. Pick the body that matches the pipe or fitting thread; the larger body also passes more air."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC AK series check valve has a 1/2 inch port?",
+          "a": "The 1/2 inch SMC AK check valves in this listing are AK4000-04 (Rc thread) and AK4000-F04 (G thread). For NPT lines the nearest listed sizes are AK4000-N02 at 1/4 and AK6000-N06 at 3/4; ask us if you need a 1/2 NPT version."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC AK series check valve have?",
+          "a": "The SMC AK series is an air-service check valve, but this listing does not publish a pressure rating for it. Send the part number, such as AK2000-02, and your line pressure, and we confirm the maker figure before quoting."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are SMC AK series check valves made from?",
+          "a": "SMC AK series check valves have an aluminium die-cast body and a nitrile rubber (NBR) seal in a straight body shape. They are made for compressed air; for any other fluid check with us before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards do SMC AK check valve ports follow?",
+          "a": "SMC AK ports come in three threads: Rc taper to ISO 7-1 (no letter, AK2000-01), G parallel to ISO 228-1 (F, AK2000-F01) and NPT to ASME B1.20.1 (N, AK2000-N01). No certificates are held on this listing; ask for a certificate of conformity with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings connect to an SMC AK series check valve?",
+          "a": "The SMC AK check valve has female ports, so it takes male fittings of the same thread at each end, such as push-in connectors or nipples. Male connectors and adaptors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC AK check valve the right way round?",
+          "a": "Fit the SMC AK check valve with the arrow on the body pointing in the direction of air flow. Use sealant or tape suited to the thread type, keep it out of the bore, and blow the line clear of chips first."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC AK and AKM check valves?",
+          "a": "SMC AK is a stand-alone in-line check valve with threaded ports, while the [SMC AKM series check valve](/p/smc-akm-series-check-valve) is the modular version that fits into SMC’s modular air-preparation line. Choose AK for a pipe run and AKM when building onto modular FRL units."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC AK series check valves shipped from and which HS code applies?",
+          "a": "We ship SMC AK series check valves from Dubai to the GCC, Africa, Asia and beyond. Check valves normally fall under HS 8481.30 (check, non-return valves); country of origin follows the SMC plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC AK series check valves in Dubai?",
+          "a": "Yes. SMC AK series check valves are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send part numbers such as AK4000-03 and quantities through [our contact page](/contact) for a price."
+        }
+      ]
+    },
+    {
+      "slug": "smc-akm-series-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC AKM series check valve used for?",
+          "a": "The SMC AKM series is a modular check valve that fits into an SMC modular air-preparation line to stop air flowing back upstream. This listing carries 8 part numbers in AKM2000, AKM3000 and AKM4000 sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read an SMC AKM part number such as AKM3000-N02-A?",
+          "a": "AKM3000-N02-A is modular body size 3000 with a 1/4 NPT port (N = NPT, 02 = 1/4), plus the option suffix A. No letter before the port code means Rc and F means G, so AKM4000-F03 is a 3/8 G version. Quote suffixes exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and threads does the SMC AKM check valve come in?",
+          "a": "SMC AKM2000 is listed with 1/8 NPT, 1/4 Rc and 1/4 NPT ports; AKM3000 with 1/4 Rc and 1/4 NPT; and AKM4000 with 3/8 Rc and 3/8 G. That is AKM2000-N01, -02, -N02; AKM3000-02, -N02, -N02-A; AKM4000-03 and -F03."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC AKM size matches my modular FRL?",
+          "a": "Match the AKM number to the modular unit size: AKM2000 for size 2000 units, AKM3000 for 3000 and AKM4000 for 4000. Send the part number of the filter or regulator it will sit beside and we confirm the fit. Modular units are on our [filters, regulators and lubricators shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SMC AKM modular check valve have?",
+          "a": "This listing does not publish a pressure figure for the SMC AKM check valve, so the rating of the modular line it joins applies. Send the part number, for example AKM2000-N02, with your line pressure and we confirm the maker figure."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards do SMC AKM check valve ports use?",
+          "a": "SMC AKM ports are Rc taper to ISO 7-1 (AKM2000-02), NPT to ASME B1.20.1 (AKM3000-N02) or G parallel to ISO 228-1 (AKM4000-F03). This listing holds no certificates; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to an SMC AKM modular check valve?",
+          "a": "The SMC AKM fits between SMC modular filters, regulators and lubricators of the same size, and its threaded ports take male fittings. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains where a check valve sits in an air-preparation line."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an SMC AKM check valve in a modular line?",
+          "a": "Install the SMC AKM with the body arrow pointing in the direction of air flow, using SMC modular connecting parts of the same size. Depressurise the line first and check for leaks at each joint before returning it to service."
+        },
+        {
+          "slot": "J",
+          "q": "Where is an SMC AKM check valve used in a compressed-air system?",
+          "a": "An SMC AKM check valve is used on the air-preparation line ahead of a machine to stop downstream air bleeding back when the supply is shut off or drops. It keeps pressure in the circuit after the regulator for valves and cylinders that must not lose air suddenly."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC AKM and AK check valves?",
+          "a": "SMC AKM is the modular check valve for building onto modular FRL units; the [SMC AK series check valve](/p/smc-ak-series-check-valve) is the stand-alone in-line valve for a pipe run, offered up to 1 inch. Both block reverse air flow."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC AKM check valves shipped from and which HS code applies?",
+          "a": "We ship SMC AKM modular check valves from our Dubai warehouse to the GCC, Africa, Asia and beyond. Check valves normally fall under HS 8481.30; country of origin depends on the SMC plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC AKM modular check valves in stock in Dubai?",
+          "a": "Yes. We keep the SMC AKM series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the AKM part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-check-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC Check Series Valve listing?",
+          "a": "The SMC Check Series Valve listing groups three SMC check valves known by special part numbers: INA-14-386-N, INA-14-169-N20 and XTO-674-02AH. They are one-way valves for air lines, supplied to the exact SMC code rather than a catalogue series."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC part numbers INA-14-386-N and XTO-674-02AH mean?",
+          "a": "INA-14-386-N and XTO-674-02AH are SMC special-product numbers, not catalogue model codes, so they cannot be decoded into size and thread. Order them by the full number on the old valve or drawing and we match it to the maker record."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC check valves are in the Check Series Valve listing?",
+          "a": "Three SMC check valves are listed: INA-14-386-N, INA-14-169-N20 and XTO-674-02AH. If your number differs by even one character, send it as written; SMC special codes often differ in thread or seal."
+        },
+        {
+          "slot": "D",
+          "q": "How do I identify an SMC check valve with an INA-14 part number?",
+          "a": "Read the full SMC code from the body or label, such as INA-14-169-N20, and send it with a photo and the port thread. We check it against the maker record; if the code is gone, the port thread and body length let us propose a catalogue [SMC AK series check valve](/p/smc-ak-series-check-valve) equivalent."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SMC INA-14 and XTO-674 check valves have?",
+          "a": "Pressure ratings for INA-14-386-N, INA-14-169-N20 and XTO-674-02AH are not published on this listing. Send the part number with your operating pressure and we confirm the figure from SMC before supply."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with SMC special check valves such as XTO-674-02AH?",
+          "a": "This listing holds no datasheets or certificates for XTO-674-02AH or the INA-14 valves. If your project needs a certificate of conformity or drawing, say so in the enquiry and we request it from the maker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings connect to SMC check valves INA-14-386-N and INA-14-169-N20?",
+          "a": "Use fittings of the same thread as the valve ports, confirmed from the SMC record for INA-14-386-N or INA-14-169-N20. Push-in connectors and adaptors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit a replacement SMC check valve such as INA-14-169-N20?",
+          "a": "Fit the replacement SMC check valve in the same orientation as the old one, with the flow arrow pointing the way air should pass. Depressurise the line, seal the threads, and leak-test before restarting the machine."
+        },
+        {
+          "slot": "J",
+          "q": "Where are SMC special check valves like XTO-674-02AH used?",
+          "a": "SMC special check valves such as XTO-674-02AH are built into OEM machines where the builder specified a custom SMC part. Replacing like for like keeps the machine as designed; the wider [flow controls, check and quick exhaust valves shelf](/c/pneumatic-flow-check-valves) covers general check, flow and quick exhaust valves."
+        },
+        {
+          "slot": "K",
+          "q": "Can a standard SMC AK check valve replace an SMC INA-14-386-N?",
+          "a": "Sometimes, if thread, size and flow match, but INA-14-386-N is a special part, so we check the SMC record before offering a standard valve. The [SMC AK series](/p/smc-ak-series-check-valve) is the usual catalogue choice for in-line duty."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC check valves INA-14-386-N and XTO-674-02AH?",
+          "a": "Check valves such as INA-14-386-N and XTO-674-02AH normally fall under HS 8481.30 for check (non-return) valves. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC check valves INA-14-386-N, INA-14-169-N20 and XTO-674-02AH in Dubai?",
+          "a": "Yes. We keep these SMC check valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-exhaust-port-flow-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an SMC ASN2 exhaust port flow control used for?",
+          "a": "An SMC ASN2 exhaust port flow control screws into the exhaust port of a directional valve and throttles the exhaust air, setting cylinder speed at the valve instead of at the cylinder. This listing has 10 part numbers with a thumb-screw adjuster and nickel-plated brass body."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC ASN2-N02-S part number?",
+          "a": "ASN2-N02-S is the ASN2 exhaust port flow control with a 1/4 NPT thread (N = NPT, 02 = 1/4) and S for thread sealant. Without the N the thread is R (BSPT), as in ASN2-02; M5 and U10/32 mark the M5 x 0.8 and 10-32 UNF versions."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do SMC ASN2 exhaust flow controls come in?",
+          "a": "SMC ASN2 exhaust flow controls are listed in M5 x 0.8, 10-32 UNF, and 1/8, 1/4, 3/8 and 1/2 in both R and NPT. For example ASN2-01 (1/8 R), ASN2-N03-S (3/8 NPT) and ASN2-U10/32 (10-32 UNF)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose an R or NPT SMC ASN2 exhaust flow control?",
+          "a": "Choose by the valve exhaust port: R versions (ASN2-01 to ASN2-04) suit BSPT ports to ISO 7-1, and NPT versions (ASN2-N01-S to ASN2-N04-S) suit NPT ports to ASME B1.20.1. The two tapers look alike but do not seal in each other."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can SMC ASN2 exhaust port flow controls take?",
+          "a": "Our size table lists SMC ASN2 exhaust flow controls for 0 to 145 psi (about 10 bar), and the listing gives +23°F to +140°F (-5 to +60°C). They are for compressed air on valve exhausts."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the SMC ASN2 exhaust flow control made of?",
+          "a": "The SMC ASN2 exhaust port flow control has a nickel-plated brass body, which resists corrosion on shop-floor air. Adjustment is by thumb screw, so it can be set by hand without tools."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards do SMC ASN2 exhaust port flow controls use?",
+          "a": "SMC ASN2 threads are R (BSPT) to ISO 7-1, NPT to ASME B1.20.1, M5 x 0.8 or 10-32 UNF, set by the part number. No certificates are held on this listing; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves take an SMC ASN2 exhaust port flow control?",
+          "a": "Any directional valve with a threaded exhaust port of the same size takes an SMC ASN2, typically a 5/2 or 5/3 solenoid valve feeding a double-acting cylinder. Valves are on our [solenoid valves and manifolds shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust an SMC ASN2 exhaust port flow control?",
+          "a": "Screw the SMC ASN2 into the valve exhaust port, close the thumb screw, then open it gradually until the cylinder runs at the speed you need. Fit one in each exhaust port to set extend and retract speeds separately. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) shows the circuit."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between an SMC ASN2 and a cylinder-port speed controller?",
+          "a": "An SMC ASN2 meters exhaust air at the valve, while a cylinder-port speed controller meters it at the cylinder, which gives tighter control on long tube runs. For cylinder-port types see [SMC air cylinder speed controls](/p/smc-air-cylinder-speed-controls)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are SMC ASN2 exhaust port flow controls shipped from and which HS code applies?",
+          "a": "We ship SMC ASN2 exhaust port flow controls from Dubai to the GCC, Africa, Asia and beyond. Pneumatic flow valves normally fall under HS 8481.20; country of origin follows the SMC plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC ASN2 exhaust port flow controls in stock in Dubai?",
+          "a": "Yes. SMC ASN2 exhaust port flow controls are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Send part numbers such as ASN2-02 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-flow-control",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC Flow Control listing include?",
+          "a": "The SMC Flow Control listing holds five SMC flow controls: AS2201F-U01-08A and AS2201F-U02-08A speed controllers, the AS2301F-01-06SA universal type, ASP430F-N02-11S-X369 and INA-14-312-03. All of them throttle air to set cylinder speed."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC AS2301F-01-06SA flow control part number?",
+          "a": "AS2301F-01-06SA is an AS-F series universal-type speed controller with a 1/8 R (BSPT) thread (01) and a push-in fitting for 6 mm tube (06), with S marking thread sealant. Quote the final A exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "What are SMC AS2201F-U01-08A and AS2201F-U02-08A flow controls?",
+          "a": "Both are SMC AS2201F elbow speed controllers, the 0 flow digit making them meter-out; U01 and U02 give 1/8 and 1/4 thread sizes, with the same tube code 08. Send the cylinder port thread and tube OD and we confirm the exact version."
+        },
+        {
+          "slot": "D",
+          "q": "What is the SMC ASP430F-N02-11S-X369 flow control?",
+          "a": "ASP430F-N02-11S-X369 is an SMC ASP speed controller with pilot check valve, 1/4 NPT thread (N02) and 3/8\" tube (11), with X369 marking a special version. Standard ASP sizes are on the [SMC pneumatic flow control and needle valves listing](/p/smc-pneumatic-flow-control-and-needle-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range do SMC AS2201F and AS2301F flow controls work at?",
+          "a": "SMC rates AS-F speed controllers such as AS2201F and AS2301F for 0.1 to 1 MPa (about 14.5 to 145 psi) on compressed air at -5 to +60°C without freezing. For ASP430F-N02-11S-X369 and INA-14-312-03 we confirm the rating from SMC with the quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards apply to SMC flow controls such as AS2301F-01-06SA?",
+          "a": "The 01 in AS2301F-01-06SA is an R (BSPT) taper to ISO 7-1, and the N in ASP430F-N02-11S-X369 means NPT to ASME B1.20.1. No certificates are held on this listing; ask for a certificate of conformity with the order if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits SMC flow controls AS2301F-01-06SA and ASP430F-N02-11S-X369?",
+          "a": "AS2301F-01-06SA takes 6 mm OD tube and ASP430F-N02-11S-X369 takes 3/8\" OD tube, in nylon, soft nylon or polyurethane. Matching tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust an SMC AS2201F flow control?",
+          "a": "Screw the SMC AS2201F into the cylinder port, close the needle clockwise, then open it slowly until the cylinder runs at the required speed and tighten the lock nut. Push the tube fully home and check the flow-direction mark before pressurising."
+        },
+        {
+          "slot": "J",
+          "q": "What is the SMC INA-14-312-03 flow control?",
+          "a": "INA-14-312-03 is an SMC special-product flow control number rather than a catalogue model code, so it is ordered by the full number. Send it with a photo or the machine drawing and we match it to the maker record."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC AS2301F universal and AS2201F elbow flow controls?",
+          "a": "Both are SMC AS-F speed controllers with push-in fittings; AS2201F is the elbow type, while AS2301F is the universal type that SMC offers for different port orientations. The full range is on [SMC air cylinder speed controls](/p/smc-air-cylinder-speed-controls)."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC flow controls such as AS2301F-01-06SA?",
+          "a": "Pneumatic flow controls such as AS2301F-01-06SA normally fall under HS 8481.20, valves for pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond, with country of origin stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock SMC flow controls such as AS2201F-U02-08A in Dubai?",
+          "a": "Yes. We keep these SMC flow controls in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-pneumatic-flow-control-and-needle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ASP speed controller with pilot check valve used for?",
+          "a": "The SMC ASP is a speed controller with a built-in pilot check valve: it sets cylinder speed and, when the pilot signal is exhausted, locks the air in to hold the cylinder at an intermediate stop. This listing has ASP330F, ASP430F and ASP530F sizes."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC ASP330F-01-06S part number?",
+          "a": "ASP330F-01-06S is body size ASP330F with a 1/8 R (BSPT) thread (01) and a push-in fitting for 6 mm tube (06), with S for thread sealant. In ASP430F-N02-09S the N marks NPT and 09 a 5/16\" tube; the J at the end of ASP530F-N03-11S-J is an option suffix."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are in the SMC pneumatic flow control and needle valves listing?",
+          "a": "Three SMC ASP sizes are listed: ASP330F-01-06S (1/8 R, 6 mm tube), ASP430F-N02-09S (1/4 NPT, 5/16\" tube) and ASP530F-N03-11S-J (3/8 NPT, 3/8\" tube). Choose by cylinder port thread first, then tube size."
+        },
+        {
+          "slot": "D",
+          "q": "What flow rates do the SMC ASP330F, ASP430F and ASP530F controllers give?",
+          "a": "Our size table lists maximum flow of 180 L/min for ASP330F-01-06S, 350 L/min for ASP430F-N02-09S and 750 L/min for ASP530F-N03-11S-J. Pick the size whose flow covers your cylinder bore and speed."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and pressure suit the SMC ASP pilot check speed controller?",
+          "a": "The listing gives a maximum temperature of 140°F (60°C) for the SMC ASP speed controllers, on compressed air. No pressure figure is published on this listing, so send the part number and your line pressure and we confirm it from SMC."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are SMC ASP speed controllers made of?",
+          "a": "SMC ASP speed controllers have a thermoplastic body, nitrile seals and a stainless-steel spring, with a knob for adjustment in an angle body. They take nylon, polyurethane or semi-rigid nylon tube; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares these materials."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards do SMC ASP speed controller ports use?",
+          "a": "The ASP330F-01-06S has an R (BSPT) taper to ISO 7-1, and ASP430F-N02-09S and ASP530F-N03-11S-J have NPT to ASME B1.20.1. This listing holds no certificates; ask for a certificate of conformity with the order if needed."
+        },
+        {
+          "slot": "H",
+          "q": "How is the pilot port of an SMC ASP speed controller connected?",
+          "a": "The pilot port of the SMC ASP is piped to the opposite cylinder line or to a separate pilot valve, so the check opens while that line is pressurised. Fit one ASP per cylinder port; our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains pilot-operated checks."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust the SMC ASP speed controller knob?",
+          "a": "Turn the SMC ASP knob fully closed, then open it gradually until the cylinder reaches the required speed, and lock it. Check that the cylinder holds position with pilot air exhausted before handing the machine back."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC ASP and the standard AS-F speed controller?",
+          "a": "Both set cylinder speed, but the SMC ASP adds a pilot check valve that holds the cylinder when the pilot is exhausted, while the AS-F only throttles. For plain speed control see the [SMC 6 mm tube speed controller](/p/smc-speed-control-valve-with-6mm-tube-size)."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC ASP speed controllers?",
+          "a": "SMC ASP speed controllers normally fall under HS 8481.20, valves for pneumatic transmissions. We ship them from Dubai to the GCC, Africa, Asia and beyond; country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC ASP speed controllers with pilot check in stock in Dubai?",
+          "a": "Yes. We keep SMC ASP speed controllers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as ASP330F-01-06S with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-1-4-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 1/4\" tube size used for?",
+          "a": "The SMC speed control valve for 1/4\" tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8, 1/4 or 3/8 NPT thread and takes 1/4\" (6.35 mm) OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 6 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS3211F-N03-07SA?",
+          "a": "AS3211F-N03-07SA reads as AS3 body size, 1 = meter-in flow direction, F for the push-in fitting, N03 for a 3/8 NPT thread and 07 for 1/4\" tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 1/4\" tube speed controller come in?",
+          "a": "The SMC speed controller for 1/4\" tube is listed with 1/8, 1/4 and 3/8 NPT cylinder-port threads. By port: 1/8 NPT: AS2201F-N01-07SA and AS2211F-N01-07SA; 1/4 NPT: AS2201F-N02-07SA and AS2211F-N02-07SA; 3/8 NPT: AS3201F-N03-07SA and AS3211F-N03-07SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-N01-07SA or AS2211F-N01-07SA for 1/4\" tube?",
+          "a": "Order AS2201F-N01-07SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-N01-07SA is the meter-in version for single-acting cylinders. Both take 1/4\" tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 1/4\" tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 1/4\" tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Rows in our size table list 145 psi as the maximum. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 1/4\" tube speed control valves made of?",
+          "a": "The SMC speed control valve for 1/4\" tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 1/4\" lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 1/4\" tube speed controllers use?",
+          "a": "The inch-tube SMC speed controllers for 1/4\" tube have NPT taper male threads to ASME B1.20.1, the N in part numbers such as AS2201F-N01-07SA. They do not suit BSPT ports. No certificates are held on this listing; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 1/4\" tube?",
+          "a": "Use 1/4\" OD (6.35 mm) inch nylon, soft nylon or polyurethane tube; metric tube will not hold in an inch push-in fitting. Matching inch tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8, 1/4 and 3/8 NPT ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 1/4\" tube speed controller?",
+          "a": "Screw the SMC speed control valve for 1/4\" tube into the cylinder port, check the flow-direction mark, push the 1/4\" tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 1/4\" and 5/16\" tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 1/4\" version comes with 1/8, 1/4 and 3/8 NPT ports, while the [SMC 5/16\" tube speed controller](/p/smc-speed-control-valve-with-5-16-tube-size) takes 5/16\" tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 1/4\" tube speed control valves?",
+          "a": "We list the SMC speed controllers for 1/4\" tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 1/4\" tube speed controllers in stock in Dubai?",
+          "a": "Yes. We hold SMC speed control valves for 1/4\" tube in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS3211F-N03-07SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-10mm-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 10 mm tube size used for?",
+          "a": "The SMC speed control valve for 10 mm tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8, 1/4, 3/8 or 1/2 R (BSPT) thread and takes 10 mm OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 8 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS4211F-04-10SA?",
+          "a": "AS4211F-04-10SA reads as AS4 body size, 1 = meter-in flow direction, F for the push-in fitting, 04 for a 1/2 R (BSPT) thread and 10 for 10 mm tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 10 mm tube speed controller come in?",
+          "a": "The SMC speed controller for 10 mm tube is listed with 1/8, 1/4, 3/8 and 1/2 R (BSPT) cylinder-port threads. By port: 1/8 R: AS2201F-01-10SA and AS2211F-01-10SA; 1/4 R: AS2201F-02-10SA and AS2211F-02-10SA; 3/8 R: AS3201F-03-10SA and AS3211F-03-10SA; 1/2 R: AS4201F-04-10SA and AS4211F-04-10SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-01-10SA or AS2211F-01-10SA for 10 mm tube?",
+          "a": "Order AS2201F-01-10SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-01-10SA is the meter-in version for single-acting cylinders. Both take 10 mm tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 10 mm tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 10 mm tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 10 mm tube speed control valves made of?",
+          "a": "The SMC speed control valve for 10 mm tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 10 mm lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 10 mm tube speed controllers use?",
+          "a": "The metric-tube SMC speed controllers for 10 mm tube have R (BSPT) taper male threads to ISO 7-1, which seal in Rc or BSPT female cylinder ports. They are not NPT; for NPT ports choose the inch-tube versions. This listing holds no certificates, so ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 10 mm tube?",
+          "a": "Use 10 mm OD nylon, soft nylon or polyurethane tube, cut square and pushed fully into the fitting. Inch tube of a similar size will not seal in a metric fitting. Matching 10 mm tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8, 1/4, 3/8 and 1/2 ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 10 mm tube speed controller?",
+          "a": "Screw the SMC speed control valve for 10 mm tube into the cylinder port, check the flow-direction mark, push the 10 mm tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 10 mm and 12 mm tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 10 mm version comes with 1/8, 1/4, 3/8 and 1/2 R (BSPT) ports, while the [SMC 12 mm tube speed controller](/p/smc-speed-control-valve-with-12mm-tube-size) takes 12 mm tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 10 mm tube speed control valves?",
+          "a": "We list the SMC speed controllers for 10 mm tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 10 mm tube speed controllers in stock in Dubai?",
+          "a": "Yes. We hold SMC speed control valves for 10 mm tube in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS4211F-04-10SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-12mm-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 12 mm tube size used for?",
+          "a": "The SMC speed control valve for 12 mm tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 3/8 or 1/2 R (BSPT) thread and takes 12 mm OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 4 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS4211F-04-12SA?",
+          "a": "AS4211F-04-12SA reads as AS4 body size, 1 = meter-in flow direction, F for the push-in fitting, 04 for a 1/2 R (BSPT) thread and 12 for 12 mm tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 12 mm tube speed controller come in?",
+          "a": "The SMC speed controller for 12 mm tube is listed with 3/8 and 1/2 R (BSPT) cylinder-port threads. By port: 3/8 R: AS3201F-03-12SA and AS3211F-03-12SA; 1/2 R: AS4201F-04-12SA and AS4211F-04-12SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS3201F-03-12SA or AS3211F-03-12SA for 12 mm tube?",
+          "a": "Order AS3201F-03-12SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS3211F-03-12SA is the meter-in version for single-acting cylinders. Both take 12 mm tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 12 mm tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 12 mm tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 12 mm tube speed control valves made of?",
+          "a": "The SMC speed control valve for 12 mm tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 12 mm lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 12 mm tube speed controllers use?",
+          "a": "The metric-tube SMC speed controllers for 12 mm tube have R (BSPT) taper male threads to ISO 7-1, which seal in Rc or BSPT female cylinder ports. They are not NPT; for NPT ports choose the inch-tube versions. This listing holds no certificates, so ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 12 mm tube?",
+          "a": "Use 12 mm OD nylon, soft nylon or polyurethane tube, cut square and pushed fully into the fitting. Inch tube of a similar size will not seal in a metric fitting. Matching 12 mm tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 3/8 and 1/2 ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 12 mm tube speed controller?",
+          "a": "Screw the SMC speed control valve for 12 mm tube into the cylinder port, check the flow-direction mark, push the 12 mm tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 12 mm and 10 mm tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 12 mm version comes with 3/8 and 1/2 R (BSPT) ports, while the [SMC 10 mm tube speed controller](/p/smc-speed-control-valve-with-10mm-tube-size) takes 10 mm tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 12 mm tube speed control valves?",
+          "a": "We list the SMC speed controllers for 12 mm tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 12 mm tube speed controllers in stock in Dubai?",
+          "a": "Yes. We keep the SMC 12 mm tube speed controllers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS4211F-04-12SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-3-8-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 3/8\" tube size used for?",
+          "a": "The SMC speed control valve for 3/8\" tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/4, 3/8 or 1/2 NPT thread and takes 3/8\" (9.53 mm) OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 6 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS4211F-N04-11SA?",
+          "a": "AS4211F-N04-11SA reads as AS4 body size, 1 = meter-in flow direction, F for the push-in fitting, N04 for a 1/2 NPT thread and 11 for 3/8\" tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 3/8\" tube speed controller come in?",
+          "a": "The SMC speed controller for 3/8\" tube is listed with 1/4, 3/8 and 1/2 NPT cylinder-port threads. By port: 1/4 NPT: AS2201F-N02-11SA and AS2211F-N02-11SA; 3/8 NPT: AS3201F-N03-11SA and AS3211F-N03-11SA; 1/2 NPT: AS4201F-N04-11SA and AS4211F-N04-11SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-N02-11SA or AS2211F-N02-11SA for 3/8\" tube?",
+          "a": "Order AS2201F-N02-11SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-N02-11SA is the meter-in version for single-acting cylinders. Both take 3/8\" tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 3/8\" tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 3/8\" tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 3/8\" tube speed control valves made of?",
+          "a": "The SMC speed control valve for 3/8\" tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 3/8\" lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 3/8\" tube speed controllers use?",
+          "a": "The inch-tube SMC speed controllers for 3/8\" tube have NPT taper male threads to ASME B1.20.1, the N in part numbers such as AS2201F-N02-11SA. They do not suit BSPT ports. No certificates are held on this listing; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 3/8\" tube?",
+          "a": "Use 3/8\" OD (9.53 mm) inch nylon, soft nylon or polyurethane tube; metric tube will not hold in an inch push-in fitting. Matching inch tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/4, 3/8 and 1/2 NPT ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 3/8\" tube speed controller?",
+          "a": "Screw the SMC speed control valve for 3/8\" tube into the cylinder port, check the flow-direction mark, push the 3/8\" tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 3/8\" and 5/16\" tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 3/8\" version comes with 1/4, 3/8 and 1/2 NPT ports, while the [SMC 5/16\" tube speed controller](/p/smc-speed-control-valve-with-5-16-tube-size) takes 5/16\" tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 3/8\" tube speed control valves?",
+          "a": "We list the SMC speed controllers for 3/8\" tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 3/8\" tube speed controllers in stock in Dubai?",
+          "a": "Yes. SMC speed controllers for 3/8\" tube are kept in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. Send part numbers such as AS4211F-N04-11SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-4mm-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 4 mm tube size used for?",
+          "a": "The SMC speed control valve for 4 mm tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8 or 1/4 R (BSPT) thread and takes 4 mm OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 3 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS2201F-01-04SA?",
+          "a": "AS2201F-01-04SA reads as AS2 body size, 0 = meter-out flow direction, F for the push-in fitting, 01 for a 1/8 R (BSPT) thread and 04 for 4 mm tube, with S marking thread sealant. Change the flow digit from 0 to 1 for the meter-in version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 4 mm tube speed controller come in?",
+          "a": "The SMC speed controller for 4 mm tube is listed with 1/8 and 1/4 R (BSPT) cylinder-port threads. By port: 1/8 R: AS2211F-01-04SA and AS2201F-01-04SA; 1/4 R: AS2211F-02-04SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-01-04SA or AS2211F-01-04SA for 4 mm tube?",
+          "a": "Order AS2201F-01-04SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-01-04SA is the meter-in version for single-acting cylinders. Both take 4 mm tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 4 mm tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 4 mm tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 4 mm tube speed control valves made of?",
+          "a": "The SMC speed control valve for 4 mm tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 4 mm lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 4 mm tube speed controllers use?",
+          "a": "The metric-tube SMC speed controllers for 4 mm tube have R (BSPT) taper male threads to ISO 7-1, which seal in Rc or BSPT female cylinder ports. They are not NPT; for NPT ports choose the inch-tube versions. This listing holds no certificates, so ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 4 mm tube?",
+          "a": "Use 4 mm OD nylon, soft nylon or polyurethane tube, cut square and pushed fully into the fitting. Inch tube of a similar size will not seal in a metric fitting. Matching 4 mm tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8 and 1/4 ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 4 mm tube speed controller?",
+          "a": "Screw the SMC speed control valve for 4 mm tube into the cylinder port, check the flow-direction mark, push the 4 mm tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 4 mm and 6 mm tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 4 mm version comes with 1/8 and 1/4 R (BSPT) ports, while the [SMC 6 mm tube speed controller](/p/smc-speed-control-valve-with-6mm-tube-size) takes 6 mm tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 4 mm tube speed control valves?",
+          "a": "We list the SMC speed controllers for 4 mm tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 4 mm tube speed controllers in stock in Dubai?",
+          "a": "Yes. We hold SMC speed control valves for 4 mm tube in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS2201F-01-04SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-5-16-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 5/16\" tube size used for?",
+          "a": "The SMC speed control valve for 5/16\" tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8, 1/4 or 3/8 NPT thread and takes 5/16\" (7.94 mm) OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 6 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS3211F-N03-09SA?",
+          "a": "AS3211F-N03-09SA reads as AS3 body size, 1 = meter-in flow direction, F for the push-in fitting, N03 for a 3/8 NPT thread and 09 for 5/16\" tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 5/16\" tube speed controller come in?",
+          "a": "The SMC speed controller for 5/16\" tube is listed with 1/8, 1/4 and 3/8 NPT cylinder-port threads. By port: 1/8 NPT: AS2201F-N01-09SA and AS2211F-N01-09SA; 1/4 NPT: AS2201F-N02-09SA and AS2211F-N02-09SA; 3/8 NPT: AS3201F-N03-09SA and AS3211F-N03-09SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-N01-09SA or AS2211F-N01-09SA for 5/16\" tube?",
+          "a": "Order AS2201F-N01-09SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-N01-09SA is the meter-in version for single-acting cylinders. Both take 5/16\" tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 5/16\" tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 5/16\" tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 5/16\" tube speed control valves made of?",
+          "a": "The SMC speed control valve for 5/16\" tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 5/16\" lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 5/16\" tube speed controllers use?",
+          "a": "The inch-tube SMC speed controllers for 5/16\" tube have NPT taper male threads to ASME B1.20.1, the N in part numbers such as AS2201F-N01-09SA. They do not suit BSPT ports. No certificates are held on this listing; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 5/16\" tube?",
+          "a": "Use 5/16\" OD (7.94 mm) inch nylon, soft nylon or polyurethane tube; metric tube will not hold in an inch push-in fitting. Matching inch tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8, 1/4 and 3/8 NPT ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 5/16\" tube speed controller?",
+          "a": "Screw the SMC speed control valve for 5/16\" tube into the cylinder port, check the flow-direction mark, push the 5/16\" tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 5/16\" and 3/8\" tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 5/16\" version comes with 1/8, 1/4 and 3/8 NPT ports, while the [SMC 3/8\" tube speed controller](/p/smc-speed-control-valve-with-3-8-tube-size) takes 3/8\" tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 5/16\" tube speed control valves?",
+          "a": "We list the SMC speed controllers for 5/16\" tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 5/16\" tube speed controllers in stock in Dubai?",
+          "a": "Yes. We keep the SMC 5/16\" tube speed controllers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS3211F-N03-09SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-5-32-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 5/32\" tube size used for?",
+          "a": "The SMC speed control valve for 5/32\" tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8 or 1/4 NPT thread and takes 5/32\" (3.97 mm) OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 3 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS2211F-N02-03SA?",
+          "a": "AS2211F-N02-03SA reads as AS2 body size, 1 = meter-in flow direction, F for the push-in fitting, N02 for a 1/4 NPT thread and 03 for 5/32\" tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 5/32\" tube speed controller come in?",
+          "a": "The SMC speed controller for 5/32\" tube is listed with 1/8 and 1/4 NPT cylinder-port threads. By port: 1/8 NPT: AS2201F-N01-03SA and AS2211F-N01-03SA; 1/4 NPT: AS2211F-N02-03SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-N01-03SA or AS2211F-N01-03SA for 5/32\" tube?",
+          "a": "Order AS2201F-N01-03SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-N01-03SA is the meter-in version for single-acting cylinders. Both take 5/32\" tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 5/32\" tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 5/32\" tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 5/32\" tube speed control valves made of?",
+          "a": "The SMC speed control valve for 5/32\" tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 5/32\" lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 5/32\" tube speed controllers use?",
+          "a": "The inch-tube SMC speed controllers for 5/32\" tube have NPT taper male threads to ASME B1.20.1, the N in part numbers such as AS2201F-N01-03SA. They do not suit BSPT ports. No certificates are held on this listing; ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 5/32\" tube?",
+          "a": "Use 5/32\" OD (3.97 mm) inch nylon, soft nylon or polyurethane tube; metric tube will not hold in an inch push-in fitting. Matching inch tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8 and 1/4 NPT ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 5/32\" tube speed controller?",
+          "a": "Screw the SMC speed control valve for 5/32\" tube into the cylinder port, check the flow-direction mark, push the 5/32\" tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 5/32\" and 1/4\" tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 5/32\" version comes with 1/8 and 1/4 NPT ports, while the [SMC 1/4\" tube speed controller](/p/smc-speed-control-valve-with-1-4-tube-size) takes 1/4\" tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 5/32\" tube speed control valves?",
+          "a": "We list the SMC speed controllers for 5/32\" tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 5/32\" tube speed controllers in stock in Dubai?",
+          "a": "Yes. SMC speed controllers for 5/32\" tube are kept in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. Send part numbers such as AS2211F-N02-03SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-6mm-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 6 mm tube size used for?",
+          "a": "The SMC speed control valve for 6 mm tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8, 1/4 or 3/8 R (BSPT) thread and takes 6 mm OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 5 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS3211F-03-06SA?",
+          "a": "AS3211F-03-06SA reads as AS3 body size, 1 = meter-in flow direction, F for the push-in fitting, 03 for a 3/8 R (BSPT) thread and 06 for 6 mm tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 6 mm tube speed controller come in?",
+          "a": "The SMC speed controller for 6 mm tube is listed with 1/8, 1/4 and 3/8 R (BSPT) cylinder-port threads. By port: 1/8 R: AS2201F-01-06SA and AS2211F-01-06SA; 1/4 R: AS2201F-02-06SA and AS2211F-02-06SA; 3/8 R: AS3211F-03-06SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-01-06SA or AS2211F-01-06SA for 6 mm tube?",
+          "a": "Order AS2201F-01-06SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-01-06SA is the meter-in version for single-acting cylinders. Both take 6 mm tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 6 mm tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 6 mm tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. The AS2211F-02-06SA row in our size table states the same 14.5 to 145 PSI range. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 6 mm tube speed control valves made of?",
+          "a": "The SMC speed control valve for 6 mm tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 6 mm lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 6 mm tube speed controllers use?",
+          "a": "The metric-tube SMC speed controllers for 6 mm tube have R (BSPT) taper male threads to ISO 7-1, which seal in Rc or BSPT female cylinder ports. They are not NPT; for NPT ports choose the inch-tube versions. This listing holds no certificates, so ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 6 mm tube?",
+          "a": "Use 6 mm OD nylon, soft nylon or polyurethane tube, cut square and pushed fully into the fitting. Inch tube of a similar size will not seal in a metric fitting. Matching 6 mm tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8, 1/4 and 3/8 ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 6 mm tube speed controller?",
+          "a": "Screw the SMC speed control valve for 6 mm tube into the cylinder port, check the flow-direction mark, push the 6 mm tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 6 mm and 8 mm tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 6 mm version comes with 1/8, 1/4 and 3/8 R (BSPT) ports, while the [SMC 8 mm tube speed controller](/p/smc-speed-control-valve-with-8mm-tube-size) takes 8 mm tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 6 mm tube speed control valves?",
+          "a": "We list the SMC speed controllers for 6 mm tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 6 mm tube speed controllers in stock in Dubai?",
+          "a": "Yes. We keep the SMC 6 mm tube speed controllers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as AS3211F-03-06SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-speed-control-valve-with-8mm-tube-size",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC speed control valve with 8 mm tube size used for?",
+          "a": "The SMC speed control valve for 8 mm tube sets the extend and retract speed of a pneumatic cylinder: the AS-F elbow body screws into the cylinder port on a 1/8, 1/4 or 3/8 R (BSPT) thread and takes 8 mm OD tube in its push-in fitting. A knob-adjusted needle throttles the air, and the listing carries 6 SMC part numbers in meter-out and meter-in versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the SMC speed controller part number AS3211F-03-08SA?",
+          "a": "AS3211F-03-08SA reads as AS3 body size, 1 = meter-in flow direction, F for the push-in fitting, 03 for a 3/8 R (BSPT) thread and 08 for 8 mm tube, with S marking thread sealant. Change the flow digit from 1 to 0 for the meter-out version. Quote any final suffix, such as A, exactly as listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which port threads does the SMC 8 mm tube speed controller come in?",
+          "a": "The SMC speed controller for 8 mm tube is listed with 1/8, 1/4 and 3/8 R (BSPT) cylinder-port threads. By port: 1/8 R: AS2201F-01-08SA and AS2211F-01-08SA; 1/4 R: AS2201F-02-08SA and AS2211F-02-08SA; 3/8 R: AS3201F-03-08SA and AS3211F-03-08SA. Match the thread to the cylinder or valve port, then pick meter-out or meter-in."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order AS2201F-01-08SA or AS2211F-01-08SA for 8 mm tube?",
+          "a": "Order AS2201F-01-08SA for meter-out control, which throttles the air leaving the cylinder and suits almost every double-acting cylinder; AS2211F-01-08SA is the meter-in version for single-acting cylinders. Both take 8 mm tube. Our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves) explains when meter-in or a quick exhaust valve is the better choice."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can an SMC 8 mm tube speed controller take?",
+          "a": "SMC rates the AS-F speed controllers for 8 mm tube at 0.1 to 1 MPa (about 14.5 to 145 psi, 1 to 10 bar) on compressed air, from -5 to +60°C (+23°F to +140°F) without freezing. Keep the line regulator at or below 1 MPa and keep moisture out in cold weather."
+        },
+        {
+          "slot": "F",
+          "q": "What are SMC 8 mm tube speed control valves made of?",
+          "a": "The SMC speed control valve for 8 mm tube has NBR seals and an electroless nickel-plated threaded body, and it is meant for compressed air only. SMC lists nylon, soft nylon and polyurethane tube for the push-in end; our [tubing materials guide](/blog/pneumatic-tubing-materials-guide) compares them for 8 mm lines."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standard do SMC 8 mm tube speed controllers use?",
+          "a": "The metric-tube SMC speed controllers for 8 mm tube have R (BSPT) taper male threads to ISO 7-1, which seal in Rc or BSPT female cylinder ports. They are not NPT; for NPT ports choose the inch-tube versions. This listing holds no certificates, so ask for a certificate of conformity with the order if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing fits the SMC speed control valve for 8 mm tube?",
+          "a": "Use 8 mm OD nylon, soft nylon or polyurethane tube, cut square and pushed fully into the fitting. Inch tube of a similar size will not seal in a metric fitting. Matching 8 mm tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing), and cylinders with 1/8, 1/4 and 3/8 ports are on the [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and adjust an SMC 8 mm tube speed controller?",
+          "a": "Screw the SMC speed control valve for 8 mm tube into the cylinder port, check the flow-direction mark, push the 8 mm tube fully home, then close the needle clockwise and open it slowly until the cylinder runs at the speed you want. Lock the setting with the lock nut. To remove the tube, press the release button."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between SMC 8 mm and 10 mm tube speed control valves?",
+          "a": "Only the tube size and the port threads offered: the 8 mm version comes with 1/8, 1/4 and 3/8 R (BSPT) ports, while the [SMC 10 mm tube speed controller](/p/smc-speed-control-valve-with-10mm-tube-size) takes 10 mm tube. Choose by the tube already on the machine; bigger tube carries more air for larger bores or faster strokes."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC 8 mm tube speed control valves?",
+          "a": "We list the SMC speed controllers for 8 mm tube under HS 8481200080, within subheading 8481.20 for valves used in pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin follows the SMC plant that made the batch and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC 8 mm tube speed controllers in stock in Dubai?",
+          "a": "Yes. SMC speed controllers for 8 mm tube are kept in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. Send part numbers such as AS3211F-03-08SA with quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-vr-series-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC VR series check valve listing cover?",
+          "a": "The SMC VR series listing covers 31 SMC VR part numbers, mostly VR1210 and VR1220 shuttle valves, with VR1211F, VR2110, VR4151, VR51 and INA-14 special codes. Send the exact code you need and we confirm its function and thread."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read SMC VR1220-N02 and VR1210-F01 part numbers?",
+          "a": "VR1220-N02 is the 1/4 size with an NPT port (N, 02 = 1/4), and VR1210-F01 is the 1/8 size with a G port (F, 01 = 1/8). No letter means Rc, as in VR1220-02. An F after the model, as in VR1210F-06, marks a built-in push-in fitting."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC VR shuttle valve sizes are listed?",
+          "a": "SMC VR1210 is the 1/8 size (VR1210-01, -N01, -F01) and VR1220 the 1/4 size (VR1220-02, -N02, -F02, -N02-H). Fitting versions are VR1210F-04, -06, -08 and VR1220F-07, -08, -10."
+        },
+        {
+          "slot": "D",
+          "q": "Which SMC VR part numbers come with built-in fittings?",
+          "a": "The SMC VR part numbers with built-in push-in fittings are VR1210F-04, VR1210F-06, VR1210F-08, VR1220F-07, VR1220F-08 and VR1220F-10, plus VR1211F-01, -03, -06 and -07. They take tube directly, with no separate fittings; send the tube OD and we confirm the code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do SMC VR1210 and VR1220 valves have?",
+          "a": "This listing does not publish a pressure rating for the SMC VR1210 or VR1220. Send the part number and your pilot or supply pressure and we confirm the maker figure before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which thread standards do SMC VR valve ports follow?",
+          "a": "SMC VR ports are Rc taper to ISO 7-1 (VR1210-01), NPT to ASME B1.20.1 (VR1210-N01) or G parallel to ISO 228-1 (VR1210-F01). No certificates are held on this listing; ask for a certificate of conformity with the order if needed."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings connect to SMC VR1220 shuttle valves?",
+          "a": "Threaded VR1220 shuttle valves take male fittings of the same 1/4 thread on each inlet and the outlet; VR1220F versions take tube directly. Push-in connectors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you pipe an SMC VR1210 shuttle valve?",
+          "a": "Connect the two signal lines to the SMC VR1210 inlets and take the outlet to the valve or cylinder to be operated. Seal the threads, keep sealant out of the bore and leak-test with each inlet pressurised in turn."
+        },
+        {
+          "slot": "J",
+          "q": "Where is an SMC VR shuttle valve used?",
+          "a": "An SMC VR shuttle valve is used where one device must be operated from either of two signals, such as a cylinder worked from two push-button valves or two control stations. It is the pneumatic OR logic element."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between an SMC VR shuttle valve and an SMC AK check valve?",
+          "a": "An SMC VR shuttle valve has two inlets and passes air from whichever is pressurised, while the [SMC AK series check valve](/p/smc-ak-series-check-valve) has one inlet and one outlet and only blocks reverse flow. Use VR for OR logic and AK for one-way flow."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to SMC VR series valves?",
+          "a": "SMC VR shuttle and logic valves normally fall under HS 8481.20, valves for pneumatic transmissions. We ship from Dubai to the GCC, Africa, Asia and beyond; country of origin is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep SMC VR series valves in stock in Dubai?",
+          "a": "Yes. We keep SMC VR series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send part numbers such as VR1220-N02 and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

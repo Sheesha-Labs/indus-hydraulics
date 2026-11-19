@@ -1,0 +1,1461 @@
+{
+  "family": "orfs-adapters-03",
+  "extraFacts": [
+    {
+      "fact": "The O-ring face seal (ORFS, SAE J1453 / ISO 8434-3) uses a flat-faced male end whose face carries an O-ring, sealed against the flat face of a female swivel nut; the thread holds the joint and the O-ring seals.",
+      "source": "SAE J1453 / ISO 8434-3"
+    },
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss port: a straight UN/UNF thread with an O-ring under the hex shoulder that makes the seal.",
+      "source": "SAE J1926 / ISO 11926"
+    },
+    {
+      "fact": "ASME B1.20.1 covers NPT taper pipe threads and ASME B1.20.3 covers Dryseal NPTF threads; both seal on the thread with sealant.",
+      "source": "ASME B1.20.1; ASME B1.20.3"
+    },
+    {
+      "fact": "ISO 228-1 covers G (BSPP) parallel pipe threads, on which the joint is not made; the seal is a washer or O-ring.",
+      "source": "ISO 228-1"
+    },
+    {
+      "fact": "ISO 8434-1 covers the 24° cone connection (DIN 2353).",
+      "source": "ISO 8434-1"
+    },
+    {
+      "fact": "The 37° JIC flare seats metal to metal on a 74° included cone; its standard is SAE J514 / ISO 8434-2.",
+      "source": "SAE J514 / ISO 8434-2"
+    }
+  ],
+  "products": [
+    {
+      "slug": "orfs-cross-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Cross Fittings used for?",
+          "a": "The ORFS Cross Fittings is a cross fitting with ORFS male, ORFS male and ORFS male ends. It joins ORFS lines at a cross, so one point on a manifold line can feed several branches, in sizes -04 to -24."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-033-04 on the ORFS Cross Fittings?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-033 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-033-04 is sized by its dash code; IH-AD-ORFS-033-12 is sized by its dash code; IH-AD-ORFS-033-24 is sized by its dash code. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Cross Fittings come in?",
+          "a": "The ORFS Cross Fittings lists 8 part numbers over the nominal size range -04 to -24, from IH-AD-ORFS-033-04 to IH-AD-ORFS-033-24. Each number ends in the dash code of its size, and sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Cross Fittings have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Cross Fittings, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Cross Fittings made of?",
+          "a": "The ORFS Cross Fittings is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Cross Fittings follow?",
+          "a": "The listing names None for the ORFS Cross Fittings. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-033-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Cross Fittings connect to?",
+          "a": "On the ORFS Cross Fittings, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Cross Fittings so it seals?",
+          "a": "To fit the ORFS Cross Fittings, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Cross Fittings used?",
+          "a": "Distributing flow to several ORFS branches from one point on a manifold line. Tell us the machine and the port threads on each end and we confirm the ORFS Cross Fittings suits it before supply; the base code is IH-AD-ORFS-033."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Cross Fittings differ from the ORFS Male O-Ring Tee?",
+          "a": "A cross has four connections, while the [ORFS Male O-Ring Tee](/p/orfs-male-o-ring-tee) is a three-port tee. Choose the cross when two lines meet at one point."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Cross Fittings exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Cross Fittings worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Cross Fittings in Dubai?",
+          "a": "Yes. We keep the ORFS Cross Fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-bulkhead-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring Bulkhead Branch Tee used for?",
+          "a": "The ORFS Male O-Ring Bulkhead Branch Tee is a bulkhead branch tee with ORFS male, ORFS male and ORFS male ends. It carries an ORFS line through a panel and splits it with a branch, with male ORFS ports and an LN lock nut."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-032-04LN on the ORFS Male O-Ring Bulkhead Branch Tee?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-032 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-032-04LN is 9/16\"X18 by 9/16\"X18 by 9/16\"X18; IH-AD-ORFS-032-12LN is 1-3/16\"X12 by 1-3/16\"X12 by 1-3/16\"X12; IH-AD-ORFS-032-24LN is 2\"X12 by 2\"X12 by 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring Bulkhead Branch Tee come in?",
+          "a": "The ORFS Male O-Ring Bulkhead Branch Tee lists 8 part numbers over the nominal size range -04 to -24. The first row is 9/16\"X18 by 9/16\"X18 by 9/16\"X18 and the last is 2\"X12 by 2\"X12 by 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring Bulkhead Branch Tee have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Male O-Ring Bulkhead Branch Tee, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring Bulkhead Branch Tee made of?",
+          "a": "The ORFS Male O-Ring Bulkhead Branch Tee is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring Bulkhead Branch Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring Bulkhead Branch Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-032-12LN."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring Bulkhead Branch Tee connect to?",
+          "a": "On the ORFS Male O-Ring Bulkhead Branch Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring Bulkhead Branch Tee so it seals?",
+          "a": "To fit the ORFS Male O-Ring Bulkhead Branch Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring Bulkhead Branch Tee used?",
+          "a": "Branching an ORFS line at a bulkhead on a machine frame or tank wall. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring Bulkhead Branch Tee suits it before supply; the base code is IH-AD-ORFS-032."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring Bulkhead Branch Tee differ from the ORFS Male O-Ring Tee?",
+          "a": "This tee has a bulkhead mount with a lock nut so it can be fixed to a panel, while the [ORFS Male O-Ring Tee](/p/orfs-male-o-ring-tee) is a plain tee with no panel mount. Choose by whether the tee must be panel-mounted."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring Bulkhead Branch Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring Bulkhead Branch Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring Bulkhead Branch Tee in Dubai?",
+          "a": "Yes, the ORFS Male O-Ring Bulkhead Branch Tee is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring Tee used for?",
+          "a": "The ORFS Male O-Ring Tee is a tee with ORFS male, ORFS male and ORFS male ends. It splits an ORFS line three ways with male ORFS ports on every leg."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-025-04 on the ORFS Male O-Ring Tee?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-025 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-025-04 is 9/16\"X18 by 9/16\"X18 by 9/16\"X18; IH-AD-ORFS-025-12 is 1-3/16\"X12 by 1-3/16\"X12 by 1-3/16\"X12; IH-AD-ORFS-025-24 is 2\"X12 by 2\"X12 by 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring Tee come in?",
+          "a": "The ORFS Male O-Ring Tee lists 8 part numbers over the nominal size range -04 to -24. The first row is 9/16\"X18 by 9/16\"X18 by 9/16\"X18 and the last is 2\"X12 by 2\"X12 by 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring Tee have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Male O-Ring Tee, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring Tee made of?",
+          "a": "The ORFS Male O-Ring Tee is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-025-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring Tee connect to?",
+          "a": "On the ORFS Male O-Ring Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring Tee so it seals?",
+          "a": "To fit the ORFS Male O-Ring Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring Tee used?",
+          "a": "Branching an ORFS hose or tube line where all three connections have swivel nuts. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring Tee suits it before supply; the base code is IH-AD-ORFS-025."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring Tee differ from the ORFS Male O-Ring Bulkhead Branch Tee?",
+          "a": "This tee is a plain three-port part, while the [ORFS Male O-Ring Bulkhead Branch Tee](/p/orfs-male-o-ring-bulkhead-branch-tee) adds a bulkhead mount with a lock nut."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring Tee in Dubai?",
+          "a": "Yes. The ORFS Male O-Ring Tee sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-x-bsp-male-o-ring-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring × BSP Male O-Ring Run Tee used for?",
+          "a": "The ORFS Male O-Ring × BSP Male O-Ring Run Tee is a run tee with ORFS male, ORFS male and BSPP male ends. It has two male ORFS ports on the run and a male BSPP port, G1/8-28 to G1-11, on the branch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-031-040402OG on the ORFS Male O-Ring × BSP Male O-Ring Run Tee?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-031 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-031-040402OG is 9/16\"X18 by 9/16\"X18 by G1/8\"X28; IH-AD-ORFS-031-08OG is 13/16\"X16 by 13/16\"X16 by G1/2\"X14; IH-AD-ORFS-031-16OG is 1-7/16\"X12 by 1-7/16\"X12 by G1\"X11. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring × BSP Male O-Ring Run Tee come in?",
+          "a": "The ORFS Male O-Ring × BSP Male O-Ring Run Tee lists 11 part numbers over the nominal size range -04 to -16. The first row is 9/16\"X18 by 9/16\"X18 by G1/8\"X28 and the last is 1-7/16\"X12 by 1-7/16\"X12 by G1\"X11. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring × BSP Male O-Ring Run Tee have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Male O-Ring × BSP Male O-Ring Run Tee, from 315 bar on the small sizes down to 160 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring × BSP Male O-Ring Run Tee made of?",
+          "a": "The ORFS Male O-Ring × BSP Male O-Ring Run Tee is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring × BSP Male O-Ring Run Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring × BSP Male O-Ring Run Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. ISO 228-1 covers G (BSPP) parallel threads, which are not sealed on the thread. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-031-08OG."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring × BSP Male O-Ring Run Tee connect to?",
+          "a": "On the ORFS Male O-Ring × BSP Male O-Ring Run Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is a BSPP (G) male parallel thread, which seals on a seal beneath the hex rather than on the thread. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring × BSP Male O-Ring Run Tee so it seals?",
+          "a": "To fit the ORFS Male O-Ring × BSP Male O-Ring Run Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Make the BSPP end on its seal, not by tightening the thread."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring × BSP Male O-Ring Run Tee used?",
+          "a": "Taking a BSPP-ported connection off an ORFS line. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring × BSP Male O-Ring Run Tee suits it before supply; the base code is IH-AD-ORFS-031."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring × BSP Male O-Ring Run Tee differ from the ORFS Male O-Ring × ORFS Female Run Tee?",
+          "a": "This run tee has a BSPP third port, while the [ORFS Male O-Ring × ORFS Female Run Tee](/p/orfs-male-o-ring-x-orfs-female-run-tee) has an ORFS female third port. Choose by the thread on the branch connection."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring × BSP Male O-Ring Run Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring × BSP Male O-Ring Run Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring × BSP Male O-Ring Run Tee in Dubai?",
+          "a": "Yes. Indus stocks the ORFS Male O-Ring × BSP Male O-Ring Run Tee at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-x-metric-thread-male-captive-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring × Metric Thread Male Captive Seal used for?",
+          "a": "The ORFS Male O-Ring × Metric Thread Male Captive Seal is a straight connector with ORFS male and metric male with a bonded seal washer ends. It connects an ORFS male end to a metric male end, M12×1.5 to M42×2, that seals on a bonded seal washer."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-030-0412WD on the ORFS Male O-Ring × Metric Thread Male Captive Seal?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-030 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-030-0412WD is 9/16\"X18 by M12X1.5; IH-AD-ORFS-030-1022WD is 1/4\"X14 by M22X1.5; IH-AD-ORFS-030-2042WD is 1-11/16\"X12 by M42X2. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring × Metric Thread Male Captive Seal come in?",
+          "a": "The ORFS Male O-Ring × Metric Thread Male Captive Seal lists 8 part numbers over the nominal size range -04 to -20. The first row is 9/16\"X18 by M12X1.5 and the last is 1-11/16\"X12 by M42X2. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring × Metric Thread Male Captive Seal have?",
+          "a": "The ORFS Male O-Ring × Metric Thread Male Captive Seal has no pressure rating of its own on the listing, because it is a connector whose rating is not published on the listing. Tell us the working pressure and the size, such as IH-AD-ORFS-030-0412WD, and we confirm it with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring × Metric Thread Male Captive Seal made of?",
+          "a": "The ORFS Male O-Ring × Metric Thread Male Captive Seal is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring × Metric Thread Male Captive Seal follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring × Metric Thread Male Captive Seal. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-030-1022WD."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring × Metric Thread Male Captive Seal connect to?",
+          "a": "On the ORFS Male O-Ring × Metric Thread Male Captive Seal, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is a metric male thread that seals on a bonded seal washer. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring × Metric Thread Male Captive Seal so it seals?",
+          "a": "To fit the ORFS Male O-Ring × Metric Thread Male Captive Seal, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Seat the metric end on its bonded seal washer."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring × Metric Thread Male Captive Seal used?",
+          "a": "Connecting an ORFS line to a metric-threaded port that is sealed with a captive washer. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring × Metric Thread Male Captive Seal suits it before supply; the base code is IH-AD-ORFS-030."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring × Metric Thread Male Captive Seal differ from the Plug ORFS?",
+          "a": "This part connects two different threads, while the [Plug ORFS](/p/plug-orfs) is a plug that closes an ORFS connection. Listing data classes this item as a plug, so check the row before ordering."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring × Metric Thread Male Captive Seal exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring × Metric Thread Male Captive Seal worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring × Metric Thread Male Captive Seal in Dubai?",
+          "a": "Yes. We keep the ORFS Male O-Ring × Metric Thread Male Captive Seal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-x-orfs-female-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring × ORFS Female Branch Tee used for?",
+          "a": "The ORFS Male O-Ring × ORFS Female Branch Tee is a branch tee with ORFS male and ORFS female swivel ends. It splits an ORFS line with a male ORFS port and a female ORFS swivel on the run, and a third ORFS port on the branch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-026-04 on the ORFS Male O-Ring × ORFS Female Branch Tee?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-026 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-026-04 is 9/16\"X18 by 9/16\"X18 by 9/16\"X18; IH-AD-ORFS-026-12 is 1-3/16\"X12 by 1-3/16\"X12 by 1-3/16\"X12; IH-AD-ORFS-026-24 is 2\"X12 by 2\"X12 by 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring × ORFS Female Branch Tee come in?",
+          "a": "The ORFS Male O-Ring × ORFS Female Branch Tee lists 8 part numbers over the nominal size range -04 to -24. The first row is 9/16\"X18 by 9/16\"X18 by 9/16\"X18 and the last is 2\"X12 by 2\"X12 by 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring × ORFS Female Branch Tee have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Male O-Ring × ORFS Female Branch Tee, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring × ORFS Female Branch Tee made of?",
+          "a": "The ORFS Male O-Ring × ORFS Female Branch Tee is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring × ORFS Female Branch Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring × ORFS Female Branch Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-026-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring × ORFS Female Branch Tee connect to?",
+          "a": "On the ORFS Male O-Ring × ORFS Female Branch Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring × ORFS Female Branch Tee so it seals?",
+          "a": "To fit the ORFS Male O-Ring × ORFS Female Branch Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring × ORFS Female Branch Tee used?",
+          "a": "Branching an ORFS line where one connection is a swivel nut. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring × ORFS Female Branch Tee suits it before supply; the base code is IH-AD-ORFS-026."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring × ORFS Female Branch Tee differ from the ORFS Male O-Ring × ORFS Female Run Tee?",
+          "a": "In this branch tee the third port is the branch, while the [ORFS Male O-Ring × ORFS Female Run Tee](/p/orfs-male-o-ring-x-orfs-female-run-tee) has it on the run. Both have a male and a female ORFS port."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring × ORFS Female Branch Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring × ORFS Female Branch Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring × ORFS Female Branch Tee in Dubai?",
+          "a": "Yes, the ORFS Male O-Ring × ORFS Female Branch Tee is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-o-ring-x-orfs-female-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male O-Ring × ORFS Female Run Tee used for?",
+          "a": "The ORFS Male O-Ring × ORFS Female Run Tee is a run tee with ORFS male and ORFS female swivel ends. It puts a male ORFS port and a female ORFS swivel on the run, with a third ORFS port in line with the run."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-027-04 on the ORFS Male O-Ring × ORFS Female Run Tee?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-027 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-027-04 is 9/16\"X18 by 9/16\"X18 by 9/16\"X18; IH-AD-ORFS-027-12 is 1-3/16\"X12 by 1-3/16\"X12 by 1-3/16\"X12; IH-AD-ORFS-027-24 is 2\"X12 by 2\"X12 by 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male O-Ring × ORFS Female Run Tee come in?",
+          "a": "The ORFS Male O-Ring × ORFS Female Run Tee lists 8 part numbers over the nominal size range -04 to -24. The first row is 9/16\"X18 by 9/16\"X18 by 9/16\"X18 and the last is 2\"X12 by 2\"X12 by 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the ORFS Male O-Ring × ORFS Female Run Tee have?",
+          "a": "The size table gives the maker's figure against each size of the ORFS Male O-Ring × ORFS Female Run Tee, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Male O-Ring × ORFS Female Run Tee made of?",
+          "a": "The ORFS Male O-Ring × ORFS Female Run Tee is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the ORFS Male O-Ring × ORFS Female Run Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the ORFS Male O-Ring × ORFS Female Run Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-027-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male O-Ring × ORFS Female Run Tee connect to?",
+          "a": "On the ORFS Male O-Ring × ORFS Female Run Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ORFS Male O-Ring × ORFS Female Run Tee so it seals?",
+          "a": "To fit the ORFS Male O-Ring × ORFS Female Run Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male O-Ring × ORFS Female Run Tee used?",
+          "a": "Putting a swivel nut into the run of an ORFS line that also needs a branch. Tell us the machine and the port threads on each end and we confirm the ORFS Male O-Ring × ORFS Female Run Tee suits it before supply; the base code is IH-AD-ORFS-027."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male O-Ring × ORFS Female Run Tee differ from the ORFS Male O-Ring × ORFS Female Branch Tee?",
+          "a": "In this run tee the third port sits on the run, while the [ORFS Male O-Ring × ORFS Female Branch Tee](/p/orfs-male-o-ring-x-orfs-female-branch-tee) puts it on the branch."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ORFS Male O-Ring × ORFS Female Run Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the ORFS Male O-Ring × ORFS Female Run Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male O-Ring × ORFS Female Run Tee in Dubai?",
+          "a": "Yes. The ORFS Male O-Ring × ORFS Female Run Tee sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "plug-orfs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Plug ORFS used for?",
+          "a": "The Plug ORFS is a plug with ORFS male ends. It closes a female ORFS swivel nut or port, in sizes -04 to -16 on the listing, with a pressure that falls from 630 bar at the small end to 250 bar at 2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-007-04 on the Plug ORFS?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-007 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-007-04 is 9/16\"X18; IH-AD-ORFS-007-12 is 1-3/16\"X12; IH-AD-ORFS-007-24 is 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Plug ORFS come in?",
+          "a": "The Plug ORFS lists 8 part numbers over the nominal size range -04 to -16. The first row is 9/16\"X18 and the last is 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Plug ORFS have?",
+          "a": "The size table gives the maker's figure against each size of the Plug ORFS, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Plug ORFS made of?",
+          "a": "The Plug ORFS is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Plug ORFS follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Plug ORFS. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-007-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Plug ORFS connect to?",
+          "a": "On the Plug ORFS, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Plug ORFS so it seals?",
+          "a": "To fit the Plug ORFS, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Plug ORFS used?",
+          "a": "Blanking an unused ORFS connection on a manifold, hose end or test point. Tell us the machine and the port threads on each end and we confirm the Plug ORFS suits it before supply; the base code is IH-AD-ORFS-007."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Plug ORFS differ from the Swivel Cap ORFS?",
+          "a": "This male plug closes a female ORFS port, while the [Swivel Cap ORFS](/p/swivel-cap-orfs) is a female swivel cap that fits over a male ORFS end."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Plug ORFS exported from Dubai and what documents come with it?",
+          "a": "We ship the Plug ORFS worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Plug ORFS in Dubai?",
+          "a": "Yes. Indus stocks the Plug ORFS at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-braze-tube-nut",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Braze Tube Nut used for?",
+          "a": "The Steel ORFS Braze Tube Nut is a tube nut with ORFS tube end ends. It is the nut for an ORFS tube end, sized by tube O.D. from 1/4 inch to 1-1/2 inch, and it is used with a braze sleeve on the tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS318-04 on the Steel ORFS Braze Tube Nut?",
+          "a": "Every part number starts with the series code IH-ST-FS318 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS318-04 is 1/4\" tube O.D. (ORFS 9/16-18); IH-ST-FS318-12 is 3/4\" tube O.D. (ORFS 1-3/16-12); IH-ST-FS318-24 is 1-1/2\" tube O.D. (ORFS 2-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Braze Tube Nut come in?",
+          "a": "The Steel ORFS Braze Tube Nut lists 8 part numbers over the nominal size range 1/4\" to 1-1/2\" tube. The first row is 1/4\" tube O.D. (ORFS 9/16-18) and the last is 1-1/2\" tube O.D. (ORFS 2-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Braze Tube Nut have?",
+          "a": "The Steel ORFS Braze Tube Nut has no pressure rating of its own on the listing, because it is an accessory used with a tube sleeve. Tell us the working pressure and the size, such as IH-ST-FS318-04, and we confirm it with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Braze Tube Nut made of?",
+          "a": "The Steel ORFS Braze Tube Nut is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Braze Tube Nut follow?",
+          "a": "The listing names SAE J1453 for the Steel ORFS Braze Tube Nut. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS318-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Braze Tube Nut connect to?",
+          "a": "On the Steel ORFS Braze Tube Nut, End A is an ORFS tube end that is brazed or fitted to the tube. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Braze Tube Nut so it seals?",
+          "a": "To fit the Steel ORFS Braze Tube Nut, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Braze Tube Nut used?",
+          "a": "Building an ORFS tube assembly where a brazed sleeve is used. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Braze Tube Nut suits it before supply; the base code is IH-ST-FS318."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Braze Tube Nut differ from the Steel ORFS Braze Tube Sleeve?",
+          "a": "The nut holds the tube end against the male face, while the [Steel ORFS Braze Tube Sleeve](/p/steel-orfs-braze-tube-sleeve) is the sleeve that is brazed to the tube. They are used together."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Braze Tube Nut exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Braze Tube Nut worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Braze Tube Nut in Dubai?",
+          "a": "Yes. We keep the Steel ORFS Braze Tube Nut in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-braze-tube-sleeve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Braze Tube Sleeve used for?",
+          "a": "The Steel ORFS Braze Tube Sleeve is a braze sleeve with ORFS tube end ends. It is the sleeve brazed to a tube to form an ORFS tube end, sized from 1/4 inch to 1-1/2 inch tube O.D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS319-04W on the Steel ORFS Braze Tube Sleeve?",
+          "a": "Every part number starts with the series code IH-ST-FS319 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS319-04W is 1/4\" tube O.D. (ORFS 9/16-18); IH-ST-FS319-12W is 3/4\" tube O.D. (ORFS 1-3/16-12); IH-ST-FS319-24W is 1-1/2\" tube O.D. (ORFS 2-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Braze Tube Sleeve come in?",
+          "a": "The Steel ORFS Braze Tube Sleeve lists 8 part numbers over the nominal size range 1/4\" to 1-1/2\" tube. The first row is 1/4\" tube O.D. (ORFS 9/16-18) and the last is 1-1/2\" tube O.D. (ORFS 2-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Braze Tube Sleeve have?",
+          "a": "The Steel ORFS Braze Tube Sleeve has no pressure rating of its own on the listing, because it is an accessory used with a tube nut. Tell us the working pressure and the size, such as IH-ST-FS319-04W, and we confirm it with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Braze Tube Sleeve made of?",
+          "a": "The Steel ORFS Braze Tube Sleeve is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Braze Tube Sleeve follow?",
+          "a": "The listing names SAE J1453 for the Steel ORFS Braze Tube Sleeve. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS319-12W."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Braze Tube Sleeve connect to?",
+          "a": "On the Steel ORFS Braze Tube Sleeve, End A is an ORFS tube end that is brazed or fitted to the tube. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Braze Tube Sleeve so it seals?",
+          "a": "To fit the Steel ORFS Braze Tube Sleeve, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Braze Tube Sleeve used?",
+          "a": "Forming an ORFS tube end by brazing a sleeve onto the tube. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Braze Tube Sleeve suits it before supply; the base code is IH-ST-FS319W."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Braze Tube Sleeve differ from the Steel ORFS Mechanical Tube Sleeve?",
+          "a": "The braze sleeve is brazed to the tube, while the [Steel ORFS Mechanical Tube Sleeve](/p/steel-orfs-mechanical-tube-sleeve) is the mechanical version for tube ends that are not brazed. Choose by how the tube is to be prepared."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Braze Tube Sleeve exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Braze Tube Sleeve worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Braze Tube Sleeve in Dubai?",
+          "a": "Yes, the Steel ORFS Braze Tube Sleeve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-female-swivel-x-jic-37-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Female Swivel × JIC 37° Male Adapter used for?",
+          "a": "The Steel ORFS Female Swivel × JIC 37° Male Adapter is a straight adapter with ORFS female swivel and 37° JIC male ends. It joins a female ORFS swivel to a male 37° JIC end in a straight body, from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS6504-04-04 on the Steel ORFS Female Swivel × JIC 37° Male Adapter?",
+          "a": "Every part number starts with the series code IH-ST-FS6504-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS6504-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20); IH-ST-FS6504-10-10 is 5/8\" ORFS (1-14) by 5/8\" JIC 37° (7/8-14); IH-ST-FS6504-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" JIC 37° (1-5/8-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Female Swivel × JIC 37° Male Adapter come in?",
+          "a": "The Steel ORFS Female Swivel × JIC 37° Male Adapter lists 7 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" JIC 37° (1-5/8-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Female Swivel × JIC 37° Male Adapter have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Female Swivel × JIC 37° Male Adapter for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS6504-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Female Swivel × JIC 37° Male Adapter made of?",
+          "a": "The Steel ORFS Female Swivel × JIC 37° Male Adapter is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Female Swivel × JIC 37° Male Adapter follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, SAE J514, ISO 8434-2 for the Steel ORFS Female Swivel × JIC 37° Male Adapter. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. SAE J514 / ISO 8434-2 covers the 37° JIC flare. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS6504-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Female Swivel × JIC 37° Male Adapter connect to?",
+          "a": "On the Steel ORFS Female Swivel × JIC 37° Male Adapter, End A is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. End B is a 37° JIC male flare that seats metal to metal in a female JIC swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Female Swivel × JIC 37° Male Adapter so it seals?",
+          "a": "To fit the Steel ORFS Female Swivel × JIC 37° Male Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. The JIC side seals on its 37° cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Female Swivel × JIC 37° Male Adapter used?",
+          "a": "Connecting an ORFS hose end to a JIC port. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Female Swivel × JIC 37° Male Adapter suits it before supply; the base code is IH-ST-FS6504."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Female Swivel × JIC 37° Male Adapter differ from the Steel ORFS Male × JIC 37° Male Adapter?",
+          "a": "This adapter has a female ORFS swivel, while the [Steel ORFS Male × JIC 37° Male Adapter](/p/steel-orfs-male-x-jic-37-male-adapter) has a male ORFS end. Both have a male JIC end, so choose by the gender of the ORFS side."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Female Swivel × JIC 37° Male Adapter exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Female Swivel × JIC 37° Male Adapter worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Female Swivel × JIC 37° Male Adapter in Dubai?",
+          "a": "Yes. The Steel ORFS Female Swivel × JIC 37° Male Adapter sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-female-swivel-x-orb-male-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Female Swivel × ORB Male 90° Elbow used for?",
+          "a": "The Steel ORFS Female Swivel × ORB Male 90° Elbow is a 90° elbow with ORFS female swivel and SAE O-ring boss (ORB) male ends. It turns a line through 90° between a female ORFS swivel and a male SAE O-ring boss thread, from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS6809-04-04 on the Steel ORFS Female Swivel × ORB Male 90° Elbow?",
+          "a": "Every part number starts with the series code IH-ST-FS6809-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS6809-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" ORB (7/16-20); IH-ST-FS6809-10-10 is 5/8\" ORFS (1-14) by 5/8\" ORB (7/8-14); IH-ST-FS6809-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORB (1-5/8-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Female Swivel × ORB Male 90° Elbow come in?",
+          "a": "The Steel ORFS Female Swivel × ORB Male 90° Elbow lists 7 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" ORB (7/16-20) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORB (1-5/8-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Female Swivel × ORB Male 90° Elbow have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Female Swivel × ORB Male 90° Elbow for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS6809-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Female Swivel × ORB Male 90° Elbow made of?",
+          "a": "The Steel ORFS Female Swivel × ORB Male 90° Elbow is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Female Swivel × ORB Male 90° Elbow follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, SAE J1926, ISO 11926 for the Steel ORFS Female Swivel × ORB Male 90° Elbow. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. SAE J1926 / ISO 11926 is the O-ring boss port standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS6809-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Female Swivel × ORB Male 90° Elbow connect to?",
+          "a": "On the Steel ORFS Female Swivel × ORB Male 90° Elbow, End A is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. End B is an SAE O-ring boss male end (SAE J1926 / ISO 11926) that screws into a boss port and seals on the O-ring under the hex. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Female Swivel × ORB Male 90° Elbow so it seals?",
+          "a": "To fit the Steel ORFS Female Swivel × ORB Male 90° Elbow, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Fit the ORB end with its own O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Female Swivel × ORB Male 90° Elbow used?",
+          "a": "Right-angle connections from an ORFS hose end into a boss port. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Female Swivel × ORB Male 90° Elbow suits it before supply; the base code is IH-ST-FS6809."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Female Swivel × ORB Male 90° Elbow differ from the Swivel Connector m SAE X f ORFS?",
+          "a": "This elbow turns 90°, while the [Swivel Connector m SAE X f ORFS](/p/swivel-connector-m-sae-x-f-orfs) is straight. Both have a female ORFS swivel and an ORB male end."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Female Swivel × ORB Male 90° Elbow exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Female Swivel × ORB Male 90° Elbow worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Female Swivel × ORB Male 90° Elbow in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORFS Female Swivel × ORB Male 90° Elbow at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-bulkhead-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male Bulkhead 45° Elbow used for?",
+          "a": "The Steel ORFS Male Bulkhead 45° Elbow is a bulkhead 45° elbow with ORFS male and ORFS male ends. It takes an ORFS line through a panel and around a 45° bend, with male ORFS ends from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS2702-04-04 on the Steel ORFS Male Bulkhead 45° Elbow?",
+          "a": "Every part number starts with the series code IH-ST-FS2702-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS2702-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18); IH-ST-FS2702-10-10 is 5/8\" ORFS (1-14) by 5/8\" ORFS (1-14); IH-ST-FS2702-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORFS (1-11/16-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male Bulkhead 45° Elbow come in?",
+          "a": "The Steel ORFS Male Bulkhead 45° Elbow lists 8 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORFS (1-11/16-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male Bulkhead 45° Elbow have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male Bulkhead 45° Elbow for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS2702-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male Bulkhead 45° Elbow made of?",
+          "a": "The Steel ORFS Male Bulkhead 45° Elbow is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male Bulkhead 45° Elbow follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Steel ORFS Male Bulkhead 45° Elbow. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS2702-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male Bulkhead 45° Elbow connect to?",
+          "a": "On the Steel ORFS Male Bulkhead 45° Elbow, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male Bulkhead 45° Elbow so it seals?",
+          "a": "To fit the Steel ORFS Male Bulkhead 45° Elbow, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male Bulkhead 45° Elbow used?",
+          "a": "Passing an ORFS line through a panel at a shallow angle. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male Bulkhead 45° Elbow suits it before supply; the base code is IH-ST-FS2702."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male Bulkhead 45° Elbow differ from the Steel ORFS Male Bulkhead Run Tee?",
+          "a": "This part turns the line 45° through the panel, while the [Steel ORFS Male Bulkhead Run Tee](/p/steel-orfs-male-bulkhead-run-tee) is a tee with a branch. Choose by whether the line must turn or split."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male Bulkhead 45° Elbow exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male Bulkhead 45° Elbow worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male Bulkhead 45° Elbow in Dubai?",
+          "a": "Yes. We keep the Steel ORFS Male Bulkhead 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-bulkhead-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male Bulkhead Run Tee used for?",
+          "a": "The Steel ORFS Male Bulkhead Run Tee is a bulkhead run tee with ORFS male, ORFS male and ORFS male ends. It takes an ORFS line through a panel and puts a branch on the run, with male ORFS ports from 1/4 inch to 1-1/2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS2704-04-04-04 on the Steel ORFS Male Bulkhead Run Tee?",
+          "a": "Every part number starts with the series code IH-ST-FS2704-04-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS2704-04-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18); IH-ST-FS2704-12-12-12 is 3/4\" ORFS (1-3/16-12) by 3/4\" ORFS (1-3/16-12) by 3/4\" ORFS (1-3/16-12); IH-ST-FS2704-24-24-24 is 1-1/2\" ORFS (2-12) by 1-1/2\" ORFS (2-12) by 1-1/2\" ORFS (2-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male Bulkhead Run Tee come in?",
+          "a": "The Steel ORFS Male Bulkhead Run Tee lists 8 part numbers over the nominal size range 1/4\" to 1-1/2\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) and the last is 1-1/2\" ORFS (2-12) by 1-1/2\" ORFS (2-12) by 1-1/2\" ORFS (2-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male Bulkhead Run Tee have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male Bulkhead Run Tee for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS2704-04-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male Bulkhead Run Tee made of?",
+          "a": "The Steel ORFS Male Bulkhead Run Tee is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male Bulkhead Run Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Steel ORFS Male Bulkhead Run Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS2704-12-12-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male Bulkhead Run Tee connect to?",
+          "a": "On the Steel ORFS Male Bulkhead Run Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male Bulkhead Run Tee so it seals?",
+          "a": "To fit the Steel ORFS Male Bulkhead Run Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male Bulkhead Run Tee used?",
+          "a": "Branching an ORFS line at a panel on a machine frame. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male Bulkhead Run Tee suits it before supply; the base code is IH-ST-FS2704."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male Bulkhead Run Tee differ from the Steel ORFS Male Bulkhead 45° Elbow?",
+          "a": "This part has a third port for a branch, while the [Steel ORFS Male Bulkhead 45° Elbow](/p/steel-orfs-male-bulkhead-45-elbow) turns the line 45°. Choose by whether the line must split or turn."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male Bulkhead Run Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male Bulkhead Run Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male Bulkhead Run Tee in Dubai?",
+          "a": "Yes, the Steel ORFS Male Bulkhead Run Tee is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-jic-37-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × JIC 37° Female Swivel Adapter used for?",
+          "a": "The Steel ORFS Male × JIC 37° Female Swivel Adapter is a straight adapter with ORFS male and 37° JIC female swivel ends. It joins a male ORFS end to a female 37° JIC swivel in a straight body, from 1/4 inch to 3/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS6402-04-04 on the Steel ORFS Male × JIC 37° Female Swivel Adapter?",
+          "a": "Every part number starts with the series code IH-ST-FS6402-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS6402-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20); IH-ST-FS6402-08-08 is 1/2\" ORFS (13/16-16) by 1/2\" JIC 37° (3/4-16); IH-ST-FS6402-12-12 is 3/4\" ORFS (1-3/16-12) by 3/4\" JIC 37° (1-1/16-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male × JIC 37° Female Swivel Adapter come in?",
+          "a": "The Steel ORFS Male × JIC 37° Female Swivel Adapter lists 5 part numbers over the nominal size range 1/4\" to 3/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20) and the last is 3/4\" ORFS (1-3/16-12) by 3/4\" JIC 37° (1-1/16-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male × JIC 37° Female Swivel Adapter have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male × JIC 37° Female Swivel Adapter for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS6402-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × JIC 37° Female Swivel Adapter made of?",
+          "a": "The Steel ORFS Male × JIC 37° Female Swivel Adapter is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × JIC 37° Female Swivel Adapter follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, SAE J514, ISO 8434-2 for the Steel ORFS Male × JIC 37° Female Swivel Adapter. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. SAE J514 / ISO 8434-2 covers the 37° JIC flare. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS6402-08-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male × JIC 37° Female Swivel Adapter connect to?",
+          "a": "On the Steel ORFS Male × JIC 37° Female Swivel Adapter, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is a 37° JIC female swivel nut that takes a male JIC flare. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male × JIC 37° Female Swivel Adapter so it seals?",
+          "a": "To fit the Steel ORFS Male × JIC 37° Female Swivel Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. The JIC side seals on its 37° cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male × JIC 37° Female Swivel Adapter used?",
+          "a": "Connecting an ORFS port to a JIC hose end that has a male flare. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male × JIC 37° Female Swivel Adapter suits it before supply; the base code is IH-ST-FS6402."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × JIC 37° Female Swivel Adapter differ from the Steel ORFS Male × JIC 37° Male Adapter?",
+          "a": "This adapter has a female JIC swivel, while the [Steel ORFS Male × JIC 37° Male Adapter](/p/steel-orfs-male-x-jic-37-male-adapter) has a male JIC end. Both have a male ORFS end, so choose by the gender of the JIC side."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male × JIC 37° Female Swivel Adapter exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male × JIC 37° Female Swivel Adapter worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × JIC 37° Female Swivel Adapter in Dubai?",
+          "a": "Yes. The Steel ORFS Male × JIC 37° Female Swivel Adapter sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-jic-37-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × JIC 37° Male Adapter used for?",
+          "a": "The Steel ORFS Male × JIC 37° Male Adapter is a straight adapter with ORFS male and 37° JIC male ends. It joins a male ORFS end to a male 37° JIC end in a straight body, from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS6403-04-04 on the Steel ORFS Male × JIC 37° Male Adapter?",
+          "a": "Every part number starts with the series code IH-ST-FS6403-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS6403-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20); IH-ST-FS6403-10-10 is 5/8\" ORFS (1-14) by 5/8\" JIC 37° (7/8-14); IH-ST-FS6403-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" JIC 37° (1-5/8-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male × JIC 37° Male Adapter come in?",
+          "a": "The Steel ORFS Male × JIC 37° Male Adapter lists 7 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" JIC 37° (7/16-20) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" JIC 37° (1-5/8-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male × JIC 37° Male Adapter have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male × JIC 37° Male Adapter for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS6403-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × JIC 37° Male Adapter made of?",
+          "a": "The Steel ORFS Male × JIC 37° Male Adapter is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × JIC 37° Male Adapter follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, SAE J514, ISO 8434-2 for the Steel ORFS Male × JIC 37° Male Adapter. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. SAE J514 / ISO 8434-2 covers the 37° JIC flare. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS6403-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male × JIC 37° Male Adapter connect to?",
+          "a": "On the Steel ORFS Male × JIC 37° Male Adapter, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is a 37° JIC male flare that seats metal to metal in a female JIC swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male × JIC 37° Male Adapter so it seals?",
+          "a": "To fit the Steel ORFS Male × JIC 37° Male Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. The JIC side seals on its 37° cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male × JIC 37° Male Adapter used?",
+          "a": "Connecting an ORFS port to a JIC female swivel on a hose or tube. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male × JIC 37° Male Adapter suits it before supply; the base code is IH-ST-FS6403."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × JIC 37° Male Adapter differ from the Steel ORFS Male × JIC 37° Female Swivel Adapter?",
+          "a": "This adapter has a male JIC end, while the [Steel ORFS Male × JIC 37° Female Swivel Adapter](/p/steel-orfs-male-x-jic-37-female-swivel-adapter) has a female JIC swivel. Both have a male ORFS end."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male × JIC 37° Male Adapter exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male × JIC 37° Male Adapter worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × JIC 37° Male Adapter in Dubai?",
+          "a": "Yes. Indus stocks the Steel ORFS Male × JIC 37° Male Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-nptf-male-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × NPTF Male 45° Elbow used for?",
+          "a": "The Steel ORFS Male × NPTF Male 45° Elbow is a 45° elbow with ORFS male and NPTF male ends. It turns a line through 45° between a male ORFS end and a male NPTF Dryseal thread, from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS2503-04-04 on the Steel ORFS Male × NPTF Male 45° Elbow?",
+          "a": "Every part number starts with the series code IH-ST-FS2503-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS2503-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" NPTF (1/4-18); IH-ST-FS2503-08-08 is 1/2\" ORFS (13/16-16) by 1/2\" NPTF (1/2-14); IH-ST-FS2503-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" NPTF (1-1/4-11.5). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male × NPTF Male 45° Elbow come in?",
+          "a": "The Steel ORFS Male × NPTF Male 45° Elbow lists 9 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" NPTF (1/4-18) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" NPTF (1-1/4-11.5). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male × NPTF Male 45° Elbow have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male × NPTF Male 45° Elbow for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS2503-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × NPTF Male 45° Elbow made of?",
+          "a": "The Steel ORFS Male × NPTF Male 45° Elbow is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × NPTF Male 45° Elbow follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, ASME B1.20.3 for the Steel ORFS Male × NPTF Male 45° Elbow. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. ASME B1.20.3 covers the Dryseal NPTF pipe thread. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS2503-08-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male × NPTF Male 45° Elbow connect to?",
+          "a": "On the Steel ORFS Male × NPTF Male 45° Elbow, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an NPTF male Dryseal taper pipe thread (ASME B1.20.3) that seals on the thread. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male × NPTF Male 45° Elbow so it seals?",
+          "a": "To fit the Steel ORFS Male × NPTF Male 45° Elbow, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Seal the NPTF thread with sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male × NPTF Male 45° Elbow used?",
+          "a": "Shallow-angle connections from an ORFS line into an NPTF port. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male × NPTF Male 45° Elbow suits it before supply; the base code is IH-ST-FS2503."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × NPTF Male 45° Elbow differ from the Steel ORFS Male × NPTF Male Branch Tee?",
+          "a": "This part turns the line 45°, while the [Steel ORFS Male × NPTF Male Branch Tee](/p/steel-orfs-male-x-nptf-male-branch-tee) splits it with an NPTF branch. Both have a male NPTF thread."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male × NPTF Male 45° Elbow exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male × NPTF Male 45° Elbow worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × NPTF Male 45° Elbow in Dubai?",
+          "a": "Yes. We keep the Steel ORFS Male × NPTF Male 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-male-x-nptf-male-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Male × NPTF Male Branch Tee used for?",
+          "a": "The Steel ORFS Male × NPTF Male Branch Tee is a branch tee with ORFS male, ORFS male and NPTF male ends. It splits an ORFS line with two male ORFS ports and a male NPTF Dryseal branch, from 1/4 inch to 1-1/4 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS2601-04-04-04 on the Steel ORFS Male × NPTF Male Branch Tee?",
+          "a": "Every part number starts with the series code IH-ST-FS2601-04-04 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS2601-04-04-04 is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) by 1/4\" NPTF (1/4-18); IH-ST-FS2601-08-08-08 is 1/2\" ORFS (13/16-16) by 1/2\" ORFS (13/16-16) by 1/2\" NPTF (1/2-14); IH-ST-FS2601-20-20-20 is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" NPTF (1-1/4-11.5). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Male × NPTF Male Branch Tee come in?",
+          "a": "The Steel ORFS Male × NPTF Male Branch Tee lists 8 part numbers over the nominal size range 1/4\" to 1-1/4\". The first row is 1/4\" ORFS (9/16-18) by 1/4\" ORFS (9/16-18) by 1/4\" NPTF (1/4-18) and the last is 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" ORFS (1-11/16-12) by 1-1/4\" NPTF (1-1/4-11.5). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Male × NPTF Male Branch Tee have?",
+          "a": "The manufacturer designs the ORFS connection on the Steel ORFS Male × NPTF Male Branch Tee for 6,000 psi and does not publish a per-size table. An assembly is limited by the lowest-rated component, so tell us the working pressure and size, such as IH-ST-FS2601-04-04-04, and we confirm it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Male × NPTF Male Branch Tee made of?",
+          "a": "The Steel ORFS Male × NPTF Male Branch Tee is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Male × NPTF Male Branch Tee follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3, ASME B1.20.3 for the Steel ORFS Male × NPTF Male Branch Tee. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. ASME B1.20.3 covers the Dryseal NPTF pipe thread. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS2601-08-08-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Male × NPTF Male Branch Tee connect to?",
+          "a": "On the Steel ORFS Male × NPTF Male Branch Tee, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End C is an NPTF male Dryseal taper pipe thread (ASME B1.20.3) that seals on the thread. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Male × NPTF Male Branch Tee so it seals?",
+          "a": "To fit the Steel ORFS Male × NPTF Male Branch Tee, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Seal the NPTF thread with sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Male × NPTF Male Branch Tee used?",
+          "a": "Taking an NPTF-threaded branch such as a gauge off an ORFS line. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Male × NPTF Male Branch Tee suits it before supply; the base code is IH-ST-FS2601."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Male × NPTF Male Branch Tee differ from the Steel ORFS Male × NPTF Male 45° Elbow?",
+          "a": "This tee has a branch, while the [Steel ORFS Male × NPTF Male 45° Elbow](/p/steel-orfs-male-x-nptf-male-45-elbow) turns the line 45°. Both have a male NPTF thread."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Male × NPTF Male Branch Tee exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Male × NPTF Male Branch Tee worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Male × NPTF Male Branch Tee in Dubai?",
+          "a": "Yes, the Steel ORFS Male × NPTF Male Branch Tee is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-orfs-mechanical-tube-sleeve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel ORFS Mechanical Tube Sleeve used for?",
+          "a": "The Steel ORFS Mechanical Tube Sleeve is a mechanical tube sleeve with ORFS tube end ends. It is the sleeve for a mechanically fitted ORFS tube end, sized from 1/4 inch to 1-1/2 inch tube O.D."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS319-04M on the Steel ORFS Mechanical Tube Sleeve?",
+          "a": "Every part number starts with the series code IH-ST-FS319 and ends in a two-digit size code for each end, in the order the ends are listed. In the table, IH-ST-FS319-04M is 1/4\" tube O.D. (ORFS 9/16-18); IH-ST-FS319-12M is 3/4\" tube O.D. (ORFS 1-3/16-12); IH-ST-FS319-24M is 1-1/2\" tube O.D. (ORFS 2-12). The size table gives the thread of every end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Steel ORFS Mechanical Tube Sleeve come in?",
+          "a": "The Steel ORFS Mechanical Tube Sleeve lists 8 part numbers over the nominal size range 1/4\" to 1-1/2\" tube. The first row is 1/4\" tube O.D. (ORFS 9/16-18) and the last is 1-1/2\" tube O.D. (ORFS 2-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Steel ORFS Mechanical Tube Sleeve have?",
+          "a": "The Steel ORFS Mechanical Tube Sleeve has no pressure rating of its own on the listing, because it is an accessory used with a tube nut. Tell us the working pressure and the size, such as IH-ST-FS319-04M, and we confirm it with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel ORFS Mechanical Tube Sleeve made of?",
+          "a": "The Steel ORFS Mechanical Tube Sleeve is forged carbon steel, trivalent zinc plated. The listing offers no stainless steel version of this part, so ask us if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel ORFS Mechanical Tube Sleeve follow?",
+          "a": "The listing names SAE J1453 for the Steel ORFS Mechanical Tube Sleeve. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS319-12M."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Steel ORFS Mechanical Tube Sleeve connect to?",
+          "a": "On the Steel ORFS Mechanical Tube Sleeve, End A is an ORFS tube end that is brazed or fitted to the tube. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Steel ORFS Mechanical Tube Sleeve so it seals?",
+          "a": "To fit the Steel ORFS Mechanical Tube Sleeve, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Steel ORFS Mechanical Tube Sleeve used?",
+          "a": "Forming an ORFS tube end without brazing. Tell us the machine and the port threads on each end and we confirm the Steel ORFS Mechanical Tube Sleeve suits it before supply; the base code is IH-ST-FS319M."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel ORFS Mechanical Tube Sleeve differ from the Steel ORFS Braze Tube Sleeve?",
+          "a": "This sleeve is fitted mechanically, while the [Steel ORFS Braze Tube Sleeve](/p/steel-orfs-braze-tube-sleeve) is brazed on. Choose by how the tube is to be prepared."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Steel ORFS Mechanical Tube Sleeve exported from Dubai and what documents come with it?",
+          "a": "We ship the Steel ORFS Mechanical Tube Sleeve worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel ORFS Mechanical Tube Sleeve in Dubai?",
+          "a": "Yes. The Steel ORFS Mechanical Tube Sleeve sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-cap-orfs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Cap ORFS used for?",
+          "a": "The Swivel Cap ORFS is a cap with ORFS female swivel ends. It caps a male ORFS end with a female swivel, in sizes -04 to -16 on the listing, and the table gives 630 bar at the small end falling to 250 bar at 2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-008-04 on the Swivel Cap ORFS?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-008 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-008-04 is 9/16\"X18; IH-AD-ORFS-008-12 is 1-3/16\"X12; IH-AD-ORFS-008-24 is 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Cap ORFS come in?",
+          "a": "The Swivel Cap ORFS lists 8 part numbers over the nominal size range -04 to -16. The first row is 9/16\"X18 and the last is 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Swivel Cap ORFS have?",
+          "a": "The size table gives the maker's figure against each size of the Swivel Cap ORFS, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Cap ORFS made of?",
+          "a": "The Swivel Cap ORFS is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Cap ORFS follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Swivel Cap ORFS. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-008-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Cap ORFS connect to?",
+          "a": "On the Swivel Cap ORFS, End A is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Swivel Cap ORFS so it seals?",
+          "a": "To fit the Swivel Cap ORFS, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Cap ORFS used?",
+          "a": "Capping an open male ORFS end on a manifold, fitting or tube. Tell us the machine and the port threads on each end and we confirm the Swivel Cap ORFS suits it before supply; the base code is IH-AD-ORFS-008."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Cap ORFS differ from the Plug ORFS?",
+          "a": "This swivel cap fits over a male ORFS end, while the [Plug ORFS](/p/plug-orfs) is a male plug that closes a female ORFS port. Choose by the gender of the connection you need to close."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Swivel Cap ORFS exported from Dubai and what documents come with it?",
+          "a": "We ship the Swivel Cap ORFS worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Cap ORFS in Dubai?",
+          "a": "Yes. Indus stocks the Swivel Cap ORFS at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-connector-m-orfs-x-f-orfs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Connector m ORFS X f ORFS used for?",
+          "a": "The Swivel Connector m ORFS X f ORFS is a swivel connector with ORFS male and ORFS female swivel ends. It joins a male ORFS end to a female ORFS swivel in a straight body, in the largest range of the swivel connectors."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-AD-ORFS-011-04 on the Swivel Connector m ORFS X f ORFS?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-011 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-AD-ORFS-011-04 is 9/16\"X18 by 9/16\"X18; IH-AD-ORFS-011-1012 is 1\"X14 by 1-3/16\"X12; IH-AD-ORFS-011-24 is 2\"X12 by 2\"X12. Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Connector m ORFS X f ORFS come in?",
+          "a": "The Swivel Connector m ORFS X f ORFS lists 27 part numbers over the nominal size range -04 to -16. The first row is 9/16\"X18 by 9/16\"X18 and the last is 2\"X12 by 2\"X12. The size table also gives dimensions and weights for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Swivel Connector m ORFS X f ORFS have?",
+          "a": "The size table gives the maker's figure against each size of the Swivel Connector m ORFS X f ORFS, from 630 bar on the small sizes down to 250 bar on the largest. That is the rating of the adapter alone: an assembly is limited by the lowest-rated component, whether hose, tube or port."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Connector m ORFS X f ORFS made of?",
+          "a": "The Swivel Connector m ORFS X f ORFS is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Connector m ORFS X f ORFS follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Swivel Connector m ORFS X f ORFS. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-AD-ORFS-011-1012."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Connector m ORFS X f ORFS connect to?",
+          "a": "On the Swivel Connector m ORFS X f ORFS, End A is an O-ring face seal (ORFS) male end, whose flat face carries the O-ring that seals against a female ORFS swivel nut. End B is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Swivel Connector m ORFS X f ORFS so it seals?",
+          "a": "To fit the Swivel Connector m ORFS X f ORFS, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Connector m ORFS X f ORFS used?",
+          "a": "Joining an ORFS hose or tube end that has a swivel nut to a male ORFS end. Tell us the machine and the port threads on each end and we confirm the Swivel Connector m ORFS X f ORFS suits it before supply; the base code is IH-AD-ORFS-011."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Connector m ORFS X f ORFS differ from the Swivel Connector m SAE X f ORFS?",
+          "a": "This connector has an ORFS male end, while the [Swivel Connector m SAE X f ORFS](/p/swivel-connector-m-sae-x-f-orfs) has an ORB male end. Both have a female ORFS swivel."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Swivel Connector m ORFS X f ORFS exported from Dubai and what documents come with it?",
+          "a": "We ship the Swivel Connector m ORFS X f ORFS worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Connector m ORFS X f ORFS in Dubai?",
+          "a": "Yes. We keep the Swivel Connector m ORFS X f ORFS in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-connector-m-sae-x-f-orfs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Connector m SAE X f ORFS used for?",
+          "a": "The Swivel Connector m SAE X f ORFS is a swivel connector with SAE O-ring boss (ORB) male and ORFS female swivel ends. It joins a female ORFS swivel to a male SAE O-ring boss thread in a straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as IH-ST-FS6412-04-04 on the Swivel Connector m SAE X f ORFS?",
+          "a": "The part numbers on this listing start IH-AD-ORFS-009 and end in the size code of each end, and the size table gives the thread of every end. In the table, IH-ST-FS6412-04-04 is 1/4\" ORFS female swivel (9/16-18) by 1/4\" ORB male (7/16-20); IH-ST-FS6412-10-10 is 5/8\" ORFS female swivel (1-14) by 5/8\" ORB male (7/8-14); IH-ST-FS6412-20-20 is 1-1/4\" ORFS female swivel (1-11/16-12) by 1-1/4\" ORB male (1-5/8-12). Quote the full number, because suffixes such as LN, OG and WD appear on some numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Swivel Connector m SAE X f ORFS come in?",
+          "a": "The Swivel Connector m SAE X f ORFS lists 7 part numbers over the nominal size range -04 to -16. The first row is 1/4\" ORFS female swivel (9/16-18) by 1/4\" ORB male (7/16-20) and the last is 1-1/4\" ORFS female swivel (1-11/16-12) by 1-1/4\" ORB male (1-5/8-12). The size table also gives the thread on each end for every number, and sizes outside it are quoted on request."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Swivel Connector m SAE X f ORFS have?",
+          "a": "The listing states up to 415 bar (6000 psi) for the Swivel Connector m SAE X f ORFS. An assembly is limited by the lowest-rated component, whether hose, tube or port, so tell us your working pressure and the size, such as IH-ST-FS6412-04-04, and we confirm the match."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Connector m SAE X f ORFS made of?",
+          "a": "The Swivel Connector m SAE X f ORFS is carbon steel, finished zinc-plated, Cr3+ passivated, RoHS-compliant, with 316 stainless steel available on request. Ask for stainless steel when you enquire if the line runs in marine, chemical or food-grade service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Connector m SAE X f ORFS follow?",
+          "a": "The listing names SAE J1453, ISO 8434-3 for the Swivel Connector m SAE X f ORFS. SAE J1926 / ISO 11926 is the O-ring boss port standard. SAE J1453 / ISO 8434-3 is the O-ring face seal standard. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as IH-ST-FS6412-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Swivel Connector m SAE X f ORFS connect to?",
+          "a": "On the Swivel Connector m SAE X f ORFS, End A is an SAE O-ring boss male end (SAE J1926 / ISO 11926) that screws into a boss port and seals on the O-ring under the hex. End B is an ORFS female swivel nut that draws the flat face of a male ORFS end onto its O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters) and the [O-rings for ORB and ORFS adapters](/c/adapter-o-rings), and the [ORFS and ORB adapters guide](/blog/orfs-and-orb-adapters-guide) explains the sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Swivel Connector m SAE X f ORFS so it seals?",
+          "a": "To fit the Swivel Connector m SAE X f ORFS, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring seals, so a nicked face or a missing O-ring leaks. Fit the ORB end with its own O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Swivel Connector m SAE X f ORFS used?",
+          "a": "Connecting an ORFS hose end to a boss port on a pump, valve or manifold. Tell us the machine and the port threads on each end and we confirm the Swivel Connector m SAE X f ORFS suits it before supply; the base code is IH-AD-ORFS-009."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Connector m SAE X f ORFS differ from the Swivel Connector m ORFS X f ORFS?",
+          "a": "This connector has an ORB male end, while the [Swivel Connector m ORFS X f ORFS](/p/swivel-connector-m-orfs-x-f-orfs) has an ORFS male end. Both have a female ORFS swivel."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Swivel Connector m SAE X f ORFS exported from Dubai and what documents come with it?",
+          "a": "We ship the Swivel Connector m SAE X f ORFS worldwide from Dubai. The listing gives no HS code, so we confirm the commodity code and the origin on the quotation, and we prepare the commercial invoice and packing list; add any certificate you need to the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Connector m SAE X f ORFS in Dubai?",
+          "a": "Yes, the Swivel Connector m SAE X f ORFS is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

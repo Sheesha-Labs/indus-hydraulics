@@ -1,0 +1,1900 @@
+{
+  "family": "cartridge-check-shuttle-valves-03",
+  "extraFacts": [
+    {
+      "fact": "Sun Hydraulics builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, so every function in one series shares that cavity, and a larger series carries more flow. Series 0C and 1C parts fit industry-standard common cavities (SC-08, SC-10) instead of Sun's T-series cavities.",
+      "source": "Indus Hydraulics Sun Hydraulics listings (Sizes and cavities text), from the maker's catalogue"
+    },
+    {
+      "fact": "1 gpm = 3.785 L/min and 1 bar = 14.5038 psi; the listings state each capacity in both gpm and L/min and each pressure in both psi and bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-drbp-3-way-direct-acting-directional-valve-drain-port-4-1-2-open-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBP direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBP is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBP direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBP (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBPLAN for the DRBP direct-acting pressure-operated directional valve?",
+          "a": "In DRBPLAN, DRBP is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is 500 - 3000 psi (35 - 210 bar), 1000 psi (70 bar) Standard Setting; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBP direct-acting pressure-operated directional valve?",
+          "a": "The DRBP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBP direct-acting pressure-operated directional valve have?",
+          "a": "The DRBP is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBP direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBP are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DRBPLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBP direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBP screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBP direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBP. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBP direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBP into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBP direct-acting pressure-operated directional valve used?",
+          "a": "The DRBP is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBP or DRBPX: what is the difference?",
+          "a": "The DRBP is the base configuration version, rated 7 gpm or 28 L/min, while the [DRBPX](/p/sun-hydraulics-drbpx-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-1-2-open-3-blocked) is the fixed setting version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBP in Dubai?",
+          "a": "Yes, the Sun Hydraulics DRBP is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbpx-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-1-2-open-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBPX is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBPX (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBPXFN for the DRBPX direct-acting pressure-operated directional valve?",
+          "a": "In DRBPXFN, DRBPX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is 100 psi (7 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve?",
+          "a": "The DRBPX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBPX direct-acting pressure-operated directional valve have?",
+          "a": "The DRBPX is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBPX are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DRBPXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBPX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBPX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBPX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBPX direct-acting pressure-operated directional valve used?",
+          "a": "The DRBPX is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBPX or DRBRX: what is the difference?",
+          "a": "The DRBPX is the drain to port 4 (1 to 2 open and 3 blocked) version, rated 7 gpm or 28 L/min, while the [DRBRX](/p/sun-hydraulics-drbrx-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-3-4-open-port-2) is the drain to port 4 (3 to 4 open and port 2 blocked) version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBPX in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DRBPX at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-drbrx-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-3-4-open-port-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve used for?",
+          "a": "The Sun Hydraulics DRBRX is a directional cartridge switched by pressure rather than a solenoid: it shifts once the pressure difference between port 1 and the drain passes its spring setting. It is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve come in?",
+          "a": "It is built in one version, DRBRX (series 1, T-21A cavity, 7 gpm or 28 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DRBRXFN for the DRBRX direct-acting pressure-operated directional valve?",
+          "a": "In DRBRXFN, DRBRX is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: F is 100 psi (7 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve?",
+          "a": "The DRBRX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 2 in³/min. (30 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DRBRX direct-acting pressure-operated directional valve have?",
+          "a": "The DRBRX is rated 7 gpm or 28 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve come with?",
+          "a": "Seal options on the DRBRX are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DRBRXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve fit?",
+          "a": "The DRBRX screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DRBRX. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve installed?",
+          "a": "Screw the DRBRX into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DRBRX direct-acting pressure-operated directional valve used?",
+          "a": "The DRBRX is used for pressure-sequenced switching — unloading, high-low pump circuits, interlocks, piloting logic elements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DRBRX or DRBPX: what is the difference?",
+          "a": "The DRBRX is the drain to port 4 (3 to 4 open and port 2 blocked) version, rated 7 gpm or 28 L/min, while the [DRBPX](/p/sun-hydraulics-drbpx-3-way-direct-acting-fixed-setting-directional-valve-drain-port-4-1-2-open-3-blocked) is the drain to port 4 (1 to 2 open and 3 blocked) version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DRBRX in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DRBRX at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dscl-direct-acting-low-side-3-position-shuttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DSCL low-side hot oil shuttle valve used for?",
+          "a": "The Sun Hydraulics DSCL is a spool shuttle for closed-loop hydrostatic drives. With both loop sides equal it centres with all ports blocked; when one side rises, it connects the opposite, low-pressure side to the common port (port 3) so hot oil can be bled out through a relief and replaced by cool charge oil."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DSCL low-side hot oil shuttle valve come in?",
+          "a": "It is built in one version, DSCL (series 1, T-31A cavity, 15 gpm or 60 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DSCLXGN for the DSCL low-side hot oil shuttle valve?",
+          "a": "In DSCLXGN, DSCL is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; G is 150 psi (10,5 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DSCL low-side hot oil shuttle valve?",
+          "a": "The DSCL is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 in³/min.@1000 psi (15 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DSCL low-side hot oil shuttle valve have?",
+          "a": "The DSCL is rated 15 gpm or 60 L/min in series 1, which screws into a T-31A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DSCL low-side hot oil shuttle valve come with?",
+          "a": "Seal options on the DSCL are N = Buna-N, V = Viton. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DSCLXGN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DSCL low-side hot oil shuttle valve fit?",
+          "a": "The DSCL screws into the T-31A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DSCL low-side hot oil shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the DSCL. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DSCL low-side hot oil shuttle valve installed?",
+          "a": "Screw the DSCL into its T-31A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DSCL low-side hot oil shuttle valve used?",
+          "a": "The DSCL is used for hydrostatic transmissions on mobile machines, winch and swing drives — loop flushing. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DSCL or DSCH, DSEH, DSGH, DSIH: what is the difference?",
+          "a": "The DSCL is the direct-acting and shuttle valve version, rated 15 gpm or 60 L/min, while the [DSCH, DSEH, DSGH, DSIH](/p/sun-hydraulics-low-side-3-position-hot-oil-shuttle-valve) is the hot oil shuttle valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DSCL in Dubai?",
+          "a": "Yes. The Sun Hydraulics DSCL sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dtcm-2-way-manually-operated-directional-poppet-valve-overlap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DTCM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DTCM is a screw-in directional cartridge shifted by hand. It is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DTCM manually operated directional valve come in?",
+          "a": "It is built in one version, DTCM (series 1, T-13A cavity, 6 gpm or 23 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DTCMLCN for the DTCM manually operated directional valve?",
+          "a": "In DTCMLCN, DTCM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DTCM manually operated directional valve?",
+          "a": "The DTCM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DTCM manually operated directional valve have?",
+          "a": "The DTCM is rated 6 gpm or 23 L/min in series 1, which screws into a T-13A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DTCM manually operated directional valve come with?",
+          "a": "Seal options on the DTCM are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DTCMLCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DTCM manually operated directional valve fit?",
+          "a": "The DTCM screws into the T-13A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DTCM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DTCM. Listed kits: series 1, Buna: 990413007, Polyurethane: 990413002, Viton: 990413006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DTCM manually operated directional valve installed?",
+          "a": "Screw the DTCM into its T-13A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DTCM manually operated directional valve used?",
+          "a": "The DTCM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DTCM or DTDM: what is the difference?",
+          "a": "The DTCM is the overlap version, rated 6 gpm or 23 L/min, while the [DTDM](/p/sun-hydraulics-dtdm-2-way-manually-operated-directional-poppet-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DTCM in Dubai?",
+          "a": "Yes, the Sun Hydraulics DTCM is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dtdm-2-way-manually-operated-directional-poppet-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DTDM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DTDM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DTDM manually operated directional valve come in?",
+          "a": "It is built in one version, DTDM (series 1, T-13A cavity, 10 gpm or 40 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DTDMLCN for the DTDM manually operated directional valve?",
+          "a": "In DTDMLCN, DTDM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; C is Normally Closed; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DTDM manually operated directional valve?",
+          "a": "The DTDM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DTDM manually operated directional valve have?",
+          "a": "The DTDM is rated 10 gpm or 40 L/min in series 1, which screws into a T-13A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DTDM manually operated directional valve come with?",
+          "a": "Seal options on the DTDM are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DTDM manually operated directional valve fit?",
+          "a": "The DTDM screws into the T-13A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DTDM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DTDM. Listed kits: series 1, Buna: 990413007, Polyurethane: 990413002, Viton: 990413006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DTDM manually operated directional valve installed?",
+          "a": "Screw the DTDM into its T-13A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DTDM manually operated directional valve used?",
+          "a": "The DTDM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DTDM or DWDM: what is the difference?",
+          "a": "The DTDM is the 2-way version, rated 10 gpm or 40 L/min, while the [DWDM](/p/sun-hydraulics-dwdm-3-way-manually-operated-directional-poppet-valve) is the 3-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DTDM in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DTDM in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dwdm-3-way-manually-operated-directional-poppet-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DWDM manually operated directional valve used for?",
+          "a": "The Sun Hydraulics DWDM is a screw-in directional cartridge shifted by hand. A twist-lock or push operator moves the poppet or spool, so a function can be worked, overridden or isolated without electrical power."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DWDM manually operated directional valve come in?",
+          "a": "It is built in one version, DWDM (series 1, T-11A cavity, 7.5 gpm or 30 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DWDMLAN for the DWDM manually operated directional valve?",
+          "a": "In DWDMLAN, DWDM is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Twist/Lock (Detent) Manual Override; A is Normally Open 1 to 2, Closed 2 to 3; N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DWDM manually operated directional valve?",
+          "a": "The DWDM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the DWDM manually operated directional valve have?",
+          "a": "The DWDM is rated 7.5 gpm or 30 L/min in series 1, which screws into a T-11A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DWDM manually operated directional valve come with?",
+          "a": "Seal options on the DWDM are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in DWDMLAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DWDM manually operated directional valve fit?",
+          "a": "The DWDM screws into the T-11A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DWDM manually operated directional valve?",
+          "a": "Sun supplies a seal kit for every series of the DWDM. Listed kits: series 1, Buna: 990411007, Viton: 990411006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DWDM manually operated directional valve installed?",
+          "a": "Screw the DWDM into its T-11A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DWDM manually operated directional valve used?",
+          "a": "The DWDM is used for manual overrides, set-up and maintenance functions, emergency lowering, isolating a branch. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DWDM or DTDM: what is the difference?",
+          "a": "The DWDM is the 3-way version, rated 7.5 gpm or 30 L/min, while the [DTDM](/p/sun-hydraulics-dtdm-2-way-manually-operated-directional-poppet-valve) is the 2-way version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DWDM in Dubai?",
+          "a": "Yes. The Sun Hydraulics DWDM sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-nose-side-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CXBA to CXZA is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve come in?",
+          "a": "It is built in 10 versions from CXBA to CXZA, including CXBA (series 0, T-162A cavity, 10 gpm or 40 L/min), CXFA (series 2, T-5A cavity, 40 gpm or 160 L/min) and CXZA (series Z, T-382A cavity, 1 gpm or 4 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXDAXAN for the CXBA to CXZA free-flow nose-to-side check valve?",
+          "a": "The base model CXBA sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CXDAXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve?",
+          "a": "The CXBA to CXZA is rated 5000 psi or 350 bar maximum operating pressure on most versions, with 3000 psi or 210 bar on CXTT; 3600 psi or 250 bar on CXUT. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes. Maximum leakage is 1 drops/min. (0,07 cc/min), 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve have by series?",
+          "a": "Capacity runs from 1 gpm or 4 L/min on CXZA (series Z) to 240 gpm or 900 L/min on CXKA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CXBA to CXZA are N = Buna-N, L = Buna (low temp), V = Viton, E = EPDM. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve fit?",
+          "a": "The CXBA to CXZA screws into the T-162A, SC-08-02, T-13A, SC-10-02, T-5A, T-16A, T-18A, T-18AU and T-382A cavities for series 0, 0C, 1, 1C, 2, 3, 4 and Z, machined to Sun's drawing for that series. The CXTT, CXTA and CXUT fit industry-standard common cavities (SC-08, SC-10) rather than Sun's T-series cavities. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXBA to CXZA. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, EPDM: 990010014, Polyurethane: 990010002, Viton: 990010006; series 1C, Buna: 99C102007, Viton: 99C102006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve installed?",
+          "a": "Screw the CXBA to CXZA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 100 - 120 lbf in. (11 - 14 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXBA to CXZA free-flow nose-to-side check valve used?",
+          "a": "The CXBA to CXZA is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXBA to CXZA or CNBC to CNTC: what is the difference?",
+          "a": "The CXBA to CXZA is the base configuration version, rated 1 gpm or 4 L/min to 240 gpm or 900 L/min, while the [CNBC to CNTC](/p/sun-hydraulics-free-flow-nose-side-check-valve-bypass-orifice) is the bypass orifice version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXBA to CXZA in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CXBA to CXZA at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-nose-side-check-valve-bypass-orifice",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CNBC to CNTC is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar). This version A bypass orifice, sized to order, lets a controlled flow pass in the checked direction; its diameter is stamped on a hex face."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve come in?",
+          "a": "It is built in 7 versions from CNBC to CNKC, including CNBC (series 0, T-162A cavity, 7.5 gpm or 30 L/min), CNFC (series 2, T-5A cavity, 30 gpm or 120 L/min) and CNKC (series 4, T-18AU cavity, 180 gpm or 680 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CNDCXCN for the CNBC to CNTC free-flow nose-to-side check valve?",
+          "a": "The base model CNBC sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example CNDCXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve?",
+          "a": "The CNBC to CNTC is rated 5000 psi or 350 bar maximum operating pressure on most versions, with 3600 psi or 250 bar on CNTC. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on CNBC (series 0) to 180 gpm or 680 L/min on CNKC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CNBC to CNTC are N = Buna-N, V = Viton. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve fit?",
+          "a": "The CNBC to CNTC screws into the T-162A, SC-08-02, T-13A, T-5A, T-16A, T-18A and T-18AU cavities for series 0, 0C, 1, 2, 3 and 4, machined to Sun's drawing for that series. The CNTC fit industry-standard common cavities (SC-08, SC-10) rather than Sun's T-series cavities. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CNBC to CNTC. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve installed?",
+          "a": "Screw the CNBC to CNTC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CNBC to CNTC free-flow nose-to-side check valve used?",
+          "a": "The CNBC to CNTC is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CNBC to CNTC or CXDC, CXFC, CXHC, CXJC: what is the difference?",
+          "a": "The CNBC to CNTC is the bypass orifice version, rated 7.5 gpm or 30 L/min to 180 gpm or 680 L/min, while the [CXDC, CXFC, CXHC, CXJC](/p/sun-hydraulics-free-flow-nose-side-check-valve-port-3-blocked) is the port 3 blocked version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CNBC to CNTC in Dubai?",
+          "a": "Yes, the Sun Hydraulics CNBC to CNTC is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-nose-side-check-valve-port-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve used for?",
+          "a": "The Sun Hydraulics CXDC, CXFC, CXHC, CXJC is a screw-in check cartridge that lets oil flow freely from the nose (port 1) out of the side (port 2) and seals against flow the other way. A hardened, lapped poppet gives near-zero leakage, and both ports are rated for 5,000 psi (350 bar). This version Port 3 is blocked, so it works as a 2-port check in a 3-port cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve come in?",
+          "a": "It is built in 4 versions from CXDC to CXJC, including CXDC (series 1, T-11A cavity, 20 gpm or 80 L/min), CXHC (series 3, T-17A cavity, 80 gpm or 320 L/min) and CXJC (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXDCXCN for the CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve?",
+          "a": "In CXDCXCN, CXDC is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve?",
+          "a": "The CXDC, CXFC, CXHC, CXJC is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve have by series?",
+          "a": "Capacity runs from 20 gpm or 80 L/min on CXDC (series 1) to 120 gpm or 480 L/min on CXJC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve come with?",
+          "a": "Seal options on the CXDC, CXFC, CXHC, CXJC are N = Buna-N, V = Viton. EPDM seals are for phosphate-ester fluids only; petroleum oils and greases attack them. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve fit?",
+          "a": "The CXDC, CXFC, CXHC, CXJC screws into the T-11A, T-2A, T-17A and T-19A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXDC, CXFC, CXHC, CXJC. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve installed?",
+          "a": "Screw the CXDC, CXFC, CXHC, CXJC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXDC, CXFC, CXHC, CXJC free-flow nose-to-side check valve used?",
+          "a": "The CXDC, CXFC, CXHC, CXJC is used for pump outlet checks, load-holding checks in a manifold, isolating one branch of a circuit from another. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXDC, CXFC, CXHC, CXJC or CNBC to CNTC: what is the difference?",
+          "a": "The CXDC, CXFC, CXHC, CXJC is the port 3 blocked version, rated 20 gpm or 80 L/min to 120 gpm or 480 L/min, while the [CNBC to CNTC](/p/sun-hydraulics-free-flow-nose-side-check-valve-bypass-orifice) is the bypass orifice version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXDC, CXFC, CXHC, CXJC in Dubai?",
+          "a": "Yes. The Sun Hydraulics CXDC, CXFC, CXHC, CXJC sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-side-nose-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve used for?",
+          "a": "The Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID is a check cartridge that passes oil freely from the side (port 2) into the nose (port 1) and blocks the reverse. In a 3-port cavity the third port is blanked, so the valve works as a plain 2-port check where a 3-port cavity has been machined."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve come in?",
+          "a": "It is built in 5 versions from CXAD to CXID, including CXAD (series 0, T-162A cavity, 7.5 gpm or 30 L/min), CXED (series 2, T-5A cavity, 30 gpm or 120 L/min) and CXID (series 4, T-18A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXCDXCN for the CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve?",
+          "a": "The base model CXAD sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CXCDXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve?",
+          "a": "The CXAD, CXCD, CXED, CXGD, CXID is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on CXAD (series 0) to 120 gpm or 480 L/min on CXID (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve come with?",
+          "a": "Seal options on the CXAD, CXCD, CXED, CXGD, CXID are N = Buna-N, L = Extended Temp. Buna, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve fit?",
+          "a": "The CXAD, CXCD, CXED, CXGD, CXID screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXAD, CXCD, CXED, CXGD, CXID. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, EPDM: 990010014, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, Viton: 990203006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve installed?",
+          "a": "Screw the CXAD, CXCD, CXED, CXGD, CXID into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID free-flow side-to-nose check valve used?",
+          "a": "The CXAD, CXCD, CXED, CXGD, CXID is used for regeneration circuits, cylinder ports and any 3-port cavity that only needs a check. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID or CXCE, CXEE, CXGE, CXIE: what is the difference?",
+          "a": "The CXAD, CXCD, CXED, CXGD, CXID is the base configuration version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [CXCE, CXEE, CXGE, CXIE](/p/sun-hydraulics-free-flow-side-nose-check-valve-port-3-blocked) is the port 3 blocked version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CXAD, CXCD, CXED, CXGD, CXID at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-side-nose-check-valve-bypass-orifice-port-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve used for?",
+          "a": "The Sun Hydraulics CNCD, CNED, CNGD, CNID is a check cartridge that passes oil freely from the side (port 2) into the nose (port 1) and blocks the reverse. It is used for regeneration circuits, cylinder ports and any 3-port cavity that only needs a check."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve come in?",
+          "a": "It is built in 4 versions from CNCD to CNID, including CNCD (series 1, T-11A cavity, 15 gpm or 60 L/min), CNGD (series 3, T-17A cavity, 60 gpm or 240 L/min) and CNID (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CNCDXCN for the CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve?",
+          "a": "In CNCDXCN, CNCD is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; C is 30 psi (2 bar) Cracking Pressure, .016 - .153 in. (0,4 - 3,9 mm); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve?",
+          "a": "The CNCD, CNED, CNGD, CNID is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on CNCD (series 1) to 120 gpm or 480 L/min on CNID (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve come with?",
+          "a": "Seal options on the CNCD, CNED, CNGD, CNID are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CNCDXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve fit?",
+          "a": "The CNCD, CNED, CNGD, CNID screws into the T-11A, T-2A, T-17A and T-19A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve?",
+          "a": "Sun supplies a seal kit for every series of the CNCD, CNED, CNGD, CNID. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve installed?",
+          "a": "Screw the CNCD, CNED, CNGD, CNID into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CNCD, CNED, CNGD, CNID free-flow side-to-nose check valve used?",
+          "a": "The CNCD, CNED, CNGD, CNID is used for regeneration circuits, cylinder ports and any 3-port cavity that only needs a check. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CNCD, CNED, CNGD, CNID or CXCE, CXEE, CXGE, CXIE: what is the difference?",
+          "a": "The CNCD, CNED, CNGD, CNID is the bypass orifice version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [CXCE, CXEE, CXGE, CXIE](/p/sun-hydraulics-free-flow-side-nose-check-valve-port-3-blocked) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CNCD, CNED, CNGD, CNID in Dubai?",
+          "a": "Yes, the Sun Hydraulics CNCD, CNED, CNGD, CNID is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-free-flow-side-nose-check-valve-port-3-blocked",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve used for?",
+          "a": "The Sun Hydraulics CXCE, CXEE, CXGE, CXIE is a check cartridge that passes oil freely from the side (port 2) into the nose (port 1) and blocks the reverse. In a 3-port cavity the third port is blanked, so the valve works as a plain 2-port check where a 3-port cavity has been machined. This version Port 3 is blocked, so it works as a 2-port check in a 3-port cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve come in?",
+          "a": "It is built in 4 versions from CXCE to CXIE, including CXCE (series 1, T-11A cavity, 15 gpm or 60 L/min), CXGE (series 3, T-17A cavity, 60 gpm or 240 L/min) and CXIE (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CXCEXCN for the CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve?",
+          "a": "In CXCEXCN, CXCE is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve?",
+          "a": "The CXCE, CXEE, CXGE, CXIE is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on CXCE (series 1) to 120 gpm or 480 L/min on CXIE (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve come with?",
+          "a": "Seal options on the CXCE, CXEE, CXGE, CXIE are N = Buna-N, V = Viton. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CXCEXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve fit?",
+          "a": "The CXCE, CXEE, CXGE, CXIE screws into the T-11A, T-2A, T-17A and T-19A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve?",
+          "a": "Sun supplies a seal kit for every series of the CXCE, CXEE, CXGE, CXIE. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve installed?",
+          "a": "Screw the CXCE, CXEE, CXGE, CXIE into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CXCE, CXEE, CXGE, CXIE free-flow side-to-nose check valve used?",
+          "a": "The CXCE, CXEE, CXGE, CXIE is used for regeneration circuits, cylinder ports and any 3-port cavity that only needs a check. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CXCE, CXEE, CXGE, CXIE or CNCD, CNED, CNGD, CNID: what is the difference?",
+          "a": "The CXCE, CXEE, CXGE, CXIE is the base configuration version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [CNCD, CNED, CNGD, CNID](/p/sun-hydraulics-free-flow-side-nose-check-valve-bypass-orifice-port-3-blocked) is the bypass orifice version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CXCE, CXEE, CXGE, CXIE in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CXCE, CXEE, CXGE, CXIE at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-high-side-3-position-shuttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve used for?",
+          "a": "The Sun Hydraulics DSCS, DSES, DSGS, DSIS is a spool shuttle for a 4-port cavity that connects the common port (port 3) to whichever work port, 2 or 4, is at the higher pressure. The nose port is not used."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve come in?",
+          "a": "It is built in 4 versions from DSCS to DSIS, including DSCS (series 1, T-31A cavity, 15 gpm or 60 L/min), DSGS (series 3, T-33A cavity, 60 gpm or 240 L/min) and DSIS (series 4, T-34A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DSCSXGN for the DSCS, DSES, DSGS, DSIS high-side shuttle valve?",
+          "a": "In DSCSXGN, DSCS is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; G is 150 psi (10,5 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve?",
+          "a": "The DSCS, DSES, DSGS, DSIS is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on DSCS (series 1) to 120 gpm or 480 L/min on DSIS (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve come with?",
+          "a": "Seal options on the DSCS, DSES, DSGS, DSIS are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in DSCSXGN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve fit?",
+          "a": "The DSCS, DSES, DSGS, DSIS screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the DSCS, DSES, DSGS, DSIS. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, EPDM: 990033014, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve installed?",
+          "a": "Screw the DSCS, DSES, DSGS, DSIS into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DSCS, DSES, DSGS, DSIS high-side shuttle valve used?",
+          "a": "The DSCS, DSES, DSGS, DSIS is used for closed-loop and motor circuits that need the high-pressure side for a brake, pilot or gauge signal. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DSCS, DSES, DSGS, DSIS or DSCO, DSEO, DSGO, DSIO: what is the difference?",
+          "a": "The DSCS, DSES, DSGS, DSIS is the high side, 3-position and shuttle valve version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [DSCO, DSEO, DSGO, DSIO](/p/sun-hydraulics-offset-2-position-high-side-shuttle-valve) is the spring offset, 2-position and high side shuttle valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DSCS, DSES, DSGS, DSIS in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics DSCS, DSES, DSGS, DSIS in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-insert-style-single-ball-shuttle-valve-signal-at-port-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CSAN, CSZN single ball shuttle valve used for?",
+          "a": "The Sun Hydraulics CSAN, CSZN is a ball shuttle connects whichever of two work ports is at the higher pressure to a common signal port and seals off the lower one. Hardened balls and seats tolerate dirt and wear well. This version Insert style: buried inside a manifold or actuator; study the cavity drawing closely before machining."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CSAN, CSZN single ball shuttle valve come in?",
+          "a": "It is built in 2 versions from CSAN to CSZN, including CSAN (series 0, T-162DP cavity, 1.25 gpm or 4,7 L/min) and CSZN (series Z, T-382A cavity, 1 gpm or 4 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CSANXXN for the CSAN, CSZN single ball shuttle valve?",
+          "a": "The base model CSAN sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example CSANXXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CSAN, CSZN single ball shuttle valve?",
+          "a": "The CSAN, CSZN is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CSAN, CSZN single ball shuttle valve have by series?",
+          "a": "Capacity runs from 1 gpm or 4 L/min on CSZN (series Z) to 1.25 gpm or 4,7 L/min on CSAN (series 0). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CSAN, CSZN single ball shuttle valve come with?",
+          "a": "Seal options on the CSAN, CSZN are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in CSANXXN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CSAN, CSZN single ball shuttle valve fit?",
+          "a": "The CSAN, CSZN screws into the T-162DP and T-382A cavities for series 0 and Z, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CSAN, CSZN single ball shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CSAN, CSZN. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006; series Z, Buna: 990382007, Viton: 990382006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CSAN, CSZN single ball shuttle valve installed?",
+          "a": "Screw the CSAN, CSZN into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from the data up to . Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CSAN, CSZN single ball shuttle valve used?",
+          "a": "The CSAN, CSZN is used for load-sensing signal networks, brake release taken from either motor port, picking the higher of two pressures for a gauge or pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CSAN, CSZN or CSAD, CSAY, CSAZ: what is the difference?",
+          "a": "The CSAN, CSZN is the insert style version, rated 1 gpm or 4 L/min to 1.25 gpm or 4,7 L/min, while the [CSAD, CSAY, CSAZ](/p/sun-hydraulics-single-ball-shuttle-valve-signal-at-port-2) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CSAN, CSZN in Dubai?",
+          "a": "Yes, the Sun Hydraulics CSAN, CSZN is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-low-side-3-position-hot-oil-shuttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve used for?",
+          "a": "The Sun Hydraulics DSCH, DSEH, DSGH, DSIH is a spool shuttle for closed-loop hydrostatic drives. With both loop sides equal it centres with all ports blocked; when one side rises, it connects the opposite, low-pressure side to the common port (port 3) so hot oil can be bled out through a relief and replaced by cool charge oil."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve come in?",
+          "a": "It is built in 4 versions from DSCH to DSIH, including DSCH (series 1, T-31A cavity, 10 gpm or 40 L/min), DSGH (series 3, T-33A cavity, 40 gpm or 160 L/min) and DSIH (series 4, T-34A cavity, 80 gpm or 320 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DSCHXHN for the DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve?",
+          "a": "In DSCHXHN, DSCH is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; H is 200 psi (14 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve?",
+          "a": "The DSCH, DSEH, DSGH, DSIH is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve have by series?",
+          "a": "Capacity runs from 10 gpm or 40 L/min on DSCH (series 1) to 80 gpm or 320 L/min on DSIH (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve come with?",
+          "a": "Seal options on the DSCH, DSEH, DSGH, DSIH are N = Buna-N, V = Viton. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DSCHXHN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve fit?",
+          "a": "The DSCH, DSEH, DSGH, DSIH screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the DSCH, DSEH, DSGH, DSIH. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve installed?",
+          "a": "Screw the DSCH, DSEH, DSGH, DSIH into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DSCH, DSEH, DSGH, DSIH low-side hot oil shuttle valve used?",
+          "a": "The DSCH, DSEH, DSGH, DSIH is used for hydrostatic transmissions on mobile machines, winch and swing drives — loop flushing. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DSCH, DSEH, DSGH, DSIH or DSDD, DSFD: what is the difference?",
+          "a": "The DSCH, DSEH, DSGH, DSIH is the base configuration version, rated 10 gpm or 40 L/min to 80 gpm or 320 L/min, while the [DSDD, DSFD](/p/sun-hydraulics-low-side-3-position-hot-oil-shuttle-valve-delayed-shift) is the delayed shift version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DSCH, DSEH, DSGH, DSIH in Dubai?",
+          "a": "Yes, the Sun Hydraulics DSCH, DSEH, DSGH, DSIH is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-low-side-3-position-hot-oil-shuttle-valve-delayed-shift",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve used for?",
+          "a": "The Sun Hydraulics DSDD, DSFD is a spool shuttle for closed-loop hydrostatic drives. With both loop sides equal it centres with all ports blocked; when one side rises, it connects the opposite, low-pressure side to the common port (port 3) so hot oil can be bled out through a relief and replaced by cool charge oil."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve come in?",
+          "a": "It is built in 2 versions from DSDD to DSFD, including DSDD (series 2, T-32A cavity, 20 gpm or 80 L/min) and DSFD (series 3, T-33A cavity, 40 gpm or 160 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DSFDXEN for the DSDD, DSFD low-side hot oil shuttle valve?",
+          "a": "The base model DSDD sets valve type, frame size and variant; the letters that follow choose the options for control, setting range and seal material. Quote the base model and its configuration letters, for example DSFDXEN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve?",
+          "a": "The DSDD, DSFD is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve have by series?",
+          "a": "Capacity runs from 20 gpm or 80 L/min on DSDD (series 2) to 40 gpm or 160 L/min on DSFD (series 3). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve come with?",
+          "a": "Seal options on the DSDD, DSFD are N = Buna-N, V = Viton. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DSFDXEN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve fit?",
+          "a": "The DSDD, DSFD screws into the T-32A and T-33A cavities for series 2 and 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the DSDD, DSFD. Listed kits: series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve installed?",
+          "a": "Screw the DSDD, DSFD into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 45 - 50 lbf ft (61 - 68 Nm) up to 150 - 160 lbf ft (203 - 217 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DSDD, DSFD low-side hot oil shuttle valve used?",
+          "a": "The DSDD, DSFD is used for hydrostatic transmissions on mobile machines, winch and swing drives — loop flushing. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DSDD, DSFD or DSCH, DSEH, DSGH, DSIH: what is the difference?",
+          "a": "The DSDD, DSFD is the delayed shift version, rated 20 gpm or 80 L/min to 40 gpm or 160 L/min, while the [DSCH, DSEH, DSGH, DSIH](/p/sun-hydraulics-low-side-3-position-hot-oil-shuttle-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DSDD, DSFD in Dubai?",
+          "a": "Yes, the Sun Hydraulics DSDD, DSFD is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-mechanically-operated-back-back-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve used for?",
+          "a": "The Sun Hydraulics CDAP, CDAQ is Two checks back to back in one cartridge, built to sit inside a cylinder piston. At the end of the stroke a stop pushes the port-1 poppet off its seat, oil passes through the piston and two cylinders working in series come back into step. Sun calls it a phaser check."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve come in?",
+          "a": "It is built in 2 versions from CDAP to CDAQ, including CDAP (series 0, T-162DP cavity, 1.25 gpm or 4,7 L/min) and CDAQ (series 0, T-162DP cavity, 1.25 gpm or 4,7 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CDAQMCN for the CDAP, CDAQ mechanically operated back-to-back check valve?",
+          "a": "The base model CDAP sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CDAQMCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve?",
+          "a": "The CDAP, CDAQ is rated 5000 psi (350 bar) maximum operating pressure on most versions, with 5000 psi or 350 bar on CDAQ. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve have by series?",
+          "a": "Capacity runs from 1.25 gpm or 4,7 L/min on CDAP (series 0) to 1.25 gpm or 4,7 L/min on CDAP (series 0). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve come with?",
+          "a": "Seal options on the CDAP, CDAQ are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in CDAQMCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve fit?",
+          "a": "The CDAP, CDAQ screws into the T-162DP cavity for series 0, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve?",
+          "a": "Sun supplies a seal kit for every series of the CDAP, CDAQ. Listed kits: series 0, Buna: 990162007, Viton: 990162006, Polyurethane: 990162002. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve installed?",
+          "a": "Screw the CDAP, CDAQ into its T-162DP cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 3/4 in. (19,1 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CDAP, CDAQ mechanically operated back-to-back check valve used?",
+          "a": "The CDAP, CDAQ is used for re-phasing master-slave and series cylinders on lifts, platforms and agricultural implements. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CDAP, CDAQ or CVCV, CVEV, CVGV, CVIV: what is the difference?",
+          "a": "The CDAP, CDAQ is the mechanically operated and back-to-back check valve version, rated 1.25 gpm or 4,7 L/min, while the [CVCV, CVEV, CVGV, CVIV](/p/sun-hydraulics-vented-pilot-open-check-valve) is the vented pilot-to-open check valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CDAP, CDAQ in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CDAP, CDAQ at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-offset-2-position-high-side-shuttle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve used for?",
+          "a": "The Sun Hydraulics DSCO, DSEO, DSGO, DSIO is a spool shuttle for a 4-port cavity that connects the common port (port 3) to whichever work port, 2 or 4, is at the higher pressure. The nose port is not used."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve come in?",
+          "a": "It is built in 4 versions from DSCO to DSIO, including DSCO (series 1, T-31A cavity, 15 gpm or 60 L/min), DSGO (series 3, T-33A cavity, 60 gpm or 240 L/min) and DSIO (series 4, T-34A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code DSCOXEN for the DSCO, DSEO, DSGO, DSIO high-side shuttle valve?",
+          "a": "In DSCOXEN, DSCO is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; E is 75 psi (5 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve?",
+          "a": "The DSCO, DSEO, DSGO, DSIO is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 in³/min.@1000 psi (15 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on DSCO (series 1) to 120 gpm or 480 L/min on DSIO (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve come with?",
+          "a": "Seal options on the DSCO, DSEO, DSGO, DSIO are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in DSCOXEN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve fit?",
+          "a": "The DSCO, DSEO, DSGO, DSIO screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the DSCO, DSEO, DSGO, DSIO. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve installed?",
+          "a": "Screw the DSCO, DSEO, DSGO, DSIO into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics DSCO, DSEO, DSGO, DSIO high-side shuttle valve used?",
+          "a": "The DSCO, DSEO, DSGO, DSIO is used for closed-loop and motor circuits that need the high-pressure side for a brake, pilot or gauge signal. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics DSCO, DSEO, DSGO, DSIO or DSCS, DSES, DSGS, DSIS: what is the difference?",
+          "a": "The DSCO, DSEO, DSGO, DSIO is the spring offset, 2-position and high side shuttle valve version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [DSCS, DSES, DSGS, DSIS](/p/sun-hydraulics-high-side-3-position-shuttle-valve) is the high side, 3-position and shuttle valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics DSCO, DSEO, DSGO, DSIO in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics DSCO, DSEO, DSGO, DSIO at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-close-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics COBA to COKA pilot-to-close check valve used for?",
+          "a": "The Sun Hydraulics COBA to COKA is a spring-closed check that passes oil from port 1 to port 2 and blocks the reverse. Pressure at the pilot port (port 3) acts against port 1 and holds it shut, so it can be closed on command even in its free-flow direction. Pressure at port 2 opposes the pilot directly."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics COBA to COKA pilot-to-close check valve come in?",
+          "a": "It is built in 7 versions from COBA to COKA, including COBA (series 0, T-163A cavity, 10 gpm or 40 L/min), COFA (series 2, T-2A cavity, 40 gpm or 160 L/min) and COKA (series 4, T-19AU cavity, 240 gpm or 900 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CODAXCN for the COBA to COKA pilot-to-close check valve?",
+          "a": "The base model COBA sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CODAXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics COBA to COKA pilot-to-close check valve?",
+          "a": "The COBA to COKA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics COBA to COKA pilot-to-close check valve have by series?",
+          "a": "Capacity runs from 10 gpm or 40 L/min on COBA (series 0) to 240 gpm or 900 L/min on COKA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics COBA to COKA pilot-to-close check valve come with?",
+          "a": "Seal options on the COBA to COKA are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CODAXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics COBA to COKA pilot-to-close check valve fit?",
+          "a": "The COBA to COKA screws into the T-163A, T-11A, T-2A, T-17A, T-19A and T-19AU cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics COBA to COKA pilot-to-close check valve?",
+          "a": "Sun supplies a seal kit for every series of the COBA to COKA. Listed kits: series 0, Buna: 990163007, EPDM: 990163014, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics COBA to COKA pilot-to-close check valve installed?",
+          "a": "Screw the COBA to COKA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics COBA to COKA pilot-to-close check valve used?",
+          "a": "The COBA to COKA is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics COBA to COKA or CNDE, CNFE, CNHE, CNJE: what is the difference?",
+          "a": "The COBA to COKA is the base configuration version, rated 10 gpm or 40 L/min to 240 gpm or 900 L/min, while the [CNDE, CNFE, CNHE, CNJE](/p/sun-hydraulics-pilot-close-check-valve-bypass-orifice) is the bypass orifice version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics COBA to COKA in Dubai?",
+          "a": "Yes, the Sun Hydraulics COBA to COKA is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-close-check-valve-bypass-orifice",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve used for?",
+          "a": "The Sun Hydraulics CNDE, CNFE, CNHE, CNJE is a spring-closed check that passes oil from port 1 to port 2 and blocks the reverse. It is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve come in?",
+          "a": "It is built in 4 versions from CNDE to CNJE, including CNDE (series 1, T-11A cavity, 20 gpm or 80 L/min), CNHE (series 3, T-17A cavity, 80 gpm or 320 L/min) and CNJE (series 4, T-19A cavity, 160 gpm or 610 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CNDEXCN for the CNDE, CNFE, CNHE, CNJE pilot-to-close check valve?",
+          "a": "In CNDEXCN, CNDE is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; C is 30 psi (2 bar) Cracking Pressure, .016 - .107 in. (0,4 - 2,7 mm); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve?",
+          "a": "The CNDE, CNFE, CNHE, CNJE is rated 5000 psi (350 bar) maximum operating pressure on most versions, with 5000 psi or 350 bar on CNDE. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve have by series?",
+          "a": "Capacity runs from 20 gpm or 80 L/min on CNDE (series 1) to 160 gpm or 610 L/min on CNJE (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve come with?",
+          "a": "Seal options on the CNDE, CNFE, CNHE, CNJE are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in CNDEXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve fit?",
+          "a": "The CNDE, CNFE, CNHE, CNJE screws into the T-11A, T-2A, T-17A and T-19A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve?",
+          "a": "Sun supplies a seal kit for every series of the CNDE, CNFE, CNHE, CNJE. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve installed?",
+          "a": "Screw the CNDE, CNFE, CNHE, CNJE into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CNDE, CNFE, CNHE, CNJE pilot-to-close check valve used?",
+          "a": "The CNDE, CNFE, CNHE, CNJE is used for accumulator discharge on shut-down, blocking a flow path while a function is pressurised, logic-style switching in pilot circuits. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CNDE, CNFE, CNHE, CNJE or COBA to COKA: what is the difference?",
+          "a": "The CNDE, CNFE, CNHE, CNJE is the bypass orifice version, rated 20 gpm or 80 L/min to 160 gpm or 610 L/min, while the [COBA to COKA](/p/sun-hydraulics-pilot-close-check-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CNDE, CNFE, CNHE, CNJE in Dubai?",
+          "a": "Yes, the Sun Hydraulics CNDE, CNFE, CNHE, CNJE is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-open-check-valve-bypass-orifice",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CNCE, CNEE, CNGE is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. It is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve come in?",
+          "a": "It is built in 3 versions from CNCE to CNGE, including CNCE (series 1, T-11A cavity, 15 gpm or 60 L/min), CNEE (series 2, T-2A cavity, 30 gpm or 120 L/min) and CNGE (series 3, T-17A cavity, 60 gpm or 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CNCEXCN for the CNCE, CNEE, CNGE pilot-to-open check valve?",
+          "a": "In CNCEXCN, CNCE is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; C is 30 psi (2 bar) Cracking Pressure, .016 - .153 in. (0,4 - 3,9 mm); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve?",
+          "a": "The CNCE, CNEE, CNGE is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on CNCE (series 1) to 60 gpm or 240 L/min on CNGE (series 3). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve come with?",
+          "a": "Seal options on the CNCE, CNEE, CNGE are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in CNCEXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve fit?",
+          "a": "The CNCE, CNEE, CNGE screws into the T-11A, T-2A and T-17A cavities for series 1, 2 and 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CNCE, CNEE, CNGE. Listed kits: series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve installed?",
+          "a": "Screw the CNCE, CNEE, CNGE into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 150 - 160 lbf ft (203 - 217 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CNCE, CNEE, CNGE pilot-to-open check valve used?",
+          "a": "The CNCE, CNEE, CNGE is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CNCE, CNEE, CNGE or CKBD, CKCD, CKED, CKGD, CKID: what is the difference?",
+          "a": "The CNCE, CNEE, CNGE is the bypass orifice version, rated 15 gpm or 60 L/min to 60 gpm or 240 L/min, while the [CKBD, CKCD, CKED, CKGD, CKID](/p/sun-hydraulics-pilot-open-check-valve-sealed-pilot) is the sealed pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CNCE, CNEE, CNGE in Dubai?",
+          "a": "Yes, the Sun Hydraulics CNCE, CNEE, CNGE is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-open-check-valve-sealed-pilot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. Pressure at the pilot port (port 3) lifts the poppet so the actuator can return. The pilot pressure needed rises with the load pressure, and pressure at port 2 works against the pilot. This version Sealed pilot, for circuits where leakage from the pilot to the work ports is not acceptable."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve come in?",
+          "a": "It is built in 5 versions from CKBD to CKID, including CKBD (series 0, T-163A cavity, 7.5 gpm or 30 L/min), CKED (series 2, T-2A cavity, 30 gpm or 120 L/min) and CKID (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKCDXCN for the CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve?",
+          "a": "The base model CKBD sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CKCDXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve?",
+          "a": "The CKBD, CKCD, CKED, CKGD, CKID is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on CKBD (series 0) to 120 gpm or 480 L/min on CKID (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve come with?",
+          "a": "Seal options on the CKBD, CKCD, CKED, CKGD, CKID are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve fit?",
+          "a": "The CKBD, CKCD, CKED, CKGD, CKID screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKBD, CKCD, CKED, CKGD, CKID. Listed kits: series 0, Buna: 990163007, EPDM: 990163014, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve installed?",
+          "a": "Screw the CKBD, CKCD, CKED, CKGD, CKID into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID pilot-to-open check valve used?",
+          "a": "The CKBD, CKCD, CKED, CKGD, CKID is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID or CKBB, CKCB, CKEB, CKGB, CKIB: what is the difference?",
+          "a": "The CKBD, CKCD, CKED, CKGD, CKID is the sealed pilot version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [CKBB, CKCB, CKEB, CKGB, CKIB](/p/sun-hydraulics-pilot-open-check-valve-standard-pilot) is the standard pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID in Dubai?",
+          "a": "Yes. The Sun Hydraulics CKBD, CKCD, CKED, CKGD, CKID sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-open-check-valve-standard-pilot",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB is a pilot-to-open check lets oil flow freely from the valve side (port 2) into the actuator (port 1) and locks it there. Pressure at the pilot port (port 3) lifts the poppet so the actuator can return. The pilot pressure needed rises with the load pressure, and pressure at port 2 works against the pilot. This version Standard (unsealed) pilot, which lets air trapped in the pilot line purge itself."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve come in?",
+          "a": "It is built in 5 versions from CKBB to CKIB, including CKBB (series 0, T-163A cavity, 7.5 gpm or 30 L/min), CKEB (series 2, T-2A cavity, 30 gpm or 120 L/min) and CKIB (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKCBXCN for the CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve?",
+          "a": "The base model CKBB sets valve type, frame size and variant; the letters that follow choose the options for control, check cracking pressure and seal material. Quote the base model and its configuration letters, for example CKCBXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve?",
+          "a": "The CKBB, CKCB, CKEB, CKGB, CKIB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on CKBB (series 0) to 120 gpm or 480 L/min on CKIB (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve come with?",
+          "a": "Seal options on the CKBB, CKCB, CKEB, CKGB, CKIB are N = Buna-N, L = Extended Temp. Buna, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve fit?",
+          "a": "The CKBB, CKCB, CKEB, CKGB, CKIB screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKBB, CKCB, CKEB, CKGB, CKIB. Listed kits: series 0, Buna: 990163007, EPDM: 990163014, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, EPDM: 990202014, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve installed?",
+          "a": "Screw the CKBB, CKCB, CKEB, CKGB, CKIB into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB pilot-to-open check valve used?",
+          "a": "The CKBB, CKCB, CKEB, CKGB, CKIB is used for locking cylinders on outriggers, clamps, tipping bodies and presses; hose-burst protection. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB or CKBD, CKCD, CKED, CKGD, CKID: what is the difference?",
+          "a": "The CKBB, CKCB, CKEB, CKGB, CKIB is the standard pilot version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [CKBD, CKCD, CKED, CKGD, CKID](/p/sun-hydraulics-pilot-open-check-valve-sealed-pilot) is the sealed pilot version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB in Dubai?",
+          "a": "Yes. The Sun Hydraulics CKBB, CKCB, CKEB, CKGB, CKIB sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-single-ball-shuttle-valve-signal-at-port-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve used for?",
+          "a": "The Sun Hydraulics CSAD, CSAY, CSAZ is a ball shuttle connects whichever of two work ports is at the higher pressure to a common signal port and seals off the lower one. Hardened balls and seats tolerate dirt and wear well."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve come in?",
+          "a": "It is built in 3 versions from CSAY to CSAD, including CSAY (series 0, T-162A cavity, 1.25 gpm or 4,7 L/min), CSAZ (series 0, T-163A cavity, 1.25 gpm or 4,7 L/min) and CSAD (series 1, T-11A cavity, 2.5 gpm or 10 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CSADXXN for the CSAD, CSAY, CSAZ single ball shuttle valve?",
+          "a": "The base model CSAY sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example CSADXXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve?",
+          "a": "The CSAD, CSAY, CSAZ is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve have by series?",
+          "a": "Capacity runs from 1.25 gpm or 4,7 L/min on CSAY (series 0) to 2.5 gpm or 10 L/min on CSAD (series 1). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve come with?",
+          "a": "Seal options on the CSAD, CSAY, CSAZ are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve fit?",
+          "a": "The CSAD, CSAY, CSAZ screws into the T-162A, T-163A and T-11A cavities for series 0 and 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CSAD, CSAY, CSAZ. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve installed?",
+          "a": "Screw the CSAD, CSAY, CSAZ into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 30 - 35 lbf ft (41 - 47 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CSAD, CSAY, CSAZ single ball shuttle valve used?",
+          "a": "The CSAD, CSAY, CSAZ is used for load-sensing signal networks, brake release taken from either motor port, picking the higher of two pressures for a gauge or pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CSAD, CSAY, CSAZ or CSAB, CSAX: what is the difference?",
+          "a": "The CSAD, CSAY, CSAZ is the signal at port 2 version, rated 1.25 gpm or 4,7 L/min to 2.5 gpm or 10 L/min, while the [CSAB, CSAX](/p/sun-hydraulics-single-ball-shuttle-valve-signal-at-port-3) is the signal at port 3 version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CSAD, CSAY, CSAZ in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics CSAD, CSAY, CSAZ in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-single-ball-shuttle-valve-signal-at-port-3",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CSAB, CSAX single ball shuttle valve used for?",
+          "a": "The Sun Hydraulics CSAB, CSAX is a ball shuttle connects whichever of two work ports is at the higher pressure to a common signal port and seals off the lower one. Hardened balls and seats tolerate dirt and wear well."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CSAB, CSAX single ball shuttle valve come in?",
+          "a": "It is built in 2 versions from CSAX to CSAB, including CSAX (series 0, T-163A cavity, 1.25 gpm or 4,7 L/min) and CSAB (series 1, T-11A cavity, 2.5 gpm or 10 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CSABXXN for the CSAB, CSAX single ball shuttle valve?",
+          "a": "The base model CSAX sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example CSABXXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CSAB, CSAX single ball shuttle valve?",
+          "a": "The CSAB, CSAX is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CSAB, CSAX single ball shuttle valve have by series?",
+          "a": "Capacity runs from 1.25 gpm or 4,7 L/min on CSAX (series 0) to 2.5 gpm or 10 L/min on CSAB (series 1). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CSAB, CSAX single ball shuttle valve come with?",
+          "a": "Seal options on the CSAB, CSAX are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CSAB, CSAX single ball shuttle valve fit?",
+          "a": "The CSAB, CSAX screws into the T-163A and T-11A cavities for series 0 and 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CSAB, CSAX single ball shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CSAB, CSAX. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CSAB, CSAX single ball shuttle valve installed?",
+          "a": "Screw the CSAB, CSAX into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 30 - 35 lbf ft (41 - 47 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CSAB, CSAX single ball shuttle valve used?",
+          "a": "The CSAB, CSAX is used for load-sensing signal networks, brake release taken from either motor port, picking the higher of two pressures for a gauge or pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CSAB, CSAX or CSAD, CSAY, CSAZ: what is the difference?",
+          "a": "The CSAB, CSAX is the signal at port 3 version, rated 1.25 gpm or 4,7 L/min to 2.5 gpm or 10 L/min, while the [CSAD, CSAY, CSAZ](/p/sun-hydraulics-single-ball-shuttle-valve-signal-at-port-2) is the signal at port 2 version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CSAB, CSAX in Dubai?",
+          "a": "Yes, the Sun Hydraulics CSAB, CSAX is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-single-ball-shuttle-valve-signal-external",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CSAA, CSAW single ball shuttle valve used for?",
+          "a": "The Sun Hydraulics CSAA, CSAW is a ball shuttle connects whichever of two work ports is at the higher pressure to a common signal port and seals off the lower one. Hardened balls and seats tolerate dirt and wear well."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CSAA, CSAW single ball shuttle valve come in?",
+          "a": "It is built in 2 versions from CSAW to CSAA, including CSAW (series 0, T-162A cavity, 1.25 gpm or 4,7 L/min) and CSAA (series 1, T-13A cavity, 2.5 gpm or 10 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CSAAEXN for the CSAA, CSAW single ball shuttle valve?",
+          "a": "The base model CSAW sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example CSAAEXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CSAA, CSAW single ball shuttle valve?",
+          "a": "The CSAA, CSAW is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CSAA, CSAW single ball shuttle valve have by series?",
+          "a": "Capacity runs from 1.25 gpm or 4,7 L/min on CSAW (series 0) to 2.5 gpm or 10 L/min on CSAA (series 1). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CSAA, CSAW single ball shuttle valve come with?",
+          "a": "Seal options on the CSAA, CSAW are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CSAAEXN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CSAA, CSAW single ball shuttle valve fit?",
+          "a": "The CSAA, CSAW screws into the T-162A and T-13A cavities for series 0 and 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CSAA, CSAW single ball shuttle valve?",
+          "a": "Sun supplies a seal kit for every series of the CSAA, CSAW. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CSAA, CSAW single ball shuttle valve installed?",
+          "a": "Screw the CSAA, CSAW into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 30 - 35 lbf ft (41 - 47 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CSAA, CSAW single ball shuttle valve used?",
+          "a": "The CSAA, CSAW is used for load-sensing signal networks, brake release taken from either motor port, picking the higher of two pressures for a gauge or pilot. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CSAA, CSAW or CSAD, CSAY, CSAZ: what is the difference?",
+          "a": "The CSAA, CSAW is the signal external version, rated 1.25 gpm or 4,7 L/min to 2.5 gpm or 10 L/min, while the [CSAD, CSAY, CSAZ](/p/sun-hydraulics-single-ball-shuttle-valve-signal-at-port-2) is the signal at port 2 version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CSAA, CSAW in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CSAA, CSAW at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vented-pilot-open-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CVCV, CVEV, CVGV, CVIV is a pilot-to-open check whose spring chamber is vented, so pressure at port 2 does not oppose the pilot. Oil flows freely from port 2 to the actuator at port 1; pilot pressure at port 3 opens the return path. The pilot is sealed."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve come in?",
+          "a": "It is built in 4 versions from CVCV to CVIV, including CVCV (series 1, T-21A cavity, 15 gpm or 60 L/min), CVGV (series 3, T-23A cavity, 60 gpm or 240 L/min) and CVIV (series 4, T-24A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CVCVXCN for the CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve?",
+          "a": "In CVCVXCN, CVCV is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve?",
+          "a": "The CVCV, CVEV, CVGV, CVIV is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on CVCV (series 1) to 120 gpm or 480 L/min on CVIV (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve come with?",
+          "a": "Seal options on the CVCV, CVEV, CVGV, CVIV are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve fit?",
+          "a": "The CVCV, CVEV, CVGV, CVIV screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CVCV, CVEV, CVGV, CVIV. Listed kits: series 1, Buna: 990021007, EPDM: 990021014, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022007, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve installed?",
+          "a": "Screw the CVCV, CVEV, CVGV, CVIV into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CVCV, CVEV, CVGV, CVIV vented pilot-to-open check valve used?",
+          "a": "The CVCV, CVEV, CVGV, CVIV is used for locking circuits with back-pressure in the return line — regeneration, motion-control valves with restrictive spools, shared return lines. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CVCV, CVEV, CVGV, CVIV or CKCV, CKEV, CKGV, CKIV: what is the difference?",
+          "a": "The CVCV, CVEV, CVGV, CVIV is the base configuration version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [CKCV, CKEV, CKGV, CKIV](/p/sun-hydraulics-vented-pilot-open-check-valve-atmospherically-referenced) is the atmospherically referenced version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CVCV, CVEV, CVGV, CVIV in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics CVCV, CVEV, CVGV, CVIV at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-vented-pilot-open-check-valve-atmospherically-referenced",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve used for?",
+          "a": "The Sun Hydraulics CKCV, CKEV, CKGV, CKIV is a pilot-to-open check whose spring chamber is vented, so pressure at port 2 does not oppose the pilot. Oil flows freely from port 2 to the actuator at port 1; pilot pressure at port 3 opens the return path. The pilot is sealed. This version Atmospherically referenced: the spring chamber vents through the hex end."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve come in?",
+          "a": "It is built in 4 versions from CKCV to CKIV, including CKCV (series 1, T-11A cavity, 15 gpm or 60 L/min), CKGV (series 3, T-17A cavity, 60 gpm or 240 L/min) and CKIV (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code CKCVXCN for the CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve?",
+          "a": "In CKCVXCN, CKCV is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Standard Pilot, Atmospheric Vent; C is 30 psi (2 bar); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve?",
+          "a": "The CKCV, CKEV, CKGV, CKIV is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 drops/min. (0,07 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on CKCV (series 1) to 120 gpm or 480 L/min on CKIV (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve come with?",
+          "a": "Seal options on the CKCV, CKEV, CKGV, CKIV are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in CKCVXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve fit?",
+          "a": "The CKCV, CKEV, CKGV, CKIV screws into the T-11A, T-2A, T-17A and T-19A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve?",
+          "a": "Sun supplies a seal kit for every series of the CKCV, CKEV, CKGV, CKIV. Listed kits: series 1, Buna: 990311007, Polyurethane: 990011002, Viton: 990311006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006; series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve installed?",
+          "a": "Screw the CKCV, CKEV, CKGV, CKIV into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics CKCV, CKEV, CKGV, CKIV vented pilot-to-open check valve used?",
+          "a": "The CKCV, CKEV, CKGV, CKIV is used for locking circuits with back-pressure in the return line — regeneration, motion-control valves with restrictive spools, shared return lines. Other cartridges for the same circuits are on the [check, shuttle & directional cartridges](/c/cartridge-check-shuttle-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics CKCV, CKEV, CKGV, CKIV or CVCV, CVEV, CVGV, CVIV: what is the difference?",
+          "a": "The CKCV, CKEV, CKGV, CKIV is the atmospherically referenced version, rated 15 gpm or 60 L/min to 120 gpm or 480 L/min, while the [CVCV, CVEV, CVGV, CVIV](/p/sun-hydraulics-vented-pilot-open-check-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics CKCV, CKEV, CKGV, CKIV in Dubai?",
+          "a": "Yes, the Sun Hydraulics CKCV, CKEV, CKGV, CKIV is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

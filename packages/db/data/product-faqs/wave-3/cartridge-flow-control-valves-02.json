@@ -1,0 +1,1770 @@
+{
+  "family": "cartridge-flow-control-valves-02",
+  "extraFacts": [
+    {
+      "fact": "Sun Hydraulics builds its cartridges in frame sizes called series; the series fixes the cavity the valve screws into, so every function in one series shares that cavity, and a larger series carries more flow. Series 0C and 1C parts fit industry-standard common cavities (SC-08, SC-10) instead of Sun's T-series cavities.",
+      "source": "Indus Hydraulics Sun Hydraulics listings (Sizes and cavities text), from the maker's catalogue"
+    },
+    {
+      "fact": "1 gpm = 3.785 L/min and 1 bar = 14.5038 psi; the listings state each capacity in both gpm and L/min and each pressure in both psi and bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-frep-electro-proportional-priority-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FREP electro-proportional priority flow control valve used for?",
+          "a": "The Sun Hydraulics FREP is a normally closed, proportional priority flow control in the FLeX Series: the coil sets the priority flow to port 3, compensated against pressure changes, and the excess goes out of port 2. Blocking port 2 turns it into a 2-way proportional, compensated flow control."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FREP electro-proportional priority flow control valve come in?",
+          "a": "It is built in one version, FREP (series 3, T-17A cavity, 30 gpm or 120 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FREPXAN for the FREP electro-proportional priority flow control valve?",
+          "a": "The base model FREP sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FREPXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FREP electro-proportional priority flow control valve?",
+          "a": "The FREP is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FREP electro-proportional priority flow control valve have?",
+          "a": "The FREP is rated 30 gpm or 120 L/min in series 3, which screws into a T-17A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FREP electro-proportional priority flow control valve come with?",
+          "a": "Seal options on the FREP are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FREPXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FREP electro-proportional priority flow control valve fit?",
+          "a": "The FREP screws into the T-17A cavity for series 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FREP electro-proportional priority flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FREP. Listed kits: series 3, Buna: 990017007, Viton: 990017006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FREP electro-proportional priority flow control valve installed?",
+          "a": "Screw the FREP into its T-17A cavity and tighten to 150 - 160 lbf ft (203 - 217 Nm) on a 1 1/4 in. (31,8 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FREP electro-proportional priority flow control valve used?",
+          "a": "The FREP is used for electronically set priority and fan-drive circuits on mobile machines. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FREP or FVCA, FVDA, FVEA, FVFA: what is the difference?",
+          "a": "The FREP is the flex series 3-way, direct-acting and electro-proportional version, rated 30 gpm or 120 L/min, while the [FVCA, FVDA, FVEA, FVFA](/p/sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve) is the ventable and fixed-orifice version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FREP in Dubai?",
+          "a": "Yes. The Sun Hydraulics FREP sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fully-adjustable-needle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics NFBC to NFFD needle valve used for?",
+          "a": "The Sun Hydraulics NFBC to NFFD is a needle valve is a fully adjustable orifice: it opens from fully closed to its maximum orifice size and can also serve as a shut-off. It is not pressure compensated, so flow changes with the square root of the pressure drop. Versions with a reverse-flow check pass oil freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics NFBC to NFFD needle valve come in?",
+          "a": "It is built in 9 versions from NFBC to NFFD, including NFBC (series 0, T-162A cavity, 5 gpm (.16 inch) or 20 L/min. (4 mm)), NFDD (series 2, T-5A cavity, 50 gpm (.5 inch) or 200 L/min. (12,7 mm)) and NFFD (series 4, T-18A cavity, 140 gpm (.85 inch) or 530 L/min. (21,6 mm)). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code NFCDLFN for the NFBC to NFFD needle valve?",
+          "a": "The base model NFBC sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example NFCDLFN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics NFBC to NFFD needle valve?",
+          "a": "The NFBC to NFFD is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics NFBC to NFFD needle valve have by series?",
+          "a": "Capacity runs from 5 gpm (.16 inch) or 20 L/min. (4 mm) on NFBC (series 0) to 140 gpm (.85 inch) or 530 L/min. (21,6 mm) on NFFD (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics NFBC to NFFD needle valve come with?",
+          "a": "Seal options on the NFBC to NFFD are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics NFBC to NFFD needle valve fit?",
+          "a": "The NFBC to NFFD screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics NFBC to NFFD needle valve?",
+          "a": "Sun supplies a seal kit for every series of the NFBC to NFFD. Listed kits: series 0, Buna: 990162007, EPDM: 990162014, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, EPDM: 990010014, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, EPDM: 990203014, Viton: 990203006, Polyurethane: 990203014 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics NFBC to NFFD needle valve installed?",
+          "a": "Screw the NFBC to NFFD into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics NFBC to NFFD needle valve used?",
+          "a": "The NFBC to NFFD is used for speed control of cylinders and motors where load is steady, bleed-off and gauge isolation. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics NFBC to NFFD or NCBB to NCGC: what is the difference?",
+          "a": "The NFBC to NFFD is the base configuration version, rated 5 gpm (.16 inch) or 20 L/min. (4 mm) to 140 gpm (.85 inch) or 530 L/min. (21,6 mm), while the [NCBB to NCGC](/p/sun-hydraulics-fully-adjustable-needle-valve-reverse-flow-check) is the reverse flow check version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics NFBC to NFFD in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics NFBC to NFFD at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fully-adjustable-needle-valve-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics NCBB to NCGC needle valve used for?",
+          "a": "The Sun Hydraulics NCBB to NCGC is a needle valve is a fully adjustable orifice: it opens from fully closed to its maximum orifice size and can also serve as a shut-off. It is not pressure compensated, so flow changes with the square root of the pressure drop. Versions with a reverse-flow check pass oil freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics NCBB to NCGC needle valve come in?",
+          "a": "It is built in 10 versions from NCBB to NCGB, including NCBB (series 0, T-162A cavity, 5 gpm (.16 inch) or 20 L/min. (4 mm)), NCEB (series 2, T-5A cavity, 12 gpm (.25 inch) or 45 L/min. (6,4 mm)) and NCGB (series 4, T-18A cavity, 60 gpm (.56 inch) or 240 L/min. (14,2 mm)). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code NCCBLCN for the NCBB to NCGC needle valve?",
+          "a": "The base model NCBB sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example NCCBLCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics NCBB to NCGC needle valve?",
+          "a": "The NCBB to NCGC is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 10 drops/min. (0,7 cc/min), 5 drops/min. (0,3 cc/min)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics NCBB to NCGC needle valve have by series?",
+          "a": "Capacity runs from 1 gpm (.06 inch) or 4 L/min. (1,5 mm) on NCCD (series 1) to 60 gpm (.56 inch) or 240 L/min. (14,2 mm) on NCGB (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics NCBB to NCGC needle valve come with?",
+          "a": "Seal options on the NCBB to NCGC are N = Buna-N, L = Extended Temp. Buna, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics NCBB to NCGC needle valve fit?",
+          "a": "The NCBB to NCGC screws into the T-162A, T-13A, T-5A, T-16A and T-18A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics NCBB to NCGC needle valve?",
+          "a": "Sun supplies a seal kit for every series of the NCBB to NCGC. Listed kits: series 0, Buna: 990162007, Polyurethane: 990162002, Viton: 990162006; series 1, Buna: 990010007, Polyurethane: 990010002, Viton: 990010006, EPDM: 990010014; series 2, Buna: 990203007, Viton: 990203006, EPDM: 990203014 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics NCBB to NCGC needle valve installed?",
+          "a": "Screw the NCBB to NCGC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics NCBB to NCGC needle valve used?",
+          "a": "The NCBB to NCGC is used for speed control of cylinders and motors where load is steady, bleed-off and gauge isolation. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics NCBB to NCGC or NFBC to NFFD: what is the difference?",
+          "a": "The NCBB to NCGC is the reverse flow check version, rated 1 gpm (.06 inch) or 4 L/min. (1,5 mm) to 60 gpm (.56 inch) or 240 L/min. (14,2 mm), while the [NFBC to NFFD](/p/sun-hydraulics-fully-adjustable-needle-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics NCBB to NCGC in Dubai?",
+          "a": "Yes, the Sun Hydraulics NCBB to NCGC is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fully-adjustable-pressure-compensated-flow-control-valve-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve used for?",
+          "a": "The Sun Hydraulics FDBA, FDCB, FDEA, FDFA is a fully adjustable flow control that holds its flow steady as pressure changes, for meter-in or meter-out speed control. It adjusts from nearly closed to full flow, and an integral high-capacity check passes return flow freely from port 2 to port 1."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve come in?",
+          "a": "It is built in 4 versions from FDBA to FDFA, including FDBA (series 1, T-13A cavity, 6 gpm or 23 L/min), FDEA (series 3, T-16A cavity, 25 gpm or 95 L/min) and FDFA (series 4, T-18A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FDBALAN for the FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve?",
+          "a": "In FDBALAN, FDBA is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: L is Standard Screw Adjustment; A is .1 - 6 gpm (0,4 - 23 L/min.); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve?",
+          "a": "The FDBA, FDCB, FDEA, FDFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve have by series?",
+          "a": "Capacity runs from 6 gpm or 23 L/min on FDBA (series 1) to 50 gpm or 200 L/min on FDFA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve come with?",
+          "a": "Seal options on the FDBA, FDCB, FDEA, FDFA are N = Buna-N, L = Buna (low temp), V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve fit?",
+          "a": "The FDBA, FDCB, FDEA, FDFA screws into the T-13A, T-5A, T-16A and T-18A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FDBA, FDCB, FDEA, FDFA. Listed kits: series 1, Buna: 990010007, EPDM: 990010014, Polyurethane: 990010002, Viton: 990010006; series 2, Buna: 990203007, EPDM: 990203014, Viton: 990203006; series 3, Buna: 990016007, EPDM: 990016014, Polyurethane: 990016002, Viton: 990016006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve installed?",
+          "a": "Screw the FDBA, FDCB, FDEA, FDFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FDBA, FDCB, FDEA, FDFA adjustable pressure-compensated flow control valve used?",
+          "a": "The FDBA, FDCB, FDEA, FDFA is used for steady actuator speed under changing load — lifts, feeds, conveyors and fan drives. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FDBA, FDCB, FDEA, FDFA or NCBB to NCGC: what is the difference?",
+          "a": "The FDBA, FDCB, FDEA, FDFA is the fully adjustable pressure compensated flow control valve version, rated 6 gpm or 23 L/min to 50 gpm or 200 L/min, while the [NCBB to NCGC](/p/sun-hydraulics-fully-adjustable-needle-valve-reverse-flow-check) is the fully adjustable needle valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FDBA, FDCB, FDEA, FDFA in Dubai?",
+          "a": "Yes. The Sun Hydraulics FDBA, FDCB, FDEA, FDFA sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fxag-miniature-pressure-compensated-flow-control",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FXAG miniature pressure-compensated flow control used for?",
+          "a": "The Sun Hydraulics FXAG is a small fixed-orifice, pressure-compensated flow control for low flows, built for the T-8A family of cavities. The flush-mount type sits level with the manifold face, and the insert type is buried inside a manifold or actuator."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FXAG miniature pressure-compensated flow control come in?",
+          "a": "It is built in one version, FXAG (series P, T-8A cavity, .5 gpm or 2 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FXAGXAN for the FXAG miniature pressure-compensated flow control?",
+          "a": "The base model FXAG sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FXAGXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FXAG miniature pressure-compensated flow control?",
+          "a": "The FXAG is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FXAG miniature pressure-compensated flow control have?",
+          "a": "The FXAG is rated .5 gpm or 2 L/min in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FXAG miniature pressure-compensated flow control come with?",
+          "a": "Seal options on the FXAG are L = Extended Temp. Buna, N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FXAGXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FXAG miniature pressure-compensated flow control fit?",
+          "a": "The FXAG screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FXAG miniature pressure-compensated flow control?",
+          "a": "Sun supplies a seal kit for every series of the FXAG. Listed kits: series P, Buna: 990008007, Polyurethane: 990008002, Viton: 990008006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FXAG miniature pressure-compensated flow control installed?",
+          "a": "Screw the FXAG into its T-8A cavity and tighten to the torque in the data. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FXAG miniature pressure-compensated flow control used?",
+          "a": "The FXAG is used for low-flow speed control, pilot circuits and compact manifolds or actuators. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FXAG or FXAM: what is the difference?",
+          "a": "The FXAG is the flush mount version, rated .5 gpm or 2 L/min, while the [FXAM](/p/sun-hydraulics-fxam-miniature-pressure-compensated-flow-control) is the insert style version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FXAG in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FXAG in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fxam-miniature-pressure-compensated-flow-control",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FXAM miniature pressure-compensated flow control used for?",
+          "a": "The Sun Hydraulics FXAM is a small fixed-orifice, pressure-compensated flow control for low flows, built for the T-8A family of cavities. The flush-mount type sits level with the manifold face, and the insert type is buried inside a manifold or actuator."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FXAM miniature pressure-compensated flow control come in?",
+          "a": "It is built in one version, FXAM (series P, T-8DP cavity, .5 gpm or 2 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FXAMXAN for the FXAM miniature pressure-compensated flow control?",
+          "a": "The base model FXAM sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FXAMXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FXAM miniature pressure-compensated flow control?",
+          "a": "The FXAM is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FXAM miniature pressure-compensated flow control have?",
+          "a": "The FXAM is rated .5 gpm or 2 L/min in series P, which screws into a T-8DP cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FXAM miniature pressure-compensated flow control come with?",
+          "a": "Seal options on the FXAM are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FXAMXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FXAM miniature pressure-compensated flow control fit?",
+          "a": "The FXAM screws into the T-8DP cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FXAM miniature pressure-compensated flow control?",
+          "a": "The listing gives no seal kit numbers for the FXAM. Send us the model code and we confirm the seal kit with Sun before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FXAM miniature pressure-compensated flow control installed?",
+          "a": "Screw the FXAM into its T-8DP cavity and tighten to the torque in the data. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FXAM miniature pressure-compensated flow control used?",
+          "a": "The FXAM is used for low-flow speed control, pilot circuits and compact manifolds or actuators. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FXAM or FXAG: what is the difference?",
+          "a": "The FXAM is the insert style version, rated .5 gpm or 2 L/min, while the [FXAG](/p/sun-hydraulics-fxag-miniature-pressure-compensated-flow-control) is the flush mount version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FXAM in Dubai?",
+          "a": "Yes. The Sun Hydraulics FXAM sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fxda8-ventable-pressure-compensated-flow-control-with-t-8a-pilot-cavity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity used for?",
+          "a": "The Sun Hydraulics FXDA8 is a fixed-orifice, pressure-compensated flow control with an integral T-8A pilot cavity, so the flow can be switched on and off or vented by the pilot cartridge fitted there. It is used for switchable fixed-speed functions without a separate directional valve."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity come in?",
+          "a": "It is built in one version, FXDA8 (series 2, T-5A cavity, 12 gpm or 45 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FXDA8AN for the FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity?",
+          "a": "In FXDA8AN, FXDA8 is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: A is Replaceable Orifice .1 - 12 gpm (0,4 - 45 L/min.); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity?",
+          "a": "The FXDA8 is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity have?",
+          "a": "The FXDA8 is rated 12 gpm or 45 L/min in series 2, which screws into a T-5A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity come with?",
+          "a": "Seal options on the FXDA8 are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FXDA8AN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity fit?",
+          "a": "The FXDA8 screws into the T-5A cavity for series 2, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity?",
+          "a": "Sun supplies a seal kit for every series of the FXDA8. Listed kits: series 2, Buna: 990203007, Viton: 990203006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity installed?",
+          "a": "Screw the FXDA8 into its T-5A cavity and tighten to 45 - 50 lbf ft (61 - 68 Nm) on a 1 1/8 in. (28,6 mm) hex. Main stages with an integral T-8A pilot cavity go in first, and the pilot cartridge is then fitted into them to its own torque."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FXDA8 ventable pressure-compensated flow control with T-8A pilot cavity used?",
+          "a": "The FXDA8 is used for switchable fixed-speed functions without a separate directional valve. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FXDA8 or FVCA8, FVDA8, FVEA8, FVFA8: what is the difference?",
+          "a": "The FXDA8 is the ventable fixed-orifice and pressure compensated flow control valve version, rated 12 gpm or 45 L/min, while the [FVCA8, FVDA8, FVEA8, FVFA8](/p/sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve-t-8a) is the ventable, fixed-orifice, bypass/restrictive and priority flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FXDA8 in Dubai?",
+          "a": "Yes. The Sun Hydraulics FXDA8 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-high-accuracy-closed-center-flow-divider-combiner-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve used for?",
+          "a": "The Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG is a sliding-spool, pressure-compensated valve that divides flow in one direction and combines it in the other, so two cylinders or motors can be run together both ways. Closed-centre designs block the outlets from each other at rest; high-accuracy versions hold the split more closely; high-capacity versions carry about 15% more flow for traction drives, with lower accuracy."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve come in?",
+          "a": "It is built in 5 versions from FSAA to FSFG, including FSAA (series 1, T-31A cavity, .3 - 1.5 gpm or 1 - 6 L/min), FSDG (series 2, T-32A cavity, 1.5 - 8 gpm or 6 - 30 L/min) and FSFG (series 4, T-34A cavity, 6 - 30 gpm or 23 - 120 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSBAXAN for the FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve?",
+          "a": "The base model FSAA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSBAXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve?",
+          "a": "The FSAA, FSBA, FSDG, FSEG, FSFG is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve have by series?",
+          "a": "Capacity runs from .3 - 1.5 gpm or 1 - 6 L/min on FSAA (series 1) to 6 - 30 gpm or 23 - 120 L/min on FSFG (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve come with?",
+          "a": "Seal options on the FSAA, FSBA, FSDG, FSEG, FSFG are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve fit?",
+          "a": "The FSAA, FSBA, FSDG, FSEG, FSFG screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve?",
+          "a": "Sun supplies a seal kit for every series of the FSAA, FSBA, FSDG, FSEG, FSFG. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve installed?",
+          "a": "Screw the FSAA, FSBA, FSDG, FSEG, FSFG into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG flow divider/combiner valve used?",
+          "a": "The FSAA, FSBA, FSDG, FSEG, FSFG is used for paired lift cylinders, scissor and platform lifts, and two-motor traction drives. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG or FSCH, FSDH, FSEH, FSFH: what is the difference?",
+          "a": "The FSAA, FSBA, FSDG, FSEG, FSFG is the high accuracy version, rated .3 - 1.5 gpm or 1 - 6 L/min to 6 - 30 gpm or 23 - 120 L/min, while the [FSCH, FSDH, FSEH, FSFH](/p/sun-hydraulics-high-capacity-closed-center-flow-divider-combiner-valve) is the high capacity version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG in Dubai?",
+          "a": "Yes, the Sun Hydraulics FSAA, FSBA, FSDG, FSEG, FSFG is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-high-accuracy-flow-divider-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve used for?",
+          "a": "The Sun Hydraulics FSBD, FSDC, FSEC, FSFC is a sliding-spool, pressure-compensated flow divider splits one inlet flow between two outlets in a fixed ratio. High-accuracy versions hold the split more closely."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve come in?",
+          "a": "It is built in 4 versions from FSBD to FSFC, including FSBD (series 1, T-31A cavity, .6 - 3 gpm or 2,5 - 12 L/min), FSEC (series 3, T-33A cavity, 3 - 15 gpm or 12 - 60 L/min) and FSFC (series 4, T-34A cavity, 6 - 30 gpm or 23 - 120 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSBDXAN for the FSBD, FSDC, FSEC, FSFC flow divider valve?",
+          "a": "The base model FSBD sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSBDXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve?",
+          "a": "The FSBD, FSDC, FSEC, FSFC is rated 5000 psi (350 bar) maximum operating pressure on most versions, with 5000 psi or 350 bar on FSBD. Check the version you order against its row, and treat the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve have by series?",
+          "a": "Capacity runs from .6 - 3 gpm or 2,5 - 12 L/min on FSBD (series 1) to 6 - 30 gpm or 23 - 120 L/min on FSFC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve come with?",
+          "a": "Seal options on the FSBD, FSDC, FSEC, FSFC are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FSBDXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve fit?",
+          "a": "The FSBD, FSDC, FSEC, FSFC screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve?",
+          "a": "Sun supplies a seal kit for every series of the FSBD, FSDC, FSEC, FSFC. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve installed?",
+          "a": "Screw the FSBD, FSDC, FSEC, FSFC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSBD, FSDC, FSEC, FSFC flow divider valve used?",
+          "a": "The FSBD, FSDC, FSEC, FSFC is used for unidirectional hydraulic motors, cylinders that only need dividing in one direction, and serving several circuits from one pump. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSBD, FSDC, FSEC, FSFC or FSAS, FSBS, FSDR, FSER, FSFR: what is the difference?",
+          "a": "The FSBD, FSDC, FSEC, FSFC is the high accuracy flow divider valve version, rated .6 - 3 gpm or 2,5 - 12 L/min to 6 - 30 gpm or 23 - 120 L/min, while the [FSAS, FSBS, FSDR, FSER, FSFR](/p/sun-hydraulics-high-accuracy-synchronizing-flow-divider-combiner-valve) is the high accuracy synchronizing and flow divider-combiner valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSBD, FSDC, FSEC, FSFC in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FSBD, FSDC, FSEC, FSFC at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-high-accuracy-synchronizing-flow-divider-combiner-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve used for?",
+          "a": "The Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR is a divider/combiner with a synchronising feature. It is used for pairs of cylinders that must stay in step over many cycles — lift tables, gates and platforms."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve come in?",
+          "a": "It is built in 5 versions from FSAS to FSFR, including FSAS (series 1, T-31A cavity, .3 - 1.5 gpm or 1 - 6 L/min), FSDR (series 2, T-32A cavity, 1.5 - 8 gpm or 6 - 30 L/min) and FSFR (series 4, T-34A cavity, 6 - 30 gpm or 23 - 120 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSBSXAN for the FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve?",
+          "a": "The base model FSAS sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSBSXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve?",
+          "a": "The FSAS, FSBS, FSDR, FSER, FSFR is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve have by series?",
+          "a": "Capacity runs from .3 - 1.5 gpm or 1 - 6 L/min on FSAS (series 1) to 6 - 30 gpm or 23 - 120 L/min on FSFR (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve come with?",
+          "a": "Seal options on the FSAS, FSBS, FSDR, FSER, FSFR are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve fit?",
+          "a": "The FSAS, FSBS, FSDR, FSER, FSFR screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve?",
+          "a": "Sun supplies a seal kit for every series of the FSAS, FSBS, FSDR, FSER, FSFR. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve installed?",
+          "a": "Screw the FSAS, FSBS, FSDR, FSER, FSFR into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR synchronising flow divider/combiner valve used?",
+          "a": "The FSAS, FSBS, FSDR, FSER, FSFR is used for pairs of cylinders that must stay in step over many cycles — lift tables, gates and platforms. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR or FSCS, FSDS, FSES, FSFS: what is the difference?",
+          "a": "The FSAS, FSBS, FSDR, FSER, FSFR is the high accuracy synchronizing version, rated .3 - 1.5 gpm or 1 - 6 L/min to 6 - 30 gpm or 23 - 120 L/min, while the [FSCS, FSDS, FSES, FSFS](/p/sun-hydraulics-synchronizing-flow-divider-combiner-valve) is the synchronizing version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics FSAS, FSBS, FSDR, FSER, FSFR at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-high-capacity-closed-center-flow-divider-combiner-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve used for?",
+          "a": "The Sun Hydraulics FSCH, FSDH, FSEH, FSFH is a sliding-spool, pressure-compensated valve that divides flow in one direction and combines it in the other, so two cylinders or motors can be run together both ways. Closed-centre designs block the outlets from each other at rest; high-accuracy versions hold the split more closely; high-capacity versions carry about 15% more flow for traction drives, with lower accuracy."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve come in?",
+          "a": "It is built in 4 versions from FSCH to FSFH, including FSCH (series 1, T-31A cavity, 2 - 9 gpm or 8 - 34 L/min), FSEH (series 3, T-33A cavity, 8 - 35 gpm or 32 - 130 L/min) and FSFH (series 4, T-34A cavity, 15 - 70 gpm or 60 - 270 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSCHXAN for the FSCH, FSDH, FSEH, FSFH flow divider/combiner valve?",
+          "a": "The base model FSCH sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSCHXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve?",
+          "a": "The FSCH, FSDH, FSEH, FSFH is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve have by series?",
+          "a": "Capacity runs from 2 - 9 gpm or 8 - 34 L/min on FSCH (series 1) to 15 - 70 gpm or 60 - 270 L/min on FSFH (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve come with?",
+          "a": "Seal options on the FSCH, FSDH, FSEH, FSFH are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in FSCHXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve fit?",
+          "a": "The FSCH, FSDH, FSEH, FSFH screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve?",
+          "a": "Sun supplies a seal kit for every series of the FSCH, FSDH, FSEH, FSFH. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve installed?",
+          "a": "Screw the FSCH, FSDH, FSEH, FSFH into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSCH, FSDH, FSEH, FSFH flow divider/combiner valve used?",
+          "a": "The FSCH, FSDH, FSEH, FSFH is used for paired lift cylinders, scissor and platform lifts, and two-motor traction drives. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSCH, FSDH, FSEH, FSFH or FSAA, FSBA, FSDG, FSEG, FSFG: what is the difference?",
+          "a": "The FSCH, FSDH, FSEH, FSFH is the high capacity version, rated 2 - 9 gpm or 8 - 34 L/min to 15 - 70 gpm or 60 - 270 L/min, while the [FSAA, FSBA, FSDG, FSEG, FSFG](/p/sun-hydraulics-high-accuracy-closed-center-flow-divider-combiner-valve) is the high accuracy version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSCH, FSDH, FSEH, FSFH in Dubai?",
+          "a": "Yes, the Sun Hydraulics FSCH, FSDH, FSEH, FSFH is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lpfcl-normally-open-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LPFCL normally open modulating element used for?",
+          "a": "The Sun Hydraulics LPFCL is a normally open modulating element that acts as a restrictive compensator: with an external orifice it holds a constant pressure drop across it so flow stays steady as pressure changes. The bi-directional version compensates in both directions."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LPFCL normally open modulating element come in?",
+          "a": "It is built in one version, LPFCL (series 2, T-2A cavity, 30 gpm or 120 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LPFCLDN for the LPFCL normally open modulating element?",
+          "a": "The base model LPFCL sets valve type, frame size and variant; the letters that follow choose the options for seal material and material / coating. Quote the base model and its configuration letters, for example LPFCLDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LPFCL normally open modulating element?",
+          "a": "The LPFCL is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the LPFCL normally open modulating element have?",
+          "a": "The LPFCL is rated 30 gpm or 120 L/min in series 2, which screws into a T-2A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LPFCL normally open modulating element come with?",
+          "a": "Seal options on the LPFCL are N = Buna-N, V = Viton, E = EPDM. Body options: /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in LPFCLDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LPFCL normally open modulating element fit?",
+          "a": "The LPFCL screws into the T-2A cavity for series 2, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LPFCL normally open modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LPFCL. Listed kits: series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LPFCL normally open modulating element installed?",
+          "a": "Screw the LPFCL into its T-2A cavity and tighten to 45 - 50 lbf ft (61 - 68 Nm) on a 1 1/8 in. (28,6 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LPFCL normally open modulating element used?",
+          "a": "The LPFCL is used for restrictive pressure-compensated flow controls built into a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LPFCL or LPBC, LPDC, LPFC, LPHC, LPJC: what is the difference?",
+          "a": "The LPFCL is the tuneable and normally open modulating element version, rated 30 gpm or 120 L/min, while the [LPBC, LPDC, LPFC, LPHC, LPJC](/p/sun-hydraulics-normally-open-modulating-element) is the normally open and modulating element version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LPFCL in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics LPFCL at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lpja8-normally-open-modulating-element-with-pilot-source",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LPJA8 normally open modulating element with pilot source used for?",
+          "a": "The Sun Hydraulics LPJA8 is a normally open modulating element with an internal orifice from port 1 to port 3, used as the main stage of a reducing valve controlled by a pilot relief or pilot solenoid valve. The T-8A version carries its own pilot cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LPJA8 normally open modulating element with pilot source come in?",
+          "a": "It is built in one version, LPJA8 (series 4, T-19A cavity, 120 gpm or 480 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LPJA8DN for the LPJA8 normally open modulating element with pilot source?",
+          "a": "The base model LPJA8 sets valve type, frame size and variant; the letters that follow choose the options for seal material. Quote the base model and its configuration letters, for example LPJA8DN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LPJA8 normally open modulating element with pilot source?",
+          "a": "The LPJA8 is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the LPJA8 normally open modulating element with pilot source have?",
+          "a": "The LPJA8 is rated 120 gpm or 480 L/min in series 4, which screws into a T-19A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LPJA8 normally open modulating element with pilot source come with?",
+          "a": "Seal options on the LPJA8 are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in LPJA8DN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LPJA8 normally open modulating element with pilot source fit?",
+          "a": "The LPJA8 screws into the T-19A cavity for series 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LPJA8 normally open modulating element with pilot source?",
+          "a": "Sun supplies a seal kit for every series of the LPJA8. Listed kits: series 4, Buna: 990019007, Polyurethane: 990019002, Viton: 990019006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LPJA8 normally open modulating element with pilot source installed?",
+          "a": "Screw the LPJA8 into its T-19A cavity and tighten to 350 - 375 lbf ft (474 - 508 Nm) on a 1 5/8 in. (41,3 mm) hex. Main stages with an integral T-8A pilot cavity go in first, and the pilot cartridge is then fitted into them to its own torque."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LPJA8 normally open modulating element with pilot source used?",
+          "a": "The LPJA8 is used for high-flow remotely or electronically controlled reducing functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LPJA8 or LPBA, LPDA, LPFA, LPHA, LPJA: what is the difference?",
+          "a": "The LPJA8 is the integral t-8a control cavity version, rated 120 gpm or 480 L/min, while the [LPBA, LPDA, LPFA, LPHA, LPJA](/p/sun-hydraulics-normally-open-modulating-element-pilot-source-port-1) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LPJA8 in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics LPJA8 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lrds-normally-closed-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LRDS normally closed modulating element used for?",
+          "a": "The Sun Hydraulics LRDS is a normally closed, spool-type modulating element that acts as a bypass compensator. The shuttle version picks the higher of two load signals."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LRDS normally closed modulating element come in?",
+          "a": "It is built in one version, LRDS (series 1, T-21A cavity, 15 gpm or 60 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LRDSXHN for the LRDS normally closed modulating element?",
+          "a": "The base model LRDS sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example LRDSXHN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LRDS normally closed modulating element?",
+          "a": "The LRDS is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the LRDS normally closed modulating element have?",
+          "a": "The LRDS is rated 15 gpm or 60 L/min in series 1, which screws into a T-21A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LRDS normally closed modulating element come with?",
+          "a": "Seal options on the LRDS are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in LRDSXHN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LRDS normally closed modulating element fit?",
+          "a": "The LRDS screws into the T-21A cavity for series 1, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LRDS normally closed modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LRDS. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LRDS normally closed modulating element installed?",
+          "a": "Screw the LRDS into its T-21A cavity and tighten to 30 - 35 lbf ft (41 - 47 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LRDS normally closed modulating element used?",
+          "a": "The LRDS is used for building bypass-compensated flow controls and load-sensing circuits in a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LRDS or LRBC, LRDC, LRFC, LRHC, LRJC: what is the difference?",
+          "a": "The LRDS is the normally closed modulating element and shuttle version, rated 15 gpm or 60 L/min, while the [LRBC, LRDC, LRFC, LRHC, LRJC](/p/sun-hydraulics-normally-closed-modulating-element) is the normally closed and modulating element version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LRDS in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics LRDS at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lrfcl-normally-closed-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LRFCL normally closed modulating element used for?",
+          "a": "The Sun Hydraulics LRFCL is a normally closed, spool-type modulating element that acts as a bypass compensator. The shuttle version picks the higher of two load signals."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LRFCL normally closed modulating element come in?",
+          "a": "It is built in one version, LRFCL (series 2, T-2A cavity, 30 gpm or 120 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LRFCLDN for the LRFCL normally closed modulating element?",
+          "a": "The base model LRFCL sets valve type, frame size and variant; the letters that follow choose the options for seal material and material / coating. Quote the base model and its configuration letters, for example LRFCLDN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LRFCL normally closed modulating element?",
+          "a": "The LRFCL is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the LRFCL normally closed modulating element have?",
+          "a": "The LRFCL is rated 30 gpm or 120 L/min in series 2, which screws into a T-2A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LRFCL normally closed modulating element come with?",
+          "a": "Seal options on the LRFCL are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in LRFCLDN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LRFCL normally closed modulating element fit?",
+          "a": "The LRFCL screws into the T-2A cavity for series 2, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LRFCL normally closed modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LRFCL. Listed kits: series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LRFCL normally closed modulating element installed?",
+          "a": "Screw the LRFCL into its T-2A cavity and tighten to 45 - 50 lbf ft (61 - 68 Nm) on a 1 1/8 in. (28,6 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LRFCL normally closed modulating element used?",
+          "a": "The LRFCL is used for building bypass-compensated flow controls and load-sensing circuits in a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LRFCL or LRBC, LRDC, LRFC, LRHC, LRJC: what is the difference?",
+          "a": "The LRFCL is the tuneable version, rated 30 gpm or 120 L/min, while the [LRBC, LRDC, LRFC, LRHC, LRJC](/p/sun-hydraulics-normally-closed-modulating-element) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LRFCL in Dubai?",
+          "a": "Yes. The Sun Hydraulics LRFCL sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-lrha8-normally-closed-modulating-element-with-pilot-source",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LRHA8 normally closed modulating element with pilot source used for?",
+          "a": "The Sun Hydraulics LRHA8 is a normally closed modulating element with an internal orifice from port 1 to port 3, so it can work as the main stage of a relief valve controlled remotely by a pilot relief or pilot solenoid valve. The T-8A version carries its own pilot cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LRHA8 normally closed modulating element with pilot source come in?",
+          "a": "It is built in one version, LRHA8 (series 3, T-17A cavity, 60 gpm or 240 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LRHA8DN for the LRHA8 normally closed modulating element with pilot source?",
+          "a": "The base model LRHA8 sets valve type, frame size and variant; the letters that follow choose the options for seal material. Quote the base model and its configuration letters, for example LRHA8DN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LRHA8 normally closed modulating element with pilot source?",
+          "a": "The LRHA8 is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the LRHA8 normally closed modulating element with pilot source have?",
+          "a": "The LRHA8 is rated 60 gpm or 240 L/min in series 3, which screws into a T-17A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LRHA8 normally closed modulating element with pilot source come with?",
+          "a": "Seal options on the LRHA8 are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in LRHA8DN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LRHA8 normally closed modulating element with pilot source fit?",
+          "a": "The LRHA8 screws into the T-17A cavity for series 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LRHA8 normally closed modulating element with pilot source?",
+          "a": "Sun supplies a seal kit for every series of the LRHA8. Listed kits: series 3, Buna: 990017007, Polyurethane: 990017002, Viton: 990017006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LRHA8 normally closed modulating element with pilot source installed?",
+          "a": "Screw the LRHA8 into its T-17A cavity and tighten to 150 - 160 lbf ft (203 - 217 Nm) on a 1 1/4 in. (31,8 mm) hex. Main stages with an integral T-8A pilot cavity go in first, and the pilot cartridge is then fitted into them to its own torque."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LRHA8 normally closed modulating element with pilot source used?",
+          "a": "The LRHA8 is used for high-flow remotely or electronically controlled relief functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LRHA8 or LRBA, LRDA, LRFA, LRHA, LRJA: what is the difference?",
+          "a": "The LRHA8 is the integral t-8a control cavity version, rated 60 gpm or 240 L/min, while the [LRBA, LRDA, LRFA, LRHA, LRJA](/p/sun-hydraulics-normally-closed-modulating-element-pilot-source-port-1) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LRHA8 in Dubai?",
+          "a": "Yes. The Sun Hydraulics LRHA8 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-nfab-pilot-capacity-needle-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics NFAB pilot-capacity needle valve used for?",
+          "a": "The Sun Hydraulics NFAB is a small, fully adjustable needle valve for the T-8A cavity, used to meter pilot flow in a main-stage valve or very low flows. Fitted into a main stage's own T-8A cavity, it removes the need for separate pilot lines."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics NFAB pilot-capacity needle valve come in?",
+          "a": "It is built in one version, NFAB (series P, T-8A cavity, .2 gpm (.035 inch) or 0,8 L/min. (0,9 mm)). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code NFABKXN for the NFAB pilot-capacity needle valve?",
+          "a": "The base model NFAB sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example NFABKXN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics NFAB pilot-capacity needle valve?",
+          "a": "The NFAB is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the NFAB pilot-capacity needle valve have?",
+          "a": "The NFAB is rated .2 gpm (.035 inch) or 0,8 L/min. (0,9 mm) in series P, which screws into a T-8A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics NFAB pilot-capacity needle valve come with?",
+          "a": "Seal options on the NFAB are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in NFABKXN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics NFAB pilot-capacity needle valve fit?",
+          "a": "The NFAB screws into the T-8A cavity for series P, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics NFAB pilot-capacity needle valve?",
+          "a": "Sun supplies a seal kit for every series of the NFAB. Listed kits: series P, Buna: 990008007, EPDM: 990008014, Polyurethane: 990008002, Viton: 990008006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics NFAB pilot-capacity needle valve installed?",
+          "a": "Screw the NFAB into its T-8A cavity and tighten to 20 - 25 lbf ft (27 - 33 Nm) on a 7/8 in. (22,2 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics NFAB pilot-capacity needle valve used?",
+          "a": "The NFAB is used for tuning the response of pilot-operated and vent-to-operate main stages. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics NFAB or NFBC to NFFD: what is the difference?",
+          "a": "The NFAB is the pilot capacity version, rated .2 gpm (.035 inch) or 0,8 L/min. (0,9 mm), while the [NFBC to NFFD](/p/sun-hydraulics-fully-adjustable-needle-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics NFAB in Dubai?",
+          "a": "Yes. The Sun Hydraulics NFAB sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element used for?",
+          "a": "The Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC is a normally closed, spool-type modulating element that acts as a bypass compensator. The shuttle version picks the higher of two load signals."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element come in?",
+          "a": "It is built in 5 versions from LRBC to LRJC, including LRBC (series 0, T-163A cavity, 7.5 gpm or 30 L/min), LRFC (series 2, T-2A cavity, 30 gpm or 120 L/min) and LRJC (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LRDCXHN for the LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element?",
+          "a": "The base model LRBC sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example LRDCXHN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element?",
+          "a": "The LRBC, LRDC, LRFC, LRHC, LRJC is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on LRBC (series 0) to 120 gpm or 480 L/min on LRJC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element come with?",
+          "a": "Seal options on the LRBC, LRDC, LRFC, LRHC, LRJC are N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element fit?",
+          "a": "The LRBC, LRDC, LRFC, LRHC, LRJC screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LRBC, LRDC, LRFC, LRHC, LRJC. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, EPDM: 990011014, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element installed?",
+          "a": "Screw the LRBC, LRDC, LRFC, LRHC, LRJC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC normally closed modulating element used?",
+          "a": "The LRBC, LRDC, LRFC, LRHC, LRJC is used for building bypass-compensated flow controls and load-sensing circuits in a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC or LRFCL: what is the difference?",
+          "a": "The LRBC, LRDC, LRFC, LRHC, LRJC is the base configuration version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [LRFCL](/p/sun-hydraulics-lrfcl-normally-closed-modulating-element) is the tuneable version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC in Dubai?",
+          "a": "Yes, the Sun Hydraulics LRBC, LRDC, LRFC, LRHC, LRJC is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-closed-modulating-element-pilot-source-port-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source used for?",
+          "a": "The Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA is a normally closed modulating element with an internal orifice from port 1 to port 3, so it can work as the main stage of a relief valve controlled remotely by a pilot relief or pilot solenoid valve. The T-8A version carries its own pilot cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source come in?",
+          "a": "It is built in 5 versions from LRBA to LRJA, including LRBA (series 0, T-163A cavity, 7.5 gpm or 30 L/min), LRFA (series 2, T-2A cavity, 30 gpm or 120 L/min) and LRJA (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code LRDAXHN?",
+          "a": "The base model LRBA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example LRDAXHN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source?",
+          "a": "The LRBA, LRDA, LRFA, LRHA, LRJA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Maximum leakage is 1 in³/min.@1000 psi (15 cc/min.@70 bar)."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on LRBA (series 0) to 120 gpm or 480 L/min on LRJA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source come with?",
+          "a": "Seal options on the LRBA, LRDA, LRFA, LRHA, LRJA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in LRDAXHN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source fit?",
+          "a": "The LRBA, LRDA, LRFA, LRHA, LRJA screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source?",
+          "a": "Sun supplies a seal kit for every series of the LRBA, LRDA, LRFA, LRHA, LRJA. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source installed?",
+          "a": "Screw the LRBA, LRDA, LRFA, LRHA, LRJA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA normally closed modulating element with pilot source used?",
+          "a": "The LRBA, LRDA, LRFA, LRHA, LRJA is used for high-flow remotely or electronically controlled relief functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA or LRHA8: what is the difference?",
+          "a": "The LRBA, LRDA, LRFA, LRHA, LRJA is the base configuration version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [LRHA8](/p/sun-hydraulics-lrha8-normally-closed-modulating-element-with-pilot-source) is the integral t-8a control cavity version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA in Dubai?",
+          "a": "Yes, we stock the Sun Hydraulics LRBA, LRDA, LRFA, LRHA, LRJA at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-bi-directional-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element used for?",
+          "a": "The Sun Hydraulics LHDT, LHFT, LHHT is a normally open modulating element that acts as a restrictive compensator: with an external orifice it holds a constant pressure drop across it so flow stays steady as pressure changes. The bi-directional version compensates in both directions."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element come in?",
+          "a": "It is built in 3 versions from LHDT to LHHT, including LHDT (series 1, T-31A cavity, 15 gpm or 60 L/min), LHFT (series 2, T-32A cavity, 30 gpm or 120 L/min) and LHHT (series 3, T-33A cavity, 60 gpm or 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LHDTXFN for the LHDT, LHFT, LHHT normally open modulating element?",
+          "a": "The base model LHDT sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example LHDTXFN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element?",
+          "a": "The LHDT, LHFT, LHHT is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element have by series?",
+          "a": "Capacity runs from 15 gpm or 60 L/min on LHDT (series 1) to 60 gpm or 240 L/min on LHHT (series 3). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element come with?",
+          "a": "Seal options on the LHDT, LHFT, LHHT are N = Buna-N, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in LHDTXFN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element fit?",
+          "a": "The LHDT, LHFT, LHHT screws into the T-31A, T-32A and T-33A cavities for series 1, 2 and 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LHDT, LHFT, LHHT. Listed kits: series 1, Buna: 990031007, EPDM: 990031014, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, EPDM: 990032014, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, EPDM: 990033014, Polyurethane: 990033002, Viton: 990033006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element installed?",
+          "a": "Screw the LHDT, LHFT, LHHT into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 150 - 160 lbf ft (203 - 217 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LHDT, LHFT, LHHT normally open modulating element used?",
+          "a": "The LHDT, LHFT, LHHT is used for restrictive pressure-compensated flow controls built into a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LHDT, LHFT, LHHT or LPBC, LPDC, LPFC, LPHC, LPJC: what is the difference?",
+          "a": "The LHDT, LHFT, LHHT is the bi-directional version, rated 15 gpm or 60 L/min to 60 gpm or 240 L/min, while the [LPBC, LPDC, LPFC, LPHC, LPJC](/p/sun-hydraulics-normally-open-modulating-element) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LHDT, LHFT, LHHT in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics LHDT, LHFT, LHHT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-modulating-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element used for?",
+          "a": "The Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC is a normally open modulating element that acts as a restrictive compensator: with an external orifice it holds a constant pressure drop across it so flow stays steady as pressure changes. The bi-directional version compensates in both directions."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element come in?",
+          "a": "It is built in 5 versions from LPBC to LPJC, including LPBC (series 0, T-163A cavity, 7.5 gpm or 30 L/min), LPFC (series 2, T-2A cavity, 30 gpm or 120 L/min) and LPJC (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code LPDCXHN for the LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element?",
+          "a": "The base model LPBC sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example LPDCXHN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element?",
+          "a": "The LPBC, LPDC, LPFC, LPHC, LPJC is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on LPBC (series 0) to 120 gpm or 480 L/min on LPJC (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element come with?",
+          "a": "Seal options on the LPBC, LPDC, LPFC, LPHC, LPJC are L = Extended Temp. Buna, N = Buna-N, V = Viton, E = EPDM. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element fit?",
+          "a": "The LPBC, LPDC, LPFC, LPHC, LPJC screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element?",
+          "a": "Sun supplies a seal kit for every series of the LPBC, LPDC, LPFC, LPHC, LPJC. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element installed?",
+          "a": "Screw the LPBC, LPDC, LPFC, LPHC, LPJC into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC normally open modulating element used?",
+          "a": "The LPBC, LPDC, LPFC, LPHC, LPJC is used for restrictive pressure-compensated flow controls built into a manifold. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC or LPFCL: what is the difference?",
+          "a": "The LPBC, LPDC, LPFC, LPHC, LPJC is the normally open and modulating element version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [LPFCL](/p/sun-hydraulics-lpfcl-normally-open-modulating-element) is the tuneable and normally open modulating element version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC in Dubai?",
+          "a": "Yes, the Sun Hydraulics LPBC, LPDC, LPFC, LPHC, LPJC is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-normally-open-modulating-element-pilot-source-port-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source used for?",
+          "a": "The Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA is a normally open modulating element with an internal orifice from port 1 to port 3, used as the main stage of a reducing valve controlled by a pilot relief or pilot solenoid valve. The T-8A version carries its own pilot cavity."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source come in?",
+          "a": "It is built in 5 versions from LPBA to LPJA, including LPBA (series 0, T-163A cavity, 7.5 gpm or 30 L/min), LPFA (series 2, T-2A cavity, 30 gpm or 120 L/min) and LPJA (series 4, T-19A cavity, 120 gpm or 480 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code LPDAXHN?",
+          "a": "The base model LPBA sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example LPDAXHN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source?",
+          "a": "The LPBA, LPDA, LPFA, LPHA, LPJA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source have by series?",
+          "a": "Capacity runs from 7.5 gpm or 30 L/min on LPBA (series 0) to 120 gpm or 480 L/min on LPJA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source come with?",
+          "a": "Seal options on the LPBA, LPDA, LPFA, LPHA, LPJA are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated. The seal is chosen by a letter near the end of the model code, as in LPDAXHN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source fit?",
+          "a": "The LPBA, LPDA, LPFA, LPHA, LPJA screws into the T-163A, T-11A, T-2A, T-17A and T-19A cavities for series 0, 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source?",
+          "a": "Sun supplies a seal kit for every series of the LPBA, LPDA, LPFA, LPHA, LPJA. Listed kits: series 0, Buna: 990163007, Polyurethane: 990163002, Viton: 990163006; series 1, Buna: 990011007, Polyurethane: 990011002, Viton: 990011006; series 2, Buna: 990202007, Polyurethane: 990002002, Viton: 990202006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source installed?",
+          "a": "Screw the LPBA, LPDA, LPFA, LPHA, LPJA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 20 - 25 lbf ft (27 - 33 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA normally open modulating element with pilot source used?",
+          "a": "The LPBA, LPDA, LPFA, LPHA, LPJA is used for high-flow remotely or electronically controlled reducing functions. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA or LPJA8: what is the difference?",
+          "a": "The LPBA, LPDA, LPFA, LPHA, LPJA is the base configuration version, rated 7.5 gpm or 30 L/min to 120 gpm or 480 L/min, while the [LPJA8](/p/sun-hydraulics-lpja8-normally-open-modulating-element-with-pilot-source) is the integral t-8a control cavity version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA in Dubai?",
+          "a": "Yes. The Sun Hydraulics LPBA, LPDA, LPFA, LPHA, LPJA sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pilot-operated-normally-closed-electro-proportional-throttle-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle used for?",
+          "a": "The Sun Hydraulics FPFK, FPHK is a pilot-operated proportional throttle with a poppet main stage: the coil acts on a small pilot that opens or closes the main poppet in proportion to current. Normally closed and normally open versions exist, with or without a free-flow reverse check; FLeX Series models are built for XMD drivers."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle come in?",
+          "a": "It is built in 2 versions from FPFK to FPHK, including FPFK (series 2, T-5A cavity, 20 gpm or 80 L/min) and FPHK (series 3, T-16A cavity, 60 gpm or 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FPHKXCN for the FPFK, FPHK pilot-operated electro-proportional throttle?",
+          "a": "The base model FPFK sets valve type, frame size and variant; the letters that follow choose the options for control and seal material. Quote the base model and its configuration letters, for example FPHKXCN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle?",
+          "a": "The FPFK, FPHK is rated a maximum maximum operating pressure on every listed version. Maximum leakage is 20 drops/min.@5000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle have by series?",
+          "a": "Capacity runs from 20 gpm or 80 L/min on FPFK (series 2) to 60 gpm or 240 L/min on FPHK (series 3). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle come with?",
+          "a": "Seal options on the FPFK, FPHK are N = Buna-N, L = Extended Temp. Buna, V = Viton, E = EPDM. The seal is chosen by a letter near the end of the model code, as in FPHKXCN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle fit?",
+          "a": "The FPFK, FPHK screws into the T-5A and T-16A cavities for series 2 and 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle?",
+          "a": "Sun supplies a seal kit for every series of the FPFK, FPHK. Listed kits: series 2, Buna: 990203007, EPDM: 990203014, Viton: 990203006; series 3, Buna: 990016007, EPDM: 990016014, Polyurethane: 990016002, Viton: 990016006. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle installed?",
+          "a": "Screw the FPFK, FPHK into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 45 - 50 lbf ft (61 - 68 Nm) up to 150 - 160 lbf ft (203 - 217 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FPFK, FPHK pilot-operated electro-proportional throttle used?",
+          "a": "The FPFK, FPHK is used for leak-tight proportional control of mobile functions — lowering, slewing and lift circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FPFK, FPHK or FDBA, FDCB, FDEA, FDFA: what is the difference?",
+          "a": "The FPFK, FPHK is the pilot-operated, normally closed and electro-proportional throttle version, rated 20 gpm or 80 L/min to 60 gpm or 240 L/min, while the [FDBA, FDCB, FDEA, FDFA](/p/sun-hydraulics-fully-adjustable-pressure-compensated-flow-control-valve-reverse-flow-check) is the fully adjustable pressure compensated flow control valve version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FPFK, FPHK in Dubai?",
+          "a": "Yes. The Sun Hydraulics FPFK, FPHK sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-qmeh4-cartridge-style-flow-meter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics QMEH4 cartridge-style flow meter used for?",
+          "a": "The Sun Hydraulics QMEH4 is a variable-area flow meter in cartridge form. Oil passing from port 1 to port 2 is metered and reported as an electrical signal that rises with flow, so flow can be monitored inside a manifold with no inline meter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics QMEH4 cartridge-style flow meter come in?",
+          "a": "It is built in one version, QMEH4 (series 3, T-16A cavity, 50 gpm or 200 L/min). Sun builds every function in a series for one cavity, so a series fixes the cavity it screws into."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code QMEH4GN for the QMEH4 cartridge-style flow meter?",
+          "a": "The base model QMEH4 sets valve type, frame size and variant; the letters that follow choose the options for seal material. Quote the base model and its configuration letters, for example QMEH4GN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics QMEH4 cartridge-style flow meter?",
+          "a": "The QMEH4 is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the QMEH4 cartridge-style flow meter have?",
+          "a": "The QMEH4 is rated 50 gpm or 200 L/min in series 3, which screws into a T-16A cavity. A larger series carries more flow, so check the pressure drop at your flow on the performance curve before you choose it."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics QMEH4 cartridge-style flow meter come with?",
+          "a": "Seal options on the QMEH4 are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in QMEH4GN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics QMEH4 cartridge-style flow meter fit?",
+          "a": "The QMEH4 screws into the T-16A cavity for series 3, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics QMEH4 cartridge-style flow meter?",
+          "a": "The listing gives no seal kit numbers for the QMEH4. Send us the model code and we confirm the seal kit with Sun before you order."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics QMEH4 cartridge-style flow meter installed?",
+          "a": "Screw the QMEH4 into its T-16A cavity and tighten to 150 - 160 lbf ft (203 - 217 Nm) on a 1 1/4 in. (31,8 mm) hex. Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics QMEH4 cartridge-style flow meter used?",
+          "a": "The QMEH4 is used for condition monitoring, closed-loop speed control and test circuits. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics QMEH4 or FXAM: what is the difference?",
+          "a": "The QMEH4 is the cartridge-style flow meter flow control valve version, rated 50 gpm or 200 L/min, while the [FXAM](/p/sun-hydraulics-fxam-miniature-pressure-compensated-flow-control) is the insert style and pressure compensated flow control version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics QMEH4 in Dubai?",
+          "a": "Yes. The Sun Hydraulics QMEH4 sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-synchronizing-flow-divider-combiner-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve used for?",
+          "a": "The Sun Hydraulics FSCS, FSDS, FSES, FSFS is a divider/combiner with a synchronising feature. It is used for pairs of cylinders that must stay in step over many cycles — lift tables, gates and platforms."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve come in?",
+          "a": "It is built in 4 versions from FSCS to FSFS, including FSCS (series 1, T-31A cavity, 1.5 - 8 gpm or 6 - 30 L/min), FSES (series 3, T-33A cavity, 6 - 30 gpm or 23 - 120 L/min) and FSFS (series 4, T-34A cavity, 12 - 60 gpm or 45 - 240 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FSCSXAN for the FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve?",
+          "a": "The base model FSCS sets valve type, frame size and variant; the letters that follow choose the options for control, seal material and material / coating. Quote the base model and its configuration letters, for example FSCSXAN, and we confirm the full ordering code."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve?",
+          "a": "The FSCS, FSDS, FSES, FSFS is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve have by series?",
+          "a": "Capacity runs from 1.5 - 8 gpm or 6 - 30 L/min on FSCS (series 1) to 12 - 60 gpm or 45 - 240 L/min on FSFS (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve come with?",
+          "a": "Seal options on the FSCS, FSDS, FSES, FSFS are N = Buna-N, V = Viton. Body options: /AP = Stainless Steel, Passivated, /LH = Mild Steel, Zinc-Nickel. The seal is chosen by a letter near the end of the model code, as in FSCSXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve fit?",
+          "a": "The FSCS, FSDS, FSES, FSFS screws into the T-31A, T-32A, T-33A and T-34A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve?",
+          "a": "Sun supplies a seal kit for every series of the FSCS, FSDS, FSES, FSFS. Listed kits: series 1, Buna: 990031007, Polyurethane: 990031002, Viton: 990031006; series 2, Buna: 990032007, Polyurethane: 990032002, Viton: 990032006; series 3, Buna: 990033007, Polyurethane: 990033002, Viton: 990033006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve installed?",
+          "a": "Screw the FSCS, FSDS, FSES, FSFS into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FSCS, FSDS, FSES, FSFS synchronising flow divider/combiner valve used?",
+          "a": "The FSCS, FSDS, FSES, FSFS is used for pairs of cylinders that must stay in step over many cycles — lift tables, gates and platforms. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FSCS, FSDS, FSES, FSFS or FSAS, FSBS, FSDR, FSER, FSFR: what is the difference?",
+          "a": "The FSCS, FSDS, FSES, FSFS is the synchronizing version, rated 1.5 - 8 gpm or 6 - 30 L/min to 12 - 60 gpm or 45 - 240 L/min, while the [FSAS, FSBS, FSDR, FSER, FSFR](/p/sun-hydraulics-high-accuracy-synchronizing-flow-divider-combiner-valve) is the high accuracy synchronizing version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FSCS, FSDS, FSES, FSFS in Dubai?",
+          "a": "Yes. The Sun Hydraulics FSCS, FSDS, FSES, FSFS sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve used for?",
+          "a": "The Sun Hydraulics FVCA, FVDA, FVEA, FVFA is a fixed-orifice priority flow control with a vent port (port 4). A pressure control on the vent caps the pressure at the priority outlet; versions with an integral T-8A cavity let the priority flow be switched electrically, manually, hydraulically or by air, depending on the pilot cartridge fitted."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve come in?",
+          "a": "It is built in 4 versions from FVCA to FVFA, including FVCA (series 1, T-21A cavity, 6 gpm or 23 L/min), FVEA (series 3, T-23A cavity, 25 gpm or 95 L/min) and FVFA (series 4, T-24A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FVCAXAN for the FVCA, FVDA, FVEA, FVFA ventable priority flow control valve?",
+          "a": "In FVCAXAN, FVCA is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: X is Not Adjustable; A is Replaceable Orifice .1 - 6 gpm (0,4 - 23 L/min.); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve?",
+          "a": "The FVCA, FVDA, FVEA, FVFA is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve have by series?",
+          "a": "Capacity runs from 6 gpm or 23 L/min on FVCA (series 1) to 50 gpm or 200 L/min on FVFA (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve come with?",
+          "a": "Seal options on the FVCA, FVDA, FVEA, FVFA are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FVCAXAN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve fit?",
+          "a": "The FVCA, FVDA, FVEA, FVFA screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FVCA, FVDA, FVEA, FVFA. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022007, EPDM: 990022014, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve installed?",
+          "a": "Screw the FVCA, FVDA, FVEA, FVFA into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Do not over-torque, and keep the cavity clean and free of burrs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FVCA, FVDA, FVEA, FVFA ventable priority flow control valve used?",
+          "a": "The FVCA, FVDA, FVEA, FVFA is used for priority circuits that must be switched or pressure-limited remotely. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FVCA, FVDA, FVEA, FVFA or FVCA8, FVDA8, FVEA8, FVFA8: what is the difference?",
+          "a": "The FVCA, FVDA, FVEA, FVFA is the base configuration version, rated 6 gpm or 23 L/min to 50 gpm or 200 L/min, while the [FVCA8, FVDA8, FVEA8, FVFA8](/p/sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve-t-8a) is the integral t-8a control cavity version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FVCA, FVDA, FVEA, FVFA in Dubai?",
+          "a": "Yes. We keep the Sun Hydraulics FVCA, FVDA, FVEA, FVFA in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve-t-8a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve used for?",
+          "a": "The Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 is a fixed-orifice priority flow control with a vent port (port 4). A pressure control on the vent caps the pressure at the priority outlet; versions with an integral T-8A cavity let the priority flow be switched electrically, manually, hydraulically or by air, depending on the pilot cartridge fitted."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and versions does the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve come in?",
+          "a": "It is built in 4 versions from FVCA8 to FVFA8, including FVCA8 (series 1, T-21A cavity, 6 gpm or 23 L/min), FVEA8 (series 3, T-23A cavity, 25 gpm or 95 L/min) and FVFA8 (series 4, T-24A cavity, 50 gpm or 200 L/min). The series sets the cavity and a larger series carries more flow."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun Hydraulics model code FVCA8AN for the FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve?",
+          "a": "In FVCA8AN, FVCA8 is the base model, which sets valve type, frame size and variant, and the letters after it choose the options: A is Replaceable Orifice .1 - 6 gpm (0,4 - 23 L/min.); N is Buna-N. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve?",
+          "a": "The FVCA8, FVDA8, FVEA8, FVFA8 is rated 5000 psi or 350 bar maximum operating pressure on every listed version. Use the figure as the ceiling for the circuit, including pressure spikes."
+        },
+        {
+          "slot": "D",
+          "q": "What flow capacity does the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve have by series?",
+          "a": "Capacity runs from 6 gpm or 23 L/min on FVCA8 (series 1) to 50 gpm or 200 L/min on FVFA8 (series 4). Choose the smallest series that passes your flow at an acceptable pressure drop, using the performance curves."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal materials and body finishes does the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve come with?",
+          "a": "Seal options on the FVCA8, FVDA8, FVEA8, FVFA8 are N = Buna-N, V = Viton. The seal is chosen by a letter near the end of the model code, as in FVCA8AN, so state the fluid when you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve fit?",
+          "a": "The FVCA8, FVDA8, FVEA8, FVFA8 screws into the T-21A, T-22A, T-23A and T-24A cavities for series 1, 2, 3 and 4, machined to Sun's drawing for that series. If you are replacing a valve, the model code stamped on it gives the series and function directly."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve?",
+          "a": "Sun supplies a seal kit for every series of the FVCA8, FVDA8, FVEA8, FVFA8. Listed kits: series 1, Buna: 990021007, Polyurethane: 990021002, Viton: 990021006; series 2, Buna: 990022007, EPDM: 990022014, Polyurethane: 990022002, Viton: 990022006; series 3, Buna: 990023007, Polyurethane: 990023002, Viton: 990023006 and more for the other series. Only the external seals are serviceable; fitting a different external seal does not make the valve compatible with a new fluid."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve installed?",
+          "a": "Screw the FVCA8, FVDA8, FVEA8, FVFA8 into the cavity for its series and tighten to the torque for that series; across series 0 to 4 the listed torques run from 30 - 35 lbf ft (41 - 47 Nm) up to 350 - 375 lbf ft (474 - 508 Nm). Main stages with an integral T-8A pilot cavity go in first, and the pilot cartridge is then fitted into them to its own torque."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 ventable priority flow control valve used?",
+          "a": "The FVCA8, FVDA8, FVEA8, FVFA8 is used for priority circuits that must be switched or pressure-limited remotely. Other cartridges for the same circuits are on the [flow control cartridges](/c/cartridge-flow-control-valves) shelf."
+        },
+        {
+          "slot": "K",
+          "q": "Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 or FVCA, FVDA, FVEA, FVFA: what is the difference?",
+          "a": "The FVCA8, FVDA8, FVEA8, FVFA8 is the integral t-8a control cavity version, rated 6 gpm or 23 L/min to 50 gpm or 200 L/min, while the [FVCA, FVDA, FVEA, FVFA](/p/sun-hydraulics-ventable-fixed-orifice-bypass-restrictive-priority-flow-control-valve) is the base configuration version. Choose on the function you need, then check the other page for its flow and cavity before you swap one for the other."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 in Dubai?",
+          "a": "Yes, the Sun Hydraulics FVCA8, FVDA8, FVEA8, FVFA8 is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

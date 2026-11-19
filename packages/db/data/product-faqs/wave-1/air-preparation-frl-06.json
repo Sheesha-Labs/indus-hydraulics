@@ -1,0 +1,1668 @@
+{
+  "family": "air-preparation-frl-06",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Parker P32 Compact Filter Replacement Elements: grades 0.01 micron, 1 micron and 5 micron; Parker P32 Compact Global Modular Coalescing Filters: rated 150 and 250 psi; Parker P32 Compact Global Modular Filter/Regulators: ports 3/8\", rated 150 and 250 psi; Parker P32 Compact Global Modular Lubricators: rated 150 and 250 psi; Parker P32 Compact Global Modular Particulate Filters: rated 150 and 250 psi; Parker P32E Series Global Modular Semi Precision Filter Regulators: ports 1/4\", 3/8\" and 1/2\"; Parker P32P Electronic Proportional Regulators: ports 1/2\"; Parker P33 Standard Filter Replacement Elements: grades 1 micron; Parker P33 Standard Global Modular Coalescing Filters: rated 150 and 250 psi; Parker P33 Standard Global Modular Filter/Regulators: ports 1/2\" and 3/4\", rated 150 and 250 psi; Parker P33 Standard Global Modular Lubricators: ports 1/2\" and 3/4\", rated 150 and 250 psi; Parker P33 Standard Global Modular Particulate Filters: rated 150 and 250 psi; Parker P3NE Hi-Flow General Industrial Filter/Regulators: ports 3/4\", 1\" and 1 1/2\", rated 250 psi; Parker P3NF Hi-Flow General Industrial Coalescing Filters: rated 250 psi; Parker P3NL H-Flow General Industrial Lubricators: ports 3/4\", 1\" and 1 1/2\", flow 240 to 260 scfm, rated 250 psi; Parker P3NR Hi-Flow General Industrial Regulators: ports 3/4\", 1\" and 1 1/2\", flow 200 to 300 scfm, rated 250 psi; Parker PL10 Series Lubricators, Stainless Steel: ports 1/2\", rated 250 psi; Parker Pneumatic Regulator, Nonrising Knob: ports 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\", flow 60 to 500 cfm; Parker Prep-Air II Compact Filter Replacement Elements: grades 0.01 micron, 1 micron, 5 micron and 40 micron; Parker Prep-Air II Hi-Flow Filter Replacement Elements: grades 1 micron and 40 micron; Parker Prep-Air II Mini Filter Replacement Elements: grades 0.01 micron, 1 micron, 5 micron and 40 micron; Parker Prep-Air II Standard Filter Replacement Elements: grades 0.01 micron, 1 micron, 5 micron and 40 micron; Parker Replacement Compressed Air Filter Elements: grades 0.01 micron and 1 micron; Parker Sterile Compressed Air Filters: ports 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\", rated 250 psi, grades 0.01 micron.",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-p32-compact-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P32 Compact Filter Replacement Elements used for?",
+          "a": "The Parker P32 Compact Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 4 part numbers, with 0.01 micron, 1 micron and 5 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32 Compact Filter Replacement Elements listing?",
+          "a": "Examples from the listing are P32KA00ESC (0.01 micron), P32KA00ESE (5 micron) and P32KA00ES9 (1 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker P32 Compact Filter Replacement Elements?",
+          "a": "The rows show 0.01 micron, 1 micron and 5 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker P32 Compact Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker P32 Compact Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker P32 Compact Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker P32 Compact Filter Replacement Elements use?",
+          "a": "Media for the Parker P32 Compact Filter Replacement Elements is described per part number in the size table. The rows also name the grades 0.01 micron, 1 micron and 5 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker P32 Compact Filter Replacement Elements part number?",
+          "a": "Where the Parker P32 Compact Filter Replacement Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker P32 Compact Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker P32 Compact Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker P32 Compact Filter Replacement Elements?",
+          "a": "Replace the Parker P32 Compact Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32 Compact Filter Replacement Elements and the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The Parker P32 Compact Filter Replacement Elements and the [Parker Prep-Air II Compact Filter Replacement Elements](/p/parker-prep-air-ii-compact-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P32 Compact Filter Replacement Elements made and how is it shipped from Dubai?",
+          "a": "The Parker P32 Compact Filter Replacement Elements listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Parker P32 Compact Filter Replacement Elements in Dubai?",
+          "a": "Yes. We keep the Parker P32 Compact Filter Replacement Elements in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32-compact-global-modular-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P32 Compact Global Modular Coalescing Filters used for?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 12 part numbers. Listed materials: bowl: metal with sight gauge."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32 Compact Global Modular Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are P32FB94DSMN (250 psi, manual drain), P32FB92DGAN (150 psi) and P32FB93DGMN (150 psi, manual drain). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P32 Compact Global Modular Coalescing Filters come in?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P32 Compact Global Modular Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Parker P32 Compact Global Modular Coalescing Filters, choose by pressure rating and drain type, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P32 Compact Global Modular Coalescing Filters?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The Parker P32 Compact Global Modular Coalescing Filters listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Parker P32 Compact Global Modular Coalescing Filters use?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters listing describes the element as a coalescing grade for oil removal. Specification lines: bowl: metal with sight gauge. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P32 Compact Global Modular Coalescing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Parker P32 Compact Global Modular Coalescing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P32 Compact Global Modular Coalescing Filters in an air line?",
+          "a": "Fit the Parker P32 Compact Global Modular Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker P32 Compact Global Modular Coalescing Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Parker P32 Compact Global Modular Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32 Compact Global Modular Coalescing Filters and the Parker P32 Compact Global Modular Particulate Filters?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters are coalescing (oil-removal) filters, while the [Parker P32 Compact Global Modular Particulate Filters](/p/parker-p32-compact-global-modular-particulate-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Parker P32 Compact Global Modular Coalescing Filters are listed with ratings of 150 and 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P32 Compact Global Modular Coalescing Filters made and how is it shipped from Dubai?",
+          "a": "The Parker P32 Compact Global Modular Coalescing Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker P32 Compact Global Modular Coalescing Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker P32 Compact Global Modular Coalescing Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32-compact-global-modular-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P32 Compact Global Modular Filter/Regulators used for?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 12 part numbers in 3/8\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32 Compact Global Modular Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are P32EB92EGABNGP (150 psi), P32EB92ESABNGP (250 psi) and P32EB93EGMBNGP (3/8\" port). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P32 Compact Global Modular Filter/Regulators come in?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators are listed in 3/8\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P32 Compact Global Modular Filter/Regulators part number?",
+          "a": "For the Parker P32 Compact Global Modular Filter/Regulators, choose by pressure rating and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Parker P32 Compact Global Modular Filter/Regulators have?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Parker P32 Compact Global Modular Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Parker P32 Compact Global Modular Filter/Regulators?",
+          "a": "On the Parker P32 Compact Global Modular Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P32 Compact Global Modular Filter/Regulators include a lubricator?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Parker P32 Compact Global Modular Filter/Regulators?",
+          "a": "Connect the Parker P32 Compact Global Modular Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Parker P32 Compact Global Modular Lubricators](/p/parker-p32-compact-global-modular-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Parker P32 Compact Global Modular Filter/Regulators?",
+          "a": "Drain the Parker P32 Compact Global Modular Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32 Compact Global Modular Filter/Regulators and the Parker P33 Standard Global Modular Filter/Regulators?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators are listed with 3/8\" ports and ratings of 150 and 250 psi. The [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) are listed with 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P32 Compact Global Modular Filter/Regulators made and how is it shipped from Dubai?",
+          "a": "The Parker P32 Compact Global Modular Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P32 Compact Global Modular Filter/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P32 Compact Global Modular Filter/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32-compact-global-modular-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker P32 Compact Global Modular Lubricators do in a compressed-air line?",
+          "a": "The Parker P32 Compact Global Modular Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 6 part numbers. Listed materials: aluminum body."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32 Compact Global Modular Lubricators range and how do they differ?",
+          "a": "Examples from the listing are P32LB92LGNN (150 psi) and P32LB92LSNN (250 psi). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P32 Compact Global Modular Lubricators come in?",
+          "a": "The Parker P32 Compact Global Modular Lubricators are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P32 Compact Global Modular Lubricators part number?",
+          "a": "For the Parker P32 Compact Global Modular Lubricators, choose by pressure rating, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P32 Compact Global Modular Lubricators?",
+          "a": "The Parker P32 Compact Global Modular Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Parker P32 Compact Global Modular Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Parker P32 Compact Global Modular Lubricators give, and which oil does it use?",
+          "a": "The listing gives a mist-type lubricator. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Parker P32 Compact Global Modular Lubricators have?",
+          "a": "Bowl material of the Parker P32 Compact Global Modular Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Parker P32 Compact Global Modular Lubricators in an air line?",
+          "a": "Fit the Parker P32 Compact Global Modular Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Parker P32 Compact Global Modular Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Parker P32 Compact Global Modular Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32 Compact Global Modular Lubricators and the Parker P33 Standard Global Modular Lubricators?",
+          "a": "The Parker P32 Compact Global Modular Lubricators are listed with ratings of 150 and 250 psi. The [Parker P33 Standard Global Modular Lubricators](/p/parker-p33-standard-global-modular-lubricators) are listed with 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P32 Compact Global Modular Lubricators?",
+          "a": "The Parker P32 Compact Global Modular Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker P32 Compact Global Modular Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker P32 Compact Global Modular Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32-compact-global-modular-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker P32 Compact Global Modular Particulate Filters do in a compressed-air line?",
+          "a": "The Parker P32 Compact Global Modular Particulate Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 12 part numbers. Listed materials: poly with bowl guard."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32 Compact Global Modular Particulate Filters range and how do they differ?",
+          "a": "Examples from the listing are P32FB92EGAN (150 psi), P32FB92ESAN (250 psi) and P32FB92ESMN (250 psi, manual drain). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P32 Compact Global Modular Particulate Filters come in?",
+          "a": "The Parker P32 Compact Global Modular Particulate Filters are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P32 Compact Global Modular Particulate Filters part number for my air line?",
+          "a": "To choose a part number from the Parker P32 Compact Global Modular Particulate Filters, choose by pressure rating and drain type, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P32 Compact Global Modular Particulate Filters?",
+          "a": "The Parker P32 Compact Global Modular Particulate Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The listing gives a temperature of 125°F. The Parker P32 Compact Global Modular Particulate Filters listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Parker P32 Compact Global Modular Particulate Filters use?",
+          "a": "The element grade of the Parker P32 Compact Global Modular Particulate Filters is shown in each part-number row. Specification lines: poly with bowl guard. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P32 Compact Global Modular Particulate Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Parker P32 Compact Global Modular Particulate Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P32 Compact Global Modular Particulate Filters in an air line?",
+          "a": "Fit the Parker P32 Compact Global Modular Particulate Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker P32 Compact Global Modular Particulate Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Parker P32 Compact Global Modular Particulate Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32 Compact Global Modular Particulate Filters and the Parker P32 Compact Global Modular Coalescing Filters?",
+          "a": "The Parker P32 Compact Global Modular Particulate Filters are compressed-air particulate filters, while the [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Parker P32 Compact Global Modular Particulate Filters are listed with ratings of 150 and 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P32 Compact Global Modular Particulate Filters?",
+          "a": "The Parker P32 Compact Global Modular Particulate Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker P32 Compact Global Modular Particulate Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker P32 Compact Global Modular Particulate Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32e-series-global-modular-semi-precision-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P32E Series Global Modular Semi Precision Filter Regulators used for?",
+          "a": "The Parker P32E Series Global Modular Semi Precision Filter Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 16 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32E Series Global Modular Semi Precision Filter Regulators range and how do they differ?",
+          "a": "Examples from the listing are P32EB12EGAPNGP (1/4\" port), P32EB13EGAPNNP (3/8\" port) and P32EB14EGAPNGP (1/2\" port). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P32E Series Global Modular Semi Precision Filter Regulators come in?",
+          "a": "The Parker P32E Series Global Modular Semi Precision Filter Regulators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P32E Series Global Modular Semi Precision Filter Regulators part number?",
+          "a": "For the Parker P32E Series Global Modular Semi Precision Filter Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Parker P32E Series Global Modular Semi Precision Filter Regulators have?",
+          "a": "The Parker P32E Series Global Modular Semi Precision Filter Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Parker P32E Series Global Modular Semi Precision Filter Regulators?",
+          "a": "On the Parker P32E Series Global Modular Semi Precision Filter Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P32E Series Global Modular Semi Precision Filter Regulators include a lubricator?",
+          "a": "The Parker P32E Series Global Modular Semi Precision Filter Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Parker P32E Series Global Modular Semi Precision Filter Regulators?",
+          "a": "Connect the Parker P32E Series Global Modular Semi Precision Filter Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Parker P32 Compact Global Modular Particulate Filters](/p/parker-p32-compact-global-modular-particulate-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Parker P32E Series Global Modular Semi Precision Filter Regulators?",
+          "a": "Drain the Parker P32E Series Global Modular Semi Precision Filter Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P32E Series Global Modular Semi Precision Filter Regulators differ from the Parker P32 Compact Global Modular Filter/Regulators range?",
+          "a": "The Parker P32E Series Global Modular Semi Precision Filter Regulators are listed with 1/4\", 3/8\" and 1/2\" ports. The [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) are listed with 3/8\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P32E Series Global Modular Semi Precision Filter Regulators made and how is it shipped from Dubai?",
+          "a": "For the Parker P32E Series Global Modular Semi Precision Filter Regulators, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.10, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P32E Series Global Modular Semi Precision Filter Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P32E Series Global Modular Semi Precision Filter Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p32p-electronic-proportional-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P32P Electronic Proportional Regulators used for?",
+          "a": "The Parker P32P Electronic Proportional Regulators are electronically controlled pressure regulators that set an outlet pressure from an electrical signal instead of a hand knob. This listing has 17 part numbers in 1/2\" ports, with a 4 pin input connection and a choice of output signal types."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P32P Electronic Proportional Regulators range and how do they differ?",
+          "a": "Examples from the listing are P32PA94ED2VP1A (supply pressure 0 to 145 psig, PNP output), P32PA94EZ2VM1A (0 to 29 psig, fixed output) and P32PA14AZ2VM1A (BSPP port). Rows differ by supply pressure range, output signal type and port thread; quote the full part number so we confirm the options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which supply pressure ranges and ports do the Parker P32P Electronic Proportional Regulators come in?",
+          "a": "The rows list supply pressure ranges of 0 to 145 psig and 0 to 29 psig, in 1/2\" ports. Most rows have NPT ports, and P32PA14AZ2VM1A has a BSPP port, so check the thread against your pipework."
+        },
+        {
+          "slot": "D",
+          "q": "Which output signal types are offered on the Parker P32P Electronic Proportional Regulators?",
+          "a": "The rows name the output signal types Fixed, PNP, NPN and Digital, PNP. Choose the type your controller or PLC input expects, and confirm it against the full part number before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range can the Parker P32P Electronic Proportional Regulators control?",
+          "a": "The rows give supply pressure ranges of 0 to 145 psig and 0 to 29 psig, which is about 10 bar and about 2 bar. The listing does not state a temperature rating, so quote the part number and we confirm the limits from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of regulator are the Parker P32P Electronic Proportional Regulators?",
+          "a": "The listing describes them as electronic proportional regulators in the P32 electronic series, with a 4 pin input pin configuration. Electrical wiring, supply voltage and signal details are in the maker data sheet, so quote the part number and we provide it."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit with the Parker P32P Electronic Proportional Regulators in an air line?",
+          "a": "Fit a filter ahead of the regulator so dirt does not reach the valve, and keep the air supply within the supply pressure range of the part number. Our [FRL shelf](/c/air-preparation-frl) lists the Parker filters and other air preparation units."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and look after the Parker P32P Electronic Proportional Regulators?",
+          "a": "Depressurise the line, connect the 1/2\" port to the air supply and the electrical input to the controller, then check the output signal against the pressure on a gauge. Keep the supply clean and dry, because dirt on the valve seat is the usual cause of drift."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P32P Electronic Proportional Regulators and a manual regulator such as the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "The [Parker Pneumatic Regulator, Nonrising Knob](/p/parker-pneumatic-regulator-nonrising-knob) is set by hand with a knob, while the P32P is set by an electrical signal. Use the electronic type where a PLC must change the pressure during the cycle."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P32P Electronic Proportional Regulators made and how is it shipped from Dubai?",
+          "a": "The Parker P32P Electronic Proportional Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P32P Electronic Proportional Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes. We keep the Parker P32P Electronic Proportional Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Parker P32P Electronic Proportional Regulators include a pressure gauge?",
+          "a": "The rows do not say a gauge is included, so treat the regulator as supplied without a gauge. Fit a gauge in the circuit if you need to see the output pressure, and ask us for the gauge options."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p33-standard-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P33 Standard Filter Replacement Elements used for?",
+          "a": "The Parker P33 Standard Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 3 part numbers, with 1 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P33 Standard Filter Replacement Elements listing?",
+          "a": "Examples from the listing are P33KA00ESE (Filter Element) and P33KA00ES9 (Filter Replacement Element, Standard, 1 Micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker P33 Standard Filter Replacement Elements?",
+          "a": "The rows show 1 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker P33 Standard Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker P33 Standard Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker P33 Standard Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker P33 Standard Filter Replacement Elements use?",
+          "a": "Media for the Parker P33 Standard Filter Replacement Elements is described per part number in the size table. The rows also name the grades 1 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker P33 Standard Filter Replacement Elements part number?",
+          "a": "Check the grade of the Parker P33 Standard Filter Replacement Elements in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker P33 Standard Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker P33 Standard Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker P33 Standard Filter Replacement Elements?",
+          "a": "Replace the Parker P33 Standard Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P33 Standard Filter Replacement Elements and the Parker Prep-Air II Standard Filter Replacement Elements?",
+          "a": "The Parker P33 Standard Filter Replacement Elements and the [Parker Prep-Air II Standard Filter Replacement Elements](/p/parker-prep-air-ii-standard-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P33 Standard Filter Replacement Elements?",
+          "a": "The Parker P33 Standard Filter Replacement Elements listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P33 Standard Filter Replacement Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P33 Standard Filter Replacement Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p33-standard-global-modular-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P33 Standard Global Modular Coalescing Filters used for?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 8 part numbers. Listed materials: poly with bowl guard."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P33 Standard Global Modular Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are P33FA94DGMN (150 psi, manual drain), P33FA94DSMN (250 psi, manual drain) and P33FA96DSAN (250 psi). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P33 Standard Global Modular Coalescing Filters come in?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P33 Standard Global Modular Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Parker P33 Standard Global Modular Coalescing Filters, choose by pressure rating and drain type, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P33 Standard Global Modular Coalescing Filters?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The Parker P33 Standard Global Modular Coalescing Filters listing gives a plastic bowl, so keep it away from solvents and check the maker's rating for the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Parker P33 Standard Global Modular Coalescing Filters use?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters listing describes the element as a coalescing grade for oil removal. Specification lines: poly with bowl guard. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P33 Standard Global Modular Coalescing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Parker P33 Standard Global Modular Coalescing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P33 Standard Global Modular Coalescing Filters in an air line?",
+          "a": "Fit the Parker P33 Standard Global Modular Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker P33 Standard Global Modular Coalescing Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Parker P33 Standard Global Modular Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P33 Standard Global Modular Coalescing Filters and the Parker P33 Standard Global Modular Particulate Filters?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters are coalescing (oil-removal) filters, while the [Parker P33 Standard Global Modular Particulate Filters](/p/parker-p33-standard-global-modular-particulate-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Parker P33 Standard Global Modular Coalescing Filters are listed with ratings of 150 and 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P33 Standard Global Modular Coalescing Filters made and how is it shipped from Dubai?",
+          "a": "The Parker P33 Standard Global Modular Coalescing Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker P33 Standard Global Modular Coalescing Filters available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker P33 Standard Global Modular Coalescing Filters is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p33-standard-global-modular-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P33 Standard Global Modular Filter/Regulators used for?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 8 part numbers in 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P33 Standard Global Modular Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are P33EA94EGABNGP (1/2\" port, 150 psi), P33EA96ESMBNGP (3/4\" port, 250 psi, manual drain) and P33EA96ESABNGP (3/4\" port, 250 psi). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P33 Standard Global Modular Filter/Regulators come in?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators are listed in 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P33 Standard Global Modular Filter/Regulators part number?",
+          "a": "For the Parker P33 Standard Global Modular Filter/Regulators, choose by port size, pressure rating and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Parker P33 Standard Global Modular Filter/Regulators have?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Parker P33 Standard Global Modular Filter/Regulators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Parker P33 Standard Global Modular Filter/Regulators?",
+          "a": "On the Parker P33 Standard Global Modular Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P33 Standard Global Modular Filter/Regulators include a lubricator?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Parker P33 Standard Global Modular Filter/Regulators?",
+          "a": "Connect the Parker P33 Standard Global Modular Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Parker P33 Standard Global Modular Lubricators](/p/parker-p33-standard-global-modular-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Parker P33 Standard Global Modular Filter/Regulators?",
+          "a": "Drain the Parker P33 Standard Global Modular Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P33 Standard Global Modular Filter/Regulators and the Parker P32 Compact Global Modular Filter/Regulators?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators are listed with 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. The [Parker P32 Compact Global Modular Filter/Regulators](/p/parker-p32-compact-global-modular-filter-regulators) are listed with 3/8\" ports and ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P33 Standard Global Modular Filter/Regulators made and how is it shipped from Dubai?",
+          "a": "The Parker P33 Standard Global Modular Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P33 Standard Global Modular Filter/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P33 Standard Global Modular Filter/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p33-standard-global-modular-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker P33 Standard Global Modular Lubricators do in a compressed-air line?",
+          "a": "The Parker P33 Standard Global Modular Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 4 part numbers in 1/2\" and 3/4\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P33 Standard Global Modular Lubricators range and how do they differ?",
+          "a": "Examples from the listing are P33LA94LGNN (1/2\" port, 150 psi), P33LA96LGNN (3/4\" port, 150 psi) and P33LA96LSNN (3/4\" port, 250 psi). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P33 Standard Global Modular Lubricators come in?",
+          "a": "The Parker P33 Standard Global Modular Lubricators are listed in 1/2\" and 3/4\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P33 Standard Global Modular Lubricators part number?",
+          "a": "For the Parker P33 Standard Global Modular Lubricators, choose by port size and pressure rating, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P33 Standard Global Modular Lubricators?",
+          "a": "The Parker P33 Standard Global Modular Lubricators rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). Check whether the Parker P33 Standard Global Modular Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Parker P33 Standard Global Modular Lubricators give, and which oil does it use?",
+          "a": "Check the Parker P33 Standard Global Modular Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Parker P33 Standard Global Modular Lubricators have?",
+          "a": "Bowl material of the Parker P33 Standard Global Modular Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Parker P33 Standard Global Modular Lubricators in an air line?",
+          "a": "Fit the Parker P33 Standard Global Modular Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Parker P33 Standard Global Modular Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Parker P33 Standard Global Modular Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P33 Standard Global Modular Lubricators and the Parker P32 Compact Global Modular Lubricators?",
+          "a": "The Parker P33 Standard Global Modular Lubricators are listed with 1/2\" and 3/4\" ports and ratings of 150 and 250 psi. The [Parker P32 Compact Global Modular Lubricators](/p/parker-p32-compact-global-modular-lubricators) are listed with ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P33 Standard Global Modular Lubricators?",
+          "a": "The Parker P33 Standard Global Modular Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P33 Standard Global Modular Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P33 Standard Global Modular Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p33-standard-global-modular-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P33 Standard Global Modular Particulate Filters used for?",
+          "a": "The Parker P33 Standard Global Modular Particulate Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 8 part numbers. Listed materials: bowl: metal with sight gauge."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P33 Standard Global Modular Particulate Filters range and how do they differ?",
+          "a": "Examples from the listing are P33FA94ESMN (250 psi, manual drain), P33FA94EGMN (150 psi, manual drain) and P33FA94EGAN (150 psi). In these part numbers the letter G marks the 150 psig version and S the 250 psig version, and A marks an auto-float drain and M a manual drain. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P33 Standard Global Modular Particulate Filters come in?",
+          "a": "The Parker P33 Standard Global Modular Particulate Filters are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P33 Standard Global Modular Particulate Filters part number for my air line?",
+          "a": "To choose a part number from the Parker P33 Standard Global Modular Particulate Filters, choose by pressure rating and drain type, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P33 Standard Global Modular Particulate Filters?",
+          "a": "The Parker P33 Standard Global Modular Particulate Filters rows are rated 150 psi (about 10 bar) and 250 psi (about 17 bar). The Parker P33 Standard Global Modular Particulate Filters listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grade, bowl and body materials does the Parker P33 Standard Global Modular Particulate Filters use?",
+          "a": "The element grade of the Parker P33 Standard Global Modular Particulate Filters is shown in each part-number row. Specification lines: bowl: metal with sight gauge. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P33 Standard Global Modular Particulate Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Parker P33 Standard Global Modular Particulate Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P33 Standard Global Modular Particulate Filters in an air line?",
+          "a": "Fit the Parker P33 Standard Global Modular Particulate Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker P33 Standard Global Modular Filter/Regulators](/p/parker-p33-standard-global-modular-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker P33 Standard Global Modular Particulate Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Parker P33 Standard Global Modular Particulate Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P33 Standard Global Modular Particulate Filters and the Parker P33 Standard Global Modular Coalescing Filters?",
+          "a": "The Parker P33 Standard Global Modular Particulate Filters are compressed-air particulate filters, while the [Parker P33 Standard Global Modular Coalescing Filters](/p/parker-p33-standard-global-modular-coalescing-filters) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Parker P33 Standard Global Modular Particulate Filters are listed with ratings of 150 and 250 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P33 Standard Global Modular Particulate Filters made and how is it shipped from Dubai?",
+          "a": "The Parker P33 Standard Global Modular Particulate Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P33 Standard Global Modular Particulate Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P33 Standard Global Modular Particulate Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p3ne-hi-flow-general-industrial-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker P3NE Hi-Flow General Industrial Filter/Regulators do in a compressed-air line?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 6 part numbers in 3/4\", 1\" and 1 1/2\" NPT ports. Listed materials: bowl: metal with sight gauge."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P3NE Hi-Flow General Industrial Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are P3NEA98GSABNN (1\" port, 250 psi), P3NEA96GSMBNN (3/4\" port) and P3NEA9PGSMBNN (1 1/2\" port, 250 psi, manual drain). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P3NE Hi-Flow General Industrial Filter/Regulators come in?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators are listed in 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P3NE Hi-Flow General Industrial Filter/Regulators part number?",
+          "a": "For the Parker P3NE Hi-Flow General Industrial Filter/Regulators, choose by port size and drain type, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Parker P3NE Hi-Flow General Industrial Filter/Regulators have?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators rows are rated 250 psi (about 17 bar). The Parker P3NE Hi-Flow General Industrial Filter/Regulators listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What are the filter grade and bowl materials of the Parker P3NE Hi-Flow General Industrial Filter/Regulators?",
+          "a": "Specification lines: bowl: metal with sight gauge. On the Parker P3NE Hi-Flow General Industrial Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P3NE Hi-Flow General Industrial Filter/Regulators include a lubricator?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Parker P3NE Hi-Flow General Industrial Filter/Regulators?",
+          "a": "Connect the Parker P3NE Hi-Flow General Industrial Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Parker P3NR Hi-Flow General Industrial Regulators](/p/parker-p3nr-hi-flow-general-industrial-regulators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Parker P3NE Hi-Flow General Industrial Filter/Regulators?",
+          "a": "Drain the Parker P3NE Hi-Flow General Industrial Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P3NE Hi-Flow General Industrial Filter/Regulators compare with its neighbouring range?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators are listed with 3/4\", 1\" and 1 1/2\" ports and ratings of 250 psi. The [Parker P32E Series Global Modular Semi Precision Filter Regulators](/p/parker-p32e-series-global-modular-semi-precision-filter-regulators) are listed with 1/4\", 3/8\" and 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P3NE Hi-Flow General Industrial Filter/Regulators?",
+          "a": "The Parker P3NE Hi-Flow General Industrial Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P3NE Hi-Flow General Industrial Filter/Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P3NE Hi-Flow General Industrial Filter/Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p3nf-h-flow-general-industrial-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P3NF Hi-Flow General Industrial Coalescing Filters used for?",
+          "a": "The Parker P3NF Hi-Flow General Industrial Coalescing Filters are Hi-Flow compressed-air filters with a metal bowl and sight gauge, sold as particulate and coalescing versions. This listing has 12 part numbers, with 250 psig ratings and manual or auto-float drains."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P3NF Hi-Flow General Industrial Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are P3NFA9PGSM (Hi-Flow Particulate Filter, Manual, 0-250 Psig), P3NFA9PGSA (Hi-Flow Particulate Filter, Auto Float, 15-250 Psig) and P3NFA96DSA (Hi-Flow Coalescing Filter, Auto Float, 15-250 Psig). In these part numbers G marks a particulate element and D a coalescing element, S marks the 250 psig rating, and A or M at the end marks an auto-float or manual drain. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P3NF Hi-Flow General Industrial Coalescing Filters come in?",
+          "a": "The Parker P3NF Hi-Flow General Industrial Coalescing Filters are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P3NF Hi-Flow General Industrial Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Parker P3NF Hi-Flow General Industrial Coalescing Filters, choose by drain type, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P3NF Hi-Flow General Industrial Coalescing Filters?",
+          "a": "The Parker P3NF Hi-Flow General Industrial Coalescing Filters rows are rated 250 psi (about 17 bar). The Parker P3NF Hi-Flow General Industrial Coalescing Filters listing gives a metal bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What filter grades do the Parker P3NF Hi-Flow General Industrial Coalescing Filters cover?",
+          "a": "The rows describe particulate versions (for example P3NFA9PGSM, Hi-Flow Particulate Filter) and coalescing versions (for example P3NFA9PDSM, Hi-Flow Coalescing Filter). Use a particulate pre-filter ahead of a coalescing one."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Parker P3NF Hi-Flow General Industrial Coalescing Filters give an ISO 8573-1 air quality class?",
+          "a": "The coalescing versions are the oil-removal stage and the particulate versions only stop solids and liquid water, so the class depends on which versions you fit and the inlet air. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P3NF Hi-Flow General Industrial Coalescing Filters in an air line?",
+          "a": "Fit the Parker P3NF Hi-Flow General Industrial Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker P3NE Hi-Flow General Industrial Filter/Regulators](/p/parker-p3ne-hi-flow-general-industrial-filter-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker P3NF Hi-Flow General Industrial Coalescing Filters?",
+          "a": "Both manual-drain and automatic-drain versions are listed: drain a manual bowl before the liquid reaches the element, and check an automatic drain still dumps. Change the element of the Parker P3NF Hi-Flow General Industrial Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P3NF Hi-Flow General Industrial Coalescing Filters and the Parker P32 Compact Global Modular Coalescing Filters?",
+          "a": "The Parker P3NF Hi-Flow General Industrial Coalescing Filters are listed with ratings of 250 psi. The [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) are listed with ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P3NF Hi-Flow General Industrial Coalescing Filters made and how is it shipped from Dubai?",
+          "a": "The Parker P3NF Hi-Flow General Industrial Coalescing Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P3NF Hi-Flow General Industrial Coalescing Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P3NF Hi-Flow General Industrial Coalescing Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p3nl-h-flow-general-industrial-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker P3NL H-Flow General Industrial Lubricators do in a compressed-air line?",
+          "a": "The Parker P3NL H-Flow General Industrial Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 3 part numbers in 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P3NL H-Flow General Industrial Lubricators range and how do they differ?",
+          "a": "Examples from the listing are P3NLA96LSN (3/4\" port, 250 psi, 240 cfm), P3NLA98LSN (1\" port, 250 psi, 250 cfm) and P3NLA9PLSN (1 1/2\" port, 250 psi, 260 cfm). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P3NL H-Flow General Industrial Lubricators come in?",
+          "a": "The Parker P3NL H-Flow General Industrial Lubricators are listed in 3/4\", 1\" and 1 1/2\" NPT ports. Listed flow runs from 240 to 260 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P3NL H-Flow General Industrial Lubricators part number?",
+          "a": "For the Parker P3NL H-Flow General Industrial Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker P3NL H-Flow General Industrial Lubricators?",
+          "a": "The Parker P3NL H-Flow General Industrial Lubricators rows are rated 250 psi (about 17 bar). Check whether the Parker P3NL H-Flow General Industrial Lubricators part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Parker P3NL H-Flow General Industrial Lubricators give, and which oil does it use?",
+          "a": "Check the Parker P3NL H-Flow General Industrial Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Parker P3NL H-Flow General Industrial Lubricators have?",
+          "a": "Bowl material of the Parker P3NL H-Flow General Industrial Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Parker P3NL H-Flow General Industrial Lubricators in an air line?",
+          "a": "Fit the Parker P3NL H-Flow General Industrial Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Parker P3NE Hi-Flow General Industrial Filter/Regulators](/p/parker-p3ne-hi-flow-general-industrial-filter-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Parker P3NL H-Flow General Industrial Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Parker P3NL H-Flow General Industrial Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P3NL H-Flow General Industrial Lubricators and the Parker P32 Compact Global Modular Lubricators?",
+          "a": "The Parker P3NL H-Flow General Industrial Lubricators are listed with 3/4\", 1\" and 1 1/2\" ports, flow up to 260 scfm and ratings of 250 psi. The [Parker P32 Compact Global Modular Lubricators](/p/parker-p32-compact-global-modular-lubricators) are listed with ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker P3NL H-Flow General Industrial Lubricators?",
+          "a": "The Parker P3NL H-Flow General Industrial Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P3NL H-Flow General Industrial Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker P3NL H-Flow General Industrial Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p3nr-hi-flow-general-industrial-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker P3NR Hi-Flow General Industrial Regulators used for?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 3 part numbers in 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker P3NR Hi-Flow General Industrial Regulators range and how do they differ?",
+          "a": "Examples from the listing are P3NRA96BNN (3/4\" port, 250 psi, 200 cfm), P3NRA98BNN (1\" port, 250 psi, 300 cfm) and P3NRA9PBNN (1 1/2\" port, 250 psi, 300 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker P3NR Hi-Flow General Industrial Regulators come in?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators are listed in 3/4\", 1\" and 1 1/2\" NPT ports. Listed flow runs from 200 to 300 scfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker P3NR Hi-Flow General Industrial Regulators part number?",
+          "a": "For the Parker P3NR Hi-Flow General Industrial Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Parker P3NR Hi-Flow General Industrial Regulators?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators rows are rated 250 psi (about 17 bar). The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker P3NR Hi-Flow General Industrial Regulators relieving, and what is it made from?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P3NR Hi-Flow General Industrial Regulators come with a pressure gauge?",
+          "a": "The listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker P3NR Hi-Flow General Industrial Regulators?",
+          "a": "Fit the Parker P3NR Hi-Flow General Industrial Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Parker P3NE Hi-Flow General Industrial Filter/Regulators](/p/parker-p3ne-hi-flow-general-industrial-filter-regulators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Parker P3NR Hi-Flow General Industrial Regulators?",
+          "a": "To set the Parker P3NR Hi-Flow General Industrial Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P3NR Hi-Flow General Industrial Regulators and the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators are listed with 3/4\", 1\" and 1 1/2\" ports, flow up to 300 scfm and ratings of 250 psi. The [Parker Pneumatic Regulator, Nonrising Knob](/p/parker-pneumatic-regulator-nonrising-knob) is listed with 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" ports and flow up to 500 cfm. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker P3NR Hi-Flow General Industrial Regulators made and how is it shipped from Dubai?",
+          "a": "The Parker P3NR Hi-Flow General Industrial Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker P3NR Hi-Flow General Industrial Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker P3NR Hi-Flow General Industrial Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-pl10-series-lubricators-stainless-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker PL10 Series Lubricators, Stainless Steel used for?",
+          "a": "The Parker PL10 Series Lubricators, Stainless Steel are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 4 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker PL10 Series Lubricators, Stainless Steel range and how do they differ?",
+          "a": "Examples from the listing are PL10G04WSS (1/2\" port) and PL10-04DSS (250 psi). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker PL10 Series Lubricators, Stainless Steel come in?",
+          "a": "The Parker PL10 Series Lubricators, Stainless Steel are listed in 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker PL10 Series Lubricators, Stainless Steel part number?",
+          "a": "For the Parker PL10 Series Lubricators, Stainless Steel, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker PL10 Series Lubricators, Stainless Steel?",
+          "a": "The Parker PL10 Series Lubricators, Stainless Steel rows are rated 250 psi (about 17 bar). Check whether the Parker PL10 Series Lubricators, Stainless Steel part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Parker PL10 Series Lubricators, Stainless Steel give, and which oil does it use?",
+          "a": "Check the Parker PL10 Series Lubricators, Stainless Steel part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Parker PL10 Series Lubricators, Stainless Steel have?",
+          "a": "Bowl material of the Parker PL10 Series Lubricators, Stainless Steel is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Parker PL10 Series Lubricators, Stainless Steel in an air line?",
+          "a": "Fit the Parker PL10 Series Lubricators, Stainless Steel last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Parker PR11 Series Regulators, Stainless Steel](/p/parker-pr11-series-regulators-stainless-steel) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Parker PL10 Series Lubricators, Stainless Steel?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Parker PL10 Series Lubricators, Stainless Steel, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker PL10 Series Lubricators, Stainless Steel and the Parker P32 Compact Global Modular Lubricators?",
+          "a": "The Parker PL10 Series Lubricators, Stainless Steel are listed with 1/2\" ports and ratings of 250 psi. The [Parker P32 Compact Global Modular Lubricators](/p/parker-p32-compact-global-modular-lubricators) are listed with ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker PL10 Series Lubricators, Stainless Steel made and how is it shipped from Dubai?",
+          "a": "For the Parker PL10 Series Lubricators, Stainless Steel, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker PL10 Series Lubricators, Stainless Steel ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker PL10 Series Lubricators, Stainless Steel in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-pneumatic-regulator-nonrising-knob",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker Pneumatic Regulator, Nonrising Knob do in a compressed-air line?",
+          "a": "The Parker Pneumatic Regulator, Nonrising Knob is an air pressure regulator that reduces the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 9 part numbers in 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Listed materials: zinc body and nitrile seals."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Pneumatic Regulator, Nonrising Knob range and how do they differ?",
+          "a": "Examples from the listing are 06R118AC (1/4\" port), 07R418AC (3/4\" port, 90 cfm) and R119-12CG/M2 (1 1/2\" port, 500 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker Pneumatic Regulator, Nonrising Knob come in?",
+          "a": "The Parker Pneumatic Regulator, Nonrising Knob is listed in 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Listed flow runs from 60 to 500 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Pneumatic Regulator, Nonrising Knob part number?",
+          "a": "For the Parker Pneumatic Regulator, Nonrising Knob, choose by port size and gauge option, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "The maker pressure line on the listing reads 125 to 300 psi (9 to 21 bar), by size. The listing gives a temperature of 175°F. The rating can differ by part number, so quote the part number and we confirm it from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker Pneumatic Regulator, Nonrising Knob relieving, and what is it made from?",
+          "a": "The listing gives a relieving regulator with a balanced valve design. Specification lines: zinc body and nitrile seals. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Pneumatic Regulator, Nonrising Knob come with a pressure gauge?",
+          "a": "The listing says it includes: (2) Gauge Plugs And Face Gauge, Regulator. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "Fit the Parker Pneumatic Regulator, Nonrising Knob after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Parker PL10 Series Lubricators, Stainless Steel](/p/parker-pl10-series-lubricators-stainless-steel) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "To set the Parker Pneumatic Regulator, Nonrising Knob, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Pneumatic Regulator, Nonrising Knob and the Parker PR11 Series Regulators, Stainless Steel?",
+          "a": "The Parker Pneumatic Regulator, Nonrising Knob is listed with 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" ports and flow up to 500 cfm. The [Parker PR11 Series Regulators, Stainless Steel](/p/parker-pr11-series-regulators-stainless-steel) are a separate range. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "The Parker Pneumatic Regulator, Nonrising Knob listing gives United States as the country of origin and HS code 8481100060. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Parker Pneumatic Regulator, Nonrising Knob in Dubai?",
+          "a": "Yes. We keep the Parker Pneumatic Regulator, Nonrising Knob in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-pr11-series-regulators-stainless-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Parker PR11 Series Regulators, Stainless Steel do in a compressed-air line?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 25 part numbers. The title names a stainless steel construction, and the size table lists the part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker PR11 Series Regulators, Stainless Steel range and how do they differ?",
+          "a": "Examples from the listing are PR11-04BKSS, PR11-04BLSS and PR11-04BPSS. Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker PR11 Series Regulators, Stainless Steel come in?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker PR11 Series Regulators, Stainless Steel part number?",
+          "a": "For the Parker PR11 Series Regulators, Stainless Steel, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Parker PR11 Series Regulators, Stainless Steel?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker PR11 Series Regulators, Stainless Steel relieving, and what is it made from?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker PR11 Series Regulators, Stainless Steel come with a pressure gauge?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker PR11 Series Regulators, Stainless Steel?",
+          "a": "Fit the Parker PR11 Series Regulators, Stainless Steel after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Parker PL10 Series Lubricators, Stainless Steel](/p/parker-pl10-series-lubricators-stainless-steel) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Parker PR11 Series Regulators, Stainless Steel?",
+          "a": "To set the Parker PR11 Series Regulators, Stainless Steel, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker PR11 Series Regulators, Stainless Steel and the Parker Pneumatic Regulator, Nonrising Knob?",
+          "a": "The Parker PR11 Series Regulators, Stainless Steel are listed by part number. The [Parker Pneumatic Regulator, Nonrising Knob](/p/parker-pneumatic-regulator-nonrising-knob) is listed with 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" ports and flow up to 500 cfm. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker PR11 Series Regulators, Stainless Steel?",
+          "a": "For the Parker PR11 Series Regulators, Stainless Steel, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.10, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker PR11 Series Regulators, Stainless Steel available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker PR11 Series Regulators, Stainless Steel is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-prep-air-ii-compact-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Prep-Air II Compact Filter Replacement Elements used for?",
+          "a": "The Parker Prep-Air II Compact Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 4 part numbers, with 0.01 micron, 1 micron, 5 micron and 40 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Prep-Air II Compact Filter Replacement Elements listing?",
+          "a": "Examples from the listing are PS701P (40 micron), PS730P (1 micron) and PS724P (0.01 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The rows show 0.01 micron, 1 micron, 5 micron and 40 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker Prep-Air II Compact Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker Prep-Air II Compact Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker Prep-Air II Compact Filter Replacement Elements use?",
+          "a": "The listing describes the media as plastic. The rows also name the grades 0.01 micron, 1 micron, 5 micron and 40 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker Prep-Air II Compact Filter Replacement Elements part number?",
+          "a": "Where the Parker Prep-Air II Compact Filter Replacement Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Prep-Air II Compact Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker Prep-Air II Compact Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "Replace the Parker Prep-Air II Compact Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Prep-Air II Compact Filter Replacement Elements and the Parker Prep-Air II Mini Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Compact Filter Replacement Elements and the [Parker Prep-Air II Mini Filter Replacement Elements](/p/parker-prep-air-ii-mini-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Prep-Air II Compact Filter Replacement Elements made and how is it shipped from Dubai?",
+          "a": "The Parker Prep-Air II Compact Filter Replacement Elements listing gives United States as the country of origin and HS code 8421398015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Parker Prep-Air II Compact Filter Replacement Elements in Dubai?",
+          "a": "Yes. We keep the Parker Prep-Air II Compact Filter Replacement Elements in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-prep-air-ii-hi-flow-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Prep-Air II Hi-Flow Filter Replacement Elements used for?",
+          "a": "The Parker Prep-Air II Hi-Flow Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 3 part numbers, with 1 micron and 40 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Prep-Air II Hi-Flow Filter Replacement Elements listing?",
+          "a": "Examples from the listing are P3NKA00ESA (Hi Flow Filter Replacement Element, Absorber), P3NKA00ESG (Hi Flow Filter Replacement Element, 40 Micron) and P3NKA00ES9B (Hi Flow Filter Replacement Element, 1 Micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker Prep-Air II Hi-Flow Filter Replacement Elements?",
+          "a": "The rows show 1 micron and 40 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker Prep-Air II Hi-Flow Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P3NF Hi-Flow General Industrial Coalescing Filters](/p/parker-p3nf-h-flow-general-industrial-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker Prep-Air II Hi-Flow Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker Prep-Air II Hi-Flow Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker Prep-Air II Hi-Flow Filter Replacement Elements use?",
+          "a": "Media for the Parker Prep-Air II Hi-Flow Filter Replacement Elements is described per part number in the size table. The rows also name the grades 1 micron and 40 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker Prep-Air II Hi-Flow Filter Replacement Elements part number?",
+          "a": "Where the Parker Prep-Air II Hi-Flow Filter Replacement Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Prep-Air II Hi-Flow Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker Prep-Air II Hi-Flow Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P3NF Hi-Flow General Industrial Coalescing Filters](/p/parker-p3nf-h-flow-general-industrial-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker Prep-Air II Hi-Flow Filter Replacement Elements?",
+          "a": "Replace the Parker Prep-Air II Hi-Flow Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Prep-Air II Hi-Flow Filter Replacement Elements and the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Hi-Flow Filter Replacement Elements and the [Parker Prep-Air II Compact Filter Replacement Elements](/p/parker-prep-air-ii-compact-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker Prep-Air II Hi-Flow Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Hi-Flow Filter Replacement Elements listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker Prep-Air II Hi-Flow Filter Replacement Elements available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker Prep-Air II Hi-Flow Filter Replacement Elements is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-prep-air-ii-mini-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Prep-Air II Mini Filter Replacement Elements used for?",
+          "a": "The Parker Prep-Air II Mini Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 5 part numbers, with 0.01 micron, 1 micron, 5 micron and 40 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Prep-Air II Mini Filter Replacement Elements listing?",
+          "a": "Examples from the listing are PS401P (40 micron), PS446P (0.01 micron) and PS456P (1 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker Prep-Air II Mini Filter Replacement Elements?",
+          "a": "The rows show 0.01 micron, 1 micron, 5 micron and 40 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker Prep-Air II Mini Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker Prep-Air II Mini Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker Prep-Air II Mini Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker Prep-Air II Mini Filter Replacement Elements use?",
+          "a": "Media for the Parker Prep-Air II Mini Filter Replacement Elements is described per part number in the size table. The rows also name the grades 0.01 micron, 1 micron, 5 micron and 40 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker Prep-Air II Mini Filter Replacement Elements part number?",
+          "a": "Where the Parker Prep-Air II Mini Filter Replacement Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Prep-Air II Mini Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker Prep-Air II Mini Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker Prep-Air II Mini Filter Replacement Elements?",
+          "a": "Replace the Parker Prep-Air II Mini Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Prep-Air II Mini Filter Replacement Elements and the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Mini Filter Replacement Elements and the [Parker Prep-Air II Compact Filter Replacement Elements](/p/parker-prep-air-ii-compact-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Prep-Air II Mini Filter Replacement Elements made and how is it shipped from Dubai?",
+          "a": "The Parker Prep-Air II Mini Filter Replacement Elements listing gives Mexico as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker Prep-Air II Mini Filter Replacement Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker Prep-Air II Mini Filter Replacement Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "parker-prep-air-ii-standard-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Prep-Air II Standard Filter Replacement Elements used for?",
+          "a": "The Parker Prep-Air II Standard Filter Replacement Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 4 part numbers, with 0.01 micron, 1 micron, 5 micron and 40 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Prep-Air II Standard Filter Replacement Elements listing?",
+          "a": "Examples from the listing are PS801P (40 micron), PS824P (0.01 micron) and PS830P (1 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker Prep-Air II Standard Filter Replacement Elements?",
+          "a": "The rows show 0.01 micron, 1 micron, 5 micron and 40 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker Prep-Air II Standard Filter Replacement Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker P33 Standard Global Modular Coalescing Filters](/p/parker-p33-standard-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker Prep-Air II Standard Filter Replacement Elements?",
+          "a": "The working pressure and temperature of the Parker Prep-Air II Standard Filter Replacement Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker Prep-Air II Standard Filter Replacement Elements use?",
+          "a": "The listing describes the media as plastic. The rows also name the grades 0.01 micron, 1 micron, 5 micron and 40 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker Prep-Air II Standard Filter Replacement Elements part number?",
+          "a": "Where the Parker Prep-Air II Standard Filter Replacement Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Prep-Air II Standard Filter Replacement Elements fit and what goes with it?",
+          "a": "The Parker Prep-Air II Standard Filter Replacement Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker P33 Standard Global Modular Coalescing Filters](/p/parker-p33-standard-global-modular-coalescing-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker Prep-Air II Standard Filter Replacement Elements?",
+          "a": "Replace the Parker Prep-Air II Standard Filter Replacement Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Prep-Air II Standard Filter Replacement Elements and the Parker Prep-Air II Compact Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Standard Filter Replacement Elements and the [Parker Prep-Air II Compact Filter Replacement Elements](/p/parker-prep-air-ii-compact-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker Prep-Air II Standard Filter Replacement Elements?",
+          "a": "The Parker Prep-Air II Standard Filter Replacement Elements listing gives United States as the country of origin and HS code 8421398015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker Prep-Air II Standard Filter Replacement Elements available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker Prep-Air II Standard Filter Replacement Elements is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-replacement-compressed-air-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Replacement Compressed Air Filter Elements used for?",
+          "a": "The Parker Replacement Compressed Air Filter Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 4 part numbers, with 0.01 micron and 1 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Replacement Compressed Air Filter Elements listing?",
+          "a": "Examples from the listing are 3050ZP (0.01 micron) and 055AO (1 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Parker Replacement Compressed Air Filter Elements?",
+          "a": "The rows show 0.01 micron and 1 micron grades. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Parker Replacement Compressed Air Filter Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Parker Sterile Compressed Air Filters](/p/parker-sterile-compressed-air-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Parker Replacement Compressed Air Filter Elements?",
+          "a": "The working pressure and temperature of the Parker Replacement Compressed Air Filter Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Parker Replacement Compressed Air Filter Elements use?",
+          "a": "Media for the Parker Replacement Compressed Air Filter Elements is described per part number in the size table. The rows also name the grades 0.01 micron and 1 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Parker Replacement Compressed Air Filter Elements part number?",
+          "a": "Where the Parker Replacement Compressed Air Filter Elements listing shows more than one grade for the same housing, you can change grade by changing the element, and the pressure drop changes with it. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Replacement Compressed Air Filter Elements fit and what goes with it?",
+          "a": "The Parker Replacement Compressed Air Filter Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Parker Sterile Compressed Air Filters](/p/parker-sterile-compressed-air-filters) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Parker Replacement Compressed Air Filter Elements?",
+          "a": "Replace the Parker Replacement Compressed Air Filter Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Replacement Compressed Air Filter Elements and the Parker P32 Compact Filter Replacement Elements?",
+          "a": "The Parker Replacement Compressed Air Filter Elements and the [Parker P32 Compact Filter Replacement Elements](/p/parker-p32-compact-filter-replacement-elements) are element listings for different housings or makers. Match the element to the housing series, not to the grade alone."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Parker Replacement Compressed Air Filter Elements?",
+          "a": "For the Parker Replacement Compressed Air Filter Elements, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8421.99, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Parker Replacement Compressed Air Filter Elements available from stock at Indus Hydraulics?",
+          "a": "Yes. The Parker Replacement Compressed Air Filter Elements is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sterile-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Sterile Compressed Air Filters used for?",
+          "a": "The Parker Sterile Compressed Air Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 23 part numbers in 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Listed materials: Buna N seals. The 3B part numbers are listed as 3-stage sterile air filter assemblies."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Parker Sterile Compressed Air Filters range and how do they differ?",
+          "a": "Examples from the listing are 3B-8208N-3A1 (1\" port, 0.01 micron), 8002N-1A1-DX (1/4\" port, 250 psi, 0.01 micron) and 8312N-1A1-BX (1 1/2\" port, 250 psi, 0.01 micron). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Parker Sterile Compressed Air Filters come in?",
+          "a": "The Parker Sterile Compressed Air Filters are listed in 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Sterile Compressed Air Filters part number for my air line?",
+          "a": "To choose a part number from the Parker Sterile Compressed Air Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Parker Sterile Compressed Air Filters?",
+          "a": "The Parker Sterile Compressed Air Filters rows are rated 250 psi (about 17 bar). The listing gives a temperature of 130°F. Check whether the Parker Sterile Compressed Air Filters part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Parker Sterile Compressed Air Filters use?",
+          "a": "The Parker Sterile Compressed Air Filters listing gives 0.01 micron element grades. Specification lines: Buna N seals. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Sterile Compressed Air Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Parker Sterile Compressed Air Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Parker Sterile Compressed Air Filters in an air line?",
+          "a": "Fit the Parker Sterile Compressed Air Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Parker PL10 Series Lubricators, Stainless Steel](/p/parker-pl10-series-lubricators-stainless-steel) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Parker Sterile Compressed Air Filters?",
+          "a": "Automatic-drain versions empty the bowl for you; check the drain still dumps at each service. Change the element of the Parker Sterile Compressed Air Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker Sterile Compressed Air Filters and the Parker P32 Compact Global Modular Coalescing Filters?",
+          "a": "The Parker Sterile Compressed Air Filters are listed with 1/4\", 3/8\", 1/2\", 3/4\", 1\" and 1 1/2\" ports and ratings of 250 psi. The [Parker P32 Compact Global Modular Coalescing Filters](/p/parker-p32-compact-global-modular-coalescing-filters) are listed with ratings of 150 and 250 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Sterile Compressed Air Filters made and how is it shipped from Dubai?",
+          "a": "The Parker Sterile Compressed Air Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker Sterile Compressed Air Filters ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Parker Sterile Compressed Air Filters in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    }
+  ]
+}

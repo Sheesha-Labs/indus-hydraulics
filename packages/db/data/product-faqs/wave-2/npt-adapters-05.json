@@ -1,0 +1,1197 @@
+{
+  "family": "npt-adapters-05",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for mechanical joints (ASME B1.20.1): it does not seal on the thread, so an NPSM swivel end seals on its seat, which on these Dixon swivels is a 30° seat.",
+      "source": "ASME B1.20.1; Dixon swivel listing feature note (female NPSM swivel seals on a 30° seat)"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "NPT pipe-thread ends carry a lower pressure limit than the same size in a flare, boss or flange end; for example a 2\" NPT end is limited to 1,000 psi.",
+      "source": "SAE J514 pipe-thread end pressure limits (Indus Hydraulics NPTF pressure-limits note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "steel-npsm-female-swivel-union-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPSM Female Swivel Union Tee used for and which ports does it connect?",
+          "a": "The Steel NPSM Female Swivel Union Tee is an union tee hydraulic adapter that connects the two thread types named in its title. Ports A and B are female swivel NPSM, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPSM (1/8-27) on every port in the Steel NPSM Female Swivel Union Tee?",
+          "a": "Quote IH-ST-1603-02-02-02 for 1/8\" NPSM (1/8-27) on every port, IH-ST-1603-08-08-08 for 1/2\" NPSM (1/2-14) on every port and IH-ST-1603-20-20-20 for 1-1/4\" NPSM (1-1/4-11.5) on every port. The Steel NPSM Female Swivel Union Tee lists 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPSM Female Swivel Union Tee come in?",
+          "a": "The Steel NPSM Female Swivel Union Tee comes in 7 part numbers covering 1/8\" to 1-1/4\". Examples from the table: IH-ST-1603-04-04-04 (1/4\" NPSM (1/4-18) on every port), IH-ST-1603-06-06-06 (3/8\" NPSM (3/8-18) on every port) and IH-ST-1603-16-16-16 (1\" NPSM (1-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPSM Female Swivel Union Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPSM Female Swivel Union Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1603-04-04-04 (1/4\" NPSM (1/4-18) on every port) and IH-ST-1603-16-16-16 (1\" NPSM (1-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPSM Female Swivel Union Tee?",
+          "a": "The maker publishes no pressure rating for the Steel NPSM Female Swivel Union Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPSM Female Swivel Union Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPSM Female Swivel Union Tee is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPSM Female Swivel Union Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPSM Female Swivel Union Tee is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPSM Female Swivel Union Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPSM Female Swivel Union Tee, its female swivel NPSM, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPSM Female Swivel Union Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPSM Female Swivel Union Tee seals on straight pipe thread that does not seal on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPSM Female Swivel Union Tee differ from the Steel NPSM Female Swivel Union?",
+          "a": "The Steel NPSM Female Swivel Union Tee carries Tee in its name where the [Steel NPSM Female Swivel Union](/p/steel-npsm-female-swivel-union) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPSM Female Swivel Union Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPSM Female Swivel Union Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPSM Female Swivel Union Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPSM Female Swivel Union Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-npsm-female-swivel-x-nptf-female-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPSM Female Swivel × NPTF Female Branch Tee used for and which ports does it connect?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5); Port B is female swivel NPSM, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14) × 1/2\" NPSM (1/ in the Steel NPSM Female Swivel × NPTF Female Branch Tee?",
+          "a": "Quote IH-ST-1602-08-08-08 for 1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14) × 1/2\" NPSM (1/2-14) and IH-ST-1602-12-12-12 for 3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14) × 3/4\" NPSM (3/4-14). The Steel NPSM Female Swivel × NPTF Female Branch Tee lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPSM Female Swivel × NPTF Female Branch Tee are available?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee comes in 11 part numbers covering 1/8\" to 1-1/4\". Examples from the table: IH-ST-1602-02-02-02 (1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27) × 1/8\" NPSM (1/8-27)), IH-ST-1602-04-04-04 (1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18) × 1/4\" NPSM (1/4-18)) and IH-ST-1602-08-06-06 (1/2\" NPTF (1/2-14) × 3/8\" NPSM (3/8-18) × 3/8\" NPSM (3/8-18)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPSM Female Swivel × NPTF Female Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPSM Female Swivel × NPTF Female Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-ST-1602-12-08-08 (3/4\" NPTF (3/4-14) × 1/2\" NPSM (1/2-14) × 1/2\" NPSM (1/2-14)) and IH-ST-1602-16-16-16 (1\" NPTF (1-11.5) × 1\" NPSM (1-11.5) × 1\" NPSM (1-11.5))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPSM Female Swivel × NPTF Female Branch Tee?",
+          "a": "The maker publishes no pressure rating for the Steel NPSM Female Swivel × NPTF Female Branch Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPSM Female Swivel × NPTF Female Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPSM Female Swivel × NPTF Female Branch Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPSM Female Swivel × NPTF Female Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPSM Female Swivel × NPTF Female Branch Tee, its female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat. Its female swivel NPSM, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPSM Female Swivel × NPTF Female Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPSM Female Swivel × NPTF Female Branch Tee differ from the Steel NPTF Male × NPTF Female Branch Tee?",
+          "a": "The Steel NPSM Female Swivel × NPTF Female Branch Tee has NPSM Female Swivel where the [Steel NPTF Male × NPTF Female Branch Tee](/p/steel-nptf-male-x-nptf-female-branch-tee) has NPTF Male. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPSM Female Swivel × NPTF Female Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPSM Female Swivel × NPTF Female Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPSM Female Swivel × NPTF Female Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPSM Female Swivel × NPTF Female Branch Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-npt-seamless-pipe-nipple",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPT Seamless Pipe Nipple used for and which ports does it connect?",
+          "a": "The Steel NPT Seamless Pipe Nipple is a pipe nipple hydraulic adapter that connects the two thread types named in its title. Port A is male NPT, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPT (1/8-27), close nipple in the Steel NPT Seamless Pipe Nipple?",
+          "a": "Quote IH-ST-5404N-02-0 for 1/8\" NPT (1/8-27), close nipple, IH-ST-5404N-08-2 for 1/2\" NPT (1/2-14) and IH-ST-5404N-20-4 for 1-1/4\" NPT (1-1/4-11.5). The Steel NPT Seamless Pipe Nipple lists 70 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPT Seamless Pipe Nipple come in?",
+          "a": "The Steel NPT Seamless Pipe Nipple comes in 70 part numbers covering 1/8\" to 1-1/4\". Examples from the table: IH-ST-5404N-02-1.5 (1/8\" NPT (1/8-27)), IH-ST-5404N-06-1.5 (3/8\" NPT (3/8-18)) and IH-ST-5404N-20-3.5 (1-1/4\" NPT (1-1/4-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPT Seamless Pipe Nipple for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPT Seamless Pipe Nipple only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5404N-04-4.5 (1/4\" NPT (1/4-18)) and IH-ST-5404N-12-5.5 (3/4\" NPT (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPT Seamless Pipe Nipple?",
+          "a": "The maker publishes no pressure rating for the Steel NPT Seamless Pipe Nipple, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPT Seamless Pipe Nipple made from, and is it suitable for my fluid?",
+          "a": "The Steel NPT Seamless Pipe Nipple is carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPT Seamless Pipe Nipple conform to, and can I get test certificates?",
+          "a": "The Steel NPT Seamless Pipe Nipple is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPT Seamless Pipe Nipple, and which fittings do I pair it with?",
+          "a": "On the Steel NPT Seamless Pipe Nipple, its male NPT, 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPT Seamless Pipe Nipple seal, and what should I check when fitting it?",
+          "a": "The Steel NPT Seamless Pipe Nipple seals on taper pipe thread that seals on the thread flanks. For port A: taper pipe thread that seals on the thread flanks, with sealant or tape. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPT Seamless Pipe Nipple differ from the Steel NPTF Female Tee?",
+          "a": "The Steel NPT Seamless Pipe Nipple and the [Steel NPTF Female Tee](/p/steel-nptf-female-tee) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPT Seamless Pipe Nipple made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPT Seamless Pipe Nipple is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPT Seamless Pipe Nipple in Dubai, and how do I get a quote?",
+          "a": "Yes. The Steel NPT Seamless Pipe Nipple sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-45-street-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF 45° Street Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF 45° Street Elbow is a 45° street elbow hydraulic adapter that connects the two thread types named in its title. Port A is male NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5); Port B is female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF 45° Street Elbow?",
+          "a": "Quote IH-ST-5503-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5503-12-12 for 3/4\" NPTF (3/4-14) on every port and IH-ST-5503-32-32 for 2\" NPTF (2-11.5) on every port. The Steel NPTF 45° Street Elbow lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF 45° Street Elbow are available?",
+          "a": "The Steel NPTF 45° Street Elbow comes in 9 part numbers covering 1/8\" to 2\". Examples from the table: IH-ST-5503-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5503-08-08 (1/2\" NPTF (1/2-14) on every port) and IH-ST-5503-24-24 (1-1/2\" NPTF (1-1/2-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF 45° Street Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF 45° Street Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5503-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5503-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF 45° Street Elbow?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF 45° Street Elbow, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF 45° Street Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF 45° Street Elbow is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF 45° Street Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF 45° Street Elbow is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF 45° Street Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF 45° Street Elbow, its male NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF 45° Street Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF 45° Street Elbow seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Parker equivalent of the Steel NPTF 45° Street Elbow?",
+          "a": "The size table lists a Parker equivalent for 9 of the 9 part numbers of the Steel NPTF 45° Street Elbow. For example IH-ST-5503-02-02 is Parker 1/8 CD45, IH-ST-5503-12-12 is Parker 3/4 CD45 and IH-ST-5503-32-32 is Parker 2 CD45. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF 45° Street Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF 45° Street Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF 45° Street Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF 45° Street Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female 45° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Female 45° Elbow is a 45° elbow hydraulic adapter that turns the line through 45 degrees. Ports A and B are female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF Female 45° Elbow?",
+          "a": "Quote IH-ST-5505-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5505-08-08 for 1/2\" NPTF (1/2-14) on every port and IH-ST-5505-20-20 for 1-1/4\" NPTF (1-1/4-11.5) on every port. The Steel NPTF Female 45° Elbow lists 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF Female 45° Elbow are available?",
+          "a": "The Steel NPTF Female 45° Elbow comes in 7 part numbers covering 1/8\" to 1-1/4\". Examples from the table: IH-ST-5505-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5505-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5505-16-16 (1\" NPTF (1-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Female 45° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Female 45° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5505-04-04 (1/4\" NPTF (1/4-18) on every port) and IH-ST-5505-16-16 (1\" NPTF (1-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Female 45° Elbow?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Female 45° Elbow, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female 45° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Female 45° Elbow is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female 45° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Female 45° Elbow is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Female 45° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Female 45° Elbow, its female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Female 45° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Female 45° Elbow seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Parker equivalent of the Steel NPTF Female 45° Elbow?",
+          "a": "The size table lists a Parker equivalent for 6 of the 7 part numbers of the Steel NPTF Female 45° Elbow. For example IH-ST-5505-04-04 is Parker 1/4 DD45, IH-ST-5505-12-12 is Parker 3/4 DD45 and IH-ST-5505-20-20 is Parker 1 1/4 DD45. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Female 45° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Female 45° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female 45° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. The Steel NPTF Female 45° Elbow sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female Tee used for and which ports does it connect?",
+          "a": "The Steel NPTF Female Tee is a tee hydraulic adapter that splits or combines a line through three ports. Ports A and B are female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF Female Tee?",
+          "a": "Quote IH-ST-5605-02-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5605-12-12-12 for 3/4\" NPTF (3/4-14) on every port and IH-ST-5605-32-32-32 for 2\" NPTF (2-11.5) on every port. The Steel NPTF Female Tee lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Female Tee come in?",
+          "a": "The Steel NPTF Female Tee comes in 9 part numbers covering 1/8\" to 2\". Examples from the table: IH-ST-5605-04-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5605-08-08-08 (1/2\" NPTF (1/2-14) on every port) and IH-ST-5605-24-24-24 (1-1/2\" NPTF (1-1/2-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Female Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Female Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: IH-ST-5605-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5605-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Female Tee?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Female Tee, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Female Tee is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Female Tee is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Female Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Female Tee, its female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Female Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Female Tee seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Parker equivalent of the Steel NPTF Female Tee?",
+          "a": "The size table lists a Parker equivalent for 9 of the 9 part numbers of the Steel NPTF Female Tee. For example IH-ST-5605-02-02-02 is Parker 1/8 MMO, IH-ST-5605-12-12-12 is Parker 3/4 MMO and IH-ST-5605-32-32-32 is Parker 2 MMO. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Female Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Female Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF Female Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-x-npsm-female-swivel-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female × NPSM Female Swivel 45° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow is a 45° elbow hydraulic adapter that turns the line through 45 degrees. Port A is female NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5); Port B is female swivel NPSM, 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (1/2-14) × 3/8\" NPSM (3/8-18) in the Steel NPTF Female × NPSM Female Swivel 45° Elbow?",
+          "a": "Quote IH-ST-1504-08-06 for 1/2\" NPTF (1/2-14) × 3/8\" NPSM (3/8-18), IH-ST-1504-12-12 for 3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14) and IH-ST-1504-24-24 for 1-1/2\" NPTF (1-1/2-11.5) × 1-1/2\" NPSM (1-1/2-11.5). The Steel NPTF Female × NPSM Female Swivel 45° Elbow lists 13 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF Female × NPSM Female Swivel 45° Elbow are available?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow comes in 13 part numbers covering 1/8\" to 1-1/2\". Examples from the table: IH-ST-1504-02-02 (1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27)), IH-ST-1504-04-06 (1/4\" NPTF (1/4-18) × 3/8\" NPSM (3/8-18)) and IH-ST-1504-20-20 (1-1/4\" NPTF (1-1/4-11.5) × 1-1/4\" NPSM (1-1/4-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Female × NPSM Female Swivel 45° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Female × NPSM Female Swivel 45° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1504-04-04 (1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18)) and IH-ST-1504-06-06 (3/8\" NPTF (3/8-18) × 3/8\" NPSM (3/8-18))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Female × NPSM Female Swivel 45° Elbow?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Female × NPSM Female Swivel 45° Elbow, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female × NPSM Female Swivel 45° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female × NPSM Female Swivel 45° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Female × NPSM Female Swivel 45° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Female × NPSM Female Swivel 45° Elbow, its female NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a male port or fitting of the same thread and seat. Its female swivel NPSM, 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Female × NPSM Female Swivel 45° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Female × NPSM Female Swivel 45° Elbow differ from the Steel NPTF Male × NPSM Female Swivel 45° Elbow?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 45° Elbow has Female where the [Steel NPTF Male × NPSM Female Swivel 45° Elbow](/p/steel-nptf-male-x-npsm-female-swivel-45-elbow) has Male. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Female × NPSM Female Swivel 45° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Female × NPSM Female Swivel 45° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female × NPSM Female Swivel 45° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. The Steel NPTF Female × NPSM Female Swivel 45° Elbow sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-x-npsm-female-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female × NPSM Female Swivel 90° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow is a 90° elbow hydraulic adapter that turns the line through 90 degrees. Port A is female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5); Port B is female swivel NPSM, 1/8\" to 2\" (1/8-27 to 2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27) in the Steel NPTF Female × NPSM Female Swivel 90° Elbow?",
+          "a": "Quote IH-ST-1502-02-02 for 1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27), IH-ST-1502-08-08 for 1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14) and IH-ST-1502-32-32 for 2\" NPTF (2-11.5) × 2\" NPSM (2-11.5). The Steel NPTF Female × NPSM Female Swivel 90° Elbow lists 20 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Female × NPSM Female Swivel 90° Elbow come in?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow comes in 20 part numbers covering 1/8\" to 2\". Examples from the table: IH-ST-1502-06-04 (3/8\" NPTF (3/8-18) × 1/4\" NPSM (1/4-18)), IH-ST-1502-08-04 (1/2\" NPTF (1/2-14) × 1/4\" NPSM (1/4-18)) and IH-ST-1502-24-24 (1-1/2\" NPTF (1-1/2-11.5) × 1-1/2\" NPSM (1-1/2-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Female × NPSM Female Swivel 90° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Female × NPSM Female Swivel 90° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1502-06-08 (3/8\" NPTF (3/8-18) × 1/2\" NPSM (1/2-14)) and IH-ST-1502-16-12 (1\" NPTF (1-11.5) × 3/4\" NPSM (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Female × NPSM Female Swivel 90° Elbow?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Female × NPSM Female Swivel 90° Elbow, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female × NPSM Female Swivel 90° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female × NPSM Female Swivel 90° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Female × NPSM Female Swivel 90° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Female × NPSM Female Swivel 90° Elbow, its female NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a male port or fitting of the same thread and seat. Its female swivel NPSM, 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Female × NPSM Female Swivel 90° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Female × NPSM Female Swivel 90° Elbow differ from the Steel NPTF Female × NPSM Male Swivel 90° Elbow?",
+          "a": "The Steel NPTF Female × NPSM Female Swivel 90° Elbow has Female where the [Steel NPTF Female × NPSM Male Swivel 90° Elbow](/p/steel-nptf-female-x-npsm-male-swivel-90-elbow) has Male. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Female × NPSM Female Swivel 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Female × NPSM Female Swivel 90° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female × NPSM Female Swivel 90° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Female × NPSM Female Swivel 90° Elbow is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-female-x-npsm-male-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Female × NPSM Male Swivel 90° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow is a 90° elbow hydraulic adapter that turns the line through 90 degrees. Port A is female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14); Port B is male swivel NPSM, 1/4\" to 3/4\" (1/4-18 to 3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18) in the Steel NPTF Female × NPSM Male Swivel 90° Elbow?",
+          "a": "Quote IH-ST-5702-04-04 for 1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18), IH-ST-5702-08-08 for 1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14) and IH-ST-5702-12-12 for 3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14). The Steel NPTF Female × NPSM Male Swivel 90° Elbow lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Female × NPSM Male Swivel 90° Elbow come in?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow comes in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: IH-ST-5702-06-06 (3/8\" NPTF (3/8-18) × 3/8\" NPSM (3/8-18)) and IH-ST-5702-08-08 (1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Female × NPSM Male Swivel 90° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Female × NPSM Male Swivel 90° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5702-06-06 (3/8\" NPTF (3/8-18) × 3/8\" NPSM (3/8-18)) and IH-ST-5702-12-12 (3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Female × NPSM Male Swivel 90° Elbow?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Female × NPSM Male Swivel 90° Elbow, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Female × NPSM Male Swivel 90° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Female × NPSM Male Swivel 90° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Female × NPSM Male Swivel 90° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Female × NPSM Male Swivel 90° Elbow, its female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a male port or fitting of the same thread and seat. Its male swivel NPSM, 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Female × NPSM Male Swivel 90° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Female × NPSM Male Swivel 90° Elbow differ from the Steel NPTF Female × NPSM Female Swivel 90° Elbow?",
+          "a": "The Steel NPTF Female × NPSM Male Swivel 90° Elbow has Male where the [Steel NPTF Female × NPSM Female Swivel 90° Elbow](/p/steel-nptf-female-x-npsm-female-swivel-90-elbow) has Female. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Female × NPSM Male Swivel 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Female × NPSM Male Swivel 90° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Female × NPSM Male Swivel 90° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF Female × NPSM Male Swivel 90° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male 45° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Male 45° Elbow is a 45° elbow hydraulic adapter that turns the line through 45 degrees. Ports A and B are male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF Male 45° Elbow?",
+          "a": "Quote IH-ST-5501-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5501-12-12 for 3/4\" NPTF (3/4-14) on every port and IH-ST-5501-24-24 for 1-1/2\" NPTF (1-1/2-11.5) on every port. The Steel NPTF Male 45° Elbow lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Male 45° Elbow come in?",
+          "a": "The Steel NPTF Male 45° Elbow comes in 8 part numbers covering 1/8\" to 1-1/2\". Examples from the table: IH-ST-5501-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5501-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5501-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male 45° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male 45° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5501-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5501-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male 45° Elbow?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Male 45° Elbow, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male 45° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male 45° Elbow is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male 45° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male 45° Elbow is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male 45° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male 45° Elbow, its male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male 45° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male 45° Elbow seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Aeroquip equivalent of the Steel NPTF Male 45° Elbow?",
+          "a": "The size table lists an Aeroquip equivalent for 5 of the 8 part numbers of the Steel NPTF Male 45° Elbow. For example IH-ST-5501-04-04 is Aeroquip 2247-4-4, IH-ST-5501-08-08 is Aeroquip 2247-8-8 and IH-ST-5501-16-16 is Aeroquip 2247-16-16. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male 45° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male 45° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male 45° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF Male 45° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-npsm-female-swivel-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPSM Female Swivel 45° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel 45° Elbow is a 45° elbow hydraulic adapter that turns the line through 45 degrees. Port A is male NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5); Port B is female swivel NPSM, 1/8\" to 2\" (1/8-27 to 2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27) in the Steel NPTF Male × NPSM Female Swivel 45° Elbow?",
+          "a": "Quote IH-ST-1503-02-02 for 1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27), IH-ST-1503-08-12 for 1/2\" NPTF (1/2-14) × 3/4\" NPSM (3/4-14) and IH-ST-1503-32-32 for 2\" NPTF (2-11.5) × 2\" NPSM (2-11.5). The Steel NPTF Male × NPSM Female Swivel 45° Elbow lists 23 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Male × NPSM Female Swivel 45° Elbow come in?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel 45° Elbow comes in 23 part numbers covering 1/8\" to 2\". Examples from the table: IH-ST-1503-02-04 (1/8\" NPTF (1/8-27) × 1/4\" NPSM (1/4-18)), IH-ST-1503-06-08 (3/8\" NPTF (3/8-18) × 1/2\" NPSM (1/2-14)) and IH-ST-1503-24-24 (1-1/2\" NPTF (1-1/2-11.5) × 1-1/2\" NPSM (1-1/2-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPSM Female Swivel 45° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPSM Female Swivel 45° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-1503-06-04 (3/8\" NPTF (3/8-18) × 1/4\" NPSM (1/4-18)) and IH-ST-1503-16-16 (1\" NPTF (1-11.5) × 1\" NPSM (1-11.5))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPSM Female Swivel 45° Elbow?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Male × NPSM Female Swivel 45° Elbow, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPSM Female Swivel 45° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel 45° Elbow is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPSM Female Swivel 45° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel 45° Elbow is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPSM Female Swivel 45° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPSM Female Swivel 45° Elbow, its male NPTF (Dryseal), 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a female port or fitting of the same thread and seat. Its female swivel NPSM, 1/8\" to 2\" (1/8-27 to 2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPSM Female Swivel 45° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel 45° Elbow seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Parker equivalent of the Steel NPTF Male × NPSM Female Swivel 45° Elbow?",
+          "a": "The size table lists a Parker equivalent for 5 of the 23 part numbers of the Steel NPTF Male × NPSM Female Swivel 45° Elbow. For example IH-ST-1503-04-04 is Parker 3107-4-4, IH-ST-1503-08-08 is Parker 3107-8-8 and IH-ST-1503-16-16 is Parker 3107-16-16. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPSM Female Swivel 45° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPSM Female Swivel 45° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPSM Female Swivel 45° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Male × NPSM Female Swivel 45° Elbow is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-npsm-female-swivel-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPSM Female Swivel Branch Tee used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5); Port B is female swivel NPSM, 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (1/2-14) × 1/4\" NPSM (1/4-18) × 1/4\" NPSM (1/ in the Steel NPTF Male × NPSM Female Swivel Branch Tee?",
+          "a": "Quote IH-ST-1601-08-04-04 for 1/2\" NPTF (1/2-14) × 1/4\" NPSM (1/4-18) × 1/4\" NPSM (1/4-18) and IH-ST-1601-06-04-04 for 3/8\" NPTF (3/8-18) × 1/4\" NPSM (1/4-18) × 1/4\" NPSM (1/4-18). The Steel NPTF Male × NPSM Female Swivel Branch Tee lists 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF Male × NPSM Female Swivel Branch Tee are available?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee comes in 15 part numbers covering 1/8\" to 1-1/2\". Examples from the table: IH-ST-1601-02-02-02 (1/8\" NPTF (1/8-27) × 1/8\" NPSM (1/8-27) × 1/8\" NPSM (1/8-27)), IH-ST-1601-04-06-06 (1/4\" NPTF (1/4-18) × 3/8\" NPSM (3/8-18) × 3/8\" NPSM (3/8-18)) and IH-ST-1601-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) × 1-1/4\" NPSM (1-1/4-11.5) × 1-1/4\"). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPSM Female Swivel Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPSM Female Swivel Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-ST-1601-04-04-04 (1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18) × 1/4\" NPSM (1/4-18)) and IH-ST-1601-16-12-12 (1\" NPTF (1-11.5) × 3/4\" NPSM (3/4-14) × 3/4\" NPSM (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPSM Female Swivel Branch Tee?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Male × NPSM Female Swivel Branch Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPSM Female Swivel Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPSM Female Swivel Branch Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPSM Female Swivel Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPSM Female Swivel Branch Tee, its male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a female port or fitting of the same thread and seat. Its female swivel NPSM, 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPSM Female Swivel Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Male × NPSM Female Swivel Branch Tee differ from the Steel NPTF Male × NPTF Female Branch Tee?",
+          "a": "The Steel NPTF Male × NPSM Female Swivel Branch Tee has NPSM where the [Steel NPTF Male × NPTF Female Branch Tee](/p/steel-nptf-male-x-nptf-female-branch-tee) has NPTF. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPSM Female Swivel Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPSM Female Swivel Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPSM Female Swivel Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Male × NPSM Female Swivel Branch Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-npsm-male-swivel-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPSM Male Swivel 90° Elbow used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow is a 90° elbow hydraulic adapter that turns the line through 90 degrees. Port A is male NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14); Port B is male swivel NPSM, 1/4\" to 3/4\" (1/4-18 to 3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18) in the Steel NPTF Male × NPSM Male Swivel 90° Elbow?",
+          "a": "Quote IH-ST-5700-04-04 for 1/4\" NPTF (1/4-18) × 1/4\" NPSM (1/4-18), IH-ST-5700-08-08 for 1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14) and IH-ST-5700-12-12 for 3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14). The Steel NPTF Male × NPSM Male Swivel 90° Elbow lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF Male × NPSM Male Swivel 90° Elbow are available?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow comes in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: IH-ST-5700-06-06 (3/8\" NPTF (3/8-18) × 3/8\" NPSM (3/8-18)) and IH-ST-5700-08-08 (1/2\" NPTF (1/2-14) × 1/2\" NPSM (1/2-14)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPSM Male Swivel 90° Elbow for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPSM Male Swivel 90° Elbow only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-5700-06-06 (3/8\" NPTF (3/8-18) × 3/8\" NPSM (3/8-18)) and IH-ST-5700-12-12 (3/4\" NPTF (3/4-14) × 3/4\" NPSM (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPSM Male Swivel 90° Elbow?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Male × NPSM Male Swivel 90° Elbow, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPSM Male Swivel 90° Elbow made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPSM Male Swivel 90° Elbow conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow is listed to ASME B1.20.3, ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPSM Male Swivel 90° Elbow, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPSM Male Swivel 90° Elbow, its male NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a female port or fitting of the same thread and seat. Its male swivel NPSM, 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPSM Male Swivel 90° Elbow seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow seals on dryseal taper pipe thread at port A and on straight pipe thread that does not seal on the thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Male × NPSM Male Swivel 90° Elbow differ from the Steel NPTF Female × NPSM Male Swivel 90° Elbow?",
+          "a": "The Steel NPTF Male × NPSM Male Swivel 90° Elbow has Male where the [Steel NPTF Female × NPSM Male Swivel 90° Elbow](/p/steel-nptf-female-x-npsm-male-swivel-90-elbow) has Female. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPSM Male Swivel 90° Elbow made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPSM Male Swivel 90° Elbow is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPSM Male Swivel 90° Elbow in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Male × NPSM Male Swivel 90° Elbow is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-nptf-female-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPTF Female Branch Tee used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPTF Female Branch Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Ports A and B are male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF Male × NPTF Female Branch Tee?",
+          "a": "Quote IH-ST-5601-02-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5601-12-12-12 for 3/4\" NPTF (3/4-14) on every port and IH-ST-5601-24-24-24 for 1-1/2\" NPTF (1-1/2-11.5) on every port. The Steel NPTF Male × NPTF Female Branch Tee lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Male × NPTF Female Branch Tee come in?",
+          "a": "The Steel NPTF Male × NPTF Female Branch Tee comes in 8 part numbers covering 1/8\" to 1-1/2\". Examples from the table: IH-ST-5601-04-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5601-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5601-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPTF Female Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPTF Female Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-ST-5601-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5601-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPTF Female Branch Tee?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Male × NPTF Female Branch Tee, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPTF Female Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPTF Female Branch Tee is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPTF Female Branch Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPTF Female Branch Tee is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPTF Female Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPTF Female Branch Tee, its male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPTF Female Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPTF Female Branch Tee seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Aeroquip equivalent of the Steel NPTF Male × NPTF Female Branch Tee?",
+          "a": "The size table lists an Aeroquip equivalent for 6 of the 8 part numbers of the Steel NPTF Male × NPTF Female Branch Tee. For example IH-ST-5601-02-02-02 is Aeroquip 2256-2-2S, IH-ST-5601-08-08-08 is Aeroquip 2256-8-8S and IH-ST-5601-16-16-16 is Aeroquip 2256-16-16S. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPTF Female Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPTF Female Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPTF Female Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF Male × NPTF Female Branch Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-nptf-female-cross",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPTF Female Cross used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPTF Female Cross is a cross hydraulic adapter that brings four ports together at one point. Port A is male NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14); Port B is female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" NPTF (1/4-18) on every port in the Steel NPTF Male × NPTF Female Cross?",
+          "a": "Quote IH-ST-5655-04-04-04-04 for 1/4\" NPTF (1/4-18) on every port, IH-ST-5655-08-08-08-08 for 1/2\" NPTF (1/2-14) on every port and IH-ST-5655-12-12-12-12 for 3/4\" NPTF (3/4-14) on every port. The Steel NPTF Male × NPTF Female Cross lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Male × NPTF Female Cross come in?",
+          "a": "The Steel NPTF Male × NPTF Female Cross comes in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: IH-ST-5655-06-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5655-08-08-08-08 (1/2\" NPTF (1/2-14) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPTF Female Cross for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPTF Female Cross only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this cross also say which port is the run and which is the branch. Then pick the row: IH-ST-5655-06-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5655-12-12-12-12 (3/4\" NPTF (3/4-14) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPTF Female Cross?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Male × NPTF Female Cross, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPTF Female Cross made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPTF Female Cross is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPTF Female Cross conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPTF Female Cross is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPTF Female Cross, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPTF Female Cross, its male NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPTF Female Cross seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPTF Female Cross seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Male × NPTF Female Cross differ from the Steel NPTF Male × NPTF Female Run Tee?",
+          "a": "The Steel NPTF Male × NPTF Female Cross has Cross where the [Steel NPTF Male × NPTF Female Run Tee](/p/steel-nptf-male-x-nptf-female-run-tee) has Run Tee. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPTF Female Cross made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPTF Female Cross is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPTF Female Cross in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Male × NPTF Female Cross is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-nptf-female-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × NPTF Female Run Tee used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × NPTF Female Run Tee is a run tee hydraulic adapter that carries the line through the run and takes a side branch. Port A is male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5); Port B is female NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) on every port in the Steel NPTF Male × NPTF Female Run Tee?",
+          "a": "Quote IH-ST-5603-02-02-02 for 1/8\" NPTF (1/8-27) on every port, IH-ST-5603-12-12-12 for 3/4\" NPTF (3/4-14) on every port and IH-ST-5603-24-24-24 for 1-1/2\" NPTF (1-1/2-11.5) on every port. The Steel NPTF Male × NPTF Female Run Tee lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel NPTF Male × NPTF Female Run Tee come in?",
+          "a": "The Steel NPTF Male × NPTF Female Run Tee comes in 8 part numbers covering 1/8\" to 1-1/2\". Examples from the table: IH-ST-5603-04-04-04 (1/4\" NPTF (1/4-18) on every port), IH-ST-5603-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5603-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × NPTF Female Run Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × NPTF Female Run Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this run tee also say which port is the run and which is the branch. Then pick the row: IH-ST-5603-06-06-06 (3/8\" NPTF (3/8-18) on every port) and IH-ST-5603-20-20-20 (1-1/4\" NPTF (1-1/4-11.5) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × NPTF Female Run Tee?",
+          "a": "The maker publishes ASME B31.3 (NPT) ratings from 3,900 to 11,000 psi depending on size for the Steel NPTF Male × NPTF Female Run Tee, falling as the size goes up. Read the figure for your size in the table and treat it as the maker's figure, not a guaranteed minimum."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × NPTF Female Run Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × NPTF Female Run Tee is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × NPTF Female Run Tee conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × NPTF Female Run Tee is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × NPTF Female Run Tee, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × NPTF Female Run Tee, its male NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × NPTF Female Run Tee seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × NPTF Female Run Tee seals on dryseal taper pipe thread. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Aeroquip equivalent of the Steel NPTF Male × NPTF Female Run Tee?",
+          "a": "The size table lists an Aeroquip equivalent for 6 of the 8 part numbers of the Steel NPTF Male × NPTF Female Run Tee. For example IH-ST-5603-02-02-02 is Aeroquip 2093-2-2S, IH-ST-5603-08-08-08 is Aeroquip 2093-8-8S and IH-ST-5603-16-16-16 is Aeroquip 2093-16-16S. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × NPTF Female Run Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × NPTF Female Run Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × NPTF Female Run Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel NPTF Male × NPTF Female Run Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-connector-m-npt-x-f-npsm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Connector m NPT X f NPSM used for and which ports does it connect?",
+          "a": "The Swivel Connector m NPT X f NPSM is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male NPT taper 1/8\" to 2\", sealing as an NPT taper thread; Port B is female swivel NPSM straight pipe (parallel) 1/8\" to 2\", sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for NPT1/4-18 × 1/4-18 in the Swivel Connector m NPT X f NPSM?",
+          "a": "Quote IH-AD-NPT-018-04 for NPT1/4-18 × 1/4-18, IH-AD-NPT-018-1608 for NPT1-11.5 × 1/2-14 and IH-AD-NPT-018-02 for NPT1/8-27 × 1/8-27. The Swivel Connector m NPT X f NPSM lists 27 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Swivel Connector m NPT X f NPSM come in?",
+          "a": "The Swivel Connector m NPT X f NPSM comes in 27 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-AD-NPT-018-06 (NPT3/8-18 × 3/8-18), IH-AD-NPT-018-2024 (NPT1-1/4-11.5 × 1-1/2-11.5) and IH-AD-NPT-018-0204 (NPT1/8-27 × 1/4-18). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Swivel Connector m NPT X f NPSM for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Swivel Connector m NPT X f NPSM only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-NPT-018-24 (NPT1-1/2-11.5 × 1-1/2-11.5) and IH-AD-NPT-018-0608 (NPT3/8-18 × 1/2-14)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Connector m NPT X f NPSM?",
+          "a": "The size table prints a working pressure against each size of the Swivel Connector m NPT X f NPSM, from 70 bar (IH-AD-NPT-018-24) to 275 bar (IH-AD-NPT-018-04). Use the figure on your own row; an assembly is limited by whichever component is rated lowest. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Connector m NPT X f NPSM made from, and is it suitable for my fluid?",
+          "a": "The Swivel Connector m NPT X f NPSM is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Connector m NPT X f NPSM conform to, and can I get test certificates?",
+          "a": "The Swivel Connector m NPT X f NPSM is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Swivel Connector m NPT X f NPSM, and which fittings do I pair it with?",
+          "a": "On the Swivel Connector m NPT X f NPSM, its male NPT taper 1/8\" to 2\" end takes a female port or fitting of the same thread and seat. Its female swivel NPSM straight pipe (parallel) 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Swivel Connector m NPT X f NPSM seal, and what should I check when fitting it?",
+          "a": "The Swivel Connector m NPT X f NPSM seals on an NPT taper thread at port A and on a flat face at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Swivel Connector m NPT X f NPSM?",
+          "a": "The size table lists a Tompkins equivalent for 27 of the 27 part numbers of the Swivel Connector m NPT X f NPSM. For example IH-AD-NPT-018-04 is Tompkins 1404-04-04, IH-AD-NPT-018-1608 is Tompkins 1404-16-08 and IH-AD-NPT-018-02 is Tompkins 1404-02-02. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Connector m NPT X f NPSM made, and can you export it from Dubai?",
+          "a": "The country of origin of the Swivel Connector m NPT X f NPSM is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Connector m NPT X f NPSM in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Swivel Connector m NPT X f NPSM is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-connector-m-sae-x-f-npsm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Connector m SAE X f NPSM used for and which ports does it connect?",
+          "a": "The Swivel Connector m SAE X f NPSM is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12), sealing as an O-ring boss seal; Port B is female swivel NPSM straight pipe (parallel) 1/8\" to 2\", sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" ORB male (7/16-20) × 1/8\" NPSM female swivel (1/8- in the Swivel Connector m SAE X f NPSM?",
+          "a": "Quote IH-ST-6900-04-02 for 1/4\" ORB male (7/16-20) × 1/8\" NPSM female swivel (1/8-27) and IH-ST-6900-12-08 for 3/4\" ORB male (1-1/16-12) × 1/2\" NPSM female swivel (1/2-14). The Swivel Connector m SAE X f NPSM lists 31 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Swivel Connector m SAE X f NPSM are available?",
+          "a": "The Swivel Connector m SAE X f NPSM comes in 31 part numbers covering NPT 1/8\" to 2\". Examples from the table: IH-ST-6900-04-04 (1/4\" ORB male (7/16-20) × 1/4\" NPSM female swivel (1/4-18)), IH-ST-6900-08-12 (1/2\" ORB male (3/4-16) × 3/4\" NPSM female swivel (3/4-14)) and IH-ST-6900-14-16 (7/8\" ORB male (1-3/16-12) × 1\" NPSM female swivel (1-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Swivel Connector m SAE X f NPSM for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Swivel Connector m SAE X f NPSM only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-6900-08-04 (1/2\" ORB male (3/4-16) × 1/4\" NPSM female swivel (1/4-18)) and IH-ST-6900-20-20 (1-1/4\" ORB male (1-5/8-12) × 1-1/4\" NPSM female swivel (1-1/)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Connector m SAE X f NPSM?",
+          "a": "The working pressure of the Swivel Connector m SAE X f NPSM depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply. NPT pipe-thread ends carry lower limits than flare or boss ends of the same size; a 2\" NPT end, for example, is limited to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Connector m SAE X f NPSM made from, and is it suitable for my fluid?",
+          "a": "The Swivel Connector m SAE X f NPSM is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Connector m SAE X f NPSM conform to, and can I get test certificates?",
+          "a": "The Swivel Connector m SAE X f NPSM is listed to ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Swivel Connector m SAE X f NPSM, and which fittings do I pair it with?",
+          "a": "On the Swivel Connector m SAE X f NPSM, its male SAE J1926 ORB UN/UNF (7/16-20 to 1-7/8-12) end takes a female port or fitting of the same thread and seat. Its female swivel NPSM straight pipe (parallel) 1/8\" to 2\" end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [ORB Adapters](/c/orb-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Swivel Connector m SAE X f NPSM seal, and what should I check when fitting it?",
+          "a": "The Swivel Connector m SAE X f NPSM seals on an O-ring boss seal at port A and on a flat face at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "C",
+          "q": "What is the Tompkins equivalent of the Swivel Connector m SAE X f NPSM?",
+          "a": "The size table lists a Tompkins equivalent for most part numbers of the Swivel Connector m SAE X f NPSM. For example IH-ST-6900-04-02 is Tompkins 6900-04-02, IH-ST-6900-12-08 is Tompkins 6900-12-08 and IH-ST-6900-10-04 is Tompkins 6900-10-04. Check the thread and seat on the old part as well as its number before you substitute."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Connector m SAE X f NPSM made, and can you export it from Dubai?",
+          "a": "The country of origin of the Swivel Connector m SAE X f NPSM is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Connector m SAE X f NPSM in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Swivel Connector m SAE X f NPSM is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1603 @@
+{
+  "family": "air-preparation-frl-10",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 100 psi is about 7 bar, 125 psi about 9 bar, 145 psi about 10 bar, 150 psi about 10 bar, 160 psi about 11 bar, 175 psi about 12 bar, 200 psi about 14 bar, 215 psi about 15 bar, 220 psi about 15 bar, 250 psi about 17 bar, 290 psi about 20 bar, 300 psi about 21 bar and 500 psi about 34 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "FRL line order and roles: in a compressed-air line the usual order is filter, then regulator, then lubricator, with the lubricator last before the tool or cylinder. The filter protects the regulator and tools from dirt and water, the regulator sets a steady working pressure, and the lubricator adds oil mist only while air is flowing. Size units on port size and on the air flow the downstream tools need, not on line size alone.",
+      "source": "Indus guide /blog/frl-filter-regulator-lubricator-guide; maker FRL catalogues (Parker 0700P, Norgren, SMC)"
+    },
+    {
+      "fact": "Filter grades: a particulate filter removes solids and bulk liquid water down to its micron grade; a coalescing filter removes oil aerosol and very fine particles and needs a particulate pre-filter upstream; an activated-carbon filter removes oil vapour and odour and is placed after a coalescing filter. ISO 8573-1 is the standard that sets compressed-air purity classes for solid particles, water and oil, and a single filter stage does not by itself guarantee a class.",
+      "source": "ISO 8573-1 (compressed air purity classes); Indus guide /blog/compressed-air-quality-iso-8573-1; maker catalogues"
+    },
+    {
+      "fact": "Bowls: polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, and should be cleaned with mild soap and water only; metal bowls with a sight glass are used where those chemicals are present or where a plastic bowl is not permitted. Pressure and temperature ratings of plastic and metal bowl versions differ and are given per part number.",
+      "source": "Maker catalogue bowl cautions (Parker 0700P Prep-Air II, Norgren, SMC)"
+    },
+    {
+      "fact": "Regulators: a relieving regulator vents excess downstream pressure through the bonnet when the setting is turned down, while a non-relieving regulator holds the pressure until the load uses it. A regulator is set by turning the adjusting knob up to the working pressure on the gauge, and the inlet rating and the outlet adjustment range are separate figures. A regulator that creeps or will not hold its setting usually has dirt on the seat or a worn diaphragm.",
+      "source": "Maker catalogues (Norgren, ARO, Parker); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Lubricators: a mist (oil-fog) lubricator sends the drops it meters into the air stream and suits a single tool or cylinder close by; a micro-mist (micro-fog) lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or a longer pipe run. Both feed oil only while air is flowing, and the lubricant should be the oil the maker recommends.",
+      "source": "Maker catalogues (Parker 0700P, Norgren, Dixon); Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators); 8481.80 covers other taps, cocks and valves. Customs authorities classify combination units and lubricators individually, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Flow ratings in cfm or scfm are quoted by the maker at a stated inlet pressure and pressure drop, so a unit sized on port size alone can drop pressure at full flow; check the flow curve or the row for the part you order.",
+      "source": "Maker air preparation catalogues (flow curves at stated inlet pressure and pressure drop)"
+    },
+    {
+      "fact": "Size-table data across the listings in this group (from the part-number rows): Nitra AC Series Coalescing Filters: ports 1/8\", 1/4\", 3/8\" and 1/2\"; Nitra AF2 Series Filters: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Nitra AFR2 Series Combination Filter and Regulators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Nitra AL2 Series Lubricators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Nitra AR2 Series Regulators: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Numatics Particulate Filter Elements: flow 108 to 1660 scfm; Numatics Sandwich Dual Air Regulator, Round: flow 14 to 230 cfm, rated 150 psi; Numatics Sandwich Single Air Regulator, Round: flow 14 to 230 cfm; SMC AL Micro Series Micromist Lubricator: ports 1/4\", 3/8\" and 1/2\"; SMC AL Series Lubricator: ports 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\"; SMC ALF Series Auto Feed Lubricator: ports 1/4\", 3/8\", 1/2\", 3/4\", 1\", 1 1/2\" and 2\", rated 100 psi; SMC Booster Regulators: ports 1/4\", 3/8\" and 1/2\", rated 145 and 290 psi; SMC Lubricator: ports 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\"; Solberg PSG Series Air/Oil Separator Elements: flow 125 to 1100 cfm, grades 0.3 micron; Texas Pneumatic Tools Arrowick Lubricators: ports 3/4\", 1\" and 1 1/2\"; Texas Pneumatic Tools Coalescing Filters (Oil Removing): ports 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 3\"; Texas Pneumatic Tools Coalescing Oil Removing Filters: ports 1/2\"; Texas Pneumatic Tools Integral Filter/Regulators: ports 1/2\"; Texas Pneumatic Tools Portable FRL Components: ports 1/2\", 3/4\", 1\" and 1 1/2\"; Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems: ports 1/2\", 3/4\", 1\" and 1 1/2\"; Texas Pneumatic Tools Regulators: ports 1/4\", 1/2\", 3/4\", 1\" and 1 1/2\"; Texas Pneumatic Tools Tri-Star Arrowfog Lubricator: ports 1/2\".",
+      "source": "Indus Hydraulics listing size tables (maker part-number rows), November 2026"
+    }
+  ],
+  "products": [
+    {
+      "slug": "nitra-ac-series-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Nitra AC Series Coalescing Filters used for?",
+          "a": "The Nitra AC Series Coalescing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 20 part numbers in 1/8\", 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Nitra AC Series Coalescing Filters range and how do they differ?",
+          "a": "Examples from the listing are AC-214 (1/8\" port), AC-334 (3/8\" port) and AC-444-A (1/2\" port). In these part numbers the second digit of the block after the dash is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\" and 4 is 1/2\"), and a letter after a further dash marks a variant of the same size. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Nitra AC Series Coalescing Filters come in?",
+          "a": "The Nitra AC Series Coalescing Filters are listed in 1/8\", 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra AC Series Coalescing Filters part number for my air line?",
+          "a": "To choose a part number from the Nitra AC Series Coalescing Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Nitra AC Series Coalescing Filters?",
+          "a": "The Nitra AC Series Coalescing Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Nitra AC Series Coalescing Filters use?",
+          "a": "The Nitra AC Series Coalescing Filters listing describes the element as a coalescing grade for oil removal. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra AC Series Coalescing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Nitra AC Series Coalescing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Nitra AC Series Coalescing Filters in an air line?",
+          "a": "Fit the Nitra AC Series Coalescing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Nitra AFR2 Series Combination Filter and Regulators](/p/nitra-afr2-series-combination-filter-and-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Nitra AC Series Coalescing Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Nitra AC Series Coalescing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Nitra AC Series Coalescing Filters and the Nitra AF2 Series Filters?",
+          "a": "The Nitra AC Series Coalescing Filters are coalescing (oil-removal) filters, while the [AF2 Series Filters](/p/nitra-af2-series-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Nitra AC Series Coalescing Filters are listed with 1/8\", 1/4\", 3/8\" and 1/2\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra AC Series Coalescing Filters made and how is it shipped from Dubai?",
+          "a": "The Nitra AC Series Coalescing Filters listing gives China as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Nitra AC Series Coalescing Filters in Dubai?",
+          "a": "Yes. We keep the Nitra AC Series Coalescing Filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-af2-series-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Nitra AF2 Series Filters do in a compressed-air line?",
+          "a": "The Nitra AF2 Series Filters are compressed-air particulate filters that remove dirt, rust, pipe scale and liquid water from the air line. This listing has 28 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Nitra AF2 Series Filters range and how do they differ?",
+          "a": "Examples from the listing are AF2-213 (1/8\" port), AF2-443 (1/2\" port) and AF2-683-AD (1\" port). In these part numbers the second digit of the block after the dash is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 6 is 3/4\" and 8 is 1\"), and a letter after a further dash marks a variant of the same size. Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Nitra AF2 Series Filters come in?",
+          "a": "The Nitra AF2 Series Filters are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra AF2 Series Filters part number for my air line?",
+          "a": "To choose a part number from the Nitra AF2 Series Filters, choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Nitra AF2 Series Filters?",
+          "a": "The Nitra AF2 Series Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Nitra AF2 Series Filters?",
+          "a": "The element grade of the Nitra AF2 Series Filters is shown in each part-number row. Polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra AF2 Series Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A particulate filter like the Nitra AF2 Series Filters removes solids and bulk liquid water, but it does not remove oil aerosol or water vapour, so it does not by itself give an ISO 8573-1 oil or humidity class. For a stated purity class, add a coalescing stage and a dryer where needed; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Nitra AF2 Series Filters in an air line?",
+          "a": "Fit the Nitra AF2 Series Filters at the start of the branch, ahead of the regulator, valves and cylinders: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Nitra AFR2 Series Combination Filter and Regulators](/p/nitra-afr2-series-combination-filter-and-regulators) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Nitra AF2 Series Filters?",
+          "a": "Drain the bowl before the liquid reaches the element. Change the element of the Nitra AF2 Series Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Nitra AF2 Series Filters and the Nitra AC Series Coalescing Filters?",
+          "a": "The Nitra AF2 Series Filters are compressed-air particulate filters, while the [AC Series Coalescing Filters](/p/nitra-ac-series-coalescing-filters) are coalescing (oil-removal) filters. They do different jobs in the same air line and are often fitted together; the Nitra AF2 Series Filters are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Nitra AF2 Series Filters?",
+          "a": "The Nitra AF2 Series Filters listing gives China as the country of origin and HS code 842139. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Nitra AF2 Series Filters in Dubai?",
+          "a": "Yes. We keep the Nitra AF2 Series Filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-afr2-series-combination-filter-and-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Nitra AFR2 Series Combination Filter and Regulators used for?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 46 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Nitra AFR2 Series Combination Filter and Regulators range and how do they differ?",
+          "a": "Examples from the listing are AFR2-2132 (1/8\" port), AFR2-4433 (1/2\" port) and AFR2-6833-AD (1\" port). In these part numbers the second digit of the block after the dash is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 6 is 3/4\" and 8 is 1\"), and a letter after a further dash marks a variant of the same size. Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Nitra AFR2 Series Combination Filter and Regulators come in?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra AFR2 Series Combination Filter and Regulators part number?",
+          "a": "For the Nitra AFR2 Series Combination Filter and Regulators, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Nitra AFR2 Series Combination Filter and Regulators have?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Nitra AFR2 Series Combination Filter and Regulators?",
+          "a": "On the Nitra AFR2 Series Combination Filter and Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra AFR2 Series Combination Filter and Regulators include a lubricator?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Nitra AFR2 Series Combination Filter and Regulators?",
+          "a": "Connect the Nitra AFR2 Series Combination Filter and Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Nitra AF2 Series Filters](/p/nitra-af2-series-filters) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Nitra AFR2 Series Combination Filter and Regulators?",
+          "a": "Drain the Nitra AFR2 Series Combination Filter and Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Nitra AFR2 Series Combination Filter and Regulators and the Nitra AF2 Series Filters?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators are filter/regulators, while the [AF2 Series Filters](/p/nitra-af2-series-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Nitra AFR2 Series Combination Filter and Regulators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra AFR2 Series Combination Filter and Regulators made and how is it shipped from Dubai?",
+          "a": "The Nitra AFR2 Series Combination Filter and Regulators listing gives China as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Nitra AFR2 Series Combination Filter and Regulators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Nitra AFR2 Series Combination Filter and Regulators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-al2-series-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Nitra AL2 Series Lubricators used for?",
+          "a": "The Nitra AL2 Series Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 17 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Nitra AL2 Series Lubricators range and how do they differ?",
+          "a": "Examples from the listing are AL2-21 (1/8\" port), AL2-44 (1/2\" port) and AL2-68-D (1\" port). In these part numbers the second digit of the block after the dash is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 6 is 3/4\" and 8 is 1\"), and a letter after a further dash marks a variant of the same size (the -N rows are described as nylon-bowl versions). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Nitra AL2 Series Lubricators come in?",
+          "a": "The Nitra AL2 Series Lubricators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra AL2 Series Lubricators part number?",
+          "a": "For the Nitra AL2 Series Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Nitra AL2 Series Lubricators?",
+          "a": "The Nitra AL2 Series Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Nitra AL2 Series Lubricators give, and which oil does it use?",
+          "a": "Check the Nitra AL2 Series Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Nitra AL2 Series Lubricators have?",
+          "a": "Bowl material of the Nitra AL2 Series Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Nitra AL2 Series Lubricators in an air line?",
+          "a": "Fit the Nitra AL2 Series Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Nitra AF2 Series Filters](/p/nitra-af2-series-filters) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Nitra AL2 Series Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Nitra AL2 Series Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Nitra AL2 Series Lubricators and the Nitra AF2 Series Filters?",
+          "a": "The Nitra AL2 Series Lubricators are air-line lubricators, while the [AF2 Series Filters](/p/nitra-af2-series-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Nitra AL2 Series Lubricators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra AL2 Series Lubricators made and how is it shipped from Dubai?",
+          "a": "The Nitra AL2 Series Lubricators listing gives China as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Nitra AL2 Series Lubricators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Nitra AL2 Series Lubricators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-ar2-series-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Nitra AR2 Series Regulators do in a compressed-air line?",
+          "a": "The Nitra AR2 Series Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 11 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Nitra AR2 Series Regulators range and how do they differ?",
+          "a": "Examples from the listing are AR2-212 (1/8\" port), AR2-443 (1/2\" port) and AR2-683 (1\" port). In these part numbers the second digit of the block after the dash is the port size (1 is 1/8\", 2 is 1/4\", 3 is 3/8\", 4 is 1/2\", 6 is 3/4\" and 8 is 1\"), and a letter after a further dash marks a variant of the same size. Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Nitra AR2 Series Regulators come in?",
+          "a": "The Nitra AR2 Series Regulators are listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra AR2 Series Regulators part number?",
+          "a": "For the Nitra AR2 Series Regulators, choose by port size, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Nitra AR2 Series Regulators?",
+          "a": "The Nitra AR2 Series Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Nitra AR2 Series Regulators relieving, and what is it made from?",
+          "a": "The Nitra AR2 Series Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra AR2 Series Regulators come with a pressure gauge?",
+          "a": "The listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Nitra AR2 Series Regulators?",
+          "a": "Fit the Nitra AR2 Series Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Nitra AF2 Series Filters](/p/nitra-af2-series-filters) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Nitra AR2 Series Regulators?",
+          "a": "To set the Nitra AR2 Series Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Nitra AR2 Series Regulators and the Nitra AF2 Series Filters?",
+          "a": "The Nitra AR2 Series Regulators are air pressure regulators, while the [AF2 Series Filters](/p/nitra-af2-series-filters) are compressed-air particulate filters. They do different jobs in the same air line and are often fitted together; the Nitra AR2 Series Regulators are listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Nitra AR2 Series Regulators?",
+          "a": "The Nitra AR2 Series Regulators listing gives China as the country of origin and HS code 848110. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Nitra AR2 Series Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Nitra AR2 Series Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-filter-element-particulate-scfm",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Numatics Particulate Filter Elements used for?",
+          "a": "The Numatics Particulate Filter Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Numatics Particulate Filter Elements listing?",
+          "a": "Examples from the listing are RGPGPE9535P (108 cfm), RGPGPE95400P (1150 cfm) and RGPGPE95600P (1660 cfm). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Numatics Particulate Filter Elements?",
+          "a": "The grade or flow rating is stated in each part-number row. Listed flow runs from 108 to 1660 scfm across the sizes. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Numatics Particulate Filter Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone. [Numatics Sandwich Single Air Regulator, Round](/p/numatics-sandwich-single-air-regulator-round) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Numatics Particulate Filter Elements?",
+          "a": "The working pressure and temperature of the Numatics Particulate Filter Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Numatics Particulate Filter Elements use?",
+          "a": "Media for the Numatics Particulate Filter Elements is described per part number in the size table. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Numatics Particulate Filter Elements part number?",
+          "a": "Check the grade of the Numatics Particulate Filter Elements in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Numatics Particulate Filter Elements fit and what goes with it?",
+          "a": "The Numatics Particulate Filter Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak. [Numatics Sandwich Single Air Regulator, Round](/p/numatics-sandwich-single-air-regulator-round) is the related housing or unit in the same range."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Numatics Particulate Filter Elements?",
+          "a": "Replace the Numatics Particulate Filter Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "Should I replace the element or the whole filter when using the Numatics Particulate Filter Elements?",
+          "a": "Replace the element for routine service, and replace the housing only if the body, bowl threads or drain are damaged. Elements are the consumable part of the filter."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Numatics Particulate Filter Elements?",
+          "a": "The Numatics Particulate Filter Elements listing gives United States as the country of origin and HS code 8421398015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Numatics Particulate Filter Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Numatics Particulate Filter Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-sandwich-dual-air-regulator-round",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics Sandwich Dual Air Regulator, Round used for?",
+          "a": "The Numatics Sandwich Dual Air Regulator, Round is an air pressure regulator that reduces the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 7 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Numatics Sandwich Dual Air Regulator, Round range and how do they differ?",
+          "a": "Examples from the listing are 554RD100JP00000 (230 cfm), 081RD100J000000 (150 psi, 46 cfm) and 152RD100J000000 (150 psi, 69 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Numatics Sandwich Dual Air Regulator, Round come in?",
+          "a": "The Numatics Sandwich Dual Air Regulator, Round is listed by part number, with the port size in each row. Listed flow runs from 14 to 230 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Numatics Sandwich Dual Air Regulator, Round part number?",
+          "a": "For the Numatics Sandwich Dual Air Regulator, Round, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Numatics Sandwich Dual Air Regulator, Round?",
+          "a": "The Numatics Sandwich Dual Air Regulator, Round rows are rated 150 psi (about 10 bar). The listing gives a temperature of 115°F. The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Numatics Sandwich Dual Air Regulator, Round relieving, and what is it made from?",
+          "a": "The listing gives a relieving regulator with a relieving valve design. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Numatics Sandwich Dual Air Regulator, Round come with a pressure gauge?",
+          "a": "The listing says it includes: Gauge. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Numatics Sandwich Dual Air Regulator, Round?",
+          "a": "Fit the Numatics Sandwich Dual Air Regulator, Round after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Numatics Particulate Filter Elements](/p/numatics-filter-element-particulate-scfm) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Numatics Sandwich Dual Air Regulator, Round?",
+          "a": "To set the Numatics Sandwich Dual Air Regulator, Round, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Numatics Sandwich Dual Air Regulator, Round and the Numatics Sandwich Single Air Regulator, Round?",
+          "a": "The Numatics Sandwich Dual Air Regulator, Round is listed with flow up to 230 cfm and ratings of 150 psi. The [Sandwich Single Air Regulator, Round](/p/numatics-sandwich-single-air-regulator-round) is listed with flow up to 230 cfm. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics Sandwich Dual Air Regulator, Round made and how is it shipped from Dubai?",
+          "a": "The Numatics Sandwich Dual Air Regulator, Round listing gives United States as the country of origin and HS code 8481809015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Numatics Sandwich Dual Air Regulator, Round in Dubai?",
+          "a": "Yes. We keep the Numatics Sandwich Dual Air Regulator, Round in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-sandwich-single-air-regulator-round",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics Sandwich Single Air Regulator, Round used for?",
+          "a": "The Numatics Sandwich Single Air Regulator, Round is an air pressure regulator that reduces the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Numatics Sandwich Single Air Regulator, Round range and how do they differ?",
+          "a": "Examples from the listing are 031RS700O000000 (14 cfm), 081RS100J000000 (46 cfm) and 152RS100J000000 (69 cfm). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Numatics Sandwich Single Air Regulator, Round come in?",
+          "a": "The Numatics Sandwich Single Air Regulator, Round is listed by part number, with the port size in each row. Listed flow runs from 14 to 230 cfm across the sizes. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Numatics Sandwich Single Air Regulator, Round part number?",
+          "a": "For the Numatics Sandwich Single Air Regulator, Round, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Numatics Sandwich Single Air Regulator, Round?",
+          "a": "The Numatics Sandwich Single Air Regulator, Round rows do not state an inlet pressure we can quote, and the maker publishes it by part number. The listing gives a temperature of 115°F. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Numatics Sandwich Single Air Regulator, Round relieving, and what is it made from?",
+          "a": "The listing gives a relieving valve design and does not say whether the regulator is relieving; we confirm that per part number. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Numatics Sandwich Single Air Regulator, Round come with a pressure gauge?",
+          "a": "The listing does not say whether a gauge is included. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Numatics Sandwich Single Air Regulator, Round?",
+          "a": "Fit the Numatics Sandwich Single Air Regulator, Round after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Numatics Particulate Filter Elements](/p/numatics-filter-element-particulate-scfm) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Numatics Sandwich Single Air Regulator, Round?",
+          "a": "To set the Numatics Sandwich Single Air Regulator, Round, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Numatics Sandwich Single Air Regulator, Round and the Numatics Sandwich Dual Air Regulator, Round?",
+          "a": "The Numatics Sandwich Single Air Regulator, Round is listed with flow up to 230 cfm. The [Sandwich Dual Air Regulator, Round](/p/numatics-sandwich-dual-air-regulator-round) is listed with flow up to 230 cfm and ratings of 150 psi. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics Sandwich Single Air Regulator, Round made and how is it shipped from Dubai?",
+          "a": "The Numatics Sandwich Single Air Regulator, Round listing gives United States as the country of origin and HS code 8481809015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Numatics Sandwich Single Air Regulator, Round ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Numatics Sandwich Single Air Regulator, Round in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "smc-al-micro-series-micromist-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the SMC AL Micro Series Micromist Lubricator do in a compressed-air line?",
+          "a": "The SMC AL Micro Series Micromist Lubricator is an air-line lubricator that feeds a fine oil mist into the air stream while air is flowing. This listing has 27 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC AL Micro Series Micromist Lubricator range and how do they differ?",
+          "a": "Examples from the listing are AL430-02B (1/4\" port), NAL430-N03 (3/8\" port) and NAL430-N04 (1/2\" port). In these part numbers the digits after the dash give the port size (02 is 1/4\", 03 is 3/8\" and 04 is 1/2\"), with an N before them on the N-port versions. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the SMC AL Micro Series Micromist Lubricator come in?",
+          "a": "The SMC AL Micro Series Micromist Lubricator is listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC AL Micro Series Micromist Lubricator part number?",
+          "a": "For the SMC AL Micro Series Micromist Lubricator, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the SMC AL Micro Series Micromist Lubricator?",
+          "a": "The SMC AL Micro Series Micromist Lubricator rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the SMC AL Micro Series Micromist Lubricator give, and which oil does it use?",
+          "a": "Check the SMC AL Micro Series Micromist Lubricator part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the SMC AL Micro Series Micromist Lubricator have?",
+          "a": "Bowl material of the SMC AL Micro Series Micromist Lubricator is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the SMC AL Micro Series Micromist Lubricator in an air line?",
+          "a": "Fit the SMC AL Micro Series Micromist Lubricator last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [SMC ALF Series Auto Feed Lubricator](/p/smc-alf-series-auto-feed-lubricator) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the SMC AL Micro Series Micromist Lubricator?",
+          "a": "Shut off and depressurise the line before removing the bowl of the SMC AL Micro Series Micromist Lubricator, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC AL Micro Series Micromist Lubricator and the SMC AL Series Lubricator?",
+          "a": "The SMC AL Micro Series Micromist Lubricator is listed with 1/4\", 3/8\" and 1/2\" ports. The [AL Series Lubricator](/p/smc-al-series-lubricator) is listed with 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the SMC AL Micro Series Micromist Lubricator?",
+          "a": "For the SMC AL Micro Series Micromist Lubricator, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the SMC AL Micro Series Micromist Lubricator in Dubai?",
+          "a": "Yes. We keep the SMC AL Micro Series Micromist Lubricator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-al-series-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC AL Series Lubricator used for?",
+          "a": "The SMC AL Series Lubricator is an air-line lubricator that feeds a fine oil mist into the air stream while air is flowing. This listing has 23 part numbers in 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC AL Series Lubricator range and how do they differ?",
+          "a": "Examples from the listing are NAL800-N12 (1 1/4\" port), NAL3000-N03B-10 (3/8\" port) and AL900-N20-8 (2\" port). In these part numbers the digits after the dash give the port size (02 is 1/4\", 03 is 3/8\", 06 is 3/4\", 10 is 1\", 12 is 1 1/4\", 14 is 1 1/2\" and 20 is 2\"), with an N before them on the N-port versions. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the SMC AL Series Lubricator come in?",
+          "a": "The SMC AL Series Lubricator is listed in 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC AL Series Lubricator part number?",
+          "a": "For the SMC AL Series Lubricator, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the SMC AL Series Lubricator?",
+          "a": "The SMC AL Series Lubricator rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the SMC AL Series Lubricator give, and which oil does it use?",
+          "a": "Check the SMC AL Series Lubricator part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the SMC AL Series Lubricator have?",
+          "a": "Bowl material of the SMC AL Series Lubricator is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the SMC AL Series Lubricator in an air line?",
+          "a": "Fit the SMC AL Series Lubricator last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [SMC Lubricator](/p/smc-lubricator) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the SMC AL Series Lubricator?",
+          "a": "Shut off and depressurise the line before removing the bowl of the SMC AL Series Lubricator, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC AL Series Lubricator and the SMC AL Micro Series Micromist Lubricator?",
+          "a": "The SMC AL Series Lubricator is listed with 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\" ports. The [AL Micro Series Micromist Lubricator](/p/smc-al-micro-series-micromist-lubricator) is listed with 1/4\", 3/8\" and 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC AL Series Lubricator made and how is it shipped from Dubai?",
+          "a": "For the SMC AL Series Lubricator, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the SMC AL Series Lubricator in Dubai?",
+          "a": "Yes. We keep the SMC AL Series Lubricator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-alf-series-auto-feed-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ALF Series Auto Feed Lubricator used for?",
+          "a": "The SMC ALF Series Auto Feed Lubricator is an air-line lubricator that feeds a fine oil mist into the air stream while air is flowing. This listing has 19 part numbers in 1/4\", 3/8\", 1/2\", 3/4\", 1\", 1 1/2\" and 2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC ALF Series Auto Feed Lubricator range and how do they differ?",
+          "a": "Examples from the listing are NALF400-N03 (3/8\" port), NALF800-N14 (1 1/2\" port) and ALF600-10B (1\" port, 100 psi). In these part numbers the digits after the dash give the port size (02 is 1/4\", 03 is 3/8\", 04 is 1/2\", 06 is 3/4\", 10 is 1\", 14 is 1 1/2\" and 20 is 2\"), with an N before them on the N-port versions. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the SMC ALF Series Auto Feed Lubricator come in?",
+          "a": "The SMC ALF Series Auto Feed Lubricator is listed in 1/4\", 3/8\", 1/2\", 3/4\", 1\", 1 1/2\" and 2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC ALF Series Auto Feed Lubricator part number?",
+          "a": "For the SMC ALF Series Auto Feed Lubricator, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the SMC ALF Series Auto Feed Lubricator?",
+          "a": "The SMC ALF Series Auto Feed Lubricator rows are rated 100 psi (about 7 bar). Check whether the SMC ALF Series Auto Feed Lubricator part number has a plastic or a metal bowl, because the pressure rating can differ between them."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the SMC ALF Series Auto Feed Lubricator give, and which oil does it use?",
+          "a": "Check the SMC ALF Series Auto Feed Lubricator part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the SMC ALF Series Auto Feed Lubricator have?",
+          "a": "Bowl material of the SMC ALF Series Auto Feed Lubricator is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the SMC ALF Series Auto Feed Lubricator in an air line?",
+          "a": "Fit the SMC ALF Series Auto Feed Lubricator last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [SMC AL Series Lubricator](/p/smc-al-series-lubricator) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the SMC ALF Series Auto Feed Lubricator?",
+          "a": "Shut off and depressurise the line before removing the bowl of the SMC ALF Series Auto Feed Lubricator, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC ALF Series Auto Feed Lubricator and the SMC AL Micro Series Micromist Lubricator?",
+          "a": "The SMC ALF Series Auto Feed Lubricator is listed with 1/4\", 3/8\", 1/2\", 3/4\", 1\", 1 1/2\" and 2\" ports and ratings of 100 psi. The [AL Micro Series Micromist Lubricator](/p/smc-al-micro-series-micromist-lubricator) is listed with 1/4\", 3/8\" and 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ALF Series Auto Feed Lubricator made and how is it shipped from Dubai?",
+          "a": "For the SMC ALF Series Auto Feed Lubricator, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the SMC ALF Series Auto Feed Lubricator ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the SMC ALF Series Auto Feed Lubricator in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "smc-automatic-drain",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC Automatic Drain used for?",
+          "a": "The SMC Automatic Drain is a drain that empties condensate from an air filter or air line automatically instead of by hand. This listing has 4 part numbers, AD27-A, AD37-8-A, AD38N-2Z-A and AD38N-6Z-A."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC Automatic Drain range and how do they differ?",
+          "a": "The listing has AD27-A, AD37-8-A, AD38N-2Z-A and AD38N-6Z-A. The rows describe each only as an automatic drain, so quote the part number and the filter it goes on and we confirm the fitting and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which connection sizes does the SMC Automatic Drain come in?",
+          "a": "The rows do not state a connection size, so we confirm it from the maker data. Tell us the filter or line the drain goes on, and the port size, and we match the part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the SMC Automatic Drain part numbers?",
+          "a": "Choose by the filter model or drain port it must fit, because the part numbers differ by series and port. Quote your filter model and we pick the matching drain."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature ratings does the SMC Automatic Drain have?",
+          "a": "The rows do not state pressure or temperature ratings, and SMC publishes them by series. Quote the part number and we confirm the limits from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC Automatic Drain made of?",
+          "a": "The listing does not state the materials, so we confirm them from the maker data. A drain on a plastic-bowl filter must be compatible with the bowl and with the condensate."
+        },
+        {
+          "slot": "G",
+          "q": "Why fit an automatic drain such as the SMC Automatic Drain?",
+          "a": "An automatic drain removes the chore of draining a filter bowl by hand and keeps the condensate from reaching the element and the air line. Check that it still dumps at each service."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SMC Automatic Drain connect to?",
+          "a": "It fits the drain port of an SMC air filter or an air line low point. SMC lubricators sit downstream in the same line, such as the [SMC AL Series Lubricator](/p/smc-al-series-lubricator)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain the SMC Automatic Drain?",
+          "a": "Check that it discharges at each service, keep the drain port clear and depressurise the line before removing the drain. Contaminated condensate can block the float or valve seat."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC Automatic Drain and a manual drain?",
+          "a": "An automatic drain empties itself as the condensate level rises, while a manual drain must be opened by hand. Choose the automatic type for filters that are hard to reach or drained less often."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC Automatic Drain made and how is it shipped from Dubai?",
+          "a": "For the SMC Automatic Drain, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the SMC Automatic Drain in Dubai?",
+          "a": "Yes. We keep the SMC Automatic Drain in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-booster-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the SMC Booster Regulators used for?",
+          "a": "The SMC Booster Regulators are booster regulators that raise air pressure for a local high-pressure demand. This listing has 3 part numbers in 1/4\", 3/8\" and 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC Booster Regulators range and how do they differ?",
+          "a": "Examples from the listing are VBA40A-N04GN-Z (1/2\" port, 145 psi), VBA10A-N02GN-Z (1/4\" port, 290 psi) and VBA20A-N03GN-Z (3/8\" port, 145 psi). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the SMC Booster Regulators come in?",
+          "a": "The SMC Booster Regulators are listed in 1/4\", 3/8\" and 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC Booster Regulators part number?",
+          "a": "For the SMC Booster Regulators, choose by port size and pressure rating, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the SMC Booster Regulators?",
+          "a": "The SMC Booster Regulators rows are rated 145 psi (about 10 bar) and 290 psi (about 20 bar). The listing gives a temperature of 122°F. The inlet rating and the outlet adjustment range are different figures, so check both against the pressure your tool or cylinder needs."
+        },
+        {
+          "slot": "F",
+          "q": "Is the SMC Booster Regulators relieving, and what is it made from?",
+          "a": "The SMC Booster Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC Booster Regulators come with a pressure gauge?",
+          "a": "The listing says it includes: Pressure Gauge, Silencer. Check the part-number row or ask us, and we confirm the gauge and panel-nut options from the maker data before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the SMC Booster Regulators?",
+          "a": "Fit the SMC Booster Regulators after the filter, close to the load. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [SMC Automatic Drain](/p/smc-automatic-drain) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the SMC Booster Regulators?",
+          "a": "To set the SMC Booster Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC Booster Regulators and the SMC AL Series Lubricator?",
+          "a": "The SMC Booster Regulators are booster regulators, while the [AL Series Lubricator](/p/smc-al-series-lubricator) is an air-line lubricator. They do different jobs in the same air line and are often fitted together; the SMC Booster Regulators are listed with 1/4\", 3/8\" and 1/2\" ports and ratings of 145 and 290 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC Booster Regulators made and how is it shipped from Dubai?",
+          "a": "The SMC Booster Regulators listing gives Japan as the country of origin and HS code 8481100040. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Is the SMC Booster Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The SMC Booster Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "smc-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC Lubricator used for?",
+          "a": "The SMC Lubricator is an air-line lubricator that feeds a fine oil mist into the air stream while air is flowing. This listing has 135 part numbers in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the SMC Lubricator range and how do they differ?",
+          "a": "Examples from the listing are AL40-03 (3/8\" port), AL60-N10-1Z (1\" port) and AL20-N01-2RZ (1/8\" port). In these part numbers the digits after the dash give the port size (02 is 1/4\", 03 is 3/8\", 04 is 1/2\", 06 is 3/4\" and 10 is 1\"), with an N before them on the N-port versions. Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the SMC Lubricator come in?",
+          "a": "The SMC Lubricator is listed in 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC Lubricator part number?",
+          "a": "For the SMC Lubricator, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the SMC Lubricator?",
+          "a": "The SMC Lubricator rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the SMC Lubricator give, and which oil does it use?",
+          "a": "Check the SMC Lubricator part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the SMC Lubricator have?",
+          "a": "Bowl material of the SMC Lubricator is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the SMC Lubricator in an air line?",
+          "a": "Fit the SMC Lubricator last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [SMC AL Micro Series Micromist Lubricator](/p/smc-al-micro-series-micromist-lubricator) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the SMC Lubricator?",
+          "a": "Shut off and depressurise the line before removing the bowl of the SMC Lubricator, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the SMC Lubricator and the SMC AL Series Lubricator?",
+          "a": "The SMC Lubricator is listed with 1/8\", 1/4\", 3/8\", 1/2\", 3/4\" and 1\" ports. The [AL Series Lubricator](/p/smc-al-series-lubricator) is listed with 1/4\", 3/8\", 3/4\", 1\", 1 1/4\", 1 1/2\" and 2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC Lubricator made and how is it shipped from Dubai?",
+          "a": "For the SMC Lubricator, the country of origin is confirmed per part number when we quote. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. The usual HS heading for this type of product is 8481.80, and the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the SMC Lubricator ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the SMC Lubricator in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "solberg-psg-series-air-oil-separator-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Solberg PSG Series Air/Oil Separator Elements used for?",
+          "a": "The Solberg PSG Series Air/Oil Separator Elements are replacement filter elements that restore the filtering stage of a compressed-air filter when the old element is loaded. This listing has 5 part numbers, with 0.3 micron grades listed."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Solberg PSG Series Air/Oil Separator Elements listing?",
+          "a": "Examples from the listing are PSG850/1 (125 cfm, 0.3 micron), PSG244/2 (300 cfm, 0.3 micron) and PSG474/2 (1100 cfm, 0.3 micron). Quote the part number or the housing model and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in the Solberg PSG Series Air/Oil Separator Elements?",
+          "a": "The rows show 0.3 micron grades. Listed flow runs from 125 to 1100 cfm across the sizes. A finer grade traps more but drops more pressure, so choose the grade the downstream equipment needs rather than the finest available."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match the Solberg PSG Series Air/Oil Separator Elements to my filter housing?",
+          "a": "Match the element by the housing series or model on the filter body and quote that, plus the grade you need. Elements are not interchangeable between makers or housing sizes, so do not rely on the port size alone."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature limits apply to the Solberg PSG Series Air/Oil Separator Elements?",
+          "a": "The working pressure and temperature of the Solberg PSG Series Air/Oil Separator Elements are set by the housing the element goes into, so quote the housing part number to get the rating. Differential pressure across the element rises as it loads, which is the signal to replace it."
+        },
+        {
+          "slot": "F",
+          "q": "What material and media do the Solberg PSG Series Air/Oil Separator Elements use?",
+          "a": "Media for the Solberg PSG Series Air/Oil Separator Elements is described per part number in the size table. The rows also name the grades 0.3 micron. Coalescing elements use fine-fibre media for oil removal and particulate elements use porous media for solids, so match the type to the stage in your filter."
+        },
+        {
+          "slot": "G",
+          "q": "Can I change the filter grade by fitting a different Solberg PSG Series Air/Oil Separator Elements part number?",
+          "a": "Check the grade of the Solberg PSG Series Air/Oil Separator Elements in the part-number row before ordering, because the grade sets what the filter removes and the pressure drop. A coalescing element needs a particulate pre-filter upstream, because dirt shortens its life."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Solberg PSG Series Air/Oil Separator Elements fit and what goes with it?",
+          "a": "The Solberg PSG Series Air/Oil Separator Elements fit the housing named in each row. Replace the bowl seal at the same service so the bowl does not leak."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the Solberg PSG Series Air/Oil Separator Elements?",
+          "a": "Replace the Solberg PSG Series Air/Oil Separator Elements when the pressure drop across the filter rises, when the differential pressure indicator shows it, or when it is visibly loaded. Depressurise the line first, and replace coalescing elements at the maker's stated interval even if the pressure drop is still low."
+        },
+        {
+          "slot": "K",
+          "q": "Should I replace the element or the whole filter when using the Solberg PSG Series Air/Oil Separator Elements?",
+          "a": "Replace the element for routine service, and replace the housing only if the body, bowl threads or drain are damaged. Elements are the consumable part of the filter."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Solberg PSG Series Air/Oil Separator Elements?",
+          "a": "The Solberg PSG Series Air/Oil Separator Elements listing gives United States as the country of origin and HS code 8421398015. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Solberg PSG Series Air/Oil Separator Elements ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Solberg PSG Series Air/Oil Separator Elements in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-arrowick-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Texas Pneumatic Tools Arrowick Lubricators do in a compressed-air line?",
+          "a": "The Texas Pneumatic Tools Arrowick Lubricators are air-line lubricators that feed a fine oil mist into the air stream while air is flowing. This listing has 5 part numbers in 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Arrowick Lubricators range and how do they differ?",
+          "a": "Examples from the listing are 4106 (3/4\" port), 4108W (1\" port) and 4112W (1 1/2\" port). In these part numbers the size digits count eighths of an inch (06 is 3/4\", 08 is 1\" and 12 is 1 1/2\"). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Arrowick Lubricators come in?",
+          "a": "The Texas Pneumatic Tools Arrowick Lubricators are listed in 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Arrowick Lubricators part number?",
+          "a": "For the Texas Pneumatic Tools Arrowick Lubricators, choose by port size, then check the flow the tool draws at the working pressure. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Texas Pneumatic Tools Arrowick Lubricators?",
+          "a": "The Texas Pneumatic Tools Arrowick Lubricators rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Texas Pneumatic Tools Arrowick Lubricators give, and which oil does it use?",
+          "a": "Check the Texas Pneumatic Tools Arrowick Lubricators part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Texas Pneumatic Tools Arrowick Lubricators have?",
+          "a": "Bowl material of the Texas Pneumatic Tools Arrowick Lubricators is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Texas Pneumatic Tools Arrowick Lubricators in an air line?",
+          "a": "Fit the Texas Pneumatic Tools Arrowick Lubricators last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Texas Pneumatic Tools Integral Filter/Regulators](/p/texas-pneumatic-tools-integral-filter-regulators) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Texas Pneumatic Tools Arrowick Lubricators?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Texas Pneumatic Tools Arrowick Lubricators, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Arrowick Lubricators and the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator?",
+          "a": "The Texas Pneumatic Tools Arrowick Lubricators are listed with 3/4\", 1\" and 1 1/2\" ports. The [Tri-Star Arrowfog Lubricator](/p/texas-pneumatic-tools-tri-star-arrowfog-lubricator) is listed with 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Texas Pneumatic Tools Arrowick Lubricators?",
+          "a": "The Texas Pneumatic Tools Arrowick Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Texas Pneumatic Tools Arrowick Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Texas Pneumatic Tools Arrowick Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-coalescing-filters-oil-removing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Texas Pneumatic Tools Coalescing Filters (Oil Removing) do in a compressed-air line?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 18 part numbers in 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 3\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Coalescing Filters (Oil Removing) range and how do they differ?",
+          "a": "Examples from the listing are F554W (manual drain), F505-06FW (3/4\" port) and F519-24TW (3\" port). In these part numbers the size digits count eighths of an inch (06 is 3/4\", 08 is 1\", 12 is 1 1/2\", 16 is 2\" and 24 is 3\"). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Coalescing Filters (Oil Removing) come in?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) are listed in 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 3\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Coalescing Filters (Oil Removing) part number for my air line?",
+          "a": "To choose a part number from the Texas Pneumatic Tools Coalescing Filters (Oil Removing), choose by port size, then check the flow the downstream tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Texas Pneumatic Tools Coalescing Filters (Oil Removing)?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Texas Pneumatic Tools Coalescing Filters (Oil Removing) use?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) listing describes the element as a coalescing grade for oil removal. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Texas Pneumatic Tools Coalescing Filters (Oil Removing) give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Texas Pneumatic Tools Coalescing Filters (Oil Removing) is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Texas Pneumatic Tools Coalescing Filters (Oil Removing) in an air line?",
+          "a": "Fit the Texas Pneumatic Tools Coalescing Filters (Oil Removing) downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Texas Pneumatic Tools Tri-Star Arrowfog Lubricator](/p/texas-pneumatic-tools-tri-star-arrowfog-lubricator) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Texas Pneumatic Tools Coalescing Filters (Oil Removing)?",
+          "a": "Drain a manual bowl before the liquid reaches the element. Change the element of the Texas Pneumatic Tools Coalescing Filters (Oil Removing) when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Coalescing Filters (Oil Removing) and the Texas Pneumatic Tools Coalescing Oil Removing Filters?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) are listed with 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 3\" ports. The [Coalescing Oil Removing Filters](/p/texas-pneumatic-tools-coalescing-oil-removing-filters) are listed with 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Texas Pneumatic Tools Coalescing Filters (Oil Removing)?",
+          "a": "The Texas Pneumatic Tools Coalescing Filters (Oil Removing) listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Texas Pneumatic Tools Coalescing Filters (Oil Removing) in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Coalescing Filters (Oil Removing) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-coalescing-oil-removing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Texas Pneumatic Tools Coalescing Oil Removing Filters do in a compressed-air line?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters are coalescing (oil-removal) filters that remove oil aerosol and very fine particles from compressed air. This listing has 5 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Coalescing Oil Removing Filters range and how do they differ?",
+          "a": "Examples from the listing are F484FW (Oil Removing Filter, 116 Max Cfm, 20 Oz Bow, 1/2 Inch Midflow), F405-08FW (Oil Removing Filter, 185 Max Cfm, 1 Inch High Flow) and F418-12TW (Oil Removing Filter, 590 Max Cfm, 1-1/2 Inch High Flow). In these part numbers the size digits count eighths of an inch (). Quote the part number from the body or the order and we confirm the bowl, drain and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Coalescing Oil Removing Filters come in?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters are listed in 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Coalescing Oil Removing Filters part number for my air line?",
+          "a": "To choose a part number from the Texas Pneumatic Tools Coalescing Oil Removing Filters, pick the port size from the flow the downstream tools draw at the working pressure, then match the options shown in the size table. Our [FRL shelf](/c/air-preparation-frl) lists the other filters, regulators and lubricators if you need a matched set."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Texas Pneumatic Tools Coalescing Oil Removing Filters?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters rows do not state a pressure figure we can quote, and the maker publishes the rating by part number. Quote the part number and we confirm the working pressure from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What element grade and materials does the Texas Pneumatic Tools Coalescing Oil Removing Filters use?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters listing describes the element as a coalescing grade for oil removal. A coalescing element needs a clean, particulate-filtered supply, so fit a particulate pre-filter ahead of it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Texas Pneumatic Tools Coalescing Oil Removing Filters give a stated ISO 8573-1 air quality class?",
+          "a": "A coalescing or carbon stage like the Texas Pneumatic Tools Coalescing Oil Removing Filters is what brings oil carry-over down toward the oil classes of ISO 8573-1, but the class you reach depends on the inlet condition, the flow and the element age. Ask for the maker's stated class for the grade you order. Our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and the stages."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Texas Pneumatic Tools Coalescing Oil Removing Filters in an air line?",
+          "a": "Fit the Texas Pneumatic Tools Coalescing Oil Removing Filters downstream of a particulate pre-filter and ahead of regulators and sensitive valves: the usual FRL order is filter, then regulator, then lubricator. The filter protects the regulator and the tools from the dirt and water the regulator would otherwise pass on. The matching [Texas Pneumatic Tools Tri-Star Arrowfog Lubricator](/p/texas-pneumatic-tools-tri-star-arrowfog-lubricator) from the same range is the usual next stage."
+        },
+        {
+          "slot": "I",
+          "q": "How should I drain and service the Texas Pneumatic Tools Coalescing Oil Removing Filters?",
+          "a": "Drain a manual bowl before the liquid reaches the element. Change the element of the Texas Pneumatic Tools Coalescing Oil Removing Filters when the pressure drop across the filter rises or the element is visibly loaded, and clean a polycarbonate bowl with mild soap and water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Coalescing Oil Removing Filters and the Texas Pneumatic Tools Coalescing Filters (Oil Removing)?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters are listed with 1/2\" ports. The [Coalescing Filters (Oil Removing)](/p/texas-pneumatic-tools-coalescing-filters-oil-removing) are listed with 1/2\", 3/4\", 1\", 1 1/2\", 2\" and 3\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Texas Pneumatic Tools Coalescing Oil Removing Filters?",
+          "a": "The Texas Pneumatic Tools Coalescing Oil Removing Filters listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Texas Pneumatic Tools Coalescing Oil Removing Filters in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Coalescing Oil Removing Filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-integral-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Texas Pneumatic Tools Integral Filter/Regulators used for?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators are filter/regulators that clean the air and hold a steady working pressure in one body. This listing has 3 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Integral Filter/Regulators range and how do they differ?",
+          "a": "Examples from the listing are B754 (1/2\" port) and B754FGW (1/2\" port, metal bowl). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Integral Filter/Regulators come in?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators are listed in 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Integral Filter/Regulators part number?",
+          "a": "For the Texas Pneumatic Tools Integral Filter/Regulators, pick the port size from the flow the tools draw at the working pressure, then match the options shown in each part-number row. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Texas Pneumatic Tools Integral Filter/Regulators have?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Texas Pneumatic Tools Integral Filter/Regulators?",
+          "a": "On the Texas Pneumatic Tools Integral Filter/Regulators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Texas Pneumatic Tools Integral Filter/Regulators include a lubricator?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators combines the filter and the regulator in one body, so it sets pressure and cleans the air at the same point. Add a lubricator after it only where the tool or cylinder needs oil; our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains when it does."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Texas Pneumatic Tools Integral Filter/Regulators?",
+          "a": "Connect the Texas Pneumatic Tools Integral Filter/Regulators to the compressed-air line at the point of use, with the lubricator (if any) after it. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Texas Pneumatic Tools Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Texas Pneumatic Tools Integral Filter/Regulators?",
+          "a": "Drain the Texas Pneumatic Tools Integral Filter/Regulators bowl before the liquid reaches the element, change the element when the pressure drop rises, and check the regulator holds its set pressure. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Integral Filter/Regulators and the Texas Pneumatic Tools Portable FRL Components?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators are filter/regulators, while the [Portable FRL Components](/p/texas-pneumatic-tools-portable-frl-components) are filter/regulator/lubricator (FRL) units. They do different jobs in the same air line and are often fitted together; the Texas Pneumatic Tools Integral Filter/Regulators are listed with 1/2\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Texas Pneumatic Tools Integral Filter/Regulators made and how is it shipped from Dubai?",
+          "a": "The Texas Pneumatic Tools Integral Filter/Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Texas Pneumatic Tools Integral Filter/Regulators in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Integral Filter/Regulators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-portable-frl-components",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Texas Pneumatic Tools Portable FRL Components used for?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 4 part numbers in 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Portable FRL Components range and how do they differ?",
+          "a": "Examples from the listing are #3FRL1 (1\" port), #1FRL1/2 (1/2\" port) and #2FRL3/4 (3/4\" port). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Portable FRL Components come in?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components are listed in 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Portable FRL Components part number?",
+          "a": "For the Texas Pneumatic Tools Portable FRL Components, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Texas Pneumatic Tools Portable FRL Components have?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Texas Pneumatic Tools Portable FRL Components?",
+          "a": "On the Texas Pneumatic Tools Portable FRL Components, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Texas Pneumatic Tools Portable FRL Components?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Texas Pneumatic Tools Portable FRL Components?",
+          "a": "Connect the Texas Pneumatic Tools Portable FRL Components to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Texas Pneumatic Tools Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Texas Pneumatic Tools Portable FRL Components?",
+          "a": "Drain the Texas Pneumatic Tools Portable FRL Components bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Portable FRL Components and the Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components are listed with 1/2\", 3/4\", 1\" and 1 1/2\" ports. The [Portable FRL (Filters Regulators Lubricators) Systems](/p/texas-pneumatic-tools-portable-frl-filters-regulators-lubricators-systems) is listed with 1/2\", 3/4\", 1\" and 1 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Texas Pneumatic Tools Portable FRL Components made and how is it shipped from Dubai?",
+          "a": "The Texas Pneumatic Tools Portable FRL Components listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Texas Pneumatic Tools Portable FRL Components in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Portable FRL Components in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-portable-frl-filters-regulators-lubricators-systems",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems do in a compressed-air line?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems is a filter/regulator/lubricator (FRL) unit that cleans, regulates and lubricates the air for a tool or cylinder in one assembly. This listing has 9 part numbers in 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems range and how do they differ?",
+          "a": "Examples from the listing are TX1HF-FRL (1\" port), TX1-1/2HF-FRL (1 1/2\" port) and N33386W (3/4\" port, metal bowl). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems come in?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems is listed in 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems part number?",
+          "a": "For the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems, choose by port size, then check the flow the tools draw at the working pressure. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems have?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "On the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "Connect the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run. The [Texas Pneumatic Tools Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) from the same maker is the related stage or unit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "Drain the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems and the Portable FRL Components?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems is listed with 1/2\", 3/4\", 1\" and 1 1/2\" ports. The [Portable FRL Components](/p/texas-pneumatic-tools-portable-frl-components) are listed with 1/2\", 3/4\", 1\" and 1 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems?",
+          "a": "The Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems in Dubai?",
+          "a": "Yes. We keep the Texas Pneumatic Tools Portable FRL (Filters Regulators Lubricators) Systems in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Texas Pneumatic Tools Regulators do in a compressed-air line?",
+          "a": "The Texas Pneumatic Tools Regulators are air pressure regulators that reduce the line pressure to a steady working pressure for the tool or cylinder downstream. This listing has 15 part numbers in 1/4\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Regulators range and how do they differ?",
+          "a": "Examples from the listing are R162 (1/4\" port), R376 (3/4\" port) and R3912G (1 1/2\" port). In these part numbers the last size digit counts eighths of an inch (2 is 1/4\", 4 is 1/2\", 6 is 3/4\" and 8 is 1\" as in R162, R374, R376 and R378). Quote the part number and we confirm the gauge, panel-nut and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Regulators come in?",
+          "a": "The Texas Pneumatic Tools Regulators are listed in 1/4\", 1/2\", 3/4\", 1\" and 1 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Regulators part number?",
+          "a": "For the Texas Pneumatic Tools Regulators, choose by port size and gauge option, then check the flow the tool draws at the working pressure. Set the regulator for the lowest pressure that does the job, since every extra bar costs compressor energy."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and adjustment range of the Texas Pneumatic Tools Regulators?",
+          "a": "The Texas Pneumatic Tools Regulators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Texas Pneumatic Tools Regulators relieving, and what is it made from?",
+          "a": "The Texas Pneumatic Tools Regulators listing does not say whether the regulator is relieving, and we confirm that per part number from the maker data. A relieving regulator vents excess downstream pressure through the bonnet when you turn the setting down, while a non-relieving one holds it until the load uses it."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Texas Pneumatic Tools Regulators come with a pressure gauge?",
+          "a": "The row text lists a gauge as included, for example on R162G. A regulator without a gauge needs one fitted before it is set, so check the row for the part you order."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before and after the Texas Pneumatic Tools Regulators?",
+          "a": "Fit the Texas Pneumatic Tools Regulators after the filter and before the lubricator. A filter ahead of it protects the regulator seat and diaphragm from dirt and water. The matching [Texas Pneumatic Tools Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) completes the line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set and maintain the Texas Pneumatic Tools Regulators?",
+          "a": "To set the Texas Pneumatic Tools Regulators, turn the adjusting knob until the gauge reads the working pressure, approaching the setting from below, and lock the knob if the version has a lock. Keep the line clean and dry upstream: a regulator that creeps or will not hold pressure usually has dirt on the valve seat or a worn diaphragm, which a service kit corrects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Regulators and the Texas Pneumatic Tools Arrowick Lubricators?",
+          "a": "The Texas Pneumatic Tools Regulators are air pressure regulators, while the [Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) are air-line lubricators. They do different jobs in the same air line and are often fitted together; the Texas Pneumatic Tools Regulators are listed with 1/4\", 1/2\", 3/4\", 1\" and 1 1/2\" ports."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Texas Pneumatic Tools Regulators?",
+          "a": "The Texas Pneumatic Tools Regulators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Texas Pneumatic Tools Regulators available from stock at Indus Hydraulics?",
+          "a": "Yes. The Texas Pneumatic Tools Regulators is a stocked line at our Dubai, UAE warehouse, shipped worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-tri-star-arrowfog-lubricator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator used for?",
+          "a": "The Texas Pneumatic Tools Tri-Star Arrowfog Lubricator is an air-line lubricator that feeds a fine oil mist into the air stream while air is flowing. This listing has 5 part numbers in 1/2\" NPT ports."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator range and how do they differ?",
+          "a": "Examples from the listing are L352 (Tri-Star Arrowfog Lubricator, 16 Max Cfm, 1/2 Inch Size) and L354 (Tri-Star Arrowfog Lubricator, 142 Max Cfm, 1/2 Inch Size). Quote the part number and we confirm the bowl and options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator come in?",
+          "a": "The Texas Pneumatic Tools Tri-Star Arrowfog Lubricator is listed in 1/2\" NPT ports. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Texas Pneumatic Tools Tri-Star Arrowfog Lubricator part number?",
+          "a": "For the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator, pick the port size from the flow the tool draws at the working pressure, then match the options shown in each part-number row. A lubricator feeds oil only while air is flowing, so size it on the flow the tool draws."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum working pressure of the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator?",
+          "a": "The Texas Pneumatic Tools Tri-Star Arrowfog Lubricator rows do not state a pressure figure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What type of lubrication does the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator give, and which oil does it use?",
+          "a": "Check the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator part number for mist (oil-fog) or micro-mist (micro-fog) delivery. A mist lubricator suits a single tool or cylinder close by; a micro-mist version sends only the fine drops and can serve several points or a longer run."
+        },
+        {
+          "slot": "G",
+          "q": "What bowl and sight feed does the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator have?",
+          "a": "Bowl material of the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator is stated per part number in the size table. A sight dome or sight gauge lets you see the oil drops and the level, and polycarbonate bowls can be attacked by some synthetic oils and solvents, so use the oil the maker specifies."
+        },
+        {
+          "slot": "H",
+          "q": "What should I fit before the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator in an air line?",
+          "a": "Fit the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator last in the FRL line, after the filter and regulator, close to the tool or cylinder it feeds. The filter and regulator keep dirt and water out of the oil metering. The [Texas Pneumatic Tools Portable FRL Components](/p/texas-pneumatic-tools-portable-frl-components) from the same maker goes ahead of it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill, adjust and maintain the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator?",
+          "a": "Shut off and depressurise the line before removing the bowl of the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator, fill to the marked level with the recommended oil, and refit the bowl. Set the drip rate with the adjusting screw or knob while air is flowing, and check the oil level regularly, because a lubricator only feeds oil while air passes through it."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator and the Texas Pneumatic Tools Arrowick Lubricators?",
+          "a": "The Texas Pneumatic Tools Tri-Star Arrowfog Lubricator is listed with 1/2\" ports. The [Arrowick Lubricators](/p/texas-pneumatic-tools-arrowick-lubricators) are listed with 3/4\", 1\" and 1 1/2\" ports. Choose the range whose ports, rating and flow fit your line and the mounting you already have."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator made and how is it shipped from Dubai?",
+          "a": "The Texas Pneumatic Tools Tri-Star Arrowfog Lubricator listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Texas Pneumatic Tools Tri-Star Arrowfog Lubricator in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "thern-filter-regulator-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Thern Filter Regulator Lubricators do in a compressed-air line?",
+          "a": "The Thern Filter Regulator Lubricators are filter/regulator/lubricator (FRL) units that clean, regulate and lubricate the air for a tool or cylinder in one assembly. This listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers are in the Thern Filter Regulator Lubricators range and how do they differ?",
+          "a": "Examples from the listing are TA-FRL (Filter, with Regulator and Lubricator). Quote the part number and we confirm the bowl, drain, gauge and mounting options before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes and flow ratings does the Thern Filter Regulator Lubricators come in?",
+          "a": "The Thern Filter Regulator Lubricators are listed by part number, with the port size in each row. Maker flow ratings are quoted at a stated inlet pressure and pressure drop, so check the row for the part you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Thern Filter Regulator Lubricators part number?",
+          "a": "For the Thern Filter Regulator Lubricators, pick the port size from the flow the tools draw at the working pressure, then match the options shown in each part-number row. Our [FRL shelf](/c/air-preparation-frl) lists the single filters, regulators and lubricators if you need to build the line from separate parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating and adjustment range does the Thern Filter Regulator Lubricators have?",
+          "a": "The Thern Filter Regulator Lubricators rows do not state an inlet pressure we can quote, and the maker publishes it by part number. Quote the part number and we confirm the rating from the maker data before supply."
+        },
+        {
+          "slot": "F",
+          "q": "Which compressor oils and chemicals can damage the bowl of the Thern Filter Regulator Lubricators?",
+          "a": "On the Thern Filter Regulator Lubricators, polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and cleaning chemicals, so use a metal bowl where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "In what order are the filter, regulator and lubricator arranged in the Thern Filter Regulator Lubricators?",
+          "a": "The Thern Filter Regulator Lubricators puts the three stages in the usual order, filter, then regulator, then lubricator, with the lubricator last before the tool. Our [FRL units guide](/blog/frl-filter-regulator-lubricator-guide) explains the order, filter grades, drains, bowls and sizing."
+        },
+        {
+          "slot": "H",
+          "q": "What should I connect to the Thern Filter Regulator Lubricators?",
+          "a": "Connect the Thern Filter Regulator Lubricators to the compressed-air line at the point of use. Use the fitting thread the port is listed for, and support the weight of the unit on a bracket or the pipe run."
+        },
+        {
+          "slot": "I",
+          "q": "How do I service the Thern Filter Regulator Lubricators?",
+          "a": "Drain the Thern Filter Regulator Lubricators bowl before the liquid reaches the element, change the element when the pressure drop rises, and top up the lubricator oil while the line is depressurised. Clean polycarbonate bowls with mild soap and water only, because solvents can craze them."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Thern Filter Regulator Lubricators compare with building a line from separate parts?",
+          "a": "The Thern Filter Regulator Lubricators is one assembly, while separate parts on our [FRL shelf](/c/air-preparation-frl) let you mix makers and sizes. Compare the size tables for port size, rating and flow before choosing."
+        },
+        {
+          "slot": "L",
+          "q": "What are the origin and HS code details for the Thern Filter Regulator Lubricators?",
+          "a": "The Thern Filter Regulator Lubricators listing gives United States as the country of origin. We ship from our Dubai warehouse to the GCC, Africa, Asia and beyond, and the origin and customs code are stated on the commercial invoice. Compressed-air filters normally fall under HS heading 8421.39 and regulators under 8481.10; the importing customs authority has the final say."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Thern Filter Regulator Lubricators ex-stock from Indus in the UAE?",
+          "a": "Yes, Indus holds the Thern Filter Regulator Lubricators in stock in Dubai, UAE, and ships worldwide with the best lead times. [Request a quotation](/contact) with the part numbers and quantities you need."
+        }
+      ]
+    }
+  ]
+}

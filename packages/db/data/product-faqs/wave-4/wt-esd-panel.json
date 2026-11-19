@@ -1,0 +1,84 @@
+{
+  "family": "wt-esd-panel",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "esd-panel-single-ssv-control-ss316-haskel-maximator-3-remote-stations",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a single-SSV ESD panel with 3 remote stations used for?",
+          "a": "A single-SSV emergency shutdown (ESD) panel controls one well-testing surface safety valve and trips it from the panel or from remote stations. This unit has an SS316 enclosure with the hydraulic oil tank, and three remote ESD stations as standard."
+        },
+        {
+          "slot": "B",
+          "q": "What do Haskel and Maximator mean on this ESD panel?",
+          "a": "Haskel and Maximator are the makers of the pneumatic-hydraulic pumps that reset the actuators on this panel. A manual lever-operated backup pump gives redundancy."
+        },
+        {
+          "slot": "D",
+          "q": "How many wells and SSVs does the ESD panel control?",
+          "a": "This panel controls one well-testing surface safety valve (SSV); multi-SSV variants are available. State the number of SSVs on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How many remote ESD stations come with the panel?",
+          "a": "Three remote ESD stations and the interconnecting lines are standard, with the length and quantity customised. State the distances from the panel on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How are the ESD trigger thresholds set on this panel?",
+          "a": "Adjustable hi-lo pressure pilots tune the ESD trigger thresholds to the operation, so the panel trips on high or low line pressure. Set them with the operator's shutdown philosophy."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ESD panel enclosure made of?",
+          "a": "The enclosure is SS316 stainless steel and houses the hydraulic oil tank for actuator control, as stated on the listing. Tubing materials follow the project requirement."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and certificates apply to the ESD panel?",
+          "a": "The listing does not state a certificate. Explosion protection and other approvals are given on the quotation if required; state the zone and the approval needed on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ESD panel connect to?",
+          "a": "It connects to the well-testing surface safety valve (SSV) actuator by hydraulic tubing, and to the remote ESD stations through interconnecting lines. See the [wellhead control panels](/c/wellhead-control-panels) shelf for multi-well systems."
+        },
+        {
+          "slot": "I",
+          "q": "How do I reset the SSV after an ESD trip on this panel?",
+          "a": "Use the pneumatic-hydraulic pumps (Haskel and Maximator) to reset the actuator, or the manual lever-operated backup pump if supply fails. Clear the cause of the shutdown before resetting."
+        },
+        {
+          "slot": "K",
+          "q": "Single-SSV ESD panel or a multi-well wellhead control panel?",
+          "a": "A single-SSV ESD panel serves one well-test surface safety valve, while a wellhead control panel serves 1 to 20 wells and several valve types. See the [wellhead control panels](/c/wellhead-control-panels) shelf for the larger system."
+        },
+        {
+          "slot": "L",
+          "q": "Can the single-SSV ESD panel be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide. Give the destination and the number of remote stations and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the single-SSV ESD panel in Dubai?",
+          "a": "Yes. We keep the single-SSV ESD panel with 3 remote stations in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the SSV count and line lengths through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

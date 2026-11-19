@@ -1,0 +1,1856 @@
+{
+  "family": "solenoid-cartridge-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Sun DFCA (2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve, Flow 1-2): series 1 to 4, cavity T-13A, T-16A, T-18A, capacity 15 gpm to 120 gpm (60 L/min to 480 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFCA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFCI (2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve, Flow 1-2 (740 Series)): series 1 to 4, cavity T-13A, T-5A, T-16A, T-18A, capacity 15 gpm to 120 gpm (60 L/min to 480 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFCI solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFCB (2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve, Flow 2-1): series 1 to 4, cavity T-13A, T-5A, T-16A, T-18A, capacity 15 gpm to 120 gpm (60 L/min to 480 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFCB solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFCJ (2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve, Flow 2-1 (740 Series)): series 1 to 4, cavity T-13A, T-5A, T-16A, T-18A, capacity 15 gpm to 120 gpm (60 L/min to 480 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFCJ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DGTA (2-Way, Solenoid-Operated Directional Poppet Valve): series 0C, 1C, cavity SC-08-02, SC-10-02, capacity 12 gpm to 16 gpm (45 L/min to 60 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DGTA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFTA (2-Way, Solenoid-Operated Directional Poppet Valve with Reverse Flow Check): series 0C, 1C, cavity SC-08-02, SC-10-02, capacity 8 gpm to 16 gpm (30 L/min to 60 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFTA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DACC (2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve): series 1, cavity T-13A, capacity 15 gpm (60 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DACC solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DBAF (3-Way Solenoid-Operated Directional Spool Valve, Pilot Capacity (740 Series)): series P, cavity T-9A, capacity .25 gpm (1 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DBAF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DBAFS (3-Way, Soft Shift, Solenoid-Operated Directional Spool Valve, Pilot Capacity (740 Series)): series P, cavity T-9A, capacity .25 gpm (1 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DBAFS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DLDAZ (2-Way, Solenoid-Operated Directional Spool Valve with Position Switch): series 1, cavity T-13A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DLDAZ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DLDF (2-Way, Solenoid-Operated Directional Spool Valve (740 Series)): series 1, cavity T-13A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DLDF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DLDFS (2-Way, Soft Shift, Solenoid-Operated Directional Spool Valve (740 Series)): series 1, cavity T-13A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DLDFS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DLUT (2-Way, Direct-Acting, Balanced Spool, Solenoid-Operated Directional Valve, 3000 psi (210 bar)): series 1C, cavity SC-10-02, capacity 6 gpm (23 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DLUT solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMBD (FLeX Series 3-Way, Solenoid-Operated Directional Spool Valve, 3000 psi (210 bar)): series 0, cavity T-150A, capacity 4 gpm (15 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMBD solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMBF (FLeX Series 3-Way, Solenoid-Operated Directional Spool Valve): series 0, cavity T-150A, capacity 4 gpm (15 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMBF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMDA (3-Way, Solenoid-Operated Directional Spool Valve): series 1, cavity T-11A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMDA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMDAS (3-Way, Soft Shift, Solenoid-Operated Directional Spool Valve): series 1, cavity T-11A, capacity 5 gpm (20 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMDAS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMDAZ (3-Way, Solenoid-Operated Directional Spool Valve with Position Switch): series 1, cavity T-11A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMDAZ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMDF (3-Way, Solenoid-Operated Directional Spool Valve (740 Series)): series 1, cavity T-11A, capacity 12 gpm (45 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMDF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMTA (3-Way, Direct-Acting, Balanced Spool, Solenoid-Operated Directional Valve, 3600 psi (250 bar)): series 0C, cavity SC-08-03, capacity 4 gpm (15 L/min), maximum pressure 3600 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMTA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMUQ (3-Way, Direct-Acting, Balanced Spool, Solenoid-Operated Directional Valve, 1600 psi (110 bar)): series 1C, cavity SC-10-03, capacity 7 gpm (28 L/min), maximum pressure 1600 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMUQ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DMUT (3-Way, Direct-Acting, Balanced Spool, Solenoid-Operated Directional Valve, 3000 psi (210 bar)): series 1C, cavity SC-10-03, capacity 7 gpm (28 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DMUT solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNBD (FLeX Series 4-Way, 2-Position, Solenoid-Operated Directional Spool Valve, 3000 psi (210 bar)): series 0, cavity T-30A, capacity 4 gpm (15 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNBD solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNBF (FLeX Series 4-Way, 2-Position, Solenoid-Operated Directional Spool Valve): series 0, cavity T-30A, capacity 4 gpm (15 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNBF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNCA (4-Way, 2-Position, Solenoid-Operated Directional Spool Valve with Closed Transition): series 1, cavity T-31A, capacity 8 gpm (30 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNCA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNCAZ (4-Way, 2-Position, Solenoid-Operated Directional Spool Valve with Closed Transition and Position Switch): series 1, cavity T-31A, capacity 8 gpm (30 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNCAZ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDA (4-Way, 2-Position, Solenoid-Operated Directional Spool Valve): series 1, cavity T-31A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDAS (4-Way, 2-Position, Soft Shift, Solenoid-Operated Directional Spool Valve): series 1, cavity T-31A, capacity 4 gpm (15 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDAS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDC (4-Way, 3-Position, Solenoid-Operated Directional Spool Valve): series 1, cavity T-31A, capacity 5 gpm (20 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDC solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDF (4-Way, 2-Position, Solenoid-Operated Directional Spool Valve (740 Series)): series 1, cavity T-31A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDU (4-Way, 2-Position, Solenoid-Operated Directional Blocking Valve (740 Series)): series 1, cavity T-31A, capacity 5 gpm (20 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDU solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDY (2-Position, 6-Way, Solenoid-Operated Directional Spool Valve): series 1, cavity T-61A, capacity 5 gpm (20 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDY solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNDYS (2-Position, 6-Way, Soft Shift, Solenoid-Operated Directional Spool Valve): series 1, cavity T-61A, capacity 5 gpm (20 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNDYS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNTC (4-Way, 3-Position, Solenoid-Operated Directional Spool Valve, 3000 psi (210 bar)): series 0C, cavity SC-08-04, capacity 3 gpm (11 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNTC solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNUC (4-Way, 3-Position, Solenoid-Operated Directional Spool Valve, 3600 psi (250 bar)): series 1C, cavity SC-10-04, capacity 7 gpm (28 L/min), maximum pressure 3600 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNUC solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DNUT (4-Way, Direct-Acting, Balanced Piston Solenoid-Operated Directional Valve, 3000 psi (210 bar)): series 1C, cavity SC-10-04, capacity 8 gpm (30 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DNUT solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTAFS (FLeX Series 2-Way, Soft Shift, Solenoid-Operated Directional Poppet Valve, Pilot Capacity): series P, cavity T-8A, capacity 7 gpm (28 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTAFS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTCA (2-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve with Overlap): series 1, cavity T-13A, capacity 6 gpm (23 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTCA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTCAZ (2-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve with Overlap and Position Switch): series 1, cavity T-13A, capacity 6 gpm (23 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTCAZ solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTCF (2-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve with Overlap (740 Series)): series 1, cavity T-13A, capacity 6 gpm (23 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTCF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTDF (2-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve (740 Series)): series 1, cavity T-13A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTDF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTDFS (2-Way, Direct-Acting, Soft Shift, Solenoid-Operated Directional Blocking Poppet Valve (740 Series)): series 1, cavity T-13A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTDFS solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTTA (2-Way, Direct-Acting, Balanced Poppet Solenoid-Operated Directional Valve): series 0C, cavity SC-08-02, capacity 6 gpm (23 L/min), maximum pressure 3600 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTTA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DWBF (FLeX Series 3-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve): series 0, cavity T-150A, capacity 6 gpm (23 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DWBF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DWDF (3-Way, Direct-Acting, Solenoid-Operated Directional Poppet Valve (740 Series)): series 1, cavity T-11A, capacity 7.5 gpm (30 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DWDF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFBF (FLeX Series 2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve with Reverse Flow Check, Flow 2-1): series 0, cavity T-162A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFBF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DFBD (FLeX Series 2-Way, 2-Stage, Solenoid-Operated Directional Poppet Valve with Reverse Flow Check, Flow 2-1, 3000 psi (210 bar)): series 0, cavity T-162A, capacity 10 gpm (40 L/min), maximum pressure 3000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DFBD solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun DTAF (FLeX Series 2-Way, Direct-Acting, Solenoid-Operated Directional Blocking Poppet Valve): series 0, P, cavity T-162A, T-8A, capacity 7 gpm to 9 gpm (28 L/min to 34 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun DTAF solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun HDDA (2-Way, Solenoid-Operated Directional Poppet Valve, After Check): series 1, cavity T-11A, capacity 10 gpm (40 L/min), maximum pressure 5000 psi.",
+      "source": "Indus Hydraulics listing for the Sun HDDA solenoid cartridge valve"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, Soft Shift: slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, Position Switch: a position switch confirms the valve is in its spring position.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, Closed Transition: ports stay blocked while the spool crosses over, so little oil is lost when it shifts.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, Overlap: a combined seat and spool stops the small pass of oil that many poppet valves let through when the pressure across them changes suddenly.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, Pilot Capacity: sized to switch pilot flows to larger valves, not main flows.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, 740 Series: uses Sun's 740 Series coils, or 747 Series coils for hazardous locations.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    },
+    {
+      "fact": "Sun solenoid cartridge variant note, FLeX Series: tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection.",
+      "source": "Sun Hydraulics catalogue notes carried on the Indus Hydraulics listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-1-2",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve is a pilot-operated, 2-position poppet valve: the solenoid opens a small pilot, and system pressure moves the main poppet, so a small coil switches a large flow. A reverse free-flow check lets oil pass the other way when it is closed. Poppet seating gives very low leakage — under 10 drops a minute at 5,000 psi. It is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve model code and its option letters?",
+          "a": "DFCA/DFEA/DFFA are the base model in series 1, 3, 4. The letters after it choose the control (X — No Manual Override; D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DFCAXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "This listing covers 3 versions: DFCA is series 1, T-13A, 15 gpm (60 L/min); DFEA is series 3, T-16A, 60 gpm (240 L/min); DFFA is series 4, T-18A, 120 gpm (480 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DFCA is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 30 ms. Switching frequency is 15,000 max. cycles/hr. Check cracking pressure is 50 psi (3,5 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve offer?",
+          "a": "For the DFCA, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 19 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve fit?",
+          "a": "The Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve fits Sun's T-series cavity T-13A, T-16A, T-18A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DFCA. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 19 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve?",
+          "a": "Screw the DFCA into its cavity with a 7/8 in. (22,2 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Replacement seal kits: series 1: Buna: 990310007, Viton: 990310006; series 3: Buna: 990016007, EPDM: 990016014, Viton: 990016006; series 4: Buna: 990018007, Viton: 990018006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve used?",
+          "a": "The DFCA is used for: load holding and high-flow on/off functions — lowering valves, accumulator isolation, unloading. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve differ from the Sun DFCI?",
+          "a": "The nearest sibling is the [Sun DFCI](/p/sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-1-2-740-series), and the difference is as follows. It fits the T-13A, T-16A, T-18A cavity where the DFCI fits T-13A, T-5A, T-16A, T-18A. The DFCI is the 740 series version (uses Sun's 740 Series coils, or 747 Series coils for hazardous locations). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Sun DFCA/DFEA/DFFA 2-way 2-stage solenoid-operated poppet valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-1-2-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve is a pilot-operated, 2-position poppet valve: the solenoid opens a small pilot, and system pressure moves the main poppet, so a small coil switches a large flow. A reverse free-flow check lets oil pass the other way when it is closed. Poppet seating gives very low leakage — under 10 drops a minute at 5,000 psi. It is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve model code and its option letters?",
+          "a": "DFCI/DFDI/DFEI/DFFI are the base model in series 1, 2, 3, 4. The letters after it choose the control (X — No Manual Override; D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DFCIXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "This listing covers 4 versions: DFCI is series 1, T-13A, 15 gpm (60 L/min); DFDI is series 2, T-5A, 30 gpm (120 L/min); DFEI is series 3, T-16A, 60 gpm (240 L/min); DFFI is series 4, T-18A, 120 gpm (480 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DFCI is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 30 ms. Switching frequency is 15,000 max. cycles/hr. Check cracking pressure is 50 psi (3,5 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve offer?",
+          "a": "For the DFCI, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 46 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve fit?",
+          "a": "The Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve fits Sun's T-series cavity T-13A, T-16A, T-18A, T-5A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DFCI. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 46 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve?",
+          "a": "Screw the DFCI into its cavity with a 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Replacement seal kits: series 1: Buna: 990310007, EPDM: 990310014, Viton: 990310006; series 2: Buna: 990203007, EPDM: 990203014, Viton: 990203006; series 3: Buna: 990016007, EPDM: 990016014, Viton: 990016006; series 4: Buna: 990018007, EPDM: 990018014, Viton: 990018006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve used?",
+          "a": "The DFCI is used for: load holding and high-flow on/off functions — lowering valves, accumulator isolation, unloading. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve differ from the Sun DFCJ?",
+          "a": "The nearest sibling is the [Sun DFCJ](/p/sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-2-1-740-series), and the difference is as follows. The DFCI is the flow 1-2 version. The DFCJ is the flow 2-1 version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Sun DFCI/DFDI/DFEI/DFFI 2-way 2-stage solenoid-operated poppet valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-2-1",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve is a pilot-operated, 2-position poppet valve: the solenoid opens a small pilot, and system pressure moves the main poppet, so a small coil switches a large flow. A reverse free-flow check lets oil pass the other way when it is closed. Poppet seating gives very low leakage — under 10 drops a minute at 5,000 psi. It is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve model code and its option letters?",
+          "a": "DFCB/DFDB/DFEB/DFFB are the base model in series 1, 2, 3, 4. The letters after it choose the control (X — No Manual Override; D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DFCBXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "This listing covers 4 versions: DFCB is series 1, T-13A, 15 gpm (60 L/min); DFDB is series 2, T-5A, 30 gpm (120 L/min); DFEB is series 3, T-16A, 60 gpm (240 L/min); DFFB is series 4, T-18A, 120 gpm (480 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DFCB is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 30 ms. Switching frequency is 15,000 max. cycles/hr. Check cracking pressure is 50 psi (3,5 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve offer?",
+          "a": "For the DFCB, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 19 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve fit?",
+          "a": "The Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve fits Sun's T-series cavity T-13A, T-16A, T-18A, T-5A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DFCB. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 19 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve?",
+          "a": "Screw the DFCB into its cavity with a 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Replacement seal kits: series 1: Buna: 990413007, EPDM: 990413014, Viton: 990413006; series 2: Buna: 990203007, EPDM: 990203014, Viton: 990203006; series 3: Buna: 990016007, Viton: 990016006; series 4: Buna: 990018007, EPDM: 990018014, Viton: 990018006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve used?",
+          "a": "The DFCB is used for: load holding and high-flow on/off functions — lowering valves, accumulator isolation, unloading. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve differ from the Sun DFCJ?",
+          "a": "The nearest sibling is the [Sun DFCJ](/p/sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-2-1-740-series), and the difference is as follows. The DFCJ is the 740 series version (uses Sun's 740 Series coils, or 747 Series coils for hazardous locations). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Sun DFCB/DFDB/DFEB/DFFB 2-way 2-stage solenoid-operated poppet valve at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-2-1-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve is a pilot-operated, 2-position poppet valve: the solenoid opens a small pilot, and system pressure moves the main poppet, so a small coil switches a large flow. A reverse free-flow check lets oil pass the other way when it is closed. Poppet seating gives very low leakage — under 10 drops a minute at 5,000 psi. It is rated 15 gpm to 120 gpm (60 L/min to 480 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve model code and its option letters?",
+          "a": "DFCJ/DFDJ/DFEJ/DFFJ are the base model in series 1, 2, 3, 4. The letters after it choose the control (D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override; M — Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DFCJXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "This listing covers 4 versions: DFCJ is series 1, T-13A, 15 gpm (60 L/min); DFDJ is series 2, T-5A, 30 gpm (120 L/min); DFEJ is series 3, T-16A, 60 gpm (240 L/min); DFFJ is series 4, T-18A, 120 gpm (480 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DFCJ is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 30 ms. Switching frequency is 15,000 max. cycles/hr. Check cracking pressure is 50 psi (3,5 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve offer?",
+          "a": "For the DFCJ, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 45 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve fit?",
+          "a": "The Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve fits Sun's T-series cavity T-13A, T-16A, T-18A, T-5A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DFCJ. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 45 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve?",
+          "a": "Screw the DFCJ into its cavity with a 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Replacement seal kits: series 1: Buna: 990310007, EPDM: 990310014, Viton: 990310006; series 2: Buna: 990203007, EPDM: 990203014, Viton: 990203006; series 3: Buna: 990016007, EPDM: 990016014, Viton: 990016006; series 4: Buna: 990018007, EPDM: 990018014, Viton: 990018006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve used?",
+          "a": "The DFCJ is used for: load holding and high-flow on/off functions — lowering valves, accumulator isolation, unloading. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve differ from the Sun DFCI?",
+          "a": "The nearest sibling is the [Sun DFCI](/p/sun-hydraulics-2-way-2-stage-solenoid-operated-directional-poppet-valve-flow-1-2-740-series), and the difference is as follows. The DFCJ is the flow 2-1 version. The DFCI is the flow 1-2 version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun DFCJ/DFDJ/DFEJ/DFFJ 2-way 2-stage solenoid-operated poppet valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-solenoid-operated-directional-poppet-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DGTA/DGUA 2-way solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DGTA/DGUA 2-way solenoid-operated poppet valve is a 2-way, 2-position poppet valve operated by a solenoid, for on/off control of a single flow path. The version in each listing sets how it is piloted and whether a check is built in. It is rated 12 gpm to 16 gpm (45 L/min to 60 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DGTA/DGUA 2-way solenoid-operated poppet valve model code and its option letters?",
+          "a": "DGTA/DGUA are the base model in series 0C, 1C. The letters after it choose the control (X — No Manual Override; L — Manual Override (Push with Detent)), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N) and the coil. For example DGUAXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve have?",
+          "a": "This listing covers 2 versions: DGTA is series 0C, SC-08-02, 12 gpm (45 L/min); DGUA is series 1C, SC-10-02, 16 gpm (60 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DGTA/DGUA 2-way solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DGTA/DGUA 2-way solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve have?",
+          "a": "The DGTA is rated to a maximum operating pressure of 5000 psi (350 bar). Typical response time is 150 ms, 300 ms. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve offer?",
+          "a": "For the DGTA, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include DIN 43650-Form A, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve fit?",
+          "a": "The Sun DGTA/DGUA 2-way solenoid-operated poppet valve fits the common cavity SC-08-02, SC-10-02, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DGTA. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DGTA/DGUA 2-way solenoid-operated poppet valve?",
+          "a": "Screw the DGTA into its cavity with a 7/8 in. (22,2 mm), 1.00 in. (25,4 mm) hex, tightened to 21 - 23 lbf ft (28 - 31 Nm), 29 - 31 lbf ft (39 - 42 Nm). Replacement seal kits: series 1C: Buna: 99C102007, Viton: 99C102006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DGTA/DGUA 2-way solenoid-operated poppet valve used?",
+          "a": "The DGTA is used for: on/off and lift-and-lower functions on mobile machines and power units. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DGTA/DGUA 2-way solenoid-operated poppet valve differ from the Sun DACC?",
+          "a": "The nearest sibling is the [Sun DACC](/p/sun-hydraulics-dacc-2-way-2-stage-solenoid-operated-directional-poppet-valve), and the difference is as follows. The DGTA is rated 12 gpm to 16 gpm (45 L/min to 60 L/min) against 15 gpm (60 L/min). It fits the SC-08-02, SC-10-02 cavity where the DACC fits T-13A. The DACC is the 2-stage version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DGTA/DGUA 2-way solenoid-operated poppet valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Sun DGTA/DGUA 2-way solenoid-operated poppet valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-2-way-solenoid-operated-directional-poppet-valve-reverse-flow-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve is a 2-way, 2-position poppet valve operated by a solenoid, for on/off control of a single flow path. The version in each listing sets how it is piloted and whether a check is built in. It is rated 8 gpm to 16 gpm (30 L/min to 60 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve model code and its option letters?",
+          "a": "DFTB/DFTA/DFUA/DFUB are the base model in series 0C, 1C. The letters after it choose the control (L — Manual Override (Push with Detent); X — No Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N) and the coil. For example DFUBXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve have?",
+          "a": "This listing covers 4 versions: DFTB is series 0C, SC-08-02, 8 gpm (30 L/min); DFTA is series 0C, SC-08-02, 10 gpm (40 L/min); DFUA is series 1C, SC-10-02, 16 gpm (60 L/min); DFUB is series 1C, SC-10-02, 16 gpm (60 L/min). A larger series carries more flow, so choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve have?",
+          "a": "The DFTB is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 15 drops/min. (1 cc/min). Typical response time is 60 ms, 100 ms. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve offer?",
+          "a": "For the DFTB, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include DIN 43650-Form A, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve fit?",
+          "a": "The Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve fits the common cavity SC-08-02, SC-10-02, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DFTB. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve?",
+          "a": "Screw the DFTB into its cavity with a 7/8 in. (22,2 mm), 1.00 in. (25,4 mm), 27 mm hex, tightened to 19 - 22 lbf ft (26 - 30 Nm), 23 - 26 lbf ft (31 - 35 Nm), 29 - 31 lbf ft (39 - 42 Nm). Replacement seal kits: series 1C: Buna: 99C102007, Viton: 99C102006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve used?",
+          "a": "The DFTB is used for: on/off and lift-and-lower functions on mobile machines and power units. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve differ from the Sun DFBF?",
+          "a": "The nearest sibling is the [Sun DFBF](/p/sun-hydraulics-flex-series-2-way-2-stage-solenoid-operated-directional-poppet-valve-reverse-flow), and the difference is as follows. The DFTA is rated 8 gpm to 16 gpm (30 L/min to 60 L/min) against 10 gpm (40 L/min). It fits the SC-08-02, SC-10-02 cavity where the DFBF fits T-162A. The DFBF is the 2-stage version. The DFBF is the flex series version (tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection). The DFBF is the flow 2-1 version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Sun DFTB/DFTA/DFUA/DFUB 2-way solenoid-operated poppet valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dacc-2-way-2-stage-solenoid-operated-directional-poppet-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DACC 2-way 2-stage solenoid-operated poppet valve and what does it do?",
+          "a": "The Sun DACC 2-way 2-stage solenoid-operated poppet valve is a pilot-operated, 2-position poppet valve: the solenoid opens a small pilot, and system pressure moves the main poppet, so a small coil switches a large flow. A reverse free-flow check lets oil pass the other way when it is closed. Poppet seating gives very low leakage — under 10 drops a minute at 5,000 psi. It is rated 15 gpm (60 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DACC 2-way 2-stage solenoid-operated poppet valve model code and its option letters?",
+          "a": "DACC is the base model in series 1. The letters after it choose the control (C — Concealed Manual Override; M — Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DACCMCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DACC 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DACC is series 1, fits the T-13A cavity and is rated 15 gpm (60 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DACC 2-way 2-stage solenoid-operated poppet valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DACC 2-way 2-stage solenoid-operated poppet valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. The solenoid tube is fatigue-rated for 5,000 psi (350 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DACC 2-way 2-stage solenoid-operated poppet valve have?",
+          "a": "The DACC is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 30 ms. Switching frequency is 15,000 max. cycles/hr. Check cracking pressure is 50 psi (3,5 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DACC 2-way 2-stage solenoid-operated poppet valve offer?",
+          "a": "For the DACC, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 7 coil choices, or no coil — 12 VDC, 24 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, NFPA. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DACC 2-way 2-stage solenoid-operated poppet valve fit?",
+          "a": "The Sun DACC 2-way 2-stage solenoid-operated poppet valve fits Sun's T-series cavity T-13A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DACC 2-way 2-stage solenoid-operated poppet valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DACC. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 7 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DACC 2-way 2-stage solenoid-operated poppet valve?",
+          "a": "Screw the DACC into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990310007, EPDM: 990313014, Viton: 990310006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DACC 2-way 2-stage solenoid-operated poppet valve used?",
+          "a": "The DACC is used for: load holding and high-flow on/off functions — lowering valves, accumulator isolation, unloading. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DACC 2-way 2-stage solenoid-operated poppet valve differ from the Sun DGTA?",
+          "a": "The nearest sibling is the [Sun DGTA](/p/sun-hydraulics-2-way-solenoid-operated-directional-poppet-valve), and the difference is as follows. The DACC is rated 15 gpm (60 L/min) against 12 gpm to 16 gpm (45 L/min to 60 L/min). It fits the T-13A cavity where the DGTA fits SC-08-02, SC-10-02. The DACC is the 2-stage version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun DACC 2-way 2-stage solenoid-operated poppet valve in Dubai for export?",
+          "a": "Yes. The Sun DACC 2-way 2-stage solenoid-operated poppet valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dbaf-3-way-solenoid-operated-directional-spool-valve-pilot-capacity-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DBAF 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DBAF 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated .25 gpm (1 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DBAF 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DBAF is the base model in series P. The letters after it choose the control (D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override; M — Manual Override (Standard)), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DBAFXHN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DBAF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DBAF is series P, fits the T-9A cavity and is rated .25 gpm (1 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DBAF 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DBAF 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DBAF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DBAF is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DBAF 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DBAF, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 100 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DBAF 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DBAF 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-9A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DBAF 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DBAF. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 100 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DBAF 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DBAF into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 20 - 25 lbf ft (27 - 33 Nm). Replacement seal kits: series P: Buna: 990009007, EPDM: 990009014, Polyurethane: 990009002, Viton: 990009006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DBAF 3-way solenoid-operated directional spool valve used?",
+          "a": "The DBAF is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DBAF 3-way solenoid-operated directional spool valve differ from the Sun DBAFS?",
+          "a": "The nearest sibling is the [Sun DBAFS](/p/sun-hydraulics-dbafs-3-way-soft-shift-solenoid-operated-directional-spool-valve-pilot-capacity-740-series), and the difference is as follows. The DBAFS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DBAF 3-way solenoid-operated directional spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Sun DBAF 3-way solenoid-operated directional spool valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dbafs-3-way-soft-shift-solenoid-operated-directional-spool-valve-pilot-capacity-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DBAFS 3-way solenoid-operated directional spool valve and what do they do?",
+          "a": "The Sun DBAFS 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated .25 gpm (1 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DBAFS 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DBAFS is the base model in series P. The letters after it choose the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DBAFSHN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DBAFS 3-way solenoid-operated directional spool valve have?",
+          "a": "The DBAFS is series P, fits the T-9A cavity and is rated .25 gpm (1 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DBAFS 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DBAFS 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DBAFS 3-way solenoid-operated directional spool valve have?",
+          "a": "The DBAFS is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 drops/min.@5000 psi (0,7 cc/min.@350 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DBAFS 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DBAFS, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 82 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DBAFS 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DBAFS 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-9A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DBAFS 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DBAFS. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 82 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DBAFS 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DBAFS into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 20 - 25 lbf ft (27 - 33 Nm). Replacement seal kits: series P: Buna: 990009007, Polyurethane: 990009002, Viton: 990009006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DBAFS 3-way solenoid-operated directional spool valve used?",
+          "a": "The DBAFS is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DBAFS 3-way solenoid-operated directional spool valve differ from the Sun DBAF?",
+          "a": "The nearest sibling is the [Sun DBAF](/p/sun-hydraulics-dbaf-3-way-solenoid-operated-directional-spool-valve-pilot-capacity-740-series), and the difference is as follows. The DBAFS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DBAFS 3-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes. The Sun DBAFS 3-way solenoid-operated directional spool valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dldaz-2-way-solenoid-operated-directional-spool-valve-position-switch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve and what does it do?",
+          "a": "The Sun DLDAZ 2-way direct-acting solenoid-operated spool valve is a direct-acting, balanced-spool 2-way valve. The solenoid moves the spool against its spring, with no minimum pressure needed, and the balanced spool switches the same way whatever the pressure at its ports. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve model code and its option letters?",
+          "a": "DLDAZ is the base model in series 1. The letters after it choose the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (N — Buna-N; V — Viton) and the coil. For example DLDAZCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDAZ is series 1, fits the T-13A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. A spool valve leaks more than a poppet; use a poppet valve for load holding."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDAZ is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve offer?",
+          "a": "For the DLDAZ, the seal material options are N — Buna-N, V — Viton. Coil: 12 coil choices, or no coil — 12 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Metri-Pack, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve fit?",
+          "a": "The Sun DLDAZ 2-way direct-acting solenoid-operated spool valve fits Sun's T-series cavity T-13A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DLDAZ. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 12 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve?",
+          "a": "Screw the DLDAZ into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990413007, Viton: 990413006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve used?",
+          "a": "The DLDAZ is used for: on/off control of moderate flows and pilot control of larger cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve differ from the Sun DMDAZ?",
+          "a": "The nearest sibling is the [Sun DMDAZ](/p/sun-hydraulics-dmdaz-3-way-solenoid-operated-directional-spool-valve-position-switch), and the difference is as follows. It fits the T-13A cavity where the DMDAZ fits T-11A. The DLDAZ is the 2-way version. The DMDAZ is the 3-way version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DLDAZ 2-way direct-acting solenoid-operated spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Sun DLDAZ 2-way direct-acting solenoid-operated spool valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dldf-2-way-solenoid-operated-directional-spool-valve-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DLDF 2-way direct-acting solenoid-operated spool valve and what does it do?",
+          "a": "The Sun DLDF 2-way direct-acting solenoid-operated spool valve is a direct-acting, balanced-spool 2-way valve. The solenoid moves the spool against its spring, with no minimum pressure needed, and the balanced spool switches the same way whatever the pressure at its ports. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DLDF 2-way direct-acting solenoid-operated spool valve model code and its option letters?",
+          "a": "DLDF is the base model in series 1. The letters after it choose the control (D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override; M — Manual Override), the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (L — Extended Temp. Buna; N — Buna-N; V — Viton) and the coil. For example DLDFXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DLDF 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDF is series 1, fits the T-13A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DLDF 2-way direct-acting solenoid-operated spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DLDF 2-way direct-acting solenoid-operated spool valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. A spool valve leaks more than a poppet; use a poppet valve for load holding."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DLDF 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDF is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DLDF 2-way direct-acting solenoid-operated spool valve offer?",
+          "a": "For the DLDF, the seal material options are L — Extended Temp. Buna, N — Buna-N, V — Viton, E — EPDM. Coil: 46 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DLDF 2-way direct-acting solenoid-operated spool valve fit?",
+          "a": "The Sun DLDF 2-way direct-acting solenoid-operated spool valve fits Sun's T-series cavity T-13A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DLDF 2-way direct-acting solenoid-operated spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DLDF. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 46 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DLDF 2-way direct-acting solenoid-operated spool valve?",
+          "a": "Screw the DLDF into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990413007, Viton: 990413006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DLDF 2-way direct-acting solenoid-operated spool valve used?",
+          "a": "The DLDF is used for: on/off control of moderate flows and pilot control of larger cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DLDF 2-way direct-acting solenoid-operated spool valve differ from the Sun DLDFS?",
+          "a": "The nearest sibling is the [Sun DLDFS](/p/sun-hydraulics-dldfs-2-way-soft-shift-solenoid-operated-directional-spool-valve-740-series), and the difference is as follows. The DLDFS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DLDF 2-way direct-acting solenoid-operated spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Sun DLDF 2-way direct-acting solenoid-operated spool valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dldfs-2-way-soft-shift-solenoid-operated-directional-spool-valve-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DLDFS 2-way direct-acting solenoid-operated spool valve and what do they do?",
+          "a": "The Sun DLDFS 2-way direct-acting solenoid-operated spool valve is a direct-acting, balanced-spool 2-way valve. The solenoid moves the spool against its spring, with no minimum pressure needed, and the balanced spool switches the same way whatever the pressure at its ports. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DLDFS 2-way direct-acting solenoid-operated spool valve model code and its option letters?",
+          "a": "DLDFS is the base model in series 1. The letters after it choose the spool or poppet configuration (C — Normally Closed; H — Normally Open), the seal (L — Extended Temp. Buna; N — Buna-N; V — Viton) and the coil. For example DLDFSCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDFS is series 1, fits the T-13A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DLDFS 2-way direct-acting solenoid-operated spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DLDFS 2-way direct-acting solenoid-operated spool valve, the configuration letter chooses the function: C — Normally Closed, H — Normally Open. Normally open or normally closed, chosen in the code. A spool valve leaks more than a poppet; use a poppet valve for load holding."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve have?",
+          "a": "The DLDFS is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve offer?",
+          "a": "For the DLDFS, the seal material options are L — Extended Temp. Buna, N — Buna-N, V — Viton. Coil: 45 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve fit?",
+          "a": "The Sun DLDFS 2-way direct-acting solenoid-operated spool valve fits Sun's T-series cavity T-13A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DLDFS. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 45 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DLDFS 2-way direct-acting solenoid-operated spool valve?",
+          "a": "Screw the DLDFS into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990413007, Viton: 990413006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DLDFS 2-way direct-acting solenoid-operated spool valve used?",
+          "a": "The DLDFS is used for: on/off control of moderate flows and pilot control of larger cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DLDFS 2-way direct-acting solenoid-operated spool valve differ from the Sun DLDF?",
+          "a": "The nearest sibling is the [Sun DLDF](/p/sun-hydraulics-dldf-2-way-solenoid-operated-directional-spool-valve-740-series), and the difference is as follows. The DLDFS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DLDFS 2-way direct-acting solenoid-operated spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Sun DLDFS 2-way direct-acting solenoid-operated spool valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dlut-2-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-3000-psi-210",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DLUT direct-acting solenoid-operated valve for common cavities and what does it do?",
+          "a": "The Sun DLUT direct-acting solenoid-operated valve for common cavities is a direct-acting solenoid cartridge built for the industry-standard SC-08 and SC-10 style cavities rather than Sun's own T-series cavities. The solenoid moves a balanced spool or poppet directly, so no minimum pressure is needed. It is rated 6 gpm (23 L/min) at up to 3000 psi (210 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DLUT direct-acting solenoid-operated valve for common cavities model code and its option letters?",
+          "a": "DLUT is the base model in series 1C. The letters after it choose the spool or poppet configuration (C — Normally Closed), the seal (N — Buna-N) and the coil. For example DLUTXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DLUT direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DLUT is series 1C, fits the SC-10-02 cavity and is rated 6 gpm (23 L/min). It uses a common cavity rather than a Sun T-series cavity. Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DLUT direct-acting solenoid-operated valve for common cavities configured, and what should I check before choosing it?",
+          "a": "For the Sun DLUT direct-acting solenoid-operated valve for common cavities, the configuration letter chooses the function: C — Normally Closed. Pressure ratings are lower than Sun's T-cavity valves — check the rating in the title. Respect the installation torque in the specifications for best performance."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DLUT direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DLUT is rated to a maximum operating pressure of 3000 psi (210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DLUT direct-acting solenoid-operated valve for common cavities offer?",
+          "a": "For the DLUT, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include Twin Lead, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DLUT direct-acting solenoid-operated valve for common cavities fit?",
+          "a": "The Sun DLUT direct-acting solenoid-operated valve for common cavities fits the common cavity SC-10-02, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DLUT direct-acting solenoid-operated valve for common cavities come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DLUT. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DLUT direct-acting solenoid-operated valve for common cavities?",
+          "a": "Screw the DLUT into its cavity with a 25 mm hex, tightened to 21 - 23 lbf ft (28 - 31 Nm). No separate seal kit number is listed for this cartridge. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DLUT direct-acting solenoid-operated valve for common cavities used?",
+          "a": "The DLUT is used for: replacing or standardising solenoid cartridges in common-cavity manifolds on mobile machines. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DLUT direct-acting solenoid-operated valve for common cavities differ from the Sun DMUT?",
+          "a": "The nearest sibling is the [Sun DMUT](/p/sun-hydraulics-dmut-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-3000-psi-210), and the difference is as follows. The DLUT is rated 6 gpm (23 L/min) against 7 gpm (28 L/min). It fits the SC-10-02 cavity where the DMUT fits SC-10-03. The DLUT is the 2-way version. The DMUT is the 3-way version. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun DLUT direct-acting solenoid-operated valve for common cavities in Dubai for export?",
+          "a": "Yes. We keep the Sun DLUT direct-acting solenoid-operated valve for common cavities in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmbd-flex-series-3-way-solenoid-operated-directional-spool-valve-3000-psi-210-bar",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMBD 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DMBD 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 4 gpm (15 L/min) at up to 3000 psi (210 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMBD 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMBD is the base model in series 0. The letters after it choose the control (P — Manual Pull Override; X — No Manual Override), the spool or poppet configuration (A — Normally Open 1 to 2; Closed 2 to 3; N — Normally Open 2 to 3), the seal (N — Buna-N; V — Viton) and the coil. For example DMBDXAN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMBD 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMBD is series 0, fits the T-150A cavity and is rated 4 gpm (15 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMBD 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMBD 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 2 to 3, N — Normally Open 2 to 3, Closed 1 to 2. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMBD 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMBD is rated to a maximum operating pressure of 3000 psi (210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. FLeX Series: tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMBD 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMBD, the seal material options are N — Buna-N, V — Viton. Coil: 46 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMBD 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMBD 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-150A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMBD 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMBD. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 46 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMBD 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMBD into its cavity with a 3/4 in. (19,1 mm) hex, tightened to 25 - 30 lbf ft (35 - 40 Nm). Replacement seal kits: series 0: Buna: 990150007, Viton: 990150006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMBD 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMBD is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMBD 3-way solenoid-operated directional spool valve differ from the Sun DMBF?",
+          "a": "The nearest sibling is the [Sun DMBF](/p/sun-hydraulics-dmbf-flex-series-3-way-solenoid-operated-directional-spool-valve), and the difference is as follows. It works to 3000 psi against 5000 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DMBD 3-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes, the Sun DMBD 3-way solenoid-operated directional spool valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmbf-flex-series-3-way-solenoid-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMBF 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DMBF 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 4 gpm (15 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMBF 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMBF is the base model in series 0. The letters after it choose the control (P — Manual Pull Override; X — No Manual Override), the spool or poppet configuration (A — Normally Open 1 to 2; Closed 1 to 3; N — Normally Open 2 to 3), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DMBFXAN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMBF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMBF is series 0, fits the T-150A cavity and is rated 4 gpm (15 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMBF 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMBF 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 1 to 3, N — Normally Open 2 to 3, Closed 1 to 2. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMBF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMBF is rated to a maximum operating pressure of 5000 psi (350 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. FLeX Series: tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMBF 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMBF, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 46 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMBF 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMBF 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-150A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMBF 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMBF. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 46 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMBF 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMBF into its cavity with a 3/4 in. (19,1 mm) hex, tightened to 25 - 30 lbf ft (35 - 40 Nm). Replacement seal kits: series 0: Buna: 990150007, Viton: 990150006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMBF 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMBF is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMBF 3-way solenoid-operated directional spool valve differ from the Sun DMBD?",
+          "a": "The nearest sibling is the [Sun DMBD](/p/sun-hydraulics-dmbd-flex-series-3-way-solenoid-operated-directional-spool-valve-3000-psi-210-bar), and the difference is as follows. It works to 5000 psi against 3000 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DMBF 3-way solenoid-operated directional spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Sun DMBF 3-way solenoid-operated directional spool valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmda-3-way-solenoid-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMDA 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DMDA 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMDA 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMDA is the base model in series 1. The letters after it choose the control (M — Manual Override; X — No Manual Override; D — Twist/Lock (Dual) Manual Override), the spool or poppet configuration (A — Normally Open 1 to 2; Closed 2 to 3; N — Normally Open 2 to 3), the seal (N — Buna-N; V — Viton; E — EPDM), the coating (/LH — Mild Steel; Zinc-Nickel) and the coil. For example DMDAXAN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMDA 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDA is series 1, fits the T-11A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMDA 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMDA 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 2 to 3, N — Normally Open 2 to 3, Closed 1 to 2, B — Normally Open 1 to 2, Closed 2 to 3. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMDA 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDA is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMDA 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMDA, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 24 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Deutsch DT04-6P, Metri-Pack, Deutsch DT04-2P, Explosion Proof, with embedded driver. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMDA 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMDA 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-11A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMDA 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMDA. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 24 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMDA 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMDA into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990411007, EPDM: 990411014, Viton: 990411006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMDA 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMDA is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMDA 3-way solenoid-operated directional spool valve differ from the Sun DMDAS?",
+          "a": "The nearest sibling is the [Sun DMDAS](/p/sun-hydraulics-dmdas-3-way-soft-shift-solenoid-operated-directional-spool-valve), and the difference is as follows. The DMDA is rated 12 gpm (45 L/min) against 5 gpm (20 L/min). The DMDAS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DMDA 3-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Sun DMDA 3-way solenoid-operated directional spool valve at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmdas-3-way-soft-shift-solenoid-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMDAS 3-way solenoid-operated directional spool valve and what do they do?",
+          "a": "The Sun DMDAS 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 5 gpm (20 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMDAS 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMDAS is the base model in series 1. The letters after it choose the spool or poppet configuration (A — Normally Open 1 to 2; Closed 2 to 3; N — Normally Open 2 to 3), the seal (N — Buna-N; V — Viton; E — EPDM), the coating (/LH — Mild Steel; Zinc-Nickel) and the coil. For example DMDASNN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMDAS 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDAS is series 1, fits the T-11A cavity and is rated 5 gpm (20 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMDAS 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMDAS 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 2 to 3, N — Normally Open 2 to 3, Closed 1 to 2, B — Normally Open 1 to 2, Closed 2 to 3. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMDAS 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDAS is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMDAS 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMDAS, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 24 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Deutsch DT04-6P, Metri-Pack, Deutsch DT04-2P, Explosion Proof, with embedded driver. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMDAS 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMDAS 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-11A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMDAS 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMDAS. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 24 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMDAS 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMDAS into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990411007, EPDM: 990411014, Viton: 990411006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMDAS 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMDAS is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMDAS 3-way solenoid-operated directional spool valve differ from the Sun DMDA?",
+          "a": "The nearest sibling is the [Sun DMDA](/p/sun-hydraulics-dmda-3-way-solenoid-operated-directional-spool-valve), and the difference is as follows. The DMDAS is rated 5 gpm (20 L/min) against 12 gpm (45 L/min). The DMDAS is the soft shift version (slower switching to cut the pressure spike, with a longer response time and lower flow limits than the standard valve, which it replaces in the same cavity). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun DMDAS 3-way solenoid-operated directional spool valve in Dubai for export?",
+          "a": "Yes, the Sun DMDAS 3-way solenoid-operated directional spool valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmdaz-3-way-solenoid-operated-directional-spool-valve-position-switch",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMDAZ 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DMDAZ 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMDAZ 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMDAZ is the base model in series 1. The letters after it choose the spool or poppet configuration (B — Normally Open 1 to 2; Closed 2 to 3; Closed Transition), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DMDAZBN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMDAZ 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDAZ is series 1, fits the T-11A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMDAZ 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMDAZ 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: B — Normally Open 1 to 2, Closed 2 to 3, Closed Transition, R — Normally Open 2 to 3, Closed 1 to 2, Closed Transition. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMDAZ 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDAZ is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMDAZ 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMDAZ, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 7 coil choices, or no coil — 12 VDC, 24 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Metri-Pack, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMDAZ 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMDAZ 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-11A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMDAZ 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMDAZ. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 7 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMDAZ 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMDAZ into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990411007, EPDM: 990411014, Viton: 990411006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMDAZ 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMDAZ is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMDAZ 3-way solenoid-operated directional spool valve differ from the Sun DMDA?",
+          "a": "The nearest sibling is the [Sun DMDA](/p/sun-hydraulics-dmda-3-way-solenoid-operated-directional-spool-valve), and the difference is as follows. The DMDAZ is the position switch version (a position switch confirms the valve is in its spring position). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DMDAZ 3-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun DMDAZ 3-way solenoid-operated directional spool valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmdf-3-way-solenoid-operated-directional-spool-valve-740-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMDF 3-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DMDF 3-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 3-way, 2-position valve. It switches a common port between two others with no minimum pressure, and its flow paths work in both directions. It is rated 12 gpm (45 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMDF 3-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DMDF is the base model in series 1. The letters after it choose the control (D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override; M — Manual Override), the spool or poppet configuration (A — Normally Open 1 to 2; Closed 2 to 3; B — Normally Open 1 to 2), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DMDFXAN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMDF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDF is series 1, fits the T-11A cavity and is rated 12 gpm (45 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMDF 3-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DMDF 3-way solenoid-operated directional spool valve, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 2 to 3, B — Normally Open 1 to 2, Closed 2 to 3, Closed Transition, N — Normally Open 2 to 3. The pilot-capacity versions are sized to pilot other valves and leak under 10 drops a minute at 5,000 psi. The solenoid tube is fatigue-rated for 5,000 psi (350 bar) unless the title gives a lower rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMDF 3-way solenoid-operated directional spool valve have?",
+          "a": "The DMDF is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 5 in³/min.@3000 psi (80 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMDF 3-way solenoid-operated directional spool valve offer?",
+          "a": "For the DMDF, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 64 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMDF 3-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DMDF 3-way solenoid-operated directional spool valve fits Sun's T-series cavity T-11A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMDF 3-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMDF. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 64 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMDF 3-way solenoid-operated directional spool valve?",
+          "a": "Screw the DMDF into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990411007, Viton: 990411006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMDF 3-way solenoid-operated directional spool valve used?",
+          "a": "The DMDF is used for: single-acting cylinders, pilot signals to logic elements and main stages, selecting between two pressures. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMDF 3-way solenoid-operated directional spool valve differ from the Sun DMDA?",
+          "a": "The nearest sibling is the [Sun DMDA](/p/sun-hydraulics-dmda-3-way-solenoid-operated-directional-spool-valve), and the difference is as follows. The DMDF is the 740 series version (uses Sun's 740 Series coils, or 747 Series coils for hazardous locations). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun DMDF 3-way solenoid-operated directional spool valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Sun DMDF 3-way solenoid-operated directional spool valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmta-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-3600-psi-250",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMTA direct-acting solenoid-operated valve for common cavities and what does it do?",
+          "a": "The Sun DMTA direct-acting solenoid-operated valve for common cavities is a direct-acting solenoid cartridge built for the industry-standard SC-08 and SC-10 style cavities rather than Sun's own T-series cavities. The solenoid moves a balanced spool or poppet directly, so no minimum pressure is needed. It is rated 4 gpm (15 L/min) at up to 3600 psi (250 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMTA direct-acting solenoid-operated valve for common cavities model code and its option letters?",
+          "a": "DMTA is the base model in series 0C. The letters after it choose the control (L — Manual Override (Push with Detent); X — No Manual Override), the spool or poppet configuration (A — Normally Open 1 to 2; Closed 1 to 3; H — Normally Open 1 to 2), the seal (N — Buna-N) and the coil. For example DMTAXAN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMTA direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMTA is series 0C, fits the SC-08-03 cavity and is rated 4 gpm (15 L/min). It uses a common cavity rather than a Sun T-series cavity. Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMTA direct-acting solenoid-operated valve for common cavities configured, and what should I check before choosing it?",
+          "a": "For the Sun DMTA direct-acting solenoid-operated valve for common cavities, the configuration letter chooses the function: A — Normally Open 1 to 2, Closed 1 to 3, H — Normally Open 1 to 2, Closed 1 to 3, N — Normally Open 2 to 3. Pressure ratings are lower than Sun's T-cavity valves — check the rating in the title. Respect the installation torque in the specifications for best performance."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMTA direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMTA is rated to a maximum operating pressure of 3600 psi (250 bar). Typical response time is 50 ms. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMTA direct-acting solenoid-operated valve for common cavities offer?",
+          "a": "For the DMTA, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include DIN 43650-Form A, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMTA direct-acting solenoid-operated valve for common cavities fit?",
+          "a": "The Sun DMTA direct-acting solenoid-operated valve for common cavities fits the common cavity SC-08-03, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMTA direct-acting solenoid-operated valve for common cavities come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMTA. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMTA direct-acting solenoid-operated valve for common cavities?",
+          "a": "Screw the DMTA into its cavity with a 24 mm hex, tightened to 21 - 23 lbf ft (28 - 31 Nm). Replacement seal kits: series 0C: Buna: 99C083007, Viton: 99C083006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMTA direct-acting solenoid-operated valve for common cavities used?",
+          "a": "The DMTA is used for: replacing or standardising solenoid cartridges in common-cavity manifolds on mobile machines. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMTA direct-acting solenoid-operated valve for common cavities differ from the Sun DMUQ?",
+          "a": "The nearest sibling is the [Sun DMUQ](/p/sun-hydraulics-dmuq-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-1600-psi-110), and the difference is as follows. The DMTA is rated 4 gpm (15 L/min) against 7 gpm (28 L/min). It works to 3600 psi against 1600 psi. It fits the SC-08-03 cavity where the DMUQ fits SC-10-03. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun DMTA direct-acting solenoid-operated valve for common cavities in Dubai for export?",
+          "a": "Yes. Indus stocks the Sun DMTA direct-acting solenoid-operated valve for common cavities at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmuq-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-1600-psi-110",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMUQ direct-acting solenoid-operated valve for common cavities and what does it do?",
+          "a": "The Sun DMUQ direct-acting solenoid-operated valve for common cavities is a direct-acting solenoid cartridge built for the industry-standard SC-08 and SC-10 style cavities rather than Sun's own T-series cavities. The solenoid moves a balanced spool or poppet directly, so no minimum pressure is needed. It is rated 7 gpm (28 L/min) at up to 1600 psi (110 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMUQ direct-acting solenoid-operated valve for common cavities model code and its option letters?",
+          "a": "DMUQ is the base model in series 1C. The letters after it choose the spool or poppet configuration (H — Normally Open 1 to 2; Closed 1 to 3), the seal (N — Buna-N) and the coil. For example DMUQXHN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMUQ direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMUQ is series 1C, fits the SC-10-03 cavity and is rated 7 gpm (28 L/min). It uses a common cavity rather than a Sun T-series cavity. Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMUQ direct-acting solenoid-operated valve for common cavities configured, and what should I check before choosing it?",
+          "a": "For the Sun DMUQ direct-acting solenoid-operated valve for common cavities, the configuration letter chooses the function: H — Normally Open 1 to 2, Closed 1 to 3. Pressure ratings are lower than Sun's T-cavity valves — check the rating in the title. Respect the installation torque in the specifications for best performance."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMUQ direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMUQ is rated to a maximum operating pressure of 1600 psi (110 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMUQ direct-acting solenoid-operated valve for common cavities offer?",
+          "a": "For the DMUQ, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include Twin Lead, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMUQ direct-acting solenoid-operated valve for common cavities fit?",
+          "a": "The Sun DMUQ direct-acting solenoid-operated valve for common cavities fits the common cavity SC-10-03, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMUQ direct-acting solenoid-operated valve for common cavities come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMUQ. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMUQ direct-acting solenoid-operated valve for common cavities?",
+          "a": "Screw the DMUQ into its cavity with a 25 mm hex, tightened to 24 - 28 lbf ft (32,5 - 37,9 Nm). No separate seal kit number is listed for this cartridge. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMUQ direct-acting solenoid-operated valve for common cavities used?",
+          "a": "The DMUQ is used for: replacing or standardising solenoid cartridges in common-cavity manifolds on mobile machines. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMUQ direct-acting solenoid-operated valve for common cavities differ from the Sun DMUT?",
+          "a": "The nearest sibling is the [Sun DMUT](/p/sun-hydraulics-dmut-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-3000-psi-210), and the difference is as follows. It works to 1600 psi against 3000 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Sun DMUQ direct-acting solenoid-operated valve for common cavities in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Sun DMUQ direct-acting solenoid-operated valve for common cavities are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dmut-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-3000-psi-210",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DMUT direct-acting solenoid-operated valve for common cavities and what does it do?",
+          "a": "The Sun DMUT direct-acting solenoid-operated valve for common cavities is a direct-acting solenoid cartridge built for the industry-standard SC-08 and SC-10 style cavities rather than Sun's own T-series cavities. The solenoid moves a balanced spool or poppet directly, so no minimum pressure is needed. It is rated 7 gpm (28 L/min) at up to 3000 psi (210 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DMUT direct-acting solenoid-operated valve for common cavities model code and its option letters?",
+          "a": "DMUT is the base model in series 1C. The letters after it choose the spool or poppet configuration (H — Normally Open 1 to 2; Closed 1 to 3), the seal (N — Buna-N) and the coil. For example DMUTXHN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DMUT direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMUT is series 1C, fits the SC-10-03 cavity and is rated 7 gpm (28 L/min). It uses a common cavity rather than a Sun T-series cavity. Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DMUT direct-acting solenoid-operated valve for common cavities configured, and what should I check before choosing it?",
+          "a": "For the Sun DMUT direct-acting solenoid-operated valve for common cavities, the configuration letter chooses the function: H — Normally Open 1 to 2, Closed 1 to 3. Pressure ratings are lower than Sun's T-cavity valves — check the rating in the title. Respect the installation torque in the specifications for best performance."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DMUT direct-acting solenoid-operated valve for common cavities have?",
+          "a": "The DMUT is rated to a maximum operating pressure of 3000 psi (210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DMUT direct-acting solenoid-operated valve for common cavities offer?",
+          "a": "For the DMUT, the seal material options are N — Buna-N. Coil: 4 coil choices, or no coil — 12 VDC, 24 VDC; connections include Twin Lead, Deutsch DT04-2P. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DMUT direct-acting solenoid-operated valve for common cavities fit?",
+          "a": "The Sun DMUT direct-acting solenoid-operated valve for common cavities fits the common cavity SC-10-03, an industry-standard cavity, rather than a Sun T-series cavity. If your manifold is machined to the matching common cavity, it fits; check the cavity named here against your manifold drawing."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DMUT direct-acting solenoid-operated valve for common cavities come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DMUT. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 4 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DMUT direct-acting solenoid-operated valve for common cavities?",
+          "a": "Screw the DMUT into its cavity with a 25 mm hex, tightened to 24 - 28 lbf ft (32,5 - 37,9 Nm). No separate seal kit number is listed for this cartridge. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DMUT direct-acting solenoid-operated valve for common cavities used?",
+          "a": "The DMUT is used for: replacing or standardising solenoid cartridges in common-cavity manifolds on mobile machines. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DMUT direct-acting solenoid-operated valve for common cavities differ from the Sun DMUQ?",
+          "a": "The nearest sibling is the [Sun DMUQ](/p/sun-hydraulics-dmuq-3-way-direct-acting-balanced-spool-solenoid-operated-directional-valve-1600-psi-110), and the difference is as follows. It works to 3000 psi against 1600 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DMUT direct-acting solenoid-operated valve for common cavities from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun DMUT direct-acting solenoid-operated valve for common cavities in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dnbd-flex-series-4-way-2-position-solenoid-operated-directional-spool-valve-3000-psi-210",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DNBD 4-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DNBD 4-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 4-way valve — the cartridge equivalent of a small directional valve. Two-position versions have one coil and a choice of spools; three-position versions have a coil at each end and centre on springs. No minimum pressure is needed to shift. It is rated 4 gpm (15 L/min) at up to 3000 psi (210 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DNBD 4-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DNBD is the base model in series 0. The letters after it choose the control (X — No Manual Override; P — Manual Pull Override), the spool or poppet configuration (C — Closed; Shift to Through; D — Closed), the seal (N — Buna-N; V — Viton) and the coil. For example DNBDXCN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DNBD 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNBD is series 0, fits the T-30A cavity and is rated 4 gpm (15 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DNBD 4-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DNBD 4-way solenoid-operated directional spool valve, the configuration letter chooses the function: C — Closed, Shift to Through, D — Closed, Shift to Cross, E — Cross, Shift to Closed, N — Through, Shift to Cross, T — Tandem. Spool options set the flow paths in each position — closed, open, through, cross; choose from the configuration letters. Manual override options (push, detent twist-lock, momentary twist) are chosen in the code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DNBD 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNBD is rated to a maximum operating pressure of 3000 psi (210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. FLeX Series: tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DNBD 4-way solenoid-operated directional spool valve offer?",
+          "a": "For the DNBD, the seal material options are N — Buna-N, V — Viton. Coil: 46 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DNBD 4-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DNBD 4-way solenoid-operated directional spool valve fits Sun's T-series cavity T-30A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DNBD 4-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DNBD. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 46 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DNBD 4-way solenoid-operated directional spool valve?",
+          "a": "Screw the DNBD into its cavity with a 3/4 in. (19,1 mm) hex, tightened to 25 - 30 lbf ft (35 - 40 Nm). Replacement seal kits: series 0: Buna: 990030007, Viton: 990030006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DNBD 4-way solenoid-operated directional spool valve used?",
+          "a": "The DNBD is used for: double-acting cylinders and motors, and pilot control of larger directional cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DNBD 4-way solenoid-operated directional spool valve differ from the Sun DNBF?",
+          "a": "The nearest sibling is the [Sun DNBF](/p/sun-hydraulics-dnbf-flex-series-4-way-2-position-solenoid-operated-directional-spool-valve), and the difference is as follows. It works to 3000 psi against 5000 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun DNBD 4-way solenoid-operated directional spool valve in Dubai for export?",
+          "a": "Yes. We keep the Sun DNBD 4-way solenoid-operated directional spool valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dnbf-flex-series-4-way-2-position-solenoid-operated-directional-spool-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DNBF 4-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DNBF 4-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 4-way valve — the cartridge equivalent of a small directional valve. Two-position versions have one coil and a choice of spools; three-position versions have a coil at each end and centre on springs. No minimum pressure is needed to shift. It is rated 4 gpm (15 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DNBF 4-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DNBF is the base model in series 0. The letters after it choose the control (P — Manual Pull Override; X — No Manual Override), the spool or poppet configuration (C — Closed; Shift to Through; D — Closed), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DNBFXNN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DNBF 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNBF is series 0, fits the T-30A cavity and is rated 4 gpm (15 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DNBF 4-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DNBF 4-way solenoid-operated directional spool valve, the configuration letter chooses the function: C — Closed, Shift to Through, D — Closed, Shift to Cross, E — Cross, Shift to Closed, N — Through, Shift to Cross, T — Tandem. Spool options set the flow paths in each position — closed, open, through, cross; choose from the configuration letters. Manual override options (push, detent twist-lock, momentary twist) are chosen in the code."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DNBF 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNBF is rated to a maximum operating pressure of 5000 psi (350 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. FLeX Series: tested to 10 million cycles at full rated pressure and zinc-nickel plated as standard for 1,000 hours of salt-fog protection. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DNBF 4-way solenoid-operated directional spool valve offer?",
+          "a": "For the DNBF, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 44 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P, Explosion Proof. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DNBF 4-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DNBF 4-way solenoid-operated directional spool valve fits Sun's T-series cavity T-30A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DNBF 4-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DNBF. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 44 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DNBF 4-way solenoid-operated directional spool valve?",
+          "a": "Screw the DNBF into its cavity with a 3/4 in. (19,1 mm) hex, tightened to 25 - 30 lbf ft (35 - 40 Nm). Replacement seal kits: series 0: Buna: 990030007, Viton: 990030006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DNBF 4-way solenoid-operated directional spool valve used?",
+          "a": "The DNBF is used for: double-acting cylinders and motors, and pilot control of larger directional cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DNBF 4-way solenoid-operated directional spool valve differ from the Sun DNBD?",
+          "a": "The nearest sibling is the [Sun DNBD](/p/sun-hydraulics-dnbd-flex-series-4-way-2-position-solenoid-operated-directional-spool-valve-3000-psi-210), and the difference is as follows. It works to 5000 psi against 3000 psi. Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DNBF 4-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun DNBF 4-way solenoid-operated directional spool valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-dnca-4-way-2-position-solenoid-operated-directional-spool-valve-closed-transition",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun DNCA 4-way solenoid-operated directional spool valve and what does it do?",
+          "a": "The Sun DNCA 4-way solenoid-operated directional spool valve is a direct-acting, balanced-spool 4-way valve — the cartridge equivalent of a small directional valve. Two-position versions have one coil and a choice of spools; three-position versions have a coil at each end and centre on springs. No minimum pressure is needed to shift. It is rated 8 gpm (30 L/min) at up to 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun DNCA 4-way solenoid-operated directional spool valve model code and its option letters?",
+          "a": "DNCA is the base model in series 1. The letters after it choose the control (D — Twist/Lock (Dual) Manual Override; L — Twist/Lock (Detent) Manual Override; M — Manual Override), the spool or poppet configuration (C — Closed; Shift to Through; X — Cross), the seal (N — Buna-N; V — Viton; E — EPDM) and the coil. For example DNCAXXN. We confirm the full ordering code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What flow, series and cavity does the Sun DNCA 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNCA is series 1, fits the T-31A cavity and is rated 8 gpm (30 L/min). Choose the smallest series that passes your flow at an acceptable pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun DNCA 4-way solenoid-operated directional spool valve configured, and what should I check before choosing it?",
+          "a": "For the Sun DNCA 4-way solenoid-operated directional spool valve, the configuration letter chooses the function: C — Closed, Shift to Through, X — Cross, Shift to Through, A — A to T, Shift to Through, B — B to T, Shift to Through, J — Open. Spool options set the flow paths in each position — closed, open, through, cross; choose from the configuration letters."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and response ratings does the Sun DNCA 4-way solenoid-operated directional spool valve have?",
+          "a": "The DNCA is rated to a maximum operating pressure of 5000 psi (350 bar). Maximum leakage is 10 in³/min.@3000 psi (160 cc/min.@210 bar). Typical response time is 50 ms. Switching frequency is 15,000 max. cycles/hr. Pressure and flow are limited by the lowest-rated part of your circuit."
+        },
+        {
+          "slot": "F",
+          "q": "What seal materials and coil voltages does the Sun DNCA 4-way solenoid-operated directional spool valve offer?",
+          "a": "For the DNCA, the seal material options are N — Buna-N, V — Viton, E — EPDM. Coil: 24 coil choices, or no coil — 12 VDC, 14 VDC, 24 VDC, 28 VDC, 115 VAC, 230 VAC; connections include DIN 43650-Form A, Deutsch DT04-6P, Metri-Pack, Deutsch DT04-2P, Explosion Proof, with embedded driver. Fitting a different external seal does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun DNCA 4-way solenoid-operated directional spool valve fit?",
+          "a": "The Sun DNCA 4-way solenoid-operated directional spool valve fits Sun's T-series cavity T-31A. The series fixes the cavity the valve screws into, so every function in the same series shares that cavity, and the seal kits for that series fit it."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Sun DNCA 4-way solenoid-operated directional spool valve come with a coil, and what do I need to run it?",
+          "a": "The coil is chosen with its own code, voltage and connector, and can be supplied fitted or ordered separately for the DNCA. Tell us the voltage and the connector your machine uses and we confirm the coil with the quotation. The range offers 24 coil choices."
+        },
+        {
+          "slot": "I",
+          "q": "What torque and seal kits apply to the Sun DNCA 4-way solenoid-operated directional spool valve?",
+          "a": "Screw the DNCA into its cavity with a 7/8 in. (22,2 mm) hex, tightened to 30 - 35 lbf ft (41 - 47 Nm). Replacement seal kits: series 1: Buna: 990431007, EPDM: 990431014, Viton: 990431006. Only the external seals can be serviced."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun DNCA 4-way solenoid-operated directional spool valve used?",
+          "a": "The DNCA is used for: double-acting cylinders and motors, and pilot control of larger directional cartridges. The armature runs wet in the working fluid, so on long duty cycles check the fluid temperature limit."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun DNCA 4-way solenoid-operated directional spool valve differ from the Sun DNCAZ?",
+          "a": "The nearest sibling is the [Sun DNCAZ](/p/sun-hydraulics-dncaz-4-way-2-position-solenoid-operated-directional-spool-valve-closed-transition), and the difference is as follows. The DNCAZ is the position switch version (a position switch confirms the valve is in its spring position). Check the model code of your old valve to pick the right one."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun DNCA 4-way solenoid-operated directional spool valve from stock in the UAE and get a quotation?",
+          "a": "Yes, the Sun DNCA 4-way solenoid-operated directional spool valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

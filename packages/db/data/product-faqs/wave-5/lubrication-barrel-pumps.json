@@ -1,0 +1,526 @@
+{
+  "family": "lubrication-barrel-pumps",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "bijur-delimon-bf-g-pneumatic-grease-barrel-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bijur Delimon BF-G pneumatic grease barrel pump used for?",
+          "a": "The BF-G is a Delimon pneumatic drum pump that takes NLGI 000 to 2 grease straight from 50 and 200 litre barrels. It supplies central grease systems and fills lubrication system reservoirs. See the [Grease & Oil Barrel Pumps shelf](/c/lubrication-barrel-pumps) for the other pump series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a BF-G order code such as BFG01A01OA00?",
+          "a": "The code is BFG followed by one code from each position: 01 is one outlet, A is revision A, 01 is the 15:1 drive for a 200 litre barrel, O is no drive position, A is the 200 litre reservoir and 00 is no accessories. Bijur Delimon lists 15 valid combinations."
+        },
+        {
+          "slot": "D",
+          "q": "Which drive ratios and barrel sizes does the BF-G come in?",
+          "a": "Three drive options are listed: 15:1 for a 200 litre barrel, 50:1 for 200 litres and 50:1 for a 50 litre barrel. The 50 litre reservoir is only offered with the 50:1 drive. Choose the ratio from the grease and the line length."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum output of the BF-G barrel pump?",
+          "a": "Maximum discharge is 2.64 L/min at 15:1. The facts we hold for this series give the ratios and barrel sizes but no pressure figure, so ask us for the datasheet value. A 40:1 pump on 7 bar of air builds up to 280 bar, as an example of how ratio multiplies air pressure."
+        },
+        {
+          "slot": "F",
+          "q": "Which greases can the BF-G pneumatic pump handle?",
+          "a": "It handles NLGI 000 to 2 grease. The series is a grease pump, so it is not the choice for oil transfer; see the [PM2 oil transfer pumps](/p/bijur-delimon-pm2-oil-transfer-pumps) for oil. Confirm any special grease on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the BF-G barrel dimensions follow?",
+          "a": "The barrel connections follow DIN 6644-2 and DIN 6644-4 and DIN EN 13008, as listed for the BF-G. Bijur Delimon datasheets, the operator manual and the service card for the BFG range are in the Downloads tab of the product page."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories can be fitted to a BF-G barrel pump?",
+          "a": "Position 6 of the order code selects accessories: none, level switch, chain, chain and relief line (50:1 only), and combinations of these. You also need an air regulator and filter and a high-pressure hose, which we supply with the pump."
+        },
+        {
+          "slot": "I",
+          "q": "What does a BF-G installation need besides the pump?",
+          "a": "Usually a drum cover and follower plate for grease, an air regulator and filter on the air line, the high-pressure hose and, for dispensing, a hose reel and control valve or meter. We supply the Bijur Delimon accessories with the pump."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find BF-G spare parts and service kits?",
+          "a": "Genuine Bijur Delimon service parts and kits for this range are listed by part number on the BF-E and BF-G barrel pump service kits page, under the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts). Send the pump order code and the part you need."
+        },
+        {
+          "slot": "K",
+          "q": "BF-G pneumatic barrel pump compared with the PM3 55:1 grease pump: which is better for grease?",
+          "a": "The BF-G is a litre-sized barrel pump, configured from 15 order codes for 50 and 200 litre barrels. The [PM3 55:1 grease pump](/p/bijur-delimon-pm3-55-1-grease-pumps) is built around pails and drums in pounds. Choose on the container you have; read the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a BF-G barrel pump used?",
+          "a": "Typical uses are central grease supply from barrels and filling lubrication system reservoirs. It suits plants that hold grease in 50 or 200 litre barrels and need an air-driven pump with no electrical supply."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Bijur Delimon BF-G barrel pump, and what do I send for a quote?",
+          "a": "Yes, the Bijur Delimon BF-G barrel pump is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the part numbers and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm2-oil-transfer-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon PM2 oil transfer pumps used for?",
+          "a": "PM2 air-operated pumps transfer high volumes of oil through short runs with small pressure drops. The oil can be mineral, motor, hydraulic, ATF, cutting oil, diesel or kerosene. Ratios are 1:1 and 3:1, in 10 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a PM2 item such as F354120 — PM2 3:1 3GPM 55GAL W/BUNG?",
+          "a": "The item text gives the series, the ratio, the nominal flow, the container and the fitting: F354120 is a PM2 at 3:1, 3 GPM, for a 55 gallon drum, with bung. F351120 is the 1:1, 5 GPM stub pump with bung, and F331120 is the stainless 1:1 stub pump."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM2 ratios, outputs and container sizes are available?",
+          "a": "The 1:1 pumps give 5.3 GAL/min (stub and 55 gallon) and 6.6 GAL/min (stainless stub). The 3:1 pumps give 2.7 GAL/min for 16 and 55 gallon containers. Outlet thread is 3/4 NPT on 1:1 pumps and 1/2 NPT on 3:1 pumps."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the PM2 oil transfer pumps?",
+          "a": "The 1:1 pumps are rated 140 psi (10 bar) and the 3:1 pumps 420 psi (29 bar), the pressure being the air pressure multiplied by the ratio. Output is 2.7 to 6.6 GAL/min depending on the version."
+        },
+        {
+          "slot": "F",
+          "q": "What oils can the PM2 pump transfer, and is there a stainless version?",
+          "a": "It transfers mineral, motor, hydraulic, ATF and cutting oils, diesel and kerosene. A stainless steel 1:1 stub pump, part F331120, is listed for it. For grease use a pump from the [Grease & Oil Barrel Pumps shelf](/c/lubrication-barrel-pumps)."
+        },
+        {
+          "slot": "H",
+          "q": "What kits are listed for the PM2 oil transfer pump?",
+          "a": "Kits combine a pump with a hose, and with a cover for the 16 gallon version: F230 is pump F351120 with a hose, F202 is pump F358120 with a hose and F204 adds a cover. Check each kit's item text in the size table for contents."
+        },
+        {
+          "slot": "I",
+          "q": "How is the PM2 pump mounted, and what are its construction features?",
+          "a": "Stub versions and drum versions are listed. The double-acting design gives even flow with low noise and low air use, mufflers are built in and the air motor has only three moving parts."
+        },
+        {
+          "slot": "K",
+          "q": "PM2 oil transfer pump compared with the PM4 heavy-duty oil pump: which should I choose?",
+          "a": "The PM2 suits short runs with small pressure drops in 1:1 and 3:1. The [PM4 heavy-duty oil pump](/p/bijur-delimon-pm4-heavy-duty-oil-pumps) serves longer lines, hose reels and meters and several outlets at once. Pick on line length and outlets."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM2 spare parts and service kits?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM2 oil transfer pumps; send the pump part number and the part or kit you need. See the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM2 pumps used?",
+          "a": "Typical uses are workshop and fleet oil bars and oil transfer from drums and totes. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators) for choosing ratio and drum size."
+        },
+        {
+          "slot": "G",
+          "q": "Do PM2 pumps come with datasheets and manuals?",
+          "a": "The Bijur Delimon Industrial Lubrication Pumps, Hose Reels and Accessories brochure (33136) is listed in the Downloads tab for this range. Send us the part number if you need a specific sheet."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM2 oil transfer pump in stock, and how do I get a quotation?",
+          "a": "Yes. The Bijur Delimon PM2 oil transfer pump is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending what you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm26-26-1-drum-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bijur Delimon PM26 26:1 drum pump used for?",
+          "a": "The PM26 is an air-operated 26:1 drum pump that dispenses anything from oil to NLGI 2 grease from 120 lb and 400 lb drums. It is used for workshop grease and oil dispensing and for feeding lubrication systems from drums."
+        },
+        {
+          "slot": "B",
+          "q": "What do the PM26 part numbers 39739 and 39740 mean?",
+          "a": "Both are the PM26 HP 26:1 pump with 5.25 lb/min output; 39739 is for a 120 lb drum and 39740 is for a 400 lb drum. Only these two part numbers are listed."
+        },
+        {
+          "slot": "D",
+          "q": "Which drum sizes does the PM26 fit?",
+          "a": "Part 39739 fits 120 lb drums and part 39740 fits 400 lb drums. Both have a 3/8 NPT outlet and the same 26:1 ratio, so the choice is the drum you buy grease in."
+        },
+        {
+          "slot": "E",
+          "q": "What are the output and maximum pressure of the PM26 26:1 drum pump?",
+          "a": "Output is 5.25 lb/min and maximum pressure is 5,200 psi (359 bar). The pressure is the air supply multiplied by the 26:1 ratio, so check your air supply against the pump rating."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants can the PM26 pump handle?",
+          "a": "It dispenses oil through to NLGI 2 grease. It is built of all-steel with chrome-plated piston rods to reduce packing wear, and a double toggle balances the air-valve trip to stop binding and stalling."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to run a PM26 drum pump?",
+          "a": "You need an air regulator and filter on the air line, a drum cover and follower plate for grease, and a high-pressure hose, with a hose reel and control valve or meter for dispensing. We supply the Bijur Delimon accessories with the pump."
+        },
+        {
+          "slot": "K",
+          "q": "PM26 26:1 compared with the PM3 55:1 grease pump: which should I choose?",
+          "a": "The PM26 covers oil to NLGI 2 grease at 5.25 lb/min for 120 lb and 400 lb drums. The [PM3 55:1 grease pump](/p/bijur-delimon-pm3-55-1-grease-pumps) is a higher-ratio, lower-flow grease pump. Pick on line length and viscosity."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM26 spare parts?",
+          "a": "Genuine Bijur Delimon service parts and kits for the PM26 are listed by part number on the Bijur Delimon barrel pump parts pages. See the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts) and send the pump part number."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a PM26 datasheet?",
+          "a": "Yes, a Bijur Delimon PM26 datasheet is in the Downloads tab for this range. Send us the part number for anything else you need."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM26 drum pumps used?",
+          "a": "They suit workshop grease and oil dispensing and feeding lubrication systems from drums. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators) for selecting pump ratio and drum size."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose a pressure ratio such as 26:1?",
+          "a": "The ratio multiplies the air pressure: a 40:1 pump on 7 bar of air can build up to 280 bar. Low ratios move oil in volume through short lines, while high ratios push grease through long lines. Tell us the lubricant and line length and we size the pump."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM26 drum pump in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Bijur Delimon PM26 drum pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm3-55-1-grease-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bijur Delimon PM3 55:1 grease pump used for?",
+          "a": "PM3 is an air-operated reciprocating piston pump for high-pressure greasing with mineral and synthetic greases up to NLGI 2. It is used in workshops, on service trucks and for injector lubrication systems, in 12 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read PM3 items such as F300 — PM3 HP 55:1 0.7PPM 35LB W/BUNG?",
+          "a": "The text gives the series, the ratio, the output in lb per minute and the container with bung: F300 is the PM3 high-pressure 55:1, 0.7 lb/min pump for a 35 lb pail. F302 is the 120 lb drum pump and F304 the 400 lb. Kit numbers list their parts."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM3 container sizes and kits are available?",
+          "a": "Pumps are listed for 35 lb pails, 120 lb drums and 400 lb drums, plus complete kits such as 36526-35, 36526-120 and 36526-400 and the PUM145061 and PUM145062 drum pump sets. Outlet thread is 1/4 NPT."
+        },
+        {
+          "slot": "E",
+          "q": "What are the PM3 output and maximum pressure?",
+          "a": "Output is 0.7 lb/min at 55:1. Maximum pressure is 7,700 psi (531 bar) on the high-pressure pumps and 3,500 psi (241 bar) on the pail and injector drum versions 9035, 9120 and 9400."
+        },
+        {
+          "slot": "F",
+          "q": "Which greases can the PM3 pump handle?",
+          "a": "It handles mineral and synthetic greases up to NLGI 2, at high pressure and low flow. For oil dispensing see the [PM2 oil transfer pumps](/p/bijur-delimon-pm2-oil-transfer-pumps) instead."
+        },
+        {
+          "slot": "H",
+          "q": "What does a PM3 grease pump kit include?",
+          "a": "Kits add parts: 36526-120 is the F302 pump with cover F1936, a hose and a valve. F335 is pump F300 with cover F1934 and a hose. Item text in the size table lists each kit's contents."
+        },
+        {
+          "slot": "K",
+          "q": "PM3 55:1 compared with the PM35 60:1 grease pump: which suits a central system?",
+          "a": "The PM3 gives 0.7 lb/min at 55:1 for mobile units and single reels. The [PM35 grease pumps and carts](/p/bijur-delimon-pm35-grease-pumps-and-grease-carts) offer 60:1 and carts for medium-length piping. Choose on line length and flow."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM3 spare parts?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM3 55:1 grease pumps. Send the pump part number and the part or kit you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM3 grease pumps used?",
+          "a": "They suit workshops and service trucks and injector lubrication systems. The injector versions supply injector systems from fixed drums."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the PM3 grease pump?",
+          "a": "Yes. A Bijur Delimon PM3 pump datasheet is in the Downloads tab for this range. Send us the part number if you need a specific kit or injector version confirmed against it."
+        },
+        {
+          "slot": "I",
+          "q": "How does pressure ratio affect the choice of a grease pump?",
+          "a": "The ratio multiplies the air pressure: a 40:1 pump on 7 bar of air builds up to 280 bar. High ratios such as 55:1 push grease through long lines and reels. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM3 55:1 grease pump in stock, and how do I get a quotation?",
+          "a": "Yes, the Bijur Delimon PM3 55:1 grease pump is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the part numbers and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm35-grease-pumps-and-grease-carts",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon PM35 grease pumps and grease carts used for?",
+          "a": "PM35 pumps are air-operated reciprocating piston pumps for mineral greases, mounted on 35 lb pails or 120 lb and 400 lb drums, supplying up to three outlets through medium-length piping. Oil versions and 60:1 grease cart packages are also listed."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read PM35 items such as F530611 — PM35 HD HP 60:1 1.1PPM 400LB W/BUNG?",
+          "a": "The text gives the series and duty, the ratio, output and container: F530611 is the PM35 60:1 grease pump at 1.1 lb/min for a 400 lb drum with bung. F530621 is 120 lb and F530631 is 35 lb. Part numbers ending in A are pump and hose kits."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM35 ratios and containers are available?",
+          "a": "Oil versions are 5:1 (3.2 GAL/min) and 8:1 (1.9 GAL/min) for 55 gallon drums or stub mount. Grease versions are 60:1 at 1.1 lb/min for 35 lb, 120 lb and 400 lb containers, plus carts for 400 lb and 35 lb."
+        },
+        {
+          "slot": "E",
+          "q": "What are the PM35 maximum pressures?",
+          "a": "The 5:1 oil pumps are rated 875 psi (60 bar), the 8:1 pumps 1,400 psi (97 bar) and the 60:1 grease pumps 8,700 psi (600 bar). The pump and hose kits ending in A are listed at 1,400 psi (97 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Is the PM35 a grease or an oil pump?",
+          "a": "Both. The 60:1 versions are grease pumps for mineral greases, and the 5:1 and 8:1 versions are oil pumps. Choose the ratio for the lubricant and the line length."
+        },
+        {
+          "slot": "H",
+          "q": "What carts and kits are listed for the PM35?",
+          "a": "Cart packages are F311001 (60:1 for a 400 lb drum on a heavy-duty cart), F335261 (400 lb on a standard-duty cart) and F402201 (35 lb with a carry handle). Kits F336 and F338 add cover, follower plate and hose."
+        },
+        {
+          "slot": "K",
+          "q": "PM35 compared with the PM3 55:1 grease pump?",
+          "a": "The PM35 offers oil versions and carts and serves up to three outlets through medium-length piping. The [PM3 55:1 grease pump](/p/bijur-delimon-pm3-55-1-grease-pumps) is grease-only. Pick on the lubricant and outlets."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM35 spare parts?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM35 grease pumps and grease carts. Send the pump part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM35 pumps used?",
+          "a": "They suit mobile greasing in plant and mines and workshops and service bays. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators) for how to select ratio and drum size."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the PM35?",
+          "a": "Yes. A Bijur Delimon PM35 pump datasheet is in the Downloads tab for this range. Send us the part number if you need a specific kit or cart confirmed against it."
+        },
+        {
+          "slot": "I",
+          "q": "How should I choose the air supply for a PM35?",
+          "a": "Check the air the plant can give the pump at the flow it needs, because ratio multiplies air pressure: a 40:1 pump on 7 bar of air can build up 280 bar. Fit a regulator and filter on the air line."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM35 grease pump and grease cart in stock, and how do I get a quotation?",
+          "a": "Yes. The Bijur Delimon PM35 grease pump and grease cart is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending what you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm4-heavy-duty-oil-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon PM4 heavy-duty oil pumps used for?",
+          "a": "PM4 pumps move high volumes of oil, up to SAE 140, through long lines, hose reels and meters, serving several outlets at once. Ratios are 3:1 and 5:1, in 3 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read PM4 items such as F348120 — PM4 5:1 3GPM 55GAL W/BUNG?",
+          "a": "The text gives series, ratio, nominal flow and container: F348120 is the PM4 at 5:1, 3 GPM, for a 55 gallon drum with bung. F347120 is the 5:1 stub pump with bung and F333120 is the stainless 3:1, 6.6 GPM stub pump."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM4 versions are available?",
+          "a": "Three part numbers: the 5:1 drum pump F348120 and 5:1 stub pump F347120 at 2.7 GAL/min, and the stainless 3:1 stub pump F333120 at 6.6 GAL/min. Outlet thread is 3/4 NPT."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the PM4 oil pumps?",
+          "a": "The 5:1 pumps are rated 700 psi (48 bar). The stainless 3:1 stub pump is listed at 145 psi (10 bar); confirm its working pressure with us for your duty before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "Which oils can the PM4 pump handle?",
+          "a": "It handles oils up to SAE 140, including gear oil. A stainless 3:1 stub version, F333120, is also listed for duty where a stainless pump is needed."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to a PM4 oil pump?",
+          "a": "The pump feeds long lines, hose reels and meters, and several outlets at once. Add an air regulator and filter and a suction tube or siphon kit for the drum, and we supply the Bijur Delimon accessories."
+        },
+        {
+          "slot": "K",
+          "q": "PM4 compared with the PM2 oil transfer pump?",
+          "a": "The PM4 is the heavy-duty pump for long lines, reels and meters. The [PM2 oil transfer pump](/p/bijur-delimon-pm2-oil-transfer-pumps) is for short runs with small pressure drops. Choose on line length."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM4 spare parts?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM4 heavy-duty oil pumps. Send the pump part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM4 oil pumps used?",
+          "a": "They suit oil bars and fluid-management systems and gear-oil dispensing, where several outlets draw from one drum pump at once. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators)."
+        },
+        {
+          "slot": "G",
+          "q": "Does the PM4 come with documentation?",
+          "a": "The Bijur Delimon Industrial Lubrication Pumps, Hose Reels and Accessories brochure (33136) is in the Downloads tab for this range. Send the part number if you need a specific version checked."
+        },
+        {
+          "slot": "I",
+          "q": "Why does the PM4 use a double-acting design?",
+          "a": "The double-acting design gives high volume with built-in mufflers, in drum (55 gal) and stub versions. Use the ratio multiplied by your air pressure to check the pressure you can reach."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM4 heavy-duty oil pump in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Bijur Delimon PM4 heavy-duty oil pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm45-oil-and-grease-drum-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon PM45 oil and grease drum pumps used for?",
+          "a": "PM45 pumps are high-capacity air-operated piston pumps for engine, gear and hydraulic oils, ATF and greases, for large installations with long piping and several outlets at once. Ratios run from 3:1 to 70:1 in 13 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read PM45 items such as F531411 — PM45 HD 40:1 7.5PPM 400LB FLANGE MOUNT?",
+          "a": "The text gives series and duty, ratio, output and container with mount: F531411 is the PM45 heavy-duty 40:1, 7.5 lb/min pump for a 400 lb drum, flange mounted. F536011 is the 10:1, 4 GPM oil pump for a 55 gallon drum."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM45 ratios suit oil and which suit grease?",
+          "a": "Ratios of 3:1, 6:1 and 10:1 suit oil. Ratios of 25:1, 40:1 and 70:1 suit grease, up to 8,000 psi. Containers are 55 gallon, 120 lb and 400 lb drums and bulk totes, with stub versions."
+        },
+        {
+          "slot": "E",
+          "q": "What are the PM45 outputs and maximum pressures?",
+          "a": "Oil pumps give 12 GAL/min at 3:1 (510 psi), 6.6 GAL/min at 6:1 (1,020 psi) and 4 GAL/min at 10:1 (1,700 psi). Grease pumps give 13.5 lb/min at 25:1 (5,000 psi), 7.5 lb/min at 40:1 (8,000 psi) and 4.5 lb/min at 70:1 (7,000 psi)."
+        },
+        {
+          "slot": "F",
+          "q": "What lubricants does the PM45 handle?",
+          "a": "Engine, gear and hydraulic oils, ATF and greases. Choose a low ratio for oil in volume and a high ratio for grease through long lines."
+        },
+        {
+          "slot": "H",
+          "q": "What are the pneumatic inductor versions of the PM45?",
+          "a": "F534421 is the 40:1 pump with pneumatic inductor and F534721 is the 70:1 version, both for 400 lb drums. The inductor feeds grease into the pump from the drum."
+        },
+        {
+          "slot": "K",
+          "q": "PM45 compared with the PM60 for large installations?",
+          "a": "The PM45 covers oil and grease from 3:1 to 70:1. The [PM60 oil and grease drum pump](/p/bijur-delimon-pm60-oil-and-grease-drum-pumps) is the largest in the PM range, for high-demand supply through long lines. Choose on demand and line length."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM45 spare parts?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM45 pumps. Send the part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM45 pumps used?",
+          "a": "They suit large installations with long piping and several outlets at once, such as oil dispensing and central grease supply. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators)."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the PM45?",
+          "a": "Yes. The Bijur Delimon PM pump oil datasheet is in the Downloads tab for this range. Send the part number if you need a specific ratio or container version confirmed against it."
+        },
+        {
+          "slot": "I",
+          "q": "What air supply does a PM45 need?",
+          "a": "Check the air the plant can give the pump at the flow it needs, since ratio multiplies air pressure: a 40:1 pump on 7 bar builds up to 280 bar. Fit a regulator and filter."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM45 drum pump in stock, and how do I get a quotation?",
+          "a": "Yes, the Bijur Delimon PM45 drum pump is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the part numbers and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-pm60-oil-and-grease-drum-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon PM60 oil and grease drum pumps used for?",
+          "a": "PM60 pumps are the largest air-operated piston pumps in the PM range, for high-demand oil and grease supply through long lines. They are used for central grease stations and bulk transfer, in 8 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read PM60 items such as F532811 — PM60 HD 80:1 5.5PPM 400LB FLANGE MOUNT?",
+          "a": "The text gives series and duty, ratio, output and container with mount: F532811 is the PM60 heavy-duty 80:1, 5.5 lb/min pump for a 400 lb drum, flange mounted. F537631 is the 6:1, 9 GPM oil stub pump."
+        },
+        {
+          "slot": "D",
+          "q": "Which PM60 ratios are available?",
+          "a": "6:1 and 12:1 for oil (wall-bracket stub pumps), 80:1 for grease on 120 lb and 400 lb drums, and a 12:1 bulk-tote grease transfer pump rated 33 lb/min with a 3-inch camlock."
+        },
+        {
+          "slot": "E",
+          "q": "What are the PM60 outputs and maximum pressures?",
+          "a": "The 6:1 oil pump gives 9.25 GAL/min at 1,020 psi, the 12:1 oil pump 5.3 GAL/min at 2,040 psi, the 80:1 grease pump 5.5 lb/min at 8,000 psi and the 12:1 bulk-tote pump 33 lb/min at 1,200 psi."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants can the PM60 handle?",
+          "a": "The 6:1 and 12:1 stub pumps are for oil, and the 80:1 and 12:1 bulk-tote pumps are for grease. Check the oil viscosity or NLGI grade with us on enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What kits and inductor versions are listed for the PM60?",
+          "a": "F534810 is the 80:1 pump with cover, follower plate and hose. F534121 is the 12:1 pump with pneumatic inductor and F534821 the 80:1 pump with pneumatic inductor."
+        },
+        {
+          "slot": "K",
+          "q": "PM60 compared with the PM45?",
+          "a": "The PM60 is the largest in the range and reaches the 80:1 ratio. The [PM45 drum pump](/p/bijur-delimon-pm45-oil-and-grease-drum-pumps) covers 3:1 to 70:1. Pick on demand and line length."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I find PM60 spare parts?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the PM60. Send the pump part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "J",
+          "q": "Where are PM60 pumps used?",
+          "a": "They suit central grease stations and large oil supply through long lines, where demand is high and several points draw at once. See the [grease and oil drum pumps guide](/blog/grease-and-oil-drum-pumps-and-manual-lubricators)."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the PM60?",
+          "a": "Yes. The Bijur Delimon PM60 oil datasheet is in the Downloads tab for this range. Send the part number if you need a specific ratio or bulk-tote version confirmed against it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose the right PM60 ratio?",
+          "a": "The ratio multiplies the air pressure: a 40:1 pump on 7 bar builds up to 280 bar. Choose 6:1 or 12:1 for oil volume and 80:1 for grease through long lines. Tell us the lubricant and line length."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon PM60 drum pump in stock, and how do I get a quotation?",
+          "a": "Yes. The Bijur Delimon PM60 drum pump is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending what you need through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

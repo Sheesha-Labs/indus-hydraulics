@@ -1,0 +1,965 @@
+{
+  "family": "hydraulic-swing-clamps",
+  "extraFacts": [
+    {
+      "fact": "Swing clamp and tooling-cylinder context from the Indus listings: swing clamps rotate clear of the part, then clamp (90° swing angle in the Enerpac specifications); choose on clamping force, stroke and mounting style; high-pressure tooling cylinders run at up to 700 bar (10,000 psi) and need a matching pump, hose and gauge rated for that pressure.",
+      "source": "Indus Hydraulics listings for Destaco and Enerpac swing clamps and tooling cylinders"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Destaco 030 Series Hydraulic Swing/Pull Clamps [IH-DST-030-SERIES-HYDRAULIC-SWING-PULL-CLAMPS]: pressure stated by the maker 5,000 psi (345 bar) Destaco 030 Series Hydraulic Swing/Pull Clamps: 24 part numbers. |  | 24 part numbers (e.g. 030-1-D-4000-R, 030-1-D-475-R, 030-1-S-4000-R, 030-1-D-4000); stroke 0.65 to 1.12 in; rated pressure 5,000 psi; rows: Hyd. Swing Clamp, Dbl.Act., Rh Swing, 40 / Hyd. Swing Clamp, Dbl.Act., Rh Swing, 47 / Hyd. Swing Clamp, Singleact., Rh Swing, / Hydraulic Swing Cylinder Threaded Body / Hydraulic Swing Cylinder Threaded Body / Hydraulic Swing Cylinder Threaded Body / Hydraulic Swing Cylinder Threaded Body / Hydraulic Swing Cylinder Threaded Body || Destaco 10 Series Threaded Body Cylinders [IH-DST-10-SERIES-THREADED-BODY-CYLINDERS]: pressure stated by the maker 3,000 psi (207 bar) Destaco 10 Series Threaded Body Cylinders: 7 part numbers. | Accessory Type Hydraulic Threaded Body Cylinder | 7 part numbers (e.g. 010-211-004, 010-211-504, 010-210-400, 010-210-501); rated pressure 3,000 psi; stroke 0.22 to 1 in; rows: Hydraulic Threaded Body Cylinder / Hydr. Threaded Body Cylinder, 1-1/2 Inch Bore / Hyd. Threaded Body Cylinder, 3/8In Bore / Hydraulic Threaded Body Cylinder, Single-Acting Pressure Point With3/4 / Hydraulic Threaded Body Cylinder, Single-Acting Pressure Point With2 1 / Hydraulic Threaded Body Cylinder, Single-Acting Pressure Point With1 5 / Hydraulic Threaded Body Cylinder, Single-Acting Pressure Point With1 7 || Destaco 721D Series Hydraulic Short Stroke Cylinders, Double Acting [IH-DST-721D-SERIES-HYDRAULIC-SHORT-STROKE-CYLINDERS-DOUB]: pressure stated by the maker 5,000 psi (345 bar) Destaco 721D Series Hydraulic Short Stroke Cylinders, Double Acting: 4 part numbers. | Product Application Clamping; Spindle Included No | 4 part numbers (e.g. 725D80151-1, 721D25501-2, 725D35151-2, 725D63171-1); rated pressure 5,000 psi; stroke 0.59 to 0.67 in; rows: Hydraulic Double Action Hollow Piston Cylinder, 0.59 Inch Stroke / Hydraulic Double Action Hollow Piston Cylinder, 15.0 mm Stroke / Hydraulic Double Action Hollow Piston Cylinder, 15.0 mm Stroke / Hydraulic Double Action Hollow Piston Cylinder, 0.67 Inch Stroke || Destaco 721E Series Hydraulic Screw-In Cylinders [IH-DST-721E-SERIES-HYDRAULIC-SCREW-IN-CYLINDERS]: pressure stated by the maker 2,625 to 5,075 psi (181 to 350 bar), by size Destaco 721E Series Hydraulic Screw-In Cylinders: 24 part numbers. | Handle Color Red; Spindle Included No | 24 part numbers (e.g. 721E08101-2, 721E12101-2, 721E16121-2, 721E20161-2); stroke 0.39 to 1.97 in; rated pressure 2,625 to 5,075 psi; rows: Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Hydraulic Single Acting / Screw-In Cylinder / Screw-In Cylinder || Destaco 722D Series Double Acting Hydraulic Block Cylinders [IH-DST-722D-SERIES-DOUBLE-ACTING-HYDRAULIC-BLOCK-CYLINDE]: pressure stated by the maker 7,250 psi (500 bar) Destaco 722D Series Double Acting Hydraulic Block Cylinders: 15 part numbers. | Handle Color Red; Spindle Included No | 15 part numbers (e.g. 722D631002-2, 722D16162-2HT, 722D25202-2HT, 722D16162-2); rated pressure 7,250 psi; stroke 0.63 to 3.94 in; rows: Hydraulic Double Acting Block Cylinder / Screw-In Cylinder / Screw-In Cylinder / Hydraulic Double Acting Block Cylinder, 16.0 mm Stroke / Hydraulic Double Acting Block Cylinder, 0.79 Inch Stroke / Hydraulic Double Acting Block Cylinder, 0.98 Inch Stroke / Hydraulic Double Acting Block Cylinder, 0.98 Inch Stroke / Hydraulic Double Acting Block Cylinder, 0.98 Inch Stroke || Destaco 723E Series Hydraulic Block Cylinders [IH-DST-723E-SERIES-HYDRAULIC-BLOCK-CYLINDERS]: pressure stated by the maker 5,075 to 7,250 psi (350 to 500 bar), by size Destaco 723E Series Hydraulic Block Cylinders: 6 part numbers. | Product Application Clamping; Spindle Included No | 6 part numbers (e.g. 723E38092-2, 722E16202-2, 722E25202-2, 722E32202-2); rated pressure 5,075 to 7,250 psi; stroke 0.35 to 0.79 in; rows: Hydraulic Double Action Hollow Piston Cylinder, 0.35 Inch Stroke / Hydraulic Block Cylinder Single Acting / Hydraulic Block Cylinder Single Acting / Hydraulic Block Cylinder Single Acting / Hydraulic Block Cylinder Single Acting / Hydraulic Block Cylinder Single Acting || Enerpac CAS Series Clamp Arms [IH-ENE-CAS-SERIES-CLAMP-ARMS]:  Enerpac CAS Series Clamp Arms: 3 part numbers. |  | 3 part numbers (e.g. CAS21A, CAS51A, CAS121A); ; rows: Short Swing Clamp Arm, 500 lb Clamping Force / Short Swing Clamp Arm, 1,250 lb Clamping Force / Short Swing Clamp Arm, 2,600 lb Clamping Force || Enerpac SC Swing Clamps [IH-ENE-SC]:  Enerpac SC Swing Clamps. 14 models, each listed with its description and part number. | Brand Enerpac; Models 14 | 14 part numbers (e.g. SC1, SC3, SCLD122, SCLD22); stroke 0.78 to 1.49 in; rows: SC-1 Swing Clamp 2164 lbs Force 1.49 in Stroke / SC-3 Swing Clamp 500 lbs Force 0.78 in Stroke / SCLD-122 Cartridge Swing Clamp 2600 lbs Force Double Acting Left Turni / SCLD-22 Cartridge Swing Clamp 500 lbs Force Double Acting Left Turning / SCLD-52 Cartridge Swing Clamp 1250 lbs Force Double Acting Left Turnin / SCLS-122 Cartridge Swing Clamp 2400 lbs Force Single Acting Left Turni / SCLS-22 Cartridge Swing Clamp 475 lbs Force Single Acting Left Turning / SCLS-52 Cartridge Swing Clamp 1100 lbs Force Single Acting Left Turnin || Enerpac SLL Series Clamp Arms [IH-ENE-SLL-SERIES-CLAMP-ARMS]: pressure stated by the maker 500 psi (34 bar) Enerpac SLL Series Clamp Arms: 7 part numbers. | Body Material Steel; Body Style Lower Flange; Cylinder Return Type Single Acting; Cylinder Type Swing; Function Single Acting; Included Mounting Bolts And Arm C-Clip; Material Steel; Material Of Construction Steel; Mounting Style Lower Flange; Mounting Type Lower Flange; No. Of Bolts 3; Rotation Left; Series SLL Series; Single Acting/double Acting Single Acting; Swing Angle 90°; Turns Left; Type Swing | 7 part numbers (e.g. SLLS21, SLLD21, SLLS51, SLLD51); action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in; rows: Swing Clamp, 475 lbs Force, Single-Acting, Left Turning, Lower Flange / Swing Clamp, 500 lbs Force, Double-Acting, Left Turning, Lower Flange / Swing Clamp, 1100 lbs Force, Single-Acting, Left Turning, Lower Flange / Swing Clamp, 1250 lbs Force, Double-Acting, Left Turning, Lower Flange / Swing Clamp, 2400 lbs Force, Single-Acting, Left Turning, Lower Flange / Swing Clamp, 2600 lbs Force, Double-Acting, Left Turning, Lower Flange / Swing Clamp, 7600 lbs Force, Double-Acting, Left Turning, Lower Flange || Enerpac SLR Series Swing Clamps, Lower Flange [IH-ENE-SLR-SERIES-SWING-CLAMPS-LOWER-FLANGE]: pressure stated by the maker 500 psi (34 bar) Enerpac SLR Series Swing Clamps, Lower Flange: 7 part numbers. | Body Material Steel; Body Style Lower Flange; Cylinder Return Type Single Acting; Cylinder Type Swing; Function Single Acting; Included Mounting Bolts And Arm C-Clip; Material Steel; Material Of Construction Steel; Mounting Style Lower Flange; Mounting Type Lower Flange; No. Of Bolts 3; Rotation Right; Series SLR Series; Single Acting/double Acting Single Acting; Swing Angle 90°; Turns Right; Type Swing | 7 part numbers (e.g. SLRS21, SLRD21, SLRS51, SLRD51); action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in; rows: Swing Clamp, 475 lbs Force, Single-Acting, Right Turning, Lower Flange / Swing Clamp, 500 lbs Force, Double-Acting, Right Turning, Lower Flange / Swing Clamp, 1100 lbs Force, Single-Acting, Right Turning, Lower Flang / Swing Clamp, 1250 lbs Force, Double-Acting, Right Turning, Lower Flang / Swing Clamp, 2400 lbs Force, Single-Acting, Right Turning, Lower Flang / Swing Clamp, 2600 lbs Force, Double-Acting, Right Turning, Lower Flang / Swing Clamp, 7600 lbs Force, Double-Acting, Right Turning, Lower Flang || Enerpac SU Series Clamp Arms [IH-ENE-SU-SERIES-CLAMP-ARMS]: pressure stated by the maker 500 psi (34 bar) Enerpac SU Series Clamp Arms: 13 part numbers. | Body Material Steel; Cylinder Return Type Single Acting; Cylinder Type Swing; Function Single Acting; Included Mounting Bolts And Arm C-Clip; Material Steel; Material Of Construction Steel; Mounting Style Upper Flange; Mounting Type Upper Flange; No. Of Bolts 3; Rotation Right; Series SU Series; Single Acting/double Acting Single Acting; Swing Angle 90°; Turns Right; Type Swing | 13 part numbers (e.g. SURS21, SULS21, SURD21, SULD21); action Single Acting; rated pressure 500 psi; extended length 4.41 to 6.75 in; rows: Swing Clamp, 475 lbs Force, Single-Acting, Right Turning, Upper Flange / Swing Clamp, 475 lbs Force, Single-Acting, Left Turning, Upper Flange / Swing Clamp, 500 lbs Force, Double-Acting, Right Turning, Upper Flange / Swing Clamp, 500 lbs Force, Double-Acting, Left Turning, Upper Flange / Swing Clamp, 1100 lbs Force, Single-Acting, Right Turning, Upper Flang / Swing Clamp, 1100 lbs Force, Single-Acting, Left Turning, Upper Flange / Swing Clamp, 1250 lbs Force, Double-Acting, Right Turning, Upper Flang / Swing Clamp, 1250 lbs Force, Double-Acting, Left Turning, Upper Flange || Enerpac Swing Clamp Arms [IH-ENE-SWING-CLAMP-ARMS]:  Enerpac Swing Clamp Arms: 2 part numbers. | Body Material Steel; Cylinder Type Swing; Function Single, Double Acting; Included Standard Arm; Material Steel; Material Of Construction Steel; Mounting Style Threaded Body; Mounting Thread 1\"-12; No. Of Bolts 4; Series Sc Series Series; Single Acting/double Acting Single, Double Acting; Swing Angle 90°; Turns Left Or Right; Type Swing | 2 part numbers (e.g. STRS51, STLS51); action Single, Double Acting; extended length 5.33 in; rows: Threaded Body Swing Clamp, 1100 lbs Force, Single-Acting, Right Turnin / Threaded Body Swing Clamp, 1100 lbs Force, Single-Acting, Left Turning || Enerpac Swing Clamp Cylinders [IH-ENE-SWING-CLAMP-CYLINDERS]: pressure stated by the maker 5,000 to 5,076 psi (345 to 350 bar), by size Enerpac Swing Clamp Cylinders: 8 part numbers. |  | 8 part numbers (e.g. CAL122A, STLD51, STRD51, SLLD52); mounting Threaded Body, Lower Flange and Upper Flange; rated pressure 5,000 to 5,076 psi; extended length 5.33 to 7.45 in; rows: Long Swing Clamp Arm, 2600 Lb Clamping Force / Swing Clamp Hydraulic Cylinder, 1250 Lb Clamping Force, Double Acting / Swing Clamp Hydraulic Cylinder, 1250 Lb Clamping Force, Double Acting / Swing Clamp Hydraulic Cylinder, 1259 Lb Clamping Force, Double Acting / Swing Clamp Hydraulic Cylinder, 2400 Lb Clamping Force, Single Acting / Swing Clamp Hydraulic Cylinder, 4200 Lb Clamping Force, Double Acting / Swing Clamp Hydraulic Cylinder, 7600 Lb Clamping Force, Double Acting / Swing Clamp Hydraulic Cylinder, 4200 Lb Clamping Force, Double Acting || Enerpac Threaded Body Hydraulic Cylinders [IH-ENE-THREADED-BODY-HYDRAULIC-CYLINDERS]:  Enerpac Threaded Body Hydraulic Cylinders: 4 part numbers. |  | 4 part numbers (e.g. CST10K1, CST9191, CST4191, CDT18382); mounting Threaded Body; action Single Acting and Double Acting; extended length 3.38 to 5.18 in; capacity 980 to 3,866; retracted length 2.62 to 3.68 in; stroke 0.75 to 1.5 in; rows: Seal Kit / Threaded Body Hydraulic Cylinder, 1, 950 lbf Push Capacity at 5000 psi / Threaded Body Hydraulic Cylinder, 980 lbf Push Capacity at 5000 psi, 3 / Threaded Body Hydraulic Cylinder, 3, 866 lbf Push Capacity at 5000 psi || Enerpac Work Supports [IH-ENE-WORK-SUPPORTS]: pressure stated by the maker 5,000 psi (345 bar) Enerpac Work Supports: 8 part numbers. | Application Hold; Body Thread 1 1/4\"-16; Included Contact Button, Manifold Seal; Material Bronze, Steel; Mounting Style Manifold Mount; Mounting Type Manifold Mount; Type Manifold Mount | 8 part numbers (e.g. WFM71, WSM71, WFT71, WST71); rated pressure 5,000 psi; stroke 0.38 to 0.41 in; extended length 3 to 4.02 in; rows: Work Support Manifold Fluid Advanced 1650 Lb / Work Support Manifold Spring Advanced 1650 Lb / Work Support Threaded Fluid Advanced 1650 Lb / Work Support Threaded Spring Advanced 1650 Lb / Work Support Flange Fluid Advanced 2500 Lb / Work Support Flange Spring Advanced 2500 Lb / Work Support Flange Fluid Advanced 5000 Lb / Work Support Flange Spring Advanced 5000 Lb",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "destaco-030-series-hydraulic-swing-pull-clamps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 030 series hydraulic swing/pull clamp used for?",
+          "a": "The Destaco 030 series is a hydraulic swing/pull clamp: the arm swings clear of the workpiece, then pulls it down on to the fixture. The maker states 5,000 psi (345 bar), and the series is listed in 24 part numbers, single- or double-acting, with right- or left-hand swing; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Destaco 030 part number such as 030-1-D-4000-R?",
+          "a": "In the rows, 030-1 is the series, S or D matches the single-acting or double-acting description, the number (475, 1100, 2400, 4000) is the size, and an R or L ending matches right-hand or left-hand swing. For example 030-1-D-475-R is listed as a double-acting right-hand swing clamp, and 030-1-S-1100-L as a single-acting 22.6 mm stroke left-hand clamp."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Destaco 030 swing/pull clamps have?",
+          "a": "The rows give strokes of 0.65 in (16.5 mm) for the 475 size, 0.89 in (22.6 mm) for the 1100, 1.07 in (27.2 mm) for the 4000 and 1.12 in (28.4 mm) for the 2400. Choose the stroke for the full travel your fixture needs."
+        },
+        {
+          "slot": "D",
+          "q": "Single-acting or double-acting: which Destaco 030 clamp do I need?",
+          "a": "Single-acting (S) clamps are listed alongside double-acting (D) versions in every size. Choose double-acting where the arm must be driven back by oil, and single-acting where a return spring or the circuit design is acceptable."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Destaco 030 series swing/pull clamp rated for?",
+          "a": "The maker states 5,000 psi (345 bar) for the Destaco 030 series, and the size table repeats 5,000 psi on the rows that give a rating. High-pressure tooling cylinders need a matching pump, hose and gauge rated for that pressure."
+        },
+        {
+          "slot": "H",
+          "q": "Which swing directions does the Destaco 030 series come in?",
+          "a": "Both are listed: right-hand swing (R) and left-hand swing (L), for example 030-1-S-475-R and 030-1-S-475-L. Rotation is chosen on the part number, so check the direction on your fixture before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What body does the Destaco 030 series have, and what does it connect to?",
+          "a": "Several rows are described as threaded-body swing cylinders, so they screw into a fixture bore and take oil through a port in the fixture. Check the thread and port on the part number you order, and use hose and fittings rated for 5,000 psi."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size a Destaco 030 swing/pull clamp for a fixture?",
+          "a": "Choose capacity with margin over the working load and stroke for the full travel needed, as the listing advises. The series covers the 475, 1100, 2400 and 4000 sizes in the part numbers."
+        },
+        {
+          "slot": "J",
+          "q": "Which other swing clamps does Indus list besides the Destaco 030?",
+          "a": "The [Enerpac SC swing clamps](/p/enerpac-sc-swing-clamps) are cartridge swing clamps in 14 models from 475 to 2600 lbs force, and the [Enerpac swing clamp cylinders](/p/enerpac-swing-clamp-cylinders) go up to 7600 lbs. Compare force, stroke and mounting before choosing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 030 compare with the Destaco 10 series threaded body cylinders?",
+          "a": "The 030 is a swing/pull clamp with an arm that swings clear then clamps, rated 5,000 psi (345 bar), while the [Destaco 10 series](/p/destaco-10-series-threaded-body-cylinders) are threaded-body cylinders rated 3,000 psi (207 bar). Use the 030 when the arm must swing away to load the part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Destaco 030 series made?",
+          "a": "The listing gives Taiwan as the country of origin. We ship it from Dubai, UAE to the GCC, Africa and beyond; tell us the destination so the paperwork matches."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 030 series swing/pull clamps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Destaco 030 series swing/pull clamps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-10-series-threaded-body-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 10 series threaded body cylinder used for?",
+          "a": "The Destaco 10 series is a hydraulic threaded-body cylinder that screws into a fixture and pushes with a pressure point for clamping or positioning. The maker states 3,000 psi (207 bar), and the range has 7 part numbers on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Destaco 010 part numbers mean?",
+          "a": "The part numbers are 010-210-400, 010-210-501, 010-211-002, 010-211-004, 010-211-502, 010-211-504 and 010-212-004. The descriptions give the bore or thread of the body (3/8 in bore, 1-1/2 in bore, 3/4-16, 2 1/2 16) and the stroke, so match the thread and stroke to your fixture bore."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Destaco 10 series cylinders have?",
+          "a": "The rows give strokes of 0.22, 0.31, 0.5 and 1 in. The shortest is the 3/8 in bore 010-210-400 at 0.22 in, and the longest are 010-211-004 and 010-212-004 at 1 in."
+        },
+        {
+          "slot": "D",
+          "q": "What threads do the Destaco 10 series threaded bodies have?",
+          "a": "The descriptions show 3/4-16 on 010-210-501, 2 1/2 16 on 010-212-004 and 1-1/2 in bore on 010-211-504. Check the thread on the row before drilling your fixture."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Destaco 10 series rated for?",
+          "a": "The maker states 3,000 psi (207 bar), and the rows that give a rating show 3,000 psi. Use hose, fittings and a gauge rated for at least that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "Are the Destaco 10 series cylinders single or double acting?",
+          "a": "The descriptions say single-acting for the pressure-point rows, so they extend on oil pressure and return by spring. The rows without a note should be confirmed against the part number before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Destaco 10 series cylinder?",
+          "a": "You need a fixture bore with the matching thread, a hydraulic supply at no more than 3,000 psi, and a manifold or drilled port. [Contact us](/contact) with the part number and we confirm the thread and port."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install a Destaco 10 series threaded body cylinder?",
+          "a": "Screw the body into the tapped fixture bore, connect the oil port and bleed the line before clamping. Choose capacity with margin over the working load and stroke for the travel you need."
+        },
+        {
+          "slot": "J",
+          "q": "Where are threaded body cylinders used?",
+          "a": "They are used in clamping fixtures where a compact screw-in cylinder pushes a pressure point, such as workholding and positioning. The [721E screw-in cylinders](/p/destaco-721e-series-hydraulic-screw-in-cylinders) are a related screw-in range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 10 series compare with the 722D block cylinders?",
+          "a": "The 10 series is a threaded-body cylinder rated 3,000 psi (207 bar), while the [722D series block cylinders](/p/destaco-722d-series-double-acting-hydraulic-block-cylinders) are double-acting at 7,250 psi (500 bar). Choose the 722D where the higher pressure is needed."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Destaco 10 series made?",
+          "a": "The listing gives the United States as the country of origin. We ship from Dubai, UAE worldwide; tell us the destination so the paperwork matches."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 10 series threaded body cylinders in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Destaco 10 series threaded body cylinders and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-721d-series-hydraulic-short-stroke-cylinders-double-acting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 721D series short stroke double-acting cylinder used for?",
+          "a": "The Destaco 721D series is a double-acting hydraulic hollow-piston cylinder for clamping, listed with 4 part numbers and a maker rating of 5,000 psi (345 bar). Hydraulic oil drives it both ways, which suits fixtures that need positive release; browse the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the Destaco 721D part numbers?",
+          "a": "The rows are 721D25501-2, 725D35151-2, 725D63171-1 and 725D80151-1. The descriptions give the type as a double-action hollow piston cylinder with the stroke, so quote the part number from your fixture drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Destaco 721D cylinders have?",
+          "a": "The size table gives strokes of 0.59 in on three rows and 0.67 in on one. These are short-stroke cylinders, so check that the stroke covers your clamping travel."
+        },
+        {
+          "slot": "F",
+          "q": "What does hollow piston mean on a Destaco 721D cylinder?",
+          "a": "The descriptions call these hollow-piston double-action cylinders, meaning the piston is hollow. The listing shows no spindle included, so any spindle or tool is bought separately."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus provide test documents with the Destaco 721D?",
+          "a": "No certificate or approval is listed for these cylinders. If your project needs a test report, state it on your [request](/contact) and we confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Destaco 721D come with a spindle?",
+          "a": "No, the specification says Spindle Included: No. The cylinder is listed for clamping applications, so add the clamping spindle or pad that your fixture needs."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size a Destaco 721D cylinder?",
+          "a": "Choose capacity with margin over the working load and stroke for the full travel, as the listing advises. The stroke on the four rows is 0.59 or 0.67 in."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Destaco 721D short stroke cylinders used?",
+          "a": "The Destaco 721D short stroke cylinders are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 721D differ from the 721E screw-in cylinder?",
+          "a": "The 721D is double acting at 5,000 psi (345 bar) with a 0.59 to 0.67 in stroke; the [721E](/p/destaco-721e-series-hydraulic-screw-in-cylinders) is single acting with stroke from 0.39 to 1.97 in and ratings from 2,625 to 5,075 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 721D short stroke cylinders made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Destaco 721D short stroke cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 721D short stroke cylinders in stock in Dubai?",
+          "a": "Yes, we carry Destaco 721D short stroke cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-721e-series-hydraulic-screw-in-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 721E series screw-in cylinder used for?",
+          "a": "The Destaco 721E series is a single-acting hydraulic screw-in cylinder that threads into a fixture to push or clamp. It is listed in 24 part numbers with ratings from 2,625 to 5,075 psi (181 to 350 bar) by size; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Destaco 721E part number such as 721E16121-2?",
+          "a": "The numbers start 721E followed by a size code, for example 721E08101-2, 721E12101-2, 721E16121-2 and 721E20161-2. The descriptions give the stroke in mm, so match the stroke on the row to your fixture."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Destaco 721E cylinders have?",
+          "a": "The rows range from 0.39 to 1.97 in, which is 10.0 mm to 50.0 mm in the descriptions (10.0, 12.0, 12.5, 15.0, 16.0, 25.0, 40.0 and 50.0 mm). Pick the stroke from the row that covers your travel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Destaco 721E rated for?",
+          "a": "The rating depends on the size: the rows give 2,625, 3,625, 5,000 and 5,075 psi, and the maker states 2,625 to 5,075 psi (181 to 350 bar). Check the row for your part number and do not run it above that figure."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Destaco 721E single or double acting?",
+          "a": "The descriptions say single acting, so oil pressure drives it out and it returns without oil pressure. The specification lists a red handle colour and no spindle included."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Destaco 721E screw-in cylinders?",
+          "a": "No certificate or approval is listed for the Destaco 721E screw-in cylinders. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Destaco 721E come with a spindle?",
+          "a": "No, the specification says Spindle Included: No, so buy the clamping spindle or pad separately. Quote the part number and we confirm the fit."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose a Destaco 721E screw-in cylinder?",
+          "a": "Choose capacity with margin over the working load and stroke for the travel needed. Rows are 0.39 to 1.97 in stroke, so match this to the clamp stroke on your fixture."
+        },
+        {
+          "slot": "J",
+          "q": "Which fixtures use Destaco 721E screw-in cylinders?",
+          "a": "They fit clamping and workholding fixtures where a compact cylinder threads straight into the plate. Pair the cylinder with a [swing clamp](/p/destaco-030-series-hydraulic-swing-pull-clamps) where the arm must swing clear."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 721E compare with the 723E block cylinders?",
+          "a": "The 721E screws into a fixture, with ratings from 2,625 to 5,075 psi, while the [723E block cylinders](/p/destaco-723e-series-hydraulic-block-cylinders) mount as a block and are rated 5,075 to 7,250 psi (350 to 500 bar). Choose the 723E for the higher pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 721E screw-in cylinders made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Destaco 721E screw-in cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 721E screw-in cylinders in stock in Dubai?",
+          "a": "Yes, we carry Destaco 721E screw-in cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-722d-series-double-acting-hydraulic-block-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 722D series block cylinder used for?",
+          "a": "The Destaco 722D series is a double-acting hydraulic block cylinder rated 7,250 psi (500 bar) by the maker, listed in 15 part numbers. It suits fixtures that need positive drive both ways; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Destaco 722D part number such as 722D16162-2HT?",
+          "a": "The numbers start 722D followed by a size code, and the rows 722D16162-2 and 722D16162-2HT share a code. The descriptions give the stroke in mm or inches, so quote the full number from your drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Destaco 722D cylinders have?",
+          "a": "The rows give 0.63, 0.79, 0.98, 1.97 and 3.94 in (16, 25 and similar mm sizes in the descriptions). The 1.97 in stroke has the most rows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Destaco 722D rated for?",
+          "a": "The maker states 7,250 psi (500 bar), repeated on the rows that give a rating. Hose, fittings and gauge must be rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Destaco 722D double acting?",
+          "a": "Yes, the title and descriptions say double acting, so oil drives the piston in both directions. Some rows are described as screw-in cylinders."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Destaco 722D block cylinders?",
+          "a": "No certificate or approval is listed for the Destaco 722D block cylinders. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Destaco 722D block cylinders?",
+          "a": "Fit the Destaco 722D block cylinders with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 15 part numbers are listed, such as 722D631002-2, 722D16162-2HT and 722D25202-2HT."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Destaco 722D block cylinders for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives rated pressure 7,250 psi; stroke 0.63 to 3.94 in. 15 part numbers are listed, such as 722D50992-2 and 722D40992-2."
+        },
+        {
+          "slot": "J",
+          "q": "Where are double-acting block cylinders used?",
+          "a": "Use them in clamping fixtures where the cylinder must also drive the release stroke, for example a repeated load-and-unload cycle."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 722D compare with the 723E block cylinder?",
+          "a": "The 722D is double acting at 7,250 psi (500 bar); the [723E](/p/destaco-723e-series-hydraulic-block-cylinders) is listed from 5,075 to 7,250 psi with mostly single-acting block cylinders and 6 part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 722D block cylinders made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Destaco 722D block cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 722D block cylinders in stock in Dubai?",
+          "a": "Yes, we carry Destaco 722D block cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-723e-series-hydraulic-block-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Destaco 723E series block cylinder used for?",
+          "a": "The Destaco 723E series is a hydraulic block cylinder for clamping, listed in 6 part numbers with a maker rating of 5,075 to 7,250 psi (350 to 500 bar) by size. Most rows are single acting; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the Destaco 723E part numbers?",
+          "a": "The rows are 723E38092-2, 722E16202-2, 722E25202-2, 722E32202-2 and 722E40202-2. Quote the number from your fixture drawing and we confirm the stroke and rating."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Destaco 723E rated for?",
+          "a": "The maker states 5,075 to 7,250 psi (350 to 500 bar), by size, with five rows at 7,250 psi and one at 5,075 psi. Use hose and a gauge rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Destaco 723E single or double acting?",
+          "a": "Five rows are described as single-acting block cylinders and one as a double-action hollow piston cylinder. Check the row of the part number you order."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Destaco 723E block cylinders?",
+          "a": "No certificate or approval is listed for the Destaco 723E block cylinders. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Destaco 723E block cylinders?",
+          "a": "Fit the Destaco 723E block cylinders with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 6 part numbers are listed, such as 723E38092-2, 722E16202-2 and 722E25202-2."
+        },
+        {
+          "slot": "I",
+          "q": "How do I choose a Destaco 723E block cylinder?",
+          "a": "Choose capacity with margin over the working load and stroke for the travel, and match the pressure rating of the row to your pump."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Destaco 723E block cylinders used?",
+          "a": "The Destaco 723E block cylinders are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Destaco 723E compare with the 722D block cylinder?",
+          "a": "The 723E is mostly single acting at 5,075 to 7,250 psi in 6 part numbers; the [722D](/p/destaco-722d-series-double-acting-hydraulic-block-cylinders) is double acting at 7,250 psi in 15 part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Destaco 723E block cylinders made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Destaco 723E block cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Destaco 723E block cylinders in stock in Dubai?",
+          "a": "Yes, we carry Destaco 723E block cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-cas-series-clamp-arms",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac CAS series swing clamp arms used for?",
+          "a": "Enerpac CAS series clamp arms are short swing clamp arms that fit Enerpac swing clamp cylinders and turn the cylinder motion into a clamping force on the workpiece. Three part numbers are listed, CAS21A, CAS51A and CAS121A, for 500, 1,250 and 2,600 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac CAS clamp arm part number?",
+          "a": "The size code follows CAS: CAS21A is the short arm for 500 lb clamping force, CAS51A for 1,250 lb and CAS121A for 2,600 lb. These force figures match the 21, 51 and 121 sizes of the Enerpac SU, SLL and SLR clamps, so the arm matches the clamp of the same size code."
+        },
+        {
+          "slot": "D",
+          "q": "Which clamping forces do the Enerpac CAS clamp arms cover?",
+          "a": "The three arms are described as short swing clamp arms for 500 lb, 1,250 lb and 2,600 lb clamping force. Choose the arm whose force code matches the swing clamp cylinder body you already have."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating do Enerpac CAS clamp arms have?",
+          "a": "The arms are listed by clamping force: 500, 1,250 and 2,600 lb. No pressure is stated on the arm itself, since the cylinder supplies the pressure; match the arm to the cylinder rating."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac CAS clamp arms need?",
+          "a": "The Enerpac CAS clamp arms run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac CAS clamp arms?",
+          "a": "No certificate or approval is listed for the Enerpac CAS clamp arms. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac CAS clamp arms?",
+          "a": "Fit the Enerpac CAS clamp arms with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 3 part numbers are listed, such as CAS21A, CAS51A and CAS121A."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac CAS clamp arms for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. 3 part numbers are listed, such as CAS51A and CAS121A."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac CAS clamp arms used?",
+          "a": "The Enerpac CAS clamp arms are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does a CAS short arm differ from the long arm CAL122A?",
+          "a": "The CAS arms are short swing clamp arms, while CAL122A is a long swing clamp arm rated 2,600 lb clamping force, listed on the [Enerpac swing clamp cylinders](/p/enerpac-swing-clamp-cylinders) page. Choose the long arm for more reach over the part."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac CAS clamp arms made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Enerpac CAS clamp arms from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac CAS clamp arms in stock in Dubai?",
+          "a": "Yes, we hold Enerpac CAS clamp arms in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-sc-swing-clamps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac SC series swing clamps used for?",
+          "a": "Enerpac SC swing clamps are cartridge swing clamps that rotate clear of the part and then clamp it, used in workholding fixtures. Fourteen models are listed from 475 to 2,600 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac SC part number such as SCLD122?",
+          "a": "The rows show the pattern: SCL means left turning, SCS means straight plunger, and the next letter is S (single acting) or D (double acting). So SCLD122 is a double-acting left-turning cartridge clamp at 2,600 lb, and SCSS52 is a single-acting straight-plunger clamp at 1,100 lb."
+        },
+        {
+          "slot": "D",
+          "q": "Which clamping forces do the Enerpac SC swing clamps cover?",
+          "a": "The cartridge models are rated 475, 500, 1,100, 1,250, 2,400 and 2,600 lb clamping force, in single-acting (475, 1,100, 2,400) and double-acting (500, 1,250, 2,600) versions. The SC-1 gives 2,164 lb with a 1.49 in stroke and the SC-3 gives 500 lb with a 0.78 in stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What strokes do the Enerpac SC swing clamps have?",
+          "a": "The two numbered models list strokes: SC-1 1.49 in and SC-3 0.78 in. The cartridge models do not state a stroke on the row, so ask for the dimension if your fixture needs it."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac SC swing clamps need?",
+          "a": "The Enerpac SC swing clamps run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives stroke 0.78 to 1.49 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac SC swing clamps?",
+          "a": "No certificate or approval is listed for the Enerpac SC swing clamps. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac SC swing clamps?",
+          "a": "Fit the Enerpac SC swing clamps with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 14 part numbers are listed, such as SC1, SC3 and SCLD122."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac SC swing clamps for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives stroke 0.78 to 1.49 in. 14 part numbers are listed, such as SCSS22 and SCSS52."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac SC swing clamps used?",
+          "a": "The Enerpac SC swing clamps are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac SC series differ from the SU series?",
+          "a": "The SC range is made of cartridge and SC-1/SC-3 swing clamps, while the [SU series](/p/enerpac-su-series-clamp-arms) are upper-flange swing clamps with extended lengths of 4.41 to 6.75 in. Choose on mounting style and force."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac SC swing clamps made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Enerpac SC swing clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac SC swing clamps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac SC swing clamps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-sll-series-clamp-arms",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac SLL series swing clamps used for?",
+          "a": "Enerpac SLL series swing clamps are left-turning, lower-flange hydraulic swing clamps that rotate 90° clear of the part and then clamp. Seven part numbers are listed, from 475 to 7,600 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac SLL part number such as SLLD121?",
+          "a": "In the rows, SLL is the left-turning lower-flange series, S or D marks single- or double-acting, and the number is the size. SLLS21 is a single-acting 475 lb clamp, SLLD21 a double-acting 500 lb clamp, and SLLD121 a double-acting 2,600 lb clamp."
+        },
+        {
+          "slot": "D",
+          "q": "What clamping forces and sizes do the Enerpac SLL swing clamps cover?",
+          "a": "The seven models give 475, 500, 1,100, 1,250, 2,400, 2,600 and 7,600 lb clamping force. Extended lengths are 4.41, 5.31, 6.75 and 7.77 in."
+        },
+        {
+          "slot": "E",
+          "q": "What clamping force does the Enerpac SLLD351 give?",
+          "a": "The SLLD351 is a double-acting left-turning lower-flange clamp rated 7,600 lb clamping force with an extended length of 7.77 in. It is the largest in the SLL range."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac SLL swing clamps need?",
+          "a": "The Enerpac SLL swing clamps run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac SLL swing clamps?",
+          "a": "No certificate or approval is listed for the Enerpac SLL swing clamps. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac SLL swing clamps?",
+          "a": "Fit the Enerpac SLL swing clamps with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 7 part numbers are listed, such as SLLS21, SLLD21 and SLLS51."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac SLL swing clamps for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in. 7 part numbers are listed, such as SLLD121 and SLLD351."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac SLL swing clamps used?",
+          "a": "The Enerpac SLL swing clamps are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SLL series compare with the SLR series?",
+          "a": "The SLL turns left and the [SLR series](/p/enerpac-slr-series-swing-clamps-lower-flange) turns right; both are lower-flange clamps in the same seven sizes from 475 to 7,600 lb. Choose by the swing direction your fixture needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac SLL swing clamps made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin and HS code 8412210030. We ship the Enerpac SLL swing clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac SLL swing clamps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac SLL swing clamps and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-slr-series-swing-clamps-lower-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac SLR series swing clamps used for?",
+          "a": "Enerpac SLR series swing clamps are right-turning, lower-flange hydraulic swing clamps that rotate 90° clear of the part and then clamp. Seven part numbers are listed, from 475 to 7,600 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac SLR part number such as SLRS51?",
+          "a": "In the rows, SLR is the right-turning lower-flange series, S or D marks single- or double-acting, and the number is the size. SLRS21 is a single-acting 475 lb clamp, SLRD51 a double-acting 1,250 lb clamp."
+        },
+        {
+          "slot": "D",
+          "q": "What clamping forces and sizes do the Enerpac SLR swing clamps cover?",
+          "a": "The seven models give 475, 500, 1,100, 1,250, 2,400, 2,600 and 7,600 lb clamping force, with extended lengths of 4.41, 5.31, 6.75 and 7.77 in. Mounting bolts and the arm C-clip are included."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac SLR swing clamps need?",
+          "a": "The Enerpac SLR swing clamps run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac SLR swing clamps?",
+          "a": "No certificate or approval is listed for the Enerpac SLR swing clamps. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac SLR swing clamps?",
+          "a": "Fit the Enerpac SLR swing clamps with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 7 part numbers are listed, such as SLRS21, SLRD21 and SLRS51."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac SLR swing clamps for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 7.77 in. 7 part numbers are listed, such as SLRD121 and SLRD351."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac SLR swing clamps used?",
+          "a": "The Enerpac SLR swing clamps are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SLR series compare with the SLL series?",
+          "a": "The SLR turns right and the [SLL series](/p/enerpac-sll-series-clamp-arms) turns left; both are lower-flange clamps in the same seven sizes. Choose the swing direction that clears your workpiece."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac SLR swing clamps made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin and HS code 8412210030. We ship the Enerpac SLR swing clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac SLR swing clamps in stock in Dubai?",
+          "a": "Yes. We keep Enerpac SLR swing clamps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-su-series-clamp-arms",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac SU series swing clamps used for?",
+          "a": "Enerpac SU series swing clamps are upper-flange hydraulic swing clamps that rotate 90° clear of the part and then clamp, in both right- and left-turning versions. Thirteen part numbers are listed from 475 to 4,200 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac SU part number such as SURD121?",
+          "a": "In the rows, SU is the upper-flange series, R or L is right- or left-turning, S or D is single- or double-acting, and the number is the size. SURD121 is a right-turning double-acting 2,600 lb clamp and SULS51 a left-turning single-acting 1,100 lb clamp."
+        },
+        {
+          "slot": "D",
+          "q": "What clamping forces do the Enerpac SU swing clamps cover?",
+          "a": "The models give 475, 500, 1,100, 1,250, 2,400, 2,600 and 4,200 lb clamping force, with extended lengths of 4.41, 5.31, 6.75 and 6.57 in. The 4,200 lb clamp is SURD201."
+        },
+        {
+          "slot": "E",
+          "q": "What swing angle do the Enerpac SU swing clamps have?",
+          "a": "The specification gives a 90° swing angle, turning left or right depending on the part number. Three mounting bolts and an arm C-clip are included."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac SU swing clamps need?",
+          "a": "The Enerpac SU swing clamps run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 6.75 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac SU swing clamps?",
+          "a": "No certificate or approval is listed for the Enerpac SU swing clamps. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac SU swing clamps?",
+          "a": "Fit the Enerpac SU swing clamps with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 13 part numbers are listed, such as SURS21, SULS21 and SURD21."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac SU swing clamps for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives action Single Acting; rated pressure 500 psi; extended length 4.41 to 6.75 in. 13 part numbers are listed, such as SULD121 and SURD201."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac SU swing clamps used?",
+          "a": "The Enerpac SU swing clamps are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SU series compare with the SLL series?",
+          "a": "The SU is an upper-flange clamp in both turning directions, up to 4,200 lb, while the [SLL series](/p/enerpac-sll-series-clamp-arms) is lower flange, left-turning, and goes up to 7,600 lb."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac SU swing clamps made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin and HS code 8412210030. We ship the Enerpac SU swing clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac SU swing clamps in stock in Dubai?",
+          "a": "Yes, we carry Enerpac SU swing clamps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-swing-clamp-arms",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac STRS51 and STLS51 swing clamps?",
+          "a": "The STRS51 and STLS51 are threaded-body swing clamps rated 1,100 lb clamping force that screw into the fixture, listed on the Enerpac swing clamp arms page. One turns right and one turns left; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "What do STRS51 and STLS51 mean?",
+          "a": "ST means threaded body, R or L is right- or left-turning, S is single acting and 51 is the 1,100 lb size, consistent with the matching SU and SLL clamps. STRS51 turns right and STLS51 turns left."
+        },
+        {
+          "slot": "E",
+          "q": "What clamping force do the Enerpac threaded body swing clamps give?",
+          "a": "Both listed models are 1,100 lb clamping force, single acting. For more force see the [Enerpac swing clamp cylinders](/p/enerpac-swing-clamp-cylinders), which go up to 7,600 lb."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac threaded body swing clamps need?",
+          "a": "The Enerpac threaded body swing clamps run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives action Single, Double Acting; extended length 5.33 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac threaded body swing clamps?",
+          "a": "No certificate or approval is listed for the Enerpac threaded body swing clamps. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac threaded body swing clamps?",
+          "a": "Fit the Enerpac threaded body swing clamps with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 2 part numbers are listed, such as STRS51 and STLS51."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac threaded body swing clamps for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives action Single, Double Acting; extended length 5.33 in. 2 part numbers are listed, such as STRS51 and STLS51."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac threaded body swing clamps used?",
+          "a": "The Enerpac threaded body swing clamps are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the threaded-body STRS51 differ from the flange-mounted SU series?",
+          "a": "The STRS51 screws into the fixture with a 1\"-12 thread, while the [SU series](/p/enerpac-su-series-clamp-arms) bolts on an upper flange. Choose threaded body where space is tight."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac threaded body swing clamps made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin and HS code 8431100090. We ship the Enerpac threaded body swing clamps from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac threaded body swing clamps in stock in Dubai?",
+          "a": "Yes, we hold Enerpac threaded body swing clamps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-swing-clamp-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac swing clamp cylinders used for?",
+          "a": "Enerpac swing clamp cylinders are hydraulic swing clamps rated 5,000 to 5,076 psi (345 to 350 bar) by size, with threaded-body, upper-flange and lower-flange mounting. Eight part numbers are listed, from 1,250 to 7,600 lb clamping force; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac swing clamp cylinder part number such as STRD51?",
+          "a": "ST means threaded body, SL lower flange and SU upper flange; R or L is the turning direction; S or D is single or double acting; the number is the size. STRD51 is a threaded-body right-turning double-acting 1,250 lb cylinder and SULD352 an upper-flange left-turning double-acting 7,600 lb cylinder."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles do the Enerpac swing clamp cylinders have?",
+          "a": "The rows list threaded body (3), upper flange (3) and lower flange (1), with extended lengths of 5.33, 6.57, 6.75 and 7.45 in. The long arm CAL122A is also listed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Enerpac swing clamp cylinders rated for?",
+          "a": "The maker states 5,000 to 5,076 psi (345 to 350 bar), by size, and the rows show 5,000 psi on six and 5,076 on one. Use hose and a gauge rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac swing clamp cylinders need?",
+          "a": "The Enerpac swing clamp cylinders run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives mounting Threaded Body, Lower Flange and Upper Flange; rated pressure 5,000 to 5,076 psi; extended length 5.33 to 7.45 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac swing clamp cylinders?",
+          "a": "No certificate or approval is listed for the Enerpac swing clamp cylinders. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac swing clamp cylinders?",
+          "a": "Fit the Enerpac swing clamp cylinders with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 8 part numbers are listed, such as CAL122A, STLD51 and STRD51."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac swing clamp cylinders for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives mounting Threaded Body, Lower Flange and Upper Flange; rated pressure 5,000 to 5,076 psi; extended length 5.33 to 7.45 in. 8 part numbers are listed, such as SULD352 and SURD202."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac swing clamp cylinders used?",
+          "a": "The Enerpac swing clamp cylinders are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac swing clamp cylinders differ from the SU series?",
+          "a": "The cylinders are listed at 5,000 psi with all three mountings and up to 7,600 lb, while the [SU series](/p/enerpac-su-series-clamp-arms) is the upper-flange family, 475 to 4,200 lb."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac swing clamp cylinders made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Enerpac swing clamp cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac swing clamp cylinders in stock in Dubai?",
+          "a": "Yes, we carry Enerpac swing clamp cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-threaded-body-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac threaded body hydraulic cylinders used for?",
+          "a": "Enerpac threaded-body hydraulic cylinders screw into a fixture to push a load, for clamping and positioning. Three cylinders and a seal kit are listed: CST9191, CST4191, CDT18382 and the seal kit CST10K1; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "What are the Enerpac CST and CDT part numbers?",
+          "a": "CST9191 and CST4191 are single acting and CDT18382 is double acting, and CST10K1 is a seal kit. The rows give the push capacity at 5,000 psi: 1,950 lbf, 980 lbf and 3,866 lbf."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Enerpac threaded body cylinders have?",
+          "a": "CST4191 has a 0.75 in stroke and CDT18382 has 1.5 in, with retracted lengths of 2.62 and 3.68 in and extended lengths of 3.38 and 5.18 in. CST9191 is 3.11 in retracted and 3.87 in extended."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac threaded body hydraulic cylinders need?",
+          "a": "The Enerpac threaded body hydraulic cylinders run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives mounting Threaded Body; action Single Acting and Double Acting; extended length 3.38 to 5.18 in; capacity 980 to 3,866; retracted length 2.62 to 3.68 in; stroke 0.75 to 1.5 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac threaded body hydraulic cylinders?",
+          "a": "No certificate or approval is listed for the Enerpac threaded body hydraulic cylinders. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac threaded body hydraulic cylinders?",
+          "a": "Fit the Enerpac threaded body hydraulic cylinders with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 4 part numbers are listed, such as CST10K1, CST9191 and CST4191."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac threaded body hydraulic cylinders for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives mounting Threaded Body; action Single Acting and Double Acting; extended length 3.38 to 5.18 in; capacity 980 to 3,866; retracted length 2.62 to 3.68 in; stroke 0.75 to 1.5 in. 4 part numbers are listed, such as CST4191 and CDT18382."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac threaded body hydraulic cylinders used?",
+          "a": "The Enerpac threaded body hydraulic cylinders are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the single-acting CST4191 differ from the double-acting CDT18382?",
+          "a": "The CST4191 is single acting with a 0.75 in stroke and 980 lbf push; the CDT18382 is double acting with a 1.5 in stroke and 3,866 lbf push. Choose double acting where oil must drive the return."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac threaded body hydraulic cylinders made, and can they be exported from Dubai?",
+          "a": "The listing carries no country of origin, so ask us for the maker's origin if your paperwork needs it. We ship the Enerpac threaded body hydraulic cylinders from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac threaded body hydraulic cylinders in stock in Dubai?",
+          "a": "Yes, we carry Enerpac threaded body hydraulic cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-work-supports",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Enerpac work supports used for?",
+          "a": "Enerpac work supports hold a workpiece from below once it is clamped, preventing deflection while it is machined. Eight part numbers are listed, rated 5,000 psi (345 bar) in bronze and steel; see the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read an Enerpac work support part number such as WFM71?",
+          "a": "The rows show the pattern: W is work support, F or S is fluid or spring advanced, and M, T or L is manifold, threaded or flange mounting, followed by a size code. WFM71 is a fluid-advanced manifold-mount support at 1,650 lb and WSL111 would be the spring version."
+        },
+        {
+          "slot": "D",
+          "q": "What load sizes do the Enerpac work supports cover?",
+          "a": "The rows give 1,650, 2,500 and 5,000 lb capacity, with strokes of 0.38 and 0.41 in. Extended heights are 3, 3.35, 3.51, 3.8, 3.91 and 4.02 in."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are the Enerpac work supports rated for?",
+          "a": "All eight rows are rated 5,000 psi, as the maker states 5,000 psi (345 bar). Use hose, fittings and a gauge rated for that pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What oil and pressure do the Enerpac work supports need?",
+          "a": "The Enerpac work supports run on hydraulic oil from a pump rated for the clamp pressure, and tooling cylinders in this family run up to 700 bar (10,000 psi). The size table gives rated pressure 5,000 psi; stroke 0.38 to 0.41 in; extended length 3 to 4.02 in. Use hose, fittings and a gauge rated for the highest pressure figure."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Enerpac work supports?",
+          "a": "No certificate or approval is listed for the Enerpac work supports. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to fit with the Enerpac work supports?",
+          "a": "Fit the Enerpac work supports with a hydraulic pump, hose and gauge rated for the clamp pressure, and a manifold or drilled fixture ports to match the mounting. 8 part numbers are listed, such as WFM71, WSM71 and WFT71."
+        },
+        {
+          "slot": "I",
+          "q": "How do I size the Enerpac work supports for a fixture?",
+          "a": "Choose capacity with margin over the working load, and stroke for the full travel needed. The size table gives rated pressure 5,000 psi; stroke 0.38 to 0.41 in; extended length 3 to 4.02 in. 8 part numbers are listed, such as WFL221 and WSL221."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac work supports used?",
+          "a": "The Enerpac work supports are used in machining fixtures and workholding where a hydraulic clamp or support must hold the part during cutting. See other clamp types on the [swing clamps shelf](/c/hydraulic-swing-clamps)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between fluid-advanced and spring-advanced Enerpac work supports?",
+          "a": "The names show Fluid Advanced and Spring Advanced versions of each size: a fluid-advanced support is moved up by oil pressure, a spring-advanced support is pushed up by a spring, then locked by oil. Choose by how the support must contact the part."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac work supports made, and can they be exported from Dubai?",
+          "a": "The listing gives United States as the country of origin and HS code 8412210030. We ship the Enerpac work supports from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Enerpac work supports in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Enerpac work supports and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

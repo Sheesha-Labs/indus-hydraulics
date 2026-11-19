@@ -1,0 +1,1067 @@
+{
+  "family": "npt-npsm-sae-hose-fittings-03",
+  "extraFacts": [
+    {
+      "fact": "SAE J512 covers automotive tube fittings, including the 45° SAE flare and the inverted flare seat.",
+      "source": "SAE J512 (named on the Indus SAE 45° cone and inverted flare listings)"
+    },
+    {
+      "fact": "ASME B1.20.1 is the standard for general-purpose inch pipe threads: NPT tapered threads, and NPSM straight mechanical pipe threads, with a 60° thread angle.",
+      "source": "ASME B1.20.1; the Indus NPT Male and NPSM Male Swivel listings"
+    },
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss straight-thread port: a UN/UNF thread with an O-ring under the shoulder that makes the seal.",
+      "source": "SAE J1926 / ISO 11926; Indus SAE O-Ring Male listing"
+    },
+    {
+      "fact": "SAE J514 pipe-thread ratings by size: 1/8 NPT 5,000 psi; 1/4 NPT 5,000 psi; 3/8 NPT 4,000 psi; 1/2 NPT 3,000 psi; 3/4 NPT 3,000 psi; 1 NPT 2,000 psi; 1-1/4 NPT 1,150 psi; 1-1/2 NPT 1,000 psi; 2 NPT 1,000 psi, so NPT ends cap a hose assembly in the larger sizes.",
+      "source": "SAE J514 manufacturer's table published on the Indus Steel ORB Female Coupling listing (/p/steel-orb-female-coupling)"
+    },
+    {
+      "fact": "The male 37° flare (JIC) and the SAE 45° flare have different cone angles and do not seal against each other.",
+      "source": "SAE J514 (37° flare) and SAE J512 (45° flare)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-sae-female-45-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° SAE Female 45° Cone Hose Fitting used for?",
+          "a": "The 45° SAE Female 45° Cone Hose Fitting is a 45° elbow hose fitting with a female swivel nut that seats on the SAE 45° flare cone, in UN/UNF threads from 7/16-20 to 1-1/16-14. It turns a hose through a moderate angle at the port on refrigerant lines and lower-pressure hydraulic circuits that take a 45° flare."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the 45° SAE Female 45° Cone Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE 45° flare size you need and the overall length, and Indus will quote the 45° SAE Female 45° Cone Hose Fitting with the matching crimp ferrule. State the dash size and that you need the 45° elbow style. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° SAE Female 45° Cone Hose Fitting come in?",
+          "a": "The 45° SAE Female 45° Cone Hose Fitting covers the nominal size range -04 to -12, in UN/UNF (7/16-20 to 1-1/16-14). Choose the thread by the flare port it screws onto, from 7/16-20 at the small end up to 1-1/16-14. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 45° SAE Female 45° Cone Hose Fitting have?",
+          "a": "The listing gives no rating for the 45° SAE Female 45° Cone Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. For an elbow the bend is set by the fitting, so the hose needs less routing clearance than a straight fitting. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° SAE Female 45° Cone Hose Fitting have?",
+          "a": "The 45° SAE Female 45° Cone Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 45° SAE Female 45° Cone Hose Fitting follow?",
+          "a": "The 45° Cone Seat is covered by SAE J512, and the listing names that standard. Quote the standard together with the thread size on your RFQ, so the 45° SAE Female 45° Cone Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° SAE Female 45° Cone Hose Fitting connect to?",
+          "a": "It screws onto a male SAE 45° flare port or tube end on refrigerant and lower-pressure hydraulic equipment. For a 37° flare port you need a different fitting from the [JIC 37° hose fittings](/c/jic-37-hose-fittings) range, because the two cone angles do not seal against each other."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 45° SAE Female 45° Cone Hose Fitting so it seals?",
+          "a": "To fit the 45° SAE Female 45° Cone Hose Fitting, seat the swivel nut on the cone and tighten it until the cone seals; the seal is the metal cone, not the thread. Do not substitute a fitting with a different sealing form, since mismatched sealing forms can leak under pressure. See the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) for how far to turn."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 45° SAE Female 45° Cone Hose Fitting typically used?",
+          "a": "Refrigeration, air-conditioning and lower-pressure hydraulic circuits are the uses the listing gives for the SAE 45° flare family. Tell us the machine or system and the port thread, and we will confirm the 45° SAE Female 45° Cone Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° SAE Female 45° Cone Hose Fitting differ from the 90° SAE Female 45° Cone Hose Fitting?",
+          "a": "Both use the same female swivel 45° cone and the same thread range; the difference is the bend angle. Choose the 45° elbow when the hose has room to run at a shallow angle, and the [90° SAE Female 45° Cone Hose Fitting](/p/90-sae-female-45-cone-hose-fitting) when the port faces straight into the hose run."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° SAE Female 45° Cone Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 45° SAE Female 45° Cone Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° SAE Female 45° Cone Hose Fitting in Dubai?",
+          "a": "Yes. We keep the 45° SAE Female 45° Cone Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-sae-inverted-flare-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° SAE Inverted Flare Hose Fitting used for?",
+          "a": "The 45° SAE Inverted Flare Hose Fitting is a 45° elbow hose fitting with an SAE inverted flare seat, a 45° female cone machined in the fitting body, in UN/UNF threads from 3/8-24 to 5/8-18. It routes a hose through a moderate-angle bend on brake, fuel and instrumentation lines that use inverted flare ports."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the 45° SAE Inverted Flare Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE inverted flare size you need and the overall length, and Indus will quote the 45° SAE Inverted Flare Hose Fitting with the matching crimp ferrule. State the dash size from -03 to -10 and the 45° elbow style. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° SAE Inverted Flare Hose Fitting come in?",
+          "a": "The 45° SAE Inverted Flare Hose Fitting covers the nominal size range -03 to -10, in UN/UNF (3/8-24 to 5/8-18). Choose the thread by the line it joins, from 3/8-24 at the small end to 5/8-18; the nominal sizes run from -03 to -10. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 45° SAE Inverted Flare Hose Fitting have?",
+          "a": "The listing gives no rating for the 45° SAE Inverted Flare Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. The inverted flare seat is a female cone inside the fitting body, which is the reverse of the male cone on the ordinary SAE 45° flare. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° SAE Inverted Flare Hose Fitting have?",
+          "a": "The 45° SAE Inverted Flare Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 45° SAE Inverted Flare Hose Fitting follow?",
+          "a": "SAE J512 is the standard named for the inverted flare seat. Quote the standard together with the thread size on your RFQ, so the 45° SAE Inverted Flare Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° SAE Inverted Flare Hose Fitting connect to?",
+          "a": "The fitting body carries the female 45° cone, so it takes a male inverted flare tube nut or a male inverted flare port. It does not mate with the 45° cone fittings in the [45° SAE Female 45° Cone Hose Fitting](/p/45-sae-female-45-cone-hose-fitting)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 45° SAE Inverted Flare Hose Fitting so it seals?",
+          "a": "To fit the 45° SAE Inverted Flare Hose Fitting, pair it with the matching counterpart, since mismatched sealing forms can leak under pressure; the seal is the cone, so keep it clean and undamaged. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) compares the sealing forms."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 45° SAE Inverted Flare Hose Fitting typically used?",
+          "a": "The listing describes inverted flare as common on automotive brake, fuel and instrumentation lines. Tell us the machine or system and the port thread, and we will confirm the 45° SAE Inverted Flare Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° SAE Inverted Flare Hose Fitting differ from the 45° SAE Female 45° Cone Hose Fitting?",
+          "a": "The inverted flare puts the female cone in the fitting body, while the [45° SAE Female 45° Cone Hose Fitting](/p/45-sae-female-45-cone-hose-fitting) uses a swivel nut over a male cone. They share the 45° angle but are not interchangeable."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° SAE Inverted Flare Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 45° SAE Inverted Flare Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° SAE Inverted Flare Hose Fitting in Dubai?",
+          "a": "Yes, the 45° SAE Inverted Flare Hose Fitting is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "90-sae-female-45-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° SAE Female 45° Cone Hose Fitting used for?",
+          "a": "The 90° SAE Female 45° Cone Hose Fitting is a 90° elbow hose fitting with a female swivel nut that seats on the SAE 45° flare cone, in UN/UNF 45° flare sizes from 7/16-20 to 1-1/16-14. It takes a hose around a right-angle bend at the port on refrigeration, air-conditioning and lower-pressure hydraulic circuits."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the 90° SAE Female 45° Cone Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE 45° flare size you need and the overall length, and Indus will quote the 90° SAE Female 45° Cone Hose Fitting with the matching crimp ferrule. State the dash size and that you need the 90° elbow style. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° SAE Female 45° Cone Hose Fitting come in?",
+          "a": "The 90° SAE Female 45° Cone Hose Fitting covers the nominal size range -04 to -12, in UN/UNF (7/16-20 to 1-1/16-14 — SAE 45° flare sizes). Pick the thread by the flare port, from 7/16-20 at the small end up to 1-1/16-14; the dash sizes run from -04 to -12. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 90° SAE Female 45° Cone Hose Fitting have?",
+          "a": "The listing gives no rating for the 90° SAE Female 45° Cone Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. A 90° elbow saves hose length where the port sits close to a wall or frame. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° SAE Female 45° Cone Hose Fitting have?",
+          "a": "The 90° SAE Female 45° Cone Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° SAE Female 45° Cone Hose Fitting follow?",
+          "a": "SAE J512 is the standard the listing names for this 45° cone seat. Quote the standard together with the thread size on your RFQ, so the 90° SAE Female 45° Cone Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° SAE Female 45° Cone Hose Fitting connect to?",
+          "a": "The female swivel nut screws onto a male SAE 45° flare port, with the seal made on the 45° cone. A JIC port needs the 37° style from the [JIC 37° hose fittings](/c/jic-37-hose-fittings) range, not this one."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 90° SAE Female 45° Cone Hose Fitting so it seals?",
+          "a": "To fit the 90° SAE Female 45° Cone Hose Fitting, hold the elbow in its final direction while you tighten the swivel nut, because the nut turns freely and lets you position the bend before the cone seats. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) explains how the sealing forms differ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 90° SAE Female 45° Cone Hose Fitting typically used?",
+          "a": "The listing points this fitting at refrigeration, air-conditioning and lower-pressure hydraulic circuits where a 45° flare port is fitted. Tell us the machine or system and the port thread, and we will confirm the 90° SAE Female 45° Cone Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° SAE Female 45° Cone Hose Fitting differ from the SAE Male 45° Cone Hose Fitting?",
+          "a": "This fitting is the female swivel, so it screws onto a male flare port. The [SAE Male 45° Cone Hose Fitting](/p/sae-male-45-cone-hose-fitting) is the male cone that seals directly into a female 45° cone port instead."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° SAE Female 45° Cone Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 90° SAE Female 45° Cone Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° SAE Female 45° Cone Hose Fitting in Dubai?",
+          "a": "Yes. The 90° SAE Female 45° Cone Hose Fitting sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "90-sae-inverted-flare-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° SAE Inverted Flare Hose Fitting used for?",
+          "a": "The 90° SAE Inverted Flare Hose Fitting is a 90° elbow hose fitting with an SAE inverted flare seat, a 45° female cone machined in the fitting body, in UN/UNF threads from 3/8-24 to 5/8-18. It takes a hose around a right-angle bend on brake, fuel and instrumentation lines that use inverted flare ports."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the 90° SAE Inverted Flare Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE inverted flare size you need and the overall length, and Indus will quote the 90° SAE Inverted Flare Hose Fitting with the matching crimp ferrule. State the dash size from -03 to -10 and the 90° elbow style. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° SAE Inverted Flare Hose Fitting come in?",
+          "a": "The 90° SAE Inverted Flare Hose Fitting covers the nominal size range -03 to -10, in UN/UNF (3/8-24 to 5/8-18 — typical inverted-flare sizes). Pick the thread by the line it joins, from 3/8-24 at the small end up to 5/8-18; the listing calls these the typical inverted-flare sizes. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 90° SAE Inverted Flare Hose Fitting have?",
+          "a": "The listing gives no rating for the 90° SAE Inverted Flare Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. A 90° elbow suits tight spaces beside a brake or fuel line connection. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° SAE Inverted Flare Hose Fitting have?",
+          "a": "The 90° SAE Inverted Flare Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° SAE Inverted Flare Hose Fitting follow?",
+          "a": "SAE J512 is the standard named for the inverted flare seat. Quote the standard together with the thread size on your RFQ, so the 90° SAE Inverted Flare Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° SAE Inverted Flare Hose Fitting connect to?",
+          "a": "It takes a male inverted flare tube nut or port into the female 45° cone in the body. The [NPT, NPSM and SAE hose fittings range](/c/npt-npsm-sae-hose-fittings) also has the straight and 45° versions of the same seat."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 90° SAE Inverted Flare Hose Fitting so it seals?",
+          "a": "To fit the 90° SAE Inverted Flare Hose Fitting, screw the male flare nut in until the cone seats and avoid cross-threading the fine UN/UNF thread. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) explains why the sealing form must match on both halves."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 90° SAE Inverted Flare Hose Fitting typically used?",
+          "a": "Automotive brake, fuel and instrumentation lines are the uses the listing names for inverted flare. Tell us the machine or system and the port thread, and we will confirm the 90° SAE Inverted Flare Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° SAE Inverted Flare Hose Fitting differ from the 90° SAE Female 45° Cone Hose Fitting?",
+          "a": "This one has the 45° cone inside the body, while the [90° SAE Female 45° Cone Hose Fitting](/p/90-sae-female-45-cone-hose-fitting) has a swivel nut over a male cone. Both are 90° elbows with a 45° seat, but they do not interchange."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° SAE Inverted Flare Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 90° SAE Inverted Flare Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° SAE Inverted Flare Hose Fitting in Dubai?",
+          "a": "Yes. Indus stocks the 90° SAE Inverted Flare Hose Fitting at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "npsm-male-swivel-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the NPSM Male Swivel Hose Fitting used for?",
+          "a": "The NPSM Male Swivel Hose Fitting is a straight swivel hose fitting on NPSM straight pipe thread, 1/4 inch to 2 inch, that seals on a 60° internal cone. The nut turns freely, so the hose is not twisted during installation."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-PT-NPSM-SWV-0404 on the NPSM Male Swivel Hose Fitting?",
+          "a": "The last four digits of each IH-PT-NPSM-SWV part number give the hose size then the port size, and the first two digits always match the hose dash size. For example IH-PT-NPSM-SWV-0404 is a 1/4\" hose (-4) fitting with a 1/4\"×18 port; IH-PT-NPSM-SWV-1212 is a 3/4\" hose (-12) fitting with a 3/4\"×14 port; IH-PT-NPSM-SWV-3232 is a 2\" hose (-32) fitting with a 2\"×11.5 port. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the NPSM Male Swivel Hose Fitting come in?",
+          "a": "The NPSM Male Swivel Hose Fitting is listed in 14 part numbers for hoses from 1/4\" to 2\" (dash -4 to -32), and the thread range is NPSM straight pipe thread (1/4\" – 2\" NPSM). The sizes run from 1/4 inch NPSM up to 2 inch NPSM, with the hose size and port size listed on every part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the NPSM Male Swivel Hose Fitting have?",
+          "a": "The assembly is rated by the hose grade and ferrule it is crimped to, and the listing says the fitting itself does not derate the assembly. Tested to the manufacturer-recommended impulse cycles when crimped to the correct ferrule diameter. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the NPSM Male Swivel Hose Fitting have?",
+          "a": "The NPSM Male Swivel Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel 316 is the option for marine, food-grade and chemical service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the NPSM Male Swivel Hose Fitting follow?",
+          "a": "The listing names SAE J514 and ASME B1.20.1, with B1.20.1 covering the NPSM straight mechanical pipe thread. Quote the standard together with the thread size on your RFQ, so the NPSM Male Swivel Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the NPSM Male Swivel Hose Fitting connect to?",
+          "a": "It mates with a port that has a 60° seat. The listing says not to treat it as a taper-thread NPT fitting, so use the [NPT Male Hose Fitting](/p/npt-male-hose-fitting) for tapered ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the NPSM Male Swivel Hose Fitting so it seals?",
+          "a": "To fit the NPSM Male Swivel Hose Fitting, seal on the 60° cone, not on the thread: the straight NPSM thread only pulls the cone together, so thread tape adds nothing. The [JIC, ORFS and NPT hose fittings guide](/blog/jic-orfs-and-npt-hose-fittings) compares cone and thread seals."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the NPSM Male Swivel Hose Fitting typically used?",
+          "a": "Swivel connections where the hose must not twist on installation, on NPSM straight-thread ports with a 60° seat. Tell us the machine or system and the port thread, and we will confirm the NPSM Male Swivel Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the NPSM Male Swivel Hose Fitting differ from the NPT Male Hose Fitting?",
+          "a": "This fitting seals on the 60° cone and has a freely turning nut, while the [NPT Male Hose Fitting](/p/npt-male-hose-fitting) seals on its tapered thread and does not swivel. Choose by the port: straight thread with a cone seat or tapered pipe thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the NPSM Male Swivel Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the NPSM Male Swivel Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the NPSM Male Swivel Hose Fitting in Dubai?",
+          "a": "Yes. We keep the NPSM Male Swivel Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "npt-male-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the NPT Male Hose Fitting used for?",
+          "a": "The NPT Male Hose Fitting is a straight male hose fitting on NPT taper pipe thread, 1/8 inch to 2 inch, that seals by thread engagement. It connects a hose assembly to NPT-threaded ports, pumps, valves and gauges on pipe-threaded equipment."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-PT-NPT-MAL-0302 on the NPT Male Hose Fitting?",
+          "a": "The last four digits of each IH-PT-NPT-MAL part number give the hose size then the port size, and the first two digits always match the hose dash size. For example IH-PT-NPT-MAL-0302 is a 3/16\" hose (-3) fitting with a NPT1/8\"×27 port; IH-PT-NPT-MAL-0812 is a 1/2\" hose (-8) fitting with a NPT3/4\"×14 port; IH-PT-NPT-MAL-3232 is a 2\" hose (-32) fitting with a NPT2\"×11.5 port. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the NPT Male Hose Fitting come in?",
+          "a": "The NPT Male Hose Fitting is listed in 24 part numbers for hoses from 3/16\" to 2\" (dash -3 to -32), and the thread range is NPT taper (1/8\" – 2\" — ASME B1.20.1). The NPT sizes run from 1/8 x 27 up to 2 x 11.5 threads per inch, with the larger hose sizes paired to the larger ports."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the NPT Male Hose Fitting have?",
+          "a": "The assembly is rated by the hose grade and ferrule it is crimped to, but an NPT end sets its own ceiling. The SAE J514 pipe-thread table gives 5,000 psi at 1/4 inch NPT, 3,000 psi at 1/2 inch, 2,000 psi at 1 inch and 1,000 psi at 2 inch, so large NPT ends cap the assembly below the hose rating. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the NPT Male Hose Fitting have?",
+          "a": "The NPT Male Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the NPT Male Hose Fitting follow?",
+          "a": "The listing names ASME B1.20.1, the standard for NPT tapered pipe threads, which have a 60° thread angle. Quote the standard together with the thread size on your RFQ, so the NPT Male Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the NPT Male Hose Fitting connect to?",
+          "a": "It screws into an NPT female port. The listing warns that NPT has a 60° thread angle against 55° for BSPT, so the two are not interchangeable; for BSP ports use the [BSP hose fittings](/c/bsp-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the NPT Male Hose Fitting so it seals?",
+          "a": "To fit the NPT Male Hose Fitting, tapered threads seal on engagement, and the listing advises PTFE tape or anaerobic sealant for hydraulic service. Do not over-tighten, because the taper can split a port. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) covers sealing and turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the NPT Male Hose Fitting typically used?",
+          "a": "Any hydraulic hose line that ends in an NPT port: pump and valve ports on US-built equipment, gauge and test points, and pipe-threaded accessories. Tell us the machine or system and the port thread, and we will confirm the NPT Male Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the NPT Male Hose Fitting differ from the NPSM Male Swivel Hose Fitting?",
+          "a": "The NPT male seals on the tapered thread, while the [NPSM Male Swivel Hose Fitting](/p/npsm-male-swivel-hose-fitting) seals on a 60° internal cone and its straight NPSM thread does not seal. Choose NPT for a taper port and the NPSM swivel for a straight-thread swivel connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the NPT Male Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the NPT Male Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the NPT Male Hose Fitting in Dubai?",
+          "a": "Yes, the NPT Male Hose Fitting is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-female-45-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE Female 45° Cone Hose Fitting used for?",
+          "a": "The SAE Female 45° Cone Hose Fitting is a straight hose fitting with a female swivel nut that seats on the SAE 45° flare cone, in UN/UNF threads from 7/16-20 to 1-1/16-14. It connects a hose to refrigerant lines and lower-pressure hydraulic ports that use a male 45° flare."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-PT-SAE-FEM-45-0304 on the SAE Female 45° Cone Hose Fitting?",
+          "a": "The last four digits of each IH-PT-SAE-FEM-45 part number give the hose size then the port size, and the first two digits always match the hose dash size. For example IH-PT-SAE-FEM-45-0304 is a 3/16\" hose (-3) fitting with a 7/16\"×20 port; IH-PT-SAE-FEM-45-0606 is a 3/8\" hose (-6) fitting with a 5/8\"×18 port; IH-PT-SAE-FEM-45-1212 is a 3/4\" hose (-12) fitting with a 1-1/16\"X14 port. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SAE Female 45° Cone Hose Fitting come in?",
+          "a": "The SAE Female 45° Cone Hose Fitting is listed in 10 part numbers for hoses from 3/16\" to 3/4\" (dash -3 to -12), and the thread range is UN/UNF (7/16-20 to 1-1/16-14). Choose the thread by the flare port it screws onto."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE Female 45° Cone Hose Fitting have?",
+          "a": "The listing gives no rating for the SAE Female 45° Cone Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the SAE Female 45° Cone Hose Fitting have?",
+          "a": "The SAE Female 45° Cone Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE Female 45° Cone Hose Fitting follow?",
+          "a": "SAE J512 is the standard named for the 45° cone seat. Quote the standard together with the thread size on your RFQ, so the SAE Female 45° Cone Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE Female 45° Cone Hose Fitting connect to?",
+          "a": "It screws onto a male SAE 45° flare port or tube end. If the port is a 37° flare the [JIC 37° hose fittings](/c/jic-37-hose-fittings) range is the right family."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the SAE Female 45° Cone Hose Fitting so it seals?",
+          "a": "To fit the SAE Female 45° Cone Hose Fitting, seat the nut on the cone and tighten until the cone seals; mismatched sealing forms can leak under pressure. The [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) covers turns from finger tight."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the SAE Female 45° Cone Hose Fitting typically used?",
+          "a": "Refrigeration, air-conditioning and lower-pressure hydraulic circuits are the uses the listing gives. Tell us the machine or system and the port thread, and we will confirm the SAE Female 45° Cone Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SAE Female 45° Cone Hose Fitting differ from the SAE Male 45° Cone Hose Fitting?",
+          "a": "This is the female swivel that screws onto a male flare, while the [SAE Male 45° Cone Hose Fitting](/p/sae-male-45-cone-hose-fitting) has the male 45° cone that seals into a female cone port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE Female 45° Cone Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the SAE Female 45° Cone Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE Female 45° Cone Hose Fitting in Dubai?",
+          "a": "Yes. The SAE Female 45° Cone Hose Fitting sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "sae-inverted-flare-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE Inverted Flare Hose Fitting used for?",
+          "a": "The SAE Inverted Flare Hose Fitting is a straight hose fitting with an SAE inverted flare seat, a 45° female cone in the fitting body, in UN/UNF threads from 3/8-24 to 5/8-18. The listing calls it the workhorse for automotive brake and fuel lines."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the SAE Inverted Flare Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE inverted flare size you need and the overall length, and Indus will quote the SAE Inverted Flare Hose Fitting with the matching crimp ferrule. State the dash size from -03 to -10. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SAE Inverted Flare Hose Fitting come in?",
+          "a": "The SAE Inverted Flare Hose Fitting covers the nominal size range -03 to -10, in UN/UNF (3/8-24 to 5/8-18). Choose the thread by the line it joins, from 3/8-24 up to 5/8-18; nominal sizes run from -03 to -10. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE Inverted Flare Hose Fitting have?",
+          "a": "The listing gives no rating for the SAE Inverted Flare Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. The part is a straight fitting, so there is no bend to orient. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the SAE Inverted Flare Hose Fitting have?",
+          "a": "The SAE Inverted Flare Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE Inverted Flare Hose Fitting follow?",
+          "a": "SAE J512 is the standard named for the inverted flare seat. Quote the standard together with the thread size on your RFQ, so the SAE Inverted Flare Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE Inverted Flare Hose Fitting connect to?",
+          "a": "The body takes a male inverted flare tube nut or port. Tube-to-hose joints on brake and fuel lines are the usual use; the [NPT, NPSM and SAE hose fittings range](/c/npt-npsm-sae-hose-fittings) has elbow versions when the line needs a bend."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the SAE Inverted Flare Hose Fitting so it seals?",
+          "a": "To fit the SAE Inverted Flare Hose Fitting, tighten the male flare nut until the cone seats and do not mix sealing forms, because mismatched sealing forms can leak under pressure. Read the [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) for how the forms differ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the SAE Inverted Flare Hose Fitting typically used?",
+          "a": "Brake, fuel and instrumentation lines on automotive equipment are the uses given in the listing, and people search for it as an inverted cone fitting. Tell us the machine or system and the port thread, and we will confirm the SAE Inverted Flare Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SAE Inverted Flare Hose Fitting differ from the SAE Female 45° Cone Hose Fitting?",
+          "a": "The inverted flare has the female cone in the fitting body, while the [SAE Female 45° Cone Hose Fitting](/p/sae-female-45-cone-hose-fitting) has a swivel nut over a male cone and a wider size range. Use the inverted style only where the mating tube is an inverted flare."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE Inverted Flare Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the SAE Inverted Flare Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE Inverted Flare Hose Fitting in Dubai?",
+          "a": "Yes. Indus stocks the SAE Inverted Flare Hose Fitting at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sae-male-45-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE Male 45° Cone Hose Fitting used for?",
+          "a": "The SAE Male 45° Cone Hose Fitting is a straight hose fitting with a male SAE 45° cone that seals directly into a female 45° cone port, in UN/UNF 45° flare sizes from 7/16-20 to 1-1/16-14. It connects a hose to refrigerant or hydraulic equipment that has a female 45° flare port."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-PT-SAE-MAL-45-0404 on the SAE Male 45° Cone Hose Fitting?",
+          "a": "The last four digits of each IH-PT-SAE-MAL-45 part number give the hose size then the port size, and the first two digits always match the hose dash size. For example IH-PT-SAE-MAL-45-0404 is a 1/4\" hose (-4) fitting with a 7/16×20 port; IH-PT-SAE-MAL-45-0808 is a 1/2\" hose (-8) fitting with a 3/4\"×16 port; IH-PT-SAE-MAL-45-1212 is a 3/4\" hose (-12) fitting with a 1-1/16\"×14 port. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SAE Male 45° Cone Hose Fitting come in?",
+          "a": "The SAE Male 45° Cone Hose Fitting is listed in 6 part numbers for hoses from 1/4\" to 3/4\" (dash -4 to -12), and the thread range is UN/UNF (7/16-20 to 1-1/16-14 — SAE 45° flare sizes). The six part numbers run from 1/4 inch hose with a 7/16 x 20 port up to 3/4 inch hose with a 1.1/16 x 14 port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE Male 45° Cone Hose Fitting have?",
+          "a": "The listing gives no rating for the SAE Male 45° Cone Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Row figures in the size table are dimensions, not ratings. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the SAE Male 45° Cone Hose Fitting have?",
+          "a": "The SAE Male 45° Cone Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE Male 45° Cone Hose Fitting follow?",
+          "a": "SAE J512 is the standard named for the 45° cone. Quote the standard together with the thread size on your RFQ, so the SAE Male 45° Cone Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE Male 45° Cone Hose Fitting connect to?",
+          "a": "The male cone seats in a female 45° flare port or into a female swivel nut such as the [SAE Female 45° Cone Hose Fitting](/p/sae-female-45-cone-hose-fitting). It is not for 37° JIC ports; see [JIC 37° hose fittings](/c/jic-37-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the SAE Male 45° Cone Hose Fitting so it seals?",
+          "a": "To fit the SAE Male 45° Cone Hose Fitting, screw it into the female cone port or swivel nut until the cone seats; the male cone is the seal, so protect it from nicks. Read the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) for turns from finger tight."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the SAE Male 45° Cone Hose Fitting typically used?",
+          "a": "Direct connection into female 45° cone ports on refrigerant or hydraulic equipment is the use the listing gives. Tell us the machine or system and the port thread, and we will confirm the SAE Male 45° Cone Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SAE Male 45° Cone Hose Fitting differ from the SAE Female 45° Cone Hose Fitting?",
+          "a": "This is the male cone, while the [SAE Female 45° Cone Hose Fitting](/p/sae-female-45-cone-hose-fitting) has the female swivel nut. They are the two halves of a 45° flare joint, so choose by which half your port already has."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE Male 45° Cone Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the SAE Male 45° Cone Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE Male 45° Cone Hose Fitting in Dubai?",
+          "a": "Yes. We keep the SAE Male 45° Cone Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sae-male-boss-swivel-o-ring-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE Male Boss Swivel O-Ring Hose Fitting used for?",
+          "a": "The SAE Male Boss Swivel O-Ring Hose Fitting is a straight male O-ring boss hose fitting with a swivel head, sizes -04 to -24, for SAE J1926 ports. The swivel head lets you orient the hose after the threads bottom out, without torque in the hose."
+        },
+        {
+          "slot": "D",
+          "q": "What should I send to order the SAE Male Boss Swivel O-Ring Hose Fitting?",
+          "a": "Send the hose grade and bore, the SAE O-ring boss size you need and the overall length, and Indus will quote the SAE Male Boss Swivel O-Ring Hose Fitting with the matching crimp ferrule. Quote the SAE dash size of the port. Crimping is quoted separately, and a full assembly with pressure testing and certification is available on request."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SAE Male Boss Swivel O-Ring Hose Fitting come in?",
+          "a": "The SAE Male Boss Swivel O-Ring Hose Fitting covers the nominal size range -04 to -24, in UN/UNF straight thread O-ring boss (SAE J1926). The nominal sizes run from -04 to -24 and the thread form is the SAE J1926 straight thread. Common sizes are ex-stock and less common thread and bore combinations typically ship within 7 working days."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE Male Boss Swivel O-Ring Hose Fitting have?",
+          "a": "The assembly is rated by the hose grade and ferrule it is crimped to, and the listing recommends it for leak-free sealing into SAE J1926 ports under high pressure and vibration. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the SAE Male Boss Swivel O-Ring Hose Fitting have?",
+          "a": "The SAE Male Boss Swivel O-Ring Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE Male Boss Swivel O-Ring Hose Fitting follow?",
+          "a": "The listing names SAE J1926 and ISO 11926, the standards for the O-ring boss port. Quote the standard together with the thread size on your RFQ, so the SAE Male Boss Swivel O-Ring Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE Male Boss Swivel O-Ring Hose Fitting connect to?",
+          "a": "It screws into an SAE O-ring boss port, the straight-thread port found on pumps, valves and manifolds. It will not seal in a tapered NPT port. For a fixed head use the [SAE O-Ring Male Hose Fitting](/p/sae-o-ring-male-hose-fitting)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the SAE Male Boss Swivel O-Ring Hose Fitting so it seals?",
+          "a": "To fit the SAE Male Boss Swivel O-Ring Hose Fitting, screw it in until the shoulder meets the port, then rotate the swivel head to the hose direction. The [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) explains tightening."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the SAE Male Boss Swivel O-Ring Hose Fitting typically used?",
+          "a": "High-pressure, high-vibration hose connections into O-ring boss ports on pumps, valves and manifolds. Tell us the machine or system and the port thread, and we will confirm the SAE Male Boss Swivel O-Ring Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SAE Male Boss Swivel O-Ring Hose Fitting differ from the SAE O-Ring Male Hose Fitting?",
+          "a": "The swivel head is the difference, compared with the [SAE O-Ring Male Hose Fitting](/p/sae-o-ring-male-hose-fitting). Use the swivel when the hose direction cannot be set by turning the whole fitting."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE Male Boss Swivel O-Ring Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the SAE Male Boss Swivel O-Ring Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE Male Boss Swivel O-Ring Hose Fitting in Dubai?",
+          "a": "Yes, the SAE Male Boss Swivel O-Ring Hose Fitting is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sae-o-ring-male-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE O-Ring Male Hose Fitting used for?",
+          "a": "The SAE O-Ring Male Hose Fitting is a straight male O-ring boss hose fitting for SAE J1926 ports, with sizes from -04 to -24. It seals directly into O-ring boss ports on pumps, valves and manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-PT-SAE-MAL-OR-0404 on the SAE O-Ring Male Hose Fitting?",
+          "a": "The last four digits of each IH-PT-SAE-MAL-OR part number give the hose size then the port size, and the first two digits always match the hose dash size. For example IH-PT-SAE-MAL-OR-0404 is a 1/4\" hose (-4) fitting with a 7/16\"×20 port; IH-PT-SAE-MAL-OR-0808 is a 1/2\" hose (-8) fitting with a 3/4\"×16 port; IH-PT-SAE-MAL-OR-1616 is a 1\" hose (-16) fitting with a 1-5/16\"×12 port. The size table lists every part number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SAE O-Ring Male Hose Fitting come in?",
+          "a": "The SAE O-Ring Male Hose Fitting is listed in 11 part numbers for hoses from 1/4\" to 1\" (dash -4 to -16), and the thread range is UN/UNF straight thread O-ring boss (SAE J1926). The part numbers run from 1/4 inch hose with a 7/16 x 20 port to 1 inch hose with a 1.5/16 x 12 port, and each row lists the O-ring size from 904 to 916."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the SAE O-Ring Male Hose Fitting have?",
+          "a": "The assembly is rated by the hose grade and ferrule it is crimped to. The O-ring boss end seals on a static O-ring under the shoulder, and the threads bottom out. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the SAE O-Ring Male Hose Fitting have?",
+          "a": "The SAE O-Ring Male Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the SAE O-Ring Male Hose Fitting follow?",
+          "a": "The listing names SAE J1926 and ISO 11926, the standards for the straight-thread O-ring boss port. Quote the standard together with the thread size on your RFQ, so the SAE O-Ring Male Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE O-Ring Male Hose Fitting connect to?",
+          "a": "It screws into an SAE O-ring boss port. It cannot seal in a tapered NPT port, and for that you need the [NPT Male Hose Fitting](/p/npt-male-hose-fitting)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the SAE O-Ring Male Hose Fitting so it seals?",
+          "a": "To fit the SAE O-Ring Male Hose Fitting, the seal is the O-ring under the shoulder, so check the O-ring is in place and unnicked and screw in until the shoulder meets the port face. The [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) gives the turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the SAE O-Ring Male Hose Fitting typically used?",
+          "a": "Hose connections on pump, valve and manifold ports that use a boss port, where a leak-free static seal is needed. Tell us the machine or system and the port thread, and we will confirm the SAE O-Ring Male Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SAE O-Ring Male Hose Fitting differ from the SAE Male Boss Swivel O-Ring Hose Fitting?",
+          "a": "Both use the same boss end, but the [SAE Male Boss Swivel O-Ring Hose Fitting](/p/sae-male-boss-swivel-o-ring-hose-fitting) has a swivel head so you can orient the hose after the threads bottom out. This one is fixed."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE O-Ring Male Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the SAE O-Ring Male Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SAE O-Ring Male Hose Fitting in Dubai?",
+          "a": "Yes. The SAE O-Ring Male Hose Fitting sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "kurt-crimp-hydraulic-hose-fittings-with-npt-connection",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with NPT Connection and what hose does it fit?",
+          "a": "The Kurt Crimp Hydraulic Hose Fittings with NPT Connection is a family of straight Kurt crimp hose fittings with NPT connections in carbon steel, listed in 31 part numbers. The listing names the H017, H104, H145, H190, H245 and H468 hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Kurt Crimp Hydraulic Hose Fittings with NPT Connection, such as MP-08-08?",
+          "a": "Kurt numbers are a style prefix followed by two size codes, for example MP-08-08, FP-06-06, MPX90-08-08 and MJ-12-12. The first size code sets the pressure in every row: the -04 numbers are rated 345 bar, -06 276 bar, -08 and -10 241 bar, -12 172 bar, -16 138 bar and MP-20-20 103 bar. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Kurt Crimp Hydraulic Hose Fittings with NPT Connection?",
+          "a": "The listing holds 31 Kurt part numbers with prefixes MP, MPX, MPX90, FP and MJ and first size codes from 04 to 20. The size table gives the connection and the pressure of each number, and you order by the full part number such as MP-16-12 or MP-20-20."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Kurt Crimp Hydraulic Hose Fittings with NPT Connection have?",
+          "a": "The pressure is stated by the maker per size, from 345 bar on the -04 numbers down to 103 bar on MP-20-20, and the first size code in the part number sets it. Read the row for your number, because a -16 fitting is rated 138 bar and a -08 fitting 241 bar. The assembly is limited by the hose it is crimped to."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with NPT Connection made of?",
+          "a": "The listing gives carbon steel for the Kurt NPT crimp fittings, in a straight shape. It does not state a plating or a material grade, so ask for the finish on the RFQ if the application is corrosion-sensitive."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Kurt Crimp Hydraulic Hose Fittings with NPT Connection?",
+          "a": "The listing carries no standard or certificate for these Kurt fittings, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what Kurt supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Kurt Crimp Hydraulic Hose Fittings with NPT Connection to?",
+          "a": "The NPT end screws into an NPT port and the crimp end takes the hose. The listing's hose series run H017 to H468, so check the hose matches before ordering. For straight-thread ports use [Kurt crimp fittings with ORB connection](/p/kurt-crimp-hydraulic-hose-fittings-with-orb-connection) instead."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Kurt Crimp Hydraulic Hose Fittings with NPT Connection installed on a hose?",
+          "a": "Crimp it onto the matching hose series with the specified ferrule and die; the listing warns that a crimp fitting is rated only on the hose series it is designed for. Seal the NPT thread with PTFE tape or anaerobic sealant. See the [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) for tapered-thread tips."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with NPT Connection used?",
+          "a": "Hydraulic hose assemblies for equipment with NPT ports, built on the Kurt hose series named in the listing, in sizes from -04 to -20. Send the hose type, size and port so we can confirm the Kurt Crimp Hydraulic Hose Fittings with NPT Connection suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Kurt Crimp Hydraulic Hose Fittings with NPT Connection over the Kurt Crimp Hydraulic Hose Fittings with ORB Connection?",
+          "a": "Choose by the port: this listing has NPT male ends that seal on the tapered thread, while the [Kurt crimp fittings with ORB connection](/p/kurt-crimp-hydraulic-hose-fittings-with-orb-connection) has O-ring boss ends that seal on an O-ring. The pressure follows the first size code in both."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with NPT Connection made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin for the Kurt NPT crimp fittings. We ship from Dubai worldwide, and the origin and export documents for your order are stated on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kurt Crimp Hydraulic Hose Fittings with NPT Connection in Dubai?",
+          "a": "Yes. Indus stocks the Kurt Crimp Hydraulic Hose Fittings with NPT Connection at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kurt-crimp-hydraulic-hose-fittings-with-orb-connection",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with ORB Connection and what hose does it fit?",
+          "a": "The Kurt Crimp Hydraulic Hose Fittings with ORB Connection is a family of straight Kurt crimp hose fittings with ORB (O-ring boss) connections in carbon steel, listed in 15 part numbers. Kurt lists it as crimpable. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Kurt Crimp Hydraulic Hose Fittings with ORB Connection, such as MB-16-16?",
+          "a": "Kurt ORB numbers start with MB, MBX or MBX90 and carry two size codes, such as MB-08-10, MBX-04-04 and MBX90-06-06. The first size code sets the listed pressure in every row: -04 is 345 bar, -06 276 bar, -08 and -10 241 bar, -12 172 bar, -16 138 bar and MB-20-20 103 bar. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Kurt Crimp Hydraulic Hose Fittings with ORB Connection?",
+          "a": "The listing has 15 Kurt part numbers, from MB-04-04 to MB-20-20, with the MB, MBX and MBX90 prefixes. The size table lists the connection and pressure on each row, and MB-08-10 and MB-12-12 are examples of the mix of sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Kurt Crimp Hydraulic Hose Fittings with ORB Connection have?",
+          "a": "The pressure is stated by the maker by size, from 345 bar on MBX-04-04 and MB-04-05 down to 103 bar on MB-20-20, and the first size code in the part number sets it. One row, MB-04-04, has no pressure listed, so ask us to confirm it. The hose limits the assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with ORB Connection made of?",
+          "a": "The listing gives carbon steel and the crimpable connection type for these Kurt ORB crimp fittings. It does not state the plating, so ask for the finish and the O-ring material on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Kurt Crimp Hydraulic Hose Fittings with ORB Connection?",
+          "a": "The listing names no standard or certificate for these Kurt fittings. The O-ring boss end follows the SAE J1926 / ISO 11926 port, so quote that port standard and ask for a material certificate or pressure test record on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Kurt Crimp Hydraulic Hose Fittings with ORB Connection to?",
+          "a": "The ORB end screws into an SAE O-ring boss port and the crimp end takes the hose. For NPT ports use the [Kurt NPT crimp fittings](/p/kurt-crimp-hydraulic-hose-fittings-with-npt-connection); the O-ring seal sits under the hex, so it needs a boss port, not a taper."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Kurt Crimp Hydraulic Hose Fittings with ORB Connection installed on a hose?",
+          "a": "Crimp it to the hose series it is designed for, then check the O-ring is present before you screw it into the boss port until the shoulder meets the face. The [make-up torque guide](/blog/hydraulic-fitting-make-up-torque) covers turns from finger tight."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with ORB Connection used?",
+          "a": "Hose assemblies for pumps, valves and cylinders with O-ring boss ports, where a static O-ring seal is wanted, in sizes from -04 to -20. Send the hose type, size and port so we can confirm the Kurt Crimp Hydraulic Hose Fittings with ORB Connection suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Kurt Crimp Hydraulic Hose Fittings with ORB Connection over the Kurt Crimp Hydraulic Hose Fittings with NPT Connection?",
+          "a": "This listing seals on an O-ring in the port, while the [Kurt NPT crimp fittings](/p/kurt-crimp-hydraulic-hose-fittings-with-npt-connection) seal on a tapered thread. Check the port on the equipment first: a boss port has a straight thread sealed by an O-ring, while a pipe port is tapered."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with ORB Connection made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin for the Kurt ORB crimp fittings. We ship from Dubai worldwide, and the origin and export documents are stated on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kurt Crimp Hydraulic Hose Fittings with ORB Connection in Dubai?",
+          "a": "Yes. We keep the Kurt Crimp Hydraulic Hose Fittings with ORB Connection in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-82-series-straight-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 82 Series Straight Fittings and what hose does it fit?",
+          "a": "The Parker 82 Series Straight Fittings is a range of Parker 82 Series field-attachable (reusable) straight hose fittings in brass, listed in 64 part numbers with hose barb, JIC and SAE ends. The listing marks the Parker 82 Series as reusable, field-attachable fittings, so no crimp machine is needed. Quote the hose type and size with the part number so the fitting can be checked against the hose before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Parker 82 Series Straight Fittings, such as 30182-12-8B?",
+          "a": "Parker 82 Series numbers start with the end style: in the rows 30182 numbers have a male hose barb end, 30682 numbers a male JIC end and 30882 numbers a male SAE end. The two size codes follow, for example 30182-12-8B and 30682-6-6B, and a letter suffix such as B or C closes some numbers. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Parker 82 Series Straight Fittings?",
+          "a": "The listing holds 64 part numbers from 1/8 inch to 1 5/16 inch. The hose barb ends run from 1/8 inch to 1 inch, the JIC ends from 7/16 inch to 1 5/16 inch and the SAE ends include 5/8 inch and 1 1/16 inch. Check the row for the part you order."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Parker 82 Series Straight Fittings have?",
+          "a": "The listing gives no working pressure for the Parker 82 Series, and the figure depends on the hose and the size. Parker's ratings vary by size, so ask us to confirm the pressure for your part number and hose before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 82 Series Straight Fittings made of?",
+          "a": "The listing gives brass, with a brass body and some stainless steel parts, and the fittings are a brass family. Ask which sleeve or insert material applies to your part number if the fluid is aggressive."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Parker 82 Series Straight Fittings?",
+          "a": "The listing names no standard or certificate. The JIC ends are 37° flare ends, so quote the JIC size, and ask on the RFQ for the material certificate or test record you need."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Parker 82 Series Straight Fittings to?",
+          "a": "The hose barb end takes the hose, and the other end screws into an NPTF, JIC or SAE port as listed per row. Use the [Parker crimp NPTF fittings](/p/parker-crimp-hydraulic-hose-fittings-with-nptf-connection) when you want a crimped assembly instead of a field-attachable one."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Parker 82 Series Straight Fittings installed on a hose?",
+          "a": "Field-attachable fittings are fitted by hand and can be reused, according to the listing. Cut the hose square, insert it fully and make up the fitting as the maker instructs, then pressure test before use. See the [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) for thread sealing."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker 82 Series Straight Fittings used?",
+          "a": "Brass fittings for hose assemblies built on site where no crimp machine is available, with JIC, SAE or barb connections. Send the hose type, size and port so we can confirm the Parker 82 Series Straight Fittings suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Parker 82 Series Straight Fittings over the Parker Crimp Hydraulic Hose Fittings with NPTF Connection?",
+          "a": "The 82 Series is reusable and field-attachable, while the [Parker crimp NPTF fittings](/p/parker-crimp-hydraulic-hose-fittings-with-nptf-connection) are crimped once and are not reusable. Choose the 82 Series for site repairs and the crimp fittings for factory-built assemblies."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 82 Series Straight Fittings made and how does it ship from Dubai?",
+          "a": "The listing shows BZ as the country of origin for the Parker 82 Series. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 82 Series Straight Fittings in Dubai?",
+          "a": "Yes, the Parker 82 Series Straight Fittings is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-crimp-hydraulic-hose-fittings-with-nptf-connection",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Crimp Hydraulic Hose Fittings with NPTF Connection and what hose does it fit?",
+          "a": "The Parker Crimp Hydraulic Hose Fittings with NPTF Connection is a Parker Parkrimp (crimp) straight fitting with a male NPTF end and a crimp end, in steel with a zinc finish, listed in 3 part numbers. The listing names the 787TC, 787ST, 797TC and 797ST hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Parker Crimp Hydraulic Hose Fittings with NPTF Connection, such as FJ31520810S?",
+          "a": "The three numbers are FJ31520810S, FJ31521216S and 10177-20-20. The listing shows 10177-20-20 as the 1 1/4 inch NPTF male by 1 1/4 inch crimp fitting, and the two FJ numbers as -10 and -16 hose dash fittings. Quote the full number and the hose type."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Parker Crimp Hydraulic Hose Fittings with NPTF Connection?",
+          "a": "The listing has 3 part numbers: 10177-20-20 in 1 1/4 inch NPTF with a 1 1/4 inch crimp, and FJ31520810S and FJ31521216S for the -10 and -16 hose dash sizes. The size table gives the connection of each row."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Parker Crimp Hydraulic Hose Fittings with NPTF Connection have?",
+          "a": "The maker states 800 to 1,750 psi (55 to 121 bar) by size, with 121 bar on FJ31520810S and 55 bar on FJ31521216S. 10177-20-20 has no figure listed, so ask us to confirm it. The hose limits the assembly rating."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Crimp Hydraulic Hose Fittings with NPTF Connection made of?",
+          "a": "The listing gives steel with a zinc finish for the body and the crimp. It does not state a material grade, so ask for it on the RFQ if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Parker Crimp Hydraulic Hose Fittings with NPTF Connection?",
+          "a": "The listing names no standard or certificate for these Parker crimp fittings. Ask on the RFQ for the material certificate and the crimp specification for your hose."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Parker Crimp Hydraulic Hose Fittings with NPTF Connection to?",
+          "a": "The male NPTF end screws into an NPTF or NPT female port and the crimp end takes the hose series named in the listing. For a field-attachable alternative see the [Parker 82 Series fittings](/p/parker-82-series-straight-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Parker Crimp Hydraulic Hose Fittings with NPTF Connection installed on a hose?",
+          "a": "Crimp it with the Parker-specified ferrule and die for the hose series, since the fitting is not reusable, according to the listing. Seal the NPTF thread with PTFE tape or anaerobic sealant. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) covers NPT sealing."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker Crimp Hydraulic Hose Fittings with NPTF Connection used?",
+          "a": "Crimped hydraulic hose assemblies with NPTF ports on Parker 787 and 797 series hose. Send the hose type, size and port so we can confirm the Parker Crimp Hydraulic Hose Fittings with NPTF Connection suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Parker Crimp Hydraulic Hose Fittings with NPTF Connection over the Parker 82 Series Straight Fittings?",
+          "a": "This fitting is crimped once and is not reusable, while the [Parker 82 Series fittings](/p/parker-82-series-straight-fittings) are reusable and field-attachable. The crimp fitting needs a crimp machine; the 82 Series does not."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Crimp Hydraulic Hose Fittings with NPTF Connection made and how does it ship from Dubai?",
+          "a": "The listing shows Taiwan as the country of origin for these Parker crimp fittings. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Crimp Hydraulic Hose Fittings with NPTF Connection in Dubai?",
+          "a": "Yes. The Parker Crimp Hydraulic Hose Fittings with NPTF Connection sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-e-series-crimp-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead E Series Crimp Hydraulic Hose Fittings and what hose does it fit?",
+          "a": "The Weatherhead E Series Crimp Hydraulic Hose Fittings is a Weatherhead E Series rigid straight crimp fitting with a male NPTF end, in steel with a trivalent zinc chromate finish, listed in 8 part numbers. The listing names the H009, H209, H243, H265, H275, H277, H285, H435 and H436 hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Weatherhead E Series Crimp Hydraulic Hose Fittings, such as 16E-116?",
+          "a": "Weatherhead E Series numbers carry the hose size first, then E, then the port code, for example 08E-106, 04E-104 and 16E-116. In the rows the first two digits match the crimp end (08 is 1/2 inch, 04 is 1/4 inch, 16 is 1 inch) and 102, 104, 106, 108, 112 and 116 match NPTF male ends of 1/8, 1/4, 3/8, 1/2, 3/4 and 1 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Weatherhead E Series Crimp Hydraulic Hose Fittings?",
+          "a": "The listing has 8 part numbers from 1/8 inch to 1 inch: 04E-102, 04E-104, 06E-104, 06E-106, 08E-106, 08E-108, 12E-112 and 16E-116. The size table gives the NPTF end and the crimp end of each one."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Weatherhead E Series Crimp Hydraulic Hose Fittings have?",
+          "a": "The listing gives no working pressure for the Weatherhead E Series fittings, so the rating depends on the hose series they are crimped to. Ask us to confirm the working pressure for your part number and hose before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weatherhead E Series Crimp Hydraulic Hose Fittings made of?",
+          "a": "The listing gives steel to Grade 12L14 and Grade 12L15, with a trivalent zinc chromate plated finish. The fitting is rigid and not reusable, and it is not rated for vacuum."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Weatherhead E Series Crimp Hydraulic Hose Fittings?",
+          "a": "The listing names no standard or certificate. The Harmonized System code shown on it is 7307929000, and you can ask on the RFQ for the material certificate and the crimp specification for your hose."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Weatherhead E Series Crimp Hydraulic Hose Fittings to?",
+          "a": "The male NPTF end screws into an NPTF or NPT port and the crimp end takes the hose series named in the listing. For a swivel or O-ring boss connection choose another listing such as the [Kurt ORB crimp fittings](/p/kurt-crimp-hydraulic-hose-fittings-with-orb-connection)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Weatherhead E Series Crimp Hydraulic Hose Fittings installed on a hose?",
+          "a": "Crimp it to the Weatherhead hose series it is designed for with the specified ferrule and die; it is not reusable. Seal the NPTF thread with PTFE tape or anaerobic sealant. The [NPT, NPSM and SAE hose fittings guide](/blog/npt-npsm-and-sae-hose-fittings) covers NPT sealing."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Weatherhead E Series Crimp Hydraulic Hose Fittings used?",
+          "a": "Crimped hydraulic hose assemblies with NPTF ports using the Weatherhead hose series named in the listing, from 1/8 to 1 inch. Send the hose type, size and port so we can confirm the Weatherhead E Series Crimp Hydraulic Hose Fittings suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Weatherhead E Series Crimp Hydraulic Hose Fittings over the Kurt Crimp Hydraulic Hose Fittings with NPT Connection?",
+          "a": "Both have a male NPT end and a crimp end, but the [Kurt NPT crimp fittings](/p/kurt-crimp-hydraulic-hose-fittings-with-npt-connection) are built for the Kurt hose series. This listing is for the Weatherhead hose series, so choose by the hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead E Series Crimp Hydraulic Hose Fittings made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin for the Weatherhead E Series fittings, and shows HS code 7307929000. We ship from Dubai worldwide, and the origin and export documents are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead E Series Crimp Hydraulic Hose Fittings in Dubai?",
+          "a": "Yes. Indus stocks the Weatherhead E Series Crimp Hydraulic Hose Fittings at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

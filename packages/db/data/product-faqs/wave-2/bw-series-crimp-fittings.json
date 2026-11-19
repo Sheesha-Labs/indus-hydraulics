@@ -1,0 +1,864 @@
+{
+  "family": "bw-series-crimp-fittings",
+  "extraFacts": [
+    {
+      "fact": "SAE J518 and ISO 6162 cover four-bolt split-flange connections; Code 61 is the standard-pressure series and Code 62 the high-pressure series.",
+      "source": "SAE J518; ISO 6162-1, ISO 6162-2 (Four-bolt flange connections)"
+    },
+    {
+      "fact": "NPSM is the straight (parallel) American pipe thread used on swivel ends, covered by ASME B1.20.1.",
+      "source": "ASME B1.20.1 (Pipe threads, general purpose, inch)"
+    },
+    {
+      "fact": "NPTF is the Dryseal American pipe taper thread, covered by ASME B1.20.3.",
+      "source": "ASME B1.20.3 (Dryseal pipe threads, inch)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "bw-series-crimp-hose-fitting-caterpillar-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting, Caterpillar Flange do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange is a straight crimp hose fitting with a Caterpillar flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 7 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end to 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-CAT-12-12 on the BW Series Crimp Hose Fitting, Caterpillar Flange?",
+          "a": "IH-ST-BW-CAT-12-12 is one size of the BW Series Crimp Hose Fitting, Caterpillar Flange (listing code IH-ST-BW-CAT plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-CAT-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end; IH-ST-BW-CAT-16-20 (suffix 16-20) is 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end; IH-ST-BW-CAT-24-24 (suffix 24-24) is 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting, Caterpillar Flange come in?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange is listed in 7 sizes, covering 3/4\" hose ID (-12) to 1-1/2\" hose ID (-24) with the end connection from 3/4\" Caterpillar flange to 1-1/2\" Caterpillar flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, Caterpillar Flange?",
+          "a": "Choose the BW Series Crimp Hose Fitting, Caterpillar Flange by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-CAT-16-20: 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, Caterpillar Flange rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, Caterpillar Flange, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, Caterpillar Flange made from?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, Caterpillar Flange follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, Caterpillar Flange does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, Caterpillar Flange connect to?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange bolts to a matching Caterpillar flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, Caterpillar Flange onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, Caterpillar Flange only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting, Caterpillar Flange and the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange and the [BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend](/p/bw-series-crimp-hose-fitting-caterpillar-flange-45-bend) are separate BW Series listings with different ends or body angles. The other adds 45 and bend. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, Caterpillar Flange made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, Caterpillar Flange are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, Caterpillar Flange in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting, Caterpillar Flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-caterpillar-flange-45-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend is a 45° bend crimp hose fitting, so the hose leaves the connection at an angle with a Caterpillar flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 7 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end to 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-CAT45-12-12 on the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend?",
+          "a": "IH-ST-BW-CAT45-12-12 is one size of the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend (listing code IH-ST-BW-CAT45 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-CAT45-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end; IH-ST-BW-CAT45-16-20 (suffix 16-20) is 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end; IH-ST-BW-CAT45-24-24 (suffix 24-24) is 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend cover?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend is listed in 7 sizes, covering 3/4\" hose ID (-12) to 1-1/2\" hose ID (-24) with the end connection from 3/4\" Caterpillar flange to 1-1/2\" Caterpillar flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-CAT45-16-20: 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend bolts to a matching Caterpillar flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend and the [BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend](/p/bw-series-crimp-hose-fitting-caterpillar-flange-90-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend is marked by 45, the other by 90. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-caterpillar-flange-90-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend is a 90° bend crimp hose fitting, so the hose leaves the connection at an angle with a Caterpillar flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 7 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end to 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-CAT90-12-12 on the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend?",
+          "a": "IH-ST-BW-CAT90-12-12 is one size of the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend (listing code IH-ST-BW-CAT90 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-CAT90-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" Caterpillar flange end; IH-ST-BW-CAT90-16-20 (suffix 16-20) is 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end; IH-ST-BW-CAT90-24-24 (suffix 24-24) is 1-1/2\" hose ID (-24) with a 1-1/2\" Caterpillar flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend cover?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend is listed in 7 sizes, covering 3/4\" hose ID (-12) to 1-1/2\" hose ID (-24) with the end connection from 3/4\" Caterpillar flange to 1-1/2\" Caterpillar flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-CAT90-16-20: 1\" hose ID (-16) with a 1-1/4\" Caterpillar flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend bolts to a matching Caterpillar flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend and the [BW Series Crimp Hose Fitting, Caterpillar Flange, 45° Bend](/p/bw-series-crimp-hose-fitting-caterpillar-flange-45-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend is marked by 90, the other by 45. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend in stock in Dubai?",
+          "a": "Yes, the BW Series Crimp Hose Fitting, Caterpillar Flange, 90° Bend is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, send the hose type, sizes and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-hose-mender",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting, Hose Mender and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting, Hose Mender is a hose mender, a straight crimp fitting that joins two hose ends or repairs a cut hose. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 3 part numbers in the Indus BW Series Crimp Hose Fittings range, from 1/4\" hose ID (-4) to 1/2\" hose ID (-8)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-MENDER-04 on the BW Series Crimp Hose Fitting, Hose Mender?",
+          "a": "IH-ST-BW-MENDER-04 is one size of the BW Series Crimp Hose Fitting, Hose Mender (listing code IH-ST-BW-MENDER plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-MENDER-04 (suffix 04) is 1/4\" hose ID (-4); IH-ST-BW-MENDER-06 (suffix 06) is 3/8\" hose ID (-6); IH-ST-BW-MENDER-08 (suffix 08) is 1/2\" hose ID (-8). Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting, Hose Mender come in?",
+          "a": "The BW Series Crimp Hose Fitting, Hose Mender is listed in 3 sizes, covering 1/4\" hose ID (-4) to 1/2\" hose ID (-8). The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, Hose Mender?",
+          "a": "Choose the BW Series Crimp Hose Fitting, Hose Mender by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-MENDER-06: 3/8\" hose ID (-6). Our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, Hose Mender rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, Hose Mender, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, Hose Mender made from?",
+          "a": "The BW Series Crimp Hose Fitting, Hose Mender is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, Hose Mender follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, Hose Mender does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, Hose Mender connect to?",
+          "a": "The BW Series Crimp Hose Fitting, Hose Mender joins two hose ends, so it takes the same hose type and size at each side, and it is crimped to the BW Series specification. Hose size is read from the table for IH-ST-BW-MENDER-06. See the [Spiral Hose Crimp Fittings](/c/spiral-hose-crimp-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, Hose Mender onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, Hose Mender only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting, Hose Mender and the BW Series Crimp Hose Fitting × Female Weld Fitting?",
+          "a": "The BW Series Crimp Hose Fitting, Hose Mender and the [BW Series Crimp Hose Fitting × Female Weld Fitting](/p/bw-series-crimp-hose-fitting-x-female-weld-fitting) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, Hose Mender is marked by mender, the other by female and weld. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, Hose Mender made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, Hose Mender are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, Hose Mender in stock in Dubai?",
+          "a": "Yes, the BW Series Crimp Hose Fitting, Hose Mender is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, send the hose type, sizes and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-sae-code-61-flange-22-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend is a 22° bend crimp hose fitting, so the hose leaves the connection at an angle with an SAE Code 61 flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 8 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" SAE Code 61 flange end to 2\" hose ID (-32) with a 2\" SAE Code 61 flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-C6122-12-12 on the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend?",
+          "a": "IH-ST-BW-C6122-12-12 is one size of the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend (listing code IH-ST-BW-C6122 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-C6122-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" SAE Code 61 flange end; IH-ST-BW-C6122-20-20 (suffix 20-20) is 1-1/4\" hose ID (-20) with a 1-1/4\" SAE Code 61 flange end; IH-ST-BW-C6122-32-32 (suffix 32-32) is 2\" hose ID (-32) with a 2\" SAE Code 61 flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend cover?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend is listed in 8 sizes, covering 3/4\" hose ID (-12) to 2\" hose ID (-32) with the end connection from 3/4\" SAE Code 61 flange to 2\" SAE Code 61 flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-C6122-20-20: 1-1/4\" hose ID (-20) with a 1-1/4\" SAE Code 61 flange end. Our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. SAE Code 61 flange heads follow the four-bolt split-flange standard SAE J518 / ISO 6162, where Code 61 is the standard-pressure series and Code 62 the high-pressure series. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend bolts to a matching SAE Code 61 flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend and the [BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend](/p/bw-series-crimp-hose-fitting-sae-code-61-flange-30-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend is marked by 22, the other by 30. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-sae-code-61-flange-30-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend is a 30° bend crimp hose fitting, so the hose leaves the connection at an angle with an SAE Code 61 flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 8 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" SAE Code 61 flange end to 2\" hose ID (-32) with a 2\" SAE Code 61 flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-C6130-12-12 on the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend?",
+          "a": "IH-ST-BW-C6130-12-12 is one size of the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend (listing code IH-ST-BW-C6130 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-C6130-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" SAE Code 61 flange end; IH-ST-BW-C6130-20-20 (suffix 20-20) is 1-1/4\" hose ID (-20) with a 1-1/4\" SAE Code 61 flange end; IH-ST-BW-C6130-32-32 (suffix 32-32) is 2\" hose ID (-32) with a 2\" SAE Code 61 flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend cover?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend is listed in 8 sizes, covering 3/4\" hose ID (-12) to 2\" hose ID (-32) with the end connection from 3/4\" SAE Code 61 flange to 2\" SAE Code 61 flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-C6130-20-20: 1-1/4\" hose ID (-20) with a 1-1/4\" SAE Code 61 flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. SAE Code 61 flange heads follow the four-bolt split-flange standard SAE J518 / ISO 6162, where Code 61 is the standard-pressure series and Code 62 the high-pressure series. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend bolts to a matching SAE Code 61 flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend and the [BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend](/p/bw-series-crimp-hose-fitting-sae-code-61-flange-22-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend is marked by 30, the other by 22. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend in stock in Dubai?",
+          "a": "Yes, the BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, send the hose type, sizes and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-sae-code-62-flange-22-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend is a 22° bend crimp hose fitting, so the hose leaves the connection at an angle with an SAE Code 62 flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 7 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" SAE Code 62 flange end to 1-1/2\" hose ID (-24) with a 1-1/2\" SAE Code 62 flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-C6222-12-12 on the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend?",
+          "a": "IH-ST-BW-C6222-12-12 is one size of the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend (listing code IH-ST-BW-C6222 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-C6222-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" SAE Code 62 flange end; IH-ST-BW-C6222-16-20 (suffix 16-20) is 1\" hose ID (-16) with a 1-1/4\" SAE Code 62 flange end; IH-ST-BW-C6222-24-24 (suffix 24-24) is 1-1/2\" hose ID (-24) with a 1-1/2\" SAE Code 62 flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend come in?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend is listed in 7 sizes, covering 3/4\" hose ID (-12) to 1-1/2\" hose ID (-24) with the end connection from 3/4\" SAE Code 62 flange to 1-1/2\" SAE Code 62 flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-C6222-16-20: 1\" hose ID (-16) with a 1-1/4\" SAE Code 62 flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. SAE Code 62 flange heads follow the four-bolt split-flange standard SAE J518 / ISO 6162, where Code 61 is the standard-pressure series and Code 62 the high-pressure series. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend bolts to a matching SAE Code 62 flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend and the [BW Series Crimp Hose Fitting, SAE Code 61 Flange, 22° Bend](/p/bw-series-crimp-hose-fitting-sae-code-61-flange-22-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend is marked by 62, the other by 61. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 22° Bend in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-sae-code-62-flange-30-bend",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend is a 30° bend crimp hose fitting, so the hose leaves the connection at an angle with an SAE Code 62 flange end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 7 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/4\" hose ID (-12) with a 3/4\" SAE Code 62 flange end to 1-1/2\" hose ID (-24) with a 1-1/2\" SAE Code 62 flange end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-C6230-12-12 on the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend?",
+          "a": "IH-ST-BW-C6230-12-12 is one size of the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend (listing code IH-ST-BW-C6230 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-C6230-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" SAE Code 62 flange end; IH-ST-BW-C6230-16-20 (suffix 16-20) is 1\" hose ID (-16) with a 1-1/4\" SAE Code 62 flange end; IH-ST-BW-C6230-24-24 (suffix 24-24) is 1-1/2\" hose ID (-24) with a 1-1/2\" SAE Code 62 flange end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend cover?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend is listed in 7 sizes, covering 3/4\" hose ID (-12) to 1-1/2\" hose ID (-24) with the end connection from 3/4\" SAE Code 62 flange to 1-1/2\" SAE Code 62 flange. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend?",
+          "a": "Choose the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-C6230-16-20: 1\" hose ID (-16) with a 1-1/4\" SAE Code 62 flange end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend made from?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. SAE Code 62 flange heads follow the four-bolt split-flange standard SAE J518 / ISO 6162, where Code 61 is the standard-pressure series and Code 62 the high-pressure series. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend connect to?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend bolts to a matching SAE Code 62 flange port, and its hose end is crimped onto the hose type and size it is made for. The flange code and size must match the port, and the end is not interchangeable with the other code. See the [SAE Flange Fittings](/c/sae-flange-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend only on the hose it is made for and to the BW Series crimp specification. Fit a clean, undamaged O-ring in the flange head and tighten the flange bolts evenly so the head seats square. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend compare with similar BW fittings?",
+          "a": "The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend and the [BW Series Crimp Hose Fitting, SAE Code 61 Flange, 30° Bend](/p/bw-series-crimp-hose-fitting-sae-code-61-flange-30-bend) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend is marked by 62, the other by 61. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting, SAE Code 62 Flange, 30° Bend in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-x-female-weld-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting × Female Weld Fitting and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting × Female Weld Fitting is a straight crimp hose fitting with a female weld-fitting end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 6 part numbers in the Indus BW Series Crimp Hose Fittings range, from 1/4\" hose ID (-4) with a 1/4\" weld fitting end to 1\" hose ID (-16) with a 1\" weld fitting end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-FW-04-04 on the BW Series Crimp Hose Fitting × Female Weld Fitting?",
+          "a": "IH-ST-BW-FW-04-04 is one size of the BW Series Crimp Hose Fitting × Female Weld Fitting (listing code IH-ST-BW-FW plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-FW-04-04 (suffix 04-04) is 1/4\" hose ID (-4) with a 1/4\" weld fitting end; IH-ST-BW-FW-08-08 (suffix 08-08) is 1/2\" hose ID (-8) with a 1/2\" weld fitting end; IH-ST-BW-FW-16-16 (suffix 16-16) is 1\" hose ID (-16) with a 1\" weld fitting end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting × Female Weld Fitting cover?",
+          "a": "The BW Series Crimp Hose Fitting × Female Weld Fitting is listed in 6 sizes, covering 1/4\" hose ID (-4) to 1\" hose ID (-16) with the end connection from 1/4\" weld fitting to 1\" weld fitting. The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting × Female Weld Fitting?",
+          "a": "Choose the BW Series Crimp Hose Fitting × Female Weld Fitting by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-FW-08-08: 1/2\" hose ID (-8) with a 1/2\" weld fitting end. Our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting × Female Weld Fitting rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting × Female Weld Fitting, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting × Female Weld Fitting made from?",
+          "a": "The BW Series Crimp Hose Fitting × Female Weld Fitting is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting × Female Weld Fitting follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting × Female Weld Fitting does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting × Female Weld Fitting connect to?",
+          "a": "The BW Series Crimp Hose Fitting × Female Weld Fitting is welded to the pipe, block or bracket it connects to, and its hose end is crimped onto the hose type and size it is made for. Match the weld-fitting size and the hose size from the size table. See the [Spiral Hose Crimp Fittings](/c/spiral-hose-crimp-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting × Female Weld Fitting onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting × Female Weld Fitting only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting × Female Weld Fitting and the BW Series Crimp Hose Fitting × NPTF Female?",
+          "a": "The BW Series Crimp Hose Fitting × Female Weld Fitting and the [BW Series Crimp Hose Fitting × NPTF Female](/p/bw-series-crimp-hose-fitting-x-nptf-female) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting × Female Weld Fitting is marked by weld, the other by nptf. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting × Female Weld Fitting made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting × Female Weld Fitting are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting × Female Weld Fitting in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting × Female Weld Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-x-npsm-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting × NPSM Female Swivel do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting × NPSM Female Swivel is a straight crimp hose fitting with an NPSM female swivel end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 5 part numbers in the Indus BW Series Crimp Hose Fittings range, from 1/4\" hose ID (-4) with a 1/4\" NPSM (1/4-18) end to 1\" hose ID (-16) with a 1\" NPSM (1-11.5) end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-FPX-04-04 on the BW Series Crimp Hose Fitting × NPSM Female Swivel?",
+          "a": "IH-ST-BW-FPX-04-04 is one size of the BW Series Crimp Hose Fitting × NPSM Female Swivel (listing code IH-ST-BW-FPX plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-FPX-04-04 (suffix 04-04) is 1/4\" hose ID (-4) with a 1/4\" NPSM (1/4-18) end; IH-ST-BW-FPX-08-08 (suffix 08-08) is 1/2\" hose ID (-8) with a 1/2\" NPSM (1/2-14) end; IH-ST-BW-FPX-16-16 (suffix 16-16) is 1\" hose ID (-16) with a 1\" NPSM (1-11.5) end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting × NPSM Female Swivel come in?",
+          "a": "The BW Series Crimp Hose Fitting × NPSM Female Swivel is listed in 5 sizes, covering 1/4\" hose ID (-4) to 1\" hose ID (-16) with the end connection from 1/4\" NPSM (1/4-18) to 1\" NPSM (1-11.5). The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting × NPSM Female Swivel?",
+          "a": "Choose the BW Series Crimp Hose Fitting × NPSM Female Swivel by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-FPX-08-08: 1/2\" hose ID (-8) with a 1/2\" NPSM (1/2-14) end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting × NPSM Female Swivel rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting × NPSM Female Swivel, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting × NPSM Female Swivel made from?",
+          "a": "The BW Series Crimp Hose Fitting × NPSM Female Swivel is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting × NPSM Female Swivel follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting × NPSM Female Swivel does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. NPSM is the straight American pipe thread used on swivel ends, covered by ASME B1.20.1. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting × NPSM Female Swivel connect to?",
+          "a": "The BW Series Crimp Hose Fitting × NPSM Female Swivel has an NPSM female swivel end, so it joins a port with the matching thread, and its hose end is crimped onto the hose type and size it is made for. Match both the thread and the hose size from the size table. See the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting × NPSM Female Swivel onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting × NPSM Female Swivel only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to crimp faults](/blog/hydraulic-hose-crimp-faults)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting × NPSM Female Swivel and the BW Series Crimp Hose Fitting × Female Weld Fitting?",
+          "a": "The BW Series Crimp Hose Fitting × NPSM Female Swivel and the [BW Series Crimp Hose Fitting × Female Weld Fitting](/p/bw-series-crimp-hose-fitting-x-female-weld-fitting) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting × NPSM Female Swivel is marked by npsm and swivel, the other by weld. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting × NPSM Female Swivel made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting × NPSM Female Swivel are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting × NPSM Female Swivel in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting × NPSM Female Swivel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-x-nptf-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting × NPTF Female and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Female is a straight crimp hose fitting with an NPTF female end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 8 part numbers in the Indus BW Series Crimp Hose Fittings range, from 1/4\" hose ID (-4) with a 1/8\" NPTF (1/8-27) end to 3/4\" hose ID (-12) with a 3/4\" NPTF (3/4-14) end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-FP-04-02 on the BW Series Crimp Hose Fitting × NPTF Female?",
+          "a": "IH-ST-BW-FP-04-02 is one size of the BW Series Crimp Hose Fitting × NPTF Female (listing code IH-ST-BW-FP plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-FP-04-02 (suffix 04-02) is 1/4\" hose ID (-4) with a 1/8\" NPTF (1/8-27) end; IH-ST-BW-FP-06-06 (suffix 06-06) is 3/8\" hose ID (-6) with a 3/8\" NPTF (3/8-18) end; IH-ST-BW-FP-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" NPTF (3/4-14) end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting × NPTF Female come in?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Female is listed in 8 sizes, covering 1/4\" hose ID (-4) to 3/4\" hose ID (-12) with the end connection from 1/8\" NPTF (1/8-27) to 3/4\" NPTF (3/4-14). The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting × NPTF Female?",
+          "a": "Choose the BW Series Crimp Hose Fitting × NPTF Female by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-FP-06-06: 3/8\" hose ID (-6) with a 3/8\" NPTF (3/8-18) end. Our [guide to what to send for a hose quote](/blog/what-to-send-for-a-hose-quote) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting × NPTF Female rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting × NPTF Female, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting × NPTF Female made from?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Female is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting × NPTF Female follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting × NPTF Female does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. NPTF is the Dryseal American pipe taper thread, covered by ASME B1.20.3. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting × NPTF Female connect to?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Female has an NPTF female end, so it joins a port with the matching thread, and its hose end is crimped onto the hose type and size it is made for. Match both the thread and the hose size from the size table. See the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting × NPTF Female onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting × NPTF Female only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting × NPTF Female and the BW Series Crimp Hose Fitting × Female Weld Fitting?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Female and the [BW Series Crimp Hose Fitting × Female Weld Fitting](/p/bw-series-crimp-hose-fitting-x-female-weld-fitting) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting × NPTF Female is marked by nptf, the other by weld. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting × NPTF Female made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting × NPTF Female are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting × NPTF Female in stock in Dubai?",
+          "a": "Yes. We keep the BW Series Crimp Hose Fitting × NPTF Female in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the hose type, sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-x-nptf-male-swivel-90",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° and what is it used for?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° is a 90° elbow crimp hose fitting with an NPTF male swivel end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 5 part numbers in the Indus BW Series Crimp Hose Fittings range, from 1/4\" hose ID (-4) with a 1/4\" NPTF (1/4-18) end to 3/4\" hose ID (-12) with a 3/4\" NPTF (3/4-14) end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-MPX90-04-04 on the BW Series Crimp Hose Fitting × NPTF Male Swivel 90°?",
+          "a": "IH-ST-BW-MPX90-04-04 is one size of the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° (listing code IH-ST-BW-MPX90 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-MPX90-04-04 (suffix 04-04) is 1/4\" hose ID (-4) with a 1/4\" NPTF (1/4-18) end; IH-ST-BW-MPX90-06-08 (suffix 06-08) is 3/8\" hose ID (-6) with a 1/2\" NPTF (1/2-14) end; IH-ST-BW-MPX90-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" NPTF (3/4-14) end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes does the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° cover?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° is listed in 5 sizes, covering 1/4\" hose ID (-4) to 3/4\" hose ID (-12) with the end connection from 1/4\" NPTF (1/4-18) to 3/4\" NPTF (3/4-14). The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting × NPTF Male Swivel 90°?",
+          "a": "Choose the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-MPX90-06-08: 3/8\" hose ID (-6) with a 1/2\" NPTF (1/2-14) end. Our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting × NPTF Male Swivel 90°, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° made from?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. NPTF is the Dryseal American pipe taper thread, covered by ASME B1.20.3. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° connect to?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° has an NPTF male swivel end, so it joins a port with the matching thread, and its hose end is crimped onto the hose type and size it is made for. Match both the thread and the hose size from the size table. See the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° and the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block?",
+          "a": "The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° and the [BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block](/p/bw-series-crimp-hose-fitting-x-orb-male-swivel-90-block) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting × NPTF Male Swivel 90° is marked by nptf, the other by block and orb. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° in stock in Dubai?",
+          "a": "Yes, the BW Series Crimp Hose Fitting × NPTF Male Swivel 90° is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, send the hose type, sizes and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bw-series-crimp-hose-fitting-x-orb-male-swivel-90-block",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block do and where is it used?",
+          "a": "The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block is a 90° block crimp hose fitting, a block elbow body that turns the hose through a right angle at the port with an ORB male swivel end. BW Series crimp fittings are a crimp system of their own, to be used with the hose and crimp specification they are made for. It is listed with 5 part numbers in the Indus BW Series Crimp Hose Fittings range, from 3/8\" hose ID (-6) with a 3/8\" ORB (9/16-18) end to 3/4\" hose ID (-12) with a 3/4\" ORB (1-1/16-12) end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part number IH-ST-BW-MBX90-06-06 on the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block?",
+          "a": "IH-ST-BW-MBX90-06-06 is one size of the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block (listing code IH-ST-BW-MBX90 plus a size suffix), and the size table ties the suffix to the hose size and the end connection. In the table: IH-ST-BW-MBX90-06-06 (suffix 06-06) is 3/8\" hose ID (-6) with a 3/8\" ORB (9/16-18) end; IH-ST-BW-MBX90-08-08 (suffix 08-08) is 1/2\" hose ID (-8) with a 1/2\" ORB (3/4-16) end; IH-ST-BW-MBX90-12-12 (suffix 12-12) is 3/4\" hose ID (-12) with a 3/4\" ORB (1-1/16-12) end. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block come in?",
+          "a": "The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block is listed in 5 sizes, covering 3/8\" hose ID (-6) to 3/4\" hose ID (-12) with the end connection from 3/8\" ORB (9/16-18) to 3/4\" ORB (1-1/16-12). The Sizes & Part Numbers tab gives the hose size and the end for every part number, and sizes outside the table can be quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block?",
+          "a": "Choose the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block by the hose size and the hose type first, then by the end connection. The hose end is sized by hose ID in dash sizes, and the end connection is sized separately, as the size table shows for IH-ST-BW-MBX90-08-08: 1/2\" hose ID (-8) with a 1/2\" ORB (3/4-16) end. Our [guide to measuring a hydraulic hose](/blog/how-to-measure-a-hydraulic-hose) shows what to check."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block rated for?",
+          "a": "The manufacturer publishes no pressure rating for the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block, so this page does not state one. An assembly is rated to the lower of the hose and the end connection, so tell us the hose and the working pressure and we will confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block made from?",
+          "a": "The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block is listed in carbon steel; the listing does not state a plating or coating. Tell us the fluid and the environment if the assembly will see anything other than hydraulic oil, and we will check the material before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block follow?",
+          "a": "The listing for the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block does not name a standard for the fitting itself, and BW Series is a crimp system with its own crimp specification. No test certificate is attached to the listing; tell us the documents your project needs when you ask for a quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What does the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block connect to?",
+          "a": "The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block has an ORB male swivel end, so it joins a port with the matching thread, and its hose end is crimped onto the hose type and size it is made for. Match both the thread and the hose size from the size table. See the [Spiral Hose Crimp Fittings](/c/spiral-hose-crimp-fittings) range for other end styles."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block onto a hose?",
+          "a": "Crimp the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block only on the hose it is made for and to the BW Series crimp specification, and do not mix it with another maker's series. Check the end connection is clean and undamaged before you fit it. See our [guide to make-up torque](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block and the BW Series Crimp Hose Fitting × NPTF Male Swivel 90°?",
+          "a": "The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block and the [BW Series Crimp Hose Fitting × NPTF Male Swivel 90°](/p/bw-series-crimp-hose-fitting-x-nptf-male-swivel-90) are separate BW Series listings with different ends or body angles. The BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block is marked by block and orb, the other by nptf. Choose by the end connection of the port and the angle the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block made and can you export it from Dubai?",
+          "a": "The country of origin and HS code for the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block are confirmed on the quotation. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond, and can prepare the export documents your customs broker needs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block in stock in Dubai?",
+          "a": "Yes, the BW Series Crimp Hose Fitting × ORB Male Swivel, 90° Block is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For prices, send the hose type, sizes and quantities on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

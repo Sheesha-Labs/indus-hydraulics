@@ -1,0 +1,1196 @@
+{
+  "family": "high-pressure-cylinders-01",
+  "extraFacts": [
+    {
+      "fact": "High-pressure tooling cylinders run at up to 700 bar (10,000 psi) and need a pump, hose, coupler and gauge rated for that pressure; a circuit is limited by its lowest-rated component.",
+      "source": "Indus Hydraulics listing text (Enerpac cylinder pages and AME/Destaco/Miller listings)"
+    },
+    {
+      "fact": "Enerpac BRC Series Pull Hydraulic Cylinders: 3 listed part numbers; stroke 5\" to 5.875\"; extended length 15.44\" to 17.38\"; retracted length 10.44\" to 11.88\"; Body Material Steel; Cylinder Type Pull; Finish Paint; Handle No; Included Coupler, Dust Cap; Material Steel; Plunger Type Solid; Series BRC Series; Single Acting/double Acting Single Acting; items: Hydraulic Cylinder, 2.5 Ton, 5 Inch Stroke Length | Hydraulic Cylinder, 5 Ton, 5-1/2 Inch Stroke Length | Hydraulic Cylinder, 10 Ton, 5-61/64 Inch Stroke Length.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-brc-series-pull-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac BRP Series Pull Hydraulic Cylinder: 4 listed part numbers; stroke 5.875\" to 6\"; extended length 28.46\" to 49.71\"; retracted length 22.56\" to 43.71\"; Body Material Steel; Cylinder Type Pull; Finish Paint; Handle No; Included Slotted Link; Material Steel; Plunger To Mounting Hole 1.38\"; Plunger Type Solid; Series BRP Series; Single Acting/double Acting Single Acting; Slot To Link End 2.17\"; items: Cylinder 30 Tons 6 Inch Stroke Length | Cylinder 60 Tons 6 Inch Stroke Length | Cylinder 10 Tons 6 Inch Stroke Length.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-brp-series-pull-hydraulic-cylinder"
+    },
+    {
+      "fact": "Enerpac CDT Series Hydraulic Cylinders: 4 listed part numbers; stroke 0.5\" to 0.875\"; extended length 3.39\" to 4.57\"; capacity 3900 ton to 6110 ton; retracted length 2.68\" to 3.23\"; Body Material Steel; Cylinder Type Threaded Body; Function Double Acting; Material Steel; Material Of Construction Steel; Mounting Style Threaded Body; Plunger Type Solid; Seal Material Polyurethane, Buna N; Single Acting/double Acting Double Acting; Type Threaded Body; items: Cylinder Threaded 3900 Lbs .98 Inch Stroke | Cylinder Threaded 6110 Lbs .98 Inch Stroke | Cylinder Threaded 6110 Lbs .59 Inch Stroke | Cylinder Threaded 3900 Lbs .51 Inch Stroke.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-cdt-series-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac CSM Series Hydraulic Cylinders: 6 listed part numbers; stroke 0.28\" to 0.51\"; retracted length 1.33\" to 2.14\"; Body Material Steel; Cylinder Type Threaded Body; Function Single Acting; Material Steel; Material Of Construction Steel; Mounting Style Manifold Mount; Plunger Type Solid; Seal Material Buna N, Polyurethane; Single Acting/double Acting Single Acting; Type Threaded Body; items: Cylinder Threaded 380 Lb 0.28 Inch Stroke | Cylinder Threaded 380 Lb 0.51 Inch Stroke | Cylinder Threaded 1190 Lb 0.28 Inch Stroke | Cylinder Threaded 2590 Lb 0.28 Inch Stroke | Cylinder Threaded 1190 Lb 0.51 Inch Stroke | Cylinder Threaded 2590 Lb 0.51 Inch Stroke.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-csm-series-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac CST Series Hydraulic Cylinders: 13 listed part numbers; stroke 0.28\" to 0.98\"; extended length 1.89\" to 4.76\"; capacity 380 ton to 8800 ton; retracted length 1.65\" to 3.73\"; Body Material Steel; Cylinder Type Threaded Body; Function Single Acting; Material Steel; Material Of Construction Steel; Mounting Style Threaded Body; Seal Material Polyurethane, Buna N; Single Acting/double Acting Single Acting; Type Threaded Body; items: Cylinder Threaded 380 Lb 0.28 Inch Stroke | Cylinder Threaded 980 Lb 0.28 Inch Stroke | Cylinder Threaded 380 Lb 0.51 Inch Stroke | Cylinder Threaded 980 Lb 0.51 Inch Stroke | Cylinder Threaded 1950 Lb 0.28 Inch Stroke | Cylinder Threaded 6110 Lb 0.59 Inch Stroke | Cylinder Threaded 8800 Lb 0.51 Inch Stroke | Cylinder Threaded 1950 Lb 0.98 Inch Stroke | Cylinder Threaded 8800 Lb 0.98 Inch Stroke | Cylinder Threaded 1950 Lb 0.51 Inch Stroke.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-cst-series-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac CULP Series Hydraulic Cylinder: 5 listed part numbers; extended length 1.3\" to 2.8\"; retracted length 1.08\" to 2.55\"; Body Material Steel; Cylinder Type Low Profile; Finish Nitride; Material Steel; Plunger Type Solid; Return Type Single-Acting, Load Return; Single Acting/double Acting Single Acting; Surface Treatment Nitride; items: Ultra Flat Hydraulic Cylinder With Stop Ring, 20 Ton | Ultra Flat Hydraulic Cylinder With Stop Ring, 30 Ton | Ultra Flat Hydraulic Cylinder With Stop Ring, 100 Ton | Ultra Flat Hydraulic Cylinder With Stop Ring, 50 Ton | Ultra Flat Hydraulic Cylinder With Stop Ring, 10 Ton.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-culp-series-hydraulic-cylinder"
+    },
+    {
+      "fact": "Enerpac CUSP Series Hydraulic Cylinder: 13 listed part numbers; stroke 0.26\" to 0.69\"; Material Steel; Plunger Type Solid; Return Type Single-Acting, Load Return; Surface Treatment Nitride; Tilting Degrees 2°; items: Ultra Flat Hydraulic Cylinder, 1000 Ton | Ultra Flat Hydraulic Cylinder, 250 Ton | Ultra Flat Hydraulic Cylinder, 30 Ton | Ultra Flat Hydraulic Cylinder, 300 Ton | Ultra Flat Hydraulic Cylinder, 400 Ton | Ultra Flat Hydraulic Cylinder600 Ton | Ultra Flat Hydraulic Cylinder, 50 Ton | Ultra Flat Hydraulic Cylinder, 75 Ton | Ultra Flat Hydraulic Cylinder, 150 Ton | Ultra Flat Hydraulic Cylinder, 20 Ton.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-cusp-series-hydraulic-cylinder"
+    },
+    {
+      "fact": "Enerpac Cylinder Accessories: 4 listed part numbers; items: A-92 Duck Bill Spreader, 1-Ton RC Cylinder Attachment | JBI-10, Base Plate for 10 Ton Cylinders | JBI-25, Base Plate for 25 Ton Cylinders | JBI-50, Base Plate for 50 Ton Cylinders.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-cylinder-accessories"
+    },
+    {
+      "fact": "Enerpac Double Acting Lock Nut Hydraulic Cylinders: 9 listed part numbers; stroke 5.906\" to 11.81\"; Material Steel; Plunger Type Solid; Return Type Double-Acting, Hydraulic Return; Surface Treatment Nitride; items: Lock Nut Cylinder, Dual Acting, 100 Ton | Lock Nut Cylinder, Dual Acting, 150 Ton | Lock Nut Cylinder, Dual Acting, 50 Ton | Lock Nut Cylinder, Dual Acting, 200 Ton | Lock Nut Cylinder, Dual Acting, 250 Ton | Lock Nut Cylinder, Dual Acting, 300 Ton.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-double-acting-lock-nut-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac General Purpose Hydraulic Cylinders: 8 listed part numbers; stroke 0.625\" to 6\"; Body Material Steel; Cylinder Type General Purpose; Handle No; Included Saddle; Material Steel; Plunger Type Solid; Single Acting/double Acting Single Acting; items: Hydraulic Cylinder, 4970 lbs Capacity, 1.01 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 3.17 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 6.11 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 0.62 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 0.99 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 2.18 Inch Stroke Length | Hydraulic Cylinder, 11180 lbs Capacity, 4.18 Inch Stroke Length | Hydraulic Cylinder, 4970 lbs Capacity, 5.17 Inch Stroke Length.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-general-purpose-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac HCG-Series High-Tonnage Cylinders: 66 listed part numbers; rated pressure 10,000 psi; stroke 1.97\" to 11.81\"; extended length 9.17\" to 39.06\"; capacity 50 ton to 1000 ton; retracted length 7.2\" to 27.24\"; Capacity 50 ton to 1000 ton; Stroke 1.97\" to 11.81\"; Rated pressure 10,000 psi; Action Single-Acting (Load Return); items: HCG-502 High Tonnage Cylinder | HCG-504 High Tonnage Cylinder | HCG-506 High Tonnage Cylinder | HCG-508 High Tonnage Cylinder | HCG-5010 High Tonnage Cylinder | HCG-5012 High Tonnage Cylinder | HCG-1002 High Tonnage Cylinder | HCG-1004 High Tonnage Cylinder | HCG-1006 High Tonnage Cylinder | HCG-1008 High Tonnage Cylinder.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-hcg-series-high-tonnage-cylinders"
+    },
+    {
+      "fact": "Enerpac HCL-Series Lock Nut Cylinders: 66 listed part numbers; rated pressure 10,000 psi; stroke 1.97\" to 11.81\"; extended length 8.43\" to 40.71\"; capacity 50 ton to 1000 ton; retracted length 6.46\" to 28.9\"; Capacity 50 ton to 1000 ton; Stroke 1.97\" to 11.81\"; Rated pressure 10,000 psi; Action Single-Acting (Load Return); items: HCL-502 Lock Nut Cylinder | HCL-504 Lock Nut Cylinder | HCL-506 Lock Nut Cylinder | HCL-508 Lock Nut Cylinder | HCL-5010 Lock Nut Cylinder | HCL-5012 Lock Nut Cylinder | HCL-1002 Lock Nut Cylinder | HCL-1004 Lock Nut Cylinder | HCL-1006 Lock Nut Cylinder | HCL-1008 Lock Nut Cylinder.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-hcl-series-lock-nut-cylinders"
+    },
+    {
+      "fact": "Enerpac HCR-Series High-Tonnage Cylinders: 66 listed part numbers; rated pressure 10,000 psi; stroke 1.97\" to 11.81\"; extended length 9.17\" to 39.06\"; capacity 50 ton to 1000 ton; retracted length 7.2\" to 27.24\"; Capacity 50 ton to 1000 ton; Stroke 1.97\" to 11.81\"; Rated pressure 10,000 psi; Action Double-Acting; items: HCR-502 High Tonnage Cylinder | HCR-504 High Tonnage Cylinder | HCR-506 High Tonnage Cylinder | HCR-508 High Tonnage Cylinder | HCR-5010 High Tonnage Cylinder | HCR-5012 High Tonnage Cylinder | HCR-1002 High Tonnage Cylinder | HCR-1004 High Tonnage Cylinder | HCR-1006 High Tonnage Cylinder | HCR-1008 High Tonnage Cylinder.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-hcr-series-high-tonnage-cylinders"
+    },
+    {
+      "fact": "Enerpac LPL-Series Low Height Lock-Nut Cylinders: 7 listed part numbers; rated pressure 10,000 psi; stroke 1.77\" to 1.97\"; extended length 6.91\" to 9.33\"; capacity 60 ton to 500 ton; retracted length 4.94\" to 7.56\"; Capacity 60 ton to 500 ton; Stroke 1.77\" to 1.97\"; Rated pressure 10,000 psi; Action Single-Acting (Load Return); items: LPL-602 Low Height Lock-Nut Cylinder | LPL-1002 Low Height Lock-Nut Cylinder | LPL-1602 Low Height Lock-Nut Cylinder | LPL-2002 Low Height Lock-Nut Cylinder | LPL-2502 Low Height Lock-Nut Cylinder | LPL-4002 Low Height Lock-Nut Cylinder | LPL-5002 Low Height Lock-Nut Cylinder.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-lpl-series-low-height-lock-nut-cylinders"
+    },
+    {
+      "fact": "Enerpac Nut Splitter Cylinder: 3 listed part numbers; items: Nut Splitter Cylinder, Double Acting.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-nut-splitter-cylinder"
+    },
+    {
+      "fact": "Enerpac RAC-Series Single Acting Aluminum Cylinders: 25 listed part numbers; rated pressure 10,000 psi; stroke 1.97\" to 9.84\"; extended length 8.83\" to 27.28\"; capacity 20 ton to 150 ton; retracted length 6.85\" to 17.44\"; Capacity 20 ton to 150 ton; Stroke 1.97\" to 9.84\"; Rated pressure 10,000 psi; Action Single-Acting (Spring Return); items: RAC-202 Single Acting 20 Ton Cylinder, Aluminum, 1.97\" Stroke | RAC-204 Single Acting 20 Ton Cylinder, Aluminum, 3.94\" Stroke | RAC-206 Single Acting 20 Ton Cylinder, Aluminum, 5.91\" Stroke | RAC-208 Single Acting 20 Ton Cylinder, Aluminum, 7.87\" Stroke | RAC-2010 Single Acting 20 Ton Cylinder, Aluminum, 9.84\" Stroke | RAC-302 Single Acting 30 Ton Cylinder, Aluminum, 1.97\" Stroke | RAC-304 Single Acting 30 Ton Cylinder, Aluminum, 3.94\" Stroke | RAC-306 Single Acting 30 Ton Cylinder, Aluminum, 5.91\" Stroke | RAC-308 Single Acting 30 Ton Cylinder, Aluminum, 7.87\" Stroke | RAC-3010 Single Acting 30 Ton Cylinder, Aluminum, 9.84\" Stroke.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-rac-series-single-acting-aluminum-cylinders"
+    },
+    {
+      "fact": "Enerpac RACH-Series Hollow Plunger Aluminum Cylinders: 25 listed part numbers; rated pressure 10,000 psi; stroke 1.97\" to 9.84\"; extended length 9.38\" to 32.29\"; capacity 20 ton to 150 ton; retracted length 7.41\" to 22.45\"; Capacity 20 ton to 150 ton; Stroke 1.97\" to 9.84\"; Rated pressure 10,000 psi; Action Single-Acting (Spring Return); items: RACH-202 Hollow Plunger Aluminum Cylinder | RACH-204 Hollow Plunger Aluminum Cylinder | RACH-206 Hollow Plunger Aluminum Cylinder | RACH-208 Hollow Plunger Aluminum Cylinder | RACH-2010 Hollow Plunger Aluminum Cylinder | RACH-302 Hollow Aluminum Cylinder | RACH-304 Hollow Aluminum Cylinder | RACH-306 Hollow Aluminum Cylinder | RACH-308 Hollow Aluminum Cylinder | RACH-3010 Hollow Aluminum Cylinder.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-rach-series-hollow-plunger-aluminum-cylinders"
+    },
+    {
+      "fact": "Enerpac RC-Series Cylinder Repair Kits: 16 listed part numbers; items: RC Series 100 Ton Standard Cylinder Repair Kit | RC Series 100 Ton Premium Cylinder Repair Kit | RC Series 10 Ton Standard Cylinder Repair Kit | RC Series 10 Ton Premium Cylinder Repair Kit | RC Series 15 Ton Standard Cylinder Repair Kit | RC Series 15 Ton Premium Cylinder Repair Kit | RC Series 25 Ton Standard Cylinder Repair Kit | RC Series 25 Ton Premium Cylinder Repair Kit | RC Series 30 Ton Standard Cylinder Repair Kit | RC Series 50 Ton Standard Cylinder Repair Kit.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-rc-series-cylinder-repair-kits"
+    },
+    {
+      "fact": "Enerpac RD Series Hydraulic Cylinders: 11 listed part numbers; stroke 1.125\" to 10.25\"; extended length 8.44\" to 30.94\"; Body Material Steel; Cylinder Type High Cycle; Finish Paint; Handle No; Material Steel; Plunger Type Solid; Single Acting/double Acting Double Acting; items: General Purpose Hydraulic Cylinder, 4 Ton, Capacity, 6.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 4 Ton, Capacity, 1.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 9 Ton, Capacity, 1.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 4 Ton, Capacity, 3.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 9 Ton, Capacity, 3.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 16 Ton, Capacity, 6.25 Inch Stroke Length | General Purpose Hydraulic Cylinder, 25 Ton, Capacity, 6.25 Inch Stroke Length | General Purpose Hydraulic Cylinder, 9 Ton, Capacity, 6.13 Inch Stroke Length, Double-Acting | General Purpose Hydraulic Cylinder, 16 Ton, Capacity, 10.25 Inch Stroke Length | General Purpose Hydraulic Cylinder, 25 Ton, Capacity, 10.25 Inch Stroke Length.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-rd-series-hydraulic-cylinders"
+    },
+    {
+      "fact": "Enerpac RC-Series Single Acting Cylinders: 39 listed part numbers; rated pressure 10,000 psi; stroke 0.63\" to 14.25\"; extended length 2.25\" to 33\"; capacity 5 ton to 100 ton; retracted length 1.63\" to 19.38\"; Capacity 5 ton to 100 ton; Stroke 0.63\" to 14.25\"; Rated pressure 10,000 psi; Action Single-Acting (Spring Return); items: RC-50 Single Acting 5 Ton Cylinder, Alloy Steel, 0.63\" Stroke | RC-51 Single Acting 5 Ton Cylinder, Alloy Steel, 1\" Stroke | RC-53 Single Acting 5 Ton Cylinder, Alloy Steel, 3\" Stroke | RC-55 Single Acting 5 Ton Cylinder, Alloy Steel, 5\" Stroke | RC-57 Single Acting 5 Ton Cylinder, Alloy Steel, 7\" Stroke | RC-59 Single Acting 5 Ton Cylinder, Alloy Steel, 9.13\" Stroke | RC-101 Single Acting 10 Ton Cylinder, Alloy Steel, 1\" Stroke | RC-102 Single Acting 10 Ton Cylinder, Alloy Steel, 2.13\" Stroke | RC-104 Single Acting 10 Ton Cylinder, Alloy Steel, 4.13\" Stroke | RC-106 Single Acting 10 Ton Cylinder, Alloy Steel, 6.13\" Stroke.",
+      "source": "Indus Hydraulics product listing, /p/enerpac-rc-series-single-acting-cylinders"
+    }
+  ],
+  "products": [
+    {
+      "slug": "enerpac-brc-series-pull-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Enerpac BRC series pull hydraulic cylinders used?",
+          "a": "Enerpac BRC series pull hydraulic cylinders are single-acting steel pull cylinders that draw a load toward the cylinder. The listing carries 3 part numbers: BRC25 at 2.5 ton, BRC46 at 5 ton and BRC106 at 10 ton, with strokes of 5 in to 5.875 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac BRC series pull hydraulic cylinders?",
+          "a": "The Enerpac BRC series pull hydraulic cylinders are listed as 3 part numbers, for example BRC25, BRC46 and BRC106. Together they cover stroke 5\" to 5.875\", extended length 15.44\" to 17.38\" and retracted length 10.44\" to 11.88\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac BRC series pull hydraulic cylinders for my application?",
+          "a": "Choose the capacity, 2.5, 5 or 10 ton, and note that the stroke is 5 in, 5.5 in or 5.875 in. A pull cylinder draws the load toward the cylinder, so check the clearance and the fixing points before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac BRC series pull hydraulic cylinders?",
+          "a": "The listing gives capacities of 2.5, 5 and 10 ton and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac BRC series pull hydraulic cylinders offered in?",
+          "a": "The listing gives a steel body with a paint finish and a solid plunger for the Enerpac BRC series pull hydraulic cylinders, and a coupler and a dust cap are included. Steel suits field pulling jobs, and the paint protects the body in workshop and site use."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac BRC series pull hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac BRC series pull hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Enerpac BRC series pull hydraulic cylinders mate with?",
+          "a": "The Enerpac BRC series pull hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac BRC series pull hydraulic cylinders be installed and maintained?",
+          "a": "Keep the Enerpac BRC series pull hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac BRC series pull hydraulic cylinders used?",
+          "a": "The Enerpac BRC series pull hydraulic cylinders are used for pulling, straightening and drawing parts together, in structural repair, rail and plant work, where a pull cylinder replaces a puller or a chain."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac BRC series pull hydraulic cylinders differ from the Enerpac BRP series pull hydraulic cylinder?",
+          "a": "The BRC is a 2.5 to 10 ton pull cylinder supplied with a coupler and a dust cap, while [the Enerpac BRP series pull hydraulic cylinder](/p/enerpac-brp-series-pull-hydraulic-cylinder) is a 10 to 60 ton pull cylinder supplied with a slotted link. Choose by capacity."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac BRC series pull hydraulic cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac BRC series pull hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210030; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Enerpac BRC series pull hydraulic cylinders available from stock in Dubai for export?",
+          "a": "Yes. We stock the Enerpac BRC series pull hydraulic cylinders at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-brp-series-pull-hydraulic-cylinder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Enerpac BRP series pull hydraulic cylinder used?",
+          "a": "The Enerpac BRP series pull hydraulic cylinder is a single-acting steel pull cylinder that draws a load toward the cylinder. The listing carries 4 part numbers: BRP306 at 30 ton, BRP606 at 60 ton and two 10 ton versions, BRP106C and BRP106L."
+        },
+        {
+          "slot": "D",
+          "q": "Which models is listed for the Enerpac BRP series pull hydraulic cylinder?",
+          "a": "The Enerpac BRP series pull hydraulic cylinder is listed as 4 part numbers, for example BRP306, BRP106C and BRP106L. Together they cover stroke 5.875\" to 6\", extended length 28.46\" to 49.71\" and retracted length 22.56\" to 43.71\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac BRP series pull hydraulic cylinder?",
+          "a": "Choose the capacity, 10, 30 or 60 ton, and the attachment style: the 10 ton is listed as BRP106C and BRP106L. A slotted link is included, and the plunger-to-mounting-hole distance is 1.38 in."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Enerpac BRP series pull hydraulic cylinder have?",
+          "a": "The listing gives capacities of 10, 30 and 60 ton and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Enerpac BRP series pull hydraulic cylinder made from?",
+          "a": "The listing gives a steel body with a paint finish and a solid plunger, with a slotted link included. The slot-to-link end distance is 2.17 in."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac BRP series pull hydraulic cylinder?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac BRP series pull hydraulic cylinder and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac BRP series pull hydraulic cylinder connect to?",
+          "a": "The Enerpac BRP series pull hydraulic cylinder needs a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac BRP series pull hydraulic cylinder be installed and maintained?",
+          "a": "Keep the Enerpac BRP series pull hydraulic cylinder square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac BRP series pull hydraulic cylinder used?",
+          "a": "The Enerpac BRP series pull hydraulic cylinder is used for pulling heavy loads in structural repair, rail and plant work, where a 30 or 60 ton pull cylinder replaces a chain hoist."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac BRP series pull hydraulic cylinder differ from the Enerpac BRC series pull hydraulic cylinders?",
+          "a": "The BRP is a 10 to 60 ton pull cylinder with a slotted link, while [the Enerpac BRC series pull hydraulic cylinders](/p/enerpac-brc-series-pull-hydraulic-cylinders) is a 2.5 to 10 ton pull cylinder with a coupler and dust cap. Choose by capacity."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac BRP series pull hydraulic cylinder?",
+          "a": "We ship the Enerpac BRP series pull hydraulic cylinder from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8425420000; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Enerpac BRP series pull hydraulic cylinder from stock in the UAE?",
+          "a": "Yes. We stock the Enerpac BRP series pull hydraulic cylinder at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-cdt-series-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac CDT series hydraulic cylinders used for?",
+          "a": "Enerpac CDT series hydraulic cylinders are double-acting threaded body cylinders with a solid plunger and polyurethane and Buna N seals. The listing carries 4 part numbers, rated 3,900 lb and 6,110 lb, with strokes of 0.51 in to 0.98 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac CDT series hydraulic cylinders?",
+          "a": "The Enerpac CDT series hydraulic cylinders are listed as 4 part numbers, for example CDT18251, CDT27151 and CDT18131. Together they cover stroke 0.5\" to 0.875\", extended length 3.39\" to 4.57\", capacity 3900 ton to 6110 ton and retracted length 2.68\" to 3.23\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac CDT series hydraulic cylinders?",
+          "a": "Choose the capacity, 3,900 lb or 6,110 lb, and the stroke, 0.51 in or 0.98 in, from the item name. The threaded body screws into a fixture or manifold, so check the thread and mounting before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac CDT series hydraulic cylinders?",
+          "a": "The listing gives capacities of 3,900 lb and 6,110 lb, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac CDT series hydraulic cylinders offered in?",
+          "a": "The listing gives a steel body with a solid plunger and polyurethane and Buna N seals. Both seal materials suit hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac CDT series hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac CDT series hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac CDT series hydraulic cylinders connect to?",
+          "a": "The Enerpac CDT series hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac CDT series hydraulic cylinders be installed and maintained?",
+          "a": "Keep the Enerpac CDT series hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Enerpac CDT series hydraulic cylinders?",
+          "a": "The Enerpac CDT series hydraulic cylinders are used for clamping and positioning in fixtures and production tooling, where a small threaded cylinder is screwed into a block."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac CDT series hydraulic cylinders differ from the Enerpac CST series hydraulic cylinders?",
+          "a": "The CDT is double-acting in 4 part numbers of 3,900 and 6,110 lb, while [the Enerpac CST series hydraulic cylinders](/p/enerpac-cst-series-hydraulic-cylinders) is single-acting in 13 part numbers from 380 lb to 8,800 lb. Choose the CDT where the cylinder must retract under power."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac CDT series hydraulic cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac CDT series hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210030; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Enerpac CDT series hydraulic cylinders available from stock in Dubai for export?",
+          "a": "Yes, the Enerpac CDT series hydraulic cylinders are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-csm-series-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac CSM series hydraulic cylinders used for?",
+          "a": "Enerpac CSM series hydraulic cylinders are single-acting manifold mount cylinders with polyurethane and Buna N seals. The listing carries 6 part numbers, such as CSM271 and CSM2131, rated 380 lb and above, with strokes of 0.28 in and 0.51 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac CSM series hydraulic cylinders?",
+          "a": "The Enerpac CSM series hydraulic cylinders are listed as 6 part numbers, for example CSM271, CSM1071 and CSM10131. Together they cover stroke 0.28\" to 0.51\" and retracted length 1.33\" to 2.14\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac CSM series hydraulic cylinders for my application?",
+          "a": "Choose the capacity from the item name, starting at 380 lb, and the stroke, 0.28 in or 0.51 in, then match the manifold. A manifold mount cylinder bolts to a block with the port in the block."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac CSM series hydraulic cylinders have?",
+          "a": "The listing gives capacities from 380 lb, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac CSM series hydraulic cylinders offered in?",
+          "a": "The listing gives a steel body, a solid plunger and polyurethane and Buna N seals, with a manifold mounting style. Both seal materials suit hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac CSM series hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac CSM series hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Enerpac CSM series hydraulic cylinders mate with?",
+          "a": "The Enerpac CSM series hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Enerpac CSM series hydraulic cylinders?",
+          "a": "Keep the Enerpac CSM series hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Enerpac CSM series hydraulic cylinders?",
+          "a": "The Enerpac CSM series hydraulic cylinders are used for clamping and positioning in fixtures and production tooling, where a small cylinder is bolted to a manifold block."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac CSM series hydraulic cylinders differ from the Enerpac CST series hydraulic cylinders?",
+          "a": "The CSM is a manifold mount cylinder in 6 part numbers with strokes of 0.28 in and 0.51 in, while [the Enerpac CST series hydraulic cylinders](/p/enerpac-cst-series-hydraulic-cylinders) is a threaded body cylinder in 13 part numbers. Choose by the mounting style."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac CSM series hydraulic cylinders?",
+          "a": "We ship the Enerpac CSM series hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210030; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac CSM series hydraulic cylinders in stock in Dubai?",
+          "a": "Yes, the Enerpac CSM series hydraulic cylinders are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-cst-series-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Enerpac CST series hydraulic cylinders used?",
+          "a": "Enerpac CST series hydraulic cylinders are single-acting threaded body cylinders with polyurethane and Buna N seals. The listing carries 13 part numbers, such as CST271 and CST471, from 380 lb to 8,800 lb with strokes of 0.28 in to 0.98 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Enerpac CST series hydraulic cylinders?",
+          "a": "The Enerpac CST series hydraulic cylinders are listed as 13 part numbers, for example CST271, CST40131 and CST27251. Together they cover stroke 0.28\" to 0.98\", extended length 1.89\" to 4.76\", capacity 380 ton to 8800 ton and retracted length 1.65\" to 3.73\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac CST series hydraulic cylinders?",
+          "a": "Choose the capacity from the item name, from 380 lb to 8,800 lb, and the stroke, 0.28 in to 0.98 in. The threaded body screws into a fixture, so check the thread and mounting before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac CST series hydraulic cylinders have?",
+          "a": "The listing gives capacities from 380 lb to 8,800 lb, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac CST series hydraulic cylinders made from?",
+          "a": "The listing gives a steel body, polyurethane and Buna N seals, and a threaded body mounting. Both seal materials suit hydraulic oil."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac CST series hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac CST series hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac CST series hydraulic cylinders connect to?",
+          "a": "The Enerpac CST series hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac CST series hydraulic cylinders be installed and maintained?",
+          "a": "Keep the Enerpac CST series hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac CST series hydraulic cylinders used?",
+          "a": "The Enerpac CST series hydraulic cylinders are used for clamping, positioning and light pushing in fixtures and production tooling, where a small threaded cylinder is screwed into a block."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac CST series hydraulic cylinders differ from the Enerpac CSM series hydraulic cylinders?",
+          "a": "The CST is a threaded body cylinder in 13 part numbers from 380 lb to 8,800 lb, while [the Enerpac CSM series hydraulic cylinders](/p/enerpac-csm-series-hydraulic-cylinders) is a manifold mount cylinder in 6 part numbers of 380 lb and above with 0.28 in and 0.51 in strokes. Choose by the mounting style."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac CST series hydraulic cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac CST series hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8412210030; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac CST series hydraulic cylinders in stock in Dubai?",
+          "a": "Yes. We stock the Enerpac CST series hydraulic cylinders at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-culp-series-hydraulic-cylinder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Enerpac CULP series hydraulic cylinder used?",
+          "a": "The Enerpac CULP series is an ultra-flat hydraulic cylinder with a stop ring, single-acting with load return, in steel with a nitride finish. The listing carries 5 part numbers, such as CULP20 at 20 ton and CULP30 at 30 ton."
+        },
+        {
+          "slot": "D",
+          "q": "Which models is listed for the Enerpac CULP series hydraulic cylinder?",
+          "a": "The Enerpac CULP series hydraulic cylinder is listed as 5 part numbers, for example CULP20, CULP100 and CULP10. Together they cover extended length 1.3\" to 2.8\" and retracted length 1.08\" to 2.55\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac CULP series hydraulic cylinder?",
+          "a": "Choose the capacity from the item name, for example 20 ton for CULP20 or 30 ton for CULP30, and check the very low collapsed height against the gap. The stop ring limits the stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac CULP series hydraulic cylinder?",
+          "a": "The listing gives capacities in ton, such as 20 and 30 ton, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Enerpac CULP series hydraulic cylinder offered in?",
+          "a": "The listing gives a steel body with a nitride surface treatment and a solid plunger. Nitriding hardens the surface for wear and corrosion resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac CULP series hydraulic cylinder?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac CULP series hydraulic cylinder and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Enerpac CULP series hydraulic cylinder connect to?",
+          "a": "The Enerpac CULP series hydraulic cylinder needs a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac CULP series hydraulic cylinder be installed and maintained?",
+          "a": "Keep the Enerpac CULP series hydraulic cylinder square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac CULP series hydraulic cylinder used?",
+          "a": "The Enerpac CULP series hydraulic cylinder is used for lifting and pressing where the gap is very thin, in structural, bridge and machine installation work."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac CULP series hydraulic cylinder differ from the Enerpac CUSP series hydraulic cylinder?",
+          "a": "The CULP is an ultra-flat cylinder with a stop ring in 5 part numbers, while [the Enerpac CUSP series hydraulic cylinder](/p/enerpac-cusp-series-hydraulic-cylinder) is an ultra-flat cylinder in 13 part numbers with a 2° tilt and capacities to 1,000 ton. Choose by capacity."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac CULP series hydraulic cylinder shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac CULP series hydraulic cylinder from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Spain. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Enerpac CULP series hydraulic cylinder available from stock in Dubai for export?",
+          "a": "Yes, the Enerpac CULP series hydraulic cylinder is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-cusp-series-hydraulic-cylinder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Enerpac CUSP series hydraulic cylinder used?",
+          "a": "The Enerpac CUSP series is an ultra-flat hydraulic cylinder, single-acting with load return, in steel with a nitride finish and a 2° tilting capability. The listing carries 13 part numbers, such as CUSP250 at 250 ton and CUSP1000 at 1,000 ton."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers is listed for the Enerpac CUSP series hydraulic cylinder?",
+          "a": "The Enerpac CUSP series hydraulic cylinder is listed as 13 part numbers, for example CUSP1000, CUSP50 and CUSP100. Together they cover stroke 0.26\" to 0.69\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac CUSP series hydraulic cylinder?",
+          "a": "Choose the capacity from the item name, for example 250 ton for CUSP250 or 1,000 ton for CUSP1000, and check the very low collapsed height against the gap. The tilting saddle allows 2° of misalignment."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Enerpac CUSP series hydraulic cylinder have?",
+          "a": "The listing gives capacities in ton, such as 250 and 1,000 ton, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Enerpac CUSP series hydraulic cylinder made from?",
+          "a": "The listing gives a steel body with a nitride surface treatment, a solid plunger and a tilting capability of 2°. Nitriding hardens the surface for wear and corrosion resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac CUSP series hydraulic cylinder?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac CUSP series hydraulic cylinder and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Enerpac CUSP series hydraulic cylinder mate with?",
+          "a": "The Enerpac CUSP series hydraulic cylinder needs a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac CUSP series hydraulic cylinder be installed and maintained?",
+          "a": "Keep the Enerpac CUSP series hydraulic cylinder square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Enerpac CUSP series hydraulic cylinder used?",
+          "a": "The Enerpac CUSP series hydraulic cylinder is used for lifting and pressing very heavy loads in a thin gap, in bridge, structural and heavy machine work, where the 2° tilt allows for small misalignment."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Enerpac CUSP series hydraulic cylinder differ from the Enerpac CULP series hydraulic cylinder?",
+          "a": "The CUSP is an ultra-flat cylinder with a 2° tilt in 13 part numbers up to 1,000 ton, while [the Enerpac CULP series hydraulic cylinder](/p/enerpac-culp-series-hydraulic-cylinder) has a stop ring in 5 part numbers. Choose the CUSP for the heaviest loads."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac CUSP series hydraulic cylinder shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac CUSP series hydraulic cylinder from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac CUSP series hydraulic cylinder in stock in Dubai?",
+          "a": "Yes. We keep the Enerpac CUSP series hydraulic cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-cylinder-accessories",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac cylinder accessories used for?",
+          "a": "Enerpac cylinder accessories are base plates and attachments for 10,000 psi RC cylinders. The listing carries 4 part numbers: A92, the duck bill spreader for a 1 ton RC cylinder, and the base plates JBI10, JBI25 and JBI50."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Enerpac cylinder accessories?",
+          "a": "The listing carries 4 part numbers: A92, the A-92 duck bill spreader for a 1 ton RC cylinder attachment, and JBI10, JBI25 and JBI50, base plates for 10, 25 and 50 ton cylinders."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac cylinder accessories for my application?",
+          "a": "Choose the base plate by the cylinder capacity it carries, JBI10 for 10 ton, JBI25 for 25 ton and JBI50 for 50 ton, and the A92 for spreading with a 1 ton RC cylinder. Match the plate to the cylinder base."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac cylinder accessories?",
+          "a": "The listing gives no pressure rating for the cylinder accessories, because they carry load rather than fluid. Each base plate is matched to a cylinder capacity, and the cylinder keeps its own 10,000 psi rating."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac cylinder accessories made from?",
+          "a": "The listing does not state the material of the accessories. Base plates are loaded in compression and spreaders in tension, so ask us for the maker's data if you need the grade."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac cylinder accessories?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac cylinder accessories and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac cylinder accessories connect to?",
+          "a": "The base plates fit under RC cylinders of the stated capacity, and the A92 attaches to a 1 ton RC cylinder. See [the RC series single acting cylinders](/p/enerpac-rc-series-single-acting-cylinders) for the cylinders they fit."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac cylinder accessories be installed and maintained?",
+          "a": "Fit the base plate flat on a firm surface under the cylinder, centre the cylinder on it and check the plate is rated for the cylinder capacity. Never use an attachment on a cylinder larger than the one it is made for."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac cylinder accessories used?",
+          "a": "Base plates and attachments adapt RC cylinders for lifting, spreading and positioning jobs, so one cylinder can do several tasks in maintenance and construction."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac cylinder accessories differ from Enerpac RC-Series Cylinder Repair Kits?",
+          "a": "The accessories are 4 base plates and a spreader that adapt a cylinder, while [Enerpac RC-Series Cylinder Repair Kits](/p/enerpac-rc-series-cylinder-repair-kits) are 16 seal kits that rebuild a cylinder. Order accessories to adapt a cylinder and kits to repair it."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac cylinder accessories?",
+          "a": "We ship the Enerpac cylinder accessories from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Enerpac cylinder accessories from stock in the UAE?",
+          "a": "Yes, the Enerpac cylinder accessories are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-double-acting-lock-nut-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac double acting lock nut hydraulic cylinders used for?",
+          "a": "Enerpac double acting lock nut hydraulic cylinders are steel lock nut cylinders with hydraulic return, nitrided for wear resistance. The listing carries 9 part numbers, such as HCRL10012 and HCRL1006, all rated 100 ton, with strokes of 5.906 in to 11.81 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Enerpac double acting lock nut hydraulic cylinders?",
+          "a": "The Enerpac double acting lock nut hydraulic cylinders are listed as 9 part numbers, for example HCRL10012, HCRL5012 and HCRL30012. Together they cover stroke 5.906\" to 11.81\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac double acting lock nut hydraulic cylinders?",
+          "a": "Choose the stroke for the travel, from 5.906 in to 11.81 in, and the lock nut for holding the load. All part numbers are listed as dual acting 100 ton, so the choice is mainly stroke and height."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac double acting lock nut hydraulic cylinders have?",
+          "a": "The listing gives the cylinders as 100 ton and shows no pressure on the rows, so we do not quote a pressure. Give us your pump and we confirm the rating with the maker; a circuit is limited by its lowest-rated component."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac double acting lock nut hydraulic cylinders offered in?",
+          "a": "The listing gives steel as the material and a nitride surface treatment, with a solid plunger. Nitriding hardens the surface for wear resistance and corrosion resistance."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac double acting lock nut hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac double acting lock nut hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Enerpac double acting lock nut hydraulic cylinders mate with?",
+          "a": "The Enerpac double acting lock nut hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Enerpac double acting lock nut hydraulic cylinders?",
+          "a": "Keep the Enerpac double acting lock nut hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Enerpac double acting lock nut hydraulic cylinders?",
+          "a": "The Enerpac double acting lock nut hydraulic cylinders are used for heavy lifting and holding where a load must be locked, with powered retraction, in structures, vessels and heavy machinery work."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac double acting lock nut hydraulic cylinders differ from the Enerpac HCL series lock nut cylinders?",
+          "a": "The double acting lock nut cylinders are 9 part numbers of 100 ton with powered return and strokes of 5.906 in to 11.81 in, while [the Enerpac HCL series lock nut cylinders](/p/enerpac-hcl-series-lock-nut-cylinders) are single-acting with load return, from 50 to 1,000 ton. Choose these when retraction under power is needed."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac double acting lock nut hydraulic cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac double acting lock nut hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Enerpac double acting lock nut hydraulic cylinders from stock in the UAE?",
+          "a": "Yes. We keep the Enerpac double acting lock nut hydraulic cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-general-purpose-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Enerpac general purpose hydraulic cylinders used?",
+          "a": "Enerpac general purpose hydraulic cylinders are single-acting steel cylinders with a saddle, listed in 8 part numbers, such as RW51 and RW53, rated 4,970 lb with strokes of 1.01 in to 6 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac general purpose hydraulic cylinders?",
+          "a": "The Enerpac general purpose hydraulic cylinders are listed as 8 part numbers, for example RW51, RW101 and RW55. Together they cover stroke 0.625\" to 6\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac general purpose hydraulic cylinders for my application?",
+          "a": "Choose the capacity and the stroke from the item name, for example RW51 with a 1.01 in stroke and RW53 with a 3.17 in stroke, both rated 4,970 lb. A saddle is included."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac general purpose hydraulic cylinders have?",
+          "a": "The listing gives capacities in lb, for example 4,970 lb on RW51 and RW53, and shows no rated pressure on the rows. Give us the part number and your pump and we confirm the pressure with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac general purpose hydraulic cylinders made from?",
+          "a": "The listing gives a steel body, a solid plunger and a saddle, with no seal or finish stated. Steel suits general workshop use."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac general purpose hydraulic cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac general purpose hydraulic cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac general purpose hydraulic cylinders connect to?",
+          "a": "The Enerpac general purpose hydraulic cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac general purpose hydraulic cylinders be installed and maintained?",
+          "a": "Keep the Enerpac general purpose hydraulic cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac general purpose hydraulic cylinders used?",
+          "a": "The Enerpac general purpose hydraulic cylinders are used for general pushing, pressing and lifting in workshops and maintenance, where a simple single-acting cylinder with a saddle is enough."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac general purpose hydraulic cylinders differ from Enerpac RD Series Hydraulic Cylinders?",
+          "a": "The general purpose cylinders are single-acting with a saddle, while [Enerpac RD Series Hydraulic Cylinders](/p/enerpac-rd-series-hydraulic-cylinders) are double-acting high-cycle cylinders. Choose the general purpose cylinder for occasional jobs."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac general purpose hydraulic cylinders?",
+          "a": "We ship the Enerpac general purpose hydraulic cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is China. The HS code on the listing is 8412210030; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac general purpose hydraulic cylinders in stock in Dubai?",
+          "a": "Yes, the Enerpac general purpose hydraulic cylinders are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hcg-series-high-tonnage-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac HCG series high-tonnage cylinders used for?",
+          "a": "Enerpac HCG series high-tonnage cylinders are 10,000 psi single-acting cylinders with load return, from 50 to 1,000 ton, with strokes of 1.97 in to 11.81 in. The listing carries 66 part numbers, such as HCG502 and HCG504."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac HCG series high-tonnage cylinders?",
+          "a": "The Enerpac HCG series high-tonnage cylinders are listed as 66 part numbers, for example HCG502, HCG3008 and HCG100012. Together they cover rated pressure 10,000 psi, stroke 1.97\" to 11.81\", extended length 9.17\" to 39.06\", capacity 50 ton to 1000 ton and retracted length 7.2\" to 27.24\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac HCG series high-tonnage cylinders for my application?",
+          "a": "Choose the capacity for the load with a margin, from 50 to 1,000 ton, the stroke for the travel and check the collapsed height fits the gap. The part number encodes the capacity and stroke, so HCG502 and HCG504 share a capacity and differ in stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac HCG series high-tonnage cylinders?",
+          "a": "The Enerpac HCG series high-tonnage cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac HCG series high-tonnage cylinders made from?",
+          "a": "The listing does not state the body material of the Enerpac HCG series high-tonnage cylinders, which is a high-tonnage cylinder. Ask us for the maker's data on the model if you need the material, plunger finish and seals for a critical job."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac HCG series high-tonnage cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac HCG series high-tonnage cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Enerpac HCG series high-tonnage cylinders mate with?",
+          "a": "The Enerpac HCG series high-tonnage cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Enerpac HCG series high-tonnage cylinders?",
+          "a": "Keep the Enerpac HCG series high-tonnage cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac HCG series high-tonnage cylinders used?",
+          "a": "The Enerpac HCG series high-tonnage cylinders are used for heavy lifting, jacking and pressing of bridges, structures, vessels and heavy machinery, where a high-tonnage cylinder must deliver a stated force from a 10,000 psi pump."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac HCG series high-tonnage cylinders differ from the Enerpac HCL series lock nut cylinders?",
+          "a": "The HCG is the standard single-acting high-tonnage cylinder with load return, while [the Enerpac HCL series lock nut cylinders](/p/enerpac-hcl-series-lock-nut-cylinders) adds a lock nut to hold the load mechanically. Both run from 50 to 1,000 ton at 10,000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac HCG series high-tonnage cylinders?",
+          "a": "We ship the Enerpac HCG series high-tonnage cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac HCG series high-tonnage cylinders in stock in Dubai?",
+          "a": "Yes, we hold the Enerpac HCG series high-tonnage cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hcl-series-lock-nut-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac HCL series lock nut cylinders used for?",
+          "a": "Enerpac HCL series lock nut cylinders are 10,000 psi single-acting high-tonnage cylinders with a lock nut, from 50 to 1,000 ton. The listing carries 66 part numbers, such as HCL502 and HCL504, with strokes of 1.97 in to 11.81 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac HCL series lock nut cylinders?",
+          "a": "The Enerpac HCL series lock nut cylinders are listed as 66 part numbers, for example HCL502, HCL3008 and HCL100012. Together they cover rated pressure 10,000 psi, stroke 1.97\" to 11.81\", extended length 8.43\" to 40.71\", capacity 50 ton to 1000 ton and retracted length 6.46\" to 28.9\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac HCL series lock nut cylinders?",
+          "a": "Choose the capacity for the load with a margin, the stroke for the travel and the lock nut when the load must be held for long periods without hydraulic pressure. The part number encodes the capacity and stroke, like HCL502 and HCL504."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac HCL series lock nut cylinders have?",
+          "a": "The Enerpac HCL series lock nut cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac HCL series lock nut cylinders made from?",
+          "a": "The listing does not state the body material of the Enerpac HCL series lock nut cylinders, which is a high-tonnage cylinder. Ask us for the maker's data on the model if you need the material, plunger finish and seals for a critical job."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac HCL series lock nut cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac HCL series lock nut cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Enerpac HCL series lock nut cylinders mate with?",
+          "a": "The Enerpac HCL series lock nut cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac HCL series lock nut cylinders be installed and maintained?",
+          "a": "Keep the Enerpac HCL series lock nut cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac HCL series lock nut cylinders used?",
+          "a": "The Enerpac HCL series lock nut cylinders are used for heavy lifting, jacking and pressing of bridges, structures, vessels and heavy machinery, where a high-tonnage cylinder must deliver a stated force from a 10,000 psi pump."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac HCL series lock nut cylinders differ from the Enerpac HCG series high-tonnage cylinders?",
+          "a": "The HCL adds a lock nut to hold the load mechanically, while [the Enerpac HCG series high-tonnage cylinders](/p/enerpac-hcg-series-high-tonnage-cylinders) is the same single-acting design without one. Both run from 50 to 1,000 ton at 10,000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac HCL series lock nut cylinders?",
+          "a": "We ship the Enerpac HCL series lock nut cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac HCL series lock nut cylinders in stock in Dubai?",
+          "a": "Yes. We keep the Enerpac HCL series lock nut cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-hcr-series-high-tonnage-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac HCR series high-tonnage cylinders used for?",
+          "a": "Enerpac HCR series high-tonnage cylinders are 10,000 psi double-acting cylinders, from 50 to 1,000 ton, with strokes of 1.97 in to 11.81 in. The listing carries 66 part numbers, such as HCR502 and HCR504."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed for the Enerpac HCR series high-tonnage cylinders?",
+          "a": "The Enerpac HCR series high-tonnage cylinders are listed as 66 part numbers, for example HCR502, HCR3008 and HCR100012. Together they cover rated pressure 10,000 psi, stroke 1.97\" to 11.81\", extended length 9.17\" to 39.06\", capacity 50 ton to 1000 ton and retracted length 7.2\" to 27.24\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac HCR series high-tonnage cylinders for my application?",
+          "a": "Choose a double-acting HCR when the plunger must retract under power, or when you need to push and pull the load. Then pick the capacity from 50 to 1,000 ton and the stroke for the travel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac HCR series high-tonnage cylinders have?",
+          "a": "The Enerpac HCR series high-tonnage cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac HCR series high-tonnage cylinders offered in?",
+          "a": "The listing does not state the body material of the Enerpac HCR series high-tonnage cylinders, which is a high-tonnage cylinder. Ask us for the maker's data on the model if you need the material, plunger finish and seals for a critical job."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Enerpac HCR series high-tonnage cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac HCR series high-tonnage cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac HCR series high-tonnage cylinders connect to?",
+          "a": "The Enerpac HCR series high-tonnage cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac HCR series high-tonnage cylinders be installed and maintained?",
+          "a": "Keep the Enerpac HCR series high-tonnage cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac HCR series high-tonnage cylinders used?",
+          "a": "The Enerpac HCR series high-tonnage cylinders are used for heavy lifting, jacking and pressing of bridges, structures, vessels and heavy machinery, where a high-tonnage cylinder must deliver a stated force from a 10,000 psi pump."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac HCR series high-tonnage cylinders differ from the Enerpac HCG series high-tonnage cylinders?",
+          "a": "The HCR is double-acting, so it retracts under hydraulic power, while [the Enerpac HCG series high-tonnage cylinders](/p/enerpac-hcg-series-high-tonnage-cylinders) is single-acting and returns under load. Both run from 50 to 1,000 ton at 10,000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac HCR series high-tonnage cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac HCR series high-tonnage cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac HCR series high-tonnage cylinders in stock in Dubai?",
+          "a": "Yes, we hold the Enerpac HCR series high-tonnage cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-lpl-series-low-height-lock-nut-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac LPL series low height lock nut cylinders used for?",
+          "a": "Enerpac LPL series low height lock nut cylinders are 10,000 psi single-acting cylinders with a lock nut and a very short collapsed height, from 60 to 500 ton, with strokes of 1.77 in to 1.97 in. The listing carries 7 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac LPL series low height lock nut cylinders?",
+          "a": "The Enerpac LPL series low height lock nut cylinders are listed as 7 part numbers, for example LPL602, LPL2002 and LPL5002. Together they cover rated pressure 10,000 psi, stroke 1.77\" to 1.97\", extended length 6.91\" to 9.33\", capacity 60 ton to 500 ton and retracted length 4.94\" to 7.56\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac LPL series low height lock nut cylinders?",
+          "a": "Choose the LPL when the gap is small and the load must be locked: the capacity runs from 60 to 500 ton and the stroke is only 1.77 in to 1.97 in. Check the collapsed height fits the gap before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Enerpac LPL series low height lock nut cylinders have?",
+          "a": "The Enerpac LPL series low height lock nut cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac LPL series low height lock nut cylinders offered in?",
+          "a": "The listing does not state the body material of the Enerpac LPL series low height lock nut cylinders, which is a high-tonnage cylinder. Ask us for the maker's data on the model if you need the material, plunger finish and seals for a critical job."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac LPL series low height lock nut cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac LPL series low height lock nut cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac LPL series low height lock nut cylinders connect to?",
+          "a": "The Enerpac LPL series low height lock nut cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Enerpac LPL series low height lock nut cylinders?",
+          "a": "Keep the Enerpac LPL series low height lock nut cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac LPL series low height lock nut cylinders used?",
+          "a": "The Enerpac LPL series low height lock nut cylinders are used for heavy lifting, jacking and pressing of bridges, structures, vessels and heavy machinery, where a high-tonnage cylinder must deliver a stated force from a 10,000 psi pump."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac LPL series low height lock nut cylinders differ from the Enerpac HCL series lock nut cylinders?",
+          "a": "The LPL is a low height lock nut cylinder of 60 to 500 ton with a 1.77 in to 1.97 in stroke in 7 part numbers, while [the Enerpac HCL series lock nut cylinders](/p/enerpac-hcl-series-lock-nut-cylinders) has strokes to 11.81 in in 66 part numbers. Choose the LPL for tight gaps."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac LPL series low height lock nut cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac LPL series low height lock nut cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac LPL series low height lock nut cylinders in stock in Dubai?",
+          "a": "Yes, we hold the Enerpac LPL series low height lock nut cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-nut-splitter-cylinder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Enerpac nut splitter cylinders used?",
+          "a": "Enerpac nut splitter cylinders are double-acting cylinders that drive the blade of a nut splitter to split a seized nut off a stud. The listing carries 3 part numbers: NSC70D, NSC110D and a third model."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Enerpac nut splitter cylinders?",
+          "a": "The Enerpac nut splitter cylinders are listed as 3 part numbers, for example NSC70D, NSC110D and NS110115D. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Enerpac nut splitter cylinders?",
+          "a": "Choose the cylinder by the nut splitter it drives, using the part number from the splitter head, such as NSC70D or NSC110D. The cylinders are double-acting so the blade retracts under power."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac nut splitter cylinders?",
+          "a": "The listing gives no rated pressure on the rows for the nut splitter cylinders, so we do not quote one. Give us the part number and your pump and we confirm the rating with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac nut splitter cylinders offered in?",
+          "a": "The listing does not state the material of the nut splitter cylinders. Give us the part number and we confirm the build with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac nut splitter cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac nut splitter cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac nut splitter cylinders connect to?",
+          "a": "The Enerpac nut splitter cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac nut splitter cylinders be installed and maintained?",
+          "a": "Keep the Enerpac nut splitter cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Enerpac nut splitter cylinders?",
+          "a": "The Enerpac nut splitter cylinders are used to remove seized or corroded nuts from flanges and studs in refineries, power plants and offshore, where cutting the nut is safer than heating it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac nut splitter cylinders differ from the Enerpac cylinder accessories?",
+          "a": "The nut splitter cylinders drive a splitter blade in 3 double-acting models, while [the Enerpac cylinder accessories](/p/enerpac-cylinder-accessories) are base plates and attachments for RC cylinders. Choose the nut splitter cylinder to remove a seized nut."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac nut splitter cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac nut splitter cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac nut splitter cylinders in stock in Dubai?",
+          "a": "Yes. We keep the Enerpac nut splitter cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rac-series-single-acting-aluminum-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Enerpac RAC series single acting aluminium cylinders used?",
+          "a": "Enerpac RAC series single acting aluminium cylinders are 10,000 psi spring-return cylinders from 20 to 150 ton, with strokes of 1.97 in to 9.84 in. The listing carries 25 part numbers, such as RAC202 and RAC204."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "The Enerpac RAC series single acting aluminium cylinders are listed as 25 part numbers, for example RAC202, RAC506 and RAC15010. Together they cover rated pressure 10,000 psi, stroke 1.97\" to 9.84\", extended length 8.83\" to 27.28\", capacity 20 ton to 150 ton and retracted length 6.85\" to 17.44\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac RAC series single acting aluminium cylinders for my application?",
+          "a": "Choose the capacity from 20 to 150 ton and the stroke, 1.97 in to 9.84 in, for the work. The aluminium body cuts the weight for the same capacity, so choose it where the cylinder is moved by hand."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "The Enerpac RAC series single acting aluminium cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Enerpac RAC series single acting aluminium cylinders offered in?",
+          "a": "On the Enerpac RAC series single acting aluminium cylinders, the cylinder body is aluminium, as the item names state. Aluminium cuts the weight a great deal against steel for the same capacity, which makes the cylinder easier to carry and position, at the cost of a softer body that needs care."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac RAC series single acting aluminium cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac RAC series single acting aluminium cylinders connect to?",
+          "a": "The Enerpac RAC series single acting aluminium cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "Keep the Enerpac RAC series single acting aluminium cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "The Enerpac RAC series single acting aluminium cylinders are used for lifting, pressing and pulling on sites where weight matters, such as maintenance, rail, plant installation and rescue, wherever a lighter 10,000 psi cylinder is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac RAC series single acting aluminium cylinders differ from Enerpac RC-Series Single Acting Cylinders?",
+          "a": "The RAC cylinders are aluminium and run from 20 to 150 ton, while [Enerpac RC-Series Single Acting Cylinders](/p/enerpac-rc-series-single-acting-cylinders) are alloy steel and run from 5 to 100 ton. Choose the RAC for lighter weight."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "We ship the Enerpac RAC series single acting aluminium cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac RAC series single acting aluminium cylinders in stock in Dubai?",
+          "a": "Yes. We stock the Enerpac RAC series single acting aluminium cylinders at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rach-series-hollow-plunger-aluminum-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Enerpac RACH series hollow plunger aluminium cylinders used for?",
+          "a": "Enerpac RACH series hollow plunger aluminium cylinders are 10,000 psi spring-return cylinders with a hole through the plunger, from 20 to 150 ton. The listing carries 25 part numbers, such as RACH202 and RACH204, with strokes of 1.97 in to 9.84 in."
+        },
+        {
+          "slot": "D",
+          "q": "What models and part numbers are listed for the Enerpac RACH series hollow plunger aluminium cylinders?",
+          "a": "The Enerpac RACH series hollow plunger aluminium cylinders are listed as 25 part numbers, for example RACH202, RACH606 and RACH15010. Together they cover rated pressure 10,000 psi, stroke 1.97\" to 9.84\", extended length 9.38\" to 32.29\", capacity 20 ton to 150 ton and retracted length 7.41\" to 22.45\". Quote the part number, or the capacity and size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Enerpac RACH series hollow plunger aluminium cylinders for my application?",
+          "a": "Choose the RACH when a rod, bolt or cable must pass through the cylinder, as in pulling and tensioning work. Then pick the capacity from 20 to 150 ton and the stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Enerpac RACH series hollow plunger aluminium cylinders?",
+          "a": "The Enerpac RACH series hollow plunger aluminium cylinders are rated at 10,000 psi, and the stated capacity in ton is the force at that pressure. A circuit is limited by its lowest-rated component, so the pump, hose, coupler and gauge must also be rated for it."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Enerpac RACH series hollow plunger aluminium cylinders made from?",
+          "a": "On the Enerpac RACH series hollow plunger aluminium cylinders, the cylinder body is aluminium, as the item names state. Aluminium cuts the weight a great deal against steel for the same capacity, which makes the cylinder easier to carry and position, at the cost of a softer body that needs care."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Enerpac RACH series hollow plunger aluminium cylinders?",
+          "a": "The listing names no ISO or ASME standard for the Enerpac RACH series hollow plunger aluminium cylinders and holds no certificates. The maker's catalogue states the capacity and rated pressure for each part number, and a pump, hose, coupler and gauge rated to the same pressure are needed. If your site requires a test certificate, say so in the enquiry and we ask the maker what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Enerpac RACH series hollow plunger aluminium cylinders connect to?",
+          "a": "The Enerpac RACH series hollow plunger aluminium cylinders need a pump, hose, coupler and gauge rated to the cylinder's pressure, because a circuit is limited by its lowest-rated component. Base plates and attachments for RC cylinders are on [the Enerpac cylinder accessories listing](/p/enerpac-cylinder-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Enerpac RACH series hollow plunger aluminium cylinders be installed and maintained?",
+          "a": "Keep the Enerpac RACH series hollow plunger aluminium cylinders square to the load, use a base plate or saddle where the maker lists one, and never exceed the rated pressure or the stroke. Check the plunger for scoring and the couplers for leaks, and bleed the air before loading."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Enerpac RACH series hollow plunger aluminium cylinders used?",
+          "a": "The Enerpac RACH series hollow plunger aluminium cylinders are used for lifting, pressing and pulling on sites where weight matters, such as maintenance, rail, plant installation and rescue, wherever a lighter 10,000 psi cylinder is wanted."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Enerpac RACH series hollow plunger aluminium cylinders differ from the Enerpac RAC series single acting aluminium cylinders?",
+          "a": "The RACH has a hollow plunger so a rod can pass through it, while [the Enerpac RAC series single acting aluminium cylinders](/p/enerpac-rac-series-single-acting-aluminum-cylinders) has a solid plunger. Both are aluminium and run from 20 to 150 ton at 10,000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Enerpac RACH series hollow plunger aluminium cylinders shipped from, and what origin and HS code apply?",
+          "a": "We ship the Enerpac RACH series hollow plunger aluminium cylinders from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Enerpac RACH series hollow plunger aluminium cylinders in stock in Dubai?",
+          "a": "Yes. We keep the Enerpac RACH series hollow plunger aluminium cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

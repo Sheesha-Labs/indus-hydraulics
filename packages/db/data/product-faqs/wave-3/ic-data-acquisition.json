@@ -1,0 +1,88 @@
+{
+  "family": "ic-data-acquisition",
+  "extraFacts": [
+    {
+      "fact": "Related Indus instrumentation listings, as shown on their own pages: AC/DC Converter Package, 400 V AC → 24 V DC, NEMA 4X Enclosure, 1 kW: AC/DC converter package powering DC control circuits from a high-voltage AC mains supply. 400 V AC input → 24 V DC output, 1 kW continuous duty. NEMA 4X enclosure containing the converter, input breaker, output power-supply connections, status LEDs and surge protection.\nVoltage variants: 230 / 380 / 415 / 440 / 460 V AC input; 12 / 24 V DC output. Output powers 250 W / 500 W / 1 kW / 2 kW. Hazardous-area Ex-d variant available. | Analogic Pressure Sensor, 2-inch Fig.1502 Debooster, 6-inch Gauge + Adjustable Shutdown: 2-inch Fig.1502 pressure debooster providing safe transfer of HP wellhead pressure to the analogic gauge circuit. 6-inch glycerine-filled gauge for smooth pointer reading. Adjustable overpressure shutdown proximity switch enables interlock with ESD logic and shutdown sequencers.\nPressure ranges to 15,000 psi available. SS316 wetted connections; NACE MR-0175 on request. | Coriolis Mass Flowmeter (NRD), 2-inch, Cementing Service, Local + Remote Display: Coriolis-tube mass flowmeter providing simultaneous mass flow, fluid density, and fluid temperature outputs. Used as a non-radioactive densitometer (NRD) for cementing units, hydration units, and Liquid Additive Systems where radioactive source devices are restricted.\n2-inch process connections as standard; 1-inch and 3-inch available. Local digital display + 4-20 mA remote outputs. ATEX Zone 1 / 2 enclosure variants. | Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control. | Explosion-Proof Electrical Panel, Aluminium-Cast, ATEX Zone 1, 600 mm × 800 mm: Explosion-proof aluminium-cast electrical panel for ATEX Zone 1 hazardous-area deployment. 600 mm × 800 mm internal envelope; multiple sizes available. Internal mounting plate houses breakers, contactors, relays, terminal blocks, and surge protection per project schematic.\nIECEx-certified variants available. Weatherproof steel-sheet enclosure (powder-coated) for non-hazardous deployment as a lower-cost option. IP65 / IP66 sealing as standard. | Electronic Pressure Sensor, 0-15,000 psi, 2-inch Fig.1502M, 4-20 mA: 0-15,000 psi electronic pressure sensor with 2-inch Fig.1502M HP hammer-union connection. 4-20 mA loop output; HART / digital options available. SS316 wetted parts as standard; NACE MR-0175 materials for sour-service.\nPressure ranges 0-5,000 / 0-10,000 / 0-15,000 / 0-20,000 psi. Temperature compensation calibrated across operating range. | Magnetic Flowmeter, 2-inch Wafer, 600 psi, 4-20 mA Output: 2-inch wafer-style magnetic flowmeter with 600 psi MAWP and 4-20 mA loop output. Designed for water, brine, mud and acid-resistant lining where chemistry requires. Local display optional; remote display via 4-20 mA into DAQ.\nSizes 1/2 inch to 12 inch available; pressure ratings to ANSI 600. ATEX Zone 1 explosion-proof variant on request. | Magnetic-Pickup Proximity Sensor, 5/8-18 UNF, M12 Connector, Stroke / RPM Counter: Magnetic-pickup proximity sensor used as a bolt-counter on triplex / quintuplex pump crank shafts to feed RPM and calculated displacement back to the unit DAQ. 5/8-18 UNF threaded body with M12 4-pin connector.\nNo onboard power required — output is a passive signal proportional to shaft speed. Hazardous-area-rated variants available. | Bimetal Thermometer + Thermowell Pair, 1/2-inch NPT M×F, P+U API 6A Range, SS316: Matched bimetal thermometer and thermowell pair. The thermometer has a 1/2-inch NPT male connection with selectable stem length (2.5, 4, 6, 9 inch) and an API 6A P+U temperature range (-20 °F to +250 °F).\nThe thermowell is integral construction in SS316 with 1/2-inch NPT male-to-female connections, sized to match the thermometer stem. SS304 wetted-parts variant available. Pressure rating to 15,000 psi at process side; bore size selectable. | Turbine Flowmeter, 2-inch Fig.1502 F×M, 15,000 psi, Frac / Cementing Service: 2-inch turbine flowmeter for high-pressure frac and cementing service. Fig.1502 F×M connections at 15,000 psi MAWP. Optical or magnetic pickup output with K-factor calibration certificate.\n3-inch and lower-pressure variants available. NACE MR-0175 materials on request for sour-service applications. | VFD Package, AC Motor + Drive, 500 HP, ATEX Zone 2, Frac-Pumper Compatible: VFD (Variable Frequency Drive) package supplying a 500 HP AC motor for oilfield pump duty. Replaces costly DC converter and DC motor systems on legacy units. ATEX Zone 2 enclosure; regenerative braking option for energy recovery on deceleration.\nMotor + drive system rated for offshore environment (saltwater, vibration, temperature). Sizes 100 / 250 / 500 / 750 / 1,000 HP available. Compatible with frac pumper, cementing unit, transfer pump and stimulation unit deployments.",
+      "source": "Indus Hydraulics instrumentation listings"
+    },
+    {
+      "fact": "Figures of this listing, as shown on its product page: Multi-channel oilfield Data Acquisition System engineered for pumping-unit and frac-fleet integration. Compatible signal types: 4-20 mA, 0-5 V, pulse, frequency. 15-inch touchscreen (9-inch and 11-inch variants available).\nOperator-configurable display modes: data, chart, curves. Local storage and USB export in ASCII / Excel for post-job reports. Network connectivity (wired / wifi) to fleet Data Vans for centralized fleet control.",
+      "source": "Indus Hydraulics product listing"
+    },
+    {
+      "fact": "A 4-20 mA signal is a standard analogue current loop in which 4 mA is the bottom of the range and 20 mA the top, so a broken wire can be told from a zero reading.",
+      "source": "IEC 60381-1 (analogue signals for process control, 4 to 20 mA)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready [IH-DAQ-15IN-MCH-USB]:   Multi-channel oilfield DAQ with 15-inch touchscreen. 4-20 mA, 0-5 V, pulse and frequency inputs. USB export to ASCII / Excel for job reports. |  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "multi-channel-data-acquisition-system-15-inch-touchscreen-usb-export-frac-fleet-ready",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 15-inch multi-channel data acquisition system for frac fleets used for?",
+          "a": "It is an oilfield data acquisition system for pumping units and frac fleets, taking in 4-20 mA, 0-5 V, pulse and frequency signals and showing them on a 15-inch touchscreen. See the [data acquisition shelf](/c/ic-data-acquisition)."
+        },
+        {
+          "slot": "B",
+          "q": "Which signal types does the data acquisition system accept?",
+          "a": "It accepts 4-20 mA, 0-5 V, pulse and frequency signals. This covers pressure sensors, flowmeters and proximity sensors. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "D",
+          "q": "What screen sizes does the data acquisition system come in?",
+          "a": "The listing is the 15-inch touchscreen, with 9-inch and 11-inch variants available. Choose by the space in the cab or console. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "E",
+          "q": "What display modes does the data acquisition system offer?",
+          "a": "Operator-configurable display modes: data, chart and curves. The operator sets the view to suit the job. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "F",
+          "q": "How are job data saved from the data acquisition system?",
+          "a": "Data are stored locally and exported over USB in ASCII or Excel format for post-job reports. No network is needed for the export. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "G",
+          "q": "Can the data acquisition system be networked?",
+          "a": "Yes, it has wired and wifi network connectivity to fleet Data Vans for centralized fleet control. Tell us the network type when you ask."
+        },
+        {
+          "slot": "H",
+          "q": "Which sensors connect to the data acquisition system?",
+          "a": "Pressure sensors such as the [electronic pressure sensor](/p/electronic-pressure-sensor-0-15-000-psi-2-inch-fig-1502m-4-20-ma), flowmeters such as the [turbine flowmeter](/p/turbine-flowmeter-2-inch-fig-1502-f-m-15-000-psi-frac-cementing-service) and proximity sensors, over 4-20 mA, 0-5 V, pulse or frequency."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set up the data acquisition system for a job?",
+          "a": "Wire the sensors to the channel inputs, set the display mode (data, chart or curves) and start logging; export to USB after the job. The [oilfield instrumentation guide](/blog/oilfield-pressure-and-flow-instrumentation) covers signal choice."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to tell Indus to quote the the 15-inch data acquisition system?",
+          "a": "Quote the full title, Multi-Channel Data Acquisition System, 15-inch Touchscreen, USB Export, Frac-Fleet Ready, with the variant, size or voltage you need, and say where it will be used and which standard or zone applies. We confirm the specification and lead time on the quotation; start on [our contact page](/contact)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the data acquisition system used?",
+          "a": "It is engineered for pumping-unit and frac-fleet integration. The listing also names fleet Data Vans as the central point. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the data acquisition system supplied from?",
+          "a": "We supply it from Dubai, UAE and ship worldwide. Tell us the channel count and screen size. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 15-inch data acquisition system in stock in Dubai?",
+          "a": "Yes, we hold the 15-inch data acquisition system in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

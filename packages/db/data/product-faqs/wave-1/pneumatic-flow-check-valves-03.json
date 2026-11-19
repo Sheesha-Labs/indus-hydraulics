@@ -1,0 +1,1469 @@
+{
+  "family": "pneumatic-flow-check-valves-03",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    },
+    {
+      "fact": "Meter-out speed control throttles the air leaving the cylinder and gives steady speed under varying load, the normal choice for double-acting cylinders; meter-in throttles the supply air. A quick exhaust valve dumps cylinder exhaust air at the valve instead of through the long return line, so the piston moves faster. A check (non-return) valve passes air in one direction only; a piloted non-return valve opens in the blocked direction when a pilot signal is applied. A needle valve gives fine adjustment of flow with a tapered needle.",
+      "source": "SMC Best Pneumatics catalogue, Flow Control Equipment technical data; Legris pneumatic catalogue"
+    },
+    {
+      "fact": "In Legris flow-control part numbers the last two digits give the thread: 10 = 1/8, 13 = 1/4, 17 = 3/8, 21 = 1/2 (BSPT on speed controls, BSPP on piloted non-return valves), and the middle two digits give the tube OD in mm (04, 06, 08, 10, 12).",
+      "source": "Legris pneumatic flow control catalogue, part numbers 7665 06 13, 7065 10 21, 7892 10 21 (rows in Indus size tables)"
+    },
+    {
+      "fact": "In Numatics flow control swivel part numbers the first digit gives the male thread (0 = 10-32 UNF, 1 = 1/8 NPT, 2 = 1/4 NPT) and a trailing number gives the push-in tube size (4 = 1/8 inch, 5 = 5/32 inch, 8 = 1/4 inch, 12 = 3/8 inch).",
+      "source": "Numatics flow control swivel rows (0FPRN4, 0FPRN5, 1FPRN8, 2FPRN12) in Indus size tables"
+    },
+    {
+      "fact": "In ARO 1193xx flow controls the last digits are the port size: 103 = 10-32 UNF, 125 = 1/8, 250 = 1/4, 375 = 3/8, 500 = 1/2; 119308 is meter-out male x female NPT, 119309 and 119310 are male NPT x tube types, and 119307 is the in-line type.",
+      "source": "ARO flow control rows (119308-250, 119309-125, 119310-375, 119307-500) in Indus size tables"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aro-flow-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO cylinder port flow control used for?",
+          "a": "ARO cylinder port flow controls screw into a cylinder port and throttle exhaust air to set the piston speed, with knurled or screwdriver-slot adjustment. The listing has 17 part numbers, from 119308-125 to 119307-500."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO cylinder port flow control part numbers such as 119308-250 mean?",
+          "a": "The last digits are the port size: 119308-250 is 1/4 inch, -375 is 3/8, -500 is 1/2, -125 is 1/8 and -103 is 10-32 UNF. 119308 is male x female NPT meter-out, 119309 and 119310 are male NPT x tube types, and 119307 is the in-line type."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO cylinder port flow control come in?",
+          "a": "Ports run from 10-32 UNF through 1/8, 1/4 and 3/8 to 1/2 inch NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO cylinder port flow control?",
+          "a": "Choose male x female (119308) to thread straight into a cylinder, male x tube (119309 or 119310) for push-in tube, and in-line (119307) for tube runs. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO cylinder port flow control have?",
+          "a": "The listing gives 145 to 150 psi (about 10 bar) by size and -32°F to +158°F (about -36 to 70°C). In-line 119307 rows give flows from 3 cfm to 130 cfm."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO cylinder port flow control made of?",
+          "a": "The listing records a nickel-plated body with a knurled adjuster, in an elbow style, meter-out. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO cylinder port flow control come with certificates?",
+          "a": "We hold no certificate data for the ARO cylinder port flow control, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 119308-250 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO cylinder port flow control?",
+          "a": "Screws into cylinder ports (NPT) and takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) on the tube types; cylinders are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO cylinder port flow control?",
+          "a": "Fit one in each cylinder port, close the needle and open it gradually until the speed is right, then lock it. Exhaust the line before work."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO cylinder port flow control differ from its sibling listings?",
+          "a": "The in-line [ARO in-line flow controls](/p/aro-in-line-flow-controls) are composite valves with a calibrated knob, whereas this listing has cylinder-port types. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO cylinder port flow control made and which HS code applies?",
+          "a": "The recorded country of origin is Hungary and the recorded HS code is 8481805090. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO cylinder port flow control in Dubai?",
+          "a": "Yes, the ARO cylinder port flow control is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-in-line-flow-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO in-line flow control used for?",
+          "a": "ARO in-line flow controls are composite needle-style valves with a calibrated knob that set air flow in a line, used for example on diaphragm pumps. The listing has 4 part numbers: 104104-F01, -F02, -N03 and -F04."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO in-line flow control part numbers such as 104104-F02 mean?",
+          "a": "The suffix gives the port: 104104-F01 is 1/8 inch FNPT (18 SCFM), -F02 is 1/4 inch (28 SCFM), -N03 is 3/8 inch (58 SCFM) and -F04 is 1/2 inch (90 SCFM)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO in-line flow control come in?",
+          "a": "Four sizes, 1/8, 1/4, 3/8 and 1/2 inch FNPT, with maximum flows of 18, 28, 58 and 90 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO in-line flow control?",
+          "a": "Choose the size that matches the line, with maximum flow at or above the demand; check the SCFM in the part number row. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO in-line flow control have?",
+          "a": "The listing gives a maximum temperature of 200°F (about 93°C). A maker pressure is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO in-line flow control made of?",
+          "a": "The body is glass-reinforced thermoplastic (composite) with a calibrated knob adjustment. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO in-line flow control come with certificates?",
+          "a": "No certificates or approvals are recorded for the ARO in-line flow control. Tell us what documents your project needs, such as a certificate of conformity or origin for 104104-F02, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO in-line flow control?",
+          "a": "Inlet and outlet are female NPT, so use male NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO in-line flow control?",
+          "a": "Fit it in the line with the flow in the controlled direction (uni-directional) and set the knob to the calibrated position. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO in-line flow control differ from its sibling listings?",
+          "a": "The [ARO needle valves](/p/aro-needle-valves) are the same 104104 composite family, listed by NPT size. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO in-line flow control made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481801095. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO in-line flow control in Dubai?",
+          "a": "Yes. the ARO in-line flow control is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-needle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO needle valve used for?",
+          "a": "ARO needle valves are composite needle valves with a calibrated knob, listed in 4 part numbers: 104104-N01 (1/8 inch), 104104-N02 (1/4 inch), 104104-F03 and 104104-N04 (1/2 inch)."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO needle valve part numbers such as 104104-N02 mean?",
+          "a": "The suffix gives the port: N01 is 1/8 inch NPT, N02 is 1/4 inch NPT and N04 is 1/2 inch NPT; F03 is the 3/8 inch size listed as a flow control valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO needle valve come in?",
+          "a": "Sizes of 1/8, 1/4 and 1/2 inch NPT, plus the F03 flow control valve. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO needle valve?",
+          "a": "Choose the port to match your line and the needle for fine adjustment of flow. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO needle valve have?",
+          "a": "The listing gives 200°F (about 93°C) maximum temperature. A maker pressure is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO needle valve made of?",
+          "a": "The body is glass-reinforced thermoplastic with a calibrated knob. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO needle valve come with certificates?",
+          "a": "The listing for the ARO needle valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 104104-N02 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO needle valve?",
+          "a": "Use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO needle valve?",
+          "a": "Fit in the line with the flow in the controlled direction, set the knob and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO needle valve differ from its sibling listings?",
+          "a": "The [ARO in-line flow controls](/p/aro-in-line-flow-controls) list the same 104104 body with flow data. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO needle valve made and which HS code applies?",
+          "a": "For the ARO needle valve: the recorded country of origin is United States and the recorded HS code is 8481801095. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO needle valve in Dubai?",
+          "a": "Yes, we stock the ARO needle valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aro-quick-exhausts",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO quick exhaust valve used for?",
+          "a": "ARO quick exhaust valves dump cylinder exhaust air at the valve so the piston returns faster. The listing has 3 part numbers: EV125 (1/8 inch), EV250 (1/4 inch) and EV375 (3/8 inch)."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO quick exhaust valve part numbers such as EV250 mean?",
+          "a": "The digits are the port size: EV125 is 1/8 inch, EV250 is 1/4 inch and EV375 is 3/8 inch NPT. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO quick exhaust valve come in?",
+          "a": "Three sizes, 1/8, 1/4 and 3/8 inch NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO quick exhaust valve?",
+          "a": "Choose the size to match the cylinder port; a bigger valve exhausts faster. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO quick exhaust valve have?",
+          "a": "The maker rating is 125 psi (about 9 bar) and +32°F to +160°F (0 to about 71°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO quick exhaust valve made of?",
+          "a": "The body is aluminum with NPT inlet and outlet. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO quick exhaust valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the ARO quick exhaust valve. If your buyer needs paperwork for EV250, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO quick exhaust valve?",
+          "a": "Screw it into the cylinder port with NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers); cylinders are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO quick exhaust valve?",
+          "a": "Fit it as close to the cylinder as possible, with the exhaust port clear or silenced. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO quick exhaust valve differ from its sibling listings?",
+          "a": "Against the [Legris quick exhaust valves](/p/legris-quick-exhaust-valves) with nickel-plated brass bodies, the ARO is aluminum. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO quick exhaust valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481809050. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO quick exhaust valve in Dubai?",
+          "a": "Yes. We keep the ARO quick exhaust valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-valve-check",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO threaded check valve used for?",
+          "a": "ARO check valves in the 104104-C range are composite panel-mount check valves that pass air one way. The listing has 4 part numbers: 104104-C01 (1/8 inch), -C02 (1/4), -C03 (3/8) and -C04 (1/2)."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO threaded check valve part numbers such as 104104-C02 mean?",
+          "a": "The suffix is the size: C01 is 1/8 inch NPT, C02 is 1/4, C03 is 3/8 and C04 is 1/2 inch NPT. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO threaded check valve come in?",
+          "a": "Four sizes from 1/8 to 1/2 inch NPT, threaded for panel mounting. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO threaded check valve?",
+          "a": "Choose the size to match your line and flow. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO threaded check valve have?",
+          "a": "The listing gives 200°F (about 93°C) maximum temperature. A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO threaded check valve made of?",
+          "a": "The body is composite. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO threaded check valve come with certificates?",
+          "a": "the ARO threaded check valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 104104-C02."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO threaded check valve?",
+          "a": "For the ARO threaded check valve: use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO threaded check valve?",
+          "a": "Mount through the panel with the flow arrow in the flow direction and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO threaded check valve differ from its sibling listings?",
+          "a": "The [ARO needle valves](/p/aro-needle-valves) share the same composite 104104 body. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO threaded check valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481309000. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO threaded check valve in Dubai?",
+          "a": "Yes, the ARO threaded check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-205-series-horz-dash-pot-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 205 series horizontal dash pot check valve used for?",
+          "a": "Kingston 205 series horizontal dash pot check valves are brass check valves with a Teflon disc and a dash pot that damps closing. The listing has 7 part numbers from 205-3 (3/8 inch) to 205A-9 (2 inch)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 205 series horizontal dash pot check valve part numbers such as 205-6 mean?",
+          "a": "The digit after 205 gives the size: 205-3 is 3/8 inch, -4 is 1/2, -5 is 3/4, -6 is 1, -7 is 1-1/4, -8 is 1-1/2, and 205A-9 is 2 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 205 series horizontal dash pot check valve come in?",
+          "a": "Seven sizes from 3/8 inch to 2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 205 series horizontal dash pot check valve?",
+          "a": "Choose the size to match the line; the dash pot is for horizontal mounting. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 205 series horizontal dash pot check valve have?",
+          "a": "The maker pressure and temperature ratings are not held on this listing, so we do not state any. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 205 series horizontal dash pot check valve made of?",
+          "a": "The body is brass with a Teflon disc. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 205 series horizontal dash pot check valve come with certificates?",
+          "a": "We hold no certificate data for the Kingston 205 series horizontal dash pot check valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 205-6 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 205 series horizontal dash pot check valve?",
+          "a": "Thread type is not recorded; confirm it and see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 205 series horizontal dash pot check valve?",
+          "a": "Install horizontally, with the flow arrow in the flow direction. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 205 series horizontal dash pot check valve differ from its sibling listings?",
+          "a": "Compared with the [Kingston 215A horizontal check valve](/p/kingston-215a-series-horizontal-check-valves) this is a dash pot type with larger sizes. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 205 series horizontal dash pot check valve made and which HS code applies?",
+          "a": "For the Kingston 205 series horizontal dash pot check valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 205 series horizontal dash pot check valve in Dubai?",
+          "a": "Yes. the Kingston 205 series horizontal dash pot check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-215a-series-horizontal-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 215A series horizontal check valve used for?",
+          "a": "Kingston 215A series horizontal check valves are brass check valves with a glass-filled Teflon disc in 1/4, 3/8 and 1/2 inch. The listing has 3 part numbers: 215A-2, 215A-3 and 215A-4."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 215A series horizontal check valve part numbers such as 215A-3 mean?",
+          "a": "The digit gives the size: 215A-2 is 1/4 inch, 215A-3 is 3/8 inch and 215A-4 is 1/2 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 215A series horizontal check valve come in?",
+          "a": "Three sizes, 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 215A series horizontal check valve?",
+          "a": "Choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 215A series horizontal check valve have?",
+          "a": "The listing gives 0°F to +350°F (about -18 to 177°C). A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 215A series horizontal check valve made of?",
+          "a": "Brass body with a glass-filled Teflon disc. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 215A series horizontal check valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Kingston 215A series horizontal check valve. Tell us what documents your project needs, such as a certificate of conformity or origin for 215A-3, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 215A series horizontal check valve?",
+          "a": "For the Kingston 215A series horizontal check valve: thread type is not recorded; confirm it and see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 215A series horizontal check valve?",
+          "a": "Install horizontally with the arrow in the flow direction. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 215A series horizontal check valve differ from its sibling listings?",
+          "a": "Against the [Kingston 226 vertical check valve](/p/kingston-226-series-vertical-check-valves) with a Buna N disc, the 215A has a Teflon disc and horizontal mounting. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 215A series horizontal check valve made and which HS code applies?",
+          "a": "For the Kingston 215A series horizontal check valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 215A series horizontal check valve in Dubai?",
+          "a": "Yes, we stock the Kingston 215A series horizontal check valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-226-series-vertical-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 226 series vertical check valve used for?",
+          "a": "Kingston 226 series vertical check valves are brass inline check valves with a Buna N disc. The listing has 3 part numbers: 226-2-2 (1/4 inch), 226-3-3 (3/8) and 226-4-4 (1/2)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 226 series vertical check valve part numbers such as 226-3-3 mean?",
+          "a": "The two digits repeat the size code: 226-2-2 is 1/4 x 1/4 inch, 226-3-3 is 3/8 x 3/8 inch and 226-4-4 is 1/2 x 1/2 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 226 series vertical check valve come in?",
+          "a": "For the Kingston 226 series vertical check valve: three sizes, 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 226 series vertical check valve?",
+          "a": "For the Kingston 226 series vertical check valve: choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 226 series vertical check valve have?",
+          "a": "For the Kingston 226 series vertical check valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 226 series vertical check valve made of?",
+          "a": "Brass body with a Buna N disc. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 226 series vertical check valve come with certificates?",
+          "a": "The listing for the Kingston 226 series vertical check valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 226-3-3 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 226 series vertical check valve?",
+          "a": "For the Kingston 226 series vertical check valve: thread type is not recorded; confirm it and see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 226 series vertical check valve?",
+          "a": "Install vertically with the arrow in the flow direction. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 226 series vertical check valve differ from its sibling listings?",
+          "a": "The [Kingston 226A](/p/kingston-226a-series-check-valves) is the unloader valve version with a Teflon disc. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 226 series vertical check valve made and which HS code applies?",
+          "a": "For the Kingston 226 series vertical check valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 226 series vertical check valve in Dubai?",
+          "a": "Yes. We keep the Kingston 226 series vertical check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-226a-series-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 226A series check valve used for?",
+          "a": "Kingston 226A series check valves are brass vertical unloader check valves with a Teflon disc. The listing has 4 part numbers: 226A-2-2, 226A-3-3, 226A-4-4 and 226A-5-5."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 226A series check valve part numbers such as 226A-4-4 mean?",
+          "a": "The two digits repeat the size: 226A-2-2 is 1/4 x 1/4 inch, -3-3 is 3/8, -4-4 is 1/2 and -5-5 is 3/4 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 226A series check valve come in?",
+          "a": "Four sizes, 1/4, 3/8, 1/2 and 3/4 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 226A series check valve?",
+          "a": "For the Kingston 226A series check valve: choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 226A series check valve have?",
+          "a": "For the Kingston 226A series check valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 226A series check valve made of?",
+          "a": "Brass body with a Teflon disc. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 226A series check valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Kingston 226A series check valve. If your buyer needs paperwork for 226A-4-4, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 226A series check valve?",
+          "a": "For the Kingston 226A series check valve: thread type is not recorded; confirm it and see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 226A series check valve?",
+          "a": "For the Kingston 226A series check valve: install vertically with the arrow in the flow direction. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 226A series check valve differ from its sibling listings?",
+          "a": "Against the [Kingston 226](/p/kingston-226-series-vertical-check-valves) which has a Buna N disc, the 226A is an unloader valve with a Teflon disc. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 226A series check valve made and which HS code applies?",
+          "a": "For the Kingston 226A series check valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 226A series check valve in Dubai?",
+          "a": "Yes, the Kingston 226A series check valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-kcv234-series-in-tank-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston KCV234 series in-tank check valve used for?",
+          "a": "Kingston KCV234 series in-tank check valves are brass check valves for compressor tanks, with male and female NPT ends. The listing has 7 part numbers from KCV234-3-4 to KCV234-7-7."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston KCV234 series in-tank check valve part numbers such as KCV234-4-5 mean?",
+          "a": "The digits give the end sizes: KCV234-3-4 is 3/8 inch female x 1/2 inch male NPT, KCV234-4-4 is 1/2 inch, KCV234-5-5 is 3/4 inch, -6-6 is 1 inch and -7-7 is 1-1/4 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston KCV234 series in-tank check valve come in?",
+          "a": "Seven sizes from 3/8 inch to 1-1/4 inch, with stepped versions such as 4-5 and 5-6. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston KCV234 series in-tank check valve?",
+          "a": "Pick the combination that matches the discharge line and the tank port. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston KCV234 series in-tank check valve have?",
+          "a": "For the Kingston KCV234 series in-tank check valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston KCV234 series in-tank check valve made of?",
+          "a": "The listing records brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston KCV234 series in-tank check valve come with certificates?",
+          "a": "the Kingston KCV234 series in-tank check valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for KCV234-4-5."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston KCV234 series in-tank check valve?",
+          "a": "NPT ends take fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston KCV234 series in-tank check valve?",
+          "a": "Fit at the tank inlet with the arrow into the tank, and drain the tank first. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston KCV234 series in-tank check valve differ from its sibling listings?",
+          "a": "The in-tank KCV234 is a tank-mounted check, while the Kingston 226 sits inline. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston KCV234 series in-tank check valve made and which HS code applies?",
+          "a": "For the Kingston KCV234 series in-tank check valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston KCV234 series in-tank check valve in Dubai?",
+          "a": "Yes. the Kingston KCV234 series in-tank check valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "legris-air-cylinder-speed-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris air cylinder speed control used for?",
+          "a": "Legris air cylinder speed controls are meter-out flow controls with a BSPT male thread and a push-in tube connection that set cylinder speed. The listing has 16 part numbers in miniature (7665) and compact (7065) sizes."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris air cylinder speed control part numbers such as 7665 06 13 mean?",
+          "a": "Read 7665 06 13 as series 7665, 6 mm tube, 1/4 inch thread: the last two digits give the thread, 10 = 1/8, 13 = 1/4, 17 = 3/8 and 21 = 1/2 inch BSPT, and the middle digits give the tube OD in mm."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris air cylinder speed control come in?",
+          "a": "Tubes of 4, 6, 8, 10 and 12 mm and BSPT threads from 1/8 to 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris air cylinder speed control?",
+          "a": "Choose the tube OD to match your tube and the thread to match the cylinder port, miniature 7665 for small bores and compact 7065 for larger. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris air cylinder speed control have?",
+          "a": "The listing gives +30°F to +158°F (about -1 to 70°C) with PTFE seals. A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris air cylinder speed control made of?",
+          "a": "The body is technical polymer (nickel-plated brass on some versions), with PTFE seals. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris air cylinder speed control come with certificates?",
+          "a": "We hold no certificate data for the Legris air cylinder speed control, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 7665 06 13 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris air cylinder speed control?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) and fits cylinders on our [pneumatic cylinders shelf](/c/pneumatic-cylinders). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris air cylinder speed control?",
+          "a": "Fit one in each cylinder port with the arrow for meter-out, close and open the needle to set speed. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris air cylinder speed control differ from its sibling listings?",
+          "a": "The [Legris flow control regulators](/p/legris-flow-control-regulators) are the MNPT x tube types. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris air cylinder speed control made and which HS code applies?",
+          "a": "The recorded country of origin is China. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris air cylinder speed control in Dubai?",
+          "a": "Yes, we stock the Legris air cylinder speed control at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "legris-flow-control-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris flow control regulator used for?",
+          "a": "Legris flow control regulators are male NPT x tube push-in flow controls for one controlled direction. The listing has 4 part numbers: 7065 04 11, 7665 56 14, 7770 06 00 and 7015 56 11."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris flow control regulator part numbers such as 7770 06 00 mean?",
+          "a": "Read the middle digits as the tube size: 04 is 4 mm, 06 is 6 mm, 56 is 1/4 inch push-to-connect. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris flow control regulator come in?",
+          "a": "Four variants, 4 mm, 6 mm and 1/4 inch tube. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris flow control regulator?",
+          "a": "Choose the tube size and thread to match. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris flow control regulator have?",
+          "a": "The listing gives a maximum temperature of 158°F (about 70°C). A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris flow control regulator made of?",
+          "a": "Materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris flow control regulator come with certificates?",
+          "a": "No certificates or approvals are recorded for the Legris flow control regulator. Tell us what documents your project needs, such as a certificate of conformity or origin for 7770 06 00, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris flow control regulator?",
+          "a": "Use tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) and NPT ports. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris flow control regulator?",
+          "a": "Fit with the arrow in the controlled direction, then adjust. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris flow control regulator differ from its sibling listings?",
+          "a": "Unlike the [Legris speed controls](/p/legris-air-cylinder-speed-controls) with a BSPT thread, these are MNPT. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris flow control regulator made and which HS code applies?",
+          "a": "The recorded country of origin is China and the recorded HS code is 8481200040. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris flow control regulator in Dubai?",
+          "a": "Yes. We keep the Legris flow control regulator in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "legris-piloted-non-return-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris piloted non-return valve used for?",
+          "a": "Legris piloted non-return valves hold a cylinder by blocking return flow until a pilot signal opens them, in polymer bodies with push-in tube and BSPP threads. The listing has 12 part numbers: 7892 and 7894 types."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris piloted non-return valve part numbers such as 7892 10 21 mean?",
+          "a": "7892 is the piloted non-return valve and 7894 adds a flow regulator; the digits are the tube OD in mm and the thread: 7892 10 21 is 10 mm tube with 1/2 inch BSPP and 7892 06 13 is 6 mm with 1/4 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris piloted non-return valve come in?",
+          "a": "Tubes of 6, 8, 10 and 12 mm with 1/8 to 1/2 inch BSPP threads. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris piloted non-return valve?",
+          "a": "Choose 7892 for the plain valve and 7894 where you also need speed control. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris piloted non-return valve have?",
+          "a": "The listing gives 145 psi (10 bar) and 23°F to 140°F (about -5 to 60°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris piloted non-return valve made of?",
+          "a": "The body is polymer. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris piloted non-return valve come with certificates?",
+          "a": "The listing for the Legris piloted non-return valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 7892 10 21 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris piloted non-return valve?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) with BSPP ports. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris piloted non-return valve?",
+          "a": "Pipe the pilot line from the opposite cylinder port and fit the valve close to the cylinder. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris piloted non-return valve differ from its sibling listings?",
+          "a": "Compared with the [Legris flow control valves](/p/legris-pneumatic-flow-control-and-needle-valves), this holds the load via a pilot. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris piloted non-return valve made and which HS code applies?",
+          "a": "For the Legris piloted non-return valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris piloted non-return valve in Dubai?",
+          "a": "Yes, the Legris piloted non-return valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "legris-pneumatic-flow-control-and-needle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris pneumatic flow control and needle valve used for?",
+          "a": "Legris pneumatic flow control and needle valves are push-to-connect valves that set air flow in tube runs and at cylinder ports. The listing has 57 part numbers in series such as 7660, 7040, 7770, 7010, 7045 and 7065."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris pneumatic flow control and needle valve part numbers such as 7010 06 19 mean?",
+          "a": "The middle digits give the tube size and the last digits the thread: 7010 06 19 is 6 mm tube with M5 x 0.8, 7040 06 10 is 6 mm with 1/8 inch BSPP, 7770 08 00 is 5/16 inch push-to-connect both ends and 7045 56 14 is 1/4 inch tube with 1/4 inch NPT."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris pneumatic flow control and needle valve come in?",
+          "a": "Tubes of 4, 6, 10 and 12 mm and 5/32, 5/16, 1/4 and 1/2 inch, with M5, 1/8 BSPP and 1/4 NPT threads. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris pneumatic flow control and needle valve?",
+          "a": "Choose in-line (7770, push-to-connect both ends) or port-mounting (7010, 7040) and the tube size. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris pneumatic flow control and needle valve have?",
+          "a": "The listing gives 145 psi (about 10 bar) on the rows. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris pneumatic flow control and needle valve made of?",
+          "a": "For the Legris pneumatic flow control and needle valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris pneumatic flow control and needle valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Legris pneumatic flow control and needle valve. If your buyer needs paperwork for 7010 06 19, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris pneumatic flow control and needle valve?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris pneumatic flow control and needle valve?",
+          "a": "Fit with the arrow in the controlled direction and adjust. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris pneumatic flow control and needle valve differ from its sibling listings?",
+          "a": "Unlike the [Legris piloted non-return valve](/p/legris-piloted-non-return-valves), these are throttle valves. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris pneumatic flow control and needle valve made and which HS code applies?",
+          "a": "The recorded country of origin is Spain. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris pneumatic flow control and needle valve in Dubai?",
+          "a": "Yes. the Legris pneumatic flow control and needle valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "legris-quick-exhaust-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris quick exhaust valve used for?",
+          "a": "Legris quick exhaust valves dump cylinder exhaust air to speed up the return stroke. The listing has 3 part numbers: 7982 14 14 (1/4 inch), 7982 18 18 (3/8) and 7982 22 22 (1/2)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris quick exhaust valve part numbers such as 7982 14 14 mean?",
+          "a": "The digits are the port size twice: 14 14 is 1/4 inch, 18 18 is 3/8 inch and 22 22 is 1/2 inch NPT. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris quick exhaust valve come in?",
+          "a": "Three sizes: 1/4, 3/8 and 1/2 inch NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris quick exhaust valve?",
+          "a": "Choose the size matching the cylinder port. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris quick exhaust valve have?",
+          "a": "The listing gives 145 to 150 psi (about 10 bar) by size and 160°F (about 71°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris quick exhaust valve made of?",
+          "a": "The body is nickel-plated brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris quick exhaust valve come with certificates?",
+          "a": "the Legris quick exhaust valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 7982 14 14."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris quick exhaust valve?",
+          "a": "NPT ports take fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris quick exhaust valve?",
+          "a": "Fit near the cylinder with the exhaust free or silenced. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris quick exhaust valve differ from its sibling listings?",
+          "a": "The ARO [quick exhausts](/p/aro-quick-exhausts) are aluminum. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris quick exhaust valve made and which HS code applies?",
+          "a": "The recorded country of origin is Italy and the recorded HS code is 8481809015. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris quick exhaust valve in Dubai?",
+          "a": "Yes, we stock the Legris quick exhaust valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "milton-pneumatic-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Milton pneumatic check valve used for?",
+          "a": "Milton pneumatic check valves are compressor tank and inline check valves, 3 part numbers: 1092-1 (1/2 inch NPT tank), 1092-2 (3/4 inch NPT tank) and 1093-8 (1/2 inch FNPT in-line)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Milton pneumatic check valve part numbers such as 1092-1 mean?",
+          "a": "1092 numbers are compressor tank check valves, and 1093-8 is the in-line check valve. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Milton pneumatic check valve come in?",
+          "a": "Sizes of 1/2 and 3/4 inch NPT for the tank valves, 1/2 inch FNPT for the in-line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Milton pneumatic check valve?",
+          "a": "Choose tank for a receiver inlet and in-line for a pipe run. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Milton pneumatic check valve have?",
+          "a": "For the Milton pneumatic check valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Milton pneumatic check valve made of?",
+          "a": "For the Milton pneumatic check valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Milton pneumatic check valve come with certificates?",
+          "a": "We hold no certificate data for the Milton pneumatic check valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 1092-1 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Milton pneumatic check valve?",
+          "a": "For the Milton pneumatic check valve: nPT ports take fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Milton pneumatic check valve?",
+          "a": "Fit with the arrow in the flow direction, and drain the tank first. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Milton pneumatic check valve differ from its sibling listings?",
+          "a": "The 1093-8 is in-line while the 1092 pair is for tank mounting. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Milton pneumatic check valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Milton pneumatic check valve in Dubai?",
+          "a": "Yes. We keep the Milton pneumatic check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "numatics-flow-control-swivels",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Numatics flow control swivel used for?",
+          "a": "Numatics flow control swivels are angled flow controls that thread into a cylinder port and rotate 360 degrees, with screwdriver adjustment. The listing has 27 part numbers such as 0FPRN4, 1FPRN5 and 2FPRN12."
+        },
+        {
+          "slot": "B",
+          "q": "What do Numatics flow control swivel part numbers such as 1FPRN5 mean?",
+          "a": "The first digit is the thread (0 = 10-32 UNF, 1 = 1/8 NPT, 2 = 1/4 NPT) and a trailing number gives the push-in tube size: 4 = 1/8 inch, 5 = 5/32 inch, 8 = 1/4 inch, 12 = 3/8 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Numatics flow control swivel come in?",
+          "a": "Threads of 10-32 UNF, 1/8 NPT and 1/4 NPT with push-in tubes of 1/8, 5/32, 1/4 and 3/8 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Numatics flow control swivel?",
+          "a": "Choose the port thread and tube size; FC types have a threaded outlet and FP types a push-in outlet. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Numatics flow control swivel have?",
+          "a": "The listing gives 160°F (about 71°C) maximum temperature. A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Numatics flow control swivel made of?",
+          "a": "The body is anodized aluminum with a brass cartridge, Buna N seals and a stainless steel spring. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Numatics flow control swivel come with certificates?",
+          "a": "No certificates or approvals are recorded for the Numatics flow control swivel. Tell us what documents your project needs, such as a certificate of conformity or origin for 1FPRN5, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Numatics flow control swivel?",
+          "a": "For the Numatics flow control swivel: takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) and fits cylinders on our [pneumatic cylinders shelf](/c/pneumatic-cylinders). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Numatics flow control swivel?",
+          "a": "Thread into the port, rotate to the tube exit angle and adjust with a screwdriver. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Numatics flow control swivel differ from its sibling listings?",
+          "a": "The swivel is angled, unlike the straight [Parker Prestolok flow controls](/p/parker-prestolok-miniature-flow-controls-meter-out). Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Numatics flow control swivel made and which HS code applies?",
+          "a": "For the Numatics flow control swivel: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Numatics flow control swivel in Dubai?",
+          "a": "Yes, the Numatics flow control swivel is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-0r-series-quick-exhaust-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 0R series quick exhaust valve used for?",
+          "a": "Parker 0R series quick exhaust valves dump cylinder exhaust air through a large port so the piston moves faster. The listing has 17 part numbers with NPTF ports and flows of 70 to 550 SCFM, from 0R12B to 0R75VB."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker 0R series quick exhaust valve part numbers such as 0R25B mean?",
+          "a": "The digits after 0R rise with the size, and the rows give the flow: 0R12 types are 70 SCFM, 0R25B and 0R25VB are 90 SCFM, 0R25NFB is 240 SCFM, 0R50B is 450 SCFM and 0R75B is 550 SCFM. Letters such as V, N and F mark body variants."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker 0R series quick exhaust valve come in?",
+          "a": "Flow bands of 70, 90, 150, 240, 450 and 550 SCFM, all NPTF. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker 0R series quick exhaust valve?",
+          "a": "Choose the band at or above the flow of your cylinder. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves). Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker 0R series quick exhaust valve have?",
+          "a": "For the Parker 0R series quick exhaust valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 0R series quick exhaust valve made of?",
+          "a": "For the Parker 0R series quick exhaust valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 0R series quick exhaust valve come with certificates?",
+          "a": "The listing for the Parker 0R series quick exhaust valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 0R25B should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker 0R series quick exhaust valve?",
+          "a": "NPTF ports take fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker 0R series quick exhaust valve?",
+          "a": "Fit close to the cylinder with the exhaust port unobstructed or silenced. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 0R series quick exhaust valve differ from its sibling listings?",
+          "a": "Compared with the [Legris quick exhausts](/p/legris-quick-exhaust-valves) this is a larger Parker range. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 0R series quick exhaust valve made and which HS code applies?",
+          "a": "For the Parker 0R series quick exhaust valve: the recorded country of origin is United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 0R series quick exhaust valve in Dubai?",
+          "a": "Yes. the Parker 0R series quick exhaust valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-3250-series-flow-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 3250 series flow control valve used for?",
+          "a": "Parker 3250 series flow control valves are air flow control valves in 6 sizes from 1/4 to 1-1/2 inch, part numbers 3250G0219 to 3250G1500."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker 3250 series flow control valve part numbers such as 3250G0419 mean?",
+          "a": "The rows give the size: 3250G0219 is 1/4 inch, G0319 3/8, G0419 1/2, G0519 3/4, G1000 1 inch and G1500 1-1/2 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker 3250 series flow control valve come in?",
+          "a": "Six sizes: 1/4, 3/8, 1/2, 3/4, 1 and 1-1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker 3250 series flow control valve?",
+          "a": "For the Parker 3250 series flow control valve: choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker 3250 series flow control valve have?",
+          "a": "For the Parker 3250 series flow control valve: the maker pressure and temperature ratings are not held on this listing, so we do not state any."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 3250 series flow control valve made of?",
+          "a": "For the Parker 3250 series flow control valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 3250 series flow control valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Parker 3250 series flow control valve. If your buyer needs paperwork for 3250G0419, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker 3250 series flow control valve?",
+          "a": "Use fittings of the port thread from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker 3250 series flow control valve?",
+          "a": "For the Parker 3250 series flow control valve: fit with the arrow in the controlled direction and adjust. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 3250 series flow control valve differ from its sibling listings?",
+          "a": "The [Parker 337 series](/p/parker-337-series-flow-control-valves-0-250-operating-pressure) is a smaller set of sizes. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 3250 series flow control valve made and which HS code applies?",
+          "a": "For the Parker 3250 series flow control valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 3250 series flow control valve in Dubai?",
+          "a": "Yes, we stock the Parker 3250 series flow control valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-337-series-flow-control-valves-0-250-operating-pressure",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 337 series flow control valve used for?",
+          "a": "Parker 337 series flow control valves are air flow control valves in sizes from 1/8 to 3/4 inch, with 7 part numbers such as 003371000 and 00337G1001."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker 337 series flow control valve part numbers such as 003371001 mean?",
+          "a": "The last digits of 00337100x give the size: 003371000 is 1/8 inch, 003371001 is 1/4, 003371002 is 3/8, 003371003 is 1/2 and 003371004 is 3/4 inch; 00337G1000 and 00337G1001 are G-coded versions of the 1/8 and 1/4 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker 337 series flow control valve come in?",
+          "a": "Five sizes from 1/8 to 3/4 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker 337 series flow control valve?",
+          "a": "For the Parker 337 series flow control valve: choose the size to match the line. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker 337 series flow control valve have?",
+          "a": "The listing title shows a 0-250 operating pressure range. A temperature rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 337 series flow control valve made of?",
+          "a": "For the Parker 337 series flow control valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 337 series flow control valve come with certificates?",
+          "a": "the Parker 337 series flow control valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 003371001."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker 337 series flow control valve?",
+          "a": "Use fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker 337 series flow control valve?",
+          "a": "For the Parker 337 series flow control valve: fit with the arrow in the controlled direction and adjust. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 337 series flow control valve differ from its sibling listings?",
+          "a": "The [Parker 3250 series](/p/parker-3250-series-flow-control-valves) goes up to 1-1/2 inch. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 337 series flow control valve made and which HS code applies?",
+          "a": "For the Parker 337 series flow control valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker 337 series flow control valve in Dubai?",
+          "a": "Yes. We keep the Parker 337 series flow control valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-needle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker NV series brass needle valve used for?",
+          "a": "Parker needle valves on this listing include the NV series brass needle valves for fine flow adjustment, in in-line and 90 degree elbow styles with compression and pipe ends. The listing has 45 part numbers, such as NV102F-4 and NV106C-4-2."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker NV series brass needle valve part numbers such as NV102F-4 mean?",
+          "a": "In the NV rows the three digits after NV give the style (NV101F elbow, NV102F in-line, NV104C elbow compression, NV106C in-line compression, NV311P in-line Poly-Tite) and the trailing digits the tube size, with 4 for 1/4 inch OD and 6 for 3/8 inch OD."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker NV series brass needle valve come in?",
+          "a": "Tube OD of 1/4 and 3/8 inch, pipe sizes -2 and -4, and instrument sizes from 1/8 to 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker NV series brass needle valve?",
+          "a": "Choose in-line or 90 degree elbow and the end type (compression, Poly-Tite, male or female pipe), then the size. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker NV series brass needle valve have?",
+          "a": "The NV-series brass rows are rated 150 psi (about 10 bar). Other rows on the listing are different needle valves, so check the row of the part you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker NV series brass needle valve made of?",
+          "a": "The NV series is brass with a neoprene seal; some rows are 316 stainless steel. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker NV series brass needle valve come with certificates?",
+          "a": "We hold no certificate data for the Parker NV series brass needle valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for NV102F-4 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker NV series brass needle valve?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing) with compression or Poly-Tite ends. Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker NV series brass needle valve?",
+          "a": "Fit with the handle accessible and exhaust the line before service. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker NV series brass needle valve differ from its sibling listings?",
+          "a": "Compared with the [ARO composite needle valves](/p/aro-needle-valves) the Parker NV series is brass. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker NV series brass needle valve made and which HS code applies?",
+          "a": "The recorded country of origin is United States and the recorded HS code is 8481801050. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker NV series brass needle valve in Dubai?",
+          "a": "Yes, the Parker NV series brass needle valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-prestolok-miniature-flow-controls-meter-out",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Prestolok miniature flow control used for?",
+          "a": "Parker Prestolok miniature flow controls are meter-out push-to-connect flow controls for small cylinders, in glass-fiber-reinforced nylon 6.6. The listing has 20 part numbers such as FCM731-4M-M5 and FCM731-4-4."
+        },
+        {
+          "slot": "B",
+          "q": "What do Parker Prestolok miniature flow control part numbers such as FCM731-4M-M5 mean?",
+          "a": "From the rows: the first digit is the tube size, an M after it marks a metric tube, and the end code is the thread, so FCM731-4M-2G is 4 mm tube with 1/8 BSPP, FCM731-6M-M5 is 6 mm with M5x0.8 and FCM731-4-4 is 1/4 NPT."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Parker Prestolok miniature flow control come in?",
+          "a": "Threads of M3x0.5, M5x0.8, 10-32 UNF, 1/8 and 1/4 NPT and 1/8 and 1/4 BSPP. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker Prestolok miniature flow control?",
+          "a": "Choose the tube size and thread to match your cylinder. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker Prestolok miniature flow control have?",
+          "a": "The listing gives 32°F to 158°F (0 to about 70°C). A pressure rating is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Prestolok miniature flow control made of?",
+          "a": "The body is glass-fiber-reinforced nylon 6.6 with nitrile seals. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker Prestolok miniature flow control come with certificates?",
+          "a": "No certificates or approvals are recorded for the Parker Prestolok miniature flow control. Tell us what documents your project needs, such as a certificate of conformity or origin for FCM731-4M-M5, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker Prestolok miniature flow control?",
+          "a": "For the Parker Prestolok miniature flow control: takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Parker Prestolok miniature flow control?",
+          "a": "Screw into the cylinder port and adjust. See our [guide to cylinder speed control and quick exhaust valves](/blog/cylinder-speed-control-and-quick-exhaust-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Prestolok miniature flow control differ from its sibling listings?",
+          "a": "Unlike the [Numatics swivels](/p/numatics-flow-control-swivels) this is a straight miniature control. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Prestolok miniature flow control made and which HS code applies?",
+          "a": "For the Parker Prestolok miniature flow control, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Prestolok miniature flow control in Dubai?",
+          "a": "Yes. the Parker Prestolok miniature flow control is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

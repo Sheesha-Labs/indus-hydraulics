@@ -1,0 +1,526 @@
+{
+  "family": "lifting-beams",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "counterweight-lifting-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Counterweight Lifting Beams used for?",
+          "a": "Counterweight lifting beams hold the load at the end of a cantilever, with a counterweight on the other side of the top lift point to balance it. The crane hook stays clear of the structure while the load goes in under a roof, onto a mezzanine or through a window opening."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Counterweight Lifting Beams?",
+          "a": "IH-LR-BH-CWB is the base part number for Counterweight Lifting Beams. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Counterweight Lifting Beams come in?",
+          "a": "Counterweight Lifting Beams are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Counterweight Lifting Beams?",
+          "a": "Choose a fixed counterweight for one load and an adjustable counterweight for a range of loads. Precast versions place wall and floor units under an existing structure. Send the load and the opening so the beam can be designed for it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Counterweight Lifting Beams?",
+          "a": "The working load limit of Counterweight Lifting Beams is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Counterweight Lifting Beams have?",
+          "a": "Counterweight Lifting Beams are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Counterweight Lifting Beams designed to?",
+          "a": "Counterweight Lifting Beams are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Counterweight Lifting Beams need?",
+          "a": "Rig the beam from its top lift point and attach the load at the cantilever end as the design shows; the user instructions state how it may be rigged. Shackles and slings are sized to the drawing, and the counterweight is fixed or adjustable as ordered."
+        },
+        {
+          "slot": "I",
+          "q": "How are Counterweight Lifting Beams inspected in service?",
+          "a": "Give Counterweight Lifting Beams a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Counterweight Lifting Beams?",
+          "a": "Typical uses are placing loads under canopies and onto mezzanines, installing plant through openings, placing precast units under an existing structure and glazing and cladding units. See the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Counterweight Lifting Beams differ from the nearest beam type?",
+          "a": "A counterweight beam reaches past the hook to place a load under a structure, while a [Fixed Lifting Beams](/p/fixed-lifting-beams) hangs the load from a single top point under the hook. Choose counterweight when the hook cannot reach the placing position."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Counterweight Lifting Beams range available to order from Dubai?",
+          "a": "Counterweight Lifting Beams are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fixed-lifting-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Fixed Lifting Beams used for?",
+          "a": "A fixed lifting beam carries its load in bending from a single top point, so it needs far less headroom than a spreader beam with angled slings. It can hold the load at as many points along its length as the load needs, and the usual builds hang from a central top lug or a strip lug that fits straight onto the hook."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Fixed Lifting Beams?",
+          "a": "IH-LR-BH-FLB is the base part number for Fixed Lifting Beams. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Fixed Lifting Beams come in?",
+          "a": "Fixed Lifting Beams are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Fixed Lifting Beams?",
+          "a": "Choose a central top lug or a strip lug for direct-to-hook use, and fixed or sliding bottom lugs for multi-point lifting. Heavy-duty beams are designed for loads of hundreds of tonnes. Send the load data and the headroom available."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Fixed Lifting Beams?",
+          "a": "The working load limit of Fixed Lifting Beams is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Fixed Lifting Beams have?",
+          "a": "Fixed Lifting Beams are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Fixed Lifting Beams designed to?",
+          "a": "Fixed Lifting Beams are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Fixed Lifting Beams need?",
+          "a": "The usual builds hang from a central top lug or a strip lug that fits straight onto the hook, with fixed or sliding bottom lugs at set centres. A complete lifting system can include the beam, rigging and a rigging drawing."
+        },
+        {
+          "slot": "I",
+          "q": "How are Fixed Lifting Beams inspected in service?",
+          "a": "Give Fixed Lifting Beams a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Fixed Lifting Beams?",
+          "a": "Typical builds are a lifting beam with a central top lift point, direct-to-hook or strip-lug beams, heavy-duty multi-point lifting beams and complete lifting systems: beam, rigging and rigging drawing. See the [spreader beam vs lifting beam guide](/blog/spreader-beam-vs-lifting-beam)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Fixed Lifting Beams differ from the nearest beam type?",
+          "a": "A fixed lifting beam needs less headroom than a spreader beam because it works in bending from one top point, while a [Semi-Spreader Lifting Beams](/p/semi-spreader-lifting-beams) shares the load across two top lugs. See the [spreader beam vs lifting beam guide](/blog/spreader-beam-vs-lifting-beam)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Fixed Lifting Beams range available to order from Dubai?",
+          "a": "Fixed Lifting Beams are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plate-lifting-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Plate Lifting Beams used for?",
+          "a": "A plate lifting beam carries clamps along its length so a long steel plate is held flat at several points and lands where it is wanted. A long plate sags when lifted at two points."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Plate Lifting Beams?",
+          "a": "IH-LR-BH-PLB is the base part number for Plate Lifting Beams. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Plate Lifting Beams come in?",
+          "a": "Plate Lifting Beams are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Plate Lifting Beams?",
+          "a": "The clamp type and spacing are chosen for the plate thickness, length and weight. The beam can be designed for horizontal plate clamps, vertical clamps or lifting magnets, so send the plate size and weight."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Plate Lifting Beams?",
+          "a": "The working load limit of Plate Lifting Beams is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Plate Lifting Beams have?",
+          "a": "Plate Lifting Beams are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Plate Lifting Beams designed to?",
+          "a": "Plate Lifting Beams are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Plate Lifting Beams need?",
+          "a": "Plate lifting beams carry plate clamps, vertical clamps or lifting magnets along the beam; see our [lifting beam clamps shelf](/c/lifting-beam-clamps) for the clamps."
+        },
+        {
+          "slot": "I",
+          "q": "How are Plate Lifting Beams inspected in service?",
+          "a": "Give Plate Lifting Beams a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Plate Lifting Beams?",
+          "a": "Typical builds are beams with horizontal plate clamps, beams with adjustable clamp positions and beams for lifting magnets."
+        },
+        {
+          "slot": "K",
+          "q": "How do Plate Lifting Beams differ from the nearest beam type?",
+          "a": "A plate lifting beam holds plate at several points, where a single [horizontal plate lifting clamp](/p/horizontal-plate-lifting-clamp) lifts a short plate; use the beam when the plate is long enough to sag."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Plate Lifting Beams range available to order from Dubai?",
+          "a": "Plate Lifting Beams are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "pod-module-lifting-systems",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Pod, Module & Cradle Lifting Systems used for?",
+          "a": "Pod, module and cradle lifting systems lift modular buildings and bathroom pods at four or more points with the legs kept vertical, so the unit is not squeezed by angled slings. A one-over-two system hangs two spreader beams under a third, and a pod lifting frame does the same in one rigid frame."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Pod, Module & Cradle Lifting Systems?",
+          "a": "IH-LR-BH-PML is the base part number for Pod, Module & Cradle Lifting Systems. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Pod, Module & Cradle Lifting Systems come in?",
+          "a": "Pod, Module & Cradle Lifting Systems are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Pod, Module & Cradle Lifting Systems?",
+          "a": "Choose a one-over-two system or a rigid pod frame by the module size, and a cradle for a long or delicate item, such as a blade or a mast section, held along its length and released in position. Send the module size and lifting points."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Pod, Module & Cradle Lifting Systems?",
+          "a": "The working load limit of Pod, Module & Cradle Lifting Systems is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Pod, Module & Cradle Lifting Systems have?",
+          "a": "Pod, Module & Cradle Lifting Systems are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Pod, Module & Cradle Lifting Systems designed to?",
+          "a": "Pod, Module & Cradle Lifting Systems are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Pod, Module & Cradle Lifting Systems need?",
+          "a": "A one-over-two system hangs two spreader beams under a third; the user instructions state how the system may be rigged and the drawing shows the lifting points on the module."
+        },
+        {
+          "slot": "I",
+          "q": "How are Pod, Module & Cradle Lifting Systems inspected in service?",
+          "a": "Give Pod, Module & Cradle Lifting Systems a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Pod, Module & Cradle Lifting Systems?",
+          "a": "Typical builds are bathroom pod lifting frames, one-over-two spreader systems for modules, plant and skid module lifting systems and installation cradles for long items. See the [lifting bars for air handling units guide](/blog/lifting-bars-for-air-handling-units)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Pod, Module & Cradle Lifting Systems differ from the nearest beam type?",
+          "a": "A pod or module system lifts at four or more points with the legs vertical, while a [Fixed Lifting Beams](/p/fixed-lifting-beams) lifts from one top point. Choose the module system when angled slings would squeeze the unit."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Pod, Module & Cradle Lifting Systems range available to order from Dubai?",
+          "a": "Pod, Module & Cradle Lifting Systems are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "precast-concrete-lifting-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Precast Concrete Lifting Beams used for?",
+          "a": "Precast concrete lifting beams are designed so that every cast-in lifting anchor takes its share and the unit hangs at the angle it is installed at. Flooring spreaders keep slab anchors loaded vertically, and wall beams hang units upright."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Precast Concrete Lifting Beams?",
+          "a": "IH-LR-BH-PCB is the base part number for Precast Concrete Lifting Beams. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Precast Concrete Lifting Beams come in?",
+          "a": "Precast Concrete Lifting Beams are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Precast Concrete Lifting Beams?",
+          "a": "Choose a flooring spreader for slabs, a wall beam for upright units or a counterweight version for wall units under an existing floor or canopy. Send the anchor positions and the unit weight."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Precast Concrete Lifting Beams?",
+          "a": "The working load limit of Precast Concrete Lifting Beams is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Precast Concrete Lifting Beams have?",
+          "a": "Precast Concrete Lifting Beams are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Precast Concrete Lifting Beams designed to?",
+          "a": "Precast Concrete Lifting Beams are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Precast Concrete Lifting Beams need?",
+          "a": "Rig from the anchors the design shows, with each anchor loaded as designed. Counterweight versions place wall units where the hook cannot reach; see the [lifting beams shelf](/c/lifting-beams)."
+        },
+        {
+          "slot": "I",
+          "q": "How are Precast Concrete Lifting Beams inspected in service?",
+          "a": "Give Precast Concrete Lifting Beams a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Precast Concrete Lifting Beams?",
+          "a": "Typical builds are precast wall lifting beams, floor slab spreader beams, counterweight beams for wall installation and stair and special-unit beams."
+        },
+        {
+          "slot": "K",
+          "q": "How do Precast Concrete Lifting Beams differ from the nearest beam type?",
+          "a": "A precast beam is matched to the unit’s cast-in anchors, while the [Counterweight Lifting Beams](/p/counterweight-lifting-beams) is the general version for placing loads under a structure; the precast type also has counterweight versions."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Precast Concrete Lifting Beams range available to order from Dubai?",
+          "a": "Precast Concrete Lifting Beams are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "semi-spreader-lifting-beams",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Semi-Spreader Lifting Beams used for?",
+          "a": "A semi-spreader lifting beam sits between a spreader beam and a lifting beam: two top lugs share the load to the hook, which reduces the bending in the beam, while several bottom points hold a long or flexible load along its length."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Semi-Spreader Lifting Beams?",
+          "a": "IH-LR-BH-SSB is the base part number for Semi-Spreader Lifting Beams. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Semi-Spreader Lifting Beams come in?",
+          "a": "Semi-Spreader Lifting Beams are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Semi-Spreader Lifting Beams?",
+          "a": "Sliding clamps let the bottom points be moved along the beam to suit loads of different lengths without changing the beam. Send the load length, weight and lifting points."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Semi-Spreader Lifting Beams?",
+          "a": "The working load limit of Semi-Spreader Lifting Beams is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Semi-Spreader Lifting Beams have?",
+          "a": "Semi-Spreader Lifting Beams are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Semi-Spreader Lifting Beams designed to?",
+          "a": "Semi-Spreader Lifting Beams are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Semi-Spreader Lifting Beams need?",
+          "a": "The two top lugs rig to the hook and the bottom points carry the load; sliding clamps move along the beam. The modular system, the [Multi-Configuration Modular Lifting Beam](/p/multi-configuration-modular-lifting-beam), can also be set up as a semi-spreader."
+        },
+        {
+          "slot": "I",
+          "q": "How are Semi-Spreader Lifting Beams inspected in service?",
+          "a": "Give Semi-Spreader Lifting Beams a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Semi-Spreader Lifting Beams?",
+          "a": "Typical builds are semi-spreader multi-point lifting beams, beams with sliding bottom clamps and beams for pipe, panels and long fabrications. See the [spreader beam vs lifting beam guide](/blog/spreader-beam-vs-lifting-beam)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Semi-Spreader Lifting Beams differ from the nearest beam type?",
+          "a": "A semi-spreader shares the load across two top lugs, where a [Fixed Lifting Beams](/p/fixed-lifting-beams) hangs from a single top point. See the [spreader beam vs lifting beam guide](/blog/spreader-beam-vs-lifting-beam) for how the two compare."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Semi-Spreader Lifting Beams range available to order from Dubai?",
+          "a": "Semi-Spreader Lifting Beams are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-lifting-beams-attachments",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Trunnion Lifting Beams & Attachments used for?",
+          "a": "A trunnion lifting beam carries hooks or V-links that take the trunnions, the short shafts on the sides of a load that let it hang and turn. The load can then be lifted level or turned upright during the lift."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Trunnion Lifting Beams & Attachments?",
+          "a": "IH-LR-BH-TLB is the base part number for Trunnion Lifting Beams & Attachments. Each beam is made to order from an approved general arrangement drawing, so send the load data and we confirm the exact part number and design with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and capacities do Trunnion Lifting Beams & Attachments come in?",
+          "a": "Trunnion Lifting Beams & Attachments are built to the load, with the working load limit and size set to order rather than from a size table. Send the load weight and where its centre of gravity sits, the load’s length and width, the lifting point positions, the crane hook height and any headroom limit, and the environment (indoor, outdoor, offshore, hazardous area) and the maker’s design engineers issue a general arrangement drawing for your approval before anything is made."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right design of Trunnion Lifting Beams & Attachments?",
+          "a": "Choose a trunnion beam for a load with trunnions and bolt-on or clamp-on trunnion attachments for a load that has none. V-trunnion links let a trunnion sit in a link rather than a hook. Send the load data and trunnion size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated load of Trunnion Lifting Beams & Attachments?",
+          "a": "The working load limit of Trunnion Lifting Beams & Attachments is set to order for your load, and the rated load, identification and test date are marked on the beam. The user instructions state how it may and may not be rigged; work only to the marked rated load."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish do Trunnion Lifting Beams & Attachments have?",
+          "a": "Trunnion Lifting Beams & Attachments are made from structural steel in a grade chosen by the design, with a paint system to your specification. Galvanizing is available for outdoor use on request; state it on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What standard are Trunnion Lifting Beams & Attachments designed to?",
+          "a": "Trunnion Lifting Beams & Attachments are designed to EN 13155, with ASME B30.20 / BTH-1 or DNV offshore design available on request. Each is load tested before dispatch and supplied with a declaration of conformity, a test certificate and user instructions; design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What rigging do Trunnion Lifting Beams & Attachments need?",
+          "a": "Hooks or V-links take the trunnions; bolt-on attachments are used where the load has no trunnions. The user instructions state how the beam may be rigged."
+        },
+        {
+          "slot": "I",
+          "q": "How are Trunnion Lifting Beams & Attachments inspected in service?",
+          "a": "Give Trunnion Lifting Beams & Attachments a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting) for planning the lift."
+        },
+        {
+          "slot": "J",
+          "q": "What are typical builds of Trunnion Lifting Beams & Attachments?",
+          "a": "Typical builds are trunnion lifting beams, V-trunnion lifting links, bolt-on trunnion lifting attachments and upending systems for vessels and drums."
+        },
+        {
+          "slot": "K",
+          "q": "How do Trunnion Lifting Beams & Attachments differ from the nearest beam type?",
+          "a": "A trunnion beam takes the load by its trunnions so it can turn upright, while a [Fixed Lifting Beams](/p/fixed-lifting-beams) lifts a load by lugs or slings. Choose the trunnion type for vessels and drums."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Trunnion Lifting Beams & Attachments range available to order from Dubai?",
+          "a": "Trunnion Lifting Beams & Attachments are made to order, and the availability note says: Contact us for current lead time. Lead time depends on the design and documentation and is confirmed with the quotation; send your requirement through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "multi-configuration-modular-lifting-beam",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Multi-Configuration Modular Lifting Beam?",
+          "a": "It is one beam system that works as several lifting tools: standard sections bolt together to length, and adaptors turn the assembly into a lifting beam, an under beam, a semi-spreader with two top lugs or an H-frame with a cross beam. When the lift changes, the beam is reconfigured on site rather than replaced."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-LR-BH-MCB-16-LB-010?",
+          "a": "IH-LR-BH-MCB-16-LB-010 is the modular beam row for a lifting beam (LB) at a 1 m span, and the same pattern gives UB for the under beam and HF2 for the two-top-lug H-frame, with the last block giving the span. The size table lists every configuration and span with its rating."
+        },
+        {
+          "slot": "D",
+          "q": "What spans and configurations does the modular lifting beam cover?",
+          "a": "Spans run from 1 to 10 m in sections of 1 m, 2 m and 4 m, and the configurations are lifting beam, under beam, semi-spreader and H-frame, with an H-frame cross beam of 1 to 4 m. The table has 95 configuration and span rows."
+        },
+        {
+          "slot": "D",
+          "q": "What is the rated load of the modular lifting beam at different spans?",
+          "a": "The rated load falls as the span grows: a lifting beam or under beam is 16 t at 1–3 m and 2 t at 10 m, a semi-spreader on 4 bottom points is 23 t at 4–6 m and 5 t on 2 bottom points at 10 m, and an H-frame with two top lugs is 16 t at 1 m × 1 m. Work to the table for your configuration."
+        },
+        {
+          "slot": "E",
+          "q": "How does the number of bottom points change the semi-spreader rating?",
+          "a": "For a semi-spreader the load shares across two, three or four bottom points, and the rating rises with the number of points. At a 10 m span, for example, the table gives 7 t on 3 bottom points and 5 t on 2 bottom points."
+        },
+        {
+          "slot": "F",
+          "q": "How heavy are the sections and adaptors of the modular beam?",
+          "a": "A 1 m section weighs 180 kg, a 2 m section 250 kg and a 4 m section 425 kg, and the under-beam adaptor weighs 31 kg. The beam is made of steel, bolted standard sections and adaptors."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and documents come with the modular lifting beam?",
+          "a": "The modular beam is designed to EN 13155 and supplied with a declaration of conformity and user instructions with load tables. Design calculations and witnessed testing can be added to the order."
+        },
+        {
+          "slot": "H",
+          "q": "What shackles does the modular lifting beam use?",
+          "a": "Lifting beam spans of 1–3 m use 9.5 t super-bow bottom shackles and 6.5 t standard bow shackles from 4 m. An under beam takes an 8.5 t shackle at the central bolt hole or 17 t at the bolt-on lugs, and an H-frame with a single top lug takes one 17 t top shackle."
+        },
+        {
+          "slot": "I",
+          "q": "How are modular lifting beams inspected in service?",
+          "a": "Give the beam a pre-use check before every lift and a thorough examination by a competent person at the interval your site authority sets. See our [lifting equipment inspection guide](/blog/lifting-equipment-inspection-uae) and the [centre of gravity in lifting guide](/blog/centre-of-gravity-in-lifting)."
+        },
+        {
+          "slot": "J",
+          "q": "Can the modular lifting beam be set up for other lifts?",
+          "a": "Yes. Adaptors also make counterweight beams, fork-pocket beams and low-height lifting frames, so tell us the lift and we confirm whether the beam can be configured for it and at what rating. See the [spreader beam vs lifting beam guide](/blog/spreader-beam-vs-lifting-beam)."
+        },
+        {
+          "slot": "K",
+          "q": "Modular lifting beam or a fixed made-to-order beam?",
+          "a": "The modular beam is reconfigured on site, while a [Fixed Lifting Beams](/p/fixed-lifting-beams) is built to one load. Use the modular system when lifts vary; use a fixed beam for a heavy one-off."
+        },
+        {
+          "slot": "M",
+          "q": "Is the modular lifting beam available to order from Dubai?",
+          "a": "The modular beam is a made-to-order system and the availability note says: Contact us for current lead time. Send the load, its lifting points and your headroom through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

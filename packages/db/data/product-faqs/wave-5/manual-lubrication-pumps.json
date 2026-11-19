@@ -1,0 +1,396 @@
+{
+  "family": "manual-lubrication-pumps",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "bijur-delimon-da-manual-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon DA manual lubricators used for?",
+          "a": "DA lubricators are hand-lever, double-acting high-pressure piston pumps for grease or oil, for bearings that need lubricant only now and then and for machines without power for a lubricator. They come in 9 part numbers for Dualine, injector and progressive systems."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a DA part number such as DA4101AC — DA 2KG DUALINE/INJ?",
+          "a": "The item text gives the reservoir and the system: DA4101AC is the DA with a 2 kg reservoir for Dualine or injector systems. DA4120AC is the 2 kg progressive version, and DA4101BC is the 2.4 L oil version. A trailing C marks each listed version."
+        },
+        {
+          "slot": "D",
+          "q": "Which reservoir sizes and systems do DA manual lubricators come in?",
+          "a": "Reservoirs are 2 kg, 4 kg and 6 kg for grease and 2.4 L and 6.2 L for oil. Versions serve Dualine and injector systems (DA4101AC, DA4101BC, DA5101AC, DA6101AC) or progressive systems (DA4102BC, DA4120AC, DA4120BC, DA5120AC, DA6102BC)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the discharge per stroke of a DA manual lubricator?",
+          "a": "The listing gives 7.4 cc per stroke for all versions. Outlet thread is 1/4 NPT and each unit has a pressure gauge. Confirm the maximum pressure for your system on the Bijur Delimon DA datasheet."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants can DA manual lubricators handle?",
+          "a": "Grease versions take NLGI 000 to 2, and oil versions take ISO VG 32 or higher. Oil versions use a float and level rod instead of the grease follower."
+        },
+        {
+          "slot": "H",
+          "q": "How do I fill a DA manual lubricator?",
+          "a": "A quick-fill connection (QD plug to ISO 6150B) fills the reservoir through an inlet screen, with a fill cap also listed. Fit a filler such as the [manual grease fill and oil transfer pumps](/p/bijur-delimon-manual-grease-fill-and-oil-transfer-pumps)."
+        },
+        {
+          "slot": "I",
+          "q": "How does the hand lever of a DA lubricator work?",
+          "a": "A hand lever reciprocates the piston through a rack and gear segment, and the double-acting piston delivers on both strokes. Spare parts are listed on the Bijur Delimon DA Manual Lubricator Service Parts page."
+        },
+        {
+          "slot": "K",
+          "q": "DA manual lubricator compared with the L13 PDI manual lubricator?",
+          "a": "The DA is a double-acting pump for Dualine, injector and progressive systems, with a 7.4 cc stroke. The [manual PDI and progressive lubricators](/p/bijur-delimon-manual-pdi-and-progressive-lubricators) are single-action pumps for small PDI systems. Pick on the distribution system."
+        },
+        {
+          "slot": "I",
+          "q": "What is a Dualine system, and is the DA a fit?",
+          "a": "A Dualine system is a two-line system: the pump pressurises one main line, the metering valves discharge, then a reversing valve switches to the second line. It reaches hundreds of points over long distances and suits steel mills and heavy plant."
+        },
+        {
+          "slot": "J",
+          "q": "Where are DA manual lubricators used?",
+          "a": "They suit infrequently lubricated bearings and machines without power for a lubricator. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "G",
+          "q": "Where is the DA datasheet?",
+          "a": "The Bijur Delimon DA Lubricator Dualine datasheet is in the Downloads tab for this range. Send the part number if you need a specific version checked against it."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon DA manual lubricator in stock, and how do I get a quotation?",
+          "a": "Yes, the Bijur Delimon DA manual lubricator is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the part numbers and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-manual-grease-fill-and-oil-transfer-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon manual grease fill and oil transfer pumps used for?",
+          "a": "They are hand pumps for filling lubricator reservoirs and transferring oil and grease from pails, buckets and drums. Used for filling central-lubrication reservoirs and workshop oil and grease transfer, in 15 listed part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 37304 — KIT MANUAL GREASE FILL PUMP 35LB?",
+          "a": "The item text gives the pump type and container: 37304 is a manual grease fill pump kit for a 35 lb pail and 37303 is the kit for a 120 lb drum. F1243 is the manual oil pump for 16 to 55 gallon drums. 25017-1 is the 0.4 L economy grease pump."
+        },
+        {
+          "slot": "D",
+          "q": "Which containers do the manual fill and transfer pumps fit?",
+          "a": "Grease fill kits fit 35 lb pails (37304, F1984) and 120 lb drums (37303). Oil hand pumps fit 16 to 55 gallon drums (F1243). Bucket pumps are listed for a 3.6 gallon oil bucket and a 35 lb grease bucket, and economy grease pumps for 0.4 L and 1 L."
+        },
+        {
+          "slot": "E",
+          "q": "What is the output and maximum pressure of the manual grease fill pump kits?",
+          "a": "The 37303 and 37304 kits deliver 1 lb per 6 strokes at a maximum pressure of 500 psi (34 bar). The manual oil pump F1243 delivers 0.45 L per stroke, and the economy grease pumps 1.0 cc per stroke."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricants do the fill and transfer pumps move?",
+          "a": "Grease on the grease fill kits and economy pumps (NLGI 000 to 0) and oil on the oil pumps. Choose the pump on the container and the lubricant it moves."
+        },
+        {
+          "slot": "H",
+          "q": "What other fill pumps are in the range besides the kits?",
+          "a": "The range also includes a hand-operated packer (F1991, fits 35 lb), a high-pressure foot-operated grease pump (F1999), a pump with handle for oil fill (F1008), a 120 lb manual grease pump (F3120) and the PGF50 manual grease pump (41390-1E)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I use a grease fill pump to fill a lubricator reservoir?",
+          "a": "Connect the pump to the lubricator's fill point, which may be a zerk, and pump until the reservoir is full. Choose a pump that fits the container the grease comes in, and keep the grease clean."
+        },
+        {
+          "slot": "K",
+          "q": "Manual fill pump compared with a grease gun for greasing?",
+          "a": "A fill pump moves grease from a pail or drum into reservoirs. A [manual grease gun](/p/bijur-delimon-manual-grease-guns) greases fittings directly from the gun's own reservoir. Pick on the job."
+        },
+        {
+          "slot": "J",
+          "q": "Where are manual fill and transfer pumps used?",
+          "a": "They suit filling central-lubrication reservoirs and workshop oil and grease transfer. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "G",
+          "q": "Where is the datasheet for the manual fill pumps?",
+          "a": "The Bijur Delimon Manual Fill Pumps datasheet (35744) is in the Downloads tab for this range. Send the part number if you need a specific pump checked against it."
+        },
+        {
+          "slot": "I",
+          "q": "Do you supply spare parts for the manual fill and transfer pumps?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts and kits for the manual grease fill and oil transfer pumps. Send the pump part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon manual grease fill and oil transfer pumps in stock, and how do I get a quotation?",
+          "a": "Yes. The Bijur Delimon manual grease fill and oil transfer pumps is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending what you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-manual-grease-guns",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon manual grease guns used for?",
+          "a": "They are hand-operated grease guns and grease gun kits for greasing fittings and SureShot manual blocks. Push-type and lever guns are listed with kits and accessories, in 10 part numbers. They suit workshops and maintenance crews."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as F1205 — DELUXE SERIES LEVER TYPE?",
+          "a": "The item text names the series and the action: F1200 is the standard lever gun, F1205 the deluxe lever gun, F1210 the professional lever gun and F1222 the professional pistol-type gun. 22911P005 is the manual push-type gun."
+        },
+        {
+          "slot": "D",
+          "q": "What reservoir size do the Bijur Delimon grease guns have?",
+          "a": "The listed lever and professional pistol guns (F1200, F1205, F1210, F1222) have a 14 oz reservoir. Other items are accessories: kit 55737, holders 55738 and F1237, a pistol-grip gun with flexible hose (F1221) and a 35 lb filler pump (F1988)."
+        },
+        {
+          "slot": "E",
+          "q": "What lubricant do the manual grease guns take?",
+          "a": "They take grease. The facts we hold for this range give no pressure rating for the guns, so ask us for the Bijur Delimon datasheet value if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the difference between standard, deluxe and professional lever guns?",
+          "a": "The range lists F1200 standard, F1205 deluxe and F1210 professional lever-type guns, and F1222 as a professional pistol type. Contact us for the differences in build and accessories."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories and kits are listed for the grease guns?",
+          "a": "Kit 55737 is a grease gun kit, 55738 is a holder for a grease gun, F1237 is a grease gun holder and F1988 is a filler pump for a 35 lb pail. F1221 is a pistol-grip gun with a flexible hose."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fill a grease gun from a pail?",
+          "a": "Use the filler pump (F1988, for 35 lb pails) to fill the gun from the pail, which keeps the grease clean and avoids air pockets. See the [manual grease fill pumps](/p/bijur-delimon-manual-grease-fill-and-oil-transfer-pumps)."
+        },
+        {
+          "slot": "K",
+          "q": "Grease gun compared with a manual lubricator for a few points?",
+          "a": "A grease gun is used by an operator point by point. A [DA manual lubricator](/p/bijur-delimon-da-manual-lubricators) sends grease or oil to many points through a distribution system. Pick on the number of points."
+        },
+        {
+          "slot": "J",
+          "q": "Where are manual grease guns used?",
+          "a": "They suit workshops and maintenance crews and SureShot manual lubrication blocks. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "G",
+          "q": "Do you supply spare parts for Bijur Delimon grease guns?",
+          "a": "Yes. We supply genuine Bijur Delimon service parts for the grease guns. Send the gun part number and the part you need, and see the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I send for a quote on a grease gun?",
+          "a": "Send the part number, such as F1205, or the type (lever or pistol) and the quantity. We confirm the part number before quoting."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon manual grease guns in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Bijur Delimon manual grease guns in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-manual-one-shot-oil-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon manual one-shot oil lubricators used for?",
+          "a": "They are spring-discharge piston pumps for single-line resistance (SLR) oil systems: the operator pulls or pushes the handle, and the spring delivers the shot. They suit manual machine tools, lathes, Bridgeport-type mills and woodworking machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read items such as D3274C — L5H 1P SLR 1OUT?",
+          "a": "The text gives the model, reservoir and system: D3274C is the L5H with a 1 pint reservoir for SLR, with one outlet. D3508C is the same with 3 outlets. C2988C is the L2P at 2 cc and C2988C-1 the L2P at 1 cc."
+        },
+        {
+          "slot": "D",
+          "q": "Which models are listed and what do they deliver?",
+          "a": "L2P delivers 1 or 2 cc, L5H and L5P deliver 5 cc per stroke (1 to 5 cc), L18P delivers 6 to 18 cc and HAP-P and HIP-P are one-pint units each adjustable from 5 to 15 cc."
+        },
+        {
+          "slot": "E",
+          "q": "What are the maximum pressures of the manual one-shot lubricators?",
+          "a": "L2P is rated 30 psi (2 bar), L5H and L5P 75 psi (5 bar), L18P 65 psi (4 bar), HAP-P 60 psi (4 bar) and HIP-P 30 psi (2 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "What oil viscosity do the one-shot lubricators take?",
+          "a": "L2P and the HAP-P and HIP-P units take oil of 100 to 10000 SSU, and L5H, L5P and L18P take 150 to 8000 SSU. Oil viscosity does not change the discharge volume, though it can change system pressure."
+        },
+        {
+          "slot": "H",
+          "q": "What outlet threads and outlets are available?",
+          "a": "Outlets are 5/16-24 threaded, or 5/16-24 (x2) with 1/8 NPT (x1) on the 3-outlet L5H, and 1/8 NPT on the HAP-P and HIP-P units. Bridgeport kit K1099 includes fittings and accessories."
+        },
+        {
+          "slot": "K",
+          "q": "L5P/L5H compared with the HAP-P and HIP-P one-pint units?",
+          "a": "The L5 models are spring-discharge pumps for 1 to 5 cc. HAP-P (push lever) and HIP-P (pull tee-handle) are one-pint units in plastic reservoirs, each adjustable from 5 to 15 cc."
+        },
+        {
+          "slot": "I",
+          "q": "What is an SLR system and why does it suit a manual one-shot lubricator?",
+          "a": "Single-line resistance: the pump pushes oil into one line and meter units, which are calibrated restrictors at each point, share it out by their flow rating. It is simple and low-pressure, for oil on machine tools and light machinery."
+        },
+        {
+          "slot": "J",
+          "q": "Where are manual one-shot lubricators used?",
+          "a": "They suit manual machine tools, lathes, Bridgeport-type mills and woodworking machines. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "G",
+          "q": "Where is the L5P datasheet?",
+          "a": "The Bijur Delimon L5P datasheet is in the Downloads tab for this range. Send the part number if you need a specific model checked."
+        },
+        {
+          "slot": "I",
+          "q": "How do I find spare parts for these lubricators?",
+          "a": "Genuine Bijur Delimon service parts and kits for this range are listed by part number on the Bijur Delimon Manual One-Shot Lubricator Service Parts page, under the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon manual one-shot oil lubricators in stock, and how do I get a quotation?",
+          "a": "Yes, the Bijur Delimon manual one-shot oil lubricators is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. For a quotation, send the part numbers and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-manual-pdi-and-progressive-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Bijur Delimon manual PDI and progressive lubricators used for?",
+          "a": "They are single-action hand pumps for positive-displacement injector (PDI) and progressive systems, for small machines with a few points and injector and progressive systems without power. The range covers the L13, L3, L6P and L100P and Lubri-Trak carousels."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read items such as 25062-1 — L13-L 1L PDI M10X1?",
+          "a": "The text gives the model, handing, reservoir, system and outlet thread: 25062-1 is the L13 with left outlet, 1 L reservoir, PDI, M10x1. L, R and D mean left, right or dual outlets, and a trailing 1, 3 or 5 gives M10x1, M8x1 or 5/16-24 UNF."
+        },
+        {
+          "slot": "D",
+          "q": "Which models and outputs are listed?",
+          "a": "L13 delivers 13 cc, L3P 3 cc, L6P 6 cc, L100P 1 cc and the Lubri-Trak carousel 0.2 to 0.5 cc per cycle. Reservoirs are 1 L, 0.2 L, 0.6 L and 1 pint."
+        },
+        {
+          "slot": "E",
+          "q": "What are the maximum pressures of these lubricators?",
+          "a": "The L13 and L6P are rated 290 psi (20 bar), L3P 29 psi (2 bar), the Lubri-Trak carousel 34 psi (2 bar) and the L100P progressive pump 2,031 psi (140 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "Which oils and greases do the L13, L3P, L6P and L100P manual lubricators take?",
+          "a": "The L13 takes oil of 32 to 750 cSt, L3P 30 to 1500 cSt and L6P 30 to 3000 cSt. The L100P takes grease of NLGI 1 to 3, and the Lubri-Trak carousel oil of 150 to 8000 SSU."
+        },
+        {
+          "slot": "H",
+          "q": "Which injectors does the L13 fire?",
+          "a": "The L13 fires fixed-output ZJB, ZMB, ZT and SJM injectors. It has an internal pressure-relief valve and a flow-control valve that vents the line so the injectors reset."
+        },
+        {
+          "slot": "I",
+          "q": "What is a PDI system and how does the L13 use it?",
+          "a": "Positive-displacement injector: every injector holds a measured shot and fires it when the pump pressurises the line; the pump then vents the line so the injectors refill. Each point gets a fixed volume regardless of back-pressure, with oil or fluid grease."
+        },
+        {
+          "slot": "K",
+          "q": "L13 PDI lubricator compared with the L100P progressive pump?",
+          "a": "The L13 serves PDI systems with oil, at 13 cc. The L100P serves a progressive system with NLGI 1 to 3 grease, at 1 cc. See the [DA manual lubricators](/p/bijur-delimon-da-manual-lubricators) for double-acting versions."
+        },
+        {
+          "slot": "J",
+          "q": "Where are manual PDI and progressive lubricators used?",
+          "a": "They suit small machines with a few points and injector and progressive systems without power. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "G",
+          "q": "Where are the manuals for these lubricators?",
+          "a": "The Downloads tab holds the L13 datasheet and the Lubri-Trak operator manual and sheet. Send the part number if you need a specific model checked."
+        },
+        {
+          "slot": "I",
+          "q": "How do I find spare parts for the L13 manual PDI lubricator?",
+          "a": "Genuine Bijur Delimon service parts and kits are listed by part number on the Bijur Delimon L13 Manual PDI Lubricator Service Parts page, under the [lubrication pump spare parts shelf](/c/lubrication-pump-spare-parts)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon manual PDI and progressive lubricators in stock, and how do I get a quotation?",
+          "a": "Yes. The Bijur Delimon manual PDI and progressive lubricators is in stock at our warehouse in Dubai, UAE, with worldwide shipping at the best lead times. Request a quote by sending what you need through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "bijur-delimon-tb-d-manual-piston-pumps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Bijur Delimon TB-D manual piston pump used for?",
+          "a": "The hand-lever TB-D is a multi-line grease pump: each stroke delivers 0.5 cm³ to each outlet, at up to 25 bar. It is used for small multi-line and progressive systems without power."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a TB-D order code such as TBH01A01OA00?",
+          "a": "The code is TBH followed by one code per position: 01 is one outlet, A is revision A, 01 is the hand lever, O is no drive position, A is the 0.25 litre reservoir and 00 is no accessories. TBH01A01OB00 is the 0.65 litre version. Bijur Delimon lists 20 valid codes."
+        },
+        {
+          "slot": "D",
+          "q": "How many outlets and reservoir sizes does the TB-D have?",
+          "a": "The TB-D has 1 to 9 outlets, or an outlet code X, with a 0.25 litre or 0.65 litre reservoir. Output is 0.5 cc per stroke per outlet."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the TB-D manual pump?",
+          "a": "The maximum pressure is 25 bar (362 psi). Output is 0.5 cc per stroke for each outlet, so the total per stroke is multiplied by the number of outlets."
+        },
+        {
+          "slot": "F",
+          "q": "Which grease can the TB-D manual pump handle?",
+          "a": "The TB-D handles grease up to NLGI 2. It is a multi-line grease pump rather than an oil pump, so use an oil lubricator from the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps) for oil duty."
+        },
+        {
+          "slot": "G",
+          "q": "Is the TB-D suitable for high ambient temperatures in the Gulf?",
+          "a": "Bijur Delimon publishes an operating range of -20°C-80°C for this range. For installations above that, such as outdoor plant in summer or enclosures near furnaces, tell us the ambient and the lubricant and we confirm the configuration with the manufacturer."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the TB-D pump?",
+          "a": "Each outlet feeds a lubrication line or a progressive divider block. Send the number of points and the lubricant and we confirm the outlets and accessories."
+        },
+        {
+          "slot": "I",
+          "q": "What is a progressive system and is the TB-D a fit?",
+          "a": "A progressive (series) divider valve meters lubricant to its outlets one after another; if one outlet blocks, the whole block stops, so a single cycle indicator proves every point was served. Used with grease on mobile and heavy machinery."
+        },
+        {
+          "slot": "K",
+          "q": "TB-D compared with the DA manual lubricators?",
+          "a": "The TB-D is a multi-outlet piston pump with 0.5 cc per outlet. The [DA manual lubricators](/p/bijur-delimon-da-manual-lubricators) are double-acting pumps with a larger stroke for Dualine, injector and progressive systems. Pick on the system."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the TB-D hand pump used?",
+          "a": "It suits small multi-line and progressive systems without power, where an operator works the hand lever to serve several points. See the [Manual Lubrication Pumps shelf](/c/manual-lubrication-pumps)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order a TB-D if I do not know the code?",
+          "a": "Send us the options you need, such as the number of outlets (1 to 9) and the reservoir size, 0.25 or 0.65 litre, and we confirm it is a valid combination before quoting."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Bijur Delimon TB-D manual piston pump in stock, and how do I get a quotation?",
+          "a": "Yes. We keep the Bijur Delimon TB-D manual piston pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

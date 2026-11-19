@@ -1,0 +1,1769 @@
+{
+  "family": "pneumatic-cylinders-06",
+  "extraFacts": [
+    {
+      "fact": "The Parker P1F series is an ISO 15552 pneumatic cylinder in smooth-profile design, listed in bores of 32 to 125 mm; the P1F-T tie-rod version covers 160 to 320 mm. ISO 15552 is the standard that fixes mounting dimensions of 32 to 320 mm bore pneumatic tie-rod cylinders (formerly ISO 6431 and VDMA 24562).",
+      "source": "Parker Pneumatic Division Europe catalogues PDE3570TCEN (P1F, 32 to 125 mm) and PDE2667TCEN (P1F-T, 160 to 320 mm)"
+    },
+    {
+      "fact": "Parker gives the P1F maximum operating pressure as 10 bar (145 psi) and the standard operating temperature range as -20 to +80 °C.",
+      "source": "Parker Pneumatic Division Europe catalogue PDE3570TCEN, P1F technical data"
+    },
+    {
+      "fact": "In a Parker P1F part number such as P1F-S032MS-0125-0000 the letter after P1F- is the cylinder type (S smooth profile, L dynamic rod lock, K through rod, T tie-rod), the three digits after it are the bore in mm, and the four digits after the build letters are the stroke in mm.",
+      "source": "Parker P1F catalogue PDE3570TCEN, order key (P1F-S032MS-0160-0000 example); the letters S, L, K and T match the listing names"
+    },
+    {
+      "fact": "Theoretical push force at 6 bar (87 psi) = pi x bore^2 / 4 x 0.6 N/mm2: 32 mm bore 483 N, 40 mm bore 754 N, 50 mm bore 1178 N, 63 mm bore 1870 N, 80 mm bore 3016 N, 100 mm bore 4712 N, 160 mm bore 12064 N, 250 mm bore 29452 N, 320 mm bore 48255 N. Retract force is lower by the rod area, and moving loads are sized on 50 to 75 percent of theoretical.",
+      "source": "F = P x A (basic fluid power); 6 bar = 0.6 N/mm2; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "The Parker P1F smooth-profile cylinder has an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod.",
+      "source": "Parker P1F-S product page (ph.parker.com), ISO 15552 Pneumatic Cylinders, Smooth Profile Design"
+    },
+    {
+      "fact": "Parker P1F ports are BSPP (G) threaded: G 1/8 on 32 mm bore, G 1/4 on 40 and 50 mm bore, G 3/8 on 63 and 80 mm bore, as listed in the size table.",
+      "source": "Indus size tables (ports) for the Parker P1F 32, 40, 50, 63 and 80 mm listings"
+    },
+    {
+      "fact": "Linear-acting pneumatic power engines (air cylinders) are classified under HS subheading 8412.31.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.12, subheading 8412.31"
+    },
+    {
+      "fact": "The Parker P1A series is a mini ISO 6432 round-body cylinder built in bores from 10 to 25 mm; ISO 6432 fixes the dimensions of 8 to 25 mm bore round-body pneumatic cylinders.",
+      "source": "Parker Pneumatic Division Europe, P1A series product page (ph.parker.com)"
+    },
+    {
+      "fact": "The Parker P1D series is an ISO 15552 tie-rod pneumatic cylinder built in bores of 32 to 125 mm.",
+      "source": "Parker Pneumatic Division Europe catalogue PDE2570TCUK, P1D ISO Series"
+    },
+    {
+      "fact": "The Parker P5E guided cylinder slide is built on a P1D or P1F ISO cylinder, with a maximum of 10 bar (145 psi) and bores of 32, 40, 50, 63, 80 and 100 mm.",
+      "source": "Parker P5E Series product page (ph.parker.com), Pneumatic Guided Cylinder Slide"
+    },
+    {
+      "fact": "The Parker HBC is a compact guided slide for standard-duty linear motion, powered by a standard cylinder.",
+      "source": "Parker HBC Series product page (ph.parker.com), Pneumatic Guided Cylinder Slide"
+    },
+    {
+      "fact": "Theoretical extend force at 80 psi (about 5.5 bar) = piston area x 80 psi: 3/4\" bore 0.44 sq in gives about 35 lbf, 1\" bore 0.79 sq in about 63 lbf, 1-1/8\" bore 0.99 sq in about 79 lbf, 1-1/4\" bore 1.23 sq in about 98 lbf. Retract force is lower by the rod area; size moving loads on 50 to 75 percent of theoretical.",
+      "source": "F = P x A (basic fluid power); 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "200 psi is about 14 bar.",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "Parker's SR series stainless-steel round-body air cylinder is rated for 250 psi air service; standard seals operate from -10°F to +165°F, about -23°C to +74°C. Nose, pivot and foot-type mountings are offered, and the stainless body is a non-repairable design.",
+      "source": "Parker Pneumatic Division catalogue 0900P-7, Round Body Cylinders (SR / SRM series) (parker.com)"
+    },
+    {
+      "fact": "In the SR series model code the first figure is the bore in inches (e.g. 1.50 for 1-1/2 inch) and the last figure is the stroke in inches (e.g. 04.00 for 4 inch); this matches the stroke in the size-table row for every SR, SRD, SRG, SRGM and SRM code listed.",
+      "source": "Indus size tables (partNumber vs strokeIn) for the Parker SR family; Parker catalogue 0900P-7"
+    },
+    {
+      "fact": "In the Indus Parker SRM listings the specification reads Features: Switch Ready, Body Material: Stainless Steel, End Cap Material: Aluminum and Cushion Type: None; the M suffix marks the switch-ready magnetic-piston version of the SR cylinder.",
+      "source": "Indus listing specifications for Parker SRM Series Air Cylinders (1-1/16 and 1-1/2 inch bore)"
+    },
+    {
+      "fact": "The Parker SRG listing describes a double-acting stainless steel pneumatic cylinder with a LipSeal piston, 303 stainless steel head and cap, aluminium piston, oil-impregnated bronze rod bushing and stainless steel piston rod, non-repairable, with 2 x 1/8 inch NPT ports and a 1/4-28 UNF male rod thread on the 3/4 inch bore, ambient -10°F to +165°F. The SRGM adds a piston magnet and lists ambient 14°F to 140°F, about -10°C to +60°C.",
+      "source": "Indus listing specifications for Parker SRG Series (3/4 inch bore) and SRGM Series (1-1/16 and 3/4 inch bore) Air Cylinders"
+    },
+    {
+      "fact": "100 psi is about 6.9 bar and 250 psi is about 17 bar (1 bar = 14.5038 psi).",
+      "source": "Unit conversion, 1 bar = 14.5038 psi"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-p1d-series-tie-rod-pneumatic-cylinders-composite-piston-bspp-ports-male-rod-end-63-mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1D tie rod cylinder with composite piston, BSPP ports and male rod end, 63 mm bore?",
+          "a": "It is a single Parker P1D Series ISO 15552 tie-rod cylinder, part number P1D-G063MD-0100NNNNN, with a 63 mm bore, a composite piston, BSPP ports and a male rod end. It is listed on its own page without mounting accessories."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker P1D part number P1D-G063MD-0100NNNNN?",
+          "a": "In P1D-G063MD-0100NNNNN the three digits 063 match the 63 mm bore in the title, and the four digits 0100 follow the build letters as the stroke figure. The remaining letters set rod end, piston and options, and we confirm the full build against the code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore and stroke does Parker P1D part number P1D-G063MD-0100NNNNN have?",
+          "a": "P1D-G063MD-0100NNNNN is a 63 mm bore cylinder; its code carries 0100 after the build letters, which we read as a stroke of 100 mm, so confirm it against the datasheet before ordering. Parker builds the P1D in 32 to 125 mm bores."
+        },
+        {
+          "slot": "D",
+          "q": "What force does the 63 mm bore Parker P1D cylinder produce at 6 bar?",
+          "a": "A P1D is an ISO 15552 cylinder, so its push force follows the bore: about 483 N for 32 mm, 1870 N for 63 mm and 3016 N for 80 mm, theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area; size moving loads on 50 to 75 percent of theoretical."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does Parker P1D composite piston 63 mm cylinder have?",
+          "a": "The size table row for P1D-G063MD-0100NNNNN carries 145 psi, which is 10 bar, with no mounting. We confirm the temperature range of the build from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the piston of Parker P1D cylinder P1D-G063MD-0100NNNNN made of?",
+          "a": "The title of P1D-G063MD-0100NNNNN specifies a composite piston, in place of the aluminum piston on the 80 mm single-code listing. Run it on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state other materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1D composite piston 63 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1D is an ISO 15552 tie-rod cylinder, so its mounting dimensions follow ISO 15552 for the bore. This listing holds no certificate documents; ask for a datasheet or certificate in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1D composite piston 63 mm cylinder?",
+          "a": "The title specifies BSPP ports and a male rod end. ISO 15552 mounting accessories fit by bore. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1D cylinder such as P1D-G063MD-0100NNNNN?",
+          "a": "Mount P1D-G063MD-0100NNNNN so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 63 mm composite piston P1D differ from the 80 mm aluminum piston P1D?",
+          "a": "The P1D-G063MD-0100NNNNN has a 63 mm bore and a composite piston, while the other single-code page is an 80 mm bore with an aluminum piston, both with BSPP ports and a male rod end. See the [aluminum piston 80 mm P1D listing](/p/parker-p1d-series-tie-rod-pneumatic-cylinders-aluminum-pistol-bspp-ports-male-rod-end-80-mm-bore) for the larger size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1D composite piston 63 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1D fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1D composite piston 63 mm cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1D composite piston 63 mm cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1d-series-tie-rod-pneumatic-cylinders-composite-piston-nptf-ports-female-rod-end",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1D tie rod cylinder with composite piston, NPTF ports and female rod end?",
+          "a": "It is a Parker P1D Series ISO 15552 tie-rod cylinder listing with a composite piston, holding 33 part numbers in bores from 32 to 125 mm. Examples are P1D-G032FCE0050NFN66N, P1D-G040MCE0025NNN6N and P1D-G063MCE0200NFN6N."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker P1D part numbers such as P1D-G032FCE0050NFN66N?",
+          "a": "In P1D-G032FCE0050NFN66N the three digits 032 are the bore in mm and the four digits 0050 follow the build letters as the stroke figure; other codes here read 040, 050, 063, 080, 100 and 125 for the bore. The letters around them set thread, rod end and options, and we confirm the full build at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Parker P1D composite piston NPTF listing cover?",
+          "a": "The 33 codes here cover 32, 40, 50, 63, 80, 100 and 125 mm bores, with 40, 63 and 100 mm the most frequent. Send the bore, stroke and rod end you need and we will match the Parker code."
+        },
+        {
+          "slot": "D",
+          "q": "What force does a Parker P1D cylinder produce at 6 bar?",
+          "a": "A P1D is an ISO 15552 cylinder, so its push force follows the bore: about 483 N for 32 mm, 1870 N for 63 mm and 3016 N for 80 mm, theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area; size moving loads on 50 to 75 percent of theoretical."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does Parker P1D composite piston NPTF female rod end cylinder have?",
+          "a": "Only one row of this P1D listing carries a pressure figure, 145 psi or 10 bar, and the other rows do not, so we confirm the rating of your code from Parker before supply. We also confirm the temperature range of the build."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker P1D composite piston cylinder need?",
+          "a": "Run the cylinder on filtered, regulated compressed air with a filter-regulator ahead of the valve. The title specifies a composite piston; the listing does not state other materials, so tell us the environment and we confirm from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1D composite piston NPTF female rod end cylinder follow a standard?",
+          "a": "Yes. The Parker P1D is an ISO 15552 tie-rod cylinder, so its mounting dimensions follow ISO 15552 for the bore. This listing holds no certificate documents; ask for a datasheet or certificate in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1D composite piston NPTF female rod end cylinder?",
+          "a": "The title specifies NPTF ports and a female rod end, so match fittings and rod accessories to those threads. ISO 15552 mounting accessories fit by bore. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1D cylinder such as P1D-G032FCE0050NFN66N?",
+          "a": "Mount P1D-G032FCE0050NFN66N so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers side load and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P1D NPTF female rod end listing differ from the single-code P1D pages?",
+          "a": "This page holds 33 codes across seven bores, while the single-code P1D pages cover one 63 mm and one 80 mm cylinder with BSPP ports and a male rod end. See the [63 mm composite piston P1D listing](/p/parker-p1d-series-tie-rod-pneumatic-cylinders-composite-piston-bspp-ports-male-rod-end-63-mm-bore) for the single code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1D composite piston NPTF female rod end cylinder?",
+          "a": "Air cylinders such as the Parker P1D fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1D composite piston NPTF female rod end cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1D composite piston NPTF female rod end cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-100mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 100 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with a 100 mm bore, listed as 175 part numbers with strokes from 20 to 1894 mm. A 100 mm bore is used for heavy pushing, lifting and press duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S100MCX0105-0000 for a 100 mm smooth profile cylinder?",
+          "a": "In P1F-S100MCX0105-0000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 100 mm bore (100) and the four digits 0105 are the stroke in mm. Another listed code is P1F-S100MC-0320-G000 with a 0320 mm stroke; the letters between bore and stroke, such as MC, MCX, MS and MR, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 100 mm cylinder?",
+          "a": "Strokes run from 20 mm to 1894 mm across the 175 part numbers in this 100 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 100 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 100 mm bore pushes about 4712 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 100 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 100 mm smooth profile listing of 175 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 100 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 100 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 100 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 100 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 100 mm cylinder?",
+          "a": "The size table of this 100 mm listing does not give a port thread, so we confirm it from the Parker data for your part number. Rod-end and mounting accessories follow ISO 15552 for the 100 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 100 mm cylinder such as P1F-S100MCX0105-0000?",
+          "a": "Mount P1F-S100MCX0105-0000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 100 mm P1F smooth profile cylinder differ from the dynamic rod lock version?",
+          "a": "The rod lock version of the 100 mm P1F adds a dynamic rod lock to the same ISO 15552 smooth-profile cylinder, while this listing holds 175 standard smooth-profile codes. See the [rod lock listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-dynamic-rod-lock-100mm-bore) if you need the rod held on loss of air."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 100 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 100 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 100 mm cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker P1F smooth profile 100 mm cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-32mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 32 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with a 32 mm bore, listed as 164 part numbers with strokes from 20 to 1000 mm. A 32 mm bore is used for compact handling and small clamping duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S032MS-0125-0000 for a 32 mm smooth profile cylinder?",
+          "a": "In P1F-S032MS-0125-0000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 32 mm bore (032) and the four digits 0125 are the stroke in mm. Another listed code is P1F-S032MC-0900-0000 with a 0900 mm stroke; the letters between bore and stroke, such as MC, MR, MCX and MS, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 32 mm cylinder?",
+          "a": "Strokes run from 20 mm to 1000 mm across the 164 part numbers in this 32 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 32 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 32 mm bore pushes about 483 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 32 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 32 mm smooth profile listing of 164 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 32 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 32 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 32 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 32 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 32 mm cylinder?",
+          "a": "The 32 mm P1F has G 1/8\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 32 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 32 mm cylinder such as P1F-S032MS-0125-0000?",
+          "a": "Align the rod of P1F-S032MS-0125-0000 with the load and use the ISO 15552 mounting for the 32 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 32 mm P1F smooth profile cylinder differ from the through rod version?",
+          "a": "The through rod version has a rod out of both ends of the same 32 mm ISO 15552 smooth profile, while this listing holds 164 single-rod codes. Compare the [through rod listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-32mm-bore) if you need a rod at both ends."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 32 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 32 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 32 mm cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1F smooth profile 32 mm cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-40mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 40 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with a 40 mm bore, listed as 207 part numbers with strokes from 20 to 1300 mm. A 40 mm bore is used for general handling and clamping."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S040MS-0250-G000 for a 40 mm smooth profile cylinder?",
+          "a": "In P1F-S040MS-0250-G000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 40 mm bore (040) and the four digits 0250 are the stroke in mm. Another listed code is P1F-S040MS-0125-0000 with a 0125 mm stroke; the letters between bore and stroke, such as MC, MS, MR and MCX, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 40 mm cylinder?",
+          "a": "Strokes run from 20 mm to 1300 mm across the 207 part numbers in this 40 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 40 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 40 mm bore pushes about 754 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 40 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 40 mm smooth profile listing of 207 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 40 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 40 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 40 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 40 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 40 mm cylinder?",
+          "a": "The 40 mm P1F has G 1/4\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 40 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 40 mm cylinder such as P1F-S040MS-0250-G000?",
+          "a": "Mount P1F-S040MS-0250-G000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 40 mm P1F smooth profile cylinder differ from the through rod version?",
+          "a": "The through rod version has a rod out of both ends of the same 40 mm ISO 15552 smooth profile, while this listing holds 207 single-rod codes. Compare the [through rod listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-40mm-bore) if you need a rod at both ends."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 40 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 40 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 40 mm cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1F smooth profile 40 mm cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-50mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 50 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with a 50 mm bore, listed as 255 part numbers with strokes from 20 to 1955 mm. A 50 mm bore is used for general machine automation."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S050MR-0140-0000 for a 50 mm smooth profile cylinder?",
+          "a": "In P1F-S050MR-0140-0000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 50 mm bore (050) and the four digits 0140 are the stroke in mm. Another listed code is P1F-S050MC-0050-0000 with a 0050 mm stroke; the letters between bore and stroke, such as MC, MR, MS and MCX, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 50 mm cylinder?",
+          "a": "Strokes run from 20 mm to 1955 mm across the 255 part numbers in this 50 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 50 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 50 mm bore pushes about 1178 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 50 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 50 mm smooth profile listing of 255 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 50 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 50 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 50 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 50 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 50 mm cylinder?",
+          "a": "The 50 mm P1F has G 1/4\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 50 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 50 mm cylinder such as P1F-S050MR-0140-0000?",
+          "a": "Align the rod of P1F-S050MR-0140-0000 with the load and use the ISO 15552 mounting for the 50 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 50 mm P1F smooth profile cylinder differ from the 63 mm size?",
+          "a": "Both are ISO 15552 smooth-profile P1F cylinders; the 50 mm bore pushes about 1178 N at 6 bar against about 1870 N for the 63 mm bore. See the [63 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-63mm-bore) for that size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 50 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 50 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 50 mm cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker P1F smooth profile 50 mm cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-63mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 63 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with a 63 mm bore, listed as 219 part numbers with strokes from 20 to 1505 mm. A 63 mm bore is used for heavier pushing and lifting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S063MG-0350-0000 for a 63 mm smooth profile cylinder?",
+          "a": "In P1F-S063MG-0350-0000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 63 mm bore (063) and the four digits 0350 are the stroke in mm. Another listed code is P1F-S063MC-0508-P039 with a 0508 mm stroke; the letters between bore and stroke, such as MC, MCX, MR and MS, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 63 mm cylinder?",
+          "a": "Strokes run from 20 mm to 1505 mm across the 219 part numbers in this 63 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 63 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 63 mm bore pushes about 1870 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 63 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 63 mm smooth profile listing of 219 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 63 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 63 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 63 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 63 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 63 mm cylinder?",
+          "a": "The 63 mm P1F has G 3/8\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 63 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 63 mm cylinder such as P1F-S063MG-0350-0000?",
+          "a": "Mount P1F-S063MG-0350-0000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 63 mm P1F smooth profile cylinder differ from the through rod version?",
+          "a": "The through rod version has a rod out of both ends of the same 63 mm ISO 15552 smooth profile, while this listing holds 219 single-rod codes. Compare the [through rod listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-63mm-bore) if you need a rod at both ends."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 63 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 63 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 63 mm cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1F smooth profile 63 mm cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-80mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile 80 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile design with an 80 mm bore, listed as 191 part numbers with strokes from 25 to 2000 mm. An 80 mm bore is used for heavier pushing and lifting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-S080MF-0410-0000 for an 80 mm smooth profile cylinder?",
+          "a": "In P1F-S080MF-0410-0000 the letter after P1F- is the cylinder type, S for smooth profile, the three digits are the 80 mm bore (080) and the four digits 0410 are the stroke in mm. Another listed code is P1F-S080MR-0900-0000 with a 0900 mm stroke; the letters between bore and stroke, such as MC, MCX, MR and MS, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile 80 mm cylinder?",
+          "a": "Strokes run from 25 mm to 2000 mm across the 191 part numbers in this 80 mm smooth profile listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does an 80 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "An 80 mm bore pushes about 3016 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile 80 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 80 mm smooth profile listing of 191 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile 80 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 80 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile 80 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 80 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile 80 mm cylinder?",
+          "a": "The 80 mm P1F has G 3/8\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 80 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 80 mm cylinder such as P1F-S080MF-0410-0000?",
+          "a": "Align the rod of P1F-S080MF-0410-0000 with the load and use the ISO 15552 mounting for the 80 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 80 mm P1F smooth profile cylinder differ from the 100 mm size?",
+          "a": "Both are ISO 15552 smooth-profile P1F cylinders; the 80 mm bore pushes about 3016 N at 6 bar against about 4712 N for the 100 mm bore. See the [100 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-100mm-bore) for that size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile 80 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile 80 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile 80 mm cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1F smooth profile 80 mm cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-dynamic-rod-lock-100mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile with dynamic rod lock design with a 100 mm bore, listed as 53 part numbers with strokes from 25 to 2000 mm. A 100 mm bore is used for heavy pushing, lifting and press duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-L100MCF0200-0000 for a 100 mm smooth profile with dynamic rod lock cylinder?",
+          "a": "In P1F-L100MCF0200-0000 the letter after P1F- is the cylinder type, L for smooth profile with dynamic rod lock, the three digits are the 100 mm bore (100) and the four digits 0200 are the stroke in mm. Another listed code is P1F-L100MCX0350-0000 with a 0350 mm stroke; the letters between bore and stroke, such as MC, MCX, MF and MCA, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder?",
+          "a": "Strokes run from 25 mm to 2000 mm across the 53 part numbers in this 100 mm smooth profile with dynamic rod lock listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 100 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 100 mm bore pushes about 4712 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 100 mm smooth profile with dynamic rod lock listing of 53 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 100 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 100 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder?",
+          "a": "The size table of this 100 mm listing does not give a port thread, so we confirm it from the Parker data for your part number. Rod-end and mounting accessories follow ISO 15552 for the 100 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 100 mm cylinder such as P1F-L100MCF0200-0000?",
+          "a": "Mount P1F-L100MCF0200-0000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 100 mm P1F smooth profile with dynamic rod lock cylinder differ from the standard smooth profile version?",
+          "a": "The standard 100 mm P1F smooth profile has a single rod and no extra function, while this smooth profile with dynamic rod lock listing holds 53 codes of its own. Compare the [standard 100 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-100mm-bore) for the plain cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile with dynamic rod lock 100 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker P1F smooth profile with dynamic rod lock 100 mm cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-32mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile with through rod 32 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile with through rod design with a 32 mm bore, listed as 5 part numbers with strokes from 25 to 180 mm. A 32 mm bore is used for compact handling and small clamping duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-K032MS-0025-0000 for a 32 mm smooth profile with through rod cylinder?",
+          "a": "In P1F-K032MS-0025-0000 the letter after P1F- is the cylinder type, K for smooth profile with through rod, the three digits are the 32 mm bore (032) and the four digits 0025 are the stroke in mm. Another listed code is P1F-K032MC-0053-0000 with a 0053 mm stroke; the letters between bore and stroke, such as MR, MC and MS, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile with through rod 32 mm cylinder?",
+          "a": "Strokes run from 25 mm to 180 mm across the 5 part numbers in this 32 mm smooth profile with through rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 32 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 32 mm bore pushes about 483 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile with through rod 32 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 32 mm smooth profile with through rod listing of 5 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile with through rod 32 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 32 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile with through rod 32 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 32 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile with through rod 32 mm cylinder?",
+          "a": "The 32 mm P1F has G 1/8\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 32 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 32 mm cylinder such as P1F-K032MS-0025-0000?",
+          "a": "Align the rod of P1F-K032MS-0025-0000 with the load and use the ISO 15552 mounting for the 32 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 32 mm P1F smooth profile with through rod cylinder differ from the standard smooth profile version?",
+          "a": "The standard 32 mm P1F smooth profile has a single rod and no extra function, while this smooth profile with through rod listing holds 5 codes of its own. Compare the [standard 32 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-32mm-bore) for the plain cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile with through rod 32 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile with through rod 32 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile with through rod 32 mm cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1F smooth profile with through rod 32 mm cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-40mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile with through rod 40 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile with through rod design with a 40 mm bore, listed as 7 part numbers with strokes from 35 to 425 mm. A 40 mm bore is used for general handling and clamping."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-K040MF-0035-0000 for a 40 mm smooth profile with through rod cylinder?",
+          "a": "In P1F-K040MF-0035-0000 the letter after P1F- is the cylinder type, K for smooth profile with through rod, the three digits are the 40 mm bore (040) and the four digits 0035 are the stroke in mm. Another listed code is P1F-K040MR-0160-0000 with a 0160 mm stroke; the letters between bore and stroke, such as MC, MF, MFX and MR, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile with through rod 40 mm cylinder?",
+          "a": "Strokes run from 35 mm to 425 mm across the 7 part numbers in this 40 mm smooth profile with through rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 40 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 40 mm bore pushes about 754 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile with through rod 40 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 40 mm smooth profile with through rod listing of 7 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile with through rod 40 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 40 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile with through rod 40 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 40 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile with through rod 40 mm cylinder?",
+          "a": "The 40 mm P1F has G 1/4\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 40 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 40 mm cylinder such as P1F-K040MF-0035-0000?",
+          "a": "Mount P1F-K040MF-0035-0000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 40 mm P1F smooth profile with through rod cylinder differ from the standard smooth profile version?",
+          "a": "The standard 40 mm P1F smooth profile has a single rod and no extra function, while this smooth profile with through rod listing holds 7 codes of its own. Compare the [standard 40 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-40mm-bore) for the plain cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile with through rod 40 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile with through rod 40 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile with through rod 40 mm cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1F smooth profile with through rod 40 mm cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-with-through-rod-63mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F smooth profile with through rod 63 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the smooth profile with through rod design with a 63 mm bore, listed as 6 part numbers with strokes from 25 to 370 mm. A 63 mm bore is used for heavier pushing and lifting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-K063MC-0025-0000 for a 63 mm smooth profile with through rod cylinder?",
+          "a": "In P1F-K063MC-0025-0000 the letter after P1F- is the cylinder type, K for smooth profile with through rod, the three digits are the 63 mm bore (063) and the four digits 0025 are the stroke in mm. Another listed code is P1F-K063MR-0100-0000 with a 0100 mm stroke; the letters between bore and stroke, such as MC, MR and FCA, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F smooth profile with through rod 63 mm cylinder?",
+          "a": "Strokes run from 25 mm to 370 mm across the 6 part numbers in this 63 mm smooth profile with through rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 63 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 63 mm bore pushes about 1870 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F smooth profile with through rod 63 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 63 mm smooth profile with through rod listing of 6 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P1F smooth profile with through rod 63 mm cylinder made of and what air does it need?",
+          "a": "Parker builds the P1F smooth profile with an anodised aluminium profile and a choice of chrome-plated or stainless steel piston rod. Run the 63 mm cylinder on filtered compressed air with a filter-regulator ahead of the valve; the listing does not state seal materials."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F smooth profile with through rod 63 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 63 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F smooth profile with through rod 63 mm cylinder?",
+          "a": "The 63 mm P1F has G 3/8\" BSPP ports in the size table. Rod-end and mounting accessories follow ISO 15552 for the 63 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 63 mm cylinder such as P1F-K063MC-0025-0000?",
+          "a": "Align the rod of P1F-K063MC-0025-0000 with the load and use the ISO 15552 mounting for the 63 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 63 mm P1F smooth profile with through rod cylinder differ from the standard smooth profile version?",
+          "a": "The standard 63 mm P1F smooth profile has a single rod and no extra function, while this smooth profile with through rod listing holds 6 codes of its own. Compare the [standard 63 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-63mm-bore) for the plain cylinder."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F smooth profile with through rod 63 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F smooth profile with through rod 63 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F smooth profile with through rod 63 mm cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker P1F smooth profile with through rod 63 mm cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-160mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F tie-rod 160 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the tie-rod design with a 160 mm bore, listed as 23 part numbers with strokes from 80 to 820 mm. A 160 mm bore is used for large-bore pushing and process duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-T160MSX0300-7134 for a 160 mm tie-rod cylinder?",
+          "a": "In P1F-T160MSX0300-7134 the letter after P1F- is the cylinder type, T for tie-rod, the three digits are the 160 mm bore (160) and the four digits 0300 are the stroke in mm. Another listed code is P1F-T160MSX0300-0000 with a 0300 mm stroke; the letters between bore and stroke, such as MSX, MSA and FSA, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F tie-rod 160 mm cylinder?",
+          "a": "Strokes run from 80 mm to 820 mm across the 23 part numbers in this 160 mm tie-rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 160 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 160 mm bore pushes about 12064 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F tie-rod 160 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 160 mm tie-rod listing of 23 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Parker P1F tie-rod 160 mm cylinder need?",
+          "a": "The 160 mm P1F tie-rod cylinder runs on filtered compressed air within its 10 bar rating, with a filter-regulator ahead of the valve. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes; the listing does not state body or seal materials, so we confirm them from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F tie-rod 160 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 160 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F tie-rod 160 mm cylinder?",
+          "a": "The size table of this 160 mm listing does not give a port thread, so we confirm it from the Parker data for your part number. Rod-end and mounting accessories follow ISO 15552 for the 160 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 160 mm cylinder such as P1F-T160MSX0300-7134?",
+          "a": "Mount P1F-T160MSX0300-7134 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 160 mm P1F tie-rod cylinder differ from the 250 mm size?",
+          "a": "Both are ISO 15552 P1F-T tie-rod cylinders; the 160 mm bore pushes about 12064 N at 6 bar against about 29452 N for the 250 mm bore. See the [250 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-250mm-bore) for that size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F tie-rod 160 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F tie-rod 160 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F tie-rod 160 mm cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P1F tie-rod 160 mm cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-250mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F tie-rod 250 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the tie-rod design with a 250 mm bore, listed as 8 part numbers with strokes from 125 to 750 mm. A 250 mm bore is used for very heavy pushing duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-T250MSA0515-G105 for a 250 mm tie-rod cylinder?",
+          "a": "In P1F-T250MSA0515-G105 the letter after P1F- is the cylinder type, T for tie-rod, the three digits are the 250 mm bore (250) and the four digits 0515 are the stroke in mm. Another listed code is P1F-T250MSX0250-0000 with a 0250 mm stroke; the letters between bore and stroke, such as MSX and MSA, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F tie-rod 250 mm cylinder?",
+          "a": "Strokes run from 125 mm to 750 mm across the 8 part numbers in this 250 mm tie-rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 250 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 250 mm bore pushes about 29452 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F tie-rod 250 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 250 mm tie-rod listing of 8 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Parker P1F tie-rod 250 mm cylinder need?",
+          "a": "The 250 mm P1F tie-rod cylinder runs on filtered compressed air within its 10 bar rating, with a filter-regulator ahead of the valve. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes; the listing does not state body or seal materials, so we confirm them from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F tie-rod 250 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 250 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F tie-rod 250 mm cylinder?",
+          "a": "The size table of this 250 mm listing does not give a port thread, so we confirm it from the Parker data for your part number. Rod-end and mounting accessories follow ISO 15552 for the 250 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 250 mm cylinder such as P1F-T250MSA0515-G105?",
+          "a": "Align the rod of P1F-T250MSA0515-G105 with the load and use the ISO 15552 mounting for the 250 mm bore, with no side thrust on the bearing. Check the rod and seals regularly and keep the air filtered. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment couplers and buckling."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 250 mm P1F tie-rod cylinder differ from the 160 mm size?",
+          "a": "Both are ISO 15552 P1F-T tie-rod cylinders; the 250 mm bore pushes about 29452 N at 6 bar against about 12064 N for the 160 mm bore. See the [160 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-160mm-bore) for that size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F tie-rod 250 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F tie-rod 250 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F tie-rod 250 mm cylinder from stock in Dubai?",
+          "a": "Yes. The Parker P1F tie-rod 250 mm cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-320mm-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P1F tie-rod 320 mm cylinder?",
+          "a": "It is a Parker P1F Series ISO 15552 pneumatic cylinder in the tie-rod design with a 320 mm bore, listed as 5 part numbers with strokes from 150 to 1981 mm. A 320 mm bore is used for very heavy pushing duties."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P1F part number such as P1F-T320MSX0150-0000 for a 320 mm tie-rod cylinder?",
+          "a": "In P1F-T320MSX0150-0000 the letter after P1F- is the cylinder type, T for tie-rod, the three digits are the 320 mm bore (320) and the four digits 0150 are the stroke in mm. Another listed code is P1F-T320FSA0813-0000 with a 0813 mm stroke; the letters between bore and stroke, such as MSX and FSA, are build options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker P1F tie-rod 320 mm cylinder?",
+          "a": "Strokes run from 150 mm to 1981 mm across the 5 part numbers in this 320 mm tie-rod listing, and each code carries its stroke in mm as four digits. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a 320 mm bore Parker P1F cylinder give at 6 bar?",
+          "a": "A 320 mm bore pushes about 48255 N theoretical on extend at 6 bar, which is 87 psi. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of that. Our [cylinder sizing guide](/blog/how-to-size-a-pneumatic-cylinder) covers load ratio and air consumption."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature range does the Parker P1F tie-rod 320 mm cylinder have?",
+          "a": "Parker gives the P1F, including this 320 mm tie-rod listing of 5 codes, a maximum operating pressure of 10 bar, 145 psi, and a standard temperature range of -20 to +80 °C. Check that the pressure at the cylinder port, after valves and tubing, stays within that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality does the Parker P1F tie-rod 320 mm cylinder need?",
+          "a": "The 320 mm P1F tie-rod cylinder runs on filtered compressed air within its 10 bar rating, with a filter-regulator ahead of the valve. Our [air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the ISO 8573-1 classes; the listing does not state body or seal materials, so we confirm them from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P1F tie-rod 320 mm cylinder follow a standard?",
+          "a": "Yes. The Parker P1F is an ISO 15552 cylinder, so the 320 mm bore has standard ISO 15552 mounting dimensions and fits where other ISO 15552 cylinders of that bore are used. This listing holds no certificate documents; ask for a certificate or datasheet in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and mounting parts fit the Parker P1F tie-rod 320 mm cylinder?",
+          "a": "The size table of this 320 mm listing does not give a port thread, so we confirm it from the Parker data for your part number. Rod-end and mounting accessories follow ISO 15552 for the 320 mm bore, and push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker P1F 320 mm cylinder such as P1F-T320MSX0150-0000?",
+          "a": "Mount P1F-T320MSX0150-0000 so the rod pushes in line with the load and keep side load off the rod bearing, using an alignment coupler where the load is guided separately. Worn seals are replaced from a service kit rather than replacing the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 320 mm P1F tie-rod cylinder differ from the 160 mm size?",
+          "a": "Both are ISO 15552 P1F-T tie-rod cylinders; the 320 mm bore pushes about 48255 N at 6 bar against about 12064 N for the 160 mm bore. See the [160 mm listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-tie-rod-160mm-bore) for that size."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P1F tie-rod 320 mm cylinder?",
+          "a": "Air cylinders such as the Parker P1F tie-rod 320 mm bore fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P1F tie-rod 320 mm cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker P1F tie-rod 320 mm cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p5e-series-guided-pneumatic-cylinders-composite-bearing-chrome-plated-oversize-shaft",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P5E series guided pneumatic cylinder with composite bearing and chrome plated oversize shaft?",
+          "a": "It is a Parker P5E Series guided cylinder slide, built on an ISO cylinder with a composite bearing and an oversize chrome-plated shaft that takes side load and torque. This listing holds 8 part numbers in 32, 40, 50, 80 and 100 mm bores."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker P5E part number such as P5E-M032KHN0200?",
+          "a": "In P5E-M032KHN0200 the three digits 032 after P5E-M are the bore in mm, and the four digits at the end, 0200, follow the build letters as the stroke figure. Other codes read 040, 050, 080 and 100 for the bore, and we confirm the full build against your code at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which bore sizes does the Parker P5E guided cylinder listing cover?",
+          "a": "The 8 codes cover 32, 40, 50, 80 and 100 mm bores, with the 100 mm bore on four of them, such as P5E-M100GHN0025 and P5E-M100GHN0200. Parker builds the P5E in 32, 40, 50, 63, 80 and 100 mm, so send the bore and stroke you need."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use a Parker P5E guided cylinder instead of a standard cylinder?",
+          "a": "Use a guided cylinder such as the P5E when the load is carried on the rod end, is off-centre, or must not twist, because the guide rods take the side load and torque that would bend a plain piston rod. For a straight in-line push, a standard ISO cylinder is simpler; our [cylinder types guide](/blog/pneumatic-cylinder-types-guide) compares them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker P5E guided cylinder have?",
+          "a": "Parker gives the P5E a maximum of 10 bar, which is 145 psi. The rows of this listing carry no separate pressure figure, so check the pressure at the cylinder port, after valves and tubing, against that limit."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P5E guided cylinder made of?",
+          "a": "The listing names a composite bearing and a chrome-plated oversize shaft, and Parker builds the P5E on an ISO cylinder. Run it on filtered compressed air with a filter-regulator ahead of the valve; other materials are not stated here."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P5E guided cylinder follow a standard?",
+          "a": "The Parker P5E is powered by an ISO 15552 cylinder from the P1D or P1F range, so the cylinder end follows that standard. This listing holds no certificate documents; ask for a datasheet or certificate in the enquiry if you need one."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Parker P5E guided cylinder?",
+          "a": "The P5E takes the ports of its ISO cylinder and a load plate on the guided carriage, so it needs air fittings, flow controls and a valve. Matching [solenoid valves](/c/pneumatic-solenoid-valves) are on our shelf. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker P5E guided cylinder such as P5E-M040GHN0040?",
+          "a": "Mount P5E-M040GHN0040 on a flat, rigid base and fix the load to the carriage so it moves without binding. Check the guide bearing and shaft for play and keep them clean, and keep the air filtered."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P5E guided cylinder differ from a P1F ISO cylinder?",
+          "a": "The P5E adds guide rods and a bearing to an ISO cylinder, so it carries side load and torque; a plain P1F pushes in line only. For the cylinder alone, see the [P1F 63 mm smooth profile listing](/p/parker-p1f-series-tie-rod-pneumatic-cylinders-smooth-profile-63mm-bore)."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker P5E guided cylinder?",
+          "a": "Air cylinders such as the Parker P5E guided cylinder fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker P5E guided cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker P5E guided cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-s-series-air-cylinders-nose-mounted",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker S series air cylinder with nose mounting?",
+          "a": "It is a Parker S Series air cylinder listing with nose mounting, offered as 31 part numbers in 3/4\", 1\", 1 1/8\" and 1 1/4\" bores and strokes from 0.5\" to 10\". The S series is a small-bore round-body style used for light pushing, ejecting and clamping."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker S series part number 1.12NSU1600.63?",
+          "a": "The code 1.12NSU1600.63 begins with the bore figure, and the size table gives it a 0.63\" stroke; 1.25NSU1610.00 is a 10\" stroke. Because the code order is not a published key, quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which strokes are listed for the Parker S series nose mounting air cylinder?",
+          "a": "Strokes run from 0.5\" to 10\" across the 31 part numbers in this listing, and 1\", 1.5\", 2\" and 2.5\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a Parker S series cylinder give at 80 psi?",
+          "a": "It depends on the bore: at 80 psi, about 5.5 bar, a 3/4\" bore gives about 35 lbf, a 1\" bore about 63 lbf and a 1 1/4\" bore about 98 lbf theoretical on extend. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of those figures."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker S series nose mounting air cylinder have?",
+          "a": "The rated rows of this S series listing carry 200 psi, about 14 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your code from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker S series cylinder need?",
+          "a": "Run the Parker S series nose mounting air cylinder on filtered, regulated compressed air within its 200 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker S series nose mounting air cylinder follow a standard or carry certificates?",
+          "a": "This S series listing states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "What mounting and rod sizes does the Parker S series nose mounting air cylinder have?",
+          "a": "Every row of this listing is nose mounting, with rod diameters of 0.3125\" and 0.5\" stated in the rows. Port fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker S series cylinder such as 1.12NSU1600.63?",
+          "a": "Mount 1.12NSU1600.63 so the rod moves in line with the load and keep side load off the rod, because a small-bore round body has little bearing length. Use flow controls to set speed and keep the air filtered."
+        },
+        {
+          "slot": "K",
+          "q": "How does the S series nose mounting listing differ from the universal mounting listing?",
+          "a": "The same S series is offered with a different mounting: this page holds 31 nose mounting codes, while the other page holds the universal mounting codes. See the [universal mounting listing](/p/parker-s-series-air-cylinders-universal-mounting) if your cylinder has that mounting."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker S series nose mounting air cylinder?",
+          "a": "Air cylinders such as the Parker S series fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker S series nose mounting air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker S series nose mounting air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-s-series-air-cylinders-universal-mounting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker S series air cylinder with universal mounting?",
+          "a": "It is a Parker S Series air cylinder listing with universal mounting, offered as 225 part numbers in 3/4\", 1\", 1 1/8\" and 1 1/4\" bores and strokes from 0.13\" to 36\". The S series is a small-bore round-body style used for light pushing, ejecting and clamping."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker S series part number 0.75USU1600.13?",
+          "a": "The code 0.75USU1600.13 begins with the bore figure, and the size table gives it a 0.13\" stroke; 1.00CUSU16C10.00 is a 10\" stroke. Because the code order is not a published key, quote the full code and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which strokes are listed for the Parker S series universal mounting air cylinder?",
+          "a": "Strokes run from 0.13\" to 36\" across the 225 part numbers in this listing, and 1\", 1.25\", 2\" and 3\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "How much force does a Parker S series cylinder give at 80 psi?",
+          "a": "It depends on the bore: at 80 psi, about 5.5 bar, a 3/4\" bore gives about 35 lbf, a 1\" bore about 63 lbf and a 1 1/4\" bore about 98 lbf theoretical on extend. Retract force is lower by the rod area, and a moving load should be sized on 50 to 75 percent of those figures."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker S series universal mounting air cylinder have?",
+          "a": "The rated rows of this S series listing carry 200 psi, about 14 bar, for compressed air. The listing does not publish a temperature range, so we confirm the temperature limit of your code from Parker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What air supply does the Parker S series cylinder need?",
+          "a": "Run the Parker S series universal mounting air cylinder on filtered, regulated compressed air within its 200 psi rating, with a filter-regulator ahead of the valve. The listing does not state body or seal materials, so tell us the environment and we confirm the build from Parker data."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker S series universal mounting air cylinder follow a standard or carry certificates?",
+          "a": "This S series listing states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "What mounting and rod sizes does the Parker S series universal mounting air cylinder have?",
+          "a": "Every row of this listing is universal mounting, with rod diameters of 0.3125\" and 0.5\" stated in the rows. Port fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker S series cylinder such as 0.75USU1600.13?",
+          "a": "Mount 0.75USU1600.13 so the rod moves in line with the load and keep side load off the rod, because a small-bore round body has little bearing length. Use flow controls to set speed and keep the air filtered."
+        },
+        {
+          "slot": "K",
+          "q": "How does the S series universal mounting listing differ from the nose mounting listing?",
+          "a": "The same S series is offered with a different mounting: this page holds 225 universal mounting codes, while the other page holds the nose mounting codes. See the [nose mounting listing](/p/parker-s-series-air-cylinders-nose-mounted) if your cylinder has that mounting."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker S series universal mounting air cylinder?",
+          "a": "Air cylinders such as the Parker S series fall under HS subheading 8412.31, linear-acting pneumatic power engines. We ship from Dubai to the GCC, Africa, Asia and other markets, and the country of origin of the Parker build is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker S series universal mounting air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker S series universal mounting air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-1-16-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/16\" bore, listed as 442 part numbers with strokes from 0.12\" to 40\". The size table lists double-acting builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.06DXPSR00.13?",
+          "a": "The first figure in 1.06DXPSR00.13 is the bore, 1.06 inch, and the last figure, 00.13, is the stroke in inches. The size table lists it with pivot, nose mounting as a double acting build. Another listed code is 1.06BRDSR00.25; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "Strokes run from 0.12\" to 40\" across the 442 part numbers in this listing, and 0.5\", 1.5\", 2\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "The 442 rows of the Parker SR series 1 1/16\" bore air cylinder listing show pivot/nose, nose, pivot/nose (with pivot pin) and front block mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/16\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1 1/16\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/16\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/16\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (442 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1 1/16\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.06DXPSR00.13?",
+          "a": "Mount 1.06DXPSR00.13 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/16\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/16\" bore; this SR listing holds 442 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "The Parker SR series 1 1/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 1 1/16\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-1-16-inch-bore-1-062-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1.062\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1.062\" bore, listed as 4 part numbers with strokes from 2\" to 6\". The size table lists double-acting builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.06BFDSR02.00?",
+          "a": "The first figure in 1.06BFDSR02.00 is the bore, 1.06 inch, and the last figure, 02.00, is the stroke in inches. The size table lists it with front block mounting as a double acting build. Another listed code is 1.06DPSR06.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1.062\" bore air cylinder?",
+          "a": "Strokes run from 2\" to 6\" across the 4 part numbers in this listing, and 2\", 3\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1.062\" bore air cylinder?",
+          "a": "The 4 rows of the Parker SR series 1.062\" bore air cylinder listing show front block, nose/pivot and nose mountings, with rod diameters of 0.312\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1.062\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1.062\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1.062\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1.062\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1.062\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (4 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1.062\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1.062\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.06BFDSR02.00?",
+          "a": "Install 1.06BFDSR02.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 4 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1.062\" bore air cylinder?",
+          "a": "The Parker SR series 1.062\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1.062\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SR series 1.062\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-1-16-inch-bore-1-1-16-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/16\" bore, listed as 37 part numbers with strokes from 1\" to 6\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.06BFDSR01.00?",
+          "a": "The first figure in 1.06BFDSR01.00 is the bore, 1.06 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with front block mounting as a double acting build. Another listed code is 1.06NSR03.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "Strokes run from 1\" to 6\" across the 37 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "The 37 rows of the Parker SR series 1 1/16\" bore air cylinder listing show nose/pivot, front block, nose and rear block mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/16\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1 1/16\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/16\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/16\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/16\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (37 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/16\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1 1/16\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.06BFDSR01.00?",
+          "a": "Mount 1.06BFDSR01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/16\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/16\" bore; this SR listing holds 37 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/16\" bore air cylinder?",
+          "a": "The Parker SR series 1 1/16\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/16\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 1 1/16\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-1-2-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/2\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/2\" bore, listed as 514 part numbers with strokes from 0.12\" to 60\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.50BFDSR04.00?",
+          "a": "The first figure in 1.50BFDSR04.00 is the bore, 1.50 inch, and the last figure, 04.00, is the stroke in inches. The size table lists it with front block mounting as a double acting build. Another listed code is 1.50DXPSRW12.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/2\" bore air cylinder?",
+          "a": "Strokes run from 0.12\" to 60\" across the 514 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/2\" bore air cylinder?",
+          "a": "The 514 rows of the Parker SR series 1 1/2\" bore air cylinder listing show pivot/nose, pivot/nose (with pivot pin), nose and threaded both ends mountings, with rod diameters of 0.437\" and 0.4375\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/2\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1 1/2\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/2\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/2\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/2\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (514 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/2\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1 1/2\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.50BFDSR04.00?",
+          "a": "Install 1.50BFDSR04.00 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/2\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/2\" bore; this SR listing holds 514 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-2-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/2\" bore air cylinder?",
+          "a": "The Parker SR series 1 1/2\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/2\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 1 1/2\" bore air cylinder range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-1-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/4\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/4\" bore, listed as 202 part numbers with strokes from 0.12\" to 59\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.25NSR01.00?",
+          "a": "The first figure in 1.25NSR01.00 is the bore, 1.25 inch, and the last figure, 01.00, is the stroke in inches. The size table lists it with nose mounting as a single acting build. Another listed code is 1.25CDSRVC10.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/4\" bore air cylinder?",
+          "a": "Strokes run from 0.12\" to 59\" across the 202 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/4\" bore air cylinder?",
+          "a": "The 202 rows of the Parker SR series 1 1/4\" bore air cylinder listing show pivot/nose, nose, nose and pivot mountings, with rod diameters of 0.437\" and 0.4375\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/4\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1 1/4\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/4\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/4\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/4\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (202 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/4\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1 1/4\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.25NSR01.00?",
+          "a": "Mount 1.25NSR01.00 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/4\" bore; this SR listing holds 202 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/4\" bore air cylinder?",
+          "a": "The Parker SR series 1 1/4\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The listing gives the United States as country of origin. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/4\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. The Parker SR series 1 1/4\" bore air cylinder range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-3-4-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 3/4\" bore air cylinder?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 3/4\" bore, listed as 121 part numbers with strokes from 0.18\" to 36\". The size table lists both double-acting and single-acting (spring-return) builds."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Parker SR model code such as 1.75DXPSR00.18?",
+          "a": "The first figure in 1.75DXPSR00.18 is the bore, 1.75 inch, and the last figure, 00.18, is the stroke in inches. The size table lists it with pivot, nose mounting. Another listed code is 1.75CDXPSRC07.00; the letters between bore and stroke set action, mounting and options, and we confirm them at quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 3/4\" bore air cylinder?",
+          "a": "Strokes run from 0.18\" to 36\" across the 121 part numbers in this listing, and 1\", 2\", 3\" and 6\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 3/4\" bore air cylinder?",
+          "a": "The 121 rows of the Parker SR series 1 3/4\" bore air cylinder listing show pivot/nose, nose, nose and nose/pivot mountings. Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 3/4\" bore air cylinder have?",
+          "a": "The rows of this Parker SR series 1 3/4\" bore air cylinder listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 3/4\" bore air cylinder made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 3/4\" bore air cylinder gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 3/4\" bore air cylinder follow a standard or carry certificates?",
+          "a": "This SR listing (121 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 3/4\" bore air cylinder have?",
+          "a": "The listing for the Parker SR series 1 3/4\" bore air cylinder does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1.75DXPSR00.18?",
+          "a": "Install 1.75DXPSR00.18 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 3/4\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 3/4\" bore; this SR listing holds 121 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-3-4-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 3/4\" bore air cylinder?",
+          "a": "The Parker SR series 1 3/4\" bore air cylinder falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 3/4\" bore air cylinder from stock in Dubai?",
+          "a": "Yes. We hold the Parker SR series 1 3/4\" bore air cylinder range in stock in Dubai, UAE, and ship worldwide with the best lead times. Email the Parker part numbers and quantities via [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1P part number listing?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder, listed as 6 part numbers. Parker gives the reference model 2.00DXPSRS303.00 for this listing. Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00009164 work in the Parker SR series 1P part number listing?",
+          "a": "1PSR00009164 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed. All 6 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are available for the Parker SR series 1P part number listing?",
+          "a": "The 6 part numbers here carry no stroke column, so the stroke is fixed inside each 1PSR number; Parker gives the reference model 2.00DXPSRS303.00 for it. Send the stroke and bore you need and we will match the Parker item number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose a stroke and mounting for the Parker SR series 1P part number listing?",
+          "a": "Choose the stroke from the travel the load needs plus a small margin, and the mounting from how your machine fixes the cylinder; the SR family is offered with nose and pivot-and-nose mountings. The 6 rows of the Parker SR series 1P part number listing listing carry no mounting column, so send the part number or your requirement and we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1P part number listing have?",
+          "a": "The rows of this Parker SR series 1P part number listing listing carry no pressure figure, so we confirm the rating of your part number from Parker before supply. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1P part number listing made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1P part number listing gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1P part number listing follow a standard or carry certificates?",
+          "a": "This SR listing (6 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1P part number listing have?",
+          "a": "The listing for the Parker SR series 1P part number listing does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00009164?",
+          "a": "Mount 1PSR00009164 so the rod moves in line with the load and keep side load off the rod. The Parker SR round-body ranges are non-repairable designs, so a worn unit is replaced rather than rebuilt."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR cylinder differ from other Parker round-body ranges?",
+          "a": "Each range in the Parker round-body family, SR, SRD, SRG and their M versions, has its own codes; this SR listing holds 6 part numbers. Browse the others on our [pneumatic cylinders shelf](/c/pneumatic-cylinders) and quote your existing code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1P part number listing?",
+          "a": "The Parker SR series 1P part number listing falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1P part number listing from stock in Dubai?",
+          "a": "Yes. We keep the Parker SR series 1P part number listing range in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-sr-series-air-cylinders-1-inch-bore-1-1-16-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker SR series 1 1/16\" bore cylinder with 1P part numbers?",
+          "a": "It is a Parker SR Series stainless-steel round-body air cylinder with a 1 1/16\" bore, listed as 244 part numbers with strokes from 0.5\" to 28\". Typical uses are light pushing, ejecting, clamping and positioning on assembly, packaging and food-processing machines."
+        },
+        {
+          "slot": "B",
+          "q": "How do 1P part numbers such as 1PSR00008140 work in the Parker SR series 1 1/16\" bore cylinder with 1P part numbers?",
+          "a": "1PSR00008140 is a Parker item number for one complete cylinder with bore, stroke and mounting already fixed: a 1\" stroke with nose mounting. All 244 numbers on this page start 1PSR, so quote the full number and we confirm the build before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which stroke lengths are listed for the Parker SR series 1 1/16\" bore cylinder with 1P part numbers?",
+          "a": "Strokes run from 0.5\" to 28\" across the 244 part numbers in this listing, and 1\", 2\", 3\" and 4\" are the most common. If you need a stroke that is not listed, send the bore, stroke and mounting and we will quote the nearest Parker build."
+        },
+        {
+          "slot": "D",
+          "q": "Which mounting styles are listed for the Parker SR series 1 1/16\" bore cylinder with 1P part numbers?",
+          "a": "The 244 rows of the Parker SR series 1 1/16\" bore cylinder with 1P part numbers listing show nose, pivot/nose, pivot/nose (with pivot pin) and pivot mountings, with rod diameters of 0.3125\". Pick the mounting by how your machine fixes the cylinder, and quote the full part number so we confirm the build."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Parker SR series 1 1/16\" bore cylinder with 1P part numbers have?",
+          "a": "The rated rows of this Parker SR series 1 1/16\" bore cylinder with 1P part numbers listing carry 250 psi, about 17 bar, except a few at 100 psi, about 6.9 bar, so read the row for your part number. Parker gives -10°F to +165°F, about -23°C to +74°C, for standard seals."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker SR series 1 1/16\" bore cylinder with 1P part numbers made of and what air does it need?",
+          "a": "The Parker SR listing for the Parker SR series 1 1/16\" bore cylinder with 1P part numbers gives a stainless steel body and tube with an aluminum end cap and no cushioning, for air. Fit a filter-regulator ahead of the valve and keep the air clean and dry."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker SR series 1 1/16\" bore cylinder with 1P part numbers follow a standard or carry certificates?",
+          "a": "This SR listing (244 part numbers) states no ISO or NFPA standard and holds no certificate documents. Ask for the datasheet or a certificate of conformity in the enquiry if your project needs one, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports and rod connection does the Parker SR series 1 1/16\" bore cylinder with 1P part numbers have?",
+          "a": "The listing for the Parker SR series 1 1/16\" bore cylinder with 1P part numbers does not give a port thread, so we confirm it for your part number; a female inlet is stated for the SR and SRM. Push-in fittings and silencers are on our [fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and service a Parker SR cylinder such as 1PSR00008140?",
+          "a": "Install 1PSR00008140 with the rod aligned to the load, using the mounting it was built with. Because the SR round body is a non-repairable design, keep the air filtered and replace the cylinder when seals wear. Our [cushioning and mounting guide](/blog/pneumatic-cylinder-cushioning-and-mounting) covers alignment and side load."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker SR 1 1/16\" cylinder differ from the SRM version?",
+          "a": "Both are Parker stainless round-body cylinders in a 1 1/16\" bore; this SR listing holds 244 part numbers, while the SRM range is listed separately with its own codes. See the [SRM listing](/p/parker-srm-series-air-cylinders-1-1-16-inch-bore) if your cylinder carries that code."
+        },
+        {
+          "slot": "L",
+          "q": "What HS code and origin apply when importing the Parker SR series 1 1/16\" bore cylinder with 1P part numbers?",
+          "a": "The Parker SR series 1 1/16\" bore cylinder with 1P part numbers falls under HS subheading 8412.31, linear-acting pneumatic power engines. The country of origin of the Parker build is shown on our commercial invoice. We ship from Dubai to the GCC, Africa, Asia and other markets."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker SR series 1 1/16\" bore cylinder with 1P part numbers from stock in Dubai?",
+          "a": "Yes. The Parker SR series 1 1/16\" bore cylinder with 1P part numbers range is held in stock at our Dubai, UAE warehouse, and we ship worldwide with the best lead times. List the Parker part numbers and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

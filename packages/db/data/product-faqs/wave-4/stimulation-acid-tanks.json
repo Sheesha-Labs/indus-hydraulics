@@ -1,0 +1,76 @@
+{
+  "family": "stimulation-acid-tanks",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "acid-tank-frp-lined-steel-iso-20-ft-frame-6-000-usg-dangerous-goods-certified",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 6,000 USG FRP-lined acid tank used for?",
+          "a": "An acid tank stores and transports acid for stimulation jobs. This tank holds 6,000 USG nominal inside an ISO 20-ft container frame for global multimodal shipping, with a carbon steel shell and thick FRP internal lining."
+        },
+        {
+          "slot": "D",
+          "q": "What capacity does the 6,000 USG FRP-lined acid tank have?",
+          "a": "The nominal capacity is 6,000 USG in an ISO 20-ft container frame. Capacities are customised to client demand, so state the volume you need on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How is the 6,000 USG FRP-lined acid tank protected against acid?",
+          "a": "The carbon steel shell has a thick FRP internal lining and all wetted piping is acid-resistant plastic. A full-FRP shell variant is also available."
+        },
+        {
+          "slot": "F",
+          "q": "What dangerous-goods certification does the 6,000 USG FRP-lined acid tank have?",
+          "a": "The listing states dangerous-goods certified, and trailer variants meet the road-authority rules of the country of registration, including dangerous-fluids vessel certification. State the destination country on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Can the 6,000 USG FRP-lined acid tank be trailer mounted?",
+          "a": "Yes, trailer-mounted variants are built to the road-authority regulations of the country of registration, covering axles, brakes, lights, gabarit and electrical connections."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 6,000 USG FRP-lined acid tank connect to?",
+          "a": "It feeds the acid pump and the batch mixer. See the [stimulation batch mixer](/p/stimulation-batch-mixer-2-100-bbl-frp-lined-steel-ptfe-butterfly-valves-atex), [stimulation pumping units](/c/stimulation-pumping-units) and [transfer pumps](/c/stimulation-transfer-pump)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6,000 USG FRP-lined acid tank differ from a frac tank?",
+          "a": "The acid tank is lined for acid and certified for dangerous goods, while a [frac tank](/p/frac-tank-500-bbl-insulated-trailer-mounted-road-registered) is an insulated tank for fracturing fluid. Do not use an unlined tank for acid."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 6,000 USG FRP-lined acid tank used?",
+          "a": "It is used for acid storage and transport in well stimulation, in an ISO frame for multimodal shipping. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for an acid tank quotation?",
+          "a": "Send the acid type and strength, the volume, the lining (FRP-lined steel or full FRP), the registration country and whether the tank is an ISO frame or trailer."
+        },
+        {
+          "slot": "L",
+          "q": "Is a full-FRP version of the 6,000 USG FRP-lined acid tank available?",
+          "a": "Yes, a full-FRP shell variant is available in place of the FRP-lined carbon steel shell. State the acid and temperature on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "Why is the piping on the acid tank plastic?",
+          "a": "All wetted piping is acid-resistant plastic, which resists the corrosion that would destroy steel pipework in contact with acid."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 6,000 USG FRP-lined acid tank?",
+          "a": "Yes. We list the 6,000 USG FRP-lined acid tank as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

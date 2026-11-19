@@ -1,0 +1,1465 @@
+{
+  "family": "metric-adapters-04",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "A JIC 37° flare end (SAE J514, ISO 8434-2) seals metal-to-metal on a 74° included cone and is not interchangeable with a 45° SAE flare.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "ISO 6149-1 metric stud ends and ports carry an O-ring seal and a metric thread.",
+      "source": "ISO 6149-1"
+    },
+    {
+      "fact": "DIN 2353 (ISO 8434-1) is the 24° cone bite-type tube fitting standard; the light (L) and heavy (S) series differ in tube outside diameter and thread.",
+      "source": "ISO 8434-1; DIN 2353"
+    },
+    {
+      "fact": "BSPP (ISO 228-1) is a parallel thread sealed by a bonded seal, O-ring or cone seat rather than on the thread, while BSPT (ISO 7-1, R) is a taper thread that seals on the thread.",
+      "source": "ISO 228-1; ISO 7-1"
+    }
+  ],
+  "products": [
+    {
+      "slug": "metric-male-74-cone-x-metric-male-with-bonded-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × Metric Male with Bonded Seal used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M10×1 to M45×2, sealing as Metric 37° cone (74° included); Port B is male Metric M10×1 to M42×2, sealing as Bonded seal washer."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M10×1 on every port in the Metric Male 74° Cone × Metric Male with Bonded Seal?",
+          "a": "Quote IH-AD-MET-038-10 for M10×1 on every port, IH-AD-MET-038-22 for M22×1.5 on every port and IH-AD-MET-038-4542 for M45×2 × M42×2. The Metric Male 74° Cone × Metric Male with Bonded Seal lists 22 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × Metric Male with Bonded Seal come in?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal comes in 22 part numbers covering -10 to -45. Examples from the table: IH-AD-MET-038-12 (M12×1.5 on every port), IH-AD-MET-038-16 (M16×1.5 on every port) and IH-AD-MET-038-42 (M42×2 on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × Metric Male with Bonded Seal for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × Metric Male with Bonded Seal only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-038-1412 (N14×1.5 × M12×1.5) and IH-AD-MET-038-33 (M33×2 on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × Metric Male with Bonded Seal?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone × Metric Male with Bonded Seal, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × Metric Male with Bonded Seal made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × Metric Male with Bonded Seal conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal is listed to ISO 8434-2 profile, metric thread. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × Metric Male with Bonded Seal, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × Metric Male with Bonded Seal, its male Metric M10×1 to M45×2 end takes a female port or fitting of the same thread and seat; its male Metric M10×1 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × Metric Male with Bonded Seal seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal seals on metric 37° cone (74° included) at port A and on bonded seal washer at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × Metric Male with Bonded Seal differ from the Metric Male O-Ring × Metric Male with Bonded Seal?",
+          "a": "The Metric Male 74° Cone × Metric Male with Bonded Seal has 74° Cone where the [Metric Male O-Ring × Metric Male with Bonded Seal](/p/metric-male-o-ring-x-metric-male-with-bonded-seal) has O-Ring. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × Metric Male with Bonded Seal made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × Metric Male with Bonded Seal is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × Metric Male with Bonded Seal in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male 74° Cone × Metric Male with Bonded Seal in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × NPT Male used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × NPT Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M12×1.5 to M52×2, sealing as Metric 37° cone (74° included); Port B is male NPT 1/8-27 to 1-1/2-11.5, sealing as NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.5 × NPT1/8-27 in the Metric Male 74° Cone × NPT Male?",
+          "a": "Quote IH-AD-MET-035-1202 for M12×1.5 × NPT1/8-27, IH-AD-MET-035-2706 for M27×1.5 × NPT3/8-18 and IH-AD-MET-035-5220 for M52×2 × NPT1-1/4-11.5. The Metric Male 74° Cone × NPT Male lists 23 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 74° Cone × NPT Male come in?",
+          "a": "The Metric Male 74° Cone × NPT Male comes in 23 part numbers covering -12 to -52. Examples from the table: IH-AD-MET-035-1204 (M12×1.5 × NPT1/4-18), IH-AD-MET-035-1806 (M18×1.5 × NPT3/8-18) and IH-AD-MET-035-4524 (M45×2 × NPT1-1/2-11.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × NPT Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × NPT Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-035-1606 (M16×1.5 × NPT3/8-18) and IH-AD-MET-035-3616 (M36×2 × NPT1-11.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × NPT Male?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone × NPT Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × NPT Male made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × NPT Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × NPT Male conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × NPT Male is listed to ISO 8434-2 profile, metric thread, ANSI/ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × NPT Male, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × NPT Male, its male Metric M12×1.5 to M52×2 end takes a female port or fitting of the same thread and seat; its male NPT 1/8-27 to 1-1/2-11.5 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × NPT Male seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × NPT Male seals on metric 37° cone (74° included) at port A and on NPT taper thread at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × NPT Male differ from the Metric Male 74° Cone × BSPT Male?",
+          "a": "The Metric Male 74° Cone × NPT Male has NPT where the [Metric Male 74° Cone × BSPT Male](/p/metric-male-74-cone-x-bspt-male) has BSPT. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × NPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × NPT Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × NPT Male in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone × NPT Male is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-x-sae-o-ring-boss",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone × SAE O-Ring Boss used for and which ports does it connect?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M16×1.5 to M45×2, sealing as Metric 37° cone (74° included); Port B is UN/UNF 9/16-18 to 1-5/8-12, sealing as SAE O-ring boss."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M16×1.5 × 9/16-18 in the Metric Male 74° Cone × SAE O-Ring Boss?",
+          "a": "Quote IH-AD-MET-033-1606 for M16×1.5 × 9/16-18, IH-AD-MET-033-3012 for M30×1.5 × 1-1/16-12 and IH-AD-MET-033-4520 for M45×2 × 1-5/8-12. The Metric Male 74° Cone × SAE O-Ring Boss lists 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone × SAE O-Ring Boss are available?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss comes in 9 part numbers covering -16 to -45. Examples from the table: IH-AD-MET-033-1808 (M18×1.5 × 3/4-16), IH-AD-MET-033-2712 (M27×1.5 × 1-1/16-12) and IH-AD-MET-033-3916 (M39×2 × 1-5/16-12). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone × SAE O-Ring Boss for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male 74° Cone × SAE O-Ring Boss only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-033-2210 (M22×1.5 × 7/8-14) and IH-AD-MET-033-3616 (M36×2 × 1-5/16-12)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone × SAE O-Ring Boss?",
+          "a": "The maker publishes no pressure rating for the Metric Male 74° Cone × SAE O-Ring Boss, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone × SAE O-Ring Boss made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone × SAE O-Ring Boss conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss is listed to ISO 8434-2 profile, metric thread, SAE J1926, ISO 11926. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone × SAE O-Ring Boss, and which fittings do I pair it with?",
+          "a": "On the Metric Male 74° Cone × SAE O-Ring Boss, its male Metric M16×1.5 to M45×2 end takes a female port or fitting of the same thread and seat; its threaded UN/UNF 9/16-18 to 1-5/8-12 end takes a matching port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [ORB Adapters](/c/orb-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone × SAE O-Ring Boss seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss seals on metric 37° cone (74° included) at port A and on SAE O-ring boss at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone × SAE O-Ring Boss differ from the Metric Male 74° Cone × BSP Male O-Ring?",
+          "a": "The Metric Male 74° Cone × SAE O-Ring Boss has SAE where the [Metric Male 74° Cone × BSP Male O-Ring](/p/metric-male-74-cone-x-bsp-male-o-ring) has BSP Male. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone × SAE O-Ring Boss made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone × SAE O-Ring Boss is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone × SAE O-Ring Boss in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 74° Cone × SAE O-Ring Boss is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-butt-weld-tube",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × Butt-Weld Tube used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × Butt-Weld Tube is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M12×1.25 to M52×2, sealing as Metric O-ring stud end."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.25 in the Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "Quote IH-AD-MET-027-1206 for M12×1.25, IH-AD-MET-027-3022 for M30×1.5 and IH-AD-MET-027-5242 for M52×2. The Metric Male O-Ring × Butt-Weld Tube lists 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male O-Ring × Butt-Weld Tube come in?",
+          "a": "The Metric Male O-Ring × Butt-Weld Tube comes in 12 part numbers covering -12 to -52. Examples from the table: IH-AD-MET-027-1408 (M14×1.5), IH-AD-MET-027-2214 (M22×1.5) and IH-AD-MET-027-4538 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × Butt-Weld Tube for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × Butt-Weld Tube only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-027-1812 (M18×1.5) and IH-AD-MET-027-4234 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × Butt-Weld Tube, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × Butt-Weld Tube made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × Butt-Weld Tube is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × Butt-Weld Tube conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × Butt-Weld Tube is listed to ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × Butt-Weld Tube, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × Butt-Weld Tube, its male Metric M12×1.25 to M52×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × Butt-Weld Tube seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × Butt-Weld Tube seals on metric O-ring stud end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × Butt-Weld Tube differ from the 90° Metric Male O-Ring × Butt-Weld Tube?",
+          "a": "The [90° Metric Male O-Ring × Butt-Weld Tube](/p/90-metric-male-o-ring-x-butt-weld-tube) carries 90° in its name where the Metric Male O-Ring × Butt-Weld Tube does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × Butt-Weld Tube made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × Butt-Weld Tube is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × Butt-Weld Tube in Dubai, and how do I get a quote?",
+          "a": "Yes. The Metric Male O-Ring × Butt-Weld Tube sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-metric-female-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × Metric Female Branch Tee used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee is a branch tee hydraulic adapter that puts the side branch of a tee on its own port. Port A is male Metric M14×1.5 to M52×2, sealing as Metric O-ring stud end."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 in the Metric Male O-Ring × Metric Female Branch Tee?",
+          "a": "Quote IH-AD-MET-020-14 for M14×1.5, IH-AD-MET-020-30 for M30×1.5 and IH-AD-MET-020-52 for M52×2. The Metric Male O-Ring × Metric Female Branch Tee lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male O-Ring × Metric Female Branch Tee are available?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee comes in 11 part numbers covering -14 to -52. Examples from the table: IH-AD-MET-020-16 (M16×1.5), IH-AD-MET-020-22 (M22×1.5) and IH-AD-MET-020-45 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × Metric Female Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × Metric Female Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this branch tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-020-18 (M18×1.5) and IH-AD-MET-020-42 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × Metric Female Branch Tee?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × Metric Female Branch Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × Metric Female Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × Metric Female Branch Tee conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee is listed to ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × Metric Female Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × Metric Female Branch Tee, its male Metric M14×1.5 to M52×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × Metric Female Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee seals on metric O-ring stud end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × Metric Female Branch Tee differ from the Metric Male O-Ring × Metric Female Run Tee?",
+          "a": "The Metric Male O-Ring × Metric Female Branch Tee has Branch where the [Metric Male O-Ring × Metric Female Run Tee](/p/metric-male-o-ring-x-metric-female-run-tee) has Run. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × Metric Female Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × Metric Female Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × Metric Female Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male O-Ring × Metric Female Branch Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-metric-female-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × Metric Female Run Tee used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee is a run tee hydraulic adapter that carries the line through the run and takes a side branch. Port A is male Metric M14×1.5 to M52×2, sealing as Metric O-ring stud end."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 in the Metric Male O-Ring × Metric Female Run Tee?",
+          "a": "Quote IH-AD-MET-021-14 for M14×1.5, IH-AD-MET-021-30 for M30×1.5 and IH-AD-MET-021-52 for M52×2. The Metric Male O-Ring × Metric Female Run Tee lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male O-Ring × Metric Female Run Tee come in?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee comes in 11 part numbers covering -14 to -52. Examples from the table: IH-AD-MET-021-16 (M16×1.5), IH-AD-MET-021-22 (M22×1.5) and IH-AD-MET-021-45 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × Metric Female Run Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × Metric Female Run Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this run tee also say which port is the run and which is the branch. Then pick the row: IH-AD-MET-021-18 (M18×1.5) and IH-AD-MET-021-42 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × Metric Female Run Tee?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × Metric Female Run Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × Metric Female Run Tee made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × Metric Female Run Tee conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee is listed to ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × Metric Female Run Tee, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × Metric Female Run Tee, its male Metric M14×1.5 to M52×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × Metric Female Run Tee seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee seals on metric O-ring stud end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × Metric Female Run Tee differ from the Metric Male O-Ring × Metric Female Branch Tee?",
+          "a": "The Metric Male O-Ring × Metric Female Run Tee has Run where the [Metric Male O-Ring × Metric Female Branch Tee](/p/metric-male-o-ring-x-metric-female-branch-tee) has Branch. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × Metric Female Run Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × Metric Female Run Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × Metric Female Run Tee in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male O-Ring × Metric Female Run Tee is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-metric-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × Metric Male used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × Metric Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M12×1.25 to M52×2, sealing as Metric O-ring stud end; Port B is male Metric M10×1 to M48×2, sealing as Metric O-ring stud end; Port C is O08.1-1.6 to O44.5-3.0."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.25 × M10×1 × O08.1×1.6 in the Metric Male O-Ring × Metric Male?",
+          "a": "Quote IH-AD-MET-022-1210 for M12×1.25 × M10×1 × O08.1×1.6, IH-AD-MET-022-3027 for M30×1.5 × M27×2 × O23.5×3.0 and IH-AD-MET-022-5248 for M52×2 × M48×2 × O44.5×3.0. The Metric Male O-Ring × Metric Male lists 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male O-Ring × Metric Male are available?",
+          "a": "The Metric Male O-Ring × Metric Male comes in 12 part numbers covering -12 to -52. Examples from the table: IH-AD-MET-022-1412 (M14×1.5 × M12×1.5 × O09.3×2.4), IH-AD-MET-022-2218 (M22×1.5 × M18×1.5 × O15.3×2.4) and IH-AD-MET-022-4542 (M45×2 × M42×2 × O38.5×3.0). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × Metric Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × Metric Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-022-1816 (M18×1.5 × M16×1.5 × O13.3×2.4) and IH-AD-MET-022-42 (M42×2 × M42×2 × O38.5×3.0)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × Metric Male?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × Metric Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × Metric Male made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × Metric Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × Metric Male conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × Metric Male is listed to ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × Metric Male, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × Metric Male, its male Metric M12×1.25 to M52×2 end takes a female port or fitting of the same thread and seat; its male Metric M10×1 to M48×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × Metric Male seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × Metric Male seals on metric O-ring stud end. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × Metric Male differ from the Metric Male O-Ring × NPT Male?",
+          "a": "The Metric Male O-Ring × Metric Male has Metric where the [Metric Male O-Ring × NPT Male](/p/metric-male-o-ring-x-npt-male) has NPT. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × Metric Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × Metric Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × Metric Male in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male O-Ring × Metric Male in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-metric-male-with-bonded-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × Metric Male with Bonded Seal used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M52×2, sealing as Metric O-ring stud end; Port B is male Metric M14×1.5 to M42×2, sealing as Bonded seal washer."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 on every port in the Metric Male O-Ring × Metric Male with Bonded Seal?",
+          "a": "Quote IH-AD-MET-025-14 for M14×1.5 on every port, IH-AD-MET-025-2722 for M27×1.5 × M22×1.5 and IH-AD-MET-025-5248 for M52×2 × M48×2. The Metric Male O-Ring × Metric Male with Bonded Seal lists 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male O-Ring × Metric Male with Bonded Seal are available?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal comes in 15 part numbers covering -14 to -52. Examples from the table: IH-AD-MET-025-1416 (M14×1.5 × M16×1.5), IH-AD-MET-025-1618 (M16×1.5 × M18×1.5) and IH-AD-MET-025-4542 (M45×2 × M42×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × Metric Male with Bonded Seal for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × Metric Male with Bonded Seal only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-025-1422 (M14×1.5 × M22×1.5) and IH-AD-MET-025-3633 (M36×2 × M33×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × Metric Male with Bonded Seal?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × Metric Male with Bonded Seal, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × Metric Male with Bonded Seal made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × Metric Male with Bonded Seal conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal is listed to ISO 6149. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × Metric Male with Bonded Seal, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × Metric Male with Bonded Seal, its male Metric M14×1.5 to M52×2 end takes a female port or fitting of the same thread and seat. Its male Metric M14×1.5 to M42×2 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × Metric Male with Bonded Seal seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal seals on metric O-ring stud end at port A and on bonded seal washer at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × Metric Male with Bonded Seal differ from the Metric Male 74° Cone × Metric Male with Bonded Seal?",
+          "a": "The Metric Male O-Ring × Metric Male with Bonded Seal has O-Ring where the [Metric Male 74° Cone × Metric Male with Bonded Seal](/p/metric-male-74-cone-x-metric-male-with-bonded-seal) has 74° Cone. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × Metric Male with Bonded Seal made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × Metric Male with Bonded Seal is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × Metric Male with Bonded Seal in Dubai, and how do I get a quote?",
+          "a": "Yes. The Metric Male O-Ring × Metric Male with Bonded Seal sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-o-ring-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male O-Ring × NPT Male used for and which ports does it connect?",
+          "a": "The Metric Male O-Ring × NPT Male is a straight hydraulic adapter that joins two ports in a straight run, changing between the thread types and sizes of its two ends. Port A is male Metric M14×1.5 to M52×2, sealing as Metric O-ring stud end; Port B is male NPT 1/4\"-18 to 1-1/4-11.5, sealing as NPT taper thread."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 × NPT1/4-18 in the Metric Male O-Ring × NPT Male?",
+          "a": "Quote IH-AD-MET-026-1404 for M14×1.5 × NPT1/4-18, IH-AD-MET-026-2712 for M27×1.5 × NPT3/4-14 and IH-AD-MET-026-5220 for M52×2 × NPT1-1/4-11.5. The Metric Male O-Ring × NPT Male lists 20 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male O-Ring × NPT Male come in?",
+          "a": "The Metric Male O-Ring × NPT Male comes in 20 part numbers covering -14 to -52. Examples from the table: IH-AD-MET-026-1406 (M14×1.5 × NPT3/8-18), IH-AD-MET-026-1808 (M18×1.5 × NPT1/2-14) and IH-AD-MET-026-4520 (M45×2 × NPT1-1/4-11.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male O-Ring × NPT Male for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Metric Male O-Ring × NPT Male only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-AD-MET-026-1806 (M18×1.5 × NPT3/8-18) and IH-AD-MET-026-3920 (M39×2 × NPT1-1/4-11.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male O-Ring × NPT Male?",
+          "a": "The maker publishes no pressure rating for the Metric Male O-Ring × NPT Male, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male O-Ring × NPT Male made from, and is it suitable for my fluid?",
+          "a": "The Metric Male O-Ring × NPT Male is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male O-Ring × NPT Male conform to, and can I get test certificates?",
+          "a": "The Metric Male O-Ring × NPT Male is listed to ISO 6149, ANSI/ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male O-Ring × NPT Male, and which fittings do I pair it with?",
+          "a": "On the Metric Male O-Ring × NPT Male, its male Metric M14×1.5 to M52×2 end takes a female port or fitting of the same thread and seat; its male NPT 1/4\"-18 to 1-1/4-11.5 end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male O-Ring × NPT Male seal, and what should I check when fitting it?",
+          "a": "The Metric Male O-Ring × NPT Male seals on metric O-ring stud end at port A and on NPT taper thread at port B. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male O-Ring × NPT Male differ from the Metric Male O-Ring × Metric Male?",
+          "a": "The Metric Male O-Ring × NPT Male has NPT where the [Metric Male O-Ring × Metric Male](/p/metric-male-o-ring-x-metric-male) has Metric. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male O-Ring × NPT Male made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male O-Ring × NPT Male is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male O-Ring × NPT Male in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male O-Ring × NPT Male is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "plug-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Plug Metric used for and which ports does it connect?",
+          "a": "The Plug Metric is a hydraulic plug that closes off a port or the end of a line. Port A is male Metric M10×1 to M42×2 (24° cone)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M14×1.5 in the Plug Metric?",
+          "a": "Quote IH-AD-MET-007-14 for M14×1.5, IH-AD-MET-007-36 for M36×2 and IH-AD-MET-007-60 for M60×2. The Plug Metric lists 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Plug Metric are available?",
+          "a": "The Plug Metric comes in 12 part numbers covering M14×1.5 to M60×2. Examples from the table: IH-AD-MET-007-16 (M16×1.5), IH-AD-MET-007-27 (M27×1.5) and IH-AD-MET-007-52 (M52×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Plug Metric for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Plug Metric only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes. Then pick the row: IH-AD-MET-007-22 (M22×1.5) and IH-AD-MET-007-45 (M45×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Plug Metric?",
+          "a": "The working pressure of the Plug Metric depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Plug Metric made from, and is it suitable for my fluid?",
+          "a": "The Plug Metric is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Plug Metric conform to, and can I get test certificates?",
+          "a": "The Plug Metric is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Plug Metric, and which fittings do I pair it with?",
+          "a": "On the Plug Metric, its male Metric M10×1 to M42×2 (24° cone) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Plug Metric seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Plug Metric, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Plug Metric differ from the Plug Metric Seal Flat?",
+          "a": "The [Plug Metric Seal Flat](/p/plug-metric-seal-flat) carries Seal Flat in its name where the Plug Metric does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Plug Metric made, and can you export it from Dubai?",
+          "a": "The country of origin of the Plug Metric is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Plug Metric in Dubai, and how do I get a quote?",
+          "a": "Yes. The Plug Metric sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plug-metric-seal-flat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Plug Metric Seal Flat used for and which ports does it connect?",
+          "a": "The Plug Metric Seal Flat is a hydraulic plug that closes off a port or the end of a line. Port A is male Metric M10×1 to M42×2 (flat-face), sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What do I need to send to get a part number quote for the Plug Metric Seal Flat (SKU IH-AD-MET-010)?",
+          "a": "Quote the SKU IH-AD-MET-010 together with the thread and seat on each end, and whether you need carbon steel or stainless. Indus engineering confirms the size-specific part number for the Plug Metric Seal Flat against your equipment before you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Plug Metric Seal Flat come in?",
+          "a": "The Plug Metric Seal Flat is listed in M10×1 to M42×2. Send the thread on each end and we will confirm the exact size and part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Plug Metric Seal Flat for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Plug Metric Seal Flat only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a plug you only need the single thread it closes."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Plug Metric Seal Flat?",
+          "a": "The working pressure of the Plug Metric Seal Flat depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Plug Metric Seal Flat made from, and is it suitable for my fluid?",
+          "a": "The Plug Metric Seal Flat is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Plug Metric Seal Flat conform to, and can I get test certificates?",
+          "a": "The Plug Metric Seal Flat is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Plug Metric Seal Flat, and which fittings do I pair it with?",
+          "a": "On the Plug Metric Seal Flat, its male Metric M10×1 to M42×2 (flat-face) end takes a female port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Plug Metric Seal Flat seal, and what should I check when fitting it?",
+          "a": "The Plug Metric Seal Flat seals on a flat face. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Plug Metric Seal Flat differ from the Plug Metric?",
+          "a": "The Plug Metric Seal Flat carries Seal Flat in its name where the [Plug Metric](/p/plug-metric) does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Plug Metric Seal Flat made, and can you export it from Dubai?",
+          "a": "The country of origin of the Plug Metric Seal Flat is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Plug Metric Seal Flat in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Plug Metric Seal Flat is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-bspp-male-x-metric-24-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel BSPP Male × Metric 24° Female Swivel Adapter used for and which ports does it connect?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14); Port B is female swivel metric 24° cone / port (dual purpose), M12×1.5 to M24×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" BSPP (G1/4-19) × M12×1.5 (6 mm tube, L series) in the Steel BSPP Male × Metric 24° Female Swivel Adapter?",
+          "a": "Quote IH-ST-9019-04-L06-12 for 1/4\" BSPP (G1/4-19) × M12×1.5 (6 mm tube, L series) and IH-ST-9019-08-L10-16 for 1/2\" BSPP (G1/2-14) × M16×1.5 (10 mm tube, L series). The Steel BSPP Male × Metric 24° Female Swivel Adapter lists 16 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel BSPP Male × Metric 24° Female Swivel Adapter come in?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter comes in 16 part numbers covering 1/4\" to 3/4\". Examples from the table: IH-ST-9019-04-L08-14 (1/4\" BSPP (G1/4-19) × M14×1.5 (8 mm tube, L series)), IH-ST-9019-06-L10-16 (3/8\" BSPP (G3/8-19) × M16×1.5 (10 mm tube, L series)) and IH-ST-9019-12-L15-22 (3/4\" BSPP (G3/4-14) × M22×1.5 (15 mm tube, L series)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel BSPP Male × Metric 24° Female Swivel Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel BSPP Male × Metric 24° Female Swivel Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9019-06-L08-14 (3/8\" BSPP (G3/8-19) × M14×1.5 (8 mm tube, L series)) and IH-ST-9019-08-S16-24 (1/2\" BSPP (G1/2-14) × M24×1.5 (16 mm tube, S series))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel BSPP Male × Metric 24° Female Swivel Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel BSPP Male × Metric 24° Female Swivel Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel BSPP Male × Metric 24° Female Swivel Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter is carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel BSPP Male × Metric 24° Female Swivel Adapter conform to, and can I get test certificates?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter is listed to ISO 228-1, DIN 2353, ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel BSPP Male × Metric 24° Female Swivel Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel BSPP Male × Metric 24° Female Swivel Adapter, its male BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14) end takes a female port or fitting of the same thread and seat. Its female swivel metric 24° cone / port (dual purpose), M12×1.5 to M24×1.5 end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel BSPP Male × Metric 24° Female Swivel Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter seals on BSP parallel thread at port A and on dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring at port B. For port A: BSP parallel thread, sealed by a bonded seal, O-ring or cone seat rather than on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel BSPP Male × Metric 24° Female Swivel Adapter differ from the Steel JIC 37° Male × Metric 24° Female Swivel Adapter?",
+          "a": "The Steel BSPP Male × Metric 24° Female Swivel Adapter has BSPP where the [Steel JIC 37° Male × Metric 24° Female Swivel Adapter](/p/steel-jic-37-male-x-metric-24-female-swivel-adapter) has JIC 37°. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel BSPP Male × Metric 24° Female Swivel Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel BSPP Male × Metric 24° Female Swivel Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel BSPP Male × Metric 24° Female Swivel Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel BSPP Male × Metric 24° Female Swivel Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-metric-24-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Metric 24° Female Swivel Adapter used for and which ports does it connect?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male 37° JIC, 1/4\" to 5/8\" (7/16-20 to 7/8-14), sealing as 37° flare, a metal-to-metal seat on a 74° included cone; Port B is female swivel metric 24° cone / port (dual purpose), M12×1.5 to M22×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" JIC 37° (7/16-20) × M12×1.5 (6 mm tube, L series) in the Steel JIC 37° Male × Metric 24° Female Swivel Adapter?",
+          "a": "Quote IH-ST-9022-04-L06-12 for 1/4\" JIC 37° (7/16-20) × M12×1.5 (6 mm tube, L series) and IH-ST-9022-06-S12-20 for 3/8\" JIC 37° (9/16-18) × M20×1.5 (12 mm tube, S series). The Steel JIC 37° Male × Metric 24° Female Swivel Adapter lists 15 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel JIC 37° Male × Metric 24° Female Swivel Adapter are available?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter comes in 15 part numbers covering 1/4\" to 5/8\". Examples from the table: IH-ST-9022-04-L08-14 (1/4\" JIC 37° (7/16-20) × M14×1.5 (8 mm tube, L series)), IH-ST-9022-06-L12-18 (3/8\" JIC 37° (9/16-18) × M18×1.5 (12 mm tube, L series)) and IH-ST-9022-10-L15-22 (5/8\" JIC 37° (7/8-14) × M22×1.5 (15 mm tube, L series)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel JIC 37° Male × Metric 24° Female Swivel Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel JIC 37° Male × Metric 24° Female Swivel Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9022-06-L08-14 (3/8\" JIC 37° (9/16-18) × M14×1.5 (8 mm tube, L series)) and IH-ST-9022-08-S12-20 (1/2\" JIC 37° (3/4-16) × M20×1.5 (12 mm tube, S series))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIC 37° Male × Metric 24° Female Swivel Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel JIC 37° Male × Metric 24° Female Swivel Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Metric 24° Female Swivel Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Metric 24° Female Swivel Adapter conform to, and can I get test certificates?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter is listed to SAE J514, ISO 8434-2, DIN 2353, ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIC 37° Male × Metric 24° Female Swivel Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel JIC 37° Male × Metric 24° Female Swivel Adapter, its male 37° JIC, 1/4\" to 5/8\" (7/16-20 to 7/8-14) end takes a female port or fitting of the same thread and seat. Its female swivel metric 24° cone / port (dual purpose), M12×1.5 to M22×1.5 end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel JIC 37° Male × Metric 24° Female Swivel Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter seals on 37° flare at port A and on dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring at port B. For port A: 37° flare, a metal-to-metal seat on a 74° included cone. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Metric 24° Female Swivel Adapter differ from the Steel BSPP Male × Metric 24° Female Swivel Adapter?",
+          "a": "The Steel JIC 37° Male × Metric 24° Female Swivel Adapter has JIC 37° where the [Steel BSPP Male × Metric 24° Female Swivel Adapter](/p/steel-bspp-male-x-metric-24-female-swivel-adapter) has BSPP. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × Metric 24° Female Swivel Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIC 37° Male × Metric 24° Female Swivel Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Male × Metric 24° Female Swivel Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel JIC 37° Male × Metric 24° Female Swivel Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-metric-adjustable-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Metric Adjustable Branch Tee used for and which ports does it connect?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee is an adjustable branch tee hydraulic adapter that puts an adjustable side branch on a tee body. Ports A and B are male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12), sealing as 37° flare, a metal-to-metal seat on a 74° included cone."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × M10×1 in the Steel JIC 37° Male × Metric Adjustable Branch Tee?",
+          "a": "Quote IH-ST-9169-04-04-10 for 1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × M10×1 metric and IH-ST-9169-08-08-18 for 1/2\" JIC 37° (3/4-16) × 1/2\" JIC 37° (3/4-16) × M18×1.5 metric. The Steel JIC 37° Male × Metric Adjustable Branch Tee lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel JIC 37° Male × Metric Adjustable Branch Tee are available?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee comes in 8 part numbers covering 1/4\" to 1\". Examples from the table: IH-ST-9169-04-04-12 (1/4\" JIC 37° (7/16-20) × 1/4\" JIC 37° (7/16-20) × M12×1.5 me), IH-ST-9169-06-06-14 (3/8\" JIC 37° (9/16-18) × 3/8\" JIC 37° (9/16-18) × M14×1.5 me) and IH-ST-9169-12-12-27 (3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × M27×2 ). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel JIC 37° Male × Metric Adjustable Branch Tee for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel JIC 37° Male × Metric Adjustable Branch Tee only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this adjustable branch tee also say which port is the run and which is the branch. Then pick the row: IH-ST-9169-06-06-14 (3/8\" JIC 37° (9/16-18) × 3/8\" JIC 37° (9/16-18) × M14×1.5 me) and IH-ST-9169-12-12-27 (3/4\" JIC 37° (1-1/16-12) × 3/4\" JIC 37° (1-1/16-12) × M27×2 )."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIC 37° Male × Metric Adjustable Branch Tee?",
+          "a": "The maker publishes no pressure rating for the Steel JIC 37° Male × Metric Adjustable Branch Tee, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Metric Adjustable Branch Tee made from, and is it suitable for my fluid?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee is carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Metric Adjustable Branch Tee conform to, and can I get test certificates?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee is listed to SAE J514, ISO 8434-2. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIC 37° Male × Metric Adjustable Branch Tee, and which fittings do I pair it with?",
+          "a": "On the Steel JIC 37° Male × Metric Adjustable Branch Tee, its male 37° JIC, 1/4\" to 1\" (7/16-20 to 1-5/16-12) end takes a female port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel JIC 37° Male × Metric Adjustable Branch Tee seal, and what should I check when fitting it?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee seals on 37° flare. For port A: 37° flare, a metal-to-metal seat on a 74° included cone. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Metric Adjustable Branch Tee differ from the Steel JIC 37° Male × Metric ORFS Female Adapter?",
+          "a": "The Steel JIC 37° Male × Metric Adjustable Branch Tee has Adjustable Branch Tee where the [Steel JIC 37° Male × Metric ORFS Female Adapter](/p/steel-jic-37-male-x-metric-orfs-female-adapter) has ORFS Female Adapter. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × Metric Adjustable Branch Tee made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIC 37° Male × Metric Adjustable Branch Tee is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Male × Metric Adjustable Branch Tee in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel JIC 37° Male × Metric Adjustable Branch Tee in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-jic-37-male-x-metric-orfs-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel JIC 37° Male × Metric ORFS Female Adapter used for and which ports does it connect?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male 37° JIC, 1/2\" (3/4-16), sealing as 37° flare, a metal-to-metal seat on a 74° included cone; Port B is female metric, M18×1.5 to M22×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" JIC 37° (3/4-16) × M18×1.5 metric ORFS in the Steel JIC 37° Male × Metric ORFS Female Adapter?",
+          "a": "Quote IH-ST-9022F-08-18 for 1/2\" JIC 37° (3/4-16) × M18×1.5 metric ORFS and IH-ST-9022F-08-22 for 1/2\" JIC 37° (3/4-16) × M22×1.5 metric ORFS. The Steel JIC 37° Male × Metric ORFS Female Adapter lists 2 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel JIC 37° Male × Metric ORFS Female Adapter come in?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter comes in 2 part numbers covering 1/2\". Examples from the table: IH-ST-9022F-08-18 (1/2\" JIC 37° (3/4-16) × M18×1.5 metric ORFS) and IH-ST-9022F-08-22 (1/2\" JIC 37° (3/4-16) × M22×1.5 metric ORFS). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel JIC 37° Male × Metric ORFS Female Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel JIC 37° Male × Metric ORFS Female Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9022F-08-18 (1/2\" JIC 37° (3/4-16) × M18×1.5 metric ORFS) and IH-ST-9022F-08-22 (1/2\" JIC 37° (3/4-16) × M22×1.5 metric ORFS)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel JIC 37° Male × Metric ORFS Female Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel JIC 37° Male × Metric ORFS Female Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel JIC 37° Male × Metric ORFS Female Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter is carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel JIC 37° Male × Metric ORFS Female Adapter conform to, and can I get test certificates?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter is listed to SAE J514, ISO 8434-2. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel JIC 37° Male × Metric ORFS Female Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel JIC 37° Male × Metric ORFS Female Adapter, its male 37° JIC, 1/2\" (3/4-16) end takes a female port or fitting of the same thread and seat. Its female metric, M18×1.5 to M22×1.5 end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel JIC 37° Male × Metric ORFS Female Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter seals on 37° flare at port A and on metric thread at port B. For port A: 37° flare, a metal-to-metal seat on a 74° included cone. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel JIC 37° Male × Metric ORFS Female Adapter differ from the Steel JIC 37° Male × Metric 24° Female Swivel Adapter?",
+          "a": "The Steel JIC 37° Male × Metric ORFS Female Adapter has ORFS where the [Steel JIC 37° Male × Metric 24° Female Swivel Adapter](/p/steel-jic-37-male-x-metric-24-female-swivel-adapter) has 24°. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel JIC 37° Male × Metric ORFS Female Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel JIC 37° Male × Metric ORFS Female Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel JIC 37° Male × Metric ORFS Female Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel JIC 37° Male × Metric ORFS Female Adapter is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-metric-dual-purpose-male-port-or-24-tube-x-nptf-female-adapter-l-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series used for and which ports does it connect?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male metric 24° cone / port (dual purpose), M12×1.5 to M26×1.5; Port B is female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers do I quote for the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series?",
+          "a": "Quote IH-ST-9635S-12-L06-04 for M12×1.5 (6 mm tube, L series) × 1/4\" NPTF (1/4-18) and IH-ST-9635S-18-L12-04 for M18×1.5 (12 mm tube, L series) × 1/4\" NPTF (1/4-18). The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series come in?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series comes in 11 part numbers covering M12×1.5 (6 mm tube, L series) to M26×1.5 (18 mm tube, L series). Examples from the table: IH-ST-9635S-12-L06-06 (M12×1.5 (6 mm tube, L series) × 3/8\" NPTF (3/8-18)), IH-ST-9635S-16-L10-04 (M16×1.5 (10 mm tube, L series) × 1/4\" NPTF (1/4-18)) and IH-ST-9635S-22-L15-12 (M22×1.5 (15 mm tube, L series) × 3/4\" NPTF (3/4-14)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9635S-14-L08-04 (M14×1.5 (8 mm tube, L series) × 1/4\" NPTF (1/4-18)) and IH-ST-9635S-22-L15-08 (M22×1.5 (15 mm tube, L series) × 1/2\" NPTF (1/2-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series?",
+          "a": "The maker publishes no pressure rating for the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series made from, and is it suitable for my fluid?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series conform to, and can I get test certificates?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series is listed to DIN 2353, ISO 8434-1, ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series, and which fittings do I pair it with?",
+          "a": "On the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series, its male metric 24° cone / port (dual purpose), M12×1.5 to M26×1.5 end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/4\" to 3/4\" (1/4-18 to 3/4-14) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series seal, and what should I check when fitting it?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series seals on dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring at port A and on dryseal taper pipe thread at port B. For port A: dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring, or screws into a metric port. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series differ from its nearest sibling?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series has L where the [Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series](/p/steel-metric-dual-purpose-male-port-or-24-tube-x-nptf-female-adapter-s-series) has S. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-metric-dual-purpose-male-port-or-24-tube-x-nptf-female-adapter-s-series",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series used for and which ports does it connect?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male metric 24° cone / port (dual purpose), M20×1.5 to M42×2; Port B is female NPTF (Dryseal), 1/4\" to 1-1/4\" (1/4-18 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers do I quote for the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series?",
+          "a": "Quote IH-ST-9636S-20-S12-04 for M20×1.5 (12 mm tube, S series) × 1/4\" NPTF (1/4-18) and IH-ST-9636S-42-S30-16 for M42×2 (30 mm tube, S series) × 1\" NPTF (1-11.5). The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series lists 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series are available?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series comes in 4 part numbers covering M20×1.5 (12 mm tube, S series) to M42×2 (30 mm tube, S series). Examples from the table: IH-ST-9636S-24-S16-12 (M24×1.5 (16 mm tube, S series) × 3/4\" NPTF (3/4-14)) and IH-ST-9636S-42-S30-16 (M42×2 (30 mm tube, S series) × 1\" NPTF (1-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9636S-24-S16-12 (M24×1.5 (16 mm tube, S series) × 3/4\" NPTF (3/4-14)) and IH-ST-9636S-42-S30-20 (M42×2 (30 mm tube, S series) × 1-1/4\" NPTF (1-1/4-11.5))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series?",
+          "a": "The maker publishes no pressure rating for the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series made from, and is it suitable for my fluid?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series conform to, and can I get test certificates?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series is listed to DIN 2353, ISO 8434-1, ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series, and which fittings do I pair it with?",
+          "a": "On the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series, its male metric 24° cone / port (dual purpose), M20×1.5 to M42×2 end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/4\" to 1-1/4\" (1/4-18 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series seal, and what should I check when fitting it?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series seals on dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring at port A and on dryseal taper pipe thread at port B. For port A: dual-purpose metric end: takes a DIN 2353 24° tube nut and cutting ring, or screws into a metric port. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series differ from its nearest sibling?",
+          "a": "The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series has S where the [Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, L Series](/p/steel-metric-dual-purpose-male-port-or-24-tube-x-nptf-female-adapter-l-series) has L. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel Metric Dual-Purpose Male (Port or 24° Tube) × NPTF Female Adapter, S Series is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-metric-female-x-metric-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Metric Female × Metric Female Adapter used for and which ports does it connect?",
+          "a": "The Steel Metric Female × Metric Female Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Ports A and B are female metric, M12×1.5 to M22×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.5 metric on every port in the Steel Metric Female × Metric Female Adapter?",
+          "a": "Quote IH-ST-9043M-12-12 for M12×1.5 metric on every port, IH-ST-9043M-18-18 for M18×1.5 metric on every port and IH-ST-9043M-22-22 for M22×1.5 metric on every port. The Steel Metric Female × Metric Female Adapter lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Steel Metric Female × Metric Female Adapter come in?",
+          "a": "The Steel Metric Female × Metric Female Adapter comes in 8 part numbers covering M12×1.5 metric to M22×1.5 metric. Examples from the table: IH-ST-9043M-14-14 (M14×1.5 metric on every port), IH-ST-9043M-16-12 (M16×1.5 metric × M12×1.5 metric) and IH-ST-9043M-22-16 (M22×1.5 metric × M16×1.5 metric). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel Metric Female × Metric Female Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel Metric Female × Metric Female Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9043M-16-12 (M16×1.5 metric × M12×1.5 metric) and IH-ST-9043M-22-16 (M22×1.5 metric × M16×1.5 metric)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel Metric Female × Metric Female Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel Metric Female × Metric Female Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Metric Female × Metric Female Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel Metric Female × Metric Female Adapter is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Metric Female × Metric Female Adapter conform to, and can I get test certificates?",
+          "a": "The listing for the Steel Metric Female × Metric Female Adapter names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel Metric Female × Metric Female Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel Metric Female × Metric Female Adapter, its female metric, M12×1.5 to M22×1.5 end takes a male port or fitting of the same thread and seat (the same on every port). These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For other sizes and thread styles, see the [Metric Adapters](/c/metric-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel Metric Female × Metric Female Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel Metric Female × Metric Female Adapter seals on metric thread. For port A: metric thread; the sealing method depends on the mating port, so confirm it before ordering. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Metric Female × Metric Female Adapter differ from the Steel Metric Male × NPTF Female Adapter?",
+          "a": "The Steel Metric Female × Metric Female Adapter has Female where the [Steel Metric Male × NPTF Female Adapter](/p/steel-metric-male-x-nptf-female-adapter) has Male, and Metric where it has NPTF. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Metric Female × Metric Female Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel Metric Female × Metric Female Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Metric Female × Metric Female Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel Metric Female × Metric Female Adapter is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-metric-male-x-bspp-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Metric Male × BSPP Female Swivel Adapter used for and which ports does it connect?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male metric, M12×1.5 to M30×1.5; Port B is female swivel BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.5 metric × 1/4\" BSPP (G1/4-19) in the Steel Metric Male × BSPP Female Swivel Adapter?",
+          "a": "Quote IH-ST-9018-12-04 for M12×1.5 metric × 1/4\" BSPP (G1/4-19), IH-ST-9018-20-08 for M20×1.5 metric × 1/2\" BSPP (G1/2-14) and IH-ST-9018-30X1.5-08 for M30×1.5 metric × 1/2\" BSPP (G1/2-14). The Steel Metric Male × BSPP Female Swivel Adapter lists 13 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel Metric Male × BSPP Female Swivel Adapter are available?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter comes in 13 part numbers covering M12×1.5 metric to M30×1.5 metric. Examples from the table: IH-ST-9018-14-04 (M14×1.5 metric × 1/4\" BSPP (G1/4-19)), IH-ST-9018-18-06 (M18×1.5 metric × 3/8\" BSPP (G3/8-19)) and IH-ST-9018-30X1.5-06 (M30×1.5 metric × 3/8\" BSPP (G3/8-19)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel Metric Male × BSPP Female Swivel Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel Metric Male × BSPP Female Swivel Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9018-16-06 (M16×1.5 metric × 3/8\" BSPP (G3/8-19)) and IH-ST-9018-26-08 (M26×1.5 metric × 1/2\" BSPP (G1/2-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel Metric Male × BSPP Female Swivel Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel Metric Male × BSPP Female Swivel Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Metric Male × BSPP Female Swivel Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter is forged carbon steel, trivalent zinc plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Metric Male × BSPP Female Swivel Adapter conform to, and can I get test certificates?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter is listed to ISO 228-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel Metric Male × BSPP Female Swivel Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel Metric Male × BSPP Female Swivel Adapter, its male metric, M12×1.5 to M30×1.5 end takes a female port or fitting of the same thread and seat. Its female swivel BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [BSP Adapters](/c/bsp-hydraulic-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel Metric Male × BSPP Female Swivel Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter seals on metric thread at port A and on BSP parallel thread at port B. For port A: metric thread; the sealing method depends on the mating port, so confirm it before ordering. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Metric Male × BSPP Female Swivel Adapter differ from the Steel Metric Male × NPTF Female Adapter?",
+          "a": "The Steel Metric Male × BSPP Female Swivel Adapter has BSPP where the [Steel Metric Male × NPTF Female Adapter](/p/steel-metric-male-x-nptf-female-adapter) has NPTF. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Metric Male × BSPP Female Swivel Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel Metric Male × BSPP Female Swivel Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Metric Male × BSPP Female Swivel Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel Metric Male × BSPP Female Swivel Adapter is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "steel-metric-male-x-nptf-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel Metric Male × NPTF Female Adapter used for and which ports does it connect?",
+          "a": "The Steel Metric Male × NPTF Female Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male metric, M6×0.75 to M42×2; Port B is female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M6×0.75 metric × 1/8\" NPTF (1/8-27) in the Steel Metric Male × NPTF Female Adapter?",
+          "a": "Quote IH-ST-9235-06X.75-02 for M6×0.75 metric × 1/8\" NPTF (1/8-27), IH-ST-9235-20-04 for M20×1.5 metric × 1/4\" NPTF (1/4-18) and IH-ST-9235-42-20 for M42×2 metric × 1-1/4\" NPTF (1-1/4-11.5). The Steel Metric Male × NPTF Female Adapter lists 39 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel Metric Male × NPTF Female Adapter are available?",
+          "a": "The Steel Metric Male × NPTF Female Adapter comes in 39 part numbers covering M6×0.75 metric to M42×2 metric. Examples from the table: IH-ST-9235-06X1.0-02 (M6×1 metric × 1/8\" NPTF (1/8-27)), IH-ST-9235-14-06 (M14×1.5 metric × 3/8\" NPTF (3/8-18)) and IH-ST-9235-42-16 (M42×2 metric × 1\" NPTF (1-11.5)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel Metric Male × NPTF Female Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel Metric Male × NPTF Female Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9235-12-06 (M12×1.5 metric × 3/8\" NPTF (3/8-18)) and IH-ST-9235-27-12 (M27×2 metric × 3/4\" NPTF (3/4-14))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel Metric Male × NPTF Female Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel Metric Male × NPTF Female Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel Metric Male × NPTF Female Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel Metric Male × NPTF Female Adapter is forged carbon steel, trivalent zinc plated. A 316 stainless steel version of the same configuration is listed separately. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel Metric Male × NPTF Female Adapter conform to, and can I get test certificates?",
+          "a": "The Steel Metric Male × NPTF Female Adapter is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel Metric Male × NPTF Female Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel Metric Male × NPTF Female Adapter, its male metric, M6×0.75 to M42×2 end takes a female port or fitting of the same thread and seat. Its female NPTF (Dryseal), 1/8\" to 1-1/4\" (1/8-27 to 1-1/4-11.5) end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel Metric Male × NPTF Female Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel Metric Male × NPTF Female Adapter seals on metric thread at port A and on dryseal taper pipe thread at port B. For port A: metric thread; the sealing method depends on the mating port, so confirm it before ordering. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel Metric Male × NPTF Female Adapter differ from the Steel Metric Female × Metric Female Adapter?",
+          "a": "The Steel Metric Male × NPTF Female Adapter has Male where the [Steel Metric Female × Metric Female Adapter](/p/steel-metric-female-x-metric-female-adapter) has Female, and NPTF where it has Metric. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel Metric Male × NPTF Female Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel Metric Male × NPTF Female Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel Metric Male × NPTF Female Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes. The Steel Metric Male × NPTF Female Adapter sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "steel-nptf-male-x-metric-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Steel NPTF Male × Metric Female Adapter used for and which ports does it connect?",
+          "a": "The Steel NPTF Male × Metric Female Adapter is a straight hydraulic adapter that joins two ports of different thread type or size in a straight run. Port A is male NPTF (Dryseal), 1/8\" to 3/4\" (1/8-27 to 3/4-14); Port B is female metric, M6×1 to M26×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" NPTF (1/8-27) × M6×1 metric in the Steel NPTF Male × Metric Female Adapter?",
+          "a": "Quote IH-ST-9325-02-06X1.0 for 1/8\" NPTF (1/8-27) × M6×1 metric, IH-ST-9325-06-16X1.5 for 3/8\" NPTF (3/8-18) × M16×1.5 metric and IH-ST-9325-12-26X1.5 for 3/4\" NPTF (3/4-14) × M26×1.5 metric. The Steel NPTF Male × Metric Female Adapter lists 14 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Steel NPTF Male × Metric Female Adapter are available?",
+          "a": "The Steel NPTF Male × Metric Female Adapter comes in 14 part numbers covering 1/8\" to 3/4\". Examples from the table: IH-ST-9325-02-10X1.0 (1/8\" NPTF (1/8-27) × M10×1 metric), IH-ST-9325-04-12X1.5 (1/4\" NPTF (1/4-18) × M12×1.5 metric) and IH-ST-9325-08-22X1.5 (1/2\" NPTF (1/2-14) × M22×1.5 metric). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Steel NPTF Male × Metric Female Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Steel NPTF Male × Metric Female Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: IH-ST-9325-02-12X1.5 (1/8\" NPTF (1/8-27) × M12×1.5 metric) and IH-ST-9325-08-18X1.5 (1/2\" NPTF (1/2-14) × M18×1.5 metric)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Steel NPTF Male × Metric Female Adapter?",
+          "a": "The maker publishes no pressure rating for the Steel NPTF Male × Metric Female Adapter, so do not assume one. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Steel NPTF Male × Metric Female Adapter made from, and is it suitable for my fluid?",
+          "a": "The Steel NPTF Male × Metric Female Adapter is carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Steel NPTF Male × Metric Female Adapter conform to, and can I get test certificates?",
+          "a": "The Steel NPTF Male × Metric Female Adapter is listed to ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Steel NPTF Male × Metric Female Adapter, and which fittings do I pair it with?",
+          "a": "On the Steel NPTF Male × Metric Female Adapter, its male NPTF (Dryseal), 1/8\" to 3/4\" (1/8-27 to 3/4-14) end takes a female port or fitting of the same thread and seat. Its female metric, M6×1 to M26×1.5 end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Steel NPTF Male × Metric Female Adapter seal, and what should I check when fitting it?",
+          "a": "The Steel NPTF Male × Metric Female Adapter seals on dryseal taper pipe thread at port A and on metric thread at port B. For port A: dryseal taper pipe thread, cut so the crests and roots close up as the joint is tightened, so it seals on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Steel NPTF Male × Metric Female Adapter differ from the Steel Metric Female × Metric Female Adapter?",
+          "a": "The Steel NPTF Male × Metric Female Adapter has NPTF Male where the [Steel Metric Female × Metric Female Adapter](/p/steel-metric-female-x-metric-female-adapter) has Metric Female. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Steel NPTF Male × Metric Female Adapter made, and can you export it from Dubai?",
+          "a": "The country of origin of the Steel NPTF Male × Metric Female Adapter is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Steel NPTF Male × Metric Female Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Steel NPTF Male × Metric Female Adapter is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "swivel-cap-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Swivel Cap Metric used for and which ports does it connect?",
+          "a": "The Swivel Cap Metric is a hydraulic cap that closes off the end of a line or a male-threaded stub. Port A is female swivel Metric M10×1 to M42×2, sealing as a flat face."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for M12×1.25 in the Swivel Cap Metric?",
+          "a": "Quote IH-AD-MET-003-12 for M12×1.25, IH-AD-MET-003-30 for M30×1.5 and IH-AD-MET-003-52 for M52×2. The Swivel Cap Metric lists 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Swivel Cap Metric come in?",
+          "a": "The Swivel Cap Metric comes in 12 part numbers covering M12×1.25 to M52×2. Examples from the table: IH-AD-MET-003-14 (M14×1.5), IH-AD-MET-003-22 (M22×1.5) and IH-AD-MET-003-45 (M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Swivel Cap Metric for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Swivel Cap Metric only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For a cap you only need the single thread it closes. Then pick the row: IH-AD-MET-003-18 (M18×1.5) and IH-AD-MET-003-42 (M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Swivel Cap Metric?",
+          "a": "The working pressure of the Swivel Cap Metric depends on its size and on the hose, tube and port it is fitted to, because the lowest-rated component sets the limit. Send your working pressure and we confirm the rating for your size in writing before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Swivel Cap Metric made from, and is it suitable for my fluid?",
+          "a": "The Swivel Cap Metric is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Swivel Cap Metric conform to, and can I get test certificates?",
+          "a": "The Swivel Cap Metric is listed to ISO 8434-1, DIN 2353, ISO 6149, DIN 3852-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Swivel Cap Metric, and which fittings do I pair it with?",
+          "a": "On the Swivel Cap Metric, its female swivel Metric M10×1 to M42×2 end takes a male port or fitting of the same thread and seat. These are tube and port adapters, not hose ends: pair them with Indus crimp ferrules and a matching hose-end fitting for hoses, or cutting rings and end nuts for tube runs. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Swivel Cap Metric seal, and what should I check when fitting it?",
+          "a": "The Swivel Cap Metric seals on a flat face. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Swivel Cap Metric differ from the Male Cross Metric?",
+          "a": "The Swivel Cap Metric has Swivel Cap where the [Male Cross Metric](/p/male-cross-metric) has Male Cross. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Swivel Cap Metric made, and can you export it from Dubai?",
+          "a": "The country of origin of the Swivel Cap Metric is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Swivel Cap Metric in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Swivel Cap Metric is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

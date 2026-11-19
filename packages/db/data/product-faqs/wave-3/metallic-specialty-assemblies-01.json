@@ -1,0 +1,1004 @@
+{
+  "family": "metallic-specialty-assemblies-01",
+  "extraFacts": [
+    {
+      "fact": "Thorburn model codes in the exotic-alloy and stainless listings: 95 is an unbraided core, 96 a single braid and 96Z a double braid in the same alloy.",
+      "source": "Indus Hydraulics listings for Thorburn hoses (titles and construction fields)"
+    },
+    {
+      "fact": "Corrugated metal hose terms: annular corrugation is a series of parallel rings (versus helical, a continuous spiral); braid is a woven wire sleeve that contains pressure; ISO 10380 covers corrugated metal hoses and hose assemblies, with a safety factor of 4:1 on burst pressure as quoted in the listings; hoses are hydrotested at 1.5 times working pressure.",
+      "source": "ISO 10380 (corrugated metal hoses and hose assemblies); manufacturer listings"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Thorburn CGA96 Industrial Oxygen Service Hose [IH-MH-THORBURN-CGA96-O2]: A Thorburn corrugated stainless steel hose for oxygen service . Thorburn supplies hose assemblies degreased, cleaned and capped for oxygen service, and uses CGA96 as a model family on its cryogenic transfer hose.\nWhat to know\nCorrugated stainless core and stainless braid, cleaned for oxygen service and capped.\nOxygen end connections, so the hose cannot be connected to another gas system.\nPressure, temperature and bend radius confirmed per build — oxygen service limits velocity and material choice, so give the full duty.\nApplications\nOxygen supply to cutting and welding stations\nLiquid and gase  XX | Hose Family Industrial Gas Assembly; Construction Type Annular Corrugated; Braid Configuration Single Braid; Core Material Type 316L SS; Braid Material Type 304 SS | 0 part numbers (e.g. ); ; rows:  || Thorburn Cryogenic CO₂ Connector — Dewar Transfer [IH-MH-THORBURN-CRYO-CO2-DEWAR]: A Thorburn cryogenic transfer hose for liquid CO₂ (dewar filling) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover.\nConstruction and ratings\nMaximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi.\nOperating temperature −269 °C to 538 °C.\nHelical-lined (CGH66/CGH96) or PTFE-lined (CGTR40) models are designed to reduce snowballing in CO₂ transfer; CO₂ ends are brass ACME connectors.\nCryo-Therm cover (−196 to 302 °C) cuts heat  XX | Hose Family Cryogenic Assembly; Construction Type Annular Corrugated; OEM Part Code CRYO-CO2-DEWAR; Braid Configuration Single Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material CGA-320 dewar coupler (one end) and 316L SS NPT (other end); Nominal ID Range DN 13 (1/2\") to DN 25 (1\"); Bend Radius (Static) 200; Bend Radius (Dynamic) 600; Live Length for Vibration 200; Weight 1.2; Max Working Pressure 50; Min Burst Pressure 200; Safety Factor 4; Min Operating Tempera | 0 part numbers (e.g. ); ; rows:  || Thorburn Cryogenic CO₂ Connector — Process Plant [IH-MH-THORBURN-CRYO-CO2-PROCESS]: A Thorburn cryogenic transfer hose for liquid CO₂ (process plant) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover.\nConstruction and ratings\nMaximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi.\nOperating temperature −269 °C to 538 °C.\nHelical-lined or PTFE-lined models reduce snowballing in CO₂ service; flanged or ACME ends confirmed per build.\nCryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example o  XX | Hose Family Cryogenic Assembly; Construction Type Annular Corrugated; OEM Part Code CRYO-CO2-PROC; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material ANSI 150# RF flanged with vacuum-jacket bayonet coupler; Nominal ID Range DN 25 (1\") to DN 100 (4\"); Bend Radius (Static) 300; Bend Radius (Dynamic) 750; Live Length for Vibration 200; Weight 2.5; Max Working Pressure 100; Min Burst Pressure 400; Safety Factor 4; Min Operating Temperature  | 0 part numbers (e.g. ); ; rows:  || Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose [IH-MH-THORBURN-CRYO-LIN]: A Thorburn cryogenic transfer hose for liquid nitrogen (LIN) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover.\nConstruction and ratings\nMaximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi.\nOperating temperature −269 °C to 538 °C.\nEnd connections compliant with CGA V-6, using CGA NI-150/250 ACME nitrogen connections.\nCryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill o  XX | Hose Family Cryogenic Assembly; Construction Type Annular Corrugated; OEM Part Code CRYO-LIN; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 316L SS; End Fitting Material CGA-295 LIN coupler / ANSI 150# RF flange (selectable); Nominal ID Range DN 13 (1/2\") to DN 100 (4\"); Bend Radius (Static) 250; Bend Radius (Dynamic) 700; Live Length for Vibration 200; Weight 2.2; Max Working Pressure 35; Min Burst Pressure 140; Safety Factor 4; Min Operating Temperature -196 | 0 part numbers (e.g. ); ; rows:  || Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose [IH-MH-THORBURN-CRYO-LOX]: A Thorburn cryogenic transfer hose for liquid oxygen (LOX) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover.\nConstruction and ratings\nMaximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi.\nOperating temperature −269 °C to 538 °C.\nCleaned, degreased and capped for oxygen service; CGA V-6 OX-150/200/300 ACME oxygen connections.\nCryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost pe  XX | Hose Family Cryogenic Assembly; Construction Type Annular Corrugated; OEM Part Code CRYO-LOX; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 316L SS; End Fitting Material CGA-440 LOX coupler / ANSI 150# RF flange (degreased per CGA G-4.1); Nominal ID Range DN 13 (1/2\") to DN 100 (4\"); Bend Radius (Static) 250; Bend Radius (Dynamic) 700; Live Length for Vibration 200; Weight 2.2; Max Working Pressure 35; Min Burst Pressure 140; Safety Factor 4; Min Operating Tem | 0 part numbers (e.g. ); ; rows:  || Thorburn Cryogenic LNG Unloading Hose [IH-MH-THORBURN-CRYO-LNG-UNLOAD]: A Thorburn cryogenic transfer hose for LNG unloading : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover.\nConstruction and ratings\nMaximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi.\nOperating temperature −269 °C to 538 °C.\nEnd connections to the tanker and receiving coupling, confirmed per build; vacuum-jacketed TJHC hose is available for ship-to-shore duty.\nCryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives  XX | Hose Family Cryogenic Assembly; Construction Type Annular Corrugated; OEM Part Code CRYO-LNG-UL; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 316L SS; End Fitting Material ANSI 150# RF flanged (truck and tank end), with vacuum-jacket bayonet; Nominal ID Range DN 50 (2\") to DN 200 (8\"); Bend Radius (Static) 600; Bend Radius (Dynamic) 1500; Live Length for Vibration 300; Weight 5.5; Max Working Pressure 30; Min Burst Pressure 120; Safety Factor 4; Min Operating | 0 part numbers (e.g. ); ; rows:  || Thorburn M96ZC Monel Chlorine Transfer Hose — Rail-Loading [IH-MH-THORBURN-M96ZC-RAIL]: The Thorburn M96ZC is an all-Monel chlorine transfer hose for loading and unloading rail tank cars.\nConstruction and ratings\nMonel 400 corrugated core with Monel wire braid and Monel 60 filler, TIG welded, with an Armor-Flex outer guard.\nComplies with Chlorine Institute Pamphlet 6, Appendix A; Thorburn also cites Chlorine Institute Specification 135-3.\nAll assemblies tested at 750 psi, then permanently tagged, cleaned and capped.\nEnd options include Monel nipples, unions, Class 150 flanges and lap-joint stub ends.\nApplications\nRail tank car chlorine loading and unloading\nChlorine transfer at w  XX | Hose Family Chlorine Transfer Assembly; Construction Type Annular Corrugated; OEM Part Code M96ZC-RAIL; Braid Configuration Double Braid; Core Material Monel 400; Braid Material Monel; End Fitting Material Monel 400 ANSI 150# RF flanges; chlorine-grade gaskets and bolting; Nominal ID Range DN 50 (2\") to DN 100 (4\"); Bend Radius (Static) 250; Bend Radius (Dynamic) 700; Live Length for Vibration 200; Weight 4.5; Max Working Pressure 14; Min Burst Pressure 56; Safety Factor 4; Min Operating Tempera | 0 part numbers (e.g. ); ; rows:  || Thorburn M96ZC Monel Chlorine Transfer Hose — Tanker Truck [IH-MH-THORBURN-M96ZC-TANKER]: The Thorburn M96ZC all-Monel chlorine transfer hose, built for tanker-truck loading and unloading.\nConstruction and ratings\nMonel 400 corrugated core, Monel braid and Monel 60 filler, TIG welded, Armor-Flex guard.\nComplies with Chlorine Institute Pamphlet 6, Appendix A.\nEvery assembly tested at 750 psi, tagged, cleaned and capped.\nApplications\nChlorine tanker truck loading and unloading\nHow to order\nSend the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it.  XX | Hose Family Chlorine Transfer Assembly; Construction Type Annular Corrugated; OEM Part Code M96ZC-TANKER; Braid Configuration Double Braid; Core Material Monel 400; Braid Material Monel; End Fitting Material Monel 400 with chlorine-rated truck couplers (Pamphlet 6); Nominal ID Range DN 50 (2\") to DN 75 (3\"); Bend Radius (Static) 250; Bend Radius (Dynamic) 700; Live Length for Vibration 200; Weight 4; Max Working Pressure 14; Min Burst Pressure 56; Safety Factor 4; Min Operating Temperature -40;  | 0 part numbers (e.g. ); ; rows:  || Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in [IH-MH-THORBURN-SURETEMP-1IN]: The Thorburn Sure-Temp is a metal hose with a spiral mineral-insulated heating cable, a 100 Ω platinum RTD and a programmable controller, holding the product at a set temperature without steam tracing.\nConstruction and ratings\nLiquid service: holding temperature 5–250 °C, bores 8–200 mm.\nGas analysis service: 5–450 °C, bores 4–50 mm.\nTypical design pressure from full vacuum to 300 psi (20 bar).\nTFTC-01 controller programmable from −50 to 500 °C.\nAvailable with Factory Mutual approval for Class I, Division 2, Group D areas.\nApplications\nAdhesive, bitumen and wax transfer\nFlue-gas and emission s  XX | Hose Family Electrically-Heated Assembly; Construction Type Annular Corrugated; OEM Part Code SURETEMP-1; Braid Configuration Single Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material 316L SS NPT or sanitary tri-clamp; integrated 110/240 VAC power lead; Nominal ID Range DN 25 (1\"); Bend Radius (Static) 100; Bend Radius (Dynamic) 300; Live Length for Vibration 150; Weight 1.8; Max Working Pressure 30; Min Burst Pressure 120; Safety Factor 4; Min Operating Temperat | 0 part numbers (e.g. ); ; rows:  || Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) [IH-MH-THORBURN-SURETEMP-EX-2IN]: The Thorburn Sure-Temp 2 in electrically heated metal hose, offered with Factory Mutual approval for Class I, Division 2, Group D hazardous locations.\nConstruction and ratings\nSpiral MI-cable heating element, 100 Ω Pt RTD and programmable controller.\nLiquid service 5–250 °C; gas analysis service 5–450 °C.\nTypical design pressure full vacuum to 300 psi (20 bar).\nThe maker states FM Class I Div 2 Group D approval; confirm any ATEX or IECEx zone requirement before ordering.\nApplications\nHeated transfer in classified areas of refineries and chemical plants\nBitumen and heavy-oil transfer\nHow to ord  XX | Hose Family Electrically-Heated Assembly; Construction Type Annular Corrugated; OEM Part Code SURETEMP-EX-2; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material ANSI 150# RF flanged; ATEX/IECEx-rated electrical entry; Nominal ID Range DN 50 (2\"); Bend Radius (Static) 200; Bend Radius (Dynamic) 500; Live Length for Vibration 200; Weight 3; Max Working Pressure 25; Min Burst Pressure 100; Safety Factor 4; Min Operating Temperature 0; Max O | 0 part numbers (e.g. ); ; rows:  || Thorburn ThermaCover Cryogenic Insulation Cover [IH-MH-THORBURN-THERMACOVER-CRYO]: A Thorburn removable insulation cover for cryogenic hose , made to fit the hose or fitting and taken off for inspection.\nWhat to know\nThorburn’s cryogenic cover option for transfer hose is Cryo-Therm foam (−196 to 302 °C); its ThermaCover covers use silicone- or PTFE-impregnated fibreglass over an insulation core.\nReduces heat gain, external icing and product lost per fill.\nCover material and thickness confirmed for the hose size and service temperature.\nApplications\nLiquid nitrogen, oxygen and argon transfer hose\nPersonnel protection on cold lines\nReducing frost and ice build-up\nHow to order\n  XX | Hose Family Other; Construction Type Smooth-Bore; Braid Configuration N/A; Core Material Other; Braid Material N/A (Unbraided) | 0 part numbers (e.g. ); ; rows:  || Thorburn ThermaCover Removable Thermal Insulation Cover [IH-MH-THORBURN-THERMACOVER-STD]: The Thorburn ThermaCover is a removable, sewn insulation cover for hoses, valves and fittings that have to come off for maintenance.\nConstruction and ratings\nCover fabrics: silicone-impregnated fibreglass (−55 to 260 °C) or PTFE-impregnated fibreglass (−73 to 260 °C).\nInsulation cores: silica aerogel blanket or mineral wool, both rated to 650 °C operating temperature at the hot face.\nFlap closures and a sewn bolster bag; freeze-protection designs to −60 °C.\nApplications\nPersonnel protection on hot hoses and valves\nHeat retention on jacketed and traced lines\nFreeze protection\nHow to order\nSend   XX | Hose Family Other; Construction Type Smooth-Bore; OEM Part Code THERMACOVER-STD; Braid Configuration N/A; Core Material Other; Braid Material N/A (Unbraided); End Fitting Material Velcro / D-ring closure; no rigid fittings; Nominal ID Range Fits DN 25 (1\") to DN 200 (8\") host hoses; Bend Radius (Static) 0; Bend Radius (Dynamic) 0; Live Length for Vibration 0; Weight 1.5; Max Working Pressure 0; Min Burst Pressure 0; Safety Factor 0; Min Operating Temperature -40; Max Operating Temperature 540; P | 0 part numbers (e.g. ); ; rows:  || Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop [IH-MH-THORBURN-THORLOOP-ULOOP]: The Thorburn Thor-Loop UL is a U-shaped flexible pipe loop of two metal hoses and a 180° return, installed in a pipe run to absorb thermal expansion and seismic movement.\nConstruction and ratings\nAbsorbs up to 500 mm (20 in) of movement in all directions.\nUL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems.\nCarbon steel, 304, 316 or brass; NPT, weld, 150/300# flange or grooved ends.\nAny orientation other than hanging down needs the 180° return supported.\nApplications\nSprinkler mains across building expansion joints\nGas lines to equipment on isolators\nSeismic movement  XX | Hose Family Pipe Loop / Expansion Joint; Construction Type Annular Corrugated; OEM Part Code THORLOOP-UL; Braid Configuration Double Braid; Core Material Type 321 SS; Braid Material Type 304 SS; End Fitting Material ANSI 150# / 300# / 600# RF flanged ends; Nominal ID Range DN 50 (2\") to DN 200 (8\"); Bend Radius (Static) 800; Bend Radius (Dynamic) 2000; Live Length for Vibration 800; Weight 5.5; Max Working Pressure 100; Min Burst Pressure 400; Safety Factor 4; Min Operating Temperature -200; Max | 0 part numbers (e.g. ); ; rows:  || Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop [IH-MH-THORBURN-THORLOOP-VLOOP]: The Thorburn Thor-Loop VL is the V-shaped version of the Thor-Loop flexible pipe loop.\nConstruction and ratings\nAbsorbs up to 500 mm (20 in) of thermal (axial) and seismic movement in all directions.\nUL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems.\nCarbon steel, 304, 316 or brass, with NPT, weld, flanged or grooved ends.\nApplications\nBuilding expansion and seismic joints\nPipe runs with large thermal movement\nHow to order\nSend the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will c  XX | Hose Family Pipe Loop / Expansion Joint; Construction Type Annular Corrugated; OEM Part Code THORLOOP-VL; Braid Configuration Double Braid; Core Material Type 321 SS; Braid Material Type 304 SS; End Fitting Material ANSI 150# / 300# / 600# RF flanged ends (selectable); Nominal ID Range DN 50 (2\") to DN 250 (10\"); Bend Radius (Static) 1000; Bend Radius (Dynamic) 2500; Live Length for Vibration 1000; Weight 6; Max Working Pressure 100; Min Burst Pressure 400; Safety Factor 4; Min Operating Tempera | 0 part numbers (e.g. ); ; rows:  || Thorburn TSJ Steam-Jacketed Hose, 2 in — Asphalt / Pitch Service [IH-MH-THORBURN-TSJ-2IN-ASPHALT]: A Thorburn steam-jacketed hose is “a hose within a hose”: the inner hose carries the product, the outer carries steam through port couplings in the outer hose, and both act independently as pressure carriers.\nConstruction and ratings\nSteam-jacketed (TJHS) design for asphalt, pitch, slurry and viscous chemicals, freeze protection and sampling.\nRatings depend on the inner and outer hose sizes and the jacket medium — confirmed for each build.\nApplications\nAsphalt and pitch loading\nMolten sulphur transfer\nViscous chemical transfer that must not cool\nHow to order\nSend the bore, overall length, both  XX | Hose Family Steam-Jacketed Assembly; Construction Type Annular Corrugated; OEM Part Code TSJ-2-ASPHALT; Braid Configuration Single Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material ANSI 300# RF flanged inner; ANSI 150# RF flanged steam jacket; Nominal ID Range DN 50 (2\") inner, DN 80 (3\") outer; Bend Radius (Static) 400; Bend Radius (Dynamic) 1000; Live Length for Vibration 250; Weight 3.5; Max Working Pressure 25; Min Burst Pressure 100; Safety Factor 4; Min Op | 0 part numbers (e.g. ); ; rows:  || Thorburn TSJ Steam-Jacketed Hose, 3 in — Molten Service [IH-MH-THORBURN-TSJ-3IN-MOLTEN]: A 3 in Thorburn steam-jacketed hose : product in the inner hose, steam or heating medium in the jacket, each a separate pressure carrier.\nConstruction and ratings\nSteam-jacketed (TJHS) design; a double-containment version (TJHD) with optional breach warning is also available.\nRatings confirmed for each build.\nApplications\nMolten polymer, wax and asphalt transfer\nViscous products that set if they cool\nHow to order\nSend the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quo  XX | Hose Family Steam-Jacketed Assembly; Construction Type Annular Corrugated; OEM Part Code TSJ-3-MOLTEN; Braid Configuration Double Braid; Core Material Type 316L SS; Braid Material Type 304 SS; End Fitting Material ANSI 300# RF flanged inner / ANSI 150# RF flanged outer; Nominal ID Range DN 75 (3\") inner, DN 125 (5\") outer; Bend Radius (Static) 500; Bend Radius (Dynamic) 1200; Live Length for Vibration 300; Weight 5; Max Working Pressure 25; Min Burst Pressure 100; Safety Factor 4; Min Operating  | 0 part numbers (e.g. ); ; rows: ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "thorburn-cga96-industrial-oxygen-service-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn CGA96 Industrial Oxygen Service Hose used for?",
+          "a": "A Thorburn corrugated stainless steel hose for oxygen service . Typical uses include oxygen supply to cutting and welding stations, liquid and gaseous oxygen transfer and plant oxygen distribution. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn CGA96 Industrial Oxygen Service Hose: what is the typical service life and maintenance schedule?",
+          "a": "Service life depends on duty cycle and process exposure. Annual inspection recommended. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "G",
+          "q": "What should I know before ordering the Thorburn CGA96 Industrial Oxygen Service Hose?",
+          "a": "Corrugated stainless core and stainless braid, cleaned for oxygen service and capped. Oxygen end connections, so the hose cannot be connected to another gas system. Pressure, temperature and bend radius confirmed per build — oxygen service limits velocity and material choice, so give the full duty. Give the full duty on your request for the Thorburn CGA96 Industrial Oxygen Service Hose."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn CGA96 Industrial Oxygen Service Hose: what end fittings are used?",
+          "a": "CGA-540 oxygen coupler; degreased per CGA G-4.1. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn CGA96 Industrial Oxygen Service Hose?",
+          "a": "To order the Thorburn CGA96 Industrial Oxygen Service Hose, send the fluid, its pressure and temperature, the bore, overall length, both end connections and any standard or certificate the project needs. We confirm the build and its ratings with the maker before quoting, and supply the test certificate with the assembly."
+        },
+        {
+          "slot": "H",
+          "q": "how does the Thorburn CGA96 Industrial Oxygen Service Hose integrate with my system?",
+          "a": "Confirm the host system interface on the RFQ — Indus matches the assembly fittings to your installation. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn CGA96 Industrial Oxygen Service Hose meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section VIII Div 1. CGA-8.1-M86, CGA96, CGA G-4.1, UL536. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn CGA96 Industrial Oxygen Service Hose typically used?",
+          "a": "The Thorburn CGA96 Industrial Oxygen Service Hose has several listed uses. Listed uses: oxygen supply to cutting and welding stations; liquid and gaseous oxygen transfer; plant oxygen distribution."
+        },
+        {
+          "slot": "J",
+          "q": "can the Thorburn CGA96 Industrial Oxygen Service Hose be supplied as part of a complete skid / cart?",
+          "a": "Yes — Indus supplies complete turnkey skids and carts integrating these assemblies with matched valves, instrumentation, control panels, and structural framing. Specify the duty (e.g., chlorine rail-loading cart, asphalt steam-jacket header, cryogenic LNG unloading cart) on the RFQ for a complete proposal."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn CGA96 Industrial Oxygen Service Hose built to order, and what is the delivery?",
+          "a": "The Thorburn CGA96 Industrial Oxygen Service Hose is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn CGA96 Industrial Oxygen Service Hose in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn CGA96 Industrial Oxygen Service Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-cryogenic-co-connector-dewar-transfer",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Cryogenic CO₂ Connector, Dewar Transfer used for?",
+          "a": "A Thorburn cryogenic transfer hose for liquid CO₂ (dewar filling) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover. Typical uses include bulk tanker unloading to storage, plant and laboratory fill lines and dewar and cylinder filling. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Cryogenic CO₂ Connector, Dewar Transfer take?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Dewar Transfer has maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi; operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Cryogenic CO₂ Connector, Dewar Transfer made of?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Dewar Transfer: Maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi. Operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn Cryogenic CO₂ Connector, Dewar Transfer: what is the typical service life and maintenance schedule?",
+          "a": "Vacuum-jacketed cryogenic assemblies: 5-10 year service life with re-evacuation every 18-24 months. Replace inner gasket and outer pump-out valve at each re-evacuation."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Cryogenic CO₂ Connector, Dewar Transfer: what end fittings are used?",
+          "a": "CGA-320 dewar coupler (one end) and 316L SS NPT (other end). End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Cryogenic CO₂ Connector, Dewar Transfer?",
+          "a": "To order the Thorburn Cryogenic CO₂ Connector, Dewar Transfer, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn Cryogenic CO₂ Connector, Dewar Transfer: how is the cryogenic insulation maintained?",
+          "a": "The vacuum-jacketed outer hose maintains insulation against ambient heat ingress. A super-insulator (typically multi-layer aluminized mylar) wraps the inner process hose; the outer jacket is evacuated to <10⁻⁵ torr. Re-evacuation is recommended every 18-24 months to maintain rated boil-off performance."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Cryogenic CO₂ Connector, Dewar Transfer?",
+          "a": "Helical-lined (CGH66/CGH96) or PTFE-lined (CGTR40) models are designed to reduce snowballing in CO₂ transfer; CO₂ ends are brass ACME connectors. Cryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill on a bare hose against 2.5 L with the cover. Vacuum-jacketed cryogenic hose is a separate Thorburn design (TJHC) — ask if the duty needs it."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Cryogenic CO₂ Connector, Dewar Transfer meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section IX. CGA-320, UL536. EN 10204 3.1 / 3.2 mill test reports. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Cryogenic CO₂ Connector, Dewar Transfer typically used?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Dewar Transfer has several listed uses. Listed uses: bulk tanker unloading to storage; plant and laboratory fill lines; dewar and cylinder filling."
+        },
+        {
+          "slot": "J",
+          "q": "can the Thorburn Cryogenic CO₂ Connector, Dewar Transfer be supplied as part of a complete skid / cart?",
+          "a": "Yes — Indus supplies complete turnkey skids and carts integrating these assemblies with matched valves, instrumentation, control panels, and structural framing. Specify the duty (e.g., chlorine rail-loading cart, asphalt steam-jacket header, cryogenic LNG unloading cart) on the RFQ for a complete proposal."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Cryogenic CO₂ Connector, Dewar Transfer in stock in Dubai?",
+          "a": "Yes. We keep the Thorburn Cryogenic CO₂ Connector, Dewar Transfer in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-cryogenic-co-connector-process-plant",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Cryogenic CO₂ Connector, Process Plant used for?",
+          "a": "A Thorburn cryogenic transfer hose for liquid CO₂ (process plant) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover. Typical uses include bulk tanker unloading to storage, plant and laboratory fill lines and dewar and cylinder filling. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Cryogenic CO₂ Connector, Process Plant take?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Process Plant has maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi; operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Cryogenic CO₂ Connector, Process Plant made of?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Process Plant: Maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi. Operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn Cryogenic CO₂ Connector, Process Plant: what is the typical service life and maintenance schedule?",
+          "a": "Vacuum-jacketed cryogenic assemblies: 5-10 year service life with re-evacuation every 18-24 months. Replace inner gasket and outer pump-out valve at each re-evacuation."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Cryogenic CO₂ Connector, Process Plant: what end fittings are used?",
+          "a": "ANSI 150# RF flanged with vacuum-jacket bayonet coupler. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Cryogenic CO₂ Connector, Process Plant?",
+          "a": "To order the Thorburn Cryogenic CO₂ Connector, Process Plant, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn Cryogenic CO₂ Connector, Process Plant: how is the cryogenic insulation maintained?",
+          "a": "The vacuum-jacketed outer hose maintains insulation against ambient heat ingress. A super-insulator (typically multi-layer aluminized mylar) wraps the inner process hose; the outer jacket is evacuated to <10⁻⁵ torr. Re-evacuation is recommended every 18-24 months to maintain rated boil-off performance."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Cryogenic CO₂ Connector, Process Plant?",
+          "a": "Helical-lined or PTFE-lined models reduce snowballing in CO₂ service; flanged or ACME ends confirmed per build. Cryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill on a bare hose against 2.5 L with the cover. Vacuum-jacketed cryogenic hose is a separate Thorburn design (TJHC) — ask if the duty needs it."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Cryogenic CO₂ Connector, Process Plant meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section VIII Div 1. CGA-320. EN 10204 3.1 / 3.2 mill test reports. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Cryogenic CO₂ Connector, Process Plant typically used?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Process Plant has several listed uses. Listed uses: bulk tanker unloading to storage; plant and laboratory fill lines; dewar and cylinder filling."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Cryogenic CO₂ Connector, Process Plant built to order, and what is the delivery?",
+          "a": "The Thorburn Cryogenic CO₂ Connector, Process Plant is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Cryogenic CO₂ Connector, Process Plant in stock in Dubai?",
+          "a": "Yes, we carry the Thorburn Cryogenic CO₂ Connector, Process Plant in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-cryogenic-liquid-nitrogen-lin-transfer-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose used for?",
+          "a": "A Thorburn cryogenic transfer hose for liquid nitrogen (LIN) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover. Typical uses include bulk tanker unloading to storage, plant and laboratory fill lines and dewar and cylinder filling. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose take?",
+          "a": "The Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose has maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi; operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose made of?",
+          "a": "The Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose: Maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi. Operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose: what end fittings are used?",
+          "a": "CGA-295 LIN coupler / ANSI 150# RF flange (selectable). End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose?",
+          "a": "To order the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose?",
+          "a": "End connections compliant with CGA V-6, using CGA NI-150/250 ACME nitrogen connections. Cryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill on a bare hose against 2.5 L with the cover. Vacuum-jacketed cryogenic hose is a separate Thorburn design (TJHC) — ask if the duty needs it."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section VIII Div 1. CGA-8.1-M86, CGA-295. EN 10204 3.1 / 3.2 mill test reports. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose typically used?",
+          "a": "The Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose has several listed uses. Listed uses: bulk tanker unloading to storage; plant and laboratory fill lines; dewar and cylinder filling."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose built to order, and what is the delivery?",
+          "a": "The Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose in stock in Dubai?",
+          "a": "Yes. We keep the Thorburn Cryogenic Liquid Nitrogen (LIN) Transfer Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-cryogenic-liquid-oxygen-lox-transfer-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose used for?",
+          "a": "A Thorburn cryogenic transfer hose for liquid oxygen (LOX) : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover. Typical uses include bulk tanker unloading to storage, plant and laboratory fill lines and dewar and cylinder filling. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose take?",
+          "a": "The Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose has maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi; operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose made of?",
+          "a": "The Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose: Maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi. Operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose: what end fittings are used?",
+          "a": "CGA-440 LOX coupler / ANSI 150# RF flange (degreased per CGA G-4.1). End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose?",
+          "a": "To order the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose?",
+          "a": "Cleaned, degreased and capped for oxygen service; CGA V-6 OX-150/200/300 ACME oxygen connections. Cryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill on a bare hose against 2.5 L with the cover. Vacuum-jacketed cryogenic hose is a separate Thorburn design (TJHC) — ask if the duty needs it."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section VIII Div 1. CGA-440, CGA G-4.1 (cleaning), UL536. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose typically used?",
+          "a": "The Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose has several listed uses. Listed uses: bulk tanker unloading to storage; plant and laboratory fill lines; dewar and cylinder filling."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose built to order, and what is the delivery?",
+          "a": "The Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn Cryogenic Liquid Oxygen (LOX) Transfer Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-cryogenic-lng-unloading-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Cryogenic LNG Unloading Hose used for?",
+          "a": "A Thorburn cryogenic transfer hose for LNG unloading : braided corrugated stainless hose built for cryogenic unloading and transfer, with optional armour and a Cryo-Therm foam insulation cover. Typical uses include bulk tanker unloading to storage, plant and laboratory fill lines and dewar and cylinder filling. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Cryogenic LNG Unloading Hose take?",
+          "a": "The Thorburn Cryogenic LNG Unloading Hose has maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi; operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Cryogenic LNG Unloading Hose made of?",
+          "a": "The Thorburn Cryogenic LNG Unloading Hose: Maximum operating pressure 400 psi (27.6 bar) for Thorburn’s cryogenic unloading hose; high-pressure versions are available to 3,500 psi. Operating temperature −269 °C to 538 °C."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Cryogenic LNG Unloading Hose: what end fittings are used?",
+          "a": "ANSI 150# RF flanged (truck and tank end), with vacuum-jacket bayonet. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Cryogenic LNG Unloading Hose?",
+          "a": "To order the Thorburn Cryogenic LNG Unloading Hose, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Cryogenic LNG Unloading Hose?",
+          "a": "End connections to the tanker and receiving coupling, confirmed per build; vacuum-jacketed TJHC hose is available for ship-to-shore duty. Cryo-Therm cover (−196 to 302 °C) cuts heat gain; Thorburn gives an example of 25 L of LN2 lost per fill on a bare hose against 2.5 L with the cover. Vacuum-jacketed cryogenic hose is a separate Thorburn design (TJHC) — ask if the duty needs it."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Cryogenic LNG Unloading Hose meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3, Section VIII Div 1, EN 13480. CSA B51. EN 10204 3.1 / 3.2 mill test reports. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Cryogenic LNG Unloading Hose typically used?",
+          "a": "The Thorburn Cryogenic LNG Unloading Hose has several listed uses. Listed uses: bulk tanker unloading to storage; plant and laboratory fill lines; dewar and cylinder filling."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Cryogenic LNG Unloading Hose built to order, and what is the delivery?",
+          "a": "The Thorburn Cryogenic LNG Unloading Hose is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Cryogenic LNG Unloading Hose in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn Cryogenic LNG Unloading Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-m96zc-monel-chlorine-transfer-hose-rail-loading",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading used for?",
+          "a": "The Thorburn M96ZC is an all-Monel chlorine transfer hose for loading and unloading rail tank cars. Typical uses include rail tank car chlorine loading and unloading and chlorine transfer at water-treatment and chemical plants. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading made of?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading: Monel 400 corrugated core with Monel wire braid and Monel 60 filler, TIG welded, with an Armor-Flex outer guard. Complies with Chlorine Institute Pamphlet 6, Appendix A; Thorburn also cites Chlorine Institute Specification 135-3."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading: what is the typical service life and maintenance schedule?",
+          "a": "Chlorine-rated assemblies: 3-5 year service life depending on duty cycle. Required: annual hydrotest, chlorine-institute re-certification every 24 months. Replace at any sign of pitting or surface degradation."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading: what end fittings are used?",
+          "a": "Monel 400 ANSI 150# RF flanges; chlorine-grade gaskets and bolting. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading?",
+          "a": "To order the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading: why Monel 400 for chlorine?",
+          "a": "Monel 400 (UNS N04400) is the only metallic alloy approved by the Chlorine Institute (Pamphlet 6 + Specification 135-3) for liquid chlorine transfer. Carbon steel and stainless steel both fail rapidly in dry / wet chlorine due to galvanic and chloride-cell corrosion. Monel's nickel-copper composition is uniquely passive in chlorine environments."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading?",
+          "a": "All assemblies tested at 750 psi, then permanently tagged, cleaned and capped. End options include Monel nipples, unions, Class 150 flanges and lap-joint stub ends."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3. Chlorine Institute Pamphlet 6 + Specification 135-3, CSA B51. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading typically used?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading has several listed uses. Listed uses: rail tank car chlorine loading and unloading; chlorine transfer at water-treatment and chemical plants."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading built to order, and what is the delivery?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn M96ZC Monel Chlorine Transfer Hose, Rail-Loading in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-m96zc-monel-chlorine-transfer-hose-tanker-truck",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck used for?",
+          "a": "The Thorburn M96ZC all-Monel chlorine transfer hose, built for tanker-truck loading and unloading. Typical uses include chlorine tanker truck loading and unloading. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck made of?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck: Monel 400 corrugated core, Monel braid and Monel 60 filler, TIG welded, Armor-Flex guard. Complies with Chlorine Institute Pamphlet 6, Appendix A."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck: what is the typical service life and maintenance schedule?",
+          "a": "Chlorine-rated assemblies: 3-5 year service life depending on duty cycle. Required: annual hydrotest, chlorine-institute re-certification every 24 months. Replace at any sign of pitting or surface degradation."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck: what end fittings are used?",
+          "a": "Monel 400 with chlorine-rated truck couplers (Pamphlet 6). End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck?",
+          "a": "To order the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck: why Monel 400 for chlorine?",
+          "a": "Monel 400 (UNS N04400) is the only metallic alloy approved by the Chlorine Institute (Pamphlet 6 + Specification 135-3) for liquid chlorine transfer. Carbon steel and stainless steel both fail rapidly in dry / wet chlorine due to galvanic and chloride-cell corrosion. Monel's nickel-copper composition is uniquely passive in chlorine environments."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck?",
+          "a": "Every assembly tested at 750 psi, tagged, cleaned and capped. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3. Chlorine Institute Pamphlet 6 + Specification 135-3. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck typically used?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck has several listed uses. Listed uses: chlorine tanker truck loading and unloading."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck built to order, and what is the delivery?",
+          "a": "The Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck in stock in Dubai?",
+          "a": "Yes. We keep the Thorburn M96ZC Monel Chlorine Transfer Hose, Tanker Truck in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-sure-temp-electrically-heated-metallic-hose-1-in",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in used for?",
+          "a": "The Thorburn Sure-Temp is a metal hose with a spiral mineral-insulated heating cable, a 100 Ω platinum RTD and a programmable controller, holding the product at a set temperature without steam tracing. Typical uses include adhesive, bitumen and wax transfer, flue-gas and emission sampling lines and food and pharmaceutical dosing. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in take?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in has typical design pressure from full vacuum to 300 psi (20 bar); liquid service: holding temperature 5–250 °C, bores 8–200 mm."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in made of?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in: Liquid service: holding temperature 5–250 °C, bores 8–200 mm. Gas analysis service: 5–450 °C, bores 4–50 mm."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in: what is the typical service life and maintenance schedule?",
+          "a": "Electrically-heated assemblies: 7-10 year service life. Annual electrical safety / megger test on the heating element; replace thermostat if drift > 5°C from setpoint."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in: what end fittings are used?",
+          "a": "316L SS NPT or sanitary tri-clamp; integrated 110/240 VAC power lead. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in?",
+          "a": "To order the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in: how does the electric heat tracing work?",
+          "a": "The Sure-Temp heating element is integrated within the hose construction (typically a self-regulating heating cable wrapped around the inner core, beneath an insulating jacket). A thermostat senses process temperature and modulates power to maintain setpoint. Power supply: 110-240 VAC, with optional explosion-proof / hazardous-area variants."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in?",
+          "a": "Typical design pressure from full vacuum to 300 psi (20 bar). TFTC-01 controller programmable from −50 to 500 °C. Available with Factory Mutual approval for Class I, Division 2, Group D areas."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module A. ASME B31.3. UL536 (electrical). EN 10204 3.1 / 3.2 mill test reports. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in typically used?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in has several listed uses. Listed uses: adhesive, bitumen and wax transfer; flue-gas and emission sampling lines; food and pharmaceutical dosing."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in built to order, and what is the delivery?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Thorburn Sure-Temp Electrically-Heated Metallic Hose, 1 in and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-sure-temp-hazardous-area-electrically-heated-hose-2-in-ex-rated",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) used for?",
+          "a": "The Thorburn Sure-Temp 2 in electrically heated metal hose, offered with Factory Mutual approval for Class I, Division 2, Group D hazardous locations. Typical uses include heated transfer in classified areas of refineries and chemical plants and bitumen and heavy-oil transfer. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) take?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) has typical design pressure full vacuum to 300 psi (20 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) made of?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option): Spiral MI-cable heating element, 100 Ω Pt RTD and programmable controller. Liquid service 5–250 °C; gas analysis service 5–450 °C."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option): what is the typical service life and maintenance schedule?",
+          "a": "Electrically-heated assemblies: 7-10 year service life. Annual electrical safety / megger test on the heating element; replace thermostat if drift > 5°C from setpoint."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option): what end fittings are used?",
+          "a": "ANSI 150# RF flanged; ATEX/IECEx-rated electrical entry. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option)?",
+          "a": "To order the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option), send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option): how does the electric heat tracing work?",
+          "a": "The Sure-Temp heating element is integrated within the hose construction (typically a self-regulating heating cable wrapped around the inner core, beneath an insulating jacket). A thermostat senses process temperature and modulates power to maintain setpoint. Power supply: 110-240 VAC, with optional explosion-proof / hazardous-area variants."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option)?",
+          "a": "Typical design pressure full vacuum to 300 psi (20 bar). The maker states FM Class I Div 2 Group D approval; confirm any ATEX or IECEx zone requirement before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.3. UL536, ATEX II 2 G Ex db IIB+H₂ T3, IECEx Zone 1. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) typically used?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) has several listed uses. Listed uses: heated transfer in classified areas of refineries and chemical plants; bitumen and heavy-oil transfer."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) built to order, and what is the delivery?",
+          "a": "The Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature. And Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) in stock in Dubai?",
+          "a": "Yes, we carry the Thorburn Sure-Temp Electrically-Heated Hose, 2 in (FM Class I Div 2 option) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-thermacover-cryogenic-insulation-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn ThermaCover Cryogenic Insulation Cover used for?",
+          "a": "A Thorburn removable insulation cover for cryogenic hose , made to fit the hose or fitting and taken off for inspection. Typical uses include liquid nitrogen, oxygen and argon transfer hose, personnel protection on cold lines and reducing frost and ice build-up. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "D",
+          "q": "Which temperature limits apply to the Thorburn cryogenic cover options?",
+          "a": "Thorburn quotes Cryo-Therm foam cover for transfer hose at -196 to 302 °C, while its ThermaCover covers use silicone- or PTFE-impregnated fibreglass over an insulation core. Cover material and thickness are confirmed for the hose size and the service temperature."
+        },
+        {
+          "slot": "E",
+          "q": "What does the Thorburn ThermaCover cryogenic cover do for a transfer hose?",
+          "a": "It reduces heat gain, external icing and the product lost per fill on a cryogenic transfer hose. It is removable, made to fit the hose or fitting and taken off for inspection."
+        },
+        {
+          "slot": "G",
+          "q": "What should I know before ordering the Thorburn ThermaCover Cryogenic Insulation Cover?",
+          "a": "Thorburn’s cryogenic cover option for transfer hose is Cryo-Therm foam (−196 to 302 °C); its ThermaCover covers use silicone- or PTFE-impregnated fibreglass over an insulation core. Reduces heat gain, external icing and product lost per fill. Cover material and thickness confirmed for the hose size and service temperature. Give the full duty on your request for the Thorburn ThermaCover Cryogenic Insulation Cover."
+        },
+        {
+          "slot": "G",
+          "q": "how does the Thorburn ThermaCover Cryogenic Insulation Cover integrate with my system?",
+          "a": "Confirm the host system interface on the RFQ — Indus matches the assembly fittings to your installation. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn ThermaCover Cryogenic Insulation Cover?",
+          "a": "To order the Thorburn ThermaCover Cryogenic Insulation Cover, send the fluid, its pressure and temperature, the bore, overall length, both end connections and any standard or certificate the project needs. We confirm the build and its ratings with the maker before quoting, and supply the test certificate with the assembly."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn ThermaCover Cryogenic Insulation Cover: what is the typical service life and maintenance schedule?",
+          "a": "Service life depends on duty cycle and process exposure. Annual inspection recommended. Send us the details and we confirm the specification before supply."
+        },
+        {
+          "slot": "I",
+          "q": "Thorburn ThermaCover Cryogenic Insulation Cover: what end fittings are used?",
+          "a": "Velcro closure; multi-layer reflective wrap. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn ThermaCover Cryogenic Insulation Cover typically used?",
+          "a": "The Thorburn ThermaCover Cryogenic Insulation Cover has several listed uses. Listed uses: liquid nitrogen, oxygen and argon transfer hose; personnel protection on cold lines; reducing frost and ice build-up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the cryogenic ThermaCover differ from the removable thermal ThermaCover?",
+          "a": "The cryogenic cover is for cold hose such as liquid nitrogen, oxygen and argon transfer, while the [removable thermal insulation cover](/p/thorburn-thermacover-removable-thermal-insulation-cover) is a sewn cover for hot hoses, valves and fittings that have to come off for maintenance."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn ThermaCover Cryogenic Insulation Cover built to order, and what is the delivery?",
+          "a": "The Thorburn ThermaCover Cryogenic Insulation Cover is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn ThermaCover Cryogenic Insulation Cover in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Thorburn ThermaCover Cryogenic Insulation Cover and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-thermacover-removable-thermal-insulation-cover",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn ThermaCover Removable Thermal Insulation Cover used for?",
+          "a": "The Thorburn ThermaCover is a removable, sewn insulation cover for hoses, valves and fittings that have to come off for maintenance. Typical uses include personnel protection on hot hoses and valves, heat retention on jacketed and traced lines and freeze protection. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "D",
+          "q": "Which fabrics and insulation cores does the Thorburn ThermaCover use?",
+          "a": "Cover fabrics are silicone-impregnated fibreglass (-55 to 260 °C) or PTFE-impregnated fibreglass (-73 to 260 °C). Insulation cores are silica aerogel blanket or mineral wool, both rated to 650 °C operating temperature at the hot face."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Thorburn ThermaCover Removable Thermal Insulation Cover cover?",
+          "a": "The Thorburn ThermaCover Removable Thermal Insulation Cover has insulation cores: silica aerogel blanket or mineral wool, both rated to 650 °C operating temperature at the hot face."
+        },
+        {
+          "slot": "E",
+          "q": "What closures does the Thorburn ThermaCover removable cover have?",
+          "a": "Flap closures and a sewn bolster bag, with freeze-protection designs to -60 °C. It is a removable sewn cover for hoses, valves and fittings that have to come off for maintenance."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn ThermaCover Removable Thermal Insulation Cover made of?",
+          "a": "The Thorburn ThermaCover Removable Thermal Insulation Cover: Cover fabrics: silicone-impregnated fibreglass (−55 to 260 °C) or PTFE-impregnated fibreglass (−73 to 260 °C). Insulation cores: silica aerogel blanket or mineral wool, both rated to 650 °C operating temperature at the hot face."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn ThermaCover Removable Thermal Insulation Cover?",
+          "a": "To order the Thorburn ThermaCover Removable Thermal Insulation Cover, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn ThermaCover Removable Thermal Insulation Cover?",
+          "a": "Flap closures and a sewn bolster bag; freeze-protection designs to −60 °C. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "I",
+          "q": "Thorburn ThermaCover Removable Thermal Insulation Cover: what end fittings are used?",
+          "a": "Velcro / D-ring closure; no rigid fittings. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn ThermaCover Removable Thermal Insulation Cover typically used?",
+          "a": "The Thorburn ThermaCover Removable Thermal Insulation Cover has several listed uses. Listed uses: personnel protection on hot hoses and valves; heat retention on jacketed and traced lines; freeze protection."
+        },
+        {
+          "slot": "K",
+          "q": "How does the removable ThermaCover differ from the cryogenic ThermaCover?",
+          "a": "This is a sewn cover for hot hoses, valves and fittings, for personnel protection, heat retention and freeze protection, while the [cryogenic insulation cover](/p/thorburn-thermacover-cryogenic-insulation-cover) is for cold transfer hose where it reduces icing."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn ThermaCover Removable Thermal Insulation Cover built to order, and what is the delivery?",
+          "a": "The Thorburn ThermaCover Removable Thermal Insulation Cover is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn ThermaCover Removable Thermal Insulation Cover in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Thorburn ThermaCover Removable Thermal Insulation Cover and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-thor-loop-series-ul-u-loop-flexible-pipe-loop",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop used for?",
+          "a": "The Thorburn Thor-Loop UL is a U-shaped flexible pipe loop of two metal hoses and a 180° return, installed in a pipe run to absorb thermal expansion and seismic movement. Typical uses include sprinkler mains across building expansion joints, gas lines to equipment on isolators and seismic movement joints. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "D",
+          "q": "How much movement does the Thorburn Thor-Loop UL absorb?",
+          "a": "The Thor-Loop UL absorbs up to 500 mm (20 in) of movement in all directions. It is a U-shaped loop of two metal hoses and a 180° return, installed in a pipe run to absorb thermal expansion and seismic movement."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop made of?",
+          "a": "The Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop: Absorbs up to 500 mm (20 in) of movement in all directions. UL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop: what end fittings are used?",
+          "a": "ANSI 150# / 300# / 600# RF flanged ends. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Thorburn Thor-Loop UL listed for sprinkler and gas systems?",
+          "a": "The listing says it is UL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems. Ask for the listing documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop?",
+          "a": "To order the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop?",
+          "a": "Carbon steel, 304, 316 or brass; NPT, weld, 150/300# flange or grooved ends. Any orientation other than hanging down needs the 180° return supported."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.1, B31.3, Section VIII Div 1. NACE MR0175 / ISO 15156. CSA B51. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Thorburn Thor-Loop UL be installed?",
+          "a": "Any orientation other than hanging down needs the 180° return supported. Materials are carbon steel, 304, 316 or brass, with NPT, weld, 150/300# flange or grooved ends."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop typically used?",
+          "a": "The Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop has several listed uses. Listed uses: sprinkler mains across building expansion joints; gas lines to equipment on isolators; seismic movement joints."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Thor-Loop UL compare with the Thor-Loop VL?",
+          "a": "The UL is the U-shaped loop with a 180° return, while the [Thor-Loop VL](/p/thorburn-thor-loop-series-vl-v-loop-flexible-pipe-loop) is the V-shaped version. Both absorb up to 500 mm (20 in) of movement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop in stock in Dubai?",
+          "a": "Yes. We keep the Thorburn Thor-Loop Series UL \"U-Loop\" Flexible Pipe Loop in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-thor-loop-series-vl-v-loop-flexible-pipe-loop",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop used for?",
+          "a": "The Thorburn Thor-Loop VL is the V-shaped version of the Thor-Loop flexible pipe loop. Typical uses include building expansion and seismic joints and pipe runs with large thermal movement. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "D",
+          "q": "How much movement does the Thorburn Thor-Loop VL absorb?",
+          "a": "The Thor-Loop VL absorbs up to 500 mm (20 in) of thermal (axial) and seismic movement in all directions. It is the V-shaped version of the Thor-Loop flexible pipe loop."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop made of?",
+          "a": "The Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop: Absorbs up to 500 mm (20 in) of thermal (axial) and seismic movement in all directions. UL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems."
+        },
+        {
+          "slot": "G",
+          "q": "Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop: what end fittings are used?",
+          "a": "ANSI 150# / 300# / 600# RF flanged ends (selectable). End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Thorburn Thor-Loop VL listed for sprinkler and gas systems?",
+          "a": "The listing says it is UL-listed and CGA-certified for fire sprinkler and gas-fired equipment systems. Ask for the listing documents you need on your request."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop?",
+          "a": "To order the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "I",
+          "q": "What else should I know about the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop?",
+          "a": "Carbon steel, 304, 316 or brass, with NPT, weld, flanged or grooved ends. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "I",
+          "q": "what standards / certifications does the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.1, B31.3, Section VIII Div 1. NACE MR0175 / ISO 15156. CSA B51. EN 10204 3.1 / 3.2 mill test reports."
+        },
+        {
+          "slot": "I",
+          "q": "What materials and ends does the Thorburn Thor-Loop VL come with?",
+          "a": "Carbon steel, 304, 316 or brass, with NPT, weld, flanged or grooved ends. State the pipe size and end style on your request. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop typically used?",
+          "a": "The Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop has several listed uses. Listed uses: building expansion and seismic joints; pipe runs with large thermal movement."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Thor-Loop VL compare with the Thor-Loop UL?",
+          "a": "The VL is the V-shaped loop, while the [Thor-Loop UL](/p/thorburn-thor-loop-series-ul-u-loop-flexible-pipe-loop) is the U-shaped loop with a 180° return that must be supported unless it hangs down. Both absorb up to 500 mm (20 in) of movement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn Thor-Loop Series VL \"V-Loop\" Flexible Pipe Loop in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-tsj-steam-jacketed-hose-2-in-asphalt-pitch-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn TSJ Steam-Jacketed Hose, 2 in used for?",
+          "a": "A Thorburn steam-jacketed hose is “a hose within a hose”: the inner hose carries the product, the outer carries steam through port couplings in the outer hose, and both act independently as pressure carriers. Typical uses include asphalt and pitch loading, molten sulphur transfer and viscous chemical transfer that must not cool. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn TSJ Steam-Jacketed Hose, 2 in made of?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 2 in: Steam-jacketed (TJHS) design for asphalt, pitch, slurry and viscous chemicals, freeze protection and sampling. Ratings depend on the inner and outer hose sizes and the jacket medium — confirmed for each build."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 2 in: how does the steam-jacket integrate with my system?",
+          "a": "The outer steam carrier connects to your steam header at one end and condensate return at the other. The inner process hose has its own independent inlet and outlet flanges. Steam supply pressure is sized to match the desired process temperature — typically 50-150 psi steam for asphalt / pitch service at 200-300°F process temperature."
+        },
+        {
+          "slot": "G",
+          "q": "what standards / certifications does the Thorburn TSJ Steam-Jacketed Hose, 2 in meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.1 (steam), B31.3 (process). . EN 10204 3.1 / 3.2 mill test reports. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn TSJ Steam-Jacketed Hose, 2 in?",
+          "a": "To order the Thorburn TSJ Steam-Jacketed Hose, 2 in, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 2 in: what end fittings are used?",
+          "a": "ANSI 300# RF flanged inner; ANSI 150# RF flanged steam jacket. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "I",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 2 in: what is the operating temperature range?",
+          "a": "-50°C to +230°C continuous. The steam jacket maintains the process at the desired set temperature; choose steam supply pressure to match."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn TSJ Steam-Jacketed Hose, 2 in typically used?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 2 in has several listed uses. Listed uses: asphalt and pitch loading; molten sulphur transfer; viscous chemical transfer that must not cool."
+        },
+        {
+          "slot": "J",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 2 in: what is the typical service life and maintenance schedule?",
+          "a": "Steam-jacketed assemblies: 5-7 year service life. Annual inspection of inner-hose integrity (pressure-test from process side) and steam-trap function. Replace inner-hose if pressure-test failure."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn TSJ Steam-Jacketed Hose, 2 in built to order, and what is the delivery?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 2 in is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn TSJ Steam-Jacketed Hose, 2 in in stock in Dubai?",
+          "a": "Yes, we hold the Thorburn TSJ Steam-Jacketed Hose, 2 in in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "thorburn-tsj-steam-jacketed-hose-3-in-molten-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Thorburn TSJ Steam-Jacketed Hose, 3 in used for?",
+          "a": "A 3 in Thorburn steam-jacketed hose : product in the inner hose, steam or heating medium in the jacket, each a separate pressure carrier. Typical uses include molten polymer, wax and asphalt transfer and viscous products that set if they cool. See the [specialty hose assemblies](/c/metallic-specialty-assemblies)."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Thorburn TSJ Steam-Jacketed Hose, 3 in made of?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 3 in: Steam-jacketed (TJHS) design; a double-containment version (TJHD) with optional breach warning is also available. Ratings confirmed for each build."
+        },
+        {
+          "slot": "F",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 3 in: how does the steam-jacket integrate with my system?",
+          "a": "The outer steam carrier connects to your steam header at one end and condensate return at the other. The inner process hose has its own independent inlet and outlet flanges. Steam supply pressure is sized to match the desired process temperature — typically 50-150 psi steam for asphalt / pitch service at 200-300°F process temperature."
+        },
+        {
+          "slot": "G",
+          "q": "what standards / certifications does the Thorburn TSJ Steam-Jacketed Hose, 3 in meet?",
+          "a": "ISO 10380:2012. PED 2014/68/EU Module H. ASME B31.1 (steam), B31.3 (process). . EN 10204 3.1 / 3.2 mill test reports. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "H",
+          "q": "What do I send to order the Thorburn TSJ Steam-Jacketed Hose, 3 in?",
+          "a": "To order the Thorburn TSJ Steam-Jacketed Hose, 3 in, send the bore, overall length, both end connections, the fluid, its pressure and temperature, and any certification the project needs. We will confirm the build with the maker and quote it."
+        },
+        {
+          "slot": "H",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 3 in: what end fittings are used?",
+          "a": "ANSI 300# RF flanged inner / ANSI 150# RF flanged outer. End-fitting alloy is typically matched to the inner core for severe service. For cryogenic assemblies, vacuum-jacketed bayonet or threaded couplers are standard; for steam-jacketed assemblies, the inner and outer hoses are sealed at independent flanged ports."
+        },
+        {
+          "slot": "I",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 3 in: what is the operating temperature range?",
+          "a": "-50°C to +250°C continuous. The steam jacket maintains the process at the desired set temperature; choose steam supply pressure to match."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Thorburn TSJ Steam-Jacketed Hose, 3 in typically used?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 3 in has several listed uses. Listed uses: molten polymer, wax and asphalt transfer; viscous products that set if they cool."
+        },
+        {
+          "slot": "J",
+          "q": "Thorburn TSJ Steam-Jacketed Hose, 3 in: what is the typical service life and maintenance schedule?",
+          "a": "Steam-jacketed assemblies: 5-7 year service life. Annual inspection of inner-hose integrity (pressure-test from process side) and steam-trap function. Replace inner-hose if pressure-test failure."
+        },
+        {
+          "slot": "L",
+          "q": "Is the Thorburn TSJ Steam-Jacketed Hose, 3 in built to order, and what is the delivery?",
+          "a": "The Thorburn TSJ Steam-Jacketed Hose, 3 in is quoted per build: the listing says to send the bore, length, end connections, fluid, pressure and temperature, and Indus confirms the build with the maker and quotes it. The listing gives Canada as the country of origin. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Thorburn TSJ Steam-Jacketed Hose, 3 in in stock in Dubai?",
+          "a": "Yes. We keep the Thorburn TSJ Steam-Jacketed Hose, 3 in in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Builds are quoted per bore, length and end connection. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

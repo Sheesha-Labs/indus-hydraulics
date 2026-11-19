@@ -1,0 +1,1319 @@
+{
+  "family": "welded-hydraulic-cylinders-05",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "maxim-welded-ag-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Maxim Welded Ag Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 4\" bore and a 2\" rod. Its mounting is an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in one stroke length (20\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Maxim Welded Ag Clevis 4\" bore cylinder part numbers run from 297180 to 297180 across 1 listed part number, one per stroke and rod combination. 297180 is the 20\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Maxim Welded Ag Clevis 4\" bore cylinder is listed in a single 20\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Ag Clevis 4\" bore cylinder runs from 30.25\" to 30.25\" and extended length from 50.25\" to 50.25\", depending on stroke. For example the 20\" stroke is 30.25\" retracted and 50.25\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Maxim Welded Ag Clevis 4\" bore cylinder uses the 2\" rod, and the listed column load is 37,868 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Ag Clevis 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Maxim Welded Ag Clevis 4\" bore cylinder is listed as 37,868 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Maxim Welded Ag Clevis 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Maxim Welded Ag Clevis 4\" bore cylinder has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Maxim Welded Ag Clevis 4\" bore cylinder lists 37,868 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore differ from other 4\" bore cylinders in the range?",
+          "a": "The same 4\" bore is also listed with a different mounting as the [Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-4-in-bore). Choose by how your machine mounts the cylinder: this one has an agricultural-pattern clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin; check the other listing for its pin and eye arrangement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Ag Clevis Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Maxim Welded Ag Clevis 4\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-clevis-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Maxim Welded Clevis 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2.5\" bore and a 1.5\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Maxim Welded Clevis 2.5\" bore cylinder part numbers run from 288413 to 288425 across 14 listed part numbers, one per stroke and rod combination. 288413 is the 4\" stroke and 288425 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Welded Clevis 2.5\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Clevis 2.5\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Maxim Welded Clevis 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,010 to 14,720 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Clevis 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Clevis 2.5\" bore cylinder is listed as 8,010 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Maxim Welded Clevis 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Clevis 2.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Clevis 2.5\" bore cylinder lists 8,010 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded clevis pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,010 to 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Maxim Welded Clevis 2.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-clevis-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Maxim Welded Clevis 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2\" bore and a 1.25\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in twelve stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Maxim Welded Clevis 2\" bore cylinder part numbers run from 288400 to 288412 across 13 listed part numbers, one per stroke and rod combination. 288400 is the 4\" stroke and 288412 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Maxim Welded Clevis 2\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Clevis 2\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Maxim Welded Clevis 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 3,890 to 9,420 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Clevis 2\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Maxim Welded Clevis 2\" bore cylinder is listed as 3,890 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Maxim Welded Clevis 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Maxim Welded Clevis 2\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Maxim Welded Clevis 2\" bore cylinder lists 3,890 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Clevis Hydraulic Cylinder, 2.5\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded clevis pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 3,890 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Clevis Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Maxim Welded Clevis 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-clevis-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore do, and what is it for?",
+          "a": "Maxim Welded Clevis 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 3.5\" bore and a 1.75\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in ten stroke lengths from 6\" to 36\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore come in?",
+          "a": "The Maxim Welded Clevis 3.5\" bore cylinder part numbers run from 288440 to 288451 across 11 listed part numbers, one per stroke and rod combination. 288440 is the 6\" stroke and 288451 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Maxim Welded Clevis 3.5\" bore cylinder comes in ten stroke lengths from 6\" to 36\", including 6\", 10\", 14\", 16\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Clevis 3.5\" bore cylinder runs from 16.25\" to 46.25\" and extended length from 22.25\" to 82.25\", depending on stroke. For example the 6\" stroke is 16.25\" retracted and 22.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Maxim Welded Clevis 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 15,560 to 28,860 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Clevis 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Clevis 3.5\" bore cylinder is listed as 15,560 to 28,860 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Maxim Welded Clevis 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Clevis 3.5\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Clevis 3.5\" bore cylinder lists 15,560 to 28,860 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded clevis pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 15,560 to 28,860 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Maxim Welded Clevis 3.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-clevis-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Maxim Welded Clevis 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 3\" bore and a 1.5\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eleven stroke lengths from 4\" to 36\", 12 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore organised?",
+          "a": "The Maxim Welded Clevis 3\" bore cylinder part numbers run from 288426 to 288438 across 12 listed part numbers, one per stroke and rod combination. 288426 is the 4\" stroke and 288438 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Welded Clevis 3\" bore cylinder comes in eleven stroke lengths from 4\" to 36\", including 4\", 8\", 12\", 16\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Clevis 3\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Maxim Welded Clevis 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,390 to 21,200 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Clevis 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Maxim Welded Clevis 3\" bore cylinder is listed as 8,390 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Maxim Welded Clevis 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Maxim Welded Clevis 3\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Maxim Welded Clevis 3\" bore cylinder lists 8,390 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded clevis pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,390 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Welded Clevis Hydraulic Cylinder, 3\" Bore in Dubai for export?",
+          "a": "Yes, Maxim Welded Clevis 3\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-clevis-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore and what is it used for?",
+          "a": "Maxim Welded Clevis 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 4\" bore and a 2\" rod. Its mounting is a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. It is listed in eleven stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore organised?",
+          "a": "The Maxim Welded Clevis 4\" bore cylinder part numbers run from 288452 to 288464 across 13 listed part numbers, one per stroke and rod combination. 288452 is the 4\" stroke and 288464 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Maxim Welded Clevis 4\" bore cylinder comes in eleven stroke lengths from 4\" to 36\", including 4\", 8\", 14\", 18\", 24\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Clevis 4\" bore cylinder runs from 14.25\" to 46.25\" and extended length from 18.25\" to 82.25\", depending on stroke. For example the 4\" stroke is 14.25\" retracted and 18.25\" extended, and the 36\" stroke is 46.25\" and 82.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Maxim Welded Clevis 4\" bore cylinder uses the 2\" rod, and the listed column load is 26,560 to 37,690 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Clevis 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Maxim Welded Clevis 4\" bore cylinder is listed as 26,560 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Maxim Welded Clevis 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Maxim Welded Clevis 4\" bore cylinder has a clevis bracket welded to the cap end, pinned to the machine so the cylinder pivots in the plane of the pin. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Maxim Welded Clevis 4\" bore cylinder lists 26,560 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Maxim Welded Clevis Hydraulic Cylinder, 3.5\" Bore](/p/maxim-welded-clevis-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded clevis pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 26,560 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Welded Clevis Hydraulic Cylinder, 4\" Bore in Dubai for export?",
+          "a": "Yes. Maxim Welded Clevis 4\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore do, and what is it for?",
+          "a": "Maxim Welded Cross Tube 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 1.5\" bore and a 0.75\" or 1\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in six stroke lengths from 4\" to 16\", 7 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore come in?",
+          "a": "The Maxim Welded Cross Tube 1.5\" bore cylinder part numbers run from 288300 to 288306 across 7 listed part numbers, one per stroke and rod combination. 288300 is the 4\" stroke and 288306 the 16\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 1.5\" bore cylinder comes in six stroke lengths from 4\" to 16\", including 4\", 6\", 8\", 10\", 14\" and 16\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 1.5\" bore cylinder runs from 12\" to 24\" and extended length from 16\" to 40\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 16\" stroke is 24\" and 40\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 1.5\" bore cylinder is listed with two rod diameters, 0.75\" and 1\". Per rod: the 0.75\" rod (one part number, column load 3,020 lbs); the 1\" rod (six part numbers, column load 5,300 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Welded Cross Tube 1.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 1.5\" bore cylinder is listed as 3,020 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 1.5\" bore cylinder has SAE ORB -4 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 1.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 1.5\" bore cylinder lists 3,020 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 0.75\" or 1\" rod and column load of 3,020 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Cross Tube Hydraulic Cylinder, 1.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Maxim Welded Cross Tube 1.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Maxim Welded Cross Tube 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2.5\" bore and a 1.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in twelve stroke lengths from 4\" to 36\", 12 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Maxim Welded Cross Tube 2.5\" bore cylinder part numbers run from 288320 to 288332 across 12 listed part numbers, one per stroke and rod combination. 288320 is the 4\" stroke and 288332 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 2.5\" bore cylinder comes in twelve stroke lengths from 4\" to 36\", including 4\", 8\", 14\", 20\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 2.5\" bore cylinder runs from 12\" to 44\" and extended length from 16\" to 80\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 8,470 to 14,720 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 2.5\" bore cylinder is listed as 8,470 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 2.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 2.5\" bore cylinder lists 8,470 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 8,470 to 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Maxim Welded Cross Tube 2.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore and what is it used for?",
+          "a": "Maxim Welded Cross Tube 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2\" bore and a 1.25\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in thirteen stroke lengths from 4\" to 36\", 13 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Maxim Welded Cross Tube 2\" bore cylinder part numbers run from 288307 to 288319 across 13 listed part numbers, one per stroke and rod combination. 288307 is the 4\" stroke and 288319 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Maxim Welded Cross Tube 2\" bore cylinder comes in thirteen stroke lengths from 4\" to 36\", including 4\", 8\", 14\", 18\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 2\" bore cylinder runs from 12\" to 44\" and extended length from 16\" to 80\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 4,120 to 9,420 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Welded Cross Tube 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 2\" bore cylinder is listed as 4,120 to 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 2\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 2\" bore cylinder lists 4,120 to 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 2.5\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 4,120 to 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Cross Tube Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Maxim Welded Cross Tube 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-3-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore do, and what is it for?",
+          "a": "Maxim Welded Cross Tube 3.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 3.5\" bore and a 1.75\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fifteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore organised?",
+          "a": "The Maxim Welded Cross Tube 3.5\" bore cylinder part numbers run from 288348 to 288362 across 15 listed part numbers, one per stroke and rod combination. 288348 is the 4\" stroke and 288362 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 3.5\" bore cylinder comes in fifteen stroke lengths from 4\" to 48\", including 4\", 10\", 16\", 20\", 32\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 3.5\" bore cylinder runs from 14\" to 58\" and extended length from 18\" to 106\", depending on stroke. For example the 4\" stroke is 14\" retracted and 18\" extended, and the 48\" stroke is 58\" and 106\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 3.5\" bore cylinder uses the 1.75\" rod, and the listed column load is 9,210 to 28,860 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 3.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 3.5\" bore cylinder is listed as 9,210 to 28,860 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 3.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 3.5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 3.5\" bore cylinder lists 9,210 to 28,860 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore compare with the 4\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 3.5\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 9,210 to 28,860 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Maxim Welded Cross Tube 3.5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore and what is it used for?",
+          "a": "Maxim Welded Cross Tube 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 3\" bore and a 1.5\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fourteen stroke lengths from 4\" to 48\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Maxim Welded Cross Tube 3\" bore cylinder part numbers run from 288333 to 288347 across 14 listed part numbers, one per stroke and rod combination. 288333 is the 4\" stroke and 288347 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Welded Cross Tube 3\" bore cylinder comes in fourteen stroke lengths from 4\" to 48\", including 4\", 10\", 14\", 20\", 30\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 3\" bore cylinder runs from 12\" to 56\" and extended length from 16\" to 104\", depending on stroke. For example the 4\" stroke is 12\" retracted and 16\" extended, and the 48\" stroke is 56\" and 104\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 3\" bore cylinder uses the 1.5\" rod, and the listed column load is 5,230 to 21,200 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 3\" bore cylinder is listed as 5,230 to 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 3\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 3\" bore cylinder lists 5,230 to 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 3\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 5,230 to 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Cross Tube Hydraulic Cylinder, 3\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Maxim Welded Cross Tube 3\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore, and where is it used?",
+          "a": "Maxim Welded Cross Tube 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 4\" bore and a 2\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in fifteen stroke lengths from 4\" to 48\", 15 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Maxim Welded Cross Tube 4\" bore cylinder part numbers run from 288363 to 288377 across 15 listed part numbers, one per stroke and rod combination. 288363 is the 4\" stroke and 288377 the 48\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Maxim Welded Cross Tube 4\" bore cylinder comes in fifteen stroke lengths from 4\" to 48\", including 4\", 10\", 16\", 20\", 32\" and 48\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 4\" bore cylinder runs from 14\" to 58\" and extended length from 18\" to 106\", depending on stroke. For example the 4\" stroke is 14\" retracted and 18\" extended, and the 48\" stroke is 58\" and 106\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 4\" bore cylinder uses the 2\" rod, and the listed column load is 15,700 to 37,690 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 4\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 4\" bore cylinder is listed as 15,700 to 37,690 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 4\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 4\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 4\" bore cylinder lists 15,700 to 37,690 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore compare with the 3.5\" bore version?",
+          "a": "The next size down is the [Maxim Welded Cross Tube Hydraulic Cylinder, 3.5\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-3-5-in-bore) with a 3.5\" bore against this 4\" bore, in the same welded cross tube pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 15,700 to 37,690 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Cross Tube Hydraulic Cylinder, 4\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks Maxim Welded Cross Tube 4\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore, and where is it used?",
+          "a": "Maxim Welded Cross Tube 5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 5\" bore and a 2.5\" or 3\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in thirteen stroke lengths from 8\" to 72\", 14 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore come in?",
+          "a": "The Maxim Welded Cross Tube 5\" bore cylinder part numbers run from 216550 to 216560 across 14 listed part numbers, one per stroke and rod combination. 216550 is the 8\" stroke and 216560 the 72\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 5\" bore cylinder comes in thirteen stroke lengths from 8\" to 72\", including 8\", 12\", 20\", 30\", 42\" and 72\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 5\" bore cylinder runs from 19\" to 83\" and extended length from 27\" to 155\", depending on stroke. For example the 8\" stroke is 19\" retracted and 27\" extended, and the 72\" stroke is 83\" and 155\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Maxim Welded Cross Tube 5\" bore cylinder is listed with two rod diameters, 2.5\" and 3\". Per rod: the 2.5\" rod (thirteen part numbers, column load 21,127 to 58,900 lbs); the 3\" rod (one part number, column load 58,900 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 5\" bore cylinder is listed as 21,127 to 58,900 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 5\" bore cylinder has NPT 3/4\", SAE ORB -12 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 5\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 5\" bore cylinder lists 21,127 to 58,900 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore compare with the 6\" bore version?",
+          "a": "The next size up is the [Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-6-in-bore) with a 6\" bore against this 5\" bore, in the same welded cross tube pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 2.5\" or 3\" rod and column load of 21,127 to 58,900 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore in Dubai for export?",
+          "a": "Yes. We keep Maxim Welded Cross Tube 5\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-6-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore and what is it used for?",
+          "a": "Maxim Welded Cross Tube 6\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 6\" bore and a 3\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in nine stroke lengths from 10\" to 72\", 10 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore organised?",
+          "a": "The Maxim Welded Cross Tube 6\" bore cylinder part numbers run from 216565 to 216575 across 10 listed part numbers, one per stroke and rod combination. 216565 is the 10\" stroke and 216575 the 72\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "The Maxim Welded Cross Tube 6\" bore cylinder comes in nine stroke lengths from 10\" to 72\", including 10\", 16\", 18\", 36\", 40\" and 72\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 6\" bore cylinder runs from 21\" to 89\" and extended length from 31\" to 161\", depending on stroke. For example the 10\" stroke is 21\" retracted and 31\" extended, and the 72\" stroke is 89\" and 161\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 6\" bore cylinder uses the 3\" rod, and the listed column load is 42,210 to 84,820 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 6\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 6\" bore cylinder is listed as 42,210 to 84,820 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 6\" bore cylinder has NPT 3/4\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 6\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 6\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 6\" bore cylinder lists 42,210 to 84,820 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore compare with the 5\" bore version?",
+          "a": "The next size down is the [Maxim Welded Cross Tube Hydraulic Cylinder, 5\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-5-in-bore) with a 5\" bore against this 6\" bore, in the same welded cross tube pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 3\" rod and column load of 42,210 to 84,820 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore in Dubai for export?",
+          "a": "Yes, Maxim Welded Cross Tube 6\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-cross-tube-hydraulic-cylinder-8-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore do, and what is it for?",
+          "a": "Maxim Welded Cross Tube 8\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 8\" bore and a 4\" rod. Its mounting is a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. It is listed in one stroke length (60\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore come in?",
+          "a": "The Maxim Welded Cross Tube 8\" bore cylinder part numbers run from 216169 to 216169 across 1 listed part number, one per stroke and rod combination. 216169 is the 60\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore?",
+          "a": "The Maxim Welded Cross Tube 8\" bore cylinder is listed in a single 60\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Cross Tube 8\" bore cylinder runs from 80\" to 80\" and extended length from 140\" to 140\", depending on stroke. For example the 60\" stroke is 80\" retracted and 140\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore use?",
+          "a": "Every part number of the Maxim Welded Cross Tube 8\" bore cylinder uses the 4\" rod, and the listed column load is 150,790 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Cross Tube 8\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore carry?",
+          "a": "Column load on the Maxim Welded Cross Tube 8\" bore cylinder is listed as 150,790 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore have?",
+          "a": "The Maxim Welded Cross Tube 8\" bore cylinder has NPT 1\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore mounted and installed?",
+          "a": "The Maxim Welded Cross Tube 8\" bore cylinder has a cross tube welded through the cap end, so the cylinder pivots on a pin passed through the tube. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 8\" bore area, then check the load against the column load for your stroke (the Maxim Welded Cross Tube 8\" bore cylinder lists 150,790 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore compare with the 6\" bore version?",
+          "a": "The next size down is the [Maxim Welded Cross Tube Hydraulic Cylinder, 6\" Bore](/p/maxim-welded-cross-tube-hydraulic-cylinder-6-in-bore) with a 6\" bore against this 8\" bore, in the same welded cross tube pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 4\" rod and column load of 150,790 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Cross Tube Hydraulic Cylinder, 8\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Maxim Welded Cross Tube 8\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-swivel-eye-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore do, and what is it for?",
+          "a": "Maxim Welded Swivel Eye 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 1.5\" bore and a 1\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in six stroke lengths from 4\" to 14\", 6 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore organised?",
+          "a": "The Maxim Welded Swivel Eye 1.5\" bore cylinder part numbers run from 400505 to 400510 across 6 listed part numbers, one per stroke and rod combination. 400505 is the 4\" stroke and 400510 the 14\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 1.5\" bore cylinder comes in six stroke lengths from 4\" to 14\", including 4\", 6\", 8\", 10\", 12\" and 14\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Swivel Eye 1.5\" bore cylinder runs from 11.25\" to 21.25\" and extended length from 15.25\" to 35.25\", depending on stroke. For example the 4\" stroke is 11.25\" retracted and 15.25\" extended, and the 14\" stroke is 21.25\" and 35.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore use?",
+          "a": "Every part number of the Maxim Welded Swivel Eye 1.5\" bore cylinder uses the 1\" rod, and the listed column load is 5,300 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Swivel Eye 1.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Swivel Eye 1.5\" bore cylinder is listed as 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Maxim Welded Swivel Eye 1.5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Swivel Eye 1.5\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Swivel Eye 1.5\" bore cylinder lists 5,300 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore](/p/maxim-welded-swivel-eye-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same welded swivel eye pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Maxim Welded Swivel Eye 1.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-swivel-eye-hydraulic-cylinder-1-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore, and where is it used?",
+          "a": "Maxim Welded Swivel Eye 1\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 1\" bore and a 0.625\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in four stroke lengths from 4\" to 12\", 4 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore organised?",
+          "a": "The Maxim Welded Swivel Eye 1\" bore cylinder part numbers run from 400500 to 400504 across 4 listed part numbers, one per stroke and rod combination. 400500 is the 4\" stroke and 400504 the 12\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 1\" bore cylinder comes in four stroke lengths from 4\" to 12\", including 4\", 6\", 10\" and 12\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Swivel Eye 1\" bore cylinder runs from 10\" to 18\" and extended length from 14\" to 30\", depending on stroke. For example the 4\" stroke is 10\" retracted and 14\" extended, and the 12\" stroke is 18\" and 30\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore use?",
+          "a": "Every part number of the Maxim Welded Swivel Eye 1\" bore cylinder uses the 0.625\" rod, and the listed column load is 2,350 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Welded Swivel Eye 1\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore carry?",
+          "a": "Column load on the Maxim Welded Swivel Eye 1\" bore cylinder is listed as 2,350 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore have?",
+          "a": "The Maxim Welded Swivel Eye 1\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore mounted and installed?",
+          "a": "The Maxim Welded Swivel Eye 1\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1\" bore area, then check the load against the column load for your stroke (the Maxim Welded Swivel Eye 1\" bore cylinder lists 2,350 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore compare with the 1.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Swivel Eye Hydraulic Cylinder, 1.5\" Bore](/p/maxim-welded-swivel-eye-hydraulic-cylinder-1-5-in-bore) with a 1.5\" bore against this 1\" bore, in the same welded swivel eye pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 0.625\" rod and column load of 2,350 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Swivel Eye Hydraulic Cylinder, 1\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Maxim Welded Swivel Eye 1\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-swivel-eye-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Maxim Welded Swivel Eye 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2.5\" bore and a 1.5\" or 1.75\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in eight stroke lengths from 6\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Maxim Welded Swivel Eye 2.5\" bore cylinder part numbers run from 400519 to 400526 across 8 listed part numbers, one per stroke and rod combination. 400519 is the 6\" stroke and 400526 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 2.5\" bore cylinder comes in eight stroke lengths from 6\" to 36\", including 6\", 8\", 10\", 12\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Swivel Eye 2.5\" bore cylinder runs from 13.5\" to 44\" and extended length from 19.5\" to 80\", depending on stroke. For example the 6\" stroke is 13.5\" retracted and 19.5\" extended, and the 36\" stroke is 44\" and 80\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 2.5\" bore cylinder is listed with two rod diameters, 1.5\" and 1.75\". Per rod: the 1.5\" rod (seven part numbers); the 1.75\" rod (one part number). The listing gives one column load figure for the whole range, so confirm the load for your rod and stroke with us before you size it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Swivel Eye 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Maxim Welded Swivel Eye 2.5\" bore cylinder is listed as 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Maxim Welded Swivel Eye 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Maxim Welded Swivel Eye 2.5\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Maxim Welded Swivel Eye 2.5\" bore cylinder lists 14,720 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore compare with the 3\" bore version?",
+          "a": "The next size up is the [Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore](/p/maxim-welded-swivel-eye-hydraulic-cylinder-3-in-bore) with a 3\" bore against this 2.5\" bore, in the same welded swivel eye pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" or 1.75\" rod and column load of 14,720 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Maxim Welded Swivel Eye 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-swivel-eye-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Maxim Welded Swivel Eye 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2\" bore and a 1.25\" or 1.5\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in eight stroke lengths from 6\" to 36\", 8 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Maxim Welded Swivel Eye 2\" bore cylinder part numbers run from 400511 to 400518 across 8 listed part numbers, one per stroke and rod combination. 400511 is the 6\" stroke and 400518 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 2\" bore cylinder comes in eight stroke lengths from 6\" to 36\", including 6\", 8\", 10\", 12\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Swivel Eye 2\" bore cylinder runs from 13.5\" to 44.25\" and extended length from 19.5\" to 80.25\", depending on stroke. For example the 6\" stroke is 13.5\" retracted and 19.5\" extended, and the 36\" stroke is 44.25\" and 80.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 2\" bore cylinder is listed with two rod diameters, 1.25\" and 1.5\". Per rod: the 1.25\" rod (seven part numbers); the 1.5\" rod (one part number). The listing gives one column load figure for the whole range, so confirm the load for your rod and stroke with us before you size it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Welded Swivel Eye 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Maxim Welded Swivel Eye 2\" bore cylinder is listed as 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Maxim Welded Swivel Eye 2\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Maxim Welded Swivel Eye 2\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Maxim Welded Swivel Eye 2\" bore cylinder lists 9,420 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore](/p/maxim-welded-swivel-eye-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2\" bore, in the same welded swivel eye pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" or 1.5\" rod and column load of 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Swivel Eye Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Maxim Welded Swivel Eye 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-welded-swivel-eye-hydraulic-cylinder-3-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore, and where is it used?",
+          "a": "Maxim Welded Swivel Eye 3\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 3\" bore and a 1.5\" or 1.75\" rod. Its mounting is a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. It is listed in seven stroke lengths from 8\" to 36\", 7 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore come in?",
+          "a": "The Maxim Welded Swivel Eye 3\" bore cylinder part numbers run from 400527 to 400533 across 7 listed part numbers, one per stroke and rod combination. 400527 is the 8\" stroke and 400533 the 36\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 3\" bore cylinder comes in seven stroke lengths from 8\" to 36\", including 8\", 10\", 12\", 20\", 24\", 30\" and 36\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Welded Swivel Eye 3\" bore cylinder runs from 16.25\" to 44.25\" and extended length from 24.25\" to 80.25\", depending on stroke. For example the 8\" stroke is 16.25\" retracted and 24.25\" extended, and the 36\" stroke is 44.25\" and 80.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore?",
+          "a": "The Maxim Welded Swivel Eye 3\" bore cylinder is listed with two rod diameters, 1.5\" and 1.75\". Per rod: the 1.5\" rod (five part numbers); the 1.75\" rod (two part numbers). The listing gives one column load figure for the whole range, so confirm the load for your rod and stroke with us before you size it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Welded Swivel Eye 3\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore carry?",
+          "a": "Column load on the Maxim Welded Swivel Eye 3\" bore cylinder is listed as 21,200 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore have?",
+          "a": "The Maxim Welded Swivel Eye 3\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore mounted and installed?",
+          "a": "The Maxim Welded Swivel Eye 3\" bore cylinder has a swivel (spherical) eye at the cap end, which tolerates some misalignment between the pins. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. See our [cylinder mounting styles guide](/blog/hydraulic-cylinder-mounting-styles)."
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 3\" bore area, then check the load against the column load for your stroke (the Maxim Welded Swivel Eye 3\" bore cylinder lists 21,200 lbs). Retract force is lower because the rod takes up part of the piston area. Our [cylinder force and speed guide](/blog/hydraulic-cylinder-force-and-speed) shows the sums."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size down is the [Maxim Welded Swivel Eye Hydraulic Cylinder, 2.5\" Bore](/p/maxim-welded-swivel-eye-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 3\" bore, in the same welded swivel eye pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" or 1.75\" rod and column load of 21,200 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Welded Swivel Eye Hydraulic Cylinder, 3\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Maxim Welded Swivel Eye 3\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

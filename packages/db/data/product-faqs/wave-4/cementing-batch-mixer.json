@@ -1,0 +1,76 @@
+{
+  "family": "cementing-batch-mixer",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cement-batch-mixer-twin-2-100-bbl-coriolis-density-hydraulic-drive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a twin 2x100 BBL cement batch mixer used for?",
+          "a": "A cement batch mixer prepares cement slurry in tanks before it is pumped, so density can be checked and corrected first. This unit has two 100 BBL compartments, sloped conical bottoms with a siphon system to avoid dead volume, and an optional Coriolis density meter."
+        },
+        {
+          "slot": "D",
+          "q": "What capacity and tank layout does the twin 2x100 BBL cement batch mixer have?",
+          "a": "The nominal capacity is 2×100 BBL in two compartments, and uneven splits such as 10 m³ plus 20 m³ are available. Tank geometry can be cylindrical or square with rounded corners. State the batch volume you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "How does the twin 2x100 BBL cement batch mixer stop dead volumes in the tanks?",
+          "a": "Each tank has a sloped conical bottom and a siphon system to prevent dead volumes. Mixing jets homogenise the slurry, and a recording system and automatic density control loop are available as options."
+        },
+        {
+          "slot": "E",
+          "q": "What density measurement does the twin 2x100 BBL cement batch mixer offer?",
+          "a": "An optional non-radioactive Coriolis density meter measures slurry density, with an automatic density control loop and a recording system as options. A non-radioactive meter avoids the source handling and licensing that a nuclear densitometer needs."
+        },
+        {
+          "slot": "F",
+          "q": "What drive options does the twin 2x100 BBL cement batch mixer offer?",
+          "a": "The power pack can be a diesel engine driving hydraulic motors, with CAT, Cummins, Volvo Penta or Deutz engines, or ATEX-certified electric motors with armoured cables and Eex glands. Choose from the area classification of the site."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications can the twin 2x100 BBL cement batch mixer carry?",
+          "a": "The listing offers CE marking and GOST certification on request, Rigsafe and Zone 2 options for offshore deployment, and build under ISO 9001:2015 with NACE MR0175 wetted-parts defaults. State the required approvals on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the twin 2x100 BBL cement batch mixer connect to in a cementing spread?",
+          "a": "It sits between the bulk cement handling and the pumping unit. See [cement silos](/c/cementing-silos) for storage, [cementing units](/c/cementing-units) for the pump, and [cement manifolds](/c/cement-manifolds) for the high-pressure lines."
+        },
+        {
+          "slot": "K",
+          "q": "How does the twin 2x100 BBL cement batch mixer differ from an on-the-fly mixer?",
+          "a": "A batch mixer prepares slurry in tanks before pumping, while an [on-the-fly mixer](/p/on-the-fly-cement-mixer-20-bbl-surge-tank-2-5-sg-max-auto-density) mixes continuously during pumping. Batch mixing gives density checks first; on-the-fly suits long continuous jobs."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the twin 2x100 BBL cement batch mixer used?",
+          "a": "It is used for oilfield cementing jobs that need pre-mixed slurry in controlled batches, and it can be skid, trailer or truck mounted. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for how the spread fits together."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a cement batch mixer quotation?",
+          "a": "Send the batch volume per compartment, the drive and engine preference, the density measurement and control level, the mounting type, the area classification and any certification needed. The unit is configured to your specification."
+        },
+        {
+          "slot": "L",
+          "q": "Can the twin 2x100 BBL cement batch mixer be skid, trailer or truck mounted?",
+          "a": "Yes, the listing offers skid, trailer or truck mounting, with Rigsafe and Zone 2 options for offshore use. Choose from the transport route and whether the unit moves between locations."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the twin 2x100 BBL cement batch mixer?",
+          "a": "Yes. We list the twin 2x100 BBL cement batch mixer as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Most units are configured to specification. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

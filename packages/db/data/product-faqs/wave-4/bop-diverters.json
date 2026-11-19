@@ -1,0 +1,76 @@
+{
+  "family": "bop-diverters",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "top-hole-diverter-system-21-1-4-2-000-psi-wp-hmh-kfdj-style-offshore-shallow-gas",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 21-1/4\" 2,000 psi HMH KFDJ style diverter system used for?",
+          "a": "A 21-1/4\" 2,000 psi HMH KFDJ style diverter system diverts uncontrolled shallow-gas flow overboard instead of letting it reach the rig floor. It sits at the top of the offshore stack while the top-hole and surface-casing sections are drilled through gas-charged shallow sands."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 21-1/4\" 2,000 psi KFDJ style diverter system?",
+          "a": "The diverter is rated 2,000 psi working pressure, 2K class, at a 21-1/4\" bore. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 250°F (-29°C to 121°C)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 21-1/4\" 2,000 psi KFDJ style diverter have?",
+          "a": "It has API 6A 21-1/4\" 2K flanged top and flanged bottom connections, with an integral overboard diverter line on the side outlets. Approximate transport weight is 7,800 kg. Confirm the flange and outlet details on the RFQ against your riser and conductor interface."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure class should a top-hole diverter be, 2,000 psi or higher?",
+          "a": "This unit is rated 2,000 psi at 21-1/4\", the 2K class listed for top-hole diverter duty. Choose the class from the rig's riser and diverter-line design, and send your drilling programme through [our contact page](/contact) for confirmation."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 21-1/4\" 2,000 psi KFDJ style diverter body made from?",
+          "a": "The body is forged AISI 4130 alloy steel, quenched and tempered to API 16A working-pressure design, with hardness controlled. The listing is standard service for sweet hydrocarbon, completion fluid, water, brine and gas; for H2S exposure, ask for the sour-service variant."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM diverters is the Indus 21-1/4\" 2,000 psi KFDJ style system equivalent to?",
+          "a": "It is listed as a matched-pressure equivalent to the HMH KFDJ 21-1/4\" 2K, HMH KFDS-FS, and the Cameron and Shaffer 21-1/4\" 2K diverters on offshore jack-up and platform top-hole stacks. Indus Hydraulics is not an authorised distributor of these OEMs, and units come with full traceability."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 21-1/4\" 2,000 psi diverter system API 16A?",
+          "a": "Yes. It is built to API 16A and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. EN 10204 3.1 / 3.2 mill test reports, hydrostatic certificates and heat-number traceability are included."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to order with the 21-1/4\" 2,000 psi KFDJ style diverter system?",
+          "a": "Order the controls and flow lines with it: a control unit to operate the diverter, the overboard lines and valves, and ring gaskets and studs for the flanged joints. See [BOP control units](/c/bop-control-units) and [drilling spools and adapters](/c/bop-spools-adapters) for matching equipment."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 21-1/4\" 2,000 psi diverter system tested?",
+          "a": "Each unit gets a hydrostatic shell test at 1.5 times rated working pressure and a function test per API STD 53, with closing time on the largest cavity under 30 s. Closing-time and seal-pressure data sheets are included with the factory acceptance test package."
+        },
+        {
+          "slot": "J",
+          "q": "Which offshore rigs use a 21-1/4\" 2,000 psi KFDJ style diverter?",
+          "a": "It is listed for offshore jack-up top-hole drilling through shallow gas, platform drilling on ADNOC offshore fields, Saudi Aramco offshore top-hole sections, and diverter retrofits on new-build offshore rigs. It is an offshore-only item."
+        },
+        {
+          "slot": "K",
+          "q": "How does a diverter system differ from an annular BOP?",
+          "a": "A diverter routes shallow gas away from the rig through an overboard line at 2,000 psi, while an [annular BOP](/c/bop-annular) closes on pipe or open hole to hold well pressure at 5K or 10K. See [ram and annular BOPs](/blog/ram-vs-annular-bop) for what each seals."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 21-1/4\" 2,000 psi KFDJ style diverter system?",
+          "a": "The listing states a lead time of 150 days for this diverter system. It is a high-value offshore item, and exact timing depends on configuration and certification scope, confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        }
+      ]
+    }
+  ]
+}

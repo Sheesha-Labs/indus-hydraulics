@@ -1,0 +1,1249 @@
+{
+  "family": "steel-wire-rope",
+  "extraFacts": [
+    {
+      "fact": "Aircraft Cable (Indus listing): mat Steel wire; size 1.58 mm to 5.40 mm; rate minimum breaking load 1.57 to 17.5 kN",
+      "source": "Indus Hydraulics product listing /p/aircraft-cable"
+    },
+    {
+      "fact": "6x19+IWS Galvanized Steel Wire Rope (Indus listing): mat Steel; fin Galvanized; size 6 mm to 28 mm",
+      "source": "Indus Hydraulics product listing /p/6x19-iws-galvanized-steel-wire-rope"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "Stainless Steel Wire Rope 6x19 (Indus listing): mat Stainless steel 304 or 316; fin Polished; size 6.00 mm to 32.00 mm",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-wire-rope-6x19"
+    },
+    {
+      "fact": "Line Contact Steel Wire Rope — Galvanized and Ungalvanized (Indus listing): mat Steel wire; fin Bright or galvanized; size 8 mm to 120 mm; rate minimum breaking load 37.4 to 8,410 kN",
+      "source": "Indus Hydraulics product listing /p/line-contact-steel-wire-rope-galvanized-and-ungalvanized"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "Stainless Steel Wire Rope 6x7+IWS (Indus listing): mat Stainless steel; fin Polished; size 0.45 mm to 8 mm; rate minimum breaking load 0.142 to 40.6 kN",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-wire-rope-6x7-iws"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "Aircraft Cable 6x19 (Indus listing): std 6x19; mat Steel wire; size 3.00 mm to 9.75 mm; rate minimum breaking load 6.3 to 50.3 kN",
+      "source": "Indus Hydraulics product listing /p/aircraft-cable-6x19"
+    },
+    {
+      "fact": "Aircraft Cable (Indus listing): mat Steel wire; size 1.58 mm to 5.40 mm; rate minimum breaking load 1.57 to 17.5 kN",
+      "source": "Indus Hydraulics product listing /p/aircraft-cable"
+    },
+    {
+      "fact": "6x19S and 6x19W Line Contact Steel Wire Rope (Indus listing): std 6x19S / 6x19W; mat Steel wire; fin Bright or galvanized; size 5 mm to 80 mm; rate minimum breaking load 14.6 to 3,740 kN",
+      "source": "Indus Hydraulics product listing /p/6x19s-and-6x19w-line-contact-steel-wire-rope"
+    },
+    {
+      "fact": "Stainless Steel Wire Strand — 1x7 and 1x19 (Indus listing): mat Stainless steel; fin Polished; size 0.15 mm to 6 mm; rate minimum breaking load 0.025 to 30.4 kN",
+      "source": "Indus Hydraulics product listing /p/stainless-steel-wire-strand-1x7-and-1x19"
+    },
+    {
+      "fact": "6x19S and 6x19W Line Contact Steel Wire Rope (Indus listing): std 6x19S / 6x19W; mat Steel wire; fin Bright or galvanized; size 5 mm to 80 mm; rate minimum breaking load 14.6 to 3,740 kN",
+      "source": "Indus Hydraulics product listing /p/6x19s-and-6x19w-line-contact-steel-wire-rope"
+    },
+    {
+      "fact": "6x19 Steel Wire Rope (Indus listing): std 6x19; mat Steel wire; fin Bright or galvanized; size 3 mm to 80 mm; rate minimum breaking load 4.89 to 3,480 kN",
+      "source": "Indus Hydraulics product listing /p/6x19-steel-wire-rope"
+    },
+    {
+      "fact": "6x7 and 6x9 Steel Wire Rope (Indus listing): std 6x7 / 6x9; mat Steel wire; fin Bright or galvanized; size 2 mm to 50 mm; rate minimum breaking load 2.35 to 1,470 kN",
+      "source": "Indus Hydraulics product listing /p/6x7-and-6x9-steel-wire-rope"
+    },
+    {
+      "fact": "Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 (Indus listing): std 1x7 / 1x19; mat Steel wire; fin Galvanized; size 3.0 mm to 30.8 mm; rate minimum breaking load 8.08 to 350 kN",
+      "source": "Indus Hydraulics product listing /p/galvanized-guy-strand-for-electric-lines-1x7-and-1x19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "1x19-galvanized-aircraft-cable",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 1x19 Galvanized Aircraft Cable and where is it used?",
+          "a": "The 1x19 Galvanized Aircraft Cable is a 1x19 single-strand galvanized cable, listed in small sizes and not for overhead lifting. It is listed in sizes 1/32″ to 3/8″, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 1x19 Galvanized Aircraft Cable part numbers such as IH-LR-WR-1X19GAC-003?",
+          "a": "IH-LR-WR-1X19GAC-003 is the 1/32″ size, IH-LR-WR-1X19GAC-014 the 9/64″ size and IH-LR-WR-1X19GAC-038 the 3/8″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 1x19 Galvanized Aircraft Cable come in?",
+          "a": "Sizes on the 1x19 Galvanized Aircraft Cable run 1/32″ to 3/8″. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 1x19 Galvanized Aircraft Cable?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the 1x19 Galvanized Aircraft Cable table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained). The listing notes it is not for overhead lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 1x19 Galvanized Aircraft Cable?",
+          "a": "The table gives minimum breaking loads, not working loads: at 9/64″ the 1x19 Galvanized Aircraft Cable lists 2820 lb at galvanized and 2820 lb at stainless 304. Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare. The listing states it is not for overhead lifting."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 1x19 Galvanized Aircraft Cable have?",
+          "a": "The listing for the 1x19 Galvanized Aircraft Cable gives its construction and sizes but no material or finish, so ask on the RFQ for the finish (bright or galvanized) and core you need and we confirm it from the maker."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the 1x19 Galvanized Aircraft Cable?",
+          "a": "The listing for the 1x19 Galvanized Aircraft Cable names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 1x19 Galvanized Aircraft Cable?",
+          "a": "Terminate the 1x19 Galvanized Aircraft Cable with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 1x19 Galvanized Aircraft Cable be fitted and inspected?",
+          "a": "Inspect the 1x19 Galvanized Aircraft Cable for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1x19 Galvanized Aircraft Cable compare with the Aircraft Cable?",
+          "a": "The nearest sibling is the [Aircraft Cable](/p/aircraft-cable), and the two differ on material and size range. In detail, material is not stated here and steel wire there; size range is 1/32″ to 3/8″ here and 1.58 mm to 5.40 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the 1x19 Galvanized Aircraft Cable outside the UAE?",
+          "a": "Yes, 1x19 Galvanized Aircraft Cable goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 1x19 Galvanized Aircraft Cable available from stock in Dubai?",
+          "a": "Yes, 1x19 Galvanized Aircraft Cable is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "1x37-steel-wire-strand-galvanized",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 1x37 Steel Wire Strand, Galvanized and where is it used?",
+          "a": "The 1x37 Steel Wire Strand, Galvanized is a 1x37 galvanized steel wire strand to DIN 3054, listed with its load rating on request. It is listed in sizes 1.4 mm to 12 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 1x37 Steel Wire Strand, Galvanized part numbers such as IH-LR-WR-1X37WSG-1P4MM?",
+          "a": "IH-LR-WR-1X37WSG-1P4MM is the 1.4 mm size, IH-LR-WR-1X37WSG-7MM the 7 mm size and IH-LR-WR-1X37WSG-12MM the 12 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 1x37 Steel Wire Strand, Galvanized cover?",
+          "a": "Sizes on the 1x37 Steel Wire Strand, Galvanized run 1.4 mm to 12 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of 1x37 Steel Wire Strand, Galvanized for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the 1x37 Steel Wire Strand, Galvanized table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the 1x37 Steel Wire Strand, Galvanized carry?",
+          "a": "The table gives minimum breaking loads, not working loads: at 7 mm the 1x37 Steel Wire Strand, Galvanized lists 37.7 kN at grade 1570 and 42.5 kN at grade 1770. Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 1x37 Steel Wire Strand, Galvanized made from and how is it finished?",
+          "a": "The 1x37 Steel Wire Strand, Galvanized is finished galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 1x37 Steel Wire Strand, Galvanized come with a test certificate?",
+          "a": "The listing names DIN 3054 for the 1x37 Steel Wire Strand, Galvanized but states no certificate. Ask on the RFQ for a test certificate or third-party inspection and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 1x37 Steel Wire Strand, Galvanized?",
+          "a": "Terminate the 1x37 Steel Wire Strand, Galvanized with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 1x37 Steel Wire Strand, Galvanized be fitted and inspected?",
+          "a": "Inspect the 1x37 Steel Wire Strand, Galvanized for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1x37 Steel Wire Strand, Galvanized compare with the 6x19+IWS Galvanized Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19+IWS Galvanized Steel Wire Rope](/p/6x19-iws-galvanized-steel-wire-rope), and the two differ on pattern, material and size range. In detail, pattern is DIN 3054 here and not stated there; material is not stated here and steel there; size range is 1.4 mm to 12 mm here and 6 mm to 28 mm there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 1x37 Steel Wire Strand, Galvanized from Dubai?",
+          "a": "Yes, 1x37 Steel Wire Strand, Galvanized goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 1x37 Steel Wire Strand, Galvanized available from stock in Dubai?",
+          "a": "Yes, we stock 1x37 Steel Wire Strand, Galvanized at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "6x12-7fc-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x12+7FC Steel Wire Rope used for?",
+          "a": "The 6x12+7FC Steel Wire Rope is a 6x12+7FC construction rope with fibre centres. It is listed in sizes 8 mm to 32 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x12+7FC Steel Wire Rope part numbers such as IH-LR-WR-6X127FCWR-8MM?",
+          "a": "IH-LR-WR-6X127FCWR-8MM is the 8 mm size, IH-LR-WR-6X127FCWR-17MM the 17 mm size and IH-LR-WR-6X127FCWR-32MM the 32 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 6x12+7FC Steel Wire Rope come in?",
+          "a": "The 6x12+7FC Steel Wire Rope is listed in sizes 8 mm to 32 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x12+7FC Steel Wire Rope?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the 6x12+7FC Steel Wire Rope table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 6x12+7FC Steel Wire Rope?",
+          "a": "The table gives minimum breaking loads, not working loads: at 17 mm the 6x12+7FC Steel Wire Rope lists 94.8 kN at grade 1570 and 107 kN at grade 1770. Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 6x12+7FC Steel Wire Rope have?",
+          "a": "The listing for the 6x12+7FC Steel Wire Rope gives its construction and sizes but no material or finish, so ask on the RFQ for the finish (bright or galvanized) and core you need and we confirm it from the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 6x12+7FC Steel Wire Rope come with a test certificate?",
+          "a": "The listing for the 6x12+7FC Steel Wire Rope names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 6x12+7FC Steel Wire Rope?",
+          "a": "The 6x12+7FC Steel Wire Rope is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the 6x12+7FC Steel Wire Rope?",
+          "a": "Store and handle the 6x12+7FC Steel Wire Rope so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x12+7FC Steel Wire Rope compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x19 there; material is not stated here and steel wire there; finish is not stated here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 6x12+7FC Steel Wire Rope from Dubai?",
+          "a": "Yes. We ship 6x12+7FC Steel Wire Rope from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 6x12+7FC Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes. 6x12+7FC Steel Wire Rope sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "6x19-iws-galvanized-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x19+IWS Galvanized Steel Wire Rope and where is it used?",
+          "a": "The 6x19+IWS Galvanized Steel Wire Rope is a galvanized 6x19 rope with an independent wire strand centre (IWS). It is listed in sizes 6 mm to 28 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x19+IWS Galvanized Steel Wire Rope part numbers such as IH-LR-WR-6X19IWSGW-6MM?",
+          "a": "IH-LR-WR-6X19IWSGW-6MM is the 6 mm size, IH-LR-WR-6X19IWSGW-14MM the 14 mm size and IH-LR-WR-6X19IWSGW-28MM the 28 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 6x19+IWS Galvanized Steel Wire Rope come in?",
+          "a": "The 6x19+IWS Galvanized Steel Wire Rope is listed in sizes 6 mm to 28 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x19+IWS Galvanized Steel Wire Rope?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the 6x19+IWS Galvanized Steel Wire Rope table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 6x19+IWS Galvanized Steel Wire Rope?",
+          "a": "The table gives minimum breaking loads, not working loads: at 14 mm the 6x19+IWS Galvanized Steel Wire Rope lists 94.5 kN at grade 1570 fibre core, 107 kN at grade 1770 fibre core and 102 kN at grade 1570 steel core (IWRC). Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 6x19+IWS Galvanized Steel Wire Rope have?",
+          "a": "The 6x19+IWS Galvanized Steel Wire Rope is made from steel and finished galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the 6x19+IWS Galvanized Steel Wire Rope?",
+          "a": "The listing for the 6x19+IWS Galvanized Steel Wire Rope names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the 6x19+IWS Galvanized Steel Wire Rope?",
+          "a": "The 6x19+IWS Galvanized Steel Wire Rope is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 6x19+IWS Galvanized Steel Wire Rope be fitted and inspected?",
+          "a": "Store and handle the 6x19+IWS Galvanized Steel Wire Rope so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x19+IWS Galvanized Steel Wire Rope compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x19 there; material is steel here and steel wire there; finish is galvanized here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 6x19+IWS Galvanized Steel Wire Rope from Dubai?",
+          "a": "Yes. We ship 6x19+IWS Galvanized Steel Wire Rope from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 6x19+IWS Galvanized Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes. 6x19+IWS Galvanized Steel Wire Rope sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "6x19-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x19 Steel Wire Rope used for?",
+          "a": "The 6x19 Steel Wire Rope is a general-purpose 6x19 construction wire rope, bright or galvanized, with fibre or steel core. It is listed in sizes 3 mm to 80 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x19 Steel Wire Rope part numbers such as IH-LR-WR-6X19-3MM?",
+          "a": "IH-LR-WR-6X19-3MM is the 3 mm size, IH-LR-WR-6X19-34MM the 34 mm size and IH-LR-WR-6X19-80MM the 80 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 6x19 Steel Wire Rope cover?",
+          "a": "The 6x19 Steel Wire Rope is listed in sizes 3 mm to 80 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of 6x19 Steel Wire Rope for my job?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the 6x19 Steel Wire Rope table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 6x19 Steel Wire Rope?",
+          "a": "The 6x19 Steel Wire Rope lists minimum breaking loads of 4.89 to 3,480 kN, set by size. At 34 mm the table shows 628 kN at grade 1770 fibre core, 696 kN at grade 1960 fibre core and 679 kN at grade 1770 steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 6x19 Steel Wire Rope made from and how is it finished?",
+          "a": "The 6x19 Steel Wire Rope is made from steel wire and finished bright or galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 6x19 Steel Wire Rope come with a test certificate?",
+          "a": "The 6x19 Steel Wire Rope is listed to 6x19, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the 6x19 Steel Wire Rope?",
+          "a": "The 6x19 Steel Wire Rope is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the 6x19 Steel Wire Rope?",
+          "a": "Store and handle the 6x19 Steel Wire Rope so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x19 Steel Wire Rope compare with the Stainless Steel Wire Rope 6x19?",
+          "a": "The nearest sibling is the [Stainless Steel Wire Rope 6x19](/p/stainless-steel-wire-rope-6x19), and the two differ on pattern, material and finish. In detail, pattern is 6x19 here and not stated there; material is steel wire here and stainless steel 304 or 316 there; finish is bright or galvanized here and polished there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the 6x19 Steel Wire Rope outside the UAE?",
+          "a": "Yes. We ship 6x19 Steel Wire Rope from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 6x19 Steel Wire Rope available from stock in Dubai?",
+          "a": "Yes. 6x19 Steel Wire Rope sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "6x19s-and-6x19w-line-contact-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x19S and 6x19W Line Contact Steel Wire Rope used for?",
+          "a": "The 6x19S and 6x19W Line Contact Steel Wire Rope is a 6x19S or 6x19W line-contact rope, bright or galvanized, with fibre or steel core. It is listed in sizes 5 mm to 80 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x19S and 6x19W Line Contact Steel Wire Rope part numbers such as IH-LR-WR-6X19SW-5MM?",
+          "a": "IH-LR-WR-6X19SW-5MM is the 5 mm size, IH-LR-WR-6X19SW-36MM the 36 mm size and IH-LR-WR-6X19SW-80MM the 80 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 6x19S and 6x19W Line Contact Steel Wire Rope cover?",
+          "a": "Sizes on the 6x19S and 6x19W Line Contact Steel Wire Rope run 5 mm to 80 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the 6x19S and 6x19W Line Contact Steel Wire Rope table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the 6x19S and 6x19W Line Contact Steel Wire Rope carry?",
+          "a": "The 6x19S and 6x19W Line Contact Steel Wire Rope lists minimum breaking loads of 14.6 to 3,740 kN, set by size. At 36 mm the table shows 757 kN at grade 1770 fibre core, 838 kN at grade 1960 fibre core and 817 kN at grade 1770 steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 6x19S and 6x19W Line Contact Steel Wire Rope have?",
+          "a": "The 6x19S and 6x19W Line Contact Steel Wire Rope is made from steel wire and finished bright or galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "The 6x19S and 6x19W Line Contact Steel Wire Rope is listed to 6x19S / 6x19W, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "Terminate the 6x19S and 6x19W Line Contact Steel Wire Rope with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "Inspect the 6x19S and 6x19W Line Contact Steel Wire Rope for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x19S and 6x19W Line Contact Steel Wire Rope compare with the Line Contact Steel Wire Rope — Galvanized and Ungalvanized?",
+          "a": "The nearest sibling is the [Line Contact Steel Wire Rope — Galvanized and Ungalvanized](/p/line-contact-steel-wire-rope-galvanized-and-ungalvanized), and the two differ on pattern, size range and rating. In detail, pattern is 6x19S / 6x19W here and not stated there; size range is 5 mm to 80 mm here and 8 mm to 120 mm there; rating is minimum breaking load 14.6 to 3,740 kN here and minimum breaking load 37.4 to 8,410 kN there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 6x19S and 6x19W Line Contact Steel Wire Rope from Dubai?",
+          "a": "Yes, 6x19S and 6x19W Line Contact Steel Wire Rope goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 6x19S and 6x19W Line Contact Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes, 6x19S and 6x19W Line Contact Steel Wire Rope is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "6x36ws-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x36WS Steel Wire Rope and where is it used?",
+          "a": "The 6x36WS Steel Wire Rope is a galvanized 6x36 Warrington-Seale rope to EN 12385. It is listed in sizes 6 mm to 42 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x36WS Steel Wire Rope part numbers such as IH-LR-WR-6X36WSWR-6MM-FC?",
+          "a": "IH-LR-WR-6X36WSWR-6MM-FC is the 6 mm size, Fibre core, IH-LR-WR-6X36WSWR-13MM the 13 mm size and IH-LR-WR-6X36WSWR-42MM the 42 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 6x36WS Steel Wire Rope cover?",
+          "a": "Sizes on the 6x36WS Steel Wire Rope run 6 mm to 42 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x36WS Steel Wire Rope?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the 6x36WS Steel Wire Rope table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the 6x36WS Steel Wire Rope carry?",
+          "a": "The table gives minimum breaking loads, not working loads: at 13 mm the 6x36WS Steel Wire Rope lists 87.6 kN at grade 1570 fibre core, 98.7 kN at grade 1770 fibre core and 94.5 kN at grade 1570 steel core (IWRC). Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 6x36WS Steel Wire Rope made from and how is it finished?",
+          "a": "The 6x36WS Steel Wire Rope is finished galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 6x36WS Steel Wire Rope come with a test certificate?",
+          "a": "The listing names EN 12385 for the 6x36WS Steel Wire Rope but states no certificate. Ask on the RFQ for a test certificate or third-party inspection and we confirm what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 6x36WS Steel Wire Rope?",
+          "a": "Terminate the 6x36WS Steel Wire Rope with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the 6x36WS Steel Wire Rope?",
+          "a": "Inspect the 6x36WS Steel Wire Rope for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x36WS Steel Wire Rope compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is EN 12385 here and 6x19 there; material is not stated here and steel wire there; finish is galvanized here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 6x36WS Steel Wire Rope from Dubai?",
+          "a": "Yes, 6x36WS Steel Wire Rope goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 6x36WS Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes, 6x36WS Steel Wire Rope is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "6x37-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x37 Steel Wire Rope and where is it used?",
+          "a": "The 6x37 Steel Wire Rope is a 6x37 construction rope, bright or galvanized, with fibre or steel core. It is listed in sizes 5 mm to 120 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x37 Steel Wire Rope part numbers such as IH-LR-WR-6X37-5MM?",
+          "a": "IH-LR-WR-6X37-5MM is the 5 mm size, IH-LR-WR-6X37-46MM the 46 mm size and IH-LR-WR-6X37-120MM the 120 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 6x37 Steel Wire Rope cover?",
+          "a": "The 6x37 Steel Wire Rope is listed in sizes 5 mm to 120 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x37 Steel Wire Rope?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the 6x37 Steel Wire Rope table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 6x37 Steel Wire Rope?",
+          "a": "The 6x37 Steel Wire Rope lists minimum breaking loads of 13.1 to 7,520 kN, set by size. At 46 mm the table shows 1100 kN at grade 1770 fibre core, 1220 kN at grade 1960 fibre core and 1190 kN at grade 1770 steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 6x37 Steel Wire Rope have?",
+          "a": "The 6x37 Steel Wire Rope is made from steel wire and finished bright or galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the 6x37 Steel Wire Rope?",
+          "a": "The 6x37 Steel Wire Rope is listed to 6x37, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the 6x37 Steel Wire Rope?",
+          "a": "The 6x37 Steel Wire Rope is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 6x37 Steel Wire Rope be fitted and inspected?",
+          "a": "Store and handle the 6x37 Steel Wire Rope so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x37 Steel Wire Rope compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, size range and rating. In detail, pattern is 6x37 here and 6x19 there; size range is 5 mm to 120 mm here and 3 mm to 80 mm there; rating is minimum breaking load 13.1 to 7,520 kN here and minimum breaking load 4.89 to 3,480 kN there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the 6x37 Steel Wire Rope outside the UAE?",
+          "a": "Yes. We ship 6x37 Steel Wire Rope from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the 6x37 Steel Wire Rope available from stock in Dubai?",
+          "a": "Yes. We keep 6x37 Steel Wire Rope in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "6x7-and-6x9-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 6x7 and 6x9 Steel Wire Rope and where is it used?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope is a 6x7 or 6x9 construction rope, bright or galvanized, with fibre or steel core. It is listed in sizes 2 mm to 50 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 6x7 and 6x9 Steel Wire Rope part numbers such as IH-LR-WR-6X7-2MM?",
+          "a": "IH-LR-WR-6X7-2MM is the 2 mm size, IH-LR-WR-6X7-20MM the 20 mm size and IH-LR-WR-6X7-50MM the 50 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the 6x7 and 6x9 Steel Wire Rope cover?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope is listed in sizes 2 mm to 50 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of 6x7 and 6x9 Steel Wire Rope?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the 6x7 and 6x9 Steel Wire Rope table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the 6x7 and 6x9 Steel Wire Rope?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope lists minimum breaking loads of 2.35 to 1,470 kN, set by size. At 20 mm the table shows 235 kN at grade 1770 fibre core, 260 kN at grade 1960 fibre core and 254 kN at grade 1770 steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 6x7 and 6x9 Steel Wire Rope have?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope is made from steel wire and finished bright or galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 6x7 and 6x9 Steel Wire Rope come with a test certificate?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope is listed to 6x7 / 6x9, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the 6x7 and 6x9 Steel Wire Rope?",
+          "a": "The 6x7 and 6x9 Steel Wire Rope is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the 6x7 and 6x9 Steel Wire Rope?",
+          "a": "Store and handle the 6x7 and 6x9 Steel Wire Rope so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 6x7 and 6x9 Steel Wire Rope compare with the Stainless Steel Wire Rope 6x7+IWS?",
+          "a": "The nearest sibling is the [Stainless Steel Wire Rope 6x7+IWS](/p/stainless-steel-wire-rope-6x7-iws), and the two differ on pattern, material and finish. In detail, pattern is 6x7 / 6x9 here and not stated there; material is steel wire here and stainless steel there; finish is bright or galvanized here and polished there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 6x7 and 6x9 Steel Wire Rope from Dubai?",
+          "a": "Yes. We ship 6x7 and 6x9 Steel Wire Rope from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 6x7 and 6x9 Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes. We keep 6x7 and 6x9 Steel Wire Rope in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "8x19s-steel-wire-rope",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 8x19S Steel Wire Rope used for?",
+          "a": "The 8x19S Steel Wire Rope is an 8x19S Seale rope, bright oiled, with fibre or steel core. It is listed in sizes 8 mm to 22 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read 8x19S Steel Wire Rope part numbers such as IH-LR-WR-8X19SWR-8MM-FC?",
+          "a": "IH-LR-WR-8X19SWR-8MM-FC is the 8 mm size, Fibre core, IH-LR-WR-8X19SWR-20P6MM-FC the 20.6 mm size, Fibre core and IH-LR-WR-8X19SWR-22MM-SC the 22 mm size, Steel core. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 8x19S Steel Wire Rope come in?",
+          "a": "Sizes on the 8x19S Steel Wire Rope run 8 mm to 22 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of 8x19S Steel Wire Rope for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the 8x19S Steel Wire Rope table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the 8x19S Steel Wire Rope carry?",
+          "a": "The table gives minimum breaking loads, not working loads: at 20.6 mm the 8x19S Steel Wire Rope lists 170 kN at grade 1180 / 1770 and 204 kN at grade 1570 / 1770. Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 8x19S Steel Wire Rope made from and how is it finished?",
+          "a": "The 8x19S Steel Wire Rope is finished bright oiled. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the 8x19S Steel Wire Rope?",
+          "a": "The listing for the 8x19S Steel Wire Rope names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the 8x19S Steel Wire Rope?",
+          "a": "Terminate the 8x19S Steel Wire Rope with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How should the 8x19S Steel Wire Rope be fitted and inspected?",
+          "a": "Inspect the 8x19S Steel Wire Rope for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 8x19S Steel Wire Rope compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x19 there; material is not stated here and steel wire there; finish is bright oiled here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the 8x19S Steel Wire Rope from Dubai?",
+          "a": "Yes, 8x19S Steel Wire Rope goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the 8x19S Steel Wire Rope for delivery from Dubai?",
+          "a": "Yes, 8x19S Steel Wire Rope is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aircraft-cable",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aircraft Cable and where is it used?",
+          "a": "The Aircraft Cable is a fine aircraft cable listed from small to medium diameters, in more than one tensile grade. It is listed in sizes 1.58 mm to 5.40 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Aircraft Cable part numbers such as IH-LR-WR-AC-1.58MM?",
+          "a": "IH-LR-WR-AC-1.58MM is the 1.58 mm size, IH-LR-WR-AC-3.50MM the 3.50 mm size and IH-LR-WR-AC-5.40MM the 5.40 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Aircraft Cable cover?",
+          "a": "Sizes on the Aircraft Cable run 1.58 mm to 5.40 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Aircraft Cable for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the Aircraft Cable table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained). The listing notes it is not for overhead lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Aircraft Cable carry?",
+          "a": "The Aircraft Cable lists minimum breaking loads of 1.57 to 17.5 kN, set by size. At 3.50 mm the table shows 6.23 kN at listed fibre core and 7.32 kN at listed steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aircraft Cable made from and how is it finished?",
+          "a": "The Aircraft Cable is made from steel wire. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aircraft Cable come with a test certificate?",
+          "a": "The Aircraft Cable ships with the manufacturer's test certificate for each consignment. If you need third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Aircraft Cable?",
+          "a": "Terminate the Aircraft Cable with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Aircraft Cable be fitted and inspected?",
+          "a": "Inspect the Aircraft Cable for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aircraft Cable compare with the Aircraft Cable 6x19?",
+          "a": "The nearest sibling is the [Aircraft Cable 6x19](/p/aircraft-cable-6x19), and the two differ on pattern, size range and rating. In detail, pattern is not stated here and 6x19 there; size range is 1.58 mm to 5.40 mm here and 3.00 mm to 9.75 mm there; rating is minimum breaking load 1.57 to 17.5 kN here and minimum breaking load 6.3 to 50.3 kN there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Aircraft Cable outside the UAE?",
+          "a": "Yes, Aircraft Cable goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Aircraft Cable for delivery from Dubai?",
+          "a": "Yes, we stock Aircraft Cable at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aircraft-cable-6x19",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aircraft Cable 6x19 and where is it used?",
+          "a": "The Aircraft Cable 6x19 is a 6x19 aircraft cable listed in more than one tensile grade. It is listed in sizes 3.00 mm to 9.75 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Aircraft Cable 6x19 part numbers such as IH-LR-WR-AC619-3.00MM?",
+          "a": "IH-LR-WR-AC619-3.00MM is the 3.00 mm size, IH-LR-WR-AC619-6.00MM the 6.00 mm size and IH-LR-WR-AC619-9.75MM the 9.75 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Aircraft Cable 6x19 cover?",
+          "a": "Sizes on the Aircraft Cable 6x19 run 3.00 mm to 9.75 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Aircraft Cable 6x19 for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the Aircraft Cable 6x19 table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained). The listing notes it is not for overhead lifting."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Aircraft Cable 6x19 carry?",
+          "a": "The Aircraft Cable 6x19 lists minimum breaking loads of 6.3 to 50.3 kN, set by size. At 6.00 mm the table shows 19 kN at listed fibre core and 23.7 kN at listed steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Aircraft Cable 6x19 have?",
+          "a": "The Aircraft Cable 6x19 is made from steel wire. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aircraft Cable 6x19 come with a test certificate?",
+          "a": "The Aircraft Cable 6x19 is listed to 6x19, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Aircraft Cable 6x19?",
+          "a": "Terminate the Aircraft Cable 6x19 with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Aircraft Cable 6x19?",
+          "a": "Inspect the Aircraft Cable 6x19 for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aircraft Cable 6x19 compare with the Aircraft Cable?",
+          "a": "The nearest sibling is the [Aircraft Cable](/p/aircraft-cable), and the two differ on pattern, size range and rating. In detail, pattern is 6x19 here and not stated there; size range is 3.00 mm to 9.75 mm here and 1.58 mm to 5.40 mm there; rating is minimum breaking load 6.3 to 50.3 kN here and minimum breaking load 1.57 to 17.5 kN there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Aircraft Cable 6x19 from Dubai?",
+          "a": "Yes, Aircraft Cable 6x19 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Aircraft Cable 6x19 for delivery from Dubai?",
+          "a": "Yes, Aircraft Cable 6x19 is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "compacted-steel-wire-rope-6x19s",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Compacted Steel Wire Rope 6x19S and where is it used?",
+          "a": "The Compacted Steel Wire Rope 6x19S is a galvanized compacted 6x19S rope, listed with fibre and steel cores and metric and inch sizes. It is listed in sizes 11.2 mm (7/16″) to 52 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Compacted Steel Wire Rope 6x19S part numbers such as IH-LR-WR-CWR6X19S-11P2MM-FC?",
+          "a": "IH-LR-WR-CWR6X19S-11P2MM-FC is the 11.2 mm (7/16″) size, Fibre core, IH-LR-WR-CWR6X19S-11P2MM-SC the 11.2 mm (7/16″) size, Steel core and IH-LR-WR-CWR6X19S-52MM-SC the 52 mm size, Steel core. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Compacted Steel Wire Rope 6x19S cover?",
+          "a": "The Compacted Steel Wire Rope 6x19S is listed in sizes 11.2 mm (7/16″) to 52 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Compacted Steel Wire Rope 6x19S?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the Compacted Steel Wire Rope 6x19S table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What is the rated capacity of the Compacted Steel Wire Rope 6x19S?",
+          "a": "The table gives minimum breaking loads, not working loads: at 11.2 mm (7/16″) the Compacted Steel Wire Rope 6x19S lists 9.8 t at grade 1770 steel core (IWRC) and 10.6 t at grade 1960 steel core (IWRC). Divide by the safety factor your application requires to get a working load, and see [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) for how the grades compare."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Compacted Steel Wire Rope 6x19S have?",
+          "a": "The Compacted Steel Wire Rope 6x19S is finished galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Compacted Steel Wire Rope 6x19S?",
+          "a": "The listing for the Compacted Steel Wire Rope 6x19S names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Compacted Steel Wire Rope 6x19S?",
+          "a": "The Compacted Steel Wire Rope 6x19S is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Compacted Steel Wire Rope 6x19S?",
+          "a": "Store and handle the Compacted Steel Wire Rope 6x19S so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Compacted Steel Wire Rope 6x19S compare with the 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19S and 6x19W Line Contact Steel Wire Rope](/p/6x19s-and-6x19w-line-contact-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x19S / 6x19W there; material is not stated here and steel wire there; finish is galvanized here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Do you ship the Compacted Steel Wire Rope 6x19S outside the UAE?",
+          "a": "Yes. We ship Compacted Steel Wire Rope 6x19S from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Compacted Steel Wire Rope 6x19S available from stock in Dubai?",
+          "a": "Yes. We keep Compacted Steel Wire Rope 6x19S in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "galvanized-guy-strand-for-electric-lines-1x7-and-1x19",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 and where is it used?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 is a galvanized guy strand in 1x7, 1x19 and 1x37 constructions, for electric line guying. It is listed in sizes 3.0 mm to 30.8 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 part numbers such as IH-LR-WR-GUY-3.0MM?",
+          "a": "IH-LR-WR-GUY-3.0MM is the 3.0 mm size, IH-LR-WR-GUY-13.0MM the 13.0 mm size and IH-LR-WR-GUY-30.8MM the 30.8 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 cover?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 is listed in sizes 3.0 mm to 30.8 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Galvanized Guy Strand for Electric Lines — 1x7 and 1x19?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 carry?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 lists minimum breaking loads of 8.08 to 350 kN, set by size. At 13.0 mm the table shows 138 kN at grade 1370, 148 kN at grade 1470 and 158 kN at grade 1570. A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 have?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 is made from steel wire and finished galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 come with a test certificate?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 is listed to 1x7 / 1x19, with the manufacturer's test certificate supplied for each consignment. For third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19?",
+          "a": "The Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19?",
+          "a": "Store and handle the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 compare with the Stainless Steel Wire Strand — 1x7 and 1x19?",
+          "a": "The nearest sibling is the [Stainless Steel Wire Strand — 1x7 and 1x19](/p/stainless-steel-wire-strand-1x7-and-1x19), and the two differ on pattern, material and finish. In detail, pattern is 1x7 / 1x19 here and not stated there; material is steel wire here and stainless steel there; finish is galvanized here and polished there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 from Dubai?",
+          "a": "Yes. We ship Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 for delivery from Dubai?",
+          "a": "Yes. We keep Galvanized Guy Strand for Electric Lines — 1x7 and 1x19 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "line-contact-steel-wire-rope-galvanized-and-ungalvanized",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Line Contact Steel Wire Rope — Galvanized and Ungalvanized and where is it used?",
+          "a": "The Line Contact Steel Wire Rope — Galvanized and Ungalvanized is a line-contact steel wire rope, galvanized or ungalvanized, for larger diameters. It is listed in sizes 8 mm to 120 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Line Contact Steel Wire Rope — Galvanized and Ungalvanized part numbers such as IH-LR-WR-LC-8MM?",
+          "a": "IH-LR-WR-LC-8MM is the 8 mm size, IH-LR-WR-LC-50MM the 50 mm size and IH-LR-WR-LC-120MM the 120 mm size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Line Contact Steel Wire Rope — Galvanized and Ungalvanized cover?",
+          "a": "Sizes on the Line Contact Steel Wire Rope — Galvanized and Ungalvanized run 8 mm to 120 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Line Contact Steel Wire Rope — Galvanized and Ungalvanized for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the Line Contact Steel Wire Rope — Galvanized and Ungalvanized table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Line Contact Steel Wire Rope — Galvanized and Ungalvanized carry?",
+          "a": "The Line Contact Steel Wire Rope — Galvanized and Ungalvanized lists minimum breaking loads of 37.4 to 8,410 kN, set by size. At 50 mm the table shows 1460 kN at grade 1770 fibre core, 1620 kN at grade 1960 fibre core and 1580 kN at grade 1770 steel core (IWRC). A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Line Contact Steel Wire Rope — Galvanized and Ungalvanized made from and how is it finished?",
+          "a": "The Line Contact Steel Wire Rope — Galvanized and Ungalvanized is made from steel wire and finished bright or galvanized. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Line Contact Steel Wire Rope — Galvanized and Ungalvanized come with a test certificate?",
+          "a": "The Line Contact Steel Wire Rope — Galvanized and Ungalvanized ships with the manufacturer's test certificate for each consignment. If you need third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Line Contact Steel Wire Rope — Galvanized and Ungalvanized?",
+          "a": "Terminate the Line Contact Steel Wire Rope — Galvanized and Ungalvanized with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Line Contact Steel Wire Rope — Galvanized and Ungalvanized be fitted and inspected?",
+          "a": "Inspect the Line Contact Steel Wire Rope — Galvanized and Ungalvanized for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Line Contact Steel Wire Rope — Galvanized and Ungalvanized compare with the 6x19S and 6x19W Line Contact Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19S and 6x19W Line Contact Steel Wire Rope](/p/6x19s-and-6x19w-line-contact-steel-wire-rope), and the two differ on pattern, size range and rating. In detail, pattern is not stated here and 6x19S / 6x19W there; size range is 8 mm to 120 mm here and 5 mm to 80 mm there; rating is minimum breaking load 37.4 to 8,410 kN here and minimum breaking load 14.6 to 3,740 kN there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Line Contact Steel Wire Rope — Galvanized and Ungalvanized from Dubai?",
+          "a": "Yes, Line Contact Steel Wire Rope — Galvanized and Ungalvanized goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Line Contact Steel Wire Rope — Galvanized and Ungalvanized for delivery from Dubai?",
+          "a": "Yes, Line Contact Steel Wire Rope — Galvanized and Ungalvanized is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-wire-rope-6x19",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Wire Rope 6x19 used for?",
+          "a": "The Stainless Steel Wire Rope 6x19 is a stainless 6x19 rope in 304 or 316, with fibre or steel core. It is listed in sizes 6.00 mm to 32.00 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Wire Rope 6x19 part numbers such as IH-LR-WR-SSWR6X19-6P00MM-FC?",
+          "a": "IH-LR-WR-SSWR6X19-6P00MM-FC is the 6.00 mm size, Fibre core, IH-LR-WR-SSWR6X19-6P00MM-SC the 6.00 mm size, Steel core and IH-LR-WR-SSWR6X19-32P00MM-SC the 32.00 mm size, Steel core. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Wire Rope 6x19 cover?",
+          "a": "Sizes on the Stainless Steel Wire Rope 6x19 run 6.00 mm to 32.00 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size of Stainless Steel Wire Rope 6x19?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the Stainless Steel Wire Rope 6x19 table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Wire Rope 6x19 carry?",
+          "a": "The Stainless Steel Wire Rope 6x19 listing gives sizes and weights but no published breaking load, so the rating is given on request. Send the size, grade and core you need on the RFQ and we confirm the minimum breaking load before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Wire Rope 6x19 made from and how is it finished?",
+          "a": "The Stainless Steel Wire Rope 6x19 is made from stainless steel 304 or 316 and finished polished. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Wire Rope 6x19 come with a test certificate?",
+          "a": "The listing for the Stainless Steel Wire Rope 6x19 names no standard or certificate. If your site needs a test certificate, say so on the RFQ and we confirm what the maker can supply before you order."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Wire Rope 6x19?",
+          "a": "Terminate the Stainless Steel Wire Rope 6x19 with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Wire Rope 6x19?",
+          "a": "Inspect the Stainless Steel Wire Rope 6x19 for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Wire Rope 6x19 compare with the 6x19 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x19 Steel Wire Rope](/p/6x19-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x19 there; material is stainless steel 304 or 316 here and steel wire there; finish is polished here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Wire Rope 6x19 from Dubai?",
+          "a": "Yes, Stainless Steel Wire Rope 6x19 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Wire Rope 6x19 available from stock in Dubai?",
+          "a": "Yes, we stock Stainless Steel Wire Rope 6x19 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-wire-rope-6x7-iws",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Wire Rope 6x7+IWS and where is it used?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS is a fine stainless 6x7 rope with an IWS centre, listed from 0.45 mm. It is listed in sizes 0.45 mm to 8 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Wire Rope 6x7+IWS part numbers such as IH-LR-WR-SSWR6X7IW-0P45MM?",
+          "a": "IH-LR-WR-SSWR6X7IW-0P45MM is the 0.45 mm size, 0.142 kN minimum breaking load, IH-LR-WR-SSWR6X7IW-1P8MM the 1.8 mm size and IH-LR-WR-SSWR6X7IW-8MM the 8 mm size, 40.6 kN minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Wire Rope 6x7+IWS come in?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS is listed in sizes 0.45 mm to 8 mm. Each size has its own Indus part number in the size table, with weight per 100 m and breaking loads in the unit the manufacturer uses."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Wire Rope 6x7+IWS for my job?",
+          "a": "Choose by the required minimum breaking load and the sheave or drum the rope runs on, then pick the diameter from the Stainless Steel Wire Rope 6x7+IWS table. [Our guide to wire rope construction](/blog/wire-rope-construction-explained) explains how 6x19 and 6x36 constructions, and fibre and steel cores, trade strength against flexibility."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Wire Rope 6x7+IWS carry?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS listing gives sizes and weights but no published breaking load, so the rating is given on request. Send the size, grade and core you need on the RFQ and we confirm the minimum breaking load before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Wire Rope 6x7+IWS made from and how is it finished?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS is made from stainless steel and finished polished. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Stainless Steel Wire Rope 6x7+IWS come with a test certificate?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS ships with the manufacturer's test certificate for each consignment. If you need third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts connect to the Stainless Steel Wire Rope 6x7+IWS?",
+          "a": "The Stainless Steel Wire Rope 6x7+IWS is terminated with [wire rope clips](/c/wire-rope-clips), ferrules and sleeves from the [ferrules and sleeves](/c/wire-rope-ferrules-sleeves), or a socket from the [sockets and terminals](/c/wire-rope-sockets-terminals), and an eye usually carries a thimble from the [wire rope thimbles](/c/wire-rope-thimbles). Pick the fitting for the rope diameter in the size table."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stainless Steel Wire Rope 6x7+IWS be fitted and inspected?",
+          "a": "Store and handle the Stainless Steel Wire Rope 6x7+IWS so it is not kinked, crushed or dragged over edges, and inspect it for broken wires, corrosion and distortion before use. Remove it from service when it is damaged; [our wire rope sling capacity chart](/blog/wire-rope-sling-capacity-chart) shows how rope diameter relates to sling capacity."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Wire Rope 6x7+IWS compare with the 6x7 and 6x9 Steel Wire Rope?",
+          "a": "The nearest sibling is the [6x7 and 6x9 Steel Wire Rope](/p/6x7-and-6x9-steel-wire-rope), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 6x7 / 6x9 there; material is stainless steel here and steel wire there; finish is polished here and bright or galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Wire Rope 6x7+IWS from Dubai?",
+          "a": "Yes. We ship Stainless Steel Wire Rope 6x7+IWS from Dubai, UAE to buyers across the GCC, Africa, Asia and beyond. Give the destination and quantity on [our contact page](/contact) and we quote the freight lane with the goods."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Wire Rope 6x7+IWS for delivery from Dubai?",
+          "a": "Yes. We keep Stainless Steel Wire Rope 6x7+IWS in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-wire-strand-1x7-and-1x19",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Wire Strand — 1x7 and 1x19 and where is it used?",
+          "a": "The Stainless Steel Wire Strand — 1x7 and 1x19 is a stainless 1x7 and 1x19 wire strand in very small sizes. It is listed in sizes 0.15 mm to 6 mm, each under its own Indus part number."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Stainless Steel Wire Strand — 1x7 and 1x19 part numbers such as IH-LR-WR-SSWS1X71X-0P15MM-1X7?",
+          "a": "IH-LR-WR-SSWS1X71X-0P15MM-1X7 is the 0.15 mm size, 1x7, 0.025 kN minimum breaking load and IH-LR-WR-SSWS1X71X-6MM-1X19 the 6 mm size, 1x19, 30.4 kN minimum breaking load. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+        },
+        {
+          "slot": "D",
+          "q": "What size range does the Stainless Steel Wire Strand — 1x7 and 1x19 cover?",
+          "a": "Sizes on the Stainless Steel Wire Strand — 1x7 and 1x19 run 0.15 mm to 6 mm. The table gives each its own Indus part number, weight and breaking load, and the [steel wire rope shelf](/c/steel-wire-rope) lists the other constructions."
+        },
+        {
+          "slot": "D",
+          "q": "How should I pick the size of Stainless Steel Wire Strand — 1x7 and 1x19 for my job?",
+          "a": "Start from the load and the safety factor, find the minimum breaking load that gives it, then read the diameter off the Stainless Steel Wire Strand — 1x7 and 1x19 table. For flexibility and wear differences between constructions, see [our guide to wire rope construction](/blog/wire-rope-construction-explained)."
+        },
+        {
+          "slot": "E",
+          "q": "What load rating does the Stainless Steel Wire Strand — 1x7 and 1x19 carry?",
+          "a": "The Stainless Steel Wire Strand — 1x7 and 1x19 lists minimum breaking loads of 0.025 to 30.4 kN, set by size. At 0.6 mm the table shows 0.343 kN at listed. A breaking load is a test figure, so divide by your required safety factor to get a working load; [our wire rope breaking strength chart](/blog/wire-rope-breaking-strength-chart) compares the grades."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the Stainless Steel Wire Strand — 1x7 and 1x19 have?",
+          "a": "The Stainless Steel Wire Strand — 1x7 and 1x19 is made from stainless steel and finished polished. Rows give a fibre-core or steel-core option where the table lists both, so state the core on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and certificate apply to the Stainless Steel Wire Strand — 1x7 and 1x19?",
+          "a": "The Stainless Steel Wire Strand — 1x7 and 1x19 ships with the manufacturer's test certificate for each consignment. If you need third-party certification or witnessed testing, say so on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What do I use with the Stainless Steel Wire Strand — 1x7 and 1x19?",
+          "a": "Terminate the Stainless Steel Wire Strand — 1x7 and 1x19 with [wire rope clips](/c/wire-rope-clips), a pressed ferrule or sleeve ([ferrules and sleeves](/c/wire-rope-ferrules-sleeves)), or a socket or terminal ([sockets and terminals](/c/wire-rope-sockets-terminals)); thimbles are on the [wire rope thimbles](/c/wire-rope-thimbles). Match each fitting to the rope diameter."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and check the Stainless Steel Wire Strand — 1x7 and 1x19?",
+          "a": "Inspect the Stainless Steel Wire Strand — 1x7 and 1x19 for kinks, broken wires, corrosion and flattening before each use, and replace it if it is damaged. Fit terminations to the rope diameter listed in the size table."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stainless Steel Wire Strand — 1x7 and 1x19 compare with the Galvanized Guy Strand for Electric Lines — 1x7 and 1x19?",
+          "a": "The nearest sibling is the [Galvanized Guy Strand for Electric Lines — 1x7 and 1x19](/p/galvanized-guy-strand-for-electric-lines-1x7-and-1x19), and the two differ on pattern, material and finish. In detail, pattern is not stated here and 1x7 / 1x19 there; material is stainless steel here and steel wire there; finish is polished here and galvanized there. Pick on the standard, material and finish your job calls for, then quote the part number from the size table."
+        },
+        {
+          "slot": "L",
+          "q": "Can you export the Stainless Steel Wire Strand — 1x7 and 1x19 from Dubai?",
+          "a": "Yes, Stainless Steel Wire Strand — 1x7 and 1x19 goes out of Dubai, UAE to export customers worldwide. Tell us the destination port or country on [our contact page](/contact) and we quote the shipping route with the price."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold the Stainless Steel Wire Strand — 1x7 and 1x19 for delivery from Dubai?",
+          "a": "Yes, we stock Stainless Steel Wire Strand — 1x7 and 1x19 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

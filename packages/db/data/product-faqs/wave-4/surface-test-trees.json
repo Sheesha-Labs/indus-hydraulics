@@ -1,0 +1,539 @@
+{
+  "family": "surface-test-trees",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a conventional frac surface test tree rated 10,000 psi used for?",
+          "a": "A conventional frac surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 10,000 psi (10K) tree has 5 valves: 2 master, 1 swab, 2 wing, a 5-1/8 in vertical bore bore and standard-service valves. Cameron / FMC interchange. Permanent flanged variant for fixed installations."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 5 valves on the conventional frac surface test tree do?",
+          "a": "The tree carries 5 valves: 2 master, 1 swab, 2 wing. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic gate valves; manual gate (swab)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the conventional frac surface test tree at 10,000 psi?",
+          "a": "Top: API 6BX 10K studded. Bottom: API 6BX 10K studded. Lateral: 2× 1502 Female Weco. The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the conventional frac 10,000 psi tree or the conventional frac 10,000 psi tree?",
+          "a": "Choose by operation: this tree is for conventional frac work at 10,000 psi, while the conventional frac tree at 10,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the conventional frac 10,000 psi surface test tree?",
+          "a": "The working pressure is 10,000 psi (10K) on a 5-1/8 in vertical bore bore. Hydraulic actuation pressure is 3,000 psi pilot. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the conventional frac 10,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The conventional frac 10,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the conventional frac 10,000 psi surface test tree?",
+          "a": "The listing gives API 6A for the conventional frac 10,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the conventional frac surface test tree connect to?",
+          "a": "The conventional frac 10,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: api 6bx 10k studded). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the conventional frac 10,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the conventional frac 10,000 psi tree differ from the conventional frac tree?",
+          "a": "The conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing, while the conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the conventional frac 10,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this Cameron tree, and a lead time of 84 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Conventional Frac API 6BX 10K Flanged, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Conventional Frac API 6BX 10K Flanged, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-conventional-frac-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a conventional frac surface test tree rated 15,000 psi used for?",
+          "a": "A conventional frac surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 15,000 psi (15K) tree has 5 valves: 2 master, 1 swab, 2 wing, a 5-1/8 in vertical bore bore and standard-service valves. FMC / Halliburton interchange. The classic 5-valve frac STT — 2 master + 1 swab + 2 wing."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 5 valves on the conventional frac surface test tree do?",
+          "a": "The tree carries 5 valves: 2 master, 1 swab, 2 wing. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic gate valves (master + wing); manual gate (swab)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the conventional frac surface test tree at 15,000 psi?",
+          "a": "Top: 1502 Female Weco Union (frac flow inlet). Bottom: API 6BX 15K studded flange (mates frac tree). Lateral: 2× 1502 Female Weco Union (wing outlets to choke manifold). The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the conventional frac 15,000 psi tree or the conventional frac 10,000 psi tree?",
+          "a": "Choose by operation: this tree is for conventional frac work at 15,000 psi, while the conventional frac tree at 10,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the conventional frac 15,000 psi surface test tree?",
+          "a": "The working pressure is 15,000 psi (15K) on a 5-1/8 in vertical bore bore. Hydraulic actuation pressure is 3,000 psi pilot (fail-safe close on hydraulic loss). The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the conventional frac 15,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The conventional frac 15,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the conventional frac 15,000 psi surface test tree?",
+          "a": "The listing gives API 16C for the conventional frac 15,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the conventional frac surface test tree connect to?",
+          "a": "The conventional frac 15,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: 1502 female weco union (frac flow inlet)). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the conventional frac 15,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot (fail-safe close on hydraulic loss)), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the conventional frac 15,000 psi tree differ from the conventional frac tree?",
+          "a": "The conventional frac tree at 15,000 psi has 5 valves: 2 master, 1 swab, 2 wing, while the conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the conventional frac 15,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies tree, and a lead time of 84 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Conventional Frac 1502, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Conventional Frac 1502, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-snubbing-1502-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a snubbing surface test tree rated 10,000 psi used for?",
+          "a": "A snubbing surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 10,000 psi (10K) tree has 6 valves: 2 master, 1 swab, 2 wing, 1 ram-type stripper, a 5-1/8 in vertical bore with snubbing stripper bore and standard-service valves. FMC / NOV interchange. Includes dual ram-type stripper for running tubing into a live well under pressure (snubbing)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 6 valves on the snubbing surface test tree do?",
+          "a": "The tree carries 6 valves: 2 master, 1 swab, 2 wing, 1 ram-type stripper. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic gates + dual ram-type stripper (snubbing-rated)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the snubbing surface test tree at 10,000 psi?",
+          "a": "Top: Snubbing stripper. Bottom: 1502 Female Weco. Lateral: 2× 1502 Female Weco. The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the snubbing 10,000 psi tree or the conventional frac 10,000 psi tree?",
+          "a": "Choose by operation: this tree is for snubbing work at 10,000 psi, while the conventional frac tree at 10,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the snubbing 10,000 psi surface test tree?",
+          "a": "The working pressure is 10,000 psi (10K) on a 5-1/8 in vertical bore with snubbing stripper bore. Hydraulic actuation pressure is 3,000 psi pilot; 2,000 psi for stripper rams. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the snubbing 10,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The snubbing 10,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the snubbing 10,000 psi surface test tree?",
+          "a": "The listing gives API 16C for the snubbing 10,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the snubbing surface test tree connect to?",
+          "a": "The snubbing 10,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: snubbing stripper). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the snubbing 10,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot; 2,000 psi for stripper rams), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the snubbing 10,000 psi tree differ from the conventional frac tree?",
+          "a": "The snubbing tree at 10,000 psi has 6 valves: 2 master, 1 swab, 2 wing, 1 ram-type stripper, while the conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the snubbing 10,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies tree, and a lead time of 140 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Snubbing 1502, 10,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Snubbing 1502, 10,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 140 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-subsea-api-6bx-15k-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a subsea surface test tree rated 15,000 psi used for?",
+          "a": "A subsea surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 15,000 psi (15K) tree has 7 valves: 2 master, 1 swab, 2 wing, 2 retainer, a 7-1/16 in vertical bore bore and standard-service valves. Forum Energy / FMC interchange. For exploration well-testing on subsea wellheads."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 7 valves on the subsea surface test tree do?",
+          "a": "The tree carries 7 valves: 2 master, 1 swab, 2 wing, 2 retainer. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic subsea-rated gates with mechanical override."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the subsea surface test tree at 15,000 psi?",
+          "a": "Top: API 6BX 15K studded (riser interface). Bottom: API 6BX 15K studded (wellhead). Lateral: API 6BX 10K studded (kill / choke). The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the subsea 15,000 psi tree or the conventional frac 15,000 psi tree?",
+          "a": "Choose by operation: this tree is for subsea work at 15,000 psi, while the conventional frac tree at 15,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the subsea 15,000 psi surface test tree?",
+          "a": "The working pressure is 15,000 psi (15K) on a 7-1/16 in vertical bore bore. Hydraulic actuation pressure is Subsea control panel — 5,000 psi hydraulic. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the subsea 15,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The subsea 15,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the subsea 15,000 psi surface test tree?",
+          "a": "The listing gives API 17D for the subsea 15,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the subsea surface test tree connect to?",
+          "a": "The subsea 15,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: api 6bx 15k studded (riser interface)). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the subsea 15,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (Subsea control panel — 5,000 psi hydraulic), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the subsea 15,000 psi tree differ from the conventional frac tree?",
+          "a": "The subsea tree at 15,000 psi has 7 valves: 2 master, 1 swab, 2 wing, 2 retainer, while the conventional frac tree at 15,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the subsea 15,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this Forum Energy Technologies tree, and a lead time of 168 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Subsea API 6BX 15K, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Subsea API 6BX 15K, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 168 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-coiled-tubing-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a coiled-tubing surface test tree rated 15,000 psi used for?",
+          "a": "A coiled-tubing surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 15,000 psi (15K) tree has 6 valves: 2 master, 1 swab, 2 wing, 1 shear/seal bop, a 5-1/8 in vertical bore with CT pack-off bore and standard-service valves. Halliburton / FMC interchange. Includes integrated stripper / pack-off and shear/seal BOP for live-well CT operations."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 6 valves on the coiled-tubing surface test tree do?",
+          "a": "The tree carries 6 valves: 2 master, 1 swab, 2 wing, 1 shear/seal BOP. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic gates + integral CT shear/seal BOP + stripper / pack-off."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the coiled-tubing surface test tree at 15,000 psi?",
+          "a": "Top: CT entry stripper. Bottom: 1502 Female Weco. Lateral: 2× 1502 Female Weco. The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the coiled-tubing 15,000 psi tree or the conventional frac 15,000 psi tree?",
+          "a": "Choose by operation: this tree is for coiled-tubing work at 15,000 psi, while the conventional frac tree at 15,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the coiled-tubing 15,000 psi surface test tree?",
+          "a": "The working pressure is 15,000 psi (15K) on a 5-1/8 in vertical bore with CT pack-off bore. Hydraulic actuation pressure is 3,000 psi pilot for valves; 1,500 psi for stripper packer. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the coiled-tubing 15,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The coiled-tubing 15,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the coiled-tubing 15,000 psi surface test tree?",
+          "a": "The listing gives API 16C for the coiled-tubing 15,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the coiled-tubing surface test tree connect to?",
+          "a": "The coiled-tubing 15,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: ct entry stripper). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the coiled-tubing 15,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot for valves; 1,500 psi for stripper packer), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the coiled-tubing 15,000 psi tree differ from the conventional frac tree?",
+          "a": "The coiled-tubing tree at 15,000 psi has 6 valves: 2 master, 1 swab, 2 wing, 1 shear/seal bop, while the conventional frac tree at 15,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the coiled-tubing 15,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this Halliburton tree, and a lead time of 112 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Coiled-Tubing 1502, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Coiled-Tubing 1502, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 112 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-conventional-frac-1502-10-000-psi-sour-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a conventional frac surface test tree rated 10,000 psi used for?",
+          "a": "A conventional frac surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 10,000 psi (10K) tree has 5 valves: 2 master, 1 swab, 2 wing, a 5-1/8 in vertical bore bore and sour-service valves. Halliburton SafeShield NACE / FMC interchange. For H₂S frac stimulation."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 5 valves on the conventional frac surface test tree do?",
+          "a": "The tree carries 5 valves: 2 master, 1 swab, 2 wing. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic NACE-compliant gate valves; manual gate (swab)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the conventional frac surface test tree at 10,000 psi?",
+          "a": "Top: 1502 Female Weco. Bottom: API 6BX 10K studded flange. Lateral: 2× 1502 Female Weco. The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the conventional frac 10,000 psi tree or the conventional frac 10,000 psi tree?",
+          "a": "Choose by operation: this tree is for conventional frac work at 10,000 psi, while the conventional frac tree at 10,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the conventional frac 10,000 psi surface test tree?",
+          "a": "The working pressure is 10,000 psi (10K) on a 5-1/8 in vertical bore bore. Hydraulic actuation pressure is 3,000 psi pilot, NACE-compliant actuators. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the conventional frac 10,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The conventional frac 10,000 psi tree is sour service to NACE MR0175 / ISO 15156, material class EE, with NACE-compliant actuators and gate valves. The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the conventional frac 10,000 psi surface test tree?",
+          "a": "The listing gives API 16C for the conventional frac 10,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the conventional frac surface test tree connect to?",
+          "a": "The conventional frac 10,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: 1502 female weco). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the conventional frac 10,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot, NACE-compliant actuators), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the conventional frac 10,000 psi tree differ from the conventional frac tree?",
+          "a": "The conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing, while the conventional frac tree at 10,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac API 6BX 10K Flanged surface test tree](/p/surface-test-tree-conventional-frac-api-6bx-10k-flanged-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the conventional frac 10,000 psi surface test tree made and what is its lead time?",
+          "a": "The listing gives USA as the country of origin of this Halliburton tree, and a lead time of 112 days. We supply it from Dubai, UAE and export worldwide with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Conventional Frac 1502, 10,000 psi, Sour Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Conventional Frac 1502, 10,000 psi, Sour Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 112 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-flowhead",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A surface test tree (flowhead) used for?",
+          "a": "Surface test trees (flowheads): 3-1/16\" to 5-1/8\", 3,000 to 20,000 psi, fail-close hydraulic flow wing with ESD, manual kill wing and swab valve, rotating sub, PSL 3 to 4."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A surface test tree (flowhead)?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A surface test tree (flowhead) the listing gives PSL 3 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A surface test tree (flowhead) come in?",
+          "a": "The listing covers 3-1/16\" to 5-1/8\" nominal bore at 3,000 to 20,000 psi working pressure, with aPI 6A flanged; hammer union; top sub thread. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between a flowhead and a conventional frac surface test tree?",
+          "a": "A flowhead is made for drill-stem and production well testing, carrying the string weight with a rotating sub. A conventional frac tree such as the [1502 15,000 psi frac test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service) is for flowback control on a pumping spread."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A surface test tree (flowhead) tested?",
+          "a": "For the API 6A surface test tree (flowhead) (3-1/16\" to 5-1/8\", 3,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A surface test tree (flowhead) offer?",
+          "a": "On the API 6A surface test tree (flowhead), body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to Y. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A surface test tree (flowhead) to API specification, and what documents are supplied?",
+          "a": "The API 6A surface test tree (flowhead) is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A surface test tree (flowhead) operated?",
+          "a": "The API 6A surface test tree (flowhead) is operated by manual and fail-close hydraulic. The flow wing is fail-close hydraulic with ESD, and the kill wing and swab valve are manual. End connections on the listing are aPI 6A flanged; hammer union; top sub thread."
+        },
+        {
+          "slot": "I",
+          "q": "What does the rotating sub on a flowhead do?",
+          "a": "The rotating sub lets the test string be turned to set packers while the flowhead stays connected to the surface lines. The top sub takes wireline lubricators and coiled tubing. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "Flowhead or frac surface test tree: which do I need for well testing?",
+          "a": "A flowhead sits on top of the test string and carries its weight with an actuated flow wing, a manual kill wing, a swab valve and a rotating sub, while a frac test tree is a 5-valve stack for flowback pressure control. See the [Surface Test Tree, Conventional Frac 1502, 15,000 psi, Standard Service](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A surface test tree (flowhead) be supplied from Dubai with test records?",
+          "a": "For the API 6A surface test tree (flowhead): built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A surface test tree (flowhead) in Dubai?",
+          "a": "Yes. We keep the API 6A surface test tree (flowhead) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "surface-test-tree-wellhead-mounted-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a wellhead-mounted surface test tree rated 15,000 psi used for?",
+          "a": "A wellhead-mounted surface test tree is a hydraulically actuated valve stack that controls and isolates a well during testing and well-service work. This 15,000 psi (15K) tree has 4 valves: 1 master, 1 swab, 2 wing, a 5-1/8 in vertical bore bore and standard-service valves. Compact 4-valve STT integrated permanently with the production wellhead for routine testing and intervention. Indus interchange."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 4 valves on the wellhead-mounted surface test tree do?",
+          "a": "The tree carries 4 valves: 1 master, 1 swab, 2 wing. Master valves are the primary barrier, kept open in operation and closed to shut in; the swab valve gives wireline access above the master; the wing valves route flow to the choke manifold or flowback iron. Valve types: Hydraulic gates (master + wing); manual gate (swab)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the wellhead-mounted surface test tree at 15,000 psi?",
+          "a": "Top: 1502 Female Weco. Bottom: API 6BX 15K studded (permanent wellhead). Lateral: 2× 1502 Female Weco. The top, bottom and lateral ends are different, so confirm each against the frac tree, choke manifold and flowback iron before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the wellhead-mounted 15,000 psi tree or the conventional frac 15,000 psi tree?",
+          "a": "Choose by operation: this tree is for wellhead-mounted work at 15,000 psi, while the conventional frac tree at 15,000 psi is built for conventional frac operations with 5 valves: 2 master, 1 swab, 2 wing. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure rating and actuation pressure of the wellhead-mounted 15,000 psi surface test tree?",
+          "a": "The working pressure is 15,000 psi (15K) on a 5-1/8 in vertical bore bore. Hydraulic actuation pressure is 3,000 psi pilot. The temperature class is P to API 6A."
+        },
+        {
+          "slot": "F",
+          "q": "Is the wellhead-mounted 15,000 psi surface test tree standard or sour service, and what is its material class?",
+          "a": "The wellhead-mounted 15,000 psi tree is standard service, material class AA, so it is not offered here for H2S service. For sour wells ask for the sour-service version, such as the [conventional frac 1502 10,000 psi sour tree](/p/surface-test-tree-conventional-frac-1502-10-000-psi-sour-service). The temperature class is P."
+        },
+        {
+          "slot": "G",
+          "q": "Which API specification applies to the wellhead-mounted 15,000 psi surface test tree?",
+          "a": "The listing gives API 16C for the wellhead-mounted 15,000 psi tree, and it is supplied by API-licensed manufacturers with the API certificate and monogram documentation issued with the order. Mill test reports to EN 10204 3.1 / 3.2 and hydrostatic body, seat and back-seat test certificates per unit are listed."
+        },
+        {
+          "slot": "H",
+          "q": "What does the wellhead-mounted surface test tree connect to?",
+          "a": "The wellhead-mounted 15,000 psi tree connects to the frac or wellhead tree below and the choke manifold and flowback iron on the wings, through the listed ends (top: 1502 female weco). Pair it with a matched-class [wellhead](/c/wellhead) and a [wellhead control panel](/c/wellhead-control-panels) for the pilot pressure; ring gaskets are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the wellhead-mounted 15,000 psi surface test tree operated?",
+          "a": "The master and wing valves are hydraulic gate valves driven by the pilot pressure (3,000 psi pilot), and the swab valve is manual. Close the master valves to shut in and check the hydraulic function on a test before the job. See the [wellhead components guide](/blog/wellhead-components-explained)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the wellhead-mounted 15,000 psi tree differ from the conventional frac tree?",
+          "a": "The wellhead-mounted tree at 15,000 psi has 4 valves: 1 master, 1 swab, 2 wing, while the conventional frac tree at 15,000 psi has 5 valves: 2 master, 1 swab, 2 wing. Choose by the operation, because snubbing and coiled-tubing trees add a stripper or shear/seal BOP. See the [Conventional Frac 1502 surface test tree](/p/surface-test-tree-conventional-frac-1502-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time of the wellhead-mounted 15,000 psi surface test tree and can it be exported from Dubai?",
+          "a": "The listed lead time is 56 days. We supply the tree from Dubai, UAE and export worldwide, with a factory acceptance test report on request."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Surface Test Tree, Wellhead-Mounted 1502, 15,000 psi, Standard Service available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Surface Test Tree, Wellhead-Mounted 1502, 15,000 psi, Standard Service is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

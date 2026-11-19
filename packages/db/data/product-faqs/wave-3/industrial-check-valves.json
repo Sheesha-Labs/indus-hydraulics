@@ -1,0 +1,604 @@
+{
+  "family": "industrial-check-valves",
+  "extraFacts": [
+    {
+      "fact": "API 598 covers the inspection and testing of valves, including shell, backseat and seat tests; API 609 covers butterfly valves (lug, wafer and double-flanged types, Category A and Category B); API 600 covers bolted-bonnet steel gate valves; API 602 covers compact steel gate, globe and check valves of small bore; API 603 covers corrosion-resistant bolted-bonnet gate valves; API 6D covers pipeline valves; API 594 covers wafer, lug and flanged check valves; API 599 covers metal plug valves; API 607 is the fire test for valves with non-metallic seats; BS 1868 covers steel check valves and BS 1873 steel globe valves; ASME B16.34 covers valve pressure-temperature ratings and ASME B16.10 covers valve face-to-face lengths; EN 10204 3.1 is the inspection certificate type for material certificates; ISO 15848 covers fugitive emissions of valves.",
+      "source": "API 598, API 609, API 600, API 602, API 603, API 6D, API 594, API 599, API 607; BS 1868; BS 1873; ASME B16.34; ASME B16.10; EN 10204; ISO 15848 (standard titles)"
+    },
+    {
+      "fact": "Banjo and Plast-O-Matic check valve figures: Banjo check valve pressure stated by the maker 150 to 300 psi (10 to 21 bar), by size, polypropylene, 24 part numbers; Plast-O-Matic CK series 8 part numbers, CKM series 48 part numbers, CKS series 64 part numbers.",
+      "source": "Indus Hydraulics listings for these ranges"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Banjo Check Valve [IH-BJO-CHECK-VALVE]: pressure stated by the maker 150 to 300 psi (10 to 21 bar), by size  Banjo Check Valve in polypropylene: 24 part numbers. | Color Black | 24 part numbers (e.g. 12705, 12705BN, CV101MT, 634011); type Fitting, Check and Valve; maximum pressure 150 to 300 psi; rows: Check Valve / Check Valve, Buna N / Check Valve, 1 Inch Male x 1 FNPT / Full Port Manifold Check Valve, 2 Inch Size / Poly Fpt Npt Check Valve, 2 Inch Size / Hydraulic Check Valve With O-Ring / Check Valve, FKM / Manifold Check Valve, With O Spring, 1 Inch Size || Axial Flow Check Valve, API 6D [IH-PV-AFC]:   Axial flow (nozzle) check valves to API 6D: NPS 2\" to 60\", Class 150 to 2500, spring-assisted disc closes fast and quietly, low pressure drop, for pump and compressor discharges and pipelines. | Valve type Axial flow (nozzle) check valve; Construction Venturi body, spring-assisted axial disc; Design standard API 6D, ASME B16.34; Size range NPS 2\" to 60\" (DN50 to DN1500); Pressure class ASME Class 150 to 2500; Body material Carbon steel, stainless steel, alloy steel, duplex; Seat and trim Metal-seated disc; End connections RF, RTJ flanged; butt-weld; Operation Self-acting, spring-assisted; Pressure testing Hydrostatic shell and seat tests to API 6D; Typical service Pump and compressor di | 206 part numbers (e.g. IH-PV-AFC-L-150-0200, IH-PV-AFC-L-150-0300, IH-PV-AFC-L-150-0400, IH-PV-AFC-L-150-0600); D 44 to 1,168; lBw 150 to 3,151; lRf 150 to 3,151; type Long pattern and Short pattern; weightKg 14 to 10,200; lRtj 153 to 2,099; rows:  /  /  /  /  /  /  /  || Cast Steel Swing Check Valve, BS 1868 [IH-PV-SCC]:   Cast steel swing check valves to BS 1868 (to NPS 24) and ASME B16.34: NPS 2\" to 60\", Class 150 to 2500, bolted cover, swing disc on a hinge pin, raised-face, ring-joint or butt-weld ends. | Valve type Swing check valve; Construction Bolted cover, swing disc on hinge pin; Design standard BS 1868 (DN 15–600), ASME B16.34; Size range NPS 2\" to 60\" (DN50 to DN1500); Pressure class ASME Class 150 to 2500; Body material Carbon steel, low-temperature steel, alloy steel, stainless steel; Seat and trim Hardfaced, seal-welded seat; End connections RF, RTJ flanged; butt-weld; Operation Self-acting; damper or lever and weight on request; Face-to-face / end-to-end ASME B16.10; Pressure testing  | 157 part numbers (e.g. IH-PV-SCC-150-0200, IH-PV-SCC-150-0250, IH-PV-SCC-150-0300, IH-PV-SCC-150-0350); H 147 to 2,993; lBw 203 to 3,503; lRf 203 to 3,503; weightBwKg 10 to 20,383; weightRfKg 15 to 29,119; lRtj 295 to 2,963; rows:  /  /  /  /  /  /  /  || Dual Plate Check Valve, API 594 [IH-PV-DPC]:   Dual plate check valves to API 594 (NPS 2\" to 48\"), with larger sizes to NPS 84\" to ASME B16.34: Class 150 to 2500, wafer, lug or flanged body, twin spring-loaded plates for fast closing in a short, light valve. | Valve type Dual plate check valve; Construction Twin spring-loaded plates on central hinge pin; Design standard API 594, ASME B16.34; Size range NPS 2\" to 84\" (DN50 to DN2100); Pressure class ASME Class 150 to 2500; Body material Carbon steel, stainless steel, alloy steel, duplex; End connections Wafer, lug, RF or RTJ flanged; Operation Self-acting, spring-assisted; Face-to-face / end-to-end API 594; Pressure testing Shell and seat tests to API 598; Typical service Process, cooling water, seawat | 230 part numbers (e.g. IH-PV-DPC-DF-150-0200, IH-PV-DPC-DF-150-0300, IH-PV-DPC-DF-150-0400, IH-PV-DPC-DF-150-0600); lRf 114 to 701; type Double flanged, Lug and Wafer; weightKg 3 to 4,853; lFf 60 to 701; rows:  /  /  /  /  /  /  /  || Forged Steel Lift and Swing Check Valve, API 602 [IH-PV-FCK]:   Forged steel piston (lift), ball and swing check valves to API 602: NPS 1/2\" to 2\", Class 150 to 1500 and Class 800 (Class 2500 to ASME B16.34), bolted or welded cover, socket-weld, threaded or flanged ends. | Valve type Check valve, forged (piston lift, ball or swing); Construction Forged body, bolted or welded cover; Design standard API 602, ASME B16.34; Size range NPS 1/2\" to 2\" (DN15 to DN50); Pressure class Class 800 and ASME Class 150 to 1500 (API 602); Class 2500 to ASME B16.34; Body material Forged carbon steel, alloy, stainless, duplex, nickel alloys; End connections Socket weld, NPT, butt-weld, RF or RTJ flanged; Operation Self-acting; Pressure testing Shell and seat tests to API 598; Typica | 35 part numbers (e.g. IH-PV-FCK-800-0038F, IH-PV-FCK-800-0050F, IH-PV-FCK-800-0050, IH-PV-FCK-800-0075F); H 48.5 to 260; L 76 to 368; d 9 to 38; port Full bore and Regular bore; weightKg 1.5 to 32.5; pressureClass Class 800, Class 900 and Class 2500; rows:  /  /  /  /  /  /  /  || Tilting Disc Check Valve [IH-PV-TDC]:   Tilting disc check valves: NPS 2\" to 48\", Class 150 to 4500, quick closing with a low cracking pressure and reduced slam, for steam, refinery, petrochemical and hydrogenation service. | Valve type Tilting disc check valve; Construction Off-centre pivoted disc, bolted or pressure-seal cover; Design standard ASME B16.34; Size range NPS 2\" to 48\" (DN50 to DN1200); Pressure class ASME Class 150 to 4500; Body material Carbon steel, alloy steel, stainless steel, duplex, low-temperature steel, nickel alloys; End connections RF, RTJ flanged; butt-weld; Operation Self-acting; Pressure testing Shell and seat tests to API 598; Typical service High-temperature steam, refining, petrochemica | 0 part numbers (e.g. ); ; rows:  || Plast-O-Matic CK Series Check Valves [IH-POM-CK-SERIES-CHECK-VALVES]:   Plast-O-Matic CK Series Check Valves: 8 part numbers. |  | 8 part numbers (e.g. CK050EPS-TF, CK050EP-TF, CK050VS-TF, CK050V-TF); ; rows: Check Valve, PTFE, Socket Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PTFE, NPT Threaded Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PTFE, Socket Connection, FKM Seal, 1/2 Inch Size / Check Valve, PTFE, NPT Threaded Connection, FKM Seal, 1/2 Inch Size / Check Valve, PTFE, Socket Connection, EPDM Seal, 3/4 Inch Size / Check Valve, PTFE, Socket Connection, FKM Seal, 3/4 Inch Size / Check Valve, PTFE, Socket Connection, EPDM Seal, 1 Inch Size / Check Valve, PTFE, Socket Connection, FKM Seal, 1 Inch Size || Plast-O-Matic CKM Series Check Valves [IH-POM-CKM-SERIES-CHECK-VALVES]:   Plast-O-Matic CKM Series Check Valves: 48 part numbers. |  | 48 part numbers (e.g. CKM050EPFL-CP, CKM050EPFL-PF, CKM050EPFL-PP, CKM050EPFL-PV); ; rows: Check Valve, CPVC, Flanged Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PVDF, Flanged Connection, EPDM Seal, 1/2 Inch Size / Check Valve, Polypro, Flanged Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PVC, Flanged Connection, EPDM Seal, 1/2 Inch Size / Check Valve, CPVC, Socket Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PVDF, Socket Connection, EPDM Seal, 1/2 Inch Size / Check Valve, Polypro, Socket Connection, EPDM Seal, 1/2 Inch Size / Check Valve, PVC, Socket Connection, EPDM Seal, 1/2 Inch Size || Plast-O-Matic CKS Series Check Valves [IH-POM-CKS-SERIES-CHECK-VALVES]:   Plast-O-Matic CKS Series Check Valves: 64 part numbers. |  | 64 part numbers (e.g. CKS150EPFL-NC-CP, CKS150EPFL-NC-PF, CKS150EPFL-NC-PP, CKS150EPFL-NC-PV); ; rows: Check Valve, CPVC, Flanged Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, PVDF, Flanged Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, Polypro, Flanged Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, PVC, Flanged Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, CPVC, Socket Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, PVDF, Socket Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, Polypro, Socket Connection, EPDM Seal, 1-1/2 Inch Size / Check Valve, PVC, Socket Connection, EPDM Seal, 1-1/2 Inch Size",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "banjo-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Banjo check valves used for?",
+          "a": "Banjo check valves are polypropylene one-way valves that stop liquid flowing backwards in tank, sprayer and manifold lines. The range has 24 part numbers rated 150 to 300 psi (10 to 21 bar) by size; see the [industrial check valves shelf](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Banjo check valve part numbers?",
+          "a": "The rows show a base number and a letter suffix for the seal: 12705 is the check valve and 12705BN is the same valve in Buna N. Quote the full number from the old valve."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure are Banjo check valves rated for?",
+          "a": "The maker states 150 to 300 psi (10 to 21 bar), by size, in polypropylene. Check the row for your part number, because the rating changes with size."
+        },
+        {
+          "slot": "E",
+          "q": "What material are Banjo check valves made of?",
+          "a": "Polypropylene, in black. Polypropylene suits many acids, alkalis and fertiliser solutions; check your chemical against the seal material before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit the Banjo check valves?",
+          "a": "Give the fluid and temperature when you request a quotation for the Banjo check valves: the body and seal material are chosen against it, and the rows show the seal options listed."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Banjo check valves?",
+          "a": "No certificate or approval is listed for the Banjo check valves. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I check before fitting the Banjo check valves?",
+          "a": "Check the size, connection and seal material against your fluid, and the pressure against the listed rating. For the Banjo check valves the size table shows examples such as CV050 and CV051."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Banjo check valves?",
+          "a": "Quote the part number, such as 12705, 12705BN and CV101MT, with the size and options you need; 24 part numbers are listed for the Banjo check valves. Price and lead time are confirmed with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Banjo check valves used?",
+          "a": "The Banjo check valves are used on chemical, water and utility lines to stop reverse flow; see the [industrial check valve types guide](/blog/industrial-check-valve-types) for how swing, lift and other checks differ."
+        },
+        {
+          "slot": "K",
+          "q": "How do Banjo check valves compare with the Plast-O-Matic CK series?",
+          "a": "The Banjo valves are polypropylene with 24 part numbers, while the [Plast-O-Matic CK series](/p/plast-o-matic-ck-series-check-valves) has 8 part numbers in PTFE with socket or NPT ends and EPDM seals."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Banjo check valves be shipped from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Banjo check valves from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Banjo check valves in stock in Dubai?",
+          "a": "Yes, we hold Banjo check valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "axial-flow-check-valve-api-6d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the API 6D axial flow check valve used for?",
+          "a": "The API 6D axial flow check valve is a axial flow (nozzle) check valve built to API 6D, ASME B16.34, used for pump and compressor discharge, pipelines, high-flow systems. It is made in NPS 2\" to 60\" (DN50 to DN1500) and ASME Class 150 to 2500, and is built to order and supplied from Dubai; see the [check valves](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the API 6D axial flow check valve part numbers such as IH-PV-AFC-L-2500-0400?",
+          "a": "In the size table IH-PV-AFC-L-2500-0400 is the 4\" Long pattern valve in Class 2500: the number before the size is the class, and the last four digits are the size in hundredths of an inch, and L is \"Long pattern\". The table lists 206 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the API 6D axial flow check valve available in?",
+          "a": "The published range for the API 6D axial flow check valve is NPS 2\" to 60\" (DN50 to DN1500), in ASME Class 150 to 2500. The size table lists 206 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the API 6D axial flow check valve take?",
+          "a": "The API 6D axial flow check valve is rated ASME Class 150 to 2500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the API 6D axial flow check valve made in?",
+          "a": "The body is available in carbon steel, stainless steel, alloy steel, duplex, with metal-seated disc. The construction is Venturi body, spring-assisted axial disc."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the API 6D axial flow check valve?",
+          "a": "Each API 6D axial flow check valve has hydrostatic shell and seat tests to API 6D, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6D axial flow check valve operated, and what end connections does it have?",
+          "a": "The API 6D axial flow check valve has RF, RTJ flanged; butt-weld ends and is operated by self-acting, spring-assisted. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "API 6D axial flow check valve: Why choose an axial flow check on a compressor discharge?",
+          "a": "Its fast, spring-assisted closing stops reverse flow within milliseconds of a trip, protecting the compressor, and it stays quiet and stable under pulsating flow where a swing check would chatter."
+        },
+        {
+          "slot": "J",
+          "q": "API 6D axial flow check valve: Does it need straight pipe upstream?",
+          "a": "Like any check valve it works best with steady flow; allow several diameters of straight pipe after pumps, elbows and reducers. We will review the layout with the sizing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 6D axial flow check valve compare with the API 594 dual plate check valve?",
+          "a": "The API 6D axial flow check valve differs from the [API 594 dual plate check valve](/p/dual-plate-check-valve-api-594) in construction: venturi body, spring-assisted axial disc here, twin spring-loaded plates on central hinge pin on the other. Also, standard: API 6D, ASME B16.34 here, API 594, ASME B16.34 on the other. This valve is for pump and compressor discharge, pipelines, high-flow systems; the other is for process, cooling water, seawater and pump discharge."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the API 6D axial flow check valve supplied from?",
+          "a": "The API 6D axial flow check valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the API 6D axial flow check valve in stock in Dubai?",
+          "a": "Yes, we carry the API 6D axial flow check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "cast-steel-swing-check-valve-bs-1868",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the BS 1868 cast steel swing check valve used for?",
+          "a": "The BS 1868 cast steel swing check valve is a swing check valve built to BS 1868 (DN 15–600), ASME B16.34, used for pump discharge, process and utility lines. It is made in NPS 2\" to 60\" (DN50 to DN1500) and ASME Class 150 to 2500, and is built to order and supplied from Dubai; see the [check valves](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the BS 1868 cast steel swing check valve part numbers such as IH-PV-SCC-600-1800?",
+          "a": "In the size table IH-PV-SCC-600-1800 is the 18\" valve in Class 600: the number before the size is the class, and the last four digits are the size in hundredths of an inch. The table lists 157 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the BS 1868 cast steel swing check valve available in?",
+          "a": "The published range for the BS 1868 cast steel swing check valve is NPS 2\" to 60\" (DN50 to DN1500), in ASME Class 150 to 2500. The size table lists 157 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the BS 1868 cast steel swing check valve take?",
+          "a": "The BS 1868 cast steel swing check valve is rated ASME Class 150 to 2500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the BS 1868 cast steel swing check valve made in?",
+          "a": "The body is available in carbon steel, low-temperature steel, alloy steel, stainless steel, with hardfaced, seal-welded seat. The construction is Bolted cover, swing disc on hinge pin."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the BS 1868 cast steel swing check valve?",
+          "a": "Each BS 1868 cast steel swing check valve has shell and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the BS 1868 cast steel swing check valve operated, and what end connections does it have?",
+          "a": "The BS 1868 cast steel swing check valve has RF, RTJ flanged; butt-weld ends and is operated by self-acting; damper or lever and weight on request. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "BS 1868 cast steel swing check valve: Can it be installed vertically?",
+          "a": "Yes, with the flow upward, so the disc closes under its own weight. With flow downward a swing check cannot close and a spring-assisted check valve is needed."
+        },
+        {
+          "slot": "J",
+          "q": "BS 1868 cast steel swing check valve: Why does my swing check chatter?",
+          "a": "A swing disc needs enough steady flow to hold it fully open. At low flow it floats part-open and wears the hinge. If the flow is below the valve size, step the size down or choose a dual-plate or axial-flow check."
+        },
+        {
+          "slot": "K",
+          "q": "How does the BS 1868 cast steel swing check valve compare with the tilting disc check valve?",
+          "a": "The BS 1868 cast steel swing check valve differs from the [tilting disc check valve](/p/tilting-disc-check-valve) in construction: bolted cover, swing disc on hinge pin here, off-centre pivoted disc, bolted or pressure-seal cover on the other. Also, standard: BS 1868 (DN 15–600), ASME B16.34 here, ASME B16.34 on the other. This valve is for pump discharge, process and utility lines; the other is for high-temperature steam, refining, petrochemical, hydrogenation."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the BS 1868 cast steel swing check valve supplied from?",
+          "a": "The BS 1868 cast steel swing check valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the BS 1868 cast steel swing check valve in stock in Dubai?",
+          "a": "Yes. We keep the BS 1868 cast steel swing check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dual-plate-check-valve-api-594",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the API 594 dual plate check valve used for?",
+          "a": "The API 594 dual plate check valve is a dual plate check valve built to API 594, ASME B16.34, used for process, cooling water, seawater and pump discharge. It is made in NPS 2\" to 84\" (DN50 to DN2100) and ASME Class 150 to 2500, and is built to order and supplied from Dubai; see the [check valves](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the API 594 dual plate check valve part numbers such as IH-PV-DPC-LG-600-3200?",
+          "a": "In the size table IH-PV-DPC-LG-600-3200 is the 32\" Lug valve in Class 600: the number before the size is the class, and the last four digits are the size in hundredths of an inch, and LG is \"Lug\". The table lists 230 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the API 594 dual plate check valve available in?",
+          "a": "The published range for the API 594 dual plate check valve is NPS 2\" to 84\" (DN50 to DN2100), in ASME Class 150 to 2500. The size table lists 230 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the API 594 dual plate check valve take?",
+          "a": "The API 594 dual plate check valve is rated ASME Class 150 to 2500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the API 594 dual plate check valve made in?",
+          "a": "The body is available in carbon steel, stainless steel, alloy steel, duplex. The construction is Twin spring-loaded plates on central hinge pin."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the API 594 dual plate check valve?",
+          "a": "Each API 594 dual plate check valve has shell and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 594 dual plate check valve operated, and what end connections does it have?",
+          "a": "The API 594 dual plate check valve has wafer, lug, RF or RTJ flanged ends and is operated by self-acting, spring-assisted. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "API 594 dual plate check valve: Wafer or lug body?",
+          "a": "A wafer body clamps between the pipe flanges on through-bolts and is the lightest option. A lug body has threaded lugs, so the pipe on one side can be removed with the valve still holding the other."
+        },
+        {
+          "slot": "J",
+          "q": "API 594 dual plate check valve: Can it be used on seawater?",
+          "a": "Yes, with duplex, super duplex or aluminium-bronze plates and suitable springs. Tell us the water quality and temperature. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 594 dual plate check valve compare with the API 6D axial flow check valve?",
+          "a": "The API 594 dual plate check valve differs from the [API 6D axial flow check valve](/p/axial-flow-check-valve-api-6d) in construction: twin spring-loaded plates on central hinge pin here, venturi body, spring-assisted axial disc on the other. Also, standard: API 594, ASME B16.34 here, API 6D, ASME B16.34 on the other. This valve is for process, cooling water, seawater and pump discharge; the other is for pump and compressor discharge, pipelines, high-flow systems."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the API 594 dual plate check valve supplied from?",
+          "a": "The API 594 dual plate check valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the API 594 dual plate check valve in stock in Dubai?",
+          "a": "Yes. We keep the API 594 dual plate check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "forged-steel-check-valve-api-602",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the API 602 forged steel lift and swing check valve used for?",
+          "a": "The API 602 forged steel lift and swing check valve is a check valve, forged (piston lift, ball or swing) built to API 602, ASME B16.34, used for small-bore process, utility and steam lines. It is made in NPS 1/2\" to 2\" (DN15 to DN50) and Class 800 and ASME Class 150 to 1500 (API 602); Class 2500 to ASME B16.34, and is built to order and supplied from Dubai; see the [check valves](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the API 602 forged steel lift and swing check valve part numbers such as IH-PV-FCK-900-0100F?",
+          "a": "In the size table IH-PV-FCK-900-0100F is the 1\" valve in Class 900: the number before the size is the class, and the last four digits are the size in hundredths of an inch. The table lists 35 size and class combinations."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the API 602 forged steel lift and swing check valve available in?",
+          "a": "The published range for the API 602 forged steel lift and swing check valve is NPS 1/2\" to 2\" (DN15 to DN50), in Class 800 and ASME Class 150 to 1500 (API 602); Class 2500 to ASME B16.34. The size table lists 35 size and class combinations with lengths and weights, so you can check the valve against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the API 602 forged steel lift and swing check valve take?",
+          "a": "The API 602 forged steel lift and swing check valve is rated Class 800 and ASME Class 150 to 1500 (API 602); Class 2500 to ASME B16.34. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the API 602 forged steel lift and swing check valve made in?",
+          "a": "The body is available in forged carbon steel, alloy, stainless, duplex, nickel alloys. The construction is Forged body, bolted or welded cover."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the API 602 forged steel lift and swing check valve?",
+          "a": "Each API 602 forged steel lift and swing check valve has shell and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 602 forged steel lift and swing check valve operated, and what end connections does it have?",
+          "a": "The API 602 forged steel lift and swing check valve has socket weld, NPT, butt-weld, RF or RTJ flanged ends and is operated by self-acting. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "API 602 forged steel lift and swing check valve: Piston check or swing check?",
+          "a": "A piston (lift) check seals tightly and suits higher pressure and pulsating flow but has a higher pressure drop and must be installed the right way up. A swing check has a lower pressure drop and suits steady horizontal flow."
+        },
+        {
+          "slot": "J",
+          "q": "API 602 forged steel lift and swing check valve: Can it be installed vertically?",
+          "a": "A piston check with a spring can be installed in vertical lines with flow upward. Tell us the orientation so the right disc is supplied."
+        },
+        {
+          "slot": "K",
+          "q": "How does the API 602 forged steel lift and swing check valve compare with the BS 1868 cast steel swing check valve?",
+          "a": "The API 602 forged steel lift and swing check valve differs from the [BS 1868 cast steel swing check valve](/p/cast-steel-swing-check-valve-bs-1868) in construction: forged body, bolted or welded cover here, bolted cover, swing disc on hinge pin on the other. Also, standard: API 602, ASME B16.34 here, BS 1868 (DN 15–600), ASME B16.34 on the other. This valve is for small-bore process, utility and steam lines; the other is for pump discharge, process and utility lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the API 602 forged steel lift and swing check valve supplied from?",
+          "a": "The API 602 forged steel lift and swing check valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the API 602 forged steel lift and swing check valve in stock in Dubai?",
+          "a": "Yes, we carry the API 602 forged steel lift and swing check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "tilting-disc-check-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the tilting disc check valve used for?",
+          "a": "The tilting disc check valve is a tilting disc check valve built to ASME B16.34, used for high-temperature steam, refining, petrochemical, hydrogenation. It is made in NPS 2\" to 48\" (DN50 to DN1200) and ASME Class 150 to 4500, and is built to order and supplied from Dubai; see the [check valves](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "Which standards and dimensions does the tilting disc check valve follow?",
+          "a": "The tilting disc check valve follows ASME B16.34. Testing: shell and seat tests to API 598. Quote the design standard and class in your enquiry so the build matches your specification."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and classes is the tilting disc check valve available in?",
+          "a": "The published range for the tilting disc check valve is NPS 2\" to 48\" (DN50 to DN1200), in ASME Class 150 to 4500. The full dimension and weight table is issued with the quotation, with the general arrangement drawing for the end connection you choose."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the tilting disc check valve take?",
+          "a": "The tilting disc check valve is rated ASME Class 150 to 4500. The rating falls as temperature rises, so give the design pressure and temperature of the line and we confirm the class and material."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the tilting disc check valve made in?",
+          "a": "The body is available in carbon steel, alloy steel, stainless steel, duplex, low-temperature steel, nickel alloys. The construction is Off-centre pivoted disc, bolted or pressure-seal cover."
+        },
+        {
+          "slot": "G",
+          "q": "What tests and documents come with the tilting disc check valve?",
+          "a": "Each tilting disc check valve has shell and seat tests to API 598, with the material certificates (EN 10204 3.1) and the pressure-test record supplied. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "How is the tilting disc check valve operated, and what end connections does it have?",
+          "a": "The tilting disc check valve has RF, RTJ flanged; butt-weld ends and is operated by self-acting. Say which operator and end connection you need, and give the pipe schedule for butt-weld ends."
+        },
+        {
+          "slot": "I",
+          "q": "tilting disc check valve: Where does a tilting disc check outperform a swing check?",
+          "a": "On lines where flow reverses quickly or pulsates, such as pump and turbine discharges and high-temperature steam. The disc closes before reverse velocity builds, so it slams less and wears less at the hinge."
+        },
+        {
+          "slot": "J",
+          "q": "tilting disc check valve: Is a size table published for this valve?",
+          "a": "The general arrangement drawing with face-to-face length and weight is issued with the quotation for the class and end connection you specify."
+        },
+        {
+          "slot": "K",
+          "q": "How does the tilting disc check valve compare with the BS 1868 cast steel swing check valve?",
+          "a": "The tilting disc check valve differs from the [BS 1868 cast steel swing check valve](/p/cast-steel-swing-check-valve-bs-1868) in construction: off-centre pivoted disc, bolted or pressure-seal cover here, bolted cover, swing disc on hinge pin on the other. Also, standard: ASME B16.34 here, BS 1868 (DN 15–600), ASME B16.34 on the other. This valve is for high-temperature steam, refining, petrochemical, hydrogenation; the other is for pump discharge, process and utility lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the tilting disc check valve supplied from?",
+          "a": "The tilting disc check valve is built to order to your specification and supplied from Dubai, UAE to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest."
+        },
+        {
+          "slot": "M",
+          "q": "Is the tilting disc check valve in stock in Dubai?",
+          "a": "Yes, we carry the tilting disc check valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Built-to-order specifications are quoted with their own delivery time. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "plast-o-matic-ck-series-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Plast-O-Matic CK series check valves used for?",
+          "a": "Plast-O-Matic CK series check valves are thermoplastic check valves that stop reverse flow in chemical and water lines. Eight part numbers are listed, in PTFE with EPDM seals and socket or NPT threaded connections, in sizes from 1/2 inch; see the [industrial check valves shelf](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Plast-O-Matic CK part numbers?",
+          "a": "The rows show the pattern: CK050EPS-TF is a 1/2 inch valve with a socket connection and EPDM seal in PTFE, and CK050EP-TF is the same with an NPT threaded connection. The three digits after CK are the size (050 is 1/2 inch)."
+        },
+        {
+          "slot": "D",
+          "q": "Which connections do the Plast-O-Matic CK check valves have?",
+          "a": "Socket and NPT threaded connections, with an EPDM seal, in PTFE. State the pipe size and connection when you order. Share the duty and any standard that applies and we will confirm the match."
+        },
+        {
+          "slot": "E",
+          "q": "What body material is the Plast-O-Matic CK series?",
+          "a": "PTFE, with an EPDM seal as shown on the rows. PTFE suits aggressive chemicals; check the seal against your fluid. If you are unsure, send us the requirement and we will confirm."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit the Plast-O-Matic CK series check valves?",
+          "a": "Give the fluid and temperature when you request a quotation for the Plast-O-Matic CK series check valves: the body and seal material are chosen against it, and the rows show the seal options listed."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Plast-O-Matic CK series check valves?",
+          "a": "No certificate or approval is listed for the Plast-O-Matic CK series check valves. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I check before fitting the Plast-O-Matic CK series check valves?",
+          "a": "Check the size, connection and seal material against your fluid, and the pressure against the listed rating. For the Plast-O-Matic CK series check valves the size table shows examples such as CK100EPS-TF and CK100VS-TF."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Plast-O-Matic CK series check valves?",
+          "a": "Quote the part number, such as CK050EPS-TF, CK050EP-TF and CK050VS-TF, with the size and options you need; 8 part numbers are listed for the Plast-O-Matic CK series check valves. Price and lead time are confirmed with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Plast-O-Matic CK series check valves used?",
+          "a": "The Plast-O-Matic CK series check valves are used on chemical, water and utility lines to stop reverse flow; see the [industrial check valve types guide](/blog/industrial-check-valve-types) for how swing, lift and other checks differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the CK series compare with the CKM and CKS series?",
+          "a": "The CK series is PTFE with 8 part numbers, while the [CKM series](/p/plast-o-matic-ckm-series-check-valves) has 48 part numbers in CPVC and PVDF with flanged connections and the [CKS series](/p/plast-o-matic-cks-series-check-valves) has 64."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Plast-O-Matic CK series check valves be shipped from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Plast-O-Matic CK series check valves from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Plast-O-Matic CK series check valves in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock Plast-O-Matic CK series check valves and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "plast-o-matic-ckm-series-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Plast-O-Matic CKM series check valves used for?",
+          "a": "Plast-O-Matic CKM series check valves are thermoplastic check valves for chemical lines, with flanged connections and EPDM seals in CPVC and PVDF. Forty-eight part numbers are listed; see the [industrial check valves shelf](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Plast-O-Matic CKM part numbers?",
+          "a": "The rows show the pattern: CKM050EPFL-CP is a 1/2 inch flanged CPVC valve with an EPDM seal, and CKM050EPFL-PF is the PVDF version. The three digits after CKM are the size (050 is 1/2 inch) and the end letters CP and PF give the material."
+        },
+        {
+          "slot": "D",
+          "q": "Which materials do the Plast-O-Matic CKM check valves come in?",
+          "a": "CPVC (suffix CP) and PVDF (suffix PF) in the rows, each with EPDM seals and flanged connections. Choose PVDF for stronger chemical and temperature resistance."
+        },
+        {
+          "slot": "E",
+          "q": "What connections do the Plast-O-Matic CKM check valves have?",
+          "a": "Flanged connections, as the FL in the part number shows. Quote the pipe size and flange standard when you order. Tell us the application and we check it against the specification."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit the Plast-O-Matic CKM series check valves?",
+          "a": "Give the fluid and temperature when you request a quotation for the Plast-O-Matic CKM series check valves: the body and seal material are chosen against it, and the rows show the seal options listed."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Plast-O-Matic CKM series check valves?",
+          "a": "No certificate or approval is listed for the Plast-O-Matic CKM series check valves. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I check before fitting the Plast-O-Matic CKM series check valves?",
+          "a": "Check the size, connection and seal material against your fluid, and the pressure against the listed rating. For the Plast-O-Matic CKM series check valves the size table shows examples such as CKM100VS-PP and CKM100VS-PV."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Plast-O-Matic CKM series check valves?",
+          "a": "Quote the part number, such as CKM050EPFL-CP, CKM050EPFL-PF and CKM050EPFL-PP, with the size and options you need; 48 part numbers are listed for the Plast-O-Matic CKM series check valves. Price and lead time are confirmed with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Plast-O-Matic CKM series check valves used?",
+          "a": "The Plast-O-Matic CKM series check valves are used on chemical, water and utility lines to stop reverse flow; see the [industrial check valve types guide](/blog/industrial-check-valve-types) for how swing, lift and other checks differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the CKM series compare with the CKS series?",
+          "a": "The CKM series has 48 part numbers, while the [CKS series](/p/plast-o-matic-cks-series-check-valves) has 64 and adds a -NC option in the part number. Both are thermoplastic flanged check valves with EPDM seals."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Plast-O-Matic CKM series check valves be shipped from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Plast-O-Matic CKM series check valves from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Plast-O-Matic CKM series check valves in stock in Dubai?",
+          "a": "Yes. We keep Plast-O-Matic CKM series check valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "plast-o-matic-cks-series-check-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Plast-O-Matic CKS series check valves used for?",
+          "a": "Plast-O-Matic CKS series check valves are thermoplastic check valves for chemical lines, with flanged connections and EPDM seals in CPVC and PVDF. Sixty-four part numbers are listed; see the [industrial check valves shelf](/c/industrial-check-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Plast-O-Matic CKS part numbers?",
+          "a": "The rows show the pattern: CKS150EPFL-NC-CP is a 1-1/2 inch flanged CPVC valve with an EPDM seal, and CKS150EPFL-NC-PF is the PVDF version. The three digits after CKS are the size (150 is 1-1/2 inch)."
+        },
+        {
+          "slot": "D",
+          "q": "Which materials do the Plast-O-Matic CKS check valves come in?",
+          "a": "CPVC (suffix CP) and PVDF (suffix PF), each with EPDM seals and flanged connections. Choose PVDF for stronger chemical and temperature resistance."
+        },
+        {
+          "slot": "E",
+          "q": "What connections do the Plast-O-Matic CKS check valves have?",
+          "a": "Flanged connections, as the FL in the part number shows, in sizes such as 1-1/2 inch. Quote the pipe size and flange standard when you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids suit the Plast-O-Matic CKS series check valves?",
+          "a": "Give the fluid and temperature when you request a quotation for the Plast-O-Matic CKS series check valves: the body and seal material are chosen against it, and the rows show the seal options listed."
+        },
+        {
+          "slot": "G",
+          "q": "Does Indus supply test documents with the Plast-O-Matic CKS series check valves?",
+          "a": "No certificate or approval is listed for the Plast-O-Matic CKS series check valves. If your project needs a test report or a certificate of conformity, state it on your [request](/contact) and we confirm what is available before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I check before fitting the Plast-O-Matic CKS series check valves?",
+          "a": "Check the size, connection and seal material against your fluid, and the pressure against the listed rating. For the Plast-O-Matic CKS series check valves the size table shows examples such as CKS400VS-NC-PP and CKS400VS-NC-PV."
+        },
+        {
+          "slot": "I",
+          "q": "How do I order the Plast-O-Matic CKS series check valves?",
+          "a": "Quote the part number, such as CKS150EPFL-NC-CP, CKS150EPFL-NC-PF and CKS150EPFL-NC-PP, with the size and options you need; 64 part numbers are listed for the Plast-O-Matic CKS series check valves. Price and lead time are confirmed with the quotation."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Plast-O-Matic CKS series check valves used?",
+          "a": "The Plast-O-Matic CKS series check valves are used on chemical, water and utility lines to stop reverse flow; see the [industrial check valve types guide](/blog/industrial-check-valve-types) for how swing, lift and other checks differ."
+        },
+        {
+          "slot": "K",
+          "q": "How does the CKS series compare with the CKM series?",
+          "a": "The CKS series has 64 part numbers, while the [CKM series](/p/plast-o-matic-ckm-series-check-valves) has 48; the CKS rows carry a -NC option in the part number. Both are flanged thermoplastic check valves."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Plast-O-Matic CKS series check valves be shipped from Dubai?",
+          "a": "The listing gives United States as the country of origin. We ship the Plast-O-Matic CKS series check valves from Dubai, UAE to the GCC, Africa, Asia and beyond; tell us the destination so the documents match."
+        },
+        {
+          "slot": "M",
+          "q": "Are Plast-O-Matic CKS series check valves in stock in Dubai?",
+          "a": "Yes. We keep Plast-O-Matic CKS series check valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

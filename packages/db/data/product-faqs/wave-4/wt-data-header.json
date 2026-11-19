@@ -1,0 +1,149 @@
+{
+  "family": "wt-data-header",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "data-header-4-port-aclv-4-port-npt-isolation-thermowells-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-port ACLV plus 4-port NPT data header used for in well testing?",
+          "a": "A data header is a spool in the test line that carries instrumentation ports so gauges and thermowells read the well stream. This one is pre-fitted with eight ports, four ACLV and four NPT, for common pressure, temperature and sampling points."
+        },
+        {
+          "slot": "B",
+          "q": "What do ACLV and NPT ports mean on this data header?",
+          "a": "ACLV and NPT are the two port connection styles fitted: four ACLV ports and four NPT ports. The ratio of ACLV to NPT ports can be changed to suit your instruments."
+        },
+        {
+          "slot": "D",
+          "q": "What does each port on the 8-port data header include?",
+          "a": "Each port includes an isolation needle valve, a thermowell where applicable, a pressure gauge and a check valve. This lets an instrument be isolated and serviced without shutting the line."
+        },
+        {
+          "slot": "D",
+          "q": "Can the length and port count of the data header be changed?",
+          "a": "Yes. The length, port count, ACLV/NPT ratio and pressure rating are fully customisable. State the instruments you need and the test layout on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 4-port ACLV data header rated for?",
+          "a": "The listing says the pressure rating is customisable and does not give a fixed figure for this configuration. State the working pressure on the RFQ and we confirm the header and valve ratings."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the data header made from?",
+          "a": "The listing does not state a grade for this configuration; materials follow the working pressure and service. State the H2S level on the RFQ so the wetted parts are selected."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the 8-port data header?",
+          "a": "The listing does not state a standard for this configuration. See the [API 6A data header](/p/data-header-well-testing) for the API 6A range, and state the specification you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections can the data header have?",
+          "a": "End connections are flanged, hammer union, API clamp hub or Grayloc on request. Match them to the flowline of the test spread; ring gaskets for flanged ends are in the [ring joint gasket range](/c/ring-joint-gaskets)."
+        },
+        {
+          "slot": "I",
+          "q": "Where do I fit a data header in a well-test line?",
+          "a": "Fit it in the test line so the gauges, transducers and thermowells read the well stream upstream or downstream of the choke or separator. See the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "K",
+          "q": "4-port ACLV + 4-port NPT data header or the API 6A data header range?",
+          "a": "This listing is a pre-fitted 8-port header with needle valves, thermowells and gauges, while the [API 6A data header](/p/data-header-well-testing) is a spool in 2-1/16\" to 5-1/8\" and 2,000 to 20,000 psi built to API 6A."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 8-port data header be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide. Give the destination, the port layout and the end connections and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-port ACLV plus 4-port NPT data header in Dubai?",
+          "a": "Yes. We keep the 4-port ACLV plus 4-port NPT data header in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the length, ports and end connections through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "data-header-well-testing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A data header for well testing used for?",
+          "a": "Data headers for well testing: 2-1/16\" to 5-1/8\", 2,000 to 20,000 psi, ports for pressure gauges, transducers, temperature sensors and sampling, flanged, union or threaded, custom length."
+        },
+        {
+          "slot": "B",
+          "q": "What do the DD, EE and FF material classes mean on an API 6A data header?",
+          "a": "API 6A material classes DD, EE and FF are the sour-service classes to NACE MR0175 / ISO 15156; the listing offers the header in DD, EE and FF. Choose the class from the H2S partial pressure of your well."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A data header for well testing come in?",
+          "a": "The listing covers 2-1/16\" to 5-1/8\" nominal bore at 2,000 to 20,000 psi working pressure, with flanged, hammer union or threaded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose the API 6A data header instead of the pre-fitted 8-port data header?",
+          "a": "Choose the API 6A data header when the test line must carry the same API 6A rating and material class as the rest of the spread. Choose the [8-port header](/p/data-header-4-port-aclv-4-port-npt-isolation-thermowells-gauges) when you want ports pre-fitted with valves and gauges."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A data header for well testing tested?",
+          "a": "For the API 6A data header for well testing (2-1/16\" to 5-1/8\", 2,000 to 20,000 psi working pressure): hydrostatic tests to API 6A / 16A / 16C at the PSL ordered, with function tests of valves and controls. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A data header for well testing offer?",
+          "a": "On the API 6A data header for well testing, body material is offered in API 6A material classes DD, EE, FF, and the temperature range is API 6A temperature classes L to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A data header for well testing to API specification, and what documents are supplied?",
+          "a": "The API 6A data header for well testing is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A data header for well testing operated?",
+          "a": "The API 6A data header for well testing has no operating mechanism; the listing gives operation as not applicable. The header has no operating mechanism; the listing gives operation as not applicable. End connections on the listing are flanged, hammer union or threaded."
+        },
+        {
+          "slot": "I",
+          "q": "Why use a data header instead of flange tappings for instruments?",
+          "a": "The header takes the load off flange tappings and frees space for instruments, with multiple instrument and sampling ports in one spool. Read the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "K",
+          "q": "API 6A data header or pre-fitted 8-port data header: how do they differ?",
+          "a": "The API 6A data header is a spool with instrument and sampling ports built to API 6A in 2,000 to 20,000 psi, while the 8-port listing is a pre-fitted header with needle valves, thermowells and gauges. See the [Data Header, 4-Port ACLV + 4-Port NPT, Isolation + Thermowells + Gauges](/p/data-header-4-port-aclv-4-port-npt-isolation-thermowells-gauges)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A data header for well testing be supplied from Dubai with test records?",
+          "a": "For the API 6A data header for well testing: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A data header for well testing in Dubai?",
+          "a": "Yes. We keep the API 6A data header for well testing in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

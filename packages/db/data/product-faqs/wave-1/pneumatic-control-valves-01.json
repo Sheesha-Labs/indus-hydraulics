@@ -1,0 +1,1136 @@
+{
+  "family": "pneumatic-control-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversions used in these answers (1 bar = 14.5038 psi): 145 psi = about 10 bar; 150 psi = about 10.3 bar; 174 psi = about 12 bar; 200 psi = about 13.8 bar; 215 psi = about 14.8 bar; 225 psi = about 15.5 bar; 232 psi = about 16 bar; 250 psi = about 17.2 bar; 3 to 8 bar = about 44 to 116 psi.",
+      "source": "Unit conversion, 1 bar = 14.5038 psi (NIST SP 811)"
+    },
+    {
+      "fact": "Temperature conversions used in these answers: -15 to +200°F = about -26 to +93°C; +32 to +175°F = 0 to about +79°C; 0 to +140°F = about -18 to +60°C; 0 to +185°F = about -18 to +85°C; +5 to +120°F = about -15 to +49°C; 0 to +125°F = about -18 to +52°C.",
+      "source": "Unit conversion, °C = (°F - 32) / 1.8"
+    },
+    {
+      "fact": "Valves for oleohydraulic or pneumatic transmissions are classified under HS subheading 8481.20 (heading 84.81: taps, cocks, valves and similar appliances).",
+      "source": "Harmonized System nomenclature (WCO), heading 84.81, subheading 8481.20"
+    },
+    {
+      "fact": "Parker PWBA blocking valves (air preparation accessories) are single-acting, spring-return 2/2 valves that need a pneumatic pilot signal to open: while the pilot signal is present the valve stays open, and when it is removed the spring closes it. Operating pressure 0 to 150 psi (0 to 10.3 bar); operating temperature 5 to 140°F (-15 to 60°C); body zinc alloy. PWBA1468 (1/8\") and PWBA1899 (1/4\") have BSPP ports and a 4 mm tube pilot connection; PWBA3469 (1/4\") has NPT ports and a 5/32\" tube pilot inlet.",
+      "source": "Parker Hannifin product pages PWBA1468, PWBA1899, PWBA3469 (ph.parker.com, Air Preparation Accessories - Blocking Valves) and Parker catalogue 0600P, Accessories section"
+    },
+    {
+      "fact": "Parker Viking Xtreme lever valve P2LAX311VS is a 1/8\" port 3/2 hand-lever valve; the lever-operated Viking Xtreme versions span 1/8\" to 1/2\" ports. Parker gives a maximum operating pressure of 16 bar (232 psig) for Viking Xtreme valves.",
+      "source": "Parker catalogue 0600P, Manual/Mechanical section, and Parker Viking Xtreme technical catalogue PDE2569TCUK"
+    },
+    {
+      "fact": "A shuttle valve has two inlets and one outlet: air from whichever inlet is pressurised moves the shuttle and passes to the outlet while the other inlet is sealed, giving a pneumatic OR function (for example control of one cylinder from two locations).",
+      "source": "Indus guide /blog/manual-and-pilot-operated-air-valves; standard pneumatic logic practice (ISO 1219-1 symbol for shuttle valve)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-3-way-2-position-manual-air-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 3-way, 2-position manual air control valve used for?",
+          "a": "A Parker 3-way, 2-position manual air control valve lets an operator or a machine part switch air to one outlet and exhaust it again, which is how a single-acting cylinder or a pilot signal is controlled. This listing holds 27 Parker part numbers from 1/8\" to 3/4\" NPT with knob, lever, button, roller, tripper, toggle, plunger, pedal and treadle actuators. Our [manual and pilot valve guide](/blog/manual-and-pilot-operated-air-valves) explains each actuator."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker M0 series part numbers such as M05432448 and M05462443?",
+          "a": "On the Parker M0 rows we list, the digit after M054 gives the port (3 = 3/8\", 4 = 1/2\", 6 = 3/4\") and the next digit 2 marks the 3-way function, so M05432448 is a 3/8\" NPT 3-way valve and M05462443 a 3/4\" one. The same pattern with 5 marks the 4-way, 2-position versions. Quote the full part number, as the last digits set the actuator."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 3-way, 2-position manual valve range cover?",
+          "a": "The listing runs from 1/8\" NPT to 3/4\" NPT. The 1/8\" rows are the 404 and 414 series, the 1/4\" rows are the 524 series (normally closed), and the 3/8\", 1/2\" and 3/4\" rows are M0 series in-line and knob valves such as M05432443, M05442443 and M05462443. Pick the port to match the line feeding the cylinder or pilot."
+        },
+        {
+          "slot": "D",
+          "q": "Which actuators are available on Parker 3-way manual air valves at 1/8\" and 1/4\" NPT?",
+          "a": "At 1/8\" NPT Parker offers plunger (404111000), roller (404211000), tripper (404311000), lever (404711000), toggle (404811000) and button versions, and at 1/4\" NPT roller-delrin, roller-metal, lever, pedal, button and treadle (524931000) versions. Roller and tripper actuators suit cam or machine-stop signalling; buttons, levers and pedals suit operator control."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of a Parker 3-way, 2-position manual air valve?",
+          "a": "Parker rates these valves from 150 to 225 psi by size: 150 psi (about 10.3 bar) for the 1/8\" and 1/4\" rows, 225 psi (about 15.5 bar) for 3/8\", 215 psi (about 14.8 bar) for 1/2\" and 200 psi (about 13.8 bar) for 3/4\". The temperature range stated by the maker is -15°F to +200°F, about -26 to +93°C."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker M0 series 3-way manual valves made of, and do they need lubrication?",
+          "a": "Parker builds the M0 series 3-way manual valves with a bronze body and Buna N seals, and lists them as lubrication required. Run them on filtered, lubricated compressed air; a lubricator from our [FRL shelf](/c/air-preparation-frl) is the usual way to supply the oil mist. The smaller 404, 414 and 524 series rows share the 3-way function but are separate valve bodies."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker 3-way manual air control valves?",
+          "a": "This listing carries no compliance documents of its own, so ask in the enquiry for what your project needs: a certificate of conformity, a certificate of origin or the Parker datasheet for each part number. We request them with the order and send them with the commercial invoice and packing list."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and silencers connect to a Parker 3-way manual air valve?",
+          "a": "Parker 3-way manual valves have NPT ports, so they take male NPT push-in fittings or adapters in the same size, 1/8\" to 3/4\". Fit a silencer on the exhaust port to cut noise and keep dirt out. Connectors, adapters and silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker 3-way, 2-position manual valve?",
+          "a": "Mount the valve so the actuator is in reach or in line with the cam, connect supply, outlet and exhaust to the marked ports with thread sealant on the NPT threads, and blow out the lines first. On the lubricated M0 series, keep the oil supply steady; check the exhaust for continuous leakage, which points to worn seals or a damaged spool."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 3-way and 4-way, 2-position manual air valves?",
+          "a": "A Parker 3-way valve pressurises and exhausts one outlet, which suits a single-acting cylinder or a pilot signal, while a [Parker 4-way, 2-position manual valve](/p/parker-4-way-2-position-manual-air-control-valve) switches air between two outlets to drive a double-acting cylinder both ways. Both ranges use the same NPT port sizes and similar actuators."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 3-way manual air control valves made, and how are they shipped?",
+          "a": "The country of origin recorded for this Parker range is the United States. We ship from Dubai, UAE to buyers in the GCC, Africa, Asia and beyond; pneumatic valves normally fall under HS subheading 8481.20, and the code and origin for each line are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker 3-way, 2-position manual air control valves in Dubai?",
+          "a": "Yes. We keep Parker 3-way, 2-position manual air control valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers, actuator types and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4-way-2-position-manual-air-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 4-way, 2-position manual air control valve used for?",
+          "a": "A Parker 4-way, 2-position manual air control valve switches supply air between two outlet ports and exhausts the other, so an operator or a cam can extend and retract a double-acting cylinder. This listing has 23 Parker part numbers from 1/8\" to 1/2\" NPT with button, lever, pedal, treadle, roller, tripper, toggle, plunger and knob actuators."
+        },
+        {
+          "slot": "B",
+          "q": "How are Parker 410 and 520 series 4-way manual valve part numbers coded?",
+          "a": "On our size table the 410 series are 1/8\" NPT 4-way valves and the 520 series 1/4\" NPT 4-way valves, with the next digit giving the actuator: in the 410 series 1 plunger, 2 roller, 3 tripper, 7 lever and 8 toggle (410711000 is the 1/8\" lever valve). In the 520 series 2 is a delrin roller, A a metal roller, 7 a pedal and 8 a lever."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes and actuators does the Parker 4-way, 2-position manual valve range include?",
+          "a": "The listing covers 1/8\" NPT (410 series and Viking P2LAX591VS / P2LAX591VV levers), 1/4\" NPT (520 series), 3/8\" NPT (M05435443 in-line, M05435448 knob and 422CR021K / 422CR021W levers) and 1/2\" NPT (M05445443, M05445448). Choose the port from the cylinder size and the air flow it needs."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker 4-way manual valve suits foot operation?",
+          "a": "For foot control Parker offers the 520711000 pedal valve and the 520931000 treadle valve, both 1/4\" NPT 4-way, 2-position and rated 150 psi. A foot valve leaves both hands free for the work; for a 3/8\" foot pedal valve see the [Parker 42 Series 4-way, 2-position](/p/parker-42-series-manual-mechanical-valves-4-way-2-position) listing."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Parker 4-way, 2-position manual air valves carry?",
+          "a": "Parker rates this range from 150 to 232 psi by series: 150 psi (about 10.3 bar) for the 410, 520 and 422 rows, 225 psi (about 15.5 bar) for the 3/8\" M0 valves, 215 psi (about 14.8 bar) for the 1/2\" M0 valves and 232 psi (about 16 bar) for the P2LAX591 levers. The stated temperature range is +32°F to +175°F, 0 to about +79°C."
+        },
+        {
+          "slot": "F",
+          "q": "What body material and media suit Parker 4-way, 2-position manual air valves?",
+          "a": "Parker lists an aluminium body and NPT connections for this 4-way, 2-position range, for use on compressed air. Feed the valve with filtered air and keep it within the +32°F to +175°F rating; water or ice in the line is the usual cause of sticking spools, so fit a filter and drain ahead of the valve."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates can be supplied with Parker 4-way, 2-position manual valves?",
+          "a": "The listing itself carries no compliance documents, so name what you need when you enquire: a certificate of conformity, a certificate of origin or the Parker datasheet for each part number. We request the documents from Parker with the order and ship them with the goods."
+        },
+        {
+          "slot": "H",
+          "q": "How do you connect a Parker 4-way manual valve to a double-acting cylinder?",
+          "a": "Run supply air to the inlet, take the two outlet ports to the cap and rod ends of a double-acting cylinder, and fit silencers on the exhaust ports. Cylinders in ISO and NFPA styles are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders); add flow controls on the outlets if you need to set the cylinder speed."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Parker 4-way, 2-position manual air valve be installed and checked?",
+          "a": "Blow out the supply line, seal the NPT threads, mount the valve so the actuator or roller is aligned with its operator or cam, and check that each outlet exhausts fully when switched. Air escaping from the exhaust with the valve at rest means worn seals; replace the valve or its seal kit rather than running it leaking."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4-way 2-position and 4-way 3-position manual valves?",
+          "a": "A 2-position Parker 4-way valve always drives the cylinder one way or the other, while a [Parker 4-way, 3-position valve](/p/parker-4-way-3-position-manual-air-control-valve) adds a centre position that can hold, block or exhaust the cylinder ports. Choose 3-position when the operator must stop the cylinder mid-stroke."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Parker 4-way, 2-position manual air valves?",
+          "a": "The country of origin recorded for this Parker range is the United States, and we ship from Dubai, UAE to the GCC, Africa, Asia and beyond. Pneumatic valves normally fall under HS subheading 8481.20; the code and origin for each line appear on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker 4-way, 2-position manual air control valves ex-stock in Dubai?",
+          "a": "Yes. Parker 4-way, 2-position manual air control valves are held in stock at our Dubai, UAE warehouse and shipped worldwide with the best lead times. Send part numbers and quantities through [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-4-way-3-position-manual-air-control-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 4-way, 3-position manual air control valve used for?",
+          "a": "A Parker 4-way, 3-position manual air control valve drives a double-acting cylinder in either direction and adds a centre position, so the operator can stop the cylinder part-way. This listing has 15 Parker part numbers from 1/8\" to 3/4\" NPT with lever, knob and in-line operators; our [guide to valve functions and centre conditions](/blog/solenoid-valve-functions-3-2-5-2-5-3) explains the centre options."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker M0 series 4-way, 3-position part numbers such as M05445143?",
+          "a": "In the Parker M0 rows we list, M054 is followed by the port digit (3 = 3/8\", 4 = 1/2\", 6 = 3/4\") and then 1 for the 4-way, 3-position function, so M05445143 is a 1/2\" NPT valve and M05465148 a 3/4\" one. The rows ending 148 are knob-operated; the rows ending 143 are the in-line versions."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 4-way, 3-position manual valve range cover?",
+          "a": "The range runs from 1/8\" NPT Viking levers (P2LAX69111, P2LAX69122, P2LAX89111, P2LAX89122) through 1/4\" NPT 521, 522 and 529 series levers to 3/8\", 1/2\" and 3/4\" NPT M0 valves (M05435143, M05445143, M05465143). Match the port to the cylinder bore and the cycle speed you need."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the Parker 521, 522 and 529 series 1/4\" lever valves?",
+          "a": "The 521811000, 522811000 and 529811000 lever valves, and their 831000 counterparts, are all 1/4\" NPT 4-way, 3-position and rated 150 psi; they differ in the digits after 52. Send the full part number of the valve you are replacing, or the centre condition your circuit needs, and we confirm the match before supply."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Parker 4-way, 3-position manual air valves rated for?",
+          "a": "Parker rates this range from 150 to 232 psi by series: 150 psi (about 10.3 bar) for the 1/4\" lever valves, 225 psi (about 15.5 bar) at 3/8\", 215 psi (about 14.8 bar) at 1/2\", 200 psi (about 13.8 bar) at 3/4\" and 232 psi (about 16 bar) on the 1/8\" P2LAX levers. The stated temperature range is -15°F to +200°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker M0 series 4-way, 3-position manual valves made of?",
+          "a": "Parker lists a bronze body and NPT connections for the 4-way, 3-position M0 valves, with a closed centre position recorded for the range. Use them on filtered compressed air within -15°F to +200°F (about -26 to +93°C); a filter and drain upstream keeps water and scale out of the spool."
+        },
+        {
+          "slot": "G",
+          "q": "What paperwork can come with Parker 4-way, 3-position manual air control valves?",
+          "a": "No compliance documents are attached to this listing, so list the documents you need in the enquiry, such as a certificate of conformity, a certificate of origin or the Parker datasheet per part number. We request them with the order and send them with the invoice and packing list."
+        },
+        {
+          "slot": "H",
+          "q": "Which cylinders and fittings work with a Parker 4-way, 3-position manual valve?",
+          "a": "The valve drives a double-acting cylinder: the two outlet ports go to the cylinder's cap and rod ends, and the exhaust ports take silencers. A closed centre holds air in both ends, so it is used to stop and hold a cylinder; double-acting cylinders are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Parker 4-way, 3-position lever valve so the centre position works?",
+          "a": "Mount the valve with the lever free to travel through all three positions, seal the NPT threads, connect the outlets to the correct cylinder ends and test each position at low pressure first. Check that the cylinder stops in the centre position; if it creeps, look for leaks in the cylinder seals or the fittings as well as the valve."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 4-way 3-position and 4-way 2-position manual valves?",
+          "a": "A Parker 4-way, 3-position valve has a centre position that stops the cylinder mid-stroke, while the [Parker 4-way, 2-position manual valve](/p/parker-4-way-2-position-manual-air-control-valve) only extends or retracts. Choose 3-position for jogging, clamping or positioning by hand, and 2-position for simple in-out motion."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 4-way, 3-position manual air valves made, and which HS code applies?",
+          "a": "The country of origin recorded for this Parker range is the United States. Pneumatic valves normally fall under HS subheading 8481.20; we ship from Dubai, UAE to the GCC, Africa and Asia and state the code and origin for each line on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 4-way, 3-position manual air control valves in stock in Dubai?",
+          "a": "Yes. We stock Parker 4-way, 3-position manual air control valves at our warehouse in Dubai, UAE and ship worldwide with the best lead times. Use [our contact page](/contact) to send the Parker part numbers and quantities for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-42-series-manual-mechanical-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 42 Series 4-way, 2-position manual/mechanical valve?",
+          "a": "The Parker 42 Series 4-way, 2-position valve is an in-line aluminium spool valve with 3/8\" NPT ports, operated by a foot pedal or a lever, that switches air between two outlets to drive a double-acting cylinder. This listing holds three part numbers: 422CT021K (foot pedal), 422CS021K (lever, spring return) and 422CS021W (lever, detent)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the K and W suffixes on Parker 42 Series valves like 422CS021K mean?",
+          "a": "On the Parker 42 Series rows we list, K marks spring return and W marks detent: 422CS021K is a lever valve that springs back when released, while 422CS021W stays where the lever is left. The pedal valve 422CT021K is spring return, so the cylinder returns as soon as the foot lifts."
+        },
+        {
+          "slot": "D",
+          "q": "What port size and overall height do Parker 42 Series 4-way, 2-position valves have?",
+          "a": "All three Parker 42 Series 4-way, 2-position valves have 3/8\" NPT ports. The foot pedal valve 422CT021K has an overall height of 2 1/8\", and the lever valves 422CS021K and 422CS021W are 5 9/16\" high, so allow for the lever swing when you plan the panel."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the foot pedal or lever version of the Parker 42 Series 4-way valve?",
+          "a": "Choose the 422CT021K foot pedal when the operator needs both hands on the work, and a 422CS lever valve for a panel or machine-side control. Take the K version for momentary action that returns when released, or the W detent version to hold the selected position."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure and temperature rating of the Parker 42 Series 4-way, 2-position valve?",
+          "a": "Parker rates the 42 Series 4-way, 2-position valves at 150 psi (10 bar) maximum, with a temperature range of 0°F to +140°F, about -18 to +60°C. Keep the supply below that pressure with a regulator and avoid hot locations next to furnaces or ovens."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker 42 Series 4-way, 2-position valve body made of?",
+          "a": "Parker builds the 42 Series 4-way, 2-position valve with an aluminium body and a spool element, with a black actuator. It is made for compressed air; filter the supply so dirt and water do not wear the spool seals."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker 42 Series manual valves?",
+          "a": "This listing carries no compliance documents, so ask for what you need with the enquiry: a certificate of conformity, a certificate of origin or the Parker datasheet for 422CT021K, 422CS021K or 422CS021W. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings and silencers connect to a Parker 42 Series 3/8\" NPT valve?",
+          "a": "Use 3/8\" male NPT fittings in the supply and outlet ports and fit 3/8\" NPT silencers in the exhausts. Push-in connectors, adapters and silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers); size the tube for the cylinder flow."
+        },
+        {
+          "slot": "I",
+          "q": "How do you mount and service a Parker 42 Series foot pedal valve?",
+          "a": "Fix the 422CT021K pedal valve to the floor or a base plate so it cannot slide, route the hoses away from foot traffic and check that the pedal springs back fully. Replace the valve if the exhaust leaks with the pedal at rest or the pedal sticks."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 42 Series 4-way 2-position and 3-position valves?",
+          "a": "The 2-position 42 Series valves only extend or retract the cylinder, while the [Parker 42 Series 4-way, 3-position](/p/parker-42-series-manual-mechanical-valves-4-way-3-position) lever valves add a centre position (closed or exhaust) to stop it mid-stroke. Both have 3/8\" NPT ports and a 150 psi rating."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 42 Series manual/mechanical valves made, and which HS code applies?",
+          "a": "The country of origin recorded for the Parker 42 Series is the United States. We ship from Dubai, UAE across the GCC, Africa and Asia; pneumatic valves normally fall under HS subheading 8481.20, and the invoice states the code and origin for each line."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker 42 Series 4-way, 2-position valves in stock in Dubai?",
+          "a": "Yes. We keep the Parker 42 Series 4-way, 2-position valves in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send the part numbers (422CT021K, 422CS021K, 422CS021W) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-42-series-manual-mechanical-valves-4-way-3-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 42 Series 4-way, 3-position lever valve used for?",
+          "a": "The Parker 42 Series 4-way, 3-position valve is an in-line aluminium lever valve with 3/8\" NPT ports that runs a double-acting cylinder in either direction and adds a centre position to stop it. Four part numbers are listed: 422CR023W, 422CS023W (closed centre), 422CR024W and 422CS024W."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 023W and 024W endings on Parker 42 Series lever valves mean?",
+          "a": "On our size table, 023 marks a closed centre and 024 the exhaust centre on the Parker 42 Series 4-way, 3-position valves, and W marks detent, so the lever stays in the position selected. 422CS023W is a closed-centre valve and 422CR024W an exhaust-centre valve; R and S are two lever body versions with different overall dimensions."
+        },
+        {
+          "slot": "D",
+          "q": "What are the overall dimensions of Parker 42 Series 4-way, 3-position valves?",
+          "a": "On the rows we list, 422CR023W is 2 1/4\" wide and 5\" high, 422CS023W is 2 1/8\" wide and 5 9/16\" high, and 422CR024W is 2 1/8\" wide and 5 1/16\" high. All have 3/8\" NPT ports; allow extra clearance for the lever travel through all three positions."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a closed-centre or exhaust-centre Parker 42 Series valve?",
+          "a": "Pick a closed-centre valve (422CR023W or 422CS023W) to trap air in both cylinder ends and hold the load where it stops, and an exhaust-centre valve (422CR024W or 422CS024W) to vent both ends so the cylinder can be moved by hand. Our [guide to centre conditions](/blog/solenoid-valve-functions-3-2-5-2-5-3) shows the symbols."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can a Parker 42 Series 4-way, 3-position valve handle?",
+          "a": "Parker rates the 42 Series 4-way, 3-position lever valves at 150 psi (10 bar) maximum and 0°F to +140°F, about -18 to +60°C. Set the supply regulator below 150 psi and keep the valve away from heat sources."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Parker 42 Series 4-way, 3-position valve body?",
+          "a": "Parker makes the 42 Series 4-way, 3-position valve with an aluminium body and an in-line perpendicular lever with detent. It is built for compressed air; fit a filter upstream so the spool and seals stay clean."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates are available for Parker 42 Series 4-way, 3-position valves?",
+          "a": "This listing holds no compliance documents, so tell us in the enquiry which you need, such as a certificate of conformity, a certificate of origin or Parker's datasheet for each part number, and we obtain them with the order."
+        },
+        {
+          "slot": "H",
+          "q": "How is a Parker 42 Series 3-position valve connected to a cylinder?",
+          "a": "Take the two 3/8\" NPT outlet ports to the cap and rod ends of a double-acting cylinder, feed supply air to the inlet and fit silencers on the exhausts. Double-acting ISO and NFPA cylinders are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you test a Parker 42 Series closed-centre valve after installation?",
+          "a": "Move the cylinder part-way, put the lever in the centre detent and watch whether the rod holds. If it drifts, check the cylinder piston seal and the fittings for leaks before blaming the valve; a valve that leaks from the exhaust in the centre position needs replacing."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 42 Series 4-way 3-position valve compare with the 2-position version?",
+          "a": "The 3-position valve adds a centre position to stop the cylinder, while the [Parker 42 Series 4-way, 2-position](/p/parker-42-series-manual-mechanical-valves-4-way-2-position) valve only switches between extend and retract and also comes as a foot pedal. Both are 3/8\" NPT aluminium valves rated 150 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What is the country of origin of Parker 42 Series 4-way, 3-position valves?",
+          "a": "The country of origin recorded for this Parker 42 Series range is the United States. We ship it from Dubai, UAE to the GCC, Africa and Asia; pneumatic valves normally fall under HS subheading 8481.20, shown with the origin on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can Parker 42 Series 4-way, 3-position valves be supplied from stock in Dubai?",
+          "a": "Yes. Parker 42 Series 4-way, 3-position lever valves are kept in stock at our warehouse in Dubai, UAE and shipped worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-air-pilot-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What products are on the Parker Air Pilot Valves listing?",
+          "a": "The Parker Air Pilot Valves listing has 16 part numbers in three groups: B series 4-way air pilot valves (1/8\" to 3/4\"), N series poppet pilot valves and U131 coil-operated pilot valves. The N series rows reach a 1 1/2\" inlet, and the U131 valves have 120/110 VAC or 24 VDC coils for Parker angle body piston valves. Our [manual and pilot valve guide](/blog/manual-and-pilot-operated-air-valves) explains how air piloting works."
+        },
+        {
+          "slot": "B",
+          "q": "How do the Parker B series codes B340000XXC to B844000XXA indicate port size?",
+          "a": "In the Parker B series rows we list, the body digit after B and the port digit that follows rise together: B340000XXC is 1/8\", B541000XXC 1/4\", B642000XXA 3/8\", B743000XXA 1/2\" and B844000XXA 3/4\". The B38, B58, B68, B78 and B88 rows follow the same size steps."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available on Parker B series 4-way air pilot valves?",
+          "a": "This listing carries Parker B series 4-way air pilot valves with 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" ports, in two versions per size (B34/B54/B64/B74/B84 and B38/B58/B68/B78/B88). Single-pilot B series valves are also on the [Parker B Series 4-way, 2-position](/p/parker-b-series-single-air-piloted-valves-4-way-2-position) listing."
+        },
+        {
+          "slot": "D",
+          "q": "What are the Parker U131B air pilot valves with 120/110 VAC and 24 VDC coils for?",
+          "a": "The U131B01NDAF and U131B02NDAF have 120/110 VAC coils and the U131B01NDAB and U131B02NDAB 24 VDC coils; Parker lists them for use with Parker angle body piston valves, with an electrical connector included. They switch the pilot air that opens and closes the angle body valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure ratings apply to Parker air pilot valves?",
+          "a": "Parker states 145 to 250 psi by series on this listing: the B series 4-way air pilot valves are rated 145 psi (about 10 bar) and the N series poppet valves N3153904553 and N32491091 250 psi (about 17.2 bar). The temperature range given is 0°F to 185°F, about -18 to +85°C."
+        },
+        {
+          "slot": "F",
+          "q": "What material are Parker air pilot valves made of?",
+          "a": "Parker lists aluminium as the material of construction for this air pilot valve listing, and the valves are made for compressed air. Use filtered air and keep the valves within 0°F to 185°F; for the U131 coil valves choose the coil voltage, 120/110 VAC or 24 VDC, to match the control supply."
+        },
+        {
+          "slot": "G",
+          "q": "Do Parker U131 air pilot valves have UL compliance?",
+          "a": "Parker records UL compliance for the U131 air pilot valves with electrical coils on this listing. For the B and N series pneumatic-only valves no compliance documents are held here, so ask for a certificate of conformity or of origin with the enquiry if your project needs one."
+        },
+        {
+          "slot": "H",
+          "q": "Which Parker N series valve sizes are on the Parker Air Pilot Valves listing?",
+          "a": "Two N series poppet valves are listed: N3153904553, a normally open air pilot valve with 3/8\" and 1/2\" ports, and N32491091, a 2-way valve with a 1 1/2\" inlet. For the full N series 3-way range from 3/8\" to 1 1/2\" see the [Parker N series 3-way air pilot valve](/p/parker-n-series-valve-air-pilot-3-way) listing."
+        },
+        {
+          "slot": "I",
+          "q": "How do you pipe the pilot signal to a Parker air pilot valve?",
+          "a": "Run a small pilot line from a manual, mechanical or solenoid valve to the pilot port, and the main supply to the inlet. The pilot only has to carry a signal, so small tube is enough; keep it short for fast response and make sure the pilot supply stays within the valve's rating."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker air pilot valves used in a plant?",
+          "a": "Parker air pilot valves let a small air signal switch a larger air flow, so they are used where electrical solenoids are unwanted or a remote air signal must drive cylinders, actuators or angle body process valves. The N series poppet valves handle large flows up to a 1 1/2\" inlet."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker air pilot valves made, and how are they shipped from Dubai?",
+          "a": "The country of origin recorded for this Parker listing is the United States. We ship from Dubai, UAE to customers in the GCC, Africa and Asia; pneumatic valves normally fall under HS subheading 8481.20, and our commercial invoice states the code and origin of each line."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker air pilot valves available ex-stock in Dubai?",
+          "a": "Yes. We keep Parker air pilot valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the Parker part numbers, and for U131 valves the coil voltage, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-b-series-single-air-piloted-valves-3-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker B Series single air piloted 3-way, 2-position valve?",
+          "a": "The Parker B Series single air piloted 3-way, 2-position valve is an in-line aluminium spool valve that switches air to one outlet when a remote air pilot signal arrives, and returns when the signal is removed. It controls single-acting cylinders or passes a signal on; five part numbers from 1/8\" to 3/4\" are listed."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker B Series 3-way part numbers such as B5K1000XXC?",
+          "a": "In the Parker B Series 3-way rows, the body digit and the port digit give the size: B3K0000XXC is 1/8\", B5K1000XXC 1/4\", B6X2000XXA 3/8\", B7X3000XXA 1/2\" and B8X4000XXA 3/4\". The K or X letter in third place marks the 3-way function on these rows; quote the full code when ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of Parker B Series 3-way air piloted valve are available?",
+          "a": "Parker B Series 3-way, 2-position single air piloted valves are listed with 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" ports (B3K0000XXC up to B8X4000XXA). Pick the port by the flow the cylinder or downstream device needs; the larger bodies pass more air for faster strokes."
+        },
+        {
+          "slot": "D",
+          "q": "Can a Parker B Series 3-way air piloted valve work on vacuum?",
+          "a": "Yes. Parker lists the B Series single air piloted 3-way valve as vacuum operable with an external pilot, so the main ports can carry vacuum while a separate pilot line supplies the signal. This makes it usable for vacuum cup release or switching circuits."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range does the Parker B Series 3-way piloted valve accept?",
+          "a": "Parker rates the B Series single air piloted 3-way valve for +5°F to +120°F, about -15 to +49°C. For the maximum working pressure, quote the part number and we confirm the maker's figure; the B series 4-way rows on our [Parker air pilot valves](/p/parker-air-pilot-valves) listing are rated 145 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker B Series 3-way air piloted valves made of, and do they need oil?",
+          "a": "Parker makes the B Series 3-way piloted valve with an aluminium body and nitrile seals, and lists it as lubrication not required. It runs on dry filtered air; a filter-regulator from our [FRL shelf](/c/air-preparation-frl) protects the spool from water and dirt."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be ordered with Parker B Series 3-way piloted valves?",
+          "a": "This listing holds no compliance documents, so state what you need in the enquiry: a certificate of conformity, a certificate of origin or the Parker datasheet per part number. We request them with the order and ship them with the goods."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ports of a Parker B Series 3-way single pilot valve?",
+          "a": "The supply goes to the inlet, the outlet to the cylinder or device and a silencer to the exhaust, while a small pilot line from a manual, mechanical or solenoid valve goes to the pilot port. Fittings and exhaust silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Parker B Series in-line air piloted valve?",
+          "a": "Mount the in-line valve close to the cylinder it drives, blow out the lines, seal the threads and connect the pilot line last. Test by applying and removing the pilot signal: the outlet should pressurise and exhaust cleanly. No override is fitted on these valves, so testing needs the pilot signal."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker B Series single air piloted 3-way valves used?",
+          "a": "Parker lists the B Series single air piloted valves for assembly lines, conveyance, packaging and general industrial pneumatics. They suit machines controlled by air logic, or areas where a remote air signal is preferred to a solenoid."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of Parker B Series 3-way air piloted valves?",
+          "a": "The country of origin recorded is the United States and the HS code recorded is 8481200080, within subheading 8481.20 for pneumatic valves. We ship from Dubai, UAE to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker B Series 3-way, 2-position air piloted valves in Dubai?",
+          "a": "Yes. Parker B Series 3-way, 2-position single air piloted valves are kept in stock at our Dubai, UAE warehouse and shipped worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-b-series-single-air-piloted-valves-4-way-2-position",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker B Series single air piloted 4-way, 2-position valve?",
+          "a": "The Parker B Series single air piloted 4-way, 2-position valve is an in-line aluminium spool valve that uses a remote air pilot signal to switch supply between two outlets, driving a double-acting cylinder out and back. Six part numbers from 1/8\" to 3/4\" are listed, B330000XXC to B834000XXA."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker B Series 4-way part numbers such as B632000XXA?",
+          "a": "In the Parker B Series 4-way rows, the first digit after B gives the body and the digit after the 3 gives the port: B330000XXC is 1/8\", B531000XXC 1/4\", B632000XXA 3/8\", B733000XXA 1/2\" and B834000XXA 3/4\". B532000XXC is the 4-way body-ported version in the B5 body."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are listed for Parker B Series 4-way single pilot valves?",
+          "a": "This listing covers Parker B Series 4-way, 2-position single pilot valves with 1/8\", 1/4\", 3/8\", 1/2\" and 3/4\" ports. Choose the size from the cylinder bore and speed; more B series 4-way sizes and versions are on the [Parker air pilot valves](/p/parker-air-pilot-valves) listing."
+        },
+        {
+          "slot": "D",
+          "q": "Does the Parker B Series 4-way single pilot valve have a manual override?",
+          "a": "Yes. Parker lists a non-locking override on the B Series 4-way, 2-position single pilot valves, so the valve can be shifted by hand for testing and returns when released. The fail position is closed, and the valve returns by pilot air when the signal is removed."
+        },
+        {
+          "slot": "E",
+          "q": "What is the temperature rating of the Parker B Series 4-way air piloted valve?",
+          "a": "Parker rates the B Series single air piloted 4-way valve for +5°F to +120°F, about -15 to +49°C. For pressure, the B series 4-way air pilot valves on our [Parker air pilot valves](/p/parker-air-pilot-valves) listing are rated 145 psi (about 10 bar); quote the part number and we confirm the figure."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seals do Parker B Series 4-way piloted valves use?",
+          "a": "Parker builds the B Series 4-way piloted valves with an aluminium body and nitrile seals, lubrication not required. Run them on clean, dry compressed air; nitrile suits normal plant air and mineral oil mist if a lubricator is already fitted."
+        },
+        {
+          "slot": "G",
+          "q": "Can certificates be supplied with Parker B Series 4-way air piloted valves?",
+          "a": "No compliance documents are attached to this listing, so name the documents you need when you enquire, for example a certificate of conformity, a certificate of origin or Parker's datasheet per part number, and we request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "How is a Parker B Series 4-way single pilot valve piped to a cylinder?",
+          "a": "Connect supply to the inlet, the two outlets to the cap and rod ends of a double-acting cylinder, silencers to the exhausts and a pilot line to the pilot port. Double-acting cylinders to match are on our [pneumatic cylinders shelf](/c/pneumatic-cylinders)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you check a Parker B Series 4-way air piloted valve in service?",
+          "a": "Apply and remove the pilot signal and watch the cylinder go both ways; then use the non-locking override to confirm the spool moves freely. A slow return or air leaking from the exhausts at rest points to worn seals or dirt in the spool."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker B Series 4-way and 3-way single air piloted valves?",
+          "a": "The 4-way valve switches air between two outlets to drive a double-acting cylinder both ways, while the [Parker B Series 3-way](/p/parker-b-series-single-air-piloted-valves-3-way-2-position) valve pressurises and exhausts a single outlet for single-acting cylinders or signals. Both are aluminium, nitrile-sealed and run without oil."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker B Series 4-way air piloted valves made, and what is the HS code?",
+          "a": "The country of origin recorded is the United States and the HS code recorded is 8481200080 (subheading 8481.20, pneumatic valves). We ship from Dubai, UAE to buyers across the GCC, Africa and Asia."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker B Series 4-way, 2-position air piloted valves in stock in Dubai?",
+          "a": "Yes. We hold Parker B Series 4-way, 2-position single air piloted valves in stock at our warehouse in Dubai, UAE and ship worldwide with the best lead times. Send the B series part numbers and quantities through [our contact page](/contact) for a price."
+        }
+      ]
+    },
+    {
+      "slug": "parker-blocking-valves-zinc-alloy-body-bspp-npt-port-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does a Parker PWBA blocking valve do?",
+          "a": "A Parker PWBA blocking valve is a single-acting, spring-return 2/2 valve that stays open only while a pneumatic pilot signal is present and closes when the signal is removed. It is used to trap air in a cylinder or a circuit branch when the control signal is lost. This listing holds 21 PWBA part numbers from 1/8\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "Which PWBA blocking valves have BSPP ports and which have NPT ports?",
+          "a": "Parker lists PWBA1468 (1/8\") and PWBA1899 (1/4\") with BSPP ports and a 4 mm pilot tube connection, and PWBA3469 (1/4\") with NPT ports and a 5/32\" pilot tube inlet. On these examples the PWBA1 numbers are BSPP and the PWBA3 numbers NPT; quote the full part number to confirm the thread."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are available in Parker PWBA blocking valves?",
+          "a": "The Parker PWBA blocking valves on this listing come in 1/8\", 1/4\", 3/8\" and 1/2\" sizes, for example PWBA1468 and PWBA3468 at 1/8\", PWBA1483 and PWBA3833 at 3/8\" and PWBA1822 and PWBA3822 at 1/2\". Match the size to the line being blocked."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between metric and inch pilot tube on a Parker PWBA blocking valve?",
+          "a": "Choose by the tube you run for the pilot signal: Parker lists a 4 mm tube pilot connection on BSPP valves such as PWBA1899, and a 5/32\" tube inlet on NPT valves such as PWBA3469. Inch and metric tube are not interchangeable in push-in connections; tube is on our [pneumatic tubing shelf](/c/pneumatic-tubing)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can a Parker PWBA blocking valve handle?",
+          "a": "Parker rates PWBA blocking valves for 0 to 150 psi (0 to 10.3 bar) operating pressure and 5 to 140°F (-15 to 60°C). The pilot signal must be high enough to hold the valve open at the working pressure, so take the pilot from the same supply where possible."
+        },
+        {
+          "slot": "F",
+          "q": "What is the body material of Parker PWBA blocking valves?",
+          "a": "Parker makes the PWBA blocking valves with a zinc alloy body, for use on compressed air. Keep them within 5 to 140°F and use filtered air, as dirt on the seat stops the valve closing bubble-tight when the pilot is removed."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker PWBA blocking valves?",
+          "a": "This listing carries no compliance documents, so ask with the enquiry for what you need: a certificate of conformity, a certificate of origin or Parker's data sheet for each PWBA part number. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where does a Parker PWBA blocking valve fit in an air circuit?",
+          "a": "Fit the PWBA valve in the line to be held, for example a cylinder port, and connect its pilot to the control signal that should keep it open. When the signal drops the valve closes and holds the air. For cylinder speed control and pilot-operated checks see our [cylinder speed control guide](/blog/cylinder-speed-control-and-quick-exhaust-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you test a Parker PWBA blocking valve after fitting?",
+          "a": "Pressurise the line, apply the pilot signal and check that air flows, then remove the pilot and confirm the downstream pressure holds with no leak. If the line bleeds down with the pilot removed, check the fittings and the seat for dirt before replacing the valve."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker PWBA pilot-signal blocking valves used?",
+          "a": "PWBA blocking valves are used on machines that must hold a cylinder or a circuit branch when the control signal is lost, and to isolate sections of an air system on a pilot signal. Other manual and pilot valves are on our [control valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "L",
+          "q": "How are Parker PWBA blocking valves shipped from Dubai, and which HS code applies?",
+          "a": "We ship Parker PWBA blocking valves from Dubai, UAE to the GCC, Africa, Asia and beyond. Pneumatic valves normally fall under HS subheading 8481.20; the country of origin depends on the Parker plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker PWBA blocking valves in stock in Dubai?",
+          "a": "Yes. We keep Parker PWBA blocking valves in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send the PWBA part numbers, thread type and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-manual-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is on the Parker Manual Air Control Valves listing?",
+          "a": "The Parker Manual Air Control Valves listing holds five part numbers: three 700 series lever-operated 4-way directional control valves and two BV10N manual 2-way bleed valves. The lever valves are 710-6-1/4B, 710-6-1/2B and 710-6-3/4B; the bleed valves BV10N2-C0 and BV10N4-C0 have 1/4\" and 1/2\" NPT ports. More manual valves are on our [control valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker 710-6-1/2B and BV10N4-C0 part numbers?",
+          "a": "In 710-6-1/2B the 710-6 is the Parker 700 series lever valve and 1/2 is the 1/2\" port, so 710-6-1/4B and 710-6-3/4B are the 1/4\" and 3/4\" versions. In BV10N4-C0 the N marks NPT and the 4 the 1/2\" port, against 2 for 1/4\" in BV10N2-C0."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 700 series 4-way lever valve come in?",
+          "a": "The Parker 700 series 4-way lever valves on this listing come with 1/4\", 1/2\" and 3/4\" ports: 710-6-1/4B, 710-6-1/2B and 710-6-3/4B. They are lever operated with manual return and no adjustable relief valve, so the lever stays where it is set."
+        },
+        {
+          "slot": "D",
+          "q": "What is a Parker BV10N bleed valve used for?",
+          "a": "A Parker BV10N bleed valve is a manual 2-way valve with an NPT port, 1/4\" on BV10N2-C0 and 1/2\" on BV10N4-C0, used to vent trapped pressure from a line or component before work starts. Open it slowly and point the vent away from people."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to Parker 710-6 lever valves and BV10N bleed valves?",
+          "a": "The 710-6 lever valves and the BV10N bleed valves are different designs with different maker ratings, so we confirm Parker's working pressure and temperature for the exact part number with the quotation. The range recorded for this listing is +32°F to +160°F."
+        },
+        {
+          "slot": "F",
+          "q": "Which media can Parker 700 series manual directional valves control?",
+          "a": "The Parker 700 series 710-6 valves are listed here as manual air control valves, for use on compressed air. If you plan to use them on another medium, send the medium and pressure with your enquiry so we can confirm suitability with Parker before supply."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with Parker 710-6 and BV10N manual valves?",
+          "a": "This listing holds no compliance documents, so list what you need in the enquiry, such as a certificate of conformity, a certificate of origin or the Parker datasheet for each part number. We request them with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Parker 710-6 4-way lever valve?",
+          "a": "A 710-6 4-way lever valve takes supply at the inlet, sends air to the two cylinder ports and exhausts through the remaining ports, so it drives a double-acting cylinder. Use fittings that match the 1/4\", 1/2\" or 3/4\" port; compare the [Parker 4-way, 2-position manual valves](/p/parker-4-way-2-position-manual-air-control-valve) for smaller NPT sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How do you safely use a Parker BV10N manual bleed valve?",
+          "a": "Close the supply first, then open the BV10N bleed valve slowly to vent the trapped pressure and confirm the gauge reads zero before you open any joint. Close the bleed valve again before re-pressurising, and replace it if it leaks when closed."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a Parker 710-6 lever valve and a BV10N bleed valve?",
+          "a": "The 710-6 is a 4-way directional valve that switches flow between two outlets to move a cylinder, while the BV10N is a 2-way valve that only opens or closes a vent path. Use the 710-6 for operating a machine and the BV10N for depressurising a line safely."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker manual air control valves on this listing made?",
+          "a": "The country of origin recorded for this Parker listing is the United States. We ship from Dubai, UAE across the GCC, Africa and Asia; valves of this kind normally fall under HS heading 84.81, and the code and origin for each line are on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order Parker 710-6 lever valves and BV10N bleed valves from Dubai stock?",
+          "a": "Yes. We keep these Parker manual air control valves in stock at our warehouse in Dubai, UAE and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) and we quote price, rating and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "parker-miniature-high-speed-pneumatic-logic-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker miniature high speed pneumatic logic control valves?",
+          "a": "Parker miniature high speed pneumatic logic control valves are small air-operated elements, relays, memories, sensors and switches that build control sequences from compressed air alone, without electrics. This listing has 26 part numbers for 3 to 8 bar supply. Our [manual and pilot valve guide](/blog/manual-and-pilot-operated-air-valves) explains air logic."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Parker logic part number prefixes PL, PR and PSMA stand for?",
+          "a": "On our size table the PL numbers are logic elements and the PR numbers relays and switches. PL comes in line-mounted (PLKA11, PLLA11), subbase-mounted (PLKC10, PLLC10) and combinable (PLEB12, PLNB12) forms; PLMA are memory relays, the PRT numbers normally open or normally closed relays, PRDA amplifier relays, PRFA sensor relays, PREA pressure switches and PSMA10 a step module."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker logic relays are normally open and which are normally closed?",
+          "a": "In the Parker logic range we list, PRTA10, PRTA12 and PRTE10 are normally closed and PRTC10, PRTD10 and PRTF10 are normally open. A normally closed relay blocks the output until it receives a signal; a normally open one passes air until a signal switches it off."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between line-mounted, subbase and combinable Parker logic elements?",
+          "a": "Line-mounted elements such as PLKA11 and PZML199 sit directly in the tube run, subbase-mounted elements such as PLKC10 and PLND10 plug onto a base with the piping, and combinable elements such as PLEB12 and PLLB12 stack together into compact logic blocks. Pick by how many functions the panel holds and how often parts are swapped."
+        },
+        {
+          "slot": "E",
+          "q": "What supply pressure do Parker miniature pneumatic logic valves need?",
+          "a": "Parker gives a 3 to 8 bar (about 44 to 116 psi) supply range for these miniature logic valves. Run the logic circuit from a regulated supply inside that band, as low pressure slows switching and relays may fail to change state."
+        },
+        {
+          "slot": "F",
+          "q": "What air quality do Parker miniature logic valves need?",
+          "a": "Miniature logic valves have small passages, so feed them with clean, filtered and dry compressed air from a regulator inside the 3 to 8 bar range. A filter-regulator from our [FRL shelf](/c/air-preparation-frl) ahead of the logic panel keeps dirt and water out of the relays."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker pneumatic logic control valves?",
+          "a": "This listing holds no compliance documents, so ask in the enquiry for what you need: a certificate of conformity, a certificate of origin or Parker's datasheet for each logic part number. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What else is needed to build a circuit with Parker miniature logic valves?",
+          "a": "A logic circuit needs input signals (push buttons, rollers or sensors), logic elements and memories, amplifier relays such as PRDA10 to drive larger valves, and small tube and fittings to connect them. A [Parker shuttle valve](/p/parker-shuttle-valves) adds an OR function where two signals must operate one output."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fault-find a Parker pneumatic logic circuit?",
+          "a": "Check the supply is between 3 and 8 bar, then trace the signal through each relay and element with a gauge or indicator, from input to output. Most faults are a kinked or leaking signal tube, dirt in a relay or a memory left in the wrong state; replace a faulty element rather than opening it."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker pneumatic logic control valves used?",
+          "a": "Parker miniature pneumatic logic valves are used where control must run on air alone, such as machines in wet or hazardous areas, simple sequencing on presses and packaging lines, and two-hand or interlock circuits. They avoid the need for electrics on the machine."
+        },
+        {
+          "slot": "L",
+          "q": "How are Parker miniature logic control valves shipped from Dubai?",
+          "a": "We ship Parker miniature logic control valves from Dubai, UAE to the GCC, Africa, Asia and beyond. Pneumatic valves normally fall under HS subheading 8481.20; the country of origin depends on the Parker plant and is shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker miniature high speed pneumatic logic valves in Dubai?",
+          "a": "Yes. We keep Parker miniature high speed pneumatic logic control valves in stock at our warehouse in Dubai, UAE and ship worldwide with the best lead times. Send the PL, PR or PSMA part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-moduflex-t-series-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker Moduflex T Series valves?",
+          "a": "Parker Moduflex T Series valves are compact modular valves that mount on manifolds or as individual valve systems, offered with solenoid or air pilot operation in 3-way and 4-way functions. This listing holds 35 part numbers in sizes 1 and 2. Other solenoid valves and manifolds are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker Moduflex part numbers such as P2M1TDEE2C?",
+          "a": "In the Moduflex rows we list, P2M1 marks size 1 and P2M2 size 2, and the operator letters show the actuation: rows with EE or ES (such as P2M1TDEE2C) are solenoid operated, rows with PP or PS (such as P2M1TDPP) are air piloted. A trailing V marks the V-type versions such as P2M1VDEE2CV."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker Moduflex T Series valves are 3-way and which are 4-way?",
+          "a": "On this listing the Moduflex rows with C, D, E, G or 3 after the T or V, such as P2M1TCEE2C and P2M2TGEE2C, are 3-way functions, while rows with 4 or J, such as P2M1T4EE2C and P2M1TJEE2C, are 4-way. Our [guide to valve functions](/blog/solenoid-valve-functions-3-2-5-2-5-3) explains 3/2 and 5/2 circuits."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between Moduflex size 1 and size 2 valves?",
+          "a": "Size 1 Moduflex valves (P2M1) are the smaller body and size 2 (P2M2) the larger one with more flow; Parker records a Cv of 0.22 for the size 1 T series. Choose size 2 where cylinders are larger or cycle faster."
+        },
+        {
+          "slot": "E",
+          "q": "What solenoid connection and pilot supply do Parker Moduflex T Series valves use?",
+          "a": "Parker lists an M8 solenoid connection and an internal pilot supply for the Moduflex T Series size 1 valves, with spring return and a multi-function override. Send the part number with your enquiry and we confirm the coil voltage and working pressure for that valve."
+        },
+        {
+          "slot": "F",
+          "q": "Which media can Parker Moduflex T Series valves handle?",
+          "a": "Moduflex T Series valves are made for compressed air in automation. Use filtered air; as these valves are internally piloted, a stable supply keeps the pilot stage switching reliably, so fit a regulator ahead of the manifold."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker Moduflex valves?",
+          "a": "This listing holds no compliance documents, so ask with the enquiry for what your project needs, such as a certificate of conformity, a certificate of origin or Parker's datasheet for each Moduflex part number. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What is needed to mount Parker Moduflex T Series valves?",
+          "a": "Moduflex valves mount on Moduflex manifolds or as individual valve systems, with M8 connectors on the solenoid versions and tube fittings on the outlets. Tell us the number of stations and the wiring you plan, individual or multi-pin, and we match the manifold parts."
+        },
+        {
+          "slot": "I",
+          "q": "How do you test a Parker Moduflex valve with its manual override?",
+          "a": "With air on and the outputs safe to move, use the multi-function override to shift the valve and confirm the actuator moves, then check the solenoid switches it with the M8 connector fitted. If the override works but the solenoid does not, check the coil voltage and connector first."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between solenoid and air piloted Parker Moduflex valves?",
+          "a": "Solenoid Moduflex valves such as P2M1T4EE2C switch on an electrical signal through an M8 connector, while air piloted versions such as P2M1T4PS switch on a remote air signal. Use air piloted valves where only air logic is available or electrics are unwanted."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker Moduflex T Series valves made, and how are they shipped?",
+          "a": "The country of origin recorded for this Moduflex listing is the United States. We ship from Dubai, UAE across the GCC, Africa and Asia; pneumatic valves normally fall under HS subheading 8481.20, stated with the origin on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker Moduflex T Series valves in stock in Dubai?",
+          "a": "Yes. We stock Parker Moduflex T Series valves at our warehouse in Dubai, UAE and ship worldwide with the best lead times. Send the Moduflex part numbers, coil voltage and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-n-series-valve-air-pilot-2-way",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker N series 2-way air pilot valve used for?",
+          "a": "A Parker N series 2-way air pilot valve is a normally closed poppet valve that opens a large air line when a remote air pilot signal is applied and closes it when the signal is removed. It is used to switch main air to machines, blow-off nozzles or large actuators. Four sizes are listed, 3/8\" to 1\" inlet."
+        },
+        {
+          "slot": "B",
+          "q": "How do Parker N series 2-way part numbers N31431091 to N31471091 show the size?",
+          "a": "In the Parker N series 2-way rows we list, the two digits after N31 give the inlet: 43 is 3/8\" (N31431091), 44 is 1/2\" (N31441091), 46 is 3/4\" (N31461091) and 47 is 1\" (N31471091). The rest of the code is common to all four sizes."
+        },
+        {
+          "slot": "D",
+          "q": "Which inlet sizes does the Parker N series 2-way air pilot valve come in?",
+          "a": "Parker N series 2-way air pilot valves are listed with 3/8\", 1/2\", 3/4\" and 1\" inlets. Size the valve to the main line it switches; the poppet design gives a full flow path, so the valve usually matches the pipe size."
+        },
+        {
+          "slot": "D",
+          "q": "Is the Parker N series 2-way air pilot valve normally open or normally closed?",
+          "a": "The Parker N series 2-way air pilot valve is normally closed: with no pilot signal the poppet stays shut, so the fail position is closed and air flows only while the pilot is applied. It has no manual override, so the pilot line is the only way to open it."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the Parker N series 2-way air pilot valve?",
+          "a": "Parker rates the N series 2-way air pilot valve at 250 psi (about 17.2 bar) maximum, with a temperature range of 0°F to +125°F, about -18 to +52°C. The same rating applies to all four inlet sizes on this listing."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker N series 2-way pilot valves made of?",
+          "a": "Parker makes the N series 2-way air pilot valve with an aluminium body and nitrile seals in a poppet design, lubrication not required. It suits dry or lubricated compressed air; nitrile seals cope with normal plant air and mineral oil mist."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with Parker N series air pilot valves?",
+          "a": "No compliance documents are attached to this listing, so name what you need when you enquire, for example a certificate of conformity, a certificate of origin or the Parker datasheet for each N series part number, and we request it with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What pipe fittings connect to a Parker N series 2-way pilot valve?",
+          "a": "The main ports take threaded fittings in the inlet size, 3/8\" to 1\", and the pilot port takes a small tube fitting for the signal line from a manual, mechanical or solenoid valve. Adapters and connectors are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Parker N series 2-way poppet pilot valve?",
+          "a": "Install the valve with the flow arrow in the direction of flow, blow out the line first, seal the threads and connect the external pilot from a regulated source. Test by applying and removing the pilot: the outlet should open fully and shut tight."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries use Parker N series 2-way air pilot valves?",
+          "a": "Parker lists the N series air pilot valves for automotive plants, foundries, pulp and paper mills and steel mills, where large air flows are switched on a remote air signal and the poppet design copes with dirty, heavy-duty conditions."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker N series 2-way and 3-way air pilot valves?",
+          "a": "A 2-way N series valve only opens or closes the line, while a [Parker N series 3-way](/p/parker-n-series-valve-air-pilot-3-way) valve also exhausts the outlet when it closes, so it can drive single-acting actuators and dump downstream air. Choose 2-way for simple on/off supply."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker N series 2-way air pilot valves in Dubai?",
+          "a": "Yes. We keep Parker N series 2-way air pilot valves in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. The range is of United States origin, HS code 8481809050; send part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-n-series-valve-air-pilot-3-way",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker N series 3-way air pilot valve used for?",
+          "a": "A Parker N series 3-way air pilot valve switches a large air flow to an outlet and exhausts it again on a remote air pilot signal, in normally closed or normally open versions. It drives single-acting actuators, dumps downstream air or supplies whole machines; 12 part numbers from 3/8\" to 1 1/2\" inlet are listed."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read Parker N series 3-way codes such as N35461091 and N37461091?",
+          "a": "On the Parker N series 3-way rows we list, N35 and N36 are normally closed and N37 and N38 normally open, and the next two digits give the inlet: 43 = 3/8\", 44 = 1/2\", 46 = 3/4\", 47 = 1\", 48 = 1 1/4\", 49 = 1 1/2\". N35461091 is a 3/4\" normally closed valve and N37461091 the 3/4\" normally open one."
+        },
+        {
+          "slot": "D",
+          "q": "Which inlet sizes of the Parker N series 3-way pilot valve are available?",
+          "a": "The Parker N series 3-way pilot valves on this listing run from 3/8\" to 1 1/2\" inlet: 3/8\", 1/2\", 3/4\" and 1\" in the N35 and N37 bodies, and 1 1/4\" and 1 1/2\" in the N36 and N38 bodies. Size to the main air line."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a normally open or normally closed Parker N series 3-way valve?",
+          "a": "Choose normally closed (N35, N36) when the outlet must be dead and exhausted until the pilot signal arrives, as for a supply that should drop on loss of signal, and normally open (N37, N38) when air must flow until a signal shuts it off. Our [manual and pilot valve guide](/blog/manual-and-pilot-operated-air-valves) covers both."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure for a Parker N series 3-way air pilot valve?",
+          "a": "Parker states 140 to 250 psi by part for the N series 3-way: most rows, such as N35461091 and N37461091, are rated 250 psi (about 17.2 bar), and N37471091 is rated 140 psi. The temperature range is 0°F to +125°F, about -18 to +52°C; check the row for your part."
+        },
+        {
+          "slot": "F",
+          "q": "Which media can a Parker N series 3-way air pilot valve handle?",
+          "a": "The Parker N series 3-way air pilot valve is for compressed air in general pneumatic use, with an external pilot. Use it on filtered plant air within 0°F to +125°F; the external pilot lets you take the signal from a separate, clean supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which certificates can come with Parker N series 3-way air pilot valves?",
+          "a": "This listing carries no compliance documents, so state what you need in the enquiry, such as a certificate of conformity, a certificate of origin or the Parker datasheet for each N series part number. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "How is a Parker N series 3-way air pilot valve piped?",
+          "a": "Connect the main supply to the inlet, the outlet to the machine or actuator, leave the exhaust port free or fit a silencer, and run the external pilot line from the signal valve. A [Parker N series 2-way](/p/parker-n-series-valve-air-pilot-2-way) valve suits lines that only need on/off without exhausting."
+        },
+        {
+          "slot": "I",
+          "q": "How do you check a Parker N series 3-way pilot valve in service?",
+          "a": "Apply and remove the pilot signal and confirm the outlet pressurises and then exhausts fully through the exhaust port. A valve that leaks to exhaust with the outlet pressurised, or does not open fully, needs a seal check or replacement."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker N series 3-way air pilot valves used?",
+          "a": "Parker N series 3-way pilot valves are used to switch main air to machines and large actuators on an air signal, and as normally closed dump valves that exhaust downstream air when the signal drops. See our [air safety and dump valve guide](/blog/air-safety-relief-soft-start-and-lockout-valves) for that duty."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of Parker N series 3-way air pilot valves?",
+          "a": "The country of origin recorded is the United States and the HS code recorded is 8481200080, within subheading 8481.20 for pneumatic valves. We ship from Dubai, UAE to the GCC, Africa and Asia."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker N series 3-way air pilot valves from stock in Dubai?",
+          "a": "Yes. Parker N series 3-way air pilot valves are kept in stock at our warehouse in Dubai, UAE and shipped worldwide with the best lead times. Send the N series part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-shuttle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does a Parker shuttle valve do in a pneumatic circuit?",
+          "a": "A Parker shuttle valve has two inlets and one outlet and passes air from whichever inlet is pressurised to the outlet while sealing the other, giving a pneumatic OR function. It lets two signals, such as two push buttons, operate one valve or cylinder. Three sizes are listed: 1/8\", 1/4\" and 3/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "What are the part numbers of the Parker shuttle valves in 1/8\", 1/4\" and 3/8\" sizes?",
+          "a": "The Parker shuttle valves on this listing are N1641001 (1/8\"), N1642003 (1/4\") and N1643003 (3/8\"). The digit after N164 steps with the size, 1 for 1/8\", 2 for 1/4\" and 3 for 3/8\"; quote the full number when ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Which size of Parker shuttle valve do I need?",
+          "a": "For pilot and logic signals the 1/8\" N1641001 is usually enough; use the 1/4\" N1642003 or 3/8\" N1643003 when the shuttle feeds a cylinder or a larger valve directly and must pass more flow. Match the port to the fittings in the circuit."
+        },
+        {
+          "slot": "D",
+          "q": "Can a Parker shuttle valve control a cylinder from two locations?",
+          "a": "Yes. Connect one control valve to each inlet of the Parker shuttle valve and the outlet to the cylinder or the pilot of a main valve; either control then operates it, and the shuttle stops air escaping back through the idle valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to Parker shuttle valves N1641001 to N1643003?",
+          "a": "The Parker shuttle valve listing does not record a pressure figure for N1641001, N1642003 or N1643003, so we confirm the maker's rating for the size you order with the quotation. Keep the circuit within the lowest rating of the valves, fittings and tube connected to it."
+        },
+        {
+          "slot": "F",
+          "q": "Which media suit Parker shuttle valves?",
+          "a": "Parker shuttle valves are made for compressed air in control and logic circuits. Use filtered air: dirt on the shuttle seat can stop it sealing the idle inlet, which lets air leak back through the other control valve."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with Parker shuttle valves?",
+          "a": "This listing holds no compliance documents, so list what you need in the enquiry, such as a certificate of conformity, a certificate of origin or the Parker datasheet for N1641001, N1642003 or N1643003, and we request it with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings are needed to plumb a Parker shuttle valve?",
+          "a": "A shuttle valve needs three connections, two inlets and one outlet, in the valve size, 1/8\", 1/4\" or 3/8\". Push-in connectors and adapters are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers); keep the signal tubes short for quick response."
+        },
+        {
+          "slot": "I",
+          "q": "How do you check that a Parker shuttle valve is working?",
+          "a": "Pressurise each inlet in turn and confirm air reaches the outlet with none escaping from the other inlet. If air leaks back to the idle inlet, the shuttle seat is dirty or worn; clean the supply and replace the valve."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker shuttle valves used?",
+          "a": "Parker shuttle valves are used in air logic and machine controls wherever two signals must operate one output, such as two-station push button control, manual plus automatic operation, or combining a pilot signal from two sources. Our [manual and pilot valve guide](/blog/manual-and-pilot-operated-air-valves) gives examples."
+        },
+        {
+          "slot": "K",
+          "q": "How does a Parker shuttle valve compare with a Parker logic relay?",
+          "a": "A shuttle valve performs only the OR function and needs no supply of its own, while the [Parker miniature pneumatic logic valves](/p/parker-miniature-high-speed-pneumatic-logic-control-valves) include relays, memories and amplifiers for AND, NOT and memory functions. Use a shuttle valve for a simple either-or signal."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker shuttle valves in stock in Dubai?",
+          "a": "Yes. We keep Parker shuttle valves in stock at our warehouse in Dubai, UAE and ship worldwide with the best lead times; pneumatic valves normally travel under HS subheading 8481.20. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-viking-lite-series-p2laz-4-way-bar-manifolds",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker Viking Lite P2LAZ 4-way bar manifold?",
+          "a": "A Parker Viking Lite P2LAZ bar manifold is a subbase that mounts several Viking Lite 4-way valves side by side on a common supply and exhaust, so one air feed serves all stations. This listing has five P2LAZ series manifolds with 3/8\" ports, from 2 to 10 stations."
+        },
+        {
+          "slot": "D",
+          "q": "How many stations are available on Parker Viking Lite P2LAZ bar manifolds?",
+          "a": "The Parker Viking Lite P2LAZ bar manifolds on this listing come with 2, 6, 8 or 10 stations, plus one further version; tell us the station count you need. Choose one station per valve, with spare stations blanked if you expect to add valves later."
+        },
+        {
+          "slot": "D",
+          "q": "What port size do Parker Viking Lite P2LAZ manifolds have?",
+          "a": "The Parker Viking Lite P2LAZ manifolds on this listing have 3/8\" ports, for the common supply and exhaust feeding the valves. Size the supply line and fitting to the total flow of the valves that may switch at the same time."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can a Parker Viking Lite P2LAZ manifold take?",
+          "a": "This listing does not record a pressure figure for the P2LAZ manifolds, so we confirm Parker's rating for the station count you order with the quotation. The working limit of the assembly is the lowest rating of manifold, valves and fittings."
+        },
+        {
+          "slot": "F",
+          "q": "Which valves mount on a Parker Viking Lite P2LAZ manifold?",
+          "a": "Parker lists the P2LAZ series as accessories for Viking Lite valves, so the manifold takes Viking Lite 4-way valves of the matching body. Send us the valve part numbers you plan to use and we confirm the manifold and any blanking plates."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents can be supplied with Parker Viking Lite P2LAZ manifolds?",
+          "a": "No compliance documents are attached to this listing, so name the documents you need in the enquiry, such as a certificate of conformity, a certificate of origin or the Parker datasheet. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What else is needed to complete a Parker Viking Lite manifold assembly?",
+          "a": "Besides the P2LAZ bar manifold you need the Viking Lite valves, blanking plates for unused stations, a 3/8\" supply fitting and silencers on the exhaust ports. Solenoid valves and other manifolds are on our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Parker Viking Lite P2LAZ bar manifold?",
+          "a": "Fix the manifold to the panel, fit the valves with their seals on each station, blank any unused station and connect the 3/8\" supply and exhausts. Pressurise slowly and check every station seal for leaks before connecting the outlets to cylinders."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker Viking Lite bar manifolds used?",
+          "a": "Viking Lite bar manifolds are used in automation panels and machines that run several cylinders from one valve bank, such as packaging, assembly and handling equipment. Grouping valves on a manifold saves piping and panel space."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a manifold-mounted Viking Lite valve and an in-line Viking Xtreme lever valve?",
+          "a": "Viking Lite valves on a P2LAZ manifold share one supply and exhaust in a bank, while a [Parker Viking Xtreme lever valve](/p/parker-viking-xtreme-series-manual-mechanical-valves-3-way-2-position-inline-perpendicular-lever) is a stand-alone in-line valve operated by hand. Use a manifold for several automated stations and an in-line valve for a single manual control."
+        },
+        {
+          "slot": "L",
+          "q": "How are Parker Viking Lite P2LAZ manifolds shipped from Dubai?",
+          "a": "We ship Parker Viking Lite P2LAZ manifolds from Dubai, UAE to the GCC, Africa, Asia and beyond. Valve manifolds normally fall under HS heading 84.81; the country of origin depends on the Parker plant and is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker Viking Lite P2LAZ 4-way bar manifolds in Dubai?",
+          "a": "Yes. We keep Parker Viking Lite P2LAZ 4-way bar manifolds in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the station count and valves through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-viking-xtreme-series-manual-mechanical-valves-3-way-2-position-inline-perpendicular-lever",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker Viking Xtreme 3-way, 2-position inline perpendicular lever valve?",
+          "a": "The Parker Viking Xtreme 3-way, 2-position inline perpendicular lever valve is a hand-operated in-line valve that pressurises or exhausts one outlet, with the lever at right angles to the body. It controls single-acting cylinders or signals; 16 P2L part numbers are listed, from P2LAX311VS to P2LDX394VV."
+        },
+        {
+          "slot": "B",
+          "q": "What does the letter after P2L mean on Parker Viking Xtreme valves such as P2LAX311VS?",
+          "a": "The letter after P2L sets the body size, with A the smallest: Parker lists P2LAX311VS as a 1/8\" port valve, and the lever versions run up to 1/2\" ports through the B, C and D bodies. The listing holds P2LAX, P2LBX, P2LCX and P2LDX rows; quote the full code to fix the size and options."
+        },
+        {
+          "slot": "D",
+          "q": "Which body sizes of Parker Viking Xtreme 3-way lever valve are listed?",
+          "a": "Four bodies are listed: P2LAX (P2LAX311VS, P2LAX391VS and their VV versions), P2LBX (P2LBX312, P2LBX392), P2LCX (P2LCX313, P2LCX393) and P2LDX (P2LDX314, P2LDX394). The A body is the 1/8\" valve and D the largest; choose by the flow the cylinder needs."
+        },
+        {
+          "slot": "D",
+          "q": "Can a Parker Viking Xtreme 3-way lever valve be used on vacuum?",
+          "a": "Yes. Parker states a supply range from vacuum upwards for every Viking Xtreme 3-way lever valve on this listing, so the valve can switch a vacuum line as well as compressed air. That suits manual release of vacuum cups or vacuum holding fixtures."
+        },
+        {
+          "slot": "E",
+          "q": "What supply pressure can a Parker Viking Xtreme 3-way lever valve take?",
+          "a": "Parker gives vacuum to 232 psi (about 16 bar) for the P2LAX and P2LBX valves on this listing and vacuum to 174 psi (about 12 bar) for the P2LCX and P2LDX valves. Choose the smaller bodies where the supply runs above 174 psi."
+        },
+        {
+          "slot": "F",
+          "q": "Which media and conditions suit Parker Viking Xtreme lever valves?",
+          "a": "Parker Viking Xtreme lever valves are built for compressed air and vacuum in pneumatic automation. Use filtered air, and keep the supply within the rating of the body you choose, 232 psi on A and B bodies and 174 psi on C and D bodies."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with Parker Viking Xtreme lever valves?",
+          "a": "This listing holds no compliance documents, so tell us in the enquiry what you need, for example a certificate of conformity, a certificate of origin or Parker's datasheet for each P2L part number. We request them from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to a Parker Viking Xtreme 3-way lever valve?",
+          "a": "Use threaded push-in fittings to match the port of the body you order, fit a silencer on the exhaust and run the outlet to the single-acting cylinder or pilot it controls. Connectors and silencers are on our [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Parker Viking Xtreme inline perpendicular lever valve?",
+          "a": "Mount the in-line valve where the perpendicular lever has clear travel through both positions, blow out the lines, connect supply, outlet and exhaust to the marked ports and test the lever at low pressure. Replace the valve if it leaks to exhaust in either position."
+        },
+        {
+          "slot": "J",
+          "q": "Where are Parker Viking Xtreme manual lever valves used?",
+          "a": "Viking Xtreme lever valves are used as operator controls on machines, test rigs and fixtures, to switch a clamp, a single-acting cylinder or a vacuum circuit by hand. Valve banks for automated stations use [Viking Lite P2LAZ manifolds](/p/parker-viking-lite-series-p2laz-4-way-bar-manifolds) instead."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker Viking Xtreme 3-way and 4-way lever valves?",
+          "a": "The 3-way Viking Xtreme valve pressurises and exhausts one outlet, while the 4-way 1/8\" P2LAX lever valves on our [Parker 4-way, 2-position manual valve](/p/parker-4-way-2-position-manual-air-control-valve) listing switch air between two outlets to drive a double-acting cylinder."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker Viking Xtreme 3-way lever valves in stock in Dubai?",
+          "a": "Yes. We hold Parker Viking Xtreme 3-way, 2-position lever valves in stock at our warehouse in Dubai, UAE and ship worldwide with the best lead times; pneumatic valves normally travel under HS subheading 8481.20. Send the P2L part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

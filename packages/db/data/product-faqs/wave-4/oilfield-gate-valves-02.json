@@ -1,0 +1,1128 @@
+{
+  "family": "oilfield-gate-valves-02",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    },
+    {
+      "fact": "ANSI raised-face flanged valve ends are dimensioned to ASME B16.5.",
+      "source": "ASME B16.5 Pipe Flanges and Flanged Fittings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15,000 psi hydraulic fail-close gate valve used for?",
+          "a": "A 3-1/16 in 15,000 psi hydraulic fail-close gate valve (15K, sour service) is a hydraulically actuated gate valve that closes by spring when hydraulic pressure is lost, used as a tree wing or master valve. Premium HP service for high-pressure trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 15,000 psi valve use?",
+          "a": "The hydraulic fail-close gate valve inlet is a 3-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this hydraulic fail-close gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15,000 psi hydraulic fail-close gate valve have?",
+          "a": "On the 3-1/16 in 15,000 psi hydraulic fail-close gate valve (sour service) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 15,000 psi hydraulic fail-close gate valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 15,000 psi (sour service); the [3-1/8 in 5,000 psi hydraulic fail-close gate valve](/p/hydraulic-gate-valve-fail-close-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-2-pr2-ee-0-5) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15,000 psi hydraulic fail-close gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 15,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 15,000 psi hydraulic fail-close gate valve made from?",
+          "a": "The 3-1/16 in 15,000 psi hydraulic fail-close gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-0.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 15,000 psi hydraulic fail-close gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 15,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-0.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15,000 psi hydraulic fail-close gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 15M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 15,000 psi hydraulic fail-close gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 15,000 psi hydraulic fail-close gate valve, it is opened with control-line hydraulic pressure and closes when that pressure is lost. Check the actuator and the control line during routine tree inspection, and stroke-test it on schedule."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15,000 psi hydraulic fail-close gate valve compare with a manual gate valve?",
+          "a": "The 3-1/16 in 15,000 psi hydraulic fail-close valve is actuated and closes automatically on loss of control pressure, while a manual gate valve is operated by handwheel and stays where it is left. See the [Manual Gate Valve, 3-1/16 in, 15,000 psi](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 15,000 psi hydraulic fail-close gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron hydraulic fail-close gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Hydraulic Gate Valve, Fail Close, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-0.5 from Indus Hydraulics?",
+          "a": "The Hydraulic Gate Valve, Fail Close, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-0.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 70 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15,000 psi manual gate valve used for?",
+          "a": "A 3-1/16 in 15,000 psi manual gate valve (15K, sour service) is a handwheel-operated, full-port gate valve for isolation on trees and manifolds. HP master valve for severe-service production trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 15,000 psi valve use?",
+          "a": "The manual gate valve inlet is a 3-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15,000 psi manual gate valve have?",
+          "a": "On the 3-1/16 in 15,000 psi manual gate valve (sour service) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 15,000 psi manual gate valve or the 2-1/16 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 15,000 psi (sour service); the [2-1/16 in 5,000 psi manual gate valve](/p/manual-gate-valve-2-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr1-ee) is rated 5,000 psi with 2-1/16 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15,000 psi manual gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 15,000 psi manual gate valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 15,000 psi manual gate valve made from?",
+          "a": "The 3-1/16 in 15,000 psi manual gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-0.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 15,000 psi manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 15,000 psi manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-0.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15,000 psi manual gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 15M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 15,000 psi manual gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 15,000 psi manual gate valve, it is turned by handwheel and the rising-stem indicator confirms the position. Grease the bonnet and stem per the maker routine, and fully open or close the valve rather than leaving a gate part-open."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15,000 psi manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 3-1/16 in 15,000 psi manual gate valve is operated by handwheel and holds its position, while a hydraulic fail-close gate valve is actuated and closes on loss of control pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 15,000 psi manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Manual Gate Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-0.5 available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Manual Gate Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-0.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 63 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-fls-1-13-16-in-15m-flanged-15-000-psi-api-6a-psl-3g-pr2-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1-13/16 in 15,000 psi FLS manual gate valve used for?",
+          "a": "A 1-13/16 in 15,000 psi FLS manual gate valve (15K, sour service) is a manual gate valve with an FLS (fail-last-stable) actuator option for retrofit conversion. Small-bore HPHT for instrument and sample tap-offs."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 1-13/16 in 15,000 psi valve use?",
+          "a": "The FLS manual gate valve inlet is a 1-13/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this FLS manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 1-13/16 in 15,000 psi FLS manual gate valve have?",
+          "a": "On the 1-13/16 in 15,000 psi FLS manual gate valve (sour service) the inlet is 1-13/16 in API 6A 15M Flanged (RTJ) and the outlet is 1-13/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1-13/16 in 15,000 psi FLS manual gate valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 1-13/16 in at 15,000 psi (sour service); the [3-1/8 in 5,000 psi FLS manual gate valve](/p/manual-gate-valve-fls-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-3-pr2f-ee-1-5) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 1-13/16 in 15,000 psi FLS manual gate valve, and how is it tested?",
+          "a": "The 1-13/16 in 15,000 psi FLS manual gate valve with its Forged AISI 4130 body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 1-13/16 in 15,000 psi FLS manual gate valve made from?",
+          "a": "The 1-13/16 in 15,000 psi FLS manual gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + FFKM primary seals (high-temp). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1-13/16 in 15,000 psi FLS manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 1-13/16 in 15,000 psi FLS manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 1-13/16 in 15,000 psi FLS manual gate valve bolt to?",
+          "a": "It bolts to 1-13/16 in API 6A 15M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 1-13/16 in 15,000 psi FLS manual gate valve operated and maintained?",
+          "a": "On the 1-13/16 in 15,000 psi FLS manual gate valve, it is handwheel-operated and the rising-stem indicator confirms position; an FLS actuator can be retrofitted. Keep the valve fully open or fully closed in service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1-13/16 in 15,000 psi FLS manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 1-13/16 in 15,000 psi FLS manual gate valve is handwheel-operated with an FLS actuator retrofit option, while a hydraulic fail-close valve closes on loss of pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 1-13/16 in 15,000 psi FLS manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Cameron FLS manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Manual Gate Valve, FLS, 1-13/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3G PR2, EE-1.5 from Indus Hydraulics?",
+          "a": "The Manual Gate Valve, FLS, 1-13/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3G PR2, EE-1.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 63 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-gate-valve-fail-close-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10,000 psi hydraulic fail-close gate valve used for?",
+          "a": "A 3-1/16 in 10,000 psi hydraulic fail-close gate valve (10K, sour service) is a hydraulically actuated gate valve that closes by spring when hydraulic pressure is lost, used as a tree wing or master valve. Wing-valve service for production trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 10,000 psi valve use?",
+          "a": "The hydraulic fail-close gate valve inlet is a 3-1/16 in API 6A 10M Flanged (RTJ), an API 6A flange with ring-type joint, so on this hydraulic fail-close gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10,000 psi hydraulic fail-close gate valve have?",
+          "a": "On the 3-1/16 in 10,000 psi hydraulic fail-close gate valve (sour service) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 10M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 10,000 psi hydraulic fail-close gate valve or the 3-1/8 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 10,000 psi (sour service); the [3-1/8 in 5,000 psi hydraulic fail-close gate valve](/p/hydraulic-gate-valve-fail-close-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-2-pr2-ee-0-5) is rated 5,000 psi with 3-1/8 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10,000 psi hydraulic fail-close gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 10,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 10,000 psi hydraulic fail-close gate valve made from?",
+          "a": "The 3-1/16 in 10,000 psi hydraulic fail-close gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 10,000 psi hydraulic fail-close gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 10,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10,000 psi hydraulic fail-close gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 10M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 10,000 psi hydraulic fail-close gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 10,000 psi hydraulic fail-close gate valve, it is opened with control-line hydraulic pressure and closes when that pressure is lost. Check the actuator and the control line during routine tree inspection, and stroke-test it on schedule."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10,000 psi hydraulic fail-close gate valve compare with a manual gate valve?",
+          "a": "The 3-1/16 in 10,000 psi hydraulic fail-close valve is actuated and closes automatically on loss of control pressure, while a manual gate valve is operated by handwheel and stays where it is left. See the [Manual Gate Valve, 3-1/16 in, 15,000 psi](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 10,000 psi hydraulic fail-close gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies hydraulic fail-close gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Hydraulic Gate Valve, Fail Close, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE-1.5 from Indus Hydraulics?",
+          "a": "The Hydraulic Gate Valve, Fail Close, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE-1.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-gate-valve-fail-close-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-2-pr2-ee-0-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5,000 psi hydraulic fail-close gate valve used for?",
+          "a": "A 3-1/8 in 5,000 psi hydraulic fail-close gate valve (5K, sour service) is a hydraulically actuated gate valve that closes by spring when hydraulic pressure is lost, used as a tree wing or master valve. Mid-pressure tree wing-valve."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/8 in 5,000 psi valve use?",
+          "a": "The hydraulic fail-close gate valve inlet is a 3-1/8 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this hydraulic fail-close gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5,000 psi hydraulic fail-close gate valve have?",
+          "a": "On the 3-1/8 in 5,000 psi hydraulic fail-close gate valve (sour service) the inlet is 3-1/8 in API 6A 5M Flanged (RTJ) and the outlet is 3-1/8 in API 6A 5M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/8 in 5,000 psi hydraulic fail-close gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/8 in at 5,000 psi (sour service); the [3-1/16 in 15,000 psi hydraulic fail-close gate valve](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5,000 psi hydraulic fail-close gate valve, and how is it tested?",
+          "a": "The 3-1/8 in 5,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/8 in 5,000 psi hydraulic fail-close gate valve made from?",
+          "a": "The 3-1/8 in 5,000 psi hydraulic fail-close gate valve has a Forged AISI 4130 body; the trim is 410SS gate + 410SS seats with Stellite 6 hardfacing and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-0.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/8 in 5,000 psi hydraulic fail-close gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/8 in 5,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-0.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/8 in 5,000 psi hydraulic fail-close gate valve bolt to?",
+          "a": "It bolts to 3-1/8 in API 6A 5M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/8 in 5,000 psi hydraulic fail-close gate valve operated and maintained?",
+          "a": "On the 3-1/8 in 5,000 psi hydraulic fail-close gate valve, it is opened with control-line hydraulic pressure and closes when that pressure is lost. Check the actuator and the control line during routine tree inspection, and stroke-test it on schedule."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5,000 psi hydraulic fail-close gate valve compare with a manual gate valve?",
+          "a": "The 3-1/8 in 5,000 psi hydraulic fail-close valve is actuated and closes automatically on loss of control pressure, while a manual gate valve is operated by handwheel and stays where it is left. See the [Manual Gate Valve, 3-1/16 in, 15,000 psi](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/8 in 5,000 psi hydraulic fail-close gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies hydraulic fail-close gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hydraulic Gate Valve, Fail Close, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 2 PR2, EE-0.5 in stock in Dubai?",
+          "a": "Yes. We keep the Hydraulic Gate Valve, Fail Close, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 2 PR2, EE-0.5 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-slab-gate-valve-3-1-16-in-10m-flanged-15-000-psi-api-6a-psl-3g-pr2-hh-inconel-625-cladded",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 15,000 psi slab gate valve used for?",
+          "a": "A 3-1/16 in 15,000 psi slab gate valve (15K, sour service) is a manual slab gate valve whose single-piece gate slides through the bore, suited to severe sour service. Flagship sour-gas service."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 15,000 psi valve use?",
+          "a": "The slab gate valve inlet is a 3-1/16 in API 6A 15M Flanged (RTJ), an API 6A flange with ring-type joint, so on this slab gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 15,000 psi slab gate valve have?",
+          "a": "On the 3-1/16 in 15,000 psi slab gate valve (sour service) the inlet is 3-1/16 in API 6A 15M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 15M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 15,000 psi slab gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 15,000 psi (sour service); the [Hydraulic Gate Valve](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 15,000 psi slab gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 15,000 psi slab gate valve with its Forged AISI 4130 with Inconel 625 internal cladding (HH) body is rated 15,000 psi working pressure (15K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 15,000 psi slab gate valve made from?",
+          "a": "The 3-1/16 in 15,000 psi slab gate valve has a Forged AISI 4130 with Inconel 625 internal cladding (HH) body; the trim is Inconel 625 cladded gate + Inconel 625 overlay seats and the seals are PEEK back-up + FFKM primary seals (high-temp). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class HH. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 15,000 psi slab gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 15,000 psi slab gate valve with its Forged AISI 4130 with Inconel 625 internal cladding (HH) body is listed to NACE MR0175 / ISO 15156 with material class HH, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 15,000 psi slab gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 15M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 15,000 psi slab gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 15,000 psi slab gate valve, it is handwheel-operated and lockable in the open or closed position, with a rising-stem indicator. The slab gate is simpler to refurbish in the field than a split-wedge gate."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 15,000 psi slab gate valve compare with a manual gate valve?",
+          "a": "The 3-1/16 in 15,000 psi slab gate valve has a one-piece gate and metal-to-metal seat seal and suits high-cycle severe sour service, while an expanding or standard gate valve uses a different seal design. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 15,000 psi slab gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this FMC Technologies slab gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Manual Slab Gate Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3G PR2, HH Inconel 625 Cladd from Indus Hydraulics?",
+          "a": "The Manual Slab Gate Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3G PR2, HH Inconel 625 Cladded is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 84 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-balanced-stem-gate-valve-high-pressure",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A balanced-stem gate valve used for?",
+          "a": "Balanced-stem (tail rod) gate valves to API 6A: 2-1/16\" to 13\", 10,000 to 25,000 psi, ball-screw drive for low handwheel torque at high pressure, metal-to-metal seals."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A balanced-stem gate valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A balanced-stem gate valve the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A balanced-stem gate valve come in?",
+          "a": "The listing covers 2-1/16\" to 13\" nominal bore at 10,000 to 25,000 psi working pressure, with aPI 6A flanged, studded or clamp hub. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "When do I need a balanced-stem gate valve instead of a standard slab gate valve?",
+          "a": "Choose the balanced-stem type for large bores at very high pressure, where an ordinary gate valve would take too much force to turn. For standard sizes see the [API 6A slab gate valve](/p/api-6a-slab-gate-valve-2000-20000-psi)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A balanced-stem gate valve tested?",
+          "a": "For the API 6A balanced-stem gate valve (2-1/16\" to 13\", 10,000 to 25,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A balanced-stem gate valve offer?",
+          "a": "On the API 6A balanced-stem gate valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to V. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A balanced-stem gate valve to API specification, and what documents are supplied?",
+          "a": "The API 6A balanced-stem gate valve is built to API 6A (21st edition) by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A balanced-stem gate valve operated?",
+          "a": "The API 6A balanced-stem gate valve is operated by handwheel with ball-screw drive; actuator on request. The ball-screw drive cuts operating torque so one person can turn a large high-pressure valve; actuators are available on request. End connections on the listing are aPI 6A flanged, studded or clamp hub."
+        },
+        {
+          "slot": "I",
+          "q": "What does the tail rod do on a balanced-stem gate valve?",
+          "a": "The tail rod puts an equal area on the other side of the gate, so line pressure no longer pushes the stem out of the bonnet and the stem thrust is low. Bonnet lubricators supply sealant. Read the [API 6A nameplate guide](/blog/api-6a-nameplate-markings) for the markings."
+        },
+        {
+          "slot": "K",
+          "q": "Balanced-stem gate valve or slab gate valve at high pressure: how do they differ?",
+          "a": "A balanced-stem gate valve adds a tail rod and ball-screw drive so a large high-pressure valve can be turned by hand, while a standard slab gate valve relies on the handwheel alone. See the [API 6A Slab Gate Valve, 1-13/16\" to 11\", 2,000 to 20,000 psi](/p/api-6a-slab-gate-valve-2000-20000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A balanced-stem gate valve be supplied from Dubai with test records?",
+          "a": "For the API 6A balanced-stem gate valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A balanced-stem gate valve in Dubai?",
+          "a": "Yes. We keep the API 6A balanced-stem gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-expanding-gate-valve-2000-5000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A expanding gate valve used for?",
+          "a": "API 6A expanding gate valves: 3-1/16\" to 7-1/16\", 2,000 to 5,000 psi, non-rising stem, gate and segment seal mechanically on both seats, threaded or flanged, for oil and water service."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A expanding gate valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A expanding gate valve the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A expanding gate valve come in?",
+          "a": "The listing covers 3-1/16\" to 7-1/16\" nominal bore at 2,000 to 5,000 psi working pressure, with aPI 6A flanged or threaded. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose an expanding gate valve or a slab gate valve for water injection?",
+          "a": "Choose the expanding gate valve for low and varying pressure, water injection and depleted wells, where it seals mechanically. Use the [slab gate valve](/p/api-6a-slab-gate-valve-2000-20000-psi) for high pressure and hot service."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A expanding gate valve tested?",
+          "a": "For the API 6A expanding gate valve (3-1/16\" to 7-1/16\", 2,000 to 5,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A expanding gate valve offer?",
+          "a": "On the API 6A expanding gate valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to V. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A expanding gate valve to API specification, and what documents are supplied?",
+          "a": "The API 6A expanding gate valve is built to API 6A (21st edition) by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A expanding gate valve operated?",
+          "a": "The API 6A expanding gate valve is operated by handwheel; actuator on request. At the end of its stroke the gate and segment wedge apart onto both seats; the stem is non-rising with sealant-injected packing. End connections on the listing are aPI 6A flanged or threaded."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature can the seats of an API 6A expanding gate valve take?",
+          "a": "The dual soft-insert seats limit the valve to moderate temperatures; for hot service choose a slab gate valve with metal seats. Read the [API 6A nameplate guide](/blog/api-6a-nameplate-markings) for temperature classes."
+        },
+        {
+          "slot": "K",
+          "q": "Expanding gate valve or slab gate valve: which one for low-pressure wells?",
+          "a": "An expanding gate valve seals mechanically on both seats with or without line pressure and suits low or varying pressure, while a slab gate relies on line pressure and suits high pressure. See the [API 6A Slab Gate Valve, 1-13/16\" to 11\", 2,000 to 20,000 psi](/p/api-6a-slab-gate-valve-2000-20000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A expanding gate valve be supplied from Dubai with test records?",
+          "a": "For the API 6A expanding gate valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A expanding gate valve in Dubai?",
+          "a": "Yes. We keep the API 6A expanding gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-slab-gate-valve-2000-20000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an API 6A slab gate valve used for?",
+          "a": "API 6A slab gate valves for wellheads, trees and manifolds: 1-13/16\" to 11\", 2,000 to 20,000 psi, full bore, bidirectional, non-rising stem, metal-to-metal seals, flanged, threaded or hammer union."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on an API 6A slab gate valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the API 6A slab gate valve the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the API 6A slab gate valve come in?",
+          "a": "The listing covers 1-13/16\" to 11\" nominal bore at 2,000 to 20,000 psi working pressure, with aPI 6A flanged or studded, threaded, hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "What operators can an API 6A slab gate valve have?",
+          "a": "The listing gives handwheel, gear operator, pneumatic or hydraulic actuator. Choose the actuator for remote or emergency shutdown duty; see the [balanced-stem gate valve](/p/api-6a-balanced-stem-gate-valve-high-pressure) for large high-pressure bores."
+        },
+        {
+          "slot": "E",
+          "q": "How is the API 6A slab gate valve tested?",
+          "a": "For the API 6A slab gate valve (1-13/16\" to 11\", 2,000 to 20,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the API 6A slab gate valve offer?",
+          "a": "On the API 6A slab gate valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the API 6A slab gate valve to API specification, and what documents are supplied?",
+          "a": "The API 6A slab gate valve is built to API 6A, NACE MR0175 by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the API 6A slab gate valve operated?",
+          "a": "The API 6A slab gate valve is operated by handwheel, gear operator, pneumatic or hydraulic actuator. The slab gate is bidirectional with floating seats and a backseat. End connections on the listing are aPI 6A flanged or studded, threaded, hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "How does an API 6A slab gate valve seal at high pressure?",
+          "a": "Line pressure pushes the floating seat onto the slab gate, giving a metal-to-metal seal that gets tighter as pressure rises, in either flow direction. Read the [API 6A nameplate guide](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "K",
+          "q": "Slab gate valve or expanding gate valve for a wellhead?",
+          "a": "A slab gate valve is full bore with floating seats and metal-to-metal seals and suits high pressure, while an expanding gate valve seals mechanically on low-pressure wells. See the [API 6A Expanding Gate Valve, 3-1/16\" to 7-1/16\", 2,000 to 5,000 psi](/p/api-6a-expanding-gate-valve-2000-5000-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the API 6A slab gate valve be supplied from Dubai with test records?",
+          "a": "For the API 6A slab gate valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the API 6A slab gate valve in Dubai?",
+          "a": "Yes. We keep the API 6A slab gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-2-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr1-ee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in 5,000 psi manual gate valve used for?",
+          "a": "A 2-1/16 in 5,000 psi manual gate valve (5K, sour service) is a handwheel-operated, full-port gate valve for isolation on trees and manifolds. Cost-effective wing valve for production-test trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in 5,000 psi valve use?",
+          "a": "The manual gate valve inlet is a 2-1/16 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 5,000 psi manual gate valve have?",
+          "a": "On the 2-1/16 in 5,000 psi manual gate valve (sour service) the inlet is 2-1/16 in API 6A 5M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 5M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 5,000 psi manual gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in at 5,000 psi (sour service); the [3-1/16 in 15,000 psi manual gate valve](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in 5,000 psi manual gate valve, and how is it tested?",
+          "a": "The 2-1/16 in 5,000 psi manual gate valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in 5,000 psi manual gate valve made from?",
+          "a": "The 2-1/16 in 5,000 psi manual gate valve has a Forged AISI 4130 body; the trim is 410SS gate + 410SS seats with Stellite 6 hardfacing and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 5,000 psi manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2-1/16 in 5,000 psi manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in 5,000 psi manual gate valve bolt to?",
+          "a": "It bolts to 2-1/16 in API 6A 5M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in 5,000 psi manual gate valve operated and maintained?",
+          "a": "On the 2-1/16 in 5,000 psi manual gate valve, it is turned by handwheel and the rising-stem indicator confirms the position. Grease the bonnet and stem per the maker routine, and fully open or close the valve rather than leaving a gate part-open."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in 5,000 psi manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 2-1/16 in 5,000 psi manual gate valve is operated by handwheel and holds its position, while a hydraulic fail-close gate valve is actuated and closes on loss of control pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 2-1/16 in 5,000 psi manual gate valve be exported from Dubai with documents?",
+          "a": "Yes. We supply the 2-1/16 in 5,000 psi manual gate valve from Dubai, UAE and ship worldwide with the commercial invoice, packing list and test documents. Tell us the destination and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Manual Gate Valve, 2-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR1, EE in stock in Dubai?",
+          "a": "Yes. We keep the Manual Gate Valve, 2-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR1, EE in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-valve-top-entry-api-6a",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a top-entry API 6A mud valve used for?",
+          "a": "Top-entry mud valves for drilling mud, cement and standpipe manifolds: 1-13/16\" to 5-1/8\", 2,000 to 10,000 psi, full open or closed only, in-line maintenance, ABS and CE-PED certified."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL 1 to 4 and PR1 or PR2 mean on a top-entry API 6A mud valve?",
+          "a": "PSL is the product specification level and PR is the performance requirement. On the top-entry API 6A mud valve the listing gives PSL 1 to 4; PR1 or PR2. A higher PSL adds inspection, testing and traceability, and PR2 valves have passed API 6A design-validation testing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the top-entry API 6A mud valve come in?",
+          "a": "The listing covers 1-13/16\" to 5-1/8\" nominal bore at 2,000 to 10,000 psi working pressure, with flanged, butt-weld or hammer union. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Can the internals of a top-entry mud valve be replaced on the rig?",
+          "a": "Yes. Remove the bonnet and the disc, seat and packing come out from the top while the body stays in the manifold. See our [gate valve repair kits and parts](/c/gate-valve-repair-kits) for spares."
+        },
+        {
+          "slot": "E",
+          "q": "How is the top-entry API 6A mud valve tested?",
+          "a": "For the top-entry API 6A mud valve (1-13/16\" to 5-1/8\", 2,000 to 10,000 psi working pressure): hydrostatic body and seat tests to API 6A at the PSL ordered, with gas tests at PSL 3G and 4; ABS and CE-PED certified. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the top-entry API 6A mud valve offer?",
+          "a": "On the top-entry API 6A mud valve, body material is offered in API 6A material classes AA to HH (DD to HH for sour service), and the temperature range is API 6A temperature classes K to X. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Is the top-entry API 6A mud valve to API specification, and what documents are supplied?",
+          "a": "The top-entry API 6A mud valve is built to API 6A by API-licensed manufacturers and supplied with the API certificate and monogram documentation. Material certificates, heat-treatment and NDE records and the test record come with it, and operator specifications are reviewed clause by clause."
+        },
+        {
+          "slot": "H",
+          "q": "How is the top-entry API 6A mud valve operated?",
+          "a": "The top-entry API 6A mud valve is operated by handwheel or T-bar handle; actuator on request. It runs only fully open or fully closed, which keeps the disc and seat from being cut by fluid flowing past a part-open gate. End connections on the listing are flanged, butt-weld or hammer union."
+        },
+        {
+          "slot": "I",
+          "q": "Why does a mud valve run only fully open or fully closed?",
+          "a": "Drilling fluid is abrasive, so a part-open gate would cut the disc and seat. A top sight indicator shows the position. See the [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Top-entry mud valve or mud gate valve for a standpipe manifold?",
+          "a": "A top-entry mud valve is serviced from the top without removing the body from the manifold, while a standard mud gate valve is rated 7,500 psi for the rig mud system. See the [Mud Gate Valve, 4-1/16″, 7,500 psi](/p/mud-gate-valve-4-1-16-inch-7500-psi)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the top-entry API 6A mud valve be supplied from Dubai with test records?",
+          "a": "For the top-entry API 6A mud valve: built to order and supplied from Dubai with API 6A documentation and the test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the top-entry API 6A mud valve in Dubai?",
+          "a": "Yes. We keep the top-entry API 6A mud valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-gate-valve-fail-close-4-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr2-ee-0-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in 5,000 psi hydraulic fail-close gate valve used for?",
+          "a": "A 4-1/16 in 5,000 psi hydraulic fail-close gate valve (5K, sour service) is a hydraulically actuated gate valve that closes by spring when hydraulic pressure is lost, used as a tree wing or master valve. Large-bore for high-rate production."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 4-1/16 in 5,000 psi valve use?",
+          "a": "The hydraulic fail-close gate valve inlet is a 4-1/16 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this hydraulic fail-close gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4-1/16 in 5,000 psi hydraulic fail-close gate valve have?",
+          "a": "On the 4-1/16 in 5,000 psi hydraulic fail-close gate valve (sour service) the inlet is 4-1/16 in API 6A 5M Flanged (RTJ) and the outlet is 4-1/16 in API 6A 5M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 5,000 psi hydraulic fail-close gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 4-1/16 in at 5,000 psi (sour service); the [3-1/16 in 15,000 psi hydraulic fail-close gate valve](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4-1/16 in 5,000 psi hydraulic fail-close gate valve, and how is it tested?",
+          "a": "The 4-1/16 in 5,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 4-1/16 in 5,000 psi hydraulic fail-close gate valve made from?",
+          "a": "The 4-1/16 in 5,000 psi hydraulic fail-close gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-0.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 5,000 psi hydraulic fail-close gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 4-1/16 in 5,000 psi hydraulic fail-close gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-0.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4-1/16 in 5,000 psi hydraulic fail-close gate valve bolt to?",
+          "a": "It bolts to 4-1/16 in API 6A 5M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 4-1/16 in 5,000 psi hydraulic fail-close gate valve operated and maintained?",
+          "a": "On the 4-1/16 in 5,000 psi hydraulic fail-close gate valve, it is opened with control-line hydraulic pressure and closes when that pressure is lost. Check the actuator and the control line during routine tree inspection, and stroke-test it on schedule."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4-1/16 in 5,000 psi hydraulic fail-close gate valve compare with a manual gate valve?",
+          "a": "The 4-1/16 in 5,000 psi hydraulic fail-close valve is actuated and closes automatically on loss of control pressure, while a manual gate valve is operated by handwheel and stays where it is left. See the [Manual Gate Valve, 3-1/16 in, 15,000 psi](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 4-1/16 in 5,000 psi hydraulic fail-close gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries hydraulic fail-close gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Hydraulic Gate Valve, Fail Close, 4-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR2, EE-0.5 from Indus Hydraulics?",
+          "a": "The Hydraulic Gate Valve, Fail Close, 4-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR2, EE-0.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-4-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr1-ee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in 5,000 psi manual gate valve used for?",
+          "a": "A 4-1/16 in 5,000 psi manual gate valve (5K, sour service) is a handwheel-operated, full-port gate valve for isolation on trees and manifolds. Large-bore for high-rate production manifolds."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 4-1/16 in 5,000 psi valve use?",
+          "a": "The manual gate valve inlet is a 4-1/16 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4-1/16 in 5,000 psi manual gate valve have?",
+          "a": "On the 4-1/16 in 5,000 psi manual gate valve (sour service) the inlet is 4-1/16 in API 6A 5M Flanged (RTJ) and the outlet is 4-1/16 in API 6A 5M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 5,000 psi manual gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 4-1/16 in at 5,000 psi (sour service); the [3-1/16 in 15,000 psi manual gate valve](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 4-1/16 in 5,000 psi manual gate valve, and how is it tested?",
+          "a": "The 4-1/16 in 5,000 psi manual gate valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 4-1/16 in 5,000 psi manual gate valve made from?",
+          "a": "The 4-1/16 in 5,000 psi manual gate valve has a Forged AISI 4130 body; the trim is 410SS gate + 410SS seats with Stellite 6 hardfacing and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 5,000 psi manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 4-1/16 in 5,000 psi manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4-1/16 in 5,000 psi manual gate valve bolt to?",
+          "a": "It bolts to 4-1/16 in API 6A 5M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 4-1/16 in 5,000 psi manual gate valve operated and maintained?",
+          "a": "On the 4-1/16 in 5,000 psi manual gate valve, it is turned by handwheel and the rising-stem indicator confirms the position. Grease the bonnet and stem per the maker routine, and fully open or close the valve rather than leaving a gate part-open."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4-1/16 in 5,000 psi manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 4-1/16 in 5,000 psi manual gate valve is operated by handwheel and holds its position, while a hydraulic fail-close gate valve is actuated and closes on loss of control pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 4-1/16 in 5,000 psi manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Manual Gate Valve, 4-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR1, EE in stock in Dubai?",
+          "a": "Yes. We keep the Manual Gate Valve, 4-1/16 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR1, EE in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-fls-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-3-pr2f-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in 5,000 psi FLS manual gate valve used for?",
+          "a": "A 3-1/8 in 5,000 psi FLS manual gate valve (5K, sour service) is a manual gate valve with an FLS (fail-last-stable) actuator option for retrofit conversion. Fire-rated mid-pressure wing valve."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/8 in 5,000 psi valve use?",
+          "a": "The FLS manual gate valve inlet is a 3-1/8 in API 6A 5M Flanged (RTJ), an API 6A flange with ring-type joint, so on this FLS manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/8 in 5,000 psi FLS manual gate valve have?",
+          "a": "On the 3-1/8 in 5,000 psi FLS manual gate valve (sour service) the inlet is 3-1/8 in API 6A 5M Flanged (RTJ) and the outlet is 3-1/8 in API 6A 5M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/8 in 5,000 psi FLS manual gate valve or the 1-13/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/8 in at 5,000 psi (sour service); the [1-13/16 in 15,000 psi FLS manual gate valve](/p/manual-gate-valve-fls-1-13-16-in-15m-flanged-15-000-psi-api-6a-psl-3g-pr2-ee-1-5) is rated 15,000 psi with 1-13/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/8 in 5,000 psi FLS manual gate valve, and how is it tested?",
+          "a": "The 3-1/8 in 5,000 psi FLS manual gate valve with its Forged AISI 4130 body is rated 5,000 psi working pressure (5K class). Test pressures follow the manufacturer's procedure and are proof tests, never working pressures; ask for the test record with the order. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/8 in 5,000 psi FLS manual gate valve made from?",
+          "a": "The 3-1/8 in 5,000 psi FLS manual gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + FFKM primary seals (high-temp). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/8 in 5,000 psi FLS manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/8 in 5,000 psi FLS manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/8 in 5,000 psi FLS manual gate valve bolt to?",
+          "a": "It bolts to 3-1/8 in API 6A 5M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/8 in 5,000 psi FLS manual gate valve operated and maintained?",
+          "a": "On the 3-1/8 in 5,000 psi FLS manual gate valve, it is handwheel-operated and the rising-stem indicator confirms position; an FLS actuator can be retrofitted. Keep the valve fully open or fully closed in service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/8 in 5,000 psi FLS manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 3-1/8 in 5,000 psi FLS manual gate valve is handwheel-operated with an FLS actuator retrofit option, while a hydraulic fail-close valve closes on loss of pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/8 in 5,000 psi FLS manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives Canada as the country of origin of this Stream-Flo Industries FLS manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Manual Gate Valve, FLS, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR2F, EE-1.5 in stock in Dubai?",
+          "a": "Yes. We keep the Manual Gate Valve, FLS, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 3 PR2F, EE-1.5 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-2-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in 10,000 psi manual gate valve used for?",
+          "a": "A 2-1/16 in 10,000 psi manual gate valve (10K, sour service) is a handwheel-operated, full-port gate valve for isolation on trees and manifolds. Compact wing valve for high-pressure trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 2-1/16 in 10,000 psi valve use?",
+          "a": "The manual gate valve inlet is a 2-1/16 in API 6A 10M Flanged (RTJ), an API 6A flange with ring-type joint, so on this manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 10,000 psi manual gate valve have?",
+          "a": "On the 2-1/16 in 10,000 psi manual gate valve (sour service) the inlet is 2-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 2-1/16 in API 6A 10M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 10,000 psi manual gate valve or the 3-1/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 2-1/16 in at 10,000 psi (sour service); the [3-1/16 in 15,000 psi manual gate valve](/p/manual-gate-valve-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5) is rated 15,000 psi with 3-1/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 2-1/16 in 10,000 psi manual gate valve, and how is it tested?",
+          "a": "The 2-1/16 in 10,000 psi manual gate valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 2-1/16 in 10,000 psi manual gate valve made from?",
+          "a": "The 2-1/16 in 10,000 psi manual gate valve has a Forged AISI 4130 body; the trim is 410SS gate + 410SS seats with Stellite 6 hardfacing and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 10,000 psi manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 2-1/16 in 10,000 psi manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 2-1/16 in 10,000 psi manual gate valve bolt to?",
+          "a": "It bolts to 2-1/16 in API 6A 10M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 2-1/16 in 10,000 psi manual gate valve operated and maintained?",
+          "a": "On the 2-1/16 in 10,000 psi manual gate valve, it is turned by handwheel and the rising-stem indicator confirms the position. Grease the bonnet and stem per the maker routine, and fully open or close the valve rather than leaving a gate part-open."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 2-1/16 in 10,000 psi manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 2-1/16 in 10,000 psi manual gate valve is operated by handwheel and holds its position, while a hydraulic fail-close gate valve is actuated and closes on loss of control pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 2-1/16 in 10,000 psi manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Manual Gate Valve, 2-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE in stock in Dubai?",
+          "a": "Yes. We keep the Manual Gate Valve, 2-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10,000 psi manual gate valve used for?",
+          "a": "A 3-1/16 in 10,000 psi manual gate valve (10K, sour service) is a handwheel-operated, full-port gate valve for isolation on trees and manifolds. Master / wing valve for production trees."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 10,000 psi valve use?",
+          "a": "The manual gate valve inlet is a 3-1/16 in API 6A 10M Flanged (RTJ), an API 6A flange with ring-type joint, so on this manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10,000 psi manual gate valve have?",
+          "a": "On the 3-1/16 in 10,000 psi manual gate valve (sour service) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 10M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 10,000 psi manual gate valve or the 2-1/16 in 5,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 10,000 psi (sour service); the [2-1/16 in 5,000 psi manual gate valve](/p/manual-gate-valve-2-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr1-ee) is rated 5,000 psi with 2-1/16 in API 6A 5M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10,000 psi manual gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 10,000 psi manual gate valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 10,000 psi manual gate valve made from?",
+          "a": "The 3-1/16 in 10,000 psi manual gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + HNBR primary seals. Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 10,000 psi manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 10,000 psi manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10,000 psi manual gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 10M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 10,000 psi manual gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 10,000 psi manual gate valve, it is turned by handwheel and the rising-stem indicator confirms the position. Grease the bonnet and stem per the maker routine, and fully open or close the valve rather than leaving a gate part-open."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10,000 psi manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 3-1/16 in 10,000 psi manual gate valve is operated by handwheel and holds its position, while a hydraulic fail-close gate valve is actuated and closes on loss of control pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 10,000 psi manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Manual Gate Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE-1.5 in stock in Dubai?",
+          "a": "Yes. We keep the Manual Gate Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE-1.5 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "manual-gate-valve-fls-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr2f-ee-1-5",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in 10,000 psi FLS manual gate valve used for?",
+          "a": "A 3-1/16 in 10,000 psi FLS manual gate valve (10K, sour service) is a manual gate valve with an FLS (fail-last-stable) actuator option for retrofit conversion. Fire-rated wing valve."
+        },
+        {
+          "slot": "B",
+          "q": "What flange and ring joint does the 3-1/16 in 10,000 psi valve use?",
+          "a": "The FLS manual gate valve inlet is a 3-1/16 in API 6A 10M Flanged (RTJ), an API 6A flange with ring-type joint, so on this FLS manual gate valve it takes a matching ring gasket and studs. Use a new ring each time the joint is made up and confirm the groove type with the mating flange."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 3-1/16 in 10,000 psi FLS manual gate valve have?",
+          "a": "On the 3-1/16 in 10,000 psi FLS manual gate valve (sour service) the inlet is 3-1/16 in API 6A 10M Flanged (RTJ) and the outlet is 3-1/16 in API 6A 10M Flanged (RTJ). It bolts to API 6A flanged tree, manifold or flowline equipment of the same size and pressure."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 10,000 psi FLS manual gate valve or the 1-13/16 in 15,000 psi version?",
+          "a": "Choose by line size, pressure and service. This listing is 3-1/16 in at 10,000 psi (sour service); the [1-13/16 in 15,000 psi FLS manual gate valve](/p/manual-gate-valve-fls-1-13-16-in-15m-flanged-15-000-psi-api-6a-psl-3g-pr2-ee-1-5) is rated 15,000 psi with 1-13/16 in API 6A 15M Flanged (RTJ) on the inlet. Match pressure class and end connection of the mating iron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 3-1/16 in 10,000 psi FLS manual gate valve, and how is it tested?",
+          "a": "The 3-1/16 in 10,000 psi FLS manual gate valve with its Forged AISI 4130 body is rated 10,000 psi working pressure (10K class). The listing states shell testing at 1.5 times working pressure; the shell test is a proof test and never a working pressure. Match every component in the line to this rating."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the 3-1/16 in 10,000 psi FLS manual gate valve made from?",
+          "a": "The 3-1/16 in 10,000 psi FLS manual gate valve has a Forged AISI 4130 body; the trim is F6NM gate + Inconel 625 overlay seats and the seals are PEEK back-up + FFKM primary seals (high-temp). Body, trim and seals are listed to NACE MR0175 / ISO 15156 with material class EE-1.5. The gate and seats are the sealing parts."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 10,000 psi FLS manual gate valve suitable for sour (H2S) service, and which standard does it meet?",
+          "a": "Yes. The 3-1/16 in 10,000 psi FLS manual gate valve with its Forged AISI 4130 body is listed to NACE MR0175 / ISO 15156 with material class EE-1.5, and to API 6A. It is supplied to API 6A by API-licensed manufacturers, with the API certificate and monogram documentation issued with the order. Send the H2S, CO2 and chloride data and we confirm the fit."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3-1/16 in 10,000 psi FLS manual gate valve bolt to?",
+          "a": "It bolts to 3-1/16 in API 6A 10M Flanged (RTJ) flanges of the same size and pressure on trees, manifolds and flowlines, using the matching ring gasket and studs. Browse the [gate valves shelf](/c/oilfield-gate-valves) for other pressure classes."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 3-1/16 in 10,000 psi FLS manual gate valve operated and maintained?",
+          "a": "On the 3-1/16 in 10,000 psi FLS manual gate valve, it is handwheel-operated and the rising-stem indicator confirms position; an FLS actuator can be retrofitted. Keep the valve fully open or fully closed in service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 3-1/16 in 10,000 psi FLS manual gate valve compare with a hydraulic fail-close gate valve?",
+          "a": "The 3-1/16 in 10,000 psi FLS manual gate valve is handwheel-operated with an FLS actuator retrofit option, while a hydraulic fail-close valve closes on loss of pressure. See the [Hydraulic Gate Valve, 3-1/16 in, 15,000 psi](/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3-1/16 in 10,000 psi FLS manual gate valve made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin of this Worldwide Oilfield Machine FLS manual gate valve. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Manual Gate Valve, FLS, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR2F, EE-1.5 from Indus Hydraulics?",
+          "a": "The Manual Gate Valve, FLS, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR2F, EE-1.5 is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 56 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

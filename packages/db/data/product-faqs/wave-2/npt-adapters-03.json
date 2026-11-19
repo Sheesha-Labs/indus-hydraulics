@@ -1,0 +1,1059 @@
+{
+  "family": "npt-adapters-03",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "A JIC 37° flare end (SAE J514, ISO 8434-2) seals metal-to-metal on a 74° included cone and is not interchangeable with a 45° SAE flare.",
+      "source": "SAE J514; ISO 8434-2"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aeroquip-2087-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2087 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2087 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 12 part numbers covering 1/8\" to 1 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (female) on every port in the Aeroquip 2087 Series Elbow Adapters?",
+          "a": "Quote 2087-16-16S for 1\" NPTF (female) on every port, 2087-12-12S for 3/4\" NPTF (female) on every port and 2087-20-20S for 1 1/4\" NPTF (female) on every port. The Aeroquip 2087 Series Elbow Adapters list 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2087 Series Elbow Adapters are available?",
+          "a": "The Aeroquip 2087 Series Elbow Adapters come in 12 part numbers covering 1/8\" to 1 1/2\". Examples from the table: 2087-8-8S (1/2\" NPTF (female) on every port), 2087-6-4S (3/8\" NPTF (female) × 1/4\" NPTF (female)) and 2087-24-24S (1 1/2\" NPTF (female) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2087 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2087 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2087-4-4S (1/4\" NPTF (female) on every port) and 2087-8-6S (1/2\" NPTF (female) × 3/8\" NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2087 Series Elbow Adapters?",
+          "a": "The maker states 1,500 to 5,000 psi (103 to 345 bar), by size for the Aeroquip 2087 Series Elbow Adapters. For example 2087-2-2S is listed at 345 bar and 2087-24-24S at 103 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2087 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2087 Series Elbow Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2087 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2087 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2087 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2087 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2087 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2087 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2087 Series Elbow Adapters differ from the Aeroquip 2047 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2087 Series Elbow Adapters is 2087 and the [Aeroquip 2047 Series Elbow Adapters](/p/aeroquip-2047-series-elbow-adapters) is 2047, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2087 Series Elbow Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2087 Series Elbow Adapters as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2087 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip 2087 Series Elbow Adapters are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2088-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2088 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2088 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 6 part numbers covering 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (male) × 1\" NPTF (female) in the Aeroquip 2088 Series Elbow Adapters?",
+          "a": "Quote 2088-16-16S for 1\" NPTF (male) × 1\" NPTF (female), 2088-2-2S for 1/8\" NPTF (male) × 1/8\" NPTF (female) and 2088-6-6S for 3/8\" NPTF (male) × 3/8\" NPTF (female). The Aeroquip 2088 Series Elbow Adapters list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 2088 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2088 Series Elbow Adapters come in 6 part numbers covering 1/8\" to 1\". Examples from the table: 2088-8-8S (1/2\" NPTF (male) × 1/2\" NPTF (female)), 2088-4-4S (1/4\" NPTF (male) × 1/4\" NPTF (female)) and 2088-12-12S (3/4\" NPTF (male) × 3/4\" NPTF (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2088 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2088 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2088-8-8S (1/2\" NPTF (male) × 1/2\" NPTF (female)) and 2088-12-12S (3/4\" NPTF (male) × 3/4\" NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2088 Series Elbow Adapters?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Aeroquip 2088 Series Elbow Adapters. For example 2088-4-4S is listed at 345 bar and 2088-16-16S at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2088 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2088 Series Elbow Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2088 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2088 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2088 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2088 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2088 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2088 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2088 Series Elbow Adapters differ from the Aeroquip 2085 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2088 Series Elbow Adapters is 2088 and the [Aeroquip 2085 Series Elbow Adapters](/p/aeroquip-2085-series-elbow-adapters) is 2085, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2088 Series Elbow Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2088 Series Elbow Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2088 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip 2088 Series Elbow Adapters are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2089-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2089 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2089 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 13 part numbers covering 1/8\" to 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (male) × 1\" NPTF (female) in the Aeroquip 2089 Series Elbow Adapters?",
+          "a": "Quote 2089-16-16S for 1\" NPTF (male) × 1\" NPTF (female), 2089-2-2S for 1/8\" NPTF (male) × 1/8\" NPTF (female) and 2089-20-20S for 1 1/4\" NPTF (male) × 1 1/4\" NPTF (female). The Aeroquip 2089 Series Elbow Adapters list 13 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 2089 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2089 Series Elbow Adapters come in 13 part numbers covering 1/8\" to 1 1/4\". Examples from the table: 2089-8-8S (1/2\" NPTF (male) × 1/2\" NPTF (female)), 2089-2-4S (1/8\" NPTF (male) × 1/4\" NPTF (female)) and 2089-8-6S (1/2\" NPTF (male) × 3/8\" NPTF (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2089 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2089 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2089-4-4S (1/4\" NPTF (male) × 1/4\" NPTF (female)) and 2089-6-6S (3/8\" NPTF (male) × 3/8\" NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2089 Series Elbow Adapters?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Aeroquip 2089 Series Elbow Adapters. For example 2089-2-4S is listed at 345 bar and 2089-20-20S at 138 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2089 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2089 Series Elbow Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2089 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2089 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2089 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2089 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2089 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2089 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2089 Series Elbow Adapters differ from the Aeroquip 2039 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2089 Series Elbow Adapters is 2089 and the [Aeroquip 2039 Series Elbow Adapters](/p/aeroquip-2039-series-elbow-adapters) is 2039, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2089 Series Elbow Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2089 Series Elbow Adapters as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2089 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 2089 Series Elbow Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2090-series-tee-y-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2090 Series Tee/Y Adapters used for?",
+          "a": "The Aeroquip 2090 Series Tee/Y Adapters are adapters from Eaton Aeroquip that split or combine a line through three ports. The maker lists them for Other- Grease, Instrumentation, And Most Hydraulic Systems. They come in 7 part numbers covering 1/8\" to 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" NPTF (female) on every port in the Aeroquip 2090 Series Tee/Y Adapters?",
+          "a": "Quote 2090-4-4S for 1/4\" NPTF (female) on every port, 2090-12-12S for 3/4\" NPTF (female) on every port and 2090-2-2S for 1/8\" NPTF (female) on every port. The Aeroquip 2090 Series Tee/Y Adapters list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2090 Series Tee/Y Adapters are available?",
+          "a": "The Aeroquip 2090 Series Tee/Y Adapters come in 7 part numbers covering 1/8\" to 1 1/4\". Examples from the table: 2090-6-6S (3/8\" NPTF (female) on every port), 2090-8-8S (1/2\" NPTF (female) on every port) and 2090-20-20S (1 1/4\" NPTF (female) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2090 Series Tee/Y Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2090 Series Tee/Y Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: 2090-6-6S (3/8\" NPTF (female) on every port) and 2090-20-20S (1 1/4\" NPTF (female) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2090 Series Tee/Y Adapters?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar), by size for the Aeroquip 2090 Series Tee/Y Adapters. For example 2090-2-2S is listed at 345 bar and 2090-20-20S at 138 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2090 Series Tee/Y Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2090 Series Tee/Y Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2090 Series Tee/Y Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2090 Series Tee/Y Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2090 Series Tee/Y Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2090 Series Tee/Y Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2090 Series Tee/Y Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2090 Series Tee/Y Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2090 Series Tee/Y Adapters differ from the Aeroquip 2030 Series Tee/Y Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2090 Series Tee/Y Adapters is 2090 and the [Aeroquip 2030 Series Tee/Y Adapters](/p/aeroquip-2030-series-tee-y-adapters) is 2030, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2090 Series Tee/Y Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2090 Series Tee/Y Adapters as made in United States. The HS code on the listing is 7307995045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2090 Series Tee/Y Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 2090 Series Tee/Y Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2091-series-tee-y-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2091 Series Tee/Y Adapters used for?",
+          "a": "The Aeroquip 2091 Series Tee/Y Adapters are adapters from Eaton Aeroquip that split or combine a line through three ports. The maker lists them for Other- Grease, Instrumentation, And Most Hydraulic Systems. They come in 6 part numbers covering 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (female) on every port in the Aeroquip 2091 Series Tee/Y Adapters?",
+          "a": "Quote 2091-16-16S for 1\" NPTF (female) on every port, 2091-2-2S for 1/8\" NPTF (female) on every port and 2091-6-6S for 3/8\" NPTF (female) on every port. The Aeroquip 2091 Series Tee/Y Adapters list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2091 Series Tee/Y Adapters are available?",
+          "a": "The Aeroquip 2091 Series Tee/Y Adapters come in 6 part numbers covering 1/8\" to 1\". Examples from the table: 2091-8-8S (1/2\" NPTF (female) on every port), 2091-4-4S (1/4\" NPTF (female) on every port) and 2091-12-12S (3/4\" NPTF (female) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2091 Series Tee/Y Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2091 Series Tee/Y Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: 2091-8-8S (1/2\" NPTF (female) on every port) and 2091-12-12S (3/4\" NPTF (female) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2091 Series Tee/Y Adapters?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Aeroquip 2091 Series Tee/Y Adapters. For example 2091-2-2S is listed at 345 bar and 2091-16-16S at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2091 Series Tee/Y Adapters made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 2091 Series Tee/Y Adapters are made from carbon steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2091 Series Tee/Y Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2091 Series Tee/Y Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2091 Series Tee/Y Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2091 Series Tee/Y Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female; NPT ends take NPT ports (60° taper), not BSPT. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2091 Series Tee/Y Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2091 Series Tee/Y Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2091 Series Tee/Y Adapters differ from the Aeroquip 2090 Series Tee/Y Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2091 Series Tee/Y Adapters is 2091 and the [Aeroquip 2090 Series Tee/Y Adapters](/p/aeroquip-2090-series-tee-y-adapters) is 2090, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2091 Series Tee/Y Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2091 Series Tee/Y Adapters as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2091 Series Tee/Y Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip 2091 Series Tee/Y Adapters are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2092-series-tee-y-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2092 Series Tee/Y Adapters used for?",
+          "a": "The Aeroquip 2092 Series Tee/Y Adapters are adapters from Eaton Aeroquip that split or combine a line through three ports. The maker lists them for Other- Grease, Instrumentation, And Most Hydraulic Systems. They come in 6 part numbers covering 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (male) × 1/2\" NPTF (female) in the Aeroquip 2092 Series Tee/Y Adapters?",
+          "a": "Quote 2092-8-8S for 1/2\" NPTF (male) × 1/2\" NPTF (female), 2092-2-2S for 1/8\" on every port and 2092-6-6S for 3/8\" on every port. The Aeroquip 2092 Series Tee/Y Adapters list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2092 Series Tee/Y Adapters are available?",
+          "a": "The Aeroquip 2092 Series Tee/Y Adapters come in 6 part numbers covering 1/8\" to 1\". Examples from the table: 2092-16-16S (1\" on every port), 2092-4-4S (1/4\" on every port) and 2092-12-12S (3/4\" on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2092 Series Tee/Y Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2092 Series Tee/Y Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. For this tee also say which port is the run and which is the branch. Then pick the row: 2092-16-16S (1\" on every port) and 2092-12-12S (3/4\" on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2092 Series Tee/Y Adapters?",
+          "a": "No working pressure is published for the Aeroquip 2092 Series Tee/Y Adapters, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2092 Series Tee/Y Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2092 Series Tee/Y Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2092 Series Tee/Y Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2092 Series Tee/Y Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2092 Series Tee/Y Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2092 Series Tee/Y Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2092 Series Tee/Y Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2092 Series Tee/Y Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2092 Series Tee/Y Adapters differ from the Aeroquip 2090 Series Tee/Y Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2092 Series Tee/Y Adapters is 2092 and the [Aeroquip 2090 Series Tee/Y Adapters](/p/aeroquip-2090-series-tee-y-adapters) is 2090, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2092 Series Tee/Y Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2092 Series Tee/Y Adapters as made in United States. The HS code on the listing is 7307995045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2092 Series Tee/Y Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 2092 Series Tee/Y Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2096-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2096 Series Straight Adapters used for?",
+          "a": "The Aeroquip 2096 Series Straight Adapters are adapters from Eaton Aeroquip that connect the two end types named in its title and size table. The maker lists them for Other- Grease, Instrumentation, And Most Hydraulic Systems. They come in 11 part numbers covering 1/8\" to 1 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (female) on every port in the Aeroquip 2096 Series Straight Adapters?",
+          "a": "Quote 2096-16S for 1\" NPTF (female) on every port, 2096-2S for 1/8\" NPTF (female) on every port and 2096-20S for 1 1/4\" NPTF (female) on every port. The Aeroquip 2096 Series Straight Adapters list 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 2096 Series Straight Adapters come in?",
+          "a": "The Aeroquip 2096 Series Straight Adapters come in 11 part numbers covering 1/8\" to 1 1/2\". Examples from the table: 2096-8S (1/2\" NPTF (female) on every port), 2096-4S (1/4\" NPTF (female) on every port) and 2096-24S (1 1/2\" NPTF (female) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2096 Series Straight Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2096 Series Straight Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2096-12-8S (3/4\" NPTF (female) × 1/2\" NPTF (female)) and 2096-8-6S (1/2\" NPTF (female) × 3/8\" NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2096 Series Straight Adapters?",
+          "a": "The maker states 1,000 to 5,000 psi (69 to 345 bar), by size for the Aeroquip 2096 Series Straight Adapters. For example 2096-12-8S is listed at 345 bar and 2096-24S at 69 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2096 Series Straight Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2096 Series Straight Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2096 Series Straight Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2096 Series Straight Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2096 Series Straight Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2096 Series Straight Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2096 Series Straight Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2096 Series Straight Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2096 Series Straight Adapters differ from the Aeroquip 2046 Series Straight Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2096 Series Straight Adapters is 2096 and the [Aeroquip 2046 Series Straight Adapters](/p/aeroquip-2046-series-straight-adapters) is 2046, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2096 Series Straight Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2096 Series Straight Adapters as made in United States. The HS code on the listing is 7307995045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2096 Series Straight Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 2096 Series Straight Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-221501-series-reducer-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 221501 Series Reducer Adapters used for?",
+          "a": "The Aeroquip 221501 Series Reducer Adapters are adapters from Eaton Aeroquip that step a line between two different sizes. The maker lists them for Other. They come in 3 part numbers covering 3/4\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" SAE 37 (female) × 1/2\" SAE 37 (male) in the Aeroquip 221501 Series Reducer Adapters?",
+          "a": "Quote 221501-16-8S for 1\" SAE 37 (female) × 1/2\" SAE 37 (male), 221501-16-6S for 1\" × 1 5/16\" SAE 37 (female) and 221501-12-6S for 3/4\" × 3/4\" SAE 37 (female). The Aeroquip 221501 Series Reducer Adapters list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 221501 Series Reducer Adapters come in?",
+          "a": "The Aeroquip 221501 Series Reducer Adapters come in 3 part numbers covering 3/4\" to 1\". Examples from the table: 221501-16-8S (1\" SAE 37 (female) × 1/2\" SAE 37 (male)), 221501-16-6S (1\" × 1 5/16\" SAE 37 (female)) and 221501-12-6S (3/4\" × 3/4\" SAE 37 (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 221501 Series Reducer Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 221501 Series Reducer Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 221501-16-8S (1\" SAE 37 (female) × 1/2\" SAE 37 (male)) and 221501-12-6S (3/4\" × 3/4\" SAE 37 (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 221501 Series Reducer Adapters?",
+          "a": "The maker states 3,300 to 5,000 psi (228 to 345 bar), by size for the Aeroquip 221501 Series Reducer Adapters. For example 221501-16-6S is listed at 345 bar and 221501-12-6S at 228 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 221501 Series Reducer Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 221501 Series Reducer Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 221501 Series Reducer Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 221501 Series Reducer Adapters names no product standard beyond the thread type. JIC 37° flares follow SAE J514. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 221501 Series Reducer Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 221501 Series Reducer Adapters: JIC 37° ends take a JIC 37° flare nut or port, not a 45° SAE flare. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 221501 Series Reducer Adapters seal, and what should I check when fitting them?",
+          "a": "The JIC 37° end of the Aeroquip 221501 Series Reducer Adapters seals metal-to-metal on the flare, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 221501 Series Reducer Adapters differ from the Aeroquip 2081 Series Reducer Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 221501 Series Reducer Adapters is 221501 and the [Aeroquip 2081 Series Reducer Adapters](/p/aeroquip-2081-series-reducer-adapters) is 2081, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 221501 Series Reducer Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 221501 Series Reducer Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 221501 Series Reducer Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 221501 Series Reducer Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2246-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2246 Series Straight Adapters used for?",
+          "a": "The Aeroquip 2246 Series Straight Adapters are adapters from Eaton Aeroquip that connect the two end types named in its title and size table. They come in 7 part numbers covering 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Elbow, 90 Deg., 3/4 Inch x 3/4 Inch Size, Male x Male in the Aeroquip 2246 Series Straight Adapters?",
+          "a": "Quote 2244-12-12S for Elbow, 90 Deg., 3/4 Inch x 3/4 Inch Size, Male x Male, 2246-6-8S for 3/8\" × 3/4\" and 2246-8-10S for 1/2\" × 5/8\". The Aeroquip 2246 Series Straight Adapters list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 2246 Series Straight Adapters come in?",
+          "a": "The Aeroquip 2246 Series Straight Adapters come in 7 part numbers covering 1/8\" to 1\". Examples from the table: 2246-16-16S (1\" on every port), 2246-2-4S (1/8\" × 1/4\") and 2246-4-6S (1/4\" × 3/8\"). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2246 Series Straight Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2246 Series Straight Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2246-16-16S (1\" on every port) and 2246-4-6S (1/4\" × 3/8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2246 Series Straight Adapters?",
+          "a": "The maker states 2,500 to 5,000 psi (172 to 345 bar), by size for the Aeroquip 2246 Series Straight Adapters. For example 2246-2-4S is listed at 345 bar and 2246-16-16S at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2246 Series Straight Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2246 Series Straight Adapters in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2246 Series Straight Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2246 Series Straight Adapters names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2246 Series Straight Adapters, and which fittings do I pair them with?",
+          "a": "Each end of the Aeroquip 2246 Series Straight Adapters must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [DIN 2353 Bite Type Adapters](/c/din-2353-bite-type-adapters-uae) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2246 Series Straight Adapters seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip 2246 Series Straight Adapters, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2246 Series Straight Adapters differ from the Aeroquip 2046 Series Straight Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2246 Series Straight Adapters is 2246 and the [Aeroquip 2046 Series Straight Adapters](/p/aeroquip-2046-series-straight-adapters) is 2046, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2246 Series Straight Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2246 Series Straight Adapters as made in Taiwan. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2246 Series Straight Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 2246 Series Straight Adapters sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2250-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2250 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2250 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 8 part numbers covering 1/8\" to 1 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" (male) in the Aeroquip 2250 Series Elbow Adapters?",
+          "a": "Quote 2250-8-8S for 1/2\" (male), 2250-2-4S for 1/8\" × 1/4\" and 2250-20-20S for 1 1/4\" on every port. The Aeroquip 2250 Series Elbow Adapters list 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 2250 Series Elbow Adapters come in?",
+          "a": "The Aeroquip 2250 Series Elbow Adapters come in 8 part numbers covering 1/8\" to 1 1/4\". Examples from the table: 2250-12-12S (3/4\" (male)), 2250-16-16S (1\" (male)) and 2250-8-10S (1/2\" × 5/8\"). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2250 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2250 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2250-16-16S (1\" (male)) and 2250-8-10S (1/2\" × 5/8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2250 Series Elbow Adapters?",
+          "a": "The maker states 1,150 to 5,000 psi (79 to 345 bar), by size for the Aeroquip 2250 Series Elbow Adapters. For example 2250-2-4S is listed at 345 bar and 2250-20-20S at 79 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2250 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2250 Series Elbow Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2250 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2250 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and JIC 37° flares follow SAE J514. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2250 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2250 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female; JIC 37° ends take a JIC 37° flare nut or port, not a 45° SAE flare. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2250 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2250 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2250 Series Elbow Adapters differ from the Aeroquip 2251 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2250 Series Elbow Adapters is 2250 and the [Aeroquip 2251 Series Elbow Adapters](/p/aeroquip-2251-series-elbow-adapters) is 2251, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2250 Series Elbow Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2250 Series Elbow Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2250 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 2250 Series Elbow Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2251-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2251 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2251 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 4 part numbers covering 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (male) on every port in the Aeroquip 2251 Series Elbow Adapters?",
+          "a": "Quote 2251-8-8S for 1/2\" NPTF (male) on every port, 2251-12-12S for 3/4\" NPTF (male) on every port and 2251-6-6S for 3/8\" NPTF (male) on every port. The Aeroquip 2251 Series Elbow Adapters list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2251 Series Elbow Adapters are available?",
+          "a": "The Aeroquip 2251 Series Elbow Adapters come in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: 2251-4-4S (1/4\" NPTF (male) on every port) and 2251-12-12S (3/4\" NPTF (male) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2251 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2251 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2251-4-4S (1/4\" NPTF (male) on every port) and 2251-6-6S (3/8\" NPTF (male) on every port)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2251 Series Elbow Adapters?",
+          "a": "The maker states 3,000 to 5,000 psi (207 to 345 bar), by size for the Aeroquip 2251 Series Elbow Adapters. For example 2251-4-4S is listed at 345 bar and 2251-12-12S at 207 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2251 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 2251 Series Elbow Adapters are made from carbon steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2251 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2251 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2251 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2251 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2251 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2251 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2251 Series Elbow Adapters differ from the Aeroquip 2250 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2251 Series Elbow Adapters is 2251 and the [Aeroquip 2250 Series Elbow Adapters](/p/aeroquip-2250-series-elbow-adapters) is 2250, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2251 Series Elbow Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2251 Series Elbow Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2251 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 2251 Series Elbow Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-2252-series-elbow-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 2252 Series Elbow Adapters used for?",
+          "a": "The Aeroquip 2252 Series Elbow Adapters are adapters from Eaton Aeroquip that turn the line through an angle. The maker lists them for Marine/Military, Chemical Processing, Pulp And Paper Industries, Food And Beverage Processing, Off-Shore Drilling. They come in 4 part numbers covering 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (male) × 1/2\" NPTF (female) in the Aeroquip 2252 Series Elbow Adapters?",
+          "a": "Quote 2252-8-8S for 1/2\" NPTF (male) × 1/2\" NPTF (female), 2252-12-12S for 3/4\" NPTF (male) × 3/4\" NPTF (female) and 2252-6-6S for 3/8\" NPTF (male) × 3/8\" NPTF (female). The Aeroquip 2252 Series Elbow Adapters list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 2252 Series Elbow Adapters are available?",
+          "a": "The Aeroquip 2252 Series Elbow Adapters come in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: 2252-4-4S (1/4\" NPTF (male) × 1/4\" NPTF (female)) and 2252-12-12S (3/4\" NPTF (male) × 3/4\" NPTF (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 2252 Series Elbow Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 2252 Series Elbow Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2252-4-4S (1/4\" NPTF (male) × 1/4\" NPTF (female)) and 2252-6-6S (3/8\" NPTF (male) × 3/8\" NPTF (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 2252 Series Elbow Adapters?",
+          "a": "The maker states 3,000 to 5,000 psi (207 to 345 bar), by size for the Aeroquip 2252 Series Elbow Adapters. For example 2252-4-4S is listed at 345 bar and 2252-12-12S at 207 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 400°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 2252 Series Elbow Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 2252 Series Elbow Adapters in steel. Finish: Dura Kote. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 2252 Series Elbow Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 2252 Series Elbow Adapters names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 2252 Series Elbow Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 2252 Series Elbow Adapters: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 2252 Series Elbow Adapters seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 2252 Series Elbow Adapters seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [stopping an NPT leak: tape, sealant, or neither](/blog/stopping-an-npt-thread-leak) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 2252 Series Elbow Adapters differ from the Aeroquip 2250 Series Elbow Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 2252 Series Elbow Adapters is 2252 and the [Aeroquip 2250 Series Elbow Adapters](/p/aeroquip-2250-series-elbow-adapters) is 2250, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 2252 Series Elbow Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 2252 Series Elbow Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 2252 Series Elbow Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 2252 Series Elbow Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-90-deg-elbow-hydraulic-hose-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter used for?",
+          "a": "The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter is an adapter from Eaton Aeroquip that turns the line through 90 degrees. It comes in 12 part numbers covering 1/4\" to 1 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" NPTF (male) on every port in the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter?",
+          "a": "Quote 2085-16-16s for 1\" NPTF (male) on every port, 2085-12-12s for 3/4\" NPTF (male) on every port and FF2035T2020S for 1 1/4\" Ors (male) on every port. The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter lists 12 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter come in?",
+          "a": "The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter comes in 12 part numbers covering 1/4\" to 1 1/2\". Examples from the table: 2062-4-8S (1/4\" ORB (male) × 1/2\" Jic (male)), 2085-4-4s (1/4\" NPTF (male) on every port) and 2085-20-20S (1 1/4\" NPTF (male) on every port). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2062-8-4S (1/2\" ORB (male) × 1/4\" Jic (male)) and FF2032T2424S (1 1/2\" Ors (male) × 1 1/2\" NPTF (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter?",
+          "a": "The maker states 1,000 to 9,500 psi (69 to 655 bar), by size for the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter. For example 2085-4-4s is listed at 655 bar and FF2032T2424S at 69 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter is made from carbon steel. Finish: Trivalent Chromium Zinc Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter, and which fittings do I pair it with?",
+          "a": "Each end of the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter differ from the Aeroquip Steel Hydraulic Hose Adapters?",
+          "a": "The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter has 90 Deg. Elbow where the [Aeroquip Steel Hydraulic Hose Adapters](/p/aeroquip-steel-hydraulic-hose-adapters) has Steel, and Adapter where it has Adapters. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Aeroquip 90 Deg. Elbow Hydraulic Hose Adapter is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-900599-series-straight-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 900599 Series Straight Adapters used for?",
+          "a": "The Aeroquip 900599 Series Straight Adapters are adapters from Eaton Aeroquip that connect the two end types named in its title and size table. The maker lists them for Other- Hydraulic, Instrumentation, Andchemical Processing Systems. They come in 7 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1 3/16\"-12 SAE 37 (male) in the Aeroquip 900599 Series Straight Adapters?",
+          "a": "Quote 900599-14S for 1 3/16\"-12 SAE 37 (male), 900599-10S for 7/8\"-14 SAE 37 (male) and 900599-4S for 7/16\"-20 SAE 37 (male). The Aeroquip 900599 Series Straight Adapters list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 900599 Series Straight Adapters are available?",
+          "a": "The Aeroquip 900599 Series Straight Adapters come in 7 part numbers. Examples from the table: 900599-12S (1 1/16\"-12 SAE 37 (male)), 900599-16S (1 5/16\"-12 SAE 37 (male)) and 900599-6S (9/16\"-18 SAE 37 (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 900599 Series Straight Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 900599 Series Straight Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 900599-12S (1 1/16\"-12 SAE 37 (male)) and 900599-6S (9/16\"-18 SAE 37 (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 900599 Series Straight Adapters?",
+          "a": "The maker states 2,500 to 8,500 psi (172 to 586 bar), by size for the Aeroquip 900599 Series Straight Adapters. For example 900599-4S is listed at 586 bar and 900599-14S at 172 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest. Listed temperature: 250°F."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 900599 Series Straight Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 900599 Series Straight Adapters in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 900599 Series Straight Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 900599 Series Straight Adapters names no product standard beyond the thread type. JIC 37° flares follow SAE J514. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 900599 Series Straight Adapters, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 900599 Series Straight Adapters: JIC 37° ends take a JIC 37° flare nut or port, not a 45° SAE flare. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [JIC Adapters](/c/jic-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 900599 Series Straight Adapters seal, and what should I check when fitting them?",
+          "a": "The JIC 37° end of the Aeroquip 900599 Series Straight Adapters seals metal-to-metal on the flare, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 900599 Series Straight Adapters differ from the Aeroquip 2040 Series Straight Adapters?",
+          "a": "They are different catalogue series: the Aeroquip 900599 Series Straight Adapters is 900599 and the [Aeroquip 2040 Series Straight Adapters](/p/aeroquip-2040-series-straight-adapters) is 2040, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 900599 Series Straight Adapters made, and can you export them from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 900599 Series Straight Adapters as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 900599 Series Straight Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 900599 Series Straight Adapters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hex-nipple-hydraulic-hose-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip Hex Nipple Hydraulic Hose Adapters used for?",
+          "a": "The Aeroquip Hex Nipple Hydraulic Hose Adapters are adapters from Eaton Aeroquip that join two female ports through a short threaded body. They come in 3 part numbers covering 1/2\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/4\" NPTF (male) × 1/2\" NPTF (male) in the Aeroquip Hex Nipple Hydraulic Hose Adapters?",
+          "a": "Quote 2083-12-8s for 3/4\" NPTF (male) × 1/2\" NPTF (male), 2083-12-4S for 3/4\" NPTF (male) × 1/4\" NPTF (male) and 2083-8-6s for 1/2\" NPTF (male) × 3/8\" NPTF (male). The Aeroquip Hex Nipple Hydraulic Hose Adapters list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip Hex Nipple Hydraulic Hose Adapters are available?",
+          "a": "The Aeroquip Hex Nipple Hydraulic Hose Adapters come in 3 part numbers covering 1/2\" to 3/4\". Examples from the table: 2083-12-8s (3/4\" NPTF (male) × 1/2\" NPTF (male)), 2083-12-4S (3/4\" NPTF (male) × 1/4\" NPTF (male)) and 2083-8-6s (1/2\" NPTF (male) × 3/8\" NPTF (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Hex Nipple Hydraulic Hose Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip Hex Nipple Hydraulic Hose Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 2083-12-8s (3/4\" NPTF (male) × 1/2\" NPTF (male)) and 2083-8-6s (1/2\" NPTF (male) × 3/8\" NPTF (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Hex Nipple Hydraulic Hose Adapters?",
+          "a": "The maker states 5,000 to 6,000 psi (345 to 414 bar), by size for the Aeroquip Hex Nipple Hydraulic Hose Adapters. For example 2083-8-6s is listed at 414 bar and 2083-12-8s at 345 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Hex Nipple Hydraulic Hose Adapters made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip Hex Nipple Hydraulic Hose Adapters in steel. Finish: Trivalent Chromium Zinc Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip Hex Nipple Hydraulic Hose Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Hex Nipple Hydraulic Hose Adapters names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip Hex Nipple Hydraulic Hose Adapters, and which fittings do I pair them with?",
+          "a": "Each end of the Aeroquip Hex Nipple Hydraulic Hose Adapters must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip Hex Nipple Hydraulic Hose Adapters seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Hex Nipple Hydraulic Hose Adapters, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip Hex Nipple Hydraulic Hose Adapters differ from the Aeroquip Steel Hydraulic Hose Adapters?",
+          "a": "The Aeroquip Hex Nipple Hydraulic Hose Adapters has Hex Nipple where the [Aeroquip Steel Hydraulic Hose Adapters](/p/aeroquip-steel-hydraulic-hose-adapters) has Steel. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Hex Nipple Hydraulic Hose Adapters made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Hex Nipple Hydraulic Hose Adapters as made in United States. The HS code on the listing is 7307995045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Hex Nipple Hydraulic Hose Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip Hex Nipple Hydraulic Hose Adapters are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-steel-hydraulic-hose-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip Steel Hydraulic Hose Adapters used for?",
+          "a": "The Aeroquip Steel Hydraulic Hose Adapters are adapters from Eaton Aeroquip that connect the two end types named in its title and size table. They come in 8 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for Hydraulic Fitting Bulkhead in the Aeroquip Steel Hydraulic Hose Adapters?",
+          "a": "Quote C5325X16 for Hydraulic Fitting Bulkhead, FF595-12 for Flange Mounting Kit, 3/4 Inch Nominal Flange Size, Buna-N and FF595-20 for Flange Mounting Kit, 1 1/4 Inch Nominal Flange Size, Buna-N. The Aeroquip Steel Hydraulic Hose Adapters list 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip Steel Hydraulic Hose Adapters come in?",
+          "a": "The Aeroquip Steel Hydraulic Hose Adapters come in 8 part numbers. Examples from the table: C5315X4 (Hydraulic Fitting 1/4In O-Ring Connector), FF595-16 (Flange Mounting Kit, 1 Inch Nominal Flange Size, Buna-N) and FF595-08 (Flange Mounting Kit, 1 1/4 Inch Nominal Flange Size, Buna-N). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Steel Hydraulic Hose Adapters for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip Steel Hydraulic Hose Adapters only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: FF595-16 (Flange Mounting Kit, 1 Inch Nominal Flange Size, Buna-N) and FF595-08 (Flange Mounting Kit, 1 1/4 Inch Nominal Flange Size, Buna-N)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Steel Hydraulic Hose Adapters?",
+          "a": "The maker states 6,000 psi (414 bar) for the Aeroquip Steel Hydraulic Hose Adapters. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Steel Hydraulic Hose Adapters made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Steel Hydraulic Hose Adapters are made from zinc plated steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip Steel Hydraulic Hose Adapters conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Steel Hydraulic Hose Adapters names no product standard beyond the thread type. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip Steel Hydraulic Hose Adapters, and which fittings do I pair them with?",
+          "a": "Each end of the Aeroquip Steel Hydraulic Hose Adapters must meet a port or fitting with the same thread and seat. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT Adapters](/c/npt-adapters) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip Steel Hydraulic Hose Adapters seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Steel Hydraulic Hose Adapters, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [how tight is tight: make-up torque and turns from finger tight](/blog/hydraulic-fitting-make-up-torque) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip Steel Hydraulic Hose Adapters differ from the Aeroquip Hex Nipple Hydraulic Hose Adapters?",
+          "a": "The Aeroquip Steel Hydraulic Hose Adapters has Steel where the [Aeroquip Hex Nipple Hydraulic Hose Adapters](/p/aeroquip-hex-nipple-hydraulic-hose-adapters) has Hex Nipple. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Steel Hydraulic Hose Adapters made, and can you export them from Dubai?",
+          "a": "The country of origin of the Aeroquip Steel Hydraulic Hose Adapters is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Steel Hydraulic Hose Adapters in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip Steel Hydraulic Hose Adapters are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}
