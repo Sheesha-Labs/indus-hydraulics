@@ -93,7 +93,7 @@ async function main() {
   }
   await db.$transaction(async (tx) => {
     for (const r of rowFixes)
-      await tx.productVariant.update({ where: { id: r.v.id }, data: { hoseDash: r.dash, hoseInch: INCH[r.dash!] } })
+      await tx.productVariant.update({ where: { id: r.v.id }, data: { hoseDash: r.dash!, hoseInch: INCH[r.dash!]! } })
     for (const t of textFixes.filter((x) => x.changed))
       await tx.product.update({
         where: { id: t.id },
