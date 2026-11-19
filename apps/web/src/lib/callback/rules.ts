@@ -204,11 +204,11 @@ export function looksLikeBot(userAgent: string, webdriver: boolean): boolean {
 
 // ── Countries ─────────────────────────────────────────────────────────────
 
-/** [ISO 3166-1 alpha-2, dial code], e.g. ["OM", "+968"]. */
-export type CallbackCountry = readonly [iso: string, dial: string]
+/** [ISO 3166-1 alpha-2, dial code, country name], e.g. ["OM", "+968", "Oman"]. */
+export type CallbackCountry = readonly [iso: string, dial: string, name: string]
 
 export const GCC_ORDER = ['AE', 'SA', 'OM', 'KW', 'QA', 'BH'] as const
-export const FALLBACK_COUNTRY: CallbackCountry = ['AE', '+971']
+export const FALLBACK_COUNTRY: CallbackCountry = ['AE', '+971', 'United Arab Emirates']
 
 /**
  * The dial-code select's order: the default first, then the GCC, then
@@ -230,6 +230,34 @@ export function orderCountries(countries: readonly CallbackCountry[], defaultIso
   for (const iso of GCC_ORDER) push(iso)
   for (const c of countries) push(c[0])
   return out
+}
+
+/** Path of a country's 3:2 flag under apps/web/public/flags. */
+export function flagSrc(iso: string): string {
+  return `/flags/${iso.toLowerCase()}.svg`
+}
+
+/** Lower-case, accent-free text for matching ("Côte d'Ivoire" → "cote d'ivoire"). */
+function fold(s: string): string {
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+}
+
+/**
+ * The country picker's search: by name (any word's start, accents ignored),
+ * ISO code, or dial code with or without the "+". Order is kept, so the
+ * default and the GCC stay on top of their matches.
+ */
+export function filterCountries(countries: readonly CallbackCountry[], query: string): CallbackCountry[] {
+  const q = fold(query.trim())
+  if (!q) return [...countries]
+  const digits = q.replace(/^\+/, '').replace(/\s+/g, '')
+  const isDial = /^\d+$/.test(digits)
+  return countries.filter(([iso, dial, name]) => {
+    if (isDial) return dial.replace(/\D/g, '').startsWith(digits)
+    if (iso.toLowerCase() === q) return true
+    const n = fold(name)
+    return n.startsWith(q) || n.split(/[\s\-(]+/).some((w) => w.startsWith(q))
+  })
 }
 
 // ── Validation ────────────────────────────────────────────────────────────
