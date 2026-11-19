@@ -1,0 +1,921 @@
+{
+  "family": "pneumatic-control-valves-02",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "Valve function is written as ways/positions: a 3/2 valve has three ports and two positions, a 4/2 valve four ports and two positions, a 4/3 valve four ports and three positions. A limit valve is a mechanically actuated valve that a moving machine part operates through a plunger, roller or similar actuator.",
+      "source": "ISO 1219-1 Fluid power systems and components - Graphical symbols and circuit diagrams (valve notation); SMC and Parker pneumatic catalogue glossaries"
+    },
+    {
+      "fact": "A pilot (unloader) valve on a reciprocating air compressor senses receiver pressure and signals the unloader or pressure switch circuit: its preset band, written as two figures in psi such as 125-150 or 145-175, sets where the compressor unloads and reloads.",
+      "source": "Conrader RCL-S series pilot valve part-number bands (RCL-S-HU-125-150, RCL-S-HU-145-175) and compressor unloader operating practice"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aro-400-series-3-way-limit-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO 400 series 3-way limit valves used for?",
+          "a": "ARO 400 series 3-way limit valves are two-position, three-way mechanical valves that a moving machine part operates to sense position and pass or block an air signal. This listing has 6 part numbers: 400-A, 401-A, 402-A, 400-1-A, 401-1-A and 402-1-A."
+        },
+        {
+          "slot": "B",
+          "q": "What do the ARO 400-A, 401-A and 402-A limit valve numbers mean?",
+          "a": "On the rows we hold, 400 is clockwise/spring, 401 is counterclockwise/spring and 402 is clockwise and counterclockwise/spring actuation, and the -1-A versions repeat each of those three. Quote the full number, such as 402-1-A, when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What port size do ARO 400 series heavy-duty limit valves have?",
+          "a": "The ARO 400-A and 401-A heavy-duty limit valves have a 1/8 inch NPT valve port and a 150 psi rating on their rows. Check the row of the 402 and -1-A numbers against your circuit, as not every row repeats the port size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between clockwise, counterclockwise and both-way ARO 400 limit valves?",
+          "a": "Choose by the direction the cam or dog moves past the actuator: 400-A (clockwise/spring), 401-1-A (counterclockwise/spring) or 402-1-A (clockwise and counterclockwise/spring) when the machine part passes both ways. Spring return resets the valve afterwards."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can ARO 400 series limit valves handle?",
+          "a": "The ARO 400-A and 401-A rows carry 150 psi (about 10 bar), and the listing gives +32°F to +160°F (0 to about 71°C). Where a row does not state a pressure, check it before relying on the 150 psi figure."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO 400 series limit valves made of?",
+          "a": "ARO 400 series limit valves are made of composite, glass-reinforced plastic. That keeps the body light and resistant to corrosion in ordinary compressed-air service, but it is a lower-temperature body than metal, so stay inside +32°F to +160°F."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO 400 series limit valves have certificates?",
+          "a": "We hold no certificate data for the ARO 400 series, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 400-A and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to ARO 400 series limit valves?",
+          "a": "ARO 400 series valves have NPT ports, so use NPT or push-in fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and match the thread to the 1/8 inch port. A 1/8 inch NPT thread will not mate with a BSP thread."
+        },
+        {
+          "slot": "I",
+          "q": "How should an ARO 400 series limit valve be mounted and set?",
+          "a": "Mount the ARO 400 series valve so the cam or dog meets the actuator squarely and short of its full travel, then check it resets under its spring. Isolate and exhaust the line first, as ISO 4414 requires before work on the machine."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO 400 series differ from the ARO 600 series circuitry valve?",
+          "a": "The ARO 400 series is a composite 3-way limit valve operated by a machine part, while the [ARO 600 series circuitry valve](/p/aro-600-series-circuitry-valves) is a zinc-plated carbon steel two-position, three-way sleeve valve rated 200 psi. Use the 400 for position sensing, the 600 for logic."
+        },
+        {
+          "slot": "L",
+          "q": "Where do ARO 400 series limit valves come from and how are they shipped?",
+          "a": "The country of origin recorded for ARO 400 series limit valves is United States. We export from Dubai to the GCC, Africa and Asia; the importing country's tariff fixes the final HS digits within heading 84.81."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO 400 series limit valves in Dubai?",
+          "a": "Yes, ARO 400 series limit valves is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-600-series-circuitry-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an ARO 600 series circuitry valve used for?",
+          "a": "An ARO 600 series circuitry valve is a two-position, three-way sleeve valve for building logic and control circuits in compressed-air systems. The listing has 3 part numbers, 600-1, 600-2 and 600-3."
+        },
+        {
+          "slot": "B",
+          "q": "What do the ARO 600-1, 600-2 and 600-3 part numbers mean?",
+          "a": "The last digit sets the port size: 600-1 is 1/8 inch, 600-2 is 1/4 inch and 600-3 is 3/8 inch pipe size, each with female NPT by male NPT ends. Quote the full number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do ARO 600 series sleeve valves come in?",
+          "a": "ARO 600 series sleeve valves come in three sizes: 1/8 inch (600-1), 1/4 inch (600-2) and 3/8 inch (600-3). All three are female NPT by male NPT, so check the thread against your pipework."
+        },
+        {
+          "slot": "D",
+          "q": "Which ARO 600 series valve size should I pick for my air line?",
+          "a": "Match the valve to the pipe size of the line it sits in, and step up a size if the circuit needs more flow: 1/8 inch for small signal lines, 3/8 inch for larger runs. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) explains port sizing and function."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the ARO 600 series circuitry valve?",
+          "a": "The ARO 600 series is rated 200 psi (about 14 bar) maximum on every row of the listing, with a temperature range of -25°F to +200°F (about -32 to 93°C)."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the ARO 600 series valve body?",
+          "a": "The ARO 600 series body is carbon steel with a zinc-plated finish. It suits compressed air; for aggressive media or washdown, ask us about a stainless alternative."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO 600 series valves come with certificates?",
+          "a": "No certificates or approvals are recorded for the ARO 600 series. Tell us what documents your project needs, such as a certificate of conformity or origin for 600-2, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to the ARO 600 series sleeve valve?",
+          "a": "The ARO 600 series has female NPT by male NPT ends, so it takes NPT nipples and fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Use NPT only, as NPT and BSP threads do not mate."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an ARO 600 series circuitry valve?",
+          "a": "Fit the ARO 600 series valve in the line with the correct end to supply, support the pipework so the valve carries no side load, and isolate and exhaust the circuit before service. The [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves) lists other logic valves."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the ARO 600 series and ARO 400 series valves?",
+          "a": "The ARO 600 series is a 3-way sleeve valve in zinc-plated carbon steel rated 200 psi, built for circuitry, while the [ARO 400 series](/p/aro-400-series-3-way-limit-valves) is a composite limit valve operated by a machine part and rated 150 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What is the origin and HS code of the ARO 600 series valve?",
+          "a": "The recorded country of origin of the ARO 600 series circuitry valve is Taiwan. No HS code is stored on the listing; valves for pneumatic transmissions fall in heading 84.81 and the importing country's tariff fixes the digits."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy ARO 600 series circuitry valves from stock in Dubai?",
+          "a": "Yes. ARO 600 series circuitry valves is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-manual-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO Manual Air Control Valves listing and what is it used for?",
+          "a": "ARO manual air control valves are hand, plunger, toggle, roller and limit-actuated valves that start, stop or divert air in a circuit. This listing holds 6 mixed ARO part numbers: M211RS, E212LM, E312LS, 214-C, 223-2-C and 214-2-C."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read ARO part numbers like M211RS, E212LM and 214-C?",
+          "a": "Treat each ARO number as one fixed model: the rows describe M211RS as a pneumatic valve, E212LM as a 4-way manual valve, 214-C as a 1/8 inch limit valve, 223-2-C as an air toggle valve and 214-2-C as an air plunger valve. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "Which actuator styles do ARO manual air control valves cover?",
+          "a": "The listing covers a roller valve (M211RS), manual levers (E212LM, E312LS), a limit valve (214-C), a toggle (223-2-C) and a plunger (214-2-C). Pick the actuator that matches how the operator or machine will trigger it."
+        },
+        {
+          "slot": "D",
+          "q": "What ports do ARO manual air control valves have?",
+          "a": "The ARO manual air control valves have NPT connections, with rows such as E312LS at 1/4 inch and 214-C at 1/8 inch. Confirm the port size of the exact part number before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can ARO manual air control valves be used at?",
+          "a": "The ARO manual air control valves are rated +32°F to +160°F (0 to about 71°C). They are not vacuum operable, so do not use them on a vacuum line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the body of an ARO manual air control valve made of?",
+          "a": "The ARO manual air control valve body is aluminum, with spool construction and spring return on the roller types. Aluminum suits clean, dry compressed air."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO manual air control valves carry certificates?",
+          "a": "The listing for these ARO manual air control valves states no certificates and we do not claim any. Certificate of conformity or origin requests for E212LM should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to ARO manual air control valves?",
+          "a": "Because the connection is NPT, use NPT fittings, tube connectors and hose barbs from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). The side-ported body style puts the ports on the side of the valve."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install an ARO roller or lever air valve?",
+          "a": "Mount the valve so the roller or lever travels freely and the machine cam does not bottom it out, pipe supply and outlet as marked, and exhaust the circuit before work. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) shows typical circuits."
+        },
+        {
+          "slot": "K",
+          "q": "How do ARO manual air control valves compare with the MaxAir hand lever valves?",
+          "a": "This listing mixes several actuator styles, while the [ARO MaxAir series hand lever valves](/p/aro-maxair-series-hand-lever-valves) are all 4-way lever valves in Buna N seal at +15°F to +122°F. Choose the MaxAir lever for plain manual control."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO manual air control valves made and which HS code is recorded?",
+          "a": "The recorded origin of ARO manual air control valves is Taiwan and the recorded HS code is 8481809050. Check the final tariff line with your customs broker."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep ARO manual air control valves in stock?",
+          "a": "Yes, we stock ARO manual air control valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aro-maxair-series-foot-pedal-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO MaxAir series foot pedal valves used for?",
+          "a": "ARO MaxAir series foot pedal valves let an operator switch air to a cylinder, air motor or clamp with a foot while both hands stay on the work. The listing has 4 part numbers: M252TM, M252TS, M212TM and M212TS."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO MaxAir foot valve numbers M212TS and M252TM mean?",
+          "a": "On these rows, M212 numbers are the 4-way valves and M252 numbers the 3-way valves, and the last letters show the return: TM is foot pedal/manual and TS is foot pedal/spring. All four have a 1/4 inch NPT port."
+        },
+        {
+          "slot": "D",
+          "q": "What port size do ARO MaxAir foot pedal valves have?",
+          "a": "All four ARO MaxAir foot pedal valves have a 1/4 inch valve port, NPT thread. The choice is between 3-way and 4-way and between spring and manual return."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a spring-return or manual-return ARO foot pedal valve?",
+          "a": "Choose spring return (M212TS, M252TS) when the circuit should reset as soon as the operator lifts the foot, and manual return (M212TM, M252TM) when the pedal should stay where it is put. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) explains the difference."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO MaxAir foot pedal valves handle?",
+          "a": "They are rated 150 psi (about 10 bar) and +32°F to +160°F (0 to about 71°C). They are not vacuum operable, so keep them off vacuum lines."
+        },
+        {
+          "slot": "F",
+          "q": "What is an ARO MaxAir foot pedal valve made of?",
+          "a": "The ARO MaxAir foot pedal valve has an aluminum body with a gray foot-pedal actuator and spool construction. It is side ported."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO MaxAir foot pedal valves have certificates?",
+          "a": "There is no approval or certificate information on file for the ARO MaxAir foot pedal valves. If your buyer needs paperwork for M212TS, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What can be connected to an ARO MaxAir foot pedal valve?",
+          "a": "The ARO MaxAir foot pedal valve drives air motors, packaging and material-handling cylinders, with NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) at the 1/4 inch ports. Match each outlet to the cylinder port."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an ARO foot pedal valve safely?",
+          "a": "Fix the valve so the pedal cannot be knocked, pipe supply and outlets as marked, and guard the pedal against accidental operation. Isolate and exhaust the air before maintenance, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the MaxAir foot pedal valve differ from the hand lever type?",
+          "a": "The foot pedal valve here is a 3-way or 4-way normally closed valve rated 150 psi, while the [ARO MaxAir hand lever valve](/p/aro-maxair-series-hand-lever-valves) is a 4-way normally open valve with Buna N seals and a lower temperature range. Pick by how the operator works."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO MaxAir foot pedal valves from?",
+          "a": "The recorded country of origin for ARO MaxAir foot pedal valves is Taiwan. We ship them from Dubai to the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Are ARO MaxAir foot pedal valves in stock in Dubai?",
+          "a": "Yes. We keep ARO MaxAir foot pedal valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aro-maxair-series-hand-lever-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO MaxAir series hand lever valves used for?",
+          "a": "ARO MaxAir series hand lever valves are manually operated 4-way spool valves for switching air to air motors, material-handling and packaging cylinders. The listing has 4 part numbers: M212LM, M212LM-R, M212LS and M212LS-R."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO M212LM and M212LS mean?",
+          "a": "On these rows the last letters show the return: LM is a manual lever and LS a lever with spring return, and an -R suffix marks the R version of the same valve. All are 1/4 inch NPT 4-way valves."
+        },
+        {
+          "slot": "D",
+          "q": "What port size is the ARO M212 hand lever valve?",
+          "a": "The ARO MaxAir M212 hand lever valves have 1/4 inch NPT ports and four ways, and this listing holds no other port size. Quote M212LM, M212LS or an -R version."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between ARO M212LM and M212LS?",
+          "a": "Choose M212LS when the valve should spring back to rest when the lever is released, and M212LM when the lever should stay in the selected position. The [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) compares the return types."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature range do ARO MaxAir hand lever valves have?",
+          "a": "They are rated +15°F to +122°F (about -9 to 50°C) with Buna N seals. They are not vacuum operable. The maker pressure rating is not held on this listing, so check the row for the part you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the seal material in the ARO MaxAir hand lever valve?",
+          "a": "The ARO MaxAir hand lever valve uses Buna N seals in an aluminum body with a spool design. Buna N suits lubricated or dry compressed air."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO MaxAir hand lever valves come with certificates?",
+          "a": "the ARO MaxAir hand lever valves carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for M212LS."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings go with ARO MaxAir hand lever valves?",
+          "a": "The ports are NPT, so use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and run tube or hose to the cylinder or air motor. One supply port feeds two outlets and an exhaust."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install an ARO MaxAir hand lever valve?",
+          "a": "Mount the valve within reach of the operator, pipe supply and the two outlets as marked on the body, and fit silencers on the exhausts. Exhaust the line before servicing."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between ARO MaxAir hand lever and rotary lever valves?",
+          "a": "The hand lever valve is a 2-position 4-way spool valve at 1/4 inch, while the [ARO MaxAir rotary lever valve](/p/aro-maxair-series-rotary-lever-valves) is a panel-mounted rotary type with 2- and 3-position versions in three larger port sizes."
+        },
+        {
+          "slot": "L",
+          "q": "What origin and HS code are recorded for ARO MaxAir hand lever valves?",
+          "a": "The recorded origin is Taiwan and the recorded HS code is 8481809050. Confirm the tariff line for your destination country."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO MaxAir hand lever valves?",
+          "a": "Yes, ARO MaxAir hand lever valves is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-maxair-series-rotary-lever-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO MaxAir series rotary lever valves used for?",
+          "a": "ARO MaxAir series rotary lever valves are panel-mounted manual 4-way valves that switch air to air motors, material-handling and packaging equipment by turning a lever. The listing has 6 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO M112LR, M113LR and M114LR part numbers mean?",
+          "a": "The rows show the third digit as the port size: M112LR is 1/4 inch, M113LR is 3/8 inch and M114LR is 1/2 inch, all 4-way 2-position valves. M512LR, M513LR and M514LR are the matching 3-position valves."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do ARO MaxAir rotary lever valves come in?",
+          "a": "They come in three port sizes, 1/4 inch, 3/8 inch and 1/2 inch NPT, each in a 2-position and a 3-position version, giving 6 part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a 2-position or 3-position ARO rotary lever valve?",
+          "a": "Choose 2-position (M112LR to M114LR) to drive a cylinder to either end, and 3-position (M512LR to M514LR) when you also need a centre stop. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) explains centre conditions."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do ARO rotary lever valves handle?",
+          "a": "The row for M512LR shows 140 psi (about 10 bar), and the listing is rated +15°F to +122°F (about -9 to 50°C). They are not vacuum operable."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in ARO MaxAir rotary lever valves?",
+          "a": "The ARO MaxAir rotary lever valve has an aluminum body and Buna N seals, with a black lever, rotary valve type and manual return."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO MaxAir rotary lever valves come with certificates?",
+          "a": "We hold no certificate data for the ARO MaxAir rotary lever valves, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for M513LR and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to ARO MaxAir rotary lever valves?",
+          "a": "The connections are NPT, so use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and match 1/4, 3/8 or 1/2 inch to the cylinder or air motor ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do you mount an ARO MaxAir panel-mounted rotary lever valve?",
+          "a": "Cut the panel opening, mount the body from behind so the lever sits on the front, and pipe supply and outlets as marked. Exhaust the circuit before any work on it."
+        },
+        {
+          "slot": "K",
+          "q": "How do ARO rotary lever valves compare with the foot pedal type?",
+          "a": "The rotary lever is panel-mounted, hand-operated and comes up to 1/2 inch with 3-position options, while the [ARO MaxAir foot pedal valve](/p/aro-maxair-series-foot-pedal-valves) frees both hands but stops at 1/4 inch."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO MaxAir rotary lever valves made?",
+          "a": "The recorded country of origin for ARO MaxAir rotary lever valves is Taiwan and the recorded HS code is 8481809050. Confirm the final tariff line for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep ARO MaxAir rotary lever valves in stock?",
+          "a": "Yes. ARO MaxAir rotary lever valves is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aro-pilot-air-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are ARO pilot air control valves used for?",
+          "a": "ARO pilot air control valves are spool valves operated by an air signal instead of a hand or solenoid, used to switch larger airflows from a small pilot line. The listing has 13 part numbers, from M252PS to A249PD."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO pilot valve codes such as A222PD, A222PS and M252PS mean?",
+          "a": "The rows show the last letters set the actuation: PD is pilot/pilot, PS is pilot/spring, and an M prefix is the remote pilot/spring version. The digits show the size: A211 is 1/8 inch, A222 is 1/4 inch and A213 is 3/8 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What port sizes do ARO pilot air control valves have?",
+          "a": "ARO pilot air control valves come in 1/8, 1/4, 3/8 and 1/2 inch NPT ports, with the 1/8 inch size in five part numbers and 1/2 inch in one, M254PS."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a pilot/spring or pilot/pilot ARO valve?",
+          "a": "Choose pilot/spring (such as A222PS) when the valve should return when the signal is removed, and pilot/pilot (such as A222PD) when it should stay put until the opposite signal arrives. The [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) explains both."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and flow do ARO pilot air control valves have?",
+          "a": "The rows show 150 psi (about 10 bar) on ten numbers and 140 psi (about 10 bar) on the M25 three-way numbers, with flows such as 30 cfm for A211PD and 68 cfm for A222PD. The Cv is 0.7 on the listing."
+        },
+        {
+          "slot": "F",
+          "q": "What are ARO pilot air control valves made of?",
+          "a": "The ARO pilot air control valve has an aluminum body, Buna N seals and a spool design, rated +15°F to +122°F (about -9 to 50°C)."
+        },
+        {
+          "slot": "G",
+          "q": "Do ARO pilot air control valves have certificates?",
+          "a": "No certificates or approvals are recorded for the ARO pilot air control valves. Tell us what documents your project needs, such as a certificate of conformity or origin for A222PS, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What fittings connect to an ARO pilot air control valve?",
+          "a": "Use NPT fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) on the main ports and a small tube for the pilot signal. A solenoid valve from the [solenoid valves shelf](/c/pneumatic-solenoid-valves) can supply the signal."
+        },
+        {
+          "slot": "I",
+          "q": "How do you pipe an ARO pilot air control valve?",
+          "a": "Pipe supply to the inlet, the outlets to the cylinder or motor, and the pilot line to the signal port, with silencers on the exhausts. Exhaust the circuit before service."
+        },
+        {
+          "slot": "K",
+          "q": "How is an ARO pilot valve different from a Numatics air pilot valve?",
+          "a": "ARO pilot valves are 3-way and 4-way spool valves in 1/8 to 1/2 inch with Buna N seals, while the [Numatics L1/L2 air pilot 4-way valve](/p/numatics-valve-air-pilot-4-way) is a 4-way valve line with body-ported and base-mount versions."
+        },
+        {
+          "slot": "L",
+          "q": "Where are ARO pilot air control valves made?",
+          "a": "The recorded country of origin for ARO pilot air control valves is United States and the recorded HS code is 8481809005. Confirm the tariff line for your destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock ARO pilot air control valves?",
+          "a": "Yes, we stock ARO pilot air control valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "cash-valve-d53-series-control-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Cash Valve D53 series used for?",
+          "a": "The Cash Valve D53 series is a pressure regulator and control valve line in 1/2 to 2 inch sizes with stainless steel construction and a 0 to 250 psi range. The listing has 20 part numbers, such as D53COSOVV01-E1."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Cash Valve D53 part numbers such as D53CWSOBB01-E1?",
+          "a": "The numbers are not decoded in our records. Rows differ in the size letter after D53 (C is 1/2 inch, D is 3/4 inch, E is 1 inch, F is 1 1/4 inch, G is 1 1/2 inch, H is 2 inch) and in suffixes such as -H1 for heavy spring and -N1 for bronze."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Cash Valve D53 series come in?",
+          "a": "The D53 series runs from 1/2 inch to 2 inch, with rows at 1/2, 3/4, 1, 1 1/4, 1 1/2 and 2 inch. Pick the size to match the pipe and flow."
+        },
+        {
+          "slot": "D",
+          "q": "What do the heavy spring and bronze versions of the Cash Valve D53 mean?",
+          "a": "The D53CWSOBB01-H1 has a heavy spring and the D53CWSOBB01-N1 is a bronze version of the 1/2 inch regulator. Ask us for the correct suffix for your pressure range."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure range does the Cash Valve D53 regulator cover?",
+          "a": "The rows give a 0 to 250 psi (about 17 bar) range. The temperature and flow ratings are not recorded on this listing; ask us for the Cash Valve data sheet."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the Cash Valve D53 use?",
+          "a": "Rows describe stainless steel bodies with Buna-N diaphragms, plus one bronze version, D53CWSOBB01-N1. Check the row of the number you order for the body and diaphragm."
+        },
+        {
+          "slot": "G",
+          "q": "Do Cash Valve D53 regulators come with certificates?",
+          "a": "The listing for the Cash Valve D53 series states no certificates and we do not claim any. Certificate of conformity or origin requests for D53CWSOBB01-E1 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Cash Valve D53 regulator?",
+          "a": "The connection type is not recorded on this listing; confirm it with us before ordering. Gauges and filters belong on our [air preparation shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set a Cash Valve D53 pressure regulator?",
+          "a": "Set it with the downstream pressure gauge reading while air flows, adjusting up from low pressure, and exhaust the line before service."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Cash Valve D53 compare with a Parker manual air control valve?",
+          "a": "The D53 regulates downstream pressure, while a [Parker manual air control valve](/p/parker-manual-air-control-valves) only switches flow on and off by hand. They are used together, not instead of each other."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Cash Valve D53 made?",
+          "a": "The country of origin is not recorded for the Cash Valve D53 listing, so we state none here. Ask us and we will confirm it on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Cash Valve D53 regulators in stock?",
+          "a": "Yes. We keep Cash Valve D53 series valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "conrader-pilot-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Conrader RCL-S pilot valves used for?",
+          "a": "Conrader RCL-S pilot valves are brass unloader pilot valves for air compressors: they sense tank pressure and signal the unloader to stop and restart the pump. The listing has 5 part numbers, such as RCL-S-HU-125-150."
+        },
+        {
+          "slot": "B",
+          "q": "What do the numbers in RCL-S-HU-125-150 mean?",
+          "a": "The two figures at the end of an RCL-S-HU number are the preset pressure band in psi, so RCL-S-HU-125-150 is 125 to 150 psi and RCL-S-HU-145-175 is 145 to 175 psi. The HU part marks the unloader type."
+        },
+        {
+          "slot": "D",
+          "q": "Which Conrader RCL-S pilot valve band should I choose?",
+          "a": "Choose the band that brackets the compressor cut-out pressure: RCL-S-HU-95-125, 115-130, 125-150, 145-175 or 160-175. For the exact band, check the compressor manual or ask us."
+        },
+        {
+          "slot": "D",
+          "q": "What size connections does the Conrader RCL-S pilot valve have?",
+          "a": "The Conrader RCL-S pilot valves have 3/8 inch NPT connections, female inlet and outlet, and some rows are 2-1/4 inch long."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature do Conrader RCL-S pilot valves handle?",
+          "a": "The listing gives a maximum temperature of 350°F (about 177°C), which is the figure to plan around. Ask us to confirm it for the exact preset band you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in the Conrader RCL-S pilot valve?",
+          "a": "The body is brass with a brass seat, a stainless steel spring and Viton O-rings. It is aimed at air compressor applications."
+        },
+        {
+          "slot": "G",
+          "q": "Do Conrader RCL-S pilot valves come with certificates?",
+          "a": "There is no approval or certificate information on file for the Conrader RCL-S pilot valves. If your buyer needs paperwork for RCL-S-HU-145-175, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What does a Conrader RCL-S pilot valve connect to?",
+          "a": "It screws into the compressor's unloader circuit with its 3/8 inch NPT ports. Related fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust a Conrader RCL-S pilot valve?",
+          "a": "Fit it in the unloader line, run the compressor, and adjust within the preset band while watching the tank gauge. Exhaust and isolate the tank before removal."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Conrader pilot valve differ from an ARO pilot air control valve?",
+          "a": "The Conrader RCL-S senses compressor tank pressure for unloading, while the [ARO pilot air control valve](/p/aro-pilot-air-control-valves) is a directional valve operated by an air signal."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Conrader RCL-S pilot valve made?",
+          "a": "The recorded country of origin for Conrader RCL-S pilot valves is United States. No HS code is recorded; the importing country's tariff fixes the digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Conrader RCL-S pilot valves?",
+          "a": "Yes, Conrader RCL-S pilot valves is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-throttle-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Ingersoll Rand throttle valves used for?",
+          "a": "Ingersoll Rand throttle valves are replacement control valves that meter air to a compressor or air tool; this listing has 6 part numbers, such as LG2-302, 285B-50 and 131-50."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match Ingersoll Rand throttle valve part numbers to the original?",
+          "a": "Use the compatibility notes in the rows: 285B-50 for manufacturer number 285B, 295A-50 for 295A, 131-50 for 231HA and 231HA-2, and MC121-302 for 121-K6, 121/Q and 772."
+        },
+        {
+          "slot": "D",
+          "q": "Which Ingersoll Rand throttle valve fits my tool?",
+          "a": "Look up the original manufacturer part number on your tool and match it: 285B-50 fits 285B and 295A-50 fits 295A. Send us the model and we will confirm."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do Ingersoll Rand throttle valves come in?",
+          "a": "Size is not recorded on these rows because the part number defines the fit. Send us your tool model and the original manufacturer number and we will match it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Ingersoll Rand throttle valves have?",
+          "a": "The maker pressure rating for these throttle valves is not published on this listing, so we do not state one. Ask us for the current data for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are Ingersoll Rand throttle valves made of?",
+          "a": "Materials are not recorded on the Ingersoll Rand throttle valve listing, so we do not state any. Ask us for the specification of the part number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Do Ingersoll Rand throttle valves have certificates?",
+          "a": "these Ingersoll Rand throttle valves carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 285B-50."
+        },
+        {
+          "slot": "H",
+          "q": "What do Ingersoll Rand throttle valves fit?",
+          "a": "The row notes name 1207MAX, 231 and 236G among the tool series, so these are service parts for those tools. See other valves on our [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit an Ingersoll Rand throttle valve?",
+          "a": "Disconnect and exhaust the air supply, strip the housing, swap the valve, and re-check that the lever returns freely. Follow the tool manual."
+        },
+        {
+          "slot": "K",
+          "q": "How do throttle valves differ from the Kingston balanced valves?",
+          "a": "The Ingersoll Rand throttle valve is a replacement part for compressors and tools, while the [Kingston 305 series balanced valve](/p/kingston-305-series-balanced-valves) is a lever-operated valve for line use."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Ingersoll Rand throttle valves made?",
+          "a": "The recorded country of origin for Ingersoll Rand throttle valves is United States. No HS code is recorded on the listing."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get Ingersoll Rand throttle valves from stock?",
+          "a": "Yes. Ingersoll Rand throttle valves is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-250-series-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Kingston 250 series valves used for?",
+          "a": "Kingston 250 series valves are small brass and stainless steel hand valves of the carpet-cleaning wand type, and this listing has 3 part numbers: 167-1-1, 251FT/251229 and 251-30."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 167-1-1, 251-30 and 251FT/251229 mean?",
+          "a": "167-1-1 is an upholstery wand valve, 251-30 is a 1/4 inch carpet valve and 251FT/251229 is a heavy-duty carpet valve with a clamp bracket assembly, per the rows."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the Kingston 251-30 carpet valve?",
+          "a": "The Kingston 251-30 carpet valve is 1/4 inch. The other two part numbers on this listing do not state a size, so ask us before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Which Kingston 250 series valve should I pick?",
+          "a": "Pick the 167-1-1 for upholstery wands, the 251-30 for standard carpet wands and the 251FT/251229 where a clamp bracket is needed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Kingston 250 series valves rated for?",
+          "a": "The maker pressure rating is not held for these valves on this listing, so we do not state one. Ask us for the current data before you use one in a pressurised system."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are Kingston 250 series valves made from?",
+          "a": "The listing records brass and stainless steel construction for the Kingston 250 series. Ask us which applies to the part you need."
+        },
+        {
+          "slot": "G",
+          "q": "Do Kingston 250 series valves have certificates?",
+          "a": "We hold no certificate data for the Kingston 250 series, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 251-30 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What do Kingston 250 series valves connect to?",
+          "a": "These are wand valves, so they fit cleaning wands and hoses rather than machine circuits. For air control valves see our [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How should Kingston 250 series valves be maintained?",
+          "a": "Flush the Kingston 250 series valve after use and check that the handle closes fully. Keep the pressure within what your cleaning equipment allows."
+        },
+        {
+          "slot": "K",
+          "q": "How is the Kingston 250 series different from the Kingston 305 series?",
+          "a": "The 250 series are wand valves, while the [Kingston 305 series self-closing valve](/p/kingston-305-series-self-closing-valves) is a lever valve in 1/4 to 1-1/4 inch sizes."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Kingston 250 series valves?",
+          "a": "Yes, we stock Kingston 250 series valves at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-305-series-balanced-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Kingston 305 series balanced valves used for?",
+          "a": "Kingston 305 series balanced valves are brass lever-operated shut-off valves with squeeze-lever, pull-lever, lock-type and bare-valve versions. The listing has 21 part numbers, from 305B-2-1 to 305B-7-3."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 305B part numbers like 305B-4-2 mean?",
+          "a": "The rows show the middle digit is the size and the last digit the lever: 305B-2 is 1/4 inch, -3 is 3/8, -4 is 1/2, -5 is 3/4, -6 is 1 inch and -7 is 1-1/4 inch; -1 is a squeeze lever, -2 a pull lever, -3 no lever, bracket or pin, and 1L a lock type."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do Kingston 305B balanced valves come in?",
+          "a": "They come in six sizes, 1/4, 3/8, 1/2, 3/4, 1 and 1-1/4 inch, each in squeeze-lever, pull-lever and bare-valve versions, with a lock type in the three smaller sizes."
+        },
+        {
+          "slot": "D",
+          "q": "Which lever style should I choose on a Kingston 305B valve?",
+          "a": "Choose a squeeze lever (305B-4-1) for a hand grip, a pull lever (305B-4-2) for a trigger pull, and the lock type (305B-4-1L) where the valve must stay latched. The -3 version has no lever and suits remote actuation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Kingston 305B balanced valves have?",
+          "a": "The maker pressure rating is not held on this listing, so we do not state one. Ask us for the current Kingston data before you specify the valve."
+        },
+        {
+          "slot": "F",
+          "q": "What material are Kingston 305B balanced valves made of?",
+          "a": "The Kingston 305 series balanced valves are brass. Brass suits compressed air and many fluids, but check media compatibility with us before use."
+        },
+        {
+          "slot": "G",
+          "q": "Do Kingston 305B balanced valves have certificates?",
+          "a": "No certificates or approvals are recorded for the Kingston 305B valves. Tell us what documents your project needs, such as a certificate of conformity or origin for 305B-4-2, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Kingston 305B balanced valve?",
+          "a": "The thread type is not recorded on this listing, so confirm it for the row you order and match it with fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit a Kingston 305B balanced valve?",
+          "a": "Install it in the line with the lever clear of obstruction, then exhaust and isolate the line before working on it. Our [guide to manual and pilot-operated air valves](/blog/manual-and-pilot-operated-air-valves) covers hand-operated valves."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Kingston 305 balanced and self-closing valves?",
+          "a": "The 305B balanced valve is brass only, while the [Kingston 305A self-closing valve](/p/kingston-305-series-self-closing-valves) is a quick-opening self-closing valve offered in brass and stainless steel."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Kingston 305 series balanced valves?",
+          "a": "Yes. We keep Kingston 305 series balanced valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-305-series-self-closing-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Kingston 305 series self-closing valves used for?",
+          "a": "Kingston 305 series self-closing valves are quick-opening hand valves that close when the lever is released. The listing has 21 part numbers, from 305A-6-1 upward."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 305A numbers like 305A-6-1 mean?",
+          "a": "The rows show 305A-6 is 1 inch and 305A-7 is 1-1/4 inch, and the last digit is the lever: -1 squeeze lever, -2 pull lever, -3 without lever, bracket or pin."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do Kingston 305A self-closing valves come in?",
+          "a": "Rows such as 305A-6-1 (1 inch) and 305A-7-1 (1-1/4 inch) show the larger sizes, and the listing has 21 part numbers in total."
+        },
+        {
+          "slot": "D",
+          "q": "Squeeze lever or pull lever on a Kingston 305A valve?",
+          "a": "Choose the squeeze lever (305A-6-1) for a hand grip and the pull lever (305A-6-2) for a trigger pull; the -3 version has no lever and suits remote operation."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do Kingston 305A valves have?",
+          "a": "The maker pressure rating is not held on this listing, so we do not state one. Ask us for the current Kingston data before you specify the valve."
+        },
+        {
+          "slot": "F",
+          "q": "What material are Kingston 305A self-closing valves made from?",
+          "a": "The Kingston 305A listing records brass and stainless steel bodies. Ask us which material applies to the part number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Do Kingston 305A valves come with certificates?",
+          "a": "The listing for the Kingston 305A valves states no certificates and we do not claim any. Certificate of conformity or origin requests for 305A-6-1 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to a Kingston 305A valve?",
+          "a": "The thread type is not recorded across the listing; confirm it for your row and use fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Kingston 305A self-closing valve?",
+          "a": "Fit it where the operator can hold the lever, and exhaust and isolate the line before service. See the [manual, mechanical and pilot air valves shelf](/c/pneumatic-control-valves) for other hand valves."
+        },
+        {
+          "slot": "K",
+          "q": "How is the Kingston 305A different from the 305B?",
+          "a": "The 305A is a quick-opening self-closing valve, while the [Kingston 305B balanced valve](/p/kingston-305-series-balanced-valves) is a balanced brass valve in the same lever styles."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Kingston 305 series self-closing valves?",
+          "a": "Yes, Kingston 305 series self-closing valves is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "metal-work-shut-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Metal Work shut-off valves used for?",
+          "a": "Metal Work shut-off valves are 3-port, 2-position normally closed valves that isolate and vent an air-preparation unit. The listing has 5 part numbers, from 5U11V101 to 5U13V103, plus solenoid versions 5U11V701 and 5U12V702."
+        },
+        {
+          "slot": "B",
+          "q": "What do Metal Work 5U11V101, 5U12V102 and 5U13V103 mean?",
+          "a": "The rows show 5U11 is 1/8 inch, 5U12 is 1/4 inch and 5U13 is 3/8 inch female NPT inlet; V10x is the twist knob and V70x the single solenoid spring return."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are Metal Work shut-off valves?",
+          "a": "They come in three sizes, 1/8, 1/4 and 3/8 inch female NPT, as in 5U11V101, 5U12V102 and 5U13V103. Pick the size that matches the inlet of your air preparation unit."
+        },
+        {
+          "slot": "D",
+          "q": "Twist knob or solenoid: which Metal Work shut-off valve should I choose?",
+          "a": "Choose the twist knob (V10x) for manual lock-off and the single solenoid spring return (V70x) for remote shut-off. See also our [solenoid valves shelf](/c/pneumatic-solenoid-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do Metal Work shut-off valves have?",
+          "a": "The maker pressure rating is not held on this listing, so we do not state one. Ask us for the current Metal Work data for the part number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Do Metal Work shut-off valves have certificates?",
+          "a": "There is no approval or certificate information on file for the Metal Work shut-off valves. If your buyer needs paperwork for 5U12V102, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What do Metal Work shut-off valves fit?",
+          "a": "They are for use with Syntesi size 1 air preparation components. Browse related units on our [air preparation shelf](/c/air-preparation-frl) and ask us to confirm the match."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Metal Work shut-off valve be installed?",
+          "a": "Fit it at the head of the air preparation unit with its exhaust port free, and exhaust the line before service, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metal Work shut-off valve compare with the Nitra ARV?",
+          "a": "The Metal Work valve has twist-knob and solenoid versions, while the [Nitra ARV series valve](/p/nitra-arv-series-valves) is a twist-knob shut-off valve in 1/8 and 1/4 inch."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Metal Work shut-off valves made?",
+          "a": "The recorded country of origin for Metal Work shut-off valves is Italy. We export from Dubai, and the importing country's tariff fixes the HS digits within heading 84.81."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Metal Work shut-off valves?",
+          "a": "Yes. Metal Work shut-off valves is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

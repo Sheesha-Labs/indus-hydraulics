@@ -1,0 +1,1664 @@
+{
+  "family": "pneumatic-safety-lockout-valves-03",
+  "extraFacts": [
+    {
+      "fact": "Unit conversions (1 bar = 14.5038 psi): 100 psi = about 7 bar; 120 psi = about 8 bar; 125 psi = about 9 bar; 140 psi = about 10 bar; 145 psi = 10 bar; 150 psi = about 10 bar; 200 psi = about 14 bar; 246 psi = about 17 bar; 250 psi = about 17 bar; 300 psi = about 21 bar; 350 psi = about 24 bar; 500 psi = about 34 bar. Temperature (°C = (°F - 32) / 1.8): -40°F = -40°C; -32°F = -36°C; -25°F = -32°C; -10°F = -23°C; -4°F = -20°C; 0°F = -18°C; 15°F = -9°C; 23°F = -5°C; 32°F = 0°C; 122°F = 50°C; 140°F = 60°C; 150°F = 66°C; 158°F = 70°C; 160°F = 71°C; 176°F = 80°C; 200°F = 93°C; 350°F = 177°C; 400°F = 204°C; 450°F = 232°C.",
+      "source": "NIST SP 811 unit conversion; 1 bar = 14.5038 psi"
+    },
+    {
+      "fact": "NPT is the American taper pipe thread to ASME B1.20.1 and NPTF is the dryseal version to ASME B1.20.3; BSPP (G) is parallel pipe thread to ISO 228-1 and BSPT (R) is taper pipe thread to ISO 7-1. NPT and BSP threads do not mate. FNPT is female NPT and MNPT is male NPT.",
+      "source": "ASME B1.20.1; ASME B1.20.3; ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "HS 2022 heading 84.81 covers taps, cocks and valves: subheading 8481.20 valves for oleohydraulic or pneumatic transmissions, 8481.30 check (non-return) valves, 8481.40 safety or relief valves, 8481.80 other appliances. The importing country's tariff fixes the final national digits.",
+      "source": "WCO Harmonized System Nomenclature 2022, heading 84.81"
+    },
+    {
+      "fact": "ISO 4414 sets the general rules and safety requirements for pneumatic fluid power systems, including that stored pressure be able to be isolated and exhausted before work on the machine.",
+      "source": "ISO 4414:2010 Pneumatic fluid power - General rules and safety requirements for systems and their components"
+    },
+    {
+      "fact": "Pressure vessel rules require a safety (pop) valve to be set at or below the maximum allowable working pressure of the vessel or system it protects, and its flow capacity to be at least the maximum the source can deliver. Set pressure is chosen from the settings offered.",
+      "source": "ASME Boiler and Pressure Vessel Code Section VIII Division 1, paragraph UG-134 (pressure setting of pressure relief devices) and UG-125"
+    },
+    {
+      "fact": "A lockout valve shuts the supply and vents the downstream air and can be locked off with a padlock so the machine cannot be re-pressurised during maintenance. A soft start valve brings the downstream line up to pressure gradually before opening fully; a dump valve exhausts the downstream line when its signal is removed.",
+      "source": "ISO 4414:2010; SMC Best Pneumatics catalogue, soft start/lock out valve Series AVL; Legris lockout valve catalogue"
+    },
+    {
+      "fact": "A vacuum relief valve admits air when vacuum exceeds a set value to protect a pump or vessel; a pressure relief valve vents when pressure exceeds a set value. Vacuum relief settings are given in inches of mercury (In/Hg).",
+      "source": "Gast Manufacturing relief valve catalogue (AA308, AA600, AA840A, AG258)"
+    },
+    {
+      "fact": "In Aquatrol part numbers the last field is the set pressure in psi, the first three digits the series (560, 570, 741, 742, 743) and the two letters after them the connection size, for example DC = 1/2 MNPT x 3/4 FNPT, EE = 1 MNPT x 1 FNPT, GG = 1 1/2 MNPT x 1 1/2 FNPT, HG = 1 1/2 MNPT x 2 FNPT and JJ = 2 1/2 MNPT x 2 1/2 FNPT.",
+      "source": "Aquatrol safety valve rows in Indus size tables (for example 560DC1M1A1-25, 741EC1M1K1-25, 560JJ1M1A1-75)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aquatrol-560-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aquatrol 560 series safety valve used for?",
+          "a": "Aquatrol 560 series safety valves are pop-type safety valves with male NPT inlets and female NPT outlets and set pressures from 15 to 250 psi. The listing has 130 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Aquatrol 560 series safety valve part numbers such as 560DC1M1A1-25 mean?",
+          "a": "Read the number as series, two connection-size letters, trim code and set pressure in psi: 560DC1M1A1-25 is a 1/2 MNPT x 3/4 FNPT valve set at 25 psi. The size letters follow the table of Aquatrol codes shown on the rows (DC is 1/2 MNPT x 3/4 FNPT, EE is 1 MNPT x 1 FNPT)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aquatrol 560 series safety valve come in?",
+          "a": "Connection sizes from 1/2 MNPT x 3/4 FNPT to 2 1/2 MNPT x 2 1/2 FNPT, in set pressures from 15 to 250 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aquatrol 560 series safety valve?",
+          "a": "Choose the set pressure at or below the maximum working pressure of the vessel, then the connection size that matches its port, and send us the capacity you need so we can confirm the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Aquatrol 560 series safety valve have?",
+          "a": "Set pressures run 15, 25, 50, 75, 100, 125, 150, 175, 200, 225 and 250 psi, which is about 1 to 17 bar. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aquatrol 560 series safety valve made of?",
+          "a": "The listing does not record the body or seat material, so we state none. Ask us for the Aquatrol specification of the part number you need, including the medium it is rated for."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aquatrol 560 series safety valve come with certificates?",
+          "a": "We hold no certificate data for the Aquatrol 560 series safety valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 560DC1M1A1-25 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Aquatrol 560 series safety valve?",
+          "a": "The inlet is male NPT and the outlet female NPT, in sizes shown in the part number rows. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Aquatrol 560 series safety valve?",
+          "a": "Fit it upright on the vessel or line with no isolating valve between it and the protected equipment, pipe the outlet to a safe place and do not adjust or plug it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aquatrol 560 series safety valve differ from its sibling listings?",
+          "a": "The [Aquatrol 570 series](/p/aquatrol-570-series-safety-valves) has the same sizes with a different trim code (K1 rather than A1) and reaches 300 psi. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aquatrol 560 series safety valve made and which HS code applies?",
+          "a": "For the Aquatrol 560 series safety valve, country of origin and HS code are not recorded for this listing, so we state none; the importing country's tariff fixes the digits within subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aquatrol 560 series safety valve in Dubai?",
+          "a": "Yes, the Aquatrol 560 series safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aquatrol-570-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aquatrol 570 series safety valve used for?",
+          "a": "Aquatrol 570 series safety valves are pop-type safety valves with male NPT inlets and female NPT outlets and set pressures from 15 to 300 psi. The listing has 144 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Aquatrol 570 series safety valve part numbers such as 570DC1M1K1-15 mean?",
+          "a": "Read the number as series, two connection-size letters, trim code and set pressure in psi: 570DC1M1K1-15 is a 1/2 MNPT x 3/4 FNPT valve set at 15 psi. The size letters follow the table of Aquatrol codes shown on the rows (DC is 1/2 MNPT x 3/4 FNPT, EE is 1 MNPT x 1 FNPT)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aquatrol 570 series safety valve come in?",
+          "a": "Connection sizes from 1/2 MNPT x 3/4 FNPT to 2 1/2 MNPT x 2 1/2 FNPT, with presets from 15 to 300 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aquatrol 570 series safety valve?",
+          "a": "For the Aquatrol 570 series safety valve: choose the set pressure at or below the maximum working pressure of the vessel, then the connection size that matches its port, and send us the capacity you need so we can confirm the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Aquatrol 570 series safety valve have?",
+          "a": "Set pressures run 15, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250 and 300 psi, about 1 to 21 bar. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aquatrol 570 series safety valve made of?",
+          "a": "For the Aquatrol 570 series safety valve: the listing does not record the body or seat material, so we state none. Ask us for the Aquatrol specification of the part number you need, including the medium it is rated for."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aquatrol 570 series safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Aquatrol 570 series safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for 570DC1M1K1-15, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Aquatrol 570 series safety valve?",
+          "a": "For the Aquatrol 570 series safety valve: the inlet is male NPT and the outlet female NPT, in sizes shown in the part number rows. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Aquatrol 570 series safety valve?",
+          "a": "For the Aquatrol 570 series safety valve: fit it upright on the vessel or line with no isolating valve between it and the protected equipment, pipe the outlet to a safe place and do not adjust or plug it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aquatrol 570 series safety valve differ from its sibling listings?",
+          "a": "The [Aquatrol 560 series](/p/aquatrol-560-series-safety-valves) tops out at 250 psi and uses the A1 trim code; the 570 numbers carry K1. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aquatrol 570 series safety valve made and which HS code applies?",
+          "a": "For the Aquatrol 570 series safety valve, country of origin and HS code are not recorded for this listing, so we state none; the importing country's tariff fixes the digits within subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aquatrol 570 series safety valve in Dubai?",
+          "a": "Yes. the Aquatrol 570 series safety valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "aquatrol-741-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aquatrol 741 series safety valve used for?",
+          "a": "Aquatrol 741 series safety valves are pop-type safety valves with set pressures from 25 to 500 psi in sizes from 1/2 to 2 inch male NPT. The listing has 208 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "What do Aquatrol 741 series safety valve part numbers such as 741EC1M1K1-25 mean?",
+          "a": "Read the number as series, two connection-size letters, trim code and set pressure in psi: 741EC1M1K1-25 is a 3/4 MNPT x 1 FNPT valve set at 25 psi. The size letters follow the table of Aquatrol codes shown on the rows (DC is 1/2 MNPT x 3/4 FNPT, EE is 1 MNPT x 1 FNPT)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aquatrol 741 series safety valve come in?",
+          "a": "Seven connection sizes from 1/2 MNPT x 3/4 FNPT to 2 MNPT x 2 1/2 FNPT, with presets from 25 to 500 psi. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aquatrol 741 series safety valve?",
+          "a": "For the Aquatrol 741 series safety valve: choose the set pressure at or below the maximum working pressure of the vessel, then the connection size that matches its port, and send us the capacity you need so we can confirm the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Aquatrol 741 series safety valve have?",
+          "a": "Set pressures run 25 to 500 psi (about 2 to 34 bar) in steps such as 25, 50, 75, 100, 150, 250, 350 and 450. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aquatrol 741 series safety valve made of?",
+          "a": "For the Aquatrol 741 series safety valve: the listing does not record the body or seat material, so we state none. Ask us for the Aquatrol specification of the part number you need, including the medium it is rated for."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aquatrol 741 series safety valve come with certificates?",
+          "a": "The listing for the Aquatrol 741 series safety valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 741EC1M1K1-25 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Aquatrol 741 series safety valve?",
+          "a": "For the Aquatrol 741 series safety valve: the inlet is male NPT and the outlet female NPT, in sizes shown in the part number rows. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Aquatrol 741 series safety valve?",
+          "a": "For the Aquatrol 741 series safety valve: fit it upright on the vessel or line with no isolating valve between it and the protected equipment, pipe the outlet to a safe place and do not adjust or plug it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aquatrol 741 series safety valve differ from its sibling listings?",
+          "a": "The [Aquatrol 742](/p/aquatrol-742-series-safety-valves) and [743 series](/p/aquatrol-743-series-safety-valves) give the same sizes and presets under other series numbers. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aquatrol 741 series safety valve made and which HS code applies?",
+          "a": "For the Aquatrol 741 series safety valve, country of origin and HS code are not recorded for this listing, so we state none; the importing country's tariff fixes the digits within subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aquatrol 741 series safety valve in Dubai?",
+          "a": "Yes, we stock the Aquatrol 741 series safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aquatrol-742-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aquatrol 742 series safety valve used for?",
+          "a": "Aquatrol 742 series safety valves are pop-type safety valves with set pressures from 25 to 500 psi, 210 part numbers, in male NPT by female NPT sizes."
+        },
+        {
+          "slot": "B",
+          "q": "What do Aquatrol 742 series safety valve part numbers such as 742EG1M1K1-25 mean?",
+          "a": "Read the number as series, two connection-size letters, trim code and set pressure in psi: 742EG1M1K1-25 is a 1 MNPT x 1 FNPT valve set at 25 psi. The size letters follow the table of Aquatrol codes shown on the rows (DC is 1/2 MNPT x 3/4 FNPT, EE is 1 MNPT x 1 FNPT)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aquatrol 742 series safety valve come in?",
+          "a": "For the Aquatrol 742 series safety valve: seven connection sizes from 1/2 MNPT x 3/4 FNPT to 2 MNPT x 2 1/2 FNPT, with presets from 25 to 500 psi."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aquatrol 742 series safety valve?",
+          "a": "For the Aquatrol 742 series safety valve: choose the set pressure at or below the maximum working pressure of the vessel, then the connection size that matches its port, and send us the capacity you need so we can confirm the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Aquatrol 742 series safety valve have?",
+          "a": "Set pressures run 25 to 500 psi (about 2 to 34 bar), fifteen presets per size. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aquatrol 742 series safety valve made of?",
+          "a": "For the Aquatrol 742 series safety valve: the listing does not record the body or seat material, so we state none. Ask us for the Aquatrol specification of the part number you need, including the medium it is rated for."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aquatrol 742 series safety valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Aquatrol 742 series safety valve. If your buyer needs paperwork for 742EG1M1K1-25, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Aquatrol 742 series safety valve?",
+          "a": "For the Aquatrol 742 series safety valve: the inlet is male NPT and the outlet female NPT, in sizes shown in the part number rows. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Aquatrol 742 series safety valve?",
+          "a": "For the Aquatrol 742 series safety valve: fit it upright on the vessel or line with no isolating valve between it and the protected equipment, pipe the outlet to a safe place and do not adjust or plug it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aquatrol 742 series safety valve differ from its sibling listings?",
+          "a": "The [Aquatrol 741](/p/aquatrol-741-series-safety-valves) and [743 series](/p/aquatrol-743-series-safety-valves) share the sizes and presets of the 742. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aquatrol 742 series safety valve made and which HS code applies?",
+          "a": "For the Aquatrol 742 series safety valve, country of origin and HS code are not recorded for this listing, so we state none; the importing country's tariff fixes the digits within subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aquatrol 742 series safety valve in Dubai?",
+          "a": "Yes. We keep the Aquatrol 742 series safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aquatrol-743-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aquatrol 743 series safety valve used for?",
+          "a": "Aquatrol 743 series safety valves are pop-type safety valves with set pressures from 25 to 500 psi, 210 part numbers, in male NPT by female NPT sizes."
+        },
+        {
+          "slot": "B",
+          "q": "What do Aquatrol 743 series safety valve part numbers such as 743DG1M1K1-25 mean?",
+          "a": "Read the number as series, two connection-size letters, trim code and set pressure in psi: 743DG1M1K1-25 is a 1 MNPT x 1 FNPT valve set at 25 psi. The size letters follow the table of Aquatrol codes shown on the rows (DC is 1/2 MNPT x 3/4 FNPT, EE is 1 MNPT x 1 FNPT)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Aquatrol 743 series safety valve come in?",
+          "a": "For the Aquatrol 743 series safety valve: seven connection sizes from 1/2 MNPT x 3/4 FNPT to 2 MNPT x 2 1/2 FNPT, with presets from 25 to 500 psi."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aquatrol 743 series safety valve?",
+          "a": "For the Aquatrol 743 series safety valve: choose the set pressure at or below the maximum working pressure of the vessel, then the connection size that matches its port, and send us the capacity you need so we can confirm the valve."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Aquatrol 743 series safety valve have?",
+          "a": "For the Aquatrol 743 series safety valve: set pressures run 25 to 500 psi (about 2 to 34 bar), fifteen presets per size. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aquatrol 743 series safety valve made of?",
+          "a": "For the Aquatrol 743 series safety valve: the listing does not record the body or seat material, so we state none. Ask us for the Aquatrol specification of the part number you need, including the medium it is rated for."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Aquatrol 743 series safety valve come with certificates?",
+          "a": "the Aquatrol 743 series safety valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 743DG1M1K1-25."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Aquatrol 743 series safety valve?",
+          "a": "For the Aquatrol 743 series safety valve: the inlet is male NPT and the outlet female NPT, in sizes shown in the part number rows. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Aquatrol 743 series safety valve?",
+          "a": "For the Aquatrol 743 series safety valve: fit it upright on the vessel or line with no isolating valve between it and the protected equipment, pipe the outlet to a safe place and do not adjust or plug it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aquatrol 743 series safety valve differ from its sibling listings?",
+          "a": "The [Aquatrol 742](/p/aquatrol-742-series-safety-valves) and [741 series](/p/aquatrol-741-series-safety-valves) share the sizes and presets of the 743. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aquatrol 743 series safety valve made and which HS code applies?",
+          "a": "For the Aquatrol 743 series safety valve, country of origin and HS code are not recorded for this listing, so we state none; the importing country's tariff fixes the digits within subheading 8481.40."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aquatrol 743 series safety valve in Dubai?",
+          "a": "Yes, the Aquatrol 743 series safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "aro-lockout-valve-cfm-250-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ARO 3000 series lockout valve used for?",
+          "a": "ARO lockout valves for the 3000 series are modular air line lockout valves that shut off and vent the line so the equipment can be locked off. The listing has 7 part numbers in sizes 1/4 to 1 inch."
+        },
+        {
+          "slot": "B",
+          "q": "What do ARO 3000 series lockout valve part numbers such as 104392-4 mean?",
+          "a": "The rows give the size and flow: 104390-2 is 1/4 inch at 61 cfm, 104391-2 and 104391-3 are 1/4 and 3/8 inch at 95 cfm, 104392-3 and -4 are 3/8 and 1/2 inch at 219 cfm, and 104393-5 and -6 are 3/4 and 1 inch at 471 cfm."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ARO 3000 series lockout valve come in?",
+          "a": "Sizes of 1/4, 3/8, 1/2, 3/4 and 1 inch NPT, with flows of 61, 95, 219 and 471 cfm. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right ARO 3000 series lockout valve?",
+          "a": "Choose the size from the flow your line needs and the modular 3000 series you are fitting it to. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the ARO 3000 series lockout valve have?",
+          "a": "The listing is rated 250 psi (about 17 bar), with temperatures of 140°F and 175°F (140°F is about 60°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ARO 3000 series lockout valve made of?",
+          "a": "The body is aluminum, black, for use with the 3000 series. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the ARO 3000 series lockout valve come with certificates?",
+          "a": "We hold no certificate data for the ARO 3000 series lockout valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 104392-4 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the ARO 3000 series lockout valve?",
+          "a": "The NPT ports take fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers), and the valve is for use with the 3000 series on our [air preparation shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the ARO 3000 series lockout valve?",
+          "a": "Fit it ahead of the unit, lock it off with your own padlock and exhaust the line before work, as ISO 4414 requires. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ARO 3000 series lockout valve differ from its sibling listings?",
+          "a": "The [Legris lockout valve](/p/legris-lockout-valves) is brass and rated 145 psi, whereas this ARO valve is modular aluminum at 250 psi. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ARO 3000 series lockout valve made and which HS code applies?",
+          "a": "The recorded country of origin is South Korea and the recorded HS code is 8481100090. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ARO 3000 series lockout valve in Dubai?",
+          "a": "Yes. the ARO 3000 series lockout valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-heavy-duty-high-capacity-safety-pop-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon heavy duty high capacity safety pop-off valve used for?",
+          "a": "Dixon heavy duty high capacity safety pop-off valves are brass pop-off valves for air systems with high flow, 5 part numbers from SV30HD (73 SCFM) to SV200HD (391 SCFM)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Dixon heavy duty high capacity safety pop-off valve part numbers such as SV150HD mean?",
+          "a": "On the rows the number after SV rises with the flow: SV125HD is 254 SCFM, SV150HD is 300 SCFM, SV175HD is 346 SCFM and SV200HD is 391 SCFM, with 1/2 inch threads except SV30HD."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Dixon heavy duty high capacity safety pop-off valve come in?",
+          "a": "Five valves with 1/2 inch thread on four of them, flows 73 to 391 SCFM. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon heavy duty high capacity safety pop-off valve?",
+          "a": "Choose the valve whose flow is at or above the output of the compressor, and the set pressure to suit the vessel. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Dixon heavy duty high capacity safety pop-off valve have?",
+          "a": "The rows give flow rates from 73 to 391 SCFM. Set pressure and temperature are not recorded here, so ask us for the Dixon data before specifying."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon heavy duty high capacity safety pop-off valve made of?",
+          "a": "The body is brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon heavy duty high capacity safety pop-off valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Dixon heavy duty high capacity safety pop-off valve. Tell us what documents your project needs, such as a certificate of conformity or origin for SV150HD, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Dixon heavy duty high capacity safety pop-off valve?",
+          "a": "The 1/2 inch thread screws into the receiver; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Dixon heavy duty high capacity safety pop-off valve?",
+          "a": "Fit upright at the top of the vessel with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon heavy duty high capacity safety pop-off valve differ from its sibling listings?",
+          "a": "Compared with the [Dixon standard pop-off valves](/p/dixon-standard-safety-pop-off-valves) these are higher capacity, with flows up to 391 SCFM. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon heavy duty high capacity safety pop-off valve made and which HS code applies?",
+          "a": "For the Dixon heavy duty high capacity safety pop-off valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon heavy duty high capacity safety pop-off valve in Dubai?",
+          "a": "Yes, we stock the Dixon heavy duty high capacity safety pop-off valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-soft-seat-safety-pop-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon soft seat safety pop-off valve used for?",
+          "a": "Dixon soft seat safety pop-off valves are small brass pop-off valves with 1/4 inch male threads, 4 part numbers from KSV10-100 (51 SCFM) to KSV10-175 (84 SCFM)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Dixon soft seat safety pop-off valve part numbers such as KSV10-150 mean?",
+          "a": "The rows give flow: KSV10-100 is 51 SCFM, -125 is 62 SCFM, -150 is 73 SCFM and -175 is 84 SCFM. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Dixon soft seat safety pop-off valve come in?",
+          "a": "One thread size, 1/4 inch male, in four flow ratings. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon soft seat safety pop-off valve?",
+          "a": "Choose by the flow rating needed. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Dixon soft seat safety pop-off valve have?",
+          "a": "The listing gives a maximum temperature of 400°F (about 204°C) and flows of 51 to 84 SCFM. Set pressure is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon soft seat safety pop-off valve made of?",
+          "a": "For the Dixon soft seat safety pop-off valve: the body is brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon soft seat safety pop-off valve come with certificates?",
+          "a": "The listing for the Dixon soft seat safety pop-off valve states no certificates and we do not claim any. Certificate of conformity or origin requests for KSV10-150 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Dixon soft seat safety pop-off valve?",
+          "a": "1/4 inch male thread; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Dixon soft seat safety pop-off valve?",
+          "a": "For the Dixon soft seat safety pop-off valve: fit upright at the top of the vessel with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon soft seat safety pop-off valve differ from its sibling listings?",
+          "a": "The soft seat suits tight shut-off; the [standard pop-off valve](/p/dixon-standard-safety-pop-off-valves) is a different body. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon soft seat safety pop-off valve made and which HS code applies?",
+          "a": "For the Dixon soft seat safety pop-off valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon soft seat safety pop-off valve in Dubai?",
+          "a": "Yes. We keep the Dixon soft seat safety pop-off valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-standard-safety-pop-off-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon standard safety pop-off valve used for?",
+          "a": "Dixon standard safety pop-off valves are brass or stainless steel pop-off valves with 1/4 inch male NPT threads, 8 part numbers from SV30 (35 SCFM) to SV200SS (173 SCFM)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Dixon standard safety pop-off valve part numbers such as SV125SS mean?",
+          "a": "The SS suffix marks stainless steel; flows on the rows rise with the number: SV30 is 35 SCFM, SV125 is 109 SCFM, SV100SS is 92 SCFM and SV200SS is 173 SCFM."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Dixon standard safety pop-off valve come in?",
+          "a": "One thread size, 1/4 inch male NPT, in brass and stainless steel. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon standard safety pop-off valve?",
+          "a": "Choose brass or stainless and the flow rating needed. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Dixon standard safety pop-off valve have?",
+          "a": "The listing gives -40°F to +400°F (about -40 to 204°C) and flows of 35 to 173 SCFM. Set pressure is not recorded here. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon standard safety pop-off valve made of?",
+          "a": "Brass valves have a stainless steel ball; the SS versions are stainless steel. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Dixon standard safety pop-off valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Dixon standard safety pop-off valve. If your buyer needs paperwork for SV125SS, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Dixon standard safety pop-off valve?",
+          "a": "1/4 inch male NPT; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Dixon standard safety pop-off valve?",
+          "a": "For the Dixon standard safety pop-off valve: fit upright at the top of the vessel with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dixon standard safety pop-off valve differ from its sibling listings?",
+          "a": "Compared with the [heavy duty valves](/p/dixon-heavy-duty-high-capacity-safety-pop-off-valves) these are smaller capacity. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon standard safety pop-off valve made and which HS code applies?",
+          "a": "For the Dixon standard safety pop-off valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon standard safety pop-off valve in Dubai?",
+          "a": "Yes, the Dixon standard safety pop-off valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "gast-pressure-relief-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gast pressure and vacuum relief valve used for?",
+          "a": "Gast relief valves protect a pump or vessel by venting pressure or admitting air on vacuum. The listing has 4 part numbers: AA308, AA600, AA840A and AG258."
+        },
+        {
+          "slot": "B",
+          "q": "What do Gast pressure and vacuum relief valve part numbers such as AA600 mean?",
+          "a": "On the rows AA308 is a 3/4 NPT vacuum relief valve (5-27 In/Hg), AA600 is a 3/8 NPT pressure relief valve, AA840A is a 3/8 NPT vacuum relief valve and AG258 is a pressure/vacuum relief valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Gast pressure and vacuum relief valve come in?",
+          "a": "Four valves, in 3/4 and 3/8 NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Gast pressure and vacuum relief valve?",
+          "a": "Choose pressure, vacuum or combined relief according to what the pump needs. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Gast pressure and vacuum relief valve have?",
+          "a": "AA308 is set in the 5 to 27 In/Hg range. Other rows do not record settings, so ask us for the Gast data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Gast pressure and vacuum relief valve made of?",
+          "a": "Materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Gast pressure and vacuum relief valve come with certificates?",
+          "a": "the Gast pressure and vacuum relief valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for AA600."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Gast pressure and vacuum relief valve?",
+          "a": "NPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Gast pressure and vacuum relief valve?",
+          "a": "Fit where it senses the system pressure or vacuum. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Gast pressure and vacuum relief valve differ from its sibling listings?",
+          "a": "Unlike the Dixon pop-off valves these include vacuum types. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Gast pressure and vacuum relief valve made and which HS code applies?",
+          "a": "For the Gast pressure and vacuum relief valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gast pressure and vacuum relief valve in Dubai?",
+          "a": "Yes. the Gast pressure and vacuum relief valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "ingersoll-rand-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Ingersoll Rand compressor safety valve used for?",
+          "a": "Ingersoll Rand safety valves on this listing are replacement safety valves for reciprocating compressors, 3 part numbers: 49816283, 72062185 and 31385693."
+        },
+        {
+          "slot": "B",
+          "q": "What do Ingersoll Rand compressor safety valve part numbers such as 49816283 mean?",
+          "a": "The rows give the compatible compressor series: 49816283 and 72062185 are compatible with the 2475 series and 31385693 with the 2545 and 7100 series."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Ingersoll Rand compressor safety valve come in?",
+          "a": "Three part numbers, matched to compressor series. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Ingersoll Rand compressor safety valve?",
+          "a": "Match the part number to your compressor series and send us the model for confirmation. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Ingersoll Rand compressor safety valve have?",
+          "a": "Set pressure and capacity are not recorded on this listing, so we state none. Ask us for the Ingersoll Rand data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Ingersoll Rand compressor safety valve made of?",
+          "a": "For the Ingersoll Rand compressor safety valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Ingersoll Rand compressor safety valve come with certificates?",
+          "a": "We hold no certificate data for the Ingersoll Rand compressor safety valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 49816283 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Ingersoll Rand compressor safety valve?",
+          "a": "They fit Ingersoll Rand reciprocating compressors of the series named; see the [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Ingersoll Rand compressor safety valve?",
+          "a": "Isolate and exhaust the receiver, swap the valve and do not adjust it. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Ingersoll Rand compressor safety valve differ from its sibling listings?",
+          "a": "These are OEM-numbered spares, unlike the preset [Dixon pop-off valves](/p/dixon-standard-safety-pop-off-valves). Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Ingersoll Rand compressor safety valve made and which HS code applies?",
+          "a": "For the Ingersoll Rand compressor safety valve, country of origin is recorded as United States. No HS code is recorded. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Ingersoll Rand compressor safety valve in Dubai?",
+          "a": "Yes, we stock the Ingersoll Rand compressor safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-100-series-non-code-pop-safety-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 100 series non-code pop safety valve used for?",
+          "a": "Kingston 100 series non-code pop safety valves are brass pop valves in three sizes with adjustable set ranges. The listing has 3 part numbers: 100SS-1-000, 100SS-2-000 and 100SS-4-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 100 series non-code pop safety valve part numbers such as 100SS-2-000 mean?",
+          "a": "The middle digit is the size: 100SS-1-000 is 1/8 inch (5-100 psi), -2- is 1/4 inch (5-300 psi) and -4- is 1/2 inch (5-300 psi). Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 100 series non-code pop safety valve come in?",
+          "a": "Three sizes, 1/8, 1/4 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 100 series non-code pop safety valve?",
+          "a": "Choose the size for the flow and the range to contain the set pressure you need. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 100 series non-code pop safety valve have?",
+          "a": "The ranges are 5 to 100 psi on the 1/8 inch valve and 5 to 300 psi (about 21 bar) on the others. The valves are described as non code. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 100 series non-code pop safety valve made of?",
+          "a": "The 1/4 inch and 1/2 inch valves have a stainless steel ball; the body is brass. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 100 series non-code pop safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Kingston 100 series non-code pop safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for 100SS-2-000, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 100 series non-code pop safety valve?",
+          "a": "Thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 100 series non-code pop safety valve?",
+          "a": "Fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 100 series non-code pop safety valve differ from its sibling listings?",
+          "a": "The [Kingston POP safety valves](/p/kingston-pop-safety-valves) are also non code, in 1/4 inch. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 100 series non-code pop safety valve made and which HS code applies?",
+          "a": "For the Kingston 100 series non-code pop safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 100 series non-code pop safety valve in Dubai?",
+          "a": "Yes. We keep the Kingston 100 series non-code pop safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-112cr-series-pop-safety-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 112CR pop safety valve used for?",
+          "a": "Kingston 112CR pop safety valves are all-stainless steel pop valves in 1/4, 3/8 and 1/2 inch. The listing has 3 part numbers: 112CR-2-000, 112CR-3-000 and 112CR-4-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 112CR pop safety valve part numbers such as 112CR-2-000 mean?",
+          "a": "The middle digit is the size: -2- is 1/4 inch, -3- is 3/8 inch and -4- is 1/2 inch, each with a 25 to 300 psi range. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 112CR pop safety valve come in?",
+          "a": "Three sizes, 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 112CR pop safety valve?",
+          "a": "Choose the size for the flow and the range for the set pressure. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 112CR pop safety valve have?",
+          "a": "The range is 25 to 300 psi (about 21 bar) on all three sizes. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 112CR pop safety valve made of?",
+          "a": "All-stainless steel construction. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 112CR pop safety valve come with certificates?",
+          "a": "The listing for the Kingston 112CR pop safety valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 112CR-2-000 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 112CR pop safety valve?",
+          "a": "For the Kingston 112CR pop safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 112CR pop safety valve?",
+          "a": "For the Kingston 112CR pop safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 112CR pop safety valve differ from its sibling listings?",
+          "a": "The [112CSS](/p/kingston-112css-series-safety-valve) has a brass body with stainless steel ball and spring. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 112CR pop safety valve made and which HS code applies?",
+          "a": "For the Kingston 112CR pop safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 112CR pop safety valve in Dubai?",
+          "a": "Yes, the Kingston 112CR pop safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-112css-series-safety-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 112CSS safety valve used for?",
+          "a": "Kingston 112CSS safety valves are brass valves with a stainless steel ball and spring in 1/4, 3/8 and 1/2 inch. The listing has 3 part numbers: 112CSS-2-000, 112CSS-3-000 and 112CSS-4-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 112CSS safety valve part numbers such as 112CSS-3-000 mean?",
+          "a": "The middle digit is the size: -2- is 1/4 inch, -3- is 3/8 inch (with pull ring) and -4- is 1/2 inch, each 25 to 300 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 112CSS safety valve come in?",
+          "a": "Three sizes, 1/4, 3/8 and 1/2 inch, all with the same 25 to 300 psi range. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 112CSS safety valve?",
+          "a": "Choose the size for the flow you need and confirm the range contains your set pressure. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 112CSS safety valve have?",
+          "a": "The range is 25 to 300 psi (about 21 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 112CSS safety valve made of?",
+          "a": "Brass body with a stainless steel ball and spring. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 112CSS safety valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Kingston 112CSS safety valve. If your buyer needs paperwork for 112CSS-3-000, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 112CSS safety valve?",
+          "a": "For the Kingston 112CSS safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 112CSS safety valve?",
+          "a": "For the Kingston 112CSS safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 112CSS safety valve differ from its sibling listings?",
+          "a": "The [112CSSEN](/p/kingston-112cssen-series-safety-valve) is the nickel-plated version. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 112CSS safety valve made and which HS code applies?",
+          "a": "For the Kingston 112CSS safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 112CSS safety valve in Dubai?",
+          "a": "Yes. the Kingston 112CSS safety valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-112cssen-series-safety-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 112CSSEN safety valve used for?",
+          "a": "Kingston 112CSSEN safety valves are nickel-plated brass valves with a stainless steel ball in 1/4, 3/8 and 1/2 inch. The listing has 3 part numbers: 112CSSEN-2-000, -3-000 and -4-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 112CSSEN safety valve part numbers such as 112CSSEN-2-000 mean?",
+          "a": "The middle digit is the size: -2- is 1/4 inch, -3- is 3/8 inch and -4- is 1/2 inch, each 25 to 300 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 112CSSEN safety valve come in?",
+          "a": "For the Kingston 112CSSEN safety valve: three sizes, 1/4, 3/8 and 1/2 inch, all with the same 25 to 300 psi range. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 112CSSEN safety valve?",
+          "a": "For the Kingston 112CSSEN safety valve: choose the size for the flow you need and confirm the range contains your set pressure. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 112CSSEN safety valve have?",
+          "a": "For the Kingston 112CSSEN safety valve: the range is 25 to 300 psi (about 21 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 112CSSEN safety valve made of?",
+          "a": "Nickel-plated brass body with a stainless steel ball. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 112CSSEN safety valve come with certificates?",
+          "a": "the Kingston 112CSSEN safety valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 112CSSEN-2-000."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 112CSSEN safety valve?",
+          "a": "For the Kingston 112CSSEN safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 112CSSEN safety valve?",
+          "a": "For the Kingston 112CSSEN safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 112CSSEN safety valve differ from its sibling listings?",
+          "a": "The [112CSS](/p/kingston-112css-series-safety-valve) is the plain brass version. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 112CSSEN safety valve made and which HS code applies?",
+          "a": "For the Kingston 112CSSEN safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 112CSSEN safety valve in Dubai?",
+          "a": "Yes, we stock the Kingston 112CSSEN safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-114-series-pop-safety",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 114 series pop safety valve used for?",
+          "a": "Kingston 114 series pop safety valves have a Viton soft seat in 1/4 to 1 inch. The listing has 4 part numbers: 114-2-000, 114-4-000, 114-5-000 and 114-6-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 114 series pop safety valve part numbers such as 114-4-000 mean?",
+          "a": "The middle digit is the size: -2- is 1/4 inch (25-300 psi), -4- is 1/2 inch (25-275 psi), -5- is 3/4 inch (25-250 psi) and -6- is 1 inch (25-250 psi)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 114 series pop safety valve come in?",
+          "a": "Four sizes, 1/4, 1/2, 3/4 and 1 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 114 series pop safety valve?",
+          "a": "Choose the size for flow and note that the range falls as size rises. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 114 series pop safety valve have?",
+          "a": "The ranges are 25 to 300 psi on 1/4 inch, 275 on 1/2 inch and 250 psi on 3/4 and 1 inch. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 114 series pop safety valve made of?",
+          "a": "Brass body with a Viton soft seat. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 114 series pop safety valve come with certificates?",
+          "a": "We hold no certificate data for the Kingston 114 series pop safety valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 114-4-000 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 114 series pop safety valve?",
+          "a": "For the Kingston 114 series pop safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 114 series pop safety valve?",
+          "a": "For the Kingston 114 series pop safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 114 series pop safety valve differ from its sibling listings?",
+          "a": "Compared with the hard seat [118CSS](/p/kingston-118css-series-pop-safety-hard-seat) this is a soft seat valve. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 114 series pop safety valve made and which HS code applies?",
+          "a": "For the Kingston 114 series pop safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 114 series pop safety valve in Dubai?",
+          "a": "Yes. We keep the Kingston 114 series pop safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-118css-series-pop-safety-hard-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 118CSS hard seat pop safety valve used for?",
+          "a": "Kingston 118CSS pop safety valves are brass hard seat valves in 1/4 to 1 inch, labelled UV NB on the rows. The listing has 4 part numbers: 118CSS-2-000, -4-000, -5-000 and -6-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 118CSS hard seat pop safety valve part numbers such as 118CSS-4-000 mean?",
+          "a": "The middle digit is the size: -2- is 1/4 inch, -4- is 1/2 inch, -5- is 3/4 inch and -6- is 1 inch, each 25 to 300 psi. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 118CSS hard seat pop safety valve come in?",
+          "a": "For the Kingston 118CSS hard seat pop safety valve: four sizes, 1/4, 1/2, 3/4 and 1 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 118CSS hard seat pop safety valve?",
+          "a": "Choose the size for flow. Ask us for any certificate documents the application needs. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 118CSS hard seat pop safety valve have?",
+          "a": "The range is 25 to 300 psi (about 21 bar) on all sizes. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 118CSS hard seat pop safety valve made of?",
+          "a": "Brass body, hard seat. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 118CSS hard seat pop safety valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Kingston 118CSS hard seat pop safety valve. Tell us what documents your project needs, such as a certificate of conformity or origin for 118CSS-4-000, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 118CSS hard seat pop safety valve?",
+          "a": "For the Kingston 118CSS hard seat pop safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 118CSS hard seat pop safety valve?",
+          "a": "For the Kingston 118CSS hard seat pop safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 118CSS hard seat pop safety valve differ from its sibling listings?",
+          "a": "The [119CSS](/p/kingston-119css-series-pop-safety-hard-seat) is the high capacity version. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 118CSS hard seat pop safety valve made and which HS code applies?",
+          "a": "For the Kingston 118CSS hard seat pop safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 118CSS hard seat pop safety valve in Dubai?",
+          "a": "Yes, the Kingston 118CSS hard seat pop safety valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-119css-series-pop-safety-hard-seat",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston 119CSS high capacity hard seat pop safety valve used for?",
+          "a": "Kingston 119CSS pop safety valves are high-capacity brass hard seat valves in 1/4 to 1 inch, labelled UV NB on the rows. The listing has 4 part numbers: 119CSS-2-000, -4-000, -5-000 and -6-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston 119CSS high capacity hard seat pop safety valve part numbers such as 119CSS-4-000 mean?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: the middle digit is the size: -2- is 1/4 inch, -4- is 1/2 inch, -5- is 3/4 inch and -6- is 1 inch, each 25 to 300 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston 119CSS high capacity hard seat pop safety valve come in?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: four sizes, 1/4, 1/2, 3/4 and 1 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston 119CSS high capacity hard seat pop safety valve?",
+          "a": "Choose the size for flow; this series is the high capacity one. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston 119CSS high capacity hard seat pop safety valve have?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: the range is 25 to 300 psi (about 21 bar) on all sizes. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston 119CSS high capacity hard seat pop safety valve made of?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: brass body, hard seat. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston 119CSS high capacity hard seat pop safety valve come with certificates?",
+          "a": "The listing for the Kingston 119CSS high capacity hard seat pop safety valve states no certificates and we do not claim any. Certificate of conformity or origin requests for 119CSS-4-000 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston 119CSS high capacity hard seat pop safety valve?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston 119CSS high capacity hard seat pop safety valve?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston 119CSS high capacity hard seat pop safety valve differ from its sibling listings?",
+          "a": "The [118CSS](/p/kingston-118css-series-pop-safety-hard-seat) is the standard capacity version. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston 119CSS high capacity hard seat pop safety valve made and which HS code applies?",
+          "a": "For the Kingston 119CSS high capacity hard seat pop safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston 119CSS high capacity hard seat pop safety valve in Dubai?",
+          "a": "Yes. the Kingston 119CSS high capacity hard seat pop safety valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-ksv-series-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston KSV series safety valve used for?",
+          "a": "Kingston KSV series safety valves are small brass or stainless steel valves with a resilient silicone disc in 1/8 and 1/4 inch. The listing has 4 part numbers: KSV10-1-000, KSV10-2-000, KSV12-1-000 and KSV25-2-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston KSV series safety valve part numbers such as KSV25-2-000 mean?",
+          "a": "The first number is the orifice: KSV10 has a 0.156 inch orifice (50-275 psi) and KSV12 and KSV25 have 0.25 inch (25-375 psi); the next digit is the size, 1 for 1/8 inch and 2 for 1/4 inch."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston KSV series safety valve come in?",
+          "a": "Two sizes, 1/8 inch and 1/4 inch, each in the KSV10 small orifice and a larger orifice version. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston KSV series safety valve?",
+          "a": "Choose the orifice for flow and the range for the set pressure you need. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston KSV series safety valve have?",
+          "a": "The ranges are 50 to 275 psi on the KSV10 and 25 to 375 psi on the KSV12 and KSV25 (about 26 bar). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston KSV series safety valve made of?",
+          "a": "Brass or stainless steel with a resilient silicone disc. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston KSV series safety valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the Kingston KSV series safety valve. If your buyer needs paperwork for KSV25-2-000, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston KSV series safety valve?",
+          "a": "For the Kingston KSV series safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston KSV series safety valve?",
+          "a": "For the Kingston KSV series safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston KSV series safety valve differ from its sibling listings?",
+          "a": "The [Kingston POP valves](/p/kingston-pop-safety-valves) are brass 1/4 inch. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston KSV series safety valve made and which HS code applies?",
+          "a": "For the Kingston KSV series safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston KSV series safety valve in Dubai?",
+          "a": "Yes, we stock the Kingston KSV series safety valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "kingston-pop-safety-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kingston POP safety valve used for?",
+          "a": "Kingston POP safety valves are brass 1/4 inch non-code pop valves, 3 part numbers: 128AT-2-000 (toggle, soft seat), 128AP-2-000 (pull ring, soft seat) and 111X-2-000."
+        },
+        {
+          "slot": "B",
+          "q": "What do Kingston POP safety valve part numbers such as 128AT-2-000 mean?",
+          "a": "128AT has a toggle and 128AP a pull ring, both soft seat and 5 to 300 psi, and 111X is 5 to 400 psi, all 1/4 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Kingston POP safety valve come in?",
+          "a": "One size, 1/4 inch, in three versions. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Kingston POP safety valve?",
+          "a": "Choose the manual release (toggle or pull ring) and the range. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Kingston POP safety valve have?",
+          "a": "Ranges are 5 to 300 psi (about 21 bar) and 5 to 400 psi on the 111X. The valves are described as non code. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kingston POP safety valve made of?",
+          "a": "Brass body. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Kingston POP safety valve come with certificates?",
+          "a": "the Kingston POP safety valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for 128AT-2-000."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Kingston POP safety valve?",
+          "a": "For the Kingston POP safety valve: thread type is not recorded across the listing; confirm it for the row you order. See our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Kingston POP safety valve?",
+          "a": "For the Kingston POP safety valve: fit upright at the top of the vessel, with no valve between it and the vessel. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Kingston POP safety valve differ from its sibling listings?",
+          "a": "The [Kingston 100 series](/p/kingston-100-series-non-code-pop-safety-valve) is also non code with more sizes. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kingston POP safety valve made and which HS code applies?",
+          "a": "For the Kingston POP safety valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kingston POP safety valve in Dubai?",
+          "a": "Yes. We keep the Kingston POP safety valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "legris-lockout-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Legris lockout valve used for?",
+          "a": "Legris lockout valves are brass air line lockout valves that shut and vent the line so equipment can be locked off. The listing has 9 part numbers in the 7880, 7885 and 7886 series."
+        },
+        {
+          "slot": "B",
+          "q": "What do Legris lockout valve part numbers such as 7886 14 14 mean?",
+          "a": "7886 is the NPT version (7886 14 14 is 1/4 inch NPT), 7880 the BSPP version (7880 08 13 is 1/4 inch BSPP) and 7885 the tube outlet version (7885 56 11 is 1/4 inch tube)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Legris lockout valve come in?",
+          "a": "Sizes of 1/8, 1/4, 3/8 and 1/2 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Legris lockout valve?",
+          "a": "Choose NPT, BSPP or tube outlet to match your pipework. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Legris lockout valve have?",
+          "a": "Rows give 145 psi (10 bar) and -4°F to +158°F (about -20 to 70°C). Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Legris lockout valve made of?",
+          "a": "Brass, nickel plated, with PTFE seals. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Legris lockout valve come with certificates?",
+          "a": "We hold no certificate data for the Legris lockout valve, so none is claimed here. Ask for a certificate of conformity or origin with your enquiry for 7886 14 14 and we will tell you what can be supplied."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Legris lockout valve?",
+          "a": "NPT, BSPP or tube outlets; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and [pneumatic tubing shelf](/c/pneumatic-tubing). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Legris lockout valve?",
+          "a": "Fit it ahead of the equipment, lock it off and exhaust the line before work, as ISO 4414 requires. Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Legris lockout valve differ from its sibling listings?",
+          "a": "The [ARO lockout valve](/p/aro-lockout-valve-cfm-250-psi) is modular aluminum at 250 psi. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Legris lockout valve made and which HS code applies?",
+          "a": "The recorded country of origin is France and the recorded HS code is 8481801050. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Legris lockout valve in Dubai?",
+          "a": "Yes, the Legris lockout valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "nitra-asd-series-soft-start-dump-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Nitra ASD series soft start/dump valve used for?",
+          "a": "Nitra ASD series soft start/dump valves are 3-port, 2-position, single solenoid spring return, normally closed valves, 6 part numbers from ASD-21-24D to ASD-32-120A."
+        },
+        {
+          "slot": "B",
+          "q": "What do Nitra ASD series soft start/dump valve part numbers such as ASD-22-24D mean?",
+          "a": "ASD-21, -22 and -32 are the three body sizes and the suffix 24D or 120A selects the coil version. Quote the full number and confirm the coil voltage with us."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Nitra ASD series soft start/dump valve come in?",
+          "a": "Three body codes (21, 22 and 32) in two coil versions each. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Nitra ASD series soft start/dump valve?",
+          "a": "Choose the body for the flow and the coil option for your supply. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the Nitra ASD series soft start/dump valve have?",
+          "a": "Maker ratings are not held on this listing, so we state none. Ask us for the Nitra data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Nitra ASD series soft start/dump valve made of?",
+          "a": "For the Nitra ASD series soft start/dump valve: materials are not recorded on this listing. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Nitra ASD series soft start/dump valve come with certificates?",
+          "a": "No certificates or approvals are recorded for the Nitra ASD series soft start/dump valve. Tell us what documents your project needs, such as a certificate of conformity or origin for ASD-22-24D, when you ask for a price."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the Nitra ASD series soft start/dump valve?",
+          "a": "Use fittings from our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the Nitra ASD series soft start/dump valve?",
+          "a": "Fit ahead of the equipment with the solenoid wired as directed and exhaust the line before work. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Nitra ASD series soft start/dump valve differ from its sibling listings?",
+          "a": "The [SMC AVL](/p/smc-avl-series-soft-start-lock-out-valve) combines soft start with lockout. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Nitra ASD series soft start/dump valve made and which HS code applies?",
+          "a": "The recorded country of origin is China and the recorded HS code is 848190. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Nitra ASD series soft start/dump valve in Dubai?",
+          "a": "Yes. the Nitra ASD series soft start/dump valve is stocked at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times. Quote the part numbers and quantities on [our contact page](/contact) and we will reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "smc-avl-series-soft-start-lock-out-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC AVL series soft start lock out valve used for?",
+          "a": "The SMC AVL series soft start lock out valve combines slow pressure build-up with a lockable shut-off and vent. The listing has 32 part numbers in four body sizes, AVL2000 to AVL5000."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC AVL series soft start lock out valve part numbers such as AVL4000-N04 mean?",
+          "a": "The number after AVL is the body: AVL2000 is 1/4 inch, AVL3000 3/8, AVL4000 1/2 and AVL5000 3/4 inch; N before the port code means NPT, P marks a version and 5DZ or 3DZ options appear in longer numbers."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC AVL series soft start lock out valve come in?",
+          "a": "Four bodies, 1/4, 3/8, 1/2 and 3/4 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC AVL series soft start lock out valve?",
+          "a": "Choose the body for the flow and the thread: -N for NPT as in AVL4000-N04. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC AVL series soft start lock out valve have?",
+          "a": "Maker ratings are not held on this listing, so we state none. Ask us for the SMC AVL catalogue. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC AVL series soft start lock out valve made of?",
+          "a": "The listing records a non-locking push-type flush manual override; materials are not recorded. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC AVL series soft start lock out valve come with certificates?",
+          "a": "The listing for the SMC AVL series soft start lock out valve states no certificates and we do not claim any. Certificate of conformity or origin requests for AVL4000-N04 should go in with the quotation request."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC AVL series soft start lock out valve?",
+          "a": "For the SMC AVL series soft start lock out valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC AVL series soft start lock out valve?",
+          "a": "Fit ahead of the equipment and exhaust the line before work. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC AVL series soft start lock out valve differ from its sibling listings?",
+          "a": "The [SMC slow start valve](/p/smc-slow-start-valve) is a simple meter-in needle valve. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC AVL series soft start lock out valve made and which HS code applies?",
+          "a": "For the SMC AVL series soft start lock out valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC AVL series soft start lock out valve in Dubai?",
+          "a": "Yes, we stock the SMC AVL series soft start lock out valve at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tell us the part numbers and quantities through [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "smc-ke-series-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC KE series valve used for?",
+          "a": "SMC KE series valves are resin-body one-touch fitting valves listed as relief valves, in 6 to 12 mm and 3/8 inch sizes. The listing has 9 part numbers: KEC-03, KEA06 to KEA12 and KEB06 to KEB12."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC KE series valve part numbers such as KEA08 mean?",
+          "a": "The digits are the tube size: KEA06 and KEB06 are 6 mm, 08 is 8 mm, 10 is 10 mm and 12 is 12 mm, and KEC-03 is 3/8 inch. Quote the full part number when you order so we can confirm the exact variant."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC KE series valve come in?",
+          "a": "Sizes of 6, 8, 10, 12 mm and 3/8 inch. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC KE series valve?",
+          "a": "Choose the tube size to match the line, A or B for the version. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC KE series valve have?",
+          "a": "Maker ratings are not held on this listing, so we state none. Ask us for the SMC KE data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC KE series valve made of?",
+          "a": "The body is resin with a push lock knob and one-touch couplings on both sides. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC KE series valve come with certificates?",
+          "a": "There is no approval or certificate information on file for the SMC KE series valve. If your buyer needs paperwork for KEA08, say so at quotation stage and we will confirm what is available."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC KE series valve?",
+          "a": "Takes tube from our [pneumatic tubing shelf](/c/pneumatic-tubing). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC KE series valve?",
+          "a": "Fit in the tube run and set it with the push lock knob. See our [flow controls, check and quick exhaust valves shelf](/c/pneumatic-flow-check-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC KE series valve differ from its sibling listings?",
+          "a": "The [SMC slow start valve](/p/smc-slow-start-valve) uses a needle valve. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC KE series valve made and which HS code applies?",
+          "a": "For the SMC KE series valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC KE series valve in Dubai?",
+          "a": "Yes. We keep the SMC KE series valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "smc-slow-start-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SMC ASS slow start valve used for?",
+          "a": "SMC ASS slow start valves are inline meter-in needle valves with a bypass check that bring pressure up slowly after a stop. The listing has 13 part numbers from ASS100 to ASS600."
+        },
+        {
+          "slot": "B",
+          "q": "What do SMC ASS slow start valve part numbers such as ASS300-N02 mean?",
+          "a": "The number after ASS is the body: ASS100 is 1/8 inch, ASS300 1/4 and 3/8, ASS500 1/2 and ASS600-F10 3/4; N means NPT, as in ASS300-N02."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the SMC ASS slow start valve come in?",
+          "a": "Sizes from 1/8 to 3/4 inch, in 13 part numbers across the ASS100 to ASS600 bodies. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SMC ASS slow start valve?",
+          "a": "Choose the body for the line flow and the thread, N for NPT. Send us the size and port thread you need and we will confirm the matching part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature rating does the SMC ASS slow start valve have?",
+          "a": "Maker ratings are not held on this listing, so we state none. Ask us for the SMC data. Check the row of the exact part number before you rely on a rating, and ask us for the maker data if you need it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SMC ASS slow start valve made of?",
+          "a": "The listing records inline piping, NPT threads and a needle valve function. Ask us to confirm the material of the exact part number and the media it will see, because compatibility depends on the fluid, the temperature and the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Does the SMC ASS slow start valve come with certificates?",
+          "a": "the SMC ASS slow start valve carries no certificate information in our records, and we make no approval claims for it. If you need a certificate of conformity or origin, ask when you request the quotation, for example for ASS300-N02."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the SMC ASS slow start valve?",
+          "a": "For the SMC ASS slow start valve: nPT ports; see our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers). Match the port thread to the mating part and ask us if you are unsure of the combination."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install the SMC ASS slow start valve?",
+          "a": "Fit inline with the arrow toward the load. See our [guide to air safety, soft-start and lockout valves](/blog/air-safety-relief-soft-start-and-lockout-valves). Isolate and exhaust the line before any work on it, as ISO 4414 requires."
+        },
+        {
+          "slot": "K",
+          "q": "How does the SMC ASS slow start valve differ from its sibling listings?",
+          "a": "The [SMC AVL](/p/smc-avl-series-soft-start-lock-out-valve) adds a solenoid and lockout. Send us your duty, pressure and flow and we will confirm which of the two suits the application better."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SMC ASS slow start valve made and which HS code applies?",
+          "a": "For the SMC ASS slow start valve, country of origin and HS code are not recorded for this listing. We export from Dubai worldwide with the paperwork your customs broker needs, and the importing country's tariff fixes the final HS digits."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the SMC ASS slow start valve in Dubai?",
+          "a": "Yes, the SMC ASS slow start valve is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. For a quotation, send the part numbers you need and the quantities through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

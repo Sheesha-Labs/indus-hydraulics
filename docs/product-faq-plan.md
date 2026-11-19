@@ -249,3 +249,43 @@ What the pilot taught us:
 Next: (a) deploy the link renderer in the next batch merge; (b) write the two ready pilot
 families with `--write --allow-links`, IndexNow; (c) pneumatic tubing data fix, rewrite, write;
 (d) wave 1 = Pneumatics, each shelf preceded by its size-table data pass.
+
+**Status 2026-11-19:** link renderer deployed (#627, 75ac073e); all three pilot families written.
+
+## 11. Wave 1 — Pneumatics (2026-11-19)
+
+769 products on the ten remaining pneumatics shelves (tubing was the pilot), split into 36 chunks
+of 23–26 products by shelf and brand. Payloads: `packages/db/data/product-faqs/wave-1/`.
+
+| | |
+|---|---|
+| Products / FAQs / links | 769 / 9,216 / 3,252 |
+| Writers | 8 Opus agents (one chunk each), then 4 Sonnet agents (6–8 chunks each) |
+| Data findings | 420 (92 high, 155 medium, 173 low) — reports kept outside the repo |
+| Data fixed | 316 listings, by `src/scripts/fix-wave1-pneumatics-data.ts` (DB + catalogue payloads) |
+
+**Use Sonnet, several chunks per agent** (owner decision 2026-11-19): one Opus agent per chunk
+was too costly for a writing task. Sonnet output is accurate but thinner where the data is thin.
+
+What the data pass fixed (generic rules, then per-listing edits):
+- Pressure columns holding the bottom of the range the row states ("30 - 100 Psi" stored as 30) —
+  Destaco grippers, ARO Alpha, SMC SY/VQZ, Parker logic valves, P32S soft-start; where no maximum
+  is published the bogus minimum is cleared (Parker B/N solenoid, Numatics, Norgren Excelon 1–5 psi).
+- Rod diameters in the bore column on Parker 4MA/SR/SRM (bore re-read from the model code).
+- Specs copied from one model onto a whole range removed (4MA "Based On Model", port and mount;
+  SMC series/centre/station counts; vacuum pad material and temperature; clamp specs on grippers).
+- HS codes: 8482 (bearings) on air valves, 9032 on Metal Work, 8421.29/8481.10 on air filters.
+- Titles: "1 Inch Bore" removed from 4MA/LP/LPM (no such bore), Destaco accessory listings,
+  Parker portable hydraulic filter elements (moved to `hydraulic-filters`), SMC VPA air pilot valves
+  (moved to `pneumatic-control-valves`), SY7000/SY9000 manifolds, P3NF particulate and coalescing.
+- 15 rows moved to the listing of their own series (Wilkerson L18/L28/L30/R30/BB3/CB6, Destaco
+  16503P-H); one merchandising-display row deleted.
+
+Not fixed (decide separately): ~40 Parker 4MA/SR slugs still carry "1-inch-bore" (needs 301s and
+FAQ link updates); misfiled rows with no correct listing to go to (Parker hydraulic needle valves
+and BV10N bleed valves, cylinders inside "SMC Valve", Dixon L30/L26 rows, ARO manual valves on the
+solenoid shelf); the low-confidence findings; one vacuum brand on the listings to be checked against §14.
+
+**Catalogue payloads still hold `faqs: []`** for these products. Before any re-import, check
+whether the loader replaces FAQs; if it does, re-run the FAQ payloads afterwards (they are
+idempotent).

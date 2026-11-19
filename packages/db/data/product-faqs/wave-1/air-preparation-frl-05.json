@@ -1,0 +1,1658 @@
+{
+  "family": "air-preparation-frl-05",
+  "extraFacts": [
+    {
+      "fact": "Pressure conversion used in these answers: 1 bar = 14.5038 psi, so 125 psi is about 8.6 bar (about 9 bar), 150 psi about 10 bar, 175 psi about 12 bar, 232 psi 16 bar, 250 psi about 17 bar and 290 psi 20 bar.",
+      "source": "ISO 80000-4 / NIST SP 811 unit conversion (1 bar = 100 kPa = 14.5038 psi)"
+    },
+    {
+      "fact": "Parker general industrial and Prep-Air II air preparation units: polycarbonate bowls are rated 0 to 150 psig (about 10 bar) and metal bowls 0 to 250 psig (about 17 bar) inlet pressure. Polycarbonate bowls can be attacked by some compressor oils, synthetic lubricants, solvents and chemicals; Parker specifies metal bowls where those are present, at higher pressure, or where a plastic bowl is not permitted. Parker recommends F442 oil for its mist and micro-mist lubricators.",
+      "source": "Parker Hannifin catalogue 0700P, Air Preparation Products, Prep-Air II (parker.com, 0700P_PrepAir_Products.pdf): bowl ratings, bowl caution and lubricant recommendation"
+    },
+    {
+      "fact": "Parker Prep-Air II and general industrial part-number pattern, as shown in the size-table rows of these listings: series number (04 and 14 Mini, 06, 11 and 16 Compact, 07 and 17 Standard) + function letter (E filter/regulator, F filter, L lubricator, G and H filter/regulator-lubricator combinations) + port digit (0 = 1/8, 1 = 1/4, 2 = 3/8, 3 = 1/2, 4 = 3/4 inch NPT) + bowl and drain digit (for example 2 = polycarbonate bowl with manual drain and 6 = polycarbonate bowl with auto float drain on 06E, 07E and 06F rows) + element letter (A = 40 micron, B = 5 micron particulate; E = 0.01 micron coalescing on 11F) + for regulators two digits giving the pressure range, then option letters.",
+      "source": "Parker catalogue 0700P Prep-Air II ordering information, read against the Indus listing rows (for example 06E12A13AC 1/4 inch manual drain, 06E16A13AC 1/4 inch auto float, 06F16AC 1/4 inch 40 micron, 06F18BC 1/4 inch 5 micron, 11F12EC 0.01 micron)"
+    },
+    {
+      "fact": "Parker 06G is a two-piece pipe-nippled (close nippled) combination of an integral particulate filter/regulator and a mist lubricator; 06H is the two-piece modular-mounted version of the same integral filter/regulator plus mist lubricator. Ordering positions run port size, filter bowl type, element, pressure range, relief type and lubricator bowl type; Parker's example 06G22A13A2BC is 3/8 inch, 40 micron element, relieving.",
+      "source": "Parker catalogue 0700P, Prep-Air II Close Nippled Combinations, 06G/16G Compact series (parker.com)"
+    },
+    {
+      "fact": "Mist and micro-mist lubricators: a mist lubricator sends all the oil drops it meters into the air stream and suits a single tool or cylinder close to the unit; a micro-mist lubricator returns the larger drops to the bowl and sends only fine particles, which travel further and can feed several points or longer pipe runs. Both feed oil only while air is flowing. In an FRL line the order is filter, then regulator, then lubricator, with the lubricator last before the point of use.",
+      "source": "Parker catalogue 0700P, Prep-Air II lubricator section; Indus guide /blog/frl-filter-regulator-lubricator-guide"
+    },
+    {
+      "fact": "Coalescing filters: Parker recommends a particulate pre-filter (5 micron or finer) upstream of a 0.01 micron coalescing filter to extend element life, and a coalescing filter upstream of an activated-carbon filter. Parker OIL-X filter elements should be changed every 12 months to keep the stated air quality, even if the pressure drop is still low.",
+      "source": "Parker catalogue 0700P coalescing filter application notes; Parker OIL-X compressed air filter literature (element change annually)"
+    },
+    {
+      "fact": "Harmonized System headings: 8421.39 covers filtering or purifying machinery and apparatus for gases (compressed-air filters); 8421.99 covers parts of such filters (replacement filter elements); 8481.10 covers pressure-reducing valves (air regulators). Filter/regulators and lubricators are classified by the importing customs authority, commonly under 8421.39, 8481.10 or 8481.80.",
+      "source": "World Customs Organization, Harmonized System Nomenclature 2022, headings 84.21 and 84.81"
+    },
+    {
+      "fact": "Port and flow data across this chunk's Parker listings (from their size-table rows): 04L Mini lubricator 1/8 and 1/4 inch, 20 scfm; 06L Compact lubricator 1/4, 3/8 and 1/2 inch, 90 cfm; 07L Standard lubricator 1/2 and 3/4 inch, 90 cfm, 150 to 175 psi; 16L/17L micro-mist lubricator 1/4 to 3/4 inch, 90 scfm; 14F Mini filter 1/8 and 1/4 inch, 22 to 24 scfm, 5 micron; 06F Compact filter 1/4, 3/8 and 1/2 inch, 53 to 85 cfm; 07F Standard filter 1/2 and 3/4 inch, 130 to 145 cfm; 11F Compact coalescing filter 1/4, 3/8 and 1/2 inch, 0.01 micron, 95 scfm; 06E Compact filter/regulator 1/4, 3/8 and 1/2 inch, 61 scfm at 1/2 inch; 07E Standard filter/regulator 1/2 and 3/4 inch; P31 Mini modular units 1/4 inch NPT; F602 heavy-duty filter 3/4, 1 and 1 1/2 inch, 270 to 450 cfm; OIL-X main line filters 1/4 to 3 inch NPT, 21 to 1,314 cfm.",
+      "source": "Indus Hydraulics listing size tables (Parker part-number rows), November 2026"
+    },
+    {
+      "fact": "Parker OIL-X compressed air filter codes: grade letters AO (1 micron coalescing, general purpose), AA (0.01 micron coalescing, high efficiency oil removal) and ACS (activated carbon, oil vapour), then PX for OIL-X, a three-digit housing size (010 to 055), a port letter, N for NPT threads and FX for the float-drain version or MX for the manual-drain version. Replacement OIL-X elements carry the same housing size and grade, so a 035AA element fits an AAPX035 housing.",
+      "source": "Parker OIL-X compressed air filter catalogue (parker.com), read against the Indus listing rows (for example AAPX035GNFX, AOPX045INFX, ACSPX030GNMX)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "parker-04l-mini-general-industrial-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 04L Mini general industrial lubricator used for?",
+          "a": "The Parker 04L Mini is a small mist-type air line lubricator that adds a metered oil mist to the compressed air feeding valves, cylinders and air tools on 1/8\" and 1/4\" NPT lines. It has a zinc body, nitrile seals, a sight dome for watching the drip rate and a knob to set the oil feed; this listing carries 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 04L Mini lubricator part number such as 04L13GB?",
+          "a": "In 04L13GB, 04L is the Mini lubricator series, the first digit is the port (0 = 1/8\", 1 = 1/4\") and the second digit the bowl: 0 is the polycarbonate bowl and 3 the metal bowl without sight gauge. So 04L00GB is 1/8\" with a poly bowl and 04L13GB is 1/4\" with a metal bowl; GB is common to all four part numbers."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 04L Mini lubricator come in?",
+          "a": "The 04L Mini comes in 1/8\" NPT (04L00GB, 04L03GB) and 1/4\" NPT (04L10GB, 04L13GB). Parker gives 04L10GB a flow of 20 scfm, so it suits small cylinders and single tools; match the port to the filter ahead of it, such as the [Parker 14F Mini particulate filter](/p/parker-14f-mini-general-industrial-particulate-filters)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a polycarbonate or metal bowl Parker 04L Mini lubricator?",
+          "a": "Choose the polycarbonate bowl (04L00GB, 04L10GB) when you want to see the oil level and the line stays under 150 psig, and the metal bowl (04L03GB, 04L13GB) for up to 250 psig, up to 80°C, or where solvents or synthetic oils could attack polycarbonate. Parker specifies metal bowls wherever a plastic bowl is not permitted."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 04L Mini lubricator?",
+          "a": "Polycarbonate-bowl 04L00GB and 04L10GB are rated 0 to 150 psig (about 10 bar), and metal-bowl 04L03GB and 04L13GB 0 to 250 psig (about 17 bar). Temperature limits are 0 to 52°C (125°F) for the poly bowl and 0 to 80°C for the metal bowl, so check both figures on the row you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil should go in a Parker 04L Mini lubricator?",
+          "a": "Parker recommends its F442 oil for the 04L Mini, and the unit is made for compressed air only. Avoid oils with additives or solvents that can craze a polycarbonate bowl or swell the nitrile seals; if your compressor uses a synthetic lubricant, pick a metal-bowl part number."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 04L Mini lubricator come with a certificate of conformity?",
+          "a": "No certificate or datasheet is held on this listing. If your plant or project needs a certificate of conformity, a certificate of origin or a material declaration for the 04L Mini, say so in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where does a Parker 04L Mini lubricator go in an FRL air line?",
+          "a": "Fit the 04L Mini last in the line: filter first, then regulator, then lubricator, as close as practical to the tool or valve it feeds. Matching mini filters and regulators are on our [filters, regulators and lubricators shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set the oil feed on a Parker 04L Mini lubricator?",
+          "a": "Set the feed with the adjustment knob while air is flowing and count the drops in the sight dome; turning the knob changes the drops per minute. A mist lubricator only feeds oil while air moves through it, so set it at the flow the tool really uses and refill before the bowl runs low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 04L Mini and 06L Compact lubricators?",
+          "a": "The 04L Mini covers 1/8\" and 1/4\" ports at about 20 scfm, while the [Parker 06L Compact lubricator](/p/parker-06l-compact-general-industrial-lubricators) covers 1/4\", 3/8\" and 1/2\" ports at 90 cfm. Pick the 04L for small single-point loads and the 06L for larger cylinders, tools or several valves on one line."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker 04L Mini lubricator made, and which HS code applies?",
+          "a": "The Parker 04L Mini lubricators on this listing are made in Mexico, and we export them from Dubai to the GCC, Africa, Asia and beyond. Lubricators are classified by the importing customs authority, commonly under heading 8481.80; the code and origin are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker 04L Mini lubricators from stock in Dubai?",
+          "a": "Yes. Indus holds Parker 04L Mini lubricators in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the 04L part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06e-compact-general-industrial-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 06E Compact general industrial filter/regulator?",
+          "a": "The Parker 06E Compact is a one-piece filter/regulator that cleans compressed air and holds the downstream pressure at a set value in a single body, saving space against a separate filter and regulator. This listing has 3 part numbers in 1/4\" and 3/8\" NPT, all with a polycarbonate bowl and bowl guard."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Parker part number 06E16A13AC mean?",
+          "a": "06E16A13AC reads as 06E (Compact filter/regulator), 1 (1/4\" port), 6 (polycarbonate bowl with auto float drain), A (40 micron element) and 13 (regulator pressure range), with AC the option suffix. 06E12A13AC is the same unit with a manual drain, and 06E22A13AC is the 3/8\" manual-drain version."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker 06E Compact filter/regulator come in?",
+          "a": "This listing covers 1/4\" NPT (06E12A13AC manual drain, 06E16A13AC auto float drain) and 3/8\" NPT (06E22A13AC manual drain). For 1/2\" ports, 5 micron elements or other pressure ranges, see the [Parker 06E Prep-Air II filter/regulator listing](/p/parker-06e-prep-air-ii-series-filter-regulators)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I pick a manual or auto float drain Parker 06E filter/regulator?",
+          "a": "Pick the auto float drain (06E16A13AC) where nobody will drain the bowl every shift or the air carries a lot of water, and the manual drain (06E12A13AC, 06E22A13AC) for clean, dry air that is checked routinely. Either way, never let liquid rise to the element, or it will be carried downstream."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 06E Compact filter/regulator rated for?",
+          "a": "The 06E Compact units here have a polycarbonate bowl, which Parker rates at 0 to 150 psig (about 10 bar) inlet pressure. The outlet set range comes from the 13 pressure-range code in the part number; tell us the set pressure you need and we confirm the right range code."
+        },
+        {
+          "slot": "F",
+          "q": "Can the Parker 06E Compact filter/regulator handle compressor oil carry-over?",
+          "a": "The 06E's polycarbonate bowl is fine for normal compressed air with mineral-oil carry-over, but Parker warns that some synthetic compressor oils, solvents and chemicals attack polycarbonate. Where those are present, use a metal-bowl part number; the bowl guard on these units protects against knocks, not chemicals."
+        },
+        {
+          "slot": "G",
+          "q": "Which air quality standard does a 40 micron Parker 06E filter/regulator meet?",
+          "a": "Parker does not publish an ISO 8573-1 purity class for the 06E's 40 micron element, which is a coarse protective grade for general tools and cylinders. If a process needs a stated class, add finer filtration; our [ISO 8573-1 air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes."
+        },
+        {
+          "slot": "H",
+          "q": "What can be fitted after a Parker 06E Compact filter/regulator?",
+          "a": "A lubricator goes after the 06E if the tools need oiled air, otherwise the line runs straight to the valves. The [Parker 06L Compact lubricator](/p/parker-06l-compact-general-industrial-lubricators) is the same compact size, in 1/4\" and 3/8\" ports to match the 06E."
+        },
+        {
+          "slot": "I",
+          "q": "How do you service a Parker 06E Compact filter/regulator?",
+          "a": "Isolate and exhaust the air, unscrew the guarded bowl, clean it with warm soapy water only and replace the 40 micron element when it is clogged or the pressure drop rises. Check the drain works, refit the bowl seal and then set the outlet pressure by turning the adjusting knob up from low."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 06E filter/regulator and a separate filter and regulator?",
+          "a": "The 06E Compact combines the particulate filter and the pressure regulator in one body, so it is shorter, cheaper and has one fewer joint than a separate filter plus regulator. Separate units let you change the filter grade or service each part on its own; both styles are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 06E Compact filter/regulators made and shipped from?",
+          "a": "The Parker 06E Compact filter/regulators on this listing are made in the United States, and we ship them from Dubai to buyers across the GCC, Africa and Asia. Customs commonly classify filter/regulators under 8421.39 or 8481.10; the code used is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 06E Compact filter/regulators available ex-stock in Dubai?",
+          "a": "Yes. We keep Parker 06E Compact filter/regulators in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Send the part numbers, such as 06E16A13AC, and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06e-prep-air-ii-series-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 06E Prep-Air II filter/regulator series?",
+          "a": "The Parker 06E Prep-Air II is a compact one-piece filter/regulator that removes dirt and water and regulates the pressure for valves, cylinders and tools. This listing holds 172 part numbers in 3/8\" and 1/2\" NPT, covering drain types, 40 and 5 micron elements and several pressure ranges."
+        },
+        {
+          "slot": "B",
+          "q": "How do you decode a Parker 06E Prep-Air II part number such as 06E32B18AC?",
+          "a": "06E32B18AC reads as 06E (filter/regulator), 3 (1/2\" port), 2 (bowl with manual drain), B (5 micron element) and 18 (pressure range), with AC as the option suffix. Codes starting 06E2 are 3/8\"; A in the element position means 40 micron, so 06E32A18AC is the same unit with a 40 micron element."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes and options are in the Parker 06E Prep-Air II range?",
+          "a": "The 172 part numbers run 06E24 to 06E28 for 3/8\" and 06E32 to 06E38 for 1/2\", with the second digit choosing the bowl and drain. Pressure-range codes 11, 13, 15, 16, 18 and 21 give different outlet ranges, and suffixes such as LC, TC and AC1 add options; send your set pressure and drain choice and we match the code."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a 40 micron or 5 micron element in the Parker 06E Prep-Air II?",
+          "a": "Choose the A (40 micron) element for general tools and cylinders and the B (5 micron) element in front of valves, air bearings or a coalescing filter. Parker gives 06E32A18AC and 06E32B18AC the same 61 scfm at 1/2\", so the finer element does not cut the rated flow."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Parker 06E Prep-Air II filter/regulator?",
+          "a": "Parker lists 125 psig (about 9 bar) maximum operating pressure on the 06E Prep-Air II rows of this listing, for example 06E32A18AC. The outlet range depends on the pressure-range code; set the regulator below the supply pressure so it can hold a steady output."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker 06E Prep-Air II suitable for synthetic compressor oils?",
+          "a": "Only with a metal bowl. Parker warns that polycarbonate bowls can be attacked by some synthetic compressor oils, solvents and chemicals, and specifies metal bowls where those are present; tell us the compressor oil in the enquiry and we pick a bowl code to suit."
+        },
+        {
+          "slot": "G",
+          "q": "What air purity does the Parker 06E Prep-Air II filter/regulator deliver?",
+          "a": "Parker does not publish an ISO 8573-1 class for the 06E, which uses 40 or 5 micron particulate elements and has no coalescing stage. For oil-free or instrument-grade air, add a coalescing filter downstream; our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) shows which stage removes what."
+        },
+        {
+          "slot": "H",
+          "q": "Which lubricator matches a Parker 06E Prep-Air II filter/regulator?",
+          "a": "The [Parker 06L Compact lubricator](/p/parker-06l-compact-general-industrial-lubricators) is the matching compact unit in 3/8\" and 1/2\" ports to suit the 06E2 and 06E3 codes. Fit it directly after the filter/regulator if the tools need oiled air."
+        },
+        {
+          "slot": "I",
+          "q": "What size is the Parker 06E Prep-Air II filter/regulator for installation?",
+          "a": "Parker gives 06E34B18AC a height of 10.38 in and a width of 2.81 in, so leave room below for bowl removal and drain access. Mount it vertically with the bowl down, observe the flow arrow and fit it upstream of the valves it protects."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 06E and 07E filter/regulators?",
+          "a": "The 06E is the compact size in 3/8\" and 1/2\" ports with 61 scfm at 1/2\", while the [Parker 07E Standard filter/regulator](/p/parker-07e-standard-general-industrial-filter-regulators) is the larger body in 1/2\" and 3/4\" ports. Choose the 07E where the flow demand outgrows a 1/2\" compact unit."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and origin apply to Parker 06E Prep-Air II filter/regulators?",
+          "a": "Filter/regulators are usually classified under HS 8421.39 or 8481.10, depending on the importing customs authority. The country of origin depends on the Parker plant that built each unit and is stated, with the HS code, on our commercial invoice when we ship from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Parker 06E Prep-Air II filter/regulators in stock in Dubai?",
+          "a": "Yes. We stock Parker 06E Prep-Air II filter/regulators at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full 06E part numbers and quantities through [our contact page](/contact) and we confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06f-prep-air-ii-series-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 06F Prep-Air II particulate filter used for?",
+          "a": "The Parker 06F Prep-Air II is a compact compressed-air particulate filter that removes dirt, pipe scale and liquid water ahead of valves, cylinders and regulators. This listing has 72 part numbers in 1/4\", 3/8\" and 1/2\" NPT with 40 or 5 micron elements and a choice of bowls and drains."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 06F filter part number such as 06F38BC?",
+          "a": "06F38BC reads as 06F (Compact particulate filter), 3 (1/2\" port), 8 (bowl and drain type) and B (5 micron element), with C as the suffix. 06F16AC is 1/4\" with a 40 micron element; 1 = 1/4\", 2 = 3/8\" and 3 = 1/2\" in the first digit."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does each size of Parker 06F Prep-Air II filter handle?",
+          "a": "Parker rates the 06F at 53 cfm in 1/4\" (06F12AC, 06F16AC), 80 cfm in 3/8\" (06F22AC, 06F26AC) and 85 cfm in 1/2\" (06F32AC, 06F36AC). Size on the flow the downstream tools draw, not on pipe size alone, so the pressure drop stays low."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grade should I order on a Parker 06F filter, A or B?",
+          "a": "Order A (40 micron) for general air tools and cylinders, and B (5 micron) to protect valves, regulators and coalescing filters downstream. The element letter sits after the bowl digit, so 06F16AC is 40 micron and 06F18BC is 5 micron."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 06F Prep-Air II particulate filter?",
+          "a": "It depends on the bowl: rows such as 06F12AC, 06F26AC and 06F36AC are rated 150 psi (about 10 bar), and 06F18BC, 06F28BC and 06F38BC are rated 250 psi (about 17 bar). Parker rates polycarbonate bowls to 150 psig and metal bowls to 250 psig."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Parker 06F filter with a polycarbonate bowl be used with synthetic oils?",
+          "a": "Parker warns that some synthetic compressor oils, solvents and chemicals attack polycarbonate bowls, so use a metal-bowl 06F code (the 250 psi rows) where those are present. Standard mineral-oil carry-over and water are fine with the poly bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Does a 5 micron Parker 06F filter meet ISO 8573-1?",
+          "a": "Parker does not publish an ISO 8573-1 class for the 06F, which is a particulate filter and does not remove oil aerosol. For a stated purity class, follow it with a coalescing filter; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains the classes and stages."
+        },
+        {
+          "slot": "H",
+          "q": "Which replacement element fits a Parker 06F Prep-Air II filter?",
+          "a": "06F filters take Parker Prep-Air II compact elements in 40 or 5 micron grades, listed as [Parker Prep-Air II compact filter replacement elements](/p/parker-prep-air-ii-compact-filter-replacement-elements). Quote the 06F part number from the body and we match the element and bowl seal."
+        },
+        {
+          "slot": "I",
+          "q": "How often should the bowl of a Parker 06F filter be drained?",
+          "a": "Drain a manual-drain 06F bowl before liquid reaches the baffle, at least daily on wet lines, or choose an auto-drain code. Replace the element when it is visibly loaded or the pressure drop across the filter rises, and clean a polycarbonate bowl with warm soapy water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker 06F particulate filter and the 11F coalescing filter?",
+          "a": "The 06F traps solid particles and liquid water down to 40 or 5 micron, while the [Parker 11F coalescing filter](/p/parker-11f-compact-general-industrial-coalescing-filters) removes oil aerosol down to 0.01 micron. Fit a 5 micron 06F ahead of an 11F to protect its element."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 06F Prep-Air II filters shipped from, and under which HS code?",
+          "a": "We ship Parker 06F filters from our Dubai warehouse to the GCC, Africa, Asia and beyond. Compressed-air filters fall under HS 8421.39, filtering machinery for gases; the Parker plant of origin and the code are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 06F Prep-Air II particulate filters stocked in Dubai?",
+          "a": "Yes. Indus keeps Parker 06F Prep-Air II particulate filters in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the 06F part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06g-compact-close-nippled-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Parker 06G Compact close nippled filter/regulator unit?",
+          "a": "The Parker 06G is a two-piece Prep-Air II combination: an integral particulate filter/regulator joined by a close pipe nipple to a mist lubricator, ready to pipe in. This listing holds 70 part numbers with 1/4\", 3/8\" and 1/2\" ports and a choice of element, pressure range and bowls."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 06G part number such as 06G22A13A2BC?",
+          "a": "06G22A13A2BC reads as 06G (compact close nippled combination), 2 (3/8\" port), 2 (filter bowl type), A (40 micron element), 13 (pressure range), A (relieving) and 2 (lubricator bowl type), with BC as the suffix. Codes starting 06G1 are 1/4\" and 06G3 are 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 06G close nippled unit come in?",
+          "a": "The 70 part numbers cover 1/4\" (06G12 to 06G18), 3/8\" (06G22 to 06G28) and 1/2\" (06G32 to 06G38). Pick the port to suit the flow of the tools downstream, then choose the element and pressure range; we confirm the full code from your duty."
+        },
+        {
+          "slot": "D",
+          "q": "Which element and pressure range codes are used on the Parker 06G?",
+          "a": "The element letter after the bowl digit is A (40 micron) on most codes or B (5 micron), as in 06G12B13A2BC. The two digits after it, such as 13, 15, 16, 18 or 21, select the regulator range; tell us the set pressure you need."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 06G Compact close nippled unit?",
+          "a": "Parker lists 125 psi (about 9 bar) on the 06G rows of this listing, for example 06G22A13A2BC and 06G32A18A2BC. Keep the supply below that figure and set the regulator lower than the supply so it can hold a steady outlet pressure."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil should be used in the lubricator of a Parker 06G unit?",
+          "a": "Parker recommends its F442 oil for the mist lubricator on the 06G. Avoid synthetic oils or solvents that can attack polycarbonate bowls and nitrile seals, and order a metal-bowl lubricator code if your compressor oil is synthetic."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 06G Compact unit come with compliance documents?",
+          "a": "This listing holds no certificates or datasheets for the 06G. If you need a certificate of conformity, origin certificate or material declaration, ask in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What is the difference between Parker 06G and 06H combination units?",
+          "a": "Both pair an integral filter/regulator with a mist lubricator; the 06G joins them with a close pipe nipple, while the [Parker 06H](/p/parker-06h-compact-close-nippled-filter-regulators) mounts them modularly so each half can be removed without unpiping. Choose 06H where you service often."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set up a Parker 06G filter/regulator and lubricator?",
+          "a": "Pipe the 06G with the flow arrow toward the tools and the bowls hanging down. Set the outlet pressure first by turning the knob up from low, then open the lubricator adjustment with air flowing until the sight dome shows the drip rate you want; drain the filter bowl before liquid reaches the baffle."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a Parker 06G close nippled FRL unit typically used?",
+          "a": "The 06G suits single machines, air tools and cylinder circuits that need clean, regulated and lightly oiled air from one compact assembly. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains when a lubricator is needed and when oil-free air is better."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 06G units shipped from and how are they classified?",
+          "a": "We ship Parker 06G units from Dubai to the GCC, Africa and Asia. Customs usually classify a filter/regulator-lubricator combination under 8421.39 or 8481.10; the Parker plant of origin and the code are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get Parker 06G Compact close nippled units ex-stock in Dubai?",
+          "a": "Yes. We hold Parker 06G Compact units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 06G part numbers, such as 06G22A13A2BC, and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06h-compact-close-nippled-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 06H Compact filter/regulator and lubricator combination?",
+          "a": "The Parker 06H is a two-piece Prep-Air II combination: an integral particulate filter/regulator and a mist lubricator held together with modular mounting, so each half can be removed for service. This listing holds 133 part numbers in 1/4\", 3/8\" and 1/2\" ports."
+        },
+        {
+          "slot": "B",
+          "q": "How do you decode a Parker 06H part number such as 06H22A18A2BCG?",
+          "a": "06H22A18A2BCG reads as 06H (compact modular combination), 2 (3/8\" port), 2 (filter bowl type), A (40 micron element), 18 (pressure range), A (relief type) and 2 (lubricator bowl), then BC and the option letter G. Codes starting 06H1 are 1/4\" and 06H3 are 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 06H Compact combination come in?",
+          "a": "The 133 part numbers cover 1/4\" (06H12 to 06H18), 3/8\" (06H22 to 06H28) and 1/2\" (06H32 to 06H38). Choose the port on the air flow the downstream tools draw rather than the pipe size alone, then pick the element and pressure range."
+        },
+        {
+          "slot": "D",
+          "q": "What do the trailing letters on Parker 06H part numbers mean?",
+          "a": "After the BC block, many 06H part numbers carry an option letter such as A, B, C, G, J, K or W, sometimes with a 1 (06H12A18A2BCK1). These select factory options; send the full code from your old unit and we match it exactly rather than substituting."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 06H combination rated for?",
+          "a": "The bowl decides the limit: Parker rates polycarbonate bowls to 150 psig (about 10 bar) and metal bowls to 250 psig (about 17 bar). The outlet set range is fixed by the pressure-range code, such as 13 or 18; tell us your supply and set pressure and we confirm the code."
+        },
+        {
+          "slot": "F",
+          "q": "Which lubricant does the Parker 06H mist lubricator need?",
+          "a": "Parker recommends F442 oil for the 06H's mist lubricator. Do not use synthetic oils or solvents that can attack polycarbonate bowls; where they cannot be avoided, order a metal-bowl code for both the filter and lubricator halves."
+        },
+        {
+          "slot": "G",
+          "q": "What documents can be supplied with Parker 06H combination units?",
+          "a": "No certificate is held on this listing for the 06H. If a project needs a certificate of conformity, certificate of origin or material declaration, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which modular parts connect to a Parker 06H combination unit?",
+          "a": "The 06H body mounts with Parker modular connectors, so further modules or the [Parker 06G close nippled version](/p/parker-06g-compact-close-nippled-filter-regulators) can be compared like for like. Pipe fittings and push-in connectors for the NPT ports are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you service a Parker 06H filter/regulator and lubricator?",
+          "a": "Exhaust the air, then release the modular mounting to remove the filter/regulator or the lubricator without unpiping the line. Clean polycarbonate bowls with warm soapy water only, replace the filter element when loaded, refill the lubricator with F442 oil and reset the drip rate with air flowing."
+        },
+        {
+          "slot": "J",
+          "q": "When should a Parker 06H unit be chosen instead of a separate F, R and L?",
+          "a": "Choose the 06H when a machine needs filtered, regulated and lubricated air in the shortest assembly with only two bodies to service. Separate units suit lines that need a coalescing stage or a different filter grade; both are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code and origin apply to Parker 06H combination units?",
+          "a": "Customs usually classify a filter/regulator-lubricator combination such as the 06H under 8421.39 or 8481.10. The Parker plant of origin and the code used are stated on our commercial invoice when we ship from Dubai."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus keep Parker 06H Compact combination units in stock?",
+          "a": "Yes. We keep Parker 06H Compact combination units in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the full 06H codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-06l-compact-general-industrial-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 06L Compact general industrial lubricator?",
+          "a": "The Parker 06L Compact is a mist-type air line lubricator that meters oil into compressed air for tools, valves and cylinders. Parker rates it at 90 cfm and 150 psi maximum operating pressure; this listing has 8 part numbers in 1/4\", 3/8\" and 1/2\" NPT."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 06L lubricator part number such as 06L32BE?",
+          "a": "In 06L32BE, 06L is the Compact lubricator, 3 is the 1/2\" port and 2 the bowl type, then BE the suffix. 06L1 codes are 1/4\" and 06L2 are 3/8\"; 06L14BE, 06L24BE and 06L34BE use the alternative bowl digit 4, and 06L12B and 06L32B drop the E suffix."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes are in the Parker 06L Compact lubricator listing?",
+          "a": "1/4\" NPT (06L12B, 06L12BE, 06L14BE), 3/8\" NPT (06L22BE, 06L24BE) and 1/2\" NPT (06L32B, 06L32BE, 06L34BE). Parker gives the same 90 cfm on the 1/4\", 3/8\" and 1/2\" rows, so choose the port to match the pipework and the filter/regulator."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 06L Compact lubricator?",
+          "a": "Parker lists 150 psi (about 10 bar) maximum operating pressure for the 06L, for example on 06L12BE, 06L22BE and 06L32BE. Parker rates polycarbonate bowls to 150 psig and metal bowls to 250 psig, so check the bowl on the row you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil does Parker recommend for the 06L Compact lubricator?",
+          "a": "Parker recommends F442 oil for its 06L mist lubricators. Do not fill with synthetic oils or solvent-based products that can craze a polycarbonate bowl; if your compressor runs a synthetic lubricant, say so and we suggest a metal-bowl option."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 06L lubricator come with a certificate?",
+          "a": "This listing holds no certificates for the 06L Compact. If you need a certificate of conformity, certificate of origin or material declaration, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which filter/regulator pairs with a Parker 06L Compact lubricator?",
+          "a": "The [Parker 06E Compact filter/regulator](/p/parker-06e-compact-general-industrial-filter-regulators) is the matching compact unit; fit it upstream so the lubricator receives clean, regulated air. The lubricator always goes last in the line, nearest the tools."
+        },
+        {
+          "slot": "I",
+          "q": "How do you adjust and refill a Parker 06L lubricator?",
+          "a": "Turn the adjustment with air flowing and watch the drip rate in the sight dome; a mist lubricator feeds oil only while air moves. To refill, isolate and exhaust the unit, fill with F442 oil to the bowl's full mark and reset the drip rate."
+        },
+        {
+          "slot": "J",
+          "q": "Which jobs suit a Parker 06L Compact mist lubricator?",
+          "a": "The 06L suits air tools, oiled cylinders and valves on a single machine where the lubricator sits close to the load. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains when lubrication helps and when modern pre-lubed components should run on dry air."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 06L mist and 16L micro-mist lubricators?",
+          "a": "The 06L mist lubricator sends all the oil it meters downstream and suits a tool or cylinder close by, while the [Parker 16L micro-mist lubricator](/p/parker-16l-compact-general-industrial-lubricators-micro-mist) sends only fine particles that carry further to several points or long runs."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 06L lubricators made and which HS code applies?",
+          "a": "The Parker 06L lubricators on this listing are made in the United States, and we export them from Dubai. Lubricators are commonly classified under heading 8481.80 by the importing customs authority; the code and origin are on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 06L Compact lubricators in stock in Dubai?",
+          "a": "Yes. Indus keeps Parker 06L Compact lubricators in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the 06L part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-07e-standard-general-industrial-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 07E Standard general industrial filter/regulator?",
+          "a": "The Parker 07E Standard is a full-size one-piece filter/regulator that filters and regulates compressed air for larger tools and machines. This listing has 6 part numbers in 1/2\" and 3/4\" NPT, all with a polycarbonate bowl and guard, and a 0 to 52°C (32 to 125°F) operating range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Parker part number 07E46A13AC mean?",
+          "a": "07E46A13AC reads as 07E (Standard filter/regulator), 4 (3/4\" port), 6 (polycarbonate bowl with auto float drain), A (40 micron element) and 13 (pressure range), with AC the suffix. 07E42A13AC is the manual-drain version, and 07E3 codes are 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and drains does the Parker 07E filter/regulator come in?",
+          "a": "1/2\" NPT with manual drain (07E32A13AC) or auto float drain (07E36A13AC, 07E36A13A), and 3/4\" NPT with manual drain (07E42A13AC) or auto float drain (07E46A13AC, 07E46A13A). All six use the A (40 micron) element and the 13 pressure range."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose the Parker 07E instead of the 06E filter/regulator?",
+          "a": "Choose the 07E Standard when you need a 3/4\" port or more flow than a 1/2\" compact body gives. For 3/8\" and smaller lines, the [Parker 06E Compact filter/regulator](/p/parker-06e-compact-general-industrial-filter-regulators) is smaller and lighter."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure and temperature limits of the Parker 07E filter/regulator?",
+          "a": "The 07E units here operate from 0 to 52°C (32 to 125°F), and their polycarbonate bowl is rated by Parker at 0 to 150 psig (about 10 bar) inlet pressure. The 13 code in the part number sets the outlet range; tell us your set pressure and we confirm it."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Parker 07E filter/regulator be used near solvents or synthetic oils?",
+          "a": "Not with the polycarbonate bowl fitted to these six part numbers. Parker warns that some synthetic compressor oils, solvents and chemicals attack polycarbonate and specifies a metal bowl there; ask us for the metal-bowl equivalent of your 07E code."
+        },
+        {
+          "slot": "G",
+          "q": "Which air quality class does the Parker 07E filter/regulator give?",
+          "a": "Parker does not publish an ISO 8573-1 class for the 07E's 40 micron element, which protects tools and cylinders from dirt and water but not oil aerosol. For a stated class, add coalescing filtration; see our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "H",
+          "q": "Which lubricator matches the Parker 07E Standard filter/regulator?",
+          "a": "The [Parker 07L Standard lubricator](/p/parker-07l-standard-general-industrial-lubricators) is the same body size in 1/2\" and 3/4\" ports. Fit it straight after the 07E so the tools receive clean, regulated and oiled air."
+        },
+        {
+          "slot": "I",
+          "q": "How do auto float and manual drains differ on the Parker 07E?",
+          "a": "An auto float drain (07E36, 07E46) opens by itself when liquid lifts the float and suits wet lines with no routine attention. A manual drain (07E32, 07E42) is opened by hand and suits drier air that is checked every shift; on either, never let liquid reach the element."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a Parker 07E Standard filter/regulator typically installed?",
+          "a": "The 07E is fitted at the drop to a machine or bench that needs 1/2\" or 3/4\" supply, such as a press, packaging line or air-tool station. Other filter/regulator sizes and brands are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 07E filter/regulators made and how are they classified?",
+          "a": "The Parker 07E Standard filter/regulators here are made in the United States, and we export them from Dubai. Customs commonly classify filter/regulators under 8421.39 or 8481.10; the code and origin are on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can Parker 07E filter/regulators be supplied ex-stock from Dubai?",
+          "a": "Yes. We stock Parker 07E Standard filter/regulators at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 07E part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-07f-series-standard-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 07F Series Standard particulate filter?",
+          "a": "The Parker 07F Series Standard is a full-size compressed-air particulate filter for 1/2\" and 3/4\" lines that removes dirt, scale and liquid water ahead of regulators, valves and tools. This listing carries 37 part numbers with 40 or 5 micron elements and several bowl and drain choices."
+        },
+        {
+          "slot": "B",
+          "q": "How do you decode a Parker 07F part number such as 07F44BC?",
+          "a": "07F44BC reads as 07F (Standard particulate filter), 4 (3/4\" port), 4 (bowl and drain type) and B (5 micron element), with C as the suffix. 07F3 codes are 1/2\"; codes ending C1 such as 07F38BC1 are a variant of the same size and element."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and bowl codes are in the Parker 07F Series Standard listing?",
+          "a": "The 37 part numbers cover 1/2\" (07F32 to 07F38) and 3/4\" (07F42 to 07F48), each with a bowl-and-drain digit of 2, 3, 4, 6, 7 or 8 and an A (40 micron) or B (5 micron) element. Send the code from the old filter body and we match it."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the 40 micron and 5 micron Parker 07F elements?",
+          "a": "Use A (40 micron) for general workshop air and tools, and B (5 micron) for valves, regulators and as the pre-filter before a coalescing filter. Parker gives 07F38BC, a 1/2\" 5 micron unit, 130 cfm, so the finer element still suits a full-size line."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker 07F Series Standard filter rated for?",
+          "a": "Parker lists 250 psi (about 17 bar) on 07F34BC, 07F38BC and 07F44BC, the zinc-housing versions of this listing. Parker rates polycarbonate bowls to 150 psig and metal bowls to 250 psig, so the bowl code sets the limit for each part number."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker 07F filter body suitable for harsh compressor oils?",
+          "a": "The 07F housing is zinc, as on 07F44BC; the limiting part is the bowl. Parker warns that polycarbonate bowls can be attacked by some synthetic oils and solvents, so choose a metal-bowl code (the 250 psi rows) where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does a Parker 07F particulate filter achieve an ISO 8573-1 class?",
+          "a": "Parker does not publish an ISO 8573-1 class for the 07F, which is a particulate filter that does not remove oil aerosol or vapour. To reach a stated class, follow it with coalescing and, if needed, carbon stages; our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1) explains them."
+        },
+        {
+          "slot": "H",
+          "q": "Which replacement element fits the Parker 07F Standard filter?",
+          "a": "The 07F takes Parker Prep-Air II standard-size elements in 40 and 5 micron grades, listed as [Parker Prep-Air II standard filter replacement elements](/p/parker-prep-air-ii-standard-filter-replacement-elements). Quote your 07F part number and we match the element and bowl seal."
+        },
+        {
+          "slot": "I",
+          "q": "What bowl options does the Parker 07F Series Standard offer for draining?",
+          "a": "Parker lists a sight gauge and an auto float drain among the 07F bowl options; the sight gauge shows the liquid level in a metal bowl, and the float drain empties it without attention. On manual-drain codes, drain before liquid reaches the baffle."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the two Parker 07F filter listings?",
+          "a": "This listing holds 37 07F part numbers across all bowl and drain codes, including 5 micron and C1 variants, while the [Parker 07F Standard general industrial listing](/p/parker-07f-standard-general-industrial-particulate-filters) holds 8 core 40 micron codes. Both are the same Standard body."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to Parker 07F compressed air filters?",
+          "a": "Compressed-air filters fall under HS 8421.39, filtering machinery for gases. We ship Parker 07F filters from Dubai, and the Parker plant of origin and the code are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker 07F Series Standard filters in stock?",
+          "a": "Yes. We keep Parker 07F Series Standard particulate filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 07F part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-07f-standard-general-industrial-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 07F Standard general industrial particulate filter used for?",
+          "a": "The Parker 07F Standard general industrial filter is a full-size 40 micron particulate filter that removes dirt, rust and liquid water from compressed air in 1/2\" and 3/4\" lines. This listing has 8 part numbers, and Parker gives the 1/2\" units 130 cfm and the 3/4\" units 145 cfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read the Parker 07F part number 07F46AC?",
+          "a": "07F46AC reads as 07F (Standard particulate filter), 4 (3/4\" port), 6 (bowl and drain type) and A (40 micron element), with C the suffix. 07F32AC, 07F34AC, 07F36AC and 07F38AC are the 1/2\" equivalents with different bowl digits."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are in the Parker 07F Standard general industrial listing?",
+          "a": "1/2\" NPT (07F32AC, 07F34AC, 07F36AC, 07F38AC) at 130 cfm and 3/4\" NPT (07F42AC, 07F44AC, 07F46AC, 07F48AC) at 145 cfm. Choose the port on the air demand downstream so the filter does not become a restriction at full flow."
+        },
+        {
+          "slot": "D",
+          "q": "When is a 3/4\" Parker 07F filter worth choosing over the 1/2\" size?",
+          "a": "Choose the 3/4\" 07F42AC or 07F46AC when the downstream demand approaches the 1/2\" filter's 130 cfm, because Parker rates the 3/4\" body at 145 cfm. A larger filter also runs a lower pressure drop at the same flow."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 07F Standard general industrial filter?",
+          "a": "Parker lists 150 psi (about 10 bar) maximum operating pressure on 07F32AC, 07F36AC, 07F42AC and 07F46AC. Parker rates metal bowls to 250 psig, so other bowl codes may carry a higher limit; check the row before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "Which media can pass through a Parker 07F general industrial filter?",
+          "a": "The 07F is built for compressed air, with a 40 micron element that traps solids and liquid water. Parker warns that polycarbonate bowls can be attacked by some synthetic oils and solvents, so pick a metal-bowl code if those reach the filter."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker 07F general industrial filter supplied with a certificate?",
+          "a": "No certificate is held on this listing for the 07F. If your plant needs a certificate of conformity or of origin, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which regulator or lubricator goes after a Parker 07F filter?",
+          "a": "Fit a regulator after the 07F and a lubricator last if the tools need oil; the [Parker 07L Standard lubricator](/p/parker-07l-standard-general-industrial-lubricators) matches its 1/2\" and 3/4\" ports. Combined filter/regulators in the same size are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you change the element in a Parker 07F filter?",
+          "a": "Isolate and exhaust the filter, unscrew the bowl, remove the baffle and element, fit the new element and refit the bowl with its seal. Replace the element when it is visibly loaded or the pressure drop rises, and clean polycarbonate bowls with warm soapy water only."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 07F general industrial filter differ from the 06F?",
+          "a": "The 07F is the Standard body in 1/2\" and 3/4\" at 130 to 145 cfm, while the [Parker 06F Prep-Air II filter](/p/parker-06f-prep-air-ii-series-particulate-filters) is the Compact body in 1/4\" to 1/2\" at 53 to 85 cfm. Pick the 07F for bigger flows."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 07F general industrial filters made and shipped from?",
+          "a": "The Parker 07F filters on this listing are made in the United States, and we ship them from Dubai to the GCC, Africa and Asia. They fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 07F general industrial filters available from Dubai stock?",
+          "a": "Yes. Indus holds Parker 07F Standard general industrial filters in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the 07F codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-07l-standard-general-industrial-lubricators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 07L Standard general industrial lubricator?",
+          "a": "The Parker 07L Standard is a full-size mist lubricator for 1/2\" and 3/4\" air lines, with a zinc body, steel bowl guard, polycarbonate sight dome, nitrile seals and a locking non-rising adjustment knob. This listing has 4 part numbers rated at 90 cfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 07L part number such as 07L34BE?",
+          "a": "07L34BE reads as 07L (Standard lubricator), 3 (1/2\" port), 4 (bowl type) and BE the suffix. 07L32BE is the 1/2\" unit with the other bowl option, and 07L42BE and 07L44BE are the 3/4\" pair."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 07L Standard lubricator come in?",
+          "a": "1/2\" NPT (07L32BE, 07L34BE) and 3/4\" NPT (07L42BE, 07L44BE). Parker gives these rows 90 cfm, so pick the port to suit the pipework and the filter/regulator in the same line."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 07L lubricator?",
+          "a": "Parker lists 150 psi (about 10 bar) on 07L32BE and 07L42BE, and 175 psig (about 12 bar) with a 175°F maximum temperature on 07L34BE. Use the figure on the row of the part number you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil does Parker recommend for the 07L Standard lubricator?",
+          "a": "Parker recommends F442 oil for the 07L. Its bowl is plastic with a steel guard and the seals are nitrile, so avoid synthetic oils and solvents that attack polycarbonate or swell nitrile."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 07L lubricator come with a certificate of conformity?",
+          "a": "No certificate is held on this listing for the 07L. If you need a certificate of conformity, certificate of origin or material declaration, say so in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What comes supplied with a Parker 07L Standard lubricator?",
+          "a": "Each 07L comes with the bowl, fill plug, steel bowl guard and sight dome, plus a sight gauge, and connects to other modules through Parker's modular connection. Fit it after a filter/regulator such as the [Parker 07E Standard filter/regulator](/p/parker-07e-standard-general-industrial-filter-regulators)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you refill and adjust a Parker 07L lubricator?",
+          "a": "Exhaust the air, remove the fill plug, top up with F442 oil to the sight gauge mark and refit the plug. Then, with air flowing, unlock the non-rising knob, set the drip rate in the sight dome and lock it so vibration cannot change the setting."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines suit a Parker 07L Standard lubricator?",
+          "a": "The 07L suits air tools, oiled cylinders and valves on presses, assembly benches and other machines fed from a 1/2\" or 3/4\" drop, where the lubricator sits close to the load. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) explains when oiled air helps."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a Parker 07L mist lubricator or a 17L micro-mist lubricator?",
+          "a": "Choose the 07L mist lubricator for a single tool or cylinder near the unit, and a micro-mist lubricator such as those on the [Parker 16L/17L micro-mist listing](/p/parker-16l-compact-general-industrial-lubricators-micro-mist) to reach several points or longer runs."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 07L lubricators made, and which HS heading applies?",
+          "a": "The Parker 07L lubricators on this listing are made in the United States, and we export them from Dubai. Lubricators are commonly classified under heading 8481.80; the code and origin are on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker 07L Standard lubricators ex-stock in Dubai?",
+          "a": "Yes. We keep Parker 07L Standard lubricators in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 07L part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-11f-compact-general-industrial-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 11F Compact coalescing filter used for?",
+          "a": "The Parker 11F Compact is a 0.01 micron coalescing filter that strips oil aerosol and fine particles from compressed air for paint spraying, instruments, packaging and other clean-air uses. This listing has 10 part numbers in 1/4\", 3/8\" and 1/2\" NPT, rated at 95 scfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 11F part number such as 11F22EC?",
+          "a": "11F22EC reads as 11F (Compact coalescing filter), 2 (3/8\" port), 2 (bowl and drain type) and E (0.01 micron coalescing element), with C as the suffix. 11F1 codes are 1/4\" and 11F3 codes 1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are available in the Parker 11F coalescing filter listing?",
+          "a": "1/4\" (11F12EC, 11F14EC, 11F16EC, 11F18EC), 3/8\" (11F22EC, 11F24EC, 11F26EC, 11F28EC) and 1/2\" (11F32EC, 11F34EC). Parker gives 95 scfm on the rows it publishes, so a coalescing filter is sized on flow, not on pipe size."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can a Parker 11F coalescing filter take?",
+          "a": "The bowl sets the pressure limit: Parker rates polycarbonate bowls to 150 psig (about 10 bar) and metal bowls to 250 psig (about 17 bar). The listing gives 175°F as the temperature limit; check the bowl code of your part number before ordering."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Parker 11F coalescing filter made of?",
+          "a": "The 11F has a zinc body, a polycarbonate bowl with a metal bowl guard and nitrile seals. Parker warns that polycarbonate can be attacked by some synthetic compressor oils and solvents, so ask for a metal-bowl code where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "What air quality can a 0.01 micron Parker 11F filter achieve?",
+          "a": "Parker rates the 11F element at 0.01 micron for oil aerosol and fine particles, but this listing does not state an ISO 8573-1 class. Ask for the maker's purity data if you need a class; our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains the oil and particle classes."
+        },
+        {
+          "slot": "H",
+          "q": "What should be fitted upstream of a Parker 11F coalescing filter?",
+          "a": "Fit a 5 micron particulate pre-filter ahead of the 11F so dirt and bulk water do not clog the coalescing element; the [Parker 06F Prep-Air II filter](/p/parker-06f-prep-air-ii-series-particulate-filters) with a B element does this in the same compact size."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Parker 11F coalescing filter?",
+          "a": "Check that the drain empties the bowl, since coalesced oil and water collect there continuously. Replace the 0.01 micron element when the pressure drop rises or on a fixed interval, and never wash or blow it out; clean the polycarbonate bowl with warm soapy water only."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a Parker 11F Compact coalescing filter typically installed?",
+          "a": "The 11F is fitted at the point of use where oil aerosol would spoil the work, such as paint spraying, instrument air, food packaging and blow-off nozzles. Place it after a 5 micron pre-filter, close to the equipment it protects, and never downstream of a lubricator."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a coalescing and a particulate filter like the Parker 11F and 06F?",
+          "a": "A particulate filter such as the 06F traps solids and water droplets at 40 or 5 micron, while the 11F coalescing filter merges oil aerosol into drops and removes it at 0.01 micron. Use both in series, particulate first; more choices are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 11F coalescing filters made and how are they classified?",
+          "a": "The Parker 11F filters on this listing are made in the United States and shipped from our Dubai warehouse. Compressed-air filters fall under HS 8421.39, filtering machinery for gases, shown on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Parker 11F Compact coalescing filters in Dubai stock?",
+          "a": "Yes. Indus keeps Parker 11F Compact coalescing filters in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the 11F part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-14f-mini-general-industrial-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 14F Mini general industrial particulate filter?",
+          "a": "The Parker 14F Mini is a small 5 micron compressed-air particulate filter for 1/8\" and 1/4\" lines feeding small valves, cylinders and instruments. This listing has 8 part numbers rated at 22 scfm in 1/8\" and 24 scfm in 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 14F Mini part number such as 14F13BB?",
+          "a": "14F13BB reads as 14F (Mini particulate filter), 1 (1/4\" port), 3 (bowl type) and B (5 micron element), with B as the suffix. 14F0 codes are 1/8\"; second digits 1 and 5 carry the 150 psig rating and 3 the 250 psig rating."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker 14F Mini filter come in?",
+          "a": "1/8\" NPT (14F01BB, 14F03BB, 14F05BB, 14F07BB) at 22 scfm and 1/4\" NPT (14F11BB, 14F13BB, 14F15BB, 14F17BB) at 24 scfm. Pick the port to match the mini regulator and lubricator in the same line."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum operating pressure of the Parker 14F Mini filter?",
+          "a": "Parker lists 150 psig (about 10 bar) on 14F05BB, 14F11BB and 14F15BB and 250 psig (about 17 bar) on 14F03BB and 14F13BB. The bowl sets the figure, so check the row of the part number you order."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Parker 14F Mini filter be used with synthetic compressor oil?",
+          "a": "Only with a metal-bowl code. Parker warns that polycarbonate bowls can be attacked by some synthetic oils and solvents; the 250 psig rows, such as 14F13BB, are the ones to choose where those are present."
+        },
+        {
+          "slot": "G",
+          "q": "Does a 5 micron Parker 14F Mini filter meet an ISO 8573-1 class?",
+          "a": "Parker does not publish an ISO 8573-1 class for the 14F Mini, which removes particles and water but not oil aerosol. Follow it with a coalescing stage if your process needs a stated class; see our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "H",
+          "q": "Which lubricator matches the Parker 14F Mini filter?",
+          "a": "The [Parker 04L Mini lubricator](/p/parker-04l-mini-general-industrial-lubricators) shares the 1/8\" and 1/4\" ports of the 14F, so the two make a compact mini line with a regulator between them. Fit the filter first and the lubricator last."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Parker 14F Mini filter drained and serviced?",
+          "a": "The 14F Mini has a manual drain, so open it before liquid reaches the element, at least daily on wet lines. Replace the 5 micron element when it is loaded, and clean a polycarbonate bowl with warm soapy water only."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a Parker 14F Mini particulate filter used?",
+          "a": "The 14F Mini is used on small air supplies: miniature valves, small cylinders, pilot lines and instrument feeds on 1/8\" and 1/4\" pipe or tube. Matching mini regulators and other compact air preparation units are on our [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker 14F Mini differ from the Parker P31 Mini particulate filter?",
+          "a": "The 14F Mini is a general industrial filter in 1/8\" and 1/4\" NPT with a manual drain, while the [Parker P31 Mini](/p/parker-p31-mini-global-modular-particulate-filters) is a Global Modular 1/4\" filter with auto pulse or manual drain options. Choose P31 where you want modular mounting."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 14F Mini filters made and which HS code applies?",
+          "a": "The Parker 14F Mini filters on this listing are made in the United States, and we ship them from Dubai to the GCC, Africa and Asia. They fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker 14F Mini particulate filters in stock in Dubai?",
+          "a": "Yes. We keep Parker 14F Mini particulate filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the 14F part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-16l-compact-general-industrial-lubricators-micro-mist",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker 16L Compact micro-mist lubricator used for?",
+          "a": "The Parker 16L is a micro-mist lubricator that sends only fine oil particles into the air stream, so oil carries through longer lines to several valves, cylinders or tools. This listing has 10 part numbers: 16L Compact in 1/4\" to 1/2\" and 17L in 1/2\" and 3/4\", rated at 90 scfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker 16L part number such as 16L24BE?",
+          "a": "16L24BE reads as 16L (Compact micro-mist lubricator), 2 (3/8\" port), 4 (bowl type) and BE the suffix. 16L1 codes are 1/4\" and 16L3 codes 1/2\"; the 17L codes, such as 17L42BE, are the larger body in 1/2\" and 3/4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are in the Parker 16L micro-mist lubricator listing?",
+          "a": "1/4\" (16L12BE, 16L14BE), 3/8\" (16L22BE, 16L24BE) and 1/2\" (16L32BE, 16L34BE) in the 16L body, plus 1/2\" (17L32BE, 17L34BE) and 3/4\" (17L42BE, 17L44BE) in the 17L body. All carry 90 scfm on the rows Parker publishes."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Parker 16L micro-mist lubricator?",
+          "a": "Parker states 175 to 250 psi (about 12 to 17 bar) for this listing, by part number, and rates polycarbonate bowls to 150 psig and metal bowls to 250 psig. Check the bowl on the row you order, and keep the supply below the lower of the two."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil should be used in a Parker 16L micro-mist lubricator?",
+          "a": "Parker recommends F442 oil for its micro-mist lubricators, including the 16L. Avoid synthetic oils and solvents that can attack a polycarbonate bowl; if your compressor uses them, tell us and we propose a metal-bowl code."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker 16L lubricator come with test or conformity documents?",
+          "a": "This listing holds no certificates for the 16L. If you need a certificate of conformity, certificate of origin or material declaration, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which filter/regulator pairs with a Parker 16L micro-mist lubricator?",
+          "a": "Fit a compact filter/regulator such as the [Parker 06E Compact](/p/parker-06e-compact-general-industrial-filter-regulators) upstream of the 16L, so the lubricator receives clean, regulated air. The lubricator always goes last before the valves it feeds."
+        },
+        {
+          "slot": "I",
+          "q": "How do you set the oil feed on a Parker 16L micro-mist lubricator?",
+          "a": "With air flowing, turn the adjustment and watch the drip rate in the sight dome; in a micro-mist unit most visible drops fall back into the bowl and only the fine fraction travels on. Refill with F442 oil after exhausting the unit, and reset the drip rate."
+        },
+        {
+          "slot": "J",
+          "q": "When is a Parker 16L micro-mist lubricator the right choice?",
+          "a": "Choose the 16L where one lubricator must feed a valve manifold, several cylinders or tools at the end of a longer pipe run, because its fine oil particles stay in suspension. Our [FRL guide](/blog/frl-filter-regulator-lubricator-guide) compares mist and micro-mist units."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker 16L micro-mist and 06L mist lubricators?",
+          "a": "A mist lubricator such as the [Parker 06L](/p/parker-06l-compact-general-industrial-lubricators) delivers every drop it meters and suits one load nearby, while the 16L micro-mist delivers only fine particles that reach several points or longer runs. Choose 16L for manifolds and multi-valve machines."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker 16L micro-mist lubricators made and shipped from?",
+          "a": "The Parker 16L and 17L lubricators on this listing are made in the United States and shipped from our Dubai warehouse. Lubricators are commonly classified under HS heading 8481.80; the code and origin are on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can Parker 16L micro-mist lubricators be supplied ex-stock from Dubai?",
+          "a": "Yes. Indus holds Parker 16L and 17L micro-mist lubricators in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-disposable-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker disposable compressed air filters used for?",
+          "a": "Parker disposable compressed air filters are sealed in-line filter units with microfiber elements that protect analysers, instruments, sensors and small pneumatic devices on 1/4\" tube lines. They are 0.01 micron units sold in packs of 10, and are replaced whole rather than re-elemented."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker disposable filter code such as 9933-11-DQ?",
+          "a": "The first four digits give the housing (9922 is polyvinylidene fluoride, 9933, 4433, 9900 and 8833 nylon), the middle number the size (05 or 11) and the final letters the grade. BQ and BX are 99.99% efficient and DQ and DX 93% efficient, all at 0.01 micron."
+        },
+        {
+          "slot": "D",
+          "q": "What flow do Parker disposable compressed air filters handle?",
+          "a": "Parker gives 5.4 cfm for 4433-05-BQ and 9900-05-BK, 6 cfm for 9933-11-BQ and 8833-11-BX, 8.3 cfm for the -05-DQ units and 12 cfm for 8833-11-DX and 9933-11-DQ. The 93% grades pass more flow than the 99.99% grades of the same size."
+        },
+        {
+          "slot": "D",
+          "q": "Should I pick a 99.99% or 93% efficiency Parker disposable filter?",
+          "a": "Pick a BQ or BX 99.99% unit for analysers and sensitive instruments where the cleanest gas matters, and a DQ or DX 93% unit where higher flow matters more. Both grades filter at 0.01 micron on 1/4\" tube."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature can Parker disposable compressed air filters take?",
+          "a": "The listing gives a 230°F maximum temperature for these disposable filters. Parker does not publish a pressure rating on this listing, so tell us the line pressure in the enquiry and we confirm the suitable housing."
+        },
+        {
+          "slot": "F",
+          "q": "Which gases and liquids can pass through Parker disposable filters?",
+          "a": "Parker lists these disposable filters for gases and liquids, with a microfiber element in a nylon or PVDF housing. Choose the 9922 PVDF housing for more aggressive media, and the nylon housings for compressed air and inert gas lines."
+        },
+        {
+          "slot": "G",
+          "q": "What standard or test data applies to Parker disposable compressed air filters?",
+          "a": "The efficiency figures, 99.99% and 93% at 0.01 micron, are the maker's ratings; no certificates are held on this listing. If your laboratory or analyser system needs a certificate of conformity, ask in the enquiry and we request it from Parker."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubing and fittings connect to Parker disposable filters?",
+          "a": "These filters have male 1/4\" tube ends on inlet and outlet, so they push into 1/4\" push-in fittings or connect with 1/4\" tube unions. Matching fittings are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers) and tube on our [pneumatic tubing shelf](/c/pneumatic-tubing)."
+        },
+        {
+          "slot": "I",
+          "q": "When should a Parker disposable filter be replaced?",
+          "a": "Replace the disposable unit when it is visibly loaded, the downstream flow drops, or on the interval your analyser maker sets. The filter cannot be cleaned or re-elemented, which is why Parker supplies them in packs of 10."
+        },
+        {
+          "slot": "K",
+          "q": "How do Parker disposable filters compare with a full coalescing line filter?",
+          "a": "A disposable unit protects a single instrument at a few cfm on 1/4\" tube, while a line filter such as the [Parker 11F coalescing filter](/p/parker-11f-compact-general-industrial-coalescing-filters) treats a whole branch at 95 scfm. Many systems use both, a line filter upstream and a disposable unit at the instrument."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker disposable compressed air filters made?",
+          "a": "The Parker disposable filters on this listing are made in the United States, and we ship them from Dubai to the GCC, Africa and Asia. They are classified under HS 8421.39, filtering machinery for gases, on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker disposable compressed air filters stocked in Dubai?",
+          "a": "Yes. We stock Parker disposable compressed air filters at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the codes and number of 10-packs through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-f71-series-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker F71 Series coalescing filter?",
+          "a": "The Parker F71 Series is a compressed-air coalescing filter that removes oil aerosol and fine particles ahead of valves, instruments and paint or packaging equipment. This listing has 19 part numbers in three port sizes, with a choice of bowls and manual or automatic drain versions."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker F71 part number such as F71-03DJR/M1?",
+          "a": "F71-03DJR/M1 reads as F71 (coalescing filter series), 03 (3/8\" port), D (bowl type), J (element grade) and R (automatic drain), with /M1 as the suffix. 02 is 1/4\" and 04 is 1/2\"; codes without R have a manual drain."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes does the Parker F71 coalescing filter come in?",
+          "a": "The 19 part numbers cover 1/4\" (F71-02), 3/8\" (F71-03) and 1/2\" (F71-04), each with B, D or W bowl letters and with or without automatic drain. F71-02BJRX77/M1 is a special version of the 1/4\" auto-drain unit."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose an automatic or manual drain Parker F71 filter?",
+          "a": "Choose an R code (automatic drain) such as F71-02BJR/M1, because a coalescing filter collects oil and water continuously and an overfilled bowl lets liquid pass downstream. A manual-drain code suits a dry line that is checked every shift."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker F71 coalescing filter rated for?",
+          "a": "This listing does not hold a pressure rating for the F71. Parker rates polycarbonate bowls to 150 psig (about 10 bar) and metal bowls to 250 psig (about 17 bar) on its air preparation units, so tell us your line pressure and we confirm the bowl letter."
+        },
+        {
+          "slot": "F",
+          "q": "Can the Parker F71 coalescing filter be used with synthetic compressor oil?",
+          "a": "Choose a metal-bowl version if the air carries synthetic oil or solvents, because Parker warns that polycarbonate bowls can be attacked by them. Tell us the compressor oil and we match the F71 bowl letter."
+        },
+        {
+          "slot": "G",
+          "q": "What air purity does a Parker F71 coalescing filter give?",
+          "a": "This listing does not state an ISO 8573-1 class for the F71. Ask for the maker's purity data for your element grade if you need a stated class; our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains the oil and particle classes."
+        },
+        {
+          "slot": "H",
+          "q": "Which filter should be fitted ahead of a Parker F71 coalescing filter?",
+          "a": "Fit a particulate pre-filter of 5 micron or finer upstream so bulk water and dirt do not load the coalescing element. The [Parker F75 Series filter](/p/parker-f75-series-filters) in a 5 micron grade matches the F71's port sizes."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Parker F71 coalescing filter maintained?",
+          "a": "Check the drain daily on manual codes and confirm an R code is cycling. Replace the coalescing element when the pressure drop rises or on a fixed interval, and never wash it; clean a plastic bowl with warm soapy water only."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker F71 and the Parker 11F coalescing filters?",
+          "a": "Both remove oil aerosol from compressed air in 1/4\" to 1/2\" ports; the F71 uses the 02, 03 and 04 port codes, while the [Parker 11F Compact](/p/parker-11f-compact-general-industrial-coalescing-filters) uses Parker's Prep-Air style code with a 0.01 micron E element. Replace like for like from the body code."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker F71 coalescing filters made and how are they classified?",
+          "a": "The Parker F71 filters on this listing are made in the United States and shipped from our Dubai warehouse. Compressed-air filters fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker F71 Series coalescing filters in stock?",
+          "a": "Yes. Indus keeps Parker F71 Series coalescing filters in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the full F71 codes, including /M1, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-f75-series-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker F75 Series compressed air filter?",
+          "a": "The Parker F75 Series is a general-purpose compressed-air particulate filter that removes dirt, scale and liquid water ahead of regulators, valves and tools. This listing has 39 part numbers in 1/4\", 3/8\" and 1/2\" with 5 or 40 micron elements and manual or automatic drains."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker F75 part number such as F75-03WJR?",
+          "a": "F75-03WJR reads as F75 (filter series), 03 (3/8\" port), W (bowl type), J (40 micron element) and R (automatic drain). G in the element position means 5 micron, as in F75-03WG; B is the polycarbonate bowl with guard, as in F75-02BG."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Parker F75 Series filter come in?",
+          "a": "1/4\" (F75-02), 3/8\" (F75-03) and 1/2\" (F75-04), each with B, D or W bowl letters, G (5 micron) or J (40 micron) elements and with or without the R automatic drain. Some 1/2\" codes carry a /N suffix, such as F75-04BJ/N."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a 5 micron or 40 micron Parker F75 filter?",
+          "a": "Choose J (40 micron) for general air tools and cylinders and G (5 micron) to protect valves, regulators and a coalescing filter downstream. F75-02BG is a 1/4\" 5 micron unit with a guarded poly bowl; F75-04BJ/N is a 1/2\" 40 micron unit."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker F75 Series filter rated for?",
+          "a": "No pressure rating is held on this F75 listing. Parker rates polycarbonate bowls to 150 psig (about 10 bar) and metal bowls to 250 psig (about 17 bar), so state the line pressure in your enquiry and we confirm the bowl letter."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Parker F75 filter suitable for air carrying synthetic oil?",
+          "a": "Use a metal-bowl version if synthetic compressor oil or solvents can reach the F75, because Parker warns they can attack polycarbonate bowls such as the B (poly with guard) bowl. Mineral-oil carry-over and water are fine in either."
+        },
+        {
+          "slot": "G",
+          "q": "Does a Parker F75 particulate filter give a stated air quality class?",
+          "a": "No ISO 8573-1 class is published for the F75 on this listing; it is a particulate filter and does not remove oil aerosol. To reach a stated class, add coalescing filtration; our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains each stage."
+        },
+        {
+          "slot": "H",
+          "q": "Which coalescing filter pairs with a Parker F75 filter?",
+          "a": "A 5 micron F75 is the pre-filter for the [Parker F71 Series coalescing filter](/p/parker-f71-series-coalescing-filters), which uses the same 02, 03 and 04 port codes. Fit the F75 first so the coalescing element stays clean longer."
+        },
+        {
+          "slot": "I",
+          "q": "How do automatic and manual drains work on the Parker F75?",
+          "a": "Codes ending R, such as F75-03WJR, have an automatic drain that empties the bowl without attention; the others are drained by hand before liquid reaches the baffle. Replace the element when loaded and clean plastic bowls with warm soapy water only."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker F75 compare with the Parker 06F Prep-Air II filter?",
+          "a": "Both are particulate filters in 1/4\" to 1/2\" with 5 and 40 micron grades; the F75 uses the 02, 03 and 04 port codes, while the [Parker 06F Prep-Air II](/p/parker-06f-prep-air-ii-series-particulate-filters) has its own 06F code. Replace like for like from the code on the body."
+        },
+        {
+          "slot": "L",
+          "q": "Which HS code applies to Parker F75 filters shipped from Dubai?",
+          "a": "Compressed-air filters such as the F75 fall under HS 8421.39, filtering machinery for gases. We ship them from our Dubai warehouse, and the Parker plant of origin and the code are stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker F75 Series filters from stock in Dubai?",
+          "a": "Yes. We keep Parker F75 Series filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the F75 codes, including any /N suffix, through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-filter-elements-for-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What Parker compressed air filter elements are on this listing?",
+          "a": "This listing holds 151 Parker replacement elements for compressed-air filters, including OIL-X grades such as 010AC, 035AA and 045AO, plus coalescing, particulate, activated-carbon and stainless steel elements. They restore a filter's rated air quality when the old element is spent."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters AA, AO and AC mean on Parker OIL-X filter elements?",
+          "a": "In OIL-X element codes the number is the housing size and the letters the grade: AA is 0.01 micron coalescing (035AA, 045AA), AO is 1 micron coalescing (035AO, 040AO, 045AO) and AC is activated carbon for oil vapour (010AC to 030AC; 035ACS to 055ACS)."
+        },
+        {
+          "slot": "D",
+          "q": "Which element grades are available in this Parker filter element listing?",
+          "a": "The listing covers coalescing elements at 0.01 micron (the 6 and 4 prefixes) and 1 micron (the 10 prefix), particulate elements at 1 and 3 micron (10DP, 3PP), activated-carbon elements (AHC, AJN, AU) and 100 micron stainless steel elements (100WS). Match the grade printed on the old element."
+        },
+        {
+          "slot": "D",
+          "q": "How do I find the right Parker element for my compressed air filter?",
+          "a": "Read the full code on the old element or filter housing, such as 6QP19-098 or 3PG25-150, and send it to us; the size part of the code fixes the housing fit. For OIL-X housings, the element number matches the housing size, so an AOPX035 housing takes a 035 element."
+        },
+        {
+          "slot": "E",
+          "q": "How long does a Parker OIL-X filter element last in service?",
+          "a": "Parker recommends changing OIL-X elements every 12 months to keep the stated air quality, even when the pressure drop is still low. Coalescing elements can look clean while their efficiency has fallen, so replace on time rather than by appearance."
+        },
+        {
+          "slot": "F",
+          "q": "What are the media of Parker compressed air filter elements made from?",
+          "a": "Coalescing elements use microglass or borosilicate glass microfibres, particulate elements microglass or cellulose, carbon elements activated carbon, and coarse elements stainless steel, as given on each row. Choose the media your filter was built for."
+        },
+        {
+          "slot": "G",
+          "q": "Which air quality classes do Parker OIL-X elements support?",
+          "a": "Each grade serves a different ISO 8573-1 purpose: 1 micron AO for general-purpose oil and dirt removal, 0.01 micron AA for high-efficiency oil removal and AC carbon for oil vapour. Our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains how stages combine."
+        },
+        {
+          "slot": "H",
+          "q": "Which Parker housings take these OIL-X filter elements?",
+          "a": "OIL-X elements such as 035AA and 045AO fit the [Parker OIL-X main line filters](/p/parker-main-line-compressed-air-filters) of the same size code, for example an AAPX035 or AOPX045 housing. Other elements on this listing fit their own Parker housing families, matched by code."
+        },
+        {
+          "slot": "I",
+          "q": "In what order should Parker coalescing and carbon elements be installed?",
+          "a": "Install a 1 micron AO element first, a 0.01 micron AA element second and an activated-carbon AC element last. Parker places a coalescing stage upstream of carbon because liquid oil quickly saturates the carbon bed."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a coalescing and a particulate Parker filter element?",
+          "a": "A coalescing element, such as 6H10-050 at 0.01 micron, merges oil aerosol into drops that drain away, while a particulate element, such as 3PP19-098 at 3 micron, only traps solids. Most lines need a particulate or 1 micron stage before the 0.01 micron one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker OIL-X and compressed air filter elements made, and which HS code applies?",
+          "a": "The Parker elements on this listing are made in the Czech Republic, and we ship them from Dubai to buyers across the GCC, Africa and Asia. Replacement filter elements are classified under HS 8421.99, parts of filtering machinery, on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker compressed air filter elements in stock in Dubai?",
+          "a": "Yes. Indus keeps Parker compressed air filter elements in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the element codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What Parker filters are on this listing?",
+          "a": "This listing holds 4 Parker filter parts for use with a handheld hydraulic filter unit: 933467Q (2 micron Guardian filter, pack of 2), 932617Q (hydraulic filter element for 15P, 30P and 30PD units, fluorocarbon), 924452Q (3 mm buggy filter) and 925834."
+        },
+        {
+          "slot": "B",
+          "q": "What is the Parker 932617Q hydraulic filter element?",
+          "a": "932617Q is a Parker hydraulic filter element for the 15P, 30P and 30PD filter units, in a fluorocarbon version. Quote it with the model of your filter unit so we confirm the fit before supply."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker part number is the 2 micron Guardian filter?",
+          "a": "The 2 micron Guardian filter is Parker part number 933467Q, supplied in a pack of 2. It is one of the filters used with Parker's handheld hydraulic filter unit; send the unit model if you are unsure which filter it takes."
+        },
+        {
+          "slot": "D",
+          "q": "What is the Parker 924452Q buggy filter?",
+          "a": "924452Q is a Parker 3 mm buggy filter, a coarse screen used with the handheld hydraulic filter unit to stop large debris. It protects the finer element downstream rather than cleaning the oil itself."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids are Parker 932617Q filter elements suitable for?",
+          "a": "932617Q is the fluorocarbon version of the hydraulic filter element, and fluorocarbon suits petroleum hydraulic oils and many synthetic fluids at higher temperatures. Tell us the fluid in your system and we confirm the element and seal suit it."
+        },
+        {
+          "slot": "G",
+          "q": "Do Parker hydraulic filter elements come with documents?",
+          "a": "No certificates are held on this listing for these filters. If you need a certificate of conformity or origin for 933467Q, 932617Q, 924452Q or 925834, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which equipment do Parker 933467Q, 932617Q and 924452Q filters fit?",
+          "a": "All four parts on this listing are for use with Parker's handheld hydraulic filter unit, and 932617Q names the 15P, 30P and 30PD models. For compressed-air filters and elements, see our [filters, regulators and lubricators shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "I",
+          "q": "When should the Parker 933467Q Guardian filter be replaced?",
+          "a": "Replace the 933467Q Guardian filter when the filter unit shows a rising pressure drop or reduced flow, or at the interval in the unit's manual. It is supplied in a pack of 2, so a spare can be kept with the cart or handheld unit."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker handheld hydraulic filter unit filters made and shipped from?",
+          "a": "The Parker filters on this listing are made in the United States, and we ship them from our Dubai warehouse. Filter elements are classified under HS 8421.99, parts of filtering machinery, on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order Parker 933467Q and 932617Q filters from Dubai stock?",
+          "a": "Yes. We keep these Parker filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and the model of your filter unit through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-heavy-duty-compressed-air-filter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker F602 heavy-duty compressed air filter?",
+          "a": "The Parker F602 is a heavy-duty general-purpose compressed-air filter for 3/4\", 1\" and 1 1/2\" lines that removes particles, water and oil with a polypropylene element. It has a zinc body and metal bowl, an internal automatic drain and a sight gauge; this listing has 3 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker F602 part number such as F602-08WGR/M4?",
+          "a": "F602-08WGR/M4 reads as F602 (heavy-duty filter series) and 08 (1\" port), with WGR/M4 the bowl, element and drain options shared by all three part numbers. F602-06 is the 3/4\" size and F602-12 the 1 1/2\" size."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does each size of the Parker F602 filter handle?",
+          "a": "Parker gives 270 CFM for the 3/4\" F602-06WGR/M4, 300 CFM for the 1\" F602-08WGR/M4 and 450 CFM for the 1 1/2\" F602-12WGR/M4. Size on the compressor or branch flow so the filter runs with a low pressure drop."
+        },
+        {
+          "slot": "D",
+          "q": "How much space does a Parker F602 filter need?",
+          "a": "Each F602 is 4.9 in wide; the 3/4\" and 1\" units are 8 3/4\" high and the 1 1/2\" unit 9 7/16\" high. Leave clearance below the bowl to remove it and to reach the drain."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Parker F602 heavy-duty filter rated for?",
+          "a": "Parker lists 250 psi (about 17 bar) for all three F602 part numbers, which matches the metal bowl. Install it where the line pressure stays below that figure, including compressor surges."
+        },
+        {
+          "slot": "F",
+          "q": "What does the Parker F602 filter remove from compressed air?",
+          "a": "The F602 removes particles, liquid water and oil from compressed air using a polypropylene element, with nitrile seals in a zinc body and bowl. It does not remove oil vapour, which needs an activated-carbon stage."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker F602 achieve a stated ISO 8573-1 air quality class?",
+          "a": "No ISO 8573-1 class is published for the F602 on this listing; it is a general-purpose particulate and water filter. For a stated class, follow it with coalescing filtration; see our [compressed air quality guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "H",
+          "q": "What is included with a Parker F602 heavy-duty filter?",
+          "a": "Each F602 comes as the air filter with an internal auto drain, a metal bowl and a sight gauge, with NPT outlets. Pipe fittings for the 3/4\", 1\" and 1 1/2\" ports are on our [pneumatic fittings shelf](/c/pneumatic-fittings-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install and maintain a Parker F602 filter?",
+          "a": "Mount the F602 vertically with the bowl down and the flow arrow toward the users, upstream of regulators and dryers it protects. Watch the sight gauge to confirm the auto drain is working, and replace the polypropylene element when it is loaded or the pressure drop rises."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker F602 and the Parker OIL-X main line filter?",
+          "a": "The F602 is a heavy-duty particulate and water filter in 3/4\" to 1 1/2\", while the [Parker OIL-X main line filters](/p/parker-main-line-compressed-air-filters) offer 1 micron and 0.01 micron coalescing and carbon grades from 1/4\" to 3\". Use the F602 for bulk cleaning and OIL-X for oil removal."
+        },
+        {
+          "slot": "L",
+          "q": "What is the HS code and origin of the Parker F602 heavy-duty filter?",
+          "a": "The Parker F602 filters on this listing are made in the United States and carry HS code 8421398015, within heading 8421 for filtering machinery for gases. We ship them from Dubai with the code and origin on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you hold Parker F602 heavy-duty filters in stock in Dubai?",
+          "a": "Yes. Indus holds Parker F602 heavy-duty compressed air filters in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the F602 part numbers through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-main-line-compressed-air-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker OIL-X main line compressed air filters?",
+          "a": "Parker OIL-X main line filters are compressed-air filters with aluminium bowls that remove dirt, water, oil aerosol and oil vapour in the main pipework from 1/4\" to 3\" NPT. This listing has 32 part numbers in 1 micron and 0.01 micron coalescing and activated-carbon grades, from 21 to 1,314 cfm."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker OIL-X code such as AAPX035GNFX?",
+          "a": "AAPX035GNFX reads as grade AA (0.01 micron coalescing), PX (OIL-X), 035 (housing size), G (port), N (NPT thread) and FX, the float-drain version. AO is the 1 micron coalescing grade and ACS the activated-carbon grade, with MX for its manual drain."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Parker OIL-X main line range cover?",
+          "a": "Parker gives 21 cfm for the 010 housing (1/4\", 3/8\" and 1/2\"), 42 cfm for 015 (1/2\"), 64 cfm for 020 (3/4\"), 127 cfm for 025 (1\"), 233 cfm for 030, 339 cfm for 035 (1 1/2\"), 466 cfm for 040 (2\"), 699 cfm for 045 (2 1/2\") and 1,314 cfm for 055 (3\")."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker OIL-X grade should I choose, AO, AA or ACS?",
+          "a": "Choose AO (1 micron) for general-purpose dirt and oil removal, AA (0.01 micron) after it for high-efficiency oil removal, and ACS (activated carbon) last to remove oil vapour and odour. Most clean-air lines use AO plus AA; ACS is added where oil vapour matters."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature are Parker OIL-X main line filters rated for?",
+          "a": "Parker lists 232 psi (16 bar) for the AO and AA float-drain grades and 290 psi (20 bar) for the ACS carbon grade, with a 176°F maximum temperature on the listing. Check the row of the part number you order."
+        },
+        {
+          "slot": "F",
+          "q": "Which gases can Parker OIL-X main line filters be used with?",
+          "a": "Parker lists these OIL-X filters for compressed air, carbon dioxide and nitrogen. The bowls are aluminium, so they suit main line duty where a plastic bowl is not allowed; no sight gauge is fitted."
+        },
+        {
+          "slot": "G",
+          "q": "Which ISO 8573-1 air quality do Parker OIL-X filters support?",
+          "a": "Parker sells OIL-X grades to build ISO 8573-1 air quality in stages: AO for general purpose, AA for high-efficiency oil removal and ACS for oil vapour. Our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains which classes each stage helps reach."
+        },
+        {
+          "slot": "H",
+          "q": "Which replacement elements fit Parker OIL-X main line filters?",
+          "a": "Each OIL-X housing takes the element of its own size and grade, for example a 035AA element in an AAPX035 housing or 045AO in an AOPX045. These are listed as [Parker compressed air filter elements](/p/parker-filter-elements-for-compressed-air-filters)."
+        },
+        {
+          "slot": "I",
+          "q": "How often should Parker OIL-X filter elements be changed?",
+          "a": "Parker recommends changing OIL-X elements every 12 months to keep the rated air quality, even if the pressure drop is still low. Check that float drains discharge regularly and change an ACS carbon element sooner if oil odour returns."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker OIL-X AO and AA filters?",
+          "a": "An AO filter such as AOPX025ENFX removes particles and oil to 1 micron, while an AA filter such as AAPX025ENFX removes oil aerosol to 0.01 micron. Both share housing sizes and flows, so they pair in series, AO first; the [FRL shelf](/c/air-preparation-frl) holds point-of-use units."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker OIL-X main line filters made and how are they classified?",
+          "a": "The Parker OIL-X filters on this listing are made in the United Kingdom, and we ship them from Dubai to the GCC, Africa and Asia. Compressed-air filters fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can Parker OIL-X main line filters be supplied from Dubai stock?",
+          "a": "Yes. We keep Parker OIL-X main line compressed air filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the OIL-X codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p31-mini-filter-replacement-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker P31 Mini filter replacement elements?",
+          "a": "Parker P31 Mini filter replacement elements are service kits for the P31 Global Modular mini filters and filter/regulators. This listing has 4 part numbers: P31KA00ESC (0.01 micron), P31KA00ES9 (1 micron), P31KA00ESE (5 micron) and P31KA00ESA (absorber)."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker P31 element code such as P31KA00ESE?",
+          "a": "P31KA00ESE reads as P31 (Mini Global Modular size), KA00 (filter repair kit) and the final characters ES plus the grade: C for 0.01 micron, 9 for 1 micron, E for 5 micron and A for the absorber element."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker P31 element fits a P31 coalescing filter?",
+          "a": "P31KA00ESC, the 0.01 micron element, matches P31 coalescing filters, whose part numbers carry the same C grade letter after the port code. Order it for the [Parker P31 Mini coalescing filter](/p/parker-p31-mini-global-modular-coalescing-filters)."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker P31 element fits a P31 particulate filter or filter/regulator?",
+          "a": "P31KA00ESE, the 5 micron element, matches P31 particulate filters and P31 filter/regulators, whose part numbers carry the E grade letter after the port code. Choose P31KA00ES9 if you want 1 micron filtration in the same body."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P31KA00ESA absorber element used for?",
+          "a": "P31KA00ESA is the absorber element of the P31 Mini range, an alternative to the 0.01, 1 and 5 micron filter elements for the same P31 bodies. Tell us the duty it must serve and we confirm it suits your filter before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Do Parker P31 replacement elements come with a certificate?",
+          "a": "No certificate is held on this listing for the P31 elements. If your quality system needs a certificate of conformity for P31KA00ESC, ES9, ESE or ESA, name it in the enquiry and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which Parker P31 Mini units do these elements service?",
+          "a": "These elements service the P31 Mini Global Modular range: coalescing filters, particulate filters and filter/regulators such as the [Parker P31 Mini filter/regulator](/p/parker-p31-mini-global-modular-filter-regulators). Match the grade letter in the unit's part number."
+        },
+        {
+          "slot": "I",
+          "q": "How do you replace a Parker P31 Mini filter element?",
+          "a": "Exhaust the air, remove the bowl, unscrew the old element and fit the new P31 kit, then refit the bowl with its seal. Replace the element when it is loaded or the pressure drop rises; coalescing elements should never be washed."
+        },
+        {
+          "slot": "J",
+          "q": "Why keep spare Parker P31 Mini filter elements on site?",
+          "a": "Keeping a spare P31KA00ESC or P31KA00ESE element lets maintenance change a loaded element in minutes instead of waiting for parts while a machine runs on dirty or oily air. Elements are consumables, so most plants hold one per P31 filter in service."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Parker P31KA00ESC and P31KA00ESE elements?",
+          "a": "P31KA00ESC is a 0.01 micron coalescing element that removes oil aerosol, while P31KA00ESE is a 5 micron particulate element that traps solids and water. Fit them in series, 5 micron first, where oil-free air is needed; more on the [FRL shelf](/c/air-preparation-frl)."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker P31 replacement elements made, and which HS code applies?",
+          "a": "The Parker P31 elements on this listing are made in the United States, and we ship them from Dubai. Replacement filter elements are classified under HS 8421.99, parts of filtering machinery, on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker P31 Mini replacement elements stocked in Dubai?",
+          "a": "Yes. Indus keeps Parker P31 Mini filter replacement elements in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the P31KA00 codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p31-mini-global-modular-coalescing-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P31 Mini Global Modular coalescing filter?",
+          "a": "The Parker P31 Mini is a 0.01 micron airline coalescing filter with 1/4\" NPT female ports that removes oil aerosol and fine particles ahead of small valves and instruments. It has an aluminium housing, polycarbonate bowl with nylon guard and borosilicate glass fibre element; this listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker P31 coalescing filter code such as P31FB92CGBN?",
+          "a": "P31FB92CGBN reads as P31 (Mini size), FB (filter), 92 (1/4\" NPT ports), C (0.01 micron coalescing element), G (bowl rated to 150 psig) and B (auto pulse drain), then N. M in place of G is the 250 psig version and M in the drain position a manual drain."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker P31 coalescing filter versions are available?",
+          "a": "P31FB92CGBN (auto pulse drain, 15 to 150 psig), P31FB92CMBN (auto pulse, 15 to 250 psig), P31FB92CGMN (manual drain, 0 to 150 psig) and P31FB92CMMN (manual drain, 0 to 250 psig). All four have 1/4\" NPT female ports."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the auto pulse or manual drain Parker P31 coalescing filter?",
+          "a": "Choose auto pulse drain (P31FB92CGBN, P31FB92CMBN) for lines that run at 15 psig or more, because the drain needs that pressure to work. Choose manual drain (P31FB92CGMN, P31FB92CMMN) for lower pressures or where the bowl is checked every shift."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker P31 coalescing filter take?",
+          "a": "The P31 coalescing filter works up to 150 psig (about 10 bar) or 250 psig (about 17 bar) depending on the version, and in ambient air from 14°F to 125°F. Auto pulse versions need at least 15 psig to drain."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Parker P31 coalescing filter made of?",
+          "a": "The P31 has an aluminium housing, ABS body cap, polycarbonate bowl with nylon guard, nitrile seals and a borosilicate glass fibre cloth element. Keep synthetic oils and solvents away from the polycarbonate bowl, which they can attack."
+        },
+        {
+          "slot": "G",
+          "q": "What air quality does the Parker P31 coalescing filter give?",
+          "a": "The P31 coalescing element is rated at 0.01 micron; no ISO 8573-1 class is held on this listing. Ask for the maker's purity data if you need a stated class; our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1) explains how coalescing stages fit."
+        },
+        {
+          "slot": "H",
+          "q": "Which filter should be fitted before a Parker P31 coalescing filter?",
+          "a": "Fit a 5 micron pre-filter such as the [Parker P31 Mini particulate filter](/p/parker-p31-mini-global-modular-particulate-filters) ahead of the coalescing unit, so dirt and bulk water do not load the 0.01 micron element. Both are 1/4\" NPT P31 bodies."
+        },
+        {
+          "slot": "I",
+          "q": "Which replacement element fits the Parker P31 coalescing filter?",
+          "a": "The 0.01 micron element P31KA00ESC fits the P31 coalescing filter; it is on the [Parker P31 Mini replacement elements listing](/p/parker-p31-mini-filter-replacement-elements). Replace it when the pressure drop rises or on a fixed interval, and never wash it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P31 Mini coalescing filter differ from the Parker 11F?",
+          "a": "The P31 is a 1/4\" NPT Global Modular mini coalescing filter, while the [Parker 11F Compact coalescing filter](/p/parker-11f-compact-general-industrial-coalescing-filters) is a general industrial body in 1/4\", 3/8\" and 1/2\" at 95 scfm. Both filter to 0.01 micron; choose by port size and mounting style."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker P31 coalescing filters made and how are they classified?",
+          "a": "The Parker P31 coalescing filters on this listing are made in the United States, and we ship them from Dubai. Compressed-air filters fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Parker P31 Mini coalescing filters from stock in Dubai?",
+          "a": "Yes. We keep Parker P31 Mini coalescing filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the P31FB codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p31-mini-global-modular-filter-regulators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P31 Mini Global Modular filter/regulator?",
+          "a": "The Parker P31 Mini is a one-piece piggy-back filter/regulator with 1/4\" NPT female ports, a 5 micron particulate element, relieving regulator and built-in square psi gauge. It mounts through a panel with a plastic mount nut; this listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker P31 filter/regulator code such as P31EB92EGMBN5P?",
+          "a": "P31EB92EGMBN5P reads as P31 (Mini size), EB (filter/regulator), 92 (1/4\" NPT ports), E (5 micron element), G (bowl rated to 150 psig) and M (manual drain), then BN5P for the options. B in the drain position is auto pulse and M in the bowl position the 250 psig version."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker P31 filter/regulator versions are on this listing?",
+          "a": "P31EB92EGMBN5P (manual drain, 0 to 150 psig), P31EB92EGBBN5P (auto pulse, 15 to 150 psig), P31EB92EMMBN5P (manual drain, 0 to 250 psig) and P31EB92EMBBN5P (auto pulse, 15 to 250 psig). All are 1/4\" NPT with a built-in gauge."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the auto pulse or manual drain Parker P31 filter/regulator?",
+          "a": "Choose an auto pulse drain code when the supply stays at 15 psig or above and nobody drains the bowl routinely, and a manual drain code for low-pressure supplies or inspected lines. The manual versions work from 0 psig."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker P31 filter/regulator take?",
+          "a": "The P31 filter/regulator takes up to 150 psig (about 10 bar) or 250 psig (about 17 bar) supply, depending on the version, with a 125°F maximum temperature. Set the outlet pressure on the built-in gauge below the supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker P31 filter/regulator made of?",
+          "a": "The P31 has an aluminium body, ABS body cap, clear polycarbonate bowl with nylon guard, nitrile seals, brass and nitrile valve and diaphragm assemblies, a PBT bonnet, steel springs and a polyethylene element. Keep solvents away from the polycarbonate bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Is the Parker P31 filter/regulator a relieving regulator?",
+          "a": "Yes. The P31 filter/regulator is relieving, so when you turn the set pressure down it vents the excess downstream air through the bonnet. No certificates are held on this listing; ask in the enquiry if you need a certificate of conformity."
+        },
+        {
+          "slot": "H",
+          "q": "Which replacement element fits the Parker P31 Mini filter/regulator?",
+          "a": "The 5 micron element P31KA00ESE fits the P31 filter/regulator; it is on the [Parker P31 Mini replacement elements listing](/p/parker-p31-mini-filter-replacement-elements). For oil-free air, add a [P31 coalescing filter](/p/parker-p31-mini-global-modular-coalescing-filters) downstream."
+        },
+        {
+          "slot": "I",
+          "q": "How do you mount and set a Parker P31 Mini filter/regulator?",
+          "a": "Mount the P31 through a panel using its plastic mount nut, or in line, with the bowl down and the flow arrow toward the load. Turn the knob to set the outlet pressure while reading the built-in square psi gauge, and drain the bowl before liquid reaches the element."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker P31 filter/regulator differ from the Parker 06E filter/regulator?",
+          "a": "The P31 is a 1/4\" Global Modular mini unit with a built-in gauge and relieving regulator, while the [Parker 06E Compact](/p/parker-06e-compact-general-industrial-filter-regulators) is a general industrial body in 1/4\" and 3/8\" with a guarded poly bowl. Choose P31 for small modular lines."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker P31 filter/regulators made, and which HS code applies?",
+          "a": "The Parker P31 filter/regulators on this listing are made in the United States, and we ship them from Dubai. Customs commonly classify filter/regulators under 8421.39 or 8481.10; the code is stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Parker P31 Mini filter/regulators in stock in Dubai?",
+          "a": "Yes. Indus keeps Parker P31 Mini filter/regulators in stock at its warehouse in Dubai, UAE, and ships worldwide with the best lead times. Send the P31EB codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-p31-mini-global-modular-particulate-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker P31 Mini Global Modular particulate filter?",
+          "a": "The Parker P31 Mini is a 5 micron airline particulate filter with 1/4\" NPT female ports that removes dirt and water ahead of small valves, cylinders and regulators. It has an aluminium housing, polycarbonate bowl with nylon guard and polyethylene element; this listing has 4 part numbers."
+        },
+        {
+          "slot": "B",
+          "q": "How do you read a Parker P31 particulate filter code such as P31FB92EMBN?",
+          "a": "P31FB92EMBN reads as P31 (Mini size), FB (filter), 92 (1/4\" NPT ports), E (5 micron particulate element), M (bowl rated to 250 psig) and B (auto pulse drain), then N. G in the bowl position is the 150 psig version and M in the drain position a manual drain."
+        },
+        {
+          "slot": "D",
+          "q": "Which Parker P31 particulate filter versions are available?",
+          "a": "P31FB92EGBN (auto pulse, 15 to 150 psig), P31FB92EGMN (manual drain, 0 to 150 psig), P31FB92EMBN (auto pulse, 15 to 250 psig) and P31FB92EMMN (manual drain, 0 to 250 psig). All four have 1/4\" NPT female ports."
+        },
+        {
+          "slot": "D",
+          "q": "How much space is needed to service a Parker P31 particulate filter?",
+          "a": "Parker gives 1.31\" as the distance needed to remove the P31 bowl, so leave at least that much clear below the filter. Mount it with the bowl down and the flow arrow toward the load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature can the Parker P31 particulate filter take?",
+          "a": "The P31 particulate filter takes up to 150 psig (about 10 bar) or 250 psig (about 17 bar) depending on the version, with an ambient operating range of 14°F to 125°F. Auto pulse drain versions need at least 15 psig to empty the bowl."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Parker P31 particulate filter made of?",
+          "a": "The P31 has an aluminium housing, ABS body cap, acetal element retainer and baffles, nitrile seals, a polyethylene element and a polycarbonate bowl with nylon guard. Keep synthetic oils and solvents away from the polycarbonate bowl."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Parker P31 particulate filter meet an air quality class?",
+          "a": "No ISO 8573-1 class is held on this listing for the 5 micron P31 filter, which removes particles and water but not oil aerosol. For a stated class, follow it with a coalescing stage; see our [ISO 8573-1 guide](/blog/compressed-air-quality-iso-8573-1)."
+        },
+        {
+          "slot": "H",
+          "q": "Which coalescing filter pairs with the Parker P31 particulate filter?",
+          "a": "The [Parker P31 Mini coalescing filter](/p/parker-p31-mini-global-modular-coalescing-filters) fits downstream of the 5 micron particulate unit in the same 1/4\" P31 size, giving 0.01 micron oil removal. Fit the particulate filter first."
+        },
+        {
+          "slot": "I",
+          "q": "Which replacement element fits the Parker P31 particulate filter?",
+          "a": "The 5 micron element P31KA00ESE fits the P31 particulate filter; it is on the [Parker P31 Mini replacement elements listing](/p/parker-p31-mini-filter-replacement-elements). P31KA00ES9 gives 1 micron filtration in the same body."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Parker P31 auto pulse and manual drain filters?",
+          "a": "An auto pulse drain (P31FB92EGBN, P31FB92EMBN) empties the bowl automatically and needs 15 psig or more, while a manual drain (P31FB92EGMN, P31FB92EMMN) is opened by hand and works from 0 psig."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker P31 particulate filters made and how are they classified?",
+          "a": "The Parker P31 particulate filters on this listing are made in the United States, and we ship them from Dubai. Compressed-air filters fall under HS 8421.39, filtering machinery for gases, stated on our commercial invoice."
+        },
+        {
+          "slot": "M",
+          "q": "Are Parker P31 Mini particulate filters stocked in Dubai?",
+          "a": "Yes. We keep Parker P31 Mini particulate filters in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the P31FB codes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

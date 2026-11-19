@@ -1,0 +1,807 @@
+{
+  "family": "pneumatic-fittings-silencers",
+  "extraFacts": [
+    {
+      "fact": "A muffler or silencer on the exhaust port of a pneumatic valve or cylinder reduces the noise of exhausting air and keeps dirt out of the port; a muffler that is too small or clogged adds back pressure and slows the cylinder, so it must be sized to the exhaust port and the flow. A speed control muffler adds an adjustable needle so the exhaust flow, and with it the cylinder speed, can be set.",
+      "source": "Indus Hydraulics guide 'Push-to-connect fittings and silencers'; maker silencer catalogues"
+    },
+    {
+      "fact": "Push-to-connect (push-in) fittings join tube without tools: the tube is pushed in to a collet that grips it, and a release ring is pressed to remove it. The tube must be cut square and be the right outside diameter.",
+      "source": "Indus Hydraulics guide 'Push-to-connect fittings and silencers'"
+    },
+    {
+      "fact": "Unit conversions: 1 bar = 14.5038 psi, so 12 psi is about 0.8 bar, 232 psi is 16 bar and 300 psi is about 21 bar; 25.4 mm = 1 inch, so 12.70 mm is 1/2 inch, 22.22 mm is 7/8 inch and 38.10 mm is 1-1/2 inch; 1 cfm = 28.3 litres per minute. Temperature: deg C = (deg F - 32) / 1.8, so +36 deg F is about 2 deg C, +122 deg F is 50 deg C and 140 deg F is 60 deg C.",
+      "source": "NIST Special Publication 811 (unit conversion factors)"
+    },
+    {
+      "fact": "Customs classification: taps, cocks and valves fall under HS heading 8481; filtering or purifying machinery parts under 8421; tube or pipe fittings of copper under 7412 and base-metal mountings and brackets under 8302. The headings on the Transair listings differ from each other.",
+      "source": "WCO Harmonized System Nomenclature 2022, headings 84.81, 84.21, 74.12 and 83.02"
+    },
+    {
+      "fact": "Sibling listings on indushydraulics.com: Dixon conical mufflers run 1/8 to 1 inch (CMF18 to CMF88) at 300 psi; Dixon speed control mufflers SCM18 to SCM88 run from 20 scfm to 100 scfm at 300 psi; Texas Pneumatic Tools exhaust mufflers ASP-1 to ASP-12 run 1/8 to 1-1/2 inch, silencer mufflers ASQF run 1/4 to 2 inch (FPT and MPT) and speed control mufflers ASP-1SC to ASP-8SC run 1/8 to 1 inch; Parker EM sintered bronze mufflers have hex sizes 5/16 to 2 inch and Parker EM flow-control mufflers 1/2 to 1-5/16 inch hex; Wilkerson XMC silencers have 1/2, 1 and 1-1/2 inch ports with 12 psi; Transair fittings are for 12.70, 22.22, 25 and 38.10 mm tube.",
+      "source": "Indus Hydraulics product listings compiled from the maker catalogues"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-conical-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dixon conical mufflers used for?",
+          "a": "Dixon conical mufflers are small steel exhaust mufflers screwed into the exhaust port of a pneumatic valve or cylinder to cut noise. This listing carries 6 part numbers, CMF18 to CMF88, in sizes from 1/8\" to 1\" with a 300 psi stated rating."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon part numbers such as CMF38 and CMF68?",
+          "a": "In the rows the digit before the final 8 is the size in eighths of an inch: CMF18 is 1/8\", CMF28 1/4\", CMF38 3/8\", CMF48 1/2\", CMF68 3/4\" and CMF88 1\". The overall lengths run from 1-1/8\" to 2-7/8\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Dixon conical mufflers come in?",
+          "a": "1/8\" (CMF18, 1-1/8\" long), 1/4\" (CMF28, 1-3/8\"), 3/8\" (CMF38, 1-1/2\"), 1/2\" (CMF48, 1-7/8\"), 3/4\" (CMF68, 2-1/8\") and 1\" (CMF88, 2-7/8\")."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Dixon conical muffler size?",
+          "a": "Match the muffler thread to the exhaust port of the valve or cylinder, and go one size up if the port exhausts a large volume, since an undersized muffler slows the cylinder. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can a Dixon conical muffler take?",
+          "a": "The listing gives a stated pressure of 300 psi, about 21 bar, on all six sizes. For plated steel mufflers, the maker's figure is the only rating on the listing."
+        },
+        {
+          "slot": "F",
+          "q": "What is a Dixon conical muffler made from?",
+          "a": "The listing gives steel, with CMF38 and CMF68 described as plated steel conical mufflers. Ask us for corrosion or media requirements before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Dixon conical mufflers?",
+          "a": "This listing holds no datasheet or certificate file for the Dixon conical mufflers, so name the document you need, for example a certificate of conformity or the Dixon catalogue page for CMF38, and we request it from Dixon with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which ports do Dixon conical mufflers screw into?",
+          "a": "They screw into the exhaust port of a valve, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves), or a [pneumatic cylinders](/c/pneumatic-cylinders) exhaust. Match the muffler thread to the port, 1/8\" to 1\"."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and maintain a Dixon conical muffler?",
+          "a": "Screw it into the exhaust port with thread sealant if required, and check it is clear of dirt. Replace a muffler that clogs, as it adds back pressure and slows the cylinder."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon conical mufflers differ from Dixon speed control mufflers?",
+          "a": "The conical muffler only silences, while the [Dixon speed control muffler](/p/dixon-speed-control-mufflers) also has an adjustable flow control to set cylinder speed."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Dixon conical mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Dixon conical mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Dixon conical mufflers in Dubai?",
+          "a": "Yes. We keep Dixon conical mufflers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-speed-control-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Dixon speed control mufflers used for?",
+          "a": "Dixon speed control mufflers are brass mufflers with an adjustable needle that set cylinder speed through the exhaust while silencing it. This listing carries 6 part numbers, SCM18 to SCM88, with adjusted flows of 20 to 100 scfm and a 300 psi stated rating."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Dixon part numbers such as SCM28 and SCM88?",
+          "a": "In the rows the digit before the final 8 is the size in eighths of an inch, matching the Dixon CMF series: SCM18 is 1/8\", SCM28 1/4\" and SCM88 1\". The flow rises with size from 20 scfm (SCM18) to 100 scfm (SCM88)."
+        },
+        {
+          "slot": "D",
+          "q": "Which flows do Dixon speed control mufflers offer?",
+          "a": "Rows give 20, 30, 40, 60, 70 and 100 scfm maximum adjusted flow, for example SCM18 at 20 scfm and SCM88 at 100 scfm. Pick the size from the exhaust flow of your cylinder."
+        },
+        {
+          "slot": "D",
+          "q": "How big are Dixon speed control mufflers?",
+          "a": "Rows give heights from 1-5/16\" (the 20 scfm SCM18) to 2-1/2\" (the 100 scfm SCM88), including 1-9/16\", 1-5/8\", 2\" and 2-3/8\" on the middle sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can a Dixon speed control muffler take?",
+          "a": "The listing gives a stated pressure of 300 psi, about 21 bar, on all six. Use it only on the exhaust port, where the pressure is low, as the muffler is not a pressure regulator."
+        },
+        {
+          "slot": "F",
+          "q": "What is a Dixon speed control muffler made from?",
+          "a": "The listing gives brass. Brass suits compressed-air exhaust; ask us before using it in corrosive atmospheres. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Dixon speed control mufflers?",
+          "a": "No certificate or datasheet is attached to the the Dixon speed control mufflers listing. Tell us in the enquiry what your file requires for SCM28, such as a conformity certificate, and we obtain it from Dixon with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do Dixon speed control mufflers fit?",
+          "a": "In the exhaust port of a valve or cylinder, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). For inline speed control see the [flow controls, check and quick exhaust valves](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set a Dixon speed control muffler?",
+          "a": "Screw it into the exhaust port, open the needle, then close it gradually until the cylinder reaches the speed you need. Lock the setting. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "K",
+          "q": "How do Dixon speed control mufflers differ from the Dixon conical mufflers?",
+          "a": "The speed control muffler has an adjustable needle and is brass, while the [Dixon conical muffler](/p/dixon-conical-mufflers) is a plain steel silencer. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Dixon speed control mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Dixon speed control mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Dixon speed control mufflers in Dubai?",
+          "a": "Yes, Dixon speed control mufflers is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "gast-pneumatic-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Gast pneumatic mufflers used for?",
+          "a": "The Gast pneumatic mufflers are accessories for Gast air compressors and vacuum pumps that quieten the exhaust. This listing carries 4 part numbers: AJ121D (1-1/2\" NPT), AA900E and AA900F (32 oz glass) and AC995 (a muffler assembly)."
+        },
+        {
+          "slot": "B",
+          "q": "What do Gast part numbers like AJ121D and AA900E mean?",
+          "a": "In the rows AJ121D is a muffler with a 1-1/2\" NPT connection, AA900E and AA900F are 32 oz glass mufflers and AC995 is a muffler assembly. The listing does not decode the prefixes, so quote the part number for your Gast model."
+        },
+        {
+          "slot": "D",
+          "q": "Which Gast muffler fits my compressor?",
+          "a": "The specification says to check the technical sheet of the Gast air compressor, so send us the Gast model and we confirm which of AJ121D, AA900E, AA900F or AC995 fits."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between AA900E and AA900F?",
+          "a": "Both are 32 oz glass mufflers on this listing and the table gives no other difference, so quote the Gast model and we confirm which one it takes."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the Gast mufflers have?",
+          "a": "The listing holds no pressure, temperature or noise rating for the four mufflers, so we confirm them for your part number with Gast."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Gast mufflers made of?",
+          "a": "The listing describes AA900E and AA900F as glass mufflers of 32 oz capacity. The materials of AJ121D and AC995 are not stated, so ask us and we confirm with Gast."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Gast mufflers?",
+          "a": "We hold no datasheet or certificate for the Gast mufflers on this page. Ask for the Gast catalogue sheet or a certificate of conformity for AJ121D in your enquiry and we request it from Gast when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Gast mufflers connect to?",
+          "a": "They connect to the exhaust of a Gast compressor or vacuum pump, and AJ121D has a 1-1/2\" NPT thread; see the [pneumatic fittings and silencers shelf](/c/pneumatic-fittings-silencers) for fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and clean a Gast muffler?",
+          "a": "Screw or clamp it onto the exhaust port, keep it clear of oil and dust and replace or clean it if the exhaust slows. A glass muffler should be protected from impact."
+        },
+        {
+          "slot": "K",
+          "q": "How do Gast mufflers differ from the Texas Pneumatic Tools silencers?",
+          "a": "Gast mufflers are for Gast compressors and pumps, while the [Texas Pneumatic Tools silencer mufflers](/p/texas-pneumatic-tools-silencer-mufflers) are general 1/4\" to 2\" pipe silencers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Gast mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Gast mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Gast pneumatic mufflers in Dubai?",
+          "a": "Yes. Gast pneumatic mufflers is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-em-series-muffler-flow-controls",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker EM series muffler flow controls used for?",
+          "a": "The Parker EM series muffler flow controls are exhaust mufflers with an adjustable flow control that set the speed of a cylinder while silencing the exhaust. This listing carries 6 part numbers, 045020002 to 045160016, with hex sizes from 1/2\" to 1-5/16\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker part numbers such as 045020002 and 045120012?",
+          "a": "In the rows the digits after 0450 carry the size code: 045020002 has a 9/16\" hex, 045040004 a 1/2\" hex and 045160016 a 1-5/16\" hex. The listing does not decode the code further, so quote the full nine-digit number."
+        },
+        {
+          "slot": "D",
+          "q": "Which hex sizes do Parker EM flow-control mufflers come in?",
+          "a": "Rows list hex sizes of 9/16\" (045020002), 1/2\" (045040004), 11/16\" (045060060), 7/8\" (045080080), 1-1/6\" (045120012) and 1-5/16\" (045160016). Hex size follows the thread size."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the Parker EM flow-control muffler and the plain EM muffler?",
+          "a": "Use the flow-control version when you want to set cylinder speed through the exhaust, and the plain [EM sintered bronze muffler](/p/parker-em-sintered-bronze-mufflers) when you only need silencing."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the Parker EM flow-control mufflers have?",
+          "a": "The listing holds no pressure, temperature or flow rating for these six part numbers, so we confirm them for your part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Parker EM flow-control mufflers made of?",
+          "a": "The listing describes them as mufflers with flow control but does not state the material; the sibling EM mufflers are sintered bronze. Ask us and we confirm with Parker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker EM flow-control mufflers?",
+          "a": "This listing holds no datasheet or certificate file for the Parker EM flow-control mufflers, so name the document you need, for example a certificate of conformity or the Parker catalogue page for 045020002, and we request it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do Parker EM flow-control mufflers fit?",
+          "a": "In the exhaust port of a valve or cylinder; see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). For inline speed control see the [flow controls, check and quick exhaust valves](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I set a Parker EM flow-control muffler?",
+          "a": "Screw it into the exhaust port, back the adjuster out, then close it gradually until the cylinder moves at the speed you want. Lock the setting. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker EM flow-control muffler differ from the Dixon speed control muffler?",
+          "a": "The Parker EM units are sized by hex from 1/2\" to 1-5/16\", while the [Dixon speed control muffler](/p/dixon-speed-control-mufflers) gives 20 to 100 scfm and is brass."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker EM flow-control mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Parker EM flow-control mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker EM series muffler flow controls in Dubai?",
+          "a": "Yes, we stock Parker EM series muffler flow controls at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [the contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "parker-em-sintered-bronze-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Parker EM sintered bronze mufflers used for?",
+          "a": "Parker EM sintered bronze mufflers are NPT exhaust mufflers that cut the noise of exhausting air and filter dirt out of the exhaust port. This listing carries 9 part numbers, EM12 to EM150 and EMM5, with hex sizes from 5/16\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Parker part numbers such as EM37, EM100 and EMM5?",
+          "a": "In the rows the number after EM grows with the size: EM12 has a 7/16\" hex, EM25 9/16\", EM37 11/16\", EM50 7/8\", EM100 1-5/16\", EM125 1-11/16\" and EM150 a 2\" hex, with EMM5 the smallest at 5/16\". Quote the full part number."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do Parker EM sintered bronze mufflers come in?",
+          "a": "Hex sizes of 5/16\" (EMM5), 7/16\" (EM12), 9/16\" (EM25), 11/16\" (EM37), 7/8\" (EM50), 1-1/6\" (EM75), 1-5/16\" (EM100), 1-11/16\" (EM125) and 2\" (EM150) with an NPT thread."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Parker EM muffler size?",
+          "a": "Match the NPT thread to the exhaust port and pick the next size up for a large exhaust volume, since a small sintered muffler adds back pressure. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the Parker EM mufflers have?",
+          "a": "The listing holds no pressure or temperature rating for the nine part numbers, so we confirm them for your part number with Parker."
+        },
+        {
+          "slot": "F",
+          "q": "What are Parker EM mufflers made of?",
+          "a": "The listing names sintered bronze as the muffler material, with an NPT thread type. Bronze suits compressed air; ask us before using it with corrosive exhaust."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Parker EM mufflers?",
+          "a": "No certificate or datasheet is attached to the the Parker EM mufflers listing. Tell us in the enquiry what your file requires for EM50, such as a conformity certificate, and we obtain it from Parker with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What do Parker EM mufflers screw into?",
+          "a": "The exhaust port of a valve or cylinder, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). The specification lists mufflers, breather vents and silencers as the accessory type."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and maintain a Parker EM muffler?",
+          "a": "Screw it into the exhaust or breather port and replace it when it clogs, since a blocked sintered muffler slows the cylinder. Mount it where oil mist cannot reach it."
+        },
+        {
+          "slot": "K",
+          "q": "How do Parker EM mufflers differ from the Parker EM flow-control mufflers?",
+          "a": "The EM sintered bronze muffler silences only, while the [Parker EM flow-control muffler](/p/parker-em-series-muffler-flow-controls) adds an adjustable flow control. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Parker EM mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Parker EM mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Parker EM sintered bronze mufflers in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Parker EM sintered bronze mufflers in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-exhaust-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Texas Pneumatic Tools exhaust mufflers used for?",
+          "a": "The Texas Pneumatic Tools ASP exhaust mufflers are pipe-thread mufflers that quieten the exhaust of valves, cylinders and air tools. This listing carries 7 part numbers, ASP-1 to ASP-12, in sizes from 1/8\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Texas Pneumatic Tools part numbers such as ASP-4 and ASP-12?",
+          "a": "In the rows the number after ASP is the size in eighths of an inch: ASP-1 is 1/8\", ASP-2 1/4\", ASP-3 3/8\", ASP-4 1/2\", ASP-6 3/4\", ASP-8 1\" and ASP-12 1-1/2\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the ASP exhaust mufflers come in?",
+          "a": "1/8\" (ASP-1), 1/4\" (ASP-2), 3/8\" (ASP-3), 1/2\" (ASP-4), 3/4\" (ASP-6), 1\" (ASP-8) and 1-1/2\" (ASP-12). Match the size to the exhaust port."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick an ASP exhaust muffler for a large cylinder?",
+          "a": "Choose the muffler thread to match the exhaust port and go up a size on big cylinders, since an undersized muffler slows the stroke. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the ASP exhaust mufflers have?",
+          "a": "The listing holds no pressure, temperature or noise rating for the seven part numbers, so we confirm them for your part number with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the ASP exhaust mufflers made of?",
+          "a": "The listing does not state the material of the ASP mufflers. Send us your operating conditions and we confirm with the maker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the ASP exhaust mufflers?",
+          "a": "We hold no datasheet or certificate for the ASP exhaust mufflers on this page. Ask for the Texas Pneumatic Tools catalogue sheet or a certificate of conformity for ASP-4 in your enquiry and we request it from Texas Pneumatic Tools when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do ASP exhaust mufflers fit?",
+          "a": "On the exhaust port of a valve or cylinder, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). For silencers with male or female threads see the [ASQF silencer mufflers](/p/texas-pneumatic-tools-silencer-mufflers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an ASP exhaust muffler?",
+          "a": "Screw it into the exhaust port, with thread sealant if needed, and check it is not blocked. Replace it when the cylinder slows. Test at low pressure first and check every connection for leaks before going to line pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How do the ASP exhaust mufflers differ from the ASP speed control mufflers?",
+          "a": "The ASP exhaust muffler is a plain silencer, while the [ASP speed control muffler](/p/texas-pneumatic-tools-speed-control-mufflers) (ASP-1SC to ASP-8SC) adds an adjustable flow control."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Texas Pneumatic Tools ASP mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Texas Pneumatic Tools ASP mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Texas Pneumatic Tools exhaust mufflers in Dubai?",
+          "a": "Yes. We keep Texas Pneumatic Tools exhaust mufflers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-silencer-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Texas Pneumatic Tools silencer mufflers used for?",
+          "a": "The Texas Pneumatic Tools ASQF silencer mufflers are pipe-thread silencers in female (FPT) and male (MPT) versions that quieten pneumatic exhaust. This listing carries 12 part numbers, such as ASQF-2F, ASQF-2M and ASQF-12F, from 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Texas Pneumatic Tools part numbers such as ASQF-4F and ASQF-6M?",
+          "a": "In the rows the number after ASQF is the size in eighths of an inch, and the last letter is the thread: F is a female pipe thread (FPT) and M a male pipe thread (MPT). ASQF-4F is a 1/2\" FPT and ASQF-6M a 3/4\" MPT silencer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the ASQF silencer mufflers come in?",
+          "a": "1/4\", 3/8\", 1/2\", 3/4\" and 1\" in both FPT and MPT, plus 1-1/2\" FPT and 2\" FPT, for example ASQF-2F and ASQF-2M at 1/4\". Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose female or male on an ASQF silencer?",
+          "a": "Choose the thread that screws into your exhaust port: a female silencer fits a male exhaust nipple and a male silencer screws into a female port. The listing carries both for most sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the ASQF silencer mufflers have?",
+          "a": "The listing holds no pressure, temperature or noise rating for the twelve part numbers, so we confirm them for your part number with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the ASQF silencer mufflers made of?",
+          "a": "The listing does not state the material. Send us your operating conditions and we confirm with the maker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the ASQF silencer mufflers?",
+          "a": "This listing holds no datasheet or certificate file for the ASQF silencers, so name the document you need, for example a certificate of conformity or the Texas Pneumatic catalogue page for ASQF-4F, and we request it from Texas Pneumatic with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do ASQF silencer mufflers fit?",
+          "a": "On the exhaust of valves, cylinders and air equipment, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders); the 1-1/2\" and 2\" sizes suit large exhaust ports."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an ASQF silencer?",
+          "a": "Screw it onto the exhaust fitting with sealant on tapered threads and check it is not blocked. Replace it if it clogs and the cylinder slows."
+        },
+        {
+          "slot": "K",
+          "q": "How do the ASQF silencers differ from the ASP exhaust mufflers?",
+          "a": "The ASQF silencers are sold in FPT and MPT versions to 2\", while the [ASP exhaust mufflers](/p/texas-pneumatic-tools-exhaust-mufflers) are one thread type from 1/8\" to 1-1/2\"."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Texas Pneumatic Tools silencers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Texas Pneumatic Tools silencers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Texas Pneumatic Tools silencer mufflers in Dubai?",
+          "a": "Yes, Texas Pneumatic Tools silencer mufflers is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [our contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    },
+    {
+      "slug": "texas-pneumatic-tools-speed-control-mufflers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Texas Pneumatic Tools speed control mufflers used for?",
+          "a": "The Texas Pneumatic Tools ASP-SC speed control mufflers silence the exhaust and set cylinder speed with an adjustable flow control. This listing carries 6 part numbers, ASP-1SC to ASP-8SC, in sizes from 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Texas Pneumatic Tools part numbers such as ASP-3SC and ASP-8SC?",
+          "a": "In the rows the number after ASP is the size in eighths of an inch and SC marks the speed control version: ASP-3SC is 3/8\" and ASP-8SC is 1\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes do the ASP speed control mufflers come in?",
+          "a": "1/8\" (ASP-1SC), 1/4\" (ASP-2SC), 3/8\" (ASP-3SC), 1/2\" (ASP-4SC), 3/4\" (ASP-6SC) and 1\" (ASP-8SC). Match the size to the exhaust port."
+        },
+        {
+          "slot": "D",
+          "q": "How do I set speed with an ASP speed control muffler?",
+          "a": "Screw it into the exhaust port, open the adjuster, then close it gradually until the cylinder reaches the speed you need. Lock the setting. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "E",
+          "q": "What ratings do the ASP speed control mufflers have?",
+          "a": "The listing holds no pressure, temperature or flow rating for the six part numbers, so we confirm them with the maker for your part number."
+        },
+        {
+          "slot": "F",
+          "q": "What are the ASP speed control mufflers made of?",
+          "a": "The listing does not state the material. Send us your operating conditions and we confirm with the maker. Send the medium and operating conditions with your enquiry and we confirm material suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the ASP speed control mufflers?",
+          "a": "No certificate or datasheet is attached to the the ASP speed control mufflers listing. Tell us in the enquiry what your file requires for ASP-3SC, such as a conformity certificate, and we obtain it from Texas Pneumatic Tools with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do ASP speed control mufflers fit?",
+          "a": "In the exhaust port of a valve or cylinder, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). For inline speed control see the [flow controls, check and quick exhaust valves](/c/pneumatic-flow-check-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain an ASP speed control muffler?",
+          "a": "Keep the muffler clear of dirt, and re-check the setting after maintenance, since a blocked muffler changes the speed. Replace it if the adjuster sticks."
+        },
+        {
+          "slot": "K",
+          "q": "How do the ASP speed control mufflers differ from the plain ASP mufflers?",
+          "a": "The speed control version has an adjustable flow control, while the [ASP exhaust mufflers](/p/texas-pneumatic-tools-exhaust-mufflers) only silence and also come in 1-1/2\". Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Texas Pneumatic Tools speed control mufflers made and how are they exported?",
+          "a": "The listing records the United States as the country of origin for the Texas Pneumatic Tools speed control mufflers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Texas Pneumatic Tools speed control mufflers in Dubai?",
+          "a": "Yes. Texas Pneumatic Tools speed control mufflers is kept in stock in our Dubai, UAE warehouse, and we ship worldwide with the best lead times. For a quotation, list the part numbers and quantities on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "transair-fitting-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Transair fitting ball valve used for?",
+          "a": "The Transair ball valve is a brass push-to-connect ball valve for Transair aluminium compressed-air pipework, used to isolate a branch. This listing carries 6 part numbers, such as 6679 17 22GR and 6668 40 22GR, for 12.70 mm, 22.22 mm, 25 mm and 38.10 mm tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Transair part numbers such as 6679 25 22GR and 6668 25 22GR?",
+          "a": "In the rows the first four digits name the ball valve version (6679, 6694, 6668) and the second group is the tube size code, 17 for 12.70 mm and 25 or 40 for the larger sizes. The listing does not decode the last group, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "Which tube sizes does the Transair ball valve fit?",
+          "a": "The item text gives ball valves for 12.70 mm (2 part numbers), 22.22 mm (2), 25 mm (1) and 38.10 mm (1), for example 6679 17 22GR for 12.70 mm and 6668 40 22GR for 38.10 mm."
+        },
+        {
+          "slot": "D",
+          "q": "What are the different Transair ball valve part numbers 6679, 6694 and 6668?",
+          "a": "The listing gives three ball valve families, 6679, 6694 and 6668, each in different tube sizes, without a one-line difference. Quote the tube size and connection you need and we confirm the number with the maker."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Transair ball valve have?",
+          "a": "The listing gives 232 psi, about 16 bar, a temperature of 140 deg F (60 deg C) and a vacuum rating of 0.03 in. Hg. These are the maker's figures for the Transair range."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Transair ball valve made from?",
+          "a": "The specification gives a brass fitting with a stainless steel release ring, push-to-connect on one side and NPT on the other, described as chemical and corrosion resistant. It is for aluminium tube."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Transair ball valve?",
+          "a": "We hold no datasheet or certificate for the Transair ball valve on this page. Ask for the Transair catalogue sheet or a certificate of conformity for 6679 17 22GR in your enquiry and we request it from Transair when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Transair ball valve connect to?",
+          "a": "Aluminium Transair tube on the push-to-connect side and an NPT thread on the other. See the [Transair elbow](/p/transair-fitting-elbow) and [wall bracket](/p/transair-fitting-wall-bracket) for the rest of the system."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Transair ball valve?",
+          "a": "Cut the tube square, push it into the push-to-connect side until it seats, and seal the NPT side with thread sealant, since none is pre-applied. Release the ring to remove it. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Transair ball valve differ from the Transair elbow?",
+          "a": "The ball valve isolates a branch, while the [Transair elbow](/p/transair-fitting-elbow) turns the line through a right angle. Both are push-to-connect fittings for aluminium tube."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Transair ball valve made and how is it exported?",
+          "a": "The country of origin for the Transair ball valve depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. The listing records HS code 8481801085."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Transair ball valve fittings in Dubai?",
+          "a": "Yes, we stock Transair ball valve fittings at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send us the exact part numbers and quantities through [our contact page](/contact) and we quote promptly."
+        }
+      ]
+    },
+    {
+      "slug": "transair-fitting-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Transair fitting elbow used for?",
+          "a": "The Transair elbow is a 90 degree polyamide push-to-connect fitting for Transair aluminium compressed-air pipework, with a male NPT side. This listing carries 12 part numbers, 6609 and 6619 series, for 12.70 mm, 22.22 mm and 38.10 mm tube."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Transair part numbers such as 6609 25 22GR and 6619 40 35?",
+          "a": "In the rows 6609 and 6619 are two elbow versions, the second group (17, 25, 40) is the tube size code and the last group is the thread, with a GR ending on 6609 rows. The item text gives the tube size, 12.70 mm for 17, 22.22 mm for 25 and 38.10 mm for 40."
+        },
+        {
+          "slot": "D",
+          "q": "Which tube sizes does the Transair elbow fit?",
+          "a": "12.70 mm (6609 17 14GR, 6609 17 22GR), 22.22 mm (6609 25 22GR, 6609 25 28GR, 6609 25 35GR, 6619 25 22) and 38.10 mm (6609 40 35GR to 6609 40 50GR, 6619 40 44), plus one 6619 40 35 listed as a 1 inch fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the 6609 and 6619 Transair elbows?",
+          "a": "The listing gives 6609 with a GR ending (ten rows) and 6619 without (three rows) and no one-line difference, so quote the number you need and we confirm with the maker."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Transair elbow have?",
+          "a": "The listing gives 232 psi, about 16 bar, a temperature of 140 deg F (60 deg C) and a vacuum rating of 0.03 in. Hg for the Transair range."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Transair elbow made from?",
+          "a": "The specification gives polyamide for the fitting with a stainless steel release ring, push-to-connect on one side and male NPT on the other, chemical and corrosion resistant."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Transair elbow?",
+          "a": "This listing holds no datasheet or certificate file for the Transair elbow, so name the document you need, for example a certificate of conformity or the Transair catalogue page for 6609 17 22GR, and we request it from Transair with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Transair elbow connect to?",
+          "a": "Aluminium Transair tube on the push-to-connect side and an NPT thread on the other, with the [ball valve](/p/transair-fitting-ball-valve) and [wall bracket](/p/transair-fitting-wall-bracket) in the system."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Transair elbow?",
+          "a": "Cut the tube square, push it in until it seats and seal the male NPT with thread sealant, since none is pre-applied. Press the release ring to remove it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Transair elbow differ from the Transair wall bracket?",
+          "a": "The elbow turns the line 90 degrees, while the [wall bracket](/p/transair-fitting-wall-bracket) supports it on a wall at an angle. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Transair elbow made and how is it exported?",
+          "a": "The country of origin for the Transair elbow depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Transair elbow fittings in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps Transair elbow fittings in stock, and we ship worldwide with the best lead times. [The contact page](/contact) is the quickest way to request a quotation with part numbers and quantities."
+        }
+      ]
+    },
+    {
+      "slug": "transair-fitting-wall-bracket",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Transair wall bracket used for?",
+          "a": "The Transair wall bracket is a brass push-to-connect fitting that supports Transair aluminium pipe on a wall, usable for air, inert gases and vacuum. This listing carries 4 part numbers: 6640 17 22GR, 6640 25 22GR, 6689 17 22GR and 6689 25 22GR."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Transair part numbers such as 6640 17 22GR and 6689 25 22GR?",
+          "a": "In the rows 6640 and 6689 are two bracket versions, and the second group sets the tube size: 17 is for 12.70 mm and 25 for 22.22 mm. The last group is the thread, 22GR on all four."
+        },
+        {
+          "slot": "D",
+          "q": "Which tube sizes does the Transair wall bracket fit?",
+          "a": "12.70 mm (6640 17 22GR, 6689 17 22GR) and 22.22 mm (6640 25 22GR, 6689 25 22GR). Two part numbers of each. Quote the full part number when you order."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between the 6640 and 6689 Transair brackets?",
+          "a": "The listing gives two bracket families, 6640 and 6689, in the same tube sizes and does not publish the difference. Quote the part number and we confirm with the maker."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the Transair wall bracket have?",
+          "a": "The listing gives 232 psi, about 16 bar, and a temperature of 140 deg F (60 deg C) for the range, and names air, inert gases and vacuum as the application."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Transair wall bracket made from?",
+          "a": "The specification gives a brass fitting with a stainless steel release ring and a 45 degree shape, push-to-connect on one side and NPT on the other, for aluminium tube."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for the Transair wall bracket?",
+          "a": "No certificate or datasheet is attached to the the Transair wall bracket listing. Tell us in the enquiry what your file requires for 6640 17 22GR, such as a conformity certificate, and we obtain it from Transair with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Transair wall bracket connect to?",
+          "a": "Aluminium Transair tube on the push-to-connect side and an NPT thread on the other, with the [Transair elbow](/p/transair-fitting-elbow) or [ball valve](/p/transair-fitting-ball-valve) in the run."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Transair wall bracket?",
+          "a": "Fix it to the wall, push the cut tube in until it seats and seal the NPT with sealant, as none is pre-applied. See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Transair wall bracket differ from the Transair ball valve?",
+          "a": "The bracket supports and connects the pipe at 45 degrees, while the [Transair ball valve](/p/transair-fitting-ball-valve) isolates a branch. Quote the part number you need and we confirm the right match."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Transair wall bracket made and how is it exported?",
+          "a": "The country of origin for the Transair wall bracket depends on the maker plant that built the batch, and we state it on the commercial invoice for each shipment. We export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Transair wall bracket fittings in Dubai?",
+          "a": "Yes. We keep Transair wall bracket fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wilkerson-xmc-series-exhaust-silencer-mist-eliminators",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Wilkerson XMC exhaust silencer mist eliminators used for?",
+          "a": "The Wilkerson XMC series are exhaust silencers that also capture oil mist from compressed-air exhaust, with borosilicate cloth and PVC fibre filter media. This listing carries 3 part numbers: XMC-04-000 (1/2\" NPT), XMC-08-000 (1\" NPT) and XMC-0B-000 (1-1/2\")."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Wilkerson part numbers such as XMC-04-000 and XMC-0B-000?",
+          "a": "In the rows the code after XMC sets the size: 04 is a 1/2\" NPT port, 08 is 1\" NPT and 0B is a 1-1/2\" port rated 200 cfm maximum. The -000 ending is common to all three."
+        },
+        {
+          "slot": "D",
+          "q": "Which port sizes do Wilkerson XMC silencers have?",
+          "a": "1/2\" NPT (XMC-04-000), 1\" NPT (XMC-08-000) and 1-1/2\" (XMC-0B-000). Pick the port to match the exhaust of your valve or cylinder."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Wilkerson XMC-0B-000 pass?",
+          "a": "XMC-0B-000 is listed at 200 cfm maximum flow. The other two rows do not state a flow figure, so we confirm it with Wilkerson for your part number."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature do Wilkerson XMC silencers handle?",
+          "a": "The rows state 12 psi, about 0.8 bar, and the specification gives +36 deg F to +122 deg F, about 2 to 50 deg C. They are for exhaust air, not supply lines."
+        },
+        {
+          "slot": "F",
+          "q": "What are Wilkerson XMC silencers made of?",
+          "a": "The listing gives borosilicate cloth and PVC fibre filter media for exhaust air with an NPT inlet. Housing materials are not stated, so ask us and we confirm with Wilkerson."
+        },
+        {
+          "slot": "G",
+          "q": "Which documents are available for Wilkerson XMC silencers?",
+          "a": "We hold no datasheet or certificate for the Wilkerson XMC silencers on this page. Ask for the Wilkerson catalogue sheet or a certificate of conformity for XMC-08-000 in your enquiry and we request it from Wilkerson when we place the order."
+        },
+        {
+          "slot": "H",
+          "q": "Where do Wilkerson XMC silencers fit?",
+          "a": "On the exhaust line of a valve or cylinder manifold, see [solenoid valves and manifolds](/c/pneumatic-solenoid-valves) and [pneumatic cylinders](/c/pneumatic-cylinders). See our [push-to-connect fittings and silencers guide](/blog/push-to-connect-fittings-and-silencers)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and service a Wilkerson XMC silencer?",
+          "a": "Pipe it to the exhaust with the NPT inlet, drain captured oil and replace the media when the exhaust slows. Keep the exhaust pressure within the 12 psi on the rows."
+        },
+        {
+          "slot": "K",
+          "q": "How do Wilkerson XMC silencers differ from the Texas Pneumatic Tools silencers?",
+          "a": "The Wilkerson units also capture oil mist with filter media, while the [Texas Pneumatic Tools ASQF silencers](/p/texas-pneumatic-tools-silencer-mufflers) are plain pipe-thread silencers."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Wilkerson XMC silencers made and how are they exported?",
+          "a": "The listing records the United Kingdom as the country of origin for the Wilkerson XMC silencers, and we export from Dubai to the GCC, Africa, Asia and other markets with a commercial invoice and packing list. We confirm origin on the invoice for each shipment. The listing records HS code 8421990080."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Wilkerson XMC series exhaust silencers in Dubai?",
+          "a": "Yes, Wilkerson XMC series exhaust silencers is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we reply with price and delivery."
+        }
+      ]
+    }
+  ]
+}

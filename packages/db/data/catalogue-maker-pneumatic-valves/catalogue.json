@@ -7884,7 +7884,7 @@
    "brandSlug": "aro",
    "focusKeyword": "aro alpha series pneumatic valves",
    "descriptionShort": "ARO Alpha Series Pneumatic Valves: 32 part numbers.",
-   "descriptionLong": "<p>ARO Alpha Series Pneumatic Valves: 32 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 50 psi (3 bar)</li><li>Temperature: 180°F</li><li>Valve Type: Spool</li><li>Part numbers: 32</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every ARO part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the ARO part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>ARO Alpha Series Pneumatic Valves: 32 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Temperature: 180°F</li><li>Valve Type: Spool</li><li>Part numbers: 32</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every ARO part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the ARO part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "ARO Alpha Series Pneumatic Valves",
    "seoDescription": "ARO Alpha Series Pneumatic Valves: 32 part numbers. Quote by ARO part number.",
    "faqs": [],
@@ -8197,8 +8197,7 @@
      "position": 7,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 50
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -8238,8 +8237,7 @@
      "position": 12,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120VAC",
-      "powerSupply": "120V AC",
-      "maxPsi": 50
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -8247,8 +8245,7 @@
      "position": 13,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 24VDC",
-      "powerSupply": "24V DC",
-      "maxPsi": 50
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -8286,8 +8283,7 @@
      "partNumber": "A212SD-000-N",
      "position": 18,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 1/4 Inch 4-way",
-      "maxPsi": 50
+      "item": "Solenoid Air Control Valve 1/4 Inch 4-way"
      }
     },
     {
@@ -8295,8 +8291,7 @@
      "position": 19,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 12VDC",
-      "powerSupply": "12V DC",
-      "maxPsi": 50
+      "powerSupply": "12V DC"
      }
     },
     {
@@ -8304,16 +8299,14 @@
      "position": 20,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 50
+      "powerSupply": "120V AC"
      }
     },
     {
      "partNumber": "A712SD-000-N",
      "position": 21,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 1/4 Inch 4-way",
-      "maxPsi": 50
+      "item": "Solenoid Air Control Valve 1/4 Inch 4-way"
      }
     },
     {
@@ -8321,8 +8314,7 @@
      "position": 22,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 50
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -22410,15 +22402,6 @@
    "specs": [
     {
      "group": "Specifications",
-     "label": "Application",
-     "value": "For Use With Water Only",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Connection Type",
      "value": "MPT",
      "unit": null,
@@ -25700,7 +25683,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "Italy",
-   "hsCode": "903281"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-MLT-PNEUMATIC-CHECK-VALVES",
@@ -27543,7 +27526,7 @@
    "brandSlug": "numatics",
    "focusKeyword": "numatics solenoid air control valve 4-way, 2-position, 5-port, detented",
    "descriptionShort": "Numatics Solenoid Air Control Valve 4-Way, 2-Position, 5-Port, Detented: 10 part numbers.",
-   "descriptionLong": "<p>Numatics Solenoid Air Control Valve 4-Way, 2-Position, 5-Port, Detented: 10 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 28 psi (2 bar)</li><li>Part numbers: 10</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Numatics part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Numatics part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Numatics Solenoid Air Control Valve 4-Way, 2-Position, 5-Port, Detented: 10 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Part numbers: 10</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Numatics part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Numatics part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Numatics Solenoid Air Control Valve 4-Way, 2-Position, 5-Port,",
    "seoDescription": "Numatics Solenoid Air Control Valve 4-Way, 2-Position, 5-Port, Detented: 10 part numbers. Quote by Numatics part number.",
    "faqs": [],
@@ -27655,8 +27638,7 @@
      "position": 5,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -27664,8 +27646,7 @@
      "position": 6,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -27673,8 +27654,7 @@
      "position": 7,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -27682,8 +27662,7 @@
      "position": 8,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/8 In 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -27691,8 +27670,7 @@
      "position": 9,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     }
    ],
@@ -27708,7 +27686,7 @@
    "brandSlug": "numatics",
    "focusKeyword": "numatics solenoid air control valve 4-way, 3-position, 5-port",
    "descriptionShort": "Numatics Solenoid Air Control Valve 4-Way, 3-Position, 5-Port: 43 part numbers.",
-   "descriptionLong": "<p>Numatics Solenoid Air Control Valve 4-Way, 3-Position, 5-Port: 43 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 15 to 28 psi (1 to 2 bar), by size</li><li>Temperature: 115°F</li><li>Valve Type: Spool</li><li>Part numbers: 43</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Numatics part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Numatics part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Numatics Solenoid Air Control Valve 4-Way, 3-Position, 5-Port: 43 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Temperature: 115°F</li><li>Valve Type: Spool</li><li>Part numbers: 43</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Numatics part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Numatics part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Numatics Solenoid Air Control Valve 4-Way, 3-Position, 5-Port",
    "seoDescription": "Numatics Solenoid Air Control Valve 4-Way, 3-Position, 5-Port: 43 part numbers. Quote by Numatics part number.",
    "faqs": [],
@@ -28019,8 +27997,7 @@
      "position": 9,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 15
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28028,8 +28005,7 @@
      "position": 10,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 15
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28037,8 +28013,7 @@
      "position": 11,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 15
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28046,8 +28021,7 @@
      "position": 12,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 15
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28055,8 +28029,7 @@
      "position": 13,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28064,8 +28037,7 @@
      "position": 14,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/8 In 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28073,8 +28045,7 @@
      "position": 15,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/8 In 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28082,8 +28053,7 @@
      "position": 16,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28091,8 +28061,7 @@
      "position": 17,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28100,8 +28069,7 @@
      "position": 18,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28109,8 +28077,7 @@
      "position": 19,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 28
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -28182,8 +28149,7 @@
      "position": 28,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 15
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28191,8 +28157,7 @@
      "position": 29,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 15
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28200,8 +28165,7 @@
      "position": 30,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 15
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28209,8 +28173,7 @@
      "position": 31,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 15
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28218,8 +28181,7 @@
      "position": 32,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28227,8 +28189,7 @@
      "position": 33,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28236,8 +28197,7 @@
      "position": 34,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/8 In 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28245,8 +28205,7 @@
      "position": 35,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/8 In 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28254,8 +28213,7 @@
      "position": 36,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28263,8 +28221,7 @@
      "position": 37,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28272,8 +28229,7 @@
      "position": 38,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28281,8 +28237,7 @@
      "position": 39,
      "dimensions": {
       "item": "Hazardous Location Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 28
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -28290,8 +28245,7 @@
      "position": 40,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 240vac",
-      "powerSupply": "220-240V AC",
-      "maxPsi": 15
+      "powerSupply": "220-240V AC"
      }
     },
     {
@@ -28299,8 +28253,7 @@
      "position": 41,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 240vac",
-      "powerSupply": "220-240V AC",
-      "maxPsi": 15
+      "powerSupply": "220-240V AC"
      }
     },
     {
@@ -28308,8 +28261,7 @@
      "position": 42,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 240vac",
-      "powerSupply": "220-240V AC",
-      "maxPsi": 15
+      "powerSupply": "220-240V AC"
      }
     }
    ],
@@ -29127,7 +29079,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8482200080"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-PAR-3250-SERIES-FLOW-CONTROL-VALVES",
@@ -29540,7 +29492,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8482200080"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-PAR-4-WAY-3-POSITION-MANUAL-AIR-CONTROL-VALVE",
@@ -29740,7 +29692,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8482200080"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-PAR-42-SERIES-MANUAL-MECHANICAL-VALVES-4-WAY-2-POSITI",
@@ -29931,7 +29883,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8482200080"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-PAR-42-SERIES-MANUAL-MECHANICAL-VALVES-4-WAY-3-POSITI",
@@ -30081,7 +30033,7 @@
    ],
    "crossReferences": [],
    "countryOfOrigin": "United States",
-   "hsCode": "8482200080"
+   "hsCode": "8481200080"
   },
   {
    "sku": "IH-PAR-AIR-PILOT-VALVES",
@@ -30330,7 +30282,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker b series double solenoid valves, 4-way 2-position",
    "descriptionShort": "Parker B Series Double Solenoid Valves, 4-Way 2-Position: 12 part numbers.",
-   "descriptionLong": "<p>Parker B Series Double Solenoid Valves, 4-Way 2-Position: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Pressure stated by the maker: 20 to 35 psi (1 to 2 bar), by size</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker B Series Double Solenoid Valves, 4-Way 2-Position: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker B Series Double Solenoid Valves, 4-Way 2-Position",
    "seoDescription": "Parker B Series Double Solenoid Valves, 4-Way 2-Position: 12 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -30533,8 +30485,7 @@
      "position": 2,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/2 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 35
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -30542,8 +30493,7 @@
      "position": 3,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -30551,8 +30501,7 @@
      "position": 4,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -30560,8 +30509,7 @@
      "position": 5,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -30569,8 +30517,7 @@
      "position": 6,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -30578,8 +30525,7 @@
      "position": 7,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 20
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -30587,8 +30533,7 @@
      "position": 8,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -30596,8 +30541,7 @@
      "position": 9,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 35
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -30605,8 +30549,7 @@
      "position": 10,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/2 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 35
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -30614,8 +30557,7 @@
      "position": 11,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 35
+      "powerSupply": "24V DC"
      }
     }
    ],
@@ -30895,7 +30837,7 @@
      "position": 1,
      "dimensions": {
       "item": "Valve Air Pilot 3 Way 1/4 Inch Port",
-      "ports": "1/8\""
+      "ports": "1/4\""
      }
     },
     {
@@ -30903,7 +30845,7 @@
      "position": 2,
      "dimensions": {
       "item": "Valve Air Pilot 3 Way 3/8 Inch Port",
-      "ports": "1/4\""
+      "ports": "3/8\""
      }
     },
     {
@@ -30911,7 +30853,7 @@
      "position": 3,
      "dimensions": {
       "item": "Valve Air Pilot 3 Way 1/2 Inch Port",
-      "ports": "3/8\""
+      "ports": "1/2\""
      }
     },
     {
@@ -30919,7 +30861,7 @@
      "position": 4,
      "dimensions": {
       "item": "Valve Air Pilot 3 Way 3/4 Inch Port",
-      "ports": "3/8\""
+      "ports": "3/4\""
      }
     }
    ],
@@ -31180,7 +31122,7 @@
      "dimensions": {
       "item": "Valve Air Pilot 4 Way 1/4 Inch Port",
       "type": "Inline, Single",
-      "ports": "1/8\"",
+      "ports": "1/4\"",
       "action": "Single"
      }
     },
@@ -31190,7 +31132,7 @@
      "dimensions": {
       "item": "Valve Air Pilot 4 Way 3/8 Inch Port",
       "type": "Inline, Single",
-      "ports": "1/4\"",
+      "ports": "3/8\"",
       "action": "Single"
      }
     },
@@ -31210,7 +31152,7 @@
      "dimensions": {
       "item": "Valve Air Pilot 4 Way 1/2 Inch Port",
       "type": "Inline, Single",
-      "ports": "3/8\"",
+      "ports": "1/2\"",
       "action": "Single"
      }
     },
@@ -31220,7 +31162,7 @@
      "dimensions": {
       "item": "Valve Air Pilot 4 Way 3/4 Inch Port",
       "type": "Inline, Single",
-      "ports": "3/8\"",
+      "ports": "3/4\"",
       "action": "Single"
      }
     }
@@ -31237,7 +31179,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker b series single solenoid valves, 4-way 2-position",
    "descriptionShort": "Parker B Series Single Solenoid Valves, 4-Way 2-Position: 12 part numbers.",
-   "descriptionLong": "<p>Parker B Series Single Solenoid Valves, 4-Way 2-Position: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Pressure stated by the maker: 20 to 35 psi (1 to 2 bar), by size</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker B Series Single Solenoid Valves, 4-Way 2-Position: 12 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Part numbers: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker B Series Single Solenoid Valves, 4-Way 2-Position",
    "seoDescription": "Parker B Series Single Solenoid Valves, 4-Way 2-Position: 12 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -31441,8 +31383,7 @@
      "position": 2,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/2 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 35
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -31450,8 +31391,7 @@
      "position": 3,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -31459,8 +31399,7 @@
      "position": 4,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -31468,8 +31407,7 @@
      "position": 5,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -31477,8 +31415,7 @@
      "position": 6,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -31486,8 +31423,7 @@
      "position": 7,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 120vac",
-      "powerSupply": "110-120V AC",
-      "maxPsi": 20
+      "powerSupply": "110-120V AC"
      }
     },
     {
@@ -31495,8 +31431,7 @@
      "position": 8,
      "dimensions": {
       "item": "Solenoid Air Control Valve, 1/8 Inch Pipe Size, 24 VDC",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -31504,8 +31439,7 @@
      "position": 9,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 35
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -31513,8 +31447,7 @@
      "position": 10,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/2 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 35
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -31522,8 +31455,7 @@
      "position": 11,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 35
+      "powerSupply": "120V AC"
      }
     }
    ],
@@ -33542,7 +33474,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker global soft start valves, p32s series",
    "descriptionShort": "Parker Global Soft Start Valves, P32S Series: 3 part numbers.",
-   "descriptionLong": "<p>Parker Global Soft Start Valves, P32S Series: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Valve</li><li>Pressure stated by the maker: 44 psi (3 bar)</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker Global Soft Start Valves, P32S Series: 3 part numbers.</p><h3>Specification</h3><ul><li>Type: Valve</li><li>Pressure stated by the maker: 250 psi (17 bar)</li><li>Part numbers: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker Global Soft Start Valves, P32S Series",
    "seoDescription": "Parker Global Soft Start Valves, P32S Series: 3 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -33578,7 +33510,7 @@
      "dimensions": {
       "item": "Global Valve, Soft Start, Compact, 1/2 Inch Size",
       "type": "2-way, 2-position",
-      "maxPsi": 44
+      "maxPsi": 250
      }
     }
    ],
@@ -35947,7 +35879,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker miniature high speed pneumatic logic control valves",
    "descriptionShort": "Parker Miniature High Speed Pneumatic Logic Control Valves: 26 part numbers.",
-   "descriptionLong": "<p>Parker Miniature High Speed Pneumatic Logic Control Valves: 26 part numbers.</p><h3>Specification</h3><ul><li>Type: Pneumatic Control Valve</li><li>Pressure stated by the maker: 44 psi (3 bar)</li><li>Part numbers: 26</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker Miniature High Speed Pneumatic Logic Control Valves: 26 part numbers.</p><h3>Specification</h3><ul><li>Type: Pneumatic Control Valve</li><li>Pressure stated by the maker: 116 psi (8 bar)</li><li>Part numbers: 26</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker Miniature High Speed Pneumatic Logic Control Valves",
    "seoDescription": "Parker Miniature High Speed Pneumatic Logic Control Valves: 26 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -35968,7 +35900,7 @@
      "position": 0,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Subbase Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -35976,7 +35908,7 @@
      "position": 1,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Step Module, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -35984,7 +35916,7 @@
      "position": 2,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Combinable Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -35992,7 +35924,7 @@
      "position": 3,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Subbase Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36000,7 +35932,7 @@
      "position": 4,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Line Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36008,7 +35940,7 @@
      "position": 5,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Line Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36016,7 +35948,7 @@
      "position": 6,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Combinable Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36024,7 +35956,7 @@
      "position": 7,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Subbase Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36032,7 +35964,7 @@
      "position": 8,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Memory Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36040,7 +35972,7 @@
      "position": 9,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Closed, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36048,7 +35980,7 @@
      "position": 10,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Closed, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36056,7 +35988,7 @@
      "position": 11,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Open, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36064,7 +35996,7 @@
      "position": 12,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Open, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36072,7 +36004,7 @@
      "position": 13,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Closed, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36080,7 +36012,7 @@
      "position": 14,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Normally Open, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36088,7 +36020,7 @@
      "position": 15,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Memory Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36096,7 +36028,7 @@
      "position": 16,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Combinable Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36104,7 +36036,7 @@
      "position": 17,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Subbase Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36112,7 +36044,7 @@
      "position": 18,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Subbase Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36120,7 +36052,7 @@
      "position": 19,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Line Mounted Element, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36128,7 +36060,7 @@
      "position": 20,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Sensor Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36136,7 +36068,7 @@
      "position": 21,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Amplifier Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36144,7 +36076,7 @@
      "position": 22,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Amplifier Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36152,7 +36084,7 @@
      "position": 23,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Pressure Switch, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36160,7 +36092,7 @@
      "position": 24,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Pressure Switch, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     },
     {
@@ -36168,7 +36100,7 @@
      "position": 25,
      "dimensions": {
       "item": "Logic Control Valve, Pneumatic, Sensor Relay, 3-8 bar",
-      "maxPsi": 44
+      "maxPsi": 116
      }
     }
    ],
@@ -37004,7 +36936,7 @@
      "partNumber": "N35441091",
      "position": 2,
      "dimensions": {
-      "item": "Valve Air Pilot 3 Way 1 1/2 Inch Inlet",
+      "item": "Valve Air Pilot 3 Way 1/2 Inch Inlet",
       "type": "Normally Closed",
       "maxPsi": 250
      }
@@ -37682,7 +37614,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker solenoid air control valve 2 way, normally closed",
    "descriptionShort": "Parker Solenoid Air Control Valve 2 Way, Normally Closed: 10 part numbers.",
-   "descriptionLong": "<p>Parker Solenoid Air Control Valve 2 Way, Normally Closed: 10 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 20 to 25 psi (1 to 2 bar), by size</li><li>Temperature: 125°F</li><li>Seal Material: Nitrile</li><li>Part numbers: 10</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker Solenoid Air Control Valve 2 Way, Normally Closed: 10 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Temperature: 125°F</li><li>Seal Material: Nitrile</li><li>Part numbers: 10</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker Solenoid Air Control Valve 2 Way, Normally Closed",
    "seoDescription": "Parker Solenoid Air Control Valve 2 Way, Normally Closed: 10 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -37938,8 +37870,7 @@
      "position": 0,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -37947,8 +37878,7 @@
      "position": 1,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -37956,8 +37886,7 @@
      "position": 2,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 20
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -37965,8 +37894,7 @@
      "position": 3,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1-1/4in 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 25
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -37974,8 +37902,7 @@
      "position": 4,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1-1/4in 24vdc",
-      "powerSupply": "24V DC",
-      "maxPsi": 25
+      "powerSupply": "24V DC"
      }
     },
     {
@@ -37983,8 +37910,7 @@
      "position": 5,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/8 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -37992,8 +37918,7 @@
      "position": 6,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -38001,8 +37926,7 @@
      "position": 7,
      "dimensions": {
       "item": "Solenoid Air Control Valve 3/4 Inch 120vac",
-      "powerSupply": "120V AC",
-      "maxPsi": 20
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -38010,8 +37934,7 @@
      "position": 8,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1-1/4 Inch 120v",
-      "powerSupply": "120V AC",
-      "maxPsi": 25
+      "powerSupply": "120V AC"
      }
     },
     {
@@ -38019,8 +37942,7 @@
      "position": 9,
      "dimensions": {
       "item": "Solenoid Air Control Valve 1-1/4 Inch 120v",
-      "powerSupply": "120V AC",
-      "maxPsi": 25
+      "powerSupply": "120V AC"
      }
     }
    ],
@@ -40072,7 +39994,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 174 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "3/8\""
      }
     },
     {
@@ -40081,7 +40003,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 174 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "3/8\""
      }
     },
     {
@@ -40108,7 +40030,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 174 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "3/8\""
      }
     },
     {
@@ -40126,7 +40048,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 174 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "3/8\""
      }
     },
     {
@@ -40135,7 +40057,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/8\""
      }
     },
     {
@@ -40144,7 +40066,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/8\""
      }
     },
     {
@@ -40153,7 +40075,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/4\""
      }
     },
     {
@@ -40162,7 +40084,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/4\""
      }
     },
     {
@@ -40171,7 +40093,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/8\""
      }
     },
     {
@@ -40180,7 +40102,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/4\""
      }
     },
     {
@@ -40189,7 +40111,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/8\""
      }
     },
     {
@@ -40198,7 +40120,7 @@
      "dimensions": {
       "item": "Pneumatic Valve — Supply Pressure Vacuum To 232 Psi",
       "type": "3-way",
-      "ports": "1/2\""
+      "ports": "1/4\""
      }
     }
    ],
@@ -42300,7 +42222,7 @@
     {
      "group": "Specifications",
      "label": "Connection Type",
-     "value": "BSPT x Tube",
+     "value": "R (BSPT), NPT, M5 or 10-32 UNF x Tube, or Tube x Tube, by part number",
      "unit": null,
      "position": 0,
      "isFilterable": false,
@@ -42369,7 +42291,7 @@
      "partNumber": "AS4201FG-N04-13S",
      "position": 4,
      "dimensions": {
-      "item": "Speed Control Valve, Npt X Tube, 1/8 Inch Port Size, 3/16 Inch Tube Size, Out Flow"
+      "item": "Speed Control Valve, Npt X Tube, 1/2 Inch Port Size, 1/2 Inch Tube Size, Out Flow"
      }
     },
     {
@@ -42965,7 +42887,7 @@
      "partNumber": "AS1211F-M5-06D",
      "position": 79,
      "dimensions": {
-      "item": "Valve, NPT x Tube, 1/8 Inch Valve Port Size, 6 mm Valve Tube Size",
+      "item": "Valve, M5 x Tube, 6 mm Valve Tube Size",
       "maxPsi": 145
      }
     },
@@ -42973,7 +42895,7 @@
      "partNumber": "AS1201F-U10/32-07D",
      "position": 80,
      "dimensions": {
-      "item": "Valve, NPT x Tube, 10-32 Inch UNF Valve Port Size, 1/4 Inch Valve Tube Size",
+      "item": "Valve, 10-32 UNF x Tube, 10-32 Inch UNF Valve Port Size, 1/4 Inch Valve Tube Size",
       "maxPsi": 145
      }
     },
@@ -42989,7 +42911,7 @@
      "partNumber": "AS1201F-U10/32-01D",
      "position": 82,
      "dimensions": {
-      "item": "Valve, NPT x Tube, 10-32 Inch UNF Valve Port Size, 1/8 Inch Valve Tube Size",
+      "item": "Valve, 10-32 UNF x Tube, 10-32 Inch UNF Valve Port Size, 1/8 Inch Valve Tube Size",
       "maxPsi": 145
      }
     },
@@ -43013,7 +42935,7 @@
      "partNumber": "AS1201F-U10/32-05D",
      "position": 85,
      "dimensions": {
-      "item": "Valve, NPT x Tube, 10-32 Inch UNF Valve Port Size, 3/16 Inch Valve Tube Size",
+      "item": "Valve, 10-32 UNF x Tube, 10-32 Inch UNF Valve Port Size, 3/16 Inch Valve Tube Size",
       "maxPsi": 145
      }
     },
@@ -43021,7 +42943,7 @@
      "partNumber": "AS1201F-U10/32-03D",
      "position": 86,
      "dimensions": {
-      "item": "Valve, NPT x Tube, 10-32 Inch UNF Valve Port Size, 5/32 Inch Valve Tube Size",
+      "item": "Valve, 10-32 UNF x Tube, 10-32 Inch UNF Valve Port Size, 5/32 Inch Valve Tube Size",
       "maxPsi": 145
      }
     },
@@ -44267,7 +44189,7 @@
     {
      "group": "Specifications",
      "label": "Thread Type",
-     "value": "NPT",
+     "value": "Rc, NPT or G, by part number",
      "unit": null,
      "position": 0,
      "isFilterable": false,
@@ -44715,14 +44637,16 @@
      "partNumber": "ASN2-01",
      "position": 0,
      "dimensions": {
-      "item": "Exhaust Port Flow Control, 1/8 Inch R Valve Port Size, 0 To 145 PSI"
+      "item": "Exhaust Port Flow Control, 1/8 Inch R Valve Port Size, 0 To 145 PSI",
+      "maxPsi": 145
      }
     },
     {
      "partNumber": "ASN2-N04-S",
      "position": 1,
      "dimensions": {
-      "item": "Exhaust Port Flow Control, 1/2 Inch Npt Valve Port Size, 0 To 145 PSI"
+      "item": "Exhaust Port Flow Control, 1/2 Inch Npt Valve Port Size, 0 To 145 PSI",
+      "maxPsi": 145
      }
     },
     {
@@ -45589,17 +45513,8 @@
     },
     {
      "group": "Specifications",
-     "label": "Plumbing",
-     "value": "Soft Seal",
-     "unit": null,
-     "position": 5,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Seal Type",
-     "value": "Show More",
+     "value": "Soft Seal",
      "unit": null,
      "position": 6,
      "isFilterable": false,
@@ -46094,7 +46009,7 @@
      "partNumber": "SV3300-5FU",
      "position": 0,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 72 psi, Overall Width 3 1/4\", Overall Height 5 1/16\", Max. Flow Rate 0.91 CFM, Cfm 0.91 CFM, Coeffici",
+      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 72 psi, Overall Width 3 1/4\", Overall Height 5 1/16\", Max. Flow Rate Cv 0.91, Cfm Cv 0.91, Coeffici",
       "maxPsi": 72
      }
     },
@@ -46102,7 +46017,7 @@
      "partNumber": "SV4300-5FU",
      "position": 1,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 1/8 Inch 24vdc — Max. Operating Pressure 72 psi, Overall Width 3 3/8\", Overall Height 6 15/32\", Max. Flow Rate 1.3 CFM, Cfm 1.3 CFM, ",
+      "item": "Solenoid Air Control Valve 1/8 Inch 24vdc — Max. Operating Pressure 72 psi, Overall Width 3 3/8\", Overall Height 6 15/32\", Max. Flow Rate Cv 1.3, Cfm Cv 1.3, ",
       "maxPsi": 72
      }
     },
@@ -46110,7 +46025,7 @@
      "partNumber": "SV1300-5FU",
      "position": 2,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 101 psi, Overall Width 2 15/32\", Overall Height 3 3/4\", Max. Flow Rate 0.24 CFM, Cfm 0.24 CFM, Coeffi",
+      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 101 psi, Overall Width 2 15/32\", Overall Height 3 3/4\", Max. Flow Rate Cv 0.24, Cfm Cv 0.24, Coeffi",
       "maxPsi": 101
      }
     },
@@ -46118,7 +46033,7 @@
      "partNumber": "SV2300-5FU",
      "position": 3,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 101 psi, Overall Width 2 13/16\", Overall Height 4 15/32\", Max. Flow Rate 0.46 CFM, Cfm 0.46 CFM, Coef",
+      "item": "Solenoid Air Control Valve 24vdc — Max. Operating Pressure 101 psi, Overall Width 2 13/16\", Overall Height 4 15/32\", Max. Flow Rate Cv 0.46, Cfm Cv 0.46, Coef",
       "maxPsi": 101
      }
     }
@@ -46135,20 +46050,11 @@
    "brandSlug": "smc",
    "focusKeyword": "smc solenoid air control valve 5-way, 2-position",
    "descriptionShort": "SMC Solenoid Air Control Valve 5-Way, 2-Position: 55 part numbers.",
-   "descriptionLong": "<p>SMC Solenoid Air Control Valve 5-Way, 2-Position: 55 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 15 to 145 psi (1 to 10 bar), by size</li><li>Temperature: 122°F</li><li>Seal Material: Rubber</li><li>Valve Type: Spool</li><li>Part numbers: 55</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>SMC Solenoid Air Control Valve 5-Way, 2-Position: 55 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 72 to 145 psi (5 to 10 bar), by size</li><li>Temperature: 122°F</li><li>Seal Material: Rubber</li><li>Valve Type: Spool</li><li>Part numbers: 55</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "SMC Solenoid Air Control Valve 5-Way, 2-Position",
    "seoDescription": "SMC Solenoid Air Control Valve 5-Way, 2-Position: 55 part numbers. Quote by SMC part number.",
    "faqs": [],
    "specs": [
-    {
-     "group": "Specifications",
-     "label": "Actuator Type",
-     "value": "Double Solenoid",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    },
     {
      "group": "Specifications",
      "label": "Ambient Temp.",
@@ -46173,15 +46079,6 @@
      "value": "Base Mounted",
      "unit": null,
      "position": 3,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Center Position",
-     "value": "Open",
-     "unit": null,
-     "position": 4,
      "isFilterable": false,
      "templateKey": null
     },
@@ -46277,28 +46174,10 @@
     },
     {
      "group": "Specifications",
-     "label": "Return Action",
-     "value": "Solenoid Return",
-     "unit": null,
-     "position": 15,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Seal Material",
      "value": "Rubber",
      "unit": null,
      "position": 16,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Series",
-     "value": "SV1000 Series",
-     "unit": null,
-     "position": 17,
      "isFilterable": false,
      "templateKey": null
     },
@@ -46510,7 +46389,7 @@
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 24vdc",
       "powerSupply": "24V DC",
-      "maxPsi": 22
+      "maxPsi": 101
      }
     },
     {
@@ -46573,7 +46452,7 @@
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 24vdc",
       "powerSupply": "24V DC",
-      "maxPsi": 15
+      "maxPsi": 101
      }
     },
     {
@@ -46672,7 +46551,7 @@
      "dimensions": {
       "item": "Solenoid Air Control Valve 7.28 CFM 0.26",
       "powerSupply": "110V AC",
-      "maxPsi": 15
+      "maxPsi": 101
      }
     },
     {
@@ -46868,20 +46747,11 @@
    "brandSlug": "smc",
    "focusKeyword": "smc solenoid air control valve 5-way, 2-position, 5-port",
    "descriptionShort": "SMC Solenoid Air Control Valve 5-Way, 2-Position, 5-Port: 31 part numbers.",
-   "descriptionLong": "<p>SMC Solenoid Air Control Valve 5-Way, 2-Position, 5-Port: 31 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 15 to 145 psi (1 to 10 bar), by size</li><li>Temperature: 122°F</li><li>Seal Material: Rubber</li><li>Valve Type: Spool</li><li>Part numbers: 31</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>SMC Solenoid Air Control Valve 5-Way, 2-Position, 5-Port: 31 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Air Control Valve</li><li>Pressure stated by the maker: 72 to 145 psi (5 to 10 bar), by size</li><li>Temperature: 122°F</li><li>Seal Material: Rubber</li><li>Valve Type: Spool</li><li>Part numbers: 31</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "SMC Solenoid Air Control Valve 5-Way, 2-Position, 5-Port",
    "seoDescription": "SMC Solenoid Air Control Valve 5-Way, 2-Position, 5-Port: 31 part numbers. Quote by SMC part number.",
    "faqs": [],
    "specs": [
-    {
-     "group": "Specifications",
-     "label": "Actuator Type",
-     "value": "Single Solenoid",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    },
     {
      "group": "Specifications",
      "label": "Actuator/return",
@@ -47010,28 +46880,10 @@
     },
     {
      "group": "Specifications",
-     "label": "Return Action",
-     "value": "Spring Return",
-     "unit": null,
-     "position": 15,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Seal Material",
      "value": "Rubber",
      "unit": null,
      "position": 16,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Series",
-     "value": "SV1000 Series",
-     "unit": null,
-     "position": 17,
      "isFilterable": false,
      "templateKey": null
     },
@@ -47189,7 +47041,7 @@
      "dimensions": {
       "item": "Solenoid Air Control Valve 1/8 Inch 24vdc — Voltage 24V DC, Pressure Rating 22 psi to 100 psi, Pressure 22 psi to 100 psi, Overall Width 1 1/2\", Electrical Conn",
       "powerSupply": "24V DC",
-      "maxPsi": 22
+      "maxPsi": 101
      }
     },
     {
@@ -47216,7 +47068,7 @@
      "dimensions": {
       "item": "Solenoid Air Control Valve 24vdc — Voltage 24V DC, Pressure Rating 15 psi to 100 psi, Pressure 15 psi to 100 psi, Overall Width 1 1/2\", Electrical Connection No",
       "powerSupply": "24V DC",
-      "maxPsi": 15
+      "maxPsi": 101
      }
     },
     {
@@ -47367,8 +47219,8 @@
      "partNumber": "VFS2100-5FZ",
      "position": 30,
      "dimensions": {
-      "item": "Solenoid Air Control Valve 1/8 Inch 24vdc — Voltage 110-120V AC, Pressure Rating 15 psi to 145 psi, Pressure 15 psi to 145 psi, Overall Width 2\", Electrical Con",
-      "powerSupply": "110-120V AC",
+      "item": "Solenoid Air Control Valve 1/8 Inch 24vdc — Voltage 24V DC, Pressure Rating 15 psi to 145 psi, Pressure 15 psi to 145 psi, Overall Width 2\", Electrical Con",
+      "powerSupply": "24V DC",
       "maxPsi": 145
      }
     }
@@ -47414,15 +47266,6 @@
      "value": "Base Mounted",
      "unit": null,
      "position": 2,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Center Position",
-     "value": "Closed",
-     "unit": null,
-     "position": 3,
      "isFilterable": false,
      "templateKey": null
     },
@@ -47828,15 +47671,6 @@
     },
     {
      "group": "Specifications",
-     "label": "Center Position",
-     "value": "Exhaust",
-     "unit": null,
-     "position": 3,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Electrical Connection",
      "value": "Plug In",
      "unit": null,
@@ -48140,7 +47974,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 5,
      "isFilterable": false,
@@ -48309,7 +48143,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -48486,7 +48320,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -48644,7 +48478,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 5,
      "isFilterable": false,
@@ -48807,7 +48641,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -48958,7 +48792,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 5,
      "isFilterable": false,
@@ -49112,7 +48946,7 @@
     {
      "group": "Specifications",
      "label": "Air Line Connection",
-     "value": "3/16\" Tube",
+     "value": "5/32\" Tube",
      "unit": null,
      "position": 3,
      "isFilterable": false,
@@ -49130,7 +48964,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 5,
      "isFilterable": false,
@@ -49272,7 +49106,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -49428,7 +49262,7 @@
     {
      "group": "Specifications",
      "label": "Body Material",
-     "value": "Stainless Steel",
+     "value": "Brass",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -49551,17 +49385,7 @@
    "seoTitle": "SMC SS3Y1 Series Manifold",
    "seoDescription": "SMC SS3Y1 Series Manifold: 8 part numbers. Quote by SMC part number.",
    "faqs": [],
-   "specs": [
-    {
-     "group": "Specifications",
-     "label": "Stations",
-     "value": "8 Stations",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    }
-   ],
+   "specs": [],
    "searchAliases": [
     "SS3Y1 Series Manifold"
    ],
@@ -49657,17 +49481,7 @@
    "seoTitle": "SMC SS3YJ5 Series Manifold",
    "seoDescription": "SMC SS3YJ5 Series Manifold: 7 part numbers. Quote by SMC part number.",
    "faqs": [],
-   "specs": [
-    {
-     "group": "Specifications",
-     "label": "Stations",
-     "value": "2 Stations",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    }
-   ],
+   "specs": [],
    "searchAliases": [
     "SS3YJ5 Series Manifold"
    ],
@@ -49756,17 +49570,7 @@
    "seoTitle": "SMC SS3YJ7 Series Manifold",
    "seoDescription": "SMC SS3YJ7 Series Manifold: 17 part numbers. Quote by SMC part number.",
    "faqs": [],
-   "specs": [
-    {
-     "group": "Specifications",
-     "label": "Stations",
-     "value": "2 Stations",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    }
-   ],
+   "specs": [],
    "searchAliases": [
     "SS3YJ7 Series Manifold"
    ],
@@ -50729,15 +50533,6 @@
     },
     {
      "group": "Specifications",
-     "label": "Stations",
-     "value": "5 Stations",
-     "unit": null,
-     "position": 1,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
      "label": "Thread Type",
      "value": "NPTF",
      "unit": null,
@@ -51148,15 +50943,6 @@
    "seoDescription": "SMC SS5YJ7 Series Manifold: 3 part numbers. Quote by SMC part number.",
    "faqs": [],
    "specs": [
-    {
-     "group": "Specifications",
-     "label": "Stations",
-     "value": "6 Stations",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": null
-    },
     {
      "group": "Specifications",
      "label": "Thread Type",
@@ -51698,14 +51484,14 @@
   {
    "sku": "IH-SMC-SY7000-SERIES-MANIFOLD",
    "slug": "smc-sy7000-series-manifold",
-   "title": "SMC SY7000 Series Manifold",
+   "title": "SMC SY7000 and SY9000 Series Manifolds",
    "category": "pneumatic-solenoid-valves",
    "brandSlug": "smc",
-   "focusKeyword": "smc sy7000 series manifold",
-   "descriptionShort": "SMC SY7000 Series Manifold: 23 part numbers.",
-   "descriptionLong": "<p>SMC SY7000 Series Manifold: 23 part numbers.</p><h3>Specification</h3><ul><li>Type: Valve Manifold</li><li>Pressure stated by the maker: 102 psi (7 bar)</li><li>Part numbers: 23</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "SMC SY7000 Series Manifold",
-   "seoDescription": "SMC SY7000 Series Manifold: 23 part numbers. Quote by SMC part number.",
+   "focusKeyword": "smc sy7000 and sy9000 series manifolds",
+   "descriptionShort": "SMC SY7000 and SY9000 Series Manifolds: 23 part numbers.",
+   "descriptionLong": "<p>SMC SY7000 and SY9000 Series Manifolds: 23 part numbers.</p><h3>Specification</h3><ul><li>Type: Valve Manifold</li><li>Pressure stated by the maker: 102 psi (7 bar)</li><li>Part numbers: 23</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "SMC SY7000 and SY9000 Series Manifolds",
+   "seoDescription": "SMC SY7000 and SY9000 Series Manifolds: 23 part numbers. Quote by SMC part number.",
    "faqs": [],
    "specs": [
     {
@@ -51773,7 +51559,7 @@
      "partNumber": "SS5Y9-23-04-00T",
      "position": 3,
      "dimensions": {
-      "item": "Valve Manifold, 3 Inch Port Size"
+      "item": "Valve Manifold,"
      }
     },
     {
@@ -51787,7 +51573,7 @@
      "partNumber": "SS5Y9-23-08-00T",
      "position": 5,
      "dimensions": {
-      "item": "Valve Manifold, 2 Inch Port Size"
+      "item": "Valve Manifold,"
      }
     },
     {
@@ -53595,7 +53381,7 @@
      "partNumber": "NCDME106-0600C",
      "position": 224,
      "dimensions": {
-      "item": "Valve — Overall Width 1 3/25\""
+      "item": "Valve — Overall Width 1.12\""
      }
     },
     {
@@ -54015,7 +53801,7 @@
      "partNumber": "VFN2120N-5DZ-02N",
      "position": 284,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.1",
+      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.1",
       "action": "Single"
      }
     },
@@ -54235,7 +54021,7 @@
      "partNumber": "SZ3160-5LOZ-N3",
      "position": 315,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Max. Operating Pressure 0.7 MPa, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7",
+      "item": "Valve —, Actuation Single, Max. Operating Pressure 0.7 MPa, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7",
       "action": "Single",
       "maxPsi": 102
      }
@@ -55806,7 +55592,7 @@
      "partNumber": "SZ3360-5NLOZ-C6",
      "position": 537,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.7 MPa, Voltage 12V DC",
+      "item": "Valve —, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.7 MPa, Voltage 12V DC",
       "powerSupply": "12V DC"
      }
     },
@@ -55841,7 +55627,7 @@
      "partNumber": "VP4150-031T",
      "position": 541,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 24V DC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55877,7 +55663,7 @@
      "partNumber": "VP4150-103D-N",
      "position": 545,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 24V DC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55886,7 +55672,7 @@
      "partNumber": "SZ3160-5LOZ-C4",
      "position": 546,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55895,7 +55681,7 @@
      "partNumber": "VP4150-105D",
      "position": 547,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 24V DC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55904,7 +55690,7 @@
      "partNumber": "SX3140-5LOZD",
      "position": 548,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55913,7 +55699,7 @@
      "partNumber": "SZ3260-5LOZ-C6",
      "position": 549,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Double, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.1 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve —, Actuation Double, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.1 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Double",
       "powerSupply": "24V DC"
      }
@@ -55922,7 +55708,7 @@
      "partNumber": "VK332-5DS-M5-F-Q",
      "position": 550,
      "dimensions": {
-      "item": "Valve, 3 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve, 3 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55931,7 +55717,7 @@
      "partNumber": "VK332-5DZ-M5-F",
      "position": 551,
      "dimensions": {
-      "item": "Valve, 3 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve, 3 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55940,7 +55726,7 @@
      "partNumber": "VFN2120N-4YO-02F-Q",
      "position": 552,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 24V DC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55949,7 +55735,7 @@
      "partNumber": "SZ3160-5NLOZ-C6",
      "position": 553,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.15 MPa to 0.7 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55967,7 +55753,7 @@
      "partNumber": "SZ3360-5LOZ-C4",
      "position": 555,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.7 MPa, Voltage 24V DC",
+      "item": "Valve —, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.7 MPa, Voltage 24V DC",
       "powerSupply": "24V DC"
      }
     },
@@ -55975,7 +55761,7 @@
      "partNumber": "VFN2120N-5D-02N",
      "position": 556,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 24V DC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 24V DC",
       "action": "Single",
       "powerSupply": "24V DC"
      }
@@ -55993,7 +55779,7 @@
      "partNumber": "VK332-1DZ-M5-Q",
      "position": 558,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 100V AC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0 MPa to 0.7 MPa, Voltage 100V AC",
       "action": "Single",
       "powerSupply": "100V AC"
      }
@@ -56002,7 +55788,7 @@
      "partNumber": "VP4150-033G",
      "position": 559,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 100V AC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 100V AC",
       "action": "Single",
       "powerSupply": "100V AC"
      }
@@ -56011,7 +55797,7 @@
      "partNumber": "VP4150-045T",
      "position": 560,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 110V AC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 110V AC",
       "action": "Single",
       "powerSupply": "110V AC"
      }
@@ -56020,7 +55806,7 @@
      "partNumber": "VP4150-065DL",
      "position": 561,
      "dimensions": {
-      "item": "Valve — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 110V AC",
+      "item": "Valve —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 110V AC",
       "action": "Single",
       "powerSupply": "110V AC"
      }
@@ -56029,7 +55815,7 @@
      "partNumber": "VP4150-043D-N",
      "position": 562,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 2 MPa to 0.9 MPa, Voltage 110V AC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Unit For Manifold Mounting, Pressure Rating (mpa) 0.2 MPa to 0.9 MPa, Voltage 110V AC",
       "action": "Single",
       "powerSupply": "110V AC"
      }
@@ -56064,7 +55850,7 @@
      "partNumber": "VFN2120N-3DZ-02N",
      "position": 566,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Driving Type Show More, Actuation Single, Max. Operating Pressure 130 psi, Application Singl",
+      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Actuation Single, Max. Operating Pressure 130 psi, Application Singl",
       "action": "Single",
       "powerSupply": "110/120V AC",
       "maxPsi": 130
@@ -56082,7 +55868,7 @@
      "partNumber": "VFN2120N-1TZ-02N",
      "position": 568,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 110/120V AC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 110/120V AC",
       "action": "Single",
       "powerSupply": "110/120V AC"
      }
@@ -56091,7 +55877,7 @@
      "partNumber": "VFN2120N-3DO-02N",
      "position": 569,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Driving Type Show More, Actuation Single, Max. Operating Pressure 101 psi, Application Singl",
+      "item": "Valve, 4/5 Port Size — Overall Width 23 mm, Overall Height 66.5 mm, Actuation Single, Max. Operating Pressure 101 psi, Application Singl",
       "action": "Single",
       "powerSupply": "110/120V AC",
       "maxPsi": 101
@@ -56101,7 +55887,7 @@
      "partNumber": "VFN2120N-3DZ-02",
      "position": 570,
      "dimensions": {
-      "item": "Valve, 4/5 Port Size — Driving Type Show More, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 110/120V AC",
+      "item": "Valve, 4/5 Port Size —, Actuation Single, Application Single Unit, Pressure Rating (mpa) 0.15 MPa to 0.9 MPa, Voltage 110/120V AC",
       "action": "Single",
       "powerSupply": "110/120V AC"
      }
@@ -70376,14 +70162,14 @@
   {
    "sku": "IH-SMC-VT4-SERIES-SOLENOID-VALVE",
    "slug": "smc-vt4-series-solenoid-valve",
-   "title": "SMC VT4 Series Solenoid Valve",
-   "category": "pneumatic-solenoid-valves",
+   "title": "SMC VPA Series Air Pilot Valves",
+   "category": "pneumatic-control-valves",
    "brandSlug": "smc",
-   "focusKeyword": "smc vt4 series solenoid valve",
-   "descriptionShort": "SMC VT4 Series Solenoid Valve: 8 part numbers.",
-   "descriptionLong": "<p>SMC VT4 Series Solenoid Valve: 8 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Connection Type: NPT</li><li>Part numbers: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "SMC VT4 Series Solenoid Valve",
-   "seoDescription": "SMC VT4 Series Solenoid Valve: 8 part numbers. Quote by SMC part number.",
+   "focusKeyword": "smc vpa series air pilot valves",
+   "descriptionShort": "SMC VPA Series Air Pilot Valves: 8 part numbers.",
+   "descriptionLong": "<p>SMC VPA Series Air Pilot Valves: 8 part numbers.</p><h3>Specification</h3><ul><li>Type: Solenoid Valve</li><li>Connection Type: NPT</li><li>Part numbers: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every SMC part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Matching the valve</h3><p>Check the valve function (2/2, 3/2, 5/2 or 5/3), port size, actuation and, for solenoid valves, the coil voltage and connector against the circuit. Quote the maker part number and we will confirm the coil and manifold options before supply.</p><h3>How to order</h3><p>Quote the SMC part number. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "SMC VPA Series Air Pilot Valves",
+   "seoDescription": "SMC VPA Series Air Pilot Valves: 8 part numbers. Quote by SMC part number.",
    "faqs": [],
    "specs": [
     {
@@ -70401,24 +70187,6 @@
      "value": "Pilot Type",
      "unit": null,
      "position": 1,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Pilot No.",
-     "value": "1",
-     "unit": null,
-     "position": 2,
-     "isFilterable": false,
-     "templateKey": null
-    },
-    {
-     "group": "Specifications",
-     "label": "Switching Type",
-     "value": "Normally Open",
-     "unit": null,
-     "position": 3,
      "isFilterable": false,
      "templateKey": null
     },
