@@ -1,0 +1,76 @@
+{
+  "family": "cementing-silos",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "cement-silo-1-500-cu-ft-l-frame-aerated-load-cells",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1,500 cu.ft. L-frame cement silo with load cells used for?",
+          "a": "A cement silo is bulk storage for cement on an oilfield cementing spread. This cylindrical silo has a nominal capacity of 1,500 cu.ft. on an L-shaped frame for horizontal transport and vertical site installation, with aeration nozzles and a load-cell weighing system."
+        },
+        {
+          "slot": "D",
+          "q": "What capacities does the cement silo range offer besides 1,500 cu.ft.?",
+          "a": "Alternative capacities of 1,200 cu.ft. and 1,900 cu.ft. are available, plus custom sizes. This listing is the 1,500 cu.ft. size, so state the storage volume you need on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "What does the L-frame on the 1,500 cu.ft. L-frame cement silo with load cells do?",
+          "a": "The L-shaped frame lets the silo be transported horizontally and then installed vertically on site. State the transport route and the site foundation conditions on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How does the weighing system on the 1,500 cu.ft. L-frame cement silo with load cells work?",
+          "a": "Load cells weigh the silo contents with a digital local display, an optional remote display, and integration with the cementing unit data acquisition system. State the display and integration you need on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "How does the 1,500 cu.ft. L-frame cement silo with load cells discharge smoothly?",
+          "a": "Aeration nozzles and an air manifold fluidise the cement for smooth discharge. The silo has fill, vent and discharge lines that support cluster interconnection with neighbouring silos."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications can the 1,500 cu.ft. L-frame cement silo with load cells carry?",
+          "a": "The listing offers CE and GOST certifications on request. State the approvals and any pressure-vessel code requirements on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the 1,500 cu.ft. L-frame cement silo with load cells?",
+          "a": "Fill, vent and discharge lines connect to bulk trucks, the dust collector and the mixing system. See [dust collectors](/c/cementing-dust-collector), [rock catchers](/c/cementing-rock-catcher) and [cementing units](/c/cementing-units)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 1,500 cu.ft. L-frame cement silo with load cells differ from a cutting bottle?",
+          "a": "A silo stores bulk cement and discharges it by aeration, while a [cutting bottle](/p/cement-cutting-bottle-skid-mounted-4-blade-needle-pneumatic-top-valve) opens big bags into the system. Use silos for bulk jobs and a cutting bottle for bag-delivered cement."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 1,500 cu.ft. L-frame cement silo with load cells used?",
+          "a": "It is used for bulk cement storage on cementing spreads, in clusters of interconnected silos for larger jobs. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment) for the whole spread."
+        },
+        {
+          "slot": "I",
+          "q": "How should a cement silo be checked before a job?",
+          "a": "Check the load-cell readings against a known weight, the aeration nozzles for blockage and the vent line and filter for clogging. State the inspection requirements on the RFQ if a third party must witness."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a cement silo quotation?",
+          "a": "Send the capacity (1,200, 1,500 or 1,900 cu.ft., or custom), the weighing display options, the number of silos to be clustered, the certification needed and the site conditions."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 1,500 cu.ft. L-frame cement silo with load cells?",
+          "a": "Yes. We list the 1,500 cu.ft. L-frame cement silo with load cells as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

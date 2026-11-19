@@ -1,0 +1,1258 @@
+{
+  "family": "metric-hose-fittings-01",
+  "extraFacts": [
+    {
+      "fact": "A JIC 37° flare end (SAE J514, ISO 8434-2) seals metal-to-metal on a 74° included cone and is not interchangeable with a 45° SAE flare.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "ISO 6149-1 metric stud ends and ports carry an O-ring seal and a metric thread.",
+      "source": "ISO 6149-1"
+    },
+    {
+      "fact": "BSPP (ISO 228-1) is a parallel thread sealed by a bonded seal, O-ring or cone seat rather than on the thread, while BSPT (ISO 7-1, R) is a taper thread that seals on the thread.",
+      "source": "ISO 228-1; ISO 7-1"
+    },
+    {
+      "fact": "A crimp fitting is rated only on the hose series it is designed for; the fitting, ferrule and crimp specification are checked against the hose before supply.",
+      "source": "Indus Hydraulics Aeroquip/Dixon crimp fitting listings (Hose and fitting match note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "45-metric-female-60-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Metric Female 60° Cone Hose Fitting used for and how does it seal?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting is a crimp hydraulic hose fitting (45 elbow, female swivel) with a metric thread and 60° cone seat, metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M14×1.5 to M52×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the 45° Metric Female 60° Cone Hose Fitting?",
+          "a": "Quote IH-MF-FEM-60-45-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-FEM-60-45-1230 for 3/4\" hose (dash -12), M30×1.5 and IH-MF-FEM-60-45-2452 for 1-1/2\" hose (dash -24), M52×2. The 45° Metric Female 60° Cone Hose Fitting lists 10 part numbers, each with its own size and connections. In IH-MF-FEM-60-45-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 45° Metric Female 60° Cone Hose Fitting come in?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting comes in 10 part numbers covering hose dash -04 to -24 with threads M14×1.5 to M52×2. Examples from the table: IH-MF-FEM-60-45-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-FEM-60-45-0822 (1/2\" hose (dash -08), M22×1.5) and IH-MF-FEM-60-45-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 45° Metric Female 60° Cone Hose Fitting for my hose and port?",
+          "a": "Choose the 45° Metric Female 60° Cone Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-60-45-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-60-45-1639 (1\" hose (dash -16), M39×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Metric Female 60° Cone Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 45° Metric Female 60° Cone Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Metric Female 60° Cone Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Metric Female 60° Cone Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Metric Female 60° Cone Hose Fitting, and which ferrule do I need?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [BSP Hose Fittings](/c/bsp-hose-fittings) range, because the 60° cone seat is the same one the BSP hose fittings use."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 45° Metric Female 60° Cone Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 45° Metric Female 60° Cone Hose Fitting seals on its 60° cone seat, metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Metric Female 60° Cone Hose Fitting differ from the 90° Metric Female 60° Cone Hose Fitting?",
+          "a": "They are different catalogue series: the 45° Metric Female 60° Cone Hose Fitting is 45° and the [90° Metric Female 60° Cone Hose Fitting](/p/90-metric-female-60-cone-hose-fitting) is 90°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Metric Female 60° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Metric Female 60° Cone Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Metric Female 60° Cone Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The 45° Metric Female 60° Cone Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "45-metric-female-74-cone-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Metric Female 74° Cone Seat Hose Fitting used for and how does it seal?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting is a crimp hydraulic hose fitting (45 elbow, female swivel) with a metric thread and 74° included cone seat (37° per side), metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M14×1.5 to M52×2)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the 45° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-74-45-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-FEM-74-45-1233 for 3/4\" hose (dash -12), M33×2 and IH-MF-FEM-74-45-2452 for 1-1/2\" hose (dash -24), M52×2. The 45° Metric Female 74° Cone Seat Hose Fitting lists 13 part numbers, each with its own size and connections. In IH-MF-FEM-74-45-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 45° Metric Female 74° Cone Seat Hose Fitting come in?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting comes in 13 part numbers covering hose dash -04 to -24 with threads M14×1.5 to M52×2. Examples from the table: IH-MF-FEM-74-45-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-FEM-74-45-1027 (5/8\" hose (dash -10), M27×1.5) and IH-MF-FEM-74-45-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 45° Metric Female 74° Cone Seat Hose Fitting for my hose and port?",
+          "a": "Choose the 45° Metric Female 74° Cone Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-74-45-0822 (1/2\" hose (dash -08), M22×1.5) and IH-MF-FEM-74-45-1636 (1\" hose (dash -16), M36×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 45° Metric Female 74° Cone Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Metric Female 74° Cone Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Metric Female 74° Cone Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Metric Female 74° Cone Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [JIC 37° Hose Fittings](/c/jic-37-hose-fittings) range, because the 74° included cone is the same seat geometry as the JIC 37° flare, but with a metric thread."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 45° Metric Female 74° Cone Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 45° Metric Female 74° Cone Seat Hose Fitting seals on its 74° included cone seat (37° per side), metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Metric Female 74° Cone Seat Hose Fitting differ from the 90° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "They are different catalogue series: the 45° Metric Female 74° Cone Seat Hose Fitting is 45° and the [90° Metric Female 74° Cone Seat Hose Fitting](/p/90-metric-female-74-cone-seat-hose-fitting) is 90°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Metric Female 74° Cone Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Metric Female 74° Cone Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Metric Female 74° Cone Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the 45° Metric Female 74° Cone Seat Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-metric-female-flat-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Metric Female Flat Seat Hose Fitting used for and how does it seal?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting is a crimp hydraulic hose fitting (45 elbow, female swivel) with a metric thread and flat seat, sealing against the mating face. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M14×1.5 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the 45° Metric Female Flat Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-FLAT-45-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-FEM-FLAT-45-0822 for 1/2\" hose (dash -08), M22×1.5 and IH-MF-FEM-FLAT-45-2042 for 1-1/4\" hose (dash -20), M42×2. The 45° Metric Female Flat Seat Hose Fitting lists 7 part numbers, each with its own size and connections. In IH-MF-FEM-FLAT-45-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 45° Metric Female Flat Seat Hose Fitting come in?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting comes in 7 part numbers covering hose dash -04 to -20 with threads M14×1.5 to M42×2. Examples from the table: IH-MF-FEM-FLAT-45-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-FEM-FLAT-45-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-FLAT-45-1230 (3/4\" hose (dash -12), M30×1.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 45° Metric Female Flat Seat Hose Fitting for my hose and port?",
+          "a": "Choose the 45° Metric Female Flat Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-FLAT-45-0516 (5/16\" hose (dash -05), M16×1.5) and IH-MF-FEM-FLAT-45-1230 (3/4\" hose (dash -12), M30×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Metric Female Flat Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 45° Metric Female Flat Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Metric Female Flat Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Metric Female Flat Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Metric Female Flat Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [ORFS Hose Fittings](/c/orfs-hose-fittings) range, because a flat seat with an O-ring is the face-seal style that the ORFS range also uses."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 45° Metric Female Flat Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 45° Metric Female Flat Seat Hose Fitting seals on its flat seat, sealing against the mating face, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Metric Female Flat Seat Hose Fitting differ from the 90° Metric Female Flat Seat Hose Fitting?",
+          "a": "They are different catalogue series: the 45° Metric Female Flat Seat Hose Fitting is 45° and the [90° Metric Female Flat Seat Hose Fitting](/p/90-metric-female-flat-seat-hose-fitting) is 90°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Metric Female Flat Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Metric Female Flat Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Metric Female Flat Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. The 45° Metric Female Flat Seat Hose Fitting sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "45-metric-female-multiseal-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° Metric Female Multiseal Hose Fitting used for and how does it seal?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting is a crimp hydraulic hose fitting (45 elbow, female swivel) with a metric thread and 60° cone seat, metal-to-metal (no O-ring). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M10×1 to M52×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/16\" hose (dash -03), M10×1 in the 45° Metric Female Multiseal Hose Fitting?",
+          "a": "Quote IH-MF-FEM-MS-45-0310 for 3/16\" hose (dash -03), M10×1, IH-MF-FEM-MS-45-0818 for 1/2\" hose (dash -08), M18×1.5 and IH-MF-FEM-MS-45-2452 for 1-1/2\" hose (dash -24), M52×2. The 45° Metric Female Multiseal Hose Fitting lists 26 part numbers, each with its own size and connections. In IH-MF-FEM-MS-45-0310 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 45° Metric Female Multiseal Hose Fitting come in?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting comes in 26 part numbers covering hose dash -03 to -24 with threads M10×1 to M52×2. Examples from the table: IH-MF-FEM-MS-45-0312 (3/16\" hose (dash -03), M12×1.5), IH-MF-FEM-MS-45-0518 (5/16\" hose (dash -05), M18×1.5) and IH-MF-FEM-MS-45-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 45° Metric Female Multiseal Hose Fitting for my hose and port?",
+          "a": "Choose the 45° Metric Female Multiseal Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-MS-45-0514 (5/16\" hose (dash -05), M14×1.5) and IH-MF-FEM-MS-45-1027T (5/8\" hose (dash -10), M27×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° Metric Female Multiseal Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 45° Metric Female Multiseal Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 45° Metric Female Multiseal Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° Metric Female Multiseal Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 45° Metric Female Multiseal Hose Fitting, and which ferrule do I need?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 45° Metric Female Multiseal Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 45° Metric Female Multiseal Hose Fitting seals on its 60° cone seat, metal-to-metal (no O-ring), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° Metric Female Multiseal Hose Fitting differ from the 90° Metric Female Multiseal Hose Fitting?",
+          "a": "They are different catalogue series: the 45° Metric Female Multiseal Hose Fitting is 45° and the [90° Metric Female Multiseal Hose Fitting](/p/90-metric-female-multiseal-hose-fitting) is 90°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° Metric Female Multiseal Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 45° Metric Female Multiseal Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° Metric Female Multiseal Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The 45° Metric Female Multiseal Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-female-60-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Female 60° Cone Hose Fitting used for and how does it seal?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting is a crimp hydraulic hose fitting (90 elbow, female swivel) with a metric thread and 60° cone seat (BSPP-style). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M14×1.5 to M52×2 — common sizes)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the 90° Metric Female 60° Cone Hose Fitting?",
+          "a": "Quote IH-MF-FEM-60-90-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-FEM-60-90-1230 for 3/4\" hose (dash -12), M30×1.5 and IH-MF-FEM-60-90-2452 for 1-1/2\" hose (dash -24), M52×2. The 90° Metric Female 60° Cone Hose Fitting lists a full range of part numbers, each with its own size and connections. In IH-MF-FEM-60-90-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 90° Metric Female 60° Cone Hose Fitting come in?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting comes in a full range of part numbers covering hose dash -04 to -24 with threads M14×1.5 to M52×2. Examples from the table: IH-MF-FEM-60-90-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-FEM-60-90-0822 (1/2\" hose (dash -08), M22×1.5) and IH-MF-FEM-60-90-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Metric Female 60° Cone Hose Fitting for my hose and port?",
+          "a": "Choose the 90° Metric Female 60° Cone Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-60-90-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-60-90-1639 (1\" hose (dash -16), M39×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Metric Female 60° Cone Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 90° Metric Female 60° Cone Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Female 60° Cone Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Female 60° Cone Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting is listed to ISO 12151-2 (matching ports), BS 5200. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Metric Female 60° Cone Hose Fitting, and which ferrule do I need?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [BSP Hose Fittings](/c/bsp-hose-fittings) range, because the 60° cone seat is the same one the BSP hose fittings use."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Metric Female 60° Cone Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 90° Metric Female 60° Cone Hose Fitting seals on its 60° cone seat (BSPP-style), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Female 60° Cone Hose Fitting differ from the 45° Metric Female 60° Cone Hose Fitting?",
+          "a": "They are different catalogue series: the 90° Metric Female 60° Cone Hose Fitting is 90° and the [45° Metric Female 60° Cone Hose Fitting](/p/45-metric-female-60-cone-hose-fitting) is 45°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Female 60° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Female 60° Cone Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Metric Female 60° Cone Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. The 90° Metric Female 60° Cone Hose Fitting sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-female-74-cone-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Female 74° Cone Seat Hose Fitting used for and how does it seal?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting is a crimp hydraulic hose fitting (90 elbow, female swivel) with a metric thread and 74° included cone seat (37° per side), metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M12×1.5 to M52×2)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M12×1.5 in the 90° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-74-90-0412 for 1/4\" hose (dash -04), M12×1.5, IH-MF-FEM-74-90-1230 for 3/4\" hose (dash -12), M30×1.5 and IH-MF-FEM-74-90-2452 for 1-1/2\" hose (dash -24), M52×2. The 90° Metric Female 74° Cone Seat Hose Fitting lists 18 part numbers, each with its own size and connections. In IH-MF-FEM-74-90-0412 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 90° Metric Female 74° Cone Seat Hose Fitting come in?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting comes in 18 part numbers covering hose dash -04 to -24 with threads M12×1.5 to M52×2. Examples from the table: IH-MF-FEM-74-90-0412C (1/4\" hose (dash -04), M12×1.5), IH-MF-FEM-74-90-0822 (1/2\" hose (dash -08), M22×1.5) and IH-MF-FEM-74-90-2052 (1-1/4\" hose (dash -20), M52×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Metric Female 74° Cone Seat Hose Fitting for my hose and port?",
+          "a": "Choose the 90° Metric Female 74° Cone Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-74-90-0516 (5/16\" hose (dash -05), M16×1.5) and IH-MF-FEM-74-90-1633 (1\" hose (dash -16), M33×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 90° Metric Female 74° Cone Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Female 74° Cone Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Female 74° Cone Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Metric Female 74° Cone Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [JIC 37° Hose Fittings](/c/jic-37-hose-fittings) range, because the 74° included cone is the same seat geometry as the JIC 37° flare, but with a metric thread."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Metric Female 74° Cone Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 90° Metric Female 74° Cone Seat Hose Fitting seals on its 74° included cone seat (37° per side), metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Female 74° Cone Seat Hose Fitting differ from the 45° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "They are different catalogue series: the 90° Metric Female 74° Cone Seat Hose Fitting is 90° and the [45° Metric Female 74° Cone Seat Hose Fitting](/p/45-metric-female-74-cone-seat-hose-fitting) is 45°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Female 74° Cone Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Female 74° Cone Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Metric Female 74° Cone Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The 90° Metric Female 74° Cone Seat Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-female-flat-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Female Flat Seat Hose Fitting used for and how does it seal?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting is a crimp hydraulic hose fitting (90 elbow, female swivel) with a metric thread and flat seat, sealing against the mating face. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M12×1.25 to M42×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/16\" hose (dash -03), M12×1.25 in the 90° Metric Female Flat Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-FLAT-90-0312 for 3/16\" hose (dash -03), M12×1.25, IH-MF-FEM-FLAT-90-0822 for 1/2\" hose (dash -08), M22×1.5 and IH-MF-FEM-FLAT-90-2042 for 1-1/4\" hose (dash -20), M42×2. The 90° Metric Female Flat Seat Hose Fitting lists 11 part numbers, each with its own size and connections. In IH-MF-FEM-FLAT-90-0312 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 90° Metric Female Flat Seat Hose Fitting come in?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting comes in 11 part numbers covering hose dash -03 to -20 with threads M12×1.25 to M42×2. Examples from the table: IH-MF-FEM-FLAT-90-0414 (1/4\" hose (dash -04), M14×1.5), IH-MF-FEM-FLAT-90-0516 (5/16\" hose (dash -05), M16×1.5) and IH-MF-FEM-FLAT-90-1636 (1\" hose (dash -16), M36×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Metric Female Flat Seat Hose Fitting for my hose and port?",
+          "a": "Choose the 90° Metric Female Flat Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-FLAT-90-0514 (5/16\" hose (dash -05), M14×1.5) and IH-MF-FEM-FLAT-90-1230 (3/4\" hose (dash -12), M30×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Metric Female Flat Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 90° Metric Female Flat Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Female Flat Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Female Flat Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Metric Female Flat Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [ORFS Hose Fittings](/c/orfs-hose-fittings) range, because a flat seat with an O-ring is the face-seal style that the ORFS range also uses."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Metric Female Flat Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 90° Metric Female Flat Seat Hose Fitting seals on its flat seat, sealing against the mating face, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Female Flat Seat Hose Fitting differ from the 45° Metric Female Flat Seat Hose Fitting?",
+          "a": "They are different catalogue series: the 90° Metric Female Flat Seat Hose Fitting is 90° and the [45° Metric Female Flat Seat Hose Fitting](/p/45-metric-female-flat-seat-hose-fitting) is 45°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Female Flat Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Female Flat Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Metric Female Flat Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the 90° Metric Female Flat Seat Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-metric-female-multiseal-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° Metric Female Multiseal Hose Fitting used for and how does it seal?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting is a crimp hydraulic hose fitting (90 elbow, female swivel) with a metric thread and 60° cone seat, metal-to-metal (no O-ring). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M10×1 to M52×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/16\" hose (dash -03), M10×1 in the 90° Metric Female Multiseal Hose Fitting?",
+          "a": "Quote IH-MF-FEM-MS-90-0310 for 3/16\" hose (dash -03), M10×1, IH-MF-FEM-MS-90-0820 for 1/2\" hose (dash -08), M20×1.5 and IH-MF-FEM-MS-90-2452 for 1-1/2\" hose (dash -24), M52×2. The 90° Metric Female Multiseal Hose Fitting lists 25 part numbers, each with its own size and connections. In IH-MF-FEM-MS-90-0310 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the 90° Metric Female Multiseal Hose Fitting come in?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting comes in 25 part numbers covering hose dash -03 to -24 with threads M10×1 to M52×2. Examples from the table: IH-MF-FEM-MS-90-0412 (1/4\" hose (dash -04), M12×1.5), IH-MF-FEM-MS-90-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-MS-90-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right 90° Metric Female Multiseal Hose Fitting for my hose and port?",
+          "a": "Choose the 90° Metric Female Multiseal Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-MS-90-0518 (5/16\" hose (dash -05), M18×1.5) and IH-MF-FEM-MS-90-1230D (3/4\" hose (dash -12), M30×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° Metric Female Multiseal Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the 90° Metric Female Multiseal Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the 90° Metric Female Multiseal Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° Metric Female Multiseal Hose Fitting conform to, and can I get test certificates?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the 90° Metric Female Multiseal Hose Fitting, and which ferrule do I need?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the 90° Metric Female Multiseal Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 90° Metric Female Multiseal Hose Fitting seals on its 60° cone seat, metal-to-metal (no O-ring), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° Metric Female Multiseal Hose Fitting differ from the 45° Metric Female Multiseal Hose Fitting?",
+          "a": "They are different catalogue series: the 90° Metric Female Multiseal Hose Fitting is 90° and the [45° Metric Female Multiseal Hose Fitting](/p/45-metric-female-multiseal-hose-fitting) is 45°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° Metric Female Multiseal Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the 90° Metric Female Multiseal Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° Metric Female Multiseal Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. The 90° Metric Female Multiseal Hose Fitting sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "banjo-bolt-metric-thread",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Banjo Bolt — Metric Thread used for and how does it seal?",
+          "a": "The Banjo Bolt — Metric Thread is a metric hydraulic hose fitting of the banjo type that passes the fluid through a hollow bolt into a banjo body, sealed with banjo washer (copper or aluminium). It is used with a hose that must leave the port at the side. Thread form: Metric (M10×1.0 to M22×1.5 — common sizes)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 5/8\" hose (dash -10), M10×1 in the Banjo Bolt — Metric Thread?",
+          "a": "Quote IH-MF-BANJO-BOLT-10 for 5/8\" hose (dash -10), M10×1, IH-MF-BANJO-BOLT-18 for 1-1/8\" hose (dash -18), M18×1.5 and IH-MF-BANJO-BOLT-30 for 1-7/8\" hose (dash -30), M30×1.5. The Banjo Bolt — Metric Thread lists 8 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Banjo Bolt — Metric Thread come in?",
+          "a": "The Banjo Bolt — Metric Thread comes in 8 part numbers covering hose dash -10 to -30 with threads M10×1 to M30×1.5. Examples from the table: IH-MF-BANJO-BOLT-12 (3/4\" hose (dash -12), M12×1.5), IH-MF-BANJO-BOLT-14 (7/8\" hose (dash -14), M14×1.5) and IH-MF-BANJO-BOLT-26 (1-5/8\" hose (dash -26), M26×1.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Banjo Bolt — Metric Thread for my hose and port?",
+          "a": "Choose the Banjo Bolt — Metric Thread by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-BANJO-BOLT-14 (7/8\" hose (dash -14), M14×1.5) and IH-MF-BANJO-BOLT-26 (1-5/8\" hose (dash -26), M26×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Banjo Bolt — Metric Thread?",
+          "a": "The hose grade and bore set the assembly rating for the Banjo Bolt — Metric Thread, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Banjo Bolt — Metric Thread made from, and is it suitable for my fluid?",
+          "a": "The Banjo Bolt — Metric Thread is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Banjo Bolt — Metric Thread conform to, and can I get test certificates?",
+          "a": "The Banjo Bolt — Metric Thread is listed to ISO 6149-1 (metric port), bonded-seal washers per DIN 7603. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Banjo Bolt — Metric Thread, and which ferrule do I need?",
+          "a": "The Banjo Bolt — Metric Thread needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Banjo Bolt — Metric Thread seal, and what should I check when fitting it?",
+          "a": "The Banjo Bolt — Metric Thread seals on its banjo washer (copper or aluminium), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Banjo Bolt — Metric Thread differ from the Banjo Eye Fitting — Metric Thread?",
+          "a": "The Banjo Bolt — Metric Thread has Bolt where the [Banjo Eye Fitting — Metric Thread](/p/banjo-eye-fitting-metric-thread) has Eye Fitting. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Banjo Bolt — Metric Thread made, and can you export it from Dubai?",
+          "a": "The country of origin of the Banjo Bolt — Metric Thread is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Banjo Bolt — Metric Thread in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Banjo Bolt — Metric Thread is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "banjo-eye-fitting-metric-thread",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Banjo Eye Fitting — Metric Thread used for and how does it seal?",
+          "a": "The Banjo Eye Fitting — Metric Thread is a metric hydraulic hose fitting of the banjo type that feeds a line in from the side of a port through a banjo body and sealing washer, sealed with banjo washer (copper or aluminium). It is used with a hose that must leave the port at the side. Thread form: Metric eye (matched to banjo-bolt)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/16\" hose (dash -03) in the Banjo Eye Fitting — Metric Thread?",
+          "a": "Quote IH-MF-BANJO-0310 for 3/16\" hose (dash -03), IH-MF-BANJO-0612 for 3/8\" hose (dash -06) and IH-MF-BANJO-2030 for 1-1/4\" hose (dash -20). The Banjo Eye Fitting — Metric Thread lists 21 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Banjo Eye Fitting — Metric Thread come in?",
+          "a": "The Banjo Eye Fitting — Metric Thread comes in 21 part numbers covering hose dash -03 to -20. Examples from the table: IH-MF-BANJO-0410 (1/4\" hose (dash -04)), IH-MF-BANJO-0514 (5/16\" hose (dash -05)) and IH-MF-BANJO-1630 (1\" hose (dash -16)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Banjo Eye Fitting — Metric Thread for my hose and port?",
+          "a": "Choose the Banjo Eye Fitting — Metric Thread by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-BANJO-0418 (1/4\" hose (dash -04)) and IH-MF-BANJO-0818 (1/2\" hose (dash -08))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Banjo Eye Fitting — Metric Thread?",
+          "a": "The hose grade and bore set the assembly rating for the Banjo Eye Fitting — Metric Thread, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Banjo Eye Fitting — Metric Thread made from, and is it suitable for my fluid?",
+          "a": "The Banjo Eye Fitting — Metric Thread is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Banjo Eye Fitting — Metric Thread conform to, and can I get test certificates?",
+          "a": "The Banjo Eye Fitting — Metric Thread is listed to ISO 6149-1, DIN 7603. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Banjo Eye Fitting — Metric Thread, and which ferrule do I need?",
+          "a": "The Banjo Eye Fitting — Metric Thread needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Banjo Eye Fitting — Metric Thread seal, and what should I check when fitting it?",
+          "a": "The Banjo Eye Fitting — Metric Thread seals on its banjo washer (copper or aluminium), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Banjo Eye Fitting — Metric Thread differ from the Banjo Bolt — Metric Thread?",
+          "a": "The Banjo Eye Fitting — Metric Thread has Eye Fitting where the [Banjo Bolt — Metric Thread](/p/banjo-bolt-metric-thread) has Bolt. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Banjo Eye Fitting — Metric Thread made, and can you export it from Dubai?",
+          "a": "The country of origin of the Banjo Eye Fitting — Metric Thread is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Banjo Eye Fitting — Metric Thread in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Banjo Eye Fitting — Metric Thread is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-female-60-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Female 60° Cone Hose Fitting used for and how does it seal?",
+          "a": "The Metric Female 60° Cone Hose Fitting is a crimp hydraulic hose fitting (straight, female swivel) with a metric thread and 60° cone seat (BSPP-style). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M14×1.5 to M52×2 — common sizes)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the Metric Female 60° Cone Hose Fitting?",
+          "a": "Quote IH-MF-FEM-60-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-FEM-60-1026 for 5/8\" hose (dash -10), M26×1.5 and IH-MF-FEM-60-2452 for 1-1/2\" hose (dash -24), M52×2. The Metric Female 60° Cone Hose Fitting lists 15 part numbers, each with its own size and connections. In IH-MF-FEM-60-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Female 60° Cone Hose Fitting are available?",
+          "a": "The Metric Female 60° Cone Hose Fitting comes in 15 part numbers covering hose dash -04 to -24 with threads M14×1.5 to M52×2. Examples from the table: IH-MF-FEM-60-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-FEM-60-0822 (1/2\" hose (dash -08), M22×1.5) and IH-MF-FEM-60-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Female 60° Cone Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Female 60° Cone Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-60-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-60-1636 (1\" hose (dash -16), M36×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Female 60° Cone Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Female 60° Cone Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Female 60° Cone Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Female 60° Cone Hose Fitting is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Female 60° Cone Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Female 60° Cone Hose Fitting is listed to ISO 12151-2, BS 5200. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Female 60° Cone Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Female 60° Cone Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [BSP Hose Fittings](/c/bsp-hose-fittings) range, because the 60° cone seat is the same one the BSP hose fittings use."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Female 60° Cone Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Female 60° Cone Hose Fitting seals on its 60° cone seat (BSPP-style), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Female 60° Cone Hose Fitting differ from the 45° Metric Female 60° Cone Hose Fitting?",
+          "a": "The [45° Metric Female 60° Cone Hose Fitting](/p/45-metric-female-60-cone-hose-fitting) carries 45° in its name where the Metric Female 60° Cone Hose Fitting does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Female 60° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Female 60° Cone Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Female 60° Cone Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. The Metric Female 60° Cone Hose Fitting sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-female-74-cone-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Female 74° Cone Seat Hose Fitting used for and how does it seal?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting is a crimp hydraulic hose fitting (straight, female swivel) with a metric thread and 74° included cone seat (37° per side), metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M10×1 to M52×2)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" hose (dash -02), M10×1 in the Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-74-0210 for 1/8\" hose (dash -02), M10×1, IH-MF-FEM-74-1022 for 5/8\" hose (dash -10), M22×1.5 and IH-MF-FEM-74-2452 for 1-1/2\" hose (dash -24), M52×2. The Metric Female 74° Cone Seat Hose Fitting lists 28 part numbers, each with its own size and connections. In IH-MF-FEM-74-0210 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Female 74° Cone Seat Hose Fitting come in?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting comes in 28 part numbers covering hose dash -02 to -24 with threads M10×1 to M52×2. Examples from the table: IH-MF-FEM-74-0412 (1/4\" hose (dash -04), M12×1.5), IH-MF-FEM-74-0622 (3/8\" hose (dash -06), M22×1.5) and IH-MF-FEM-74-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Female 74° Cone Seat Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Female 74° Cone Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-74-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-74-1236 (3/4\" hose (dash -12), M36×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Female 74° Cone Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Female 74° Cone Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Female 74° Cone Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Female 74° Cone Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [JIC 37° Hose Fittings](/c/jic-37-hose-fittings) range, because the 74° included cone is the same seat geometry as the JIC 37° flare, but with a metric thread."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Female 74° Cone Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Female 74° Cone Seat Hose Fitting seals on its 74° included cone seat (37° per side), metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Female 74° Cone Seat Hose Fitting differ from the 45° Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "The [45° Metric Female 74° Cone Seat Hose Fitting](/p/45-metric-female-74-cone-seat-hose-fitting) carries 45° in its name where the Metric Female 74° Cone Seat Hose Fitting does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Female 74° Cone Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Female 74° Cone Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Female 74° Cone Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Female 74° Cone Seat Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-female-flat-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Female Flat Seat Hose Fitting used for and how does it seal?",
+          "a": "The Metric Female Flat Seat Hose Fitting is a crimp hydraulic hose fitting (straight, female swivel) with a metric thread and flat seat, sealing against the mating face. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M10×1 to M33×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/16\" hose (dash -03), M10×1 in the Metric Female Flat Seat Hose Fitting?",
+          "a": "Quote IH-MF-FEM-FLAT-0310 for 3/16\" hose (dash -03), M10×1, IH-MF-FEM-FLAT-0618 for 3/8\" hose (dash -06), M18×1.5 and IH-MF-FEM-FLAT-1633 for 1\" hose (dash -16), M33×2. The Metric Female Flat Seat Hose Fitting lists 20 part numbers, each with its own size and connections. In IH-MF-FEM-FLAT-0310 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Female Flat Seat Hose Fitting are available?",
+          "a": "The Metric Female Flat Seat Hose Fitting comes in 20 part numbers covering hose dash -03 to -16 with threads M10×1 to M33×2. Examples from the table: IH-MF-FEM-FLAT-0312 (3/16\" hose (dash -03), M12×1.25), IH-MF-FEM-FLAT-0514 (5/16\" hose (dash -05), M14×1.5) and IH-MF-FEM-FLAT-1433 (7/8\" hose (dash -14), M33×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Female Flat Seat Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Female Flat Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-FLAT-0416 (1/4\" hose (dash -04), M16×1.5) and IH-MF-FEM-FLAT-1027 (5/8\" hose (dash -10), M27×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Female Flat Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Female Flat Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Female Flat Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Female Flat Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Female Flat Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Female Flat Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Female Flat Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Female Flat Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [ORFS Hose Fittings](/c/orfs-hose-fittings) range, because a flat seat with an O-ring is the face-seal style that the ORFS range also uses."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Female Flat Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Female Flat Seat Hose Fitting seals on its flat seat, sealing against the mating face, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Female Flat Seat Hose Fitting differ from the Metric Male Flat Seat Hose Fitting?",
+          "a": "The Metric Female Flat Seat Hose Fitting has Female where the [Metric Male Flat Seat Hose Fitting](/p/metric-male-flat-seat-hose-fitting) has Male. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Female Flat Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Female Flat Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Female Flat Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Female Flat Seat Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-female-multiseal-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Female Multiseal Hose Fitting used for and how does it seal?",
+          "a": "The Metric Female Multiseal Hose Fitting is a crimp hydraulic hose fitting (straight, female swivel) with a metric thread and 60° cone seat, metal-to-metal (no O-ring). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M10×1 to M52×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M10×1 in the Metric Female Multiseal Hose Fitting?",
+          "a": "Quote IH-MF-FEM-MS-0410 for 1/4\" hose (dash -04), M10×1, IH-MF-FEM-MS-0820 for 1/2\" hose (dash -08), M20×1.5 and IH-MF-FEM-MS-2052 for 1-1/4\" hose (dash -20), M52×2. The Metric Female Multiseal Hose Fitting lists 27 part numbers, each with its own size and connections. In IH-MF-FEM-MS-0410 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Female Multiseal Hose Fitting come in?",
+          "a": "The Metric Female Multiseal Hose Fitting comes in 27 part numbers covering hose dash -04 to -20 with threads M10×1 to M52×2. Examples from the table: IH-MF-FEM-MS-0412 (1/4\" hose (dash -04), M12×1.5), IH-MF-FEM-MS-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-FEM-MS-2045 (1-1/4\" hose (dash -20), M45×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Female Multiseal Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Female Multiseal Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-MS-0516 (5/16\" hose (dash -05), M16×1.5) and IH-MF-FEM-MS-1227 (3/4\" hose (dash -12), M27×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Female Multiseal Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Female Multiseal Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Female Multiseal Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Female Multiseal Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Female Multiseal Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Female Multiseal Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Female Multiseal Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Female Multiseal Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Female Multiseal Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Female Multiseal Hose Fitting seals on its 60° cone seat, metal-to-metal (no O-ring), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Female Multiseal Hose Fitting differ from the 45° Metric Female Multiseal Hose Fitting?",
+          "a": "The [45° Metric Female Multiseal Hose Fitting](/p/45-metric-female-multiseal-hose-fitting) carries 45° in its name where the Metric Female Multiseal Hose Fitting does not, so the two cover different part ranges. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Female Multiseal Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Female Multiseal Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Female Multiseal Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Female Multiseal Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-female-waterwash-insert",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Female Waterwash Insert used for and how does it seal?",
+          "a": "The Metric Female Waterwash Insert is a crimp hydraulic hose fitting (straight, female swivel) with a metric thread and o-ring seal in the insert face. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M22×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M22×1.5 in the Metric Female Waterwash Insert?",
+          "a": "Quote IH-MF-FEM-WW-0422 for 1/4\" hose (dash -04), M22×1.5, IH-MF-FEM-WW-0522 for 5/16\" hose (dash -05), M22×1.5 and IH-MF-FEM-WW-0622 for 3/8\" hose (dash -06), M22×1.5. The Metric Female Waterwash Insert lists 3 part numbers, each with its own size and connections. In IH-MF-FEM-WW-0422 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Female Waterwash Insert are available?",
+          "a": "The Metric Female Waterwash Insert comes in 3 part numbers covering hose dash -04 to -06 with threads M22×1.5 to M22×1.5. Examples from the table: IH-MF-FEM-WW-0422 (1/4\" hose (dash -04), M22×1.5), IH-MF-FEM-WW-0522 (5/16\" hose (dash -05), M22×1.5) and IH-MF-FEM-WW-0622 (3/8\" hose (dash -06), M22×1.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Female Waterwash Insert for my hose and port?",
+          "a": "Choose the Metric Female Waterwash Insert by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-FEM-WW-0422 (1/4\" hose (dash -04), M22×1.5) and IH-MF-FEM-WW-0622 (3/8\" hose (dash -06), M22×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Female Waterwash Insert?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Female Waterwash Insert, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Female Waterwash Insert made from, and is it suitable for my fluid?",
+          "a": "The Metric Female Waterwash Insert is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Female Waterwash Insert conform to, and can I get test certificates?",
+          "a": "The Metric Female Waterwash Insert is listed to Metric thread to ISO 261. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Female Waterwash Insert, and which ferrule do I need?",
+          "a": "The Metric Female Waterwash Insert needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Female Waterwash Insert seal, and what should I check when fitting it?",
+          "a": "The Metric Female Waterwash Insert seals on its o-ring seal in the insert face, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Female Waterwash Insert differ from the Metric Female Flat Seat Hose Fitting?",
+          "a": "The Metric Female Waterwash Insert has Waterwash Insert where the [Metric Female Flat Seat Hose Fitting](/p/metric-female-flat-seat-hose-fitting) has Flat Seat Hose Fitting. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Female Waterwash Insert made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Female Waterwash Insert is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Female Waterwash Insert in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Female Waterwash Insert in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-60-cone-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 60° Cone Seat Hose Fitting used for and how does it seal?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting is a crimp hydraulic hose fitting (straight, male) with a metric thread and 60° cone seat (BSPP-style). It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M14×1.5 to M52×2 — common sizes)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the Metric Male 60° Cone Seat Hose Fitting?",
+          "a": "Quote IH-MF-MAL-60-SEAT-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-MAL-60-SEAT-1026 for 5/8\" hose (dash -10), M26×1.5 and IH-MF-MAL-60-SEAT-2452 for 1-1/2\" hose (dash -24), M52×2. The Metric Male 60° Cone Seat Hose Fitting lists 16 part numbers, each with its own size and connections. In IH-MF-MAL-60-SEAT-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 60° Cone Seat Hose Fitting come in?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting comes in 16 part numbers covering hose dash -04 to -24 with threads M14×1.5 to M52×2. Examples from the table: IH-MF-MAL-60-SEAT-0416 (1/4\" hose (dash -04), M16×1.5), IH-MF-MAL-60-SEAT-0622 (3/8\" hose (dash -06), M22×1.5) and IH-MF-MAL-60-SEAT-2448 (1-1/2\" hose (dash -24), M48×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 60° Cone Seat Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Male 60° Cone Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-MAL-60-SEAT-0618 (3/8\" hose (dash -06), M18×1.5) and IH-MF-MAL-60-SEAT-2042 (1-1/4\" hose (dash -20), M42×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 60° Cone Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Male 60° Cone Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 60° Cone Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting is carbon steel (stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 60° Cone Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting is listed to ISO 12151-2, BS 5200. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 60° Cone Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [BSP Hose Fittings](/c/bsp-hose-fittings) range, because the 60° cone seat is the same one the BSP hose fittings use."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 60° Cone Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Male 60° Cone Seat Hose Fitting seals on its 60° cone seat (BSPP-style), not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 60° Cone Seat Hose Fitting differ from the Metric Female 74° Cone Seat Hose Fitting?",
+          "a": "They are different catalogue series: the Metric Male 60° Cone Seat Hose Fitting is Male 60° and the [Metric Female 74° Cone Seat Hose Fitting](/p/metric-female-74-cone-seat-hose-fitting) is Female 74°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 60° Cone Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 60° Cone Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 60° Cone Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male 60° Cone Seat Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-74-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 74° Cone Hose Fitting used for and how does it seal?",
+          "a": "The Metric Male 74° Cone Hose Fitting is a crimp hydraulic hose fitting (straight, male) with a metric thread and 74° included cone seat (37° per side), metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: Metric (M10×1 to M45×2)."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/8\" hose (dash -02), M10×1 in the Metric Male 74° Cone Hose Fitting?",
+          "a": "Quote IH-MF-MAL-74-0210 for 1/8\" hose (dash -02), M10×1, IH-MF-MAL-74-0822 for 1/2\" hose (dash -08), M22×1.5 and IH-MF-MAL-74-2045 for 1-1/4\" hose (dash -20), M45×2. The Metric Male 74° Cone Hose Fitting lists 19 part numbers, each with its own size and connections. In IH-MF-MAL-74-0210 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male 74° Cone Hose Fitting are available?",
+          "a": "The Metric Male 74° Cone Hose Fitting comes in 19 part numbers covering hose dash -02 to -20 with threads M10×1 to M45×2. Examples from the table: IH-MF-MAL-74-0310 (3/16\" hose (dash -03), M10×1), IH-MF-MAL-74-0614 (3/8\" hose (dash -06), M14×1.5) and IH-MF-MAL-74-2042 (1-1/4\" hose (dash -20), M42×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 74° Cone Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Male 74° Cone Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-MAL-74-0414 (1/4\" hose (dash -04), M14×1.5) and IH-MF-MAL-74-1233 (3/4\" hose (dash -12), M33×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 74° Cone Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Male 74° Cone Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 74° Cone Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 74° Cone Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 74° Cone Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Male 74° Cone Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 74° Cone Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Male 74° Cone Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [JIC 37° Hose Fittings](/c/jic-37-hose-fittings) range, because the 74° included cone is the same seat geometry as the JIC 37° flare, but with a metric thread."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 74° Cone Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Male 74° Cone Hose Fitting seals on its 74° included cone seat (37° per side), metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 74° Cone Hose Fitting differ from the Metric Male 90° Cone Hose Fitting?",
+          "a": "They are different catalogue series: the Metric Male 74° Cone Hose Fitting is 74° and the [Metric Male 90° Cone Hose Fitting](/p/metric-male-90-cone-hose-fitting) is 90°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 74° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 74° Cone Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 74° Cone Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. The Metric Male 74° Cone Hose Fitting sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-90-cone-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male 90° Cone Hose Fitting used for and how does it seal?",
+          "a": "The Metric Male 90° Cone Hose Fitting is a crimp hydraulic hose fitting (straight, male) with a metric thread and 90° included cone (45° per side), metal-to-metal. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M12×1 to M22×1.5."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M12×1 in the Metric Male 90° Cone Hose Fitting?",
+          "a": "Quote IH-MF-MAL-90-0412A for 1/4\" hose (dash -04), M12×1, IH-MF-MAL-90-0614 for 3/8\" hose (dash -06), M14×1.5 and IH-MF-MAL-90-0822 for 1/2\" hose (dash -08), M22×1.5. The Metric Male 90° Cone Hose Fitting lists 9 part numbers, each with its own size and connections. In IH-MF-MAL-90-0412A the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Metric Male 90° Cone Hose Fitting come in?",
+          "a": "The Metric Male 90° Cone Hose Fitting comes in 9 part numbers covering hose dash -04 to -08 with threads M12×1 to M22×1.5. Examples from the table: IH-MF-MAL-90-0412 (1/4\" hose (dash -04), M12×1.5), IH-MF-MAL-90-0416 (1/4\" hose (dash -04), M16×1.5) and IH-MF-MAL-90-0820 (1/2\" hose (dash -08), M20×1.5). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male 90° Cone Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Male 90° Cone Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-MAL-90-0414 (1/4\" hose (dash -04), M14×1.5) and IH-MF-MAL-90-0620 (3/8\" hose (dash -06), M20×1.5)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male 90° Cone Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Male 90° Cone Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male 90° Cone Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Male 90° Cone Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male 90° Cone Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Male 90° Cone Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male 90° Cone Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Male 90° Cone Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male 90° Cone Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Male 90° Cone Hose Fitting seals on its 90° included cone (45° per side), metal-to-metal, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male 90° Cone Hose Fitting differ from the Metric Female 60° Cone Hose Fitting?",
+          "a": "They are different catalogue series: the Metric Male 90° Cone Hose Fitting is Male 90° and the [Metric Female 60° Cone Hose Fitting](/p/metric-female-60-cone-hose-fitting) is Female 60°, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male 90° Cone Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male 90° Cone Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male 90° Cone Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Metric Male 90° Cone Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "metric-male-flat-seat-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metric Male Flat Seat Hose Fitting used for and how does it seal?",
+          "a": "The Metric Male Flat Seat Hose Fitting is a crimp hydraulic hose fitting (straight, male) with a metric thread and flat face with an O-ring, seating against a flat mating face. It is crimped onto the end of a hose so the hose can connect to a matching metric port. Thread form: M14×1.5 to M64×2."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" hose (dash -04), M14×1.5 in the Metric Male Flat Seat Hose Fitting?",
+          "a": "Quote IH-MF-MAL-FLAT-0414 for 1/4\" hose (dash -04), M14×1.5, IH-MF-MAL-FLAT-1027 for 5/8\" hose (dash -10), M27×1.5 and IH-MF-MAL-FLAT-3264 for 2\" hose (dash -32), M64×2. The Metric Male Flat Seat Hose Fitting lists 13 part numbers, each with its own size and connections. In IH-MF-MAL-FLAT-0414 the two digits after the family code are the hose dash size and the next two are the metric thread diameter."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Metric Male Flat Seat Hose Fitting are available?",
+          "a": "The Metric Male Flat Seat Hose Fitting comes in 13 part numbers covering hose dash -04 to -32 with threads M14×1.5 to M64×2. Examples from the table: IH-MF-MAL-FLAT-0516 (5/16\" hose (dash -05), M16×1.5), IH-MF-MAL-FLAT-0816 (1/2\" hose (dash -08), M16×1.5) and IH-MF-MAL-FLAT-2452 (1-1/2\" hose (dash -24), M52×2). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Metric Male Flat Seat Hose Fitting for my hose and port?",
+          "a": "Choose the Metric Male Flat Seat Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: IH-MF-MAL-FLAT-0622 (3/8\" hose (dash -06), M22×1.5) and IH-MF-MAL-FLAT-1639 (1\" hose (dash -16), M39×2)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Metric Male Flat Seat Hose Fitting?",
+          "a": "The hose grade and bore set the assembly rating for the Metric Male Flat Seat Hose Fitting, not the fitting: a correctly crimped fitting does not derate the hose. Give us the hose grade and bore and we confirm the pressure in writing."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Metric Male Flat Seat Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Metric Male Flat Seat Hose Fitting is carbon steel (316 stainless on request), finished zinc-plated, Cr3+ passivated, RoHS-compliant. Stainless steel is available on request for marine, chemical or food-grade service. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Metric Male Flat Seat Hose Fitting conform to, and can I get test certificates?",
+          "a": "The Metric Male Flat Seat Hose Fitting is listed to Metric thread to ISO 261 (coarse and fine pitch). Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Metric Male Flat Seat Hose Fitting, and which ferrule do I need?",
+          "a": "The Metric Male Flat Seat Hose Fitting needs a metric port with the same thread and seat, and a crimp ferrule that follows the hose grade, not the fitting. Tell us the hose grade and bore and we include the matching ferrule. If your port is not metric, see the [ORFS Hose Fittings](/c/orfs-hose-fittings) range, because a flat seat with an O-ring is the face-seal style that the ORFS range also uses."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Metric Male Flat Seat Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The Metric Male Flat Seat Hose Fitting seals on its flat face with an O-ring, seating against a flat mating face, not on its thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Metric Male Flat Seat Hose Fitting differ from the Metric Female Flat Seat Hose Fitting?",
+          "a": "The Metric Male Flat Seat Hose Fitting has Male where the [Metric Female Flat Seat Hose Fitting](/p/metric-female-flat-seat-hose-fitting) has Female. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Metric Male Flat Seat Hose Fitting made, and can you export it from Dubai?",
+          "a": "The country of origin of the Metric Male Flat Seat Hose Fitting is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Metric Male Flat Seat Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Metric Male Flat Seat Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

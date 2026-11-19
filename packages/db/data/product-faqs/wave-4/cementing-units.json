@@ -1,0 +1,76 @@
+{
+  "family": "cementing-units",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "single-pump-cementing-unit-skid-mounted-triplex-600-hp-auto-density-control",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a skid-mounted 600 HP single-pump cementing unit used for?",
+          "a": "A single-pump cementing unit pumps cement slurry into a well under pressure for casing and plugging jobs. This one is a single-pump triplex package on a transport skid sized to a standard 40-ft container footprint, with 600 HP continuous duty and automatic density control."
+        },
+        {
+          "slot": "D",
+          "q": "What pump and engine does the skid-mounted 600 HP single-pump cementing unit use?",
+          "a": "The triplex pump is selectable from SPM, Gardner Denver, Serva or OFM, sized to 600 HP continuous duty. It is driven by a CAT, MTU or Cummins diesel through an Allison or CAT transmission. Choose the make on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What controls and instruments does the skid-mounted 600 HP single-pump cementing unit include?",
+          "a": "It has an automatic density control system, a charging centrifugal pump, a recirculation manifold, a calibrated 50-BBL displacement tank and a 15\" touchscreen data acquisition system with USB export to ASCII or Excel."
+        },
+        {
+          "slot": "D",
+          "q": "What mounting options does the skid-mounted 600 HP single-pump cementing unit have?",
+          "a": "Mounting options are an onshore land skid, a DNV-certified offshore skid, a single-axle or triple-axle trailer, and 4×2, 6×4 or 8×8 truck-mounted configurations. State the transport and site conditions on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What materials and standards does the skid-mounted 600 HP single-pump cementing unit follow?",
+          "a": "It is built under ISO 9001:2015 with NACE MR0175 material defaults for sour service. Engine, transmission, pump make, density control supplier and electronic interface are all selectable."
+        },
+        {
+          "slot": "G",
+          "q": "What hazardous-area and cold-weather options does the skid-mounted 600 HP single-pump cementing unit have?",
+          "a": "The listing offers ATEX Zone 2 and Rigsafe options, an HVAC operator cabin and pre-heating winterization for arctic operations. State the zone and ambient temperature on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the skid-mounted 600 HP single-pump cementing unit connect to?",
+          "a": "It takes slurry from the mixer and delivers it to the well through high-pressure lines. See [batch mixers](/c/cementing-batch-mixer), [on-the-fly mixers](/c/cementing-on-the-fly-mixer), [cement manifolds](/c/cement-manifolds) and [flow iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the skid-mounted 600 HP single-pump cementing unit differ from a fracturing pump unit?",
+          "a": "A cementing unit pumps cement at controlled density with a charging pump and displacement tank, while fracturing pumpers are built for much higher rates with proppant. See [frac pumpers](/c/frac-pumpers) for those."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the skid-mounted 600 HP single-pump cementing unit used?",
+          "a": "It is used for oilfield cementing operations onshore and offshore, built to client specification. See the guide on [cementing and drilling-fluid equipment](/blog/cementing-and-drilling-fluid-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a cementing unit quotation?",
+          "a": "Send the required pump horsepower and rate, engine and transmission preference, density control supplier, mounting, area classification, cold-weather needs and certifications. The unit is quoted to your specification."
+        },
+        {
+          "slot": "I",
+          "q": "How is the data from the skid-mounted 600 HP single-pump cementing unit exported?",
+          "a": "The 15\" touchscreen data acquisition system exports to USB in ASCII or Excel format, so job data can be reviewed and reported after the operation."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the skid-mounted 600 HP single-pump cementing unit?",
+          "a": "Yes. We list the skid-mounted 600 HP single-pump cementing unit as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Engine, pump make and density control are quoted to your specification. Send your capacity, drive and mounting requirements through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

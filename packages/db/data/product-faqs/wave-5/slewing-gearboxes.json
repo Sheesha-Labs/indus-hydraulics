@@ -1,0 +1,141 @@
+{
+  "family": "slewing-gearboxes",
+  "extraFacts": [
+    {
+      "fact": "Dinamic Oil GB slewing gearboxes: 195,000 to 460,000 Nm, 3 and 4 stages, 4 frames. RE slewing gearboxes: 4,350 to 163,500 Nm, 2 and 3 stages, 14 frames.",
+      "source": "Indus Hydraulics listings for the Dinamic Oil slewing gearboxes"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dinamic-oil-gb-heavy-duty-slewing-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil GB Heavy-Duty Slewing Gearboxes used for?",
+          "a": "The Dinamic Oil GB Heavy-Duty Slewing Gearboxes are planetary slewing drives with a reinforced output support for pinion drive, in 4 frame sizes with nominal output torque of 195,000 to 460,000 Nm. They are Dinamic Oil's slewing gearboxes for the heaviest slewing rings."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model such as GB 21000?",
+          "a": "GB 21000 is the frame size, and the table lists each of the 4 frames with its ratio range by stage count: GB 12010 is 3-stage 53–222 and 4-stage 210–1,508. Nominal torque runs from 195,000 Nm on GB 12010 to 460,000 Nm on GB 26000."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and torques do the Dinamic Oil GB Heavy-Duty Slewing Gearboxes cover?",
+          "a": "The 4 frames are GB 12010 (195,000 Nm), GB 16000 (297,000 Nm), GB 21000 (360,000 Nm) and GB 26000 (460,000 Nm), in 3 or 4 stages with ratios of 50 to 1,508:1."
+        },
+        {
+          "slot": "D",
+          "q": "What is T2 FEM on the Dinamic Oil GB Heavy-Duty Slewing Gearboxes?",
+          "a": "It is the nominal output torque for F.E.M. mechanism class M5 at 15 rpm output, an indicative rating: for a different class, speed or duty, Dinamic Oil checks the selection. [Our slewing drive selection guide](/blog/slewing-drive-selection-guide) explains it."
+        },
+        {
+          "slot": "E",
+          "q": "What torque rating and basis do the Dinamic Oil GB Heavy-Duty Slewing Gearboxes have?",
+          "a": "T2 FEM is 195,000 to 460,000 Nm, indicative at F.E.M. M5 (L2-T5) and 15 rpm, confirmed per application. State the duty class and speed on the enquiry."
+        },
+        {
+          "slot": "F",
+          "q": "What brakes and lubrication do the Dinamic Oil GB Heavy-Duty Slewing Gearboxes use?",
+          "a": "Static negative brakes come in a low-opening-pressure version or a dry version, with oil or grease lubrication. On a closed-loop (hydrostatic) slewing circuit choose the low-opening-pressure brake; with a high-speed hydraulic or electric motor choose the dry brake."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil GB Heavy-Duty Slewing Gearboxes carry a class approval?",
+          "a": "The listing states design approval on demand (DNV, ABS, RINA, BV, LR, CCS) rather than a standing approval. Tell us the class society and project and we put the request to Dinamic Oil; [our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes) explains the process."
+        },
+        {
+          "slot": "H",
+          "q": "What outputs and supports fit the Dinamic Oil GB Heavy-Duty Slewing Gearboxes?",
+          "a": "Output is a pinion (splined or integral) or a splined or cylindrical shaft, on a flanged or eccentric support. Hydraulic orbital, axial or radial piston motors or electric motors fit through the planetary range's adapters; see the [gearbox and winch accessories](/c/gearbox-winch-accessories)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the pinion backlash of the Dinamic Oil GB Heavy-Duty Slewing Gearboxes be adjusted?",
+          "a": "Eccentric mounting is available to set the pinion-to-ring backlash, and for the GB sizes it is designed with the order. Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked."
+        },
+        {
+          "slot": "K",
+          "q": "How do the GB slewing gearboxes compare with the RE range?",
+          "a": "The GB covers 195,000 to 460,000 Nm in 4 frames and 3 or 4 stages, while the [Dinamic Oil RE Slewing Gearboxes — 4,350 to 163,500 Nm, Pinion Output](/p/dinamic-oil-re-slewing-gearboxes) covers 4,350 to 163,500 Nm in 14 frames and 2 or 3 stages."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil GB Heavy-Duty Slewing Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil GB Heavy-Duty Slewing Gearboxes in stock in Dubai?",
+          "a": "Yes. We keep Dinamic Oil GB Heavy-Duty Slewing Gearboxes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-re-slewing-gearboxes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dinamic Oil RE Slewing Gearboxes used for?",
+          "a": "The Dinamic Oil RE Slewing Gearboxes are planetary slewing drives with pinion output for slewing rings, an RE gearset on a reinforced output support that carries the pinion's radial load. Fourteen frame sizes serve mobile, offshore and deck cranes, aerial platforms, excavators, concrete pumps, container gantries and azimuth thrusters."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a Dinamic Oil model such as RE 1520?",
+          "a": "RE 1520 is the frame size, and the table lists each frame with its output supports, pinion range (module and teeth) and ratio range by stage count, such as RE 240 at 2-stage 13–39 and 3-stage 46–281. The 14 frames run RE 240 to RE 8010."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and torques do the Dinamic Oil RE Slewing Gearboxes cover?",
+          "a": "The 14 frames run from RE 240 at 4,350 Nm to RE 8010 at 163,500 Nm nominal output torque, in 2 or 3 stages. Torque is T2 FEM for F.E.M. class M5 (L2-T5) at 15 rpm output, an indicative value confirmed per application."
+        },
+        {
+          "slot": "D",
+          "q": "What is T2 FEM on the Dinamic Oil RE Slewing Gearboxes?",
+          "a": "It is the nominal output torque for F.E.M. mechanism class M5 (load spectrum L2, utilisation T5) at 15 rpm output. It is indicative: for a different class, speed or duty, Dinamic Oil checks the selection; [our slewing drive selection guide](/blog/slewing-drive-selection-guide) covers sizing."
+        },
+        {
+          "slot": "E",
+          "q": "Which torque limit governs on the Dinamic Oil RE Slewing Gearboxes?",
+          "a": "The output support has its own static and dynamic torque limits in the catalogue, and the lower of the support limit and the gearset's T2max governs. The static limit must never be exceeded."
+        },
+        {
+          "slot": "F",
+          "q": "What brakes and lubrication do the Dinamic Oil RE Slewing Gearboxes use?",
+          "a": "Static negative brakes come as a low-opening-pressure version for closed-loop circuits and a dry version for high-speed motors, with oil or grease lubrication and a standard ambient range up to +40 °C. On a closed-loop (hydrostatic) slewing circuit choose the low-opening-pressure brake, which releases from the charge pressure."
+        },
+        {
+          "slot": "G",
+          "q": "Do the Dinamic Oil RE Slewing Gearboxes carry a class approval?",
+          "a": "ABS product design assessments 22-2218009-1-PDA and 25-0346164-PDA cover specific RE and RA 810, 1020 and 1520 builds with pinion output for azimuth-thruster steering, valid to February 2027 and November 2030. Design approval by DNV, ABS, RINA, Bureau Veritas, Lloyd's Register or CCS is available on demand for other builds; see [our guide to DNV type approval for crane gearboxes](/blog/dnv-type-approval-crane-gearboxes)."
+        },
+        {
+          "slot": "H",
+          "q": "What pinions and supports fit the Dinamic Oil RE Slewing Gearboxes?",
+          "a": "Each size has one or more output supports, a splined or cylindrical shaft or a pinion that is splined on or cut integral with the shaft, such as pinion m6–14, z9–18 on the RE 240. Pinions outside the catalogue are made to the ring-gear data you send; see the [gearbox and winch accessories](/c/gearbox-winch-accessories) and the [slewing gearboxes](/c/slewing-gearboxes)."
+        },
+        {
+          "slot": "I",
+          "q": "Can the pinion backlash of the Dinamic Oil RE Slewing Gearboxes be adjusted?",
+          "a": "Yes. Dinamic Oil offers eccentric output supports (marked ecc in the table) that let the pinion-to-ring backlash be set on assembly; the other supports are fixed. Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or where the unit runs continuously in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked."
+        },
+        {
+          "slot": "K",
+          "q": "How do the RE slewing gearboxes compare with the GB range?",
+          "a": "The RE covers 4,350 to 163,500 Nm in 2 or 3 stages, while the [Dinamic Oil GB Heavy-Duty Slewing Gearboxes — 195,000 to 460,000 Nm](/p/dinamic-oil-gb-heavy-duty-slewing-gearboxes) covers 195,000 to 460,000 Nm in 3 or 4 stages for the largest slewing drives."
+        },
+        {
+          "slot": "L",
+          "q": "Are the Dinamic Oil RE Slewing Gearboxes genuine Dinamic Oil units and can you export them?",
+          "a": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation. We ship from Dubai to buyers across the GCC, Africa, Asia and beyond."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dinamic Oil RE Slewing Gearboxes in stock in Dubai?",
+          "a": "Yes. We keep Dinamic Oil RE Slewing Gearboxes in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

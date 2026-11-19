@@ -1,0 +1,409 @@
+{
+  "family": "trunnion-mounted-ball-valves",
+  "extraFacts": [
+    {
+      "fact": "PN numbers (PN10, PN16, PN25, PN40) are nominal pressure designations in bar for flanged valves and pipework; ASME Class 125/150 and Class 150 to 2500 are pressure classes whose allowable working pressure depends on the body material and temperature.",
+      "source": "EN 1333 (PN designation); ASME B16.34 and ASME B16.5 (pressure classes)"
+    },
+    {
+      "fact": "Indus waterworks range sizes for comparison: ball check DN32 to DN400, double eccentric butterfly DN50 to DN4000, concentric butterfly DN50 to DN1800, double orifice air release DN40 to DN300, single orifice air release DN25 to DN200, flexible check DN50 to DN700, swing check DN40 to DN900, silent check DN50 to DN500, axial flow check DN50 to DN600, dual plate check DN50 to DN2000, Y strainer DN15 to DN500.",
+      "source": "Indus Hydraulics product listings for the waterworks valve range"
+    },
+    {
+      "fact": "Indus trunnion mounted ball valve range sizes for comparison: fully welded NPS 2 to 60 (to Class 1500), metal seated NPS 2 to 48 (to Class 2500, 450 °C), side entry soft seated NPS 2 to 60 (to Class 2500, 200 °C), top entry NPS 2 to 60, pigging NPS 2 to 10, double block and bleed compact NPS 2 to 24.",
+      "source": "Indus Hydraulics product listings for the trunnion mounted ball valve range"
+    }
+  ],
+  "products": [
+    {
+      "slug": "fully-welded-trunnion-mounted-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fully Welded Trunnion Mounted Ball Valve, API 6D and what is it used for?",
+          "a": "The Fully Welded Trunnion Mounted Ball Valve, API 6D is a fully welded trunnion mounted ball valve designed to API 6D, ASME B16.34, used for gas transmission and distribution, buried pipelines. It is listed in NPS 2\" to 60\" (DN50 to DN1500) and ASME Class 150 to 1500. The forged body halves are welded together around the ball, so there are no bolted body joints, and the valve weighs less than a bolted design."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the fully welded trunnion mounted ball valve size table, such as IH-PV-TBW-150-0200?",
+          "a": "In the fully welded trunnion mounted ball valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-TBW-150-0200 is 2\" (DN50) in Class 150, and IH-PV-TBW-400-3200 is 32\" (DN800) in Class 400."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Fully Welded Trunnion Mounted Ball Valve, API 6D come in?",
+          "a": "The Fully Welded Trunnion Mounted Ball Valve, API 6D is published in NPS 2\" to 60\" (DN50 to DN1500), in ASME Class 150 to 1500. The size table lists 132 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths and weights of the fully welded trunnion mounted ball valve?",
+          "a": "The fully welded trunnion mounted ball valve table gives lengths by size and class; in Class 150 the face-to-face length is 216 mm at 2\" (DN50), 1092 mm at 22\" (DN550) and 2170 mm at 48\" (DN1200). Weight is 23 kg at 2\", 2220 kg at 22\" and 18360 kg at 48\". The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Fully Welded Trunnion Mounted Ball Valve, API 6D rated for?",
+          "a": "The fully welded trunnion mounted ball valve is offered in ASME Class 150 to 1500 and is listed for -46 °C to 200 °C. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Fully Welded Trunnion Mounted Ball Valve, API 6D made from?",
+          "a": "Body material for the fully welded trunnion mounted ball valve is carbon steel, stainless steel, alloy steel, duplex. Seat and trim: spring-loaded seats, bi-directional. Construction: welded forged body, no body joints. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Fully Welded Trunnion Mounted Ball Valve, API 6D meet and what documents come with it?",
+          "a": "The fully welded trunnion mounted ball valve is designed to API 6D, ASME B16.34 and is fire-safe to API 607 / API 6FA. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Fully Welded Trunnion Mounted Ball Valve, API 6D have?",
+          "a": "End connections on the fully welded trunnion mounted ball valve are butt-weld; RF or RTJ flanged. Operation is gear operator, pneumatic, electric or electro-hydraulic actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Can a fully welded trunnion mounted ball valve be repaired or buried?",
+          "a": "The body of a fully welded trunnion ball valve cannot be opened, so the seats are chosen for long life and emergency sealant injection is fitted; such valves are typically designed to last the life of the pipeline. It can be buried: a stem extension brings the operator to grade, vent and sealant lines are extended too, and the body is coated for burial."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Fully Welded Trunnion Mounted Ball Valve, API 6D used?",
+          "a": "The Fully Welded Trunnion Mounted Ball Valve, API 6D is used for gas transmission and distribution and buried pipelines, where a body joint would be a leak path that cannot be reached. The forged body halves are welded around the ball, so there are no bolted body joints and the valve weighs less than a bolted design."
+        },
+        {
+          "slot": "K",
+          "q": "How does a fully welded trunnion ball valve differ from a side entry or top entry valve?",
+          "a": "The fully welded valve has no body joints and cannot be opened, whereas the [side entry valve](/p/side-entry-trunnion-mounted-ball-valve-api-6d) has a split body and the [top entry valve](/p/top-entry-trunnion-mounted-ball-valve-api-6d) lets seats and seals be replaced in place through a bolted top cover. Choose fully welded for buried service where nothing needs to be reached; our [floating vs trunnion guide](/blog/floating-vs-trunnion-mounted-ball-valves) covers the wider choice."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Fully Welded Trunnion Mounted Ball Valve, API 6D supplied from Dubai, and how do I order?",
+          "a": "Yes. The fully welded trunnion mounted ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "metal-seated-trunnion-mounted-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Metal Seated Trunnion Mounted Ball Valve and what is it used for?",
+          "a": "The Metal Seated Trunnion Mounted Ball Valve is a metal seated trunnion mounted ball valve designed to API 6D, ASME B16.34, used for abrasive, high-temperature and emergency shutdown service. It is listed in NPS 2\" to 48\" (DN50 to DN1200) and ASME Class 150 to 2500. The ball and seats are hardfaced and lapped as a matched set."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the metal seated trunnion mounted ball valve size table, such as IH-PV-TBM-150-0200?",
+          "a": "In the metal seated trunnion mounted ball valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-TBM-150-0200 is 2\" (DN50) in Class 150, and IH-PV-TBM-400-3000R is 30\" (DN750) in Class 400. A trailing R marks a reduced-bore valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Metal Seated Trunnion Mounted Ball Valve come in?",
+          "a": "The Metal Seated Trunnion Mounted Ball Valve is published in NPS 2\" to 48\" (DN50 to DN1200), in ASME Class 150 to 2500. The size table lists 210 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths and weights of the metal seated trunnion mounted ball valve?",
+          "a": "The metal seated trunnion mounted ball valve table gives lengths by size and class; in Class 150 the face-to-face length is 178 mm at 2\" (DN50), 864 mm at 18\" (DN450) and 1855 mm at 40\" (DN1000). Weight is 18 kg at 2\", 1350 kg at 18\" and 14250 kg at 40\". The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Metal Seated Trunnion Mounted Ball Valve rated for?",
+          "a": "The metal seated trunnion mounted ball valve is offered in ASME Class 150 to 2500 and is listed for -46 °C to 450 °C. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Metal Seated Trunnion Mounted Ball Valve made from?",
+          "a": "Body material for the metal seated trunnion mounted ball valve is carbon steel, stainless steel, alloy steel, duplex. Seat and trim: tungsten or chrome carbide hardfacing. Construction: side entry, two- or three-piece split body; full or reduced bore. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Metal Seated Trunnion Mounted Ball Valve meet and what documents come with it?",
+          "a": "The metal seated trunnion mounted ball valve is designed to API 6D, ASME B16.34. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Metal Seated Trunnion Mounted Ball Valve have?",
+          "a": "End connections on the metal seated trunnion mounted ball valve are flanged; butt-weld. Operation is gear operator, pneumatic, electric or hydraulic actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "When do I need metal seats in a trunnion mounted ball valve?",
+          "a": "Choose metal seats where solids, scale or sand would cut soft seats, above the temperature limit of polymer seats, and on emergency shutdown valves where a seal must hold after long periods without operating. The Metal Seated Trunnion Mounted Ball Valve uses tungsten or chrome carbide hardfacing on the ball and seats and is listed to 450 °C."
+        },
+        {
+          "slot": "J",
+          "q": "Why are some rows of the metal seated trunnion ball valve table reduced bore?",
+          "a": "Rows with an R suffix on the part number, such as IH-PV-TBM-2500-1200R, are reduced-bore valves: the ends are one size and the bore is one size smaller. The table gives the end size, and the construction can be a two- or three-piece side entry body with full or reduced bore."
+        },
+        {
+          "slot": "K",
+          "q": "How does the metal seated trunnion ball valve compare with the soft seated side entry valve?",
+          "a": "The metal seated valve is rated to 450 °C and ASME Class 2500 up to NPS 48, while the [soft seated side entry valve](/p/side-entry-trunnion-mounted-ball-valve-api-6d) is limited to 200 °C by its polymer seats but goes to NPS 60. Use metal seats for abrasive, hot or emergency shutdown service and soft seats for clean gas and liquids."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Metal Seated Trunnion Mounted Ball Valve supplied from Dubai, and how do I order?",
+          "a": "Yes. The metal seated trunnion mounted ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "pigging-ball-valve-launching-receiving",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Pigging Ball Valve for Pig Launching and Receiving and what is it used for?",
+          "a": "The Pigging Ball Valve for Pig Launching and Receiving is a pigging ball valve designed to API 6D, ASME B16.34, used for oil and gas pipeline cleaning. It is listed in NPS 2\" to 10\" (DN50 to DN250) and ASME Class 150 to 1500. Turn it one way to load or retrieve the pig through a closure on the body, turn it back to launch it into the line or receive it."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Pigging Ball Valve for Pig Launching and Receiving if there is no size table?",
+          "a": "The Pigging Ball Valve for Pig Launching and Receiving has no part-number table. It is quoted to your specification, so send the size (NPS 2\" to 10\" (DN50 to DN250)), pressure class (ASME Class 150 to 1500), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Pigging Ball Valve for Pig Launching and Receiving come in?",
+          "a": "The Pigging Ball Valve for Pig Launching and Receiving is published in NPS 2\" to 10\" (DN50 to DN250), in ASME Class 150 to 1500. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the pigging ball valve?",
+          "a": "The pigging ball valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Pigging Ball Valve for Pig Launching and Receiving rated for?",
+          "a": "The pigging ball valve is offered in ASME Class 150 to 1500. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Pigging Ball Valve for Pig Launching and Receiving made from?",
+          "a": "Body material for the pigging ball valve is carbon steel, stainless steel. Construction: ball with pig chamber and quick-opening closure. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Pigging Ball Valve for Pig Launching and Receiving meet and what documents come with it?",
+          "a": "The pigging ball valve is designed to API 6D, ASME B16.34. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Pigging Ball Valve for Pig Launching and Receiving have?",
+          "a": "End connections on the pigging ball valve are flanged; butt-weld. Operation is lever or gear operator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Which pigs can the pigging ball valve for launching and receiving handle?",
+          "a": "The pigging ball valve handles cleaning and batching pigs sized for the line bore. Tell us the pig type and length when you enquire so the chamber size can be confirmed; the valve loads or retrieves the pig through a closure on the body and launches or receives it by turning the ball back."
+        },
+        {
+          "slot": "J",
+          "q": "What does a pigging ball valve replace in a pipeline?",
+          "a": "A pigging ball valve replaces a conventional pig trap, with its barrel, valves and closure, in a much smaller footprint. The ball holds the pig: turn it one way to load or retrieve it through the closure, and back to launch it into the line or receive it. Typical service is oil and gas pipeline cleaning."
+        },
+        {
+          "slot": "K",
+          "q": "How does the pigging ball valve differ from a standard trunnion ball valve?",
+          "a": "A standard trunnion valve such as the [side entry soft seated valve](/p/side-entry-trunnion-mounted-ball-valve-api-6d) only isolates flow, while the pigging ball valve adds a pig chamber and quick-opening closure so the ball also loads and launches pigs. Its published range is smaller, NPS 2 to 10 against NPS 2 to 60."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Pigging Ball Valve for Pig Launching and Receiving supplied from Dubai, and how do I order?",
+          "a": "Yes. The pigging ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "side-entry-trunnion-mounted-ball-valve-api-6d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D and what is it used for?",
+          "a": "The Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D is a side entry soft seated trunnion ball valve designed to API 6D, ASME B16.34, used for pipelines, gas plants, large-bore process. It is listed in NPS 2\" to 60\" (DN50 to DN1500) and ASME Class 150 to 2500. A two- or three-piece split body, forged or cast, carries a trunnion-supported ball between spring-loaded soft seats."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers in the side entry soft seated trunnion ball valve size table, such as IH-PV-TBS-150-0200?",
+          "a": "In the side entry soft seated trunnion ball valve size table the last four digits of the part number are the size in inches times 100 and the class code sits before them. IH-PV-TBS-150-0200 is 2\" (DN50) in Class 150, and IH-PV-TBS-400-4000 is 40\" (DN1000) in Class 400."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D come in?",
+          "a": "The Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D is published in NPS 2\" to 60\" (DN50 to DN1500), in ASME Class 150 to 2500. The size table lists 139 standard size and class combinations. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face lengths and weights of the side entry soft seated trunnion ball valve?",
+          "a": "The side entry soft seated trunnion ball valve table gives lengths by size and class; in Class 150 the face-to-face length is 178 mm at 2\" (DN50), 991 mm at 22\" (DN550) and 2489 mm at 56\" (DN1400). Weight is 19 kg at 2\", 2331 kg at 22\" and 38325 kg at 56\". The table lists lengths in millimetres; check the full row for the size and class you need."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D rated for?",
+          "a": "The side entry soft seated trunnion ball valve is offered in ASME Class 150 to 2500 and is listed for -46 °C to 200 °C. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D made from?",
+          "a": "Body material for the side entry soft seated trunnion ball valve is carbon steel, stainless steel, alloy steel, duplex. Seat and trim: spring-loaded soft-insert seats. Construction: side entry, two- or three-piece split body. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D meet and what documents come with it?",
+          "a": "The side entry soft seated trunnion ball valve is designed to API 6D, ASME B16.34 and is fire-safe to API 607 / API 6FA. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D have?",
+          "a": "End connections on the side entry soft seated trunnion ball valve are RF, RTJ flanged; butt-weld; hub. Operation is lever, gear operator, pneumatic, electric or hydraulic actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Is the side entry trunnion ball valve double block and bleed, and can its seats be sealed in service?",
+          "a": "Yes. Both seats seal independently, so with the valve closed and the body cavity vented you have a block on each side and a bleed between them. Emergency sealant fittings let a damaged seat be sealed temporarily until the valve can be taken out for seat replacement."
+        },
+        {
+          "slot": "J",
+          "q": "What is the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D used for?",
+          "a": "It is the standard pipeline and large-bore process ball valve, used on pipelines, gas plants and large-bore process lines. A two- or three-piece split body, forged or cast, carries a trunnion-supported ball between spring-loaded soft-insert seats, and operating torque stays low at large sizes and high pressure."
+        },
+        {
+          "slot": "K",
+          "q": "How does the side entry trunnion ball valve differ from the top entry type?",
+          "a": "The side entry valve has a two- or three-piece split body, while the [top entry valve](/p/top-entry-trunnion-mounted-ball-valve-api-6d) has a one-piece body with a bolted top cover so seats and seals can be replaced without removing the valve from the line. Choose top entry for welded-in valves that are hard to remove."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Side Entry Trunnion Mounted Ball Valve, Soft Seated, API 6D supplied from Dubai, and how do I order?",
+          "a": "Yes. The side entry soft seated trunnion ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "top-entry-trunnion-mounted-ball-valve-api-6d",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Top Entry Trunnion Mounted Ball Valve, API 6D and what is it used for?",
+          "a": "The Top Entry Trunnion Mounted Ball Valve, API 6D is a top entry trunnion ball valve designed to API 6D, ASME B16.34, used for pipelines and plant where in-line maintenance is needed. It is listed in NPS 2\" to 60\" (DN50 to DN1500) and ASME Class 150 to 2500. The body is one piece with a bolted top cover; remove the cover and the ball, seats and seals come out through the top."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Top Entry Trunnion Mounted Ball Valve, API 6D if there is no size table?",
+          "a": "The Top Entry Trunnion Mounted Ball Valve, API 6D has no part-number table. It is quoted to your specification, so send the size (NPS 2\" to 60\" (DN50 to DN1500)), pressure class (ASME Class 150 to 2500), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Top Entry Trunnion Mounted Ball Valve, API 6D come in?",
+          "a": "The Top Entry Trunnion Mounted Ball Valve, API 6D is published in NPS 2\" to 60\" (DN50 to DN1500), in ASME Class 150 to 2500. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the top entry trunnion ball valve?",
+          "a": "The top entry trunnion ball valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Top Entry Trunnion Mounted Ball Valve, API 6D rated for?",
+          "a": "The top entry trunnion ball valve is offered in ASME Class 150 to 2500 and is listed for -46 °C to 200 °C. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Top Entry Trunnion Mounted Ball Valve, API 6D made from?",
+          "a": "Body material for the top entry trunnion ball valve is carbon steel, stainless steel, alloy steel, duplex. Seat and trim: spring-loaded soft-insert seats. Construction: one-piece body, bolted top cover. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Top Entry Trunnion Mounted Ball Valve, API 6D meet and what documents come with it?",
+          "a": "The top entry trunnion ball valve is designed to API 6D, ASME B16.34 and is fire-safe to API 607 / API 6FA. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Top Entry Trunnion Mounted Ball Valve, API 6D have?",
+          "a": "End connections on the top entry trunnion ball valve are RF, RTJ flanged; butt-weld. Operation is gear operator, pneumatic, electric or hydraulic actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Why choose a top entry trunnion ball valve over a side entry one?",
+          "a": "Choose top entry for valves that are welded in or hard to remove: the seats and seals can be replaced in place, and the one-piece body has no body joint exposed to piping loads. Remove the bolted top cover and the ball, seats and seals come out through the top."
+        },
+        {
+          "slot": "J",
+          "q": "What tools does in-line maintenance of a top entry trunnion ball valve need?",
+          "a": "Seat retraction tools are used to pull the seats back so the ball can be lifted out through the top cover, and we supply the maintenance procedure with the valve. That is what lets the Top Entry Trunnion Mounted Ball Valve be serviced without cutting it out of the line."
+        },
+        {
+          "slot": "K",
+          "q": "How does the top entry trunnion ball valve compare with the fully welded type?",
+          "a": "The top entry valve can be opened and serviced in place through its bolted cover, while the [fully welded valve](/p/fully-welded-trunnion-mounted-ball-valve) cannot be opened but has no body joints at all. Both are rated NPS 2 to 60 in the published range; top entry suits plant where in-line maintenance is needed, fully welded suits buried pipelines."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Top Entry Trunnion Mounted Ball Valve, API 6D supplied from Dubai, and how do I order?",
+          "a": "Yes. The top entry trunnion ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "trunnion-dbb-compact-manifold-ball-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Trunnion Mounted Double Block and Bleed Compact Ball Valve and what is it used for?",
+          "a": "The Trunnion Mounted Double Block and Bleed Compact Ball Valve is a trunnion double block and bleed compact ball valve designed to API 6D, ASME B16.34, used for offshore, marine and process isolation. It is listed in NPS 2\" to 24\" (DN50 to DN600) and ASME Class 150 to 2500. Two trunnion balls give independent isolation and the bleed between them proves the seal, in a fraction of the length and weight of two valves and a spool."
+        },
+        {
+          "slot": "B",
+          "q": "How do I order the Trunnion Mounted Double Block and Bleed Compact Ball Valve if there is no size table?",
+          "a": "The Trunnion Mounted Double Block and Bleed Compact Ball Valve has no part-number table. It is quoted to your specification, so send the size (NPS 2\" to 24\" (DN50 to DN600)), pressure class (ASME Class 150 to 2500), body material, end connections and operator, and we return a data sheet and drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure classes does the Trunnion Mounted Double Block and Bleed Compact Ball Valve come in?",
+          "a": "The Trunnion Mounted Double Block and Bleed Compact Ball Valve is published in NPS 2\" to 24\" (DN50 to DN600), in ASME Class 150 to 2500. Check size, class and end connection against the piping specification before you enquire."
+        },
+        {
+          "slot": "D",
+          "q": "What are the face-to-face length and dimensions of the trunnion double block and bleed compact ball valve?",
+          "a": "The trunnion double block and bleed compact ball valve has no published size table, because dimensions depend on the size, rating and options chosen. The general arrangement drawing comes with the quotation, so you can check it against the piping layout."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Trunnion Mounted Double Block and Bleed Compact Ball Valve rated for?",
+          "a": "The trunnion double block and bleed compact ball valve is offered in ASME Class 150 to 2500. Those are pressure classes or nominal ratings, so the pressure you can actually use depends on the body material and temperature; send the design pressure and temperature and we confirm the class."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the Trunnion Mounted Double Block and Bleed Compact Ball Valve made from?",
+          "a": "Body material for the trunnion double block and bleed compact ball valve is carbon steel, stainless steel, alloy steel, duplex. Construction: two trunnion balls and bleed in one body, long or short pattern. Tell us the fluid and temperature when you enquire so we confirm the material."
+        },
+        {
+          "slot": "G",
+          "q": "What standards does the Trunnion Mounted Double Block and Bleed Compact Ball Valve meet and what documents come with it?",
+          "a": "The trunnion double block and bleed compact ball valve is designed to API 6D, ASME B16.34 and is fire-safe to API 607 design. Testing: hydrostatic shell and seat tests to API 6D. Material certificates and the pressure-test record are supplied with the valve, and third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "What end connections and operator options does the Trunnion Mounted Double Block and Bleed Compact Ball Valve have?",
+          "a": "End connections on the trunnion double block and bleed compact ball valve are RF or RTJ flanged. Operation is gear operator, pneumatic, electric or hydraulic actuator. Our [actuated valves shelf](/c/actuated-valves) covers pneumatic, electric and electro-hydraulic actuators."
+        },
+        {
+          "slot": "I",
+          "q": "Should I use a floating or a trunnion double block and bleed ball valve?",
+          "a": "Floating double block and bleed valves suit the smaller sizes and lower classes, while trunnion double block and bleed valves keep the operating torque low at larger sizes and higher pressures. The Trunnion Mounted Double Block and Bleed Compact Ball Valve covers NPS 2 to 24 and ASME Class 150 to 2500."
+        },
+        {
+          "slot": "J",
+          "q": "What does the Trunnion Mounted Double Block and Bleed Compact Ball Valve do in one body?",
+          "a": "It puts two trunnion balls and a bleed in one body, so two independent isolations and the bleed that proves the seal come in a fraction of the length and weight of two valves and a bleed. It is used for offshore, marine and process isolation, in a long or short pattern."
+        },
+        {
+          "slot": "K",
+          "q": "How does the compact double block and bleed ball valve differ from a standard trunnion ball valve?",
+          "a": "A standard trunnion valve such as the [side entry soft seated valve](/p/side-entry-trunnion-mounted-ball-valve-api-6d) has one ball and relies on both seats for a double block and bleed, while the compact valve carries two balls and a bleed in one body for independent isolation. Its published range is NPS 2 to 24 against NPS 2 to 60."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get the Trunnion Mounted Double Block and Bleed Compact Ball Valve supplied from Dubai, and how do I order?",
+          "a": "Yes. The trunnion double block and bleed compact ball valve is supplied from Dubai, UAE to projects, plants and maintenance teams worldwide. Most are built to the order specification, so delivery depends on size, class, material and operator; send the data sheet through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "family": "wt-flush-test-pump",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "flush-test-pump-reciprocating-150-hp-10-000-psi-skid-chart-recorder",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 150 HP reciprocating flush and test pump used for?",
+          "a": "A reciprocating flush and test pump flushes lines and casing and pressure-tests them. This unit is rated 150 HP and 10,000 psi MAWP, with water-on-water plunger lubrication, on a skid with a chart recorder."
+        },
+        {
+          "slot": "B",
+          "q": "What does water-on-water lubrication mean on this flush and test pump?",
+          "a": "Water-on-water means the pumped water also lubricates the plunger, so no separate lubricant is needed. The 150 HP pump is rated 10,000 psi MAWP."
+        },
+        {
+          "slot": "D",
+          "q": "What power ratings does the flush and test pump come in?",
+          "a": "The pump is available in 100, 130, 150 and 180 HP ratings. This listing is the 150 HP, 10,000 psi unit on a compact skid, with a small trailer variant for pickup-truck towing."
+        },
+        {
+          "slot": "D",
+          "q": "Skid or trailer: how is the 150 HP flush and test pump mounted?",
+          "a": "The listed unit is skid-mounted with a compact envelope. A small trailer variant can be towed by a pickup truck; give your transport requirement on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the 10,000 psi flush and test pump?",
+          "a": "The pump is rated 10,000 psi MAWP, the maximum allowable working pressure, so it can test lines up to that pressure. Always keep the test below the lowest-rated component in the line."
+        },
+        {
+          "slot": "F",
+          "q": "What fluid does the flush and test pump handle?",
+          "a": "It pumps water, which is also the plunger lubricant (water-on-water). For other fluids, state the fluid on the RFQ so the fluid end and seals are matched."
+        },
+        {
+          "slot": "G",
+          "q": "Which records does the pump produce for pressure tests?",
+          "a": "Electronic and paper-chart recorders are integrated, giving a testing record for documentation. State whether you need the chart recorder calibration certificate on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the flush and test pump connect to?",
+          "a": "It connects to the line, casing or manifold being flushed or tested through the discharge connection of the unit. See the [well testing equipment guide](/blog/surface-well-testing-equipment) and the [data header](/c/wt-data-header) shelf for test-line instruments."
+        },
+        {
+          "slot": "I",
+          "q": "How do I pressure-test a line with the 150 HP test pump?",
+          "a": "Fill the line with water, close it, then raise the pressure in steps with the pump while the recorder logs it. Hold at the test pressure, then bleed down safely."
+        },
+        {
+          "slot": "K",
+          "q": "Flush and test pump or transfer pump: what is the difference?",
+          "a": "A flush and test pump is a 10,000 psi reciprocating unit for pressure tests, while a transfer pump moves fluid at low pressure. See the [well-test transfer pump](/c/wt-transfer-pump) shelf for transfer duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 150 HP flush and test pump be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its skid. Tell us the destination and the HP rating and we confirm freight and lead time on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 150 HP flush and test pump in Dubai?",
+          "a": "Yes. We keep the 150 HP flush and test pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the HP rating, mounting and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

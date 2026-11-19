@@ -1,0 +1,80 @@
+{
+  "family": "stimulation-transfer-pump",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stimulation-transfer-pump-frp-lined-carbon-steel-centrifugal-multistage-hydraulic-drive",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an FRP-lined multistage centrifugal stimulation transfer pump used for?",
+          "a": "A stimulation transfer pump moves acid and brine from tanks to the blender or pumping units. This multistage centrifugal pump has FRP-lined carbon steel wetted parts and a hydraulic motor drive with variable speed control."
+        },
+        {
+          "slot": "B",
+          "q": "What does multistage centrifugal mean on this transfer pump?",
+          "a": "Multistage centrifugal means several impellers in series, which builds more head than a single-stage pump. This pump is packaged for stimulation service with a hydraulic motor drive."
+        },
+        {
+          "slot": "D",
+          "q": "What wetted-part materials can the stimulation transfer pump have?",
+          "a": "Wetted parts are FRP-lined carbon steel for acid and brine compatibility. Full stainless-steel and PTFE-internals variants are available for highly corrosive media."
+        },
+        {
+          "slot": "D",
+          "q": "What drive options does the stimulation transfer pump have?",
+          "a": "The listed pump is hydraulic motor driven with variable speed control. Other drives available are diesel engine, AC or DC electric motor with VFD, and pneumatic motor."
+        },
+        {
+          "slot": "E",
+          "q": "What flow and pressure does the stimulation transfer pump give?",
+          "a": "The listing does not give a flow or head figure. State the flow rate, suction conditions and delivery head on the RFQ and we select the stages and drive."
+        },
+        {
+          "slot": "F",
+          "q": "Is the FRP-lined transfer pump suitable for acid and brine?",
+          "a": "Yes. The FRP-lined carbon steel wetted parts are chosen for acid and brine stimulation fluids. For highly corrosive media ask for the stainless or PTFE variant."
+        },
+        {
+          "slot": "G",
+          "q": "Which options and certificates are available on the transfer pump?",
+          "a": "The listing gives ATEX Zone 2, CE, GOST and arctic winterisation as available options. State the approvals your site requires on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the stimulation transfer pump connect to?",
+          "a": "It connects between the acid tanks and the blender or pumping units. See the [stimulation pumping units](/c/stimulation-pumping-units) shelf and the [acid tanks](/c/stimulation-acid-tanks) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How is the stimulation transfer pump mounted and run?",
+          "a": "It is packaged on a skid, trailer or truck, and the hydraulic motor gives variable speed control. Prime the pump and flush it after acid service."
+        },
+        {
+          "slot": "K",
+          "q": "Multistage centrifugal or progressive cavity transfer pump for stimulation?",
+          "a": "Membrane, progressive cavity and reciprocating variants are offered in the same family for different fluid profiles. Choose the multistage centrifugal for clean acid and brine at flow, and another type for viscous or abrasive fluids."
+        },
+        {
+          "slot": "L",
+          "q": "Can the stimulation transfer pump be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its skid. Give the destination and the drive type and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the FRP-lined stimulation transfer pump in Dubai?",
+          "a": "Yes. We keep the FRP-lined stimulation transfer pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the flow rate, drive and mounting through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

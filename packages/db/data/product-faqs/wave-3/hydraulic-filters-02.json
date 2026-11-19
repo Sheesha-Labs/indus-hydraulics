@@ -1,0 +1,977 @@
+{
+  "family": "hydraulic-filters-02",
+  "extraFacts": [
+    {
+      "fact": "Filter ratings are established by the ISO 16889 multi-pass test, which gives a beta ratio at a stated particle size, and hydraulic oil cleanliness is reported as an ISO 4406 code; neither is stated on the listings.",
+      "source": "ISO 16889:2008 (hydraulic fluid power filters, multi-pass method); ISO 4406:2021 (fluid contamination code)"
+    },
+    {
+      "fact": "Baldwin Hydraulic Elements: 430 listed part numbers; Included (2) I. Gaskets, Reinforced Center Tube; items: Hydraulic Filter Element | Hydraulic Filter Element/maximum Performance Glass | Hydraulic Filter 7 Inch Outside Diameter | Hydraulic Filter 2 Inch Outside Diameter | Hydraulic Filter 3-9/16 Inch Outside Diameter | Hydraulic Filter 3-1/2 Inch Outside Diameter | Hydraulic Filter 4-1/4 Inch Outside Diameter | Hydraulic Filter Element 8-5/8 Inch Length | Hydraulic Filter Element 22-13/16 Inch Length | Fuel Filter 8-3/8 Inch Length x 3-13/2 Inch Diameter.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-elements"
+    },
+    {
+      "fact": "Baldwin Hydraulic Filter Bases: 11 listed part numbers; Filter Design Spin On; Product Type Hydraulic Filter Base; items: Hydraulic Filter Base Indicator | Hydraulic Filter Base Base/indicator | Hydraulic Filter Base Base.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-filter-bases"
+    },
+    {
+      "fact": "Baldwin Hydraulic Filter Elements: 116 listed part numbers; Compatible Fluid Type Hydraulic Fluid; Included (2) End Seals Attached; items: Hydraulic Filter Element 9 1/4 Inch Length | Hydraulic Filter Element | Hydraulic Filter Kit/3-part | Paper Hydraulic Filter Element, Primary Filter Removes Oil | Hydraulic Filter Element/set Of 2 | Hydraulic Breather Filters Set 2 | Hydraulic/trans Filter Element | Hydraulic Filter Element/reservoir | Hydraulic Filter Element 5 29/32 Inch Length | Fuel Filter 6 Inch Length x 5-1/8 Inch Diameter.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-filter-elements"
+    },
+    {
+      "fact": "Baldwin Hydraulic Filters: 63 listed part numbers; Compatible Engine Type Diesel Engines, Gasoline Engines; Compatible Vehicle Make Hitachi, John Deere; Compatible Vehicle Type Construction Equipment; Fit Type Vehicle Specific; For Use With Forestry Swing Machines, Hitachi Excavators, John Deere Excavators; Included Hex Nut For Removal; Primary Filter Removes ContamiNaNts; items: Spin-on Hydraulic Filter 6 13/32 Inch Height | Fuel Filter 6 Inch Length x 4-3/16 Inch Diameter | Hydraulic Filter Element L 3 7/16 Inch Outer Diameter 1 21/32 In | Hydraulic Filter Resin Ribbon/breather | Hydraulic Filter Element/maximum Performance Glass | Hydraulic Filter Maximum Performance Glass/set 2 | Hydraulic Filter Element/maximum Performance Glass L 6 1/32 In | Hydraulic Filter 3-17/32 x 6-5/16 Inch | Hydraulic Filter 3-3/32 x 7-17/32 Inch | Hydraulic Filter Element L 8 13/16 Inch Outer Diameter 4 13/32 In.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-filters"
+    },
+    {
+      "fact": "Baldwin Hydraulic or Transmission Spin-on Filters: 7 listed part numbers; Compatible Engine Type Diesel Engines, Gasoline Engines; Compatible Fluid Type Hydraulic Fluid; Compatible Vehicle Make Eaton; Compatible Vehicle Type Trucks; Fit Type Vehicle Specific; Included 14 psid Bypass Valve, Anti-Drainback Valve; items: Hydraulic/trans Filter Spin-on | Hydraulic/trans Filter Spin-on/maximum Performance Glass | Hydraulic/transmission Filter Spin-on | Hydraulic/transmission Filter Spn-on/maximum Performance Glass | Hydraulic/transmission Filter Spin-on/max | Hydraulic/Transmission Filter, 5-3/8 Inch Size.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-or-transmission-spin-on-filters"
+    },
+    {
+      "fact": "Baldwin Hydraulic Spin-on Filters: 227 listed part numbers; Compatible Engine Type Diesel Engines, Gasoline Engines; Compatible Vehicle Make Agco, Cedarapids, Ford, Gehl, John Deere, New Holland, V.M.E, Vermeer, Volvo; Fluid Type Hydraulic; For Use With Agco, Caterpillar, Cedarapids, Ford, Gehl, John Deere, New Holland, Vermeer, V.M.E., Volvo Equipment; Included I. Gasket; items: Hydraulic Spin-on Filter, 9-19/32 inch Length | Hydraulic Filter Spin-on/max | Hydraulic Filter Spin-on 10 7/16 Inch Length | Hydraulic Filter Spin-on 9 17/32 Inch Length | Hydraulic Filter Spin-on | Hydraulic Filter Spn-on/maximum Performance Glass | Hydraulic Filter Spn-on L 3 7/8 Inch Outer Diameter 3 23/32 In | Hydraulic Filter Spin-on/maximum Performance Glass | Hydraulic Or Transformer Filter Spin-on | Hydraulic Filter Element/breather.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-hydraulic-spin-on-filters"
+    },
+    {
+      "fact": "Baldwin Lube Oil Filter Elements: 3 listed part numbers; Compatible Engine Type Diesel Engines, Gasoline Engines; Compatible Vehicle Make Clark, Hyster, Komatsu, Leroi; Compatible Vehicle Type Buses, Trucks; Fit Type Vehicle Specific; For Use With Caterpillar, Clark, Hyster, Komatsu, Leroi Equipment; Included G196-B Furnished Gasket; items: Full-flow Lube/hydraulic Element | Lube/hyd Filter Element/fll-flow | Full-flow Lube/filter Element/hydraulic.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-lube-oil-filter-elements"
+    },
+    {
+      "fact": "Baldwin Power Steering Filter: 5 listed part numbers; Compatible Engine Type Diesel Engines, Gasoline Engines; Compatible Vehicle Make Daf, Iveco, M.A.N, Mercedes-Benz, R.V.I; Features Inside Out Flow Direction; Fit Type Vehicle Specific; Included Furnished Gasket; Product Type Power Steering Filter; items: Power Steering Element | Power Steering Filter Element | Steering Filter Element | Power Steering Filter Spin-on.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-power-steering-filter"
+    },
+    {
+      "fact": "Baldwin Wire Mesh Hydraulic Elements: 47 listed part numbers; Included (2) I. Gaskets, Reinforced Center Tube; items: Hydraulic Filter Element | Hydraulic Filter Element L 8 7/32 Inch Outer Diameter 1 25/32 In.",
+      "source": "Indus Hydraulics product listing, /p/baldwin-wire-mesh-hydraulic-elements"
+    },
+    {
+      "fact": "Cross Hydraulic Filters, Elements and Filter Gauges: 11 listed part numbers; items: SF1-10 Filter Base With Element, Cross Manf. F11BA | SF1-25 Filter Base With Element, Cross Manf F21BA | SF2-10 Filter Base With Element, Cross Manf. | SF2-25 Filter Base With Element, Cross Manf. | SF1 10 Micron Filter Element, Cross | SF1 25 Micron Filter Element, Cross | SF2 10 Micron Filter Element, Cross | SF2 25 Micron Filter Element, Cross | Filter Assembly Head | 1A1699 CROSS PRESSURE GAUGE.",
+      "source": "Indus Hydraulics product listing, /p/cross-hydraulic-filters-elements-and-filter-gauges"
+    },
+    {
+      "fact": "Dynamic Fluid Components DCI Filter Service Gauges: 1 listed part numbers; items: 2\" Service Filter Gauge with 25 PSI Filter Bypass.",
+      "source": "Indus Hydraulics product listing, /p/dynamic-fluid-components-dci-filter-service-gauges"
+    },
+    {
+      "fact": "Oil Safe Dust Caps: 4 listed part numbers; items: Female Quick-Disconnect Dust Cap, 1/2 Inch Size — 1/2\" | Male Quick-Disconnect Dust Cap, 1/2 Inch Size — 1/2\" | Female Quick-Disconnect Dust Cap, 3/4 Inch Size — 3/4\" | Male Quick-Disconnect Dust Cap, 3/4 Inch Size — 3/4\".",
+      "source": "Indus Hydraulics product listing, /p/oil-safe-dust-caps"
+    },
+    {
+      "fact": "Oil Safe Gear Box Adapter Kits: 76 listed part numbers; items: Gear Box Adapter, No Quick Disconnect | OIL SAFE 96212NQ | OIL SAFE 9621NQ | OIL SAFE 96234NQ | Gear Box Adapter, Male Disconnect, 1 Inch Size, Iso B Connects — 1\" | Gear Box Adapter, Male Disconnect, 1 Inch Size, Beige — 1\" | Gear Box Adapter, Male Disconnect, 1 Inch Size, Black — 1\" | Gear Box Adapter, Male Disconnect, 1 Inch Size, Blue — 1\" | Gear Box Adapter, Male Disconnect, 1 Inch Size, Dark Green — 1\" | Gear Box Adapter, Male Disconnect, 1 Inch Size, Dark Gray — 1\".",
+      "source": "Indus Hydraulics product listing, /p/oil-safe-gear-box-adapter-kits"
+    },
+    {
+      "fact": "Stauff Return-Line Filter Gauge: 1 listed part numbers; items: Pressure Gauge for Return Line Applications, CI-20.",
+      "source": "Indus Hydraulics product listing, /p/stauff-return-line-filter-gauge"
+    }
+  ],
+  "products": [
+    {
+      "slug": "baldwin-hydraulic-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Baldwin hydraulic elements used for?",
+          "a": "Baldwin hydraulic elements are replacement hydraulic filter elements with two gaskets and a reinforced centre tube, listed in 430 part numbers such as H9007, PT416 and PT546. They fit hydraulic filter housings and machines by part number."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic elements?",
+          "a": "The Baldwin hydraulic elements are listed as 430 part numbers, for example H9007, PT8951-MPG and PT9315 KIT. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin hydraulic elements?",
+          "a": "Choose by the part number of the element being replaced, such as H9007 or PT9239, or by the dimensions and media. The 430 part numbers carry many different item descriptions, so quote the number from the old element."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Baldwin hydraulic elements have?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic elements, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Baldwin hydraulic elements made from?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic elements in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Baldwin hydraulic elements?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic elements and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Baldwin hydraulic elements connect to?",
+          "a": "The Baldwin hydraulic elements fit the housing or bowl of the series it is made for, so match the element part number to the filter head. Quote the part number of the element or housing being replaced, or the filter rating, seal material and dimensions, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin hydraulic elements be installed and maintained?",
+          "a": "Replace the Baldwin hydraulic elements when the filter indicator shows the change zone, or on the maker's schedule, and fit the new seals with it. Depressurise first, keep dirt out of the bowl, and flush if the system has been contaminated. Do not wash and refit a disposable element."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin hydraulic elements?",
+          "a": "The Baldwin hydraulic elements are used as replacement filter elements for hydraulic and lube oil filters on power units, mobile machines and industrial plant, keeping the oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic elements differ from the Baldwin hydraulic filter elements?",
+          "a": "These 430 elements include gaskets and a reinforced centre tube, while [the Baldwin hydraulic filter elements](/p/baldwin-hydraulic-filter-elements) are 116 elements with end seals attached. Choose by the part number of the old element."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Baldwin hydraulic elements?",
+          "a": "We ship the Baldwin hydraulic elements from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Baldwin hydraulic elements available from stock in Dubai for export?",
+          "a": "Yes. We keep the Baldwin hydraulic elements in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-hydraulic-filter-bases",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Baldwin hydraulic filter bases used?",
+          "a": "Baldwin hydraulic filter bases are the heads that a spin-on hydraulic filter screws onto, some with a clogging indicator. The listing carries 11 part numbers, such as OB8743, OB8742 and OB1318."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic filter bases?",
+          "a": "The Baldwin hydraulic filter bases are listed as 11 part numbers, for example OB8743, OB1317 and OB1313. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Baldwin hydraulic filter bases for my application?",
+          "a": "Choose the base by the thread and the port of the spin-on filter it carries, and the indicator version: some part numbers are base and indicator, and others the base alone. Quote the number from the old base."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin hydraulic filter bases?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic filter bases, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin hydraulic filter bases offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic filter bases in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Baldwin hydraulic filter bases?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic filter bases and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Baldwin hydraulic filter bases connect to?",
+          "a": "The Baldwin hydraulic filter bases carry a spin-on filter and connect to the line through its ports. Check that the thread of the base matches the spin-on filter, and see [the Baldwin hydraulic spin-on filters](/p/baldwin-hydraulic-spin-on-filters) for the filters."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin hydraulic filter bases be installed and maintained?",
+          "a": "Replace the element in the Baldwin hydraulic filter bases when the indicator shows it is clogged, or on the maker's schedule, before the bypass valve opens. Depressurise the line, drain the bowl, fit a new element with its seals and check for leaks after restarting. Keep the old element for analysis if the system has had a failure."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin hydraulic filter bases?",
+          "a": "The Baldwin hydraulic filter bases are used to clean hydraulic and lube oil in power units, mobile machines and industrial systems, protecting pumps and valves from wear particles."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic filter bases differ from the Baldwin hydraulic spin-on filters?",
+          "a": "The filter bases are 11 heads with or without an indicator, while [the Baldwin hydraulic spin-on filters](/p/baldwin-hydraulic-spin-on-filters) are 227 spin-on filters that screw onto them. Order a base to mount a spin-on filter in a line."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Baldwin hydraulic filter bases?",
+          "a": "We ship the Baldwin hydraulic filter bases from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Baldwin hydraulic filter bases in stock in Dubai?",
+          "a": "Yes, we hold the Baldwin hydraulic filter bases in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-hydraulic-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Baldwin hydraulic filter elements used?",
+          "a": "Baldwin hydraulic filter elements are hydraulic filters with two end seals attached, for hydraulic fluid, listed in 116 part numbers such as PT830625, PT193 and PT518. They include kits and full-flow elements."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic filter elements?",
+          "a": "The Baldwin hydraulic filter elements are listed as 116 part numbers, for example PT830625, PT9432-MPG and PT8380. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin hydraulic filter elements?",
+          "a": "Choose by the part number of the element being replaced, such as PT193 for a hydraulic and lube element or PT830625 for a 9-1/4 in length element. The listing has 41 different item descriptions."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin hydraulic filter elements?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic filter elements, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin hydraulic filter elements offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic filter elements in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Baldwin hydraulic filter elements?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic filter elements and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Baldwin hydraulic filter elements mate with?",
+          "a": "The Baldwin hydraulic filter elements fit the housing or bowl of the series it is made for, so match the element part number to the filter head. Quote the part number of the element or housing being replaced, or the filter rating, seal material and dimensions, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Baldwin hydraulic filter elements?",
+          "a": "Replace the Baldwin hydraulic filter elements when the filter indicator shows the change zone, or on the maker's schedule, and fit the new seals with it. Depressurise first, keep dirt out of the bowl, and flush if the system has been contaminated. Do not wash and refit a disposable element."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Baldwin hydraulic filter elements used?",
+          "a": "The Baldwin hydraulic filter elements are used as replacement filter elements for hydraulic and lube oil filters on power units, mobile machines and industrial plant, keeping the oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic filter elements differ from the Baldwin hydraulic elements?",
+          "a": "These 116 elements have end seals attached, while [the Baldwin hydraulic elements](/p/baldwin-hydraulic-elements) are 430 elements with gaskets and a reinforced centre tube. Choose by the part number of the old element."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin hydraulic filter elements shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin hydraulic filter elements from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Baldwin hydraulic filter elements in stock in Dubai?",
+          "a": "Yes. We stock the Baldwin hydraulic filter elements at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-hydraulic-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Baldwin hydraulic filters used for?",
+          "a": "Baldwin hydraulic filters are vehicle-specific filters for construction equipment and diesel and gasoline engines, listed in 63 part numbers such as BT9440 and PT8392. The listing names Hitachi and John Deere excavators and forestry swing machines."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic filters?",
+          "a": "The Baldwin hydraulic filters are listed as 63 part numbers, for example BT9440, PT319-MPG and PT23033-MPG. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin hydraulic filters?",
+          "a": "Choose by the part number of the filter being replaced and by the machine: the listing gives forestry swing machines, Hitachi and John Deere excavators, with a hex nut for removal included. Some rows are fuel filters or elements, so check the item name."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Baldwin hydraulic filters have?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic filters, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Baldwin hydraulic filters made from?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic filters in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Baldwin hydraulic filters?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic filters and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Baldwin hydraulic filters mate with?",
+          "a": "The Baldwin hydraulic filters screw onto a filter base or head with a matching thread and gasket, so match the part number to the base. Quote the part number of the filter being replaced, or the thread, height and diameter, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin hydraulic filters be installed and maintained?",
+          "a": "Replace the Baldwin hydraulic filters on the maker's schedule or when the indicator shows it is clogged. Oil the gasket, spin it on by hand to the gasket plus the turn the maker advises, and check for leaks after restarting. Do not over-tighten, since the filter has to come off again."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin hydraulic filters?",
+          "a": "The Baldwin hydraulic filters are used as replacement hydraulic and transmission filters on mobile machines and trucks, where a spin-on filter is quick to change in the field."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic filters differ from the Baldwin hydraulic spin-on filters?",
+          "a": "These 63 vehicle-specific filters fit Hitachi and John Deere equipment, while [the Baldwin hydraulic spin-on filters](/p/baldwin-hydraulic-spin-on-filters) are 227 spin-on filters for a wider list of makes. Choose by the machine make."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin hydraulic filters shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin hydraulic filters from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is Taiwan. The HS code on the listing is 8421230000; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Baldwin hydraulic filters from stock in the UAE?",
+          "a": "Yes. We stock the Baldwin hydraulic filters at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-hydraulic-or-transmission-spin-on-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Baldwin hydraulic or transmission spin-on filters used for?",
+          "a": "Baldwin hydraulic or transmission spin-on filters fit trucks and are listed for Eaton transmissions, in 7 part numbers such as BT8493, BT371-10 and BT372MPG. They are vehicle-specific filters for hydraulic fluid."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "The Baldwin hydraulic or transmission spin-on filters are listed as 7 part numbers, for example BT8493, BT371-MPG and BT260. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "Choose by the part number of the filter being replaced, such as BT8493, BT371-10 or BT372MPG, and by the vehicle make, which the listing gives as Eaton. The MPG suffix marks a maximum performance glass version."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic or transmission spin-on filters, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin hydraulic or transmission spin-on filters offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic or transmission spin-on filters in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic or transmission spin-on filters and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Baldwin hydraulic or transmission spin-on filters connect to?",
+          "a": "The Baldwin hydraulic or transmission spin-on filters screw onto a filter base or head with a matching thread and gasket, so match the part number to the base. Quote the part number of the filter being replaced, or the thread, height and diameter, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "Replace the Baldwin hydraulic or transmission spin-on filters on the maker's schedule or when the indicator shows it is clogged. Oil the gasket, spin it on by hand to the gasket plus the turn the maker advises, and check for leaks after restarting. Do not over-tighten, since the filter has to come off again."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin hydraulic or transmission spin-on filters?",
+          "a": "The Baldwin hydraulic or transmission spin-on filters are used as replacement hydraulic and transmission filters on mobile machines and trucks, where a spin-on filter is quick to change in the field."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic or transmission spin-on filters differ from the Baldwin hydraulic spin-on filters?",
+          "a": "These 7 filters are for trucks with Eaton transmissions, while [the Baldwin hydraulic spin-on filters](/p/baldwin-hydraulic-spin-on-filters) are 227 spin-on hydraulic filters for construction and farm makes. Choose by the vehicle."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin hydraulic or transmission spin-on filters shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin hydraulic or transmission spin-on filters from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Baldwin hydraulic or transmission spin-on filters available from stock in Dubai for export?",
+          "a": "Yes, the Baldwin hydraulic or transmission spin-on filters are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-hydraulic-spin-on-filters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Baldwin hydraulic spin-on filters used for?",
+          "a": "Baldwin hydraulic spin-on filters are vehicle-specific hydraulic filters for Agco, Caterpillar, Ford, John Deere, New Holland, Volvo and other equipment, listed in 227 part numbers such as BT8851-MPG and BT55610."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin hydraulic spin-on filters?",
+          "a": "The Baldwin hydraulic spin-on filters are listed as 227 part numbers, for example BT8851-MPG, BT8509-MPG and BT8381. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin hydraulic spin-on filters?",
+          "a": "Choose by the part number of the filter being replaced, such as BT8851-MPG with a 9-19/32 in length or BT55610 with a 10-7/16 in length, and by the machine make. An I. Gasket is included."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Baldwin hydraulic spin-on filters have?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin hydraulic spin-on filters, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin hydraulic spin-on filters offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin hydraulic spin-on filters in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Baldwin hydraulic spin-on filters?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin hydraulic spin-on filters and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Baldwin hydraulic spin-on filters mate with?",
+          "a": "The Baldwin hydraulic spin-on filters screw onto a filter base or head with a matching thread and gasket, so match the part number to the base. Quote the part number of the filter being replaced, or the thread, height and diameter, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin hydraulic spin-on filters be installed and maintained?",
+          "a": "Replace the Baldwin hydraulic spin-on filters on the maker's schedule or when the indicator shows it is clogged. Oil the gasket, spin it on by hand to the gasket plus the turn the maker advises, and check for leaks after restarting. Do not over-tighten, since the filter has to come off again."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin hydraulic spin-on filters?",
+          "a": "The Baldwin hydraulic spin-on filters are used as replacement hydraulic and transmission filters on mobile machines and trucks, where a spin-on filter is quick to change in the field."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin hydraulic spin-on filters differ from the Baldwin hydraulic filters?",
+          "a": "These 227 spin-on filters cover many makes, while [the Baldwin hydraulic filters](/p/baldwin-hydraulic-filters) are 63 filters for Hitachi and John Deere equipment. Choose by the machine make."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin hydraulic spin-on filters shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin hydraulic spin-on filters from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421230000; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Baldwin hydraulic spin-on filters from stock in the UAE?",
+          "a": "Yes, the Baldwin hydraulic spin-on filters are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-lube-oil-filter-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Baldwin lube oil filter elements used?",
+          "a": "Baldwin lube oil filter elements are full-flow lube and hydraulic elements for Clark, Hyster, Komatsu and Leroi equipment, listed in 3 part numbers: PT88-HD, PT86-HD and PT670E."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin lube oil filter elements?",
+          "a": "The Baldwin lube oil filter elements are listed as 3 part numbers, for example PT88-HD, PT86-HD and PT670E. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin lube oil filter elements?",
+          "a": "Choose by the part number of the element being replaced, PT88-HD, PT86-HD or PT670E, and by the machine make, which the listing gives as Clark, Hyster, Komatsu and Leroi. They are full-flow elements for lube and hydraulic oil."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin lube oil filter elements?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin lube oil filter elements, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin lube oil filter elements offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin lube oil filter elements in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Baldwin lube oil filter elements?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin lube oil filter elements and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Baldwin lube oil filter elements mate with?",
+          "a": "The Baldwin lube oil filter elements fit the housing or bowl of the series it is made for, so match the element part number to the filter head. Quote the part number of the element or housing being replaced, or the filter rating, seal material and dimensions, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin lube oil filter elements be installed and maintained?",
+          "a": "Replace the Baldwin lube oil filter elements when the filter indicator shows the change zone, or on the maker's schedule, and fit the new seals with it. Depressurise first, keep dirt out of the bowl, and flush if the system has been contaminated. Do not wash and refit a disposable element."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin lube oil filter elements?",
+          "a": "The Baldwin lube oil filter elements are used as replacement filter elements for hydraulic and lube oil filters on power units, mobile machines and industrial plant, keeping the oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin lube oil filter elements differ from the Baldwin hydraulic filter elements?",
+          "a": "These 3 full-flow elements fit specific makes, while [the Baldwin hydraulic filter elements](/p/baldwin-hydraulic-filter-elements) are 116 hydraulic elements for general use. Choose by the machine and the old part number."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Baldwin lube oil filter elements?",
+          "a": "We ship the Baldwin lube oil filter elements from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Baldwin lube oil filter elements available from stock in Dubai for export?",
+          "a": "Yes. We stock the Baldwin lube oil filter elements at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-power-steering-filter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Baldwin power steering filters used?",
+          "a": "Baldwin power steering filters are inside-out flow steering elements for DAF, Iveco, MAN, Mercedes-Benz and Renault truck steering systems, listed in 5 part numbers such as P106-HD, PT8487 and PT548."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin power steering filters?",
+          "a": "The Baldwin power steering filters are listed as 5 part numbers, for example P106-HD, PT548 and P7134. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Baldwin power steering filters?",
+          "a": "Choose by the part number of the element being replaced, P106-HD, PT8487 or PT548, and by the truck make. The listing gives an inside-out flow direction."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin power steering filters?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin power steering filters, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Baldwin power steering filters offered in?",
+          "a": "The listing gives the seal and media materials of the Baldwin power steering filters in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Baldwin power steering filters?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin power steering filters and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Baldwin power steering filters mate with?",
+          "a": "The Baldwin power steering filters fit the housing or bowl of the series it is made for, so match the element part number to the filter head. Quote the part number of the element or housing being replaced, or the filter rating, seal material and dimensions, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin power steering filters be installed and maintained?",
+          "a": "Replace the Baldwin power steering filters when the filter indicator shows the change zone, or on the maker's schedule, and fit the new seals with it. Depressurise first, keep dirt out of the bowl, and flush if the system has been contaminated. Do not wash and refit a disposable element."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Baldwin power steering filters?",
+          "a": "The Baldwin power steering filters are used as replacement filter elements for hydraulic and lube oil filters on power units, mobile machines and industrial plant, keeping the oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin power steering filters differ from the Baldwin lube oil filter elements?",
+          "a": "These 5 steering elements have inside-out flow for truck steering, while [the Baldwin lube oil filter elements](/p/baldwin-lube-oil-filter-elements) are 3 lube elements for lift trucks. Choose by the system."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin power steering filters shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin power steering filters from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Baldwin power steering filters in stock in Dubai?",
+          "a": "Yes. We stock the Baldwin power steering filters at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "baldwin-wire-mesh-hydraulic-elements",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Baldwin wire mesh hydraulic elements used?",
+          "a": "Baldwin wire mesh hydraulic elements are hydraulic filter elements with a wire mesh medium, supplied with two gaskets and a reinforced centre tube, in 47 part numbers such as H9013, H9231 and H9110."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Baldwin wire mesh hydraulic elements?",
+          "a": "The Baldwin wire mesh hydraulic elements are listed as 47 part numbers, for example H9013, H9060 and H9084. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Baldwin wire mesh hydraulic elements for my application?",
+          "a": "Choose by the part number of the element being replaced, such as H9013 or H9231, and by the housing. Ask us if you need the mesh size or the dimensions of the model."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Baldwin wire mesh hydraulic elements?",
+          "a": "The listing gives no pressure rating on its rows for the Baldwin wire mesh hydraulic elements, so we do not quote one. Quote the part number and we confirm the rated pressure and flow with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Baldwin wire mesh hydraulic elements made from?",
+          "a": "The listing gives the seal and media materials of the Baldwin wire mesh hydraulic elements in its specification, and does not state a housing material beyond that. Check the seal material against your fluid before ordering."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Baldwin wire mesh hydraulic elements?",
+          "a": "The listing names no ISO or SAE standard for the Baldwin wire mesh hydraulic elements and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Baldwin wire mesh hydraulic elements connect to?",
+          "a": "The Baldwin wire mesh hydraulic elements fit the housing or bowl of the series it is made for, so match the element part number to the filter head. Quote the part number of the element or housing being replaced, or the filter rating, seal material and dimensions, and we confirm the match before supply."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Baldwin wire mesh hydraulic elements be installed and maintained?",
+          "a": "Replace the Baldwin wire mesh hydraulic elements when the filter indicator shows the change zone, or on the maker's schedule, and fit the new seals with it. Depressurise first, keep dirt out of the bowl, and flush if the system has been contaminated. Do not wash and refit a disposable element."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Baldwin wire mesh hydraulic elements used?",
+          "a": "The Baldwin wire mesh hydraulic elements are used as replacement filter elements for hydraulic and lube oil filters on power units, mobile machines and industrial plant, keeping the oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Baldwin wire mesh hydraulic elements differ from the Baldwin hydraulic elements?",
+          "a": "These 47 wire mesh elements are H-series part numbers, while [the Baldwin hydraulic elements](/p/baldwin-hydraulic-elements) are 430 mixed elements. Choose by the part number of the old element."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Baldwin wire mesh hydraulic elements shipped from, and what origin and HS code apply?",
+          "a": "We ship the Baldwin wire mesh hydraulic elements from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. The HS code on the listing is 8421290065; confirm the final classification with your customs broker. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Baldwin wire mesh hydraulic elements available from stock in Dubai for export?",
+          "a": "Yes. We keep the Baldwin wire mesh hydraulic elements in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "cross-hydraulic-filters-elements-and-filter-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Cross hydraulic filters, elements and filter gauges used?",
+          "a": "Cross hydraulic filters, elements and filter gauges are filter bases with elements, replacement elements and service gauges listed by part number. The listing carries 11 part numbers, such as 158019 (SF1-10 base with element) and 1A9251 (SF2 10 micron element)."
+        },
+        {
+          "slot": "D",
+          "q": "What part numbers are listed for the Cross hydraulic filters, elements and filter gauges?",
+          "a": "The Cross hydraulic filters, elements and filter gauges are listed as 11 part numbers, for example 158019, 1A9023 and BTI15P. Quote the part number, or the size you need, and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Cross hydraulic filters, elements and filter gauges?",
+          "a": "Choose the base size, SF1 or SF2, and the micron rating, 10 or 25, from the item name, such as SF1-10 or SF2-25. Replace the element when the gauge reaches its change zone, before the bypass valve opens."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Cross hydraulic filters, elements and filter gauges have?",
+          "a": "The listing gives no pressure rating on its rows for the Cross filters, so we do not quote one. Quote the part number and we confirm the rating with Cross."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Cross hydraulic filters, elements and filter gauges offered in?",
+          "a": "The listing does not state the housing or media material of the Cross filters. Quote the part number and we confirm the build with Cross before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Cross hydraulic filters, elements and filter gauges?",
+          "a": "The listing names no ISO or SAE standard for the Cross hydraulic filters, elements and filter gauges and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Cross hydraulic filters, elements and filter gauges mate with?",
+          "a": "The filter base takes the element and the service gauge, and connect to the line through its ports. Match the element to the base, SF1 or SF2, and see [the Dynamic Fluid Components DCI service gauge](/p/dynamic-fluid-components-dci-filter-service-gauges) for a gauge."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Cross hydraulic filters, elements and filter gauges?",
+          "a": "Replace the element when the gauge reaches its change zone, before the bypass valve opens. Depressurise the line, fit a new element with its seal and check for leaks after restarting."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Cross hydraulic filters, elements and filter gauges?",
+          "a": "Cross filters clean hydraulic oil in presses, power units and mobile machines, and the service gauge shows when the element needs changing."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Cross hydraulic filters, elements and filter gauges differ from the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "The Cross range holds 11 bases, elements and gauges, while [the Dynamic Fluid Components DCI filter service gauge](/p/dynamic-fluid-components-dci-filter-service-gauges) is a single 2 in service filter gauge with a 25 psi filter bypass. Choose the gauge to monitor an element."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Cross hydraulic filters, elements and filter gauges shipped from, and what origin and HS code apply?",
+          "a": "We ship the Cross hydraulic filters, elements and filter gauges from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Cross hydraulic filters, elements and filter gauges in stock in Dubai?",
+          "a": "Yes, we hold the Cross hydraulic filters, elements and filter gauges in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your part numbers through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-dci-filter-service-gauges",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how is the Dynamic Fluid Components DCI filter service gauge used?",
+          "a": "The Dynamic Fluid Components DCI filter service gauge is a 2 in dial gauge that shows the pressure drop across a filter against a 25 psi filter bypass, so you can see when to change the element. The listing carries one part number, DCI-20."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "The listing carries 1 part number, DCI-20, described as a 2 in service filter gauge with a 25 psi filter bypass. No other versions are listed."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "Choose the DCI-20 for filters with a 25 psi bypass, and fit it to the test port. Change the element when the needle reaches the change zone, before the bypass valve opens."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Dynamic Fluid Components DCI filter service gauge have?",
+          "a": "The listing gives a 25 psi filter bypass for the DCI-20 and no maximum system pressure, so we do not quote one. Give us the system pressure and we confirm the gauge with the maker."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dynamic Fluid Components DCI filter service gauge made from?",
+          "a": "The listing does not state the case or lens material of the DCI-20. Quote the part number and we confirm the build with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "The listing names no ISO or SAE standard for the Dynamic Fluid Components DCI filter service gauge and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Dynamic Fluid Components DCI filter service gauge mate with?",
+          "a": "The gauge mounts on a filter that has a gauge port and a 25 psi bypass. See [the Stauff return-line filter gauge](/p/stauff-return-line-filter-gauge) for a gauge for return lines and [the Cross filters](/p/cross-hydraulic-filters-elements-and-filter-gauges) for a base and element."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and look after the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "Check the DCI-20 reading at operating temperature, since cold oil can show a high pressure drop, and change the element when the needle is in the change zone. Replace a gauge that sticks or leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dynamic Fluid Components DCI filter service gauge used?",
+          "a": "Service gauges like the DCI-20 show filter condition on hydraulic power units and mobile machines, so elements are changed by condition and not by guess."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Dynamic Fluid Components DCI filter service gauge differ from the Stauff return-line filter gauge?",
+          "a": "The DCI-20 is a 2 in gauge for filters with a 25 psi bypass, while [the Stauff return-line filter gauge](/p/stauff-return-line-filter-gauge) is a pressure gauge for return line applications, model CI-20. Choose by the filter type."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Dynamic Fluid Components DCI filter service gauge shipped from, and what origin and HS code apply?",
+          "a": "We ship the Dynamic Fluid Components DCI filter service gauge from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Dynamic Fluid Components DCI filter service gauge in stock in Dubai?",
+          "a": "Yes. We stock the Dynamic Fluid Components DCI filter service gauge at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "oil-safe-dust-caps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Oil Safe dust caps used?",
+          "a": "Oil Safe dust caps are quick-disconnect caps for gearbox and reservoir fill and drain points, in 1/2 in and 3/4 in sizes, male and female. The listing carries 4 part numbers: 8FQDCAP, 8MQDCAP, 12FQDCAP and one more."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Oil Safe dust caps available in?",
+          "a": "The listing carries 4 part numbers: 8FQDCAP and 8MQDCAP, the female and male quick-disconnect dust caps for 1/2 in, and 12FQDCAP, a female cap for 3/4 in. Choose the gender to match the disconnect they cover."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Oil Safe dust caps?",
+          "a": "Choose the size, 1/2 in or 3/4 in, and the gender, male or female, to match the quick disconnect you cover. A cap with the wrong gender will not seat."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating do the Oil Safe dust caps have?",
+          "a": "The listing gives no pressure rating for the dust caps, because they cover a disconnect and keep dirt out rather than hold line pressure. Use them on capped, unpressurised points."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials are the Oil Safe dust caps offered in?",
+          "a": "The listing does not state the material of the Oil Safe dust caps. Quote the part number and we confirm the build with Oil Safe before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Oil Safe dust caps?",
+          "a": "The listing names no standard for the dust caps and holds no certificates. If your project needs a material or conformity document, say so in the enquiry and we ask Oil Safe what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts do the Oil Safe dust caps mate with?",
+          "a": "The caps fit Oil Safe quick-disconnect fittings of the same size and gender. See [the Oil Safe gearbox adapter kits](/p/oil-safe-gear-box-adapter-kits) for the adapters they cover."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Oil Safe dust caps be installed and maintained?",
+          "a": "Fit the cap on the disconnect when the point is not in use, and wipe the fitting clean before removing the cap. Replace a cap that is split, because it will no longer keep dirt out."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Oil Safe dust caps?",
+          "a": "Dust caps keep dirt out of gearbox and reservoir fill and drain points on mobile equipment and plant, a simple step in keeping oil clean."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Oil Safe dust caps differ from the Oil Safe gearbox adapter kits?",
+          "a": "The dust caps are 4 caps for 1/2 in and 3/4 in quick disconnects, while [the Oil Safe gearbox adapter kits](/p/oil-safe-gear-box-adapter-kits) are 76 adapter kits for 1/2 in to 1 in. Order the cap to cover the disconnect the kit fits."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Oil Safe dust caps?",
+          "a": "We ship the Oil Safe dust caps from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Oil Safe dust caps available from stock in Dubai for export?",
+          "a": "Yes. We stock the Oil Safe dust caps at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "oil-safe-gear-box-adapter-kits",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "Where and how are the Oil Safe gearbox adapter kits used?",
+          "a": "Oil Safe gearbox adapter kits fit a quick disconnect to a gearbox fill or drain port, in sizes from 1/2 in to 1 in, with or without a male or female disconnect. The listing carries 76 part numbers, such as 962NQ and 9621RDMF."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes are the Oil Safe gearbox adapter kits available in?",
+          "a": "The listing carries 76 part numbers from 1/2 in to 1 in, such as 962NQ (gear box adapter, no quick disconnect), 9621RDMF (male and female disconnect, 1 in) and 96212SLMF (male and female disconnect, 1/2 in)."
+        },
+        {
+          "slot": "D",
+          "q": "How should I select the Oil Safe gearbox adapter kits for my application?",
+          "a": "Choose the port size, 1/2 in, 3/4 in or 1 in, then whether the kit comes with no quick disconnect or with a male and female disconnect. Quote the part number from the gearbox or the old adapter."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure applies to the Oil Safe gearbox adapter kits?",
+          "a": "The listing gives no pressure rating for the gearbox adapter kits, because they are fill and drain fittings for low pressure gearboxes. Do not use them on a pressurised hydraulic line."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Oil Safe gearbox adapter kits made from?",
+          "a": "The listing does not state the material of the Oil Safe adapter kits. Quote the part number and we confirm the build with Oil Safe before you order."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Oil Safe gearbox adapter kits?",
+          "a": "The listing names no standard for the adapter kits and holds no certificates. If your project needs a material or conformity document, say so in the enquiry and we ask Oil Safe what it can issue."
+        },
+        {
+          "slot": "H",
+          "q": "What do the Oil Safe gearbox adapter kits connect to?",
+          "a": "The adapter threads into the gearbox port and takes a quick disconnect of the same size. See [the Oil Safe dust caps](/p/oil-safe-dust-caps) for the caps that cover the disconnects."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Oil Safe gearbox adapter kits be installed and maintained?",
+          "a": "Thread the adapter into the clean gearbox port, fit the quick disconnect and cap it when not in use. Use the right thread seal, drain the oil before removing a port plug, and check for leaks after the first fill."
+        },
+        {
+          "slot": "J",
+          "q": "Where are the Oil Safe gearbox adapter kits used?",
+          "a": "Gearbox adapter kits give a clean, no-spill fill and drain point on gearboxes in plants and mobile equipment, so oil changes do not let dirt in."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Oil Safe gearbox adapter kits differ from the Oil Safe dust caps?",
+          "a": "The adapter kits are 76 part numbers for 1/2 in to 1 in gearbox ports, while [the Oil Safe dust caps](/p/oil-safe-dust-caps) are 4 caps for 1/2 in and 3/4 in quick disconnects. Order the caps to protect the disconnects."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Oil Safe gearbox adapter kits?",
+          "a": "We ship the Oil Safe gearbox adapter kits from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin on this listing is United States. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Oil Safe gearbox adapter kits in stock in Dubai?",
+          "a": "Yes. We stock the Oil Safe gearbox adapter kits at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stauff-return-line-filter-gauge",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stauff return-line filter gauge used for?",
+          "a": "The Stauff return-line filter gauge is a pressure gauge for return line filters, model CI-20, that shows the back pressure across the element so you know when to change it. The listing carries one part number, 1020013952."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Stauff return-line filter gauge?",
+          "a": "The listing carries 1 part number, 1020013952, described as a pressure gauge for return line applications, model CI-20. No other versions are listed."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right size or model of the Stauff return-line filter gauge?",
+          "a": "Choose the CI-20 for return line filters, which run at low pressure, and fit it to the test port. Change the element when the reading enters the change zone, before the bypass valve opens."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Stauff return-line filter gauge have?",
+          "a": "The listing gives no scale or maximum pressure for the CI-20 and it is a return line gauge for low pressure, so we do not quote a range. Give us the filter model and we confirm the gauge with Stauff."
+        },
+        {
+          "slot": "F",
+          "q": "Which materials is the Stauff return-line filter gauge offered in?",
+          "a": "The listing does not state the case or lens material of the CI-20. Quote the part number and we confirm the build with Stauff."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Stauff return-line filter gauge?",
+          "a": "The listing names no ISO or SAE standard for the Stauff return-line filter gauge and holds no certificates. Filtration ratings are normally set by the ISO 16889 multi-pass test and oil cleanliness is reported as an ISO 4406 code, but the listing gives neither a beta rating nor a code, so ask in the enquiry if you need the maker's test data."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts does the Stauff return-line filter gauge mate with?",
+          "a": "The gauge fits the test port of a return line filter, so the port thread and the filter must match the gauge. See [the DCI filter service gauge](/p/dynamic-fluid-components-dci-filter-service-gauges) for another service gauge."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Stauff return-line filter gauge be installed and maintained?",
+          "a": "Check the CI-20 reading at operating temperature, since cold oil can show a high back pressure, and change the element when the reading is in the change zone. Replace a gauge that sticks or leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Which industries and jobs use the Stauff return-line filter gauge?",
+          "a": "Return-line filter gauges show element condition on hydraulic tanks and power units, so elements are changed by condition and not by guess."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Stauff return-line filter gauge differ from the Dynamic Fluid Components DCI filter service gauge?",
+          "a": "The Stauff CI-20 is a return line pressure gauge, while [the Dynamic Fluid Components DCI filter service gauge](/p/dynamic-fluid-components-dci-filter-service-gauges) is a 2 in service gauge with a 25 psi filter bypass. Choose by the filter type."
+        },
+        {
+          "slot": "L",
+          "q": "What country of origin and HS code apply to the Stauff return-line filter gauge?",
+          "a": "We ship the Stauff return-line filter gauge from our Dubai, UAE warehouse to buyers in the GCC, Africa, Asia and beyond. The country of origin depends on the plant that made the batch and is stated on the commercial invoice. Export documents come with the order; ask on [our contact page](/contact)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stauff return-line filter gauge available from stock in Dubai for export?",
+          "a": "Yes. We stock the Stauff return-line filter gauge at our Dubai, UAE warehouse and send it worldwide with the best lead times. Tell us the models and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "family": "proportional-cartridge-valves",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "sun-hydraulics-4-way-3-position-meter-in-proportional-directional-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics 4-way, 3-position meter-in proportional directional valve used for?",
+          "a": "It is a pilot-operated, 3-position, 4-way spool valve whose opening follows the pilot pressure, used for smooth proportional motion on mobile functions piloted from hydraulic joysticks or proportional pilot reducing valves. In centre, supply is closed and the work ports drain to port 5."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model codes FTCC, FTDC, FTEC, FTFC and FTHC?",
+          "a": "The four letters are the base model, and each version is a series, cavity and flow: FTCC and FTDC are series 2, FTEC and FTFC are series 3 and FTHC is series 4. The letters after the base choose the control, spool configuration, seal and coating."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and cavity does each Sun FT proportional directional valve have?",
+          "a": "FTCC is 7 gpm (28 L/min) in a T-52A cavity, FTDC is 18 gpm (70 L/min) in T-52A, FTEC is 12 gpm (45 L/min) in T-53A, FTFC is 35 gpm (140 L/min) in T-53A and FTHC is 80 gpm (320 L/min) in T-54A. Choose the smallest series that passes your flow."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pilot the Sun FT meter-in proportional valve, and when is it fully shifted?",
+          "a": "Pilot pressure at port 1 meters supply to port 4 in proportion, and pilot at port 6 meters it to port 2. Full shift at rated flow takes 290 to 340 psi (20 to 23 bar). Above about 500 psi (35 bar) the spool is fully shifted and flow does not rise."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Sun FT proportional directional valve have?",
+          "a": "Maximum operating pressure is 5000 psi (350 bar), and the pilot ports also take 5,000 psi (350 bar). Maximum leakage varies by size, from 2.7 in³/min at 500 psi (44 cc/min at 35 bar) to 14 in³/min at 1000 psi (229 cc/min at 70 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and body options does the Sun FT meter-in proportional valve have?",
+          "a": "Seals are N for Buna-N or V for Viton, and the /AP modifier gives a stainless steel, passivated body. If the modifier is /AP, the control must be X, not adjustable. Spool options W (A and B bleed to T centre) and Y (A and B to T centre) are listed."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun FT proportional directional valve fit?",
+          "a": "It fits Sun's T-series cavities: T-52A for series 2, T-53A for series 3 and T-54A for series 4. The series fixes the cavity the valve screws into, so every function in one series shares the same cavity."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sun FT proportional valve work with in the circuit?",
+          "a": "It is piloted by a hydraulic joystick or a proportional pilot reducing valve, such as the [Sun PRDF electro-proportional reducing/relieving valve](/p/sun-hydraulics-prdf-electro-proportional-direct-acting-pressure-reducing-relieving-valve-open-transition), and sits in a manifold cavity. Flow forces give some self-compensation, and a separate bypass compensator gives tighter flow regulation."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun FT cartridge and what torque applies?",
+          "a": "Screw it into the machined cavity and tighten by series: hex 1 1/8 in. at 45 to 50 lbf ft (61 to 68 Nm), 1 1/4 in. at 150 to 160 lbf ft (203 to 217 Nm) and 1 5/8 in. at 350 to 375 lbf ft (474 to 508 Nm). Seal kits are listed for each series."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun FT hydraulic-piloted valve differ from the Sun FNUC electro-proportional directional valve?",
+          "a": "The FT is operated by hydraulic pilot pressure and covers 7 to 80 gpm in series 2 to 4 at 5000 psi. The [Sun FNUC](/p/sun-hydraulics-fnuc-4-way-3-position-electro-proportional-solenoid-operated-directional-valve-3600-psi) has a proportional solenoid at each end, is direct acting at 10 gpm and 3600 psi, and fits a common SC-10 cavity."
+        },
+        {
+          "slot": "L",
+          "q": "Which Sun seal kits fit the FT proportional directional valve?",
+          "a": "Series 2 uses 990052007 (Buna) or 990052006 (Viton), series 3 uses 990053007 or 990053006, and series 4 uses 990054007 (Buna), 990054002 (polyurethane) or 990054006 (Viton). The external seals are the only serviceable part."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FT proportional directional valve in Dubai for export?",
+          "a": "Yes. Indus stocks the Sun Hydraulics FT proportional directional valve at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fnuc-4-way-3-position-electro-proportional-solenoid-operated-directional-valve-3600-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FNUC electro-proportional 4-way directional valve used for?",
+          "a": "The FNUC is a spring-centred, 3-position, 4-way spool valve with a proportional solenoid at each end, for proportional speed and direction control of small cylinders and motors from an electronic controller. It is direct acting, so it needs no minimum hydraulic pressure."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters after FNUC mean in a Sun model code?",
+          "a": "FNUC is the base model, series 1C. The letters after it choose the control (T lever manual override or X none), the setting range (A, C, E, V, X or Z), the seal (N Buna-N) and the coil, 12 VDC or 24 VDC, with DIN 43650-Form A or Deutsch DT04-2P connectors."
+        },
+        {
+          "slot": "D",
+          "q": "What flow and setting ranges does the Sun FNUC valve offer?",
+          "a": "The FNUC is rated 10 gpm (40 L/min). The setting range gives a blocked centre at 1.3 gpm (A), 4 gpm (C) or 8 gpm (E), or an A and B bleed-to-centre version at 1.3 gpm (V), 4 gpm (X) or 8 gpm (Z)."
+        },
+        {
+          "slot": "D",
+          "q": "How do the coils A and B work on the Sun FNUC valve?",
+          "a": "Current on one coil opens P to B and A to T in proportion, and current on the other opens P to A and B to T. The two coils are the same part: the coil nearest the hex is coil A, and the one nearest the coil nut is coil B."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and response does the Sun FNUC valve have?",
+          "a": "Maximum operating pressure is 3600 psi (250 bar), with the tank port limited to 1,000 psi (70 bar). Typical response time is 50 ms. Drive it from a proportional amplifier with current control and adjustable dither, matched to the coil."
+        },
+        {
+          "slot": "F",
+          "q": "What seal material does the Sun FNUC proportional valve use?",
+          "a": "The listed seal is N, Buna-N. Buna-N suits mineral hydraulic oil, so tell us if you plan to run another fluid and we will check it with Sun. The coil is a separate option, in 12 VDC or 24 VDC."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun FNUC valve fit?",
+          "a": "It fits an industry-standard common cavity, SC-10-04 (SC-08 or SC-10 type), rather than a Sun T-series cavity. Series 0C and 1C parts fit these common cavities."
+        },
+        {
+          "slot": "H",
+          "q": "What do I need to drive and connect the Sun FNUC valve?",
+          "a": "A proportional amplifier with current control and adjustable dither, matched to the coil. Sun's XMD drivers are set up for its coils. Connections include DIN 43650-Form A and Deutsch DT04-2P. For other cartridge functions see the [solenoid cartridge valves](/c/solenoid-cartridge-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun FNUC cartridge and what torque applies?",
+          "a": "Screw it into the SC-10-04 cavity with a 1.00 in. hex at 28 to 32 lbf ft (38 to 43 Nm). The tank port is limited to 1,000 psi (70 bar), the other ports to 3,600 psi (250 bar), so connect the tank port first."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun FNUC differ from the Sun FPBU proportional poppet throttle?",
+          "a": "The FNUC is a 4-way directional spool valve at 3600 psi and 10 gpm. The [Sun FPBU](/p/sun-hydraulics-fpbu-flex-series-electro-proportional-blocking-poppet-throttle-normally-closed) is a normally closed poppet throttle with very low leakage when closed. Use the FNUC for direction and speed, the FPBU for flow metering."
+        },
+        {
+          "slot": "L",
+          "q": "What parts of the Sun FNUC cartridge can be serviced?",
+          "a": "Only the external seals can be serviced, and Sun supplies a seal kit for every cartridge. The coils are separate parts, the same part for A and B. Send us the Sun model code with the quantity to order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics FNUC proportional directional valve in Dubai for export?",
+          "a": "Yes. We keep the Sun Hydraulics FNUC proportional directional valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-fpbu-flex-series-electro-proportional-blocking-poppet-throttle-normally-closed",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics FPBU FLeX series proportional poppet throttle used for?",
+          "a": "The FPBU is a normally closed, electro-proportional blocking poppet throttle: coil current pushes the poppet open against the spring and flow forces, so the opening, and the flow, follows the current. It is rated 2.6 gpm (9.8 L/min) at 5000 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters after FPBU mean in a Sun model code?",
+          "a": "FPBU is the base model, series 0. The letters after it choose the control (M manual override or X none), the setting range (C, nominally 2.6 gpm at 200 psi differential), the seal (N Buna-N, V Viton or E EPDM) and the coil, 12 VDC to 28 VDC."
+        },
+        {
+          "slot": "D",
+          "q": "How is the Sun FPBU compensated for proportional flow control?",
+          "a": "It is largely self-compensating from port 2 to port 1. From port 1 to port 2 it needs an external compensator for proportional control. The setting is nominal 2.6 gpm at a 200 psi (14 bar) differential."
+        },
+        {
+          "slot": "D",
+          "q": "What dither does the Sun FPBU valve need?",
+          "a": "Dither should be adjustable between 100 and 250 Hz, and Sun's XMD drivers are set up for it. The valve is driven by a proportional amplifier with current control, matched to the coil."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, leakage and cycle rating does the Sun FPBU have?",
+          "a": "Maximum operating pressure is 5000 psi (350 bar). Leakage when closed is very low, 0.004 in³/min at 5000 psi. Typical response time is 50 ms and the maximum switching frequency is 15,000 cycles per hour."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and finish options does the Sun FLeX FPBU have?",
+          "a": "Seals are Buna-N, Viton or EPDM. The FLeX series is zinc-nickel plated as standard for 1,000 hours of salt-fog protection and tested to 10 million cycles at full rated pressure. Coil choices include 62 versions, including an explosion-proof type."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun FPBU fit?",
+          "a": "It fits Sun's T-162A cavity, series 0. The series fixes the cavity the valve screws into, so every function in series 0 shares that cavity, and the seal kits fit that series."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sun FPBU connect to in a circuit?",
+          "a": "It is a cartridge in a manifold, throttling flow between ports 1 and 2, and driven by a proportional amplifier. For pressure control in the same family see the [cartridge pressure control valves](/c/cartridge-pressure-control-valves) and for flow control the [cartridge flow control valves](/c/cartridge-flow-control-valves)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun FPBU cartridge and what torque applies?",
+          "a": "Screw it into the T-162A cavity with a 3/4 in. hex at 20 to 25 lbf ft (27 to 33 Nm). The seal kits for series 0 are 990162007 in Buna and 990162006 in Viton."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun FPBU differ from the Sun RPEI proportional relief valve?",
+          "a": "The FPBU throttles flow and is normally closed, in a T-162A cavity. The [Sun RPEI](/p/sun-hydraulics-rpei-electro-proportional-relief-valve-high-pressure-setting-no-command) limits pressure, relieving at a setting that falls as coil current rises. Both are rated 5000 psi."
+        },
+        {
+          "slot": "L",
+          "q": "What parts of the Sun FPBU can be serviced?",
+          "a": "Only the external seals, with a Buna or Viton kit for series 0. Coils are separate parts, and 62 coil choices are offered. Quote the Sun model code with the quantity."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun Hydraulics FPBU proportional poppet throttle from stock in the UAE and get a quotation?",
+          "a": "Yes. The Sun Hydraulics FPBU proportional poppet throttle sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-prdf-electro-proportional-direct-acting-pressure-reducing-relieving-valve-open-transition",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics PRDF electro-proportional pressure reducing/relieving valve used for?",
+          "a": "The PRDF is a direct-acting, electro-proportional reducing and relieving cartridge. With no current it relieves port 1 to tank, and energising the coil opens supply at port 2 to port 1, with the reduced pressure rising with the current. It is rated 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters after PRDF mean in a Sun model code?",
+          "a": "PRDF is the base model, series 1. The letters after it choose the control (M manual override or X none), the setting range (B, D, E or S), the seal (N, V or E) and the coil. Some coils limit which range is allowed."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure setting ranges does the Sun PRDF offer?",
+          "a": "Range B is 100 to 1125 psi, D is 50 to 485 psi, E is 25 to 250 psi and S is 10 to 100 psi. Choose the range that holds your working pressure near the middle."
+        },
+        {
+          "slot": "D",
+          "q": "What does open transition mean on the Sun PRDF valve?",
+          "a": "The crossover from reducing to relieving is slightly open. That gives good pressure control and response, at the cost of a small continuous flow to tank. Keep port 3 at or below 3,000 psi (210 bar)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and leakage does the Sun PRDF valve have?",
+          "a": "Maximum operating pressure is 5000 psi (350 bar), and maximum leakage is 33.5 in³/min (550 cc/min), which reflects the open transition. Port 3 should stay at or below 3,000 psi (210 bar)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coils does the Sun PRDF valve use?",
+          "a": "Seals are Buna-N, Viton or EPDM. It uses Sun's 740 Series coils, or 747 Series coils for hazardous locations, in 12, 14, 24 or 28 VDC and 115 or 230 VAC, with 64 coil choices in all."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun PRDF valve fit?",
+          "a": "It fits Sun's T-11A cavity, series 1. The series fixes the cavity the valve screws into, and the seal kits listed fit that series."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sun PRDF work with in a circuit?",
+          "a": "It reduces pressure from supply at port 2 to a working pressure at port 1, and relieves excess to tank at port 3. It is driven by a proportional amplifier, and can pilot a valve such as the [Sun FT proportional directional valve](/p/sun-hydraulics-4-way-3-position-meter-in-proportional-directional-valve)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun PRDF cartridge and what torque applies?",
+          "a": "Screw it into the T-11A cavity with a 7/8 in. hex at 30 to 35 lbf ft (41 to 47 Nm). The listed seal kits are for series 1, in Buna and Viton."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PRDF differ from the Sun RPEI proportional relief valve?",
+          "a": "The PRDF reduces and relieves, direct acting, at 5 gpm in a T-11A cavity, with settings from 10 to 1125 psi. The [Sun RPEI](/p/sun-hydraulics-rpei-electro-proportional-relief-valve-high-pressure-setting-no-command) is pilot-operated and relief only, with a higher flow and higher settings."
+        },
+        {
+          "slot": "L",
+          "q": "What do I need to order the Sun PRDF valve?",
+          "a": "Quote the base model PRDF with the control, setting range, seal and coil letters, for example the range B, D, E or S and a coil code. We confirm the option rules for your coil before supply."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun Hydraulics PRDF proportional reducing/relieving valve from stock in the UAE and get a quotation?",
+          "a": "Yes. The Sun Hydraulics PRDF proportional reducing/relieving valve sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rpei-electro-proportional-relief-valve-high-pressure-setting-no-command",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics RPEI electro-proportional relief valve used for?",
+          "a": "The RPEI is a pilot-operated, electro-proportional relief cartridge. With no current it relieves at its highest, customer-specified setting, and raising the coil current lowers the relief pressure smoothly, without steps. It is rated 25 gpm (95 L/min) at 5000 psi."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters after RPEI mean in a Sun model code?",
+          "a": "RPEI is the base model, series 1. The letters after it choose the control (C concealed manual override or L standard screw adjustment), the setting range (A or W), the seal (N or V) and the coil. The coil decides which range is allowed."
+        },
+        {
+          "slot": "D",
+          "q": "What setting ranges does the Sun RPEI valve have?",
+          "a": "Range A is 1500 to 3000 psi (105 to 210 bar) with a 3000 psi standard setting, and range W is 3000 to 5000 psi (210 to 350 bar) with a 5000 psi standard setting. Which range you can use depends on the coil."
+        },
+        {
+          "slot": "D",
+          "q": "What happens if the signal to the Sun RPEI fails?",
+          "a": "The valve goes to its highest setting, so the circuit is still protected; pressure can only be lowered by the command. That is the meaning of high pressure setting with no command."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and leakage does the Sun RPEI valve have?",
+          "a": "Maximum operating pressure is 5000 psi (350 bar), and maximum leakage is 2 in³/min at 1000 psi (30 cc/min at 70 bar). Damped construction keeps it stable, and the setting range is chosen by letter."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coils does the Sun RPEI valve use?",
+          "a": "Seals are Buna-N or Viton. Coils come in 12, 14, 24 or 28 VDC and 115 or 230 VAC, with DIN 43650-Form A, AMP Junior Timer, Twin Lead, Metri-Pack, Deutsch DT04-2P or explosion-proof connections, 122 coil choices in all."
+        },
+        {
+          "slot": "G",
+          "q": "Which cavity does the Sun RPEI valve fit?",
+          "a": "It fits Sun's T-13A cavity, series 1. The series fixes the cavity the valve screws into, so every function in series 1 shares it."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Sun RPEI connect to in a circuit?",
+          "a": "It sits in a manifold cavity as the system or branch relief, with the coil driven by a proportional amplifier with current control and adjustable dither. See the [cartridge pressure control valves](/c/cartridge-pressure-control-valves) for other relief and reducing cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun RPEI cartridge and what torque applies?",
+          "a": "Screw it into the T-13A cavity with a 7/8 in. hex at 30 to 35 lbf ft (41 to 47 Nm). Seal kits for series 1 are 990010007 in Buna and 990010006 in Viton."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RPEI differ from the Sun PRDF valve?",
+          "a": "The RPEI is a pilot-operated relief valve at 25 gpm with settings up to 5000 psi. The [Sun PRDF](/p/sun-hydraulics-prdf-electro-proportional-direct-acting-pressure-reducing-relieving-valve-open-transition) is direct acting and both reduces and relieves, at a lower flow and lower settings."
+        },
+        {
+          "slot": "L",
+          "q": "What do I need to order the Sun RPEI valve?",
+          "a": "Quote the base model RPEI with the control, setting range, seal and coil letters, for example a range W for a 5000 psi relief. We confirm that the coil you choose allows that range before supply."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Hydraulics RPEI proportional relief valve in Dubai for export?",
+          "a": "Yes, the Sun Hydraulics RPEI proportional relief valve is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

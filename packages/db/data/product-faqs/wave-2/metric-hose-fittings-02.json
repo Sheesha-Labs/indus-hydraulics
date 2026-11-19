@@ -1,0 +1,344 @@
+{
+  "family": "metric-hose-fittings-02",
+  "extraFacts": [
+    {
+      "fact": "A JIC 37° flare end (SAE J514, ISO 8434-2) seals metal-to-metal on a 74° included cone and is not interchangeable with a 45° SAE flare.",
+      "source": "SAE J514; ISO 8434-2"
+    },
+    {
+      "fact": "DIN 2353 (ISO 8434-1) is the 24° cone bite-type tube fitting standard; the light (L) and heavy (S) series differ in tube outside diameter and thread.",
+      "source": "ISO 8434-1; DIN 2353"
+    },
+    {
+      "fact": "A crimp fitting is rated only on the hose series it is designed for; the fitting, ferrule and crimp specification are checked against the hose before supply.",
+      "source": "Indus Hydraulics Aeroquip/Dixon crimp fitting listings (Hose and fitting match note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aeroquip-crimp-female-jic-swivel-hydraulic-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting used for and which hoses does it fit?",
+          "a": "The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting is swivel a crimp hose fitting from Eaton Aeroquip, with a metric thread at 30°. The maker lists it for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" Metric (female) × 1\" Crimp in the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting?",
+          "a": "Quote 1A16JF16 for 1\" Metric (female) × 1\" Crimp, 1A4JF4 for 1/4\" Metric (female) × 1/4\" Crimp and 1A6JF6 for 3/8\" Metric (female) × 3/8\" Crimp. The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting lists 5 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting are available?",
+          "a": "The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting comes in 5 part numbers covering 1/4\" to 1\". Examples from the table: 1A8JF8 (1/2\" Metric (female) × 1/2\" Crimp) and 1A12JF12 (3/4\" Metric (female) × 3/4\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting for my hose and port?",
+          "a": "Choose the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1A8JF8 (1/2\" Metric (female) × 1/2\" Crimp) and 1A12JF12 (3/4\" Metric (female) × 3/4\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting is made from steel. Finish: Trivalent Chromium Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting names no product standard beyond the thread type. JIC 37° flares follow SAE J514. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting mate with?",
+          "a": "The maker lists the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, JIC 37° ends take a JIC 37° flare nut or port, not a 45° SAE flare. For other thread styles, see the [JIC 37° Hose Fittings](/c/jic-37-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The JIC 37° end of the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting seals metal-to-metal on the flare, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting differ from the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting?",
+          "a": "The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting has Female JIC Swivel where the [Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting](/p/aeroquip-crimp-male-metric-heavy-hydraulic-hose-fitting) has Male Metric Heavy. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting as made in Germany. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Aeroquip Crimp, Female JIC Swivel Hydraulic Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-crimp-male-metric-heavy-hydraulic-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting used for and which hoses does it fit?",
+          "a": "The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting is a crimp hose fitting from Eaton Aeroquip, with a metric thread at 24°. The maker lists it for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" Crimp in the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting?",
+          "a": "Quote 1A25EK16 for 1\" Crimp, 1A20EK12 for 3/4\" Crimp and 1A16EK10 for 5/8\" Crimp. The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting are available?",
+          "a": "The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting comes in 10 part numbers. Examples from the table: 1A12EK8 (1/2\" Crimp), 1A6EK4 (1/4\" Crimp) and 1A10EK6 (3/8\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting for my hose and port?",
+          "a": "Choose the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1A5EK4 (1/4\" Crimp) and 1A8EK6 (3/8\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting is made from steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting names no product standard beyond the thread type. DIN 2353 24° cone fittings follow ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting mate with?",
+          "a": "The maker lists the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, metric 24° cone ends take DIN 2353 cutting rings and nuts. For other thread styles, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting differ from the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting?",
+          "a": "The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting has Heavy where the [Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting](/p/aeroquip-crimp-male-metric-light-hydraulic-hose-fitting) has Light. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting as made in Germany. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-crimp-male-metric-light-hydraulic-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting used for and which hoses does it fit?",
+          "a": "The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting is a crimp hose fitting from Eaton Aeroquip, with a metric thread at 24°. The maker lists it for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" Crimp in the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting?",
+          "a": "Quote 1A25DK16 for 1\" Crimp, 1A20DK12 for 3/4\" Crimp and 1A32DK20 for 1 1/4\" Crimp. The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting lists 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting are available?",
+          "a": "The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting comes in 10 part numbers. Examples from the table: 1A12DK8 (1/2\" Crimp), 1A6DK4 (1/4\" Crimp) and 1A16DK10 (5/8\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting for my hose and port?",
+          "a": "Choose the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1A5DK4 (1/4\" Crimp) and 1A10DK6 (3/8\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting is made from carbon steel, steel. Finish: Trivalent Chromium Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting names no product standard beyond the thread type. DIN 2353 24° cone fittings follow ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting mate with?",
+          "a": "The maker lists the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, metric 24° cone ends take DIN 2353 cutting rings and nuts. For other thread styles, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting differ from the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting?",
+          "a": "The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting has Light where the [Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting](/p/aeroquip-crimp-male-metric-heavy-hydraulic-hose-fitting) has Heavy. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting as made in Germany. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Aeroquip Crimp, Male Metric Light Hydraulic Hose Fitting is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-female-metric-hydraulic-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip Female Metric Hydraulic Hose Fittings used for and which hoses does it fit?",
+          "a": "The Aeroquip Female Metric Hydraulic Hose Fittings are crimp hose fittings from Eaton Aeroquip, with a metric thread at 24°. The maker lists them for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/4\" Crimp in the Aeroquip Female Metric Hydraulic Hose Fittings?",
+          "a": "Quote 1A5DL4 for 1/4\" Crimp, 1A10DLA6 for 3/8\" Crimp and 1A25DLB16 for 1\" Crimp. The Aeroquip Female Metric Hydraulic Hose Fittings list 26 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip Female Metric Hydraulic Hose Fittings come in?",
+          "a": "The Aeroquip Female Metric Hydraulic Hose Fittings come in 26 part numbers. Examples from the table: 1A6DL4 (1/4\" Crimp), 1A25DL16 (1\" Crimp) and 1A20DLB12 (3/4\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Female Metric Hydraulic Hose Fittings for my hose and port?",
+          "a": "Choose the Aeroquip Female Metric Hydraulic Hose Fittings by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1A16DL10 (5/8\" Crimp) and 1A8DLB4 (1/4\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Female Metric Hydraulic Hose Fittings?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Female Metric Hydraulic Hose Fittings: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Female Metric Hydraulic Hose Fittings made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip Female Metric Hydraulic Hose Fittings in steel. Finish: Trivalent Chromium Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip Female Metric Hydraulic Hose Fittings conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Female Metric Hydraulic Hose Fittings names no product standard beyond the thread type. DIN 2353 24° cone fittings follow ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Female Metric Hydraulic Hose Fittings mate with?",
+          "a": "The maker lists the Aeroquip Female Metric Hydraulic Hose Fittings for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, metric 24° cone ends take DIN 2353 cutting rings and nuts. For other thread styles, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip Female Metric Hydraulic Hose Fittings seal, and what should I check when fitting them?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Female Metric Hydraulic Hose Fittings, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip Female Metric Hydraulic Hose Fittings differ from the Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting?",
+          "a": "The Aeroquip Female Metric Hydraulic Hose Fittings and the [Aeroquip Crimp, Male Metric Heavy Hydraulic Hose Fitting](/p/aeroquip-crimp-male-metric-heavy-hydraulic-hose-fitting) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Female Metric Hydraulic Hose Fittings made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Female Metric Hydraulic Hose Fittings as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Female Metric Hydraulic Hose Fittings in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip Female Metric Hydraulic Hose Fittings sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hydraulic-hose-fitting-crimp-female",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Hydraulic Hose Fitting, Crimp, Female used for and which hoses does it fit?",
+          "a": "The Aeroquip Hydraulic Hose Fitting, Crimp, Female is swivel a crimp hose fitting from Eaton Aeroquip, with a metric thread at 24°. The maker lists it for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1\" Crimp in the Aeroquip Hydraulic Hose Fitting, Crimp, Female?",
+          "a": "Quote 1A25DS16 for 1\" Crimp, 1A16DS12 for 3/4\" Crimp and 1A32DS20 for 1 1/4\" Crimp. The Aeroquip Hydraulic Hose Fitting, Crimp, Female lists 27 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Hydraulic Hose Fitting, Crimp, Female come in?",
+          "a": "The Aeroquip Hydraulic Hose Fitting, Crimp, Female comes in 27 part numbers. Examples from the table: 1A25DSA16 (1\" Crimp), 1A8DS4 (1/4\" Crimp) and 1A16DSB10 (5/8\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Hydraulic Hose Fitting, Crimp, Female for my hose and port?",
+          "a": "Choose the Aeroquip Hydraulic Hose Fitting, Crimp, Female by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1A12DSB8 (1/2\" Crimp) and 1A10DSA6 (3/8\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Hydraulic Hose Fitting, Crimp, Female?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Hydraulic Hose Fitting, Crimp, Female: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Hydraulic Hose Fitting, Crimp, Female made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Hydraulic Hose Fitting, Crimp, Female is made from steel. Finish: Trivalent Chromium Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip Hydraulic Hose Fitting, Crimp, Female conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Hydraulic Hose Fitting, Crimp, Female names no product standard beyond the thread type. DIN 2353 24° cone fittings follow ISO 8434-1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Hydraulic Hose Fitting, Crimp, Female mate with?",
+          "a": "The maker lists the Aeroquip Hydraulic Hose Fitting, Crimp, Female for hoses in the 2661(-12 THROUGH -32), EC110, EC115, EC118, EC210, EC215, FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, metric 24° cone ends take DIN 2353 cutting rings and nuts. For other thread styles, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip Hydraulic Hose Fitting, Crimp, Female seal, and what should I check when fitting it?",
+          "a": "Check the seat as well as the thread on each end of the Aeroquip Hydraulic Hose Fitting, Crimp, Female, because several families share a thread but seal differently. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Hydraulic Hose Fitting, Crimp, Female differ from the Aeroquip Female Metric Hydraulic Hose Fittings?",
+          "a": "The Aeroquip Hydraulic Hose Fitting, Crimp, Female has Fitting, Crimp, Female where the [Aeroquip Female Metric Hydraulic Hose Fittings](/p/aeroquip-female-metric-hydraulic-hose-fittings) has Fittings. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Hydraulic Hose Fitting, Crimp, Female made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Hydraulic Hose Fitting, Crimp, Female as made in Germany. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Hydraulic Hose Fitting, Crimp, Female in Dubai, and how do I get a quote?",
+          "a": "Yes, it is held ex-stock. The Aeroquip Hydraulic Hose Fitting, Crimp, Female is kept at our warehouse in Dubai, UAE, and ships worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

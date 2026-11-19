@@ -1,0 +1,811 @@
+{
+  "family": "npt-npsm-sae-hose-fittings-02",
+  "extraFacts": [
+    {
+      "fact": "NPTF (Dryseal) is a taper pipe thread cut so the crests and roots close up as the joint is tightened, so it seals on the thread (ASME B1.20.3).",
+      "source": "ASME B1.20.3 (Dryseal pipe threads)"
+    },
+    {
+      "fact": "NPT is a tapered pipe thread with a 60° thread angle that is not interchangeable with 55° BSPT; hydraulic NPT joints are normally sealed with PTFE tape or an anaerobic sealant.",
+      "source": "ASME B1.20.1; Indus Hydraulics NPT adapter listings and guide /blog/stopping-an-npt-thread-leak"
+    },
+    {
+      "fact": "NPSM is a straight (parallel) pipe thread for mechanical joints (ASME B1.20.1): it does not seal on the thread, so an NPSM swivel end seals on its seat, which on these Dixon swivels is a 30° seat.",
+      "source": "ASME B1.20.1; Dixon swivel listing feature note (female NPSM swivel seals on a 30° seat)"
+    },
+    {
+      "fact": "SAE 45° flare and inverted-flare fittings (SAE J512) seal on a 45° seat, which differs from the 37° JIC seat and does not mate with it.",
+      "source": "SAE J512"
+    },
+    {
+      "fact": "An SAE O-ring boss (ORB) port seals on an O-ring compressed in the port; the thread only holds the fitting in place (SAE J1926, ISO 11926).",
+      "source": "SAE J1926; ISO 11926-1"
+    },
+    {
+      "fact": "A crimp fitting is rated only on the hose series it is designed for; the fitting, ferrule and crimp specification are checked against the hose before supply.",
+      "source": "Indus Hydraulics Aeroquip/Dixon crimp fitting listings (Hose and fitting match note)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aeroquip-190111-series-straight-sae-male-inverted-flare-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings used for and which hoses does it fit?",
+          "a": "The Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings are crimp hose fittings from Eaton Aeroquip, with an inverted flare thread. The maker lists them for hoses in the 1503, 2580, 2651, FC234, FC300, FC321, FC350, FC355, FC802 series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 5/8\" Inverted Flare (male) × 1/2\" Hose in the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings?",
+          "a": "Quote 190111-6-8S for 5/8\" Inverted Flare (male) × 1/2\" Hose, 190111-5-6S for 1/2\" Inverted Flare (male) × 3/8\" Hose and 190111-5S for 1/2\" Inverted Flare (male) × 5/16\" Hose. The Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings list 6 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings are available?",
+          "a": "The Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings come in 6 part numbers covering 7/16\" to 3/4\". Examples from the table: 190111-8S (3/4\" Inverted Flare (male) × 1/2\" Hose), 190111-4S (7/16\" Inverted Flare (male) × 1/4\" Hose) and 190111-6S (5/8\" Inverted Flare (male) × 3/8\" Hose). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings for my hose and port?",
+          "a": "Choose the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 190111-8S (3/4\" Inverted Flare (male) × 1/2\" Hose) and 190111-6S (5/8\" Inverted Flare (male) × 3/8\" Hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings?",
+          "a": "The maker states 2,000 to 3,000 psi (138 to 207 bar), by size for the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings. For example 190111-4S is listed at 207 bar and 190111-6-8S at 138 bar. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings are made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings mate with?",
+          "a": "The maker lists the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings for hoses in the 1503, 2580, 2651, FC234, FC300, FC321, FC350, FC355, FC802 series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. For other thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings seal, and what should I check when fitting them?",
+          "a": "The 45° flare end of the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings differ from the Aeroquip 190235 Series Male Inverted Flare Short Elbows?",
+          "a": "The Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings and the [Aeroquip 190235 Series Male Inverted Flare Short Elbows](/p/aeroquip-190235-series-male-inverted-flare-short-elbows) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-190235-series-male-inverted-flare-short-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 190235 Series Male Inverted Flare Short Elbows used for?",
+          "a": "The Aeroquip 190235 Series Male Inverted Flare Short Elbows are elbows from Eaton Aeroquip that turn the line through an angle. They come in 9 part numbers covering 7/16\" to 7/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 7/16\" Inverted (male) in the Aeroquip 190235 Series Male Inverted Flare Short Elbows?",
+          "a": "Quote 190371-4S for 7/16\" Inverted (male), 190235-6S for 5/8\" Inverted (male) and 190297-10S for 7/8\" Inverted (female). The Aeroquip 190235 Series Male Inverted Flare Short Elbows list 9 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 190235 Series Male Inverted Flare Short Elbows come in?",
+          "a": "The Aeroquip 190235 Series Male Inverted Flare Short Elbows come in 9 part numbers covering 7/16\" to 7/8\". Examples from the table: 190297-8S (3/4\" Inverted (female)), 190235-5S (1/2\" Inverted (male)) and 190235-6-8S (5/8\" Inverted (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 190235 Series Male Inverted Flare Short Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 190235 Series Male Inverted Flare Short Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 190235-4S (7/16\" Inverted (male)) and 190235-8S (3/4\" Inverted (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 190235 Series Male Inverted Flare Short Elbows?",
+          "a": "No working pressure is published for the Aeroquip 190235 Series Male Inverted Flare Short Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 190235 Series Male Inverted Flare Short Elbows made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 190235 Series Male Inverted Flare Short Elbows are made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 190235 Series Male Inverted Flare Short Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 190235 Series Male Inverted Flare Short Elbows names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 190235 Series Male Inverted Flare Short Elbows, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 190235 Series Male Inverted Flare Short Elbows: SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 190235 Series Male Inverted Flare Short Elbows seal, and what should I check when fitting them?",
+          "a": "The 45° flare end of the Aeroquip 190235 Series Male Inverted Flare Short Elbows seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 190235 Series Male Inverted Flare Short Elbows differ from the Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings?",
+          "a": "The Aeroquip 190235 Series Male Inverted Flare Short Elbows and the [Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings](/p/aeroquip-190111-series-straight-sae-male-inverted-flare-hose-fittings) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 190235 Series Male Inverted Flare Short Elbows made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 190235 Series Male Inverted Flare Short Elbows as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 190235 Series Male Inverted Flare Short Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip 190235 Series Male Inverted Flare Short Elbows are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-190627-series-male-pipes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 190627 Series Male Pipes used for?",
+          "a": "The Aeroquip 190627 Series Male Pipes are pipes from Eaton Aeroquip that connect the two end types named in its title and size table. They come in 7 part numbers covering 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/4\" NPTF (male) × 5/8\" Hose in the Aeroquip 190627 Series Male Pipes?",
+          "a": "Quote 38-190627-12-12 for 3/4\" NPTF (male) × 5/8\" Hose, 38-190627-6-6 for 3/8\"-18 Nptf (male) and 38-190627-4-6 for 1/4\" NPTF (male) × 3/8\" Hose. The Aeroquip 190627 Series Male Pipes list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 190627 Series Male Pipes are available?",
+          "a": "The Aeroquip 190627 Series Male Pipes come in 7 part numbers covering 1/8\" to 3/4\". Examples from the table: 38-190627-2-4 (1/8\" NPTF (male) × 3/16\" Hose), 38-190627-4-5 (1/4\" NPTF (male) × 1/4\" Hose) and 38-190627-8-10 (1/2\" NPTF (male) × 5/8\" Hose). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 190627 Series Male Pipes for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 190627 Series Male Pipes only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 38-190627-2-4 (1/8\" NPTF (male) × 3/16\" Hose) and 38-190627-8-10 (1/2\" NPTF (male) × 5/8\" Hose)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 190627 Series Male Pipes?",
+          "a": "No working pressure is published for the Aeroquip 190627 Series Male Pipes, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 190627 Series Male Pipes made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 190627 Series Male Pipes are made from brass, brass and carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 190627 Series Male Pipes conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 190627 Series Male Pipes names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 190627 Series Male Pipes, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 190627 Series Male Pipes: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 190627 Series Male Pipes seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 190627 Series Male Pipes seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 190627 Series Male Pipes differ from the Aeroquip 4738 Series Male Pipes?",
+          "a": "They are different catalogue series: the Aeroquip 190627 Series Male Pipes is 190627 and the [Aeroquip 4738 Series Male Pipes](/p/aeroquip-4738-series-male-pipes) is 4738, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Match the threads and seats on your own ports before choosing between them."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 190627 Series Male Pipes made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 190627 Series Male Pipes as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 190627 Series Male Pipes in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 190627 Series Male Pipes sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-190773-series-45-deg-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 190773 Series 45 Deg. Elbows used for?",
+          "a": "The Aeroquip 190773 Series 45 Deg. Elbows are elbows from Eaton Aeroquip that turn the line through 45 degrees. They come in 10 part numbers covering 7/16\" to 1 5/16\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" SAE 45 (female) in the Aeroquip 190773 Series 45 Deg. Elbows?",
+          "a": "Quote 190773-5S for 1/2\" SAE 45 (female), 190773-16S for 1 5/16\" SAE 45 (female) and 190773-8S for 3/4\" SAE 45 (female). The Aeroquip 190773 Series 45 Deg. Elbows list 10 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 190773 Series 45 Deg. Elbows are available?",
+          "a": "The Aeroquip 190773 Series 45 Deg. Elbows come in 10 part numbers covering 7/16\" to 1 5/16\". Examples from the table: 190371-6S (5/8\" SAE 45 (male)), 190773-10S (7/8\" SAE 45 (female)) and 190773-6S (9/16\" SAE 45 (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 190773 Series 45 Deg. Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 190773 Series 45 Deg. Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 190371-8S (3/4\" SAE 45 (male)) and 190297-4S (7/16\" SAE 45 (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 190773 Series 45 Deg. Elbows?",
+          "a": "No working pressure is published for the Aeroquip 190773 Series 45 Deg. Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 190773 Series 45 Deg. Elbows made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 190773 Series 45 Deg. Elbows are made from carbon steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 190773 Series 45 Deg. Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 190773 Series 45 Deg. Elbows names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 190773 Series 45 Deg. Elbows, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 190773 Series 45 Deg. Elbows: SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 190773 Series 45 Deg. Elbows seal, and what should I check when fitting them?",
+          "a": "The 45° flare end of the Aeroquip 190773 Series 45 Deg. Elbows seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 190773 Series 45 Deg. Elbows differ from the Aeroquip 190627 Series Male Pipes?",
+          "a": "The Aeroquip 190773 Series 45 Deg. Elbows has 190773 where the [Aeroquip 190627 Series Male Pipes](/p/aeroquip-190627-series-male-pipes) has 190627, and 45 Deg. Elbows where it has Male Pipes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 190773 Series 45 Deg. Elbows made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 190773 Series 45 Deg. Elbows as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 190773 Series 45 Deg. Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 190773 Series 45 Deg. Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-1a-series-male-boss-o-rings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 1A Series Male Boss O-Rings used for?",
+          "a": "The Aeroquip 1A Series Male Boss O-Rings is an adapter from Eaton Aeroquip that connects the two end types named in its title and size table. The maker lists it for General Purpose Low And Medium Pressure Hydraulics. Use H277 Or H435 Where Shock Hazards Exist. It comes in 11 part numbers covering 7/16\" to 1 7/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 9/16\" Sae (male) in the Aeroquip 1A Series Male Boss O-Rings?",
+          "a": "Quote 1AA6MB6 for 9/16\" Sae (male), 1AA12MB12 for 1 1/16\" Sae (male) and 1AA6MB4 for 9/16\" Sae (male). The Aeroquip 1A Series Male Boss O-Rings lists 11 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip 1A Series Male Boss O-Rings come in?",
+          "a": "The Aeroquip 1A Series Male Boss O-Rings comes in 11 part numbers covering 7/16\" to 1 7/8\". Examples from the table: 1AA8MB6 (3/4\" Sae (male)), 1AA10MB8 (7/8\" Sae (male)) and 1AA5MB4 (1/2\" Sae (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 1A Series Male Boss O-Rings for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 1A Series Male Boss O-Rings only seals when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 1AA8MB8 (3/4\" Sae (male)) and 1AA4MB4 (7/16\" Sae (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 1A Series Male Boss O-Rings?",
+          "a": "No working pressure is published for the Aeroquip 1A Series Male Boss O-Rings, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 1A Series Male Boss O-Rings made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip 1A Series Male Boss O-Rings in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip 1A Series Male Boss O-Rings conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 1A Series Male Boss O-Rings names no product standard beyond the thread type. ORB ports follow SAE J1926. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 1A Series Male Boss O-Rings, and which fittings do I pair it with?",
+          "a": "For the Aeroquip 1A Series Male Boss O-Rings: O-ring boss ends screw into SAE O-ring boss ports and seal on the O-ring. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip 1A Series Male Boss O-Rings seal, and what should I check when fitting it?",
+          "a": "An O-ring boss end of the Aeroquip 1A Series Male Boss O-Rings seals on its O-ring, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip 1A Series Male Boss O-Rings differ from the Aeroquip 190627 Series Male Pipes?",
+          "a": "The Aeroquip 1A Series Male Boss O-Rings has 1A where the [Aeroquip 190627 Series Male Pipes](/p/aeroquip-190627-series-male-pipes) has 190627, and Boss O-Rings where it has Pipes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 1A Series Male Boss O-Rings made, and can you export it from Dubai?",
+          "a": "Eaton Aeroquip lists the Aeroquip 1A Series Male Boss O-Rings as made in United States. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 1A Series Male Boss O-Rings in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 1A Series Male Boss O-Rings sits in our Dubai, UAE warehouse and ships worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-4738-series-male-pipes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 4738 Series Male Pipes used for?",
+          "a": "The Aeroquip 4738 Series Male Pipes are pipes from Eaton Aeroquip that connect the two end types named in its title and size table. They come in 7 part numbers covering 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/8\" Hose Barb (male) × 3/8\" NPTF (male) in the Aeroquip 4738 Series Male Pipes?",
+          "a": "Quote 4738-6-6B for 3/8\" Hose Barb (male) × 3/8\" NPTF (male), 4738-4-4B for 1/4\" Hose Barb (male) × 1/4\" NPTF (male) and 4738-8-8B for 1/2\" Nptf (male). The Aeroquip 4738 Series Male Pipes list 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip 4738 Series Male Pipes come in?",
+          "a": "The Aeroquip 4738 Series Male Pipes come in 7 part numbers covering 1/4\" to 3/4\". Examples from the table: 4738-12-12B (3/4\" Hose Barb (male) × 3/4\" NPTF (male)), 4738-6-8B (3/8\" Nptf (male)) and 4738-8-10B (5/8\" Hose Barb (male) × 1/2\" NPTF (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 4738 Series Male Pipes for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 4738 Series Male Pipes only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 4738-12-12B (3/4\" Hose Barb (male) × 3/4\" NPTF (male)) and 4738-8-10B (5/8\" Hose Barb (male) × 1/2\" NPTF (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 4738 Series Male Pipes?",
+          "a": "No working pressure is published for the Aeroquip 4738 Series Male Pipes, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 4738 Series Male Pipes made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 4738 Series Male Pipes are made from brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 4738 Series Male Pipes conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 4738 Series Male Pipes names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 4738 Series Male Pipes, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 4738 Series Male Pipes: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 4738 Series Male Pipes seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 4738 Series Male Pipes seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 4738 Series Male Pipes differ from the Aeroquip 4753 Series Female Pipes?",
+          "a": "The Aeroquip 4738 Series Male Pipes has 4738 where the [Aeroquip 4753 Series Female Pipes](/p/aeroquip-4753-series-female-pipes) has 4753, and Male where it has Female. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 4738 Series Male Pipes made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 4738 Series Male Pipes as made in United States. The HS code on the listing is 7412200045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 4738 Series Male Pipes in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 4738 Series Male Pipes sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-4753-series-female-pipes",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip 4753 Series Female Pipes used for?",
+          "a": "The Aeroquip 4753 Series Female Pipes are pipes from Eaton Aeroquip that connect the two end types named in its title and size table. They come in 3 part numbers covering 1/4\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" Hose Barb (male) × 1/2\" NPTF (female) in the Aeroquip 4753 Series Female Pipes?",
+          "a": "Quote 4753-8-8B for 1/2\" Hose Barb (male) × 1/2\" NPTF (female), 4753-4-4B for 1/4\" Hose Barb (male) × 1/4\" NPTF (female) and 4753-6-6B for 3/8\" Hose Barb (male) × 3/8\" NPT (female). The Aeroquip 4753 Series Female Pipes list 3 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Aeroquip 4753 Series Female Pipes are available?",
+          "a": "The Aeroquip 4753 Series Female Pipes come in 3 part numbers covering 1/4\" to 1/2\". Examples from the table: 4753-8-8B (1/2\" Hose Barb (male) × 1/2\" NPTF (female)), 4753-4-4B (1/4\" Hose Barb (male) × 1/4\" NPTF (female)) and 4753-6-6B (3/8\" Hose Barb (male) × 3/8\" NPT (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip 4753 Series Female Pipes for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip 4753 Series Female Pipes only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 4753-8-8B (1/2\" Hose Barb (male) × 1/2\" NPTF (female)) and 4753-6-6B (3/8\" Hose Barb (male) × 3/8\" NPT (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip 4753 Series Female Pipes?",
+          "a": "No working pressure is published for the Aeroquip 4753 Series Female Pipes, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip 4753 Series Female Pipes made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip 4753 Series Female Pipes are made from brass. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip 4753 Series Female Pipes conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip 4753 Series Female Pipes names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip 4753 Series Female Pipes, and which fittings do I pair them with?",
+          "a": "For the Aeroquip 4753 Series Female Pipes: NPTF Dryseal ends take NPTF ports or fittings, male to female. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip 4753 Series Female Pipes seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip 4753 Series Female Pipes seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip 4753 Series Female Pipes differ from the Aeroquip 4738 Series Male Pipes?",
+          "a": "The Aeroquip 4753 Series Female Pipes has 4753 where the [Aeroquip 4738 Series Male Pipes](/p/aeroquip-4738-series-male-pipes) has 4738, and Female where it has Male. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip 4753 Series Female Pipes made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip 4753 Series Female Pipes as made in United States. The HS code on the listing is 7412200045. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 4753 Series Female Pipes in Dubai, and how do I get a quote?",
+          "a": "Yes. The Aeroquip 4753 Series Female Pipes sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-crimp-male-sae-inverted-flare-swivel-hydraulic-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting used for and which hoses does it fit?",
+          "a": "The Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting is swivel a crimp hose fitting from Eaton Aeroquip, with an inverted flare thread at 45°. The maker lists it for hoses in the 2661(-12 THROUGH -32), FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B, FC693, FC735, FC849/FC849B, GH120 series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 7/16\" Inverted Flare (male) × 1/4\" Crimp in the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting?",
+          "a": "Quote 1AA4MFA4 for 7/16\" Inverted Flare (male) × 1/4\" Crimp, 1AA5MFB4 for 1/2\" Inverted Flare (male) × 1/4\" Crimp and 1AA6MFB6 for 5/8\" Inverted Flare (male) × 3/8\" Crimp. The Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting lists 7 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting come in?",
+          "a": "The Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting comes in 7 part numbers covering 7/16\" to 5/8\". Examples from the table: 1AA4MFB4 (7/16\" Inverted Flare (male) × 1/4\" Crimp), 1AA5MF4 (1/2\" Inverted Flare (male) × 1/4\" Crimp) and 1AA6MFA6 (5/8\" Inverted Flare (male) × 3/8\" Crimp). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting for my hose and port?",
+          "a": "Choose the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 1AA4MFB4 (7/16\" Inverted Flare (male) × 1/4\" Crimp) and 1AA6MFA6 (5/8\" Inverted Flare (male) × 3/8\" Crimp)."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting?",
+          "a": "The maker publishes no pressure figure for the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting: a crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the part number and we check the fitting against the hose before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting is made from steel. Finish: Trivalent Chromium Zinc Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting mate with?",
+          "a": "The maker lists the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting for hoses in the 2661(-12 THROUGH -32), FC310, FC510, FC579, FC611, FC619 (-12 THROUGH -32), FC639/FC839B, FC693, FC735, FC849/FC849B, GH120 series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. For other thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How does the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting seal, and what should I check when fitting it?",
+          "a": "The 45° flare end of the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting differ from its nearest sibling?",
+          "a": "The Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting and the [Aeroquip 190111 Series Straight SAE Male Inverted Flare Hose Fittings](/p/aeroquip-190111-series-straight-sae-male-inverted-flare-hose-fittings) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Aeroquip Crimp Male SAE Inverted Flare Swivel Hydraulic Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-fc5853-series-female-npsm-swivels",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip FC5853 Series Female NPSM Swivels used for?",
+          "a": "The Aeroquip FC5853 Series Female NPSM Swivels are swivels from Eaton Aeroquip that join two ports where one end must turn freely while it is made up. They come in 4 part numbers covering 1/4\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" Npsm (female) × 1/2\" Hose Barb (male) in the Aeroquip FC5853 Series Female NPSM Swivels?",
+          "a": "Quote FC5853-0808S for 1/2\" Npsm (female) × 1/2\" Hose Barb (male), FC5853-1212S for 3/4\" Npsm (female) × 3/4\" Hose Barb (male) and FC5853-0606S for 3/8\" Npsm (female) × 3/8\" Hose Barb (male). The Aeroquip FC5853 Series Female NPSM Swivels list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip FC5853 Series Female NPSM Swivels come in?",
+          "a": "The Aeroquip FC5853 Series Female NPSM Swivels come in 4 part numbers covering 1/4\" to 3/4\". Examples from the table: FC5853-0404S (1/4\" Npsm (female) × 1/4\" Hose Barb (male)) and FC5853-1212S (3/4\" Npsm (female) × 3/4\" Hose Barb (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip FC5853 Series Female NPSM Swivels for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Aeroquip FC5853 Series Female NPSM Swivels only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: FC5853-0404S (1/4\" Npsm (female) × 1/4\" Hose Barb (male)) and FC5853-0606S (3/8\" Npsm (female) × 3/8\" Hose Barb (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip FC5853 Series Female NPSM Swivels?",
+          "a": "No working pressure is published for the Aeroquip FC5853 Series Female NPSM Swivels, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip FC5853 Series Female NPSM Swivels made from, and is it suitable for my fluid?",
+          "a": "The Aeroquip FC5853 Series Female NPSM Swivels are made from steel. Finish: Trivalent Chromium Zinc Plated. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip FC5853 Series Female NPSM Swivels conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip FC5853 Series Female NPSM Swivels names no product standard beyond the thread type. NPSM threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Aeroquip FC5853 Series Female NPSM Swivels, and which fittings do I pair them with?",
+          "a": "For the Aeroquip FC5853 Series Female NPSM Swivels: NPSM swivel ends take a male end with the matching seat, because an NPSM thread does not seal on the thread. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For other sizes and thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip FC5853 Series Female NPSM Swivels seal, and what should I check when fitting them?",
+          "a": "An NPSM end of the Aeroquip FC5853 Series Female NPSM Swivels does not seal on the thread; it seals on its seat, so check the seat as well as the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip FC5853 Series Female NPSM Swivels differ from the Aeroquip 4753 Series Female Pipes?",
+          "a": "The Aeroquip FC5853 Series Female NPSM Swivels has FC5853 where the [Aeroquip 4753 Series Female Pipes](/p/aeroquip-4753-series-female-pipes) has 4753, and NPSM Swivels where it has Pipes. Compare the two size tables, because the sizes and part numbers are not the same. Measure the port you are fitting to before you pick one."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip FC5853 Series Female NPSM Swivels made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Aeroquip FC5853 Series Female NPSM Swivels as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip FC5853 Series Female NPSM Swivels in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip FC5853 Series Female NPSM Swivels are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-male-npt-crimp-hose-fittings-steel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Aeroquip Male NPT Crimp Hose Fittings, Steel used for and which hoses does it fit?",
+          "a": "The Aeroquip Male NPT Crimp Hose Fittings, Steel are crimp hose fittings from Eaton Aeroquip, with a nptf thread. The maker lists them for hoses in the 3TR18CT, 3TR7, 3TR7N, 3TR8, 3TR8N series."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 1/2\" NPTF (male) × 1/2\" Crimp (female) in the Aeroquip Male NPT Crimp Hose Fittings, Steel?",
+          "a": "Quote 4TA8MP8 for 1/2\" NPTF (male) × 1/2\" Crimp (female), 4TA6MP6 for 3/8\" NPTF (male) × 3/8\" Crimp (female) and 4TA4MP5 for 1/4\" NPTF (male) × 5/16\" Crimp (female). The Aeroquip Male NPT Crimp Hose Fittings, Steel list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Aeroquip Male NPT Crimp Hose Fittings, Steel come in?",
+          "a": "The Aeroquip Male NPT Crimp Hose Fittings, Steel come in 4 part numbers covering 1/4\" to 1/2\". Examples from the table: 4TA4MP4 (1/4\" NPTF (male) × 1/4\" Crimp (female)) and 4TA6MP6 (3/8\" NPTF (male) × 3/8\" Crimp (female)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Aeroquip Male NPT Crimp Hose Fittings, Steel for my hose and port?",
+          "a": "Choose the Aeroquip Male NPT Crimp Hose Fittings, Steel by the hose first, then by the port: the hose size sets the fitting size and the thread and seat must match the port it connects to. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number. Example rows: 4TA4MP4 (1/4\" NPTF (male) × 1/4\" Crimp (female)) and 4TA4MP5 (1/4\" NPTF (male) × 5/16\" Crimp (female))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Aeroquip Male NPT Crimp Hose Fittings, Steel?",
+          "a": "The maker states 3,000 psi (207 bar) for the Aeroquip Male NPT Crimp Hose Fittings, Steel. Take the figure from the row for your part number; an assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Aeroquip Male NPT Crimp Hose Fittings, Steel made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Aeroquip Male NPT Crimp Hose Fittings, Steel in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Aeroquip Male NPT Crimp Hose Fittings, Steel conform to, and can I get test certificates?",
+          "a": "The listing for the Aeroquip Male NPT Crimp Hose Fittings, Steel names no product standard beyond the thread type. NPTF Dryseal threads follow ASME B1.20.3 and NPT threads follow ASME B1.20.1. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What hose and port does the Aeroquip Male NPT Crimp Hose Fittings, Steel mate with?",
+          "a": "The maker lists the Aeroquip Male NPT Crimp Hose Fittings, Steel for hoses in the 3TR18CT, 3TR7, 3TR7N, 3TR8, 3TR8N series. Quote the hose type and size with the part number so the fitting, ferrule and crimp specification can be checked against the hose. On the port end, NPTF Dryseal ends take NPTF ports or fittings, male to female. For other thread styles, see the [NPT / NPSM / SAE Hose Fittings](/c/npt-npsm-sae-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Aeroquip Male NPT Crimp Hose Fittings, Steel seal, and what should I check when fitting them?",
+          "a": "A tapered NPT or NPTF end of the Aeroquip Male NPT Crimp Hose Fittings, Steel seals on the thread, with PTFE tape or an anaerobic sealant on plain NPT. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Aeroquip Male NPT Crimp Hose Fittings, Steel differ from the SAE Male 45° Cone Hose Fitting?",
+          "a": "The Aeroquip Male NPT Crimp Hose Fittings, Steel and the [SAE Male 45° Cone Hose Fitting](/p/sae-male-45-cone-hose-fitting) are separate listings with different connection combinations and part numbers. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Aeroquip Male NPT Crimp Hose Fittings, Steel made, and can you export them from Dubai?",
+          "a": "The country of origin of the Aeroquip Male NPT Crimp Hose Fittings, Steel is confirmed on the quotation. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Male NPT Crimp Hose Fittings, Steel in Dubai, and how do I get a quote?",
+          "a": "Yes, they are held ex-stock. The Aeroquip Male NPT Crimp Hose Fittings, Steel are kept at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; send your part numbers and quantities on the [contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-e-series-inverted-male-swivel-45-deg-tube-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows used for?",
+          "a": "The Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows are elbows from Eaton Aeroquip that turn the line through 45 degrees. The maker lists them for General Purpose Low And Medium Pressure Hydraulics. Use H277 Or H435 Where Shock Hazards Exist. They come in 5 part numbers covering 3/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/8\" Inverted (male) in the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows?",
+          "a": "Quote 04E-B43 for 3/8\" Inverted (male), 06E-B46 for 5/8\" Inverted (male) and 04E-B44 for 7/16\" Inverted (male). The Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows list 5 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes of the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows are available?",
+          "a": "The Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows come in 5 part numbers covering 3/8\" to 3/4\". Examples from the table: 06E-B45 (1/2\" Inverted (male)) and 08E-B48 (3/4\" Inverted (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 06E-B45 (1/2\" Inverted (male)) and 08E-B48 (3/4\" Inverted (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows?",
+          "a": "No working pressure is published for the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows, and which fittings do I pair them with?",
+          "a": "For the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows: SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows seal, and what should I check when fitting them?",
+          "a": "The 45° flare end of the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows differ from the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows?",
+          "a": "They are different catalogue series: the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows is 45 and the [Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows](/p/eaton-e-series-inverted-male-swivel-90-deg-tube-elbows) is 90, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. We keep the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-e-series-inverted-male-swivel-90-deg-tube-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows used for?",
+          "a": "The Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows are elbows from Eaton Aeroquip that turn the line through 90 degrees. The maker lists them for General Purpose Low And Medium Pressure Hydraulics. Use H277 Or H435 Where Shock Hazards Exist. They come in 4 part numbers covering 3/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What is the part number for 3/8\" Mpt (male) in the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows?",
+          "a": "Quote 04E-B63 for 3/8\" Mpt (male), 08E-B68 for 3/4\" Mpt (male) and 06E-B66 for 5/8\" Mpt (male). The Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows list 4 part numbers, each with its own size and connections."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers do the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows come in?",
+          "a": "The Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows come in 4 part numbers covering 3/8\" to 3/4\". Examples from the table: 06E-B65 (1/2\" Mpt (male)) and 08E-B68 (3/4\" Mpt (male)). The size table gives the connections and dimensions for every one."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows for my port threads?",
+          "a": "Identify the thread and the seat on each port you are fitting to, because the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows only seal when both ends match the port they go into. Flares, tapers and parallel threads can look alike, so measure the thread and note the seat before ordering. Then pick the row: 06E-B65 (1/2\" Mpt (male)) and 06E-B66 (5/8\" Mpt (male))."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows?",
+          "a": "No working pressure is published for the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows, so do not assume one. Send the working pressure of your line and we confirm the fitting is suitable before supply; the assembly is limited by whichever component is rated lowest."
+        },
+        {
+          "slot": "F",
+          "q": "What are the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows made from, and is it suitable for my fluid?",
+          "a": "The item descriptions in the size table show the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows in steel. The listing carries no fluid-compatibility chart, so tell us the fluid and temperature and we will confirm the material before supply."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows conform to, and can I get test certificates?",
+          "a": "The listing for the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows names no product standard beyond the thread type. SAE 45° flares follow SAE J512. Material test certificates are not listed, so say which documents you need when you enquire."
+        },
+        {
+          "slot": "H",
+          "q": "What mates with the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows, and which fittings do I pair them with?",
+          "a": "For the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows: SAE 45° flare ends take 45° flare nuts or ports, not JIC 37°. If you only have the old part, send the thread and seat on each end and we confirm the match before supply. For the other end, see the [DIN Hose Fittings](/c/din-hose-fittings) range."
+        },
+        {
+          "slot": "I",
+          "q": "How do the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows seal, and what should I check when fitting them?",
+          "a": "The 45° flare end of the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows seals on its 45° seat, not on the thread. Inspect the seat for scoring or burrs and the seal for cuts before you make up the joint, and do not over-tighten. The guide on [it burst at the fitting, not mid-length: what that tells you](/blog/hose-burst-at-the-fitting) covers it in detail."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows differ from the Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows?",
+          "a": "They are different catalogue series: the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows is 90 and the [Eaton E Series Inverted Male Swivel 45 Deg. Tube Elbows](/p/eaton-e-series-inverted-male-swivel-45-deg-tube-elbows) is 45, with different connection combinations and sizes. Compare the two size tables, because the sizes and part numbers are not the same. Choose by the thread and seat on your port, not by the name alone."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows made, and what HS code and export terms apply?",
+          "a": "Eaton Aeroquip lists the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows as made in United States. The HS code on the listing is 7307929000. We export from Dubai, and orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows in Dubai, and how do I get a quote?",
+          "a": "Yes. The Eaton E Series Inverted Male Swivel 90 Deg. Tube Elbows sit in our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the part numbers and quantities through [the contact page](/contact) and we will come back with a quotation."
+        }
+      ]
+    }
+  ]
+}

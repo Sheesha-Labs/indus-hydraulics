@@ -1,0 +1,1566 @@
+{
+  "family": "cartridge-pressure-control-valves-03",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "sun-hydraulics-prdn-electro-proportional-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command (PRDN) and what does it do?",
+          "a": "The Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command is a screw-in cartridge valve from Sun Hydraulics, listed as PRDN. A direct-acting reducing/relieving cartridge set by a proportional solenoid. The coil current sets the reduced pressure at port 1; if port 1 rises above it, the valve relieves to tank at port 3. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the PRDN valve mean?",
+          "a": "The first letters of a Sun model code are the base model, PRDN for the Sun PRDN valve; the letters after it choose the options. In PRDNXDN, PRDN is the base model and X is the control (No Manual Override), D is the setting range (400 - 200 psi (14 - 28 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Sun PRDN valve cover?",
+          "a": "The Sun PRDN valve is listed in 1 size: PRDN (series 1, 5 gpm (20 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Sun PRDN valve?",
+          "a": "For the Sun PRDN valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 2.5 in³/min. (41 cc/min). Setting ranges are chosen by code letter, for example B — 1000 - 400 psi (28 - 70 bar). 3 setting ranges are offered. Flow capacity runs 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coatings are offered on the Sun PRDN valve?",
+          "a": "The Sun PRDN valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (HN24AA, HN24AB), the control must be X."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun PRDN valve adjusted?",
+          "a": "The Sun PRDN valve is set by the control chosen by code letter: X — No Manual Override. The setting range is a separate letter, with 3 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command (PRDN)?",
+          "a": "Seal kits for the Sun PRDN cartridge are series 1 (Buna 990511007, Viton 990511006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun PRDN cartridge valve?",
+          "a": "The Sun PRDN valve screws into a cavity machined to Sun's drawing for its series: T-11A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command used?",
+          "a": "Typical use of the Sun PRDN valve: electronic pilot-pressure control of mobile and industrial valves, clutches, brakes and pump displacement. Standard versions rise with current; 'high setting with no command' versions fall with current. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PRDN valve differ from the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition, High Pressure Se?",
+          "a": "The [Sun PRDM valve](/p/sun-hydraulics-prdm-electro-proportional-reducing-relieving-valve) adds Open Transition compared with the Sun PRDN valve. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "L",
+          "q": "What do I need to drive the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command?",
+          "a": "A proportional amplifier with current control and adjustable dither, matched to the coil. Sun's XMD drivers are configured for its coils; the coil voltage and connector are ordering options. For the Sun PRDN valve the flow capacity is 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command in Dubai for export?",
+          "a": "Yes. We keep the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve, High Pressure Setting with No Command in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-prdp-electro-proportional-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve (PRDP) and what does it do?",
+          "a": "The Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve is a screw-in cartridge valve from Sun Hydraulics, listed as PRDP. A direct-acting reducing/relieving cartridge set by a proportional solenoid. The coil current sets the reduced pressure at port 1; if port 1 rises above it, the valve relieves to tank at port 3. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve (PRDP)?",
+          "a": "The letters PRDP are the base model of the Sun PRDP valve, giving valve type, frame size and variant; the letters that follow choose control and seal material. We confirm the full ordering code, for example against the machine drawing, with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve come in?",
+          "a": "The Sun PRDP valve is listed in 1 size: PRDP (series 1, 5 gpm (20 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve have?",
+          "a": "For the Sun PRDP valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 2.5 in³/min. (41 cc/min). Flow capacity runs 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve come with?",
+          "a": "The Sun PRDP valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (HN24AA, HN24AB), the control must be M or X; If the seal is E, the control must be E,L,M or X."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve adjusted, and which control options are offered?",
+          "a": "The Sun PRDP valve is set by the control chosen by code letter: M — Manual Override (Standard), E — Twist (Extended) Manual Override, L — Standard Screw Adjustment and X — No Manual Override. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve (PRDP)?",
+          "a": "Seal kits for the Sun PRDP cartridge are series 1 (Buna 990511007, Viton 990511006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve need?",
+          "a": "The Sun PRDP valve screws into a cavity machined to Sun's drawing for its series: T-11A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve used?",
+          "a": "Typical use of the Sun PRDP valve: electronic pilot-pressure control of mobile and industrial valves, clutches, brakes and pump displacement. Standard versions rise with current; 'high setting with no command' versions fall with current. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PRDP valve differ from the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve (740 Series)?",
+          "a": "The [Sun PRDG valve](/p/sun-hydraulics-prdg-electro-proportional-reducing-relieving-valve) adds (740 Series) compared with the Sun PRDP valve. This valve (PRDP): A direct-acting reducing/relieving cartridge set by a proportional solenoid."
+        },
+        {
+          "slot": "L",
+          "q": "What happens if the signal is lost on the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve?",
+          "a": "A standard valve drops to its lowest reduced pressure; a 'high setting with no command' valve goes to its factory high setting. Choose the fail-safe state your circuit needs. For the Sun PRDP valve the flow capacity is 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve in Dubai for export?",
+          "a": "Yes, we stock the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-prts-electro-proportional-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar) (PRTS) and what does it do?",
+          "a": "The Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar) is a screw-in cartridge valve from Sun Hydraulics, listed as PRTS. A direct-acting reducing/relieving cartridge set by a proportional solenoid. The coil current sets the reduced pressure at port 1; if port 1 rises above it, the valve relieves to tank at port 3. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the PRTS valve mean?",
+          "a": "The first letters of a Sun model code are the base model, PRTS for the Sun PRTS valve; the letters after it choose the options. In PRTSXDN, PRTS is the base model and X is the control (-), D is the setting range (0 - 435 psi) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Sun PRTS valve cover?",
+          "a": "The Sun PRTS valve is listed in 1 size: PRTS (series 0C, 1 gpm (4 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Sun PRTS valve?",
+          "a": "For the Sun PRTS valve, maximum operating pressure is 3000 psi (210 bar). Setting ranges are chosen by code letter, for example D — 0 - 435 psi. 2 setting ranges are offered. Flow capacity runs 1 gpm (4 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coatings are offered on the Sun PRTS valve?",
+          "a": "The Sun PRTS valve is offered with seal codes N — Buna-N. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun PRTS valve adjusted?",
+          "a": "The Sun PRTS valve is set by the control chosen by code letter: M — - and X — -. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar) (PRTS)?",
+          "a": "Sun supplies a seal kit for each cartridge series, and only the external seals of the Sun PRTS valve can be serviced. Send the model code and we will confirm the kit for your series and seal material. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun PRTS cartridge valve?",
+          "a": "The Sun PRTS valve screws into a cavity machined to Sun's drawing for its series: SC-08-03. Valve hex size is 7/8 in. (22,2 mm) with installation torque 21 - 23 lbf ft (28 - 31 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar) used?",
+          "a": "Typical use of the Sun PRTS valve: electronic pilot-pressure control of mobile and industrial valves, clutches, brakes and pump displacement. Standard versions rise with current; 'high setting with no command' versions fall with current. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PRTS valve differ from the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve?",
+          "a": "The Sun PRTS valve adds with Filter Screen 3000 psi (210 bar) compared with the [Sun PRDP valve](/p/sun-hydraulics-prdp-electro-proportional-reducing-relieving-valve). By the data, capacity 1 gpm (4 L/min) against 5 gpm (20 L/min); cavities SC-08-03 against T-11A, so the two do not swap."
+        },
+        {
+          "slot": "L",
+          "q": "What do I need to drive the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar)?",
+          "a": "A proportional amplifier with current control and adjustable dither, matched to the coil. Sun's XMD drivers are configured for its coils; the coil voltage and connector are ordering options. For the Sun PRTS valve the flow capacity is 1 gpm (4 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar)?",
+          "a": "Yes. We keep the Sun Electro-Proportional, Direct-Acting Pressure Reducing/Relieving Valve with Filter Screen, 3000 psi (210 bar) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-psdl-electro-proportional-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4 (PSDL) and what does it do?",
+          "a": "The Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4 is a screw-in cartridge valve from Sun Hydraulics, listed as PSDL. A direct-acting reducing/relieving cartridge set by a proportional solenoid. The coil current sets the reduced pressure at port 1; if port 1 rises above it, the valve relieves to tank at port 3. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the PSDL valve mean?",
+          "a": "The letters PSDL are the base model of the Sun PSDL valve, giving valve type, frame size and variant; the letters that follow choose control and seal material. We confirm the full ordering code, for example against the machine drawing, with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Sun PSDL valve cover?",
+          "a": "The Sun PSDL valve is listed in 1 size: PSDL (series 1, 5 gpm (20 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Sun PSDL valve?",
+          "a": "For the Sun PSDL valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 20 in³/min. (330 cc/min). Flow capacity runs 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coatings are offered on the Sun PSDL valve?",
+          "a": "The Sun PSDL valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (HN24AA, HN24AB), the control must be M."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun PSDL valve adjusted?",
+          "a": "The Sun PSDL valve is set by the control chosen by code letter: L — Standard Screw Adjustment and M — Manual Override (Standard). State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4 (PSDL)?",
+          "a": "Seal kits for the Sun PSDL cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun PSDL cartridge valve?",
+          "a": "The Sun PSDL valve screws into a cavity machined to Sun's drawing for its series: T-21A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4 used?",
+          "a": "Typical use of the Sun PSDL valve: electronic pilot-pressure control of mobile and industrial valves, clutches, brakes and pump displacement. Standard versions rise with current; 'high setting with no command' versions fall with current. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PSDL valve differ from the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4?",
+          "a": "The Sun PSDL valve adds Open Transition and compared with the [Sun PSDP valve](/p/sun-hydraulics-psdp-electro-proportional-reducing-relieving-valve). This valve (PSDL): A direct-acting reducing/relieving cartridge set by a proportional solenoid."
+        },
+        {
+          "slot": "L",
+          "q": "What happens if the signal is lost on the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4?",
+          "a": "A standard valve drops to its lowest reduced pressure; a 'high setting with no command' valve goes to its factory high setting. Choose the fail-safe state your circuit needs. For the Sun PSDL valve the flow capacity is 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4?",
+          "a": "Yes, we stock the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Open Transition and Drain to Port 4 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-psdp-electro-proportional-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 (PSDP) and what does it do?",
+          "a": "The Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 is a screw-in cartridge valve from Sun Hydraulics, listed as PSDP. A direct-acting reducing/relieving cartridge set by a proportional solenoid. The coil current sets the reduced pressure at port 1; if port 1 rises above it, the valve relieves to tank at port 3. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 (PSDP)?",
+          "a": "The letters PSDP are the base model of the Sun PSDP valve, giving valve type, frame size and variant; the letters that follow choose control and seal material. We confirm the full ordering code, for example against the machine drawing, with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 come in?",
+          "a": "The Sun PSDP valve is listed in 1 size: PSDP (series 1, 5 gpm (20 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 have?",
+          "a": "For the Sun PSDP valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 2.5 in³/min. (41 cc/min). Flow capacity runs 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 come with?",
+          "a": "The Sun PSDP valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (HN24AA, HN24AB), the control must be M."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 adjusted, and which control options are offered?",
+          "a": "The Sun PSDP valve is set by the control chosen by code letter: L — Standard Screw Adjustment and M — Manual Override (Standard). State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 (PSDP)?",
+          "a": "Seal kits for the Sun PSDP cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 need?",
+          "a": "The Sun PSDP valve screws into a cavity machined to Sun's drawing for its series: T-21A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 used?",
+          "a": "Typical use of the Sun PSDP valve: electronic pilot-pressure control of mobile and industrial valves, clutches, brakes and pump displacement. Standard versions rise with current; 'high setting with no command' versions fall with current. Variants add a port-4 drain, an open transition or 740-Series coils; the coil is an ordering option."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PSDP valve differ from the Sun Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4?",
+          "a": "The Sun PSDP valve adds Electro-Proportional compared with the [Sun PSDB valve](/p/sun-hydraulics-direct-acting-pressure-reducing-relieving-valve-drain-port-4). This valve (PSDP): A direct-acting reducing/relieving cartridge set by a proportional solenoid. The other (PSDB, PSFB and others) is a direct-acting reducing/relieving cartridge with a separate drain at port 4, so pressure in the tank line (port 3) does not shift its setting."
+        },
+        {
+          "slot": "L",
+          "q": "What do I need to drive the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4?",
+          "a": "A proportional amplifier with current control and adjustable dither, matched to the coil. Sun's XMD drivers are configured for its coils; the coil voltage and connector are ordering options. For the Sun PSDP valve the flow capacity is 5 gpm (20 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 from stock in the UAE and get a quotation?",
+          "a": "Yes. We hold the Sun Electro-Proportional, Direct-Acting, Pressure Reducing/Relieving Valve with Drain to Port 4 in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-pvdc8-reducing-relieving-main-stage-with-t-8a-pilot-cavity",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics PVDC8 cartridge valve and what does it do?",
+          "a": "The Sun Pilot-Operated, Pressure Reducing/Relieving Main Stage with Integral T-8A Control Cavity, Drilled Piston Orifice, and Drain to Port 4 is a screw-in cartridge valve from Sun Hydraulics, listed as PVDC8. A 3-way, normally open reducing/relieving main stage with an integral T-8A pilot cavity. The pilot cartridge fitted there sets the difference between the reduced pressure at port 1 and tank at port 3; the main stage carries the full flow both ways. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the PVDC8 valve mean?",
+          "a": "The first letters of a Sun model code are the base model, PVDC8 for the Sun PVDC8 valve; the letters after it choose the options. In PVDC8WN, PVDC8 is the base model and W is the setting range (100 psi (7 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Sun PVDC8 valve cover?",
+          "a": "The Sun PVDC8 valve is listed in 1 size: PVDC8 (series 1, 10 gpm (40 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Sun PVDC8 valve?",
+          "a": "For the Sun PVDC8 valve, maximum operating pressure is 5000 psi (350 bar). Setting ranges are chosen by code letter, for example D — 25 psi (1,7 bar). 2 setting ranges are offered. Flow capacity runs 10 gpm (40 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coatings are offered on the Sun PVDC8 valve?",
+          "a": "The Sun PVDC8 valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun PVDC8 valve adjusted?",
+          "a": "The listing for the Sun PVDC8 valve gives no separate control choice, so the setting follows its model code and the setting range ordered with it. Tell us the pressure you need to set and we will confirm the code."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit do I need for the Sun PVDC8 cartridge?",
+          "a": "Seal kits for the Sun PVDC8 cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun PVDC8 cartridge valve?",
+          "a": "The Sun PVDC8 valve screws into a cavity machined to Sun's drawing for its series: T-21A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Pilot-Operated, Pressure Reducing/Relieving Main Stage with Integral T-8A Control Cavity, Drilled Piston Orifice, and Drain to Port 4 used?",
+          "a": "Typical use of the Sun PVDC8 valve: remote or electro-proportional control of a reduced-pressure circuit from one cavity. The T-8A pilot cartridge is ordered separately. Pressure at port 3 adds one-for-one to the setting; keep it under 3,000 psi (210 bar)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PVDC8 valve differ from the Sun Pilot-Operated, Pressure Reducing/Relieving Main Stage with Integral T-8A Control Cavity and Drain to Port 4?",
+          "a": "The Sun PVDC8 valve adds Drilled Piston Orifice compared with the [Sun PVDA8 valve](/p/sun-hydraulics-pilot-operated-pressure-reducing-relieving-main-stage-t-8a-control-cavity-drain). Variants add a port-4 drain, a drilled piston orifice or an open transition."
+        },
+        {
+          "slot": "L",
+          "q": "Does pressure in the tank line change the setting on the Sun PVDC8 valve?",
+          "a": "On the 3-port versions, yes: pressure at port 3 adds one-for-one to the setting, and Sun limits it to 3,000 psi (210 bar). Versions with a drain at port 4 are not affected by it. For the Sun PVDC8 valve the flow capacity is 10 gpm (40 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Pilot-Operated, Pressure Reducing/Relieving Main Stage with Integral T-8A Control Cavity, Drilled Piston Orifice, and Drain to Port 4?",
+          "a": "Yes, we stock the Sun Pilot-Operated, Pressure Reducing/Relieving Main Stage with Integral T-8A Control Cavity, Drilled Piston Orifice, and Drain to Port 4 at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rbad-dual-direct-acting-pilot-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity (RBAD) and what does it do?",
+          "a": "The Sun Dual, Direct-Acting Relief Valve, Pilot Capacity is a screw-in cartridge valve from Sun Hydraulics, listed as RBAD. A pilot relief cartridge with back-to-back checks, so one adjustment remotely controls two pilot-operated valves, or provide thermal relief at each end of a cylinder or motor. The checks stop the two controlled valves talking to each other. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity (RBAD)?",
+          "a": "The first letters of a Sun model code are the base model, RBAD for the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity; the letters after it choose the options. In RBADLAN, RBAD is the base model and L is the control (Standard Screw Adjustment), A is the setting range (25 - 3000 psi (1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity come in?",
+          "a": "The Sun Dual, Direct-Acting Relief Valve, Pilot Capacity is listed in 1 size: RBAD (series 1, .25 gpm (1 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity have?",
+          "a": "For the Sun RBAD valve, leakage is up to 5 drops/min. (0,3 cc/min) and typical response time is 2 ms. Setting ranges are chosen by code letter, for example A — 25 - 3000 psi (1,7 - 210 bar). 6 setting ranges are offered. Flow capacity runs .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity come with?",
+          "a": "The Sun Dual, Direct-Acting Relief Valve, Pilot Capacity is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be L; If the modifier is /LH, the control must be L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity adjusted, and which control options are offered?",
+          "a": "The Sun RBAD valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment and O — Handknob with Panel Mount. The setting range is a separate letter, with 6 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity (RBAD)?",
+          "a": "Seal kits for the Sun RBAD cartridge are series 1 (Buna 990011007, Polyurethane 990011002, Viton 990011006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity need?",
+          "a": "The Sun Dual, Direct-Acting Relief Valve, Pilot Capacity screws into a cavity machined to Sun's drawing for its series: T-11A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity used?",
+          "a": "Typical use of the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity: cross-port thermal relief and paired remote control of pilot-operated valves. One adjustment controls two valves. Pressure at port 3 adds directly to the setting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity differ from the Sun Direct-Acting Relief Valve, Pilot Capacity?",
+          "a": "The Sun Dual, Direct-Acting Relief Valve, Pilot Capacity adds Dual compared with the [Sun Direct-Acting Relief Valve, Pilot Capacity](/p/sun-hydraulics-direct-acting-relief-valve-pilot-capacity). By the data, cavities T-11A against T-10A, T-3A, T-8A, so the two do not swap. The other (RBAC, RBAA and others) is a small direct-acting relief cartridge used to set other pilot-operated valves remotely, or as a thermal relief."
+        },
+        {
+          "slot": "L",
+          "q": "What is thermal relief on the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity?",
+          "a": "Relief of the pressure that builds in a trapped volume of oil as it heats up — for example a cylinder held by counterbalance valves in the sun. For the Sun RBAD valve the flow capacity is .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity in Dubai for export?",
+          "a": "Yes, we hold the Sun Dual, Direct-Acting Relief Valve, Pilot Capacity in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rban-electro-proportional-pilot-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command (RBAN) and what does it do?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command is a screw-in cartridge valve from Sun Hydraulics, listed as RBAN. A pilot-stage, direct-acting relief cartridge set by a proportional solenoid. The analog signal to the coil sets the pressure at which the poppet lifts, giving step-less electronic adjustment within the chosen range. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command (RBAN)?",
+          "a": "The first letters of a Sun model code are the base model, RBAN for the Sun RBAN valve; the letters after it choose the options. In RBANXAN, RBAN is the base model and X is the control (No Manual Override), A is the setting range (3000 - 1500 psi (105 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command come in?",
+          "a": "The Sun RBAN valve is listed in 1 size: RBAN (series P, .25 gpm (1 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command have?",
+          "a": "For the Sun RBAN valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 1.5 in³/min. (25 cc/min). Setting ranges are chosen by code letter, for example A — 3000 - 1500 psi (105 - 210 bar). 4 setting ranges are offered. Flow capacity runs .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command come with?",
+          "a": "The Sun RBAN valve is offered with seal codes L — Extended Temp. Buna, N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (224, HN24AA, HN24AB), the control must be X."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command adjusted, and which control options are offered?",
+          "a": "The Sun RBAN valve is set by the control chosen by code letter: X — No Manual Override. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command (RBAN)?",
+          "a": "Seal kits for the Sun RBAN cartridge are series P (Buna 990208007, Viton 990208006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command need?",
+          "a": "The Sun RBAN valve screws into a cavity machined to Sun's drawing for its series: T-8A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 20 - 25 lbf ft (27 - 33 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command used?",
+          "a": "Typical use of the Sun RBAN valve: electronic pressure control of main-stage reliefs, reducing and sequence valves, with an XMD or other proportional driver. Pilot-flow capacity only. Coil ordered separately or as configured."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RBAN valve differ from the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series)?",
+          "a": "The Sun RBAN valve and the [Sun RPEN valve](/p/sun-hydraulics-rpen-electro-proportional-pilot-operated-relief-valve) differ in their names by \"Pilot Capacity\" here against \"(740 Series)\" there. By the data, cavities T-8A against T-10A, so the two do not swap. The other (RPEN) is a 2-port, pilot-operated relief cartridge whose setting is controlled by a proportional solenoid, giving step-less electronic control of system pressure at full flow."
+        },
+        {
+          "slot": "L",
+          "q": "Which driver do I need on the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command?",
+          "a": "Any proportional amplifier rated for the coil; Sun's XMD drivers are configured for its coils. For the Sun RBAN valve the flow capacity is .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, we stock the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rbap-electro-proportional-pilot-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional Relief Valve, Pilot Capacity (RBAP) and what does it do?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity is a screw-in cartridge valve from Sun Hydraulics, listed as RBAP. A pilot-stage, direct-acting relief cartridge set by a proportional solenoid. The analog signal to the coil sets the pressure at which the poppet lifts, giving step-less electronic adjustment within the chosen range. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional Relief Valve, Pilot Capacity (RBAP)?",
+          "a": "The first letters of a Sun model code are the base model, RBAP for the Sun Electro-Proportional Relief Valve, Pilot Capacity; the letters after it choose the options. In RBAPXAN, RBAP is the base model and X is the control (No Manual Override), A is the setting range (300 - 3000 psi (20 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional Relief Valve, Pilot Capacity come in?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity is listed in 1 size: RBAP (series P, .25 gpm (1 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional Relief Valve, Pilot Capacity have?",
+          "a": "For the Sun RBAP valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 1.5 in³/min. (25 cc/min). Setting ranges are chosen by code letter, for example A — 300 - 3000 psi (20 - 210 bar). 4 setting ranges are offered. Flow capacity runs .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional Relief Valve, Pilot Capacity come with?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity is offered with seal codes N — Buna-N, L — Extended Temp. Buna, V — Viton and E — EPDM, and the material or coating options /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. EPDM seals are not allowed on modifier /LH; If the coil is in this group (HN24AA, HN24AB), the control must be M or X; If the modifier is /LH, the control must be X; If the seal is E, the control must be E,L,M,T or X."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional Relief Valve, Pilot Capacity adjusted, and which control options are offered?",
+          "a": "The Sun RBAP valve is set by the control chosen by code letter: X — No Manual Override, E — Twist (Extended) Manual Override, L — Manual Override - Adjustable, T — Tuning Adjustment and M — Manual Override. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional Relief Valve, Pilot Capacity (RBAP)?",
+          "a": "Seal kits for the Sun RBAP cartridge are series P (Buna 990208007, EPDM 990008014, Viton 990208006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional Relief Valve, Pilot Capacity need?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity screws into a cavity machined to Sun's drawing for its series: T-8A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 20 - 25 lbf ft (27 - 33 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional Relief Valve, Pilot Capacity used?",
+          "a": "Typical use of the Sun Electro-Proportional Relief Valve, Pilot Capacity: electronic pressure control of main-stage reliefs, reducing and sequence valves, with an XMD or other proportional driver. Pilot-flow capacity only. Coil ordered separately or as configured."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Electro-Proportional Relief Valve, Pilot Capacity differ from the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series)?",
+          "a": "The Sun Electro-Proportional Relief Valve, Pilot Capacity and the [Sun RPEP valve](/p/sun-hydraulics-rpep-electro-proportional-pilot-operated-relief-valve) differ in their names by \"Pilot Capacity\" here against \"Pilot-Operated (740 Series)\" there. By the data, cavities T-8A against T-10A, so the two do not swap. The other (RPEP) is a 2-port, pilot-operated relief cartridge whose setting is controlled by a proportional solenoid, giving step-less electronic control of system pressure at full flow."
+        },
+        {
+          "slot": "L",
+          "q": "Which driver do I need on the Sun Electro-Proportional Relief Valve, Pilot Capacity?",
+          "a": "Any proportional amplifier rated for the coil; Sun's XMD drivers are configured for its coils. For the Sun RBAP valve the flow capacity is .25 gpm (1 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun Electro-Proportional Relief Valve, Pilot Capacity in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We hold the Sun Electro-Proportional Relief Valve, Pilot Capacity in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rgfa-low-pressure-direct-acting-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Low-Pressure-Range, Direct-Acting Relief Valve (RGFA) and what does it do?",
+          "a": "The Sun Low-Pressure-Range, Direct-Acting Relief Valve is a screw-in cartridge valve from Sun Hydraulics, listed as RGFA. A direct-acting relief cartridge built for low settings. When pressure at port 1 reaches the setting it opens to tank at port 2 and throttles flow to limit the pressure rise. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Low-Pressure-Range, Direct-Acting Relief Valve (RGFA)?",
+          "a": "The first letters of a Sun model code are the base model, RGFA for the Sun Low-Pressure-Range, Direct-Acting Relief Valve; the letters after it choose the options. In RGFALCN, RGFA is the base model and L is the control (Standard Screw Adjustment), C is the setting range (18 - 50 psi (1) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Low-Pressure-Range, Direct-Acting Relief Valve come in?",
+          "a": "The Sun Low-Pressure-Range, Direct-Acting Relief Valve is listed in 1 size: RGFA (series 2, 50 gpm (200 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Low-Pressure-Range, Direct-Acting Relief Valve have?",
+          "a": "For the Sun RGFA valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 3 in³/min.@1000 psi (50 cc/min.@70 bar) and typical response time is 10 ms. Setting ranges are chosen by code letter, for example C — 18 - 50 psi (1,2 - 3,5 bar). 4 setting ranges are offered. Flow capacity runs 50 gpm (200 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Low-Pressure-Range, Direct-Acting Relief Valve come with?",
+          "a": "The Sun Low-Pressure-Range, Direct-Acting Relief Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the seal is E, the control must be C,K,L or O."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Low-Pressure-Range, Direct-Acting Relief Valve adjusted, and which control options are offered?",
+          "a": "The Sun RGFA valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment and O — Handknob with Panel Mount. The setting range is a separate letter, with 4 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Low-Pressure-Range, Direct-Acting Relief Valve (RGFA)?",
+          "a": "Seal kits for the Sun RGFA cartridge are series 2 (Buna 990203007, EPDM 990203014, Polyurethane 990003002, Viton 990203006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Low-Pressure-Range, Direct-Acting Relief Valve need?",
+          "a": "The Sun Low-Pressure-Range, Direct-Acting Relief Valve screws into a cavity machined to Sun's drawing for its series: T-3A. Valve hex size is 1 1/8 in. (28,6 mm) with installation torque 45 - 50 lbf ft (61 - 68 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Low-Pressure-Range, Direct-Acting Relief Valve used?",
+          "a": "Typical use of the Sun Low-Pressure-Range, Direct-Acting Relief Valve: low-pressure circuits: lubrication and cooling loops, charge and pilot supplies, and return-line protection. Not for load-holding duty. Accepts full pressure at port 2."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Low-Pressure-Range, Direct-Acting Relief Valve differ from the Sun Direct-Acting Relief Valve?",
+          "a": "The Sun Low-Pressure-Range, Direct-Acting Relief Valve adds Low-Pressure-Range compared with the [Sun Direct-Acting Relief Valve](/p/sun-hydraulics-direct-acting-relief-valve). This valve (RGFA): A direct-acting relief cartridge built for low settings. The other (RDBA, RDDA and others) is a normally closed, direct-acting relief cartridge that limits pressure."
+        },
+        {
+          "slot": "L",
+          "q": "Direct-acting or pilot-operated relief — which one on the Sun Low-Pressure-Range, Direct-Acting Relief Valve?",
+          "a": "Use a direct-acting valve to protect against over-pressure and shock: it is very fast and tolerant of dirt, and it is the safe choice when in doubt. Use a pilot-operated valve to regulate pressure, because its pressure rises little as flow increases and it is easy to adjust. For the Sun RGFA valve the flow capacity is 50 gpm (200 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Low-Pressure-Range, Direct-Acting Relief Valve in Dubai for export?",
+          "a": "Yes. We hold the Sun Low-Pressure-Range, Direct-Acting Relief Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rpen-electro-proportional-pilot-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) (RPEN) and what does it do?",
+          "a": "The Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) is a screw-in cartridge valve from Sun Hydraulics, listed as RPEN. A 2-port, pilot-operated relief cartridge whose setting is controlled by a proportional solenoid, giving step-less electronic control of system pressure at full flow. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) (RPEN)?",
+          "a": "The first letters of a Sun model code are the base model, RPEN for the Sun RPEN valve; the letters after it choose the options. In RPENLAN, RPEN is the base model and L is the control (Standard Screw Adjustment), A is the setting range (1500 - 3000 psi (105 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) come in?",
+          "a": "The Sun RPEN valve is listed in 1 size: RPEN (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) have?",
+          "a": "For the Sun RPEN valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 2 in³/min.@1000 psi (30 cc/min.@70 bar). Setting ranges are chosen by code letter, for example A — 1500 - 3000 psi (105 - 210 bar). 2 setting ranges are offered. Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) come with?",
+          "a": "The Sun RPEN valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) adjusted, and which control options are offered?",
+          "a": "The Sun RPEN valve is set by the control chosen by code letter: C — Concealed Manual Override and L — Standard Screw Adjustment. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) (RPEN)?",
+          "a": "Seal kits for the Sun RPEN cartridge are series 1 (Buna 990010007, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) need?",
+          "a": "The Sun RPEN valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) used?",
+          "a": "Typical use of the Sun RPEN valve: electronically controlled pressure on presses, winches, fan drives and test stands. Coil voltage and connector are configuration options. Use with a proportional driver and dither as recommended in the data."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RPEN valve differ from the Sun Electro-Proportional Relief Valve, Pilot Capacity, High Pressure Setting with No Command?",
+          "a": "The Sun RPEN valve and the [Sun RBAN valve](/p/sun-hydraulics-rban-electro-proportional-pilot-relief-valve) differ in their names by \"(740 Series)\" here against \"Pilot Capacity\" there. By the data, capacity 25 gpm (95 L/min) against .25 gpm (1 L/min); cavities T-10A against T-8A, so the two do not swap. The other (RBAN) is a pilot-stage, direct-acting relief cartridge set by a proportional solenoid."
+        },
+        {
+          "slot": "L",
+          "q": "What happens if the signal is lost on the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series)?",
+          "a": "It depends on the version. On the standard valve, pressure rises with coil current, so with no signal it sits at its lowest setting. The 'high setting with no command' version is spring-biased to its highest setting and current lowers it. Choose the fail-safe state your circuit needs. For the Sun RPEN valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Sun Electro-Proportional Relief Valve, High Pressure Setting with No Command (740 Series) at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rpep-electro-proportional-pilot-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) (RPEP) and what does it do?",
+          "a": "The Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) is a screw-in cartridge valve from Sun Hydraulics, listed as RPEP. A 2-port, pilot-operated relief cartridge whose setting is controlled by a proportional solenoid, giving step-less electronic control of system pressure at full flow. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) (RPEP)?",
+          "a": "The first letters of a Sun model code are the base model, RPEP for the Sun RPEP valve; the letters after it choose the options. In RPEPXAN, RPEP is the base model and X is the control (No Manual Override), A is the setting range (150 - 3000 psi (10.5 - 206 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) come in?",
+          "a": "The Sun RPEP valve is listed in 1 size: RPEP (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) have?",
+          "a": "For the Sun RPEP valve, maximum operating pressure is 5000 psi (350 bar) and leakage is up to 2 in³/min.@1000 psi (30 cc/min.@70 bar). Setting ranges are chosen by code letter, for example A — 150 - 3000 psi (10.5 - 206 bar). 2 setting ranges are offered. Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) come with?",
+          "a": "The Sun RPEP valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) adjusted, and which control options are offered?",
+          "a": "The Sun RPEP valve is set by the control chosen by code letter: M — Manual Override and X — No Manual Override. The setting range is a separate letter, with 2 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) (RPEP)?",
+          "a": "Seal kits for the Sun RPEP cartridge are series 1 (Buna 990010007, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) need?",
+          "a": "The Sun RPEP valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) used?",
+          "a": "Typical use of the Sun RPEP valve: electronically controlled pressure on presses, winches, fan drives and test stands. Coil voltage and connector are configuration options. Use with a proportional driver and dither as recommended in the data."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) differ from the Sun Electro-Proportional Relief Valve, Pilot Capacity?",
+          "a": "The Sun RPEP valve and the [Sun Electro-Proportional Relief Valve, Pilot Capacity](/p/sun-hydraulics-rbap-electro-proportional-pilot-relief-valve) differ in their names by \"Pilot-Operated (740 Series)\" here against \"Pilot Capacity\" there. By the data, capacity 25 gpm (95 L/min) against .25 gpm (1 L/min); cavities T-10A against T-8A, so the two do not swap. The other (RBAP) is a pilot-stage, direct-acting relief cartridge set by a proportional solenoid."
+        },
+        {
+          "slot": "L",
+          "q": "What happens if the signal is lost on the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series)?",
+          "a": "It depends on the version. On the standard valve, pressure rises with coil current, so with no signal it sits at its lowest setting. The 'high setting with no command' version is spring-biased to its highest setting and current lowers it. Choose the fail-safe state your circuit needs. For the Sun RPEP valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep the Sun Electro-Proportional Pilot-Operated Relief Valve (740 Series) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rvck-flex-series-solenoid-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented (RVCK) and what does it do?",
+          "a": "The Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented is a screw-in cartridge valve from Sun Hydraulics, listed as RVCK. A two-stage, balanced relief cartridge with a FLeX Series solenoid that switches the valve between venting (unloading the pump at low pressure) and relieving at its adjustable setting. The four versions differ in which state is the de-energised one. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented (RVCK)?",
+          "a": "The first letters of a Sun model code are the base model, RVCK for the Sun RVCK valve; the letters after it choose the options. In RVCKLJN, RVCK is the base model and L is the control (Standard Screw Adjustment), J is the setting range (300 - 5000 psi (20 - 350 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented come in?",
+          "a": "The Sun RVCK valve is listed in 1 size: RVCK (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented have?",
+          "a": "For the Sun RVCK valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 5 in³/min.@2000 psi (80 cc/min.@140 bar) and typical response time is 50 ms. Setting ranges are chosen by code letter, for example J — 300 - 5000 psi (20 - 350 bar). Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented come with?",
+          "a": "The Sun RVCK valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented adjusted, and which control options are offered?",
+          "a": "The Sun RVCK valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 1 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented (RVCK)?",
+          "a": "Seal kits for the Sun RVCK cartridge are series 1 (Buna 990010007, Polyurethane 990010002, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented need?",
+          "a": "The Sun RVCK valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented used?",
+          "a": "Typical use of the Sun RVCK valve: pump unloading at start-up and idle, and switching between working pressure and unloaded running on power units and mobile machines. Choose the de-energised state your circuit needs: vented or blocked. FLeX Series coils and connectors are ordered with the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCK valve differ from the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked?",
+          "a": "The Sun RVCK valve and the [Sun RVCN valve](/p/sun-hydraulics-rvcn-flex-series-solenoid-operated-relief-valve) differ in their names by \"Vented\" here against \"Blocked\" there. Choose the de-energised state your circuit needs: vented or blocked."
+        },
+        {
+          "slot": "L",
+          "q": "Normally vented or normally blocked on the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented?",
+          "a": "Normally vented unloads the pump whenever the coil is off — useful for easy starting. Normally blocked keeps relief pressure available unless the coil is energised. For the Sun RVCK valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented in Dubai for export?",
+          "a": "Yes. We keep the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rvcl-flex-series-solenoid-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent (RVCL) and what does it do?",
+          "a": "The Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent is a screw-in cartridge valve from Sun Hydraulics, listed as RVCL. A two-stage, balanced relief cartridge with a FLeX Series solenoid that switches the valve between venting (unloading the pump at low pressure) and relieving at its adjustable setting. The four versions differ in which state is the de-energised one. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent (RVCL)?",
+          "a": "The first letters of a Sun model code are the base model, RVCL for the Sun RVCL valve; the letters after it choose the options. In RVCLLJN, RVCL is the base model and L is the control (Standard Screw Adjustment), J is the setting range (300 - 5000 psi (20 - 350 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent come in?",
+          "a": "The Sun RVCL valve is listed in 1 size: RVCL (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent have?",
+          "a": "For the Sun RVCL valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 5 in³/min.@2000 psi (80 cc/min.@140 bar) and typical response time is 50 ms. Setting ranges are chosen by code letter, for example J — 300 - 5000 psi (20 - 350 bar). Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent come with?",
+          "a": "The Sun RVCL valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (211, 212, 212D, 214, 214D, 223, 224, 224D, 228, 228D, 612, 612D, 614, 614D, 624, 624D, 628, 628D, 712, 712D, 714, 714D, 724, 724D, 728, 728D, 812, 812D, 814, 814D, 824, 824D, 828, 828D, 912, 912D, 914, 914D, 924, 924D, 928, 928D, JM24BD, JM24CD, JN24BD, JN24CD), the range must be J."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent adjusted, and which control options are offered?",
+          "a": "The Sun RVCL valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 1 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent (RVCL)?",
+          "a": "Seal kits for the Sun RVCL cartridge are series 1 (Buna 990010007, Polyurethane 990010002, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent need?",
+          "a": "The Sun RVCL valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent used?",
+          "a": "Typical use of the Sun RVCL valve: pump unloading at start-up and idle, and switching between working pressure and unloaded running on power units and mobile machines. Choose the de-energised state your circuit needs: vented or blocked. FLeX Series coils and connectors are ordered with the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCL valve differ from the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block?",
+          "a": "The Sun RVCL valve and the [Sun RVCM valve](/p/sun-hydraulics-rvcm-flex-series-solenoid-operated-relief-valve) differ in their names by \"Vent\" here against \"Block\" there. Choose the de-energised state your circuit needs: vented or blocked."
+        },
+        {
+          "slot": "L",
+          "q": "Normally vented or normally blocked on the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent?",
+          "a": "Normally vented unloads the pump whenever the coil is off — useful for easy starting. Normally blocked keeps relief pressure available unless the coil is energised. For the Sun RVCL valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent from stock in the UAE and get a quotation?",
+          "a": "Yes. We hold the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rvcm-flex-series-solenoid-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block (RVCM) and what does it do?",
+          "a": "The Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block is a screw-in cartridge valve from Sun Hydraulics, listed as RVCM. A two-stage, balanced relief cartridge with a FLeX Series solenoid that switches the valve between venting (unloading the pump at low pressure) and relieving at its adjustable setting. The four versions differ in which state is the de-energised one. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block (RVCM)?",
+          "a": "The first letters of a Sun model code are the base model, RVCM for the Sun RVCM valve; the letters after it choose the options. In RVCMLJN, RVCM is the base model and L is the control (Standard Screw Adjustment), J is the setting range (300 - 5000 psi (20 - 350 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block come in?",
+          "a": "The Sun RVCM valve is listed in 1 size: RVCM (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block have?",
+          "a": "For the Sun RVCM valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 5 in³/min.@3000 psi (80 cc/min.@210 bar) and typical response time is 50 ms. Setting ranges are chosen by code letter, for example J — 300 - 5000 psi (20 - 350 bar). Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block come with?",
+          "a": "The Sun RVCM valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block adjusted, and which control options are offered?",
+          "a": "The Sun RVCM valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 1 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block (RVCM)?",
+          "a": "Seal kits for the Sun RVCM cartridge are series 1 (Buna 990010007, Polyurethane 990010002, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block need?",
+          "a": "The Sun RVCM valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block used?",
+          "a": "Typical use of the Sun RVCM valve: pump unloading at start-up and idle, and switching between working pressure and unloaded running on power units and mobile machines. Choose the de-energised state your circuit needs: vented or blocked. FLeX Series coils and connectors are ordered with the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCM valve differ from the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Vent?",
+          "a": "The Sun RVCM valve and the [Sun RVCL valve](/p/sun-hydraulics-rvcl-flex-series-solenoid-operated-relief-valve) differ in their names by \"Block\" here against \"Vent\" there. Choose the de-energised state your circuit needs: vented or blocked."
+        },
+        {
+          "slot": "L",
+          "q": "Normally vented or normally blocked on the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block?",
+          "a": "Normally vented unloads the pump whenever the coil is off — useful for easy starting. Normally blocked keeps relief pressure available unless the coil is energised. For the Sun RVCM valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block from stock in the UAE and get a quotation?",
+          "a": "Yes. We hold the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Energize to Block in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-rvcn-flex-series-solenoid-operated-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked (RVCN) and what does it do?",
+          "a": "The Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked is a screw-in cartridge valve from Sun Hydraulics, listed as RVCN. A two-stage, balanced relief cartridge with a FLeX Series solenoid that switches the valve between venting (unloading the pump at low pressure) and relieving at its adjustable setting. The four versions differ in which state is the de-energised one. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked (RVCN)?",
+          "a": "The first letters of a Sun model code are the base model, RVCN for the Sun RVCN valve; the letters after it choose the options. In RVCNLJN, RVCN is the base model and L is the control (Standard Screw Adjustment), J is the setting range (300 - 5000 psi (20 - 350 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked come in?",
+          "a": "The Sun RVCN valve is listed in 1 size: RVCN (series 1, 25 gpm (95 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked have?",
+          "a": "For the Sun RVCN valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 5 in³/min.@3000 psi (80 cc/min.@210 bar) and typical response time is 50 ms. Setting ranges are chosen by code letter, for example J — 300 - 5000 psi (20 - 350 bar). Flow capacity runs 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked come with?",
+          "a": "The Sun RVCN valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the coil is in this group (211, 212, 212D, 214, 214D, 223, 224, 224D, 228, 228D, 612, 612D, 614, 614D, 624, 624D, 628, 628D, 712, 712D, 714, 714D, 724, 724D, 728, 728D, 812, 812D, 814, 814D, 824, 824D, 828, 828D, 912, 912D, 914, 914D, 924, 924D, 928, 928D, JM24BD, JM24CD, JN24BD, JN24CD), the range must be J."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked adjusted, and which control options are offered?",
+          "a": "The Sun RVCN valve is set by the control chosen by code letter: L — Standard Screw Adjustment. The setting range is a separate letter, with 1 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked (RVCN)?",
+          "a": "Seal kits for the Sun RVCN cartridge are series 1 (Buna 990010007, Polyurethane 990010002, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked need?",
+          "a": "The Sun RVCN valve screws into a cavity machined to Sun's drawing for its series: T-10A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked used?",
+          "a": "Typical use of the Sun RVCN valve: pump unloading at start-up and idle, and switching between working pressure and unloaded running on power units and mobile machines. Choose the de-energised state your circuit needs: vented or blocked. FLeX Series coils and connectors are ordered with the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCN valve differ from the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Vented?",
+          "a": "The Sun RVCN valve and the [Sun RVCK valve](/p/sun-hydraulics-rvck-flex-series-solenoid-operated-relief-valve) differ in their names by \"Blocked\" here against \"Vented\" there. Choose the de-energised state your circuit needs: vented or blocked."
+        },
+        {
+          "slot": "L",
+          "q": "Normally vented or normally blocked on the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked?",
+          "a": "Normally vented unloads the pump whenever the coil is off — useful for easy starting. Normally blocked keeps relief pressure available unless the coil is energised. For the Sun RVCN valve the flow capacity is 25 gpm (95 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked from stock in the UAE and get a quotation?",
+          "a": "Yes, we stock the Sun FLeX Series 2-Stage, Solenoid-Operated Adjustable Relief Valve, Normally Blocked at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-sceb-atmospherically-vented-direct-acting-sequence-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check (SCEB) and what does it do?",
+          "a": "The Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check is a screw-in cartridge valve from Sun Hydraulics, listed as SCEB. A direct-acting sequence cartridge whose spring chamber is open to atmosphere instead of a drain port. It opens the second branch once inlet pressure passes the setting; the with-check version also lets oil return freely from port 2 to port 1. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check (SCEB)?",
+          "a": "The first letters of a Sun model code are the base model, SCEB for the Sun SCEB valve; the letters after it choose the options. In SCEBLAN, SCEB is the base model and L is the control (Standard Screw Adjustment), A is the setting range (500 - 3000 psi (35 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check come in?",
+          "a": "The Sun SCEB valve is listed in 1 size: SCEB (series 2, 30 gpm (120 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check have?",
+          "a": "For the Sun SCEB valve, maximum operating pressure is 5000 psi (350 bar), check cracking pressure is 25 psi (1,7 bar), leakage is up to 10 drops/min. (0,7 cc/min) and typical response time is 2 ms. Setting ranges are chosen by code letter, for example A — 500 - 3000 psi (35 - 210 bar). 6 setting ranges are offered. Flow capacity runs 30 gpm (120 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check come with?",
+          "a": "The Sun SCEB valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check adjusted, and which control options are offered?",
+          "a": "The Sun SCEB valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, L — Standard Screw Adjustment and K — Handknob. The setting range is a separate letter, with 6 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check (SCEB)?",
+          "a": "Seal kits for the Sun SCEB cartridge are series 2 (Buna 990203007, Viton 990203006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check need?",
+          "a": "The Sun SCEB valve screws into a cavity machined to Sun's drawing for its series: T-5A. Valve hex size is 1 1/8 in. (28,6 mm) with installation torque 45 - 50 lbf ft (61 - 68 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check used?",
+          "a": "Typical use of the Sun SCEB valve: sequence functions where no drain line can be run. Use only where a drain connection is impossible: over time it can weep oil or draw moisture into the spring chamber. Suitable for load-holding duty."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun SCEB valve differ from the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check?",
+          "a": "The Sun SCEB valve and the [Sun SXCB valve](/p/sun-hydraulics-sxcb-atmospherically-vented-direct-acting-sequence-valve) differ in their names by \"with\" here against \"Without\" there. By the data, capacity 30 gpm (120 L/min) against 15 gpm (60 L/min)."
+        },
+        {
+          "slot": "L",
+          "q": "What does a sequence valve do on the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check?",
+          "a": "It keeps a second branch of the circuit closed until the first has built up a set pressure — for example, clamp first, then drill — and then opens to feed the second branch. For the Sun SCEB valve the flow capacity is 30 gpm (120 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check in Dubai for export?",
+          "a": "Yes. We hold the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-sxcb-atmospherically-vented-direct-acting-sequence-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check (SXCB) and what does it do?",
+          "a": "The Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check is a screw-in cartridge valve from Sun Hydraulics, listed as SXCB. A direct-acting sequence cartridge whose spring chamber is open to atmosphere instead of a drain port. It opens the second branch once inlet pressure passes the setting; the with-check version also lets oil return freely from port 2 to port 1. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check (SXCB)?",
+          "a": "The first letters of a Sun model code are the base model, SXCB for the Sun SXCB valve; the letters after it choose the options. In SXCBLAN, SXCB is the base model and L is the control (Standard Screw Adjustment), A is the setting range (500 - 3000 psi (35 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check come in?",
+          "a": "The Sun SXCB valve is listed in 1 size: SXCB (series 1, 15 gpm (60 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check have?",
+          "a": "For the Sun SXCB valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 10 drops/min. (0,7 cc/min) and typical response time is 2 ms. Setting ranges are chosen by code letter, for example A — 500 - 3000 psi (35 - 210 bar). 6 setting ranges are offered. Flow capacity runs 15 gpm (60 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check come with?",
+          "a": "The Sun SXCB valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L; If the seal is E, the range must be W; If the seal is E, the range must be W."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check adjusted, and which control options are offered?",
+          "a": "The Sun SXCB valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob and L — Standard Screw Adjustment. The setting range is a separate letter, with 6 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check (SXCB)?",
+          "a": "Seal kits for the Sun SXCB cartridge are series 1 (Buna 990010007, EPDM 990010014, Polyurethane 990010002, Viton 990010006). Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check need?",
+          "a": "The Sun SXCB valve screws into a cavity machined to Sun's drawing for its series: T-13A. Valve hex size is 7/8 in. (22,2 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check used?",
+          "a": "Typical use of the Sun SXCB valve: sequence functions where no drain line can be run. Use only where a drain connection is impossible: over time it can weep oil or draw moisture into the spring chamber. Suitable for load-holding duty."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun SXCB valve differ from the Sun Atmospherically Referenced, Direct-Acting Sequence Valve with Reverse Flow Check?",
+          "a": "The Sun SXCB valve and the [Sun SCEB valve](/p/sun-hydraulics-sceb-atmospherically-vented-direct-acting-sequence-valve) differ in their names by \"Without\" here against \"with\" there. By the data, cavities T-13A against T-5A, so the two do not swap."
+        },
+        {
+          "slot": "L",
+          "q": "What does a sequence valve do on the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check?",
+          "a": "It keeps a second branch of the circuit closed until the first has built up a set pressure — for example, clamp first, then drill — and then opens to feed the second branch. For the Sun SXCB valve the flow capacity is 15 gpm (60 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check in Dubai for export?",
+          "a": "Yes. We hold the Sun Atmospherically Referenced, Direct-Acting Sequence Valve Without Reverse Flow Check in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-pilot-operated-balanced-piston-relief-main-stage",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Hydraulics RVCD8 cartridge valve and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4 is a screw-in cartridge valve from Sun Hydraulics, listed as RVCD8, RVED8, RVGD8 and others. A pilot-operated relief main stage with its own T-8A control cavity machined into the cartridge. Any T-8A pressure-control cartridge screwed into that cavity sets the relief pressure — a manual pilot relief, an electro-proportional pilot, or an air-controlled one — so the same main stage can be adjusted locally or controlled remotely. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the RVCD8 valve mean?",
+          "a": "The first letters of a Sun model code are the base model, RVCD8, RVED8, RVGD8 and others for the Sun RVCD8 valve; the letters after it choose the options. In RVCD8WN, RVCD8 is the base model and W is the setting range (100 psi (7 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and flows does the Sun RVCD8, RVED8, RVGD8 and others valve cover?",
+          "a": "The Sun RVCD8 valve is listed in 4 sizes: RVCD8 (series 1, 15 gpm (60 L/min)), RVED8 (series 2, 30 gpm (120 L/min)), RVGD8 (series 3, 60 gpm (240 L/min)) and RVID8 (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Sun RVCD8, RVED8, RVGD8 and others valve?",
+          "a": "For the Sun RVCD8, RVED8, RVGD8 and others valve, maximum operating pressure is 5000 psi (350 bar) and typical response time is 10 ms. Setting ranges are chosen by code letter, for example D — 25 psi (1,7 bar). 2 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "What seals and coatings are offered on the Sun RVCD8, RVED8, RVGD8 and others valve?",
+          "a": "The Sun RVCD8 valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the setting of the Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4 chosen?",
+          "a": "The listing for the Sun RVCD8 valve gives no separate control choice, so the setting follows its model code and the setting range ordered with it. Tell us the pressure you need to set and we will confirm the code."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit do I need for the Sun RVCD8 cartridge?",
+          "a": "Seal kits for the Sun RVCD8, RVED8, RVGD8 and others cartridge are series 1 (Buna 990021007, EPDM 990021014, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Sun RVCD8, RVED8, RVGD8 and others cartridge valve?",
+          "a": "The Sun RVCD8 valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4 used?",
+          "a": "Typical use of the Sun RVCD8 valve: building remotely or electronically controlled relief functions without a separate pilot body. Supplied as the main stage; the T-8A pilot cartridge is chosen separately. The pilot cartridge's setting determines the pressure difference across the valve."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCD8 valve differ from the Sun Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity?",
+          "a": "The Sun RVCD8 valve adds Ventable and Drain to Port 4 compared with the [Sun RPEC8 valve](/p/sun-hydraulics-pilot-operated-balanced-piston-relief-main-stage). This valve (RVCD8, RVED8, RVGD8 and others): A pilot-operated relief main stage with its own T-8A control cavity machined into the cartridge."
+        },
+        {
+          "slot": "L",
+          "q": "What do I fit in the T-8A cavity on the Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4?",
+          "a": "Any T-8A pressure-control cartridge — for example a direct-acting pilot relief for manual setting, or an electro-proportional pilot relief for electronic control. For the Sun RVCD8, RVED8, RVGD8 and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4?",
+          "a": "Yes. We keep the Sun Ventable, Pilot-Operated, Balanced Piston Relief Main Stage with Integral T-8A Control Cavity and Drain to Port 4 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-pilot-operated-balanced-piston-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve (RVBA, RVCA, RVEA and others) and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve is a screw-in cartridge valve from Sun Hydraulics, listed as RVBA, RVCA, RVEA and others. A pilot-operated relief cartridge with a vent port (port 3) connected between the main stage and its pilot. Opening the vent to tank unloads the pump at low pressure; connecting a remote pilot relief to it gives a lower, remotely adjusted setting; a 2-way valve on the vent switches between the two. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve (RVBA, RVCA, RVEA and others)?",
+          "a": "The first letters of a Sun model code are the base model, RVBA, RVCA, RVEA and others for the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve; the letters after it choose the options. In RVCALAN, RVCA is the base model and L is the control (Standard Screw Adjustment), A is the setting range (100 - 3000 psi (7 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve come in?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve is listed in 5 sizes: RVBA (series 0, 7.5 gpm (30 L/min)), RVEA (series 2, 30 gpm (120 L/min)) and RVIA (series 4, 120 gpm (480 L/min)), among 5 sizes. Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve have?",
+          "a": "For the Sun RVBA, RVCA, RVEA and others valve, maximum operating pressure is 5000 psi (350 bar) and typical response time is 10 ms. Setting ranges are chosen by code letter, for example A — 100 - 3000 psi (7 - 210 bar). 9 setting ranges are offered. Flow capacity runs 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve come with?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C,K,L,N,O or Q."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve adjusted, and which control options are offered?",
+          "a": "The Sun RVBA, RVCA, RVEA and others valve is set by the control chosen by code letter: L — Standard Screw Adjustment, C — Tamper Resistant - Factory Set, K — Handknob and O — Handknob with Panel Mount, among 6 options. The setting range is a separate letter, with 9 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve (RVBA, RVCA, RVEA and others)?",
+          "a": "Seal kits for the Sun RVBA, RVCA, RVEA and others cartridge are series 0 (Buna 990163007, Viton 990163006); series 4 (Buna 990019007, Viton 990019006), with kits listed for 5 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve need?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve screws into a cavity machined to Sun's drawing for its series: T-163A, T-11A, T-2A, T-17A and T-19A. Valve hex size is 3/4 in. (19,1 mm), 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 20 - 25 lbf ft (27 - 33 Nm), 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve used?",
+          "a": "Typical use of the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve: pump unloading, remote pressure setting and two-pressure circuits on power units and presses. A remote pilot relief on the vent port controls the valve below its own setting. Accepts full pressure at port 2."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve differ from the Sun Pilot-Operated, Balanced Piston Relief Valve?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve adds Ventable compared with the [Sun Pilot-Operated, Balanced Piston Relief Valve](/p/sun-hydraulics-pilot-operated-balanced-piston-relief-valve). This valve (RVBA, RVCA, RVEA and others): A pilot-operated relief cartridge with a vent port (port 3) connected between the main stage and its pilot. The other (RPCC, RPEC and others) is a normally closed, pilot-operated relief cartridge with a balanced piston main stage."
+        },
+        {
+          "slot": "L",
+          "q": "What does venting a relief valve do on the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve?",
+          "a": "Connecting the vent port to tank lets the main stage open at low pressure, so the pump unloads without stopping. A pilot relief on the vent port gives a second, lower setting instead. For the Sun RVBA, RVCA, RVEA and others valve the flow capacity is 7.5 gpm to 120 gpm (30 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-pilot-operated-balanced-poppet-relief-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve (RVCS, RVES, RVGS and others) and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve is a screw-in cartridge valve from Sun Hydraulics, listed as RVCS, RVES, RVGS and others. A pilot-operated relief cartridge with a vent port (port 3) connected between the main stage and its pilot. Opening the vent to tank unloads the pump at low pressure; connecting a remote pilot relief to it gives a lower, remotely adjusted setting; a 2-way valve on the vent switches between the two. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve (RVCS, RVES, RVGS and others)?",
+          "a": "The first letters of a Sun model code are the base model, RVCS, RVES, RVGS and others for the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve; the letters after it choose the options. In RVCSLAN, RVCS is the base model and L is the control (Standard Screw Adjustment), A is the setting range (100 - 3000 psi (7 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve come in?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve is listed in 4 sizes: RVCS (series 1, 15 gpm (60 L/min)), RVES (series 2, 25 gpm (95 L/min)), RVGS (series 3, 50 gpm (200 L/min)) and RVIS (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve have?",
+          "a": "For the Sun RVCS, RVES, RVGS and others valve, maximum operating pressure is 5000 psi (350 bar), leakage is up to 10 drops/min. (0,7 cc/min) and typical response time is 2 ms. Setting ranges are chosen by code letter, for example A — 100 - 3000 psi (7 - 210 bar). 6 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve come with?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C,K or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve adjusted, and which control options are offered?",
+          "a": "The Sun RVCS, RVES, RVGS and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob and L — Standard Screw Adjustment. The setting range is a separate letter, with 6 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve (RVCS, RVES, RVGS and others)?",
+          "a": "Seal kits for the Sun RVCS, RVES, RVGS and others cartridge are series 1 (Buna 990611007, Viton 990611006); series 4 (Buna 990219007, Viton 990219006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve need?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve screws into a cavity machined to Sun's drawing for its series: T-11A, T-2A, T-17A and T-19A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve used?",
+          "a": "Typical use of the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve: pump unloading, remote pressure setting and two-pressure circuits on power units and presses. A remote pilot relief on the vent port controls the valve below its own setting. Accepts full pressure at port 2."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve differ from the Sun Pilot-Operated, Balanced Poppet Relief Valve?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve adds Ventable compared with the [Sun Pilot-Operated, Balanced Poppet Relief Valve](/p/sun-hydraulics-pilot-operated-balanced-poppet-relief-valve). This valve (RVCS, RVES, RVGS and others): A pilot-operated relief cartridge with a vent port (port 3) connected between the main stage and its pilot. The other (RPES, RPGS and others) is a normally closed, pilot-operated relief cartridge with a balanced poppet main stage."
+        },
+        {
+          "slot": "L",
+          "q": "What does venting a relief valve do on the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve?",
+          "a": "Connecting the vent port to tank lets the main stage open at low pressure, so the pump unloads without stopping. A pilot relief on the vent port gives a second, lower setting instead. For the Sun RVCS, RVES, RVGS and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve in Dubai for export?",
+          "a": "Yes. We hold the Sun Ventable, Pilot-Operated, Balanced Poppet Relief Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-pilot-operated-pressure-reducing-relieving-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve (PVDB, PVFB, PVHB and others) and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve is a screw-in cartridge valve from Sun Hydraulics, listed as PVDB, PVFB, PVHB and others. A pilot-operated reducing/relieving cartridge with a vent port (port 4) for remote control: a pilot relief on the vent gives a lower, remote setting, and a 2-way valve can switch it. It holds a steady reduced pressure at port 1 and relieves port 1 to tank at full flow. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve (PVDB, PVFB, PVHB and others)?",
+          "a": "The first letters of a Sun model code are the base model, PVDB, PVFB, PVHB and others for the Sun PVDB valve; the letters after it choose the options. In PVDBLAN, PVDB is the base model and L is the control (Standard Screw Adjustment), A is the setting range (100 - 3000 psi (7 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve come in?",
+          "a": "The Sun PVDB valve is listed in 4 sizes: PVDB (series 1, 10 gpm (40 L/min)), PVFB (series 2, 20 gpm (80 L/min)), PVHB (series 3, 40 gpm (160 L/min)) and PVJB (series 4, 80 gpm (320 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve have?",
+          "a": "For the Sun PVDB, PVFB, PVHB and others valve, maximum operating pressure is 5000 psi (350 bar). Setting ranges are chosen by code letter, for example A — 100 - 3000 psi (7 - 210 bar). more than nine setting ranges are offered. Flow capacity runs 10 gpm to 80 gpm (40 L/min to 320 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve come with?",
+          "a": "The Sun PVDB valve is offered with seal codes N — Buna-N and V — Viton, and the material or coating options /AP — Stainless Steel, Passivated. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C or L."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve adjusted, and which control options are offered?",
+          "a": "The Sun PVDB, PVFB, PVHB and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob and L — Standard Screw Adjustment. The setting range is a separate letter, with more than nine ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve (PVDB, PVFB, PVHB and others)?",
+          "a": "Seal kits for the Sun PVDB, PVFB, PVHB and others cartridge are series 1 (Buna 990021007, EPDM 990021014, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve need?",
+          "a": "The Sun PVDB valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve used?",
+          "a": "Typical use of the Sun PVDB valve: two-pressure circuits and remotely set reduced-pressure branches. Pressure at port 3 adds one-for-one to the setting; keep it under 3,000 psi (210 bar). Drilled-piston-orifice versions suit punishing duty."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve differ from the Sun Pilot-Operated, Pressure Reducing/Relieving Valve?",
+          "a": "The Sun PVDB valve adds Ventable compared with the [Sun Pilot-Operated, Pressure Reducing/Relieving Valve](/p/sun-hydraulics-pilot-operated-pressure-reducing-relieving-valve). By the data, capacity 10 gpm to 80 gpm (40 L/min to 320 L/min) against 5 gpm to 80 gpm (20 L/min to 320 L/min). The other (PPBB, PPDB and others) is a pilot-operated reducing/relieving cartridge holds a constant reduced pressure at port 1 from a higher supply at port 2 and relieves port 1 to tank (port 3) at full flow if it is pushed above the setting."
+        },
+        {
+          "slot": "L",
+          "q": "What is the vent port for on the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve?",
+          "a": "Connecting a pilot relief or 2-way valve to it lets the reduced pressure be set or switched remotely, below the cartridge's own setting. For the Sun PVDB, PVFB, PVHB and others valve the flow capacity is 10 gpm to 80 gpm (40 L/min to 320 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve in Dubai for export?",
+          "a": "Yes. We hold the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve in stock at our Dubai, UAE warehouse and send it out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-pilot-operated-pressure-reducing-relieving-valve-drilled-piston-orifice",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice (PVDD, PVFD, PVHD and others) and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice is a screw-in cartridge valve from Sun Hydraulics, listed as PVDD, PVFD, PVHD and others. A pilot-operated reducing/relieving cartridge with a vent port (port 4) for remote control: a pilot relief on the vent gives a lower, remote setting, and a 2-way valve can switch it. It holds a steady reduced pressure at port 1 and relieves port 1 to tank at full flow. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Sun model code for the PVDD valve mean?",
+          "a": "The first letters of a Sun model code are the base model, PVDD, PVFD, PVHD and others for the Sun PVDD valve; the letters after it choose the options. In PVDDLAN, PVDD is the base model and L is the control (Standard Screw Adjustment), A is the setting range (100 - 3000 psi (7 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice come in?",
+          "a": "The Sun PVDD valve is listed in 4 sizes: PVDD (series 1, 10 gpm (40 L/min)), PVFD (series 2, 20 gpm (80 L/min)), PVHD (series 3, 40 gpm (160 L/min)) and PVJD (series 4, 80 gpm (320 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice have?",
+          "a": "For the Sun PVDD, PVFD, PVHD and others valve, maximum operating pressure is 5000 psi (350 bar). Setting ranges are chosen by code letter, for example A — 100 - 3000 psi (7 - 210 bar). 7 setting ranges are offered. Flow capacity runs 10 gpm to 80 gpm (40 L/min to 320 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice come with?",
+          "a": "The Sun PVDD valve is offered with seal codes N — Buna-N and V — Viton. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice adjusted, and which control options are offered?",
+          "a": "The Sun PVDD, PVFD, PVHD and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob and L — Standard Screw Adjustment. The setting range is a separate letter, with 7 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice (PVDD, PVFD, PVHD and others)?",
+          "a": "Seal kits for the Sun PVDD, PVFD, PVHD and others cartridge are series 1 (Buna 990021007, Polyurethane 990021002, Viton 990021006); series 4 (Buna 990024007, Polyurethane 990024002, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice need?",
+          "a": "The Sun PVDD valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice used?",
+          "a": "Typical use of the Sun PVDD valve: two-pressure circuits and remotely set reduced-pressure branches. Pressure at port 3 adds one-for-one to the setting; keep it under 3,000 psi (210 bar). Drilled-piston-orifice versions suit punishing duty."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun PVDD valve differ from the Sun Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice?",
+          "a": "The Sun PVDD valve adds Ventable compared with the [Sun PPDF valve](/p/sun-hydraulics-pilot-operated-pressure-reducing-relieving-valve-drilled-piston-orifice). By the data, cavities T-21A, T-22A, T-23A, T-24A against T-11A, T-2A, T-17A, T-19A, so the two do not swap. The other (PPDF, PPFF and others) is a pilot-operated reducing/relieving cartridge holds a constant reduced pressure at port 1 from a higher supply at port 2 and relieves port 1 to tank (port 3) at full flow if it is pushed above the setting."
+        },
+        {
+          "slot": "L",
+          "q": "Reducing valve or reducing/relieving valve — what is the difference on the Sun PVDD valve?",
+          "a": "Both hold a lower, steady pressure at port 1 from a higher supply at port 2. A plain reducing valve only closes off: if something pushes the reduced side above the setting, or the reduced circuit is dead-ended with very little leakage, the pressure can creep up. A reducing/relieving valve also opens port 1 to tank (port 3) to hold the setting. For the Sun PVDD, PVFD, PVHD and others valve the flow capacity is 10 gpm to 80 gpm (40 L/min to 320 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice in Dubai for export?",
+          "a": "Yes, we hold the Sun Ventable, Pilot-Operated, Pressure Reducing/Relieving Valve with Drilled Piston Orifice in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sun-hydraulics-ventable-relief-valve-drain-to-port-4",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 (RVCD, RVED, RVGD and others) and what does it do?",
+          "a": "The Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 is a screw-in cartridge valve from Sun Hydraulics, listed as RVCD, RVED, RVGD and others. A ventable, pilot-operated relief cartridge with a separate drain (port 4) for the pilot stage. As with other ventable reliefs, the vent port (port 3) allows unloading or remote control; the drain makes the setting insensitive to back-pressure at the tank port. See the full [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) range."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Sun model code for the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 (RVCD, RVED, RVGD and others)?",
+          "a": "The first letters of a Sun model code are the base model, RVCD, RVED, RVGD and others for the Sun RVCD valve; the letters after it choose the options. In RVCDLAN, RVCD is the base model and L is the control (Standard Screw Adjustment), A is the setting range (100 - 3000 psi (7 - 210 bar)) and N is the seal material (Buna-N). We confirm the full code with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and flow capacities does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 come in?",
+          "a": "The Sun RVCD valve is listed in 4 sizes: RVCD (series 1, 15 gpm (60 L/min)), RVED (series 2, 30 gpm (120 L/min)), RVGD (series 3, 60 gpm (240 L/min)) and RVID (series 4, 120 gpm (480 L/min)). Choose the smallest series that passes your flow at an acceptable pressure drop, then the control, setting and seal options."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and setting range does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 have?",
+          "a": "For the Sun RVCD, RVED, RVGD and others valve, maximum operating pressure is 5000 psi (350 bar) and typical response time is 10 ms. Setting ranges are chosen by code letter, for example A — 100 - 3000 psi (7 - 210 bar). 7 setting ranges are offered. Flow capacity runs 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "F",
+          "q": "Which seal and material options does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 come with?",
+          "a": "The Sun RVCD valve is offered with seal codes N — Buna-N, V — Viton and E — EPDM, and the material or coating options /AP — Stainless Steel, Passivated and /LH — Mild Steel, Zinc-Nickel. Fitting a different external seal material does not make the valve compatible with a new fluid, because the internal seals stay as built. If the modifier is /AP, the control must be C, L or Y; If the modifier is /LH, the control must be C or L; If the seal is E, the control must be C,K,L,W or Y."
+        },
+        {
+          "slot": "G",
+          "q": "How is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 adjusted, and which control options are offered?",
+          "a": "The Sun RVCD, RVED, RVGD and others valve is set by the control chosen by code letter: C — Tamper Resistant - Factory Set, K — Handknob, L — Standard Screw Adjustment, Y — Tri-Grip Handknob and W — Hex Wrench Adjustment. The setting range is a separate letter, with 7 ranges offered. State both letters with the base model when you order, and we confirm the full code in the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "Which seal kit fits the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 (RVCD, RVED, RVGD and others)?",
+          "a": "Seal kits for the Sun RVCD, RVED, RVGD and others cartridge are series 1 (Buna 990021007, Viton 990021006); series 4 (Buna 990024007, Viton 990024006), with kits listed for 4 series in all. Sun supplies a kit for every cartridge, and only the external seals can be serviced. Browse the [relief, reducing & sequence cartridges](/c/cartridge-pressure-control-valves) for related cartridges."
+        },
+        {
+          "slot": "I",
+          "q": "Which cavity and installation torque does the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 need?",
+          "a": "The Sun RVCD valve screws into a cavity machined to Sun's drawing for its series: T-21A, T-22A, T-23A and T-24A. Valve hex size is 7/8 in. (22,2 mm), 1 1/8 in. (28,6 mm), 1 1/4 in. (31,8 mm), 1 5/8 in. (41,3 mm) with installation torque 30 - 35 lbf ft (41 - 47 Nm), 45 - 50 lbf ft (61 - 68 Nm), 150 - 160 lbf ft (203 - 217 Nm), 350 - 375 lbf ft (474 - 508 Nm). Do not mix cavity types, because the series fixes the cavity."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 used?",
+          "a": "Typical use of the Sun RVCD valve: remote-controlled or unloading relief functions where the tank line carries back-pressure. Drain port 4 must go to tank without restriction. Vent port 3 gives unloading or a remote setting."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Sun RVCD valve differ from the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve?",
+          "a": "The Sun RVCD valve adds with Drain to Port 4 compared with the [Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve](/p/sun-hydraulics-ventable-pilot-operated-balanced-piston-relief-valve). This valve (RVCD, RVED, RVGD and others): A ventable, pilot-operated relief cartridge with a separate drain (port 4) for the pilot stage. The other (RVBA, RVCA and others) is a pilot-operated relief cartridge with a vent port (port 3) connected between the main stage and its pilot."
+        },
+        {
+          "slot": "L",
+          "q": "Why have a separate drain on the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4?",
+          "a": "Without it, back-pressure in the tank line adds to the relief setting. Draining the pilot stage through port 4 keeps the setting independent of that back-pressure. For the Sun RVCD, RVED, RVGD and others valve the flow capacity is 15 gpm to 120 gpm (60 L/min to 480 L/min)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 in Dubai for export?",
+          "a": "Yes, we hold the Sun Ventable, Pilot-Operated, Balanced Piston Relief Valve with Drain to Port 4 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

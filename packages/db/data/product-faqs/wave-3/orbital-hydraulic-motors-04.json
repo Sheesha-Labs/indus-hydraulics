@@ -1,0 +1,1420 @@
+{
+  "family": "orbital-hydraulic-motors-04",
+  "extraFacts": [
+    {
+      "fact": "One US gallon is 231 cubic inches, so shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses.",
+      "source": "US gallon definition; Indus Hydraulics orbital motor guide"
+    },
+    {
+      "fact": "SAE J744 defines the SAE A, B and C 2-bolt and 4-bolt flange mounts for hydraulic pumps and motors.",
+      "source": "SAE J744 Hydraulic Pump and Motor Mounting and Drive Shaft Dimensions"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1 1/4\" Tapered Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, 1\" Keyed Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft: displacement 118 to 745 cm³/rev, mount 6-Hole Magneto, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Magneto Mount, Splined Shaft"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMER Orbital Motors, Wheel Mount: displacement 118 to 745 cm³/rev, mount Wheel Mount, 78 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMER Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMH Orbital Motors: displacement 203.2 to 489.2 cm³/rev, mount Magneto, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMH Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMK6 Orbital Motors: displacement 195.6 to 981.6 cm³/rev, mount SAE \"CC\", 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMK6 Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMM(Z) Orbital Motors: displacement 8.2 to 50.3 cm³/rev, mount 2-Bolt, Circle Flange, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMM(Z) Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount: displacement 36 to 390 cm³/rev, mount SAE \"A\" 4-Bolt, 90 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount: displacement 36 to 390 cm³/rev, mount Magneto, 12 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMPH Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 2-Bolt, SAE \"A\" 2 Bolt, 108 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount: displacement 51.7 to 381.4 cm³/rev, mount SAE \"A\" 4-Bolt, 81 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount: displacement 81.5 to 381.4 cm³/rev, mount Magneto, 24 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMRS Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 2 Bolt, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount: displacement 81 to 475 cm³/rev, mount SAE \"A\" 4-Bolt, 43 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount: displacement 81 to 475 cm³/rev, mount Magneto, 77 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Magneto Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount: displacement 81 to 475 cm³/rev, mount Wheel Mount, 41 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMSY Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMT Orbital Motors: displacement 161.1 to 801.8 cm³/rev, mount 4-Bolt, 32 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMT Orbital Motors"
+    },
+    {
+      "fact": "Dynamic Fluid Components BMV Orbital Motors: displacement 333 to 990 cm³/rev, mount 4-Bolt, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Dynamic Fluid Components BMV Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 84 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 500 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, Wheel mount, 76 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 500 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 39 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne 501 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne 501 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 400 cm³/rev, mount 2-bolt SAE A, 85 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 400 cm³/rev, mount 4-bolt SAE A square, 58 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM1 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 50 to 315 cm³/rev, mount 2-bolt SAE A, 71 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 50 to 315 cm³/rev, mount 4-bolt SAE A square, 49 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM3 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 53 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM50 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 52 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM50 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount: displacement 125 to 750 cm³/rev, mount 6-bolt magneto, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, 6-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne FM51 Series Orbital Motors, Wheel Mount: displacement 125 to 750 cm³/rev, mount 4-bolt wheel, 18 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne FM51 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 2.2 to 400 cm³/rev, mount 2-bolt SAE A, 4-bolt SAE A, 172 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 36 to 400 cm³/rev, mount 4-bolt magneto (SAE A), 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 2.2 to 400 cm³/rev, mount 4-bolt SAE A square, 142 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF101 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 4.9 to 375 cm³/rev, mount 2-bolt SAE A, 4-bolt magneto, 138 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 50 to 315 cm³/rev, mount 4-bolt magneto (SAE A), 20 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 4.9 to 375 cm³/rev, mount 4-bolt SAE A square, 102 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF103 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors: displacement 80 to 400 cm³/rev, mount 4-bolt SAE A, 2-bolt SAE A square, 4-bolt SAE B, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE A, 298 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE A Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount: displacement 80 to 475 cm³/rev, mount 2-bolt SAE B, 115 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 2-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount: displacement 4.9 to 475 cm³/rev, mount 4-bolt magneto (SAE A), 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt Magneto (SAE A) Mount"
+    },
+    {
+      "fact": "Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount: displacement 80 to 475 cm³/rev, mount 4-bolt SAE A square, 114 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF104 Series Orbital Motors, 4-Bolt SAE A Square Mount"
+    },
+    {
+      "fact": "Fluidyne WF105 Series Orbital Motors, Wheel Mount: displacement 80 to 375 cm³/rev, mount 4-bolt wheel, 74 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF105 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount: displacement 80 to 375 cm³/rev, mount 4-bolt, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF106 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE B, 48 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE B Mount"
+    },
+    {
+      "fact": "Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 160 to 630 cm³/rev, mount 4-bolt SAE C, 56 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF109 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount: displacement 245 to 985 cm³/rev, mount 4-bolt, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C, 89 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF112 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF113 Series Orbital Motors, Wheel Mount: displacement 195 to 985 cm³/rev, mount 4-bolt wheel, Wheel mount, 29 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF113 Series Orbital Motors, Wheel Mount"
+    },
+    {
+      "fact": "Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount: displacement 195 to 985 cm³/rev, mount 4-bolt SAE C bearingless, 4-bolt SAE C, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF114 Series Orbital Motors, 4-Bolt SAE C Bearingless Mount"
+    },
+    {
+      "fact": "Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount: displacement 315 to 1000 cm³/rev, mount 4-bolt SAE C, SAE C-Mount, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF119 Series Orbital Motors, 4-Bolt SAE C Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors: displacement 8 to 32 cm³/rev, mount 3-bolt SAE C, 5 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount: displacement 8 to 50 cm³/rev, mount 2-bolt, 22 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 2-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount: displacement 8 to 50 cm³/rev, mount 3-bolt / 5-bolt, 60 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt / 5-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount: displacement 8 to 20 cm³/rev, mount 3-bolt, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF129 Series Orbital Motors, 3-Bolt Mount"
+    },
+    {
+      "fact": "Fluidyne WF130 Series Orbital Motors: displacement 160 cm³/rev, mount 4-bolt square, 1 part numbers.",
+      "source": "Indus Hydraulics listing for the Fluidyne WF130 Series Orbital Motors"
+    },
+    {
+      "fact": "Char-Lynn 101 Series Hydraulic Motors: displacement 2.8 to 22.6 in³/rev, mount 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot, 31 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 101 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 103 Series (S Series) Hydraulic Motors: displacement 4.6 to 22.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 103 Series (S Series) Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 104 Series Hydraulic Motors: displacement 4.9 to 18.7 in³/rev, mount 2 Bolt / SAE A / 3.25\" Pilot, 16 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 104 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Char-Lynn 112 and 119 Series Hydraulic Motors: displacement 19.0 to 30.0 in³/rev, mount None, 3 part numbers.",
+      "source": "Indus Hydraulics listing for the Char-Lynn 112 and 119 Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton H Series Hydraulic Motors: displacement 2.8 in³/rev to 17.9 in³/rev, mount None, 25 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton H Series Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton Hydraulic Motors: displacement 2.8 in³/rev to 22.7 in³/rev, mount None, 30 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton Hydraulic Motors"
+    },
+    {
+      "fact": "Eaton J Series Hydraulic Motors: displacement 0.5 in³/rev to 1.9 in³/rev, mount None, 10 part numbers.",
+      "source": "Indus Hydraulics listing for the Eaton J Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker 110A Series Hydraulic Motors: displacement 3.6 in³/rev to 16.4 in³/rev, mount SAE A 2-Bolt, 4 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker 110A Series Hydraulic Motors"
+    },
+    {
+      "fact": "Parker BG Series Brake Torqmotors: displacement None, mount None, 26 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BG Series Brake Torqmotors"
+    },
+    {
+      "fact": "Parker BH Series Brake Motors: displacement None, mount None, 6 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker BH Series Brake Motors"
+    },
+    {
+      "fact": "Parker Hydraulic Motors: displacement 8.6 in³/rev to 58.5 in³/rev, mount SAE A 2-Bolt, 15 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker Hydraulic Motors"
+    },
+    {
+      "fact": "Parker TB Series Torqmotors: displacement 2.2 in³/rev to 24 in³/rev, mount 2 Bolt SAE A, 4 Bolt and 2 Bolt, 79 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TB Series Torqmotors"
+    },
+    {
+      "fact": "Parker TC Series Torqmotors: displacement None, mount None, 42 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TC Series Torqmotors"
+    },
+    {
+      "fact": "Parker TF Series Torqmotors: displacement 4.9 in³/rev to 29.1 in³/rev, mount None, 450 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TF Series Torqmotors"
+    },
+    {
+      "fact": "Parker TG Series Torqmotors: displacement None, mount None, 14 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TG Series Torqmotors"
+    },
+    {
+      "fact": "Parker TJ Series Torqmotors: displacement None, mount None, 13 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TJ Series Torqmotors"
+    },
+    {
+      "fact": "Parker TK Series Torqmotors: displacement None, mount None, 37 part numbers.",
+      "source": "Indus Hydraulics listing for the Parker TK Series Torqmotors"
+    }
+  ],
+  "products": [
+    {
+      "slug": "char-lynn-101-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Char-Lynn 101 Series Hydraulic Motors and what are they used for?",
+          "a": "The Char-Lynn 101 Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 31 part numbers with displacement 2.8 to 22.6 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 101-1001-009 (2.8 in³/rev, Keyed 1.00\" shaft, 4 Bolt Std / 1.748 Dia / .120 Pilot mount, NPT - 1/2\" ports) and 101-1032-009 (22.6 in³/rev, Keyed 1.00\" shaft, 2 Bolt / SAE A / 3.25\" Pilot mount, NPT - 1/2\" ports) are two of the 31 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Char-Lynn 101 Series Hydraulic Motors cover?",
+          "a": "The Char-Lynn 101 Series Hydraulic Motors spans 2.8 to 22.6 in³/rev across 31 part numbers. That is 9 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Char-Lynn 101 Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Char-Lynn 101 Series Hydraulic Motors are Keyed 1.00\", 1\" Shaft / .406 Crosshole. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Char-Lynn 101 Series Hydraulic Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 31 part numbers of the Char-Lynn 101 Series Hydraulic Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Char-Lynn 101 Series Hydraulic Motors have?",
+          "a": "The mounting of the Char-Lynn 101 Series Hydraulic Motors are 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot, and the ports are NPT - 1/2\", ORB - 10, Manifold. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Char-Lynn 101 Series Hydraulic Motors follow?",
+          "a": "The Char-Lynn 101 Series Hydraulic Motors names an SAE mounting flange, 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot, which refers to the SAE J744 flange pattern. The ports are NPT - 1/2\", ORB - 10, Manifold. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, NPT - 1/2\", ORB - 10, Manifold, and the load fits on the shaft, Keyed 1.00\", 1\" Shaft / .406 Crosshole. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "For the Char-Lynn 101 Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Rotation is listed as Dual on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Char-Lynn 101 Series Hydraulic Motors are listed with 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Char-Lynn 101 Series Hydraulic Motors differ from the Char-Lynn 104 Series Hydraulic Motors?",
+          "a": "This one has 2.8 to 22.6 in³/rev with 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot mounting, in 31 part numbers. The [Char-Lynn 104 Series Hydraulic Motors](/p/char-lynn-104-series-hydraulic-motors) has 4.9 to 18.7 in³/rev with 2 Bolt / SAE A / 3.25\" Pilot mounting, in 16 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Char-Lynn 101 Series Hydraulic Motors from stock in the UAE and get a quotation?",
+          "a": "Yes. The Char-Lynn 101 Series Hydraulic Motors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "char-lynn-103-series-s-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Char-Lynn 103 Series (S Series) Hydraulic Motors and what are they used for?",
+          "a": "The Char-Lynn 103 Series (S Series) Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 16 part numbers with displacement 4.6 to 22.7 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Char-Lynn 103 Series (S Series) Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 103-1002 (4.6 in³/rev, Keyed 1.00\" shaft, 4 Bolt Std / 1.748 Dia / .120 Pilot mount, NPT - 1/2\" ports) and 103-1096 (22.7 in³/rev, 6B Splined Shaft shaft, 2 Bolt / SAE A / 3.25\" Pilot mount, Manifold ports) are two of the 16 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Char-Lynn 103 Series (S Series) Hydraulic Motors cover?",
+          "a": "The Char-Lynn 103 Series (S Series) Hydraulic Motors spans 4.6 to 22.7 in³/rev across 16 part numbers. That is 13 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Char-Lynn 103 Series (S Series) Hydraulic Motors offer?",
+          "a": "The shaft options on the Char-Lynn 103 Series (S Series) Hydraulic Motors are Keyed 1.00\", 1/4\" Woodruff Key 1.00, Keyed 1.75\", 6B Splined Shaft. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Char-Lynn 103 Series (S Series) Hydraulic Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 16 part numbers of the Char-Lynn 103 Series (S Series) Hydraulic Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Char-Lynn 103 Series (S Series) Hydraulic Motors have?",
+          "a": "The mounting of the Char-Lynn 103 Series (S Series) Hydraulic Motors are 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot, and the ports are NPT - 1/2\", Manifold. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Char-Lynn 103 Series (S Series) Hydraulic Motors follow?",
+          "a": "The Char-Lynn 103 Series (S Series) Hydraulic Motors names an SAE mounting flange, 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot, which refers to the SAE J744 flange pattern. The ports are NPT - 1/2\", Manifold. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Char-Lynn 103 Series (S Series) Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, NPT - 1/2\", Manifold, and the load fits on the shaft, Keyed 1.00\", 1/4\" Woodruff Key 1.00, Keyed 1.75\", 6B Splined Shaft. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Char-Lynn 103 Series (S Series) Hydraulic Motors?",
+          "a": "For the Char-Lynn 103 Series (S Series) Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Rotation is listed as Dual on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Char-Lynn 103 Series (S Series) Hydraulic Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Char-Lynn 103 Series (S Series) Hydraulic Motors are listed with 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Char-Lynn 103 Series (S Series) Hydraulic Motors differ from the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "This one has 4.6 to 22.7 in³/rev with 2 Bolt / SAE A / 3.25\" Pilot, 4 Bolt Std / 1.748 Dia / .120 Pilot mounting, in 16 part numbers. The [Char-Lynn 101 Series Hydraulic Motors](/p/char-lynn-101-series-hydraulic-motors) has 2.8 to 22.6 in³/rev with 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot mounting, in 31 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Char-Lynn 103 Series (S Series) Hydraulic Motors in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep the Char-Lynn 103 Series (S Series) Hydraulic Motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "char-lynn-104-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Char-Lynn 104 Series Hydraulic Motors and what are they used for?",
+          "a": "The Char-Lynn 104 Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 16 part numbers with displacement 4.9 to 18.7 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2 Bolt / SAE A / 3.25\" Pilot."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Char-Lynn 104 Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 104-1001-006 (4.9 in³/rev, Keyed 1.00\" shaft, 2 Bolt / SAE A / 3.25\" Pilot mount, ORB - 10 ports) and 104-1028-006 (18.7 in³/rev, Keyed 1.25\" shaft, 2 Bolt / SAE A / 3.25\" Pilot mount, ORB - 10 ports) are two of the 16 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Char-Lynn 104 Series Hydraulic Motors cover?",
+          "a": "The Char-Lynn 104 Series Hydraulic Motors spans 4.9 to 18.7 in³/rev across 16 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Char-Lynn 104 Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Char-Lynn 104 Series Hydraulic Motors are Keyed 1.00\", Keyed 1.25\", 14 Tooth 12/24 DP 1.250\", 6B Splined Shaft. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Char-Lynn 104 Series Hydraulic Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 16 part numbers of the Char-Lynn 104 Series Hydraulic Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Char-Lynn 104 Series Hydraulic Motors have?",
+          "a": "The mounting of the Char-Lynn 104 Series Hydraulic Motors are 2 Bolt / SAE A / 3.25\" Pilot, and the ports are ORB - 10. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Char-Lynn 104 Series Hydraulic Motors follow?",
+          "a": "The Char-Lynn 104 Series Hydraulic Motors names an SAE mounting flange, 2 Bolt / SAE A / 3.25\" Pilot, which refers to the SAE J744 flange pattern. The ports are ORB - 10. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Char-Lynn 104 Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, ORB - 10, and the load fits on the shaft, Keyed 1.00\", Keyed 1.25\", 14 Tooth 12/24 DP 1.250\", 6B Splined Shaft. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Char-Lynn 104 Series Hydraulic Motors?",
+          "a": "For the Char-Lynn 104 Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Rotation is listed as Dual on some rows. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Char-Lynn 104 Series Hydraulic Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Char-Lynn 104 Series Hydraulic Motors are listed with 2 Bolt / SAE A / 3.25\" Pilot mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Char-Lynn 104 Series Hydraulic Motors differ from the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "This one has 4.9 to 18.7 in³/rev with 2 Bolt / SAE A / 3.25\" Pilot mounting, in 16 part numbers. The [Char-Lynn 101 Series Hydraulic Motors](/p/char-lynn-101-series-hydraulic-motors) has 2.8 to 22.6 in³/rev with 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot mounting, in 31 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Char-Lynn 104 Series Hydraulic Motors from stock in the UAE and get a quotation?",
+          "a": "Yes, the Char-Lynn 104 Series Hydraulic Motors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "char-lynn-112-and-119-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Char-Lynn 112 and 119 Series Hydraulic Motors and what are they used for?",
+          "a": "The Char-Lynn 112 and 119 Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 3 part numbers with displacement 19.0 to 30.0 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Char-Lynn 112 and 119 Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 119-1029-003 and 112-1056-006 (30 in³/rev) are two of the 3 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Char-Lynn 112 and 119 Series Hydraulic Motors cover?",
+          "a": "The Char-Lynn 112 and 119 Series Hydraulic Motors spans 19.0 to 30.0 in³/rev across 3 part numbers. That is 2 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Char-Lynn 112 and 119 Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Char-Lynn 112 and 119 Series Hydraulic Motors are the shafts listed in the size table. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Char-Lynn 112 and 119 Series Hydraulic Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 3 part numbers of the Char-Lynn 112 and 119 Series Hydraulic Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Char-Lynn 112 and 119 Series Hydraulic Motors have?",
+          "a": "The listing gives no mount type for the Char-Lynn 112 and 119 Series Hydraulic Motors, and the ports are not stated. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Char-Lynn 112 and 119 Series Hydraulic Motors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Char-Lynn 112 and 119 Series Hydraulic Motors. The shaft options are the shafts listed in the size table and the ports are not stated. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Char-Lynn 112 and 119 Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, not stated, and the load fits on the shaft, the shafts listed in the size table. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Char-Lynn 112 and 119 Series Hydraulic Motors?",
+          "a": "For the Char-Lynn 112 and 119 Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Char-Lynn 112 and 119 Series Hydraulic Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Char-Lynn 112 and 119 Series Hydraulic Motors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Char-Lynn 112 and 119 Series Hydraulic Motors differ from the Char-Lynn 101 Series Hydraulic Motors?",
+          "a": "This one has 19.0 to 30.0 in³/rev, in 3 part numbers. The [Char-Lynn 101 Series Hydraulic Motors](/p/char-lynn-101-series-hydraulic-motors) has 2.8 to 22.6 in³/rev with 4 Bolt Std / 1.748 Dia / .120 Pilot, 2 Bolt / SAE A / 3.25\" Pilot, 2 Bolt / SAE B / 4.00\" Pilot mounting, in 31 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Char-Lynn 112 and 119 Series Hydraulic Motors in Dubai for export?",
+          "a": "Yes, the Char-Lynn 112 and 119 Series Hydraulic Motors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-h-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton H Series Hydraulic Motors and what are they used for?",
+          "a": "The Eaton H Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 25 part numbers with displacement 2.8 in³/rev to 17.9 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Eaton H Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 101-1013 (11.3 in³/rev, 7/8\"-14 O-Ring ports) and 101-1039 (7/8\"-14 O-Ring ports) are two of the 25 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Eaton H Series Hydraulic Motors cover?",
+          "a": "The Eaton H Series Hydraulic Motors spans 2.8 in³/rev to 17.9 in³/rev across 25 part numbers. That is 6 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Eaton H Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Eaton H Series Hydraulic Motors are Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Eaton H Series Hydraulic Motors have?",
+          "a": "The Eaton H Series Hydraulic Motors list these ratings by part number. Intermittent or maximum pressure runs 1,250 to 1,800 psi. Torque runs 650 to 3,604 lb-in. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Eaton H Series Hydraulic Motors have?",
+          "a": "The listing gives no mount type for the Eaton H Series Hydraulic Motors, and the ports are 7/8\"-14 O-Ring, 1/2\" and 1/2\"-14 NPTF. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Eaton H Series Hydraulic Motors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Eaton H Series Hydraulic Motors. The shaft options are Keyed and the ports are 7/8\"-14 O-Ring, 1/2\" and 1/2\"-14 NPTF. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Eaton H Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 O-Ring, 1/2\" and 1/2\"-14 NPTF, and the load fits on the shaft, Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Eaton H Series Hydraulic Motors?",
+          "a": "For the Eaton H Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton H Series Hydraulic Motors differ from the Eaton J Series Hydraulic Motors?",
+          "a": "This one has 2.8 in³/rev to 17.9 in³/rev, in 25 part numbers. The [Eaton J Series Hydraulic Motors](/p/eaton-j-series-hydraulic-motors) has 0.5 in³/rev to 1.9 in³/rev, in 10 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton H Series Hydraulic Motors made, and what is its HS code?",
+          "a": "The Eaton H Series Hydraulic Motors are made in the United States. The listing gives HS code 8412298015. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton H Series Hydraulic Motors in Dubai for export?",
+          "a": "Yes. We keep the Eaton H Series Hydraulic Motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton Hydraulic Motors and what are they used for?",
+          "a": "The Eaton Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 30 part numbers with displacement 2.8 in³/rev to 22.7 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Eaton Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 101-1036 (Motor Hydraulic 9.7 Cu In/rev 2 Bolt) and 103-1040 (22.6 in³/rev, 1,300 psi) are two of the 30 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Eaton Hydraulic Motors cover?",
+          "a": "The Eaton Hydraulic Motors spans 2.8 in³/rev to 22.7 in³/rev across 30 part numbers. That is 8 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Eaton Hydraulic Motors offer?",
+          "a": "The shaft options on the Eaton Hydraulic Motors are Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Eaton Hydraulic Motors have?",
+          "a": "The Eaton Hydraulic Motors list these ratings by part number. Intermittent or maximum pressure runs 1,250 to 2,000 psi. Torque runs 497 to 4,004 lb-in. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Eaton Hydraulic Motors have?",
+          "a": "The listing gives no mount type for the Eaton Hydraulic Motors, and the ports are not stated. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Eaton Hydraulic Motors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Eaton Hydraulic Motors. The shaft options are Keyed and the ports are not stated. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Eaton Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, not stated, and the load fits on the shaft, Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Eaton Hydraulic Motors?",
+          "a": "For the Eaton Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton Hydraulic Motors differ from the Eaton H Series Hydraulic Motors?",
+          "a": "This one has 2.8 in³/rev to 22.7 in³/rev, in 30 part numbers. The [Eaton H Series Hydraulic Motors](/p/eaton-h-series-hydraulic-motors) has 2.8 in³/rev to 17.9 in³/rev, in 25 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton Hydraulic Motors made, and what is its HS code?",
+          "a": "The Eaton Hydraulic Motors are made in the United States. The listing gives HS code 8412298015. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton Hydraulic Motors in Dubai for export?",
+          "a": "Yes. The Eaton Hydraulic Motors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "eaton-j-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Eaton J Series Hydraulic Motors and what are they used for?",
+          "a": "The Eaton J Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 10 part numbers with displacement 0.5 in³/rev to 1.9 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Eaton J Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 129-0458 (9/16\"-18 Unf ports, 1,400 psi) and 129-0470 (Side ports, 2,175 psi) are two of the 10 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Eaton J Series Hydraulic Motors cover?",
+          "a": "The Eaton J Series Hydraulic Motors spans 0.5 in³/rev to 1.9 in³/rev across 10 part numbers. That is 4 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Eaton J Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Eaton J Series Hydraulic Motors are Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Eaton J Series Hydraulic Motors have?",
+          "a": "The Eaton J Series Hydraulic Motors list these ratings by part number. Intermittent or maximum pressure runs 1,400 to 2,175 psi. Torque runs 141 to 549 lb-in. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Eaton J Series Hydraulic Motors have?",
+          "a": "The listing gives no mount type for the Eaton J Series Hydraulic Motors, and the ports are 9/16\"-18 Unf and Side. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Eaton J Series Hydraulic Motors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Eaton J Series Hydraulic Motors. The shaft options are Keyed and the ports are 9/16\"-18 Unf and Side. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Eaton J Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, 9/16\"-18 Unf and Side, and the load fits on the shaft, Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Eaton J Series Hydraulic Motors?",
+          "a": "For the Eaton J Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Eaton J Series Hydraulic Motors differ from the Eaton H Series Hydraulic Motors?",
+          "a": "This one has 0.5 in³/rev to 1.9 in³/rev, in 10 part numbers. The [Eaton H Series Hydraulic Motors](/p/eaton-h-series-hydraulic-motors) has 2.8 in³/rev to 17.9 in³/rev, in 25 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Eaton J Series Hydraulic Motors made, and what is its HS code?",
+          "a": "The Eaton J Series Hydraulic Motors are made in the United States. The listing gives HS code 8412298015. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Eaton J Series Hydraulic Motors in Dubai for export?",
+          "a": "Yes. We keep the Eaton J Series Hydraulic Motors in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-110a-series-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker 110A Series Hydraulic Motors and what are they used for?",
+          "a": "The Parker 110A Series Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 4 part numbers with displacement 3.6 in³/rev to 16.4 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE A 2-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker 110A Series Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 110A-164-AS-0-F (16.4 in³/rev, 7/8\"-14 SAE ports, 2,000 psi) and 110A-071-AS-0-F (7.1 in³/rev, 7/8\"-14 SAE ports, 2,500 psi) are two of the 4 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker 110A Series Hydraulic Motors cover?",
+          "a": "The Parker 110A Series Hydraulic Motors spans 3.6 in³/rev to 16.4 in³/rev across 4 part numbers. That is 4 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker 110A Series Hydraulic Motors offer?",
+          "a": "The shaft options on the Parker 110A Series Hydraulic Motors are Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker 110A Series Hydraulic Motors have?",
+          "a": "The Parker 110A Series Hydraulic Motors list these ratings by part number. Intermittent or maximum pressure runs 2,000 to 2,500 psi. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker 110A Series Hydraulic Motors have?",
+          "a": "The mounting of the Parker 110A Series Hydraulic Motors are SAE A 2-Bolt, and the ports are 7/8\"-14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker 110A Series Hydraulic Motors follow?",
+          "a": "The Parker 110A Series Hydraulic Motors names an SAE mounting flange, SAE A 2-Bolt, which refers to the SAE J744 flange pattern. The ports are 7/8\"-14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker 110A Series Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 SAE, and the load fits on the shaft, Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker 110A Series Hydraulic Motors?",
+          "a": "For the Parker 110A Series Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker 110A Series Hydraulic Motors differ from the Parker Hydraulic Motors?",
+          "a": "This one has 3.6 in³/rev to 16.4 in³/rev with SAE A 2-Bolt mounting, in 4 part numbers. The [Parker Hydraulic Motors](/p/parker-hydraulic-motors) has 8.6 in³/rev to 58.5 in³/rev with SAE A 2-Bolt mounting, in 15 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker 110A Series Hydraulic Motors made, and what is its HS code?",
+          "a": "The Parker 110A Series Hydraulic Motors are made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker 110A Series Hydraulic Motors from stock in the UAE and get a quotation?",
+          "a": "Yes, the Parker 110A Series Hydraulic Motors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-bg-series-brake-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker BG Series Brake Torqmotors and what are they used for?",
+          "a": "The Parker BG Series Brake Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 26 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker BG Series Brake Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BG0195CS080AAAB (7/8\"-14 ports) and BG0405AS080AABP (7/8\"-14 ports) are two of the 26 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker BG Series Brake Torqmotors cover?",
+          "a": "The Parker BG Series Brake Torqmotors are listed in 26 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker BG Series Brake Torqmotors offer?",
+          "a": "The shaft options on the Parker BG Series Brake Torqmotors are 1 1/4\" Tapered. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker BG Series Brake Torqmotors have?",
+          "a": "The listing gives no pressure or speed figures for the 26 part numbers of the Parker BG Series Brake Torqmotors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker BG Series Brake Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker BG Series Brake Torqmotors, and the ports are 7/8\"-14 and Manifold. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker BG Series Brake Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker BG Series Brake Torqmotors. The shaft options are 1 1/4\" Tapered and the ports are 7/8\"-14 and Manifold. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker BG Series Brake Torqmotors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 and Manifold, and the load fits on the shaft, 1 1/4\" Tapered. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker BG Series Brake Torqmotors?",
+          "a": "For the Parker BG Series Brake Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker BG Series Brake Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker BG Series Brake Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker BG Series Brake Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one carries no displacement column, in 26 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker BG Series Brake Torqmotors from stock in the UAE and get a quotation?",
+          "a": "Yes. The Parker BG Series Brake Torqmotors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-bh-series-brake-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker BH Series Brake Motors and what are they used for?",
+          "a": "The Parker BH Series Brake Motors are a low-speed, high-torque orbital hydraulic motor, listed in 6 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker BH Series Brake Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example BH0405CS320AAAB (7/8\"-14 ports) and BH0195AS310AAAB (1/2\" to 13\", 7/8\" to 14\" ports) are two of the 6 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker BH Series Brake Motors cover?",
+          "a": "The Parker BH Series Brake Motors are listed in 6 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker BH Series Brake Motors offer?",
+          "a": "The shaft options on the Parker BH Series Brake Motors are 1 1/2\" Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker BH Series Brake Motors have?",
+          "a": "The listing gives no pressure or speed figures for the 6 part numbers of the Parker BH Series Brake Motors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker BH Series Brake Motors have?",
+          "a": "The listing gives no mount type for the Parker BH Series Brake Motors, and the ports are 7/8\"-14 and 1/2\" to 13\", 7/8\" to 14\". Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker BH Series Brake Motors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker BH Series Brake Motors. The shaft options are 1 1/2\" Keyed and the ports are 7/8\"-14 and 1/2\" to 13\", 7/8\" to 14\". Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker BH Series Brake Motors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 and 1/2\" to 13\", 7/8\" to 14\", and the load fits on the shaft, 1 1/2\" Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker BH Series Brake Motors?",
+          "a": "For the Parker BH Series Brake Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker BH Series Brake Motors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker BH Series Brake Motors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker BH Series Brake Motors differ from the Parker 110A Series Hydraulic Motors?",
+          "a": "This one carries no displacement column, in 6 part numbers. The [Parker 110A Series Hydraulic Motors](/p/parker-110a-series-hydraulic-motors) has 3.6 in³/rev to 16.4 in³/rev with SAE A 2-Bolt mounting, in 4 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker BH Series Brake Motors from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks the Parker BH Series Brake Motors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-hydraulic-motors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker Hydraulic Motors and what are they used for?",
+          "a": "The Parker Hydraulic Motors are a low-speed, high-torque orbital hydraulic motor, listed in 15 part numbers with displacement 8.6 in³/rev to 58.5 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is SAE A 2-Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker Hydraulic Motors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example 110A-106-AS-0-F (10.6 in³/rev, 7/8\"-14 SAE ports, 2,250 psi) and TG0140AS030AAAA (8.6 in³/rev, 7/8\"-14 SAE ports, 3,000 psi) are two of the 15 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker Hydraulic Motors cover?",
+          "a": "The Parker Hydraulic Motors spans 8.6 in³/rev to 58.5 in³/rev across 15 part numbers. That is 15 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker Hydraulic Motors offer?",
+          "a": "The shaft options on the Parker Hydraulic Motors are Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker Hydraulic Motors have?",
+          "a": "The Parker Hydraulic Motors list these ratings by part number. Intermittent or maximum pressure runs 1,000 to 3,000 psi. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker Hydraulic Motors have?",
+          "a": "The mounting of the Parker Hydraulic Motors are SAE A 2-Bolt, and the ports are 7/8\"-14 SAE. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker Hydraulic Motors follow?",
+          "a": "The Parker Hydraulic Motors names an SAE mounting flange, SAE A 2-Bolt, which refers to the SAE J744 flange pattern. The ports are 7/8\"-14 SAE. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker Hydraulic Motors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 SAE, and the load fits on the shaft, Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker Hydraulic Motors?",
+          "a": "For the Parker Hydraulic Motors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker Hydraulic Motors differ from the Parker 110A Series Hydraulic Motors?",
+          "a": "This one has 8.6 in³/rev to 58.5 in³/rev with SAE A 2-Bolt mounting, in 15 part numbers. The [Parker 110A Series Hydraulic Motors](/p/parker-110a-series-hydraulic-motors) has 3.6 in³/rev to 16.4 in³/rev with SAE A 2-Bolt mounting, in 4 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "L",
+          "q": "Where are the Parker Hydraulic Motors made, and what is its HS code?",
+          "a": "The Parker Hydraulic Motors are made in the United States. We ship worldwide from Dubai, UAE, with the best lead times, and can supply a certificate of origin on request."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker Hydraulic Motors from stock in the UAE and get a quotation?",
+          "a": "Yes, the Parker Hydraulic Motors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tb-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TB Series Torqmotors and what are they used for?",
+          "a": "The Parker TB Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 79 part numbers with displacement 2.2 in³/rev to 24 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque. The mounting is 2 Bolt SAE A, 4 Bolt and 2 Bolt."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TB Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TB0195AP100AAAA (2 Bolt SAE A mount) and TB0230FS250AAAA (7/8\"-14 ports) are two of the 79 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TB Series Torqmotors cover?",
+          "a": "The Parker TB Series Torqmotors spans 2.2 in³/rev to 24 in³/rev across 79 part numbers. That is 15 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TB Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TB Series Torqmotors are 1\" Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TB Series Torqmotors have?",
+          "a": "The Parker TB Series Torqmotors list these ratings by part number. Intermittent or maximum pressure runs 1,200 to 1,800 psi. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TB Series Torqmotors have?",
+          "a": "The mounting of the Parker TB Series Torqmotors are 2 Bolt SAE A, 4 Bolt and 2 Bolt, and the ports are 1/2\"-14, 7/8\"-14 SAE and 7/8\"-14. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TB Series Torqmotors follow?",
+          "a": "The Parker TB Series Torqmotors names an SAE mounting flange, 2 Bolt SAE A, 4 Bolt and 2 Bolt, which refers to the SAE J744 flange pattern. The ports are 1/2\"-14, 7/8\"-14 SAE and 7/8\"-14. Confirm the flange size and the port type against your machine before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TB Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, 1/2\"-14, 7/8\"-14 SAE and 7/8\"-14, and the load fits on the shaft, 1\" Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TB Series Torqmotors?",
+          "a": "For the Parker TB Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TB Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TB Series Torqmotors are listed with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TB Series Torqmotors differ from the Parker TC Series Torqmotors?",
+          "a": "This one has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. The [Parker TC Series Torqmotors](/p/parker-tc-series-torqmotors) carries no displacement column, in 42 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker TB Series Torqmotors from stock in the UAE and get a quotation?",
+          "a": "Yes. The Parker TB Series Torqmotors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tc-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TC Series Torqmotors and what are they used for?",
+          "a": "The Parker TC Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 42 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TC Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TC0045FS110AAAA (Hydraulic Motor) and TC0230AS110AAAA (7/8\"-14 ports) are two of the 42 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TC Series Torqmotors cover?",
+          "a": "The Parker TC Series Torqmotors are listed in 42 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TC Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TC Series Torqmotors are the shafts listed in the size table. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TC Series Torqmotors have?",
+          "a": "The listing gives no pressure or speed figures for the 42 part numbers of the Parker TC Series Torqmotors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TC Series Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker TC Series Torqmotors, and the ports are 7/8\"-14. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TC Series Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker TC Series Torqmotors. The shaft options are the shafts listed in the size table and the ports are 7/8\"-14. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TC Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14, and the load fits on the shaft, the shafts listed in the size table. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TC Series Torqmotors?",
+          "a": "For the Parker TC Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TC Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TC Series Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TC Series Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one carries no displacement column, in 42 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Parker TC Series Torqmotors from stock in the UAE and get a quotation?",
+          "a": "Yes. The Parker TC Series Torqmotors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tf-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TF Series Torqmotors and what are they used for?",
+          "a": "The Parker TF Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 450 part numbers with displacement 4.9 in³/rev to 29.1 in³/rev. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TF Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TF0360MS080AAAA (Hydraulic Motor) and TF0080AS030AAAA (4.9 in³/rev, 7/8\"-14 SAE ports, 3,000 psi) are two of the 450 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TF Series Torqmotors cover?",
+          "a": "The Parker TF Series Torqmotors spans 4.9 in³/rev to 29.1 in³/rev across 450 part numbers. That is 10 distinct displacements. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TF Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TF Series Torqmotors are 1 1/4\" Tapered. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TF Series Torqmotors have?",
+          "a": "The Parker TF Series Torqmotors list these ratings by part number. Intermittent or maximum pressure runs 1,645 to 3,000 psi. Torque runs 2,031 to 3,782 lb-in. Ratings vary by size, so read the row for the part number you order, and size the motor on the continuous figures, treating intermittent figures as short peaks only."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TF Series Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker TF Series Torqmotors, and the ports are 7/8\"-14 SAE. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TF Series Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker TF Series Torqmotors. The shaft options are 1 1/4\" Tapered and the ports are 7/8\"-14 SAE. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TF Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14 SAE, and the load fits on the shaft, 1 1/4\" Tapered. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TF Series Torqmotors?",
+          "a": "For the Parker TF Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TF Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TF Series Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TF Series Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one has 4.9 in³/rev to 29.1 in³/rev, in 450 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker TF Series Torqmotors in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, the Parker TF Series Torqmotors are held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tg-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TG Series Torqmotors and what are they used for?",
+          "a": "The Parker TG Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 14 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TG Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TG0170MS010AAAA (7/8\"-14 ports) and TG0240MS010AAAA (7/8\"-14 ports) are two of the 14 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TG Series Torqmotors cover?",
+          "a": "The Parker TG Series Torqmotors are listed in 14 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TG Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TG Series Torqmotors are 1\" 6B Spline. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TG Series Torqmotors have?",
+          "a": "The listing gives no pressure or speed figures for the 14 part numbers of the Parker TG Series Torqmotors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TG Series Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker TG Series Torqmotors, and the ports are 7/8\"-14. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TG Series Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker TG Series Torqmotors. The shaft options are 1\" 6B Spline and the ports are 7/8\"-14. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TG Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14, and the load fits on the shaft, 1\" 6B Spline. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TG Series Torqmotors?",
+          "a": "For the Parker TG Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TG Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TG Series Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TG Series Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one carries no displacement column, in 14 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker TG Series Torqmotors in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The Parker TG Series Torqmotors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tj-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TJ Series Torqmotors and what are they used for?",
+          "a": "The Parker TJ Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 13 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TJ Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TJ0065US080AAAA (7/8\"-14 ports) and TJ0130US080AAAA (7/8\"-14 ports) are two of the 13 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TJ Series Torqmotors cover?",
+          "a": "The Parker TJ Series Torqmotors are listed in 13 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TJ Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TJ Series Torqmotors are 1 1/4\" Tapered. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TJ Series Torqmotors have?",
+          "a": "The listing gives no pressure or speed figures for the 13 part numbers of the Parker TJ Series Torqmotors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TJ Series Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker TJ Series Torqmotors, and the ports are 7/8\"-14. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TJ Series Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker TJ Series Torqmotors. The shaft options are 1 1/4\" Tapered and the ports are 7/8\"-14. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TJ Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, 7/8\"-14, and the load fits on the shaft, 1 1/4\" Tapered. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TJ Series Torqmotors?",
+          "a": "For the Parker TJ Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TJ Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TJ Series Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TJ Series Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one carries no displacement column, in 13 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker TJ Series Torqmotors in Dubai for export?",
+          "a": "Yes. The Parker TJ Series Torqmotors sit in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "parker-tk-series-torqmotors",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Parker TK Series Torqmotors and what are they used for?",
+          "a": "The Parker TK Series Torqmotors are a low-speed, high-torque orbital hydraulic motor, listed in 37 part numbers. Orbital motors suit machine drives that need torque at low shaft speed, and displacement sets the trade between speed and torque."
+        },
+        {
+          "slot": "B",
+          "q": "How do I identify the part number of the Parker TK Series Torqmotors?",
+          "a": "Quote the part number from the motor nameplate, which carries the model code. For example TK0315K5320AAAA (Hydraulic Motor) and TK1000T5630AAAA (Hydraulic Motor) are two of the 37 rows. The size table gives the displacement, shaft and port details for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "What displacement range do the Parker TK Series Torqmotors cover?",
+          "a": "The Parker TK Series Torqmotors are listed in 37 part numbers, but the listing carries no displacement column, so quote the part number and we confirm the displacement and torque with the maker. A larger displacement turns slower with more torque for a given flow, and shaft speed in rpm is roughly flow in US gpm × 231 ÷ displacement in in³/rev, before volumetric losses."
+        },
+        {
+          "slot": "D",
+          "q": "Which shaft options do the Parker TK Series Torqmotors offer?",
+          "a": "The shaft options on the Parker TK Series Torqmotors are 1 1/2\" Keyed. Match the shaft to the machine, because keyed, spline and tapered shafts do not interchange. Give us the shaft type and diameter from your old motor, and the part number if you have it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure, speed and torque ratings do the Parker TK Series Torqmotors have?",
+          "a": "The listing gives no pressure or speed figures for the 37 part numbers of the Parker TK Series Torqmotors. The ratings depend on the displacement and the build, so give us the working pressure, flow and torque you need and the part number, and we confirm the motor with the maker before supply."
+        },
+        {
+          "slot": "F",
+          "q": "What mounting and port options do the Parker TK Series Torqmotors have?",
+          "a": "The listing gives no mount type for the Parker TK Series Torqmotors, and the ports are not stated. Quote the part number so we confirm the flange. Match the mount, shaft and ports to the motor you are replacing, and quote the part number from its nameplate where you can."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards do the Parker TK Series Torqmotors follow?",
+          "a": "The listing names no dimensional standard and no mount type for the Parker TK Series Torqmotors. The shaft options are 1 1/2\" Keyed and the ports are not stated. Quote the part number and we confirm the mounting and ports with the maker before supply."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect to the Parker TK Series Torqmotors?",
+          "a": "Hose or tube connects to the ports, not stated, and the load fits on the shaft, 1 1/2\" Keyed. For sizing hose and fittings to the flow see the [motor torque and speed guide](/blog/hydraulic-motor-torque-and-speed). Other orbital motors are on the [orbital motors shelf](/c/orbital-hydraulic-motors)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install and run the Parker TK Series Torqmotors?",
+          "a": "For the Parker TK Series Torqmotors, tell us the circuit pressure and flow so we confirm the part. Check the shaft alignment, keep the system clean and fill the motor with oil before running it."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines use the Parker TK Series Torqmotors?",
+          "a": "Orbital motors drive winches, wheels, augers, conveyors and sweepers where torque at low speed matters. The Parker TK Series Torqmotors are listed as an orbital motor. See [how to choose between gear, orbital and piston motors](/blog/gear-orbital-or-piston-hydraulic-motor) and the [orbital motor guide](/blog/orbital-hydraulic-motor-guide)."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Parker TK Series Torqmotors differ from the Parker TB Series Torqmotors?",
+          "a": "This one carries no displacement column, in 37 part numbers. The [Parker TB Series Torqmotors](/p/parker-tb-series-torqmotors) has 2.2 in³/rev to 24 in³/rev with 2 Bolt SAE A, 4 Bolt and 2 Bolt mounting, in 79 part numbers. Choose on mount, shaft and displacement."
+        },
+        {
+          "slot": "M",
+          "q": "Are the Parker TK Series Torqmotors in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks the Parker TK Series Torqmotors at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

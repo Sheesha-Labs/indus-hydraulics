@@ -1,0 +1,271 @@
+{
+  "family": "seals-accessories",
+  "extraFacts": [
+    {
+      "fact": "DIN 24550 is the German standard for hydraulic filters that sets nominal sizes and designations of filter elements and housings.",
+      "source": "DIN 24550 Fluid power; filters"
+    }
+  ],
+  "products": [
+    {
+      "slug": "hydac-0160-dn-010-bn4hc-pressure-filter-element",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the HYDAC 0160 DN 010 BN4HC pressure filter element used for?",
+          "a": "The HYDAC 0160 DN 010 BN4HC is a 10 µm pressure-line filter element built to DIN 24550. It is the replacement element for HYDAC's DFN, DFNF, LFN and LFNF inline filters, and the 0160 size fits the DFN 160 housing. It is not a suction filter."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the code 0160 DN 010 BN4HC on a HYDAC filter element?",
+          "a": "0160 is the element size, matching the DFN 160 filter, DN is the pressure element to DIN 24550, 010 is the 10 µm rating and BN4HC is Betamicron glass-fibre media in the low-collapse grade. With no suffix it has NBR seals and no bypass, and /-V gives FPM seals."
+        },
+        {
+          "slot": "D",
+          "q": "Does the 0160 in HYDAC 0160 DN 010 BN4HC mean 160 L/min flow?",
+          "a": "No. 0160 is the element size, not a flow rating. HYDAC sizes the pressure drop with a gradient coefficient of 3.8 mbar per L/min at 30 mm²/s, rising in proportion to viscosity, so work out the pressure drop from your flow and oil viscosity."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of the HYDAC 0160 DN 010 BN4HC element?",
+          "a": "The element measures 40.1 mm inside diameter by 80 mm outside diameter by 160 mm long. It is built as microglass media on a steel support tube with an outer sleeve, and the oil flows from the outside to the inside."
+        },
+        {
+          "slot": "E",
+          "q": "What are the pressure, temperature and filtration ratings of the HYDAC 0160 DN 010 BN4HC?",
+          "a": "The element filters to 10 µm with βx(c) ≥ 1000 (99.9 %) as HYDAC USA states it, has a collapse rating of 20 bar, and works from −30 to +100 °C. The DFN 160 housing is rated 210 bar nominal."
+        },
+        {
+          "slot": "F",
+          "q": "Which fluids can the HYDAC 0160 DN 010 BN4HC element be used with?",
+          "a": "HYDAC lists the DFN 160 housing for mineral hydraulic oils, lubricating and compressor oils, biodegradable HETG, HEES and HEPG fluids and fire-resistant HFA to HFD fluids. The standard element has NBR seals, and the /-V version has FPM seals for fluids that need them."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the HYDAC 0160 DN 010 BN4HC element follow?",
+          "a": "The DN element type is built to DIN 24550, the standard for the dimensions and designation of hydraulic filters. DIN 24550 is cited on the HYDAC DFN housing it fits, which is an inline pressure filter to the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "Which HYDAC filter housing does the 0160 DN 010 BN4HC element fit?",
+          "a": "It fits the DFN 160 inline pressure filter, and HYDAC also lists it for the DFNF, LFN and LFNF families. The DFN 160 has a port for a clogging indicator, set to 5 bar as standard, and comes without a bypass valve as standard, with a 7 bar bypass as an option."
+        },
+        {
+          "slot": "I",
+          "q": "Does the HYDAC 0160 DN 010 BN4HC element have a bypass, and when do I change it?",
+          "a": "No. The element has a closed end cap and no bypass, and the DFN housing has none as standard. Change the element when the clogging indicator, set to 5 bar as standard, trips, and keep the system clean during a change. See [contamination during a hose change](/blog/contamination-during-a-hose-change)."
+        },
+        {
+          "slot": "K",
+          "q": "What does BN4HC mean, and how is it different from BH4HC media on the 0160 DN element?",
+          "a": "BN4HC is Betamicron glass-fibre media in HYDAC's low-collapse grade, rated 20 bar. HYDAC also makes the same element in BH4HC media, rated to 210 bar differential, for duties where the element may see high differential pressure."
+        },
+        {
+          "slot": "L",
+          "q": "How do I order the HYDAC 0160 DN 010 BN4HC and what is its material number?",
+          "a": "Quote 0160 DN 010 BN4HC, or HYDAC material no. 1268869. We supply genuine HYDAC elements, and confirm lead time on the quotation. For the return-side element see the [HYDAC 0330 R 010 BN4HC return line filter element](/p/hydac-0330-return-line-filter)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the HYDAC 0160 DN 010 BN4HC pressure filter element in Dubai for export?",
+          "a": "Yes. The HYDAC 0160 DN 010 BN4HC pressure filter element sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "hydac-0330-return-line-filter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the HYDAC 0330 R 010 BN4HC return line filter element used for?",
+          "a": "The HYDAC 0330 R 010 BN4HC is a 10 µm return line filter element for HYDAC's RF 330 return line filter, which takes one 0330 R element. It filters oil on its way back to the tank. As with every R element, 0330 is the element size, not a flow rating."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the code 0330 R 010 BN4HC?",
+          "a": "0330 is the element size, matching the RF 330 filter, R marks a return line element, 010 is the 10 µm rating and BN4HC is Betamicron glass-fibre media in the low-collapse grade, rated 20 bar. The suffix /-B6 sets a 6 bar bypass, /-KB removes the bypass and /-V gives FPM seals."
+        },
+        {
+          "slot": "D",
+          "q": "Is the HYDAC 0330 R 010 BN4HC still made, and what replaces it?",
+          "a": "HYDAC no longer lists a 0330 R 010 element in BN4HC media. Its current 10 µm glass-fibre element in this size is 0330 R 010 ON or 0330 R 010 SN Sustainmicron, material no. 1262993. HYDAC does not say this supersedes BN4HC, so tell us whether you need BN4HC or will accept the current media."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the HYDAC 0330 R element?",
+          "a": "HYDAC's data for the 0330 R 010 ON gives 48 mm inside diameter by 95 mm outside diameter by 195 mm long. It is built as microglass media on a steel support tube with NBR seals, and oil flows from the outside to the inside."
+        },
+        {
+          "slot": "E",
+          "q": "What bypass setting and collapse rating does the HYDAC 0330 R 010 BN4HC have?",
+          "a": "The bypass valve sits in the element and cracks at 3 bar as standard, with 6 bar on /-B6 and none on /-KB. The collapse rating is 20 bar for BN4HC media, and the RF 330 housing is rated 25 bar nominal. Operating temperature is −30 to +100 °C."
+        },
+        {
+          "slot": "F",
+          "q": "What media and seals does the HYDAC 0330 R 010 BN4HC element use?",
+          "a": "The media is Betamicron BN4HC glass fibre, a low-collapse grade, filtering to 10 µm, and the seals are NBR as standard. The /-V version uses FPM seals for fluids that attack NBR. Tell us the oil type so we confirm the seal."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard applies to the HYDAC 0330 R 010 BN4HC return line element?",
+          "a": "HYDAC identifies the R element by its own size code, 0330, and by the RF 330 housing it fits, rather than by a DIN designation. State the element code and the housing when you order, and we confirm fit before supply."
+        },
+        {
+          "slot": "H",
+          "q": "Which housing does the HYDAC 0330 R 010 BN4HC element fit?",
+          "a": "It fits HYDAC's RF 330 return line filter, which takes one 0330 R element. The RF 330 mounts on the tank top or inline, is rated 25 bar nominal, has an aluminium housing with G 2 or SAE 2 in ports and weighs 4.1 kg with its element."
+        },
+        {
+          "slot": "I",
+          "q": "When should I replace the HYDAC 0330 R 010 BN4HC element?",
+          "a": "Replace it at the interval set by your clogging indicator or service plan, and whenever it has gone into bypass, because the 3 bar bypass in the element lets unfiltered oil past. Keep the tank and fittings clean during the change. See [hydraulic power unit components](/blog/hydraulic-power-unit-components)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the HYDAC 0330 R return line element differ from the 0160 DN pressure element?",
+          "a": "The 0330 R is a return line element with a 3 bar bypass in the element, for the RF 330 housing. The [0160 DN pressure element](/p/hydac-0160-dn-010-bn4hc-pressure-filter-element) has no bypass and goes in the DFN 160 inline pressure filter."
+        },
+        {
+          "slot": "L",
+          "q": "How do I order the HYDAC 0330 R 010 BN4HC element?",
+          "a": "Quote 0330 R 010 BN4HC, or the media you will accept. We supply genuine HYDAC elements and confirm lead time on the quotation. The current ON or SN element carries material no. 1262993."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the HYDAC 0330 R 010 BN4HC return line filter element from stock in the UAE and get a quotation?",
+          "a": "Yes, the HYDAC 0330 R 010 BN4HC return line filter element is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hydac-sb330-4l-accumulator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the HYDAC SB330-4A1/112A9-330A bladder accumulator used for?",
+          "a": "The HYDAC SB330-4A1/112A9-330A is a 4-litre bladder accumulator that stores hydraulic energy under a nitrogen charge, up to 330 bar. HYDAC lists energy storage, shock absorption, pulsation damping, leakage-loss compensation and volume compensation as typical uses."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the model code SB330-4A1/112A9-330A?",
+          "a": "SB330 is the standard bladder series, 4 is the nominal volume in litres, A is a standard fluid port with a threaded internal seal face and 1 is the standard 7/8-14UNF gas valve. 112 is a carbon steel shell and port with an NBR bladder, A9 is the China and Hong Kong certification code, 330 is the permitted pressure in bar and the last A is a threaded ISO 228 (BSP) connection."
+        },
+        {
+          "slot": "D",
+          "q": "What is the oil volume and fluid port of the 4 L HYDAC SB330 accumulator?",
+          "a": "Nominal volume is 4 L and effective gas volume is 3.7 L. The fluid port is G 1 1/4 to ISO 228, and the maximum fluid flow is 10 L/s under optimum conditions with the unit installed vertically. The usable oil volume depends on the pre-charge and the working pressures."
+        },
+        {
+          "slot": "D",
+          "q": "How big and how heavy is the HYDAC SB330-4A1/112A9-330A accumulator?",
+          "a": "It weighs 15 kg and measures 412 mm long overall by 170 mm maximum diameter. HYDAC tabulates weights and dimensions for its CC U and CC S builds, and the A9 build is presumed identical in the vessel."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the HYDAC SB330 4 L accumulator allow?",
+          "a": "The permitted operating pressure is 330 bar, and operating temperature is −10 to +80 °C. The permitted pressure can differ between certifications, so tell us the country of installation when you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the shell and bladder of the HYDAC SB330 4 L accumulator made from?",
+          "a": "The shell and fluid port are carbon steel and the bladder is NBR. NBR suits mineral hydraulic oils, so tell us if you plan to use another fluid and we will check the bladder."
+        },
+        {
+          "slot": "G",
+          "q": "What does the A9 certification code on the HYDAC SB330 4 L accumulator mean?",
+          "a": "A9 is the certification for China and Hong Kong. HYDAC supplies test documents for the country of installation, which must be stated at order, so tell us where the accumulator will be installed. The permitted pressure can differ between certifications."
+        },
+        {
+          "slot": "H",
+          "q": "Which gas and pre-charge does the HYDAC SB330 4 L accumulator need?",
+          "a": "Charge it with nitrogen of at least class 2.8, never air or oxygen. HYDAC's limits are a pre-charge no more than 0.9 times the minimum operating pressure, and a maximum operating pressure no more than four times the pre-charge. The pre-charge is set to the figure you give at order."
+        },
+        {
+          "slot": "I",
+          "q": "How should the HYDAC SB330 4 L accumulator be mounted?",
+          "a": "Mount it vertically, horizontally or at an angle, with the oil valve pointing down when vertical or slanted. Vertical is preferred for energy storage, because horizontal or slanted mounting reduces the usable volume and flow. HYDAC recommends its mounting clamps over 1 L or where vibration is strong. See [hydraulic power unit components](/blog/hydraulic-power-unit-components)."
+        },
+        {
+          "slot": "J",
+          "q": "What spares exist for the HYDAC SB330-4A1/112A9-330A?",
+          "a": "HYDAC lists bladder assembly 236046, seal kit 353609 and repair kit 2106204 for this accumulator. The bladder is the normal wear part. Quote the model code with the pre-charge and the country of installation when you order."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 4 L HYDAC SB330 accumulator differ from the 10 L?",
+          "a": "This 4 L unit has a G 1 1/4 port and weighs 15 kg, with 3.7 L of effective gas volume, against a larger G 2 port and 33 kg on the 10 L unit. See the [10 L accumulator](/p/hydac-sb330-bladder-accumulator) for its figures."
+        },
+        {
+          "slot": "M",
+          "q": "Is the HYDAC SB330-4A1/112A9-330A bladder accumulator in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. The HYDAC SB330-4A1/112A9-330A bladder accumulator sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "hydac-sb330-bladder-accumulator",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the HYDAC SB330-10A1/112A9-330A bladder accumulator used for?",
+          "a": "The HYDAC SB330-10A1/112A9-330A is a 10-litre bladder accumulator that stores hydraulic energy under a nitrogen charge, up to 330 bar. HYDAC lists energy storage, shock absorption, pulsation damping, leakage-loss compensation and volume compensation as typical uses."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the model code SB330-10A1/112A9-330A?",
+          "a": "SB330 is the standard bladder series, 10 is the nominal volume in litres, A is a standard fluid port with a threaded internal seal face and 1 is the standard 7/8-14UNF gas valve. 112 is a carbon steel shell and port with an NBR bladder, A9 is the China and Hong Kong certification code, 330 is the permitted pressure in bar and the last A is a threaded ISO 228 (BSP) connection."
+        },
+        {
+          "slot": "D",
+          "q": "What is the oil volume and fluid port of the 10 L HYDAC SB330 accumulator?",
+          "a": "Nominal volume is 10 L and effective gas volume is 9.3 L. The fluid port is G 2 to ISO 228, and the maximum fluid flow is 15 L/s under optimum conditions with the unit installed vertically. The usable oil volume depends on the pre-charge and the working pressures."
+        },
+        {
+          "slot": "D",
+          "q": "How big and how heavy is the HYDAC SB330-10A1/112A9-330A accumulator?",
+          "a": "It weighs 33 kg and measures 582 mm long overall by 229 mm maximum diameter. These figures are for the standard 10 L. HYDAC also makes a slimline 10 L, marked SV, with a G 1 1/4 port, 170 mm diameter and 31 kg, and this model code carries no SV."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature does the HYDAC SB330 10 L accumulator allow?",
+          "a": "The permitted operating pressure is 330 bar, and operating temperature is −10 to +80 °C. The permitted pressure can differ between certifications, so tell us the country of installation when you order."
+        },
+        {
+          "slot": "F",
+          "q": "What are the shell and bladder of the HYDAC SB330 10 L accumulator made from?",
+          "a": "The shell and fluid port are carbon steel and the bladder is NBR. NBR suits mineral hydraulic oils, so tell us if you plan to use another fluid and we will check the bladder."
+        },
+        {
+          "slot": "G",
+          "q": "What does the A9 certification code on the HYDAC SB330 10 L accumulator mean?",
+          "a": "A9 is the certification for China and Hong Kong. HYDAC supplies test documents for the country of installation, which must be stated at order, so tell us where the accumulator will be installed. The permitted pressure can differ between certifications."
+        },
+        {
+          "slot": "H",
+          "q": "Which gas and pre-charge does the HYDAC SB330 10 L accumulator need?",
+          "a": "Charge it with nitrogen of at least class 2.8, never air or oxygen. HYDAC's limits are a pre-charge no more than 0.9 times the minimum operating pressure, and a maximum operating pressure no more than four times the pre-charge. The pre-charge is set to the figure you give at order."
+        },
+        {
+          "slot": "I",
+          "q": "How should the HYDAC SB330 10 L accumulator be mounted?",
+          "a": "Mount it vertically, horizontally or at an angle, with the oil valve pointing down when vertical or slanted. Vertical is preferred for energy storage, because horizontal or slanted mounting reduces the usable volume and flow. HYDAC recommends its mounting clamps over 1 L or where vibration is strong. See [hydraulic power unit components](/blog/hydraulic-power-unit-components)."
+        },
+        {
+          "slot": "J",
+          "q": "What spares exist for the HYDAC SB330-10A1/112A9-330A?",
+          "a": "HYDAC lists bladder assembly 236088, seal kit 353621 and repair kit 2106212 for this accumulator. The bladder is the normal wear part. Quote the model code with the pre-charge and the country of installation when you order."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 10 L HYDAC SB330 accumulator differ from the 4 L?",
+          "a": "This 10 L unit has a G 2 port, weighs 33 kg and has 9.3 L of effective gas volume, against a smaller G 1 1/4 port and 15 kg on the 4 L unit. See the [4 L accumulator](/p/hydac-sb330-4l-accumulator) for its figures."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the HYDAC SB330-10A1/112A9-330A bladder accumulator from stock in the UAE and get a quotation?",
+          "a": "Yes, the HYDAC SB330-10A1/112A9-330A bladder accumulator is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

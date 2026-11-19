@@ -1,0 +1,145 @@
+{
+  "family": "wellhead-control-panels",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "hydraulic-emergency-shutdown-system-self-contained",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a self-contained hydraulic ESD system used for?",
+          "a": "Self-contained hydraulic emergency shutdown systems: no external air or power, built-in hand pump to open, automatic, remote or manual shutdown in seconds, 3,000 psi main circuit, Ex-rated, IP65/66."
+        },
+        {
+          "slot": "B",
+          "q": "What do the 3,000 psi main circuit and 145 psi pilot circuit mean on this ESD system?",
+          "a": "The 3,000 psi main circuit is the hydraulic pressure that holds the shutdown valve open, and the 145 psi pilot circuit is the low-pressure trip circuit that dumps it. The ESD system is fitted to the shutdown valve specified."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the self-contained hydraulic ESD system come in?",
+          "a": "The listing covers Fitted to the shutdown valve specified nominal bore at 3,000 psi main circuit; 145 psi pilot circuit, with mounted on the valve. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a self-contained hydraulic ESD system or a wellhead control panel?",
+          "a": "Choose the self-contained system for a single remote valve or pipeline site with no air or power, and the [wellhead control panel](/p/wellhead-control-panel-whcp) for production wells where several valves are controlled together."
+        },
+        {
+          "slot": "E",
+          "q": "How is the self-contained hydraulic ESD system tested?",
+          "a": "For the self-contained hydraulic ESD system (Fitted to the shutdown valve specified, 3,000 psi main circuit; 145 psi pilot circuit): factory acceptance test of the panel or system, with function and pressure tests of every circuit. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the self-contained hydraulic ESD system offer?",
+          "a": "On the self-contained hydraulic ESD system, body material is offered in Stainless steel 304, 316 or 316L cabinet and tubing, and the temperature range is -40 °C to 60 °C ambient. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which explosion-protection standard does the hydraulic ESD system meet?",
+          "a": "The listing gives the design standard as Ex ia/e/d IIB/C T4–T6, with an IP65 minimum enclosure. Confirm the zone and the certificate on the RFQ, and the documents are listed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "How is the self-contained hydraulic ESD system operated?",
+          "a": "The self-contained hydraulic ESD system is operated by hand pump to open; automatic, remote or manual trip. A built-in hand pump opens the valve, and a hydraulic circuit holds it open until a trip. End connections on the listing are mounted on the valve."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-contained hydraulic ESD system reset after a trip?",
+          "a": "Open the valve again with the built-in hand pump once the cause of the shutdown has been cleared; the valve is then held open hydraulically. Trips can be automatic on fire or power loss, remote or manual."
+        },
+        {
+          "slot": "K",
+          "q": "Self-contained hydraulic ESD system or wellhead control panel: which do I need?",
+          "a": "The self-contained hydraulic ESD system needs no external air or power and is mounted on one valve, while a wellhead control panel serves 1 to 20 wells from a stainless cabinet with pumps and logic. See the [Wellhead Control Panel (WHCP), Single or Multi-Well](/p/wellhead-control-panel-whcp)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the self-contained hydraulic ESD system be supplied from Dubai with test records?",
+          "a": "For the self-contained hydraulic ESD system: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-contained hydraulic ESD system in Dubai?",
+          "a": "Yes. We keep the self-contained hydraulic ESD system in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "wellhead-control-panel-whcp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a wellhead control panel used for?",
+          "a": "Wellhead control panels for 1 to 20 wells: operate SCSSV, SSV and ESD valves, output to 30,000 psi, fusible-plug fire shutdown, local and remote ESD, explosion-proof stainless cabinet, IP65."
+        },
+        {
+          "slot": "B",
+          "q": "What does a hydraulic output of 0 to 30,000 psi mean on a wellhead control panel?",
+          "a": "0 to 30,000 psi is the output pressure range the panel can supply to the hydraulic circuits, so it can operate SCSSV, SSV and ESDV valves. The cabinet is explosion-proof stainless with a design standard of Ex d IIB T4 minimum and IP65."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressure ratings does the wellhead control panel come in?",
+          "a": "The listing covers 1 to 20 wells nominal bore at Hydraulic output 0 to 30,000 psi, with tubing connections to each well. Give the bore, working pressure and end connection on the enquiry and we match the exact model."
+        },
+        {
+          "slot": "D",
+          "q": "Is a wellhead control panel pneumatic or hydraulic?",
+          "a": "The panel drives its hydraulic output with pneumatic or electric pumps, to 30,000 psi, so it controls hydraulic or pneumatic valves. For a single remote valve see the [self-contained hydraulic ESD system](/p/hydraulic-emergency-shutdown-system-self-contained)."
+        },
+        {
+          "slot": "E",
+          "q": "How is the wellhead control panel tested?",
+          "a": "For the wellhead control panel (1 to 20 wells, Hydraulic output 0 to 30,000 psi): factory acceptance test of the panel or system, with function and pressure tests of every circuit. The test record is supplied with the valve. Shell and seat tests are proof tests and are never working pressures."
+        },
+        {
+          "slot": "F",
+          "q": "Which material and temperature classes does the wellhead control panel offer?",
+          "a": "On the wellhead control panel, body material is offered in Stainless steel 304, 316 or 316L cabinet and tubing, and the temperature range is -40 °C to 60 °C ambient. For sour service the DD to HH classes apply to NACE MR0175 / ISO 15156. Give your temperature and H2S data on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "Which explosion-protection standard does the wellhead control panel meet?",
+          "a": "The listing gives the design standard as explosion protection Ex d IIB T4 minimum with IP65, in a stainless steel cabinet. Confirm the zone and the certificate on the RFQ, and the documents are listed on the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "How is the wellhead control panel operated?",
+          "a": "The wellhead control panel is operated by pneumatic or electric pumps. The panel opens and holds the valves with pneumatic or electric pumps and shuts the well on fire, high or low pressure, gas alarm or control-room command. End connections on the listing are tubing connections to each well."
+        },
+        {
+          "slot": "I",
+          "q": "What triggers a wellhead control panel to shut the well in?",
+          "a": "It shuts the well on fire (a fusible-plug loop from 71 °C to 138 °C), on high or low line pressure from the pilots, on a gas alarm, or by local or remote ESD from the DCS. See the [surface test trees](/c/surface-test-trees) shelf for test-tree control."
+        },
+        {
+          "slot": "K",
+          "q": "Wellhead control panel or self-contained hydraulic ESD system?",
+          "a": "A wellhead control panel serves 1 to 20 wells and several valve types with pumps and logic in a stainless cabinet, while a self-contained hydraulic ESD system serves one valve with a hand pump and no external energy. See the [Self-Contained Hydraulic Emergency Shutdown System](/p/hydraulic-emergency-shutdown-system-self-contained)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the wellhead control panel be supplied from Dubai with test records?",
+          "a": "For the wellhead control panel: built to order and supplied from Dubai with the documentation and test record. We export worldwide and issue the commercial invoice and packing list with the documents. Give the destination and specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the wellhead control panel in Dubai?",
+          "a": "Yes. We keep the wellhead control panel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the bore, pressure, ends and operator through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

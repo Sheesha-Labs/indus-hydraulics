@@ -1,0 +1,461 @@
+{
+  "family": "hydraulic-winches",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "dinamic-oil-np-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil NP and NPA compact hydraulic winches used for?",
+          "a": "The NP and NPA compact hydraulic winches are small hoisting winches with a planetary gearbox inside the drum, 6 models with first-layer line pull of 500 to 1,650 daN on 6 to 10 mm rope. They are built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the NP and NPA winch model names such as NP05 and NPA19?",
+          "a": "The model name is the series plus the size: NP05, NP08, NP10 and NP12 are the NP models, and NPA18 and NPA19 the NPA models (NP05 is 500 daN, NPA19 is 1,650 daN). Indus part numbers follow, such as IH-DO-NP-05 and IH-DO-NPA-19."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil NP and NPA compact hydraulic winches come in?",
+          "a": "There are 6 models with first-layer line pull of 500 to 1,650 daN. Examples: NP05 (500 daN, 6 mm rope), NP08 (800 daN, 7 mm rope), NP10 (1,100 daN, 8 mm rope), NP12 (1,300 daN, 8 mm rope), NPA18 (1,500 daN, 10 mm rope), NPA19 (1,650 daN, 10 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil NP and NPA compact hydraulic winches at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 500 to 1,650 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil NP and NPA compact hydraulic winches?",
+          "a": "A hydraulic motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake of steel and bronze discs, closed by springs and opened by the hoisting pressure, locks the drum whenever the motor stops. The planetary reduction is oil-bath lubricated, with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil NP and NPA compact hydraulic winches?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M4 to M6 (NP) and M4 to M5 (NPA), and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil NP and NPA compact hydraulic winches need?",
+          "a": "For the Dinamic Oil NP and NPA compact hydraulic winches, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil NP and NPA compact hydraulic winches?",
+          "a": "On the Dinamic Oil NP and NPA compact hydraulic winches, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil NP and NPA compact hydraulic winches?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system. Grooved drums and man-riding brakes are built to order. See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil NP and NPA compact hydraulic winches compare with the nearest series?",
+          "a": "NP and NPA cover 500 to 1,650 daN on 6 to 10 mm rope at 155 to 180 bar, while the A series is the larger compact series. The [A series compact winch](/p/dinamic-oil-a-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil NP and NPA compact hydraulic winches from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil NP and NPA compact hydraulic winches from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil NP and NPA compact hydraulic winches run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil NP and NPA compact hydraulic winches, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-a-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil A series compact hydraulic winches used for?",
+          "a": "The A series are compact hydraulic hoisting winches with a planetary gearbox inside the drum, 4 models with first-layer line pull of 1,360 to 3,525 daN on 8 to 12.7 mm rope, built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the A winch model names such as A30 and A80?",
+          "a": "The model name is the series letter plus a size number, A30 to A80. A30 is 1,360 daN on 8 mm rope and A80 is 3,525 daN on 12.7 mm rope. Indus part numbers follow, such as IH-DO-A-30 and IH-DO-A-80."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil A series compact hydraulic winches come in?",
+          "a": "There are 4 models with first-layer line pull of 1,360 to 3,525 daN. Examples: A30 (1,360 daN, 8 mm rope), A44 (2,000 daN, 10 mm rope), A60 (2,670 daN, 11 mm rope), A80 (3,525 daN, 12.7 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil A series compact hydraulic winches at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 1,360 to 3,525 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil A series compact hydraulic winches?",
+          "a": "A hydraulic motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake with steel and bronze discs, spring-closed and hydraulically opened, locks the drum whenever the motor stops. The planetary reduction is oil-bath lubricated with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil A series compact hydraulic winches?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M5 to M6, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil A series compact hydraulic winches need?",
+          "a": "For the Dinamic Oil A series compact hydraulic winches, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil A series compact hydraulic winches?",
+          "a": "On the Dinamic Oil A series compact hydraulic winches, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil A series compact hydraulic winches?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system. Grooved drums, man-riding brakes and double line pull are built to order. See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil A series compact hydraulic winches compare with the nearest series?",
+          "a": "The A series covers 1,360 to 3,525 daN on 8 to 12.7 mm rope at 155 to 185 bar, whereas the NP and NPA series are smaller. The [CW crane winch](/p/dinamic-oil-cw-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil A series compact hydraulic winches from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil A series compact hydraulic winches from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil A series compact hydraulic winches run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil A series compact hydraulic winches, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-cw-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil CW series crane hydraulic winches used for?",
+          "a": "The CW series are crane hydraulic winches with a planetary gearbox inside the drum, 9 models with first-layer line pull of 1,010 to 2,600 daN on 8 to 12 mm rope, built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the CW winch model names such as CW08 and CW20R?",
+          "a": "The model name is CW plus a size number, and an R suffix marks the faster versions: CW13R has the same 1,700 daN as CW13 but 53 m/min against 40 m/min, with a smaller motor displacement and higher oil flow. Examples are IH-DO-CW-08 and IH-DO-CW-20R."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil CW series crane hydraulic winches come in?",
+          "a": "There are 9 models with first-layer line pull of 1,010 to 2,600 daN. Examples: CW08 (1,010 daN, 8 mm rope), CW13 (1,700 daN, 10 mm rope), CW16R (2,070 daN, 10 mm rope), CW20R (2,600 daN, 12 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil CW series crane hydraulic winches at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 1,010 to 2,600 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil CW series crane hydraulic winches?",
+          "a": "A hydraulic motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake with steel and bronze discs, spring-closed and hydraulically opened, locks the drum whenever the motor stops. Planetary reduction is oil-bath lubricated, with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil CW series crane hydraulic winches?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M2 to M5, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil CW series crane hydraulic winches need?",
+          "a": "For the Dinamic Oil CW series crane hydraulic winches, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil CW series crane hydraulic winches?",
+          "a": "On the Dinamic Oil CW series crane hydraulic winches, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil CW series crane hydraulic winches?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system; see our [crane winch load monitoring guide](/blog/crane-winch-load-monitoring). See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil CW series crane hydraulic winches compare with the nearest series?",
+          "a": "The CW series runs 25 to 53 m/min on the first layer at 170 to 225 bar and up to 100 L/min, and the R versions trade motor size for speed. The [A series compact winch](/p/dinamic-oil-a-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil CW series crane hydraulic winches from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil CW series crane hydraulic winches from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil CW series crane hydraulic winches run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil CW series crane hydraulic winches, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-p-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil P series hydraulic winches with motor inside the drum used for?",
+          "a": "The P series are hydraulic hoisting winches with the motor inside the drum, 6 models with first-layer line pull of 750 to 2,500 daN on 7 to 12 mm rope, built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the P winch model names such as P6 and P15/E?",
+          "a": "The model name is P plus a size number, and an /E suffix marks the stronger version: P6/E pulls 1,000 daN against 750 daN for P6, with a larger motor displacement (160 cc against 100 cc). Examples are IH-DO-P-6 and IH-DO-P-15E."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil P series hydraulic winches with motor inside the drum come in?",
+          "a": "There are 6 models with first-layer line pull of 750 to 2,500 daN. Examples: P6 (750 daN, 7 mm rope), P6/E (1,000 daN, 8 mm rope), P9 (1,100 daN, 8 mm rope), P9/E (1,500 daN, 10 mm rope), P15 (2,000 daN, 10 mm rope), P15/E (2,500 daN, 12 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil P series hydraulic winches with motor inside the drum at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 750 to 2,500 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil P series hydraulic winches with motor inside the drum?",
+          "a": "The hydraulic motor sits inside the drum with a pilot-operated lowering control valve that holds the load on the way down, and a negative multi-disc brake locks the drum whenever the motor stops. The gears are grease lubricated on the P series, with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil P series hydraulic winches with motor inside the drum?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M4, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil P series hydraulic winches with motor inside the drum need?",
+          "a": "For the Dinamic Oil P series hydraulic winches with motor inside the drum, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil P series hydraulic winches with motor inside the drum?",
+          "a": "On the Dinamic Oil P series hydraulic winches with motor inside the drum, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil P series hydraulic winches with motor inside the drum?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system. Grooved drums and special drums are built to order. See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil P series hydraulic winches with motor inside the drum compare with the nearest series?",
+          "a": "The P series runs 100 to 175 bar, lower than the NP and A series, and is grease lubricated. The [NP and NPA compact winches](/p/dinamic-oil-np-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil P series hydraulic winches with motor inside the drum from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil P series hydraulic winches with motor inside the drum from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil P series hydraulic winches with motor inside the drum run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil P series hydraulic winches with motor inside the drum, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-s-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil S series hydraulic winches used for?",
+          "a": "The S series are hydraulic hoisting winches with a planetary gearbox inside the drum, 12 models with first-layer line pull of 2,000 to 13,000 daN on 10 to 24 mm rope, built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the S and SV winch model names such as S15 and S101?",
+          "a": "The model name is S plus a size number, so S15 is 2,000 daN and S101 is 13,000 daN. A V in the name (S45V/3) marks the faster version, 48 m/min against 27.5 m/min for S45/3. Examples are IH-DO-S-15 and IH-DO-S-101."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil S series hydraulic winches come in?",
+          "a": "There are 12 models with first-layer line pull of 2,000 to 13,000 daN. Examples: S15 (2,000 daN, 10 mm rope), S27/2 (3,550 daN, 14 mm rope), S45V/3 (5,750 daN, 16 mm rope), S101 (13,000 daN, 24 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil S series hydraulic winches at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 2,000 to 13,000 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil S series hydraulic winches?",
+          "a": "A hydraulic motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake locks the drum whenever the motor stops. Planetary reduction is oil-bath lubricated, with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil S series hydraulic winches?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M4 to M5, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil S series hydraulic winches need?",
+          "a": "For the Dinamic Oil S series hydraulic winches, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil S series hydraulic winches?",
+          "a": "On the Dinamic Oil S series hydraulic winches, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil S series hydraulic winches?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system; see our [crane winch load monitoring guide](/blog/crane-winch-load-monitoring). See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil S series hydraulic winches compare with the nearest series?",
+          "a": "The S series runs at 200 to 285 bar and up to 250 L/min, and the SE series is the version with axial piston motors. The [SE series with axial piston motors](/p/dinamic-oil-se-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil S series hydraulic winches from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil S series hydraulic winches from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil S series hydraulic winches run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil S series hydraulic winches, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-se-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil SE series hydraulic winches with axial piston motors used for?",
+          "a": "The SE series are hydraulic hoisting winches with axial piston motors, 15 models with first-layer line pull of 2,500 to 13,010 daN on 12 to 24 mm rope, built in Italy by Dinamic Oil."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the SE and SEV winch model names such as SE20/3 and SE100/3?",
+          "a": "The model name is SE plus a size number, and a V suffix marks the faster version: SE20/3 V runs 74 m/min against 38.5 m/min for SE20/3, with a smaller motor (40 cc against 200 cc) and 150 L/min oil flow. Examples are IH-DO-SE-203 and IH-DO-SE-1003."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil SE series hydraulic winches with axial piston motors come in?",
+          "a": "There are 15 models with first-layer line pull of 2,500 to 13,010 daN. Examples: SE20/3 (2,500 daN, 12 mm rope), SE27/3 V (3,550 daN, 14 mm rope), SE45 (5,750 daN, 16 mm rope), SE100/3 (13,010 daN, 24 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil SE series hydraulic winches with axial piston motors at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 2,500 to 13,010 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil SE series hydraulic winches with axial piston motors?",
+          "a": "An axial piston hydraulic motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake locks the drum whenever the motor stops. Planetary reduction is oil-bath lubricated, with marine-grade paint as standard."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil SE series hydraulic winches with axial piston motors?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M4 to M5, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil SE series hydraulic winches with axial piston motors need?",
+          "a": "For the Dinamic Oil SE series hydraulic winches with axial piston motors, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil SE series hydraulic winches with axial piston motors?",
+          "a": "On the Dinamic Oil SE series hydraulic winches with axial piston motors, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil SE series hydraulic winches with axial piston motors?",
+          "a": "Options include a rope tensioner (B), lowering limit switches (C1, C2), a strain-gauge load limiter (D), load cells (E), rotary limit switches (F1, F2) and the ELD system; see our [crane winch load monitoring guide](/blog/crane-winch-load-monitoring). See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil SE series hydraulic winches with axial piston motors compare with the nearest series?",
+          "a": "The SE series covers 24 to 74 m/min on the first layer at 200 to 275 bar, with V versions giving the highest speeds. The [S series winch](/p/dinamic-oil-s-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil SE series hydraulic winches with axial piston motors from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil SE series hydraulic winches with axial piston motors from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil SE series hydraulic winches with axial piston motors run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil SE series hydraulic winches with axial piston motors, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    },
+    {
+      "slug": "dinamic-oil-srd-series-hydraulic-winches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are the Dinamic Oil SRD heavy hydraulic winches used for?",
+          "a": "The SRD heavy hydraulic winches are built on the maker’s WD planetary winch drives with bent-axis axial piston motors, with first-layer pull of 8,000 to 29,700 daN on 18 to 32 mm rope. They suit duties such as crawler-crane hoists."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the SRD winch model names such as SRD A60 and SRD G230 (on request)?",
+          "a": "The model name is SRD plus a frame letter and size: SRD A60 is 8,000 daN and SRD G230 is 29,700 daN. E150, F180 and G230 are built on request. Examples are IH-DO-SRD-A60 and IH-DO-SRD-G230."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and line pulls do the Dinamic Oil SRD heavy hydraulic winches come in?",
+          "a": "There are 7 models with first-layer line pull of 8,000 to 29,700 daN. Examples: SRD A60 (8,000 daN, 18 mm rope), SRD C100 (13,000 daN, 22 mm rope), SRD E150 (on request) (19,400 daN, 26 mm rope), SRD G230 (on request) (29,700 daN, 32 mm rope). The size table gives each model’s rope, motor displacement, oil flow, pressure, gear ratio, brake torque and weight."
+        },
+        {
+          "slot": "E",
+          "q": "Is the line pull of the Dinamic Oil SRD heavy hydraulic winches at the first or last layer?",
+          "a": "The table gives the first-layer pull, the highest the winch delivers, and it is 8,000 to 29,700 daN across the series. Pull falls and rope speed rises as the rope builds up on the drum, and the maker’s datasheet gives both for every layer."
+        },
+        {
+          "slot": "F",
+          "q": "What is the construction and brake of the Dinamic Oil SRD heavy hydraulic winches?",
+          "a": "A bent-axis axial piston motor with a pilot-operated lowering control valve holds the load on the way down, and a negative multi-disc brake locks the drum whenever the motor stops. A hydraulic limit switch for hoisting and lowering is fitted. Planetary reduction is oil-bath lubricated."
+        },
+        {
+          "slot": "G",
+          "q": "What standard and class rating apply to the Dinamic Oil SRD heavy hydraulic winches?",
+          "a": "They are classified to UNI ISO 4301/1, mechanism class M5 to M7, and every winch is load-tested above its rated pull before dispatch. A class certificate (ABS, DNV, LR, BV) is available on request."
+        },
+        {
+          "slot": "H",
+          "q": "What hydraulic circuit do the Dinamic Oil SRD heavy hydraulic winches need?",
+          "a": "For the Dinamic Oil SRD heavy hydraulic winches, use an open-centre directional valve, a relief valve, and a return line with 1 to 5 bar back pressure, with the drain connected directly to tank where the winch has one. Filter the oil to 10 micron (25 micron at most) and run the winch unloaded at full flow for five minutes before the first lift."
+        },
+        {
+          "slot": "I",
+          "q": "What safety rules apply when installing the Dinamic Oil SRD heavy hydraulic winches?",
+          "a": "On the Dinamic Oil SRD heavy hydraulic winches, keep at least four wraps of rope on the drum and the return-line back pressure under 5 bar. Hoisting is counterclockwise viewed from the motor side (clockwise is built to order), so never swap the hoses to reverse it. Not for lifting people unless built to a man-riding specification."
+        },
+        {
+          "slot": "J",
+          "q": "What accessories and options can be fitted to the Dinamic Oil SRD heavy hydraulic winches?",
+          "a": "Options are a rope tensioner, lowering limit switches, rotary limit switches and the ELD electronic load detection system. The strain-gauge pull limiters are not available on SRD; see our [crane winch load monitoring guide](/blog/crane-winch-load-monitoring). See the [hydraulic winch accessories](/p/dinamic-oil-hydraulic-winch-accessories) listing for what each code does."
+        },
+        {
+          "slot": "K",
+          "q": "How do the Dinamic Oil SRD heavy hydraulic winches compare with the nearest series?",
+          "a": "The SRD covers 8,000 to 29,700 daN at 270 to 295 bar and up to 260 L/min, well above the SE series, and SRD E150 to G230 are built on request. The [SE series winch](/p/dinamic-oil-se-series-hydraulic-winches) is the nearest alternative; see our [hydraulic winches shelf](/c/hydraulic-winches)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you supply the Dinamic Oil SRD heavy hydraulic winches from Dubai?",
+          "a": "Indus Hydraulics is the authorised Dinamic Oil distributor and supplies the Dinamic Oil SRD heavy hydraulic winches from Dubai, UAE, shipped worldwide with the best lead times. The delivery time from the factory in Italy is confirmed with the quotation; send the model and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "G",
+          "q": "Can the Dinamic Oil SRD heavy hydraulic winches run in Gulf summer temperatures?",
+          "a": "The maker rates its standard units, including the Dinamic Oil SRD heavy hydraulic winches, for ambient temperature up to +40 °C. Above that, or in continuous direct sun, tell us the operating temperature; synthetic gear oil is recommended for very high ambient temperatures and an oil cooling unit can be added. See our [planetary gearbox oil in hot climates guide](/blog/planetary-gearbox-oil-in-hot-climates)."
+        }
+      ]
+    }
+  ]
+}

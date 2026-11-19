@@ -1,0 +1,1197 @@
+{
+  "family": "hydraulic-vane-pumps-01",
+  "extraFacts": [
+    {
+      "fact": "Vane pump flow equals displacement times speed: a pump of D cm³/rev at N rpm delivers D x N / 1000 litres per minute (theoretical). Vickers V-series pumps are rated 172 bar (2,500 psi) maximum except the largest V10 and V20 rings: V10 19.5 cm³/rev 152 bar (2,200 psi) and 22.8 cm³/rev 138 bar (2,000 psi); V20 39.0 and 42.4 cm³/rev 152 bar (2,200 psi). Ratings are on petroleum oil with 0 psi inlet.",
+      "source": "Indus Hydraulics guide /blog/vane-pump-guide-v10-v20-t6, citing Vickers V10/V20 technical information"
+    },
+    {
+      "fact": "Vickers V-series operating limits: anti-wear hydraulic oils or SAE J183 crankcase oils; running viscosity 13 to 54 cSt; inlet vacuum not above 5 inHg on petroleum oil; recommended oil temperature 49 °C, maximum 65 °C; cleanliness ISO 4406 19/17/14 for fixed vane pumps at 70 to 210 bar and 18/16/13 above 210 bar. Rotation can be changed by reassembling the internal parts, and the rotor, vanes, ring and side plates are sold as a replaceable cartridge.",
+      "source": "Indus Hydraulics guide /blog/vane-pump-guide-v10-v20-t6, citing Vickers V-series technical information"
+    },
+    {
+      "fact": "Theoretical flow at the 1,200 rpm rated speed in the size tables (displacement x 1.2 L/min per cm³/rev): 3.3 cm³/rev 4.0, 6.6 cm³/rev 7.9, 9.8 cm³/rev 11.8, 13.1 cm³/rev 15.7, 16.4 cm³/rev 19.7, 18 cm³/rev 21.6, 19.5 cm³/rev 23.4, 22.8 cm³/rev 27.4, 26.6 cm³/rev 31.9, 29.7 cm³/rev 35.6, 32.8 cm³/rev 39.4, 36.3 cm³/rev 43.6, 39.5 cm³/rev 47.4, 42.6 cm³/rev 51.1 L/min.",
+      "source": "Calculated from the displacement and rated speed in the Indus size tables"
+    },
+    {
+      "fact": "Part-number counts per listing, counted from the Indus size-table rows: Fluidyne V10 Vane Pumps, 13.1 cm³/rev: 29 part numbers, 17 CW, 12 CCW, 13 standard shaft, 16 with 1.75 in extension, max speed 3400 rpm, top-speed flow 44.5 L/min, 2500 psi; Fluidyne V10 Vane Pumps, 16.4 cm³/rev: 39 part numbers, 26 CW, 13 CCW, 17 standard shaft, 22 with 1.75 in extension, max speed 3200 rpm, top-speed flow 52.5 L/min, 2500 psi; Fluidyne V10 Vane Pumps, 19.5 cm³/rev: 28 part numbers, 17 CW, 11 CCW, 14 standard shaft, 14 with 1.75 in extension, max speed 3000 rpm, top-speed flow 58.5 L/min, 2200 psi; Fluidyne V10 Vane Pumps, 22.8 cm³/rev: 27 part numbers, 17 CW, 10 CCW, 8 standard shaft, 19 with 1.75 in extension, max speed 2800 rpm, top-speed flow 63.8 L/min, 2000 psi; Fluidyne V10 Vane Pumps, 3.3 cm³/rev: 43 part numbers, 27 CW, 16 CCW, 0 standard shaft, 43 with 1.75 in extension, max speed 4800 rpm, top-speed flow 15.8 L/min, 2500 psi; Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Left-Hand (CCW): 118 part numbers, 0 CW, 118 CCW, 100 standard shaft, 18 with 1.75 in extension, max speed 4500 rpm, top-speed flow 29.7 L/min, 2500 psi; Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Right-Hand (CW): 285 part numbers, 285 CW, 0 CCW, 221 standard shaft, 64 with 1.75 in extension, max speed 4500 rpm, top-speed flow 29.7 L/min, 2500 psi; Fluidyne V10 Vane Pumps, 9.8 cm³/rev: 36 part numbers, 23 CW, 13 CCW, 17 standard shaft, 19 with 1.75 in extension, max speed 4000 rpm, top-speed flow 39.2 L/min, 2500 psi; Fluidyne V10F Vane Pumps, 13.1 cm³/rev: 39 part numbers, 29 CW, 10 CCW, 5 standard shaft, 34 with 1.75 in extension, max speed 3400 rpm, top-speed flow 44.5 L/min, 2500 psi; Fluidyne V10F Vane Pumps, 16.4 cm³/rev: 30 part numbers, 22 CW, 8 CCW, 10 standard shaft, 20 with 1.75 in extension, max speed 3200 rpm, top-speed flow 52.5 L/min, 2500 psi; Fluidyne V10F Vane Pumps, 19.5 cm³/rev: 43 part numbers, 32 CW, 11 CCW, 21 standard shaft, 22 with 1.75 in extension, max speed 3000 rpm, top-speed flow 58.5 L/min, 2200 psi; Fluidyne V10F Vane Pumps, 22.8 cm³/rev: 55 part numbers, 39 CW, 16 CCW, 27 standard shaft, 28 with 1.75 in extension, max speed 2800 rpm, top-speed flow 63.8 L/min, 2000 psi; Fluidyne V10F Vane Pumps, 6.6 cm³/rev: 206 part numbers, 133 CW, 73 CCW, 169 standard shaft, 37 with 1.75 in extension, max speed 4500, 4800 rpm, top-speed flow 29.7 L/min, 2500 psi; Fluidyne V10F Vane Pumps, 9.8 cm³/rev: 13 part numbers, 12 CW, 1 CCW, 3 standard shaft, 10 with 1.75 in extension, max speed 4000 rpm, top-speed flow 39.2 L/min, 2500 psi; Fluidyne V20 Vane Pumps, 18.0 cm³/rev: 33 part numbers, 21 CW, 12 CCW, 17 standard shaft, 16 with 1.75 in extension, max speed 3400 rpm, top-speed flow 61.2 L/min, 2500 psi; Fluidyne V20 Vane Pumps, 19.5 cm³/rev: 143 part numbers, 101 CW, 42 CCW, 103 standard shaft, 40 with 1.75 in extension, max speed 3400, 4000 rpm, top-speed flow 78.0 L/min, 2500 psi; Fluidyne V20 Vane Pumps, 26.6 cm³/rev: 114 part numbers, 76 CW, 38 CCW, 84 standard shaft, 30 with 1.75 in extension, max speed 3200 rpm, top-speed flow 85.1 L/min, 2500 psi; Fluidyne V20 Vane Pumps, 29.7 cm³/rev: 112 part numbers, 78 CW, 33 CCW, 83 standard shaft, 29 with 1.75 in extension, max speed 3000 rpm, top-speed flow 89.1 L/min, 2500 psi",
+      "source": "Indus Hydraulics size tables (row counts)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Fluidyne V10 Vane Pumps, 13.1 cm³/rev [IH-FLD-V10-131]:  Fluidyne V10 Vane Pumps, 13.1 cm³/rev. 29 part numbers, 13.1 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 13.1 cm³/rev; Max pressure up to 2,500 psi | 29 part numbers (e.g. V101B4B1A20R, V101B4B1B20R, V101B4B1C20R, V101B4B41B20R090); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 3,400; ratedRpm 1,200; rotation CW and CCW; displacementCc 13.1; displacement 0.8 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 16.4 cm³/rev [IH-FLD-V10-164]:  Fluidyne V10 Vane Pumps, 16.4 cm³/rev. 39 part numbers, 16.4 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 16.4 cm³/rev; Max pressure up to 2,500 psi | 39 part numbers (e.g. V101B5B11D20R, V101B5B1A20R, V101B5B1C20R, V101B5B1D20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 3,200; ratedRpm 1,200; rotation CW and CCW; displacementCc 16.4; displacement 1 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 19.5 cm³/rev [IH-FLD-V10-195]:  Fluidyne V10 Vane Pumps, 19.5 cm³/rev. 28 part numbers, 19.5 cm³/rev displacement, up to 2,200 psi. | Type vane pump; Displacement 19.5 cm³/rev; Max pressure up to 2,200 psi | 28 part numbers (e.g. V101B6B1C20R, V101P6P11A20R, V101P6P11C20L, V101P6P11C20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,200 psi; maxRpm 3,000; ratedRpm 1,200; rotation CW and CCW; displacementCc 19.5; displacement 1.19 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 22.8 cm³/rev [IH-FLD-V10-228]:  Fluidyne V10 Vane Pumps, 22.8 cm³/rev. 27 part numbers, 22.8 cm³/rev displacement, up to 2,000 psi. | Type vane pump; Displacement 22.8 cm³/rev; Max pressure up to 2,000 psi | 27 part numbers (e.g. V101B7B1A20R, V101P7P11A20L, V101P7P11A20R, V101P7P11B20L); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,000 psi; maxRpm 2,800; ratedRpm 1,200; rotation CW and CCW; displacementCc 22.8; displacement 1.39 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 3.3 cm³/rev [IH-FLD-V10-33]:  Fluidyne V10 Vane Pumps, 3.3 cm³/rev. 43 part numbers, 3.3 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 3.3 cm³/rev; Max pressure up to 2,500 psi | 43 part numbers (e.g. V101P1P11A20L, V101P1P11A20R, V101P1P11C20L, V101P1P11C20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 4,800; ratedRpm 1,200; rotation CCW and CW; displacementCc 3.3; displacement 0.2 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Left-Hand (CCW) [IH-FLD-V10-66-CCW]:  Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Left-Hand (CCW). 118 part numbers, 6.6 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 6.6 cm³/rev; Max pressure up to 2,500 psi | 118 part numbers (e.g. V101P1S1A20L, V101P2P11A20L, V101P2P11C20L, V101P2P12C20L); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 4,500; ratedRpm 1,200; rotation CCW; displacementCc 6.6; displacement 0.4 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Right-Hand (CW) [IH-FLD-V10-66-CW]:  Fluidyne V10 Vane Pumps, 6.6 cm³/rev, Right-Hand (CW). 285 part numbers, 6.6 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 6.6 cm³/rev; Max pressure up to 2,500 psi | 285 part numbers (e.g. V101B2B1C20R, V101P1S11A20R, V101P1S11C20R, V101P1S1A20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 4,500; ratedRpm 1,200; rotation CW; displacementCc 6.6; displacement 0.4 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10 Vane Pumps, 9.8 cm³/rev [IH-FLD-V10-98]:  Fluidyne V10 Vane Pumps, 9.8 cm³/rev. 36 part numbers, 9.8 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 9.8 cm³/rev; Max pressure up to 2,500 psi | 36 part numbers (e.g. V101B3B0C20R024, V101B3B1A20R, V101B3B1B20R, V101B3B1C20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key, Shaft code 0 and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 4,000; ratedRpm 1,200; rotation CW and CCW; displacementCc 9.8; displacement 0.6 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 13.1 cm³/rev [IH-FLD-V10F-131]:  Fluidyne V10F Vane Pumps, 13.1 cm³/rev. 39 part numbers, 13.1 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 13.1 cm³/rev; Max pressure up to 2,500 psi | 39 part numbers (e.g. V10F1P4P11A2E20R, V10F1P4P11A3D20R, V10F1P4P11A4D20L, V10F1P4P11A4D20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 3,400; ratedRpm 1,200; rotation CW and CCW; displacementCc 13.1; displacement 0.8 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 16.4 cm³/rev [IH-FLD-V10F-164]:  Fluidyne V10F Vane Pumps, 16.4 cm³/rev. 30 part numbers, 16.4 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 16.4 cm³/rev; Max pressure up to 2,500 psi | 30 part numbers (e.g. V10F1P5P11A5G20R, V10F1P5P11B4E20R, V10F1P5P11C3D20R, V10F1P5P11C3F20L); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 3,200; ratedRpm 1,200; rotation CW and CCW; displacementCc 16.4; displacement 1 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 19.5 cm³/rev [IH-FLD-V10F-195]:  Fluidyne V10F Vane Pumps, 19.5 cm³/rev. 43 part numbers, 19.5 cm³/rev displacement, up to 2,200 psi. | Type vane pump; Displacement 19.5 cm³/rev; Max pressure up to 2,200 psi | 43 part numbers (e.g. V10F1P6P11A4D20L, V10F1P6P11A4D20R, V10F1P6P11A6E20L, V10F1P6P11A6E20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,200 psi; maxRpm 3,000; ratedRpm 1,200; rotation CCW and CW; displacementCc 19.5; displacement 1.19 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 22.8 cm³/rev [IH-FLD-V10F-228]:  Fluidyne V10F Vane Pumps, 22.8 cm³/rev. 55 part numbers, 22.8 cm³/rev displacement, up to 2,000 psi. | Type vane pump; Displacement 22.8 cm³/rev; Max pressure up to 2,000 psi | 55 part numbers (e.g. V10F1P7P11A3H20R, V10F1P7P11A5G20R, V10F1P7P11A6D20R, V10F1P7P11B4D20L); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,000 psi; maxRpm 2,800; ratedRpm 1,200; rotation CW and CCW; displacementCc 22.8; displacement 1.39 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 6.6 cm³/rev [IH-FLD-V10F-66]:  Fluidyne V10F Vane Pumps, 6.6 cm³/rev. 206 part numbers, 3.3–6.6 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 3.3–6.6 cm³/rev; Max pressure up to 2,500 psi | 206 part numbers (e.g. V10F1P1P1A4D20R, V10F1S3P1B3D20R, V10F1P2P11A2G20R, V10F1P2P11B2E20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 4,500 to 4,800; ratedRpm 1,200; rotation CW and CCW; displacementCc 3.3 to 6.6; displacement 0.2 to 0.4 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V10F Vane Pumps, 9.8 cm³/rev [IH-FLD-V10F-98]:  Fluidyne V10F Vane Pumps, 9.8 cm³/rev. 13 part numbers, 9.8 cm³/rev displacement, up to 2,500 psi. | Type vane pump; Displacement 9.8 cm³/rev; Max pressure up to 2,500 psi | 13 part numbers (e.g. V10F1P3P11A3E20R, V10F1P3P11A6D20L, V10F1P3P11C2D20R, V10F1P3P11C2E20R); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 4,000; ratedRpm 1,200; rotation CW and CCW; displacementCc 9.8; displacement 0.6 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V20 Vane Pumps, 18.0 cm³/rev [IH-FLD-V20-180]:  Fluidyne V20 Vane Pumps, 18.0 cm³/rev. 33 part numbers, 18 cm³/rev displacement, up to 2,500 psi. Each size shows the Vickers part number it replaces, as the manufacturer publishes it. | Type vane pump; Displacement 18 cm³/rev; Max pressure up to 2,500 psi; Equivalents Vickers part numbers listed against each size | 33 part numbers (e.g. WF8201006, WF8201054, WF8201139, WF8201243); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 3,400; ratedRpm 1,200; rotation CW and CCW; displacementCc 18; displacement 1.1 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V20 Vane Pumps, 19.5 cm³/rev [IH-FLD-V20-195]:  Fluidyne V20 Vane Pumps, 19.5 cm³/rev. 143 part numbers, 19.5 cm³/rev displacement, up to 2,500 psi. Each size shows the Vickers part number it replaces, as the manufacturer publishes it. | Type vane pump; Displacement 19.5 cm³/rev; Max pressure up to 2,500 psi; Equivalents Vickers part numbers listed against each size | 143 part numbers (e.g. WF820008, WF820009, WF820062, WF8201016); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 3,400 to 4,000; ratedRpm 1,200; rotation CW and CCW; displacementCc 19.5; displacement 1.19 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V20 Vane Pumps, 26.6 cm³/rev [IH-FLD-V20-266]:  Fluidyne V20 Vane Pumps, 26.6 cm³/rev. 114 part numbers, 26.6 cm³/rev displacement, up to 2,500 psi. Each size shows the Vickers part number it replaces, as the manufacturer publishes it. | Type vane pump; Displacement 26.6 cm³/rev; Max pressure up to 2,500 psi; Equivalents Vickers part numbers listed against each size | 114 part numbers (e.g. WF820035, WF820049, WF820084, WF820086); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key and 3/4\" Straight Shaft with Key (1.75\" extension); maximum pressure 2,500 psi; maxRpm 3,200; ratedRpm 1,200; rotation CW and CCW; displacementCc 26.6; displacement 1.62 cu in/rev; rows:  /  /  /  /  /  /  /  || Fluidyne V20 Vane Pumps, 29.7 cm³/rev [IH-FLD-V20-297]:  Fluidyne V20 Vane Pumps, 29.7 cm³/rev. 112 part numbers, 29.7 cm³/rev displacement, up to 2,500 psi. Each size shows the Vickers part number it replaces, as the manufacturer publishes it. | Type vane pump; Displacement 29.7 cm³/rev; Max pressure up to 2,500 psi; Equivalents Vickers part numbers listed against each size | 112 part numbers (e.g. WF820011, WF820017, WF820023, WF820104); ports in G1\" BSPP / out G1/2\" BSPP; shaft 3/4\" Straight Shaft with Key (1.75\" extension) and 3/4\" Straight Shaft with Key; maximum pressure 2,500 psi; maxRpm 3,000; ratedRpm 1,200; rotation CW and CCW; displacementCc 29.7; displacement 1.81 cu in/rev; rows:  /  /  /  /  /  /  / ",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "fluidyne-v10-vane-pumps-13-1-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 13.1 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 13.1 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 13.1 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 29 part numbers of the Fluidyne V10 13.1 cm³/rev vane pump?",
+          "a": "The 29 part numbers of the Fluidyne V10 13.1 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 17 clockwise (CW) and 12 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101B4B1A20R, V101B4B1B20R, V101B4B1C20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 13.1 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 13.1 cm³/rev vane pump is listed in 29 part numbers, from V101B4B1A20R to V101P4P3C20R in the size table, in 17 CW and 12 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 13.1 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 13.1 cm³/rev delivers a theoretical 15.7 L/min, since flow is displacement times speed. Its maximum speed is 3,400 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 13.1 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 17 clockwise (CW) and 12 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 13 part numbers standard and 16 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 13.1 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 13.1 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,400 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 13.1 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,400 rpm top speed the V10 13.1 cm³/rev ring draws about 44.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 13.1 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V101P4P3C20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 13.1 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 13.1 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 13.1 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 13.1 cm³/rev this one suits circuits needing about 15.7 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 13.1 cm³/rev vane pump compare with the 16.4 cm³/rev V10?",
+          "a": "The Fluidyne V10 13.1 cm³/rev vane pump gives less flow per revolution than the [16.4 cm³/rev pump](/p/fluidyne-v10-vane-pumps-16-4-cm-rev), and its maximum speed is 3,400 rpm against 3,200 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 13.1 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we carry the Fluidyne V10 13.1 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-16-4-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 16.4 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 16.4 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 16.4 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 39 part numbers of the Fluidyne V10 16.4 cm³/rev vane pump?",
+          "a": "The 39 part numbers of the Fluidyne V10 16.4 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 26 clockwise (CW) and 13 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101B5B11D20R, V101B5B1A20R, V101B5B1C20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 16.4 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 16.4 cm³/rev vane pump is listed in 39 part numbers, from V101B5B11D20R to V102P5P1C20R in the size table, in 26 CW and 13 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 16.4 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 16.4 cm³/rev delivers a theoretical 19.7 L/min, since flow is displacement times speed. Its maximum speed is 3,200 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 16.4 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 26 clockwise (CW) and 13 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 17 part numbers standard and 22 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 16.4 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 16.4 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,200 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 16.4 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,200 rpm top speed the V10 16.4 cm³/rev ring draws about 52.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 16.4 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V102P5P1C20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 16.4 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 16.4 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 16.4 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 16.4 cm³/rev this one suits circuits needing about 19.7 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 16.4 cm³/rev vane pump compare with the 19.5 cm³/rev V10?",
+          "a": "The Fluidyne V10 16.4 cm³/rev vane pump gives less flow per revolution than the [19.5 cm³/rev pump](/p/fluidyne-v10-vane-pumps-19-5-cm-rev), and its maximum speed is 3,200 rpm against 3,000 rpm. Pressure is 2,500 psi here and 2,200 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 16.4 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10 16.4 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-19-5-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 19.5 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 19.5 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 19.5 cm³/rev and up to 2,200 psi (152 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 28 part numbers of the Fluidyne V10 19.5 cm³/rev vane pump?",
+          "a": "The 28 part numbers of the Fluidyne V10 19.5 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 17 clockwise (CW) and 11 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101B6B1C20R, V101P6P11A20R, V101P6P11C20L; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 19.5 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 19.5 cm³/rev vane pump is listed in 28 part numbers, from V101B6B1C20R to V102P6P1C20L in the size table, in 17 CW and 11 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 19.5 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 19.5 cm³/rev delivers a theoretical 23.4 L/min, since flow is displacement times speed. Its maximum speed is 3,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 19.5 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 17 clockwise (CW) and 11 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 14 part numbers standard and 14 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 19.5 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 19.5 cm³/rev vane pump is rated up to 2,200 psi (152 bar) maximum pressure at a maximum speed of 3,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 19.5 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,000 rpm top speed the V10 19.5 cm³/rev ring draws about 58.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 19.5 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V102P6P1C20L is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 19.5 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 19.5 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 152 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 19.5 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 19.5 cm³/rev this one suits circuits needing about 23.4 L/min at 1,200 rpm. For more than 2,200 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 19.5 cm³/rev vane pump compare with the 16.4 cm³/rev V10?",
+          "a": "The Fluidyne V10 19.5 cm³/rev vane pump gives more flow per revolution than the [16.4 cm³/rev pump](/p/fluidyne-v10-vane-pumps-16-4-cm-rev), and its maximum speed is 3,000 rpm against 3,200 rpm. Pressure is 2,200 psi here and 2,500 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 19.5 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. We keep the Fluidyne V10 19.5 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-22-8-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 22.8 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 22.8 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 22.8 cm³/rev and up to 2,000 psi (138 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 27 part numbers of the Fluidyne V10 22.8 cm³/rev vane pump?",
+          "a": "The 27 part numbers of the Fluidyne V10 22.8 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 17 clockwise (CW) and 10 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101B7B1A20R, V101P7P11A20L, V101P7P11A20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 22.8 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 22.8 cm³/rev vane pump is listed in 27 part numbers, from V101B7B1A20R to V102P7P1C20R in the size table, in 17 CW and 10 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 22.8 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 22.8 cm³/rev delivers a theoretical 27.4 L/min, since flow is displacement times speed. Its maximum speed is 2,800 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 22.8 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 17 clockwise (CW) and 10 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 8 part numbers standard and 19 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 22.8 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 22.8 cm³/rev vane pump is rated up to 2,000 psi (138 bar) maximum pressure at a maximum speed of 2,800 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 22.8 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 2,800 rpm top speed the V10 22.8 cm³/rev ring draws about 63.8 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 22.8 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V102P7P1C20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 22.8 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 22.8 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 138 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 22.8 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 22.8 cm³/rev this one suits circuits needing about 27.4 L/min at 1,200 rpm. For more than 2,000 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 22.8 cm³/rev vane pump compare with the 19.5 cm³/rev V10?",
+          "a": "The Fluidyne V10 22.8 cm³/rev vane pump gives more flow per revolution than the [19.5 cm³/rev pump](/p/fluidyne-v10-vane-pumps-19-5-cm-rev), and its maximum speed is 2,800 rpm against 3,000 rpm. Pressure is 2,000 psi here and 2,200 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 22.8 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we hold the Fluidyne V10 22.8 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-3-3-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 3.3 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 3.3 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 3.3 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 43 part numbers of the Fluidyne V10 3.3 cm³/rev vane pump?",
+          "a": "The 43 part numbers of the Fluidyne V10 3.3 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 27 clockwise (CW) and 16 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101P1P11A20L, V101P1P11A20R, V101P1P11C20L; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 3.3 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 3.3 cm³/rev vane pump is listed in 43 part numbers, from V101P1P11A20L to V10P1P7K38C5E10R in the size table, in 27 CW and 16 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 3.3 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 3.3 cm³/rev delivers a theoretical 4.0 L/min, since flow is displacement times speed. Its maximum speed is 4,800 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 3.3 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 27 clockwise (CW) and 16 anticlockwise (CCW). Every part number has the 3/4\" straight keyed shaft with the 1.75\" extension."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 3.3 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 3.3 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,800 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 3.3 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,800 rpm top speed the V10 3.3 cm³/rev ring draws about 15.8 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 3.3 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft with the 1.75\" extension on every part number, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10P1P7K38C5E10R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 3.3 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 3.3 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 3.3 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 3.3 cm³/rev this one suits circuits needing about 4.0 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 3.3 cm³/rev vane pump compare with the 6.6 cm³/rev V10?",
+          "a": "The Fluidyne V10 3.3 cm³/rev vane pump gives less flow per revolution than the [6.6 cm³/rev pump](/p/fluidyne-v10-vane-pumps-6-6-cm-rev-left-hand-ccw), and its maximum speed is 4,800 rpm against 4,500 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 3.3 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10 3.3 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-6-6-cm-rev-left-hand-ccw",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump used for?",
+          "a": "The Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 6.6 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 118 part numbers of the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump?",
+          "a": "The 118 part numbers of the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump differ by rotation, shaft length and, on some, outlet position: all 118 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101P1S1A20L, V101P2P11A20L, V101P2P11C20L; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump come in?",
+          "a": "The Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump is listed in 118 part numbers, from V101P1S1A20L to V10P1S7K38C4F10L in the size table, in all 118 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 6.6 cm³/rev left-hand (CCW) delivers a theoretical 7.9 L/min, since flow is displacement times speed. Its maximum speed is 4,500 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has all 118 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 100 part numbers standard and 18 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump rated for?",
+          "a": "The Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,500 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,500 rpm top speed the V10 6.6 cm³/rev ring left-hand (CCW) draws about 29.7 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CCW is the main rotation here, V10P1S7K38C4F10L is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump serviced or rebuilt?",
+          "a": "A worn V10 6.6 cm³/rev left-hand (CCW) pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 6.6 cm³/rev this one suits circuits needing about 7.9 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "Should I order the left-hand or right-hand V10 6.6 cm³/rev Fluidyne vane pump?",
+          "a": "Order by the rotation of your drive, seen from the shaft end: this listing is the left-hand (CCW) pump with 118 part numbers, and the [right-hand (CW) listing](/p/fluidyne-v10-vane-pumps-6-6-cm-rev-right-hand-cw) has 285. Both share the 6.6 cm³/rev displacement and the 2,500 psi rating, so only rotation and the part-number options differ."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pumps in stock in Dubai?",
+          "a": "Yes, we carry the Fluidyne V10 6.6 cm³/rev left-hand (CCW) vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-6-6-cm-rev-right-hand-cw",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump used for?",
+          "a": "The Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 6.6 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 285 part numbers of the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump?",
+          "a": "The 285 part numbers of the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump differ by rotation, shaft length and, on some, outlet position: all 285 clockwise (CW), with rotation viewed from the shaft end. Examples are V101B2B1C20R, V101P1S11A20R, V101P1S11C20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump come in?",
+          "a": "The Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump is listed in 285 part numbers, from V101B2B1C20R to V10P1S7K4C1G10R in the size table, in all 285 CW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 6.6 cm³/rev right-hand (CW) delivers a theoretical 7.9 L/min, since flow is displacement times speed. Its maximum speed is 4,500 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has all 285 clockwise (CW). The shaft is a 3/4\" straight keyed shaft in two lengths, 221 part numbers standard and 64 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump rated for?",
+          "a": "The Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,500 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,500 rpm top speed the V10 6.6 cm³/rev ring right-hand (CW) draws about 29.7 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10P1S7K4C1G10R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump serviced or rebuilt?",
+          "a": "A worn V10 6.6 cm³/rev right-hand (CW) pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 6.6 cm³/rev this one suits circuits needing about 7.9 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "Should I order the left-hand or right-hand V10 6.6 cm³/rev Fluidyne vane pump?",
+          "a": "Order by the rotation of your drive, seen from the shaft end: this listing is the right-hand (CW) pump with 285 part numbers, and the [left-hand (CCW) listing](/p/fluidyne-v10-vane-pumps-6-6-cm-rev-left-hand-ccw) has 118. Both share the 6.6 cm³/rev displacement and the 2,500 psi rating, so only rotation and the part-number options differ."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pumps in stock in Dubai?",
+          "a": "Yes. We keep the Fluidyne V10 6.6 cm³/rev right-hand (CW) vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10-vane-pumps-9-8-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10 9.8 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10 9.8 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V10 pattern, listed at 9.8 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 36 part numbers of the Fluidyne V10 9.8 cm³/rev vane pump?",
+          "a": "The 36 part numbers of the Fluidyne V10 9.8 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 23 clockwise (CW) and 13 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V101B3B0C20R024, V101B3B1A20R, V101B3B1B20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10 9.8 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10 9.8 cm³/rev vane pump is listed in 36 part numbers, from V101B3B0C20R024 to V102P3P1C20L in the size table, in 23 CW and 13 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10 9.8 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10 pump of 9.8 cm³/rev delivers a theoretical 11.8 L/min, since flow is displacement times speed. Its maximum speed is 4,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10 9.8 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 23 clockwise (CW) and 13 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 16 part numbers standard and 19 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10 9.8 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10 9.8 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10 9.8 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,000 rpm top speed the V10 9.8 cm³/rev ring draws about 39.2 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10 9.8 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V102P3P1C20L is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10 9.8 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10 9.8 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10 9.8 cm³/rev vane pump?",
+          "a": "V10 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 9.8 cm³/rev this one suits circuits needing about 11.8 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10 9.8 cm³/rev vane pump compare with the 6.6 cm³/rev V10?",
+          "a": "The Fluidyne V10 9.8 cm³/rev vane pump gives more flow per revolution than the [6.6 cm³/rev pump](/p/fluidyne-v10-vane-pumps-6-6-cm-rev-left-hand-ccw), and its maximum speed is 4,000 rpm against 4,500 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10 9.8 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10 9.8 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-13-1-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 13.1 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 13.1 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 13.1 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 39 part numbers of the Fluidyne V10F 13.1 cm³/rev vane pump?",
+          "a": "The 39 part numbers of the Fluidyne V10F 13.1 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 29 clockwise (CW) and 10 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P4P11A2E20R, V10F1P4P11A3D20R, V10F1P4P11A4D20L; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 13.1 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 13.1 cm³/rev vane pump is listed in 39 part numbers, from V10F1P4P11A2E20R to V10F1P4P4C5K20R in the size table, in 29 CW and 10 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 13.1 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 13.1 cm³/rev delivers a theoretical 15.7 L/min, since flow is displacement times speed. Its maximum speed is 3,400 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 13.1 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 29 clockwise (CW) and 10 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 5 part numbers standard and 34 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 13.1 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 13.1 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,400 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 13.1 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,400 rpm top speed the V10F 13.1 cm³/rev ring draws about 44.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 13.1 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F1P4P4C5K20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 13.1 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 13.1 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 13.1 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 13.1 cm³/rev this one suits circuits needing about 15.7 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 13.1 cm³/rev vane pump compare with the 16.4 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 13.1 cm³/rev vane pump gives less flow per revolution than the [16.4 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-16-4-cm-rev), and its maximum speed is 3,400 rpm against 3,200 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 13.1 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we hold the Fluidyne V10F 13.1 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-16-4-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 16.4 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 16.4 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 16.4 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 30 part numbers of the Fluidyne V10F 16.4 cm³/rev vane pump?",
+          "a": "The 30 part numbers of the Fluidyne V10F 16.4 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 22 clockwise (CW) and 8 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P5P11A5G20R, V10F1P5P11B4E20R, V10F1P5P11C3D20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 16.4 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 16.4 cm³/rev vane pump is listed in 30 part numbers, from V10F1P5P11A5G20R to V10F1P5P38D3G20R in the size table, in 22 CW and 8 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 16.4 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 16.4 cm³/rev delivers a theoretical 19.7 L/min, since flow is displacement times speed. Its maximum speed is 3,200 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 16.4 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 22 clockwise (CW) and 8 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 10 part numbers standard and 20 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 16.4 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 16.4 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,200 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 16.4 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,200 rpm top speed the V10F 16.4 cm³/rev ring draws about 52.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 16.4 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F1P5P38D3G20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 16.4 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 16.4 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 16.4 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 16.4 cm³/rev this one suits circuits needing about 19.7 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 16.4 cm³/rev vane pump compare with the 19.5 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 16.4 cm³/rev vane pump gives less flow per revolution than the [19.5 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-19-5-cm-rev), and its maximum speed is 3,200 rpm against 3,000 rpm. Pressure is 2,500 psi here and 2,200 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 16.4 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10F 16.4 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-19-5-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 19.5 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 19.5 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 19.5 cm³/rev and up to 2,200 psi (152 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 43 part numbers of the Fluidyne V10F 19.5 cm³/rev vane pump?",
+          "a": "The 43 part numbers of the Fluidyne V10F 19.5 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 32 clockwise (CW) and 11 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P6P11A4D20L, V10F1P6P11A4D20R, V10F1P6P11A6E20L; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 19.5 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 19.5 cm³/rev vane pump is listed in 43 part numbers, from V10F1P6P11A4D20L to V10F1P6P38D5H20R in the size table, in 32 CW and 11 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 19.5 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 19.5 cm³/rev delivers a theoretical 23.4 L/min, since flow is displacement times speed. Its maximum speed is 3,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 19.5 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 32 clockwise (CW) and 11 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 21 part numbers standard and 22 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 19.5 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 19.5 cm³/rev vane pump is rated up to 2,200 psi (152 bar) maximum pressure at a maximum speed of 3,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 19.5 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,000 rpm top speed the V10F 19.5 cm³/rev ring draws about 58.5 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 19.5 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F1P6P38D5H20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 19.5 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 19.5 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 152 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 19.5 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 19.5 cm³/rev this one suits circuits needing about 23.4 L/min at 1,200 rpm. For more than 2,200 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 19.5 cm³/rev vane pump compare with the 16.4 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 19.5 cm³/rev vane pump gives more flow per revolution than the [16.4 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-16-4-cm-rev), and its maximum speed is 3,000 rpm against 3,200 rpm. Pressure is 2,200 psi here and 2,500 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 19.5 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10F 19.5 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-22-8-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 22.8 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 22.8 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 22.8 cm³/rev and up to 2,000 psi (138 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 55 part numbers of the Fluidyne V10F 22.8 cm³/rev vane pump?",
+          "a": "The 55 part numbers of the Fluidyne V10F 22.8 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 39 clockwise (CW) and 16 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P7P11A3H20R, V10F1P7P11A5G20R, V10F1P7P11A6D20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 22.8 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 22.8 cm³/rev vane pump is listed in 55 part numbers, from V10F1P7P11A3H20R to V10F1P7P3C7F20R in the size table, in 39 CW and 16 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 22.8 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 22.8 cm³/rev delivers a theoretical 27.4 L/min, since flow is displacement times speed. Its maximum speed is 2,800 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 22.8 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 39 clockwise (CW) and 16 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 27 part numbers standard and 28 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 22.8 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 22.8 cm³/rev vane pump is rated up to 2,000 psi (138 bar) maximum pressure at a maximum speed of 2,800 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 22.8 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 2,800 rpm top speed the V10F 22.8 cm³/rev ring draws about 63.8 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 22.8 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F1P7P3C7F20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 22.8 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 22.8 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 138 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 22.8 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 22.8 cm³/rev this one suits circuits needing about 27.4 L/min at 1,200 rpm. For more than 2,000 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 22.8 cm³/rev vane pump compare with the 19.5 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 22.8 cm³/rev vane pump gives more flow per revolution than the [19.5 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-19-5-cm-rev), and its maximum speed is 2,800 rpm against 3,000 rpm. Pressure is 2,000 psi here and 2,200 psi on the other, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 22.8 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10F 22.8 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-6-6-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 6.6 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 6.6 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 6.6 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 206 part numbers of the Fluidyne V10F 6.6 cm³/rev vane pump?",
+          "a": "The 206 part numbers of the Fluidyne V10F 6.6 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 133 clockwise (CW) and 73 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P1P1A4D20R, V10F1S3P1B3D20R, V10F1P2P11A2G20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 6.6 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 6.6 cm³/rev vane pump is listed in 206 part numbers, from V10F1P1P1A4D20R to V10F6S7T12C7H20R in the size table, in 133 CW and 73 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 6.6 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 6.6 cm³/rev delivers a theoretical 7.9 L/min, since flow is displacement times speed. Its maximum speed is 4,500 to 4,800 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 6.6 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 133 clockwise (CW) and 73 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 169 part numbers standard and 37 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 6.6 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 6.6 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,500 to 4,800 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 6.6 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,500 rpm top speed the V10F 6.6 cm³/rev ring draws about 29.7 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 6.6 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F6S7T12C7H20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 6.6 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 6.6 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 6.6 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 6.6 cm³/rev this one suits circuits needing about 7.9 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 6.6 cm³/rev vane pump compare with the 9.8 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 6.6 cm³/rev vane pump gives less flow per revolution than the [9.8 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-9-8-cm-rev), and its maximum speed is 4,500 to 4,800 rpm against 4,000 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 6.6 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we hold the Fluidyne V10F 6.6 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v10f-vane-pumps-9-8-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V10F 9.8 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V10F 9.8 cm³/rev vane pump is a fixed-displacement vane pump of the V10F line, listed at 9.8 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 13 part numbers of the Fluidyne V10F 9.8 cm³/rev vane pump?",
+          "a": "The 13 part numbers of the Fluidyne V10F 9.8 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 12 clockwise (CW) and 1 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are V10F1P3P11A3E20R, V10F1P3P11A6D20L, V10F1P3P11C2D20R; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "D",
+          "q": "How many part numbers does the Fluidyne V10F 9.8 cm³/rev vane pump come in?",
+          "a": "The Fluidyne V10F 9.8 cm³/rev vane pump is listed in 13 part numbers, from V10F1P3P11A3E20R to V10F1P3P38D3D20R in the size table, in 12 CW and 1 CCW rotation. Send the number from your old pump and we confirm the match before supply."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V10F 9.8 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V10F pump of 9.8 cm³/rev delivers a theoretical 11.8 L/min, since flow is displacement times speed. Its maximum speed is 4,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V10F 9.8 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 12 clockwise (CW) and 1 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 3 part numbers standard and 10 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V10F 9.8 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V10F 9.8 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 4,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V10F 9.8 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,000 rpm top speed the V10F 9.8 cm³/rev ring draws about 39.2 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V10F 9.8 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, V10F1P3P38D3D20R is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V10F 9.8 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V10F 9.8 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V10F 9.8 cm³/rev vane pump?",
+          "a": "V10F pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 9.8 cm³/rev this one suits circuits needing about 11.8 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V10F 9.8 cm³/rev vane pump compare with the 6.6 cm³/rev V10F?",
+          "a": "The Fluidyne V10F 9.8 cm³/rev vane pump gives more flow per revolution than the [6.6 cm³/rev pump](/p/fluidyne-v10f-vane-pumps-6-6-cm-rev), and its maximum speed is 4,000 rpm against 4,500 to 4,800 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V10F 9.8 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the Fluidyne V10F 9.8 cm³/rev vane pump and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v20-vane-pumps-18-0-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V20 18 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V20 18 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V20 pattern, listed at 18 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 33 part numbers of the Fluidyne V20 18 cm³/rev vane pump?",
+          "a": "The 33 part numbers of the Fluidyne V20 18 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 21 clockwise (CW) and 12 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are WF8201006, WF8201054, WF8201139; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "C",
+          "q": "Which Vickers pumps do the Fluidyne V20 18 cm³/rev vane pumps replace?",
+          "a": "Each part number in this listing carries the Vickers part number it replaces: WF8201006 replaces Vickers Vickers V201P5P38C11R and WF8201054 replaces Vickers Vickers V201P5P1A11R. Quote either the Fluidyne number or the Vickers number you hold; the 33 rows list the full match."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V20 18 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V20 pump of 18 cm³/rev delivers a theoretical 21.6 L/min, since flow is displacement times speed. Its maximum speed is 3,400 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V20 18 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 21 clockwise (CW) and 12 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 17 part numbers standard and 16 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V20 18 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V20 18 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,400 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V20 18 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,400 rpm top speed the V20 18 cm³/rev ring draws about 61.2 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V20 18 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, WF820692 is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V20 18 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V20 18 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V20 18 cm³/rev vane pump?",
+          "a": "V20 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 18 cm³/rev this one suits circuits needing about 21.6 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V20 18 cm³/rev vane pump compare with the 19.5 cm³/rev V20?",
+          "a": "The Fluidyne V20 18 cm³/rev vane pump gives less flow per revolution than the [19.5 cm³/rev pump](/p/fluidyne-v20-vane-pumps-19-5-cm-rev), and its maximum speed is 3,400 rpm against 3,400 to 4,000 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V20 18 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we hold the Fluidyne V20 18 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v20-vane-pumps-19-5-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V20 19.5 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V20 19.5 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V20 pattern, listed at 19.5 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 143 part numbers of the Fluidyne V20 19.5 cm³/rev vane pump?",
+          "a": "The 143 part numbers of the Fluidyne V20 19.5 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 101 clockwise (CW) and 42 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are WF820008, WF820009, WF820062; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "C",
+          "q": "Which Vickers pumps do the Fluidyne V20 19.5 cm³/rev vane pumps replace?",
+          "a": "Each part number in this listing carries the Vickers part number it replaces: WF820008 replaces Vickers Vickers V201P6P1C11R and WF820009 replaces Vickers Vickers V201P7P1C11R. Quote either the Fluidyne number or the Vickers number you hold; the 143 rows list the full match."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V20 19.5 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V20 pump of 19.5 cm³/rev delivers a theoretical 23.4 L/min, since flow is displacement times speed. Its maximum speed is 3,400 to 4,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V20 19.5 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 101 clockwise (CW) and 42 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 103 part numbers standard and 40 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V20 19.5 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V20 19.5 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,400 to 4,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V20 19.5 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 4,000 rpm top speed the V20 19.5 cm³/rev ring draws about 78.0 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V20 19.5 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, WF820958 is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V20 19.5 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V20 19.5 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V20 19.5 cm³/rev vane pump?",
+          "a": "V20 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 19.5 cm³/rev this one suits circuits needing about 23.4 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V20 19.5 cm³/rev vane pump compare with the 18 cm³/rev V20?",
+          "a": "The Fluidyne V20 19.5 cm³/rev vane pump gives more flow per revolution than the [18 cm³/rev pump](/p/fluidyne-v20-vane-pumps-18-0-cm-rev), and its maximum speed is 3,400 to 4,000 rpm against 3,400 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V20 19.5 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes, we carry the Fluidyne V20 19.5 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v20-vane-pumps-26-6-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V20 26.6 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V20 26.6 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V20 pattern, listed at 26.6 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 114 part numbers of the Fluidyne V20 26.6 cm³/rev vane pump?",
+          "a": "The 114 part numbers of the Fluidyne V20 26.6 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 76 clockwise (CW) and 38 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are WF820035, WF820049, WF820084; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "C",
+          "q": "Which Vickers pumps do the Fluidyne V20 26.6 cm³/rev vane pumps replace?",
+          "a": "Each part number in this listing carries the Vickers part number it replaces: WF820035 replaces Vickers Vickers V201S8S1A11R and WF820049 replaces Vickers Vickers V204P8P1C11R. Quote either the Fluidyne number or the Vickers number you hold; the 114 rows list the full match."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V20 26.6 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V20 pump of 26.6 cm³/rev delivers a theoretical 31.9 L/min, since flow is displacement times speed. Its maximum speed is 3,200 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V20 26.6 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 76 clockwise (CW) and 38 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 84 part numbers standard and 30 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V20 26.6 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V20 26.6 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,200 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V20 26.6 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,200 rpm top speed the V20 26.6 cm³/rev ring draws about 85.1 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V20 26.6 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, WF820972 is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V20 26.6 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V20 26.6 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V20 26.6 cm³/rev vane pump?",
+          "a": "V20 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 26.6 cm³/rev this one suits circuits needing about 31.9 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V20 26.6 cm³/rev vane pump compare with the 29.7 cm³/rev V20?",
+          "a": "The Fluidyne V20 26.6 cm³/rev vane pump gives less flow per revolution than the [29.7 cm³/rev pump](/p/fluidyne-v20-vane-pumps-29-7-cm-rev), and its maximum speed is 3,200 rpm against 3,000 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V20 26.6 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. We keep the Fluidyne V20 26.6 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "fluidyne-v20-vane-pumps-29-7-cm-rev",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Fluidyne V20 29.7 cm³/rev vane pump used for?",
+          "a": "The Fluidyne V20 29.7 cm³/rev vane pump is a balanced fixed-displacement vane pump of the V20 pattern, listed at 29.7 cm³/rev and up to 2,500 psi (172 bar). Vane pumps of this type run on older industrial machines, mobile power steering, refuse trucks and agricultural equipment; the full range is on the [vane pumps shelf](/c/hydraulic-vane-pumps)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I choose between the 112 part numbers of the Fluidyne V20 29.7 cm³/rev vane pump?",
+          "a": "The 112 part numbers of the Fluidyne V20 29.7 cm³/rev vane pump differ by rotation, shaft length and, on some, outlet position: 78 clockwise (CW) and 33 anticlockwise (CCW), with rotation viewed from the shaft end. Examples are WF820011, WF820017, WF820023; match rotation and shaft to the pump you are replacing, or quote the number from the old nameplate."
+        },
+        {
+          "slot": "C",
+          "q": "Which Vickers pumps do the Fluidyne V20 29.7 cm³/rev vane pumps replace?",
+          "a": "Each part number in this listing carries the Vickers part number it replaces: WF820011 replaces Vickers Vickers V201P9P1C11R and WF820017 replaces Vickers Vickers V201P9S1A11R. Quote either the Fluidyne number or the Vickers number you hold; the 112 rows list the full match."
+        },
+        {
+          "slot": "D",
+          "q": "What flow does the Fluidyne V20 29.7 cm³/rev vane pump deliver?",
+          "a": "At the 1,200 rpm rated speed in the table, a V20 pump of 29.7 cm³/rev delivers a theoretical 35.6 L/min, since flow is displacement times speed. Its maximum speed is 3,000 rpm; flow rises in proportion, but only if the inlet can feed the pump at that speed."
+        },
+        {
+          "slot": "D",
+          "q": "Which rotation and shaft options does the Fluidyne V20 29.7 cm³/rev vane pump have?",
+          "a": "Rotation is viewed from the shaft end, and this listing has 78 clockwise (CW) and 33 anticlockwise (CCW). The shaft is a 3/4\" straight keyed shaft in two lengths, 83 part numbers standard and 29 with the 1.75\" extension, so check the old pump shaft before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and speed is the Fluidyne V20 29.7 cm³/rev vane pump rated for?",
+          "a": "The Fluidyne V20 29.7 cm³/rev vane pump is rated up to 2,500 psi (172 bar) maximum pressure at a maximum speed of 3,000 rpm. The size table gives a rated speed of 1,200 rpm; Vickers publishes these V-series ratings on petroleum oil with 0 psi inlet, and they fall on fire-resistant fluids."
+        },
+        {
+          "slot": "F",
+          "q": "Which oil and inlet conditions suit the Fluidyne V20 29.7 cm³/rev vane pump?",
+          "a": "Use anti-wear hydraulic oil at 13 to 54 cSt running viscosity. At its 3,000 rpm top speed the V20 29.7 cm³/rev ring draws about 89.1 L/min through the inlet, so keep the suction line short and inlet vacuum under 5 inHg, the Vickers limit on petroleum oil for V-series pumps."
+        },
+        {
+          "slot": "H",
+          "q": "What shaft coupling and drive does the Fluidyne V20 29.7 cm³/rev vane pump need?",
+          "a": "The pump takes a 3/4\" straight keyed shaft, so the coupling or flange must match that shaft and turn the pump in the right direction (CW is the main rotation here, WF820995 is one example). Drive sets and pump mounts are on the [power units and parts shelf](/c/hydraulic-power-units)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Fluidyne V20 29.7 cm³/rev vane pump serviced or rebuilt?",
+          "a": "A worn V20 29.7 cm³/rev pump is usually repaired by changing its cartridge (rotor, vanes, ring and side plates) in the existing body, and rotation is changed by reassembling the internal parts. At 172 bar working pressure the cleanliness target is ISO 4406 19/17/14, and the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) covers the steps."
+        },
+        {
+          "slot": "J",
+          "q": "Which machines typically use the Fluidyne V20 29.7 cm³/rev vane pump?",
+          "a": "V20 pumps are fitted where a quiet, smooth flow is wanted, such as industrial machines, mobile power steering, refuse trucks and agricultural equipment; at 29.7 cm³/rev this one suits circuits needing about 35.6 L/min at 1,200 rpm. For more than 2,500 psi from a vane pump, the Parker T6 and T7 families in the [vane pump guide for V10, V20 and T6](/blog/vane-pump-guide-v10-v20-t6) are the usual step up."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Fluidyne V20 29.7 cm³/rev vane pump compare with the 26.6 cm³/rev V20?",
+          "a": "The Fluidyne V20 29.7 cm³/rev vane pump gives more flow per revolution than the [26.6 cm³/rev pump](/p/fluidyne-v20-vane-pumps-26-6-cm-rev), and its maximum speed is 3,000 rpm against 3,200 rpm. Both are rated up to 2,500 psi, so pick the displacement from the flow you need at your running speed."
+        },
+        {
+          "slot": "M",
+          "q": "Are Fluidyne V20 29.7 cm³/rev vane pumps in stock in Dubai?",
+          "a": "Yes. We keep the Fluidyne V20 29.7 cm³/rev vane pump in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

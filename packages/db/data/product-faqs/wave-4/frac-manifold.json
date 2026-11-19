@@ -1,0 +1,271 @@
+{
+  "family": "frac-manifold",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-high-low-pressure-manifold",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a high and low pressure frac manifold (missile) used for?",
+          "a": "A high and low pressure frac manifold, or missile, is the hub of the frac spread. The low-pressure side distributes blended fluid from the blender to each pump, and the high-pressure side gathers pump discharge and sends it to the well."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the high and low pressure frac manifold (missile) cover?",
+          "a": "The published range is a 4-1/16\" to 7-1/16\" main with a 3-1/16\" bypass, at 15,000 to 20,000 psi working pressure. Hammer union and flanged ends are listed. State the pump count and the total rate on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "What temperature and material classes does the high and low pressure frac manifold (missile) offer?",
+          "a": "The listing gives -60 °C to 121 °C (temperature classes K to V), API 6A material classes AA to FF, and PSL 1 to 3 with PR1, built to API 6A 21st edition. Hydrostatic tests follow API 6A / 16A / 16C at the PSL ordered."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids can the high and low pressure frac manifold (missile) handle?",
+          "a": "It handles frac fluid, proppant slurry, acid and clear water, as published for frac pump spreads. State the acid type and any H2S exposure on the RFQ so the material class is chosen."
+        },
+        {
+          "slot": "G",
+          "q": "Is the high and low pressure frac manifold (missile) made to API 6A?",
+          "a": "Yes. It is built to API 6A (21st edition) and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. Material certificates and the pressure-test record are included."
+        },
+        {
+          "slot": "H",
+          "q": "What valves are on every pump port of the high and low pressure frac manifold (missile)?",
+          "a": "Every pump port carries a plug valve and a flapper check valve, height-adjustable, so a pump can be isolated without stopping the job. Adapters match the pump discharge connections, and relief valve and pressure-transmitter ports are fitted."
+        },
+        {
+          "slot": "K",
+          "q": "How does the high and low pressure frac manifold (missile) differ from the 16-pumper missile?",
+          "a": "The high and low pressure manifold is a configurable skid at 15,000 to 20,000 psi with plug and check valves, while the [16-pumper 4-inch 1502 missile](/p/frac-missile-manifold-16-pumper-capacity-4-inch-1502-15-000-psi-standard-service) is a fixed 15,000 psi, 16-pump unit with integral treating iron. Choose by pump count and pressure."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the high and low pressure frac manifold (missile) used?",
+          "a": "It is used on frac pump spreads to carry frac fluid, proppant, acid and water between the blender, the pumps and the wellhead. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment) and [frac pumpers](/c/frac-pumpers)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac manifold quotation?",
+          "a": "Send the working pressure, the main and bypass bore, the pump count and rate, the end connections, the material class and the fluids including H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "I",
+          "q": "How many pumps can the high and low pressure frac manifold (missile) serve?",
+          "a": "The number of high-pressure ports is matched to the pump spread, so give us the pump count and total rate. The skid carries the high and low pressure manifolds together with fixed lifting supports."
+        },
+        {
+          "slot": "L",
+          "q": "Can the high and low pressure frac manifold (missile) be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the high and low pressure frac manifold (missile)?",
+          "a": "Yes. We list the high and low pressure frac manifold (missile) as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to the order specification. Send your pump count, bore and pressure class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "frac-missile-manifold-16-pumper-capacity-4-inch-1502-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 16-pumper 4-inch 1502 frac missile used for?",
+          "a": "A frac missile is the manifold that connects up to 16 frac pumpers to the treating line. This one has 4-inch HP discharge connections in Fig.1502 at 15,000 psi standard service, an 8, 10 or 12-inch LP suction manifold, and integral treating iron."
+        },
+        {
+          "slot": "D",
+          "q": "What connections does the 16-pumper 4-inch 1502 frac missile offer?",
+          "a": "The 4-inch HP discharge is Fig.1502 as standard, with Fig.2002, Fig.2202, clamp hub or Grayloc available on request. State the connection type of your treating iron on the RFQ, since mismatched connections are a known failure cause."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of the 16-pumper 4-inch 1502 frac missile?",
+          "a": "The listing gives 15,000 psi at standard service rating for the 4-inch Fig.1502 HP discharge. For sour service ask for a quotation with the H2S level, because the standard service rating does not cover sour gas."
+        },
+        {
+          "slot": "D",
+          "q": "How big is the LP manifold on the 16-pumper 4-inch 1502 frac missile?",
+          "a": "The LP manifold is 8, 10 or 12 inch depending on pumper count, with dual suction connections per pumper. Each has a 4-inch quarter-turn butterfly valve and a 4-inch Fig.206F with a Fig.207 blind cap."
+        },
+        {
+          "slot": "F",
+          "q": "What outlets does the 16-pumper 4-inch 1502 frac missile have for bleed-off?",
+          "a": "Additional bleed-off and provision outlets are fitted on both the HP and LP manifolds. State the number and size you need on the RFQ."
+        },
+        {
+          "slot": "G",
+          "q": "What certifications and mounting does the 16-pumper 4-inch 1502 frac missile offer?",
+          "a": "It can be skid, trailer or truck mounted with registration-ready documentation, and CE or GOST certifications are optional. State the registration country on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 16-pumper 4-inch 1502 frac missile connect to?",
+          "a": "Up to 16 frac pumpers connect on the HP side, with the blender feeding the LP side. See [frac pumpers](/c/frac-pumpers), the [frac blender](/c/frac-blender) and [flow iron](/c/flow-iron-flow-line)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 16-pumper 4-inch 1502 frac missile differ from the zipper manifold?",
+          "a": "The missile gathers pump discharge from the pumpers, while the [zipper manifold](/p/frac-shunt-manifold-zipper) switches the flow between several wells. A multi-well pad normally uses both, then the [universal manifold](/p/universal-frac-manifold-e-type) to the trees."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 16-pumper 4-inch 1502 frac missile used?",
+          "a": "It is used to gather the discharge of a frac pump fleet on a hydraulic fracturing site. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac missile quotation?",
+          "a": "Send the pumper count, the HP connection type and pressure, the LP manifold size, the mounting and the certification. The missile is built to your fleet."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 16-pumper 4-inch 1502 frac missile serve fewer than 16 pumpers?",
+          "a": "The unit accommodates up to 16 frac pumpers, and the LP manifold is 8, 10 or 12 inch depending on pumper count. State your pump count so the manifold is sized to it."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 16-pumper 4-inch 1502 frac missile?",
+          "a": "Yes. We list the 16-pumper 4-inch 1502 frac missile as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send your pump count, bore and pressure class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "frac-shunt-manifold-zipper",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a frac shunt (zipper) manifold used for?",
+          "a": "A zipper manifold feeds several wellheads from one frac spread, so wells can be fractured one after another without rigging down. Single-channel versions give maximum rate to each well, and eight-way versions split flow through frac heads with each channel opened and closed by its own frac valve."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the frac shunt (zipper) manifold cover?",
+          "a": "The published range is a 4-1/16\" to 7-1/16\" main with a 3-1/16\" bypass, at 15,000 to 20,000 psi working pressure, with flanged ends. The layout is modular and adjustable on site."
+        },
+        {
+          "slot": "E",
+          "q": "What are the valves on the frac shunt (zipper) manifold?",
+          "a": "The valves are full-bore, bidirectional frac valves with spring-energised seals and ball-screw drive, in manual (ball-screw) or hydraulic operation. State the operation you need on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "Can the frac shunt (zipper) manifold be supplied for sour service?",
+          "a": "Yes, the listing gives API 6A material classes AA to HH, with DD to HH for sour service. Send the H2S partial pressure and temperature on the RFQ so the correct class is quoted."
+        },
+        {
+          "slot": "G",
+          "q": "What standard is the frac shunt (zipper) manifold built to?",
+          "a": "It is built to API 6A (21st edition) with PSL 1 to 3 and PR1, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the frac shunt (zipper) manifold connect to?",
+          "a": "It takes pump discharge from the [frac missile](/p/frac-missile-manifold-16-pumper-capacity-4-inch-1502-15-000-psi-standard-service) and feeds each wellhead through the [universal manifold](/p/universal-frac-manifold-e-type) to the [frac tree](/p/frac-tree-api-6a-10000-20000-psi), with one channel and one frac valve per well."
+        },
+        {
+          "slot": "K",
+          "q": "Should I choose a single-channel or eight-way zipper manifold?",
+          "a": "Choose single channel for the highest rate to one well at a time, and eight-way where the flow is split through frac heads. State the number of wells on the pad and the rate on the RFQ."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the frac shunt (zipper) manifold used?",
+          "a": "It is used for multi-well zipper fracturing on a pad, where one well is fractured while another is prepared. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "How many wells can one frac shunt (zipper) manifold serve?",
+          "a": "As many as the modules allow; the layout is built to the pad. Send the number of wells and the spacing so the modules are sized."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a zipper manifold quotation?",
+          "a": "Send the pressure, bore, channel type, the number of wells, the valve operation, the material class and the H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "L",
+          "q": "Is the frac shunt (zipper) manifold skid mounted?",
+          "a": "Yes. It has an integral skid that is rigid, compact and easy to connect, with a modular layout that can be adjusted on site."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the frac shunt (zipper) manifold?",
+          "a": "Yes. We list the frac shunt (zipper) manifold as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to the order specification. Send your pump count, bore and pressure class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "universal-frac-manifold-e-type",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a universal (E-type) frac manifold used for?",
+          "a": "A universal frac manifold joins the zipper module, which receives frac fluid from the pumps, to each frac tree. Pads are rarely level and trees stand at different heights, so it uses high-pressure pipe and swivel flanges to make the connection without forcing the line."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and pressures does the universal (E-type) frac manifold cover?",
+          "a": "The published range is a 4-1/16\" to 7-1/16\" main with a 3-1/16\" bypass, at 15,000 to 20,000 psi working pressure. Flange, union or hub connections are listed."
+        },
+        {
+          "slot": "E",
+          "q": "Can heights and offsets be adjusted with the universal (E-type) frac manifold?",
+          "a": "Yes, within the swivel range, so give us the tree heights and spacing so the spools are sized. The swivel flanges let the line match uneven ground without forcing it."
+        },
+        {
+          "slot": "F",
+          "q": "Can the universal (E-type) frac manifold be supplied for sour service?",
+          "a": "Yes, the listing gives API 6A material classes AA to HH, with DD to HH for sour service. Send the H2S partial pressure on the RFQ so the correct class is quoted."
+        },
+        {
+          "slot": "G",
+          "q": "What standard is the universal (E-type) frac manifold built to?",
+          "a": "It is built to API 6A (21st edition) with PSL 1 to 3 and PR1, and supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the universal (E-type) frac manifold connect to?",
+          "a": "It connects the [zipper manifold](/p/frac-shunt-manifold-zipper) to the [frac tree](/p/frac-tree-api-6a-10000-20000-psi) at each well. Optional vent-line and pump-line connections are available, and flange, union or hub ends are listed."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between a zipper manifold and the universal (E-type) frac manifold?",
+          "a": "A zipper manifold switches flow between wells, while the universal manifold is the pipe-and-swivel link between the zipper module and each tree. See the [zipper manifold](/p/frac-shunt-manifold-zipper)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the universal (E-type) frac manifold used?",
+          "a": "It is built for rough, hard-standing pad sites during zipper fracturing. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a universal frac manifold quotation?",
+          "a": "Send the pressure, bore, tree heights and spacing, the connection type, the material class and the H2S content. We review the data sheet before quoting."
+        },
+        {
+          "slot": "I",
+          "q": "Does the universal (E-type) frac manifold include valves?",
+          "a": "No, the operation is listed as not applicable because the manifold is high-pressure piping and swivel flanges; the frac valves are on the zipper module and the tree. See [frac trees](/c/frac-trees)."
+        },
+        {
+          "slot": "L",
+          "q": "Can the universal (E-type) frac manifold be supplied to an operator specification?",
+          "a": "Yes. Send the specification and data sheets and we confirm compliance clause by clause, listing any deviation before the order is placed."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the universal (E-type) frac manifold?",
+          "a": "Yes. We list the universal (E-type) frac manifold as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Each unit is built to the order specification. Send your pump count, bore and pressure class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

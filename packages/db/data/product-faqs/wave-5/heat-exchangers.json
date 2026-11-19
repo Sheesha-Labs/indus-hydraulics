@@ -1,0 +1,461 @@
+{
+  "family": "heat-exchangers",
+  "extraFacts": [],
+  "products": [
+    {
+      "slug": "air-cooled-heat-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are air-cooled heat exchangers and which standard covers them?",
+          "a": "Air-cooled heat exchangers (air fin coolers) are covered by API 661 / ISO 13706, with forced or induced draft and plug, cover-plate or bonnet headers. We build them to your data sheet for gas plants, refineries, LNG and power plants."
+        },
+        {
+          "slot": "D",
+          "q": "What tube sizes and section lengths do air-cooled heat exchangers use?",
+          "a": "The preferred minimum tube OD is 1.0 in, and 1.0, 1.25 and 1.5 in are common; small packaged units use 5/8–1-1/4 in round finned tubes. Cooling sections run 3–60 ft (0.9–18 m), made to your data sheet."
+        },
+        {
+          "slot": "D",
+          "q": "What fan sizes do air-cooled heat exchangers offer?",
+          "a": "Fan diameters offered are 5–40 ft (1.5–12.2 m), with a minimum of 3 ft (0.9 m), and fan area should be at least 40% of bundle face area. Fan solutions are available for air outlet up to 204 °C (400 °F)."
+        },
+        {
+          "slot": "E",
+          "q": "What design pressure range do air-cooled exchanger headers cover?",
+          "a": "Header design pressure for gas-compression coolers runs from 150 to 11,150 psig (ASME). Cover-plate headers are for fouling service roughly below 150 psig; the pressure for your unit comes from your data sheet."
+        },
+        {
+          "slot": "F",
+          "q": "Which header type should I choose for an air-cooled heat exchanger?",
+          "a": "Plug header is the most common, with plugs opposite each tube for inspection and rolling. Cover-plate header suits fouling service roughly below 150 psig, and bonnet header suits a costly alloy tubesheet such as titanium."
+        },
+        {
+          "slot": "K",
+          "q": "Forced draft or induced draft for an air-cooled heat exchanger?",
+          "a": "Forced draft suits most units, with easier maintenance and fans away from hot air. Induced draft gives less hot-air recirculation. State the preferred draft and the site wind and ambient conditions on the data sheet."
+        },
+        {
+          "slot": "G",
+          "q": "What tests apply to air-cooled heat exchangers?",
+          "a": "All pressure welds are full penetration with UT or RT of all header welds, weld and HAZ hardness is limited to 20 HRC (22 HRC for some grades), and each bundle is hydrotested. An ASME PTC 30 performance test is optional."
+        },
+        {
+          "slot": "H",
+          "q": "What finned tubes go into an air-cooled heat exchanger bundle?",
+          "a": "Finned tubes in a bundle follow API 661, and replacement bundles are built to fit existing bays. See our [finned tubes for air-cooled exchangers](/p/finned-tubes-for-air-cooled-exchangers) and the [air cooler bundle replacement guide](/blog/air-cooler-bundle-replacement-data-sheet)."
+        },
+        {
+          "slot": "I",
+          "q": "What control options can an air-cooled heat exchanger have?",
+          "a": "Control options are VFD, variable-pitch fans, louvers, warm-air recirculation and steam coils for winterisation. Insect/lint and hail screens use mesh No. 8 under ISO 13706 clause 7.2.11."
+        },
+        {
+          "slot": "J",
+          "q": "Where are air-cooled heat exchangers used?",
+          "a": "They are used in gas processing and compression (gas, propane, lean amine and glycol coolers), LNG liquefaction, power-plant and gen-set radiators, and refinery overhead condensers and product coolers."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply air-cooled heat exchangers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. Each unit is engineered to your data sheet, not a catalogue item, so send service, flow, temperatures, pressure, ambient conditions and plot limits through [our contact page](/contact)."
+        },
+        {
+          "slot": "B",
+          "q": "What data does an air-cooled heat exchanger quotation need?",
+          "a": "Send the service, fluid, total flow and phase; inlet and outlet temperatures, allowable pressure drop and fouling; design pressure, temperature and MDMT; design and minimum ambient temperature and site elevation; and plot limits. See the [heat exchangers shelf](/c/heat-exchangers)."
+        }
+      ]
+    },
+    {
+      "slug": "compressor-intercoolers-and-aftercoolers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are compressor intercoolers and aftercoolers?",
+          "a": "Compressor intercoolers and aftercoolers are interstage and discharge gas coolers, plus lube-oil and jacket-water coolers, for compressors. They are air-cooled or shell-and-tube and built to your data sheet."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes of compressor intercooler are standard?",
+          "a": "There are no standard sizes: each unit is designed to your data sheet or drawing, from the duty and the compressor stage. Send the information from the quotation checklist."
+        },
+        {
+          "slot": "K",
+          "q": "Air-cooled or shell-and-tube for a compressor intercooler?",
+          "a": "Both are built. Air-cooled coolers follow API 661 and shell-and-tube coolers follow TEMA or API 660, with the choice set by cooling medium and duty. Compare the [shell and tube heat exchangers](/p/shell-and-tube-heat-exchangers) and the [air-cooled heat exchangers](/p/air-cooled-heat-exchangers)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to compressor intercoolers and aftercoolers?",
+          "a": "API 661 for air-cooled coolers, or TEMA and API 660 for shell-and-tube coolers. Equivalent grades in other standards are indicative and checked against each tender."
+        },
+        {
+          "slot": "H",
+          "q": "What fan drives do compressor coolers use?",
+          "a": "Compressor coolers use engine-, electric-motor- or hydraulic-motor-driven fans, in vertical and horizontal configurations. State the available drive on the data sheet."
+        },
+        {
+          "slot": "E",
+          "q": "What process data sets the size of a compressor aftercooler?",
+          "a": "The duty: flows, phase, inlet and outlet temperatures, inlet pressure on each side, allowable pressure drop and fouling resistance. The thermal design then sets the surface and the layout."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used for compressor intercoolers?",
+          "a": "Tubes, tube sheets, baffles, shells and channels are made to the grades on your data sheet, and the tube-to-tubesheet joints are expanded or welded to a qualified procedure. Give material, OD, wall, length and pitch."
+        },
+        {
+          "slot": "G",
+          "q": "What testing comes with a compressor intercooler or aftercooler?",
+          "a": "Each unit is hydrotested and documented to the inspection and test plan before it ships from the fabricating shop, following the order’s code and specification. Send your specification with the enquiry."
+        },
+        {
+          "slot": "J",
+          "q": "Where are compressor intercoolers and aftercoolers used?",
+          "a": "They are used at gas compression stations, in gas plants and with instrument and plant-air compressors. See the [heat exchangers shelf](/c/heat-exchangers) for related exchangers."
+        },
+        {
+          "slot": "I",
+          "q": "Do you work to our project specification for compressor coolers?",
+          "a": "Yes. Send the project specification and the inspection and test plan with the enquiry; materials, welding, NDE, testing and documents are quoted to them, and third-party inspection can be arranged."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply compressor intercoolers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. They are built to your data sheet rather than held as catalogue items; send the duty through [our contact page](/contact)."
+        },
+        {
+          "slot": "B",
+          "q": "What do I send for a compressor aftercooler quotation?",
+          "a": "Send the service and item number, the fluids and flows each side, temperatures and pressures, physical properties, allowable pressure drop, design pressure and temperature, TEMA type and class, materials and the code and stamp required."
+        }
+      ]
+    },
+    {
+      "slug": "finned-tube-evaporator-coils",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are finned tube evaporator coils used for?",
+          "a": "Finned tube evaporator coils boil a refrigerant or process fluid inside the tubes while air or gas passes across the fins. They are used in process evaporators and HRSG-type heat recovery and are built to your data sheet."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do finned tube evaporator coils come in?",
+          "a": "There is no catalogue size table. The tube or pipe grade, bend radii and coil dimensions come from your drawing or from our design for your duty, with the fin type, material and spacing for finned coils."
+        },
+        {
+          "slot": "E",
+          "q": "What sets the fin spacing and circuiting of an evaporator coil?",
+          "a": "The refrigerant, the evaporating temperature and the frosting or fouling the coil will see set the circuiting, tube size and fin spacing. State the refrigerant or process fluid and the operating temperatures."
+        },
+        {
+          "slot": "F",
+          "q": "What tube materials are used for finned evaporator coils?",
+          "a": "The listing cites ASME SA106, SA179 and SA192 for tubes and pipe. Grade, OD and wall come from your drawing, and fin type, material and spacing are specified for finned coils."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to finned tube evaporator coils?",
+          "a": "API 660, EN 13445 and PED 2014/68/EU, with ASME SA106, SA179 and SA192 for the tubes, and GB/T 151. Equivalent grades are indicative and checked against each tender."
+        },
+        {
+          "slot": "G",
+          "q": "How are evaporator coils tested?",
+          "a": "Each coil is leak-tested, dried before it is sealed for shipping, and pressure tested and documented to the inspection and test plan. Bends keep wall thinning and ovality inside the governing specification."
+        },
+        {
+          "slot": "H",
+          "q": "Which tubes can go into a finned evaporator coil?",
+          "a": "Finned tubes of several forms are available; see the [finned tubes shelf](/c/finned-tubes) for the fin types, and the [tube bundles and coils](/c/tube-bundles-coils) shelf for assembled coils."
+        },
+        {
+          "slot": "K",
+          "q": "Evaporator coil or shell-and-tube evaporator: which should I use?",
+          "a": "A finned coil suits air or gas across the fins, while a shell-and-tube unit suits liquid on both sides. See the [shell and tube heat exchangers](/p/shell-and-tube-heat-exchangers) for the liquid-side option."
+        },
+        {
+          "slot": "J",
+          "q": "Where are finned tube evaporator coils used?",
+          "a": "Finned tube evaporator coils are used in process evaporators and HRSG-type heat recovery, on process and refrigeration duty. Send the fluid, flow, temperatures and pressure so the circuiting can be set."
+        },
+        {
+          "slot": "I",
+          "q": "Do evaporator coils need a drawing?",
+          "a": "Send the coil type and dimensions or the drawing; replacement coils are best quoted from the old drawing or a sample so the new coil fits the existing space."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply finned tube evaporator coils from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. Coils are built to the duty and the space, so send the duty, tube material and OD, fin type and quantity through [our contact page](/contact)."
+        },
+        {
+          "slot": "B",
+          "q": "What does a finned tube evaporator coil quotation need?",
+          "a": "Send the duty (fluid, flow, temperatures and pressure), coil type and dimensions or drawing, tube material, OD and wall, fin type, material and spacing, design code, test pressure, inspection, quantity and delivery point."
+        }
+      ]
+    },
+    {
+      "slug": "fixed-tubesheet-heat-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a fixed tubesheet heat exchanger?",
+          "a": "A fixed tubesheet heat exchanger is a shell-and-tube exchanger with both tube sheets welded to the shell (TEMA L, M or N rear head). It is the simplest and lowest-cost type where the shell side does not need mechanical cleaning."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a TEMA code such as BEM, AEL or NEN?",
+          "a": "A TEMA code has three letters: front head, shell and rear head. In BEM, B is a bonnet front head, E a one-pass shell and M a fixed bonnet rear head; AEL and NEN are also fixed tubesheet types, and NEN suits very high pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are fixed tubesheet heat exchangers made in?",
+          "a": "Each unit is designed to your data sheet or drawing, so there is no fixed size table. The thermal design sets the surface, shells, passes and tube layout."
+        },
+        {
+          "slot": "E",
+          "q": "What is the main limitation of a fixed tubesheet exchanger?",
+          "a": "The shell side cannot be accessed for mechanical cleaning. A shell expansion joint may be needed where shell and tubes run at very different temperatures, and the data sheet asks if one is required and its type."
+        },
+        {
+          "slot": "K",
+          "q": "Fixed tubesheet or floating head exchanger?",
+          "a": "Choose fixed tubesheet for the simplest, lowest-cost unit where shell-side cleaning is not needed, and [floating head](/p/floating-head-heat-exchangers) when the bundle must be pulled and free to expand. AEU/BEU U-tube is a cheaper removable bundle than AES/AET."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to fixed tubesheet heat exchangers?",
+          "a": "TEMA classes R, C and B, API 660 9th edition / ISO 16812, ASME VIII Div 1 or EN 13445. Class R is refinery service, B is chemical and C is general commercial."
+        },
+        {
+          "slot": "G",
+          "q": "What testing comes with a fixed tubesheet exchanger?",
+          "a": "Each unit is hydrotested and documented to the inspection and test plan before it ships from the fabricating shop, and tube-to-tubesheet joints are expanded or welded to a qualified procedure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in fixed tubesheet exchangers?",
+          "a": "Tubes, tube sheets, baffles, shells and channels are made to the grades on your data sheet. Give tube material, OD, wall, length and pitch plus shell and channel materials and corrosion allowance."
+        },
+        {
+          "slot": "J",
+          "q": "Where are fixed tubesheet exchangers used?",
+          "a": "Typical services are gas processing (amine, glycol, NGL trains), LNG pre-cooling and utilities, power and desalination (feedwater heaters, seawater coolers) and refinery turnaround retubing and bundle replacement."
+        },
+        {
+          "slot": "H",
+          "q": "Which parts go with a fixed tubesheet exchanger?",
+          "a": "A fixed tubesheet exchanger is built from tubes, tube sheets and baffles; see our [tube bundles and coils](/c/tube-bundles-coils) and [heat exchangers shelf](/c/heat-exchangers) for related items and bundles."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply fixed tubesheet exchangers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. Each unit is engineered to your data sheet, so send the process data through [our contact page](/contact)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I send for a fixed tubesheet exchanger quotation?",
+          "a": "Send the service, fluids and flows each side, temperatures and pressures, allowable pressure drop and fouling, design pressure and MDMT, TEMA type and class, tube and shell materials and the code and stamp required."
+        }
+      ]
+    },
+    {
+      "slug": "floating-head-heat-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a floating head heat exchanger?",
+          "a": "A floating head heat exchanger is a shell-and-tube exchanger with a floating rear head (TEMA P, S, T or W), so the bundle can be pulled for cleaning and is free to expand. We build it to your data sheet."
+        },
+        {
+          "slot": "B",
+          "q": "What do the TEMA rear head letters P, S, T and W mean?",
+          "a": "P is outside packed, S is split-ring (as in AES), T is pull-through and W is packed lantern ring. The three-letter TEMA code gives front head, shell and rear head."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are floating head heat exchangers made in?",
+          "a": "Each unit is designed to your data sheet or drawing, so there is no standard size table. Send the data listed in the quotation checklist."
+        },
+        {
+          "slot": "E",
+          "q": "What are the limits of AES and AET floating head exchangers?",
+          "a": "AES and AET give a removable bundle where U-tubes are unsuitable, but they are limited to even tube passes and are the most expensive removable type."
+        },
+        {
+          "slot": "K",
+          "q": "Floating head or U-tube heat exchanger?",
+          "a": "AEU/BEU gives the cheapest removable bundle but takes even tube passes only, while AES/AET suits cases where U-tubes are unsuitable. Compare the [fixed tubesheet type](/p/fixed-tubesheet-heat-exchangers) for non-cleanable shell side."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to floating head heat exchangers?",
+          "a": "TEMA classes R, C and B, API 660 9th edition / ISO 16812, ASME VIII Div 1 or EN 13445. Class R adds recessed or confined gasket and thicker minimums."
+        },
+        {
+          "slot": "G",
+          "q": "How is a floating head exchanger tested?",
+          "a": "Each unit is hydrotested and documented to the inspection and test plan before it ships from the fabricating shop. Tube-to-tubesheet joints are expanded or welded to a qualified procedure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials are used in floating head exchangers?",
+          "a": "Tubes, tube sheets, baffles, shells and channels follow the grades on your data sheet. State tube material, OD, wall, length and pitch, shell and channel materials and corrosion allowance."
+        },
+        {
+          "slot": "J",
+          "q": "Where are floating head exchangers used?",
+          "a": "Typical services are gas processing (amine, glycol, NGL trains), LNG pre-cooling and utilities, power and desalination feedwater heaters and seawater coolers, and refinery turnaround retubing and bundle replacement."
+        },
+        {
+          "slot": "H",
+          "q": "What tube bundles fit floating head exchangers?",
+          "a": "Replacement bundles and coils are listed under our [tube bundles and coils](/c/tube-bundles-coils) shelf; send the old drawing or sample for fit."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply floating head exchangers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. They are engineered to your data sheet, so send the process data through [our contact page](/contact)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I send for a floating head exchanger quotation?",
+          "a": "Send the service and item number, fluids and flows each side, temperatures and pressures, allowable pressure drop, fouling resistance, design pressure and MDMT, TEMA type and class and materials."
+        }
+      ]
+    },
+    {
+      "slug": "heat-pipe-heat-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a heat pipe heat exchanger?",
+          "a": "A heat pipe heat exchanger is a bank of sealed, finned heat pipes that moves heat from a hot gas stream to a cold one with no cross-leakage between them. It is used for flue-gas and exhaust heat recovery and HVAC energy recovery."
+        },
+        {
+          "slot": "E",
+          "q": "How does a heat pipe heat exchanger work?",
+          "a": "Each heat pipe is a sealed, finned tube with a small charge of working fluid that boils at the hot end and condenses at the cold end, so heat moves along the pipe with no pumping and no leakage path between the two gas streams."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes are heat pipe heat exchangers made in?",
+          "a": "Each unit is sized from the two flows and temperatures, the allowable pressure drop and the duct space, and built to fit the duct. There is no standard size table."
+        },
+        {
+          "slot": "F",
+          "q": "How is the working fluid chosen in a heat pipe exchanger?",
+          "a": "The working fluid is chosen for the gas temperature, and the fin spacing and material for the fouling and the dew point of the hot stream. Give the gas composition including dust and SOx."
+        },
+        {
+          "slot": "K",
+          "q": "Heat pipe exchanger or shell-and-tube for heat recovery?",
+          "a": "Choose a heat pipe unit when the two gas streams must never mix; a failed pipe does not stop the unit. The [shell and tube heat exchangers](/p/shell-and-tube-heat-exchangers) suit liquid duties."
+        },
+        {
+          "slot": "I",
+          "q": "How do you handle dirty gas in a heat pipe exchanger?",
+          "a": "The bank can be built with the hot-side fin spacing opened up for dirty gas, and the fin material is chosen for the fouling and the dew point. State the cleaning method and the dust loading on the enquiry."
+        },
+        {
+          "slot": "G",
+          "q": "What testing comes with a heat pipe heat exchanger?",
+          "a": "Documentation, inspection and the test plan follow the order’s code and specification. Send the project specification with the enquiry."
+        },
+        {
+          "slot": "J",
+          "q": "Where are heat pipe heat exchangers used?",
+          "a": "Typical uses are combustion-air preheating from flue gas, dryer and kiln exhaust recovery, and fresh-air preheat or precool in HVAC."
+        },
+        {
+          "slot": "H",
+          "q": "What sits alongside heat pipe heat exchangers on the shelf?",
+          "a": "The [heat exchangers shelf](/c/heat-exchangers) lists other exchanger types, including the [air-cooled heat exchangers](/p/air-cooled-heat-exchangers), all built to your data sheet or drawing and quoted against it."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply heat pipe heat exchangers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. They are built to your duct and duty, so send the details through [our contact page](/contact)."
+        },
+        {
+          "slot": "B",
+          "q": "What data does a heat pipe exchanger quotation need?",
+          "a": "Send the hot gas flow, inlet temperature and composition including dew point, dust and SOx; cold stream flow and temperatures; allowable pressure drop each side; duct dimensions and orientation; and cleaning method."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a standard for heat pipe heat exchangers?",
+          "a": "No governing standard is listed for the heat pipe exchanger itself; it is built to your data sheet, with documentation, inspection and test plan to the code and specification you give on the order."
+        }
+      ]
+    },
+    {
+      "slug": "shell-and-tube-heat-exchangers",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are shell and tube heat exchangers and which standards apply?",
+          "a": "Shell and tube heat exchangers are built to TEMA classes R, C and B and API 660 / ISO 16812, in fixed-tubesheet, U-tube and floating-head types, to your process data sheet. Mechanical design follows ASME VIII Div 1 or EN 13445."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read a TEMA type code such as AES or BEU?",
+          "a": "A TEMA code has three letters: front head (A, B, C, N, D), shell (E, F, G, H, J, K, X) and rear head (L, M, N fixed tubesheet; P, S, T, W floating; U is U-tube). BEM is bonnet, one-pass shell, fixed bonnet rear."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do shell and tube heat exchangers come in?",
+          "a": "Each unit is designed to your data sheet, so there is no standard size table. The thermal design sets the surface, number of shells and passes and the tube layout."
+        },
+        {
+          "slot": "E",
+          "q": "What do TEMA classes R, B and C mean?",
+          "a": "R is refinery service (most demanding), B is chemical and C is general commercial. Class R adds recessed or confined gasket and thicker minimums."
+        },
+        {
+          "slot": "K",
+          "q": "Fixed tubesheet, U-tube or floating head: which type?",
+          "a": "AEU/BEU is the cheapest removable bundle but takes even tube passes only, AES/AET is the costliest removable bundle, and AEM/BEM/AEL are fixed tubesheet with a shell side that cannot be cleaned mechanically. See the [fixed tubesheet type](/p/fixed-tubesheet-heat-exchangers) and [floating head type](/p/floating-head-heat-exchangers)."
+        },
+        {
+          "slot": "G",
+          "q": "Which API 660 edition applies to shell and tube exchangers?",
+          "a": "The listing cites API 660 9th edition (2015), supplemented by ISO 16812:2019, with ASME VIII Div 1 / EN 13445 for the mechanical design."
+        },
+        {
+          "slot": "G",
+          "q": "How are shell and tube exchangers tested?",
+          "a": "Each unit is hydrotested and documented to the inspection and test plan before it ships from the fabricating shop. Tube-to-tubesheet joints are expanded or welded to a qualified procedure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials can shell and tube exchangers use?",
+          "a": "Tubes, tube sheets, baffles, shells and channels are made to the grades on your data sheet. Specify tube material, OD, wall, length and pitch, shell and channel materials and corrosion allowance."
+        },
+        {
+          "slot": "J",
+          "q": "Where are shell and tube exchangers used?",
+          "a": "They serve gas processing (amine, glycol, NGL trains), LNG pre-cooling and utilities, power and desalination (feedwater heaters, seawater coolers), and refinery turnaround retubing and bundle replacement."
+        },
+        {
+          "slot": "H",
+          "q": "What parts and bundles does a shell and tube exchanger use?",
+          "a": "Shell and tube exchangers are built from finned or plain tubes, tube sheets, baffles and bundles; see the [heat exchangers shelf](/c/heat-exchangers) and our [tube sheets](/c/tube-sheets) shelf for the parts."
+        },
+        {
+          "slot": "M",
+          "q": "Can you supply shell and tube heat exchangers from Dubai?",
+          "a": "Yes. We supply from Dubai, UAE and ship worldwide with the best lead times. They are engineered to your data sheet, so send the process data through [our contact page](/contact)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I send for a shell and tube quotation?",
+          "a": "Send the service and item number, the fluids and flows each side, temperatures and pressure, physical properties, allowable pressure drop, design pressure and MDMT, TEMA type and class, materials and the code and stamp required."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "family": "frac-hydration-unit",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "frac-hydration-unit-200-bbl-12-12-centrifugal-90-bbl-min-ss316-tote-tanks",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 200 BBL frac hydration unit used for?",
+          "a": "A frac hydration unit prepares the gel before the crosslinker and proppant are added at the blender. This unit has a 200 BBL hydration tank, a 12-inch by 12-inch centrifugal mixing pump, a 90 BBL/min mixing rate and chicanes inside the tank to maximise hydration time."
+        },
+        {
+          "slot": "D",
+          "q": "What capacity and mixing rate does the 200 BBL frac hydration unit have?",
+          "a": "The hydration tank is 200 BBL, with capacity adjustable per project, and the mixing rate is 90 BBL/min using a 12-inch by 12-inch centrifugal mixing pump. State the rate and volume you need on the RFQ."
+        },
+        {
+          "slot": "E",
+          "q": "How does the 200 BBL frac hydration unit give particles time to hydrate?",
+          "a": "A flow path with chicanes inside the tank maximises hydration time of the particles. That gives the gel time to develop viscosity before it moves on to the blender."
+        },
+        {
+          "slot": "F",
+          "q": "What chemical tanks does the 200 BBL frac hydration unit carry?",
+          "a": "It includes one dry chemical tank, typically for guar, and up to four liquid chemical tanks, all SS316 tote-type, with an optional heating system and agitator. Suction and discharge ports are on both sides for versatile rig-up."
+        },
+        {
+          "slot": "G",
+          "q": "What controls and options does the 200 BBL frac hydration unit offer?",
+          "a": "Optional full electronic control includes a viscosity meter, density meter, pH meter and chemical dosing pumps. Skid, trailer or truck mounting is available, plus a DNV-certified offshore variant and an arctic-winterized variant with pre-heating."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 200 BBL frac hydration unit connect to?",
+          "a": "It feeds gel to the [frac blender](/p/frac-blender-mfr-50-50-bbl-min-auto-density-control-chemical-additive-system) and can connect to the [frac data van](/p/frac-data-van-trailer-mounted-multi-screen-fleet-control-hvac-pantry). Suction and discharge ports on both sides allow versatile rig-up, and [frac tanks](/c/frac-tanks) provide supply storage."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 200 BBL frac hydration unit differ from a liquid additive system?",
+          "a": "The hydration unit makes gel in its tank, while the [LAS](/p/frac-las-8-tank-ss316-tote-tanks-mass-flowmeters-trailer-mounted) doses liquid chemicals from totes into the stream. Both are used in a frac fleet, at different points."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 200 BBL frac hydration unit used?",
+          "a": "It is used in hydraulic fracturing fleets for gel preparation ahead of the blender, where the crosslinker and proppant are added. See the guide on [frac and stimulation equipment](/blog/frac-and-stimulation-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "What should I send for a frac hydration unit quotation?",
+          "a": "Send the hydration rate and tank volume, the number of chemical tanks, heating and agitation, the electronic controls, the mounting type, and any offshore or arctic requirement."
+        },
+        {
+          "slot": "L",
+          "q": "Can the 200 BBL frac hydration unit be supplied for offshore or arctic work?",
+          "a": "Yes, a DNV-certified offshore variant and an arctic-winterized variant with pre-heating are available. State the site conditions on the RFQ."
+        },
+        {
+          "slot": "I",
+          "q": "What is the tank material of the 200 BBL frac hydration unit?",
+          "a": "The tote-type chemical tanks are SS316 stainless steel, which resists the chemicals used. Optional heating and agitators are available for the tanks."
+        },
+        {
+          "slot": "M",
+          "q": "Does Indus stock the 200 BBL frac hydration unit?",
+          "a": "Yes. We list the 200 BBL frac hydration unit as ex-stock from our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Tank volume is adjustable per project. Send your configuration and destination through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "family": "actuated-valves",
+  "extraFacts": [
+    {
+      "fact": "Quarter-turn valves (ball, butterfly) turn 90 degrees between open and closed; multi-turn valves (gate, globe) need many turns of the stem.",
+      "source": "General valve engineering practice; consistent with the Indus actuated-valve listing wording (multi-turn for gate and globe, quarter-turn for ball and butterfly)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "electric-actuated-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are electric actuated ball, gate, globe and butterfly valves used for?",
+          "a": "Electric actuated valves open and close on an electrical signal for remote or networked control where power is available. A multi-turn actuator drives gate and globe valves and a quarter-turn actuator drives ball and butterfly valves, with a handwheel for manual operation."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve sizes can be fitted with an electric actuator?",
+          "a": "The published range is NPS 1/2\" to 120\" depending on valve type: soft-seated ball valves 1/2\" to 56\", metal-seated ball valves 1\" to 44\", gate valves 1/2\" to 66\", globe valves 1/2\" to 24\" and butterfly valves 2\" to 120\". Pressure classes run ASME Class 150 to 2500."
+        },
+        {
+          "slot": "D",
+          "q": "Which body materials and end connections come on electric actuated valves?",
+          "a": "Bodies are offered in carbon steel, stainless steel, alloy steel and duplex, with flanged, butt-weld, wafer or lug ends depending on the valve type. Tell us the pipe schedule for butt-weld ends and the facing for flanges when you enquire."
+        },
+        {
+          "slot": "E",
+          "q": "Which fieldbus protocols can an electric valve actuator use?",
+          "a": "The actuator can speak Modbus, Profibus, Foundation Fieldbus, HART or LonWorks and reports position, torque and faults. Name the protocol your control system uses, and whether you need on-off or modulating operation, when you request a quote."
+        },
+        {
+          "slot": "F",
+          "q": "What happens to an electric actuated valve on power failure?",
+          "a": "An electric actuator stays where it is when power is lost unless it carries a fail-safe unit, spring or battery. If the valve must go to a set position on failure, say so in the enquiry, or consider a [pneumatic actuated valve with spring return](/p/pneumatic-actuated-valve-esd)."
+        },
+        {
+          "slot": "G",
+          "q": "What design standards and test standards apply to electric actuated valves?",
+          "a": "The listed design standards are API 6D, API 600, API 602, BS 1873, API 609 and ISO 5211 for the actuator mounting. Valves are tested to API 598 or API 6D, with function tests of the valve and actuator together; the exact standard depends on the valve type you order."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with an Indus electric actuated valve?",
+          "a": "Each valve ships with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "Does the electric actuator have a manual override and weatherproof enclosure?",
+          "a": "Yes. The electric actuator has a handwheel override for manual operation and a weatherproof or explosion-proof enclosure, with non-intrusive setting and position, torque and fault diagnostics. State the area classification on the enquiry so the right enclosure is quoted."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose an electric actuator over pneumatic or hydraulic?",
+          "a": "Choose electric where power is available and you want networked control and position feedback without air or hydraulic supply. For fast fail-safe shutdown on plant air see [pneumatic actuated and ESD valves](/p/pneumatic-actuated-valve-esd); for the largest valves and remote sites see [hydraulic and gas-over-oil actuated valves](/p/hydraulic-electro-hydraulic-gas-over-oil-actuated-valve)."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to send to get a quotation for an electric actuated valve?",
+          "a": "Send the valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection, operator, design temperature and service fluid. Add any project specification, approved vendor list or inspection requirement and the delivery address, and we will list any deviations before you order."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus supply electric actuated valves to my project outside the UAE?",
+          "a": "Yes. We supply electric actuated valves from Dubai, UAE, to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Delivery depends on size, class, material and operator, with standard carbon-steel sizes moving fastest; the country and consignee go on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "How long does an electric actuated valve take to supply from Dubai?",
+          "a": "Electric actuated valves are mostly built to the order specification and supplied from Dubai, so delivery depends on size, class, material and operator. Standard carbon-steel sizes move fastest. Send the valve data sheet, or the size, pressure class, materials, end connection, design temperature and service fluid, through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "hydraulic-electro-hydraulic-gas-over-oil-actuated-valve",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are hydraulic, electro-hydraulic and gas-over-oil actuated valves used for?",
+          "a": "These actuated valves suit the largest valves and the most remote sites: pipeline block valves, large process valves and line-break protection. Hydraulic actuators give high torque and smooth travel, while gas-over-oil units run on the pipeline gas itself with a hand pump for manual operation."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between hydraulic, electro-hydraulic and gas-over-oil actuators?",
+          "a": "A hydraulic actuator uses an external hydraulic supply for high torque and precise positioning. An electro-hydraulic unit is self-contained with its own pump and reservoir and takes a 4-20 mA or on-off signal, and a gas-over-oil unit uses line gas or nitrogen to drive oil to the cylinder."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve sizes can be fitted with a hydraulic or gas-over-oil actuator?",
+          "a": "The published range is NPS 2\" to 120\" depending on valve type: soft-seated ball valves to 56\", metal-seated ball valves to 44\", gate valves to 66\" and butterfly valves to 120\". Pressure classes run ASME Class 150 to 2500, in carbon steel, stainless steel, alloy steel or duplex."
+        },
+        {
+          "slot": "K",
+          "q": "When is a gas-over-oil actuator the right choice?",
+          "a": "Choose gas-over-oil at pipeline block valve stations with no power or air supply. The actuator runs on line gas, has a hand pump for manual operation, and can close the valve on a line break detected by its own controls, so the station needs no external power."
+        },
+        {
+          "slot": "E",
+          "q": "What signal does an electro-hydraulic actuator need?",
+          "a": "A self-contained electro-hydraulic actuator needs only electrical power and a 4-20 mA or on-off signal, because the pump and reservoir are built into the unit. Tell us the supply voltage and whether you need emergency shutdown or line-break detection."
+        },
+        {
+          "slot": "G",
+          "q": "What test standards apply to hydraulic actuated valves?",
+          "a": "Valves are tested to API 598 or API 6D, with function tests of the valve and actuator together, and the design standards listed are API 6D, API 600, API 609 and ISO 5211. Third-party inspection and extra tests are added when the order specifies them."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with a hydraulic or gas-over-oil actuated valve?",
+          "a": "Each valve is supplied with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification, third-party inspection and extra tests can be added when the order specifies them."
+        },
+        {
+          "slot": "H",
+          "q": "Do hydraulic actuated valves have local and remote control and emergency shutdown?",
+          "a": "Yes. The construction includes line-break detection, local and remote control and emergency shutdown, and gas-over-oil units add a hand pump for manual operation. State the control philosophy and fail position you need so the actuator is sized and fitted accordingly."
+        },
+        {
+          "slot": "K",
+          "q": "Hydraulic actuator or electric actuator for a large valve?",
+          "a": "A hydraulic actuator gives higher torque and smooth, stable travel on large valves, but needs a hydraulic supply or a self-contained unit. Where site power is available and networked control matters more, an [electric actuated valve](/p/electric-actuated-valve) may do."
+        },
+        {
+          "slot": "I",
+          "q": "What do I need to send to quote a hydraulic or gas-over-oil actuated valve?",
+          "a": "Send the valve data sheet, or the size, pressure class, body and trim material, end connection, operator, design temperature and service fluid. Add any project specification, vendor list or inspection requirement; we confirm compliance line by line and list deviations before you order."
+        },
+        {
+          "slot": "L",
+          "q": "Do you supply hydraulic actuated valves outside the UAE?",
+          "a": "Yes. We supply them from Dubai, UAE, to projects across the GCC, the wider Middle East and Africa, built to the order specification. Give the destination and the consignee with the enquiry so the delivery route and documents match."
+        },
+        {
+          "slot": "M",
+          "q": "What is the delivery time for hydraulic and gas-over-oil actuated valves?",
+          "a": "These actuated valves are mostly built to the order specification and supplied from Dubai, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. Send the valve data sheet, or the size, pressure class, materials, end connection, design temperature and service fluid, through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    },
+    {
+      "slug": "pneumatic-actuated-valve-esd",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are pneumatic actuated valves and ESD valves used for?",
+          "a": "Pneumatic actuated valves give fast, fail-safe operation on plant air, for isolation, shutdown and emergency shutdown in oil and gas, petrochemical and power plants. Quarter-turn scotch-yoke or rack-and-pinion actuators drive ball and butterfly valves, and linear cylinders drive gate and globe valves."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between an SDV and an ESDV?",
+          "a": "Both close automatically on a signal, but an ESDV is part of the safety instrumented system, so it has a defined closing time, a fail-closed spring and usually partial-stroke testing. SIL documentation to IEC 61508 is available on request."
+        },
+        {
+          "slot": "E",
+          "q": "What air supply does a pneumatic actuated valve need?",
+          "a": "Usually 4 to 7 bar instrument air. Tell us the minimum supply pressure at the valve so the actuator is sized with margin, and whether you need an air tank for backup closing if the plant air fails."
+        },
+        {
+          "slot": "D",
+          "q": "Which valve types and sizes can be supplied with a pneumatic actuator?",
+          "a": "The full range of ball, butterfly, gate and globe valves can be actuated, in ASME Class 150 to 2500 and in carbon steel, stainless steel, alloy steel or duplex. Ends are flanged, butt-weld, wafer or lug, and the dimension table is issued with the quotation."
+        },
+        {
+          "slot": "D",
+          "q": "What is the difference between a spring-return and a double-acting pneumatic actuator?",
+          "a": "A spring-return actuator closes or opens the valve on loss of air or signal, so it is the fail-safe choice for shutdown. A double-acting actuator uses air in both directions and stays in position when air is lost; say which fail action you need."
+        },
+        {
+          "slot": "H",
+          "q": "What accessories can be fitted to a pneumatic actuated valve?",
+          "a": "Solenoid valves, limit switches, a positioner and partial-stroke test equipment are available on request, with manual override, air-tank backup and quick-closing circuits. The control panel is built and tested with the valve."
+        },
+        {
+          "slot": "G",
+          "q": "What standards and tests apply to pneumatic actuated valves?",
+          "a": "Design standards listed are API 6D, API 600, API 609 and ISO 5211 for the actuator mounting, with IEC 61508 (SIL) on request. Valves are tested to API 598 or API 6D, with function tests of the valve and actuator together."
+        },
+        {
+          "slot": "I",
+          "q": "How is the closing time of an ESD valve met?",
+          "a": "A spring-return actuator closes the valve on loss of air or signal, and a quick-exhaust circuit speeds the stroke to meet the required closing time. Partial-stroke testing proves the valve moves without a full shutdown; give the closing time in the enquiry."
+        },
+        {
+          "slot": "K",
+          "q": "Pneumatic or electric actuator for an isolation valve?",
+          "a": "Choose pneumatic where plant air is available and fast fail-safe closure matters. An [electric actuated valve](/p/electric-actuated-valve) suits remote or networked control where power is available but air is not; ball valve choice is covered in [floating vs trunnion-mounted ball valves](/blog/floating-vs-trunnion-mounted-ball-valves)."
+        },
+        {
+          "slot": "G",
+          "q": "What documents come with a pneumatic actuated valve?",
+          "a": "Each valve ships with material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Positive material identification and third-party inspection can be added when the order specifies them."
+        },
+        {
+          "slot": "L",
+          "q": "Can Indus supply pneumatic actuated and ESD valves outside the UAE?",
+          "a": "Yes. We supply them from Dubai, UAE, to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Give the consignee and destination country with the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "What is the delivery time for a pneumatic actuated or ESD valve?",
+          "a": "Pneumatic actuated valves are mostly built to the order specification and supplied from Dubai, so delivery depends on size, class, material and operator. Standard carbon-steel sizes move fastest. Send the valve data sheet, or the size, pressure class, materials, end connection, design temperature and service fluid, through [our contact page](/contact) and we quote with the delivery time for that build."
+        }
+      ]
+    }
+  ]
+}

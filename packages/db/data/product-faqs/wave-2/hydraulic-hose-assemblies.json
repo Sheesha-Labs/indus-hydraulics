@@ -1,0 +1,600 @@
+{
+  "family": "hydraulic-hose-assemblies",
+  "extraFacts": [
+    {
+      "fact": "SAE J514 rates a 3/4\" pipe-thread (NPT) hose end at 3,000 psi and a 1\" pipe-thread end at 2,000 psi, below the hose rating in the larger sizes.",
+      "source": "SAE J514 as quoted on the Indus NPT hose-assembly listings"
+    },
+    {
+      "fact": "ORFS (O-ring face seal) connections are standardised in SAE J1453 and ISO 8434-3; 37° JIC flare connections in SAE J514 and ISO 8434-2; NPT is the US taper pipe thread of ASME B1.20.1.",
+      "source": "SAE J1453; ISO 8434-3; SAE J514; ISO 8434-2; ASME B1.20.1"
+    }
+  ],
+  "products": [
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-jic-37-female-swivel-x-jic-37-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIC 37° Female Swivel × JIC 37° Female Swivel 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with JIC 37° female swivel at both ends is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for connecting two JIC 37° ports, typically on mobile and industrial machinery where both ports are JIC. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-JIC-36?",
+          "a": "In IH-HA-FA-UFWTF8-JIC-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-JIC-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the JIC 37° Female Swivel × JIC 37° Female Swivel assembly come in?",
+          "a": "This assembly is listed in 5 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\", 1\" ID, in standard lengths from 12 in (305 mm) to 300 in, 80 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" JIC 37° female swivel (3/4-16) at both ends, as in IH-HA-FA-UFWTF8-JIC-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIC 37° Female Swivel × JIC 37° Female Swivel assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\", 3,270 psi at 1\". An assembly is rated to the lower of the hose and its end connections, so confirm the end rating for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\", 1\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped JIC 37° female swivel ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly?",
+          "a": "The JIC 37° ends follow SAE J514 and ISO 8434-2. The manufacturer states the hose cover is MSHA certified. The listing gives no other approval, so name any certificate or pressure test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the JIC 37° Female Swivel × JIC 37° Female Swivel assembly connect to?",
+          "a": "It connects to ports with JIC 37° female swivel threads sized to the hose, for example 1/2\" JIC 37° female swivel (3/4-16) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly?",
+          "a": "With JIC 37° female swivel at both ends, the swivel end lets you tighten the nut without turning the hose. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "JIC 37° Female Swivel × JIC 37° Female Swivel or JIC 37° Female Swivel × JIC 37° Female Swivel 90°: what is the difference?",
+          "a": "The 90° version turns one end through a right angle for tight routing and is listed in four sizes to 3/4\" ID, whereas this straight-ended assembly goes up to 1\". Both use two-wire steel braid hose with a synthetic rubber cover. See the [JIC 37° Female Swivel × JIC 37° Female Swivel 90° page](/p/2-wire-braided-hydraulic-hose-assembly-jic-37-female-swivel-x-jic-37-female-swivel-90) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the JIC 37° Female Swivel × JIC 37° Female Swivel assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 80-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly in Dubai?",
+          "a": "Yes. We keep the JIC 37° Female Swivel × JIC 37° Female Swivel hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-jic-37-female-swivel-x-jic-37-female-swivel-90",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIC 37° Female Swivel × JIC 37° Female Swivel 90° 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with JIC 37° female swivel at one end and a 90° JIC 37° female swivel at the other is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for tight installations where a straight end would kink the hose against the port. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-JIC-JIC90-36?",
+          "a": "In IH-HA-FA-UFWTF8-JIC-JIC90-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-JIC-JIC90-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the JIC 37° Female Swivel × JIC 37° Female Swivel 90° assembly come in?",
+          "a": "This assembly is listed in 4 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\" ID, in standard lengths from 12 in (305 mm) to 300 in, 61 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" JIC 37° female swivel (3/4-16) and 1/2\" JIC 37° female swivel 90° (3/4-16), as in IH-HA-FA-UFWTF8-JIC-JIC90-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIC 37° Female Swivel × JIC 37° Female Swivel 90° assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\". An assembly is rated to the lower of the hose and its end connections, so confirm the end rating for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped JIC 37° female swivel ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly?",
+          "a": "The JIC 37° ends follow SAE J514 and ISO 8434-2. The manufacturer states the hose cover is MSHA certified. The listing gives no other approval, so name any certificate or pressure test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the JIC 37° Female Swivel × JIC 37° Female Swivel 90° assembly connect to?",
+          "a": "It connects to ports with JIC 37° female swivel at one end and a 90° JIC 37° female swivel at the other threads sized to the hose, for example 1/2\" JIC 37° female swivel (3/4-16) to 1/2\" JIC 37° female swivel 90° (3/4-16) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly?",
+          "a": "With JIC 37° female swivel at one end and a 90° JIC 37° female swivel at the other, orient the 90° end toward the port before you tighten it. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "JIC 37° Female Swivel × JIC 37° Female Swivel 90° or JIC 37° Female Swivel × JIC 37° Female Swivel: what is the difference?",
+          "a": "The straight assembly has no elbow and goes up to 1\" ID, while this one has a 90° swivel at one end for tight routing and stops at 3/4\" ID. Both use two-wire steel braid hose with a synthetic rubber cover. See the [JIC 37° Female Swivel × JIC 37° Female Swivel page](/p/2-wire-braided-hydraulic-hose-assembly-jic-37-female-swivel-x-jic-37-female-swivel) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the JIC 37° Female Swivel × JIC 37° Female Swivel 90° assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 61-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly in Dubai?",
+          "a": "Yes, we hold the JIC 37° Female Swivel × JIC 37° Female Swivel 90° hose assembly in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-jic-37-female-swivel-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the JIC 37° Female Swivel × NPT Male 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with JIC 37° female swivel at one end and NPT male at the other is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for connecting a JIC-ported component to a pipe-threaded port in one line. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-JIC-NPT-36?",
+          "a": "In IH-HA-FA-UFWTF8-JIC-NPT-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-JIC-NPT-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the JIC 37° Female Swivel × NPT Male assembly come in?",
+          "a": "This assembly is listed in 5 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\", 1\" ID, in standard lengths from 12 in (305 mm) to 300 in, 81 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the JIC 37° Female Swivel × NPT Male hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" JIC 37° female swivel (3/4-16) and 1/2\" NPT male (1/2-14), as in IH-HA-FA-UFWTF8-JIC-NPT-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the JIC 37° Female Swivel × NPT Male assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\", 3,270 psi at 1\". An assembly is rated to the lower of the hose and its end connections, and SAE J514 rates a 3/4\" pipe-thread end at 3,000 psi and a 1\" end at 2,000 psi, so the NPT ends limit the larger sizes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the JIC 37° Female Swivel × NPT Male hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\", 1\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped JIC 37° female swivel ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the JIC 37° Female Swivel × NPT Male hose assembly?",
+          "a": "The JIC 37° end follow SAE J514 and ISO 8434-2, and the NPT end is ASME B1.20.1 taper pipe thread. The manufacturer states the hose cover is MSHA certified. The listing gives no other approval, so name any certificate or pressure test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the JIC 37° Female Swivel × NPT Male assembly connect to?",
+          "a": "It connects to ports with JIC 37° female swivel at one end and NPT male at the other threads sized to the hose, for example 1/2\" JIC 37° female swivel (3/4-16) to 1/2\" NPT male (1/2-14) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the JIC 37° Female Swivel × NPT Male hose assembly?",
+          "a": "With JIC 37° female swivel at one end and NPT male at the other, the swivel end lets you tighten the nut without turning the hose. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "JIC 37° Female Swivel × NPT Male or NPT Male × NPT Male: what is the difference?",
+          "a": "This assembly has a JIC swivel on one end, which turns to pick up the port, while the NPT × NPT assembly has fixed NPT male threads at both ends. Both use two-wire steel braid hose with a synthetic rubber cover. See the [NPT Male × NPT Male page](/p/2-wire-braided-hydraulic-hose-assembly-npt-male-x-npt-male) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the JIC 37° Female Swivel × NPT Male assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 81-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the JIC 37° Female Swivel × NPT Male hose assembly in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the JIC 37° Female Swivel × NPT Male hose assembly, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-npt-male-x-npt-male",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the NPT Male × NPT Male 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with NPT male at both ends is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for connecting two pipe-threaded ports on equipment built to NPT. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-NPT-36?",
+          "a": "In IH-HA-FA-UFWTF8-NPT-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-NPT-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the NPT Male × NPT Male assembly come in?",
+          "a": "This assembly is listed in 5 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\", 1\" ID, in standard lengths from 12 in (305 mm) to 300 in, 80 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the NPT Male × NPT Male hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" NPT male (1/2-14) at both ends, as in IH-HA-FA-UFWTF8-NPT-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the NPT Male × NPT Male assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\", 3,270 psi at 1\". An assembly is rated to the lower of the hose and its end connections, and SAE J514 rates a 3/4\" pipe-thread end at 3,000 psi and a 1\" end at 2,000 psi, so the NPT ends limit the larger sizes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the NPT Male × NPT Male hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\", 1\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped NPT male ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the NPT Male × NPT Male hose assembly?",
+          "a": "The NPT ends are US taper pipe threads to ASME B1.20.1, and SAE J514 gives the pressure rating for pipe-thread ends. The manufacturer states the hose cover is MSHA certified. Name any certificate or test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the NPT Male × NPT Male assembly connect to?",
+          "a": "It connects to ports with NPT male threads sized to the hose, for example 1/2\" NPT male (1/2-14) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the NPT Male × NPT Male hose assembly?",
+          "a": "With NPT male at both ends, seal the NPT thread with sealant suited to the fluid. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "NPT Male × NPT Male or NPT Male × NPT Male Swivel: what is the difference?",
+          "a": "Both ends here are fixed NPT male, so the hose must be twisted to thread in, whereas the swivel version lets one end turn independently of the hose. Both use two-wire steel braid hose with a synthetic rubber cover. See the [NPT Male × NPT Male Swivel page](/p/2-wire-braided-hydraulic-hose-assembly-npt-male-x-npt-male-swivel) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the NPT Male × NPT Male assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 80-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the NPT Male × NPT Male hose assembly in Dubai?",
+          "a": "Yes, we stock the NPT Male × NPT Male hose assembly in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-npt-male-x-npt-male-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the NPT Male × NPT Male Swivel 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with NPT male at one end and an NPT male swivel at the other is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for fitting to NPT ports where the hose cannot be rotated during installation. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-NPT-NPTX-36?",
+          "a": "In IH-HA-FA-UFWTF8-NPT-NPTX-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-NPT-NPTX-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the NPT Male × NPT Male Swivel assembly come in?",
+          "a": "This assembly is listed in 5 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\", 1\" ID, in standard lengths from 12 in (305 mm) to 300 in, 80 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the NPT Male × NPT Male Swivel hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" NPT male (1/2-14) and 1/2\" NPT male swivel (1/2-14), as in IH-HA-FA-UFWTF8-NPT-NPTX-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the NPT Male × NPT Male Swivel assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\", 3,270 psi at 1\". An assembly is rated to the lower of the hose and its end connections, and SAE J514 rates a 3/4\" pipe-thread end at 3,000 psi and a 1\" end at 2,000 psi, so the NPT ends limit the larger sizes."
+        },
+        {
+          "slot": "F",
+          "q": "What is the NPT Male × NPT Male Swivel hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\", 1\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped NPT male ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the NPT Male × NPT Male Swivel hose assembly?",
+          "a": "The NPT ends are US taper pipe threads to ASME B1.20.1, and SAE J514 gives the pressure rating for pipe-thread ends. The manufacturer states the hose cover is MSHA certified. Name any certificate or test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the NPT Male × NPT Male Swivel assembly connect to?",
+          "a": "It connects to ports with NPT male at one end and an NPT male swivel at the other threads sized to the hose, for example 1/2\" NPT male (1/2-14) to 1/2\" NPT male swivel (1/2-14) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the NPT Male × NPT Male Swivel hose assembly?",
+          "a": "With NPT male at one end and an NPT male swivel at the other, the swivel end lets you tighten the nut without turning the hose. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "NPT Male × NPT Male Swivel or NPT Male × NPT Male: what is the difference?",
+          "a": "The swivel end turns freely against the hose, so the line can be tightened without twisting it, which a fixed NPT male × NPT male assembly cannot do. Both use two-wire steel braid hose with a synthetic rubber cover. See the [NPT Male × NPT Male page](/p/2-wire-braided-hydraulic-hose-assembly-npt-male-x-npt-male) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the NPT Male × NPT Male Swivel assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 80-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the NPT Male × NPT Male Swivel hose assembly in Dubai?",
+          "a": "Yes. We keep the NPT Male × NPT Male Swivel hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-orfs-female-swivel-x-orfs-female-swivel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Female Swivel × ORFS Female Swivel 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with ORFS female swivel at both ends is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for leak-sensitive connections between two ORFS ports, since an O-ring face seal is used where weeping is unacceptable. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-ORFS-36?",
+          "a": "In IH-HA-FA-UFWTF8-ORFS-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-ORFS-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the ORFS Female Swivel × ORFS Female Swivel assembly come in?",
+          "a": "This assembly is listed in 4 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\" ID, in standard lengths from 12 in (305 mm) to 300 in, 53 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the ORFS Female Swivel × ORFS Female Swivel hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" ORFS female swivel (13/16-16) at both ends, as in IH-HA-FA-UFWTF8-ORFS-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the ORFS Female Swivel × ORFS Female Swivel assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\". An assembly is rated to the lower of the hose and its end connections, so confirm the end rating for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Female Swivel × ORFS Female Swivel hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped ORFS female swivel ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the ORFS Female Swivel × ORFS Female Swivel hose assembly?",
+          "a": "The ORFS ends are O-ring face seal connections to SAE J1453 and ISO 8434-3. The manufacturer states the hose cover is MSHA certified. The listing gives no other approval, so name any certificate or pressure test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the ORFS Female Swivel × ORFS Female Swivel assembly connect to?",
+          "a": "It connects to ports with ORFS female swivel threads sized to the hose, for example 1/2\" ORFS female swivel (13/16-16) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the ORFS Female Swivel × ORFS Female Swivel hose assembly?",
+          "a": "With ORFS female swivel at both ends, the swivel end lets you tighten the nut without turning the hose. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "ORFS Female Swivel × ORFS Female Swivel or ORFS Female Swivel × ORFS Female Swivel 90°: what is the difference?",
+          "a": "The 90° version has an elbow swivel on one end for tight routing, whereas this straight assembly keeps both ends straight. Both use two-wire steel braid hose with a synthetic rubber cover. See the [ORFS Female Swivel × ORFS Female Swivel 90° page](/p/2-wire-braided-hydraulic-hose-assembly-orfs-female-swivel-x-orfs-female-swivel-90) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the ORFS Female Swivel × ORFS Female Swivel assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 53-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Female Swivel × ORFS Female Swivel hose assembly in Dubai?",
+          "a": "Yes, we hold the ORFS Female Swivel × ORFS Female Swivel hose assembly in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "2-wire-braided-hydraulic-hose-assembly-orfs-female-swivel-x-orfs-female-swivel-90",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Female Swivel × ORFS Female Swivel 90° 2-wire braided hose assembly used for?",
+          "a": "The 2-wire braided hydraulic hose assembly with ORFS female swivel at one end and a 90° ORFS female swivel at the other is a made-up assembly: two high-tensile steel wire braids, a synthetic rubber cover and crimped carbon-steel ends. It is used for tight installations on ORFS ports where a straight end would foul or kink. The [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies) lists the other end combinations."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HA-FA-UFWTF8-ORFS-ORFS90-36?",
+          "a": "In IH-HA-FA-UFWTF8-ORFS-ORFS90-36, UFWTF8 gives the hose size, with 8 meaning dash -8, a 1/2\" hose ID; the letters before the length name the end combination. The last number is the length in inches, so IH-HA-FA-UFWTF8-ORFS-ORFS90-36 is 36 in, which the table gives as L = 914 mm. Lengths in this assembly run from 12 in to 300 in."
+        },
+        {
+          "slot": "D",
+          "q": "Which hose sizes and lengths does the ORFS Female Swivel × ORFS Female Swivel 90° assembly come in?",
+          "a": "This assembly is listed in 4 hose sizes, 1/4\", 3/8\", 1/2\", 3/4\" ID, in standard lengths from 12 in (305 mm) to 300 in, 61 part numbers in all. Indus also builds assemblies to any length and end combination; send the run and we will quote it."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end thread sizes on the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly in 1/2\"?",
+          "a": "For the 1/2\" hose the ends are 1/2\" ORFS female swivel (13/16-16) and 1/2\" ORFS female swivel 90° (13/16-16), as in IH-HA-FA-UFWTF8-ORFS-ORFS90-36. The thread size changes with the hose size, so check your port against the size table before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the ORFS Female Swivel × ORFS Female Swivel 90° assembly at each hose size?",
+          "a": "The hose is rated by the manufacturer at 6,525 psi at 1/4\", 5,583 psi at 3/8\", 5,010 psi at 1/2\", 4,350 psi at 3/4\". An assembly is rated to the lower of the hose and its end connections, so confirm the end rating for your size."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly made of, and what temperatures can it take?",
+          "a": "The 1/4\", 3/8\", 1/2\", 3/4\" hose in this assembly has two high-tensile steel wire braids and a synthetic rubber cover resistant to abrasion, ozone and weather, with carbon-steel crimped ORFS female swivel ends. The manufacturer states −40 °F to +212 °F (−40 °C to +100 °C), with +248 °F (+120 °C) maximum. Tell us the fluid when you enquire."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly?",
+          "a": "The ORFS ends are O-ring face seal connections to SAE J1453 and ISO 8434-3. The manufacturer states the hose cover is MSHA certified. The listing gives no other approval, so name any certificate or pressure test record you need with the order."
+        },
+        {
+          "slot": "H",
+          "q": "What ports does the ORFS Female Swivel × ORFS Female Swivel 90° assembly connect to?",
+          "a": "It connects to ports with ORFS female swivel at one end and a 90° ORFS female swivel at the other threads sized to the hose, for example 1/2\" ORFS female swivel (13/16-16) to 1/2\" ORFS female swivel 90° (13/16-16) on the 1/2\" size. Adapters from the [hydraulic adapters shelf](/c/hydraulic-adapters) change the thread if your port differs, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) compares the families."
+        },
+        {
+          "slot": "I",
+          "q": "How should I install and route the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly?",
+          "a": "With ORFS female swivel at one end and a 90° ORFS female swivel at the other, orient the 90° end toward the port before you tighten it. Fit the assembly without twisting the hose, support long runs, and keep the bend gentle at the ends. Read [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) before routing, and see [crimped, reusable or ready-made assemblies](/blog/crimped-reusable-or-ready-made-hose-assemblies) to judge when to buy ready-made."
+        },
+        {
+          "slot": "K",
+          "q": "ORFS Female Swivel × ORFS Female Swivel 90° or ORFS Female Swivel × ORFS Female Swivel: what is the difference?",
+          "a": "The straight assembly has no elbow, while this one has a 90° swivel at one end for tight routing; both are 2-wire braid with ORFS ends. Both use two-wire steel braid hose with a synthetic rubber cover. See the [ORFS Female Swivel × ORFS Female Swivel page](/p/2-wire-braided-hydraulic-hose-assembly-orfs-female-swivel-x-orfs-female-swivel) for its sizes and part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the ORFS Female Swivel × ORFS Female Swivel 90° assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this 61-part-number Indus Hydraulics assembly, so origin is confirmed on the quotation. We build and ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made) for what to send."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the ORFS Female Swivel × ORFS Female Swivel 90° hose assembly, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-hose-assemblies",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Eaton Aeroquip hose assemblies R2-12 and R2-16 used for?",
+          "a": "These are Eaton Aeroquip coupled hydraulic hose assemblies in synthetic rubber, with carbon steel fittings, for high-pressure petroleum and water-based fluids. The range has 10 part numbers in 3/4\" and 1\" hose ID; see the [hydraulic hose assemblies shelf](/c/hydraulic-hose-assemblies)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Aeroquip part numbers such as R2-16-24M and R2-12-60F?",
+          "a": "In the rows, the middle number is the hose dash size: -16 is a 1\" hose ID and -12 is 3/4\". The last number is the hose length, 24 for 24 in and 48 for 4 ft, and the letter is the end: M is MNPT × MNPT on the -16 rows, F is FJIC × FJIC on the -12 rows."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes and lengths do Aeroquip R2 hose assemblies come in?",
+          "a": "Two sizes are listed: 1\" hose ID with MNPT × MNPT ends (R2-16-24M, -36M, -48M, -60M, -72M) and 3/4\" hose ID with 1-1/16 FJIC × FJIC ends (R2-12-24F, -36F, -48F, -60F, -72F). Lengths run from 24 in to 6 ft in both sizes."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections do the Aeroquip R2-12 and R2-16 assemblies have?",
+          "a": "The R2-16 assemblies have 1\" MNPT (male NPT) ends at both ends, and the R2-12 assemblies have 1-1/16\" FJIC (female JIC) ends at both ends on 3/4\" hose. Send us your port threads and we will confirm the match before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of Aeroquip R2-12 and R2-16 hose assemblies?",
+          "a": "The maker states 2,400 to 3,125 psi (165 to 215 bar) by size: 3,125 psi (215 bar) for the 3/4\" R2-12 and 2,400 psi (165 bar) for the 1\" R2-16. Safety factor is 4:1. Pipe-thread ends can limit larger sizes, as SAE J514 rates a 1\" end at 2,000 psi, so check the end."
+        },
+        {
+          "slot": "F",
+          "q": "What fluids and temperatures can Aeroquip R2 hose assemblies take?",
+          "a": "The maker lists petroleum and water-based fluids, including hydraulic fluid (petroleum and synthetic), diesel fuel, fuel oil, kerosene, gasoline, fresh water and ethylene glycol. Temperature is -40°F to +212°F. Tube and cover are synthetic rubber; fittings are carbon steel."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and approvals apply to Aeroquip R2 hose assemblies?",
+          "a": "The listing names the type as a high-pressure hydraulic hose assembly and gives a 4:1 safety factor, but states no standard or approval for it. The JIC ends follow SAE J514 and the NPT ends are US taper pipe threads. Name any certificate you need with your enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What do Aeroquip R2 hose assemblies connect to?",
+          "a": "The R2-16 assemblies connect to 1\" NPT female ports and the R2-12 assemblies to 1-1/16\" JIC ports. Use the [hydraulic adapters shelf](/c/hydraulic-adapters) if your port is a different thread, and the [fittings guide](/blog/jic-vs-orfs-vs-npt-vs-bsp) to tell the families apart."
+        },
+        {
+          "slot": "I",
+          "q": "How do I route an Aeroquip R2 hose assembly and what is its bend radius?",
+          "a": "The maker's minimum bending radius is 6\". Keep every bend at or above that, fit the assembly without twist and support long runs. See [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist) for the failures that bad routing causes."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the Aeroquip R2-12 and R2-16 hose assemblies?",
+          "a": "The R2-12 is 3/4\" hose ID with FJIC ends and a 215 bar (3,125 psi) rating, while the R2-16 is 1\" hose ID with MNPT ends and a 165 bar (2,400 psi) rating. Choose by port thread and the flow your pump needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where are Eaton Aeroquip hose assemblies made, and what is the HS code?",
+          "a": "The listing gives the country of origin as the United States and the HS code as 4009220050 for the Aeroquip assemblies. We ship worldwide from Dubai, UAE; see [air or sea for a fittings order](/blog/air-or-sea-for-a-fittings-order)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Aeroquip hose assemblies in Dubai?",
+          "a": "Yes, we stock the Aeroquip hose assemblies in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "pressure-washer-hose-assembly-3-8-npt-4000-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 3/8\" NPT pressure washer hose assembly with a bend restrictor?",
+          "a": "It is an Indus Hydraulics pressure washer hose assembly: black 3/8\" ID single-wire-braid hose with a 3/8\" NPT male end each side and a bend restrictor at the hose end. It comes in 4,000 psi and 6,000 psi hose and in lengths of 50 ft to 100 ft."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the pressure washer assembly part number IH-HA-FA-06PW4K-NPT-TBR-600?",
+          "a": "In IH-HA-FA-06PW4K-NPT-TBR-600, 06 is the 3/8\" hose size, PW4K is pressure-washer hose at 4,000 psi (PW6K is 6,000 psi), NPT is the end thread, TBR is the bend restrictor, and 600 is the length in inches. The table gives it as L = 15240 mm, which is 50 ft."
+        },
+        {
+          "slot": "D",
+          "q": "Which lengths does the 3/8\" pressure washer hose assembly come in?",
+          "a": "The listing has 5 part numbers: 4,000 psi hose in 600 in, 900 in and 1,200 in (50, 75 and 100 ft), and 6,000 psi hose in 600 in and 1,200 in (50 and 100 ft). Other lengths are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "What size is the pressure washer hose assembly, and what are its end threads?",
+          "a": "The hose is 3/8\" ID, and both ends are 3/8\" NPT male (3/8-18), one end with a bend restrictor. If your gun or pump has a different thread, use an adapter from the [hydraulic adapters shelf](/c/hydraulic-adapters)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the 4,000 psi and 6,000 psi pressure washer hose rated for?",
+          "a": "The hose is named 4,000 psi or 6,000 psi by the manufacturer, depending on the part number. Check the rating of the gun, lance and pump fittings it connects to, because the assembly is only as strong as its weakest part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the pressure washer hose assembly made of and what temperature can it take?",
+          "a": "The tube is water-resistant synthetic rubber, with one high-tensile steel wire braid and a black abrasion-, ozone- and weather-resistant synthetic rubber cover. The manufacturer states -40 °F to +212 °F. For hot water, confirm the temperature with us first."
+        },
+        {
+          "slot": "G",
+          "q": "Does the 3/8\" pressure washer hose assembly carry any standard or certificate?",
+          "a": "The listing states no standard or certificate for the assembly; the 4,000 and 6,000 psi figures are the manufacturer's own names for the hose. The ends are NPT taper pipe threads. Name any test record you need with your enquiry."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 3/8\" NPT pressure washer hose assembly connect to?",
+          "a": "It connects to 3/8\" NPT ports on pressure washer guns, lances and pump outlets. Check each end's thread against your equipment, and use the [hydraulic fittings shelf](/c/hydraulic-fittings) for quick-connects or adapters."
+        },
+        {
+          "slot": "I",
+          "q": "How do I protect a pressure washer hose assembly from kinking?",
+          "a": "The bend restrictor at one hose end limits the bend where the hose meets the fitting, which is where kinks and fatigue failures start. Route the rest of the run without sharp bends or twist; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between the 4,000 psi and 6,000 psi versions of this pressure washer hose assembly?",
+          "a": "The part numbers with 4K carry 4,000 psi hose and come in 50, 75 and 100 ft, while the 6K numbers carry 6,000 psi hose in 50 and 100 ft. Choose the hose rating at or above your washer's pump, and note the rating of the gun and lance."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the pressure washer hose assembly come from and how is it shipped?",
+          "a": "The listing states no country of origin for this Indus Hydraulics assembly, so origin is confirmed on the quotation. We ship from Dubai, UAE to buyers across the GCC, Africa and Asia; see [getting a hydraulic hose made](/blog/getting-a-hydraulic-hose-made)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3/8\" NPT pressure washer hose assembly in Dubai?",
+          "a": "Yes. We keep the 3/8\" NPT pressure washer hose assembly in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

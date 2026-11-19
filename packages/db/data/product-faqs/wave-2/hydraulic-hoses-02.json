@@ -1,0 +1,1095 @@
+{
+  "family": "hydraulic-hoses-02",
+  "extraFacts": [
+    {
+      "fact": "Sibling listing figures: Gates C5D Hydraulic Hoses: pressure 1,250 to 1,500 psi (86 to 103 bar), by size; temperature -40°F to +300°F; sizes 3/16\" (-3), 1/4\" (-4), 5/16\" (-5), 0.406\" (-6)",
+      "source": "Indus Hydraulics product listing for Gates C5D Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates C5M Hydraulic Hoses: pressure 500 psi (34 bar); temperature 212°F; sizes 1/4\" (-4), 5/16\" (-5), 0.406\" (-6), 1/2\" (-8), 5/8\" (-10), 7/8\" (-14)",
+      "source": "Indus Hydraulics product listing for Gates C5M Hydraulic Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates CR1 1-Wire Braid Hoses: pressure 1,250 to 3,275 psi (86 to 226 bar), by size; temperature -40°F to +212°F; sizes 1/4\" (-4), 3/8\" (-6), 5/8\" (-10), 3/4\" (-12), 1\" (-16)",
+      "source": "Indus Hydraulics product listing for Gates CR1 1-Wire Braid Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates CM2T Wire Braid Hoses: pressure 4,000 to 4,800 psi (276 to 331 bar), by size; temperature -40°F to +212°F; sizes 3/8\" (-6), 1/2\" (-8)",
+      "source": "Indus Hydraulics product listing for Gates CM2T Wire Braid Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates EFG3K Spiral Wire Hoses: pressure 3,000 psi (207 bar); temperature -40°F to +250°F; sizes 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Gates EFG3K Spiral Wire Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates EFG3K-MTF Spiral Wire Hoses: pressure 3,000 psi (207 bar); temperature -40°F to +250°F; sizes 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Gates EFG3K-MTF Spiral Wire Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates EFG5K-XTF Spiral Wire Hoses: pressure 5,000 psi (345 bar); temperature -40°F to +250°F; sizes 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1 1/4\" (-20)",
+      "source": "Indus Hydraulics product listing for Gates EFG5K-XTF Spiral Wire Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates EFG4K-XTF Spiral Wire Hoses: pressure 4,000 psi (276 bar); temperature -40°F to +250°F; sizes 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20)",
+      "source": "Indus Hydraulics product listing for Gates EFG4K-XTF Spiral Wire Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates G2H Wire Braid Hoses: pressure 1,175 to 1,825 psi (81 to 126 bar), by size; temperature -40°F to +275°F; sizes 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Gates G2H Wire Braid Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates G1 Wire Braid Hoses: pressure 925 to 2,600 psi (64 to 179 bar), by size; temperature -40°F to +212°F; sizes 1 1/4\" (-20)",
+      "source": "Indus Hydraulics product listing for Gates G1 Wire Braid Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "Sibling listing figures: Gates G2L Wire Braid Hoses: pressure 1,175 to 5,800 psi (81 to 400 bar), by size; temperature -70°F to +212°F; sizes 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32)",
+      "source": "Indus Hydraulics product listing for Gates G2L Wire Braid Hoses, facts dump 2026-11-19"
+    },
+    {
+      "fact": "In SAE hose dash sizing, the dash number is the hose inside diameter in sixteenths of an inch, so -4 is 1/4\" and -8 is 1/2\".",
+      "source": "SAE J517 / SAE J514 dash-size convention; confirmed by the size tables on the Indus listings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "gates-c5c-xh-xtreme-heat-hydraulic-hose",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates C5C XH XTreme Heat Hydraulic Hose used for?",
+          "a": "The Gates C5C XH XTreme Heat Hydraulic Hose is a hydraulic hose, listed in 3 part numbers from 3/16\" to 5/16\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates C5C XH XTreme Heat Hydraulic Hose come in?",
+          "a": "The Gates C5C XH XTreme Heat Hydraulic Hose is listed in 3 hose sizes: 3/16\" (-3), 1/4\" (-4), 5/16\" (-5). The 3 part numbers run from 36584001 to 36584002. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 36580150 of the Gates C5C XH XTreme Heat Hydraulic Hose cover?",
+          "a": "Part number 36580150 is the Gates C5C XH XTreme Heat Hydraulic Hose in 3/16\" ID, 207 bar (3,000 psi), minimum bend radius 86.4 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates C5C XH XTreme Heat Hydraulic Hose?",
+          "a": "The maker states 2,250 to 3,000 psi (155 to 207 bar), by size for the Gates C5C XH XTreme Heat Hydraulic Hose. By row: 207 bar at 3/16\"; 207 bar at 1/4\"; 155 bar at 5/16\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates C5C XH XTreme Heat Hydraulic Hose?",
+          "a": "The Gates C5C XH XTreme Heat Hydraulic Hose has a temperature range of -40°F to +302°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates C5C XH XTreme Heat Hydraulic Hose meet?",
+          "a": "The listing for the Gates C5C XH XTreme Heat Hydraulic Hose states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates C5C XH XTreme Heat Hydraulic Hose?",
+          "a": "End fittings for the Gates C5C XH XTreme Heat Hydraulic Hose must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates C5C XH XTreme Heat Hydraulic Hose and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates C5C XH XTreme Heat Hydraulic Hose from 86.4 mm at 1/4\" to 101.6 mm at 5/16\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates C5C XH XTreme Heat Hydraulic Hose to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/16\" (-3), and pick the same size in the Gates C5C XH XTreme Heat Hydraulic Hose size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates C5C XH XTreme Heat Hydraulic Hose or Gates C5D Hydraulic Hoses: which should I choose?",
+          "a": "The Gates C5C XH XTreme Heat Hydraulic Hose is listed at 2,250 to 3,000 psi (155 to 207 bar), while the Gates C5D Hydraulic Hoses are listed at 1,250 to 1,500 psi (86 to 103 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates C5D Hydraulic Hoses page](/p/gates-c5d-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates C5C XH XTreme Heat Hydraulic Hose come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates C5C XH XTreme Heat Hydraulic Hose, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates C5C XH XTreme Heat Hydraulic Hose in Dubai?",
+          "a": "Yes. We keep the Gates C5C XH XTreme Heat Hydraulic Hose in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-c5d-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates C5D Hydraulic Hoses used for?",
+          "a": "The Gates C5D Hydraulic Hoses are hydraulic hoses, listed in 4 part numbers from 3/16\" to 0.406\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates C5D Hydraulic Hoses come in?",
+          "a": "The Gates C5D Hydraulic Hoses are listed in 4 hose sizes: 3/16\" (-3), 1/4\" (-4), 5/16\" (-5), 0.406\" (-6). The 4 part numbers run from 36580022 to 36580002. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 36580001 of the Gates C5D Hydraulic Hoses cover?",
+          "a": "Part number 36580001 is the Gates C5D Hydraulic Hoses in 3/16\" ID, 103 bar (1,500 psi), minimum bend radius 25.4 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates C5D Hydraulic Hoses?",
+          "a": "The maker states 1,250 to 1,500 psi (86 to 103 bar), by size for the Gates C5D Hydraulic Hoses. By row: 103 bar at 3/16\"; 103 bar at 1/4\"; 103 bar at 5/16\"; 86 bar at 0.406\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates C5D Hydraulic Hoses?",
+          "a": "The Gates C5D Hydraulic Hoses have a temperature range of -40°F to +300°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates C5D Hydraulic Hoses meet?",
+          "a": "The listing for the Gates C5D Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates C5D Hydraulic Hoses?",
+          "a": "End fittings for the Gates C5D Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates C5D Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates C5D Hydraulic Hoses from 25.4 mm at 3/16\" to 50.8 mm at 0.406\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates C5D Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/16\" (-3), and pick the same size in the Gates C5D Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates C5D Hydraulic Hoses or Gates C5M Hydraulic Hoses: which should I choose?",
+          "a": "The Gates C5D Hydraulic Hoses are listed at 1,250 to 1,500 psi (86 to 103 bar), while the Gates C5M Hydraulic Hoses are listed at 500 psi (34 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates C5M Hydraulic Hoses page](/p/gates-c5m-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates C5D Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates C5D Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates C5D Hydraulic Hoses in Dubai?",
+          "a": "Yes, we hold the Gates C5D Hydraulic Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "gates-c5m-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates C5M Hydraulic Hoses used for?",
+          "a": "The Gates C5M Hydraulic Hoses are hydraulic hoses, listed in 10 part numbers from 1/4\" to 7/8\". Listed use: Transfer Of Hydraulic Fluid, Water, Air. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates C5M Hydraulic Hoses come in?",
+          "a": "The Gates C5M Hydraulic Hoses are listed in 6 hose sizes: 1/4\" (-4), 5/16\" (-5), 0.406\" (-6), 1/2\" (-8), 5/8\" (-10), 7/8\" (-14). The 10 part numbers run from 36584600 to 36584596. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 36584599 of the Gates C5M Hydraulic Hoses cover?",
+          "a": "Part number 36584599 is the Gates C5M Hydraulic Hoses in 5/8\" ID, 34 bar (500 psi), minimum bend radius 71.1 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates C5M Hydraulic Hoses?",
+          "a": "The maker states 500 psi (34 bar) for the Gates C5M Hydraulic Hoses. Every listed size, 1/4\" to 0, is rated 34 bar.406\"; 34 bar at 1/2\"; 34 bar at 5/8\"; 34 bar at 7/8\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates C5M Hydraulic Hoses?",
+          "a": "The Gates C5M Hydraulic Hoses have a temperature range of 212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates C5M Hydraulic Hoses meet?",
+          "a": "The listing for the Gates C5M Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates C5M Hydraulic Hoses?",
+          "a": "End fittings for the Gates C5M Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates C5M Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates C5M Hydraulic Hoses from 33 mm at 1/4\" to 88.9 mm at 7/8\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates C5M Hydraulic Hoses recommended for?",
+          "a": "The listing describes the Gates C5M Hydraulic Hoses as follows: Transfer Of Hydraulic Fluid, Water, Air. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates C5M Hydraulic Hoses or Gates C5D Hydraulic Hoses: which should I choose?",
+          "a": "The Gates C5M Hydraulic Hoses are listed at 500 psi (34 bar), while the Gates C5D Hydraulic Hoses are listed at 1,250 to 1,500 psi (86 to 103 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates C5D Hydraulic Hoses page](/p/gates-c5d-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates C5M Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates C5M Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates C5M Hydraulic Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Gates C5M Hydraulic Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-cm2t-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates CM2T Wire Braid Hoses used for?",
+          "a": "The Gates CM2T Wire Braid Hoses are hydraulic hoses, listed in 4 part numbers from 3/8\" to 1/2\". Listed use: High Abrasive High-Pressure Hydraulic Oil Lines Joined Together For Easier plumbing And Routing. Meets SAE 100R16 Requirements. Cm2T Hose Has Smaller. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates CM2T Wire Braid Hoses come in?",
+          "a": "The Gates CM2T Wire Braid Hoses are listed in 2 hose sizes: 3/8\" (-6), 1/2\" (-8). The 4 part numbers run from 46574975 to 46574974. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46574980 of the Gates CM2T Wire Braid Hoses cover?",
+          "a": "Part number 46574980 is the Gates CM2T Wire Braid Hoses in 3/8\" ID, 331 bar (4,800 psi), minimum bend radius 88.9 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates CM2T Wire Braid Hoses?",
+          "a": "The maker states 4,000 to 4,800 psi (276 to 331 bar), by size for the Gates CM2T Wire Braid Hoses. By row: 331 bar at 3/8\"; 276 bar at 1/2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates CM2T Wire Braid Hoses?",
+          "a": "The Gates CM2T Wire Braid Hoses have a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates CM2T Wire Braid Hoses meet?",
+          "a": "The listing for the Gates CM2T Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates CM2T Wire Braid Hoses?",
+          "a": "End fittings for the Gates CM2T Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates CM2T Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates CM2T Wire Braid Hoses from 88.9 mm at 3/8\" to 127 mm at 1/2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates CM2T Wire Braid Hoses recommended for?",
+          "a": "The listing describes the Gates CM2T Wire Braid Hoses as follows: High Abrasive High-Pressure Hydraulic Oil Lines Joined Together For Easier plumbing And Routing. Meets SAE 100R16 Requirements. Cm2T Hose. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates CM2T Wire Braid Hoses or Gates CR1 1-Wire Braid Hoses: which should I choose?",
+          "a": "The Gates CM2T Wire Braid Hoses are listed at 4,000 to 4,800 psi (276 to 331 bar), while the Gates CR1 1-Wire Braid Hoses are listed at 1,250 to 3,275 psi (86 to 226 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates CR1 1-Wire Braid Hoses page](/p/gates-cr1-1-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates CM2T Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates CM2T Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates CM2T Wire Braid Hoses in Dubai?",
+          "a": "Yes, we stock the Gates CM2T Wire Braid Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-cr1-1-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates CR1 1-Wire Braid Hoses used for?",
+          "a": "The Gates CR1 1-Wire Braid Hoses are hydraulic hoses, listed in 10 part numbers from 1/4\" to 1\". Listed use: Medium Pressure Hydraulics With Low Flexure/Non Severe Requiring The SAE 100R1 Or En853 1Sn Specification For Dimensions And Performance. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates CR1 1-Wire Braid Hoses come in?",
+          "a": "The Gates CR1 1-Wire Braid Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 10 part numbers run from 46578841 to 46578838. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46578840 of the Gates CR1 1-Wire Braid Hoses cover?",
+          "a": "Part number 46578840 is the Gates CR1 1-Wire Braid Hoses in 3/4\" ID, 105 bar (1,525 psi), minimum bend radius 241.3 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates CR1 1-Wire Braid Hoses?",
+          "a": "The maker states 1,250 to 3,275 psi (86 to 226 bar), by size for the Gates CR1 1-Wire Braid Hoses. By row: 226 bar at 1/4\"; 179 bar at 3/8\"; 131 bar at 5/8\"; 105 bar at 3/4\"; 86 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates CR1 1-Wire Braid Hoses?",
+          "a": "The Gates CR1 1-Wire Braid Hoses have a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates CR1 1-Wire Braid Hoses meet?",
+          "a": "The listing for the Gates CR1 1-Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates CR1 1-Wire Braid Hoses?",
+          "a": "End fittings for the Gates CR1 1-Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates CR1 1-Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates CR1 1-Wire Braid Hoses from 101.6 mm at 1/4\" to 299.7 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates CR1 1-Wire Braid Hoses recommended for?",
+          "a": "The listing describes the Gates CR1 1-Wire Braid Hoses as follows: Medium Pressure Hydraulics With Low Flexure/Non Severe Requiring The SAE 100R1 Or En853 1Sn Specification For Dimensions And Performance. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates CR1 1-Wire Braid Hoses or Gates CM2T Wire Braid Hoses: which should I choose?",
+          "a": "The Gates CR1 1-Wire Braid Hoses are listed at 1,250 to 3,275 psi (86 to 226 bar), while the Gates CM2T Wire Braid Hoses are listed at 4,000 to 4,800 psi (276 to 331 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates CM2T Wire Braid Hoses page](/p/gates-cm2t-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates CR1 1-Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates CR1 1-Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates CR1 1-Wire Braid Hoses in Dubai?",
+          "a": "Yes. We keep the Gates CR1 1-Wire Braid Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-cr2-2-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates CR2 2-Wire Braid Hoses used for?",
+          "a": "The Gates CR2 2-Wire Braid Hoses are hydraulic hoses, listed in 10 part numbers from 1/4\" to 1\". Listed use: High-Pressure Hydraulics With Low Flexure/Non Severe Applications Requiring The SAE 100R2 Or En853 2Sn Specification For Dimensions And Performance. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates CR2 2-Wire Braid Hoses come in?",
+          "a": "The Gates CR2 2-Wire Braid Hoses are listed in 5 hose sizes: 1/4\" (-4), 3/8\" (-6), 5/8\" (-10), 3/4\" (-12), 1\" (-16). The 10 part numbers run from 46578853 to 46578850. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46578852 of the Gates CR2 2-Wire Braid Hoses cover?",
+          "a": "Part number 46578852 is the Gates CR2 2-Wire Braid Hoses in 3/4\" ID, 215 bar (3,125 psi), minimum bend radius 241.3 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates CR2 2-Wire Braid Hoses?",
+          "a": "The maker states 2,400 to 5,800 psi (165 to 400 bar), by size for the Gates CR2 2-Wire Braid Hoses. By row: 400 bar at 1/4\"; 331 bar at 3/8\"; 250 bar at 5/8\"; 215 bar at 3/4\"; 165 bar at 1\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates CR2 2-Wire Braid Hoses?",
+          "a": "The Gates CR2 2-Wire Braid Hoses have a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates CR2 2-Wire Braid Hoses meet?",
+          "a": "The listing for the Gates CR2 2-Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates CR2 2-Wire Braid Hoses?",
+          "a": "End fittings for the Gates CR2 2-Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates CR2 2-Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates CR2 2-Wire Braid Hoses from 101.6 mm at 1/4\" to 299.7 mm at 1\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates CR2 2-Wire Braid Hoses recommended for?",
+          "a": "The listing describes the Gates CR2 2-Wire Braid Hoses as follows: High-Pressure Hydraulics With Low Flexure/Non Severe Applications Requiring The SAE 100R2 Or En853 2Sn Specification For Dimensions And. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates CR2 2-Wire Braid Hoses or Gates CR1 1-Wire Braid Hoses: which should I choose?",
+          "a": "The Gates CR2 2-Wire Braid Hoses are listed at 2,400 to 5,800 psi (165 to 400 bar), while the Gates CR1 1-Wire Braid Hoses are listed at 1,250 to 3,275 psi (86 to 226 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates CR1 1-Wire Braid Hoses page](/p/gates-cr1-1-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates CR2 2-Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates CR2 2-Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates CR2 2-Wire Braid Hoses in Dubai?",
+          "a": "Yes, we hold the Gates CR2 2-Wire Braid Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "gates-efg3k-mtf-spiral-wire-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates EFG3K-MTF Spiral Wire Hoses used for?",
+          "a": "The Gates EFG3K-MTF Spiral Wire Hoses are hydraulic hoses, listed in 7 part numbers from 1 1/4\" to 2\". Listed use: Very High-Pressure, High-Impulse Applications. Exceeds All Performance Requirements For SAE 100R12, EN 856 R12, Performance Requirements Of EN 856. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates EFG3K-MTF Spiral Wire Hoses come in?",
+          "a": "The Gates EFG3K-MTF Spiral Wire Hoses are listed in 3 hose sizes: 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 7 part numbers run from 46511745 to 46514004. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46512202 of the Gates EFG3K-MTF Spiral Wire Hoses cover?",
+          "a": "Part number 46512202 is the Gates EFG3K-MTF Spiral Wire Hoses in 1 1/2\" ID, 207 bar (3,000 psi), minimum bend radius 254 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates EFG3K-MTF Spiral Wire Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Gates EFG3K-MTF Spiral Wire Hoses. Every listed size, 1 1/4\" to 2\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates EFG3K-MTF Spiral Wire Hoses?",
+          "a": "The Gates EFG3K-MTF Spiral Wire Hoses have a temperature range of -40°F to +250°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates EFG3K-MTF Spiral Wire Hoses meet?",
+          "a": "The listing for the Gates EFG3K-MTF Spiral Wire Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates EFG3K-MTF Spiral Wire Hoses?",
+          "a": "End fittings for the Gates EFG3K-MTF Spiral Wire Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates EFG3K-MTF Spiral Wire Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates EFG3K-MTF Spiral Wire Hoses from 208.3 mm at 1 1/4\" to 635 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates EFG3K-MTF Spiral Wire Hoses recommended for?",
+          "a": "The listing describes the Gates EFG3K-MTF Spiral Wire Hoses as follows: Very High-Pressure, High-Impulse Applications. Exceeds All Performance Requirements For SAE 100R12, EN 856 R12, Performance Requirements Of. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates EFG3K-MTF Spiral Wire Hoses or Gates EFG3K Spiral Wire Hoses: which should I choose?",
+          "a": "The Gates EFG3K-MTF Spiral Wire Hoses are listed at 3,000 psi (207 bar), while the Gates EFG3K Spiral Wire Hoses are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates EFG3K Spiral Wire Hoses page](/p/gates-efg3k-spiral-wire-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates EFG3K-MTF Spiral Wire Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates EFG3K-MTF Spiral Wire Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates EFG3K-MTF Spiral Wire Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Gates EFG3K-MTF Spiral Wire Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-efg3k-spiral-wire-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates EFG3K Spiral Wire Hoses used for?",
+          "a": "The Gates EFG3K Spiral Wire Hoses are hydraulic hoses, listed in 8 part numbers from 1 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates EFG3K Spiral Wire Hoses come in?",
+          "a": "The Gates EFG3K Spiral Wire Hoses are listed in 3 hose sizes: 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 8 part numbers run from 46512209 to 46514003. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46512207 of the Gates EFG3K Spiral Wire Hoses cover?",
+          "a": "Part number 46512207 is the Gates EFG3K Spiral Wire Hoses in 1 1/2\" ID, 207 bar (3,000 psi), minimum bend radius 254 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates EFG3K Spiral Wire Hoses?",
+          "a": "The maker states 3,000 psi (207 bar) for the Gates EFG3K Spiral Wire Hoses. Every listed size, 1 1/4\" to 2\", is rated 207 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates EFG3K Spiral Wire Hoses?",
+          "a": "The Gates EFG3K Spiral Wire Hoses have a temperature range of -40°F to +250°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates EFG3K Spiral Wire Hoses meet?",
+          "a": "The listing for the Gates EFG3K Spiral Wire Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates EFG3K Spiral Wire Hoses?",
+          "a": "End fittings for the Gates EFG3K Spiral Wire Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates EFG3K Spiral Wire Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates EFG3K Spiral Wire Hoses from 208.3 mm at 1 1/4\" to 317.5 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates EFG3K Spiral Wire Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1 1/4\" (-20), and pick the same size in the Gates EFG3K Spiral Wire Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates EFG3K Spiral Wire Hoses or Gates EFG3K-MTF Spiral Wire Hoses: which should I choose?",
+          "a": "The Gates EFG3K Spiral Wire Hoses are listed at 3,000 psi (207 bar), while the Gates EFG3K-MTF Spiral Wire Hoses are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates EFG3K-MTF Spiral Wire Hoses page](/p/gates-efg3k-mtf-spiral-wire-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates EFG3K Spiral Wire Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates EFG3K Spiral Wire Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates EFG3K Spiral Wire Hoses in Dubai?",
+          "a": "Yes, we stock the Gates EFG3K Spiral Wire Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-efg4k-xtf-spiral-wire-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates EFG4K-XTF Spiral Wire Hoses used for?",
+          "a": "The Gates EFG4K-XTF Spiral Wire Hoses are hydraulic hoses, listed in 10 part numbers from 3/8\" to 1 1/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates EFG4K-XTF Spiral Wire Hoses come in?",
+          "a": "The Gates EFG4K-XTF Spiral Wire Hoses are listed in 5 hose sizes: 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1\" (-16), 1 1/4\" (-20). The 10 part numbers run from 46510258 to 46510260. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46510266 of the Gates EFG4K-XTF Spiral Wire Hoses cover?",
+          "a": "Part number 46510266 is the Gates EFG4K-XTF Spiral Wire Hoses in 3/4\" ID, 276 bar (4,000 psi), minimum bend radius 119.4 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates EFG4K-XTF Spiral Wire Hoses?",
+          "a": "The maker states 4,000 psi (276 bar) for the Gates EFG4K-XTF Spiral Wire Hoses. Every listed size, 3/8\" to 1 1/4\", is rated 276 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates EFG4K-XTF Spiral Wire Hoses?",
+          "a": "The Gates EFG4K-XTF Spiral Wire Hoses have a temperature range of -40°F to +250°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates EFG4K-XTF Spiral Wire Hoses meet?",
+          "a": "The listing for the Gates EFG4K-XTF Spiral Wire Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates EFG4K-XTF Spiral Wire Hoses?",
+          "a": "End fittings for the Gates EFG4K-XTF Spiral Wire Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates EFG4K-XTF Spiral Wire Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates EFG4K-XTF Spiral Wire Hoses from 63.5 mm at 3/8\" to 208.3 mm at 1 1/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates EFG4K-XTF Spiral Wire Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Gates EFG4K-XTF Spiral Wire Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates EFG4K-XTF Spiral Wire Hoses or Gates EFG5K-XTF Spiral Wire Hoses: which should I choose?",
+          "a": "The Gates EFG4K-XTF Spiral Wire Hoses are listed at 4,000 psi (276 bar), while the Gates EFG5K-XTF Spiral Wire Hoses are listed at 5,000 psi (345 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates EFG5K-XTF Spiral Wire Hoses page](/p/gates-efg5k-xtf-spiral-wire-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates EFG4K-XTF Spiral Wire Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates EFG4K-XTF Spiral Wire Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates EFG4K-XTF Spiral Wire Hoses in Dubai?",
+          "a": "Yes. We keep the Gates EFG4K-XTF Spiral Wire Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-efg5k-xtf-spiral-wire-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates EFG5K-XTF Spiral Wire Hoses used for?",
+          "a": "The Gates EFG5K-XTF Spiral Wire Hoses are hydraulic hoses, listed in 8 part numbers from 3/8\" to 1 1/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates EFG5K-XTF Spiral Wire Hoses come in?",
+          "a": "The Gates EFG5K-XTF Spiral Wire Hoses are listed in 4 hose sizes: 3/8\" (-6), 1/2\" (-8), 3/4\" (-12), 1 1/4\" (-20). The 8 part numbers run from 46510365 to 46510375. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46510364 of the Gates EFG5K-XTF Spiral Wire Hoses cover?",
+          "a": "Part number 46510364 is the Gates EFG5K-XTF Spiral Wire Hoses in 3/8\" ID, 345 bar (5,000 psi), minimum bend radius 63.5 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates EFG5K-XTF Spiral Wire Hoses?",
+          "a": "The maker states 5,000 psi (345 bar) for the Gates EFG5K-XTF Spiral Wire Hoses. Every listed size, 3/8\" to 1 1/4\", is rated 345 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates EFG5K-XTF Spiral Wire Hoses?",
+          "a": "The Gates EFG5K-XTF Spiral Wire Hoses have a temperature range of -40°F to +250°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates EFG5K-XTF Spiral Wire Hoses meet?",
+          "a": "The listing for the Gates EFG5K-XTF Spiral Wire Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates EFG5K-XTF Spiral Wire Hoses?",
+          "a": "End fittings for the Gates EFG5K-XTF Spiral Wire Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates EFG5K-XTF Spiral Wire Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates EFG5K-XTF Spiral Wire Hoses from 63.5 mm at 3/8\" to 208.3 mm at 1 1/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates EFG5K-XTF Spiral Wire Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Gates EFG5K-XTF Spiral Wire Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates EFG5K-XTF Spiral Wire Hoses or Gates EFG4K-XTF Spiral Wire Hoses: which should I choose?",
+          "a": "The Gates EFG5K-XTF Spiral Wire Hoses are listed at 5,000 psi (345 bar), while the Gates EFG4K-XTF Spiral Wire Hoses are listed at 4,000 psi (276 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates EFG4K-XTF Spiral Wire Hoses page](/p/gates-efg4k-xtf-spiral-wire-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates EFG5K-XTF Spiral Wire Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates EFG5K-XTF Spiral Wire Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates EFG5K-XTF Spiral Wire Hoses in Dubai?",
+          "a": "Yes, we hold the Gates EFG5K-XTF Spiral Wire Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "gates-efg6k-mtf-spiral-wire-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates EFG6K-MTF Spiral Wire Hoses used for?",
+          "a": "The Gates EFG6K-MTF Spiral Wire Hoses are hydraulic hoses, listed in 5 part numbers from 3/8\" to 1 1/2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates EFG6K-MTF Spiral Wire Hoses come in?",
+          "a": "The Gates EFG6K-MTF Spiral Wire Hoses are listed in 3 hose sizes: 3/8\" (-6), 1/2\" (-8), 1 1/2\" (-24). The 5 part numbers run from 46511609 to 46511754. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46514038 of the Gates EFG6K-MTF Spiral Wire Hoses cover?",
+          "a": "Part number 46514038 is the Gates EFG6K-MTF Spiral Wire Hoses in 3/8\" ID, 414 bar (6,000 psi), minimum bend radius 63.5 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates EFG6K-MTF Spiral Wire Hoses?",
+          "a": "The maker states 6,000 psi (414 bar) for the Gates EFG6K-MTF Spiral Wire Hoses. Every listed size, 3/8\" to 1 1/2\", is rated 414 bar. Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates EFG6K-MTF Spiral Wire Hoses?",
+          "a": "The Gates EFG6K-MTF Spiral Wire Hoses have a temperature range of -40°F to +250°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates EFG6K-MTF Spiral Wire Hoses meet?",
+          "a": "The listing for the Gates EFG6K-MTF Spiral Wire Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates EFG6K-MTF Spiral Wire Hoses?",
+          "a": "End fittings for the Gates EFG6K-MTF Spiral Wire Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates EFG6K-MTF Spiral Wire Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates EFG6K-MTF Spiral Wire Hoses from 63.5 mm at 3/8\" to 254 mm at 1 1/2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates EFG6K-MTF Spiral Wire Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 3/8\" (-6), and pick the same size in the Gates EFG6K-MTF Spiral Wire Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates EFG6K-MTF Spiral Wire Hoses or Gates EFG3K-MTF Spiral Wire Hoses: which should I choose?",
+          "a": "The Gates EFG6K-MTF Spiral Wire Hoses are listed at 6,000 psi (414 bar), while the Gates EFG3K-MTF Spiral Wire Hoses are listed at 3,000 psi (207 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates EFG3K-MTF Spiral Wire Hoses page](/p/gates-efg3k-mtf-spiral-wire-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates EFG6K-MTF Spiral Wire Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates EFG6K-MTF Spiral Wire Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates EFG6K-MTF Spiral Wire Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Gates EFG6K-MTF Spiral Wire Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-field-attachable-type-t-hydraulic-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates Field Attachable Type T Hydraulic Hoses used for?",
+          "a": "The Gates Field Attachable Type T Hydraulic Hoses are hydraulic hoses, listed in 39 part numbers from 0.252\" to 1.252\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates Field Attachable Type T Hydraulic Hoses come in?",
+          "a": "The Gates Field Attachable Type T Hydraulic Hoses are listed in 6 hose sizes: 0.252\" (-4), 0.374\" (-6), 1/2\" (-8), 0.752\" (-12), 1\" (-16), 1.252\" (-20). The 39 part numbers run from 723122495 to 723122375. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 723122525 of the Gates Field Attachable Type T Hydraulic Hoses cover?",
+          "a": "Part number 723122525 is the Gates Field Attachable Type T Hydraulic Hoses in 0.752\" ID. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates Field Attachable Type T Hydraulic Hoses?",
+          "a": "The listing for the Gates Field Attachable Type T Hydraulic Hoses gives no working pressure, so we do not state one. Quote your part number and size through [our contact page](/contact) and we will confirm the rating with the maker before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates Field Attachable Type T Hydraulic Hoses?",
+          "a": "The listing for the Gates Field Attachable Type T Hydraulic Hoses gives no temperature range or fluid list, so we do not state one. Tell us the fluid and operating temperature through [our contact page](/contact) and we will confirm suitability with the maker."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates Field Attachable Type T Hydraulic Hoses meet?",
+          "a": "The listing for the Gates Field Attachable Type T Hydraulic Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates Field Attachable Type T Hydraulic Hoses?",
+          "a": "End fittings for the Gates Field Attachable Type T Hydraulic Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates Field Attachable Type T Hydraulic Hoses and what is the minimum bend radius?",
+          "a": "The listing for the Gates Field Attachable Type T Hydraulic Hoses gives no bend radius, so ask us for the figure for your size before routing. Avoid twisting the hose and support long runs; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates Field Attachable Type T Hydraulic Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 0.252\" (-4), and pick the same size in the Gates Field Attachable Type T Hydraulic Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates Field Attachable Type T Hydraulic Hoses or Gates C5M Hydraulic Hoses: which should I choose?",
+          "a": "The Gates C5M Hydraulic Hoses are listed at 500 psi (34 bar); check the Gates Field Attachable Type T Hydraulic Hoses size table for its rating by size. Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates C5M Hydraulic Hoses page](/p/gates-c5m-hydraulic-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates Field Attachable Type T Hydraulic Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates Field Attachable Type T Hydraulic Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates Field Attachable Type T Hydraulic Hoses in Dubai?",
+          "a": "Yes, we stock the Gates Field Attachable Type T Hydraulic Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    },
+    {
+      "slug": "gates-g1-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates G1 Wire Braid Hoses used for?",
+          "a": "The Gates G1 Wire Braid Hoses are hydraulic hoses, listed in 4 part numbers from 1 1/4\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates G1 Wire Braid Hoses come in?",
+          "a": "The Gates G1 Wire Braid Hoses are listed in 1 hose sizes: 1 1/4\" (-20). The 4 part numbers run from 46570646 to 46570121. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46570122 of the Gates G1 Wire Braid Hoses cover?",
+          "a": "Part number 46570122 is the Gates G1 Wire Braid Hoses in 1 1/4\" ID, 160 bar (2,325 psi), minimum bend radius 177.8 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates G1 Wire Braid Hoses?",
+          "a": "The maker states 925 to 2,600 psi (64 to 179 bar), by size for the Gates G1 Wire Braid Hoses. By row: 64 to 179 bar at 1 1/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates G1 Wire Braid Hoses?",
+          "a": "The Gates G1 Wire Braid Hoses have a temperature range of -40°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates G1 Wire Braid Hoses meet?",
+          "a": "The listing for the Gates G1 Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates G1 Wire Braid Hoses?",
+          "a": "End fittings for the Gates G1 Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates G1 Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates G1 Wire Braid Hoses from 127 mm at 1 1/4\" to 406.4 mm at 1 1/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates G1 Wire Braid Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1 1/4\" (-20), and pick the same size in the Gates G1 Wire Braid Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates G1 Wire Braid Hoses or Gates G2H Wire Braid Hoses: which should I choose?",
+          "a": "The Gates G1 Wire Braid Hoses are listed at 925 to 2,600 psi (64 to 179 bar), while the Gates G2H Wire Braid Hoses are listed at 1,175 to 1,825 psi (81 to 126 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates G2H Wire Braid Hoses page](/p/gates-g2h-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates G1 Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates G1 Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates G1 Wire Braid Hoses in Dubai?",
+          "a": "Yes. We keep the Gates G1 Wire Braid Hoses in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-g2h-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates G2H Wire Braid Hoses used for?",
+          "a": "The Gates G2H Wire Braid Hoses are hydraulic hoses, listed in 6 part numbers from 1 1/4\" to 2\". Listed use: High-Temperature High-Pressure Hydraulic Oil Lines. Meets Or Exceeds The Requirements Of SAE 100R2, ISO 1436 2Sn R2 And EN 853 2Sn. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates G2H Wire Braid Hoses come in?",
+          "a": "The Gates G2H Wire Braid Hoses are listed in 3 hose sizes: 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 6 part numbers run from 46574332 to 46570925. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46574331 of the Gates G2H Wire Braid Hoses cover?",
+          "a": "Part number 46574331 is the Gates G2H Wire Braid Hoses in 1 1/2\" ID, 90 bar (1,300 psi), minimum bend radius 508 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates G2H Wire Braid Hoses?",
+          "a": "The maker states 1,175 to 1,825 psi (81 to 126 bar), by size for the Gates G2H Wire Braid Hoses. By row: 126 bar at 1 1/4\"; 90 bar at 1 1/2\"; 81 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates G2H Wire Braid Hoses?",
+          "a": "The Gates G2H Wire Braid Hoses have a temperature range of -40°F to +275°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates G2H Wire Braid Hoses meet?",
+          "a": "The listing for the Gates G2H Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates G2H Wire Braid Hoses?",
+          "a": "End fittings for the Gates G2H Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates G2H Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates G2H Wire Braid Hoses from 419.1 mm at 1 1/4\" to 635 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates G2H Wire Braid Hoses recommended for?",
+          "a": "The listing describes the Gates G2H Wire Braid Hoses as follows: High-Temperature High-Pressure Hydraulic Oil Lines. Meets Or Exceeds The Requirements Of SAE 100R2, ISO 1436 2Sn R2 And EN 853 2Sn. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates G2H Wire Braid Hoses or Gates G1 Wire Braid Hoses: which should I choose?",
+          "a": "The Gates G2H Wire Braid Hoses are listed at 1,175 to 1,825 psi (81 to 126 bar), while the Gates G1 Wire Braid Hoses are listed at 925 to 2,600 psi (64 to 179 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates G1 Wire Braid Hoses page](/p/gates-g1-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates G2H Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates G2H Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates G2H Wire Braid Hoses in Dubai?",
+          "a": "Yes, we hold the Gates G2H Wire Braid Hoses in stock at our Dubai, UAE warehouse and ship worldwide with the best lead times. Tell us the sizes and quantities on the [quote request page](/quote) and we will price them."
+        }
+      ]
+    },
+    {
+      "slug": "gates-g2l-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates G2L Wire Braid Hoses used for?",
+          "a": "The Gates G2L Wire Braid Hoses are hydraulic hoses, listed in 8 part numbers from 1/4\" to 2\". See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates G2L Wire Braid Hoses come in?",
+          "a": "The Gates G2L Wire Braid Hoses are listed in 8 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 5/8\" (-10), 3/4\" (-12), 1 1/4\" (-20), 1 1/2\" (-24), 2\" (-32). The 8 part numbers run from 46574104 to 46574102. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46572476 of the Gates G2L Wire Braid Hoses cover?",
+          "a": "Part number 46572476 is the Gates G2L Wire Braid Hoses in 3/8\" ID, 331 bar (4,800 psi), minimum bend radius 127 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates G2L Wire Braid Hoses?",
+          "a": "The maker states 1,175 to 5,800 psi (81 to 400 bar), by size for the Gates G2L Wire Braid Hoses. By row: 400 bar at 1/4\"; 331 bar at 3/8\"; 250 bar at 5/8\"; 214 bar at 3/4\"; 90 bar at 1 1/2\"; 81 bar at 2\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates G2L Wire Braid Hoses?",
+          "a": "The Gates G2L Wire Braid Hoses have a temperature range of -70°F to +212°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates G2L Wire Braid Hoses meet?",
+          "a": "The listing for the Gates G2L Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates G2L Wire Braid Hoses?",
+          "a": "End fittings for the Gates G2L Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates G2L Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates G2L Wire Braid Hoses from 101.6 mm at 1/4\" to 635 mm at 2\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I match the size of the Gates G2L Wire Braid Hoses to my old hose?",
+          "a": "Read the dash size or inside diameter on the old hose layline, for example 1/4\" (-4), and pick the same size in the Gates G2L Wire Braid Hoses size table. See [hydraulic hose dash sizes](/blog/hydraulic-hose-dash-sizes) for the dash-to-bore rule."
+        },
+        {
+          "slot": "K",
+          "q": "Gates G2L Wire Braid Hoses or Gates G2H Wire Braid Hoses: which should I choose?",
+          "a": "The Gates G2L Wire Braid Hoses are listed at 1,175 to 5,800 psi (81 to 400 bar), while the Gates G2H Wire Braid Hoses are listed at 1,175 to 1,825 psi (81 to 126 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates G2H Wire Braid Hoses page](/p/gates-g2h-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates G2L Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates G2L Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates G2L Wire Braid Hoses in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse stocks the Gates G2L Wire Braid Hoses, and we export worldwide with the best lead times. Share your list of part numbers and quantities via [the contact page](/contact) to get a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gates-g2xh-wire-braid-hoses",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Gates G2XH Wire Braid Hoses used for?",
+          "a": "The Gates G2XH Wire Braid Hoses are hydraulic hoses, listed in 4 part numbers from 1/4\" to 3/4\". Listed use: Extremely High-Temperature High-Pressure Hydraulic Applications Where Pressure Or Temperature Requirements Exceed SAE 100R2, ISO 1436 2Sn R2 And EN. See the [hydraulic hoses shelf](/c/hydraulic-hoses) for other grades."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Gates G2XH Wire Braid Hoses come in?",
+          "a": "The Gates G2XH Wire Braid Hoses are listed in 4 hose sizes: 1/4\" (-4), 3/8\" (-6), 1/2\" (-8), 3/4\" (-12). The 4 part numbers run from 46572543 to 46572542. Choose the dash size that matches the inside diameter of the hose you are replacing."
+        },
+        {
+          "slot": "D",
+          "q": "What does part number 46572545 of the Gates G2XH Wire Braid Hoses cover?",
+          "a": "Part number 46572545 is the Gates G2XH Wire Braid Hoses in 3/4\" ID, 214 bar (3,100 psi), minimum bend radius 241.3 mm. The size table lists every other part number with its own ratings, so quote the number for your bore."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Gates G2XH Wire Braid Hoses?",
+          "a": "The maker states 3,100 to 6,000 psi (214 to 414 bar), by size for the Gates G2XH Wire Braid Hoses. By row: 414 bar at 1/4\"; 345 bar at 3/8\"; 293 bar at 1/2\"; 214 bar at 3/4\". Working pressure is the continuous maximum; burst pressure is a test figure, not a working limit."
+        },
+        {
+          "slot": "F",
+          "q": "What temperatures and fluids suit the Gates G2XH Wire Braid Hoses?",
+          "a": "The Gates G2XH Wire Braid Hoses have a temperature range of -40°F to +300°F. Aggressive fluids can lower the limit, so name the fluid when you ask for a quote."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the Gates G2XH Wire Braid Hoses meet?",
+          "a": "The listing for the Gates G2XH Wire Braid Hoses states no standard or approval, so we do not claim one. If your specification calls for EN 853, EN 856 or SAE 100R compliance, or a certificate, tell us and we will check the maker's data; see [EN 853, 856, 857 vs SAE 100R](/blog/en-853-856-857-vs-sae-100r)."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings and ferrules do I use on the Gates G2XH Wire Braid Hoses?",
+          "a": "End fittings for the Gates G2XH Wire Braid Hoses must be from the series the hose maker approves for that hose. Browse [crimp ferrules](/c/crimp-ferrules) and [hydraulic fittings](/c/hydraulic-fittings), or send us the hose and ends and we will crimp and test the assembly."
+        },
+        {
+          "slot": "I",
+          "q": "How should I route the Gates G2XH Wire Braid Hoses and what is the minimum bend radius?",
+          "a": "The size table gives minimum bend radii for the Gates G2XH Wire Braid Hoses from 101.6 mm at 1/4\" to 241.3 mm at 3/4\". Keep every bend at or above the figure for your size and avoid twisting the hose; see [hose routing, bend radius and twist](/blog/hose-routing-bend-radius-twist)."
+        },
+        {
+          "slot": "J",
+          "q": "What applications is the Gates G2XH Wire Braid Hoses recommended for?",
+          "a": "The listing describes the Gates G2XH Wire Braid Hoses as follows: Extremely High-Temperature High-Pressure Hydraulic Applications Where Pressure Or Temperature Requirements Exceed SAE 100R2, ISO 1436 2Sn. Match the hose to your system pressure, fluid and temperature before ordering; the [hose guide](/blog/hydraulic-hose-guide) explains how."
+        },
+        {
+          "slot": "K",
+          "q": "Gates G2XH Wire Braid Hoses or Gates G2L Wire Braid Hoses: which should I choose?",
+          "a": "The Gates G2XH Wire Braid Hoses are listed at 3,100 to 6,000 psi (214 to 414 bar), while the Gates G2L Wire Braid Hoses are listed at 1,175 to 5,800 psi (81 to 400 bar). Pick the one whose working pressure, temperature and size cover your system, and confirm end fittings before ordering. See the [Gates G2L Wire Braid Hoses page](/p/gates-g2l-wire-braid-hoses)."
+        },
+        {
+          "slot": "L",
+          "q": "Where does the Gates G2XH Wire Braid Hoses come from and how is it shipped?",
+          "a": "The listing does not state a country of origin for the Gates G2XH Wire Braid Hoses, so origin is confirmed on the quotation. We supply from Dubai, UAE to the GCC, Africa and Asia; see [getting a hose quote right](/blog/what-to-send-for-a-hose-quote)."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Gates G2XH Wire Braid Hoses in Dubai?",
+          "a": "Yes, we stock the Gates G2XH Wire Braid Hoses in Dubai, UAE and ship worldwide with the best lead times. For pricing, send the part numbers and quantities to us through [our quote page](/quote)."
+        }
+      ]
+    }
+  ]
+}

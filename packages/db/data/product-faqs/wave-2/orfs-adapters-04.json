@@ -1,0 +1,998 @@
+{
+  "family": "orfs-adapters-04",
+  "extraFacts": [
+    {
+      "fact": "The O-ring face seal (ORFS, SAE J1453 / ISO 8434-3) uses a flat-faced male end whose face carries an O-ring, sealed against the flat face of a female swivel nut; the thread holds the joint and the O-ring seals.",
+      "source": "SAE J1453 / ISO 8434-3"
+    },
+    {
+      "fact": "SAE J1926 / ISO 11926 is the O-ring boss port: a straight UN/UNF thread with an O-ring under the hex shoulder that makes the seal.",
+      "source": "SAE J1926 / ISO 11926"
+    },
+    {
+      "fact": "ASME B1.20.3 (Dryseal NPTF) is the pipe thread standard for NPTF threads, which seal on the taper with sealant.",
+      "source": "ASME B1.20.3"
+    },
+    {
+      "fact": "The 37° JIC flare end seats on a 37° cone and seals metal to metal; its standard is SAE J514 (ISO 8434-2).",
+      "source": "SAE J514 / ISO 8434-2"
+    }
+  ],
+  "products": [
+    {
+      "slug": "brennan-fs2408-mfs-plugs",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan FS2408 MFS Plugs used for?",
+          "a": "Brennan FS2408 MFS Plugs are Brennan MFS face seal plugs with O-ring face seal (ORFS) male thread. It closes a female ORFS swivel nut or port, and the item text calls it a face seal plug in steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FS2408-24 on the Brennan FS2408 MFS Plugs?",
+          "a": "Every number on this listing begins with the FS2408 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FS2408-24 is listed as \"Plug, Face Seal, Steel Face Seal\"; FS2408-20 is listed as \"Plug, Face Seal, Steel Face Seal\"; fs2408-06 is listed as \"Steel Hydraulic Fittings, 3/8 Inch Face Seal\". A plug has one size code: FS2408-24 and FS2408-20 are listed as steel face seal plugs and fs2408-06 as a 3/8 inch face seal fitting."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan FS2408 MFS Plugs come in?",
+          "a": "The Brennan FS2408 MFS Plugs lists 3 Brennan part numbers, for example FS2408-24, FS2408-20 and fs2408-06. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan FS2408 MFS Plugs have?",
+          "a": "The listing gives no single pressure rating for the Brennan FS2408 MFS Plugs, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FS2408-24, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan FS2408 MFS Plugs made of?",
+          "a": "For the Brennan FS2408 MFS Plugs the listing gives steel face seal. The FS2408 series numbers such as FS2408-24 and fs2408-06 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan FS2408 MFS Plugs?",
+          "a": "On the Brennan FS2408 MFS Plugs, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FS2408-20."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan FS2408 MFS Plugs connect to?",
+          "a": "On the Brennan FS2408 MFS Plugs, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan FS2408 MFS Plugs so it does not leak?",
+          "a": "To fit the Brennan FS2408 MFS Plugs, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan FS2408 MFS Plugs used?",
+          "a": "Capping an open female ORFS connection on a line, block or hose end. Tell us the system and the port threads and we confirm the Brennan FS2408 MFS Plugs suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan FS2408 MFS Plugs differ from the Tompkins FF2408 Male ORFS Hex Head Plug?",
+          "a": "This Brennan plug is listed as a steel face seal plug, while the [Tompkins FF2408 Male ORFS Hex Head Plug](/p/tompkins-ff2408-male-orfs-hex-head-plug) is a male ORFS hex head plug. Choose by the series number on the part you replace."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan FS2408 MFS Plugs exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan FS2408 MFS Plugs, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan FS2408 MFS Plugs in Dubai?",
+          "a": "Yes. We keep the Brennan FS2408 MFS Plugs in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-fs2700-mfs-mfs-bulkhead-straight-o-ring-face-seal-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters used for?",
+          "a": "Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters are Brennan bulkhead straight adapter with lock nuts with O-ring face seal (ORFS) male and O-ring face seal (ORFS) male ends. It passes an ORFS connection through a panel or bulkhead, with a male face seal end on both sides and a lock nut."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FS2700-LN-08-08 on the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters?",
+          "a": "Every number on this listing begins with the FS2700 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FS2700-LN-08-08 is listed as \"Bulkhead Straight Adapter, Face Seal, With Lock Nut, Steel, 1/2 Inch Tube O.D\"; FS2700-LN-10-10 is listed as \"Bulkhead Straight Adapter, Face Seal, With Lock Nut, Steel, 5/8 Inch Tube O.D\"; fs2700-ln-04-04 is listed as \"04MFS-04MFS Blkhd Strt With Lock Nut\". LN in the number stands for the lock nut, as the item text 'Bulkhead Straight Adapter, Face Seal, With Lock Nut' shows, and the two codes are the sizes of the two MFS ends."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters come in?",
+          "a": "The Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters lists 8 Brennan part numbers, for example FS2700-LN-08-08, FS2700-LN-10-10 and fs2700-ln-04-04. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FS2700-LN-08-08, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters made of?",
+          "a": "For the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters the listing gives steel, steel face seal. The FS2700 series numbers such as FS2700-LN-08-08 and fs2700-ln-04-04 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters?",
+          "a": "On the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FS2700-LN-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters connect to?",
+          "a": "On the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters, both ends are O-ring face seal (ORFS) male and each seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters so it does not leak?",
+          "a": "To fit the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Tighten the lock nut against the panel after the face seals are made up."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters used?",
+          "a": "Taking an ORFS line through a plate, tank wall or machine frame. Tell us the system and the port threads and we confirm the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan FS2700 differ from the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters?",
+          "a": "The FS2700 has a face seal end on both sides of the panel, while the [Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters](/p/brennan-fs2764-mfs-bulkhead-morb-straight-o-ring-face-seal-adapters) has a male ORB end on the second side. Choose by the thread on the far side of the bulkhead."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters in Dubai?",
+          "a": "Yes, the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brennan-fs2764-mfs-bulkhead-morb-straight-o-ring-face-seal-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters used for?",
+          "a": "Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters are Brennan bulkhead straight adapters with O-ring face seal (ORFS) male and SAE O-ring boss (ORB) male ends. It passes through a panel with a male face seal end on one side and a male O-ring boss end on the other."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as fs2764-ln-16-16-o on the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters?",
+          "a": "Every number on this listing begins with the FS2764 series code and then gives the size code for each end, so the number identifies the connection. In the size table, fs2764-16-16-o is listed as \"16MFS Bulkhead-16MORB Straight\"; fs2764-12-12-o is listed as \"12MFS Bulkhead-12MORB Straight\"; fs2764-10-10-o is listed as \"10MFS Bulkhead-10MORB Straight\". MFS is the face seal end and MORB the male O-ring boss end, as in 10MFS Bulkhead-10MORB Straight, and LN in some numbers marks the lock nut."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters come in?",
+          "a": "The Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters lists 10 Brennan part numbers, for example fs2764-ln-16-16-o, fs2764-16-16-o and fs2764-10-10-o. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters have?",
+          "a": "The listing gives no single pressure rating for the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as fs2764-ln-16-16-o, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters made of?",
+          "a": "For the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters the listing gives steel face seal. The FS2764 series numbers such as fs2764-ln-16-16-o and fs2764-10-10-o share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters?",
+          "a": "On the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as fs2764-04-04-o."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters connect to?",
+          "a": "On the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters so it does not leak?",
+          "a": "To fit the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Fit the ORB end with its O-ring, and tighten the lock nut against the panel."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters used?",
+          "a": "Bulkhead connections between an ORFS line and a boss port. Tell us the system and the port threads and we confirm the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brennan FS2764 differ from the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters?",
+          "a": "The FS2764 changes from face seal to ORB through the panel, while the [Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters](/p/brennan-fs2700-mfs-mfs-bulkhead-straight-o-ring-face-seal-adapters) keeps the face seal on both sides. Choose by the connection you need behind the panel."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters in Dubai?",
+          "a": "Yes. The Brennan FS2764 MFS Bulkhead-MORB Straight O-Ring Face Seal Adapters sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "parker-seal-lok-fnlba-specialty-adapters",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Seal-Lok FNLBA Specialty Adapters used for?",
+          "a": "Parker Seal-Lok FNLBA Specialty Adapters are Parker bleed adapters with O-ring face seal (ORFS) female swivel thread. It is a hydraulic bleed adapter fitting with a female ORFS connection and a bleed screw connection, one inlet and one outlet."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 12 FNLBA-S on the Parker Seal-Lok FNLBA Specialty Adapters?",
+          "a": "Every number on this listing begins with the FNLBA series code and then gives the size code for each end, so the number identifies the connection. In the size table, 12 FNLBA-S is listed as \"Crimp Hose Fitting\"; 16 FNLBA-S is listed as \"Crimp Hose Fitting\"; 10 FNLBA-S is listed as \"Crimp Hose Fitting\". The number before FNLBA-S is the size, as in 8 FNLBA-S, 10 FNLBA-S, 12 FNLBA-S, 16 FNLBA-S and 20 FNLBA-S."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker Seal-Lok FNLBA Specialty Adapters come in?",
+          "a": "The Parker Seal-Lok FNLBA Specialty Adapters lists 5 Parker part numbers, for example 12 FNLBA-S, 16 FNLBA-S and 10 FNLBA-S. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker Seal-Lok FNLBA Specialty Adapters have?",
+          "a": "The listing gives no single pressure rating for the Parker Seal-Lok FNLBA Specialty Adapters, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 12 FNLBA-S, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Seal-Lok FNLBA Specialty Adapters made of?",
+          "a": "For the Parker Seal-Lok FNLBA Specialty Adapters the listing gives steel. The FNLBA series numbers such as 12 FNLBA-S and 10 FNLBA-S share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Parker Seal-Lok FNLBA Specialty Adapters?",
+          "a": "On the Parker Seal-Lok FNLBA Specialty Adapters, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 16 FNLBA-S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Seal-Lok FNLBA Specialty Adapters connect to?",
+          "a": "On the Parker Seal-Lok FNLBA Specialty Adapters, the O-ring face seal (ORFS) female swivel end takes a male ORFS end, whose flat face carries the O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker Seal-Lok FNLBA Specialty Adapters so it does not leak?",
+          "a": "To fit the Parker Seal-Lok FNLBA Specialty Adapters, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Close the bleed screw after venting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker Seal-Lok FNLBA Specialty Adapters used?",
+          "a": "Bleeding air from a hydraulic line at a female ORFS connection. Tell us the system and the port threads and we confirm the Parker Seal-Lok FNLBA Specialty Adapters suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Seal-Lok FNLBA Specialty Adapters differ from the Parker Seal-Lok PNLO Plug And Caps?",
+          "a": "The FNLBA is a bleed adapter with a bleed screw, while the [Parker Seal-Lok PNLO Plug And Caps](/p/parker-seal-lok-pnlo-plug-and-caps) is a plug that blanks an ORFS connection. Both are Parker Seal-Lok items."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Parker Seal-Lok FNLBA Specialty Adapters exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Parker Seal-Lok FNLBA Specialty Adapters, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Seal-Lok FNLBA Specialty Adapters in Dubai?",
+          "a": "Yes. Indus stocks the Parker Seal-Lok FNLBA Specialty Adapters at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-seal-lok-pnlo-plug-and-caps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Seal-Lok PNLO Plug And Caps used for?",
+          "a": "Parker Seal-Lok PNLO Plug And Caps are Parker Seal-Lok plugs with O-ring face seal (ORFS) male thread. It closes an ORFS connection, in steel and stainless steel, with the maker's pressure stated by size."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 20 PNLO-SS on the Parker Seal-Lok PNLO Plug And Caps?",
+          "a": "Every number on this listing begins with the PNLO series code and then gives the size code for each end, so the number identifies the connection. In the size table, 20 PNLO-SS is listed as \"Hydraulic Hose Plug, Stainless Steel, 1 1/4 Inch Fitting Size\"; 32 PNLO-S is listed as \"Hydraulic Hose Plug, Steel, 2 Inch Fitting Size\"; 8 PNLO-SS is listed as \"Hydraulic Hose Plug, Stainless Steel, 1/2 Inch Fitting Size\". The number before PNLO is the size, as in 8 PNLO-SS and 20 PNLO-SS, where the SS suffix marks the stainless steel version in the item text."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker Seal-Lok PNLO Plug And Caps come in?",
+          "a": "The Parker Seal-Lok PNLO Plug And Caps lists 13 Parker part numbers, for example 20 PNLO-SS, 32 PNLO-S and 8 PNLO-SS. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker Seal-Lok PNLO Plug And Caps have?",
+          "a": "The listing gives no single pressure rating for the Parker Seal-Lok PNLO Plug And Caps, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 20 PNLO-SS, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Seal-Lok PNLO Plug And Caps made of?",
+          "a": "For the Parker Seal-Lok PNLO Plug And Caps the listing gives stainless steel, steel. Some part numbers carry an SS suffix and are described as SS in the item text, so check the row if you need stainless steel. The PNLO series numbers such as 20 PNLO-SS and 8 PNLO-SS share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Parker Seal-Lok PNLO Plug And Caps?",
+          "a": "On the Parker Seal-Lok PNLO Plug And Caps, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 32 PNLO-S."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Seal-Lok PNLO Plug And Caps connect to?",
+          "a": "On the Parker Seal-Lok PNLO Plug And Caps, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker Seal-Lok PNLO Plug And Caps so it does not leak?",
+          "a": "To fit the Parker Seal-Lok PNLO Plug And Caps, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker Seal-Lok PNLO Plug And Caps used?",
+          "a": "Blanking ORFS ports and hose ends, including stainless steel plugs for corrosive sites. Tell us the system and the port threads and we confirm the Parker Seal-Lok PNLO Plug And Caps suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Seal-Lok PNLO Plug And Caps differ from the Parker Seal-Lok PNMLO Plug and Caps?",
+          "a": "The PNLO has 13 part numbers in steel and stainless steel, while the [Parker Seal-Lok PNMLO Plug and Caps](/p/parker-seal-lok-pnmlo-plug-and-caps) is the steel PNMLO series with a hex and nitrile seal. Choose by the series on the part you replace."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Seal-Lok PNLO Plug And Caps made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Parker Seal-Lok PNLO Plug And Caps. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Seal-Lok PNLO Plug And Caps in Dubai?",
+          "a": "Yes. We keep the Parker Seal-Lok PNLO Plug And Caps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "parker-seal-lok-pnmlo-plug-and-caps",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Parker Seal-Lok PNMLO Plug and Caps used for?",
+          "a": "Parker Seal-Lok PNMLO Plug and Caps are Parker Seal-Lok hex plugs with O-ring face seal (ORFS) male thread. It closes an ORFS connection with a hex plug in Grade 1008 steel, sealed by a nitrile seal."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as 4PNMLOS on the Parker Seal-Lok PNMLO Plug and Caps?",
+          "a": "Every number on this listing begins with the PNMLO series code and then gives the size code for each end, so the number identifies the connection. In the size table, 4PNMLOS is listed as \"Hydraulic Hose Plug, Steel, 1/4 Inch Fitting Size\"; 10PNMLOS is listed as \"Hydraulic Hose Plug, Steel, 5/8 Inch Fitting Size\"; 20PNMLOS is listed as \"Hydraulic Hose Plug, Steel, 1 1/4 Inch Fitting Size\". The number before PNMLOS is the size, as in 4PNMLOS, 6PNMLOS and 20PNMLOS."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Parker Seal-Lok PNMLO Plug and Caps come in?",
+          "a": "The Parker Seal-Lok PNMLO Plug and Caps lists 7 Parker part numbers, for example 4PNMLOS, 10PNMLOS and 20PNMLOS. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Parker Seal-Lok PNMLO Plug and Caps have?",
+          "a": "The listing gives no single pressure rating for the Parker Seal-Lok PNMLO Plug and Caps, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as 4PNMLOS, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Parker Seal-Lok PNMLO Plug and Caps made of?",
+          "a": "For the Parker Seal-Lok PNMLO Plug and Caps the listing gives steel, in Grade 1008. The PNMLO series numbers such as 4PNMLOS and 20PNMLOS share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Parker Seal-Lok PNMLO Plug and Caps?",
+          "a": "On the Parker Seal-Lok PNMLO Plug and Caps, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as 10PNMLOS."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Parker Seal-Lok PNMLO Plug and Caps connect to?",
+          "a": "On the Parker Seal-Lok PNMLO Plug and Caps, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Parker Seal-Lok PNMLO Plug and Caps so it does not leak?",
+          "a": "To fit the Parker Seal-Lok PNMLO Plug and Caps, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Parker Seal-Lok PNMLO Plug and Caps used?",
+          "a": "Blanking ORFS ports on hydraulic equipment where a hex plug is specified. Tell us the system and the port threads and we confirm the Parker Seal-Lok PNMLO Plug and Caps suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Parker Seal-Lok PNMLO Plug and Caps differ from the Parker Seal-Lok PNLO Plug And Caps?",
+          "a": "The PNMLO is the steel hex plug with a nitrile seal, while the [Parker Seal-Lok PNLO Plug And Caps](/p/parker-seal-lok-pnlo-plug-and-caps) also comes in stainless steel. Choose by the material you need."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Parker Seal-Lok PNMLO Plug and Caps made and what is its HS code?",
+          "a": "The listing shows United States as the country of origin and no HS code for the Parker Seal-Lok PNMLO Plug and Caps. We export from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation and export documents."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Parker Seal-Lok PNMLO Plug and Caps in Dubai?",
+          "a": "Yes, the Parker Seal-Lok PNMLO Plug and Caps is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff0304-female-orfs-swivel-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF0304 Female ORFS Swivel Cap used for?",
+          "a": "The Tompkins FF0304 Female ORFS Swivel Cap is a Tompkins female ORFS swivel cap with O-ring face seal (ORFS) female swivel thread. It caps a male ORFS end, in sizes from 9/16-18 ORFS to 2-12 ORFS."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF0304-C-04 on the Tompkins FF0304 Female ORFS Swivel Cap?",
+          "a": "Every number on this listing begins with the FF0304 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF0304-C-04 is 9/16-18 ORFS; FF0304-C-12 is 1-3/16-12 ORFS; FF0304-C-24 is 2-12 ORFS. The C in FF0304-C-04 is part of the number, followed by the dash size of the cap."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF0304 Female ORFS Swivel Cap come in?",
+          "a": "The Tompkins FF0304 Female ORFS Swivel Cap lists 8 Tompkins part numbers, for example FF0304-C-04, FF0304-C-12 and FF0304-C-24. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF0304 Female ORFS Swivel Cap have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF0304 Female ORFS Swivel Cap, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF0304-C-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF0304 Female ORFS Swivel Cap made of?",
+          "a": "For the Tompkins FF0304 Female ORFS Swivel Cap the listing gives carbon steel. The FF0304 series numbers such as FF0304-C-04 and FF0304-C-24 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF0304 Female ORFS Swivel Cap?",
+          "a": "On the Tompkins FF0304 Female ORFS Swivel Cap, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF0304-C-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF0304 Female ORFS Swivel Cap connect to?",
+          "a": "On the Tompkins FF0304 Female ORFS Swivel Cap, the O-ring face seal (ORFS) female swivel end takes a male ORFS end, whose flat face carries the O-ring. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF0304 Female ORFS Swivel Cap so it does not leak?",
+          "a": "To fit the Tompkins FF0304 Female ORFS Swivel Cap, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF0304 Female ORFS Swivel Cap used?",
+          "a": "Capping a male ORFS fitting or tube end. Tell us the system and the port threads and we confirm the Tompkins FF0304 Female ORFS Swivel Cap suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF0304 Female ORFS Swivel Cap differ from the Tompkins FF2408 Male ORFS Hex Head Plug?",
+          "a": "The FF0304 is a female swivel cap that fits over a male ORFS end, while the [Tompkins FF2408 Male ORFS Hex Head Plug](/p/tompkins-ff2408-male-orfs-hex-head-plug) is a male plug that closes a female ORFS port."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF0304 Female ORFS Swivel Cap exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF0304 Female ORFS Swivel Cap, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF0304 Female ORFS Swivel Cap in Dubai?",
+          "a": "Yes. The Tompkins FF0304 Female ORFS Swivel Cap sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff2402-male-orfs-male-jic-37-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter used for?",
+          "a": "The Tompkins FF2402 Male ORFS × Male JIC 37° Adapter is a Tompkins straight adapter with O-ring face seal (ORFS) male and 37° JIC male ends. It joins a male ORFS end to a male 37° JIC end in a straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2402-04-04 on the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter?",
+          "a": "Every number on this listing begins with the FF2402 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2402-04-04 is 9/16-18 ORFS by 7/16-20 JIC; FF2402-10-10 is 1-14 ORFS by 7/8-14 JIC; FF2402-16-16 is 1-7/16-12 ORFS by 1-5/16-12 JIC. The two codes are the dash sizes of the two ends in the order named, so FF2402-04-04 is 9/16-18 ORFS by 7/16-20 JIC."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter come in?",
+          "a": "The Tompkins FF2402 Male ORFS × Male JIC 37° Adapter lists 6 Tompkins part numbers, for example FF2402-04-04, FF2402-08-08 and FF2402-16-16. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2402-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter made of?",
+          "a": "For the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter the listing gives carbon steel. The FF2402 series numbers such as FF2402-04-04 and FF2402-16-16 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter?",
+          "a": "On the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3; the 37° end is the JIC 37° flare of SAE J514. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2402-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter connect to?",
+          "a": "On the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. The 37° JIC male end seats in a female 37° JIC swivel nut, sealing on the cone. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter so it does not leak?",
+          "a": "To fit the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The JIC side seals on its 37° cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter used?",
+          "a": "Converting an ORFS port to a JIC connection. Tell us the system and the port threads and we confirm the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter differ from the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter?",
+          "a": "The FF2402 has a male ORFS end and a male JIC end, while the [Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter](/p/tompkins-ff6504-male-jic-37-female-orfs-swivel-adapter) has a male JIC end and a female ORFS swivel. Choose by the gender on the ORFS side."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter in Dubai?",
+          "a": "Yes. Indus stocks the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff2403-male-orfs-male-orfs-union",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF2403 Male ORFS × Male ORFS Union used for?",
+          "a": "The Tompkins FF2403 Male ORFS × Male ORFS Union is a Tompkins straight union with O-ring face seal (ORFS) male and O-ring face seal (ORFS) male ends. It joins two female ORFS swivel nuts through a straight union with a male ORFS end on both sides."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2403-04-04 on the Tompkins FF2403 Male ORFS × Male ORFS Union?",
+          "a": "Every number on this listing begins with the FF2403 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2403-04-04 is 9/16-18 ORFS by 9/16-18 ORFS; FF2403-12-08 is 1-3/16-12 ORFS by 13/16-16 ORFS; FF2403-24-24 is 2-12 ORFS by 2-12 ORFS. The two codes are the dash sizes of the two ends, so FF2403-04-04 is 9/16-18 ORFS by 9/16-18 ORFS."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF2403 Male ORFS × Male ORFS Union come in?",
+          "a": "The Tompkins FF2403 Male ORFS × Male ORFS Union lists 9 Tompkins part numbers, for example FF2403-04-04, FF2403-12-08 and FF2403-24-24. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF2403 Male ORFS × Male ORFS Union have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF2403 Male ORFS × Male ORFS Union, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2403-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF2403 Male ORFS × Male ORFS Union made of?",
+          "a": "For the Tompkins FF2403 Male ORFS × Male ORFS Union the listing gives carbon steel. The FF2403 series numbers such as FF2403-04-04 and FF2403-24-24 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF2403 Male ORFS × Male ORFS Union?",
+          "a": "On the Tompkins FF2403 Male ORFS × Male ORFS Union, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2403-12-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF2403 Male ORFS × Male ORFS Union connect to?",
+          "a": "On the Tompkins FF2403 Male ORFS × Male ORFS Union, both ends are O-ring face seal (ORFS) male and each seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF2403 Male ORFS × Male ORFS Union so it does not leak?",
+          "a": "To fit the Tompkins FF2403 Male ORFS × Male ORFS Union, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF2403 Male ORFS × Male ORFS Union used?",
+          "a": "Joining two female ORFS hose or tube ends in a straight line. Tell us the system and the port threads and we confirm the Tompkins FF2403 Male ORFS × Male ORFS Union suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF2403 Male ORFS × Male ORFS Union differ from the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter?",
+          "a": "The FF2403 has a male ORFS end on both sides, while the [Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter](/p/tompkins-ff2406-female-orfs-swivel-male-orfs-adapter) has a female swivel on one side and a male ORFS end on the other. Choose by whether the second connection is a stud or a nut."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF2403 Male ORFS × Male ORFS Union exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF2403 Male ORFS × Male ORFS Union, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF2403 Male ORFS × Male ORFS Union in Dubai?",
+          "a": "Yes. We keep the Tompkins FF2403 Male ORFS × Male ORFS Union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff2406-female-orfs-swivel-male-orfs-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter used for?",
+          "a": "The Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter is a Tompkins straight adapter with O-ring face seal (ORFS) female swivel and O-ring face seal (ORFS) male ends. It joins a female ORFS swivel to a male ORFS end, and it also changes size between the two ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2406-04-06 on the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter?",
+          "a": "Every number on this listing begins with the FF2406 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2406-04-06 is 9/16-18 ORFS by 11/16-16 ORFS; FF2406-12-04 is 1-3/16-12 ORFS by 9/16-18 ORFS; FF2406-20-16 is 1-11/16-12 ORFS by 1-7/16-12 ORFS. The two codes are the dash sizes of the two ends, as in FF2406-04-06, a 9/16-18 ORFS swivel with an 11/16-16 ORFS male end."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter come in?",
+          "a": "The Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter lists 19 Tompkins part numbers, for example FF2406-04-06, FF2406-12-04 and FF2406-20-16. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2406-04-06, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter made of?",
+          "a": "For the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter the listing gives carbon steel. The FF2406 series numbers such as FF2406-04-06 and FF2406-20-16 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter?",
+          "a": "On the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2406-12-04."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter connect to?",
+          "a": "On the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter, the O-ring face seal (ORFS) female swivel end takes a male ORFS end, whose flat face carries the O-ring. The O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter so it does not leak?",
+          "a": "To fit the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter used?",
+          "a": "Extending or resizing an ORFS line when one connection is a nut and the other a stud. Tell us the system and the port threads and we confirm the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter differ from the Tompkins FF2403 Male ORFS × Male ORFS Union?",
+          "a": "The FF2406 has a swivel nut on one end and 19 part numbers, while the [Tompkins FF2403 Male ORFS × Male ORFS Union](/p/tompkins-ff2403-male-orfs-male-orfs-union) has male ORFS ends on both sides in 9 part numbers."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter in Dubai?",
+          "a": "Yes, the Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff2408-male-orfs-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF2408 Male ORFS Hex Head Plug used for?",
+          "a": "The Tompkins FF2408 Male ORFS Hex Head Plug is a Tompkins male ORFS hex head plug with O-ring face seal (ORFS) male thread. It closes a female ORFS port or swivel nut, in sizes from 9/16-18 ORFS to 2-12 ORFS."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2408-04 on the Tompkins FF2408 Male ORFS Hex Head Plug?",
+          "a": "Every number on this listing begins with the FF2408 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2408-04 is 9/16-18 ORFS; FF2408-12 is 1-3/16-12 ORFS; FF2408-24 is 2-12 ORFS. A plug has one size code, as in FF2408-04, FF2408-06 and FF2408-24."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF2408 Male ORFS Hex Head Plug come in?",
+          "a": "The Tompkins FF2408 Male ORFS Hex Head Plug lists 8 Tompkins part numbers, for example FF2408-04, FF2408-12 and FF2408-24. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF2408 Male ORFS Hex Head Plug have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF2408 Male ORFS Hex Head Plug, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2408-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF2408 Male ORFS Hex Head Plug made of?",
+          "a": "For the Tompkins FF2408 Male ORFS Hex Head Plug the listing gives carbon steel. The FF2408 series numbers such as FF2408-04 and FF2408-24 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF2408 Male ORFS Hex Head Plug?",
+          "a": "On the Tompkins FF2408 Male ORFS Hex Head Plug, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2408-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF2408 Male ORFS Hex Head Plug connect to?",
+          "a": "On the Tompkins FF2408 Male ORFS Hex Head Plug, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF2408 Male ORFS Hex Head Plug so it does not leak?",
+          "a": "To fit the Tompkins FF2408 Male ORFS Hex Head Plug, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Use a spanner on the hex head."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF2408 Male ORFS Hex Head Plug used?",
+          "a": "Blanking ORFS ports on manifolds and hose ends. Tell us the system and the port threads and we confirm the Tompkins FF2408 Male ORFS Hex Head Plug suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF2408 Male ORFS Hex Head Plug differ from the Tompkins FF0304 Female ORFS Swivel Cap?",
+          "a": "The FF2408 is a male plug that closes a female port, while the [Tompkins FF0304 Female ORFS Swivel Cap](/p/tompkins-ff0304-female-orfs-swivel-cap) is a female swivel cap that fits over a male end."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF2408 Male ORFS Hex Head Plug exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF2408 Male ORFS Hex Head Plug, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF2408 Male ORFS Hex Head Plug in Dubai?",
+          "a": "Yes. The Tompkins FF2408 Male ORFS Hex Head Plug sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff2501-male-orfs-male-nptf-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow used for?",
+          "a": "The Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow is a Tompkins 90° elbow with O-ring face seal (ORFS) male and NPTF male ends. It turns a line through 90° between a male ORFS end and a male NPTF pipe thread."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF2501-04-02 on the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow?",
+          "a": "Every number on this listing begins with the FF2501 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF2501-04-02 is 9/16-18 ORFS by 1/8-27 NPTF; FF2501-10-08 is 1-14 ORFS by 1/2-14 NPTF; FF2501-24-24 is 2-12 ORFS by 1-1/2-11½ NPTF. The two codes are the dash sizes in the order named, so FF2501-04-02 is 9/16-18 ORFS by 1/8-27 NPTF."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow come in?",
+          "a": "The Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow lists 17 Tompkins part numbers, for example FF2501-04-02, FF2501-10-08 and FF2501-24-24. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF2501-04-02, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow made of?",
+          "a": "For the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow the listing gives carbon steel. The FF2501 series numbers such as FF2501-04-02 and FF2501-24-24 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow?",
+          "a": "On the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3; the NPTF end is a Dryseal pipe thread under ASME B1.20.3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF2501-10-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow connect to?",
+          "a": "On the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. The NPTF male end screws into a female NPT or NPTF pipe port, which needs sealant. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow so it does not leak?",
+          "a": "To fit the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Seal the NPTF thread as the [guide to stopping an NPT leak](/blog/stopping-an-npt-thread-leak) describes."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow used?",
+          "a": "Right-angle connections from an ORFS line into an NPT port. Tell us the system and the port threads and we confirm the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow differ from the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter?",
+          "a": "The FF2501 is a 90° elbow with an NPTF end, while the [Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter](/p/tompkins-ff6400-male-orfs-male-o-ring-boss-adapter) is a straight adapter with a male ORB end. Choose by the thread and the bend."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow in Dubai?",
+          "a": "Yes. Indus stocks the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff6400-male-orfs-male-o-ring-boss-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter used for?",
+          "a": "The Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter is a Tompkins straight adapter with O-ring face seal (ORFS) male and SAE O-ring boss (ORB) male ends. It joins a male ORFS end to a male SAE O-ring boss end in a straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF6400-04-04 on the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter?",
+          "a": "Every number on this listing begins with the FF6400 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF6400-04-04 is 9/16-18 ORFS by 7/16-20 ORB; FF6400-10-12 is 1-14 ORFS by 1-1/16-12 ORB; FF6400-24-24 is 2-12 ORFS by 1-7/8-12 ORB. The two codes are the dash sizes in the order named, so FF6400-04-04 is 9/16-18 ORFS by 7/16-20 ORB."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter come in?",
+          "a": "The Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter lists 23 Tompkins part numbers, for example FF6400-04-04, FF6400-10-12 and FF6400-24-24. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF6400-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter made of?",
+          "a": "For the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter the listing gives carbon steel. The FF6400 series numbers such as FF6400-04-04 and FF6400-24-24 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter?",
+          "a": "On the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3; the O-ring boss end follows SAE J1926 / ISO 11926. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF6400-10-12."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter connect to?",
+          "a": "On the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. The SAE O-ring boss (ORB) male end screws into an SAE O-ring boss port, where the O-ring under the hex does the sealing. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter so it does not leak?",
+          "a": "To fit the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. Fit the ORB end with its O-ring."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter used?",
+          "a": "Connecting an ORFS line to a boss port on a pump, valve or manifold. Tell us the system and the port threads and we confirm the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter differ from the Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow?",
+          "a": "The FF6400 is a straight ORFS-to-ORB adapter with 23 part numbers, while the [Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow](/p/tompkins-ff2501-male-orfs-male-nptf-90-elbow) is a 90° elbow to a male NPTF."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter in Dubai?",
+          "a": "Yes. We keep the Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "tompkins-ff6504-male-jic-37-female-orfs-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter used for?",
+          "a": "The Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter is a Tompkins straight adapter with 37° JIC male and O-ring face seal (ORFS) female swivel ends. It joins a male 37° JIC end to a female ORFS swivel in a straight body."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as FF6504-04-04 on the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter?",
+          "a": "Every number on this listing begins with the FF6504 series code and then gives the size code for each end, so the number identifies the connection. In the size table, FF6504-04-04 is 7/16-20 JIC by 9/16-18 ORFS; FF6504-10-10 is 7/8-14 JIC by 1-14 ORFS; FF6504-16-16 is 1-5/16-12 JIC by 1-7/16-12 ORFS. The two codes are the dash sizes in the order named, so FF6504-04-04 is 7/16-20 JIC by 9/16-18 ORFS."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter come in?",
+          "a": "The Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter lists 6 Tompkins part numbers, for example FF6504-04-04, FF6504-08-08 and FF6504-16-16. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter have?",
+          "a": "The listing gives no single pressure rating for the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as FF6504-04-04, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter made of?",
+          "a": "For the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter the listing gives carbon steel. The FF6504 series numbers such as FF6504-04-04 and FF6504-16-16 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter?",
+          "a": "On the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter, the 37° end is the JIC 37° flare of SAE J514; the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as FF6504-10-10."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter connect to?",
+          "a": "On the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter, the 37° JIC male end seats in a female 37° JIC swivel nut, sealing on the cone. The O-ring face seal (ORFS) female swivel end takes a male ORFS end, whose flat face carries the O-ring. More mating parts are in the [JIC adapters](/c/jic-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter so it does not leak?",
+          "a": "To fit the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The JIC side seals on its cone, so use no sealant."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter used?",
+          "a": "Connecting a JIC port to an ORFS hose or tube end. Tell us the system and the port threads and we confirm the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter differ from the Tompkins FF2402 Male ORFS × Male JIC 37° Adapter?",
+          "a": "The FF6504 has a female ORFS swivel, while the [Tompkins FF2402 Male ORFS × Male JIC 37° Adapter](/p/tompkins-ff2402-male-orfs-male-jic-37-adapter) has a male ORFS end. Both have a JIC end, so choose by the gender on the ORFS side."
+        },
+        {
+          "slot": "L",
+          "q": "How is the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter in Dubai?",
+          "a": "Yes, the Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "zsi-foster-z-clamp-o-ring-face-seals",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ZSI-Foster Z-CLAMP O-Ring Face Seals used for?",
+          "a": "ZSI-Foster Z-CLAMP O-Ring Face Seals are ZSI-Foster male junction adapters with O-ring face seal (ORFS) male thread. It is listed as a male junction adapter with an O-ring face seal, sized by tube size from 3/8 inch to 1-1/2 inch."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers such as MJO-3-24 on the ZSI-Foster Z-CLAMP O-Ring Face Seals?",
+          "a": "Every number on this listing begins with the MJO series code and then gives the size code for each end, so the number identifies the connection. In the size table, MJO-3-24 is listed as \"Male Junction Adapter, O-Ring Face Seal, 1-1/2 Inch Tube Size\"; MJO-2-12 is listed as \"Male Junction Adapter, O-Ring Face Seal, 3/4 Inch Tube Size\"; MJO-3-20 is listed as \"Male Junction Adapter, O-Ring Face Seal, 1-1/4 Inch Tube Size\". The item text gives the tube size for each row, and the first code (1, 2 or 3) differs between rows of the same tube size, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers does the ZSI-Foster Z-CLAMP O-Ring Face Seals come in?",
+          "a": "The ZSI-Foster Z-CLAMP O-Ring Face Seals lists 10 ZSI-Foster part numbers, for example MJO-3-24, MJO-2-12 and MJO-3-20. The size table gives the connection of each row, and the rows differ in size and in the pressure the maker states for them."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the ZSI-Foster Z-CLAMP O-Ring Face Seals have?",
+          "a": "The listing gives no single pressure rating for the ZSI-Foster Z-CLAMP O-Ring Face Seals, and the maker's ratings vary by size. Tell us the working pressure and the part number, such as MJO-3-24, and we confirm the rating with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the ZSI-Foster Z-CLAMP O-Ring Face Seals made of?",
+          "a": "The size table items for the ZSI-Foster Z-CLAMP O-Ring Face Seals describe ZSI-Foster adapters with NBR seals. The MJO series numbers such as MJO-3-24 and MJO-3-20 share the same listing, so ask us to confirm the material of the exact number you need."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards and documents apply to the ZSI-Foster Z-CLAMP O-Ring Face Seals?",
+          "a": "On the ZSI-Foster Z-CLAMP O-Ring Face Seals, the ORFS end is the O-ring face seal of SAE J1453 / ISO 8434-3. The listing states no certificate, so ask on your RFQ for a material certificate or test record and quote a part number such as MJO-1-6."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ZSI-Foster Z-CLAMP O-Ring Face Seals connect to?",
+          "a": "On the ZSI-Foster Z-CLAMP O-Ring Face Seals, the O-ring face seal (ORFS) male end seals on an O-ring in its flat face against the flat face of a female ORFS swivel nut. More mating parts are in the [ORFS adapters](/c/orfs-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I install the ZSI-Foster Z-CLAMP O-Ring Face Seals so it does not leak?",
+          "a": "To fit the ZSI-Foster Z-CLAMP O-Ring Face Seals, check that the O-ring in the flat face of the male ORFS end is present and clean, bring the flat faces square and tighten the swivel nut to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ZSI-Foster Z-CLAMP O-Ring Face Seals used?",
+          "a": "Connecting an ORFS junction in a Z-CLAMP style assembly. Tell us the system and the port threads and we confirm the ZSI-Foster Z-CLAMP O-Ring Face Seals suits it."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ZSI-Foster Z-CLAMP O-Ring Face Seals differ from the Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters?",
+          "a": "The ZSI-Foster MJO adapters are listed by tube size, while the [Brennan FS2700 MFS-MFS Bulkhead Straight O-Ring Face Seal Adapters](/p/brennan-fs2700-mfs-mfs-bulkhead-straight-o-ring-face-seal-adapters) is a Brennan bulkhead adapter with a lock nut. Choose by the make of the part you replace."
+        },
+        {
+          "slot": "L",
+          "q": "How is the ZSI-Foster Z-CLAMP O-Ring Face Seals exported from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the ZSI-Foster Z-CLAMP O-Ring Face Seals, so we confirm both on the quotation. We export from Dubai worldwide and prepare the commercial invoice, packing list and any certificates you ask for on the RFQ."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ZSI-Foster Z-CLAMP O-Ring Face Seals in Dubai?",
+          "a": "Yes. The ZSI-Foster Z-CLAMP O-Ring Face Seals sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    }
+  ]
+}

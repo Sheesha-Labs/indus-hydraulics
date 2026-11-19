@@ -6,6 +6,8 @@ import {
   marketSlugFromPath,
   looksLikeBot,
   orderCountries,
+  filterCountries,
+  flagSrc,
   overrideSurface,
   readEpoch,
   suppressionReason,
@@ -135,13 +137,13 @@ describe('looksLikeBot', () => {
 
 describe('orderCountries', () => {
   const list = [
-    ['BH', '+973'],
-    ['KE', '+254'],
-    ['KW', '+965'],
-    ['NG', '+234'],
-    ['OM', '+968'],
-    ['QA', '+974'],
-    ['SA', '+966'],
+    ['BH', '+973', 'Bahrain'],
+    ['KE', '+254', 'Kenya'],
+    ['KW', '+965', 'Kuwait'],
+    ['NG', '+234', 'Nigeria'],
+    ['OM', '+968', 'Oman'],
+    ['QA', '+974', 'Qatar'],
+    ['SA', '+966', 'Saudi Arabia'],
   ] as const
 
   it('puts the default first, then the GCC, then the rest', () => {
@@ -149,13 +151,57 @@ describe('orderCountries', () => {
   })
 
   it('falls back to the UAE, which is always present', () => {
-    expect(orderCountries(list, 'ZZ')[0]).toEqual(['AE', '+971'])
+    expect(orderCountries(list, 'ZZ')[0]).toEqual(['AE', '+971', 'United Arab Emirates'])
   })
 
   it('does not repeat the default in the GCC block', () => {
     const iso = orderCountries(list, 'OM').map((c) => c[0])
     expect(iso.filter((x) => x === 'OM')).toHaveLength(1)
     expect(iso[0]).toBe('OM')
+  })
+})
+
+describe('filterCountries', () => {
+  const list = [
+    ['AE', '+971', 'United Arab Emirates'],
+    ['SA', '+966', 'Saudi Arabia'],
+    ['CI', '+225', "Côte d'Ivoire"],
+    ['GB', '+44', 'United Kingdom'],
+    ['TT', '+1 868', 'Trinidad and Tobago'],
+    ['US', '+1', 'United States'],
+  ] as const
+  const isos = (q: string) => filterCountries(list, q).map((c) => c[0])
+
+  it('returns everything, in order, for an empty query', () => {
+    expect(isos('  ')).toEqual(['AE', 'SA', 'CI', 'GB', 'TT', 'US'])
+  })
+
+  it('matches the start of any word in the name', () => {
+    expect(isos('uni')).toEqual(['AE', 'GB', 'US'])
+    expect(isos('arab')).toEqual(['AE', 'SA'])
+    expect(isos('king')).toEqual(['GB'])
+  })
+
+  it('ignores accents and case', () => {
+    expect(isos('cote')).toEqual(['CI'])
+    expect(isos('CÔTE')).toEqual(['CI'])
+  })
+
+  it('matches an ISO code exactly', () => {
+    expect(isos('gb')).toEqual(['GB'])
+  })
+
+  it('matches dial codes with or without the plus', () => {
+    expect(isos('+97')).toEqual(['AE'])
+    expect(isos('44')).toEqual(['GB'])
+    expect(isos('1868')).toEqual(['TT'])
+    expect(isos('+1')).toEqual(['TT', 'US'])
+  })
+})
+
+describe('flagSrc', () => {
+  it('points at the lower-case public file', () => {
+    expect(flagSrc('AE')).toBe('/flags/ae.svg')
   })
 })
 

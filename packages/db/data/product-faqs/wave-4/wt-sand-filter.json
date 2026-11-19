@@ -1,0 +1,84 @@
+{
+  "family": "wt-sand-filter",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    },
+    {
+      "fact": "API 6A product specification level (PSL 1 to 4) sets the inspection, testing and traceability applied; PR1 and PR2 are the performance requirement levels, PR2 having passed API 6A design-validation testing. PSL 3G adds a gas test.",
+      "source": "API Specification 6A; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sand-filter-dual-pot-vertical-10-000-psi-asme-u2-ss316-sintered-dnv-frame",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a dual-pot vertical 10,000 psi sand filter used for?",
+          "a": "A dual-pot sand filter removes sand and fines from well-test flow before it reaches chokes and downstream equipment. This vertical dual-pot unit is rated 10,000 psi MAWP, ASME U2-stamped, with an SS316 sintered cartridge filter element."
+        },
+        {
+          "slot": "B",
+          "q": "What do ASME U2 and SS316 sintered mean on this sand filter?",
+          "a": "ASME U2 is the code stamp on the pressure vessel, and SS316 sintered describes the stainless steel sintered cartridge element that retains fines. The vessel is rated 10,000 psi MAWP."
+        },
+        {
+          "slot": "D",
+          "q": "What pressure ratings does the dual-pot sand filter come in?",
+          "a": "The filter is available in 5K, 10K and 15K psi variants. This listing is the 10,000 psi unit in a vertical dual-pot arrangement on a DNV frame."
+        },
+        {
+          "slot": "D",
+          "q": "Can the dual-pot sand filter run one pot or both pots?",
+          "a": "Yes. The inlet and outlet by-pass manifold allows single-pot or parallel operation, so one pot can be cleaned while the other stays on line."
+        },
+        {
+          "slot": "E",
+          "q": "How does the sand filter show that the cartridge is clogging?",
+          "a": "Differential-pressure measurement between inlet and outlet drives a clogging alarm. Clean the cartridge by HP water-nozzle backwash when the alarm trips."
+        },
+        {
+          "slot": "F",
+          "q": "What is the sand filter element made from?",
+          "a": "The element is an SS316 sintered cartridge, which retains fines after the internal shields drop the stream velocity and let heavy particles settle in the drain area."
+        },
+        {
+          "slot": "G",
+          "q": "Which codes apply to the 10,000 psi sand filter?",
+          "a": "The listing states ASME U2 stamping and a DNV frame for offshore deployment. State any further certification, such as third-party witness, on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the dual-pot sand filter connect to?",
+          "a": "It connects in the well-test flowline downstream of the choke manifold, through its inlet and outlet by-pass manifold. See the [desanders and debris catchers](/c/wt-desanders-debris-catchers) shelf for related sand handling and the [well testing equipment guide](/blog/surface-well-testing-equipment)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the cartridge changed on the dual-pot sand filter?",
+          "a": "A deployable gantry crane lifts the cartridge out for removal or replacement without interrupting operations. Isolate and depressurise the pot first."
+        },
+        {
+          "slot": "K",
+          "q": "Sand filter or desander for well-test flowback?",
+          "a": "A sand filter retains fines on a sintered cartridge, while a desander removes bulk sand upstream with cyclones or screened barrels. See the [desanders and debris catchers](/c/wt-desanders-debris-catchers) shelf for the other options."
+        },
+        {
+          "slot": "L",
+          "q": "Can the dual-pot sand filter be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide on its DNV frame. Give the destination and the pressure variant and we confirm freight and lead time."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the dual-pot 10,000 psi sand filter in Dubai?",
+          "a": "Yes. We keep the dual-pot 10,000 psi sand filter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the pressure variant and frame type through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

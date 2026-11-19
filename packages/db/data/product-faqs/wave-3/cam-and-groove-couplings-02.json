@@ -1,0 +1,1640 @@
+{
+  "family": "cam-and-groove-couplings-02",
+  "extraFacts": [
+    {
+      "fact": "Cam and groove coupling types: Type A is a male adapter x female NPT, Type B a female coupler x male NPT, Type C a female coupler x hose shank, Type D a female coupler x female NPT, Type E a male adapter x hose shank, Type F a male adapter x male NPT, Type DA a female coupler x male adapter, Type DD a female coupler x female coupler, Type DC a dust cap that closes a male adapter, and Type DP a dust plug that closes a female coupler.",
+      "source": "Indus Hydraulics guide 'Cam and groove coupling types: A, B, C, D, E, F, DC and DP explained' and the Indus Type A to DP listings; A-A-59326 (formerly MIL-C-27487)"
+    },
+    {
+      "fact": "1 bar = 14.5038 psi, so 150 psi is about 10 bar, 75 psi about 5 bar, 40 psi about 3 bar and 25 psi about 2 bar.",
+      "source": "Unit conversion"
+    }
+  ],
+  "products": [
+    {
+      "slug": "crimptek-type-c-female-coupler-crimp-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the crimp-shank Type C female coupler x shank cam and groove coupling used for?",
+          "a": "The crimp-shank Type C female coupler x shank cam and groove coupling has a female coupler on one end and a precision-machined crimp shank for hydraulic crimping on the other. The precision-machined crimp shank is made for hydraulic crimping, which removes the need for hose bands."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the crimp-shank Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The listing has 7 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-CT-C-100 to IH-CGC-CT-C-600. The body materials are aluminium, Brass, 316 Stainless Steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-CT-C-100 for the crimp-shank Type C female coupler x shank?",
+          "a": "In IH-CGC-CT-C-100, CGC is the cam and groove coupling range, CT marks the crimp-shank series and C is the Type. The last digits are the size: 100 is 1\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the crimp-shank Type C female coupler x shank cam and groove coupling?",
+          "a": "For the aluminium body the table gives 150 psi from 1\" to 4\"; 75 psi at 6\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the crimp-shank Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The crimp-shank Type C female coupler x shank is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the crimp-shank Type C female coupler x shank use and what are the options?",
+          "a": "The crimp-shank Type C female coupler x shank in 1\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the crimp-shank Type C female coupler x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the crimp-shank Type C range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the crimp-shank Type C female coupler x shank cam and groove coupling connect to?",
+          "a": "The cam end of the crimp-shank Type C female coupler x shank connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Crimp-shank or standard Type C cam and groove coupling: which one?",
+          "a": "The crimp-shank Type C has a precision-machined shank for hydraulic crimping, so it needs no hose band, while the [standard Type C](/p/standard-type-c-female-coupler-shank-cam-and-groove-coupling) has a barbed shank clamped with a hose band. Choose crimp-shank for a permanent, leak-free hose end."
+        },
+        {
+          "slot": "I",
+          "q": "How is the crimp-shank Type C female coupler x shank cam and groove coupling installed?",
+          "a": "On the crimp-shank Type C female coupler x shank, crimp the shank onto the hose with a hydraulic crimper sized to the host hose inside diameter and reinforcement. The crimped termination replaces hose bands and reusable threaded couplings, and the shank is machined for hydraulic crimping."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the crimp-shank Type C female coupler x shank made and can it be exported from Dubai?",
+          "a": "The crimp-shank Type C female coupler x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the crimp-shank Type C female coupler x shank cam and groove coupling in Dubai?",
+          "a": "Yes. The crimp-shank Type C female coupler x shank cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "crimptek-type-e-male-adapter-crimp-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the crimp-shank Type E male adapter x shank cam and groove coupling used for?",
+          "a": "The crimp-shank Type E male adapter x shank cam and groove coupling has a male adapter on one end and a precision-machined crimp shank for hydraulic crimping on the other. The precision-machined crimp shank is made for hydraulic crimping, which removes the need for hose bands."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the crimp-shank Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The listing has 7 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-CT-E-100 to IH-CGC-CT-E-600. The body materials are aluminium, Brass, 316 Stainless Steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-CT-E-100 for the crimp-shank Type E male adapter x shank?",
+          "a": "In IH-CGC-CT-E-100, CGC is the cam and groove coupling range, CT marks the crimp-shank series and E is the Type. The last digits are the size: 100 is 1\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the crimp-shank Type E male adapter x shank cam and groove coupling?",
+          "a": "For the aluminium body the table gives 150 psi from 1\" to 4\"; 75 psi at 6\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the crimp-shank Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The crimp-shank Type E male adapter x shank is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the crimp-shank Type E male adapter x shank use and what are the options?",
+          "a": "The crimp-shank Type E male adapter x shank in 1\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the crimp-shank Type E male adapter x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the crimp-shank Type E range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the crimp-shank Type E male adapter x shank cam and groove coupling connect to?",
+          "a": "The cam end of the crimp-shank Type E male adapter x shank connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Crimp-shank or standard Type E cam and groove coupling: which one?",
+          "a": "The crimp-shank Type E has a precision-machined shank for hydraulic crimping, so it needs no hose band, while the [standard Type E](/p/standard-type-e-male-adapter-shank-cam-and-groove-coupling) has a barbed shank clamped with a hose band. Choose crimp-shank for a permanent, leak-free hose end."
+        },
+        {
+          "slot": "I",
+          "q": "How is the crimp-shank Type E male adapter x shank cam and groove coupling installed?",
+          "a": "On the crimp-shank Type E male adapter x shank, crimp the shank onto the hose with a hydraulic crimper sized to the host hose inside diameter and reinforcement. The crimped termination replaces hose bands and reusable threaded couplings, and the shank is machined for hydraulic crimping."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the crimp-shank Type E male adapter x shank made and can it be exported from Dubai?",
+          "a": "The crimp-shank Type E male adapter x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the crimp-shank Type E male adapter x shank cam and groove coupling in Dubai?",
+          "a": "Yes. We keep the crimp-shank Type E male adapter x shank cam and groove coupling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-b-female-coupler-male-npt-self-locking-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type B female coupler x male NPT cam and groove coupling used for?",
+          "a": "The self-locking Type B female coupler x male NPT cam and groove coupling has a self-locking female coupler on one end and a male NPT thread on the other. Its spring-loaded cam arms lock automatically when the handles are seated, which prevents disengagement under pressure spikes, vibration or operator error."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The listing has 6 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\", with Indus part numbers IH-CGC-SL-B-100 to IH-CGC-SL-B-400. The body materials are aluminium, Brass, 316 Stainless Steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-B-100 for the self-locking Type B female coupler x male NPT?",
+          "a": "In IH-CGC-SL-B-100, CGC is the cam and groove coupling range, SL marks the self-locking series and B is the Type. The last digits are the size: 100 is 1\" and 400 is 4\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type B female coupler x male NPT cam and groove coupling?",
+          "a": "For the aluminium body the table gives 150 psi from 1\" to 4\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The self-locking Type B female coupler x male NPT is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type B female coupler x male NPT use and what are the options?",
+          "a": "The self-locking Type B female coupler x male NPT in 1\" to 4\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type B female coupler x male NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type B range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type B female coupler x male NPT cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type B female coupler x male NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking or standard Type B cam and groove coupling: which one?",
+          "a": "The self-locking Type B has spring-loaded cam arms that lock automatically, preventing disengagement under pressure spikes, vibration or operator error, while the [standard Type B](/p/standard-type-b-female-coupler-male-npt-cam-and-groove-coupling) is locked by hand and is offered in more sizes and materials. They are backwards compatible."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type B female coupler x male NPT cam and groove coupling installed?",
+          "a": "On the self-locking Type B female coupler x male NPT, seat the cam handles fully and the spring-loaded arms lock on their own. To disconnect, release the lock and then open the arms; check the gasket for wear before each connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type B female coupler x male NPT made and can it be exported from Dubai?",
+          "a": "The self-locking Type B female coupler x male NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 4\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type B female coupler x male NPT cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the self-locking Type B female coupler x male NPT cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-c-female-coupler-hose-shank-self-locking-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type C female coupler x hose shank cam and groove coupling used for?",
+          "a": "The self-locking Type C female coupler x hose shank cam and groove coupling has a self-locking female coupler on one end and a barbed hose shank on the other. Its spring-loaded cam arms lock automatically when the handles are seated, which prevents disengagement under pressure spikes, vibration or operator error."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type C female coupler x hose shank cam and groove coupling come in?",
+          "a": "The listing has 7 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-SL-C-100 to IH-CGC-SL-C-600. The body materials are aluminium, Brass, 316 Stainless Steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-C-100 for the self-locking Type C female coupler x hose shank?",
+          "a": "In IH-CGC-SL-C-100, CGC is the cam and groove coupling range, SL marks the self-locking series and C is the Type. The last digits are the size: 100 is 1\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type C female coupler x hose shank cam and groove coupling?",
+          "a": "The self-locking Type C female coupler x hose shank (1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\" and 6\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type C female coupler x hose shank cam and groove coupling come in?",
+          "a": "The self-locking Type C female coupler x hose shank is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type C female coupler x hose shank use and what are the options?",
+          "a": "The self-locking Type C female coupler x hose shank in 1\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type C female coupler x hose shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type C range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type C female coupler x hose shank cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type C female coupler x hose shank connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking or standard Type C cam and groove coupling: which one?",
+          "a": "The self-locking Type C has spring-loaded cam arms that lock automatically, preventing disengagement under pressure spikes, vibration or operator error, while the [standard Type C](/p/standard-type-c-female-coupler-shank-cam-and-groove-coupling) is locked by hand and is offered in more sizes and materials. They are backwards compatible."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type C female coupler x hose shank cam and groove coupling installed?",
+          "a": "On the self-locking Type C female coupler x hose shank, seat the cam handles fully and the spring-loaded arms lock on their own. To disconnect, release the lock and then open the arms; check the gasket for wear before each connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type C female coupler x hose shank made and can it be exported from Dubai?",
+          "a": "The self-locking Type C female coupler x hose shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type C female coupler x hose shank cam and groove coupling in Dubai?",
+          "a": "Yes. We keep the self-locking Type C female coupler x hose shank cam and groove coupling in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-d-female-coupler-female-npt-self-locking-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type D female coupler x female NPT cam and groove coupling used for?",
+          "a": "The self-locking Type D female coupler x female NPT cam and groove coupling has a self-locking female coupler on one end and a female NPT thread on the other. Its spring-loaded cam arms lock automatically when the handles are seated, which prevents disengagement under pressure spikes, vibration or operator error."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The listing has 6 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\", with Indus part numbers IH-CGC-SL-D-100 to IH-CGC-SL-D-400. The body materials are aluminium, Brass, 316 Stainless Steel."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-D-100 for the self-locking Type D female coupler x female NPT?",
+          "a": "In IH-CGC-SL-D-100, CGC is the cam and groove coupling range, SL marks the self-locking series and D is the Type. The last digits are the size: 100 is 1\" and 400 is 4\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type D female coupler x female NPT cam and groove coupling?",
+          "a": "The self-locking Type D female coupler x female NPT (1\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The self-locking Type D female coupler x female NPT is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type D female coupler x female NPT use and what are the options?",
+          "a": "The self-locking Type D female coupler x female NPT in 1\" to 4\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type D female coupler x female NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type D range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type D female coupler x female NPT cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type D female coupler x female NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking or standard Type D cam and groove coupling: which one?",
+          "a": "The self-locking Type D has spring-loaded cam arms that lock automatically, preventing disengagement under pressure spikes, vibration or operator error, while the [standard Type D](/p/standard-type-d-female-coupler-female-npt-cam-and-groove-coupling) is locked by hand and is offered in more sizes and materials. They are backwards compatible."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type D female coupler x female NPT cam and groove coupling installed?",
+          "a": "On the self-locking Type D female coupler x female NPT, seat the cam handles fully and the spring-loaded arms lock on their own. To disconnect, release the lock and then open the arms; check the gasket for wear before each connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type D female coupler x female NPT made and can it be exported from Dubai?",
+          "a": "The self-locking Type D female coupler x female NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 4\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type D female coupler x female NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The self-locking Type D female coupler x female NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-da-female-coupler-male-adapter-self-locking-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type DA female coupler x male adapter cam and groove coupling used for?",
+          "a": "The self-locking Type DA female coupler x male adapter cam and groove coupling has a self-locking female coupler on one end and a male adapter (cam-grooved) on the other. Its spring-loaded cam arms lock automatically when the handles are seated, which prevents disengagement under pressure spikes, vibration or operator error."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The listing has 1 part numbers: 3\" × 2\", with Indus part numbers IH-CGC-SL-DA-300-200 to IH-CGC-SL-DA-300-200. The body materials are aluminium, Brass, 316 Stainless Steel. Rows such as 3\" × 2\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-DA-300-200 for the self-locking Type DA female coupler x male adapter?",
+          "a": "In IH-CGC-SL-DA-300-200, CGC is the cam and groove coupling range, SL marks the self-locking series and DA is the Type. The last digits are the size: 200 is 3\" × 2\" and 200 is 3\" × 2\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type DA female coupler x male adapter cam and groove coupling?",
+          "a": "The self-locking Type DA female coupler x male adapter (3\" × 2\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The self-locking Type DA female coupler x male adapter is listed in aluminium, Brass, 316 Stainless Steel. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type DA female coupler x male adapter use and what are the options?",
+          "a": "The self-locking Type DA female coupler x male adapter in 3\" × 2\" to 3\" × 2\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type DA female coupler x male adapter cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type DA range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type DA female coupler x male adapter cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type DA female coupler x male adapter connects to a female coupler on its coupler end and a male adapter on its other end, so it joins in line, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking type da female coupler x male adapter or the 45° elbow Type DA: which should I choose?",
+          "a": "The self-locking Type DA female coupler x male adapter has spring-loaded self-locking cam arms, while the [45° elbow Type DA](/p/type-da-45-elbow-female-coupler-male-adapter-cam-and-groove-coupling) has a 45° body. Both are Type DA, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type DA female coupler x male adapter cam and groove coupling installed?",
+          "a": "On the self-locking Type DA female coupler x male adapter, seat the cam handles fully and the spring-loaded arms lock on their own. To disconnect, release the lock and then open the arms; check the gasket for wear before each connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type DA female coupler x male adapter made and can it be exported from Dubai?",
+          "a": "The self-locking Type DA female coupler x male adapter is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (3\" × 2\" to 3\" × 2\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type DA female coupler x male adapter cam and groove coupling in Dubai?",
+          "a": "Yes. The self-locking Type DA female coupler x male adapter cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-dc-stainless-steel-coupler-dust-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type DC stainless steel coupler dust cap cam and groove coupling used for?",
+          "a": "The self-locking Type DC stainless steel coupler dust cap caps a cam and groove half to keep dust and dirt out when it is not in service. It is a protection part and not designed for pressure, and the listing has 6 sizes from 1\" to 4\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type DC stainless steel coupler dust cap cam and groove coupling come in?",
+          "a": "The listing has 6 part numbers: 1\", 1-1/2\", 2\", 2-1/2\", 3\" and 4\", with Indus part numbers IH-CGC-SL-DC-100 to IH-CGC-SL-DC-400. The body materials are Stainless steel grades only (316 SS, 304 SS)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-DC-100 for the self-locking Type DC stainless steel coupler dust cap?",
+          "a": "In IH-CGC-SL-DC-100, CGC is the cam and groove coupling range, SL marks the self-locking series and DC is the Type. The last digits are the size: 100 is 1\" and 400 is 4\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type DC stainless steel coupler dust cap cam and groove coupling?",
+          "a": "The self-locking Type DC stainless steel coupler dust cap is not designed for pressure applications; it is for dust protection only. Do not use it to hold line pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type DC stainless steel coupler dust cap cam and groove coupling come in?",
+          "a": "The self-locking Type DC stainless steel coupler dust cap is made in stainless steel grades only, 316 SS and 304 SS, for corrosive-environment idle protection, with a Buna-N (nitrile) gasket as standard."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type DC stainless steel coupler dust cap use and what are the options?",
+          "a": "The self-locking Type DC stainless steel coupler dust cap in 1\" to 4\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type DC stainless steel coupler dust cap cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type DC range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type DC stainless steel coupler dust cap cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type DC stainless steel coupler dust cap connects to a male adapter of the same size, such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking or standard Type DC cam and groove coupling: which one?",
+          "a": "The self-locking Type DC has spring-loaded cam arms that lock automatically, preventing disengagement under pressure spikes, vibration or operator error, while the [standard Type DC](/p/standard-type-dc-coupler-dust-cap) is locked by hand and is offered in more sizes and materials. They are backwards compatible."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type DC stainless steel coupler dust cap cam and groove coupling installed?",
+          "a": "For the self-locking Type DC stainless steel coupler dust cap, order one DC for each male adapter (Type A, E or F) that is to be closed. Fit it on any idle half to keep dust and dirt out of the seat; it is not a pressure part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type DC stainless steel coupler dust cap made and can it be exported from Dubai?",
+          "a": "The self-locking Type DC stainless steel coupler dust cap is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 4\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type DC stainless steel coupler dust cap cam and groove coupling in Dubai?",
+          "a": "Yes. The self-locking Type DC stainless steel coupler dust cap cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "self-locking-type-dd-female-coupler-female-coupler-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the self-locking Type DD female coupler x female coupler cam and groove coupling used for?",
+          "a": "The self-locking Type DD female coupler x female coupler cam and groove coupling has a self-locking female coupler on one end and a self-locking female coupler (spring-loaded cam arms) on the other. Its spring-loaded cam arms lock automatically when the handles are seated, which prevents disengagement under pressure spikes, vibration or operator error."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the self-locking Type DD female coupler x female coupler cam and groove coupling come in?",
+          "a": "The listing has 2 part numbers: 2\" and 3\", with Indus part numbers IH-CGC-SL-DD-200 to IH-CGC-SL-DD-300. The body materials are aluminium."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-SL-DD-200 for the self-locking Type DD female coupler x female coupler?",
+          "a": "In IH-CGC-SL-DD-200, CGC is the cam and groove coupling range, SL marks the self-locking series and DD is the Type. The last digits are the size: 200 is 2\" and 300 is 3\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the self-locking Type DD female coupler x female coupler cam and groove coupling?",
+          "a": "The self-locking Type DD female coupler x female coupler (2\" and 3\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the self-locking Type DD female coupler x female coupler cam and groove coupling come in?",
+          "a": "The self-locking Type DD female coupler x female coupler is listed in aluminium. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the self-locking Type DD female coupler x female coupler use and what are the options?",
+          "a": "The self-locking Type DD female coupler x female coupler in 2\" to 3\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the self-locking Type DD female coupler x female coupler cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the self-locking Type DD range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the self-locking Type DD female coupler x female coupler cam and groove coupling connect to?",
+          "a": "The cam end of the self-locking Type DD female coupler x female coupler connects to a male adapter on either end, since both ends are female couplers, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Self-locking type dd female coupler x female coupler or the 90° elbow Type DD: which should I choose?",
+          "a": "The self-locking Type DD female coupler x female coupler has spring-loaded self-locking cam arms, while the [90° elbow Type DD](/p/type-dd-90-elbow-female-coupler-female-coupler-cam-and-groove-coupling) has a 90° body. Both are Type DD, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the self-locking Type DD female coupler x female coupler cam and groove coupling installed?",
+          "a": "On the self-locking Type DD female coupler x female coupler, seat the cam handles fully and the spring-loaded arms lock on their own. To disconnect, release the lock and then open the arms; check the gasket for wear before each connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the self-locking Type DD female coupler x female coupler made and can it be exported from Dubai?",
+          "a": "The self-locking Type DD female coupler x female coupler is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (2\" to 3\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the self-locking Type DD female coupler x female coupler cam and groove coupling in Dubai?",
+          "a": "Yes, the self-locking Type DD female coupler x female coupler cam and groove coupling is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-a-female-npt-male-adapter-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type A female NPT x male adapter cam and groove coupling used for?",
+          "a": "The standard Type A female NPT x male adapter cam and groove coupling has a male adapter on one end and a female NPT thread on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type A female NPT x male adapter cam and groove coupling come in?",
+          "a": "The listing has 16 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-A-050 to IH-CGC-STD-A-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-A-050 for the standard Type A female NPT x male adapter?",
+          "a": "In IH-CGC-STD-A-050, CGC is the cam and groove coupling range, STD marks the standard series and A is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type A female NPT x male adapter cam and groove coupling?",
+          "a": "For the aluminium body the table gives 125 psi at 1/2\"; 150 psi from 3/4\" to 4\"; 75 psi from 5\" to 6\"; 40 psi from 8\" NAE to 8\" PTK; 25 psi from 10\" to 12\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type A female NPT x male adapter cam and groove coupling come in?",
+          "a": "The standard Type A female NPT x male adapter is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type A female NPT x male adapter use and what are the options?",
+          "a": "The standard Type A female NPT x male adapter in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type A female NPT x male adapter cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type A range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type A female NPT x male adapter cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type A female NPT x male adapter connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard type a female npt x male adapter or the 90° elbow Type A: which should I choose?",
+          "a": "The standard Type A female NPT x male adapter has hand-operated cam arms, while the [90° elbow Type A](/p/type-a-90-elbow-male-adapter-female-npt-cam-and-groove-coupling) has a 90° body. Both are Type A, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type A female NPT x male adapter cam and groove coupling installed?",
+          "a": "On the standard Type A female NPT x male adapter, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type A female NPT x male adapter made and can it be exported from Dubai?",
+          "a": "The standard Type A female NPT x male adapter is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type A female NPT x male adapter cam and groove coupling in Dubai?",
+          "a": "Yes. The standard Type A female NPT x male adapter cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-b-female-coupler-male-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type B female coupler x male NPT cam and groove coupling used for?",
+          "a": "The standard Type B female coupler x male NPT cam and groove coupling has a female coupler on one end and a male NPT thread on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The listing has 14 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE and 8\" PTK, with Indus part numbers IH-CGC-STD-B-050 to IH-CGC-STD-B-800-PTK. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-B-050 for the standard Type B female coupler x male NPT?",
+          "a": "In IH-CGC-STD-B-050, CGC is the cam and groove coupling range, STD marks the standard series and B is the Type. The last digits are the size: 050 is 1/2\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type B female coupler x male NPT cam and groove coupling?",
+          "a": "For the aluminium body the table gives 125 psi at 1/2\"; 150 psi from 1/2\" × 3/4\" to 4\"; 75 psi from 5\" to 6\"; 40 psi from 8\" NAE to 8\" PTK. Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The standard Type B female coupler x male NPT is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type B female coupler x male NPT use and what are the options?",
+          "a": "The standard Type B female coupler x male NPT in 1/2\" to 8\" PTK has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type B female coupler x male NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type B range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type B female coupler x male NPT cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type B female coupler x male NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard Type B or self-locking Type B cam and groove coupling: which one?",
+          "a": "The standard Type B locks with hand-operated cam arms, while the [self-locking Type B](/p/self-locking-type-b-female-coupler-male-npt-self-locking-cam-and-groove-coupling) has spring-loaded cam arms that lock automatically when the handles are seated. Self-locking suits offshore, hazardous-fluid and pressurised-air service, and mates with standard halves of the same type."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type B female coupler x male NPT cam and groove coupling installed?",
+          "a": "On the standard Type B female coupler x male NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type B female coupler x male NPT made and can it be exported from Dubai?",
+          "a": "The standard Type B female coupler x male NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 8\" PTK range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type B female coupler x male NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The standard Type B female coupler x male NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-c-female-coupler-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type C female coupler x shank cam and groove coupling used for?",
+          "a": "The standard Type C female coupler x shank cam and groove coupling has a female coupler on one end and a barbed shank on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The listing has 16 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-C-050 to IH-CGC-STD-C-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-C-050 for the standard Type C female coupler x shank?",
+          "a": "In IH-CGC-STD-C-050, CGC is the cam and groove coupling range, STD marks the standard series and C is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type C female coupler x shank cam and groove coupling?",
+          "a": "For the aluminium body the table gives 125 psi at 1/2\"; 150 psi from 3/4\" to 4\"; 75 psi from 5\" to 6\"; 40 psi from 8\" NAE to 8\" PTK; 25 psi from 10\" to 12\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The standard Type C female coupler x shank is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type C female coupler x shank use and what are the options?",
+          "a": "The standard Type C female coupler x shank in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type C female coupler x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type C range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type C female coupler x shank cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type C female coupler x shank connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard Type C or self-locking Type C cam and groove coupling: which one?",
+          "a": "The standard Type C locks with hand-operated cam arms, while the [self-locking Type C](/p/self-locking-type-c-female-coupler-hose-shank-self-locking-cam-and-groove-coupling) has spring-loaded cam arms that lock automatically when the handles are seated. Self-locking suits offshore, hazardous-fluid and pressurised-air service, and mates with standard halves of the same type."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type C female coupler x shank cam and groove coupling installed?",
+          "a": "On the standard Type C female coupler x shank, slide the hose over the barbed shank and clamp it with a hose band, then engage the cam arms on the mating male adapter. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type C female coupler x shank made and can it be exported from Dubai?",
+          "a": "The standard Type C female coupler x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type C female coupler x shank cam and groove coupling in Dubai?",
+          "a": "Yes. The standard Type C female coupler x shank cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-d-female-coupler-female-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type D female coupler x female NPT cam and groove coupling used for?",
+          "a": "The standard Type D female coupler x female NPT cam and groove coupling has a female coupler on one end and a female NPT thread on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The listing has 16 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-D-050 to IH-CGC-STD-D-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-D-050 for the standard Type D female coupler x female NPT?",
+          "a": "In IH-CGC-STD-D-050, CGC is the cam and groove coupling range, STD marks the standard series and D is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type D female coupler x female NPT cam and groove coupling?",
+          "a": "For the aluminium body the table gives 125 psi at 1/2\"; 150 psi from 3/4\" to 4\"; 75 psi from 5\" to 6\"; 40 psi from 8\" NAE to 8\" PTK; 25 psi from 10\" to 12\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The standard Type D female coupler x female NPT is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type D female coupler x female NPT use and what are the options?",
+          "a": "The standard Type D female coupler x female NPT in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type D female coupler x female NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type D range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type D female coupler x female NPT cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type D female coupler x female NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard Type D or self-locking Type D cam and groove coupling: which one?",
+          "a": "The standard Type D locks with hand-operated cam arms, while the [self-locking Type D](/p/self-locking-type-d-female-coupler-female-npt-self-locking-cam-and-groove-coupling) has spring-loaded cam arms that lock automatically when the handles are seated. Self-locking suits offshore, hazardous-fluid and pressurised-air service, and mates with standard halves of the same type."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type D female coupler x female NPT cam and groove coupling installed?",
+          "a": "On the standard Type D female coupler x female NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type D female coupler x female NPT made and can it be exported from Dubai?",
+          "a": "The standard Type D female coupler x female NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type D female coupler x female NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The standard Type D female coupler x female NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-dc-coupler-dust-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type DC coupler dust cap cam and groove coupling used for?",
+          "a": "The standard Type DC coupler dust cap caps a cam and groove half to keep dust and dirt out when it is not in service. It is a protection part and not designed for pressure, and the listing has 15 sizes from 1/2\" to 12\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type DC coupler dust cap cam and groove coupling come in?",
+          "a": "The listing has 15 part numbers: 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-DC-050 to IH-CGC-STD-DC-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-DC-050 for the standard Type DC coupler dust cap?",
+          "a": "In IH-CGC-STD-DC-050, CGC is the cam and groove coupling range, STD marks the standard series and DC is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type DC coupler dust cap cam and groove coupling?",
+          "a": "The standard Type DC coupler dust cap is not designed for pressure applications; it is for dust protection only. Do not use it to hold line pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type DC coupler dust cap cam and groove coupling come in?",
+          "a": "The standard Type DC coupler dust cap is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type DC coupler dust cap use and what are the options?",
+          "a": "The standard Type DC coupler dust cap in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type DC coupler dust cap cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type DC range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type DC coupler dust cap cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type DC coupler dust cap connects to a male adapter of the same size, such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard Type DC or self-locking Type DC cam and groove coupling: which one?",
+          "a": "The standard Type DC locks with hand-operated cam arms, while the [self-locking Type DC](/p/self-locking-type-dc-stainless-steel-coupler-dust-cap) has spring-loaded cam arms that lock automatically when the handles are seated. Self-locking suits offshore, hazardous-fluid and pressurised-air service, and mates with standard halves of the same type."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type DC coupler dust cap cam and groove coupling installed?",
+          "a": "For the standard Type DC coupler dust cap, order one DC for each male adapter (Type A, E or F) that is to be closed. Fit it on any idle half to keep dust and dirt out of the seat; it is not a pressure part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type DC coupler dust cap made and can it be exported from Dubai?",
+          "a": "The standard Type DC coupler dust cap is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type DC coupler dust cap cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the standard Type DC coupler dust cap cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-dp-dust-plug-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type DP dust plug adapter cam and groove coupling used for?",
+          "a": "The standard Type DP dust plug adapter plugs a cam and groove half to keep dust and dirt out when it is not in service. It is a protection part and not designed for pressure, and the listing has 15 sizes from 1/2\" to 12\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type DP dust plug adapter cam and groove coupling come in?",
+          "a": "The listing has 15 part numbers: 1/2\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-DP-050 to IH-CGC-STD-DP-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-DP-050 for the standard Type DP dust plug adapter?",
+          "a": "In IH-CGC-STD-DP-050, CGC is the cam and groove coupling range, STD marks the standard series and DP is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type DP dust plug adapter cam and groove coupling?",
+          "a": "The standard Type DP dust plug adapter is not designed for pressure applications; it is for dust protection only. Do not use it to hold line pressure."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type DP dust plug adapter cam and groove coupling come in?",
+          "a": "The standard Type DP dust plug adapter is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type DP dust plug adapter use and what are the options?",
+          "a": "The standard Type DP dust plug adapter in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type DP dust plug adapter cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type DP range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type DP dust plug adapter cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type DP dust plug adapter connects to a female coupler of the same size, such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Type DP or Type DC cam and groove coupling: which half do I need?",
+          "a": "They are the two halves of a joint: a Type DP is a male adapter (cam-grooved) end, and the [Type DC](/p/standard-type-dc-coupler-dust-cap) is its mating half. You need one of each on a line, so choose by which half the other side already has."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type DP dust plug adapter cam and groove coupling installed?",
+          "a": "For the standard Type DP dust plug adapter, order one DP for each female coupler (Type B, C or D) that is to be closed. Fit it on any idle half to keep dust and dirt out of the seat; it is not a pressure part."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type DP dust plug adapter made and can it be exported from Dubai?",
+          "a": "The standard Type DP dust plug adapter is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type DP dust plug adapter cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the standard Type DP dust plug adapter cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-e-male-adapter-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type E male adapter x shank cam and groove coupling used for?",
+          "a": "The standard Type E male adapter x shank cam and groove coupling has a male adapter on one end and a barbed shank on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The listing has 16 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-E-050 to IH-CGC-STD-E-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-E-050 for the standard Type E male adapter x shank?",
+          "a": "In IH-CGC-STD-E-050, CGC is the cam and groove coupling range, STD marks the standard series and E is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type E male adapter x shank cam and groove coupling?",
+          "a": "For the aluminium body the table gives 150 psi from 1/2\" to 4\"; 75 psi from 5\" to 6\"; 40 psi from 8\" NAE to 8\" PTK; 25 psi from 10\" to 12\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The standard Type E male adapter x shank is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type E male adapter x shank use and what are the options?",
+          "a": "The standard Type E male adapter x shank in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type E male adapter x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type E range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type E male adapter x shank cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type E male adapter x shank connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard type e male adapter x shank or the crimp-shank Type E: which should I choose?",
+          "a": "The standard Type E male adapter x shank has hand-operated cam arms, while the [crimp-shank Type E](/p/crimptek-type-e-male-adapter-crimp-shank-cam-and-groove-coupling) has a crimp shank. Both are Type E, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type E male adapter x shank cam and groove coupling installed?",
+          "a": "On the standard Type E male adapter x shank, slide the hose over the barbed shank and clamp it with a hose band, then engage the cam arms on the mating male adapter. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type E male adapter x shank made and can it be exported from Dubai?",
+          "a": "The standard Type E male adapter x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type E male adapter x shank cam and groove coupling in Dubai?",
+          "a": "Yes, the standard Type E male adapter x shank cam and groove coupling is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "standard-type-f-male-adapter-male-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the standard Type F male adapter x male NPT cam and groove coupling used for?",
+          "a": "The standard Type F male adapter x male NPT cam and groove coupling has a male adapter on one end and a male NPT thread on the other. Two cam arms engage a male adapter into a female coupler on a soft gasket seal, the common camlock connection for low-to-medium pressure transfer."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the standard Type F male adapter x male NPT cam and groove coupling come in?",
+          "a": "The listing has 17 part numbers: 1/2\", 1/2\" × 3/4\", 3/4\", 1\", 1-1/4\", 1-1/2\", 2\" × 3/4\", 2\", 2-1/2\", 3\", 4\", 5\", 6\", 8\" NAE, 8\" PTK, 10\" and 12\", with Indus part numbers IH-CGC-STD-F-050 to IH-CGC-STD-F-1200. The body materials are aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). The 8 inch size comes in NAE and PTK bodies that do not interchange, so say which one you have. Rows such as 1/2\" × 3/4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-STD-F-050 for the standard Type F male adapter x male NPT?",
+          "a": "In IH-CGC-STD-F-050, CGC is the cam and groove coupling range, STD marks the standard series and F is the Type. The last digits are the size: 050 is 1/2\" and 1200 is 12\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the standard Type F male adapter x male NPT cam and groove coupling?",
+          "a": "For the aluminium body the table gives 125 psi at 1/2\"; 150 psi from 3/4\" to 12\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the standard Type F male adapter x male NPT cam and groove coupling come in?",
+          "a": "The standard Type F male adapter x male NPT is listed in aluminium, Brass, 316 Stainless Steel, 304 Stainless Steel, Plated Iron, Polypropylene, Nyglass (composite). Aluminium is the workhorse for general air, water and petroleum service, brass is used for marine, fuel and food-contact service, and 316 stainless steel for chemical, pharma and corrosive marine service. Plated iron, polypropylene and Ny-glass are budget choices for non-corrosive low-pressure duty."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the standard Type F male adapter x male NPT use and what are the options?",
+          "a": "The standard Type F male adapter x male NPT in 1/2\" to 12\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the standard Type F male adapter x male NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the standard Type F range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the standard Type F male adapter x male NPT cam and groove coupling connect to?",
+          "a": "The cam end of the standard Type F male adapter x male NPT connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "Standard type f male adapter x male npt or the 90° elbow Type F: which should I choose?",
+          "a": "The standard Type F male adapter x male NPT has hand-operated cam arms, while the [90° elbow Type F](/p/type-f-90-elbow-male-adapter-male-npt-cam-and-groove-coupling) has a 90° body. Both are Type F, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the standard Type F male adapter x male NPT cam and groove coupling installed?",
+          "a": "On the standard Type F male adapter x male NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the standard Type F male adapter x male NPT made and can it be exported from Dubai?",
+          "a": "The standard Type F male adapter x male NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1/2\" to 12\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the standard Type F male adapter x male NPT cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the standard Type F male adapter x male NPT cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-a-90-elbow-male-adapter-female-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type A male adapter x female NPT cam and groove coupling used for?",
+          "a": "The 90° elbow Type A male adapter x female NPT cam and groove coupling has a male adapter on one end and a female NPT thread on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type A male adapter x female NPT cam and groove coupling come in?",
+          "a": "The listing has 4 part numbers: 1-1/2\", 2\", 3\" and 4\", with Indus part numbers IH-CGC-90-A-150 to IH-CGC-90-A-400. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-A-150 for the 90° elbow Type A male adapter x female NPT?",
+          "a": "In IH-CGC-90-A-150, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and A is the Type. The last digits are the size: 150 is 1-1/2\" and 400 is 4\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type A male adapter x female NPT cam and groove coupling?",
+          "a": "The 90° elbow Type A male adapter x female NPT (1-1/2\", 2\", 3\" and 4\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type A male adapter x female NPT cam and groove coupling come in?",
+          "a": "The 90° elbow Type A male adapter x female NPT is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type A male adapter x female NPT use and what are the options?",
+          "a": "The 90° elbow Type A male adapter x female NPT in 1-1/2\" to 4\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type A male adapter x female NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type A range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type A male adapter x female NPT cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type A male adapter x female NPT connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type A cam and groove coupling: which one?",
+          "a": "The 90° elbow Type A (male adapter end) turns the line at the coupling to clear obstructions, while the [straight standard Type A](/p/standard-type-a-female-npt-male-adapter-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type A male adapter x female NPT cam and groove coupling installed?",
+          "a": "On the 90° elbow Type A male adapter x female NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type A male adapter x female NPT made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type A male adapter x female NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1-1/2\" to 4\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type A male adapter x female NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The 90° elbow Type A male adapter x female NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "type-b-90-elbow-female-coupler-male-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type B female coupler x male NPT cam and groove coupling used for?",
+          "a": "The 90° elbow Type B female coupler x male NPT cam and groove coupling has a female coupler on one end and a male NPT thread on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The listing has 2 part numbers: 1-1/2\" and 2\", with Indus part numbers IH-CGC-90-B-150 to IH-CGC-90-B-200. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-B-150 for the 90° elbow Type B female coupler x male NPT?",
+          "a": "In IH-CGC-90-B-150, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and B is the Type. The last digits are the size: 150 is 1-1/2\" and 200 is 2\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type B female coupler x male NPT cam and groove coupling?",
+          "a": "The 90° elbow Type B female coupler x male NPT (1-1/2\" and 2\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type B female coupler x male NPT cam and groove coupling come in?",
+          "a": "The 90° elbow Type B female coupler x male NPT is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type B female coupler x male NPT use and what are the options?",
+          "a": "The 90° elbow Type B female coupler x male NPT in 1-1/2\" to 2\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type B female coupler x male NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type B range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type B female coupler x male NPT cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type B female coupler x male NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type B cam and groove coupling: which one?",
+          "a": "The 90° elbow Type B (female coupler end) turns the line at the coupling to clear obstructions, while the [straight standard Type B](/p/standard-type-b-female-coupler-male-npt-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type B female coupler x male NPT cam and groove coupling installed?",
+          "a": "On the 90° elbow Type B female coupler x male NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type B female coupler x male NPT made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type B female coupler x male NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1-1/2\" to 2\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type B female coupler x male NPT cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the 90° elbow Type B female coupler x male NPT cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-c-90-elbow-female-coupler-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type C female coupler x shank cam and groove coupling used for?",
+          "a": "The 90° elbow Type C female coupler x shank cam and groove coupling has a female coupler on one end and a barbed shank on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The listing has 6 part numbers: 1\", 1-1/2\", 2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-90-C-100 to IH-CGC-90-C-600. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-C-100 for the 90° elbow Type C female coupler x shank?",
+          "a": "In IH-CGC-90-C-100, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and C is the Type. The last digits are the size: 100 is 1\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type C female coupler x shank cam and groove coupling?",
+          "a": "The 90° elbow Type C female coupler x shank (1\", 1-1/2\", 2\", 3\", 4\" and 6\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type C female coupler x shank cam and groove coupling come in?",
+          "a": "The 90° elbow Type C female coupler x shank is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type C female coupler x shank use and what are the options?",
+          "a": "The 90° elbow Type C female coupler x shank in 1\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type C female coupler x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type C range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type C female coupler x shank cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type C female coupler x shank connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type C cam and groove coupling: which one?",
+          "a": "The 90° elbow Type C (female coupler end) turns the line at the coupling to clear obstructions, while the [straight standard Type C](/p/standard-type-c-female-coupler-shank-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type C female coupler x shank cam and groove coupling installed?",
+          "a": "On the 90° elbow Type C female coupler x shank, slide the hose over the barbed shank and clamp it with a hose band, then engage the cam arms on the mating male adapter. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type C female coupler x shank made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type C female coupler x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type C female coupler x shank cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the 90° elbow Type C female coupler x shank cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-d-90-elbow-female-coupler-female-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type D female coupler x female NPT cam and groove coupling used for?",
+          "a": "The 90° elbow Type D female coupler x female NPT cam and groove coupling has a female coupler on one end and a female NPT thread on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The listing has 6 part numbers: 1\", 1-1/2\", 2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-90-D-100 to IH-CGC-90-D-600. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-D-100 for the 90° elbow Type D female coupler x female NPT?",
+          "a": "In IH-CGC-90-D-100, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and D is the Type. The last digits are the size: 100 is 1\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type D female coupler x female NPT cam and groove coupling?",
+          "a": "The 90° elbow Type D female coupler x female NPT (1\", 1-1/2\", 2\", 3\", 4\" and 6\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type D female coupler x female NPT cam and groove coupling come in?",
+          "a": "The 90° elbow Type D female coupler x female NPT is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type D female coupler x female NPT use and what are the options?",
+          "a": "The 90° elbow Type D female coupler x female NPT in 1\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type D female coupler x female NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type D range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type D female coupler x female NPT cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type D female coupler x female NPT connects to a male adapter such as a Type A, E or F, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type D cam and groove coupling: which one?",
+          "a": "The 90° elbow Type D (female coupler end) turns the line at the coupling to clear obstructions, while the [straight standard Type D](/p/standard-type-d-female-coupler-female-npt-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type D female coupler x female NPT cam and groove coupling installed?",
+          "a": "On the 90° elbow Type D female coupler x female NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type D female coupler x female NPT made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type D female coupler x female NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type D female coupler x female NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The 90° elbow Type D female coupler x female NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "type-da-45-elbow-female-coupler-male-adapter-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° elbow Type DA female coupler x male adapter cam and groove coupling used for?",
+          "a": "The 45° elbow Type DA female coupler x male adapter cam and groove coupling has a female coupler on one end and a male adapter (cam-grooved) on the other. The 45° body gives a moderate-angle bend at the joint, useful when a 90° turn is too aggressive for the line geometry."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 45° elbow Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The listing has 5 part numbers: 2\", 3\", 4\", 6\" × 4\" and 6\", with Indus part numbers IH-CGC-45-DA-200 to IH-CGC-45-DA-600. The body materials are aluminium, Plated Iron. Rows such as 6\" × 4\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-45-DA-200 for the 45° elbow Type DA female coupler x male adapter?",
+          "a": "In IH-CGC-45-DA-200, CGC is the cam and groove coupling range, 45 marks the 45° elbow series and DA is the Type. The last digits are the size: 200 is 2\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 45° elbow Type DA female coupler x male adapter cam and groove coupling?",
+          "a": "The 45° elbow Type DA female coupler x male adapter (2\", 3\", 4\", 6\" × 4\" and 6\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 45° elbow Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The 45° elbow Type DA female coupler x male adapter is listed in aluminium, Plated Iron. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 45° elbow Type DA female coupler x male adapter use and what are the options?",
+          "a": "The 45° elbow Type DA female coupler x male adapter in 2\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 45° elbow Type DA female coupler x male adapter cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 45° elbow Type DA range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° elbow Type DA female coupler x male adapter cam and groove coupling connect to?",
+          "a": "The cam end of the 45° elbow Type DA female coupler x male adapter connects to a female coupler on its coupler end and a male adapter on its other end, so it joins in line, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "45° elbow type da female coupler x male adapter or the self-locking Type DA: which should I choose?",
+          "a": "The 45° elbow Type DA female coupler x male adapter has a 45° body, while the [self-locking Type DA](/p/self-locking-type-da-female-coupler-male-adapter-self-locking-cam-and-groove-coupling) has spring-loaded self-locking cam arms. Both are Type DA, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 45° elbow Type DA female coupler x male adapter cam and groove coupling installed?",
+          "a": "For the 45° elbow Type DA female coupler x male adapter, engage the male adapter in the female coupler and close both cam arms evenly. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° elbow Type DA female coupler x male adapter made and can it be exported from Dubai?",
+          "a": "The 45° elbow Type DA female coupler x male adapter is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (2\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° elbow Type DA female coupler x male adapter cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the 45° elbow Type DA female coupler x male adapter cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-da-90-elbow-female-coupler-male-adapter-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type DA female coupler x male adapter cam and groove coupling used for?",
+          "a": "The 90° elbow Type DA female coupler x male adapter cam and groove coupling has a female coupler on one end and a male adapter (cam-grooved) on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The listing has 9 part numbers: 1-1/2\", 2\", 2\" × 3\", 3\" × 2\", 3\", 3\" × 4\", 4\" × 3\", 4\" and 6\", with Indus part numbers IH-CGC-90-DA-150 to IH-CGC-90-DA-600. The body materials are aluminium, Plated Iron. Rows such as 2\" × 3\" are reducing versions with a different size on each end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-DA-150 for the 90° elbow Type DA female coupler x male adapter?",
+          "a": "In IH-CGC-90-DA-150, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and DA is the Type. The last digits are the size: 150 is 1-1/2\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type DA female coupler x male adapter cam and groove coupling?",
+          "a": "For the aluminium body the table gives 150 psi from 1-1/2\" to 4\"; 75 psi at 6\". Pressure falls with size, so read the row for your size; the rating of an assembly is the lowest of its parts."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type DA female coupler x male adapter cam and groove coupling come in?",
+          "a": "The 90° elbow Type DA female coupler x male adapter is listed in aluminium, Plated Iron. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type DA female coupler x male adapter use and what are the options?",
+          "a": "The 90° elbow Type DA female coupler x male adapter in 1-1/2\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type DA female coupler x male adapter cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type DA range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type DA female coupler x male adapter cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type DA female coupler x male adapter connects to a female coupler on its coupler end and a male adapter on its other end, so it joins in line, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow type da female coupler x male adapter or the self-locking Type DA: which should I choose?",
+          "a": "The 90° elbow Type DA female coupler x male adapter has a 90° body, while the [self-locking Type DA](/p/self-locking-type-da-female-coupler-male-adapter-self-locking-cam-and-groove-coupling) has spring-loaded self-locking cam arms. Both are Type DA, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type DA female coupler x male adapter cam and groove coupling installed?",
+          "a": "For the 90° elbow Type DA female coupler x male adapter, engage the male adapter in the female coupler and close both cam arms evenly. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type DA female coupler x male adapter made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type DA female coupler x male adapter is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1-1/2\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type DA female coupler x male adapter cam and groove coupling in Dubai?",
+          "a": "Yes, we stock the 90° elbow Type DA female coupler x male adapter cam and groove coupling at our warehouse in Dubai, UAE, and ship it worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-dd-90-elbow-female-coupler-female-coupler-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type DD female coupler x female coupler cam and groove coupling used for?",
+          "a": "The 90° elbow Type DD female coupler x female coupler cam and groove coupling has a female coupler on one end and a female coupler (with cam arms) on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type DD female coupler x female coupler cam and groove coupling come in?",
+          "a": "The listing has 4 part numbers: 2\", 3\", 4\" and 6\", with Indus part numbers IH-CGC-90-DD-200 to IH-CGC-90-DD-600. The body materials are aluminium."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-DD-200 for the 90° elbow Type DD female coupler x female coupler?",
+          "a": "In IH-CGC-90-DD-200, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and DD is the Type. The last digits are the size: 200 is 2\" and 600 is 6\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type DD female coupler x female coupler cam and groove coupling?",
+          "a": "The 90° elbow Type DD female coupler x female coupler (2\", 3\", 4\" and 6\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type DD female coupler x female coupler cam and groove coupling come in?",
+          "a": "The 90° elbow Type DD female coupler x female coupler is listed in aluminium. Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type DD female coupler x female coupler use and what are the options?",
+          "a": "The 90° elbow Type DD female coupler x female coupler in 2\" to 6\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type DD female coupler x female coupler cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type DD range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type DD female coupler x female coupler cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type DD female coupler x female coupler connects to a male adapter on either end, since both ends are female couplers, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow type dd female coupler x female coupler or the self-locking Type DD: which should I choose?",
+          "a": "The 90° elbow Type DD female coupler x female coupler has a 90° body, while the [self-locking Type DD](/p/self-locking-type-dd-female-coupler-female-coupler-cam-and-groove-coupling) has spring-loaded self-locking cam arms. Both are Type DD, so the coupling ends are the same; choose by the line geometry and the locking you need."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type DD female coupler x female coupler cam and groove coupling installed?",
+          "a": "For the 90° elbow Type DD female coupler x female coupler, engage the male adapter in the female coupler and close both cam arms evenly. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type DD female coupler x female coupler made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type DD female coupler x female coupler is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (2\" to 6\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type DD female coupler x female coupler cam and groove coupling in Dubai?",
+          "a": "Yes, the 90° elbow Type DD female coupler x female coupler cam and groove coupling is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-e-90-elbow-male-adapter-shank-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type E male adapter x shank cam and groove coupling used for?",
+          "a": "The 90° elbow Type E male adapter x shank cam and groove coupling has a male adapter on one end and a barbed shank on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The listing has 4 part numbers: 1-1/2\", 2\", 3\" and 4\", with Indus part numbers IH-CGC-90-E-150 to IH-CGC-90-E-400. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-E-150 for the 90° elbow Type E male adapter x shank?",
+          "a": "In IH-CGC-90-E-150, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and E is the Type. The last digits are the size: 150 is 1-1/2\" and 400 is 4\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type E male adapter x shank cam and groove coupling?",
+          "a": "The 90° elbow Type E male adapter x shank (1-1/2\", 2\", 3\" and 4\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type E male adapter x shank cam and groove coupling come in?",
+          "a": "The 90° elbow Type E male adapter x shank is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type E male adapter x shank use and what are the options?",
+          "a": "The 90° elbow Type E male adapter x shank in 1-1/2\" to 4\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type E male adapter x shank cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type E range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type E male adapter x shank cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type E male adapter x shank connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type E cam and groove coupling: which one?",
+          "a": "The 90° elbow Type E (male adapter end) turns the line at the coupling to clear obstructions, while the [straight standard Type E](/p/standard-type-e-male-adapter-shank-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type E male adapter x shank cam and groove coupling installed?",
+          "a": "On the 90° elbow Type E male adapter x shank, slide the hose over the barbed shank and clamp it with a hose band, then engage the cam arms on the mating male adapter. Check the gasket is seated and not perished before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type E male adapter x shank made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type E male adapter x shank is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1-1/2\" to 4\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type E male adapter x shank cam and groove coupling in Dubai?",
+          "a": "Yes, the 90° elbow Type E male adapter x shank cam and groove coupling is held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "type-f-90-elbow-male-adapter-male-npt-cam-and-groove-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° elbow Type F male adapter x male NPT cam and groove coupling used for?",
+          "a": "The 90° elbow Type F male adapter x male NPT cam and groove coupling has a male adapter on one end and a male NPT thread on the other. The 90° body routes hose or pipe around obstructions in tight spaces."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the 90° elbow Type F male adapter x male NPT cam and groove coupling come in?",
+          "a": "The listing has 3 part numbers: 1-1/2\", 2\" and 3\", with Indus part numbers IH-CGC-90-F-150 to IH-CGC-90-F-300. The body materials are aluminium, Polypropylene, Plated Iron (selected types)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Indus part number IH-CGC-90-F-150 for the 90° elbow Type F male adapter x male NPT?",
+          "a": "In IH-CGC-90-F-150, CGC is the cam and groove coupling range, 90 marks the 90° elbow series and F is the Type. The last digits are the size: 150 is 1-1/2\" and 300 is 3\", as the size table shows. Suffixes such as -NAE or -PTK mark a body style."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 90° elbow Type F male adapter x male NPT cam and groove coupling?",
+          "a": "The 90° elbow Type F male adapter x male NPT (1-1/2\", 2\" and 3\") is a low-to-medium pressure transfer fitting, not for high-pressure hydraulic service. The maker's figures fall with size, 150 psi at 3 inch and 4 inch and 75 psi at 5 inch and 6 inch, so read the datasheet for the size you order."
+        },
+        {
+          "slot": "F",
+          "q": "What materials does the 90° elbow Type F male adapter x male NPT cam and groove coupling come in?",
+          "a": "The 90° elbow Type F male adapter x male NPT is listed in aluminium, Polypropylene, Plated Iron (selected types). Choose the body for the medium: aluminium for general service, stainless steel for corrosive duty, and ask for the gasket that suits the fluid."
+        },
+        {
+          "slot": "F",
+          "q": "Which gasket does the 90° elbow Type F male adapter x male NPT use and what are the options?",
+          "a": "The 90° elbow Type F male adapter x male NPT in 1-1/2\" to 3\" has a Buna-N (nitrile) standard gasket, suited to petroleum, water and most general-service fluids. Viton (FKM), EPDM, PTFE and Neoprene are available on request: Viton for fuels and aggressive solvents, EPDM for ketones and water, PTFE for the most demanding chemical duty."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the 90° elbow Type F male adapter x male NPT cam and groove coupling meet?",
+          "a": "The listing gives A-A-59326 (the US specification, formerly MIL-C-27487) and EN 14420-7 (Europe) for the 90° elbow Type F range. The cam-and-groove profile is the same for a given Type and size, so a half of the same Type from another maker mates when it follows the same standard."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° elbow Type F male adapter x male NPT cam and groove coupling connect to?",
+          "a": "The cam end of the 90° elbow Type F male adapter x male NPT connects to a female coupler such as a Type B, C or D, of the same size. See [cam and groove coupling types](/blog/cam-and-groove-coupling-types) for how Types A to F, DC and DP pair up."
+        },
+        {
+          "slot": "K",
+          "q": "90° elbow or straight Type F cam and groove coupling: which one?",
+          "a": "The 90° elbow Type F (male adapter end) turns the line at the coupling to clear obstructions, while the [straight standard Type F](/p/standard-type-f-male-adapter-male-npt-cam-and-groove-coupling) keeps the line in a straight run. Use the elbow in tight spaces, and the straight type everywhere else."
+        },
+        {
+          "slot": "I",
+          "q": "How is the 90° elbow Type F male adapter x male NPT cam and groove coupling installed?",
+          "a": "On the 90° elbow Type F male adapter x male NPT, seal the NPT thread with a suitable sealant and tighten it into the port, then engage the cam arms on the mating half. Check the gasket is seated before you pressurise."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° elbow Type F male adapter x male NPT made and can it be exported from Dubai?",
+          "a": "The 90° elbow Type F male adapter x male NPT is listed with the USA as its country of origin. We ship it from Dubai, UAE to the GCC, Africa, Asia and beyond; give the destination and the size (1-1/2\" to 3\" range) so the invoice, packing list and origin papers match."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° elbow Type F male adapter x male NPT cam and groove coupling in Dubai?",
+          "a": "Yes. The 90° elbow Type F male adapter x male NPT cam and groove coupling sits in stock at our Dubai, UAE warehouse and goes out worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

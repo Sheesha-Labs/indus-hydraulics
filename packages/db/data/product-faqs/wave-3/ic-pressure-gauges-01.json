@@ -1,0 +1,868 @@
+{
+  "family": "ic-pressure-gauges-01",
+  "extraFacts": [
+    {
+      "fact": "EN 837-1 classifies Bourdon-tube pressure gauges by accuracy class, the maximum permissible error as a percentage of the full scale span; the standard classes are 0.1, 0.25, 0.6, 1, 1.6, 2.5 and 4, so a gauge stated at 1.6% FSD is class 1.6 and one at 1% FSD is class 1.",
+      "source": "EN 837-1:1996 (Bourdon tube pressure gauges: dimensions, metrology, requirements and testing)"
+    },
+    {
+      "fact": "Gauge scale ranges are normally chosen so the working pressure sits in the middle third of the dial; a glycerine fill damps pointer flutter from pump pulsation and vibration; a dry gauge has no fill.",
+      "source": "Indus Hydraulics guides /blog/how-to-choose-a-pressure-gauge-range and /blog/glycerine-filled-vs-dry-pressure-gauges"
+    },
+    {
+      "fact": "Range counts per listing, counted from the size tables: Dynamic Fluid Components CDS 1.5\" Compound Dry Pressure Gauges, 1/8\" NPT: 14 ranges, 30 part numbers; Dynamic Fluid Components CDS 2.5\" Compound Dry Pressure Gauges, 1/4\" NPT: 17 ranges, 72 part numbers; Dynamic Fluid Components CDS 2\" Compound Dry Pressure Gauges, 1/4\" NPT: 15 ranges, 64 part numbers; Dynamic Fluid Components CF 1.5\" Glycerine-Filled Pressure Gauges, 1/8\" NPT: 16 ranges, 68 part numbers; Dynamic Fluid Components CF 2.5\" Glycerine-Filled Pressure Gauges, 1/4\" NPT: 18 ranges, 70 part numbers; Dynamic Fluid Components CF 2.5\" Glycerine-Filled Pressure Gauges, 7/16-20 SAE: 17 ranges, 35 part numbers; Dynamic Fluid Components CF 2\" Glycerine-Filled Pressure Gauges, 1/4\" NPT: 17 ranges, 72 part numbers; Dynamic Fluid Components CFC 4\" Glycerine-Filled Pressure Gauges, 1/2\" NPT: 8 ranges, 32 part numbers; Dynamic Fluid Components CFC 4\" Glycerine-Filled Pressure Gauges, 1/4\" NPT: 9 ranges, 40 part numbers; Dynamic Fluid Components PDLC 4\" Glycerine-Filled Pressure Gauges, 1/4\" NPT: 16 ranges, 64 part numbers; Dynamic Fluid Components PDSS 2.5\" All Stainless Steel Pressure Gauges, 1/4\" NPT: 18 ranges, 76 part numbers; Dynamic Fluid Components PDSS 4\" All Stainless Steel Pressure Gauges, 1/2\" NPT: 8 ranges, 36 part numbers; Dynamic Fluid Components PDSS 4\" All Stainless Steel Pressure Gauges, 1/4\" NPT: 9 ranges, 40 part numbers",
+      "source": "Indus Hydraulics size tables (counted from rows)"
+    },
+    {
+      "fact": "Figures of the sibling listings in this family, as shown on their own product pages: Dynamic Fluid Components CDS 1.5\" Compound Dry Pressure Gauges, 1/8\" NPT [IH-DFC-CDS-15-18NPT]:   Dynamic Fluid Components CDS Series dry pressure gauges with a 1.5\" dial and 1/8\" NPT connection, 1.6% FSD accuracy. | Dial 1.5\"; Connection 1/8\" NPT; Type dry; Case Steel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 30 part numbers (e.g. CDS-4V-000A, CDS-4V-000D, CDS-4P-001A, CDS-4P-001D); ports 1/8\" NPT; rows: Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Dynamic Fluid  Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge || Dynamic Fluid Components CDS 2.5\" Compound Dry Pressure Gauges, 1/4\" NPT [IH-DFC-CDS-25-14NPT]:   Dynamic Fluid Components CDS Series dry pressure gauges with a 2.5\" dial and 1/4\" NPT connection, 1.6% FSD accuracy. | Dial 2.5\"; Connection 1/4\" NPT; Type dry; Case Steel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 72 part numbers (e.g. CDS-1V-000A, CDS-1V-000B, CDS-1V-000D, CDS-1V-000E); ports 1/4\" NPT; rows: Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Pressure Gauge || Dynamic Fluid Components CDS 2\" Compound Dry Pressure Gauges, 1/4\" NPT [IH-DFC-CDS-2-14NPT]:   Dynamic Fluid Components CDS Series dry pressure gauges with a 2\" dial and 1/4\" NPT connection, 1.6% FSD accuracy. | Dial 2\"; Connection 1/4\" NPT; Type dry; Case Steel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 64 part numbers (e.g. CDS-5V-000A, CDS-5V-000B, CDS-5V-000D, CDS-5V-000E); ports 1/4\" NPT; rows: Compound Dry Gauge / Dynamic Fluid Components / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge / Compound Dry Gauge || Dynamic Fluid Components CF 1.5\" Glycerine-Filled Pressure Gauges, 1/8\" NPT [IH-DFC-CF-15-18NPT]:   Dynamic Fluid Components CF Series glycerine-filled pressure gauges with a 1.5\" dial and 1/8\" NPT connection, 1.6% FSD accuracy. | Dial 1.5\"; Connection 1/8\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 68 part numbers (e.g. CF4V-000A, CF4V-000B, CF4V-000D, CF4V-000E); ports 1/8\" NPT; rows: Glycerine-filled Gauge / CF Series Glycerine-Filled Gauge / Glycerine-filled Gauge / Glycerine-Filled Pressure Gauge / CF Series Glycerine-Filled Gauge / Pressure Gauge / Glycerine-Filled Pressure Gauge / Glycerine-Filled Pressure Gauge || Dynamic Fluid Components CF 2.5\" Glycerine-Filled Pressure Gauges, 1/4\" NPT [IH-DFC-CF-25-14NPT]:   Dynamic Fluid Components CF Series glycerine-filled pressure gauges with a 2.5\" dial and 1/4\" NPT connection, 1.6% FSD accuracy. | Dial 2.5\"; Connection 1/4\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 70 part numbers (e.g. CF1V-000A, CF1V-000B, CF1V-000D, CF1V-000E); ports 1/4\" NPT; rows: Glycerine-Filled Gauge / Glycerine-Filled Pressure Gauge / Glycerine-Filled Pressure Gauge / Glycerine-Filled Gauge / Glycerine-filled Pressure Gauge / Glycerine-filled Pressure Gauge / Glycerine-filled Pressure Gauge / Glycerine-filled Pressure Gauge || Dynamic Fluid Components CF 2.5\" Glycerine-Filled Pressure Gauges, 7/16-20 SAE [IH-DFC-CF-25-71620SAE]:   Dynamic Fluid Components CF Series glycerine-filled pressure gauges with a 2.5\" dial and 7/16-20 SAE connection, 1.6% FSD accuracy. | Dial 2.5\"; Connection 7/16-20 SAE; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 35 part numbers (e.g. CF1V-000A-SAE, CF1P-001A-SAE, CF1C-002A-SAE, CF1P-002A-SAE); ports 7/16-20 SAE; rows: CF Series Glycerine-Filled Pressure Gauge / Glycerine-Filled Pressure Gauge / Glycerine-Filled Gauge / Glycerine-Filled Pressure Gauge / Pressure Gauge /  / Glycerine-Filled Pressure Gauge / Glycerine-filled Gauge || Dynamic Fluid Components CF 2\" Glycerine-Filled Pressure Gauges, 1/4\" NPT [IH-DFC-CF-2-14NPT]:   Dynamic Fluid Components CF Series glycerine-filled pressure gauges with a 2\" dial and 1/4\" NPT connection, 1.6% FSD accuracy. | Dial 2\"; Connection 1/4\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 72 part numbers (e.g. CF5V-000A, CF5V-000B, CF5V-000D, CF5V-000E); ports 1/4\" NPT; rows: Glycerine-filled Gauge / Glycerine-filled Gauge / Glycerine-Filled Gauge / CF Series Glycerine-Filled Gauge / Glycerine-Filled Gauge / CF Series Glycerine-Filled Pressure Gauge / Glycerine-Filled Pressure Gauge / Glycerine-filled Gauge || Dynamic Fluid Components CFC 4\" Glycerine-Filled Pressure Gauges, 1/2\" NPT [IH-DFC-CFC-4-12NPT]:   Dynamic Fluid Components CFC Series glycerine-filled pressure gauges with a 4\" dial and 1/2\" NPT connection, 1% FSD accuracy. | Dial 4\"; Connection 1/2\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 32 part numbers (e.g. CFC2P-070A, CFC2P-070B, CFC2P-070D, CFC2P-070E); ports 1/2\" NPT; rows: Glycerine-Filled Pressure Gauge / CFC Series Glycerine-Filled Pressure Gauge / Glycerine-Filled Gauge / Glycerine-filled Gauge / CFC Series Glycerine-Filled Gauges / CFC Glycerine-filled Pressure Gauge / 4-Inch Glycerine-Filled Pressure Gauge / CFC Series Glycerine-Filled Gauge || Dynamic Fluid Components CFC 4\" Glycerine-Filled Pressure Gauges, 1/4\" NPT [IH-DFC-CFC-4-14NPT]:   Dynamic Fluid Components CFC Series glycerine-filled pressure gauges with a 4\" dial and 1/4\" NPT connection, 1% FSD accuracy. | Dial 4\"; Connection 1/4\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1% FSD; Scale psi, bar; Bourdon tube phosphor bronze; Connection material bronze | 40 part numbers (e.g. CFC2V-000A, CFC2V-000B, CFC2V-000D, CFC2V-000E); ports 1/4\" NPT; rows: CFC Series Glycerine-Filled Gauges / CFC Series Glycerine-Filled Gauge / CFC Series Glycerine-Filled Pressure Gauge / Glycerine-Filled Gauge / CFC Series Glycerine-Filled Pressure Gauge / CFC Series Glycerine-Filled Gauge / Glycerine-Filled Gauge / CFC Series Glycerine-Filled Gauge || Dynamic Fluid Components PDLC 4\" Glycerine-Filled Pressure Gauges, 1/4\" NPT [IH-DFC-PDLC-4-14NPT]:   Dynamic Fluid Components PDLC Series glycerine-filled pressure gauges with a 4\" dial and 1/4\" NPT connection, 2% FSD accuracy. | Dial 4\"; Connection 1/4\" NPT; Type glycerine-filled; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 2% FSD; Scale psi, bar; Bourdon tube phosphor bronze | 64 part numbers (e.g. PDLC-2P-001A, PDLC-2P-001B, PDLC-2P-001D, PDLC-2P-001E); ports 1/4\" NPT; rows: Pressure Gauge / Glycerine-filled Gauge / 4\" Glycerine-filled Economy Gauge / 4-Inch Glycerine-Filled Gauge / Glycerine-filled Pressure Gauge / 4-Inch Glycerine-Filled Economy Gauge / 4-Inch Glycerine-Filled Pressure Gauge / 4-Inch Glycerine-Filled Economy Gauge || Dynamic Fluid Components PDSS 2.5\" All Stainless Steel Pressure Gauges, 1/4\" NPT [IH-DFC-PDSS-25-14NPT]:   Dynamic Fluid Components PDSS Series all stainless steel pressure gauges with a 2.5\" dial and 1/4\" NPT connection, 1.6% FSD accuracy. | Dial 2.5\"; Connection 1/4\" NPT; Type all stainless steel; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1.6% FSD; Scale psi, bar | 76 part numbers (e.g. PDSS-1V-000A-001, PDSS-1V-000B-001, PDSS-1V-000D-001, PDSS-1V-000E-001); ports 1/4\" NPT; rows: All Stainless Steel Gauge / All Stainless Steel Gauge / PDSS Series / All Stainless Steel Pressure Gauge / All Stainless Steel Gauge / All Stainless Steel Gauge / All Stainless Steel Pressure Gauge / All Stainless Steel Pressure Gauge || Dynamic Fluid Components PDSS 4\" All Stainless Steel Pressure Gauges, 1/2\" NPT [IH-DFC-PDSS-4-12NPT]:   Dynamic Fluid Components PDSS Series all stainless steel pressure gauges with a 4\" dial and 1/2\" NPT connection, 1% FSD accuracy. | Dial 4\"; Connection 1/2\" NPT; Type all stainless steel; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1% FSD; Scale psi | 36 part numbers (e.g. PDSS-2P-160A-001, PDSS-2P-160B-001, PDSS-2P-160D-001, PDSS-2P-160E-001); ports 1/2\" NPT; rows: All Stainless Steel Gauge / Dynamic Fluid Components / All Stainless Steel Pressure Gauge / All Stainless Steel Gauge / All Stainless Steel Pressure Gauge / All Stainless Steel Gauge / All Stainless Steel Gauge / All Stainless Steel Pressure Gauge || Dynamic Fluid Components PDSS 4\" All Stainless Steel Pressure Gauges, 1/4\" NPT [IH-DFC-PDSS-4-14NPT]:   Dynamic Fluid Components PDSS Series all stainless steel pressure gauges with a 4\" dial and 1/4\" NPT connection, 1% FSD accuracy. | Dial 4\"; Connection 1/4\" NPT; Type all stainless steel; Case 304 Stainless Steel Case & Bezel; Lens polycarbonate; Accuracy 1% FSD; Scale psi | 40 part numbers (e.g. PDSS-2V-000A-001, PDSS-2V-000B-001, PDSS-2V-000D-001, PDSS-2V-000E-001); ports 1/4\" NPT; rows: All Stainless Steel Pressure Gauge / All Stainless Steel Pressure Gauge / PDSS Series All Stainless Steel Gauge / All Stainless Steel Gauge / All Stainless Steel Pressure Gauge / All Stainless Steel Pressure Gauge / All Stainless Steel Gauge / Pressure Gauge",
+      "source": "Indus Hydraulics product listings in this family (sibling pages)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dynamic-fluid-components-cds-1-5-in-compound-dry-pressure-gauges-1-8-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CDS 1.5\" dry gauge, 1/8\" NPT used for?",
+          "a": "The Dynamic Fluid Components CDS 1.5\" dry gauge, 1/8\" NPT is a dry Bourdon-tube pressure gauge with a 1.5\" dial and 1/8\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 30 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CDS gauge part numbers such as CDS-4V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CDS 1.5\" gauge with 1/8\" NPT, CDS-4V-000A and CDS-4V-000D are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CDS 1.5\" gauge with 1/8\" NPT come in?",
+          "a": "The DFC CDS 1.5\" gauge with 1/8\" NPT comes in 14 ranges, from 30” Hg – 0 psi to 0–4000 psi, including a compound vacuum-and-pressure scale. All 30 part numbers use the 1/8\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CDS 1.5\" gauge with 1/8\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CDS 1.5\" gauge with 1/8\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CDS 1.5\" gauge with 1/8\" NPT?",
+          "a": "The DFC CDS 1.5\" gauge with 1/8\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CDS 1.5\" gauge with 1/8\" NPT made of?",
+          "a": "The DFC CDS 1.5\" gauge with 1/8\" NPT has a Steel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. It has no liquid fill, so the pointer is more affected by vibration; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CDS 1.5\" gauge with 1/8\" NPT stated to?",
+          "a": "The listing for the DFC CDS 1.5\" gauge with 1/8\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CDS 1.5\" gauge with 1/8\" NPT screw into?",
+          "a": "The DFC CDS 1.5\" gauge with 1/8\" NPT has a 1/8\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CDS 1.5\" gauge with 1/8\" NPT?",
+          "a": "Screw it in by its 1/8\" NPT connection, sealing the thread, and keep the 1.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CDS 1.5\" gauge with 1/8\" NPT typically used?",
+          "a": "A 1.5\" dry gauge with a 1/8\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CDS 1.5\" gauge with 1/8\" NPT differ from the DFC CDS 2\" gauge?",
+          "a": "The [DFC CDS 2\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cds-2-in-compound-dry-pressure-gauges-1-4-in-npt) has a 2\" dial against 1.5\" and a 1/4\" NPT connection against 1/8\" NPT; the DFC CDS 1.5\" gauge with 1/8\" NPT has 30 part numbers against 64. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CDS 1.5\" gauge with 1/8\" NPT in stock in Dubai?",
+          "a": "Yes. We keep the DFC CDS 1.5\" gauge with 1/8\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cds-2-5-in-compound-dry-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CDS 2.5\" dry gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components CDS 2.5\" dry gauge, 1/4\" NPT is a dry Bourdon-tube pressure gauge with a 2.5\" dial and 1/4\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 72 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CDS gauge part numbers such as CDS-1V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CDS 2.5\" gauge with 1/4\" NPT, CDS-1V-000A and CDS-1V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CDS 2.5\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC CDS 2.5\" gauge with 1/4\" NPT comes in 17 ranges, from 30” Hg – 0 psi to 0–10,000 psi, including a compound vacuum-and-pressure scale. All 72 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CDS 2.5\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CDS 2.5\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CDS 2.5\" gauge with 1/4\" NPT?",
+          "a": "The DFC CDS 2.5\" gauge with 1/4\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CDS 2.5\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC CDS 2.5\" gauge with 1/4\" NPT has a Steel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. It has no liquid fill, so the pointer is more affected by vibration; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CDS 2.5\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC CDS 2.5\" gauge with 1/4\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CDS 2.5\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC CDS 2.5\" gauge with 1/4\" NPT has a 1/4\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CDS 2.5\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 2.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CDS 2.5\" gauge with 1/4\" NPT typically used?",
+          "a": "A 2.5\" dry gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CDS 2.5\" gauge with 1/4\" NPT differ from the DFC CDS 2\" gauge?",
+          "a": "The [DFC CDS 2\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cds-2-in-compound-dry-pressure-gauges-1-4-in-npt) has a 2\" dial against 2.5\"; the DFC CDS 2.5\" gauge with 1/4\" NPT has 72 part numbers against 64. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CDS 2.5\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes, we carry the DFC CDS 2.5\" gauge with 1/4\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cds-2-in-compound-dry-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CDS 2\" dry gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components CDS 2\" dry gauge, 1/4\" NPT is a dry Bourdon-tube pressure gauge with a 2\" dial and 1/4\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 64 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CDS gauge part numbers such as CDS-5V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CDS 2\" gauge with 1/4\" NPT, CDS-5V-000A and CDS-5V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CDS 2\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC CDS 2\" gauge with 1/4\" NPT comes in 15 ranges, from 30” Hg – 0 psi to 0–5000 psi, including a compound vacuum-and-pressure scale. All 64 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CDS 2\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CDS 2\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CDS 2\" gauge with 1/4\" NPT?",
+          "a": "The DFC CDS 2\" gauge with 1/4\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CDS 2\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC CDS 2\" gauge with 1/4\" NPT has a Steel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. It has no liquid fill, so the pointer is more affected by vibration; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CDS 2\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC CDS 2\" gauge with 1/4\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CDS 2\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC CDS 2\" gauge with 1/4\" NPT has a 1/4\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CDS 2\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 2\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CDS 2\" gauge with 1/4\" NPT typically used?",
+          "a": "A 2\" dry gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CDS 2\" gauge with 1/4\" NPT differ from the DFC CDS 2.5\" gauge?",
+          "a": "The [DFC CDS 2.5\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cds-2-5-in-compound-dry-pressure-gauges-1-4-in-npt) has a 2.5\" dial against 2\"; the DFC CDS 2\" gauge with 1/4\" NPT has 64 part numbers against 72. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CDS 2\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the DFC CDS 2\" gauge with 1/4\" NPT and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cf-1-5-in-glycerine-filled-pressure-gauges-1-8-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CF 1.5\" glycerine-filled gauge, 1/8\" NPT used for?",
+          "a": "The Dynamic Fluid Components CF 1.5\" glycerine-filled gauge, 1/8\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 1.5\" dial and 1/8\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 68 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CF gauge part numbers such as CF4V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CF 1.5\" gauge with 1/8\" NPT, CF4V-000A and CF4V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CF 1.5\" gauge with 1/8\" NPT come in?",
+          "a": "The DFC CF 1.5\" gauge with 1/8\" NPT comes in 16 ranges, from 30” Hg – 0 psi to 0–6000 psi, including a compound vacuum-and-pressure scale. All 68 part numbers use the 1/8\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CF 1.5\" gauge with 1/8\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CF 1.5\" gauge with 1/8\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CF 1.5\" gauge with 1/8\" NPT?",
+          "a": "The DFC CF 1.5\" gauge with 1/8\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CF 1.5\" gauge with 1/8\" NPT made of?",
+          "a": "The DFC CF 1.5\" gauge with 1/8\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CF 1.5\" gauge with 1/8\" NPT stated to?",
+          "a": "The listing for the DFC CF 1.5\" gauge with 1/8\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CF 1.5\" gauge with 1/8\" NPT screw into?",
+          "a": "The DFC CF 1.5\" gauge with 1/8\" NPT has a 1/8\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CF 1.5\" gauge with 1/8\" NPT?",
+          "a": "Screw it in by its 1/8\" NPT connection, sealing the thread, and keep the 1.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CF 1.5\" gauge with 1/8\" NPT typically used?",
+          "a": "A 1.5\" glycerine-filled gauge with a 1/8\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CF 1.5\" gauge with 1/8\" NPT differ from the DFC CF 2.5\" gauge?",
+          "a": "The [DFC CF 2.5\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-1-4-in-npt) has a 2.5\" dial against 1.5\" and a 1/4\" NPT connection against 1/8\" NPT; the DFC CF 1.5\" gauge with 1/8\" NPT has 68 part numbers against 70. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CF 1.5\" gauge with 1/8\" NPT in stock in Dubai?",
+          "a": "Yes, we carry the DFC CF 1.5\" gauge with 1/8\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CF 2.5\" glycerine-filled gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components CF 2.5\" glycerine-filled gauge, 1/4\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 2.5\" dial and 1/4\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 70 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CF gauge part numbers such as CF1V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CF 2.5\" gauge with 1/4\" NPT, CF1V-000A and CF1V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CF 2.5\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC CF 2.5\" gauge with 1/4\" NPT comes in 18 ranges, from 30” Hg – 0 psi to 0–15,000 psi, including a compound vacuum-and-pressure scale. All 70 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CF 2.5\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CF 2.5\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CF 2.5\" gauge with 1/4\" NPT?",
+          "a": "The DFC CF 2.5\" gauge with 1/4\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CF 2.5\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC CF 2.5\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CF 2.5\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC CF 2.5\" gauge with 1/4\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CF 2.5\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC CF 2.5\" gauge with 1/4\" NPT has a 1/4\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CF 2.5\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 2.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CF 2.5\" gauge with 1/4\" NPT typically used?",
+          "a": "A 2.5\" glycerine-filled gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CF 2.5\" gauge with 1/4\" NPT differ from the DFC CF 2.5\" gauge?",
+          "a": "The [DFC CF 2.5\" gauge with 7/16-20 SAE](/p/dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-7-16-20-sae) has a 7/16-20 SAE connection against 1/4\" NPT; the DFC CF 2.5\" gauge with 1/4\" NPT has 70 part numbers against 35. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CF 2.5\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes, we hold the DFC CF 2.5\" gauge with 1/4\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-7-16-20-sae",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CF 2.5\" glycerine-filled gauge, 7/16-20 SAE used for?",
+          "a": "The Dynamic Fluid Components CF 2.5\" glycerine-filled gauge, 7/16-20 SAE is a glycerine-filled Bourdon-tube pressure gauge with a 2.5\" dial and 7/16-20 SAE connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 35 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CF gauge part numbers such as CF1V-000A-SAE mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CF 2.5\" gauge with 7/16-20 SAE, CF1V-000A-SAE and CF1P-001A-SAE are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CF 2.5\" gauge with 7/16-20 SAE come in?",
+          "a": "The DFC CF 2.5\" gauge with 7/16-20 SAE comes in 17 ranges, from 30” Hg – 0 psi to 0–10,000 psi, including a compound vacuum-and-pressure scale. All 35 part numbers use the 7/16-20 SAE connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CF 2.5\" gauge with 7/16-20 SAE?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CF 2.5\" gauge with 7/16-20 SAE is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CF 2.5\" gauge with 7/16-20 SAE?",
+          "a": "The DFC CF 2.5\" gauge with 7/16-20 SAE is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CF 2.5\" gauge with 7/16-20 SAE made of?",
+          "a": "The DFC CF 2.5\" gauge with 7/16-20 SAE has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CF 2.5\" gauge with 7/16-20 SAE stated to?",
+          "a": "The listing for the DFC CF 2.5\" gauge with 7/16-20 SAE states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CF 2.5\" gauge with 7/16-20 SAE screw into?",
+          "a": "The DFC CF 2.5\" gauge with 7/16-20 SAE has a 7/16-20 SAE connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CF 2.5\" gauge with 7/16-20 SAE?",
+          "a": "Screw it in by its 7/16-20 SAE connection, sealing the thread, and keep the 2.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CF 2.5\" gauge with 7/16-20 SAE typically used?",
+          "a": "A 2.5\" glycerine-filled gauge with a 7/16-20 SAE connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CF 2.5\" gauge with 7/16-20 SAE differ from the DFC CF 2.5\" gauge?",
+          "a": "The [DFC CF 2.5\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-1-4-in-npt) has a 1/4\" NPT connection against 7/16-20 SAE; the DFC CF 2.5\" gauge with 7/16-20 SAE has 35 part numbers against 70. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CF 2.5\" gauge with 7/16-20 SAE in stock in Dubai?",
+          "a": "Yes. We keep the DFC CF 2.5\" gauge with 7/16-20 SAE in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cf-2-in-glycerine-filled-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CF 2\" glycerine-filled gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components CF 2\" glycerine-filled gauge, 1/4\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 2\" dial and 1/4\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 72 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CF gauge part numbers such as CF5V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CF 2\" gauge with 1/4\" NPT, CF5V-000A and CF5V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CF 2\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC CF 2\" gauge with 1/4\" NPT comes in 17 ranges, from 30” Hg – 0 psi to 0–10,000 psi, including a compound vacuum-and-pressure scale. All 72 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CF 2\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CF 2\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CF 2\" gauge with 1/4\" NPT?",
+          "a": "The DFC CF 2\" gauge with 1/4\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CF 2\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC CF 2\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CF 2\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC CF 2\" gauge with 1/4\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CF 2\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC CF 2\" gauge with 1/4\" NPT has a 1/4\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CF 2\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 2\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CF 2\" gauge with 1/4\" NPT typically used?",
+          "a": "A 2\" glycerine-filled gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CF 2\" gauge with 1/4\" NPT differ from the DFC CF 2.5\" gauge?",
+          "a": "The [DFC CF 2.5\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cf-2-5-in-glycerine-filled-pressure-gauges-1-4-in-npt) has a 2.5\" dial against 2\"; the DFC CF 2\" gauge with 1/4\" NPT has 72 part numbers against 70. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CF 2\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes, we carry the DFC CF 2\" gauge with 1/4\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Request pricing for your sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cfc-4-in-glycerine-filled-pressure-gauges-1-2-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CFC 4\" glycerine-filled gauge, 1/2\" NPT used for?",
+          "a": "The Dynamic Fluid Components CFC 4\" glycerine-filled gauge, 1/2\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 4\" dial and 1/2\" NPT connection, accurate to 1% FSD. It reads in psi, bar and is listed in 32 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CFC gauge part numbers such as CFC2P-070A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CFC 4\" gauge with 1/2\" NPT, CFC2P-070A and CFC2P-070B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CFC 4\" gauge with 1/2\" NPT come in?",
+          "a": "The DFC CFC 4\" gauge with 1/2\" NPT comes in 8 ranges, from 0–1000 psi to 0–10,000 psi. All 32 part numbers use the 1/2\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CFC 4\" gauge with 1/2\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CFC 4\" gauge with 1/2\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CFC 4\" gauge with 1/2\" NPT?",
+          "a": "The DFC CFC 4\" gauge with 1/2\" NPT is accurate to 1% FSD, meaning the error is within 1% of full scale. EN 837-1 would call that accuracy class 1; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CFC 4\" gauge with 1/2\" NPT made of?",
+          "a": "The DFC CFC 4\" gauge with 1/2\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CFC 4\" gauge with 1/2\" NPT stated to?",
+          "a": "The listing for the DFC CFC 4\" gauge with 1/2\" NPT states 1% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CFC 4\" gauge with 1/2\" NPT screw into?",
+          "a": "The DFC CFC 4\" gauge with 1/2\" NPT has a 1/2\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CFC 4\" gauge with 1/2\" NPT?",
+          "a": "Screw it in by its 1/2\" NPT connection, sealing the thread, and keep the 4\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CFC 4\" gauge with 1/2\" NPT typically used?",
+          "a": "A 4\" glycerine-filled gauge with a 1/2\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CFC 4\" gauge with 1/2\" NPT differ from the DFC CFC 4\" gauge?",
+          "a": "The [DFC CFC 4\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cfc-4-in-glycerine-filled-pressure-gauges-1-4-in-npt) has a 1/4\" NPT connection against 1/2\" NPT; the DFC CFC 4\" gauge with 1/2\" NPT has 32 part numbers against 40. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CFC 4\" gauge with 1/2\" NPT in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the DFC CFC 4\" gauge with 1/2\" NPT and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-cfc-4-in-glycerine-filled-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components CFC 4\" glycerine-filled gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components CFC 4\" glycerine-filled gauge, 1/4\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 4\" dial and 1/4\" NPT connection, accurate to 1% FSD. It reads in psi, bar and is listed in 40 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of CFC gauge part numbers such as CFC2V-000A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC CFC 4\" gauge with 1/4\" NPT, CFC2V-000A and CFC2V-000B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC CFC 4\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC CFC 4\" gauge with 1/4\" NPT comes in 9 ranges, from 30” Hg – 0 psi to 0–600 psi, including a compound vacuum-and-pressure scale. All 40 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC CFC 4\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC CFC 4\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC CFC 4\" gauge with 1/4\" NPT?",
+          "a": "The DFC CFC 4\" gauge with 1/4\" NPT is accurate to 1% FSD, meaning the error is within 1% of full scale. EN 837-1 would call that accuracy class 1; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC CFC 4\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC CFC 4\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube and a bronze connection. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC CFC 4\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC CFC 4\" gauge with 1/4\" NPT states 1% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC CFC 4\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC CFC 4\" gauge with 1/4\" NPT has a 1/4\" NPT connection in bronze. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC CFC 4\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 4\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC CFC 4\" gauge with 1/4\" NPT typically used?",
+          "a": "A 4\" glycerine-filled gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC CFC 4\" gauge with 1/4\" NPT differ from the DFC CFC 4\" gauge?",
+          "a": "The [DFC CFC 4\" gauge with 1/2\" NPT](/p/dynamic-fluid-components-cfc-4-in-glycerine-filled-pressure-gauges-1-2-in-npt) has a 1/2\" NPT connection against 1/4\" NPT; the DFC CFC 4\" gauge with 1/4\" NPT has 40 part numbers against 32. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC CFC 4\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes. We keep the DFC CFC 4\" gauge with 1/4\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-pdlc-4-in-glycerine-filled-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components PDLC 4\" glycerine-filled gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components PDLC 4\" glycerine-filled gauge, 1/4\" NPT is a glycerine-filled Bourdon-tube pressure gauge with a 4\" dial and 1/4\" NPT connection, accurate to 2% FSD. It reads in psi, bar and is listed in 64 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of PDLC gauge part numbers such as PDLC-2P-001A mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC PDLC 4\" gauge with 1/4\" NPT, PDLC-2P-001A and PDLC-2P-001B are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC PDLC 4\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC PDLC 4\" gauge with 1/4\" NPT comes in 16 ranges, from 0–15 psi to 0–10,000 psi. All 64 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC PDLC 4\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC PDLC 4\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC PDLC 4\" gauge with 1/4\" NPT?",
+          "a": "The DFC PDLC 4\" gauge with 1/4\" NPT is accurate to 2% FSD, meaning the error is within 2% of full scale. A lower figure is a tighter gauge; the 4\" CFC and PDSS series carry 1% FSD and the smaller CF and CDS gauges 1.6% FSD."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC PDLC 4\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC PDLC 4\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens, a phosphor bronze Bourdon tube. The glycerine fill damps pointer flutter from pump pulsation; see [glycerine-filled vs dry pressure gauges](/blog/glycerine-filled-vs-dry-pressure-gauges)."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC PDLC 4\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC PDLC 4\" gauge with 1/4\" NPT states 2% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC PDLC 4\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC PDLC 4\" gauge with 1/4\" NPT has a 1/4\" NPT connection. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC PDLC 4\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 4\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC PDLC 4\" gauge with 1/4\" NPT typically used?",
+          "a": "A 4\" glycerine-filled gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC PDLC 4\" gauge with 1/4\" NPT differ from the DFC CFC 4\" gauge?",
+          "a": "The [DFC CFC 4\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-cfc-4-in-glycerine-filled-pressure-gauges-1-4-in-npt) has 1% FSD accuracy against 2% FSD; the DFC PDLC 4\" gauge with 1/4\" NPT has 64 part numbers against 40. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC PDLC 4\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the DFC PDLC 4\" gauge with 1/4\" NPT and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-pdss-2-5-in-all-stainless-steel-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components PDSS 2.5\" all stainless steel gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components PDSS 2.5\" all stainless steel gauge, 1/4\" NPT is a all stainless steel Bourdon-tube pressure gauge with a 2.5\" dial and 1/4\" NPT connection, accurate to 1.6% FSD. It reads in psi, bar and is listed in 76 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of PDSS gauge part numbers such as PDSS-1V-000A-001 mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC PDSS 2.5\" gauge with 1/4\" NPT, PDSS-1V-000A-001 and PDSS-1V-000B-001 are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC PDSS 2.5\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC PDSS 2.5\" gauge with 1/4\" NPT comes in 18 ranges, from 30” Hg – 0 psi to 0–15,000 psi, including a compound vacuum-and-pressure scale. All 76 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC PDSS 2.5\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC PDSS 2.5\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC PDSS 2.5\" gauge with 1/4\" NPT?",
+          "a": "The DFC PDSS 2.5\" gauge with 1/4\" NPT is accurate to 1.6% FSD, meaning the error is within 1.6% of full scale. EN 837-1 would call that accuracy class 1.6; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC PDSS 2.5\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC PDSS 2.5\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens. The all-stainless build suits damp or corrosive surroundings; check the wetted material against your fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC PDSS 2.5\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC PDSS 2.5\" gauge with 1/4\" NPT states 1.6% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1.6. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC PDSS 2.5\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC PDSS 2.5\" gauge with 1/4\" NPT has a 1/4\" NPT connection. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC PDSS 2.5\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 2.5\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC PDSS 2.5\" gauge with 1/4\" NPT typically used?",
+          "a": "A 2.5\" all stainless steel gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC PDSS 2.5\" gauge with 1/4\" NPT differ from the DFC PDSS 4\" gauge?",
+          "a": "The [DFC PDSS 4\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-pdss-4-in-all-stainless-steel-pressure-gauges-1-4-in-npt) has a 4\" dial against 2.5\" and 1% FSD accuracy against 1.6% FSD; the DFC PDSS 2.5\" gauge with 1/4\" NPT has 76 part numbers against 40. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC PDSS 2.5\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the DFC PDSS 2.5\" gauge with 1/4\" NPT and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-pdss-4-in-all-stainless-steel-pressure-gauges-1-2-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components PDSS 4\" all stainless steel gauge, 1/2\" NPT used for?",
+          "a": "The Dynamic Fluid Components PDSS 4\" all stainless steel gauge, 1/2\" NPT is a all stainless steel Bourdon-tube pressure gauge with a 4\" dial and 1/2\" NPT connection, accurate to 1% FSD. It reads in psi and is listed in 36 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of PDSS gauge part numbers such as PDSS-2P-160A-001 mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC PDSS 4\" gauge with 1/2\" NPT, PDSS-2P-160A-001 and PDSS-2P-160B-001 are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC PDSS 4\" gauge with 1/2\" NPT come in?",
+          "a": "The DFC PDSS 4\" gauge with 1/2\" NPT comes in 8 ranges, from 0–1000 psi to 0–15,000 psi. All 36 part numbers use the 1/2\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC PDSS 4\" gauge with 1/2\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC PDSS 4\" gauge with 1/2\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC PDSS 4\" gauge with 1/2\" NPT?",
+          "a": "The DFC PDSS 4\" gauge with 1/2\" NPT is accurate to 1% FSD, meaning the error is within 1% of full scale. EN 837-1 would call that accuracy class 1; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC PDSS 4\" gauge with 1/2\" NPT made of?",
+          "a": "The DFC PDSS 4\" gauge with 1/2\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens. The all-stainless build suits damp or corrosive surroundings; check the wetted material against your fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC PDSS 4\" gauge with 1/2\" NPT stated to?",
+          "a": "The listing for the DFC PDSS 4\" gauge with 1/2\" NPT states 1% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC PDSS 4\" gauge with 1/2\" NPT screw into?",
+          "a": "The DFC PDSS 4\" gauge with 1/2\" NPT has a 1/2\" NPT connection. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC PDSS 4\" gauge with 1/2\" NPT?",
+          "a": "Screw it in by its 1/2\" NPT connection, sealing the thread, and keep the 4\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC PDSS 4\" gauge with 1/2\" NPT typically used?",
+          "a": "A 4\" all stainless steel gauge with a 1/2\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC PDSS 4\" gauge with 1/2\" NPT differ from the DFC PDSS 4\" gauge?",
+          "a": "The [DFC PDSS 4\" gauge with 1/4\" NPT](/p/dynamic-fluid-components-pdss-4-in-all-stainless-steel-pressure-gauges-1-4-in-npt) has a 1/4\" NPT connection against 1/2\" NPT; the DFC PDSS 4\" gauge with 1/2\" NPT has 36 part numbers against 40. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC PDSS 4\" gauge with 1/2\" NPT in stock in Dubai?",
+          "a": "Yes, we hold the DFC PDSS 4\" gauge with 1/2\" NPT in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Quote the part numbers you need on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-fluid-components-pdss-4-in-all-stainless-steel-pressure-gauges-1-4-in-npt",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dynamic Fluid Components PDSS 4\" all stainless steel gauge, 1/4\" NPT used for?",
+          "a": "The Dynamic Fluid Components PDSS 4\" all stainless steel gauge, 1/4\" NPT is a all stainless steel Bourdon-tube pressure gauge with a 4\" dial and 1/4\" NPT connection, accurate to 1% FSD. It reads in psi and is listed in 40 ranges on the [pressure gauges shelf](/c/ic-pressure-gauges)."
+        },
+        {
+          "slot": "B",
+          "q": "What do the letters at the end of PDSS gauge part numbers such as PDSS-2V-000A-001 mean?",
+          "a": "The last letter is a manufacturer option code: several part numbers share one range and differ only in that code. For the DFC PDSS 4\" gauge with 1/4\" NPT, PDSS-2V-000A-001 and PDSS-2V-000B-001 are two such codes, so quote the full part number or tell us how the gauge mounts and we confirm the option."
+        },
+        {
+          "slot": "D",
+          "q": "Which pressure ranges does the DFC PDSS 4\" gauge with 1/4\" NPT come in?",
+          "a": "The DFC PDSS 4\" gauge with 1/4\" NPT comes in 9 ranges, from 30” Hg – 0 psi to 0–600 psi, including a compound vacuum-and-pressure scale. All 40 part numbers use the 1/4\" NPT connection; the size table lists every range."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the range of the DFC PDSS 4\" gauge with 1/4\" NPT?",
+          "a": "Pick a scale whose full reading is roughly twice the normal working pressure, so the pointer sits mid-dial and pressure spikes stay on the scale. For example a line that runs at 300 psi suits a 0–600 psi scale where the DFC PDSS 4\" gauge with 1/4\" NPT is offered; see the [how to choose a pressure gauge range](/blog/how-to-choose-a-pressure-gauge-range)."
+        },
+        {
+          "slot": "E",
+          "q": "How accurate is the DFC PDSS 4\" gauge with 1/4\" NPT?",
+          "a": "The DFC PDSS 4\" gauge with 1/4\" NPT is accurate to 1% FSD, meaning the error is within 1% of full scale. EN 837-1 would call that accuracy class 1; a lower figure is a tighter gauge, and the 4\" CFC and PDSS series carry 1% FSD against 1.6% on the 1.5\", 2\" and 2.5\" gauges."
+        },
+        {
+          "slot": "F",
+          "q": "What is the DFC PDSS 4\" gauge with 1/4\" NPT made of?",
+          "a": "The DFC PDSS 4\" gauge with 1/4\" NPT has a 304 Stainless Steel Case & Bezel case, a polycarbonate lens. The all-stainless build suits damp or corrosive surroundings; check the wetted material against your fluid."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard is the accuracy of the DFC PDSS 4\" gauge with 1/4\" NPT stated to?",
+          "a": "The listing for the DFC PDSS 4\" gauge with 1/4\" NPT states 1% FSD and names no gauge standard. EN 837-1 gives accuracy classes by percentage of span, so this corresponds to class 1. If you need a calibration certificate, ask on your [request](/contact) before ordering."
+        },
+        {
+          "slot": "H",
+          "q": "What thread does the DFC PDSS 4\" gauge with 1/4\" NPT screw into?",
+          "a": "The DFC PDSS 4\" gauge with 1/4\" NPT has a 1/4\" NPT connection. Match the thread to the port, and see the [instrumentation tube fittings](/c/instrumentation-tube-fittings) for adapters and fittings that connect a gauge to a line."
+        },
+        {
+          "slot": "I",
+          "q": "How do I mount and protect the DFC PDSS 4\" gauge with 1/4\" NPT?",
+          "a": "Screw it in by its 1/4\" NPT connection, sealing the thread, and keep the 4\" dial where it can be read. Where the line pulsates, fit a snubber or needle valve to protect the Bourdon tube; the pressure gauge guide covers safe mounting."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the DFC PDSS 4\" gauge with 1/4\" NPT typically used?",
+          "a": "A 4\" all stainless steel gauge with a 1/4\" NPT connection suits hydraulic and pneumatic equipment, pumps and power units where a local pressure reading is needed. For oilfield frac and cementing lines see the oilfield instrumentation range."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DFC PDSS 4\" gauge with 1/4\" NPT differ from the DFC PDSS 4\" gauge?",
+          "a": "The [DFC PDSS 4\" gauge with 1/2\" NPT](/p/dynamic-fluid-components-pdss-4-in-all-stainless-steel-pressure-gauges-1-2-in-npt) has a 1/2\" NPT connection against 1/4\" NPT; the DFC PDSS 4\" gauge with 1/4\" NPT has 40 part numbers against 36. Choose on dial size, connection thread and accuracy."
+        },
+        {
+          "slot": "M",
+          "q": "Is the DFC PDSS 4\" gauge with 1/4\" NPT in stock in Dubai?",
+          "a": "Yes. In Dubai, UAE we stock the DFC PDSS 4\" gauge with 1/4\" NPT and ship worldwide with the best lead times. Tell us sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    }
+  ]
+}

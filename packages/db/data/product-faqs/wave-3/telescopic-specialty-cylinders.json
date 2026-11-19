@@ -1,0 +1,1395 @@
+{
+  "family": "telescopic-specialty-cylinders",
+  "extraFacts": [
+    {
+      "fact": "Column load is the compressive load an extended cylinder and its rod can carry before the rod buckles; it falls as stroke and extended length increase and rises with rod diameter. Push force is working pressure multiplied by the piston (bore) area.",
+      "source": "Standard mechanics (Euler column buckling; force = pressure x area), as applied in maker hydraulic cylinder catalogues"
+    },
+    {
+      "fact": "Pin-to-pin (retracted) length is the distance between the two mounting pin centres with the cylinder fully retracted; extended length is the retracted length plus the stroke.",
+      "source": "Maker cylinder catalogues; Indus guide to hydraulic cylinder mounting styles"
+    },
+    {
+      "fact": "SAE ORB (O-ring boss) ports use a straight thread sealed by an O-ring; NPT ports are tapered pipe threads that seal on the thread.",
+      "source": "SAE J1926 / ISO 11926-1 (ORB); ASME B1.20.1 (NPT)"
+    },
+    {
+      "fact": "HS 8412.21 covers hydraulic power engines and motors, linear acting (hydraulic cylinders).",
+      "source": "WCO Harmonized System, heading 8412.21"
+    },
+    {
+      "fact": "NFPA tie-rod hydraulic cylinders follow the NFPA T3.6.7 mounting-dimension standard, so cylinders of the same bore, rod and mounting style are dimensionally interchangeable between makers that build to it.",
+      "source": "NFPA T3.6.7 (hydraulic fluid power cylinders, mounting dimensions)"
+    },
+    {
+      "fact": "Tie-rod cylinders clamp the end caps onto a barrel tube with external tie rods and can be dismantled for seal replacement; welded-body cylinders have the end caps welded to the tube and are compact and sealed against dismantling.",
+      "source": "Indus guide: welded vs tie-rod hydraulic cylinders; maker cylinder catalogues"
+    },
+    {
+      "fact": "Telescopic cylinders extend in nested stages; each added stage lengthens the stroke for a given retracted length, and a single-acting telescopic cylinder retracts under load or gravity rather than by oil pressure.",
+      "source": "Indus guide: telescopic hydraulic cylinders; Enerpac telescopic cylinder catalogue"
+    }
+  ],
+  "products": [
+    {
+      "slug": "chief-loader-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Chief Loader Hydraulic Cylinder, 1.5\" Bore do, and what is it for?",
+          "a": "Chief Loader 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 1.5\" bore and a 1\" rod. Its mounting is a loader-pattern welded body. It is listed in six stroke lengths from 12\" to 24\", 6 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Loader Hydraulic Cylinder, 1.5\" Bore organised?",
+          "a": "The Chief Loader 1.5\" bore cylinder part numbers run from 288600 to 288605 across 6 listed part numbers, one per stroke and rod combination. 288600 is the 12\" stroke and 288605 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Loader Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Chief Loader 1.5\" bore cylinder comes in six stroke lengths from 12\" to 24\", including 12\", 14\", 16\", 18\", 20\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Loader Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Loader 1.5\" bore cylinder runs from 20\" to 32\" and extended length from 32\" to 56\", depending on stroke. For example the 12\" stroke is 20\" retracted and 32\" extended, and the 24\" stroke is 32\" and 56\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Loader Hydraulic Cylinder, 1.5\" Bore use?",
+          "a": "Every part number of the Chief Loader 1.5\" bore cylinder uses the 1\" rod, and the listed column load is 3,340 to 5,300 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Loader Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Loader 1.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Loader Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Chief Loader 1.5\" bore cylinder is listed as 3,340 to 5,300 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Loader Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Chief Loader 1.5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Loader Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Chief Loader 1.5\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Loader Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Chief Loader 1.5\" bore cylinder lists 3,340 to 5,300 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Loader Hydraulic Cylinder, 1.5\" Bore compare with the 1.75\" bore version?",
+          "a": "The next size up is the [Chief Loader Hydraulic Cylinder, 1.75\" Bore](/p/chief-loader-hydraulic-cylinder-1-75-in-bore) with a 1.75\" bore against this 1.5\" bore, in the same loader pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 3,340 to 5,300 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Loader Hydraulic Cylinder, 1.5\" Bore in Dubai for export?",
+          "a": "Yes, Chief Loader 1.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "chief-loader-hydraulic-cylinder-1-75-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Loader Hydraulic Cylinder, 1.75\" Bore and what is it used for?",
+          "a": "Chief Loader 1.75\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 1.75\" bore and a 1\" rod. Its mounting is a loader-pattern welded body. It is listed in one stroke length (18\"), 1 part number in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Loader Hydraulic Cylinder, 1.75\" Bore organised?",
+          "a": "The Chief Loader 1.75\" bore cylinder part numbers run from 288606 to 288606 across 1 listed part number, one per stroke and rod combination. 288606 is the 18\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Loader Hydraulic Cylinder, 1.75\" Bore?",
+          "a": "The Chief Loader 1.75\" bore cylinder is listed in a single 18\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Loader Hydraulic Cylinder, 1.75\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Loader 1.75\" bore cylinder runs from 27.25\" to 27.25\" and extended length from 45.25\" to 45.25\", depending on stroke. For example the 18\" stroke is 27.25\" retracted and 45.25\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Loader Hydraulic Cylinder, 1.75\" Bore use?",
+          "a": "Every part number of the Chief Loader 1.75\" bore cylinder uses the 1\" rod, and the listed column load is 5,160 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Loader Hydraulic Cylinder, 1.75\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Loader 1.75\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Loader Hydraulic Cylinder, 1.75\" Bore carry?",
+          "a": "Column load on the Chief Loader 1.75\" bore cylinder is listed as 5,160 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Loader Hydraulic Cylinder, 1.75\" Bore have?",
+          "a": "The Chief Loader 1.75\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Loader Hydraulic Cylinder, 1.75\" Bore mounted and installed?",
+          "a": "The Chief Loader 1.75\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Loader Hydraulic Cylinder, 1.75\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.75\" bore area, then check the load against the column load for your stroke (the Chief Loader 1.75\" bore cylinder lists 5,160 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Loader Hydraulic Cylinder, 1.75\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Chief Loader Hydraulic Cylinder, 2\" Bore](/p/chief-loader-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.75\" bore, in the same loader pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 5,160 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Loader Hydraulic Cylinder, 1.75\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks Chief Loader 1.75\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-loader-hydraulic-cylinder-2-25-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Loader Hydraulic Cylinder, 2.25\" Bore, and where is it used?",
+          "a": "Chief Loader 2.25\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.25\" bore and a 1.5\" rod. Its mounting is a loader-pattern welded body. It is listed in two stroke lengths from 19.5\" to 23.25\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Loader Hydraulic Cylinder, 2.25\" Bore organised?",
+          "a": "The Chief Loader 2.25\" bore cylinder part numbers run from 288609 to 288608 across 2 listed part numbers, one per stroke and rod combination. 288609 is the 19.5\" stroke and 288608 the 23.25\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Loader Hydraulic Cylinder, 2.25\" Bore?",
+          "a": "The Chief Loader 2.25\" bore cylinder comes in two stroke lengths from 19.5\" to 23.25\", including 19.5\" and 23.25\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Loader Hydraulic Cylinder, 2.25\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Loader 2.25\" bore cylinder runs from 27.25\" to 30.25\" and extended length from 46.75\" to 53.5\", depending on stroke. For example the 19.5\" stroke is 27.25\" retracted and 46.75\" extended, and the 23.25\" stroke is 30.25\" and 53.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Loader Hydraulic Cylinder, 2.25\" Bore use?",
+          "a": "Every part number of the Chief Loader 2.25\" bore cylinder uses the 1.5\" rod, and the listed column load is 6,690 to 11,920 lbs. Column load normally falls as stroke grows, so check a long stroke against your compressive load."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Loader Hydraulic Cylinder, 2.25\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Loader 2.25\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Loader Hydraulic Cylinder, 2.25\" Bore carry?",
+          "a": "Column load on the Chief Loader 2.25\" bore cylinder is listed as 6,690 to 11,920 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Loader Hydraulic Cylinder, 2.25\" Bore have?",
+          "a": "The Chief Loader 2.25\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Loader Hydraulic Cylinder, 2.25\" Bore mounted and installed?",
+          "a": "The Chief Loader 2.25\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Loader Hydraulic Cylinder, 2.25\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.25\" bore area, then check the load against the column load for your stroke (the Chief Loader 2.25\" bore cylinder lists 6,690 to 11,920 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Loader Hydraulic Cylinder, 2.25\" Bore compare with the 2.5\" bore version?",
+          "a": "The next size up is the [Chief Loader Hydraulic Cylinder, 2.5\" Bore](/p/chief-loader-hydraulic-cylinder-2-5-in-bore) with a 2.5\" bore against this 2.25\" bore, in the same loader pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.5\" rod and column load of 6,690 to 11,920 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Chief Loader Hydraulic Cylinder, 2.25\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Indus stocks Chief Loader 2.25\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "chief-loader-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Loader Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Chief Loader 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2.5\" bore and a 1.5\" rod. Its mounting is a loader-pattern welded body. It is listed in two stroke lengths from 23.5\" to 24\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Chief Loader Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Chief Loader 2.5\" bore cylinder part numbers run from 288610 to 288611 across 2 listed part numbers, one per stroke and rod combination. 288610 is the 23.5\" stroke and 288611 the 24\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Loader Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Chief Loader 2.5\" bore cylinder comes in two stroke lengths from 23.5\" to 24\", including 23.5\" and 24\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Loader Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Loader 2.5\" bore cylinder runs from 34\" to 37\" and extended length from 57.5\" to 61\", depending on stroke. For example the 23.5\" stroke is 34\" retracted and 57.5\" extended, and the 24\" stroke is 37\" and 61\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Loader Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Chief Loader 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 13,440 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Loader Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Loader 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Loader Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Chief Loader 2.5\" bore cylinder is listed as 13,440 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Loader Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Chief Loader 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Loader Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Chief Loader 2.5\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Loader Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Chief Loader 2.5\" bore cylinder lists 13,440 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Loader Hydraulic Cylinder, 2.5\" Bore compare with the 2.25\" bore version?",
+          "a": "The next size down is the [Chief Loader Hydraulic Cylinder, 2.25\" Bore](/p/chief-loader-hydraulic-cylinder-2-25-in-bore) with a 2.25\" bore against this 2.5\" bore, in the same loader pattern from Chief. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 13,440 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Chief Loader Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. Chief Loader 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "chief-loader-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Chief Loader Hydraulic Cylinder, 2\" Bore, and where is it used?",
+          "a": "Chief Loader 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Chief, with a 2\" bore and a 1.25\" rod. Its mounting is a loader-pattern welded body. It is listed in three stroke lengths from 19.25\" to 22.75\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Chief Loader Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Chief Loader 2\" bore cylinder part numbers run from 288607 to 288613 across 3 listed part numbers, one per stroke and rod combination. 288607 is the 19.25\" stroke and 288613 the 22.75\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Chief Loader Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Chief Loader 2\" bore cylinder comes in three stroke lengths from 19.25\" to 22.75\", including 19.25\", 19.75\" and 22.75\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Chief Loader Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Chief Loader 2\" bore cylinder runs from 26.375\" to 29.875\" and extended length from 46.125\" to 52.625\", depending on stroke. For example the 19.25\" stroke is 26.875\" retracted and 46.125\" extended, and the 22.75\" stroke is 29.875\" and 52.625\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Chief Loader Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Chief Loader 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 9,420 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Chief Loader Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Chief Loader 2\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Chief Loader Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Chief Loader 2\" bore cylinder is listed as 9,420 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Chief Loader Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Chief Loader 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Chief Loader Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Chief Loader 2\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Chief Loader Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Chief Loader 2\" bore cylinder lists 9,420 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Chief Loader Hydraulic Cylinder, 2\" Bore compare with the 2.25\" bore version?",
+          "a": "The next size up is the [Chief Loader Hydraulic Cylinder, 2.25\" Bore](/p/chief-loader-hydraulic-cylinder-2-25-in-bore) with a 2.25\" bore against this 2\" bore, in the same loader pattern from Chief. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.25\" rod and column load of 9,420 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Chief Loader Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Chief Loader 2\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "custom-hoists-double-acting-telescopic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Custom Hoists double-acting telescopic cylinders used for?",
+          "a": "Custom Hoists Double-Acting Telescopic Cylinders are telescopic hoist cylinders that are driven out and back by oil pressure, used on tipping and hoist applications where the return stroke must be powered. The listing has 3 part numbers: DAT63-313-118, DAT95-96-384 and DAT96-83-456. See our [telescopic cylinder guide](/blog/telescopic-hydraulic-cylinders)."
+        },
+        {
+          "slot": "B",
+          "q": "How are Custom Hoists double-acting telescopic part numbers such as DAT63-313-118 laid out?",
+          "a": "The three part numbers in this listing, DAT63-313-118, DAT95-96-384 and DAT96-83-456, all start with DAT, which matches the double-acting telescopic name. The listing does not decode the numbers that follow, so quote the part number and we confirm bore, stages and stroke from the maker."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes do Custom Hoists double-acting telescopic cylinders come in?",
+          "a": "The listing names three part numbers (DAT63-313-118, DAT95-96-384 and DAT96-83-456) and publishes no bore, stroke or length for any of them. Send the part number and we obtain the dimensions from the maker before you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between the three Custom Hoists double-acting telescopic part numbers?",
+          "a": "Choose by retracted length, extended length and bore, which the listing does not publish for DAT63-313-118, DAT95-96-384 and DAT96-83-456. Ask us for the maker's drawing for each, then match the retracted length to the space available and the extended length to the travel needed."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Custom Hoists double-acting telescopic cylinders rated for?",
+          "a": "The listing publishes no rated pressure for the Custom Hoists Double-Acting Telescopic Cylinders. Ask us for the maker's working pressure for your part number, and match the pump, hose and relief valve to it."
+        },
+        {
+          "slot": "E",
+          "q": "How does a double-acting telescopic cylinder retract compared with a single-acting one?",
+          "a": "A double-acting telescopic cylinder like the Custom Hoists Double-Acting Telescopic Cylinders is driven back by oil as well as out, so retraction does not depend on the load, whereas a single-acting one relies on the load to return it. The double-acting type needs a port and line to each side."
+        },
+        {
+          "slot": "H",
+          "q": "How many hydraulic lines does a Custom Hoists double-acting telescopic cylinder need?",
+          "a": "The Custom Hoists Double-Acting Telescopic Cylinders needs two lines, one to extend and one to retract, because both strokes are driven by oil. A single-acting telescopic cylinder needs only one. The listing gives no port size, so confirm the port thread for your part number with us."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Custom Hoists double-acting telescopic cylinder installed?",
+          "a": "Mount the cylinders so they can pivot at both ends and so the load acts along the cylinder axis, because side loads on the smallest stage cause binding. Bleed air from both lines before loading."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for Custom Hoists double-acting telescopic cylinder DAT63-313-118?",
+          "a": "This listing carries no datasheet or drawing for the Custom Hoists Double-Acting Telescopic Cylinders. Send us a part number and we request the maker's drawing so you can check mounting and ports before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does the double-acting Custom Hoists telescopic cylinder differ from the single-acting one?",
+          "a": "The double-acting cylinder is powered out and back by oil, while the [single-acting Custom Hoists cylinder](/p/custom-hoists-single-acting-telescopic-cylinders) extends by oil and returns under load. Pick double-acting where the load cannot be relied on to retract it."
+        },
+        {
+          "slot": "J",
+          "q": "What should I tell you to get a quotation for a Custom Hoists double-acting telescopic cylinder?",
+          "a": "Send the part number (DAT63-313-118, DAT95-96-384 or DAT96-83-456), or the retracted length, extended length, bore and mounting you need. We then confirm the details with the maker."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Custom Hoists Double-Acting Telescopic Cylinders in Dubai for export?",
+          "a": "Yes. We keep Custom Hoists Double-Acting Telescopic Cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "custom-hoists-single-acting-telescopic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What are Custom Hoists single-acting telescopic cylinders used for?",
+          "a": "Custom Hoists Single-Acting Telescopic Cylinders are telescopic hoist cylinders for tipping and lifting duty, extended by oil pressure and returned by the load. The listing has 14 Custom Hoists part numbers with strokes from 71.94\" to 219.62\". Our [telescopic cylinder guide](/blog/telescopic-hydraulic-cylinders) explains how the stages work."
+        },
+        {
+          "slot": "B",
+          "q": "How are Custom Hoists telescopic cylinder part numbers such as 1854-2508-3759 laid out?",
+          "a": "Custom Hoists part numbers such as 1854-2508-3759, 5.53-3002-120 and 95-4461-220 are three-part codes, and the listing gives no decode for them. Quote the part number from the size table, or the bore, stroke and retracted length you need, and we match it to the maker's drawing."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Custom Hoists single-acting telescopic cylinders offer?",
+          "a": "The listing gives strokes from 71.94\" to 219.62\". For example 53-4592-72 has a 71.94\" stroke on a 5\" bore, 36.62\" retracted and 108.56\" extended, and 95-4461-220 a 219.62\" stroke on a 9\" bore, 60.88\" retracted and 280.5\" extended."
+        },
+        {
+          "slot": "D",
+          "q": "What bore sizes are listed for the Custom Hoists single-acting telescopic cylinders?",
+          "a": "The listing publishes bore only for 53-4592-72 (5\") and 95-4461-220 (9\"), the shortest and longest cylinders. For the other part numbers give us the part number and we confirm bore, stages and length from the maker's data before you order."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose a Custom Hoists telescopic cylinder for a tipping body?",
+          "a": "Match the retracted length to the space under the body and the extended length to the tipping angle you need; on this listing retracted length runs from 36.62\" to 60.88\" across the two published examples. Then size the bore and stages for the load. See the [telescopic cylinder guide](/blog/telescopic-hydraulic-cylinders)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure are Custom Hoists single-acting telescopic cylinders rated for?",
+          "a": "The listing publishes no rated pressure for the Custom Hoists Single-Acting Telescopic Cylinders. Ask us for the maker's working pressure for your part number before you set the relief valve, since the pump and valve must be rated to match the cylinder."
+        },
+        {
+          "slot": "E",
+          "q": "Do Custom Hoists single-acting telescopic cylinders retract under oil pressure?",
+          "a": "No. A single-acting telescopic cylinder like these extends under oil pressure and retracts when the oil is released and the load or its own weight pushes it back, so the tipping body must be heavy enough to return the cylinder. A double-acting version is listed separately."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet or drawing for Custom Hoists telescopic cylinder 1854-2508-3759?",
+          "a": "This listing carries no datasheet or drawing for the Custom Hoists Single-Acting Telescopic Cylinders. Send us the part number from the size table and we request the maker's drawing, so you can check the mounting eyes and port position before ordering."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Custom Hoists single-acting telescopic cylinder installed?",
+          "a": "Mount the cylinders so they can pivot at both ends and so the load acts along the cylinder axis, because side loads on the smallest stage cause binding. Bleed air before loading, and keep the return line free so the cylinders can retract."
+        },
+        {
+          "slot": "K",
+          "q": "How does the single-acting Custom Hoists telescopic cylinder differ from the double-acting one?",
+          "a": "The single-acting cylinder (14 part numbers) extends by oil and retracts under load, while the [double-acting Custom Hoists cylinder](/p/custom-hoists-double-acting-telescopic-cylinders) is pushed back by oil as well. Choose double-acting where the load cannot be relied on to return the cylinder."
+        },
+        {
+          "slot": "J",
+          "q": "What should I tell you to get a quotation for a Custom Hoists telescopic cylinder?",
+          "a": "Send the Custom Hoists part number, or the retracted length, extended length and bore you need, plus the mounting end style. For the Custom Hoists Single-Acting Telescopic Cylinders we then confirm the stages and stroke with the maker."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Custom Hoists Single-Acting Telescopic Cylinders in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Custom Hoists Single-Acting Telescopic Cylinders at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "destaco-721d-series-hydraulic-screw-in-cylinders-double-acting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Destaco 721D series double-acting screw-in hydraulic cylinder used for?",
+          "a": "The Destaco 721D Series Hydraulic Screw-In Cylinders, Double Acting is a double-acting screw-in hydraulic cylinder that the listing assigns to clamping, such as holding workpieces in fixtures. It has 4 part numbers (721D25501-1, 721D32501-2, 721D40501-2 and 721D50501-2), a 1.97\" stroke and a maker-stated pressure of 5,075 psi (350 bar)."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read Destaco part numbers such as 721D25501-1 and 721D50501-2?",
+          "a": "The four 721D part numbers are 721D25501-1, 721D32501-2, 721D40501-2 and 721D50501-2. The listing gives no decode for the digits, but the rows show that the sizes step up in clamping force: 721D25501-1 is 3,777 lbf, 721D32501-2 7,000 lbf, 721D40501-2 9,694 lbf and 721D50501-2 15,146 lbf."
+        },
+        {
+          "slot": "D",
+          "q": "What clamping forces does the Destaco 721D series offer?",
+          "a": "The Destaco 721D series gives a maximum clamping force of 3,777 lbf, 7,000 lbf, 9,694 lbf or 15,146 lbf depending on the part number. Pick the one whose maximum clamping force exceeds the holding force the fixture needs, at the pressure your circuit supplies."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke does the Destaco 721D screw-in cylinder have?",
+          "a": "Every part number in the Destaco 721D series (721D25501-1, 721D32501-2, 721D40501-2 and 721D50501-2) has a stroke of 1.97\". Because the stroke is the same across the range, the four sizes differ in clamping force rather than in travel."
+        },
+        {
+          "slot": "E",
+          "q": "What is the maximum pressure of the Destaco 721D series hydraulic cylinder?",
+          "a": "The maker states 5,075 psi (350 bar) for the Destaco 721D series, and every row of the size table carries the same figure. The clamping force on each part number is quoted at maximum pressure, so a lower supply pressure gives a lower clamping force."
+        },
+        {
+          "slot": "E",
+          "q": "Does the Destaco 721D series include a spindle?",
+          "a": "No. The listing states that a spindle is not included with the Destaco 721D series, so the cylinder body is supplied on its own. Check the fixture design and, if you need a spindle, ask us what the maker offers for your part number."
+        },
+        {
+          "slot": "H",
+          "q": "What does a screw-in cylinder like the Destaco 721D connect to?",
+          "a": "A screw-in cylinder such as the Destaco 721D Series Hydraulic Screw-In Cylinders, Double Acting threads into a machined cavity or block in the fixture and is fed through that block's oil passages. Double-acting means it needs a supply to both the clamp and unclamp sides. The listing gives no port or thread size, so send us the part number and we confirm it."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Destaco 721D series screw-in cylinder be installed?",
+          "a": "Thread the cylinder into a clean, correctly machined cavity, supply both sides of the piston, and bleed air from the lines before you clamp a workpiece. The pressure rating of 5,075 psi applies to the cylinder, so keep the hoses and fittings in the clamp circuit rated at least as high."
+        },
+        {
+          "slot": "J",
+          "q": "Which Destaco 721D part number should I choose for clamping?",
+          "a": "Choose the smallest 721D part number whose maximum clamping force still exceeds the holding force the fixture needs. The four forces are 3,777, 7,000, 9,694 and 15,146 lbf, in the order of 721D25501-1, 721D32501-2, 721D40501-2 and 721D50501-2. Then check the supply pressure can reach the rated 5,075 psi."
+        },
+        {
+          "slot": "G",
+          "q": "Is there a datasheet for the Destaco 721D series screw-in cylinders?",
+          "a": "This listing carries no datasheet for the Destaco 721D Series Hydraulic Screw-In Cylinders, Double Acting. Send us the part number and we request the maker's drawing so you can check the thread, mounting dimensions and ports before ordering."
+        },
+        {
+          "slot": "K",
+          "q": "How does a Destaco screw-in hydraulic cylinder differ from a tie-rod cylinder?",
+          "a": "A screw-in cylinder is a compact clamping unit with a 1.97\" stroke that threads into a fixture block, whereas a [tie-rod hydraulic cylinder](/c/tie-rod-cylinders) is a longer-stroke, pin-mounted machine cylinder. Choose by whether the job is clamping or moving a load."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Destaco 721D Series Hydraulic Screw-In Cylinders, Double Acting in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Destaco 721D Series Hydraulic Screw-In Cylinders, Double Acting sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rlt-series-telescopic-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac RLT series telescopic hydraulic cylinder?",
+          "a": "The Enerpac RLT Series Telescopic Hydraulic Cylinders is a low-profile, single-acting, load-return telescopic cylinder in steel with a nitrided surface, made in Spain. It has 9 part numbers from 4 to 74 tons, two-stage or three-stage, for lifting where headroom is limited."
+        },
+        {
+          "slot": "B",
+          "q": "How are Enerpac RLT part numbers such as RLT40 and RLT741 organised?",
+          "a": "RLT part numbers appear to start with the series letters and carry the capacity: RLT230 is the 23 ton two-stage and RLT741 the 74 ton two-stage, while RLT40 and RLT41 are both 4 ton. The rows prove the capacity pattern only; the three-stage versions (RLT41, RLT111, RLT231) are shown by their item text."
+        },
+        {
+          "slot": "D",
+          "q": "What capacities does the Enerpac RLT telescopic cylinder range cover?",
+          "a": "The RLT range runs from 4 ton to 74 ton across 9 part numbers. They are RLT40 (4 ton, two-stage), RLT41 (4 ton, three-stage), RLT110 (10 ton, two-stage), RLT111 (11 ton, three-stage), RLT230 (23 ton, two-stage), RLT231 (23 ton, three-stage), RLT311 (31 ton, two-stage), RLT501 (50 ton, two-stage) and RLT741 (74 ton, two-stage). Pick a capacity with margin above the working load."
+        },
+        {
+          "slot": "D",
+          "q": "What strokes do the Enerpac RLT telescopic cylinders have?",
+          "a": "Strokes are short, from 0.67\" on RLT40 to 1.57\" on RLT111. For instance RLT230 is 1.06\" two-stage and RLT111 1.57\" three-stage. A telescopic cylinder gives that stroke from a lower retracted height than a standard cylinder."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Enerpac RLT telescopic cylinder made from?",
+          "a": "The Enerpac RLT Series Telescopic Hydraulic Cylinders is made of steel with a nitride surface treatment. The listing describes it as a low-profile type with a telescopic plunger and a single-acting, load-return design."
+        },
+        {
+          "slot": "E",
+          "q": "How does an Enerpac RLT single-acting telescopic cylinder retract?",
+          "a": "The Enerpac RLT Series Telescopic Hydraulic Cylinders is a load-return cylinder: oil pressure extends the stages and the load pushes them back once the oil is released. For that reason it cannot pull a load back down, so use a double-acting cylinder if you need a powered return."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the Enerpac RLT telescopic cylinder run at?",
+          "a": "The listing publishes no working pressure for the RLT range. It does note that high-pressure tooling cylinders run at up to 700 bar and need a pump, hose and gauge rated to match, so ask us for the Enerpac figure for your part number before you set the relief valve."
+        },
+        {
+          "slot": "G",
+          "q": "What is the difference between the RLT and RT Enerpac telescopic cylinders?",
+          "a": "The RLT series is the low-profile type with strokes around 1 inch and capacities up to 74 ton, while the [Enerpac RT series](/p/enerpac-rt-series-telescopic-hydraulic-cylinders) is the general-purpose type with longer strokes. Choose RLT where headroom is tight, RT where you need more travel."
+        },
+        {
+          "slot": "I",
+          "q": "How should an Enerpac RLT telescopic cylinder be used safely?",
+          "a": "Set the Enerpac RLT Series Telescopic Hydraulic Cylinders on a flat, solid base, centre the load on the plunger and extend it with the matching pump, hose and gauge. A telescopic cylinder is less stable than a standard one at full extension, so do not load it off-centre."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Enerpac RLT telescopic cylinder made?",
+          "a": "The listing gives Spain as the country of origin for the Enerpac RLT Series Telescopic Hydraulic Cylinders. We export from Dubai."
+        },
+        {
+          "slot": "J",
+          "q": "Which Enerpac RLT part number should I choose for a 23 ton lift?",
+          "a": "For 23 tons the range offers RLT230, two-stage with a 1.06\" stroke, and RLT231, three-stage with a 1.26\" stroke. Take the three-stage one if you need the extra travel, and pick a capacity with margin above the working load."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Enerpac RLT Series Telescopic Hydraulic Cylinders from stock in the UAE and get a quotation?",
+          "a": "Yes. We keep Enerpac RLT Series Telescopic Hydraulic Cylinders in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "enerpac-rt-series-telescopic-hydraulic-cylinders",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Enerpac RT series telescopic hydraulic cylinder used for?",
+          "a": "The Enerpac RT Series Telescopic Hydraulic Cylinders is a general-purpose, single-acting, load-return telescopic cylinder in steel with a nitrided surface, made in Spain. It has 6 part numbers from 15 to 34 tons, two-stage or three-stage, for lifting that needs more travel than a standard cylinder gives from the same retracted height."
+        },
+        {
+          "slot": "B",
+          "q": "How do Enerpac RT part numbers such as RT1510 and RT3323 work?",
+          "a": "The six RT part numbers (RT1510, RT2111, RT1817, RT3311, RT2119 and RT3323) carry the capacity in their first two digits, for example RT1510 is 15 ton and RT3323 is 34 ton, and the item text gives two or three stages. Quote the part number to be sure of the match."
+        },
+        {
+          "slot": "D",
+          "q": "What capacities and stages does the Enerpac RT telescopic cylinder come in?",
+          "a": "The RT range lists RT1510 (15 ton, 2-stage), RT1817 (17 ton, 3-stage), RT2111 (22 ton, 2-stage), RT2119 (22 ton, 3-stage), RT3311 (34 ton, 2-stage) and RT3323 (34 ton, 3-stage). The three-stage versions give more travel for the same retracted height than the two-stage ones."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended heights of the Enerpac RT telescopic cylinders?",
+          "a": "Retracted height runs from 11.14\" on RT1510 to 18.74\" on RT3323, and extended height from 21.77\" to 42.36\". Check the retracted height fits your space first, because it sets the minimum gap the cylinder needs."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke does an Enerpac RT telescopic cylinder give?",
+          "a": "The listing does not give a clean stroke for the RT range; use the retracted and extended heights in the table, where the stroke is the difference between them. For example RT1510 goes from 11.14\" to 21.77\" and RT3323 from 18.74\" to 42.36\"."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Enerpac RT telescopic cylinder made from?",
+          "a": "The Enerpac RT Series Telescopic Hydraulic Cylinders is made of steel with a nitride surface treatment, and the listing classes it as a general-purpose telescopic cylinder with a single-acting, load-return design."
+        },
+        {
+          "slot": "E",
+          "q": "How does the Enerpac RT single-acting telescopic cylinder retract?",
+          "a": "The Enerpac RT Series Telescopic Hydraulic Cylinders is a load-return cylinder: oil pressure extends the stages and the load pushes them back once the oil is released. It cannot pull a load back down, so use a double-acting cylinder if you need a powered return."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the Enerpac RT telescopic cylinder run at?",
+          "a": "The listing publishes no working pressure for the RT range. It does note that high-pressure tooling cylinders run at up to 700 bar and need a pump, hose and gauge rated to match, so ask us for the Enerpac figure for your part number before you set the relief valve."
+        },
+        {
+          "slot": "G",
+          "q": "What is the difference between the Enerpac RT and RLT telescopic cylinders?",
+          "a": "The RT series is the general-purpose type with longer travel, while the [Enerpac RLT series](/p/enerpac-rlt-series-telescopic-hydraulic-cylinders) is the low-profile type with strokes of about an inch. Choose RT where you need more travel, RLT where headroom is tight."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Enerpac RT telescopic cylinder made?",
+          "a": "The listing gives Spain as the country of origin for the Enerpac RT Series Telescopic Hydraulic Cylinders. We export from Dubai."
+        },
+        {
+          "slot": "I",
+          "q": "How should an Enerpac RT telescopic cylinder be used safely?",
+          "a": "Set the Enerpac RT Series Telescopic Hydraulic Cylinders on a flat, solid base, centre the load on the plunger and extend it with the matching pump, hose and gauge. A telescopic cylinder is less stable at full extension than a standard cylinder, so do not load it off-centre."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Enerpac RT Series Telescopic Hydraulic Cylinders in Dubai for export?",
+          "a": "Yes. Enerpac RT Series Telescopic Hydraulic Cylinders sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-htcn-dump-hoist-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore and what is it used for?",
+          "a": "Magister HTCN Dump Hoist 5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 5\" bore and a 2\" rod. Its mounting is a dump-hoist-pattern welded body. It is listed in three stroke lengths from 15.75\" to 21.5\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore organised?",
+          "a": "The Magister HTCN Dump Hoist 5\" bore cylinder part numbers run from HTCN5X15.75 to HTCN5X21.5 across 3 listed part numbers, one per stroke and rod combination. HTCN5X15.75 is the 15.75\" stroke and HTCN5X21.5 the 21.5\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Magister HTCN Dump Hoist 5\" bore cylinder comes in three stroke lengths from 15.75\" to 21.5\", including 15.75\", 20\" and 21.5\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister HTCN Dump Hoist 5\" bore cylinder runs from 23.5\" to 29.37\" and extended length from 39.25\" to 50.87\", depending on stroke. For example the 15.75\" stroke is 23.5\" retracted and 39.25\" extended, and the 21.5\" stroke is 29.37\" and 50.87\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore use?",
+          "a": "Every part number of the Magister HTCN Dump Hoist 5\" bore cylinder uses the 2\" rod, and the listed column load is 57,000 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister HTCN Dump Hoist 5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Magister HTCN Dump Hoist 5\" bore cylinder is listed as 57,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Magister HTCN Dump Hoist 5\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Magister HTCN Dump Hoist 5\" bore cylinder has a dump-hoist-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Magister HTCN Dump Hoist 5\" bore cylinder lists 57,000 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore differ from other 5\" bore cylinders in the range?",
+          "a": "The same 5\" bore is also listed with a different mounting as the [Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore](/p/magister-wlsn-log-splitter-hydraulic-cylinder-5-in-bore). Choose by how your machine mounts the cylinder: this one has a dump-hoist-pattern welded body; check the other listing for its pin and eye arrangement."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister HTCN Dump Hoist Hydraulic Cylinder, 5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Magister HTCN Dump Hoist 5\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wldn-loader-hydraulic-cylinder-1-75-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore and what is it used for?",
+          "a": "Magister WLDN Loader 1.75\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 1.75\" bore and a 1\" rod. Its mounting is a loader-pattern welded body. It is listed in two stroke lengths from 14\" to 18\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore come in?",
+          "a": "The Magister WLDN Loader 1.75\" bore cylinder part numbers run from WLDN1.75×14 to WLDN1.75×18 across 2 listed part numbers, one per stroke and rod combination. WLDN1.75×14 is the 14\" stroke and WLDN1.75×18 the 18\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore?",
+          "a": "The Magister WLDN Loader 1.75\" bore cylinder comes in two stroke lengths from 14\" to 18\", including 14\" and 18\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WLDN Loader 1.75\" bore cylinder runs from 27.25\" to 28.5\" and extended length from 42.5\" to 45.25\", depending on stroke. For example the 14\" stroke is 28.5\" retracted and 42.5\" extended, and the 18\" stroke is 27.25\" and 45.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore use?",
+          "a": "Every part number of the Magister WLDN Loader 1.75\" bore cylinder uses the 1\" rod, and the listed column load is 5,150 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WLDN Loader 1.75\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore carry?",
+          "a": "Column load on the Magister WLDN Loader 1.75\" bore cylinder is listed as 5,150 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore have?",
+          "a": "The Magister WLDN Loader 1.75\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore mounted and installed?",
+          "a": "The Magister WLDN Loader 1.75\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.75\" bore area, then check the load against the column load for your stroke (the Magister WLDN Loader 1.75\" bore cylinder lists 5,150 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Magister WLDN Loader Hydraulic Cylinder, 2\" Bore](/p/magister-wldn-loader-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.75\" bore, in the same loader pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1\" rod and column load of 5,150 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore in Dubai for export?",
+          "a": "Yes. We keep Magister WLDN Loader 1.75\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wldn-loader-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore, and where is it used?",
+          "a": "Magister WLDN Loader 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2.5\" bore and a 1.5\" rod. Its mounting is a loader-pattern welded body. It is listed in two stroke lengths from 18.25\" to 23.5\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore come in?",
+          "a": "The Magister WLDN Loader 2.5\" bore cylinder part numbers run from WLDN2.5×18.25 to WLDN2.5×23.5 across 2 listed part numbers, one per stroke and rod combination. WLDN2.5×18.25 is the 18.25\" stroke and WLDN2.5×23.5 the 23.5\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Magister WLDN Loader 2.5\" bore cylinder comes in two stroke lengths from 18.25\" to 23.5\", including 18.25\" and 23.5\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WLDN Loader 2.5\" bore cylinder runs from 31.25\" to 34\" and extended length from 49.5\" to 57.5\", depending on stroke. For example the 18.25\" stroke is 31.25\" retracted and 49.5\" extended, and the 23.5\" stroke is 34\" and 57.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore use?",
+          "a": "Every part number of the Magister WLDN Loader 2.5\" bore cylinder uses the 1.5\" rod, and the listed column load is 14,700 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WLDN Loader 2.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Magister WLDN Loader 2.5\" bore cylinder is listed as 14,700 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Magister WLDN Loader 2.5\" bore cylinder has SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Magister WLDN Loader 2.5\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Magister WLDN Loader 2.5\" bore cylinder lists 14,700 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size down is the [Magister WLDN Loader Hydraulic Cylinder, 2\" Bore](/p/magister-wldn-loader-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 2.5\" bore, in the same loader pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.5\" rod and column load of 14,700 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WLDN Loader Hydraulic Cylinder, 2.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Magister WLDN Loader 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wldn-loader-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Magister WLDN Loader 2\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 1.25\" rod. Its mounting is a loader-pattern welded body. It is listed in three stroke lengths from 19.25\" to 22.75\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore come in?",
+          "a": "The Magister WLDN Loader 2\" bore cylinder part numbers run from WLDN2X19.25 to WLDN2X22.75 across 3 listed part numbers, one per stroke and rod combination. WLDN2X19.25 is the 19.25\" stroke and WLDN2X22.75 the 22.75\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WLDN Loader 2\" bore cylinder comes in three stroke lengths from 19.25\" to 22.75\", including 19.25\", 19.75\" and 22.75\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WLDN Loader 2\" bore cylinder runs from 26.375\" to 29.875\" and extended length from 46.125\" to 52.625\", depending on stroke. For example the 19.25\" stroke is 26.875\" retracted and 46.125\" extended, and the 22.75\" stroke is 29.875\" and 52.625\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WLDN Loader 2\" bore cylinder uses the 1.25\" rod, and the listed column load is 9,400 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WLDN Loader 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WLDN Loader 2\" bore cylinder is listed as 9,400 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WLDN Loader 2\" bore cylinder has SAE ORB -6 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WLDN Loader 2\" bore cylinder has a loader-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WLDN Loader 2\" bore cylinder lists 9,400 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore compare with the 1.75\" bore version?",
+          "a": "The next size down is the [Magister WLDN Loader Hydraulic Cylinder, 1.75\" Bore](/p/magister-wldn-loader-hydraulic-cylinder-1-75-in-bore) with a 1.75\" bore against this 2\" bore, in the same loader pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 1.25\" rod and column load of 9,400 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WLDN Loader Hydraulic Cylinder, 2\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. Indus stocks Magister WLDN Loader 2\" bore cylinder at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wlsn-log-splitter-hydraulic-cylinder-4-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore and what is it used for?",
+          "a": "Magister WLSN Log Splitter 4\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 4\" bore and a 1.75\" rod. Its mounting is a log-splitter-pattern welded body. It is listed in two stroke lengths from 24\" to 30\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore come in?",
+          "a": "The Magister WLSN Log Splitter 4\" bore cylinder part numbers run from WLSN4X24 to WLSN4X30 across 2 listed part numbers, one per stroke and rod combination. WLSN4X24 is the 24\" stroke and WLSN4X30 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore?",
+          "a": "The Magister WLSN Log Splitter 4\" bore cylinder comes in two stroke lengths from 24\" to 30\", including 24\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WLSN Log Splitter 4\" bore cylinder runs from 34.5\" to 40.5\" and extended length from 58.5\" to 70.5\", depending on stroke. For example the 24\" stroke is 34.5\" retracted and 58.5\" extended, and the 30\" stroke is 40.5\" and 70.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore use?",
+          "a": "Every part number of the Magister WLSN Log Splitter 4\" bore cylinder uses the 1.75\" rod, and the listed column load is 36,000 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WLSN Log Splitter 4\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore carry?",
+          "a": "Column load on the Magister WLSN Log Splitter 4\" bore cylinder is listed as 36,000 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore have?",
+          "a": "The Magister WLSN Log Splitter 4\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore mounted and installed?",
+          "a": "The Magister WLSN Log Splitter 4\" bore cylinder has a log-splitter-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 4\" bore area, then check the load against the column load for your stroke (the Magister WLSN Log Splitter 4\" bore cylinder lists 36,000 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore compare with the 5\" bore version?",
+          "a": "The next size up is the [Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore](/p/magister-wlsn-log-splitter-hydraulic-cylinder-5-in-bore) with a 5\" bore against this 4\" bore, in the same log splitter pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one has a 1.75\" rod and column load of 36,000 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes. We keep Magister WLSN Log Splitter 4\" bore cylinder in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wlsn-log-splitter-hydraulic-cylinder-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore do, and what is it for?",
+          "a": "Magister WLSN Log Splitter 5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 5\" bore and a 2\" rod. Its mounting is a log-splitter-pattern welded body. It is listed in two stroke lengths from 24\" to 30\", 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore come in?",
+          "a": "The Magister WLSN Log Splitter 5\" bore cylinder part numbers run from WLSN5X24 to WLSN5X30 across 2 listed part numbers, one per stroke and rod combination. WLSN5X24 is the 24\" stroke and WLSN5X30 the 30\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore?",
+          "a": "The Magister WLSN Log Splitter 5\" bore cylinder comes in two stroke lengths from 24\" to 30\", including 24\" and 30\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WLSN Log Splitter 5\" bore cylinder runs from 34.5\" to 40.5\" and extended length from 58.5\" to 70.5\", depending on stroke. For example the 24\" stroke is 34.5\" retracted and 58.5\" extended, and the 30\" stroke is 40.5\" and 70.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore use?",
+          "a": "Every part number of the Magister WLSN Log Splitter 5\" bore cylinder uses the 2\" rod, and the listed column load is 58,900 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Magister WLSN Log Splitter 5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore carry?",
+          "a": "Column load on the Magister WLSN Log Splitter 5\" bore cylinder is listed as 58,900 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore have?",
+          "a": "The Magister WLSN Log Splitter 5\" bore cylinder has NPT 1/2\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore mounted and installed?",
+          "a": "The Magister WLSN Log Splitter 5\" bore cylinder has a log-splitter-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 5\" bore area, then check the load against the column load for your stroke (the Magister WLSN Log Splitter 5\" bore cylinder lists 58,900 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore compare with the 4\" bore version?",
+          "a": "The next size down is the [Magister WLSN Log Splitter Hydraulic Cylinder, 4\" Bore](/p/magister-wlsn-log-splitter-hydraulic-cylinder-4-in-bore) with a 4\" bore against this 5\" bore, in the same log splitter pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 58,900 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WLSN Log Splitter Hydraulic Cylinder, 5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes. Magister WLSN Log Splitter 5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wspn-snowplow-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore do, and what is it for?",
+          "a": "Magister WSPN Snowplow 1.5\" bore cylinder is a single-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 1.5\" bore. Its mounting is a snowplow-pattern welded body. It is listed in four stroke lengths from 6\" to 12\", 9 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "Which part numbers does the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore come in?",
+          "a": "The Magister WSPN Snowplow 1.5\" bore cylinder part numbers run from WSPN1.5X6MYE to WSPN1.5X12MYE across 9 listed part numbers, one per stroke and rod combination. WSPN1.5X6MYE is the 6\" stroke and WSPN1.5X12MYE the 12\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Magister WSPN Snowplow 1.5\" bore cylinder comes in four stroke lengths from 6\" to 12\", including 6\", 8\", 10\" and 12\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WSPN Snowplow 1.5\" bore cylinder runs from 12\" to 19.38\" and extended length from 18\" to 31.38\", depending on stroke. For example the 6\" stroke is 12\" retracted and 18\" extended, and the 12\" stroke is 18\" and 30\"."
+        },
+        {
+          "slot": "D",
+          "q": "How does column load change with stroke on the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Magister WSPN Snowplow 1.5\" bore cylinder lists column load of 5,895 lbs across its strokes, and the load you can push on it normally falls as the stroke gets longer. Because column load depends on the rod, ask us to confirm the rod diameter for your part number before you size it against a long stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WSPN Snowplow 1.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Magister WSPN Snowplow 1.5\" bore cylinder is listed as 5,895 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Magister WSPN Snowplow 1.5\" bore cylinder has NPT 1/4\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Magister WSPN Snowplow 1.5\" bore cylinder has a snowplow-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Magister WSPN Snowplow 1.5\" bore cylinder lists 5,895 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore compare with the 2\" bore version?",
+          "a": "The next size up is the [Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore](/p/magister-wspn-snowplow-hydraulic-cylinder-2-in-bore) with a 2\" bore against this 1.5\" bore, in the same snowplow pattern from Magister Hydraulics. A larger bore gives more push force at the same pressure but a larger body; this one lists column load of 5,895 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore in stock in Dubai, and can you ship it worldwide?",
+          "a": "Yes, Magister WSPN Snowplow 1.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "magister-wspn-snowplow-hydraulic-cylinder-2-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore do, and what is it for?",
+          "a": "Magister WSPN Snowplow 2\" bore cylinder is a single-acting welded-body hydraulic cylinder from Magister Hydraulics, with a 2\" bore and a 2\" rod. Its mounting is a snowplow-pattern welded body. It is listed in two stroke lengths from 10\" to 16\", 3 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore organised?",
+          "a": "The Magister WSPN Snowplow 2\" bore cylinder part numbers run from WSPN2X10WES to WSPN2X16W&D across 3 listed part numbers, one per stroke and rod combination. WSPN2X10WES is the 10\" stroke and WSPN2X16W&D the 16\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore?",
+          "a": "The Magister WSPN Snowplow 2\" bore cylinder comes in two stroke lengths from 10\" to 16\", including 10\" and 16\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Magister WSPN Snowplow 2\" bore cylinder runs from 17.25\" to 23.63\" and extended length from 27.25\" to 39.63\", depending on stroke. For example the 10\" stroke is 17.25\" retracted and 27.25\" extended, and the 16\" stroke is 23.63\" and 39.63\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore use?",
+          "a": "Every part number of the Magister WSPN Snowplow 2\" bore cylinder uses the 2\" rod, and the listed column load is 9,744 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 2,500 psi for the Magister WSPN Snowplow 2\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore carry?",
+          "a": "Column load on the Magister WSPN Snowplow 2\" bore cylinder is listed as 9,744 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore have?",
+          "a": "The Magister WSPN Snowplow 2\" bore cylinder has NPT 1/4\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore mounted and installed?",
+          "a": "The Magister WSPN Snowplow 2\" bore cylinder has a snowplow-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2\" bore area, then check the load against the column load for your stroke (the Magister WSPN Snowplow 2\" bore cylinder lists 9,744 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore compare with the 1.5\" bore version?",
+          "a": "The next size down is the [Magister WSPN Snowplow Hydraulic Cylinder, 1.5\" Bore](/p/magister-wspn-snowplow-hydraulic-cylinder-1-5-in-bore) with a 1.5\" bore against this 2\" bore, in the same snowplow pattern from Magister Hydraulics. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 9,744 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Magister WSPN Snowplow Hydraulic Cylinder, 2\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Magister WSPN Snowplow 2\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-snowplow-hydraulic-cylinder-1-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore, and where is it used?",
+          "a": "Maxim Snowplow 1.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 1.5\" bore. Its mounting is a snowplow-pattern welded body. It is listed in four stroke lengths from 6\" to 12\", 11 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore organised?",
+          "a": "The Maxim Snowplow 1.5\" bore cylinder part numbers run from 288500 to 288511 across 11 listed part numbers, one per stroke and rod combination. 288500 is the 6\" stroke and 288511 the 12\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Maxim Snowplow 1.5\" bore cylinder comes in four stroke lengths from 6\" to 12\", including 6\", 8\", 10\" and 12\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Snowplow 1.5\" bore cylinder runs from 12\" to 19.38\" and extended length from 18\" to 31.38\", depending on stroke. For example the 6\" stroke is 12\" retracted and 18\" extended, and the 12\" stroke is 19\" and 31\"."
+        },
+        {
+          "slot": "D",
+          "q": "How does column load change with stroke on the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore?",
+          "a": "The Maxim Snowplow 1.5\" bore cylinder lists column load of 4,480 lbs across its strokes, and the load you can push on it normally falls as the stroke gets longer. Because column load depends on the rod, ask us to confirm the rod diameter for your part number before you size it against a long stroke."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore rated for?",
+          "a": "The maker publishes a rated pressure of 3,500 psi for the Maxim Snowplow 1.5\" bore cylinder. A hydraulic circuit is limited by its lowest-rated component, so check the pump, hose and valve are rated to match before you set the relief."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore carry?",
+          "a": "Column load on the Maxim Snowplow 1.5\" bore cylinder is listed as 4,480 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore have?",
+          "a": "The Maxim Snowplow 1.5\" bore cylinder has NPT 1/4\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore mounted and installed?",
+          "a": "The Maxim Snowplow 1.5\" bore cylinder has a snowplow-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 1.5\" bore area, then check the load against the column load for your stroke (the Maxim Snowplow 1.5\" bore cylinder lists 4,480 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore compare with the 2.25\" bore version?",
+          "a": "The next size up is the [Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore](/p/maxim-snowplow-hydraulic-cylinder-2-25-in-bore) with a 2.25\" bore against this 1.5\" bore, in the same snowplow pattern from Maxim. A larger bore gives more push force at the same pressure but a larger body; this one lists column load of 4,480 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy the Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore from stock in the UAE and get a quotation?",
+          "a": "Yes, Maxim Snowplow 1.5\" bore cylinder is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Request a price and delivery date on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-snowplow-hydraulic-cylinder-2-25-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore and what is it used for?",
+          "a": "Maxim Snowplow 2.25\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2.25\" bore and a 2\" rod. Its mounting is a snowplow-pattern welded body. It is listed in four stroke lengths from 6\" to 16\", 5 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore organised?",
+          "a": "The Maxim Snowplow 2.25\" bore cylinder part numbers run from 288512 to 288516 across 5 listed part numbers, one per stroke and rod combination. 288512 is the 6\" stroke and 288516 the 16\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore?",
+          "a": "The Maxim Snowplow 2.25\" bore cylinder comes in four stroke lengths from 6\" to 16\", including 6\", 10\", 12\" and 16\". Stroke sets the travel, so choose it from the movement the load needs, then confirm the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Snowplow 2.25\" bore cylinder runs from 13.19\" to 23.63\" and extended length from 19.19\" to 39.63\", depending on stroke. For example the 6\" stroke is 13.19\" retracted and 19.19\" extended, and the 16\" stroke is 23.25\" and 39.25\"."
+        },
+        {
+          "slot": "D",
+          "q": "What rod diameter does the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore use?",
+          "a": "Every part number of the Maxim Snowplow 2.25\" bore cylinder uses the 2\" rod, and the listed column load is 5,522 lbs. Check a long stroke against your compressive load, since column load normally falls as stroke grows."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Snowplow 2.25\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore carry?",
+          "a": "Column load on the Maxim Snowplow 2.25\" bore cylinder is listed as 5,522 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore have?",
+          "a": "The Maxim Snowplow 2.25\" bore cylinder has NPT 1/4\" ports. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore mounted and installed?",
+          "a": "The Maxim Snowplow 2.25\" bore cylinder has a snowplow-pattern welded body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.25\" bore area, then check the load against the column load for your stroke (the Maxim Snowplow 2.25\" bore cylinder lists 5,522 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore compare with the 1.5\" bore version?",
+          "a": "The next size down is the [Maxim Snowplow Hydraulic Cylinder, 1.5\" Bore](/p/maxim-snowplow-hydraulic-cylinder-1-5-in-bore) with a 1.5\" bore against this 2.25\" bore, in the same snowplow pattern from Maxim. A smaller bore gives less push force at the same pressure but a more compact body; this one has a 2\" rod and column load of 5,522 lbs."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Snowplow Hydraulic Cylinder, 2.25\" Bore in Dubai for export?",
+          "a": "Yes. Maxim Snowplow 2.25\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    },
+    {
+      "slug": "maxim-top-link-hydraulic-cylinder-2-5-in-bore",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore and what is it used for?",
+          "a": "Maxim Top Link 2.5\" bore cylinder is a double-acting welded-body hydraulic cylinder from Maxim, with a 2.5\" bore and a 1.125\" or 1.25\" rod. Its mounting is a top-link-pattern body. It is listed in one stroke length (10\"), 2 part numbers in all. Selection basics are in our [hydraulic cylinder guide](/blog/hydraulic-cylinder-guide)."
+        },
+        {
+          "slot": "B",
+          "q": "How are the part numbers for the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore organised?",
+          "a": "The Maxim Top Link 2.5\" bore cylinder part numbers run from 218566 to 218567 across 2 listed part numbers, one per stroke and rod combination. 218566 is the 10\" stroke and 218567 the 10\" stroke, so quote the part number or the stroke and rod you need."
+        },
+        {
+          "slot": "D",
+          "q": "What stroke lengths can I get on the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Top Link 2.5\" bore cylinder is listed in a single 10\" stroke. Stroke sets the travel, so confirm the movement you need, then check the retracted length fits between your mounting points."
+        },
+        {
+          "slot": "D",
+          "q": "What are the retracted and extended lengths of the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "Retracted (pin-to-pin) length on the Maxim Top Link 2.5\" bore cylinder runs from 21.5\" to 21.5\" and extended length from 31.5\" to 31.5\", depending on stroke. For example the 10\" stroke is 21.5\" retracted and 31.5\" extended, and the 10\" stroke is 21.5\" and 31.5\"."
+        },
+        {
+          "slot": "D",
+          "q": "Which rod diameters are offered on the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore?",
+          "a": "The Maxim Top Link 2.5\" bore cylinder is listed with two rod diameters, 1.125\" and 1.25\". Per rod: the 1.125\" rod (one part number, column load 12,270 lbs); the 1.25\" rod (one part number, column load 14,720 lbs). A heavier rod normally gives more column load at the same stroke, so choose it for long strokes or compressive loads."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore rated for?",
+          "a": "The maker does not publish a rated pressure for the Maxim Top Link 2.5\" bore cylinder; the table gives column load instead. Ask us to confirm the pressure rating for your part number before you set the relief valve."
+        },
+        {
+          "slot": "E",
+          "q": "What column load can the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore carry?",
+          "a": "Column load on the Maxim Top Link 2.5\" bore cylinder is listed as 12,270 to 14,720 lbs across its strokes. Column load is the compressive load the extended rod can carry before it buckles, and it normally falls as the stroke gets longer. Pick the larger rod for the long strokes."
+        },
+        {
+          "slot": "H",
+          "q": "What port size does the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore have?",
+          "a": "The Maxim Top Link 2.5\" bore cylinder has NPT 3/8\", SAE ORB -8 ports. SAE ORB means an O-ring boss port, a straight thread sealed by an O-ring, so use matching ORB fittings or adapters. NPT is a tapered pipe thread that seals on the thread. Match the port size to the hose you plan to use."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore mounted and installed?",
+          "a": "The Maxim Top Link 2.5\" bore cylinder has a top-link-pattern body. Fit pins that match the eye or clevis bore, keep the load in line with the cylinder, and make sure the cylinder can swing freely through its full stroke. "
+        },
+        {
+          "slot": "J",
+          "q": "How do I size the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore for my load?",
+          "a": "Work out the push force from the working pressure and the 2.5\" bore area, then check the load against the column load for your stroke (the Maxim Top Link 2.5\" bore cylinder lists 12,270 to 14,720 lbs). Retract force is lower because the rod takes up part of the piston area."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Maxim Top Link Hydraulic Cylinder, 2.5\" Bore in Dubai for export?",
+          "a": "Yes. Maxim Top Link 2.5\" bore cylinder sits in stock in our Dubai, UAE warehouse and goes out worldwide with the best lead times. Quote the part numbers you need via [the contact page](/contact) and we will confirm price and dispatch."
+        }
+      ]
+    }
+  ]
+}

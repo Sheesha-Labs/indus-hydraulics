@@ -1,0 +1,340 @@
+{
+  "family": "oilfield-valve-accessories",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production.",
+      "source": "NACE MR0175 / ISO 15156"
+    }
+  ],
+  "products": [
+    {
+      "slug": "hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a double-acting hydraulic actuator with position indicator and limit switches used for?",
+          "a": "It is a double-acting hydraulic actuator that opens and closes an oilfield valve under hydraulic pressure, with a position indicator and dual limit switches for feedback. It fits API 6A 5M, 10M and 15M valve interfaces and is used on tree automation, frac iron remote operation and SSV or ESD control packages."
+        },
+        {
+          "slot": "B",
+          "q": "What do F10, F14 and F16 mean on the ISO 5211 flange of this hydraulic actuator?",
+          "a": "F10, F14 and F16 are the ISO 5211 mounting flange sizes the actuator is offered in, selected to match the host valve. Give the host valve make, model and serial number so we confirm the flange and the stem interface."
+        },
+        {
+          "slot": "D",
+          "q": "What control pressure does the double-acting hydraulic actuator need?",
+          "a": "The listing gives an operating control pressure of 3,000 psi. Because it is double-acting, hydraulic pressure drives it both open and closed, so it does not have a spring to fail-close. Choose a spring-return actuator if fail-safe closure is required."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose this double-acting hydraulic actuator or a gear operator for a high-pressure valve?",
+          "a": "Choose the hydraulic actuator when the valve must be operated remotely or from a control package. For hand operation on a 3 inch valve, the [8:1 worm-gear operator](/p/gear-operator-3-in-valve-8-1-ratio-worm-gear-manual-handwheel) reduces handwheel effort without hydraulics."
+        },
+        {
+          "slot": "E",
+          "q": "What feedback signals does the hydraulic actuator give?",
+          "a": "It gives a 4-20 mA position feedback signal and DPDT limit switches, per the listing. The housing is rated IP66 / NEMA 4X, so it suits outdoor wellhead use. Confirm any signal or manual override requirement on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What is the double-acting hydraulic actuator made from, and is it sour-service rated?",
+          "a": "The housing is carbon steel rated IP66 / NEMA 4X, the shaft is 316SS with a hardened-piston cylinder, and the seals are PEEK back-up with HNBR primary seals. The listing states NACE MR0175 / ISO 15156 compliant materials for sour service."
+        },
+        {
+          "slot": "G",
+          "q": "Is the hydraulic actuator made to an API standard and what documents are supplied?",
+          "a": "It is listed for API 6A valve interfaces and is supplied by API-licensed manufacturers to API 6A, with the API certificate and monogram documentation issued with the order. Confirm the host valve OEM, model and serial number so the right documents are issued."
+        },
+        {
+          "slot": "H",
+          "q": "Which valves does the double-acting hydraulic actuator fit?",
+          "a": "It is a universal-mount actuator for API 6A 5M, 10M and 15M valve interfaces through an ISO 5211 flange. Pair it with the [actuator mounting kit](/p/actuator-mounting-kit-for-api-6a-5m-10m-15m-valves-iso-5211-adapter) if the valve needs a stem extension or adapter, and add the [position indicator](/p/valve-position-indicator-with-4-20-ma-loop-output-and-local-led-display) for SCADA feedback."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit and test a hydraulic actuator on a tree valve?",
+          "a": "Fit it through the matching mounting interface for the host valve, connect the control line and the limit switch and 4-20 mA wiring, then stroke-test it fully open and closed before putting the valve into service. Confirm ambient temperature and hazardous-area zone on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Hydraulic actuator or manual gear operator for a wellhead valve?",
+          "a": "The hydraulic actuator gives remote opening and closing with position feedback, while a manual gear operator needs someone at the valve. See the [3 inch gear operator](/p/gear-operator-3-in-valve-8-1-ratio-worm-gear-manual-handwheel) for the manual option."
+        },
+        {
+          "slot": "L",
+          "q": "Can the double-acting hydraulic actuator be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents. The listing gives USA as the country of origin; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Hydraulic Actuator, Double-Acting, with Position Indicator and Limit Switches in stock in Dubai?",
+          "a": "Yes. We keep the Hydraulic Actuator, Double-Acting, with Position Indicator and Limit Switches in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "valve-position-indicator-with-4-20-ma-loop-output-and-local-led-display",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What does a valve position indicator with 4-20 mA loop output do?",
+          "a": "It reports whether an oilfield valve is open or closed, with a local LED display, a loop-powered 4-20 mA signal for SCADA and DPDT limit switch contacts. It fits API 6A and ANSI flanged valves and is used for automated tree integration and remote valve indication."
+        },
+        {
+          "slot": "B",
+          "q": "What do 4-20 mA loop-powered and DPDT limit switches mean on this indicator?",
+          "a": "4-20 mA loop-powered means the position signal runs on a two-wire current loop that also powers the unit, and DPDT means each limit switch has two changeover contacts for alarms or interlocks. Confirm wiring and control requirements on the RFQ."
+        },
+        {
+          "slot": "D",
+          "q": "Which valves can the 4-20 mA valve position indicator be fitted to?",
+          "a": "It fits API 6A and ANSI flanged valves through an ISO 5211 mounting bracket. Give the host valve make, model and serial number so the bracket and shaft interface are confirmed before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I add a position indicator or a limit-switch box to a manual valve?",
+          "a": "Add this position indicator when you need both a local LED display and a 4-20 mA signal to SCADA. It includes DPDT limit switches, so one unit covers alarm contacts as well. For actuation, see the [hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches)."
+        },
+        {
+          "slot": "E",
+          "q": "What enclosure rating does the valve position indicator have?",
+          "a": "The aluminium housing is rated IP66, which protects against dust and strong water jets. The listing gives standard-service materials with Viton (FKM) o-rings and a 316SS shaft assembly. Confirm the ambient temperature range on the RFQ."
+        },
+        {
+          "slot": "F",
+          "q": "What is the valve position indicator made from, and is it for sour service?",
+          "a": "The housing is aluminium, the shaft assembly is 316SS and the o-rings are Viton (FKM). The listing states standard service, so it is not offered as a NACE MR0175 sour-service build; confirm if the installation is sour."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the valve position indicator?",
+          "a": "The listing gives IP66 protection and fits API 6A and ANSI flanged valves, and is supplied with the interface for the host valve. Hazardous-area certification is not stated on the listing, so state the zone and the approval you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 4-20 mA position indicator connect to?",
+          "a": "It connects to a SCADA or PLC input through the 4-20 mA loop and to alarm circuits through the DPDT limit switches. On the valve side it mounts through the ISO 5211 bracket. Pair it with the [mounting kit](/p/actuator-mounting-kit-for-api-6a-5m-10m-15m-valves-iso-5211-adapter) when fitting actuators."
+        },
+        {
+          "slot": "I",
+          "q": "How do I calibrate the position indicator on a valve?",
+          "a": "Fit it on the stem or actuator shaft, cycle the valve fully open and fully closed, and set the 4 and 20 mA points and the limit-switch trips at those end positions. Use the commissioning instructions supplied with the unit."
+        },
+        {
+          "slot": "K",
+          "q": "Position indicator or actuator: which do I need on a remote valve?",
+          "a": "A position indicator only reports state, while an actuator moves the valve. Use this indicator on manual or actuated valves for feedback, and see the [double-acting hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches) when the valve must be operated remotely."
+        },
+        {
+          "slot": "L",
+          "q": "Can the valve position indicator be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and packing list. The listing gives USA as the country of origin; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Valve Position Indicator with 4-20 mA Loop Output and Local LED Display in stock in Dubai?",
+          "a": "Yes. We keep the Valve Position Indicator with 4-20 mA Loop Output and Local LED Display in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "actuator-mounting-kit-for-api-6a-5m-10m-15m-valves-iso-5211-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an actuator mounting kit for API 6A 5M, 10M and 15M valves used for?",
+          "a": "It is a bracket, stem extension and fastener kit for fitting ISO 5211 actuators to API 6A 5M, 10M and 15M valves. It is used for actuator retrofit on existing trees, new automated wellhead packages and SSV or ESD actuation integration."
+        },
+        {
+          "slot": "B",
+          "q": "What does the ISO 5211 F10, F14 and F16 mounting on this kit mean?",
+          "a": "ISO 5211 F10, F14 and F16 are the standard actuator mounting flange sizes on the actuator side of the kit. The valve side uses the API 6A standard stem interface, so the kit adapts the actuator flange to the valve stem."
+        },
+        {
+          "slot": "D",
+          "q": "Which valves does the API 6A actuator mounting kit fit?",
+          "a": "It fits API 6A 5M, 10M and 15M valves through the API 6A standard stem interface. Give the host valve OEM, model and serial number so the stem and bonnet interface are confirmed."
+        },
+        {
+          "slot": "D",
+          "q": "Do I need the ISO 5211 mounting kit or a ready-made actuator package?",
+          "a": "Order the kit when you already hold an ISO 5211 actuator and want to fit it to an existing valve. If you need the actuator too, see the [double-acting hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches), which uses the same flange sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure does the actuator mounting kit carry?",
+          "a": "The kit is a mechanical adapter and has no working pressure of its own; the pressure boundary stays with the valve bonnet and stem packing. The packing is graphite with Inconel braid, per the listing."
+        },
+        {
+          "slot": "F",
+          "q": "What materials is the actuator mounting kit made from?",
+          "a": "The housing is carbon steel A105N, the stem extension is 17-4PH and the packing is graphite with Inconel braid. The listing states NACE MR0175 / ISO 15156 compliant materials for sour service, material class EE."
+        },
+        {
+          "slot": "G",
+          "q": "Is the actuator mounting kit suitable for sour service and which standards apply?",
+          "a": "Yes. The listing states NACE MR0175 / ISO 15156 compliant materials for sour service, and the kit is for API 6A valves. Certificates are supplied with the order; confirm the documents you need on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What actuators can be fitted using the ISO 5211 mounting kit?",
+          "a": "Any actuator with an ISO 5211 F10, F14 or F16 flange can be fitted. Typical examples are the [hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches) and a quarter-turn style pneumatic actuator supplied by you, after the stem travel is confirmed."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an actuator mounting kit to an API 6A gate valve?",
+          "a": "Depressurise the valve, fit the bracket and stem extension to the stem interface, mount the actuator on the ISO 5211 flange and align it before tightening the fasteners. Stroke-test the valve with the actuator before it returns to service."
+        },
+        {
+          "slot": "K",
+          "q": "Mounting kit or gear operator for converting a manual valve?",
+          "a": "The mounting kit lets you fit a powered actuator, while a gear operator keeps the valve manual with lower handwheel effort. See the [3 inch gear operator](/p/gear-operator-3-in-valve-8-1-ratio-worm-gear-manual-handwheel) for the manual option."
+        },
+        {
+          "slot": "L",
+          "q": "Can the actuator mounting kit be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and material certificates. The listing gives USA as the country of origin; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Actuator Mounting Kit for API 6A 5M / 10M / 15M Valves, ISO 5211 Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Actuator Mounting Kit for API 6A 5M / 10M / 15M Valves, ISO 5211 Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "lockout-tagout-loto-device-padlockable-fits-1-2-in-4-in-quarter-turn-valves",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a padlockable LOTO device for quarter-turn valves used for?",
+          "a": "A padlockable lockout/tagout (LOTO) device locks a quarter-turn valve in its fully open or fully closed position so it cannot be operated during maintenance. It fits 1/2 in to 4 in quarter-turn valves and is listed as OSHA 1910.147 compliant."
+        },
+        {
+          "slot": "B",
+          "q": "What does OSHA 1910.147 mean for a valve lockout device?",
+          "a": "OSHA 1910.147 is the US standard on control of hazardous energy (lockout/tagout). The listing states the device is compliant with it, which means it accepts a shackle padlock to hold the valve in the isolated position."
+        },
+        {
+          "slot": "D",
+          "q": "What valve sizes does the LOTO device fit?",
+          "a": "It fits quarter-turn valves from 1/2 in to 4 in, on a universal lever mount. Larger valves or gate valves with handwheels need a different lockout, so tell us the valve type and size."
+        },
+        {
+          "slot": "D",
+          "q": "Should I use a LOTO lever lock or lockable handles on the valve?",
+          "a": "Use this lever-mount device on quarter-turn valves that have no lock provision. Lockable handles are an option on some instrument valves, such as the [needle valves in our instrumentation range](/c/oilfield-instrumentation-valves)."
+        },
+        {
+          "slot": "E",
+          "q": "Does a LOTO device have a pressure rating?",
+          "a": "No. It is a mechanical lock and carries no working pressure; it only holds the lever. The isolation itself depends on the valve it is fitted to, so confirm the valve rating and its sealing before relying on it."
+        },
+        {
+          "slot": "F",
+          "q": "What is the LOTO device made from?",
+          "a": "It is made from yellow-coated, zinc-plated steel with a standard hasp for shackle padlocks. The listing states standard service materials. Choose your own padlocks and tags to match your permit-to-work system."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the LOTO device meet?",
+          "a": "The listing states compliance with OSHA 1910.147 for lockout/tagout. It does not carry API or NACE ratings because it is not a pressure-containing part."
+        },
+        {
+          "slot": "H",
+          "q": "What does the LOTO device attach to, and what padlock does it take?",
+          "a": "It attaches to the lever of a quarter-turn valve with a universal lever mount, and has a standard hasp that takes shackle padlocks. Padlocks are supplied by you, or ask us to quote them with the device."
+        },
+        {
+          "slot": "I",
+          "q": "How do I use a lockout device for permit-to-work isolation?",
+          "a": "Move the valve fully open or fully closed, fit the device over the lever so the valve cannot turn, then apply your padlock and tag. Remove it only under the permit-to-work or inspection procedure for the job."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a valve lockout device used on an oilfield site?",
+          "a": "It is used for maintenance lockout, shutdown isolation, inspection and test lockout, and permit-to-work compliance on quarter-turn valves. Browse the [valve accessories shelf](/c/oilfield-valve-accessories) for related items."
+        },
+        {
+          "slot": "L",
+          "q": "Can the LOTO device be exported from Dubai?",
+          "a": "Yes. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and packing list. Tell us the destination and the quantity and we confirm freight on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the padlockable LOTO valve device in Dubai?",
+          "a": "Yes. We keep the padlockable LOTO device for quarter-turn valves in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the valve sizes and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gear-operator-3-in-valve-8-1-ratio-worm-gear-manual-handwheel",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an 8:1 worm-gear operator for a 3 inch valve used for?",
+          "a": "An 8:1 worm-gear operator reduces the handwheel effort needed to open or close a 3 inch API 6A 5M, 10M or 15M valve. It is used for manual operation on high-pressure wellhead valves, as a manual override on hydraulic valves and for Christmas tree side-outlet valves."
+        },
+        {
+          "slot": "B",
+          "q": "What does 8:1 ratio mean on a worm-gear operator?",
+          "a": "An 8:1 ratio means the handwheel turns eight times for each turn of the valve stem drive, which multiplies the operator torque. The listing gives a 12-inch cast iron handwheel for hand operation."
+        },
+        {
+          "slot": "D",
+          "q": "Which valves does the 3 inch worm-gear operator fit?",
+          "a": "It fits 3 inch API 6A 5M, 10M and 15M valves through the API 6A standard stem interface. Give the host valve make, model and serial number so the interface and the stem thread are confirmed."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a gear operator or an actuator for a 3 inch valve?",
+          "a": "Choose the gear operator when the valve stays manual and you need lower handwheel effort. For remote operation see the [hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches) or the [mounting kit](/p/actuator-mounting-kit-for-api-6a-5m-10m-15m-valves-iso-5211-adapter) to fit your own actuator."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the gear operator?",
+          "a": "The gear operator has no pressure rating of its own; the pressure boundary stays with the valve bonnet and stem seal. The listing is for 3 inch API 6A 5M, 10M and 15M valves."
+        },
+        {
+          "slot": "F",
+          "q": "What is the worm-gear operator made from?",
+          "a": "The housing is cast steel, the worm gear is 4140 steel with a bronze worm wheel, and the handwheel is cast iron, 12 inches in diameter. It is lithium-grease lubricated and dust-sealed. The listing states standard service."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the gear operator?",
+          "a": "The listing states standard service materials and an API 6A standard stem interface; it is supplied by a maker listed for API 6A equipment. Ask for documentation and the maker's test record on the RFQ."
+        },
+        {
+          "slot": "H",
+          "q": "What does the gear operator mount on, and how does it connect?",
+          "a": "It mounts on the API 6A standard stem interface of a 3 inch gate valve, in place of the plain handwheel. Pair it with an [actuator mounting kit](/p/actuator-mounting-kit-for-api-6a-5m-10m-15m-valves-iso-5211-adapter) only if you plan to add power actuation later."
+        },
+        {
+          "slot": "I",
+          "q": "How do I maintain a worm-gear valve operator?",
+          "a": "It is lithium-grease lubricated and dust-sealed, so keep the grease charged per the maker routine and keep the housing free of mud and sand. Turn the valve fully open or closed and check for backlash during routine inspection."
+        },
+        {
+          "slot": "K",
+          "q": "Gear operator or hydraulic actuator for high-pressure wellhead valves?",
+          "a": "A gear operator keeps the valve manual with reduced torque, while a hydraulic actuator allows remote operation with feedback. See the [hydraulic actuator](/p/hydraulic-actuator-double-acting-with-position-indicator-and-limit-switches)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 3 inch gear operator made and can it be exported from Dubai?",
+          "a": "The listing gives USA as the country of origin. We supply it from Dubai, UAE and ship worldwide with the commercial invoice and test documents; the HS code is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Gear Operator, 3 in Valve, 8:1 Ratio Worm-Gear, Manual Handwheel in stock in Dubai?",
+          "a": "Yes. We keep the Gear Operator, 3 in Valve, 8:1 Ratio Worm-Gear, Manual Handwheel in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

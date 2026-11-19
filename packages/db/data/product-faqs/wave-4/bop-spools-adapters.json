@@ -1,0 +1,206 @@
+{
+  "family": "bop-spools-adapters",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    }
+  ],
+  "products": [
+    {
+      "slug": "adapter-flange-crossover-11-10k-7-1-16-10k-api-6a-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an 11\" 10K x 7-1/16\" 10K adapter flange crossover used for?",
+          "a": "This API 6A adapter flange adapts an 11\" 10K workover BOP stack down to a 7-1/16\" 10K production wellhead. It is a single-piece flanged crossover, bolted with two BX gaskets and no studs, used on workover campaigns on producing wells and through-tubing intervention stack-ups."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the 11\" 10K x 7-1/16\" 10K adapter flange crossover?",
+          "a": "It has an API 6A 11\" 10K flanged top and a 7-1/16\" 10K flanged bottom, in an adapter-flange crossover design with a 7-1/16\" bore. Approximate transport weight is 580 kg. Confirm both flange sizes on the RFQ against your BOP stack and wellhead."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gaskets does the 11\" 10K x 7-1/16\" 10K adapter flange crossover take?",
+          "a": "The 11\" 10K end takes a BX-158 ring and the 7-1/16\" 10K end takes a BX-156. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service; see [ring joint gaskets](/c/ring-joint-gaskets) and [BOP spare parts](/c/bop-spare-parts)."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM crossovers is the 11\" 10K x 7-1/16\" 10K adapter flange crossover equivalent to?",
+          "a": "It is listed as equivalent to the Cameron adapter flange 11\" x 7-1/16\" 10K and the FMC adapter flange, as a standard workover stack-to-wellhead crossover. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 11\" 10K x 7-1/16\" 10K adapter flange crossover connect to?",
+          "a": "It connects an 11\" 10K preventer, such as an [11\" 10K annular BOP](/p/annular-bop-hydril-gk-style-11-10-000-psi-wp-sour-service-nace-mr0175), to a 7-1/16\" 10K production wellhead. See [wellhead equipment](/c/wellhead) for the wellhead side and confirm the flange type on your drawing."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 11\" 10K x 7-1/16\" 10K adapter flange crossover used?",
+          "a": "It is used on workover BOP stack to production wellhead crossovers, on Aramco, ADNOC and KOC workover campaigns on producing wells, on through-tubing intervention stack-ups and for snubbing preparation on production wellheads."
+        },
+        {
+          "slot": "K",
+          "q": "When should I choose a crossover flange instead of a DSA or drilling spool?",
+          "a": "Choose this single-piece flanged crossover when the stack steps down from 11\" to 7-1/16\" and both faces are flanged. The [13-5/8\" x 11\" DSA](/p/double-studded-adapter-dsa-13-5-8-10k-11-10k-api-6a-sour-service-nace-mr0175) has two studded faces instead of a flange, and the [13-5/8\" drilling spool](/p/drilling-spool-13-5-8-10k-13-5-8-10k-api-6a-sour-service-nace-mr0175) adds choke and kill outlets."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 11\" 10K x 7-1/16\" 10K adapter flange crossover?",
+          "a": "The 11\" 10K x 7-1/16\" 10K adapter flange crossover is rated 10,000 psi cold working pressure, 10K class. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 11\" 10K x 7-1/16\" 10K adapter flange crossover suitable for sour (H2S) service?",
+          "a": "Yes, the 11\" 10K x 7-1/16\" 10K adapter flange crossover is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the 11\" 10K x 7-1/16\" 10K adapter flange crossover?",
+          "a": "The 11\" 10K x 7-1/16\" 10K adapter flange crossover is API 6A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate and heat-number traceability stamped on the body."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 11\" 10K x 7-1/16\" 10K adapter flange crossover?",
+          "a": "The listing states a lead time of 45 days for the 11\" 10K x 7-1/16\" 10K adapter flange crossover. Exact timing depends on configuration and certification scope and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Adapter Flange / Crossover, 11\" 10K × 7-1/16\" 10K, API 6A, Sour Service (NACE MR0175) in stock in Dubai?",
+          "a": "Yes. We keep the Adapter Flange / Crossover, 11\" 10K × 7-1/16\" 10K, API 6A, Sour Service (NACE MR0175) in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, rating and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "double-studded-adapter-dsa-13-5-8-10k-11-10k-api-6a-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) used for?",
+          "a": "A double studded adapter adapts a 13-5/8\" 10K BOP stack down to an 11\" 10K wellhead, the typical workover-on-development-wellhead arrangement. Both faces are studded with no flange face, which saves vertical height compared with a spool."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA)?",
+          "a": "It has an API 6A 13-5/8\" 10K studded top and an 11\" 10K studded bottom, in a double studded adapter design with an 11\" bore. Approximate transport weight is 950 kg. Confirm both sizes and the stud pattern on the RFQ against your BOP and wellhead."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gaskets does the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) take?",
+          "a": "The 13-5/8\" 10K top takes a BX-159 ring and the 11\" 10K bottom takes a BX-158. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service; see [ring joint gaskets](/c/ring-joint-gaskets) and [BOP spare parts](/c/bop-spare-parts)."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM adapters is the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) equivalent to?",
+          "a": "It is listed as equivalent to the Cameron DSA 13-5/8\" 10K x 11\" 10K, the FMC DSA and the Stream-Flo DSA, as a standard wellhead-to-BOP crossover. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) connect to?",
+          "a": "It connects a 13-5/8\" 10K stack, such as a [13-5/8\" 10K annular BOP](/p/annular-bop-hydril-gk-style-13-5-8-10-000-psi-wp-sour-service-nace-mr0175), to an 11\" 10K wellhead. See [wellhead equipment](/c/wellhead) for the wellhead side."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) used?",
+          "a": "It is used to adapt workover stacks to an 11\" 10K wellhead, for mixed-class stack-ups on infill drilling, on Aramco, ADNOC and KOC workover campaigns, and for pre-completion stack adaptation."
+        },
+        {
+          "slot": "K",
+          "q": "How does the DSA differ from the 11\" x 7-1/16\" adapter flange crossover?",
+          "a": "The DSA has two studded faces and steps 13-5/8\" 10K down to 11\" 10K, while the [11\" x 7-1/16\" adapter flange](/p/adapter-flange-crossover-11-10k-7-1-16-10k-api-6a-sour-service-nace-mr0175) is a bolted flanged crossover that steps 11\" down to 7-1/16\". Pick by the two connection sizes you must join."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA)?",
+          "a": "The 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) is rated 10,000 psi cold working pressure, 10K class. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) suitable for sour (H2S) service?",
+          "a": "Yes, the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA)?",
+          "a": "The 13-5/8\" 10K x 11\" 10K double studded adapter (DSA) is API 6A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate and heat-number traceability stamped on the body."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA)?",
+          "a": "The listing states a lead time of 60 days for the 13-5/8\" 10K x 11\" 10K double studded adapter (DSA). Exact timing depends on configuration and certification scope and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "What is the lead time for the Double Studded Adapter (DSA), 13-5/8\" 10K × 11\" 10K, API 6A, Sour Service (NACE MR0175) from Indus Hydraulics?",
+          "a": "The Double Studded Adapter (DSA), 13-5/8\" 10K × 11\" 10K, API 6A, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 60 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    },
+    {
+      "slug": "drilling-spool-13-5-8-10k-13-5-8-10k-api-6a-sour-service-nace-mr0175",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 13-5/8\" 10K drilling spool used for?",
+          "a": "The drilling spool is the choke and kill connection point of a 13-5/8\" 10K BOP stack. It sits below the bottom ram and above the wellhead, with two 3-1/16\" 10K side outlets for connecting the choke and kill manifold, and is required on every 13-5/8\" 10K stack."
+        },
+        {
+          "slot": "D",
+          "q": "What are the end connections of the 13-5/8\" 10K drilling spool?",
+          "a": "It has API 6A 13-5/8\" 10K flanged top and flanged bottom connections, with two 3-1/16\" 10K flanged side outlets for the choke and kill lines. Approximate transport weight is 1,800 kg. Confirm the outlet orientation on your stack-up drawing."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gaskets does the 13-5/8\" 10K drilling spool take?",
+          "a": "The 13-5/8\" 10K flanges take BX-159 rings and the 3-1/16\" 10K side outlets take BX-154. They are supplied in soft iron for sweet service or Inconel-625-clad for sour service; see [ring joint gaskets](/c/ring-joint-gaskets) and [BOP spare parts](/c/bop-spare-parts)."
+        },
+        {
+          "slot": "C",
+          "q": "What OEM drilling spools is the 13-5/8\" 10K drilling spool equivalent to?",
+          "a": "It is listed as equivalent to the Cameron, FMC and Stream-Flo drilling spools at 13-5/8\" 10K, interchangeable on standard surface stack-ups. Indus Hydraulics is not an authorised distributor of these OEMs, and each unit is supplied with full traceability."
+        },
+        {
+          "slot": "H",
+          "q": "What connects to the side outlets of the 13-5/8\" 10K drilling spool?",
+          "a": "The two 3-1/16\" 10K side outlets connect to the choke and kill manifold. See the [3-1/16\" 10K choke and kill manifold](/p/choke-kill-manifold-3-1-16-10-000-psi-wp-api-16c-sour-service-nace-mr0175) and [choke and kill manifolds](/c/bop-choke-kill) for the matching equipment."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 13-5/8\" 10K drilling spool used?",
+          "a": "It is used for the choke and kill connection on 13-5/8\" 10K wells, on mainstream Aramco, ADNOC and KOC development drilling, in sour-service drilling where the sour trim is the default, and as a replacement or upgrade for end-of-life drilling spools."
+        },
+        {
+          "slot": "K",
+          "q": "How does the drilling spool differ from a double studded adapter?",
+          "a": "The spool carries two 3-1/16\" 10K side outlets for choke and kill lines at 13-5/8\" 10K both ends, while the [13-5/8\" x 11\" DSA](/p/double-studded-adapter-dsa-13-5-8-10k-11-10k-api-6a-sour-service-nace-mr0175) is a plain crossover with no side outlets. A stack that changes bore needs the DSA; a stack that needs well-control lines needs the spool."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the 13-5/8\" 10K drilling spool?",
+          "a": "The 13-5/8\" 10K drilling spool is rated 10,000 psi cold working pressure, 10K class. Every unit gets a hydrostatic shell test at 1.5 times rated working pressure, which is a test figure and not an operating limit. The temperature rating is -20°F to 180°F (-29°C to 82°C)."
+        },
+        {
+          "slot": "F",
+          "q": "Is the 13-5/8\" 10K drilling spool suitable for sour (H2S) service?",
+          "a": "Yes, the 13-5/8\" 10K drilling spool is listed as sour service to NACE MR0175 / ISO 15156. The forged AISI 4130 alloy steel body has hardness controlled to a maximum of 22 HRC and is Charpy V-notch tested at low temperature. Give H2S partial pressure and chloride content on the RFQ for final material sign-off."
+        },
+        {
+          "slot": "G",
+          "q": "What API and certification documents come with the 13-5/8\" 10K drilling spool?",
+          "a": "The 13-5/8\" 10K drilling spool is API 6A, supplied as an API-certified, API-monogrammed unit from an API-licensed manufacturer, with the API certificate and monogram documentation supplied with the order. It also carries EN 10204 3.1 / 3.2 mill test reports, a hydrostatic test certificate and heat-number traceability stamped on the body."
+        },
+        {
+          "slot": "L",
+          "q": "What is the lead time for the 13-5/8\" 10K drilling spool?",
+          "a": "The listing states a lead time of 75 days for the 13-5/8\" 10K drilling spool. Exact timing depends on configuration and certification scope and is confirmed on the RFQ. Export orders ship on the lane stated for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Drilling Spool, 13-5/8\" 10K × 13-5/8\" 10K, API 6A, Sour Service (NACE MR0175) available from Indus Hydraulics in Dubai, and what is the lead time?",
+          "a": "The Drilling Spool, 13-5/8\" 10K × 13-5/8\" 10K, API 6A, Sour Service (NACE MR0175) is built to order and supplied from Dubai, UAE, with shipping worldwide. The current lead time is about 75 days from order, confirmed on the quotation. Send the size, rating and quantity through [our contact page](/contact) and we confirm the build and delivery date."
+        }
+      ]
+    }
+  ]
+}

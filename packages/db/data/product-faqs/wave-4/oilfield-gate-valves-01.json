@@ -1,0 +1,1254 @@
+{
+  "family": "oilfield-gate-valves-01",
+  "extraFacts": [
+    {
+      "fact": "Wave 4 products are API certified and supplied with the API monogram by API-licensed manufacturers to the applicable specification: API 6A, API 16A, API 16C, API 16D or API 7K.",
+      "source": "Indus Hydraulics owner statement, 2026-11-19"
+    },
+    {
+      "fact": "API 6A temperature classes: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F; the letters combine, so P+U covers -20 °F to +250 °F.",
+      "source": "API Specification 6A temperature rating table; Indus Hydraulics guide /blog/api-6a-nameplate-markings"
+    },
+    {
+      "fact": "NACE MR0175 / ISO 15156 sets material requirements for equipment used in H2S-containing oil and gas production; API 6A material classes DD, EE, FF and HH are the sour-service classes.",
+      "source": "NACE MR0175 / ISO 15156; API Specification 6A"
+    }
+  ],
+  "products": [
+    {
+      "slug": "api-6a-gate-valve-1-13-16-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1-13/16 in API 6A gate valve rated 15,000 psi used for?",
+          "a": "A 1-13/16 in API 6A gate valve rated 15,000 psi (15K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 1-13/16 in 15K API 6A gate valve?",
+          "a": "On the 1-13/16 in 15,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR2 and material class EE-1.5. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 1-13/16 in 15K API 6A flanged gate valve take?",
+          "a": "The 1-13/16 in 15K flange is API 6BX flanged, and it takes a BX-151 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1-13/16 in 15,000 psi gate valve or the 2-1/16 in at the same 15K rating?",
+          "a": "Choose the 1-13/16 in if your line bore is 1-13/16 in; match the valve bore to the line so tools and flow pass through. The 2-1/16 in gate valve at 15,000 psi is a different bore with its own flange and ring, so see the [2-1/16 in 15,000 psi gate valve](/p/api-6a-gate-valve-2-1-16-inch-15000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 1-13/16 in 15K API 6A gate valve?",
+          "a": "The working pressure is 15,000 psi and the API 6A shell test is 22,500 psi. The shell test is a proof test on the 1-13/16 in body and never a working pressure for the 15K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 1-13/16 in 15,000 psi API 6A gate valve for sour service?",
+          "a": "For the 1-13/16 in 15,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1-13/16 in 15,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 1-13/16 in 15,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 1-13/16 in 15,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM, including WM400. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 1-13/16 in 15,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+X; −20 °F to +250 °F. For the 1-13/16 in 15,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 1-13/16 in 15K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 1-13/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 15,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 1-13/16 in 15,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 1-13/16 in 15,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1-13/16 in 15,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 1-13/16 in 15,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-2-1-16-inch-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in API 6A gate valve rated 10,000 psi used for?",
+          "a": "A 2-1/16 in API 6A gate valve rated 10,000 psi (10K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 2-1/16 in 10K API 6A gate valve?",
+          "a": "On the 2-1/16 in 10,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR1, PR2 and material class DD, EE-1.5. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 2-1/16 in 10K API 6A flanged gate valve take?",
+          "a": "The 2-1/16 in 10K flange is API 6BX flanged, and it takes a BX-152 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 10,000 psi gate valve or the 3-1/16 in at the same 10K rating?",
+          "a": "Choose the 2-1/16 in if your line bore is 2-1/16 in; match the valve bore to the line so tools and flow pass through. The 3-1/16 in gate valve at 10,000 psi is a different bore with its own flange and ring, so see the [3-1/16 in 10,000 psi gate valve](/p/api-6a-gate-valve-3-1-16-inch-10000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 2-1/16 in 10K API 6A gate valve?",
+          "a": "The working pressure is 10,000 psi and the API 6A shell test is 15,000 psi. The shell test is a proof test on the 2-1/16 in body and never a working pressure for the 10K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 2-1/16 in 10,000 psi API 6A gate valve for sour service?",
+          "a": "For the 2-1/16 in 10,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 10,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 2-1/16 in 10,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 2-1/16 in 10,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply Cameron, T3, NOV, including E-Type, FLS. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 2-1/16 in 10,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U; −29 °C to +121 °C. For the 2-1/16 in 10,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 2-1/16 in 10K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 2-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 10,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 2-1/16 in 10,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 2-1/16 in 10,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2-1/16 in 10,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 2-1/16 in 10,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-2-1-16-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in API 6A gate valve rated 15,000 psi used for?",
+          "a": "A 2-1/16 in API 6A gate valve rated 15,000 psi (15K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 2-1/16 in 15K API 6A gate valve?",
+          "a": "On the 2-1/16 in 15,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR1, PR2 and material class EE. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 2-1/16 in 15K API 6A flanged gate valve take?",
+          "a": "The 2-1/16 in 15K flange is API 6BX flanged, and it takes a BX-152 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 15,000 psi gate valve or the 1-13/16 in at the same 15K rating?",
+          "a": "Choose the 2-1/16 in if your line bore is 2-1/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 15,000 psi is a different bore with its own flange and ring, so see the [1-13/16 in 15,000 psi gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 2-1/16 in 15K API 6A gate valve?",
+          "a": "The working pressure is 15,000 psi and the API 6A shell test is 22,500 psi. The shell test is a proof test on the 2-1/16 in body and never a working pressure for the 15K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 2-1/16 in 15,000 psi API 6A gate valve for sour service?",
+          "a": "For the 2-1/16 in 15,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 15,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 2-1/16 in 15,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 2-1/16 in 15,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply Anson, WOM, including E-Type, part numbers seen: 221-705-55-03E. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 2-1/16 in 15,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F; P+U. For the 2-1/16 in 15,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 2-1/16 in 15K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 2-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 15,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 2-1/16 in 15,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 2-1/16 in 15,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2-1/16 in 15,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 2-1/16 in 15,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-2-9-16-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-9/16 in API 6A gate valve rated 15,000 psi used for?",
+          "a": "A 2-9/16 in API 6A gate valve rated 15,000 psi (15K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 2-9/16 in 15K API 6A gate valve?",
+          "a": "On the 2-9/16 in 15,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR2 and material class DD. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 2-9/16 in 15K API 6A flanged gate valve take?",
+          "a": "The 2-9/16 in 15K flange is API 6BX flanged, and it takes a BX-153 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-9/16 in 15,000 psi gate valve or the 1-13/16 in at the same 15K rating?",
+          "a": "Choose the 2-9/16 in if your line bore is 2-9/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 15,000 psi is a different bore with its own flange and ring, so see the [1-13/16 in 15,000 psi gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 2-9/16 in 15K API 6A gate valve?",
+          "a": "The working pressure is 15,000 psi and the API 6A shell test is 22,500 psi. The shell test is a proof test on the 2-9/16 in body and never a working pressure for the 15K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 2-9/16 in 15,000 psi API 6A gate valve for sour service?",
+          "a": "For the 2-9/16 in 15,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-9/16 in 15,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 2-9/16 in 15,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 2-9/16 in 15,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM, MCM Oil Tools, Stream-Flo, including Crown, part numbers seen: FCM291615DD. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 2-9/16 in 15,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U. For the 2-9/16 in 15,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 2-9/16 in 15K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 2-9/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 15,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 2-9/16 in 15,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 2-9/16 in 15,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2-9/16 in 15,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 2-9/16 in 15,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-3-1-16-inch-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in API 6A gate valve rated 10,000 psi used for?",
+          "a": "A 3-1/16 in API 6A gate valve rated 10,000 psi (10K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 3-1/16 in 10K API 6A gate valve?",
+          "a": "On the 3-1/16 in 10,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR1 and material class DD. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 3-1/16 in 10K API 6A flanged gate valve take?",
+          "a": "The 3-1/16 in 10K flange is API 6BX flanged, and it takes a BX-154 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 10,000 psi gate valve or the 2-1/16 in at the same 10K rating?",
+          "a": "Choose the 3-1/16 in if your line bore is 3-1/16 in; match the valve bore to the line so tools and flow pass through. The 2-1/16 in gate valve at 10,000 psi is a different bore with its own flange and ring, so see the [2-1/16 in 10,000 psi gate valve](/p/api-6a-gate-valve-2-1-16-inch-10000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 3-1/16 in 10K API 6A gate valve?",
+          "a": "The working pressure is 10,000 psi and the API 6A shell test is 15,000 psi. The shell test is a proof test on the 3-1/16 in body and never a working pressure for the 10K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 3-1/16 in 10,000 psi API 6A gate valve for sour service?",
+          "a": "For the 3-1/16 in 10,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 10,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 3-1/16 in 10,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 3-1/16 in 10,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply T3, including T3FC. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 3-1/16 in 10,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U; −20 °F to +250 °F. For the 3-1/16 in 10,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 3-1/16 in 10K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 3-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 10,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 3-1/16 in 10,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 3-1/16 in 10,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3-1/16 in 10,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 3-1/16 in 10,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-3-1-16-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/16 in API 6A gate valve rated 15,000 psi used for?",
+          "a": "A 3-1/16 in API 6A gate valve rated 15,000 psi (15K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 3-1/16 in 15K API 6A gate valve?",
+          "a": "On the 3-1/16 in 15,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PSL 3G, PR2 and material class DD, DD-NL, EE-0.5. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 3-1/16 in 15K API 6A flanged gate valve take?",
+          "a": "The 3-1/16 in 15K flange is API 6BX flanged, and it takes a BX-154 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/16 in 15,000 psi gate valve or the 1-13/16 in at the same 15K rating?",
+          "a": "Choose the 3-1/16 in if your line bore is 3-1/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 15,000 psi is a different bore with its own flange and ring, so see the [1-13/16 in 15,000 psi gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 3-1/16 in 15K API 6A gate valve?",
+          "a": "The working pressure is 15,000 psi and the API 6A shell test is 22,500 psi. The shell test is a proof test on the 3-1/16 in body and never a working pressure for the 15K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 3-1/16 in 15,000 psi API 6A gate valve for sour service?",
+          "a": "For the 3-1/16 in 15,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/16 in 15,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 3-1/16 in 15,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order. PSL 3G adds a gas test."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 3-1/16 in 15,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM, T3, NOV, Quality Oil Tools, including WM1900, FC manual, HPT, HB hydraulic, WM1900H, part numbers seen: 50000685, M0687, 20397342, 20393340. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 3-1/16 in 15,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U; −20 °F to +350 °F; P+X. For the 3-1/16 in 15,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 3-1/16 in 15K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 3-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 15,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 3-1/16 in 15,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 3-1/16 in 15,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3-1/16 in 15,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 3-1/16 in 15,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-3-1-8-inch-5000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3-1/8 in API 6A gate valve rated 5,000 psi used for?",
+          "a": "A 3-1/8 in API 6A gate valve rated 5,000 psi (5K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 3-1/8 in 5K API 6A gate valve?",
+          "a": "On the 3-1/8 in 5,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR2 and material class DD, DD-NL. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 3-1/8 in 5K API 6A flanged gate valve take?",
+          "a": "The 3-1/8 in 5K flange is API 6B flanged, and it takes a R-35 or RX-35 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3-1/8 in 5,000 psi gate valve or the 4-1/16 in at the same 5K rating?",
+          "a": "Choose the 3-1/8 in if your line bore is 3-1/8 in; match the valve bore to the line so tools and flow pass through. The 4-1/16 in gate valve at 5,000 psi is a different bore with its own flange and ring, so see the [4-1/16 in 5,000 psi gate valve](/p/api-6a-gate-valve-4-1-16-inch-5000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 3-1/8 in 5K API 6A gate valve?",
+          "a": "The working pressure is 5,000 psi and the API 6A shell test is 10,000 psi. The shell test is a proof test on the 3-1/8 in body and never a working pressure for the 5K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 3-1/8 in 5,000 psi API 6A gate valve for sour service?",
+          "a": "For the 3-1/8 in 5,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3-1/8 in 5,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 3-1/8 in 5,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 3-1/8 in 5,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply Cameron, WOM, NOV, including WM1700, FLS, part numbers seen: 141553-36-07-16. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 3-1/8 in 5,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U; −29 °C to +121 °C. For the 3-1/8 in 5,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 3-1/8 in 5K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 3-1/8 in API 6A valve carries PSL, PR and material class markings and API flanges at 5,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 3-1/8 in 5,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 3-1/8 in 5,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3-1/8 in 5,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 3-1/8 in 5,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-4-1-16-inch-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in API 6A gate valve rated 10,000 psi used for?",
+          "a": "A 4-1/16 in API 6A gate valve rated 10,000 psi (10K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 4-1/16 in 10K API 6A gate valve?",
+          "a": "On the 4-1/16 in 10,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR1, PR2 and material class DD, DD-0.5, DD-NL. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 4-1/16 in 10K API 6A flanged gate valve take?",
+          "a": "The 4-1/16 in 10K flange is API 6BX flanged, and it takes a BX-155 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 10,000 psi gate valve or the 2-1/16 in at the same 10K rating?",
+          "a": "Choose the 4-1/16 in if your line bore is 4-1/16 in; match the valve bore to the line so tools and flow pass through. The 2-1/16 in gate valve at 10,000 psi is a different bore with its own flange and ring, so see the [2-1/16 in 10,000 psi gate valve](/p/api-6a-gate-valve-2-1-16-inch-10000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 4-1/16 in 10K API 6A gate valve?",
+          "a": "The working pressure is 10,000 psi and the API 6A shell test is 15,000 psi. The shell test is a proof test on the 4-1/16 in body and never a working pressure for the 10K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 4-1/16 in 10,000 psi API 6A gate valve for sour service?",
+          "a": "For the 4-1/16 in 10,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 10,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 4-1/16 in 10,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 4-1/16 in 10,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply Cameron, WOM, T3, including FLS, T3FC, part numbers seen: M0880-R, 224-605-55-03E, 141554-42-20-15. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 4-1/16 in 10,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F; −29 °C to +121 °C; P+U. For the 4-1/16 in 10,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 4-1/16 in 10K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 4-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 10,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4-1/16 in 10,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4-1/16 in 10,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-1/16 in 10,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 4-1/16 in 10,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-4-1-16-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in API 6A gate valve rated 15,000 psi used for?",
+          "a": "A 4-1/16 in API 6A gate valve rated 15,000 psi (15K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 4-1/16 in 15K API 6A gate valve?",
+          "a": "On the 4-1/16 in 15,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Your valve is built to the PSL, PR and material class you put on the RFQ. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 4-1/16 in 15K API 6A flanged gate valve take?",
+          "a": "The 4-1/16 in 15K flange is API 6BX flanged, and it takes a BX-155 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 15,000 psi gate valve or the 1-13/16 in at the same 15K rating?",
+          "a": "Choose the 4-1/16 in if your line bore is 4-1/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 15,000 psi is a different bore with its own flange and ring, so see the [1-13/16 in 15,000 psi gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 4-1/16 in 15K API 6A gate valve?",
+          "a": "The working pressure is 15,000 psi and the API 6A shell test is 22,500 psi. The shell test is a proof test on the 4-1/16 in body and never a working pressure for the 15K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 4-1/16 in 15,000 psi API 6A gate valve for sour service?",
+          "a": "For the 4-1/16 in 15,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 15,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 4-1/16 in 15,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes of 4-1/16 in 15,000 psi gate valve can you supply?",
+          "a": "We supply the 4-1/16 in 15,000 psi gate valve new from the major API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. Give a preferred make and model on the RFQ if you have one, and we quote against it."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 4-1/16 in 15,000 psi API 6A gate valve carry?",
+          "a": "For the 4-1/16 in 15,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 4-1/16 in 15K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 4-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 15,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4-1/16 in 15,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4-1/16 in 15,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-1/16 in 15,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 4-1/16 in 15,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-4-1-16-inch-5000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in API 6A gate valve rated 5,000 psi used for?",
+          "a": "A 4-1/16 in API 6A gate valve rated 5,000 psi (5K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 4-1/16 in 5K API 6A gate valve?",
+          "a": "On the 4-1/16 in 5,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR1 and material class DD, EE, EE-NL. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 4-1/16 in 5K API 6A flanged gate valve take?",
+          "a": "The 4-1/16 in 5K flange is API 6B flanged, and it takes a R-39 or RX-39 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 5,000 psi gate valve or the 3-1/8 in at the same 5K rating?",
+          "a": "Choose the 4-1/16 in if your line bore is 4-1/16 in; match the valve bore to the line so tools and flow pass through. The 3-1/8 in gate valve at 5,000 psi is a different bore with its own flange and ring, so see the [3-1/8 in 5,000 psi gate valve](/p/api-6a-gate-valve-3-1-8-inch-5000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 4-1/16 in 5K API 6A gate valve?",
+          "a": "The working pressure is 5,000 psi and the API 6A shell test is 10,000 psi. The shell test is a proof test on the 4-1/16 in body and never a working pressure for the 5K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 4-1/16 in 5,000 psi API 6A gate valve for sour service?",
+          "a": "For the 4-1/16 in 5,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 5,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 4-1/16 in 5,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 4-1/16 in 5,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply T3, Anson, Xianzhong, WOM, including FC, E-Type, Plate gate valve. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 4-1/16 in 5,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U; −20 °F to +250 °F. For the 4-1/16 in 5,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 4-1/16 in 5K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 4-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 5,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4-1/16 in 5,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4-1/16 in 5,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-1/16 in 5,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 4-1/16 in 5,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-4-1-8-inch-5000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/8 in API 6A gate valve rated 5,000 psi used for?",
+          "a": "A 4-1/8 in API 6A gate valve rated 5,000 psi (5K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 4-1/8 in 5K API 6A gate valve?",
+          "a": "On the 4-1/8 in 5,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Your valve is built to the PSL, PR and material class you put on the RFQ. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 4-1/8 in 5K API 6A gate valve have?",
+          "a": "The 4-1/8 in 5K gate valve is supplied with ends to order: api 6a flanged. Confirm the flange type and ring groove with the mating equipment before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/8 in 5,000 psi gate valve or the 3-1/8 in at the same 5K rating?",
+          "a": "Choose the 4-1/8 in if your line bore is 4-1/8 in; match the valve bore to the line so tools and flow pass through. The 3-1/8 in gate valve at 5,000 psi is a different bore with its own flange and ring, so see the [3-1/8 in 5,000 psi gate valve](/p/api-6a-gate-valve-3-1-8-inch-5000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 4-1/8 in 5K API 6A gate valve?",
+          "a": "The working pressure is 5,000 psi and the API 6A shell test is 10,000 psi. The shell test is a proof test on the 4-1/8 in body and never a working pressure for the 5K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 4-1/8 in 5,000 psi API 6A gate valve for sour service?",
+          "a": "For the 4-1/8 in 5,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/8 in 5,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 4-1/8 in 5,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 4-1/8 in 5,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply Cameron, including FL. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 4-1/8 in 5,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked P+U. For the 4-1/8 in 5,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 4-1/8 in 5K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 4-1/8 in API 6A valve carries PSL, PR and material class markings and API flanges at 5,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4-1/8 in 5,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4-1/8 in 5,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-1/8 in 5,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 4-1/8 in 5,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "api-6a-gate-valve-5-1-8-inch-10000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 5-1/8 in API 6A gate valve rated 10,000 psi used for?",
+          "a": "A 5-1/8 in API 6A gate valve rated 10,000 psi (10K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 5-1/8 in 10K API 6A gate valve?",
+          "a": "On the 5-1/8 in 10,000 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3 and material class DD. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "Which ring gasket does a 5-1/8 in 10K API 6A flanged gate valve take?",
+          "a": "The 5-1/8 in 10K flange is API 6BX flanged, and it takes a BX-169 ring gasket. Order the ring gaskets with the valve if you need them, and use a new ring each time the flange is made up."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 5-1/8 in 10,000 psi gate valve or the 2-1/16 in at the same 10K rating?",
+          "a": "Choose the 5-1/8 in if your line bore is 5-1/8 in; match the valve bore to the line so tools and flow pass through. The 2-1/16 in gate valve at 10,000 psi is a different bore with its own flange and ring, so see the [2-1/16 in 10,000 psi gate valve](/p/api-6a-gate-valve-2-1-16-inch-10000-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 5-1/8 in 10K API 6A gate valve?",
+          "a": "The working pressure is 10,000 psi and the API 6A shell test is 15,000 psi. The shell test is a proof test on the 5-1/8 in body and never a working pressure for the 10K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 5-1/8 in 10,000 psi API 6A gate valve for sour service?",
+          "a": "For the 5-1/8 in 10,000 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 5-1/8 in 10,000 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 5-1/8 in 10,000 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 5-1/8 in 10,000 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 5-1/8 in 10,000 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F. For the 5-1/8 in 10,000 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 5-1/8 in 10K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 5-1/8 in API 6A valve carries PSL, PR and material class markings and API flanges at 10,000 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 5-1/8 in 10,000 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 5-1/8 in 10,000 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 5-1/8 in 10,000 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 5-1/8 in 10,000 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "gate-valve-2-1-16-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-1/16 in API 6A gate valve rated 7,500 psi used for?",
+          "a": "A 2-1/16 in API 6A gate valve rated 7,500 psi (7.5K class) isolates flow on wellheads, trees and manifolds. It is a full-bore, handwheel-operated gate valve with a hydraulic actuator available on request, supplied new to the PSL, PR, material class and temperature class you specify."
+        },
+        {
+          "slot": "B",
+          "q": "What do PSL, PR and material class mean on a 2-1/16 in 7.5K API 6A gate valve?",
+          "a": "On the 2-1/16 in 7,500 psi valve, PSL (1 to 4) sets the inspection, testing and traceability level, PR1 or PR2 sets the design-validation level, and material class (AA to HH) sets the body and trim chemistry. Units we have seen at this size and rating are marked PSL 3, PR2 and material class DD-NL. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections does the 2-1/16 in 7.5K API 6A gate valve have?",
+          "a": "The 2-1/16 in 7.5K gate valve is supplied with ends to order: butt-weld, flanged or union to order. Confirm the flange type and ring groove with the mating equipment before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-1/16 in 7,500 psi gate valve or the 10,000 psi rating in the same bore?",
+          "a": "Pick the working pressure from your maximum well or line pressure, then confirm the next class up. The same 2-1/16 in bore is also listed at 10,000 psi; see the [2-1/16 in 10,000 psi gate valve](/p/api-6a-gate-valve-2-1-16-inch-10000-psi) for its ring and rating."
+        },
+        {
+          "slot": "E",
+          "q": "What are the working pressure and test pressure of a 2-1/16 in 7.5K API 6A gate valve?",
+          "a": "The working pressure is 7,500 psi and the API 6A shell test is set by API 6A at the pressure class. The shell test is a proof test on the 2-1/16 in body and never a working pressure for the 7.5K valve. Rating follows the API 6A class you order, not the make."
+        },
+        {
+          "slot": "F",
+          "q": "Which material class do I need on a 2-1/16 in 7,500 psi API 6A gate valve for sour service?",
+          "a": "For the 2-1/16 in 7,500 psi valve, material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156; AA, BB and CC are general service. The suffix, such as -0.5, -1.5 or NL, gives the maximum H2S partial pressure in psia, NL meaning no limit. Pick the class from your well H2S and chloride data."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-1/16 in 7,500 psi API 6A gate valve API monogrammed and what documents come with it?",
+          "a": "The 2-1/16 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 2-1/16 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature class does a 2-1/16 in 7,500 psi API 6A gate valve carry?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F. For the 2-1/16 in 7,500 psi valve, API 6A temperature classes combine: P is -20 °F to +180 °F, U is 0 °F to +250 °F and X is 0 °F to +350 °F, so P+U covers -20 °F to +250 °F. State your minimum and maximum temperature on the RFQ."
+        },
+        {
+          "slot": "K",
+          "q": "Is a 2-1/16 in 7.5K API 6A gate valve the same as a 7,500 psi mud gate valve?",
+          "a": "No. The 2-1/16 in API 6A valve carries PSL, PR and material class markings and API flanges at 7,500 psi, while a mud gate valve is rated 7,500 psi for drilling mud with ends to order. See the [1-13/16 in mud gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for rig mud-system duty."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 2-1/16 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 2-1/16 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2-1/16 in 7,500 psi API 6A gate valve in Dubai?",
+          "a": "Yes. We keep the 2-1/16 in 7,500 psi API 6A gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-1-13-16-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 1-13/16 in 7,500 psi mud gate valve used for?",
+          "a": "A 1-13/16 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from NOV. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 1-13/16 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 1-13/16 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 1-13/16 in mud gate valve be supplied with?",
+          "a": "The 1-13/16 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 1-13/16 in 7,500 psi gate valve or the 2-9/16 in at the same 7.5K rating?",
+          "a": "Choose the 1-13/16 in if your line bore is 1-13/16 in; match the valve bore to the line so tools and flow pass through. The 2-9/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [2-9/16 in 7,500 psi gate valve](/p/mud-gate-valve-2-9-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 1-13/16 in mud gate valve?",
+          "a": "The 1-13/16 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 1-13/16 in 7,500 psi mud gate valve have?",
+          "a": "On the 1-13/16 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 1-13/16 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 1-13/16 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 1-13/16 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply NOV, part numbers seen: A89160-2. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 1-13/16 in 7,500 psi mud gate valve work in?",
+          "a": "Nameplates we have seen are marked −29 °C to +121 °C; −18 °C to +121 °C. State the operating temperature on the RFQ so seats and packing of the 1-13/16 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 1-13/16 in: what is the difference?",
+          "a": "The 1-13/16 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [1-13/16 in 15,000 psi API 6A gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 1-13/16 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 1-13/16 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 1-13/16 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 1-13/16 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-2-9-16-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 2-9/16 in 7,500 psi mud gate valve used for?",
+          "a": "A 2-9/16 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from NOV. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 2-9/16 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 2-9/16 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 2-9/16 in mud gate valve be supplied with?",
+          "a": "The 2-9/16 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 2-9/16 in 7,500 psi gate valve or the 1-13/16 in at the same 7.5K rating?",
+          "a": "Choose the 2-9/16 in if your line bore is 2-9/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [1-13/16 in 7,500 psi gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 2-9/16 in mud gate valve?",
+          "a": "The 2-9/16 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 2-9/16 in 7,500 psi mud gate valve have?",
+          "a": "On the 2-9/16 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 2-9/16 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 2-9/16 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 2-9/16 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply NOV. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 2-9/16 in 7,500 psi mud gate valve work in?",
+          "a": "Nameplates we have seen are marked −29 °C to +121 °C. State the operating temperature on the RFQ so seats and packing of the 2-9/16 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 2-9/16 in: what is the difference?",
+          "a": "The 2-9/16 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [2-9/16 in 15,000 psi API 6A gate valve](/p/api-6a-gate-valve-2-9-16-inch-15000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 2-9/16 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 2-9/16 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 2-9/16 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 2-9/16 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-3-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 3 in 7,500 psi mud gate valve used for?",
+          "a": "A 3 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from DEMCO. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 3 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 3 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 3 in mud gate valve be supplied with?",
+          "a": "The 3 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 3 in 7,500 psi gate valve or the 1-13/16 in at the same 7.5K rating?",
+          "a": "Choose the 3 in if your line bore is 3 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [1-13/16 in 7,500 psi gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 3 in mud gate valve?",
+          "a": "The 3 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 3 in 7,500 psi mud gate valve have?",
+          "a": "On the 3 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 3 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 3 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 3 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply DEMCO, including Mud valve, butt-weld XXH. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 3 in 7,500 psi mud gate valve work in?",
+          "a": "The nameplate marking shows the temperature range. State the operating temperature on the RFQ so seats and packing of the 3 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 3 in: what is the difference?",
+          "a": "The 3 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [1-13/16 in 15,000 psi API 6A gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 3 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 3 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 3 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 3 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-4-1-16-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4-1/16 in 7,500 psi mud gate valve used for?",
+          "a": "A 4-1/16 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from WOM, Anson. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 4-1/16 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 4-1/16 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Units we have seen at this size are marked PSL 3, PR2 and material class EE. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 4-1/16 in mud gate valve be supplied with?",
+          "a": "The 4-1/16 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4-1/16 in 7,500 psi gate valve or the 1-13/16 in at the same 7.5K rating?",
+          "a": "Choose the 4-1/16 in if your line bore is 4-1/16 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [1-13/16 in 7,500 psi gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 4-1/16 in mud gate valve?",
+          "a": "The 4-1/16 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 4-1/16 in 7,500 psi mud gate valve have?",
+          "a": "On the 4-1/16 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it; units seen are marked material class EE; AA–HH to order. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4-1/16 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 4-1/16 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 4-1/16 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply WOM, Anson. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 4-1/16 in 7,500 psi mud gate valve work in?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F. State the operating temperature on the RFQ so seats and packing of the 4-1/16 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 4-1/16 in: what is the difference?",
+          "a": "The 4-1/16 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [4-1/16 in 10,000 psi API 6A gate valve](/p/api-6a-gate-valve-4-1-16-inch-10000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4-1/16 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4-1/16 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4-1/16 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 4-1/16 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-4-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 4 in 7,500 psi mud gate valve used for?",
+          "a": "A 4 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from NOV. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 4 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 4 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 4 in mud gate valve be supplied with?",
+          "a": "The 4 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 4 in 7,500 psi gate valve or the 1-13/16 in at the same 7.5K rating?",
+          "a": "Choose the 4 in if your line bore is 4 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [1-13/16 in 7,500 psi gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 4 in mud gate valve?",
+          "a": "The 4 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 4 in 7,500 psi mud gate valve have?",
+          "a": "On the 4 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 4 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 4 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 4 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply NOV, part numbers seen: A41868. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 4 in 7,500 psi mud gate valve work in?",
+          "a": "Nameplates we have seen are marked −20 °F to +250 °F. State the operating temperature on the RFQ so seats and packing of the 4 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 4 in: what is the difference?",
+          "a": "The 4 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [1-13/16 in 15,000 psi API 6A gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 4 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 4 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 4 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 4 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "mud-gate-valve-5-inch-7500-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a 5 in 7,500 psi mud gate valve used for?",
+          "a": "A 5 in 7,500 psi mud gate valve isolates drilling mud on the high-pressure side of the rig mud system, such as standpipe manifolds and mud pump discharge lines. It is a full-bore gate valve supplied new from NOV. End connections and trim are made to your specification."
+        },
+        {
+          "slot": "B",
+          "q": "What do the nameplate markings on a 5 in 7,500 psi mud gate valve tell me?",
+          "a": "On the 5 in 7,500 psi mud gate valve the nameplate gives the maker, model, rated working pressure and, where stamped, the PSL, PR, material class and temperature range. Give the H2S content and line pressure of your mud system on the RFQ and we match the trim to it. See [reading an API 6A nameplate](/blog/api-6a-nameplate-markings)."
+        },
+        {
+          "slot": "D",
+          "q": "What end connections can a 5 in mud gate valve be supplied with?",
+          "a": "The 5 in mud gate valve is supplied with butt-weld, flanged or union ends, to order. For butt-weld ends state the pipe schedule on the RFQ; for flanged or union ends give the type and pressure class so the end matches the manifold."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose the 5 in 7,500 psi gate valve or the 1-13/16 in at the same 7.5K rating?",
+          "a": "Choose the 5 in if your line bore is 5 in; match the valve bore to the line so tools and flow pass through. The 1-13/16 in gate valve at 7,500 psi is a different bore with its own flange and ring, so see the [1-13/16 in 7,500 psi gate valve](/p/mud-gate-valve-1-13-16-inch-7500-psi) for that size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a 5 in mud gate valve?",
+          "a": "The 5 in mud gate valve is rated 7,500 psi working pressure (7.5K). Put the line pressure, the end connection and the service (standard or sour, with the H2S partial pressure) on your RFQ so the rating is confirmed against the end connection chosen."
+        },
+        {
+          "slot": "F",
+          "q": "What material and sour-service options does a 5 in 7,500 psi mud gate valve have?",
+          "a": "On the 5 in mud gate valve, standard or sour service is chosen by material class, to NACE MR0175 / ISO 15156 where the listing states it. Give the H2S partial pressure and temperature on the RFQ and we match trim to it."
+        },
+        {
+          "slot": "G",
+          "q": "Is the 5 in 7,500 psi mud gate valve API monogrammed and what documents come with it?",
+          "a": "The 5 in 7,500 psi valve is supplied to API 6A by API-licensed manufacturers with the API certificate and monogram documentation, and we confirm lead time and documents on the quotation. Material certificates are issued with the order."
+        },
+        {
+          "slot": "H",
+          "q": "Which makes and models of 5 in 7,500 psi gate valve can you supply?",
+          "a": "At this size and rating we supply NOV, part numbers seen: A37892-2. Give the make, model and any part number on the RFQ and we quote against it. Units are supplied new."
+        },
+        {
+          "slot": "I",
+          "q": "What temperature range does a 5 in 7,500 psi mud gate valve work in?",
+          "a": "The nameplate marking shows the temperature range. State the operating temperature on the RFQ so seats and packing of the 5 in valve are matched. Repair parts for drilling mud valves are covered in our [mud gate valve repair kit guide](/blog/mud-gate-valve-repair-kits)."
+        },
+        {
+          "slot": "K",
+          "q": "Mud gate valve or API 6A wellhead gate valve at 5 in: what is the difference?",
+          "a": "The 5 in mud gate valve is built for abrasive drilling fluid at 7,500 psi on rig manifolds, with ends to order, while an API 6A wellhead gate valve has API 6A flanges and PSL, PR and material class marking for trees. See the [1-13/16 in 15,000 psi API 6A gate valve](/p/api-6a-gate-valve-1-13-16-inch-15000-psi) for the wellhead type."
+        },
+        {
+          "slot": "L",
+          "q": "Can a 5 in 7,500 psi gate valve be exported from Dubai, and what about the HS code?",
+          "a": "Yes. We supply the 5 in 7,500 psi gate valve from Dubai, UAE and ship worldwide with the commercial invoice and the API and material documents. The HS code and country of origin depend on the make supplied, and are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 5 in 7,500 psi mud gate valve in Dubai?",
+          "a": "Yes. We keep the 5 in 7,500 psi mud gate valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the size, pressure, end connections and quantity through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}

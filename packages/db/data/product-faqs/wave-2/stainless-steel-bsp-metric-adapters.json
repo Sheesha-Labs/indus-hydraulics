@@ -1,0 +1,1851 @@
+{
+  "family": "stainless-steel-bsp-metric-adapters",
+  "extraFacts": [
+    {
+      "fact": "ISO 228-1 specifies pipe threads, designated G, where pressure-tight joints are not made on the threads: both the external and internal thread are parallel (BSPP). The seal is made by a washer, O-ring, bonded seal or sealing face, not by the thread flanks.",
+      "source": "ISO 228-1:2000, scope"
+    },
+    {
+      "fact": "ISO 7-1 specifies pipe threads where pressure-tight joints are made on the threads: the external thread is a taper thread (designated R, BSPT) and the internal thread is parallel (Rp) or taper (Rc).",
+      "source": "ISO 7-1:1994, scope"
+    },
+    {
+      "fact": "ASME B1.20.1 covers general-purpose inch pipe threads: NPT is a taper thread with a 60° thread form that seals on the threads, and NPSM is a straight (parallel) thread for free-fitting mechanical joints that does not seal on the thread.",
+      "source": "ASME B1.20.1 scope"
+    },
+    {
+      "fact": "SAE J514 and ISO 8434-2 cover 37° flared tube and hose fittings (JIC): the male 37° flare seats metal to metal against the 37° cone of the female swivel nut, and thread sizes are given by dash number, where each dash is one sixteenth of an inch (-04 is 4/16 in, or 1/4 in).",
+      "source": "SAE J514 and ISO 8434-2 scope"
+    },
+    {
+      "fact": "ISO 8434-1 (the successor to DIN 2353) covers 24° cone compression tube fittings in the light (L) series and the heavy (S) series, sized by tube outside diameter in millimetres.",
+      "source": "ISO 8434-1 scope"
+    },
+    {
+      "fact": "316L is the low-carbon grade of 316 austenitic stainless steel (carbon 0.03 % maximum), which is why it can be welded without carbide precipitation at the grain boundaries; it contains molybdenum for resistance to chloride pitting.",
+      "source": "ASTM A240 / A276 chemical composition limits for UNS S31603"
+    }
+  ],
+  "products": [
+    {
+      "slug": "stainless-steel-bonded-seal-bspp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Bonded Seal, BSPP used for?",
+          "a": "The Stainless Steel Bonded Seal, BSPP is a stainless steel sealing washer with a BSPP male end, for G threads from 1/8\" to 2\". It seats under the head or shoulder of a BSPP fitting, plug or banjo bolt to seal the parallel thread against the port face."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9500-12 on the Bonded Seal, BSPP?",
+          "a": "IH-SS-9500-12 is 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9500-02 is 1/8\" BSPP and IH-SS-9500-32 is 2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Bonded Seal, BSPP come in?",
+          "a": "The size table has 10 part numbers, from 1/8\" BSPP to 2\" BSPP; the listing's nominal range is 1/8\" to 2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the bonded seal size for a BSPP port?",
+          "a": "Match the seal to the G thread of the fitting it goes under: a G1/4 fitting takes the 1/4\" seal, and the table runs from G1/8-28 to G2-11. Check whether the port wants a metal-and-rubber bonded seal or a Viton-ring version, for which see the [Stainless Steel Bonded Seal with Viton Ring, BSPP](/p/stainless-steel-bonded-seal-with-viton-ring-bspp)."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel Bonded Seal, BSPP rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel Bonded Seal, BSPP family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Bonded Seal, BSPP made from?",
+          "a": "The listing gives the material of the Stainless Steel Bonded Seal, BSPP as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. The seal is a stainless part; confirm any elastomer separately."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel Bonded Seal, BSPP?",
+          "a": "The Stainless Steel Bonded Seal, BSPP is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel Bonded Seal, BSPP connect to?",
+          "a": "It sits between a BSPP male fitting and the flat face of a BSPP port. For a metric port use the [Stainless Steel Bonded Seal, Metric](/p/stainless-steel-bonded-seal-metric), and see our [stainless BSP and metric adapters shelf](/c/stainless-steel-bsp-metric-adapters) for the fittings it seals."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel Bonded Seal, BSPP without leaks or galling?",
+          "a": "For the Bonded Seal, BSPP: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Bonded seal BSPP or the bonded seal with Viton ring: which one?",
+          "a": "The plain bonded seal, BSPP is listed from 1/8\" to 2\" in 10 sizes, while the [version with a Viton ring](/p/stainless-steel-bonded-seal-with-viton-ring-bspp) is listed from 1/8\" to 1\" in 6. Choose the Viton ring where the fluid or temperature calls for it."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel Bonded Seal, BSPP supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel Bonded Seal, BSPP from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Bonded Seal, BSPP in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel Bonded Seal, BSPP in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bonded-seal-metric",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Bonded Seal, Metric used for?",
+          "a": "The Stainless Steel Bonded Seal, Metric is a 316 stainless steel sealing washer for metric threads from M6 to M33. It seats under a metric male fitting or plug to seal the parallel thread against the port face."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9500-16MM on the Bonded Seal, Metric?",
+          "a": "IH-SS-9500-16MM is M16. The numbers after the series code identify the size of each end in turn, so IH-SS-9500-06MM is M6 and IH-SS-9500-33MM is M33."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Bonded Seal, Metric come in?",
+          "a": "The size table has 11 part numbers, from M6 to M33; the listing's nominal range is M6 to M33. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the metric bonded seal size?",
+          "a": "Match it to the metric thread of the fitting it goes under, from M6 to M33 in 11 sizes: an M14 plug takes the M14 seal. Measure the thread diameter and confirm whether the port is metric or BSPP before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel Bonded Seal, Metric rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel Bonded Seal, Metric family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Bonded Seal, Metric made from?",
+          "a": "The listing gives the material of the Stainless Steel Bonded Seal, Metric as 316 stainless steel. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. The listing gives the grade as 316."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel Bonded Seal, Metric?",
+          "a": "The Stainless Steel Bonded Seal, Metric is listed to ASME B1.20.1. The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel Bonded Seal, Metric connect to?",
+          "a": "It sits between a metric male fitting or plug and the face of a metric port. For BSPP threads use the [Stainless Steel Bonded Seal, BSPP](/p/stainless-steel-bonded-seal-bspp)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel Bonded Seal, Metric without leaks or galling?",
+          "a": "For the Bonded Seal, Metric: Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Metric bonded seal or the BSPP bonded seal: how do they differ?",
+          "a": "This metric seal is sized for M6 to M33 threads, while the [BSPP bonded seal](/p/stainless-steel-bonded-seal-bspp) is sized for BSPP G threads. A seal fitted to the wrong thread will not seat or will leak."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel Bonded Seal, Metric supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel Bonded Seal, Metric from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Bonded Seal, Metric in stock in Dubai?",
+          "a": "Yes, the Stainless Steel Bonded Seal, Metric is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bonded-seal-with-viton-ring-bspp",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Bonded Seal with Viton Ring, BSPP used for?",
+          "a": "The Stainless Steel Bonded Seal with Viton Ring, BSPP is a stainless sealing washer with a Viton ring for BSPP male threads from 1/8\" to 1\". It seats under a BSPP fitting or plug to seal the parallel thread, with the Viton ring giving the elastomer seal."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9500V-08 on the Bonded Seal with Viton Ring, BSPP?",
+          "a": "IH-SS-9500V-08 is 1/2\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9500V-02 is 1/8\" BSPP and IH-SS-9500V-16 is 1\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Bonded Seal with Viton Ring, BSPP come in?",
+          "a": "The size table has 6 part numbers, from 1/8\" BSPP to 1\" BSPP; the listing's nominal range is 1/8\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "When do I choose the Viton ring version of the BSPP bonded seal?",
+          "a": "Choose the Viton ring where the fluid, chemical exposure or temperature suits Viton better than a plain seal, and match the G thread size from 1/8\" to 1\" (6 part numbers). Name the fluid in your enquiry so we confirm the ring material."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel Bonded Seal with Viton Ring, BSPP rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel Bonded Seal with Viton Ring, BSPP family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Bonded Seal with Viton Ring, BSPP made from?",
+          "a": "The listing gives the material of the Stainless Steel Bonded Seal with Viton Ring, BSPP as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. The ring is Viton; the body is stainless."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel Bonded Seal with Viton Ring, BSPP?",
+          "a": "The Stainless Steel Bonded Seal with Viton Ring, BSPP is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel Bonded Seal with Viton Ring, BSPP connect to?",
+          "a": "It sits between a BSPP male fitting and the port face. The [Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal)](/p/stainless-steel-bspp-countersunk-sealed-plug-viton-seal) is a plug that carries its own Viton seal."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel Bonded Seal with Viton Ring, BSPP without leaks or galling?",
+          "a": "For the Bonded Seal with Viton Ring, BSPP: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Bonded seal with Viton ring or the plain BSPP bonded seal?",
+          "a": "The Viton ring version has 6 sizes to 1\", while the [plain bonded seal](/p/stainless-steel-bonded-seal-bspp) has 10 sizes to 2\". Viton suits fluids where a standard seal would swell."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel Bonded Seal with Viton Ring, BSPP supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel Bonded Seal with Viton Ring, BSPP from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Bonded Seal with Viton Ring, BSPP in stock in Dubai?",
+          "a": "Yes. The Stainless Steel Bonded Seal with Viton Ring, BSPP is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-countersunk-sealed-plug-viton-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) used for?",
+          "a": "The Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) is a stainless steel male BSPP plug with a countersunk head and a Viton seal, from 1/8\" to 1-1/2\". It closes a BSPP port flush, with the Viton seal making the seal under the countersunk head."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9028-12 on the BSPP Countersunk Sealed Plug (Viton Seal)?",
+          "a": "IH-SS-9028-12 is 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9028-02 is 1/8\" BSPP and IH-SS-9028-24 is 1-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) come in?",
+          "a": "The size table has 8 part numbers, from 1/8\" BSPP to 1-1/2\" BSPP; the listing's nominal range is 1/8\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the countersunk BSPP plug?",
+          "a": "Match the G thread of the port, from 1/8\" to 1-1/2\" in 8 sizes, and check the port is counterbored for a countersunk head. If a raised hex head is acceptable, the [Stainless Steel BSPP Hex Head Plug](/p/stainless-steel-bspp-hex-head-plug) is the alternative."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. The seal is Viton."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal)?",
+          "a": "The Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) connect to?",
+          "a": "The male BSPP thread screws into a BSPP female port, with the Viton seal under the countersunk head against the port. For a metric port use the [Stainless Steel Metric Countersunk Sealed Plug (Viton Seal)](/p/stainless-steel-metric-countersunk-sealed-plug-viton-seal)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) without leaks or galling?",
+          "a": "For the BSPP Countersunk Sealed Plug (Viton Seal): Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Countersunk sealed BSPP plug or the BSPP hex head plug?",
+          "a": "The countersunk plug sits flush and seals with a Viton seal, while the [Stainless Steel BSPP Hex Head Plug](/p/stainless-steel-bspp-hex-head-plug) has a raised hex head and is sealed by a bonded seal or O-ring. Choose the countersunk where the plug must sit flush."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal) in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-female-swivel-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Female Swivel Cap used for?",
+          "a": "The Stainless Steel BSPP Female Swivel Cap is a stainless female BSPP swivel cap that blanks off a male BSPP end, from 1/8\" to 1-1/2\". It closes a BSPP male fitting or hose end, and its swivel nut seats the cone or face without turning the fitting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9033-12 on the BSPP Female Swivel Cap?",
+          "a": "IH-SS-9033-12 is 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9033-02 is 1/8\" BSPP and IH-SS-9033-24 is 1-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Female Swivel Cap come in?",
+          "a": "The size table has 8 part numbers, from 1/8\" BSPP to 1-1/2\" BSPP; the listing's nominal range is 1/8\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the BSPP female swivel cap size?",
+          "a": "Match the G thread of the male end it closes, from 1/8\" to 1-1/2\" in 8 sizes. Confirm the male end's seat, cone or flat, because the cap must match it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Female Swivel Cap rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Female Swivel Cap family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Female Swivel Cap made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Female Swivel Cap as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Female Swivel Cap?",
+          "a": "The Stainless Steel BSPP Female Swivel Cap is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Female Swivel Cap connect to?",
+          "a": "The female swivel nut screws onto a male BSPP end, such as a [Stainless Steel BSPP Male Nipple](/p/stainless-steel-bspp-male-nipple). For a male plug that closes a female port use the [Stainless Steel BSPP Hex Head Plug](/p/stainless-steel-bspp-hex-head-plug)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Female Swivel Cap without leaks or galling?",
+          "a": "For the BSPP Female Swivel Cap: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP female swivel cap or BSPP hex head plug: which one closes my line?",
+          "a": "The female swivel cap closes a male BSPP end, while the [hex head plug](/p/stainless-steel-bspp-hex-head-plug) closes a female port. Pick by which end needs blanking."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Female Swivel Cap supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Female Swivel Cap from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Female Swivel Cap in stock in Dubai?",
+          "a": "Yes, we stock the Stainless Steel BSPP Female Swivel Cap at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-female-x-bspp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Female × BSPP Female Adapter used for?",
+          "a": "The Stainless Steel BSPP Female × BSPP Female Adapter is a straight stainless adapter with a female BSPP thread at each end, from 1/8\" to 1-1/2\". It joins two male BSPP ends, for example two nipples or a nipple and a fitting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9043-12-12 on the BSPP Female × BSPP Female Adapter?",
+          "a": "IH-SS-9043-12-12 is 3/4\" BSPP x 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9043-02-02 is 1/8\" BSPP x 1/8\" BSPP and IH-SS-9043-24-24 is 1-1/2\" BSPP x 1-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Female × BSPP Female Adapter come in?",
+          "a": "The size table has 8 part numbers, from 1/8\" BSPP x 1/8\" BSPP to 1-1/2\" BSPP x 1-1/2\" BSPP; the listing's nominal range is 1/8\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the BSPP female × female adapter?",
+          "a": "Choose the G thread of each male end it joins; the table lists matching sizes only, from 1/8\" to 1-1/2\" in 8 sizes. Check each male end's seal, cone or bonded seal, so the adapter's female seat matches."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Female × BSPP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Female × BSPP Female Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Female × BSPP Female Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Female × BSPP Female Adapter as 316l stainless steel, forged. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Female × BSPP Female Adapter?",
+          "a": "The Stainless Steel BSPP Female × BSPP Female Adapter is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Female × BSPP Female Adapter connect to?",
+          "a": "Both female BSPP ends screw onto male BSPP ends, such as the [Stainless Steel BSPP Male Nipple](/p/stainless-steel-bspp-male-nipple). For a male-to-swivel reduction see the [Stainless Steel BSPP Male × BSPP Female Swivel Adapter](/p/stainless-steel-bspp-male-x-bspp-female-swivel-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Female × BSPP Female Adapter without leaks or galling?",
+          "a": "For the BSPP Female × BSPP Female Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP female × female adapter or BSPP male nipple: which do I need?",
+          "a": "The female × female adapter has two female ends to join two male ends, while the [male nipple](/p/stainless-steel-bspp-male-nipple) has two male ends to join two female ports."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Female × BSPP Female Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Female × BSPP Female Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Female × BSPP Female Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel BSPP Female × BSPP Female Adapter is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Hex Head Plug used for?",
+          "a": "The Stainless Steel BSPP Hex Head Plug is a stainless male BSPP plug with a hex head that closes a BSPP port, from 1/8\" to 2\". It blanks off a spare or unused BSPP port, sealed by a bonded seal or O-ring under the head."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9030-12 on the BSPP Hex Head Plug?",
+          "a": "IH-SS-9030-12 is 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9030-02 is 1/8\" BSPP and IH-SS-9030-32 is 2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Hex Head Plug come in?",
+          "a": "The size table has 9 part numbers, from 1/8\" BSPP to 2\" BSPP; the listing's nominal range is 1/8\" to 2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the BSPP hex head plug size?",
+          "a": "Match the G thread of the port, from 1/8\" to 2\" in 9 sizes, and pick the seal: pair it with a [bonded seal](/p/stainless-steel-bonded-seal-bspp) or O-ring suited to the fluid. Do not use it in a BSPT taper port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Hex Head Plug rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Hex Head Plug family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Hex Head Plug made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Hex Head Plug as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Hex Head Plug?",
+          "a": "The Stainless Steel BSPP Hex Head Plug is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Hex Head Plug connect to?",
+          "a": "The male BSPP thread screws into a BSPP female port. For a taper BSPT port use the [Stainless Steel BSPT Hex Head Plug](/p/stainless-steel-bspt-hex-head-plug), and for a flush finish the [Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal)](/p/stainless-steel-bspp-countersunk-sealed-plug-viton-seal)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Hex Head Plug without leaks or galling?",
+          "a": "For the BSPP Hex Head Plug: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP hex head plug or BSPT hex head plug: how do I tell which I need?",
+          "a": "The BSPP plug has a parallel G thread sealed by a bonded seal, while the [BSPT plug](/p/stainless-steel-bspt-hex-head-plug) has a taper R thread that seals on the thread. Identify the port thread first; they do not interchange."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Hex Head Plug supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Hex Head Plug from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Hex Head Plug in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel BSPP Hex Head Plug in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-nipple",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male Nipple used for?",
+          "a": "The Stainless Steel BSPP Male Nipple is a stainless nipple with a male BSPP thread at each end, from 1/8\" to 2\". It joins two female BSPP ports or fittings, or extends a line between two female BSPP ends."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9000-12-12 on the BSPP Male Nipple?",
+          "a": "IH-SS-9000-12-12 is 3/4\" BSPP x 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9000-02-02 is 1/8\" BSPP x 1/8\" BSPP and IH-SS-9000-32-32 is 2\" BSPP x 2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male Nipple come in?",
+          "a": "The size table has 10 part numbers, from 1/8\" BSPP x 1/8\" BSPP to 2\" BSPP x 2\" BSPP; the listing's nominal range is 1/8\" to 2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the BSPP male nipple size?",
+          "a": "Choose the G thread of the two female ends it joins; the table gives matching sizes only, from 1/8\" to 2\" in 10 sizes. Confirm the seal at each end, bonded seal, O-ring or cone, to suit the female parts."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male Nipple rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male Nipple family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male Nipple made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male Nipple as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male Nipple?",
+          "a": "The Stainless Steel BSPP Male Nipple is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male Nipple connect to?",
+          "a": "Both male BSPP ends screw into female BSPP ports or fittings, such as the [Stainless Steel BSPP Female × BSPP Female Adapter](/p/stainless-steel-bspp-female-x-bspp-female-adapter). For a swivel end use the [Stainless Steel BSPP Male × BSPP Female Swivel Adapter](/p/stainless-steel-bspp-male-x-bspp-female-swivel-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male Nipple without leaks or galling?",
+          "a": "For the BSPP Male Nipple: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male nipple or BSPP male × female swivel adapter?",
+          "a": "The male nipple has a male BSPP end each side and the same size on both, while the [male × female swivel adapter](/p/stainless-steel-bspp-male-x-bspp-female-swivel-adapter) has a male end and a female swivel and can reduce between sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male Nipple supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male Nipple from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male Nipple in stock in Dubai?",
+          "a": "Yes, the Stainless Steel BSPP Male Nipple is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-x-bspp-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male × BSPP Female Swivel Adapter used for?",
+          "a": "The Stainless Steel BSPP Male × BSPP Female Swivel Adapter is a straight stainless adapter with a male BSPP end and a female BSPP swivel end, from 1/4\" to 1-1/2\". It screws into a BSPP port and gives a swivel female BSPP end for a hose or fitting, which can reduce from a larger male thread to a smaller female one."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9015-08-08 on the BSPP Male × BSPP Female Swivel Adapter?",
+          "a": "IH-SS-9015-08-08 is 1/2\" BSPP x 1/2\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9015-04-02 is 1/4\" BSPP x 1/8\" BSPP and IH-SS-9015-24-24 is 1-1/2\" BSPP x 1-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male × BSPP Female Swivel Adapter come in?",
+          "a": "The size table has 10 part numbers, from 1/4\" BSPP x 1/8\" BSPP to 1-1/2\" BSPP x 1-1/2\" BSPP; the listing's nominal range is 1/4\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Can the BSPP male × female swivel adapter reduce between sizes?",
+          "a": "Yes: rows such as IH-SS-9015-04-02 and -06-04 pair a larger male thread with a smaller female one, while the rest are equal sizes. Check the table row for the pair you need, from 1/4\" male to 1-1/2\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male × BSPP Female Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male × BSPP Female Swivel Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male × BSPP Female Swivel Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male × BSPP Female Swivel Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male × BSPP Female Swivel Adapter?",
+          "a": "The Stainless Steel BSPP Male × BSPP Female Swivel Adapter is listed to ISO 228-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male × BSPP Female Swivel Adapter connect to?",
+          "a": "The male BSPP end screws into a BSPP port, and the female swivel end takes a male BSPP end such as the [Stainless Steel BSPP Male Nipple](/p/stainless-steel-bspp-male-nipple). See our [stainless BSP and metric adapters shelf](/c/stainless-steel-bsp-metric-adapters)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male × BSPP Female Swivel Adapter without leaks or galling?",
+          "a": "For the BSPP Male × BSPP Female Swivel Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male × female swivel adapter or BSPP male × NPT female adapter?",
+          "a": "The swivel adapter keeps BSPP at both ends, while the [Stainless Steel BSPP Male × NPT Female Adapter](/p/stainless-steel-bspp-male-x-npt-female-adapter) converts a BSPP male to an NPT female. Use the swivel one when both ports are BSPP."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male × BSPP Female Swivel Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male × BSPP Female Swivel Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male × BSPP Female Swivel Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel BSPP Male × BSPP Female Swivel Adapter is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-x-bspt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male × BSPT Male Adapter used for?",
+          "a": "The Stainless Steel BSPP Male × BSPT Male Adapter is a straight stainless adapter with a male BSPP parallel thread at one end and a male BSPT taper thread at the other, from 1/4\" to 3/4\". It connects a BSPP port to a BSPT port, with a bonded seal on the parallel end and the thread sealing the taper end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9003-08-06 on the BSPP Male × BSPT Male Adapter?",
+          "a": "IH-SS-9003-08-06 is 1/2\" BSPP x 3/8\" BSPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9003-04-04 is 1/4\" BSPP x 1/4\" BSPT and IH-SS-9003-12-12 is 3/4\" BSPP x 3/4\" BSPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male × BSPT Male Adapter come in?",
+          "a": "The size table has 6 part numbers, from 1/4\" BSPP x 1/4\" BSPT to 3/4\" BSPP x 3/4\" BSPT; the listing's nominal range is 1/4\" to 3/4\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which end of the BSPP male × BSPT male adapter goes into which port?",
+          "a": "The BSPP male end goes into a parallel G port and seals with a bonded seal or O-ring, and the BSPT end goes into a taper R or Rp port and seals on the thread. Do not swap them, and check each port's thread before ordering."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male × BSPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male × BSPT Male Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male × BSPT Male Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male × BSPT Male Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male × BSPT Male Adapter?",
+          "a": "The Stainless Steel BSPP Male × BSPT Male Adapter is listed to ISO 228-1, ISO 7-1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male × BSPT Male Adapter connect to?",
+          "a": "The BSPP end screws into a BSPP female port and the BSPT end into a BSPT or Rp female port. For BSPT to NPT see the [Stainless Steel BSPT Male × NPT Male Adapter](/p/stainless-steel-bspt-male-x-npt-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male × BSPT Male Adapter without leaks or galling?",
+          "a": "For the BSPP Male × BSPT Male Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male × BSPT male adapter or BSPT male × NPT male adapter?",
+          "a": "The BSPP × BSPT adapter converts between two British threads, while the [BSPT × NPT adapter](/p/stainless-steel-bspt-male-x-npt-male-adapter) converts between British and US taper threads. Identify both port threads first; see the [guide to bridging two thread standards](/blog/bridging-two-thread-standards)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male × BSPT Male Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male × BSPT Male Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male × BSPT Male Adapter in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel BSPP Male × BSPT Male Adapter in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-x-jic-37-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter used for?",
+          "a": "The Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter is a straight stainless adapter with a male BSPP thread and a JIC 37° female swivel, from 1/4\" to 1\". It lets a JIC 37° hose end connect to a BSPP port, with the swivel nut making up without twisting the hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9021-08-06 on the BSPP Male × JIC 37° Female Swivel Adapter?",
+          "a": "IH-SS-9021-08-06 is 1/2\" BSPP x 3/8\" JIC 37°. The numbers after the series code identify the size of each end in turn, so IH-SS-9021-04-02 is 1/4\" BSPP x 1/8\" JIC 37° and IH-SS-9021-16-16 is 1\" BSPP x 1\" JIC 37°."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter come in?",
+          "a": "The size table has 8 part numbers, from 1/4\" BSPP x 1/8\" JIC 37° to 1\" BSPP x 1\" JIC 37°; the listing's nominal range is 1/4\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the BSPP × JIC size pairing?",
+          "a": "Pick the BSPP thread of the port, then the JIC size of the hose end: rows pair 1/4\" BSPP with 1/8\" or 1/4\" JIC, up to 1\" × 1\". The part number gives BSPP first, then JIC."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter?",
+          "a": "The Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter is listed to ISO 228-1, SAE J514, ISO 8434-2. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter connect to?",
+          "a": "The male BSPP end screws into a BSPP port, and the female JIC swivel takes a male JIC 37° end. For the reverse, JIC male to BSPP female, see the [Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter](/p/stainless-steel-jic-37-male-x-bspp-female-swivel-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter without leaks or galling?",
+          "a": "For the BSPP Male × JIC 37° Female Swivel Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male × JIC female swivel or JIC male × BSPP male adapter?",
+          "a": "The BSPP male × JIC female swivel has a swivel nut for a male JIC end, while the [Stainless Steel JIC 37° Male × BSPP Male Adapter](/p/stainless-steel-jic-37-male-x-bspp-male-adapter) has a male JIC flare for a female JIC nut. Pick by the JIC gender your hose has."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter in stock in Dubai?",
+          "a": "Yes, we stock the Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male × NPT Female Adapter used for?",
+          "a": "The Stainless Steel BSPP Male × NPT Female Adapter is a straight stainless adapter with a male BSPP thread and a female NPT thread, from 1/8\" to 2\" in 18 part numbers. It screws into a BSPP port and gives a female NPT thread for a US pipe fitting, a common bridge between British and US threads."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9035-08-06 on the BSPP Male × NPT Female Adapter?",
+          "a": "IH-SS-9035-08-06 is 1/2\" BSPP x 3/8\" NPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9035-02-02 is 1/8\" BSPP x 1/8\" NPT and IH-SS-9035-32-32 is 2\" BSPP x 2\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male × NPT Female Adapter come in?",
+          "a": "The size table has 18 part numbers, from 1/8\" BSPP x 1/8\" NPT to 2\" BSPP x 2\" NPT; the listing's nominal range is 1/8\" to 2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size pair of the BSPP male × NPT female adapter?",
+          "a": "Pick the BSPP size of the port and the NPT size of the pipe: the 18 rows include equal sizes, such as IH-SS-9035-02-02 (1/8\" BSPP × 1/8\" NPT), and mixed ones such as 1/8\" BSPP × 1/4\" NPT. Check the exact row."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male × NPT Female Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male × NPT Female Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male × NPT Female Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male × NPT Female Adapter?",
+          "a": "The Stainless Steel BSPP Male × NPT Female Adapter is listed to ISO 228-1, ASME B1.20.1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male × NPT Female Adapter connect to?",
+          "a": "The male BSPP end screws into a BSPP port with a bonded seal, and the female NPT end takes a male NPT pipe thread. For male-to-male see the [Stainless Steel BSPP Male × NPT Male Adapter](/p/stainless-steel-bspp-male-x-npt-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male × NPT Female Adapter without leaks or galling?",
+          "a": "For the BSPP Male × NPT Female Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male × NPT female adapter or BSPP male × NPT male adapter?",
+          "a": "The female NPT adapter takes a male NPT pipe thread and has 18 sizes, while the [male NPT adapter](/p/stainless-steel-bspp-male-x-npt-male-adapter) screws into a female NPT port and has 12. Choose by the NPT gender needed; see the [guide to bridging two thread standards](/blog/bridging-two-thread-standards)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male × NPT Female Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male × NPT Female Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male × NPT Female Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel BSPP Male × NPT Female Adapter is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspp-male-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPP Male × NPT Male Adapter used for?",
+          "a": "The Stainless Steel BSPP Male × NPT Male Adapter is a straight stainless adapter with a male BSPP thread at one end and a male NPT thread at the other, from 1/8\" to 2\". It connects a BSPP female port to an NPT female port, such as a BSPP pump port to US pipe-thread plant."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9007-12-12 on the BSPP Male × NPT Male Adapter?",
+          "a": "IH-SS-9007-12-12 is 3/4\" BSPP x 3/4\" NPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9007-02-02 is 1/8\" BSPP x 1/8\" NPT and IH-SS-9007-32-32 is 2\" BSPP x 2\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPP Male × NPT Male Adapter come in?",
+          "a": "The size table has 12 part numbers, from 1/8\" BSPP x 1/8\" NPT to 2\" BSPP x 2\" NPT; the listing's nominal range is 1/8\" to 2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which end of the BSPP male × NPT male adapter goes into which port?",
+          "a": "The BSPP end goes into a parallel G port and seals with a bonded seal or O-ring, and the NPT end into an NPT port and seals on the thread with sealant. The 12 rows pair equal sizes, such as IH-SS-9007-02-02 and -32-32."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPP Male × NPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPP Male × NPT Male Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPP Male × NPT Male Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPP Male × NPT Male Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPP Male × NPT Male Adapter?",
+          "a": "The Stainless Steel BSPP Male × NPT Male Adapter is listed to ISO 228-1, ASME B1.20.1. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPP Male × NPT Male Adapter connect to?",
+          "a": "The BSPP end screws into a BSPP female port and the NPT end into an NPT female port. For an NPT female pipe thread use the [Stainless Steel BSPP Male × NPT Female Adapter](/p/stainless-steel-bspp-male-x-npt-female-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPP Male × NPT Male Adapter without leaks or galling?",
+          "a": "For the BSPP Male × NPT Male Adapter: Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPP male × NPT male adapter or BSPT male × NPT male adapter?",
+          "a": "The BSPP × NPT adapter has a parallel BSPP end, while the [BSPT × NPT adapter](/p/stainless-steel-bspt-male-x-npt-male-adapter) has a taper BSPT end. Identify whether the British port is parallel or taper; see the [BSP or metric fittings guide](/blog/bsp-or-metric-fittings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPP Male × NPT Male Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPP Male × NPT Male Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPP Male × NPT Male Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel BSPP Male × NPT Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspt-hex-head-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPT Hex Head Plug used for?",
+          "a": "The Stainless Steel BSPT Hex Head Plug is a stainless male BSPT taper plug with a hex head that closes a BSPT or Rp port, from 1/8\" to 1-1/2\". It blanks off a taper-threaded port, sealing on the thread flanks as it is tightened."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9030T-12 on the BSPT Hex Head Plug?",
+          "a": "IH-SS-9030T-12 is 3/4\" BSPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9030T-02 is 1/8\" BSPT and IH-SS-9030T-24 is 1-1/2\" BSPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPT Hex Head Plug come in?",
+          "a": "The size table has 8 part numbers, from 1/8\" BSPT to 1-1/2\" BSPT; the listing's nominal range is 1/8\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Can I use the BSPT hex head plug in a BSPP port?",
+          "a": "No. The BSPT plug has a taper R thread that seals on the thread, and a parallel G port needs a BSPP plug with a bonded seal or O-ring. Match the port thread, from 1/8\" to 1-1/2\" in 8 sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPT Hex Head Plug rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPT Hex Head Plug family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPT Hex Head Plug made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPT Hex Head Plug as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPT Hex Head Plug?",
+          "a": "The Stainless Steel BSPT Hex Head Plug is listed to ISO 7-1. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPT Hex Head Plug connect to?",
+          "a": "The male BSPT thread screws into a BSPT or Rp female port. For a parallel BSPP port use the [Stainless Steel BSPP Hex Head Plug](/p/stainless-steel-bspp-hex-head-plug)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPT Hex Head Plug without leaks or galling?",
+          "a": "For the BSPT Hex Head Plug: Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPT hex head plug or BSPP hex head plug: which one?",
+          "a": "The BSPT plug seals on a taper thread, while the [BSPP plug](/p/stainless-steel-bspp-hex-head-plug) seals with a bonded seal on a parallel thread. They do not interchange, so identify the port thread first."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPT Hex Head Plug supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPT Hex Head Plug from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPT Hex Head Plug in stock in Dubai?",
+          "a": "Yes, the Stainless Steel BSPT Hex Head Plug is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspt-male-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPT Male × NPT Female Adapter used for?",
+          "a": "The Stainless Steel BSPT Male × NPT Female Adapter is a straight stainless adapter with a male BSPT taper thread and a female NPT thread, from 1/8\" to 1\". It screws into a BSPT or Rp port and gives a female NPT thread for a US pipe fitting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9042-08-08 on the BSPT Male × NPT Female Adapter?",
+          "a": "IH-SS-9042-08-08 is 1/2\" BSPT x 1/2\" NPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9042-02-02 is 1/8\" BSPT x 1/8\" NPT and IH-SS-9042-16-16 is 1\" BSPT x 1\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPT Male × NPT Female Adapter come in?",
+          "a": "The size table has 6 part numbers, from 1/8\" BSPT x 1/8\" NPT to 1\" BSPT x 1\" NPT; the listing's nominal range is 1/8\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size pair for the BSPT male × NPT female adapter?",
+          "a": "Pick the BSPT size of the port and the NPT size of the pipe; the 6 rows pair equal sizes, from 1/8\" × 1/8\" to 1\" × 1\". Both threads are taper, so both seal on the thread with sealant."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPT Male × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPT Male × NPT Female Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPT Male × NPT Female Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPT Male × NPT Female Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPT Male × NPT Female Adapter?",
+          "a": "The Stainless Steel BSPT Male × NPT Female Adapter is listed to ISO 7-1, ASME B1.20.1. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPT Male × NPT Female Adapter connect to?",
+          "a": "The male BSPT end screws into a BSPT or Rp female port and the female NPT end takes male NPT pipe. For male-to-male use the [Stainless Steel BSPT Male × NPT Male Adapter](/p/stainless-steel-bspt-male-x-npt-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPT Male × NPT Female Adapter without leaks or galling?",
+          "a": "For the BSPT Male × NPT Female Adapter: Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPT male × NPT female adapter or BSPP male × NPT female adapter?",
+          "a": "The BSPT version has a taper British end, while the [BSPP version](/p/stainless-steel-bspp-male-x-npt-female-adapter) has a parallel one that seals with a bonded seal. Identify the British thread first."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPT Male × NPT Female Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPT Male × NPT Female Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPT Male × NPT Female Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel BSPT Male × NPT Female Adapter is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-bspt-male-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel BSPT Male × NPT Male Adapter used for?",
+          "a": "The Stainless Steel BSPT Male × NPT Male Adapter is a straight stainless adapter with a male BSPT taper thread at one end and a male NPT taper thread at the other, from 1/4\" to 1-1/4\". It connects a BSPT female port to an NPT female port, with both ends sealing on the thread."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9008-08-08 on the BSPT Male × NPT Male Adapter?",
+          "a": "IH-SS-9008-08-08 is 1/2\" BSPT x 1/2\" NPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9008-04-04 is 1/4\" BSPT x 1/4\" NPT and IH-SS-9008-20-20 is 1-1/4\" BSPT x 1-1/4\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel BSPT Male × NPT Male Adapter come in?",
+          "a": "The size table has 7 part numbers, from 1/4\" BSPT x 1/4\" NPT to 1-1/4\" BSPT x 1-1/4\" NPT; the listing's nominal range is 1/4\" to 1-1/4\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Do both ends of the BSPT male × NPT male adapter seal on the thread?",
+          "a": "Yes, both are taper threads, so each seals on the thread flanks with sealant or tape and is tightened by turns. The 7 rows pair equal sizes from 1/4\" to 1-1/4\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel BSPT Male × NPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel BSPT Male × NPT Male Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel BSPT Male × NPT Male Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel BSPT Male × NPT Male Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel BSPT Male × NPT Male Adapter?",
+          "a": "The Stainless Steel BSPT Male × NPT Male Adapter is listed to ISO 7-1, ASME B1.20.1. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel BSPT Male × NPT Male Adapter connect to?",
+          "a": "The BSPT end screws into a BSPT or Rp female port and the NPT end into an NPT female port. See the [Stainless Steel BSPT Male × NPT Female Adapter](/p/stainless-steel-bspt-male-x-npt-female-adapter) for a female NPT end."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel BSPT Male × NPT Male Adapter without leaks or galling?",
+          "a": "For the BSPT Male × NPT Male Adapter: Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "BSPT male × NPT male adapter or BSPP male × NPT male adapter?",
+          "a": "The BSPT version has taper threads at both ends, while the [BSPP version](/p/stainless-steel-bspp-male-x-npt-male-adapter) has a parallel end that seals with a bonded seal. See the [guide to stopping an NPT thread leak](/blog/stopping-an-npt-thread-leak)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel BSPT Male × NPT Male Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel BSPT Male × NPT Male Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel BSPT Male × NPT Male Adapter in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel BSPT Male × NPT Male Adapter in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-bspp-female-swivel-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter used for?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter is a straight stainless adapter with a male JIC 37° flare and a female BSPP swivel, from 1/4\" to 1\". It lets a BSPP male port or hose end connect to a female JIC 37° nut, with the swivel making up without twisting."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9240-08-08 on the JIC 37° Male × BSPP Female Swivel Adapter?",
+          "a": "IH-SS-9240-08-08 is 1/2\" JIC 37° x 1/2\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9240-04-04 is 1/4\" JIC 37° x 1/4\" BSPP and IH-SS-9240-16-16 is 1\" JIC 37° x 1\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter come in?",
+          "a": "The size table has 7 part numbers, from 1/4\" JIC 37° x 1/4\" BSPP to 1\" JIC 37° x 1\" BSPP; the listing's nominal range is 1/4\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size pair for the JIC male × BSPP female swivel adapter?",
+          "a": "Pick the JIC size of the flare first, then the BSPP thread of the male end it meets: the 7 rows pair equal sizes, such as 3/8\" JIC × 3/8\" BSPP, from 1/4\" to 1\". The part number gives JIC first."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter as 316l stainless steel, forged. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter is listed to SAE J514, ISO 8434-2, ISO 228-1, ASME B1.20.1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter connect to?",
+          "a": "The male JIC flare seats in a female JIC 37° nut and the female BSPP swivel takes a male BSPP end. For the reverse see the [Stainless Steel BSPP Male × JIC 37° Female Swivel Adapter](/p/stainless-steel-bspp-male-x-jic-37-female-swivel-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter without leaks or galling?",
+          "a": "For the JIC 37° Male × BSPP Female Swivel Adapter: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC male × BSPP female swivel or JIC male × BSPP male adapter?",
+          "a": "The female swivel takes a male BSPP end, while the [Stainless Steel JIC 37° Male × BSPP Male Adapter](/p/stainless-steel-jic-37-male-x-bspp-male-adapter) screws into a female BSPP port. Choose by the BSPP gender of the equipment."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter in stock in Dubai?",
+          "a": "Yes, we stock the Stainless Steel JIC 37° Male × BSPP Female Swivel Adapter at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-bspp-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Male Adapter used for?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Male Adapter is a straight stainless adapter with a male JIC 37° flare and a male BSPP thread, from 1/4\" to 1-1/2\" in 19 part numbers. It screws into a BSPP port and gives a male JIC 37° flare for a female JIC nut, bridging British and US hydraulic threads."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9005-08-12 on the JIC 37° Male × BSPP Male Adapter?",
+          "a": "IH-SS-9005-08-12 is 1/2\" JIC 37° x 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9005-04-02 is 1/4\" JIC 37° x 1/8\" BSPP and IH-SS-9005-24-24 is 1-1/2\" JIC 37° x 1-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × BSPP Male Adapter come in?",
+          "a": "The size table has 19 part numbers, from 1/4\" JIC 37° x 1/8\" BSPP to 1-1/2\" JIC 37° x 1-1/2\" BSPP; the listing's nominal range is 1/4\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the JIC and BSPP sizes for this adapter?",
+          "a": "Pick the BSPP thread of the port and the JIC size of the nut: the 19 rows include pairs such as 1/4\" JIC × 1/8\" BSPP and 1-1/2\" × 1-1/2\". The part number gives JIC first and BSPP second."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × BSPP Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × BSPP Male Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Male Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × BSPP Male Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × BSPP Male Adapter?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Male Adapter is listed to SAE J514, ISO 8434-2, ISO 228-1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × BSPP Male Adapter connect to?",
+          "a": "The male BSPP end screws into a BSPP port with a bonded seal, and the male JIC flare seats in a female JIC 37° swivel nut. See our [stainless JIC adapters](/c/stainless-steel-jic-adapters) for other JIC ends."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × BSPP Male Adapter without leaks or galling?",
+          "a": "For the JIC 37° Male × BSPP Male Adapter: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC male × BSPP male adapter or JIC male × BSPT male adapter?",
+          "a": "The BSPP version has a parallel end sealed by a bonded seal, while the [BSPT version](/p/stainless-steel-jic-37-male-x-bspt-male-adapter) has a taper end that seals on the thread. Read the port thread first; see the [stainless hydraulic adapters guide](/blog/stainless-hydraulic-adapters-guide)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × BSPP Male Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × BSPP Male Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × BSPP Male Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel JIC 37° Male × BSPP Male Adapter is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-bspp-male-adjustable-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow used for?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow is a stainless adjustable elbow with a male JIC 37° flare and a male BSPP thread, from 1/4\" to 1\". It turns the line through 90° at a BSPP port, and the adjustable body lets the JIC end be set in any direction before it is locked."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9059-08-06 on the JIC 37° Male × BSPP Male Adjustable 90° Elbow?",
+          "a": "IH-SS-9059-08-06 is 1/2\" JIC 37° x 3/8\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9059-04-02 is 1/4\" JIC 37° x 1/8\" BSPP and IH-SS-9059-16-16 is 1\" JIC 37° x 1\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow come in?",
+          "a": "The size table has 11 part numbers, from 1/4\" JIC 37° x 1/8\" BSPP to 1\" JIC 37° x 1\" BSPP; the listing's nominal range is 1/4\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How does the adjustable BSPP 90° elbow differ from a fixed elbow?",
+          "a": "The adjustable body can be rotated after the BSPP thread is seated, so the JIC end points the right way, then locked with the nut. A fixed elbow is set by the thread's final position; the 11 rows here pair sizes from 1/4\" JIC × 1/8\" BSPP to 1\" × 1\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow?",
+          "a": "The Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow is listed to SAE J514, ISO 8434-2, ISO 228-1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow connect to?",
+          "a": "The BSPP male end screws into a BSPP port, and the male JIC flare seats in a female JIC 37° nut. For a straight version see the [Stainless Steel JIC 37° Male × BSPP Male Adapter](/p/stainless-steel-jic-37-male-x-bspp-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow without leaks or galling?",
+          "a": "For the JIC 37° Male × BSPP Male Adjustable 90° Elbow: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Adjustable JIC × BSPP elbow or JIC male × BSPT male 90° elbow?",
+          "a": "The adjustable BSPP elbow has a parallel BSPP end and can be set in position, while the [BSPT 90° elbow](/p/stainless-steel-jic-37-male-x-bspt-male-90-elbow) is a taper-thread elbow. Choose by the port thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-bspt-male-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow used for?",
+          "a": "The Stainless Steel JIC 37° Male × BSPT Male 90° Elbow is a stainless 90° elbow with a male JIC 37° flare and a male BSPT taper thread, from 1/4\" to 1\". It turns the line through 90° at a BSPT port, with the taper thread sealing on the thread and the flare connecting to a JIC nut."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9063-08-08 on the JIC 37° Male × BSPT Male 90° Elbow?",
+          "a": "IH-SS-9063-08-08 is 1/2\" JIC 37° x 1/2\" BSPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9063-04-02 is 1/4\" JIC 37° x 1/8\" BSPT and IH-SS-9063-16-16 is 1\" JIC 37° x 1\" BSPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow come in?",
+          "a": "The size table has 8 part numbers, from 1/4\" JIC 37° x 1/8\" BSPT to 1\" JIC 37° x 1\" BSPT; the listing's nominal range is 1/4\" to 1\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Does the JIC × BSPT 90° elbow allow the direction to be set?",
+          "a": "The taper BSPT thread seals by being tightened, so the final position depends on how far it turns; allow for this when choosing the elbow, or use the [Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow](/p/stainless-steel-jic-37-male-x-bspp-male-adjustable-90-elbow) where the direction must be set exactly."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow?",
+          "a": "The Stainless Steel JIC 37° Male × BSPT Male 90° Elbow is listed to SAE J514, ISO 8434-2, ISO 7-1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow connect to?",
+          "a": "The BSPT male end screws into a BSPT or Rp female port and seals on the thread, while the male JIC flare seats in a female JIC 37° nut. For a parallel port use the [Stainless Steel JIC 37° Male × BSPP Male Adjustable 90° Elbow](/p/stainless-steel-jic-37-male-x-bspp-male-adjustable-90-elbow)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow without leaks or galling?",
+          "a": "For the JIC 37° Male × BSPT Male 90° Elbow: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC male × BSPT male 90° elbow or JIC male × BSPT male straight adapter?",
+          "a": "The 90° elbow turns the line through a right angle, while the [straight adapter](/p/stainless-steel-jic-37-male-x-bspt-male-adapter) keeps it in line and has 14 sizes. Choose by the hose route."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow in stock in Dubai?",
+          "a": "Yes, the Stainless Steel JIC 37° Male × BSPT Male 90° Elbow is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-bspt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPT Male Adapter used for?",
+          "a": "The Stainless Steel JIC 37° Male × BSPT Male Adapter is a straight stainless adapter with a male JIC 37° flare and a male BSPT taper thread, from 1/4\" to 1-1/2\" in 14 part numbers. It screws into a BSPT or Rp port and gives a male JIC 37° flare for a female JIC nut."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9011-10-08 on the JIC 37° Male × BSPT Male Adapter?",
+          "a": "IH-SS-9011-10-08 is 5/8\" JIC 37° x 1/2\" BSPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9011-04-02 is 1/4\" JIC 37° x 1/8\" BSPT and IH-SS-9011-24-24 is 1-1/2\" JIC 37° x 1-1/2\" BSPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × BSPT Male Adapter come in?",
+          "a": "The size table has 14 part numbers, from 1/4\" JIC 37° x 1/8\" BSPT to 1-1/2\" JIC 37° x 1-1/2\" BSPT; the listing's nominal range is 1/4\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the JIC and BSPT sizes for this adapter?",
+          "a": "Pick the BSPT size of the port and the JIC size of the nut: the 14 rows include 1/4\" JIC × 1/8\" BSPT up to 1-1/2\" × 1-1/2\". The part number gives JIC first and BSPT second."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × BSPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × BSPT Male Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × BSPT Male Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × BSPT Male Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × BSPT Male Adapter?",
+          "a": "The Stainless Steel JIC 37° Male × BSPT Male Adapter is listed to SAE J514, ISO 8434-2, ISO 7-1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. BSPT (R) is the taper thread to ISO 7-1 that seals on the thread flanks. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × BSPT Male Adapter connect to?",
+          "a": "The BSPT male end screws into a BSPT or Rp female port, and the male JIC flare seats in a female JIC 37° nut. For a parallel BSPP port use the [Stainless Steel JIC 37° Male × BSPP Male Adapter](/p/stainless-steel-jic-37-male-x-bspp-male-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × BSPT Male Adapter without leaks or galling?",
+          "a": "For the JIC 37° Male × BSPT Male Adapter: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seal the BSPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC male × BSPT male adapter or JIC male × BSPP male adapter?",
+          "a": "The BSPT version seals on a taper thread, while the [BSPP version](/p/stainless-steel-jic-37-male-x-bspp-male-adapter) seals with a bonded seal on a parallel thread. They are not interchangeable; read the port thread first."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × BSPT Male Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × BSPT Male Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × BSPT Male Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel JIC 37° Male × BSPT Male Adapter is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-metric-male-adjustable-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow used for?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow is a stainless adjustable elbow with a male JIC 37° flare and a male metric thread from M10×1 to M18×1.5, from 1/4\" to 1/2\" JIC. It turns the line through 90° at a metric port, and the adjustable body lets the JIC end be set in any direction before it is locked."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9069-06-14 on the JIC 37° Male × Metric Male Adjustable 90° Elbow?",
+          "a": "IH-SS-9069-06-14 is 3/8\" JIC 37° x M14×1.5. The numbers after the series code identify the size of each end in turn, so IH-SS-9069-04-10 is 1/4\" JIC 37° x M10×1 and IH-SS-9069-08-18 is 1/2\" JIC 37° x M18×1.5."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow come in?",
+          "a": "The size table has 5 part numbers, from 1/4\" JIC 37° x M10×1 to 1/2\" JIC 37° x M18×1.5; the listing's nominal range is 1/4\" to 1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "Which metric thread does the adjustable JIC × metric elbow use?",
+          "a": "The 5 rows pair 1/4\" JIC with M10×1 or M12×1.5, 3/8\" with M14 and 1/2\" with M18×1.5. Measure the port thread diameter and pitch before ordering, since a fine pitch metric thread will not seat in a BSPP port."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow is listed to SAE J514, ISO 8434-2. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow connect to?",
+          "a": "The metric male end screws into a metric parallel port, which seals with a washer or O-ring face, and the male JIC flare seats in a female JIC 37° nut."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow without leaks or galling?",
+          "a": "For the JIC 37° Male × Metric Male Adjustable 90° Elbow: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC × metric adjustable elbow or JIC × BSPP adjustable elbow?",
+          "a": "The metric version has 5 sizes, while the [BSPP version](/p/stainless-steel-jic-37-male-x-bspp-male-adjustable-90-elbow) has 11 to 1\". Choose by the port thread; see the [BSP or metric fittings guide](/blog/bsp-or-metric-fittings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel JIC 37° Male × Metric Male Adjustable 90° Elbow in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter used for?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter is a straight stainless adapter with a male JIC 37° flare and a male metric thread in the light series, from M12×1.5 to M52×1.5. It connects a JIC 37° nut to a metric port, and the rows are labelled by tube size, from 6 mm to 42 mm in the light series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9605-10-L15-22 on the JIC 37° Male × Metric Male Dual-Purpose Adapter?",
+          "a": "IH-SS-9605-10-L15-22 is 5/8\" JIC 37° x M22×1.5. The numbers after the series code identify the size of each end in turn, so IH-SS-9605-04-L06-12 is 1/4\" JIC 37° x M12×1.5 and IH-SS-9605-24-L42-52 is 1-1/2\" JIC 37° x M52×1.5. The L in the part number marks the light series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter come in?",
+          "a": "The size table has 13 part numbers, from 1/4\" JIC 37° x M12×1.5 to 1-1/2\" JIC 37° x M52×1.5; the listing's nominal range is 1/4\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the light-series metric size for the dual-purpose adapter?",
+          "a": "Choose the metric thread by the tube size of the port: the table pairs a JIC size with a light-series tube, such as 1/4\" JIC with 6 mm tube (M12×1.5) or 3/4\" JIC with 22 mm tube (M30×1.5). Confirm light or heavy series from the port first."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter is listed to SAE J514, ISO 8434-2. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter connect to?",
+          "a": "The male JIC flare seats in a female JIC 37° nut and the metric male thread screws into a metric port in the light series. For heavy-series ports use the [Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy](/p/stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter-heavy)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter without leaks or galling?",
+          "a": "For the JIC 37° Male × Metric Male Dual-Purpose Adapter: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Dual-purpose JIC × metric adapter, light or heavy series?",
+          "a": "This light series runs from M12×1.5 and has 13 rows, while the [heavy series](/p/stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter-heavy) starts at M14×1.5 and has 15. The thread alone does not tell you: check the series on the port; see the [BSP or metric fittings guide](/blog/bsp-or-metric-fittings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter in stock in Dubai?",
+          "a": "Yes, we stock the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter at our warehouse in Dubai, UAE and ship worldwide with the best lead times. For a price and delivery date, send the sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter-heavy",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy used for?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy is a straight stainless adapter with a male JIC 37° flare and a male metric thread in the heavy series, from M14×1.5 to M52×1.5. It connects a JIC 37° nut to a heavy-series metric port, and the rows are labelled by tube size, from 6 mm to 38 mm in the heavy series."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9606-08-S16-24 on the JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy?",
+          "a": "IH-SS-9606-08-S16-24 is 1/2\" JIC 37° x M24×1.5. The numbers after the series code identify the size of each end in turn, so IH-SS-9606-04-S06-14 is 1/4\" JIC 37° x M14×1.5 and IH-SS-9606-24-S38-52 is 1-1/2\" JIC 37° x M52×1.5. The S in the part number marks the heavy series."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy come in?",
+          "a": "The size table has 15 part numbers, from 1/4\" JIC 37° x M14×1.5 to 1-1/2\" JIC 37° x M52×1.5; the listing's nominal range is 1/4\" to 1-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the heavy-series metric size for the dual-purpose adapter?",
+          "a": "Choose the metric thread by the tube size of the port: the table pairs a JIC size with a heavy-series tube, such as 1/4\" JIC with 6 mm tube (M14×1.5). Confirm light or heavy series from the port first, because the same tube size has a different thread."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy is listed to SAE J514, ISO 8434-2. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy connect to?",
+          "a": "The male JIC flare seats in a female JIC 37° nut and the metric male thread screws into a heavy-series metric port. For light-series ports use the [Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter](/p/stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy without leaks or galling?",
+          "a": "For the JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Dual-purpose JIC × metric adapter, heavy or light series?",
+          "a": "This heavy series starts at M14×1.5 with 15 rows to a 38 mm tube, while the [light series](/p/stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter) starts at M12×1.5 and goes to a 42 mm tube. Check the series on the port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy in stock in Dubai?",
+          "a": "Yes. The Stainless Steel JIC 37° Male × Metric Male Dual-Purpose Adapter, Heavy is kept in stock in Dubai, UAE, ready to ship worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-jic-37-male-x-metric-standpipe",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Standpipe used for?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Standpipe is a stainless adapter with a male JIC 37° flare and a DIN 2353 24° cone standpipe end, for tubes from 6 mm to 42 mm. It connects a JIC 37° nut to a metric tube system, the 24° cone end taking a cutting ring and nut."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9200-12-18 on the JIC 37° Male × Metric Standpipe?",
+          "a": "IH-SS-9200-12-18 is 3/4\" JIC 37° x 18 mm standpipe. The numbers after the series code identify the size of each end in turn, so IH-SS-9200-04-06 is 1/4\" JIC 37° x 6 mm standpipe and IH-SS-9200-24-42 is 1-1/2\" JIC 37° x 42 mm standpipe."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel JIC 37° Male × Metric Standpipe come in?",
+          "a": "The size table has 22 part numbers, from 1/4\" JIC 37° x 6 mm standpipe to 1-1/2\" JIC 37° x 42 mm standpipe; the listing's nominal range is 6 mm to 42 mm tube. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the tube size for the JIC × metric standpipe?",
+          "a": "Choose the JIC size of the nut and the tube outside diameter of the metric line: the 22 rows pair, for example, 1/2\" JIC with 10, 12, 14, 15 or 16 mm tube, from 6 mm to 42 mm. The part number gives JIC first and tube size second."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel JIC 37° Male × Metric Standpipe rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel JIC 37° Male × Metric Standpipe family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel JIC 37° Male × Metric Standpipe made from?",
+          "a": "The listing gives the material of the Stainless Steel JIC 37° Male × Metric Standpipe as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel JIC 37° Male × Metric Standpipe?",
+          "a": "The Stainless Steel JIC 37° Male × Metric Standpipe is listed to SAE J514, ISO 8434-2, DIN 2353, ISO 8434-1. JIC 37° is a flare to SAE J514 and ISO 8434-2 whose metal-to-metal seat sits on a 74° included cone. The DIN 2353 24° cone end takes a cutting ring and nut that bite into the tube. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel JIC 37° Male × Metric Standpipe connect to?",
+          "a": "The male JIC flare seats in a female JIC 37° nut, and the 24° cone end takes a DIN 2353 cutting ring and nut on the tube. See our [stainless DIN 2353 fittings](/c/stainless-steel-din-2353-fittings) for the nuts and rings."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel JIC 37° Male × Metric Standpipe without leaks or galling?",
+          "a": "For the JIC 37° Male × Metric Standpipe: Seat the 37° flare squarely in its cone and tighten a set number of flats past finger-tight, with no tape on the cone. Fit the tube, cutting ring and nut as the tube-fitting maker specifies. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "JIC male × metric standpipe or JIC male × metric male dual-purpose adapter?",
+          "a": "The standpipe has a 24° cone tube end for a cutting ring, while the [dual-purpose adapter](/p/stainless-steel-jic-37-male-x-metric-male-dual-purpose-adapter) has a metric male thread for a port. Choose by whether the metric side is a tube or a port."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel JIC 37° Male × Metric Standpipe supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel JIC 37° Male × Metric Standpipe from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel JIC 37° Male × Metric Standpipe in stock in Dubai?",
+          "a": "Yes. We keep the Stainless Steel JIC 37° Male × Metric Standpipe in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-metric-countersunk-sealed-plug-viton-seal",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) used for?",
+          "a": "The Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) is a stainless male metric plug with a countersunk head and a Viton seal, from M10×1.0 to M48×2.0. It closes a metric port flush, with the Viton seal making the seal under the countersunk head."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9029-22X1.5 on the Metric Countersunk Sealed Plug (Viton Seal)?",
+          "a": "IH-SS-9029-22X1.5 is M22×1.5. The numbers after the series code identify the size of each end in turn, so IH-SS-9029-10X1.0 is M10×1.0 and IH-SS-9029-48X2.0 is M48×2.0."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) come in?",
+          "a": "The size table has 12 part numbers, from M10×1.0 to M48×2.0; the listing's nominal range is M10×1.0 to M48×2.0. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the thread for the metric countersunk plug?",
+          "a": "Match the port's metric thread: the 12 rows run M10×1.0, M12×1.5, M14×1.5 and so on to M48×2.0. Measure the thread diameter and pitch, and check the port is counterbored for a countersunk head."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) made from?",
+          "a": "The listing gives the material of the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. The seal is Viton."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal)?",
+          "a": "The Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) is listed to . The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) connect to?",
+          "a": "The metric male thread screws into a metric female port, with the Viton seal under the countersunk head. For a BSPP port use the [Stainless Steel BSPP Countersunk Sealed Plug (Viton Seal)](/p/stainless-steel-bspp-countersunk-sealed-plug-viton-seal)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) without leaks or galling?",
+          "a": "For the Metric Countersunk Sealed Plug (Viton Seal): Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Metric countersunk sealed plug or the BSPP countersunk sealed plug?",
+          "a": "The metric plug runs M10×1.0 to M48×2.0 in 12 sizes, while the [BSPP plug](/p/stainless-steel-bspp-countersunk-sealed-plug-viton-seal) is sized in BSPP G threads. Choose by the port thread."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) in stock in Dubai?",
+          "a": "Yes, the Stainless Steel Metric Countersunk Sealed Plug (Viton Seal) is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-metric-male-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel Metric Male × NPT Female Adapter used for?",
+          "a": "The Stainless Steel Metric Male × NPT Female Adapter is a straight stainless adapter with a male metric thread from 10 mm to 22 mm and a female NPT thread from 1/8\" to 1/2\". It screws into a metric port and gives a female NPT thread for a US pipe fitting or instrument."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9235-18-06 on the Metric Male × NPT Female Adapter?",
+          "a": "IH-SS-9235-18-06 is 18 mm metric male x 3/8\" NPT. The numbers after the series code identify the size of each end in turn, so IH-SS-9235-10-02 is 10 mm metric male x 1/8\" NPT and IH-SS-9235-22-08 is 22 mm metric male x 1/2\" NPT."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel Metric Male × NPT Female Adapter come in?",
+          "a": "The size table has 8 part numbers, from 10 mm metric male x 1/8\" NPT to 22 mm metric male x 1/2\" NPT; the listing's nominal range is 10 to 22. Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the metric and NPT sizes for this adapter?",
+          "a": "Pick the metric thread of the port and the NPT size of the fitting: the 8 rows pair, for example, a 10 mm metric male with 1/8\" NPT and a 22 mm metric male with 1/2\" NPT. Measure the metric pitch as well as the diameter."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel Metric Male × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel Metric Male × NPT Female Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel Metric Male × NPT Female Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel Metric Male × NPT Female Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel Metric Male × NPT Female Adapter?",
+          "a": "The Stainless Steel Metric Male × NPT Female Adapter is listed to ASME B1.20.1. The metric end is a parallel thread that seals with a washer, O-ring or sealing face on the port. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel Metric Male × NPT Female Adapter connect to?",
+          "a": "The metric male end screws into a metric parallel port, and the female NPT end takes a male NPT pipe thread. For a BSPP port see the [Stainless Steel BSPP Male × NPT Female Adapter](/p/stainless-steel-bspp-male-x-npt-female-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel Metric Male × NPT Female Adapter without leaks or galling?",
+          "a": "For the Metric Male × NPT Female Adapter: Seal the metric parallel thread with the washer or O-ring that the port calls for and tighten to torque. Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "Metric male × NPT female adapter or BSPP male × NPT female adapter?",
+          "a": "The metric version has 8 rows to 22 mm, while the [BSPP version](/p/stainless-steel-bspp-male-x-npt-female-adapter) has 18 to 2\". Choose by whether the port is metric or BSPP; see the [BSP or metric fittings guide](/blog/bsp-or-metric-fittings)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel Metric Male × NPT Female Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel Metric Male × NPT Female Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel Metric Male × NPT Female Adapter in stock in Dubai?",
+          "a": "Yes. The Stainless Steel Metric Male × NPT Female Adapter is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "stainless-steel-npt-male-x-bspp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Stainless Steel NPT Male × BSPP Female Adapter used for?",
+          "a": "The Stainless Steel NPT Male × BSPP Female Adapter is a straight stainless adapter with a male NPT taper thread and a female BSPP thread, from 1/8\" to 2-1/2\". It screws into an NPT port and gives a female BSPP thread for a British fitting, the reverse of the BSPP male × NPT female adapter."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-SS-9037-12-12 on the NPT Male × BSPP Female Adapter?",
+          "a": "IH-SS-9037-12-12 is 3/4\" NPT x 3/4\" BSPP. The numbers after the series code identify the size of each end in turn, so IH-SS-9037-02-02 is 1/8\" NPT x 1/8\" BSPP and IH-SS-9037-40-40 is 2-1/2\" NPT x 2-1/2\" BSPP."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Stainless Steel NPT Male × BSPP Female Adapter come in?",
+          "a": "The size table has 9 part numbers, from 1/8\" NPT x 1/8\" BSPP to 2-1/2\" NPT x 2-1/2\" BSPP; the listing's nominal range is 1/8\" to 2-1/2\". Sizes outside the table are quoted on request."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the size of the NPT male × BSPP female adapter?",
+          "a": "Pick the NPT size of the port and the BSPP size of the fitting: the 9 rows pair equal sizes from 1/8\" to 2-1/2\", such as IH-SS-9037-02-02 and -40-40. The NPT end seals on the thread with sealant."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Stainless Steel NPT Male × BSPP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for the Stainless Steel NPT Male × BSPP Female Adapter family, so we give none. Tell us the working pressure your line sees and we confirm the fitting is rated for it before you order; the assembly is only as strong as its lowest-rated part."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Stainless Steel NPT Male × BSPP Female Adapter made from?",
+          "a": "The listing gives the material of the Stainless Steel NPT Male × BSPP Female Adapter as stainless steel, without naming the grade, so ask if you need 316 certified. Stainless suits offshore and marine lines, chemical and fertiliser plant and food and pharmaceutical equipment, where zinc-plated steel corrodes. Lubricate stainless threads lightly to prevent galling."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards apply to the Stainless Steel NPT Male × BSPP Female Adapter?",
+          "a": "The Stainless Steel NPT Male × BSPP Female Adapter is listed to ASME B1.20.1, ISO 228-1. NPT is a 60° taper thread to ASME B1.20.1 that seals on the thread flanks with sealant or tape. BSPP (G) is a parallel thread to ISO 228-1 that does not seal on its flanks, so it seals with a bonded seal, an O-ring or a cone seat. The listing names no standard for the body itself, so quote the part number and thread sizes when you order."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Stainless Steel NPT Male × BSPP Female Adapter connect to?",
+          "a": "The male NPT end screws into an NPT female port, and the female BSPP end takes a male BSPP end. For the reverse, BSPP male to NPT female, see the [Stainless Steel BSPP Male × NPT Female Adapter](/p/stainless-steel-bspp-male-x-npt-female-adapter)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the Stainless Steel NPT Male × BSPP Female Adapter without leaks or galling?",
+          "a": "For the NPT Male × BSPP Female Adapter: Seal the NPT taper thread with PTFE tape or an anti-seize sealant suited to stainless and tighten by turns, not torque. Seat the BSPP end on its bonded seal or O-ring and tighten to the torque for its size, with no tape on the parallel thread. Lubricate the stainless threads lightly to prevent galling, and see the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "K",
+          "q": "NPT male × BSPP female adapter or BSPP male × NPT female adapter?",
+          "a": "The NPT male version goes into an NPT port, while the [BSPP male version](/p/stainless-steel-bspp-male-x-npt-female-adapter) goes into a BSPP port. Choose by which port is on the equipment; see the [guide to stacking hydraulic adapters](/blog/stacking-hydraulic-adapters)."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Stainless Steel NPT Male × BSPP Female Adapter supplied from, and can it be exported?",
+          "a": "We ship the Stainless Steel NPT Male × BSPP Female Adapter from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond. The listing gives no country of origin or HS code, so we confirm both on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Stainless Steel NPT Male × BSPP Female Adapter in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Stainless Steel NPT Male × BSPP Female Adapter in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}
