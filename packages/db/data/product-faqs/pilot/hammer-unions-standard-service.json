@@ -1,0 +1,1388 @@
+{
+  "family": "hammer-unions-standard-service",
+  "extraFacts": [
+    {
+      "fact": "Sour gas service ratings on the Indus sour-service hammer union listings: Figure 1502 10,000 psi; Figure 1002 7,500 psi to 4\" and 5,000 psi at 5\" and 6\"; Figure 1003 7,500 psi in 2\" and 3\" and 5,000 psi in 4\" and 5\"; Figure 1004 7,500 psi; Figure 602 6,000 psi; Figure 2202 15,000 psi, butt weld 2\" to 6\", is the sour-gas figure for 15,000 psi.",
+      "source": "Indus Hydraulics Sour Gas Service Hammer Unions listings (/c/hammer-unions-sour-gas-service) and the guide /blog/hammer-union-figure-numbers (as-of 2026-10-06)"
+    },
+    {
+      "fact": "Hammer unions of different figure numbers must never be joined. The male (thread) half of a 2\" Figure 602 or Figure 1002 union will make up into the wing nut of a 2\" Figure 1502, so a mismatched joint can look made up and then separate under pressure; IADC records a fatality from a 602-to-1502 mismatch and recommends teaching the differences between union types, go/no-go ring gauges, colour coding and segregated storage.",
+      "source": "IADC Safety Alerts 06-01 'Mismatched Hammer Union Results in a Fatality' and 03-16 'Mismatched Hammer Unions Still Being Found' (iadc.org/safety-alerts)"
+    },
+    {
+      "fact": "Accidents, including a fatality, have followed from hammering on hammer unions while the line was under pressure; bleed all pressure off a line before breaking it, and use lockout/tagout and permit-to-work on pressurised lines.",
+      "source": "IADC Safety Alert 03-16 (iadc.org/safety-alerts/alert-03-16-mismatched-hammer-unions-still-found)"
+    },
+    {
+      "fact": "On elastomer-sealed hammer union figures the seal ring is a service item and should be replaced whenever it is cut, flattened or hardened. To order a union, give the figure, size, end connection and weld schedule, and whether the service is standard or sour.",
+      "source": "Indus Hydraulics guide /blog/hammer-union-figure-numbers, section 5"
+    }
+  ],
+  "products": [
+    {
+      "slug": "figure-1002-hammer-union-butt-weld-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1002 butt weld hammer union used for?",
+          "a": "A Figure 1002 butt weld hammer union is a 10,000 psi class, low-alloy steel union welded into cementing, acidizing, fracturing and choke lines. This standard service listing has Sch XXS butt weld ends from 1\" to 6\", and the 5\" and 6\" sizes are made with butt weld ends only."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-HU-1002-BWXXS-STD-0300 on a Figure 1002 union?",
+          "a": "IH-HU-1002-BWXXS-STD-0300 is a Figure 1002 hammer union with Sch XXS butt weld ends, standard service trim, 3\" nominal size. The last four digits are the size: 0100 is 1\", 0400 is 4\" and 0600 is 6\". The size table lists every part number with its weight, dimensions and rating."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 1002 butt weld hammer union by size?",
+          "a": "The Figure 1002 butt weld union is rated 10,000 psi (690 bar) cold working pressure from 1\" to 4\" and 7,500 psi (517 bar) at 5\" and 6\". The 10,000 psi sizes are tested at 15,000 psi. Read the rating for your size in the table, not from the figure number, as our hammer union figure numbers guide explains."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 1002 butt weld hammer union come in?",
+          "a": "The Figure 1002 butt weld union is listed in 1\", 2\", 3\", 4\", 5\" and 6\", all with Sch XXS weld ends. For line pipe threaded ends, the [Figure 1002 threaded hammer union](/p/hammer-union-set-1002-series-npt-npt-10-000-psi-standard-service) covers 1\" to 4\"; the 5\" and 6\" sizes are butt weld only."
+        },
+        {
+          "slot": "D",
+          "q": "Should I choose a 5\" or 6\" Figure 1002 or a Figure 1004 for a large high-pressure line?",
+          "a": "Choose the Figure 1004 if you need 10,000 psi at 5\" or 6\", because the 5\" and 6\" Figure 1002 is rated 7,500 psi and seals on an O-ring. The [Figure 1004 butt weld union](/p/hammer-union-set-1004-series-butt-weld-schedule-xxh-10-000-psi-standard-service) uses a lip-type seal instead, which avoids the O-ring union's need to be made up perfectly square."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the Figure 1002 butt weld hammer union use?",
+          "a": "The Figure 1002 is made from low-alloy steel and seals on a replaceable elastomer seal ring: lip type from 1\" to 4\", O-ring at 5\" and 6\". The seal is made by the seat and ring, not the thread, so a leaking union usually needs a new seal ring or sub rather than a whole union."
+        },
+        {
+          "slot": "F",
+          "q": "Can a standard service Figure 1002 butt weld union be used for sour gas (H2S)?",
+          "a": "No, use the sour gas trim for H2S service: the standard service Figure 1002 is not the sour version. Our sour Figure 1002 butt weld listing is rated 7,500 psi to 4\" and 5,000 psi at 5\" and 6\", below the standard trim. See the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions will mate with a Figure 1002 butt weld hammer union?",
+          "a": "A Figure 1002 mates only with another Figure 1002 of the same size, from us or another maker of the figure. Never join it to a different figure: industry safety alerts record that a 2\" Figure 1002 male half will make up into a 2\" Figure 1502 wing nut and can separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Figure 1002 butt weld hammer union made up and serviced?",
+          "a": "A Figure 1002 is made up by striking the wing nut lugs with a hammer until the male and female subs seat on the seal ring. Bleed the line to zero before breaking it out, never hammer on a pressurised union, and replace the seal ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "K",
+          "q": "What is the difference between Figure 1002 and Figure 1502 hammer unions?",
+          "a": "Figure 1002 is a 10,000 psi class union and Figure 1502 is a 15,000 psi union; they are different figures and must never be connected to each other. Both are used on cementing, acidizing, fracturing and choke lines. For 15,000 psi butt weld service see the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "G",
+          "q": "What documents should I ask for with a Figure 1002 butt weld hammer union?",
+          "a": "Ask for the material test report for the low-alloy steel subs and nut and the hydrostatic test record, which for the 10,000 psi sizes is 15,000 psi. The figure number is an industry series rather than a published standard, so state the figure, size, Sch XXS weld end and service class on the order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 1002 butt weld hammer unions in stock in Dubai?",
+          "a": "Yes. We keep the Figure 1002 butt weld hammer union in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times, with delivery within 3 working days inside the UAE. Send sizes, quantities and service class through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1003-misaligning-hammer-union-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1003 misaligning hammer union used for?",
+          "a": "A Figure 1003 is a misaligning hammer union that joins high-pressure water, oil, mud or gas lines where the pipe ends will not line up. It takes up to 7.5° off the centre line (15° included) and its O-ring holds pressure at any position within that allowance."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-1003-THD-STD-0300 mean?",
+          "a": "IH-HU-1003-THD-STD-0300 is a 3\" Figure 1003 misaligning union with line pipe threaded ends in standard service trim. THD means threaded, BWXXS means Sch XXS butt weld, and the final digits give the size, so IH-HU-1003-BWXXS-STD-0500 is the 5\" butt weld union."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of a Figure 1003 hammer union?",
+          "a": "Our standard service Figure 1003 is rated 10,000 psi (690 bar) cold working pressure in 2\" and 3\" and 7,500 psi (517 bar) in 4\" and 5\". Makers do not agree on this figure and some rate it lower, so work to the rating stamped on the union you have."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and end connections does the Figure 1003 misaligning union come in?",
+          "a": "The Figure 1003 is listed in 2\", 3\", 4\" and 5\", with line pipe threaded ends from 2\" to 4\" and Sch XXS butt weld ends from 2\" to 5\". The 5\" size is butt weld only. Weights and dimensions for each part number are in the size table."
+        },
+        {
+          "slot": "D",
+          "q": "How much misalignment does a 2\" Figure 1003 union take compared with larger sizes?",
+          "a": "The 2\" Figure 1003 takes 3.5° off the centre line (7° included), half the 7.5° (15° included) of the 3\", 4\" and 5\" sizes. If your line is further out than that, correct the pipe rather than relying on the union."
+        },
+        {
+          "slot": "F",
+          "q": "How does the Figure 1003 misaligning hammer union seal?",
+          "a": "The Figure 1003 seals with an O-ring over steel-to-steel seating, and the O-ring holds pressure at any angle within the misalignment allowance. It suits water, oil, mud or gas service; replace the O-ring if it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is there a sour gas version of the Figure 1003 misaligning union?",
+          "a": "Yes, a sour gas service Figure 1003 is listed, rated 7,500 psi in 2\" and 3\" and 5,000 psi in 4\" and 5\", below this standard service union. Do not put the standard trim on an H2S line; see the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Will a Figure 1003 misaligning union connect to a Figure 1002 or 1502?",
+          "a": "No. A Figure 1003 connects only to Figure 1003 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure. Check the figure and size on both halves and the nut before every make-up."
+        },
+        {
+          "slot": "I",
+          "q": "How do you install a Figure 1003 hammer union on misaligned pipe?",
+          "a": "Fit the Figure 1003 between the two pipe ends, set the angle within its allowance, then hammer the wing nut tight with the line depressurised. The O-ring seals at any angle inside 7.5° (3.5° on 2\"), so do not force the pipe past that."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1003 vs Figure 1002: which do I need?",
+          "a": "Use the Figure 1003 when the pipe ends are out of line, and the [Figure 1002 butt weld union](/p/figure-1002-hammer-union-butt-weld-standard-service) for a straight run. Both are rated 10,000 psi in the smaller sizes, but the Figure 1003 adds misalignment capacity; the two figures do not mate with each other."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates and test data should I request for a Figure 1003 union?",
+          "a": "Request the material test report and hydrostatic test record with the quotation, and the stamped working pressure for each size, since makers rate the Figure 1003 differently. Our listing claims no third-party mark, so specify any operator requirement on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Figure 1003 misaligning hammer unions ex-stock from Dubai?",
+          "a": "Yes. We hold Figure 1003 misaligning unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send size, end connection and quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-1505-hammer-union-3-inch-15000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1505 hammer union?",
+          "a": "A Figure 1505 is a 3\" hammer union rated 15,000 psi, built for fracturing service and designed to connect back to existing 3\" Figure 1502 iron. A thread start marker on the nut prevents cross-threading and shortens make-up time."
+        },
+        {
+          "slot": "B",
+          "q": "What do the Figure 1505 part numbers IH-HU-1505-THD-STD-0300 and IH-HU-1505-BW-STD-0300 mean?",
+          "a": "Both are 3\" Figure 1505 unions in standard service trim: THD has line pipe threaded ends and BW has butt weld ends. The final 0300 is the 3\" size, the only size this figure is made in."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 1505 hammer union?",
+          "a": "The Figure 1505 is rated 15,000 psi (1,034 bar) cold working pressure and tested at 22,500 psi in standard service. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) sets this against the other figures from 500 to 20,000 psi."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 1505 hammer union come in?",
+          "a": "The Figure 1505 is made in 3\" only, with a line pipe threaded or a butt weld end. No dimension table is published for it, so ask us for a dimensioned drawing if you need one before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "When should I specify a Figure 1505 instead of a 3\" Figure 1502?",
+          "a": "Specify the Figure 1505 when you want a 15,000 psi 3\" frac union with longer life and faster make-up that still drops into an existing 3\" Figure 1502 spread. Improvements in its critical areas extend service life, and the thread start marker stops cross-threading."
+        },
+        {
+          "slot": "F",
+          "q": "Can the Figure 1505 hammer union be used in sour gas service?",
+          "a": "A sour gas rating of 10,000 psi (690 bar), tested at 15,000 psi, is published for the Figure 1505, lower than its 15,000 psi standard rating. This listing is standard service, so state sour service on your enquiry and we will confirm the trim."
+        },
+        {
+          "slot": "F",
+          "q": "What service and media is the Figure 1505 hammer union intended for?",
+          "a": "The Figure 1505 is intended for fracturing service at up to 15,000 psi. For cementing, acidizing and choke lines at the same class the general-purpose figure is the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "H",
+          "q": "Is the Figure 1505 compatible with 3\" Figure 1502 hammer unions?",
+          "a": "Yes. The Figure 1505 is backward connectable with 3\" Figure 1502 iron, so it goes into an existing spread without changing the rest of the line. That compatibility is a stated design feature; do not assume it for any other figure or size."
+        },
+        {
+          "slot": "I",
+          "q": "How does the thread start marker on a Figure 1505 union help make-up?",
+          "a": "The thread start marker on the Figure 1505 nut shows where to engage the thread, which removes cross-threading and cuts make-up time. Make up and break out only with the line bled to zero; never hammer on a pressurised union."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1505 vs Figure 2002: which is right for high-pressure frac iron?",
+          "a": "Choose by pressure: the Figure 1505 is 15,000 psi in 3\" only, while the [Figure 2002 hammer union](/p/figure-2002-hammer-union-butt-weld-standard-service-20000-psi) is 20,000 psi with butt weld ends from 2\" to 6\". The two figures do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What test documentation should I request for a Figure 1505 hammer union?",
+          "a": "Request the hydrostatic test record (22,500 psi for standard service), the material test report and a dimensioned drawing, as no dimension table is published for this figure. Name standard or sour service on the order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep 3\" Figure 1505 hammer unions in stock?",
+          "a": "Yes. We keep the 3\" Figure 1505 in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. UAE deliveries arrive within 3 working days; send end connection and quantity through [our contact page](/contact) for a quote."
+        }
+      ]
+    },
+    {
+      "slug": "figure-200-hammer-union-butt-weld-ends-2000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 200 butt weld hammer union used for?",
+          "a": "A Figure 200 butt weld hammer union is a compact all-steel 2,000 psi union for line connections and manifolds. This listing has Sch 40 or Sch 80 butt weld ends from 2\" to 8\" and seals metal-to-metal on a ball and cone seat."
+        },
+        {
+          "slot": "B",
+          "q": "What does IH-HU-200-BW80-STD-0400 mean on a Figure 200 union?",
+          "a": "IH-HU-200-BW80-STD-0400 is a 4\" Figure 200 hammer union with Sch 80 butt weld ends in standard service. BW40 means Sch 40 weld ends, BW80 Sch 80, and the last four digits are the size, from 0200 (2\") to 0800 (8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is a Figure 200 butt weld hammer union rated for?",
+          "a": "The Figure 200 butt weld union is rated 2,000 psi (138 bar) cold working pressure in every size from 2\" to 8\", and tested at 3,000 psi. The figure number tracks the rating, as our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) explains."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and weld schedules are available for the Figure 200 butt weld union?",
+          "a": "The Figure 200 butt weld union comes in 2\", 3\", 4\", 5\", 6\" and 8\", each with Sch 40 or Sch 80 weld ends. For line pipe threaded ends from 1\" up, see the [Figure 200 threaded union](/p/hammer-union-set-200-series-npt-npt-2-000-psi-standard-service)."
+        },
+        {
+          "slot": "D",
+          "q": "Should I order Sch 40 or Sch 80 weld ends on a Figure 200 hammer union?",
+          "a": "Order the weld schedule that matches the pipe you are welding to: Sch 40 for standard-wall pipe and Sch 80 for extra-strong pipe. The rating is 2,000 psi either way, but the Sch 80 union is slightly heavier and longer in each size."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Figure 200 butt weld union use?",
+          "a": "The Figure 200 is all steel and seals metal-to-metal on a ball and cone seat, with no elastomer. If you want an elastomer secondary seal behind the metal seat, the [Figure 206 butt weld union](/p/figure-206-hammer-union-butt-weld-ends-2000-psi) adds one with the same dimensions."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 200 hammer union be used on sour gas lines?",
+          "a": "No sour gas rating is published for the Figure 200, so do not use it on H2S service without confirming with us first. Sour-rated figures (602, 1002, 1003, 1004, 1502 and 2202) are on the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Does the Figure 200 butt weld union mate with Figure 206 and Figure 207?",
+          "a": "Yes. The Figure 206 is dimensionally identical to the Figure 200 range, and the Figure 207 blanking cap is interchangeable with both. Do not join a Figure 200 to any other figure, such as a 400 or 602."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Figure 200 butt weld union be welded and made up?",
+          "a": "Weld the Figure 200 subs to pipe of the matching schedule, then make up by hammering the wing nut until the ball and cone seats pull together. Inspect the seat for scoring before each make-up; a scored seat leaks before the thread is at fault."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 200 vs Figure 206 hammer union: what is the difference?",
+          "a": "The Figure 206 is a Figure 200 with an added secondary seal behind the metal-to-metal ball and cone seat; dimensions, weights and the 2,000 psi rating are the same. Choose the 206 where you want the extra seal."
+        },
+        {
+          "slot": "G",
+          "q": "What test pressure and records apply to a Figure 200 butt weld union?",
+          "a": "The Figure 200 is tested at 3,000 psi against its 2,000 psi rating. Ask for the hydrostatic test record and material test report on the enquiry; the listing claims no third-party mark, so name any operator specification you work to."
+        },
+        {
+          "slot": "M",
+          "q": "Are Figure 200 butt weld hammer unions available ex-stock in the UAE?",
+          "a": "Yes. Figure 200 butt weld unions are kept in stock at our warehouse in Dubai, UAE, and shipped worldwide with the best lead times; UAE orders arrive within 3 working days. Send sizes, schedule and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-2002-hammer-union-butt-weld-standard-service-20000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 2002 hammer union used for?",
+          "a": "A Figure 2002 hammer union is a 20,000 psi butt weld union, the highest-rated union in our standard service range, used on 20,000 psi lines. It is made with butt weld ends only, from 2\" to 6\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Figure 2002 part number IH-HU-2002-BW-STD-0400 mean?",
+          "a": "IH-HU-2002-BW-STD-0400 is a 4\" Figure 2002 hammer union with butt weld ends in standard service. The final digits are the nominal size, from 0200 (2\") to 0600 (6\"). Check that size against the weld prep bore in the table, as some makers name sizes differently."
+        },
+        {
+          "slot": "E",
+          "q": "What is the pressure rating of a Figure 2002 hammer union?",
+          "a": "The Figure 2002 is rated 20,000 psi (1,380 bar) cold working pressure in standard service, in every listed size from 2\" to 6\". Compare it with the other figures in our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers)."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 2002 hammer union come in?",
+          "a": "The Figure 2002 is listed in 2\", 3\", 4\", 5\" and 6\", butt weld only. The size table gives weld prep inside and outside diameters for each size, from 31.75 mm ID on the 2\" to 127 mm ID on the 6\"."
+        },
+        {
+          "slot": "D",
+          "q": "Why is a 3\" Figure 2002 sometimes called 2.5\" by other makers?",
+          "a": "Some other makers call our 3\" and 4\" Figure 2002 sizes 2.5\" and 3\". Before ordering, match the bore of your pipe to the weld prep dimensions in the size table rather than relying on the nominal size."
+        },
+        {
+          "slot": "F",
+          "q": "How does the Figure 2002 hammer union seal at 20,000 psi?",
+          "a": "The Figure 2002 seals with a lip-type elastomer seal backed by an anti-extrusion ring, which stops the seal being forced into the gap at 20,000 psi. Replace the seal whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Can the Figure 2002 hammer union be used in sour gas service?",
+          "a": "No separate sour gas rating is published for the Figure 2002, so this union is for standard service. For sour gas at 15,000 psi the listed figure is the Figure 2202, butt weld from 2\" to 6\"; see the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions mate with a Figure 2002 hammer union?",
+          "a": "A Figure 2002 mates only with Figure 2002 halves of the same size and bore. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure. Check figure and size on both halves and the nut before make-up."
+        },
+        {
+          "slot": "I",
+          "q": "What should be checked before making up a Figure 2002 union?",
+          "a": "Before making up a Figure 2002, check the figure and size on both halves, the lip seal and anti-extrusion ring for damage, and that the line is bled to zero. Never hammer on a union under pressure."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1502 vs Figure 2002: what is the difference?",
+          "a": "The Figure 2002 is rated 20,000 psi and the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service) 15,000 psi; the 2002 adds an anti-extrusion ring behind its lip seal. They are different figures and must never be joined to each other."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates should I request for a Figure 2002 hammer union?",
+          "a": "Request the material test report and the hydrostatic test record for each Figure 2002, and confirm the weld prep bore against your pipe. The listing claims no third-party mark, so state any operator requirement on your enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Figure 2002 20,000 psi hammer unions in Dubai?",
+          "a": "Yes. We keep Figure 2002 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; within the UAE delivery takes 3 working days. Send sizes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-206-hammer-union-butt-weld-ends-2000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 206 butt weld hammer union?",
+          "a": "A Figure 206 butt weld hammer union is a 2,000 psi Figure 200 with a secondary seal added behind its metal-to-metal ball and cone seat, for line connections and manifolds. This listing has Sch 40 or Sch 80 weld ends from 2\" to 8\"."
+        },
+        {
+          "slot": "B",
+          "q": "How is the Figure 206 part number IH-HU-206-BW40-STD-0600 decoded?",
+          "a": "IH-HU-206-BW40-STD-0600 is a 6\" Figure 206 union with Sch 40 butt weld ends, standard service. BW80 in place of BW40 means Sch 80 ends, and the last four digits run from 0200 (2\") to 0800 (8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Figure 206 butt weld union rated to?",
+          "a": "The Figure 206 butt weld union is rated 2,000 psi (138 bar) cold working pressure in all sizes and tested at 3,000 psi. Adding the secondary seal does not change the rating of the Figure 200 it is based on."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 206 butt weld hammer union come in?",
+          "a": "The Figure 206 butt weld union is listed in 2\", 3\", 4\", 5\", 6\" and 8\", in Sch 40 or Sch 80. For line pipe threaded ends, which start at 1\", see the [Figure 206 threaded union](/p/hammer-union-set-206-series-with-o-ring-metal-sub-npt-npt-2-000-psi-standard-service)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose between Sch 40 and Sch 80 weld ends on a Figure 206?",
+          "a": "Match the Figure 206 weld end to the pipe schedule you are welding to. Both schedules carry the same 2,000 psi rating; the Sch 80 union is a little longer, for example 126.4 mm against 122.4 mm (dimension B) at 4\"."
+        },
+        {
+          "slot": "F",
+          "q": "What sealing does the Figure 206 hammer union use?",
+          "a": "The Figure 206 seals metal-to-metal on a ball and cone seat, supplemented by a secondary seal. The secondary seal is there for lines where a backup is wanted behind the metal seat; inspect and replace it if it is cut or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 206 hammer union suitable for sour gas service?",
+          "a": "No sour gas rating is published for the Figure 206, so treat it as standard service only. For H2S lines use a sour-rated figure from the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf, or ask us to confirm a trim."
+        },
+        {
+          "slot": "H",
+          "q": "Will a Figure 206 mate with a Figure 200 or Figure 207 hammer union?",
+          "a": "Yes. Every Figure 206 dimension matches the Figure 200 range, and the [Figure 207 blanking cap](/p/hammer-union-set-207-series-with-tappable-end-cap-2-000-psi-standard-service) is interchangeable with both. Do not join a Figure 206 to a 400, 602 or other figure."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Figure 206 butt weld union made up in the field?",
+          "a": "Weld each Figure 206 sub to matching-schedule pipe, seat the ball and cone with the secondary seal in place, and hammer the wing nut tight. Break it out only after the line is bled to zero."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 206 vs Figure 207: what is the difference?",
+          "a": "A Figure 206 is a union that joins two pipe ends, while the Figure 207 is a blanking cap that closes off the end of a line. Both are 2,000 psi and interchangeable with the Figure 200 range."
+        },
+        {
+          "slot": "G",
+          "q": "What test records come with a Figure 206 butt weld hammer union?",
+          "a": "Ask for the 3,000 psi hydrostatic test record and the material test report when you enquire about the Figure 206. The listing makes no third-party certification claim, so state any operator specification on the order."
+        },
+        {
+          "slot": "M",
+          "q": "Can I order Figure 206 butt weld unions from stock in Dubai?",
+          "a": "Yes. Figure 206 butt weld unions are held in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times; UAE delivery is within 3 working days. Send sizes and schedule through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-300-hammer-union-flat-face-o-ring-2000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 300 flat-face O-ring hammer union used for?",
+          "a": "A Figure 300 is a 2,000 psi flat-face O-ring hammer union that lets a short rigid pipe section be broken out sideways. It seals equally well in low and high pressure vapour or liquid service."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-300-THD-STD-0200 mean?",
+          "a": "IH-HU-300-THD-STD-0200 is a 2\" Figure 300 flat-face O-ring union with line pipe threaded ends, standard service. The 1\" version is IH-HU-300-THD-STD-0100; those are the two listed sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 300 hammer union?",
+          "a": "The Figure 300 is rated 2,000 psi (138 bar) cold working pressure in 1\" and 2\", and tested at 3,000 psi. The figure number does not track pressure here; our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) covers the exceptions."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 300 hammer union come in?",
+          "a": "The Figure 300 is listed in 1\" and 2\" with line pipe threaded ends. No dimension table is published for this figure, so ask us for a dimensioned drawing before ordering if space is tight."
+        },
+        {
+          "slot": "D",
+          "q": "When should I use a Figure 300 flat-face union instead of a ball and cone union?",
+          "a": "Use the Figure 300 when a short rigid pipe run has to come out sideways: the flat faces part laterally, where a ball and cone seat such as the [Figure 200 threaded union](/p/hammer-union-set-200-series-npt-npt-2-000-psi-standard-service) needs axial movement to separate."
+        },
+        {
+          "slot": "F",
+          "q": "How does the Figure 300 seal, and in which media?",
+          "a": "The Figure 300 seals on a flat-face O-ring, which holds equally in low and high pressure vapour or liquid service. Replace the O-ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 300 hammer union rated for sour gas service?",
+          "a": "No sour gas rating is published for the Figure 300, so do not use it on H2S lines without confirming with us. Sour-rated figures are on the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions connect to a Figure 300 flat-face hammer union?",
+          "a": "A Figure 300 connects only to Figure 300 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you break out a Figure 300 union on a short pipe section?",
+          "a": "Bleed the line to zero, hammer the Figure 300 wing nut loose, then slide the short pipe section out sideways between the flat faces. Check the O-ring before remaking the joint."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 300 vs Figure 211: which 2,000 psi union do I need?",
+          "a": "Choose the Figure 300 for sideways breakout of short pipe runs and the [Figure 211 insulated union](/p/hammer-union-set-211-series-npt-npt-2-000-psi-standard-service) to break static or electrolytic corrosion paths. Both are 2,000 psi threaded unions but do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What documents should I ask for with a Figure 300 hammer union?",
+          "a": "Ask for the 3,000 psi hydrostatic test record, the material test report and a dimensioned drawing, since no dimension table is published for the Figure 300. The listing makes no third-party certification claim."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 300 hammer unions in stock?",
+          "a": "Yes. We keep Figure 300 flat-face O-ring unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. UAE delivery is within 3 working days; request a quote through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-600-hammer-union-bronze-seated-threaded-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 600 bronze-seated hammer union used for?",
+          "a": "A Figure 600 is a 6,000 psi bronze-seated hammer union for steam service and for lines where rust, corrosion or condensation attack a metal-to-metal seal. It has line pipe threaded ends from 1\" to 4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does IH-HU-600-THD-STD-0300 mean?",
+          "a": "IH-HU-600-THD-STD-0300 is a 3\" Figure 600 bronze-seated union with line pipe threaded ends, standard service. The final digits are the size: 0100 (1\"), 0200 (2\"), 0300 (3\") and 0400 (4\")."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is a Figure 600 hammer union rated for?",
+          "a": "The Figure 600 is rated 6,000 psi (414 bar) cold working pressure in every size from 1\" to 4\", and tested at 9,000 psi. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) lists it beside the other figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 600 hammer union come in?",
+          "a": "The Figure 600 is listed in 1\", 2\", 3\" and 4\" with line pipe threaded ends. The size table gives each size's weight and dimensions A, B and C; for example the 2\" is 88.9 mm across dimension A."
+        },
+        {
+          "slot": "D",
+          "q": "When should I choose a Figure 600 over a Figure 602?",
+          "a": "Choose the Figure 600 for steam or condensate lines where seat corrosion is the problem, and the [Figure 602 threaded union](/p/hammer-union-set-602-series-lip-seal-npt-npt-6-000-psi-standard-service) for mud, manifold and service lines. Both are 6,000 psi, but they are different figures and do not mate."
+        },
+        {
+          "slot": "F",
+          "q": "Why does the Figure 600 hammer union have a bronze seat?",
+          "a": "The bronze seat insert on the Figure 600 puts a hardness difference across the seats, which helps them seal metal-to-metal and resists boiler water and steam seat corrosion. There is no elastomer to perish in steam."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 600 hammer union be used in sour gas service?",
+          "a": "No sour gas rating is published for the Figure 600, so it is a standard service union. For H2S service at 6,000 psi, the Figure 602 has a sour version on the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions mate with a Figure 600 bronze-seated union?",
+          "a": "A Figure 600 mates only with Figure 600 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure. Mark and store Figure 600 and 602 iron separately."
+        },
+        {
+          "slot": "I",
+          "q": "How do you maintain a Figure 600 union in steam service?",
+          "a": "Inspect the Figure 600 bronze seat for wear or scoring at each break-out, since the seal is made by the seat, not the thread. Let the line cool and bleed it to zero before hammering the nut."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 600 vs Figure 400: which is better for steam lines?",
+          "a": "For steam, choose the Figure 600: its bronze seat resists condensation corrosion and it is rated 6,000 psi. The [Figure 400 union](/p/hammer-union-set-400-series-npt-npt-4-000-psi-standard-service) is a 4,000 psi ball and cone union for manifolds, suction and mud lines."
+        },
+        {
+          "slot": "G",
+          "q": "What test records should I request for a Figure 600 hammer union?",
+          "a": "Request the 9,000 psi hydrostatic test record and the material test report for the body and bronze insert. The listing claims no third-party mark, so specify any boiler or operator code on your enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Can I get Figure 600 bronze-seated unions from stock in Dubai?",
+          "a": "Yes. Figure 600 bronze-seated unions are in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times; UAE orders are delivered within 3 working days. Send sizes and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "figure-602-hammer-union-butt-weld-standard-service-6000-psi",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 602 butt weld hammer union used for?",
+          "a": "A Figure 602 butt weld hammer union is a 6,000 psi union for line connections, manifolds, mud and service systems. This listing has Sch 80 or Sch XXS weld ends from 1\" to 4\", in standard service trim."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the Figure 602 part number IH-HU-602-BWXXS-STD-0200?",
+          "a": "IH-HU-602-BWXXS-STD-0200 is a 2\" Figure 602 union with Sch XXS butt weld ends, standard service. BW80 means Sch 80 weld ends; the last four digits give the size from 0100 (1\") to 0400 (4\")."
+        },
+        {
+          "slot": "E",
+          "q": "What is the Figure 602 hammer union pressure rating?",
+          "a": "The Figure 602 is rated 6,000 psi (414 bar) cold working pressure and tested at 9,000 psi, in every size from 1\" to 4\". The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) explains how the figure number tracks pressure."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and weld schedules does the Figure 602 butt weld union come in?",
+          "a": "The Figure 602 butt weld union is listed in 1\", 2\", 3\" and 4\", each in Sch 80 or Sch XXS. For line pipe threaded ends, see the [Figure 602 threaded union](/p/hammer-union-set-602-series-lip-seal-npt-npt-6-000-psi-standard-service)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the 602-LC and 602-18 butt weld types of Figure 602?",
+          "a": "The 602-LC (A350 LF2) is a low-carbon type for welding to Sch 80 ASTM A106 Grade B or A333 Grade 6 pipe, in 2\" and 3\" only. The 602-18 uses low-carbon forgings that stay weldable, in 2\", 3\" and 4\" up to Sch XXS."
+        },
+        {
+          "slot": "F",
+          "q": "What seal does a Figure 602 hammer union use?",
+          "a": "The Figure 602 uses a resilient nitrile seal ring that assists the seal and protects the steel-to-steel seating. Replace the ring whenever it is cut, flattened or hardened; it is a service item, not a reason to scrap the union."
+        },
+        {
+          "slot": "F",
+          "q": "Is there a sour service version of the Figure 602 butt weld hammer union?",
+          "a": "Yes, a sour gas service Figure 602 butt weld union is listed and keeps the 6,000 psi rating. Use it rather than this standard trim on H2S lines; see the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Can a Figure 602 hammer union be connected to a Figure 1502?",
+          "a": "No. A Figure 602 must only be joined to Figure 602 halves of the same size. Industry safety alerts record a fatality from a 602 female joined to a 1502 male, and a 2\" 602 male half will make up into a 2\" 1502 wing nut, then separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How should a Figure 602 butt weld union be installed?",
+          "a": "Weld the Figure 602 subs to pipe of the matching schedule, fit the nitrile seal ring, and hammer the wing nut until the seats meet. Bleed the line before breaking it, and never strike a pressurised union."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 602 vs Figure 1502: what is the difference?",
+          "a": "The Figure 602 is rated 6,000 psi and the Figure 1502 15,000 psi; they are different pressure classes and are not interchangeable. Use the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service) for cementing, frac and choke lines above 6,000 psi."
+        },
+        {
+          "slot": "G",
+          "q": "What standards apply when welding a Figure 602 butt weld union?",
+          "a": "The 602-LC is chosen for pipework that need not exceed the pressures set out in API RP 14E, which follows ANSI/ASME B31.3 allowable stresses. Ask for the material test report and 9,000 psi hydrostatic test record with any order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Figure 602 butt weld hammer unions?",
+          "a": "Yes. We keep Figure 602 butt weld unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send size, schedule and quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-100-series-npt-npt-1-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 100 hammer union used for?",
+          "a": "A Figure 100 is a low-pressure, general purpose threaded hammer union for air, water, oil or gas line connections and manifolds, rated 1,000 psi. It is made from steel rather than cast iron, in sizes from 2\" to 8\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-100-THD-STD-0250 mean?",
+          "a": "IH-HU-100-THD-STD-0250 is a 2-1/2\" Figure 100 hammer union with line pipe threaded ends in standard service. The final digits encode size: 0200 is 2\", 0250 is 2-1/2\" and 0800 is 8\"."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 100 hammer union?",
+          "a": "The Figure 100 is rated 1,000 psi (69 bar) cold working pressure and tested at 1,500 psi; it takes its name from that rating. Our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) shows how the figure number tracks pressure across the range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 100 hammer union come in?",
+          "a": "The Figure 100 is listed in 2\", 2-1/2\", 3\", 4\", 5\", 6\" and 8\" with line pipe threaded ends. The size table gives the weight and the A, B and C dimensions for each part number."
+        },
+        {
+          "slot": "D",
+          "q": "When is a Figure 100 enough and when do I need a Figure 200?",
+          "a": "A Figure 100 is enough for general service up to 1,000 psi; above that, step up to the 2,000 psi [Figure 200 threaded union](/p/hammer-union-set-200-series-npt-npt-2-000-psi-standard-service). The two figures do not mate, so do not mix them on one line."
+        },
+        {
+          "slot": "F",
+          "q": "What material is the Figure 100 hammer union made from?",
+          "a": "The Figure 100 is made from steel, not cast iron, which cuts weight and outside dimensions without losing interchangeability. It suits air, water, oil or gas service at up to 1,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 100 hammer union be used on sour gas lines?",
+          "a": "No sour gas rating is published for the Figure 100, and at 1,000 psi it is a general purpose union. For H2S service choose a sour-rated figure from the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Is a Figure 100 interchangeable with other makers' Figure 100 unions?",
+          "a": "Yes. Our Figure 100 is interchangeable with other leading brands of Figure 100 union in the same size. It must not be joined to any other figure number, even if the threads appear to engage."
+        },
+        {
+          "slot": "I",
+          "q": "How is a Figure 100 hammer union made up?",
+          "a": "Screw the Figure 100 subs onto the line pipe threads, bring the halves together and hammer the wing nut lugs until the seats meet. Bleed the line to zero before breaking it out."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 100 vs Figure 50 hammer union: which is for suction lines?",
+          "a": "For suction and very low-pressure lines the [Figure 50 union](/p/hammer-union-set-50-series-npt-npt-500-psi-standard-service) is the purpose-built choice at 500 psi in 4\" and 5\". The Figure 100 is the general purpose union at 1,000 psi from 2\" to 8\"."
+        },
+        {
+          "slot": "G",
+          "q": "What test records should I request for a Figure 100 union?",
+          "a": "Request the 1,500 psi hydrostatic test record and the material test report when ordering Figure 100 unions. The listing claims no third-party mark; state any specification your client requires."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 100 hammer unions in stock in Dubai?",
+          "a": "Yes. We keep Figure 100 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. UAE delivery takes 3 working days; send sizes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-1002-series-npt-npt-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1002 threaded hammer union used for?",
+          "a": "A Figure 1002 threaded hammer union is a 10,000 psi low-alloy steel union with line pipe threaded ends, used on cementing, acidizing, fracturing and choke lines. It is listed from 1\" to 4\"."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Figure 1002 part number IH-HU-1002-THD-STD-0200 stand for?",
+          "a": "IH-HU-1002-THD-STD-0200 is a 2\" Figure 1002 hammer union with line pipe threaded ends, standard service. The size digits run 0100, 0200, 0300 and 0400 for 1\" to 4\"."
+        },
+        {
+          "slot": "E",
+          "q": "What is the fig 1002 hammer union pressure rating for threaded ends?",
+          "a": "The threaded Figure 1002 is rated 10,000 psi (690 bar) cold working pressure and tested at 15,000 psi in every size from 1\" to 4\". Only the 5\" and 6\" butt weld sizes drop to a lower rating."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 1002 threaded union come in?",
+          "a": "The threaded Figure 1002 is listed in 1\", 2\", 3\" and 4\". The 5\" and 6\" sizes are butt weld only; see the [Figure 1002 butt weld union](/p/figure-1002-hammer-union-butt-weld-standard-service) for those and for Sch XXS weld ends."
+        },
+        {
+          "slot": "D",
+          "q": "Should I specify threaded or butt weld ends on a Figure 1002 union?",
+          "a": "Specify threaded ends for 1\" to 4\" Figure 1002 iron screwed onto line pipe, and butt weld ends where a welded joint is required or you need 5\" or 6\". Both carry 10,000 psi up to 4\"."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and body material does the threaded Figure 1002 use?",
+          "a": "The threaded Figure 1002 has a low-alloy steel body and a replaceable lip-type elastomer seal ring in all listed sizes (1\" to 4\"). Replace the ring when it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is there a sour gas Figure 1002 threaded hammer union?",
+          "a": "Yes, a sour gas service Figure 1002 threaded union is listed at 7,500 psi, below this 10,000 psi standard trim. Use it for H2S service; see the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Will a 2\" Figure 1002 union fit a 2\" Figure 1502 wing nut?",
+          "a": "It may thread in, but it must never be used that way: industry safety alerts warn that a 2\" Figure 1002 male half makes up into a 2\" Figure 1502 wing nut and can separate under pressure. Join Figure 1002 only to Figure 1002 of the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do you service a Figure 1002 threaded hammer union?",
+          "a": "Service a Figure 1002 by replacing the seal ring and inspecting the seats and wing nut thread at each break-out. A worn union is usually a seal or sub replacement. Always bleed the line before hammering."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1002 vs Figure 602 threaded hammer union: what is the difference?",
+          "a": "The Figure 1002 is rated 10,000 psi and the [Figure 602 threaded union](/p/hammer-union-set-602-series-lip-seal-npt-npt-6-000-psi-standard-service) 6,000 psi; both use an elastomer seal ring. They are different figures and must never be mixed on one line."
+        },
+        {
+          "slot": "G",
+          "q": "What documentation should I request for a threaded Figure 1002 union?",
+          "a": "Request the 15,000 psi hydrostatic test record and the material test report for the low-alloy steel parts. The figure number is an industry series, not a standard, so name the figure, size, ends and service class on the order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep fig 1002 threaded hammer unions in stock?",
+          "a": "Yes. We keep threaded Figure 1002 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-1004-series-butt-weld-schedule-xxh-10-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1004 hammer union?",
+          "a": "A Figure 1004 is a 10,000 psi butt weld hammer union in 5\" and 6\" that carries a lip-type elastomer seal instead of the O-ring used by the 5\" and 6\" Figure 1002. It is used on large high-pressure lines."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-1004-BW-STD-0600 mean?",
+          "a": "IH-HU-1004-BW-STD-0600 is a 6\" Figure 1004 hammer union with butt weld ends, standard service. The 5\" version is IH-HU-1004-BW-STD-0500; those are the only two sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of the Figure 1004 hammer union?",
+          "a": "The Figure 1004 is rated 10,000 psi (690 bar) cold working pressure in both 5\" and 6\", standard service. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) compares it with the 7,500 psi 5\" and 6\" Figure 1002."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 1004 hammer union come in?",
+          "a": "The Figure 1004 is made in 5\" and 6\" only, with butt weld ends. The size table gives weight and dimensions, for example dimension A of 152.4 mm on the 5\" and 184.2 mm on the 6\"."
+        },
+        {
+          "slot": "D",
+          "q": "Why choose a Figure 1004 over a 5\" or 6\" Figure 1002?",
+          "a": "Choose the Figure 1004 because a 5\" or 6\" O-ring union must be made up perfectly square or it gives trouble, and the lip seal fixes that. It also keeps 10,000 psi where the [Figure 1002 butt weld union](/p/figure-1002-hammer-union-butt-weld-standard-service) drops to 7,500 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What seal does the Figure 1004 hammer union use?",
+          "a": "The Figure 1004 uses a lip-type elastomer seal, the same type used in the smaller Figure 1002 sizes. Replace it whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 1004 available for sour gas service?",
+          "a": "Yes. The Figure 1004 is available in sour gas trim, listed at 7,500 psi against 10,000 psi for this standard service union. Use the sour version on H2S lines; see the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Does a Figure 1004 hammer union mate with a Figure 1002?",
+          "a": "No. A Figure 1004 mates only with Figure 1004 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "What should I check when making up a 6\" Figure 1004 union?",
+          "a": "Check the figure and size on both halves, the lip seal condition and that the line is depressurised, then hammer the wing nut until the seats meet. The lip seal is more tolerant than an O-ring of a joint that is not perfectly square."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1004 vs Figure 1502 for 5\" and 6\" lines: which do I need?",
+          "a": "Choose by pressure: the Figure 1004 is 10,000 psi in 5\" and 6\", while the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service) is 15,000 psi with 5\" and 6\" sizes for higher flow. The two figures do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What certificates should I ask for with a Figure 1004 union?",
+          "a": "Ask for the material test report and the hydrostatic test record for each Figure 1004, and state standard or sour service. Our listing claims no third-party mark, so name any operator requirement on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Can I buy Figure 1004 hammer unions from stock in Dubai?",
+          "a": "Yes. Figure 1004 hammer unions are kept in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times; UAE delivery is within 3 working days. Send size and quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a fig 1502 butt weld hammer union used for?",
+          "a": "A Figure 1502 butt weld hammer union is a 15,000 psi alloy steel union for cementing, fracturing, acidizing and choke lines, and the most widely used figure in the hammer union family. This listing has Sch XXS weld ends from 1\" to 6\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I decode the Figure 1502 part number IH-HU-1502-BWXXS-STD-0150?",
+          "a": "IH-HU-1502-BWXXS-STD-0150 is a 1-1/2\" Figure 1502 union with Sch XXS butt weld ends, standard service. The final digits are size: 0100 is 1\", 0150 is 1-1/2\", up to 0600 for 6\"."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is a Figure 1502 hammer union rated for?",
+          "a": "The standard service Figure 1502 is rated 15,000 psi (1,034 bar) cold working pressure and tested at 22,500 psi, in every size from 1\" to 6\". Our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) covers the sour rating and derated figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 1502 butt weld union come in?",
+          "a": "The Figure 1502 butt weld union is listed in 1\", 1-1/2\", 2\", 3\", 4\", 5\" and 6\", all Sch XXS. The 5\" and 6\" were introduced for higher flow rates at high pressure, and the 4\", 5\" and 6\" sizes are butt weld only."
+        },
+        {
+          "slot": "D",
+          "q": "Threaded or butt weld Figure 1502: how do I choose?",
+          "a": "Choose butt weld for a permanent welded joint or any size above 3\", and the [Figure 1502 threaded union](/p/hammer-union-set-1502-series-field-replaceable-lip-seal-npt-npt-15-000-psi-standard-service) for 1\" to 3\" screwed iron. Both are rated 15,000 psi."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Figure 1502 hammer union use?",
+          "a": "The Figure 1502 has a heavy-wall alloy steel body and a replaceable, resilient nitrile seal ring. The ring is a service item: replace it whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "What is the fig 1502 hammer union rating in sour service?",
+          "a": "A sour gas Figure 1502 is listed at 10,000 psi, against 15,000 psi for this standard service union. For sour gas at 15,000 psi the listed figure is the Figure 2202; see the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions can be connected to a Figure 1502 hammer union?",
+          "a": "Only Figure 1502 halves of the same size, plus the 3\" Figure 1505, which is designed to connect back to 3\" Figure 1502 iron. Safety alerts warn that 2\" Figure 602 and 1002 male halves make up into a 2\" 1502 wing nut and separate under pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you make up and inspect a Figure 1502 butt weld union?",
+          "a": "Weld the subs to Sch XXS pipe, fit a sound nitrile seal ring and hammer the wing nut until the seats meet. Inspect the seat, seal and nut thread at each break-out, and never strike a union under pressure."
+        },
+        {
+          "slot": "K",
+          "q": "1502 vs 2002 hammer union: what is the difference?",
+          "a": "The Figure 1502 is rated 15,000 psi and the [Figure 2002 union](/p/figure-2002-hammer-union-butt-weld-standard-service-20000-psi) 20,000 psi with an anti-extrusion ring behind its lip seal. They are different figures and must never be joined."
+        },
+        {
+          "slot": "G",
+          "q": "What test and material records come with a Figure 1502 butt weld union?",
+          "a": "Ask for the 22,500 psi hydrostatic test record and the material test report for the alloy steel subs and nut. The figure is an industry series, not a published standard, so give figure, size, Sch XXS and service class on the order."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock fig 1502 butt weld hammer unions in Dubai?",
+          "a": "Yes. We keep Figure 1502 butt weld hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send sizes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-1502-series-field-replaceable-lip-seal-npt-npt-15-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 1502 threaded hammer union used for?",
+          "a": "A Figure 1502 threaded hammer union is a 15,000 psi union with line pipe threaded ends for cementing, fracturing, acidizing and choke lines. It is listed from 1\" to 3\" in standard service trim."
+        },
+        {
+          "slot": "B",
+          "q": "What does IH-HU-1502-THD-STD-0300 mean on a Figure 1502 union?",
+          "a": "IH-HU-1502-THD-STD-0300 is a 3\" Figure 1502 hammer union with line pipe threaded ends, standard service. Other sizes end 0100 (1\"), 0150 (1-1/2\") and 0200 (2\")."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a threaded Figure 1502 hammer union?",
+          "a": "The threaded Figure 1502 is rated 15,000 psi (1,034 bar) cold working pressure and tested at 22,500 psi, the same as the butt weld version. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) sets out how ratings vary across figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the threaded Figure 1502 union come in?",
+          "a": "The threaded Figure 1502 is listed in 1\", 1-1/2\", 2\" and 3\". The 4\", 5\" and 6\" sizes are butt weld only; see the [Figure 1502 butt weld union](/p/hammer-union-set-1502-series-butt-weld-butt-weld-15-000-psi-standard-service)."
+        },
+        {
+          "slot": "D",
+          "q": "What dimensions does a 2\" Figure 1502 threaded union have?",
+          "a": "The 2\" threaded Figure 1502 (IH-HU-1502-THD-STD-0200) is 95.25 mm across A, 178.8 mm long (B) and 81.79 mm at C. The size table gives the same data for 1\", 1-1/2\" and 3\"; ask us to confirm critical dimensions."
+        },
+        {
+          "slot": "F",
+          "q": "What seal does the threaded Figure 1502 hammer union use?",
+          "a": "The threaded Figure 1502 uses a field-replaceable, resilient nitrile seal ring in a heavy-wall alloy steel body. Replace the ring on site whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is the threaded Figure 1502 hammer union suitable for H2S service?",
+          "a": "Not this standard trim. A sour gas threaded Figure 1502 is listed at 10,000 psi for H2S service, against 15,000 psi here. See the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Will a 2\" Figure 602 male half fit a 2\" Figure 1502 wing nut?",
+          "a": "It can thread in, which is exactly the danger: safety alerts record a fatality from a 602-to-1502 mismatch that separated under pressure. Join a Figure 1502 only to Figure 1502 halves of the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do you replace the seal ring on a Figure 1502 threaded union?",
+          "a": "Bleed the line to zero, hammer the Figure 1502 wing nut loose, remove the worn nitrile ring from the female sub and fit a new one, then remake the joint. Check the seat for scoring at the same time."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 1502 vs Figure 1002 threaded union: which do I need?",
+          "a": "Choose by pressure: the Figure 1502 is 15,000 psi and the [Figure 1002 threaded union](/p/hammer-union-set-1002-series-npt-npt-10-000-psi-standard-service) 10,000 psi. They are separate figures and must never be joined to each other."
+        },
+        {
+          "slot": "G",
+          "q": "What records should accompany a threaded Figure 1502 hammer union?",
+          "a": "Ask for the 22,500 psi hydrostatic test record and the material test report. The listing claims no third-party mark, so give figure, size, ends and standard or sour service on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have threaded Figure 1502 hammer unions in stock?",
+          "a": "Yes. We keep threaded Figure 1502 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. UAE delivery is within 3 working days; send sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-200-series-npt-npt-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 200 threaded hammer union used for?",
+          "a": "A Figure 200 threaded hammer union is a compact all-steel 2,000 psi union for line connections and manifolds, with line pipe threaded ends from 1\" to 8\". It seals metal-to-metal on a ball and cone seat."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-200-THD-STD-0125 mean?",
+          "a": "IH-HU-200-THD-STD-0125 is a 1-1/4\" Figure 200 union with line pipe threaded ends, standard service. Size codes run from 0100 (1\") through 0125, 0150 and 0250 to 0800 (8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 200 threaded hammer union?",
+          "a": "The Figure 200 threaded union is rated 2,000 psi (138 bar) cold working pressure and tested at 3,000 psi, in every size from 1\" to 8\". See the [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) for the full figure range."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 200 threaded union come in?",
+          "a": "The Figure 200 threaded union is listed in 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\" and 8\". For Sch 40 or Sch 80 weld ends, see the [Figure 200 butt weld union](/p/figure-200-hammer-union-butt-weld-ends-2000-psi)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of Figure 200 threaded union?",
+          "a": "Pick the Figure 200 size that matches the nominal size of the line pipe thread on your pipe or manifold. The size table lists A, B and C dimensions and weight per size, for example 73.1 mm across A on the 2\"."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Figure 200 threaded union use?",
+          "a": "The Figure 200 is all steel with a metal-to-metal ball and cone seat, so there is no elastomer in the seal. For a backup seal behind the metal seat, the [Figure 206 threaded union](/p/hammer-union-set-206-series-with-o-ring-metal-sub-npt-npt-2-000-psi-standard-service) is dimensionally identical."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 200 threaded union rated for sour gas service?",
+          "a": "No sour gas rating is published for the Figure 200, so keep it to standard service. For H2S lines choose a sour-rated figure from the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "What can a Figure 200 threaded hammer union connect to?",
+          "a": "A Figure 200 connects to Figure 200 and dimensionally identical Figure 206 halves of the same size, and takes a Figure 207 blanking cap. Do not join it to any other figure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you inspect a Figure 200 ball and cone union?",
+          "a": "At each break-out, check the Figure 200 ball and cone seat for scoring and the wing nut thread for damage. A scored seat leaks before the thread fails; replace the affected sub, not necessarily the whole union."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 200 vs Figure 400 hammer union: what is the difference?",
+          "a": "The Figure 200 is a compact 2,000 psi union; the Figure 400 is a heavier 4,000 psi ball and cone union for manifolds, suction and mud lines, with a reduced rating above 4\". The two figures do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What test records should I request for Figure 200 threaded unions?",
+          "a": "Request the 3,000 psi hydrostatic test record and the material test report. The listing claims no third-party mark; state any specification your client works to."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 200 threaded hammer unions in stock in the UAE?",
+          "a": "Yes. We keep Figure 200 threaded hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; delivery within the UAE takes 3 working days. Send sizes through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-206-series-with-o-ring-metal-sub-npt-npt-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 206 threaded hammer union used for?",
+          "a": "A Figure 206 threaded hammer union is a 2,000 psi union for line connections and manifolds where a secondary seal is wanted behind the metal-to-metal ball and cone seat. It is listed from 1\" to 8\" with line pipe threads."
+        },
+        {
+          "slot": "B",
+          "q": "What does IH-HU-206-THD-STD-0150 mean on a Figure 206 union?",
+          "a": "IH-HU-206-THD-STD-0150 is a 1-1/2\" Figure 206 hammer union with line pipe threaded ends, standard service. Size codes run from 0100 (1\") to 0800 (8\")."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is a Figure 206 threaded union rated for?",
+          "a": "The Figure 206 threaded union is rated 2,000 psi (138 bar) cold working pressure and tested at 3,000 psi in all sizes. Our hammer union figure numbers guide explains the figure ratings."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 206 threaded hammer union come in?",
+          "a": "The Figure 206 threaded union is listed in 1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\" and 8\". Butt weld ends from 2\" to 8\" are on the [Figure 206 butt weld union](/p/figure-206-hammer-union-butt-weld-ends-2000-psi) listing."
+        },
+        {
+          "slot": "D",
+          "q": "Are Figure 206 dimensions the same as Figure 200?",
+          "a": "Yes. Every Figure 206 dimension and weight matches the Figure 200 range, so the 3\" threaded union is 98.5 mm across A and 116.5 mm long in both. That lets a 206 replace a 200 without changing the spool."
+        },
+        {
+          "slot": "F",
+          "q": "How does the secondary seal work on a Figure 206 hammer union?",
+          "a": "The Figure 206 seals first metal-to-metal on its ball and cone seat, with a secondary seal behind it as a backup. Inspect and replace the secondary seal if it is cut or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 206 hammer union be used in sour gas service?",
+          "a": "No sour gas rating is published for the Figure 206, so use it for standard service only. Sour-rated figures are on the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Fig 206 vs 207: do they connect to each other?",
+          "a": "Yes. The Figure 207 blanking cap is fully interchangeable with Figure 200 and Figure 206 unions, so it caps a Figure 206 line of the same size. The [Figure 207 blanking cap](/p/hammer-union-set-207-series-with-tappable-end-cap-2-000-psi-standard-service) comes in 3\", 4\" and 6\"."
+        },
+        {
+          "slot": "I",
+          "q": "How do you make up a Figure 206 threaded hammer union?",
+          "a": "Screw the Figure 206 subs onto the line pipe threads, check the secondary seal is seated, and hammer the wing nut lugs until the ball and cone seats meet. Bleed the line before breaking out."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 206 vs Figure 200: is the 206 better?",
+          "a": "The Figure 206 is the Figure 200 plus a secondary seal, with the same 2,000 psi rating and dimensions. Choose the 206 where you want a backup seal and the [Figure 200 threaded union](/p/hammer-union-set-200-series-npt-npt-2-000-psi-standard-service) where metal-to-metal alone is enough."
+        },
+        {
+          "slot": "G",
+          "q": "What documentation should I request for a Figure 206 union?",
+          "a": "Ask for the 3,000 psi hydrostatic test record and the material test report on your Figure 206 enquiry. The listing claims no third-party mark; state the specification you work to."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock Figure 206 threaded hammer unions?",
+          "a": "Yes. Figure 206 threaded unions are in stock at our warehouse in Dubai, UAE, and we ship worldwide with the best lead times; UAE orders arrive within 3 working days. Request a quote through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-207-series-with-tappable-end-cap-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 207 hammer union blanking cap?",
+          "a": "A Figure 207 is a 2,000 psi hammer union blanking cap for closing off the end of a line or capping a manifold connection. It is fully interchangeable with Figure 200 and Figure 206 unions and seals on an O-ring."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Figure 207 part number IH-HU-207-BW80-STD-0400 mean?",
+          "a": "IH-HU-207-BW80-STD-0400 is a 4\" Figure 207 blanking cap with a Sch 80 butt weld end, standard service. THD in place of BW80 means a line pipe threaded end; size codes are 0300, 0400 and 0600."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the Figure 207 blanking cap rated for?",
+          "a": "The Figure 207 blanking cap is rated 2,000 psi (138 bar) cold working pressure and tested at 3,000 psi, matching the Figure 200 and 206 unions it caps. See the [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) for other special-purpose figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 207 blanking cap come in?",
+          "a": "The Figure 207 is listed in 3\", 4\" and 6\", each with a line pipe threaded end or a Sch 80 butt weld end. The size table gives weight and dimensions for every part number."
+        },
+        {
+          "slot": "D",
+          "q": "Threaded or butt weld Figure 207: which end do I need?",
+          "a": "Choose the Figure 207 end that matches how the cap fits your line: threaded to screw onto line pipe, Sch 80 butt weld to weld onto Sch 80 pipe. The rating is 2,000 psi either way."
+        },
+        {
+          "slot": "F",
+          "q": "How does the Figure 207 blanking cap seal?",
+          "a": "The Figure 207 is fitted with an O-ring for a leak-proof seal against the mating Figure 200 or 206 half. Replace the O-ring whenever it is cut, flattened or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 207 blanking cap be used on sour gas lines?",
+          "a": "No sour gas rating is published for the Figure 207, so use it for standard service only. Sour-rated figures are on the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Fig 206 vs 207: will a Figure 207 cap fit a Figure 206 union?",
+          "a": "Yes. The Figure 207 is fully interchangeable with Figure 200 and Figure 206 unions of the same size, such as the [Figure 206 threaded union](/p/hammer-union-set-206-series-with-o-ring-metal-sub-npt-npt-2-000-psi-standard-service). It must not be fitted to any other figure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you fit and remove a Figure 207 blanking cap safely?",
+          "a": "Hammer the Figure 207 onto its Figure 200 or 206 half until the O-ring seats. Before removing a cap, bleed the line to zero; never strike a cap on a pressurised line."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 207 vs Figure 200: what is the difference?",
+          "a": "A Figure 200 is a union that joins two pipe ends, while the Figure 207 is a cap that closes one end. Both are 2,000 psi; see the [Figure 200 butt weld union](/p/figure-200-hammer-union-butt-weld-ends-2000-psi) for a matching weld-end union."
+        },
+        {
+          "slot": "G",
+          "q": "What test documentation should I request for Figure 207 blanking caps?",
+          "a": "Ask for the 3,000 psi hydrostatic test record and the material test report. The listing claims no third-party mark, so name your specification on the enquiry."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Figure 207 blanking caps in stock in Dubai?",
+          "a": "Yes. We keep Figure 207 blanking caps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery takes 3 working days. Send sizes and end type through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-211-series-npt-npt-2-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 211 insulated hammer union used for?",
+          "a": "A Figure 211 is a 2,000 psi insulated hammer union for lines where static or electrolytic corrosion has to be broken. Its design removes metal-to-metal contact across the union."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Figure 211 part number IH-HU-211-THD-STD-0300 mean?",
+          "a": "IH-HU-211-THD-STD-0300 is a 3\" Figure 211 insulated union with line pipe threaded ends, standard service. The 2\" version ends 0200; those are the two listed sizes."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 211 insulated union?",
+          "a": "The Figure 211 is rated 2,000 psi (138 bar) cold working pressure in 2\" and 3\", and tested at 3,000 psi. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) covers it with the other special-purpose figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 211 insulated hammer union come in?",
+          "a": "The Figure 211 is listed in 2\" and 3\" with line pipe threaded ends. No dimension table is published for this figure, so ask us for a dimensioned drawing before ordering."
+        },
+        {
+          "slot": "D",
+          "q": "Where should a Figure 211 insulated union be placed in a line?",
+          "a": "Place the Figure 211 where you need to break the electrical path between two sections of line, for example where static or electrolytic corrosion is attacking the pipe. Confirm the size against your line pipe thread."
+        },
+        {
+          "slot": "F",
+          "q": "How does the Figure 211 insulated union seal?",
+          "a": "The Figure 211 seals with two abrasion-resistant precision elastomers, which also keep metal-to-metal contact out of the joint. Replace them if they are cut or hardened."
+        },
+        {
+          "slot": "F",
+          "q": "Is the Figure 211 insulated union rated for sour gas service?",
+          "a": "No sour gas rating is published for the Figure 211, so treat it as standard service only. Sour-rated figures are on the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions mate with a Figure 211 insulated hammer union?",
+          "a": "A Figure 211 mates only with Figure 211 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you check that a Figure 211 union is still insulating?",
+          "a": "Inspect the Figure 211 elastomers at each break-out for cuts or wear, since they carry both the seal and the insulation. Bleed the line before hammering the nut."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 211 vs Figure 200: when do I need the insulated union?",
+          "a": "Use the Figure 211 when the line needs an electrical break against static or electrolytic corrosion; otherwise the all-steel [Figure 200 threaded union](/p/hammer-union-set-200-series-npt-npt-2-000-psi-standard-service) is the general 2,000 psi union. They do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What documents should I ask for with a Figure 211 union?",
+          "a": "Ask for the 3,000 psi hydrostatic test record, the material test report and a dimensioned drawing, as none is published. The listing claims no third-party mark."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 211 insulated unions in stock?",
+          "a": "Yes. We keep Figure 211 insulated hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. UAE delivery is within 3 working days; ask through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-400-series-npt-npt-4-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 400 hammer union used for?",
+          "a": "A Figure 400 is a heavy ball and cone hammer union for manifold connections, suction lines and mud systems, rated 4,000 psi up to 4\". It is made from steel forgings with line pipe threaded ends."
+        },
+        {
+          "slot": "B",
+          "q": "What does IH-HU-400-THD-STD-1000 mean?",
+          "a": "IH-HU-400-THD-STD-1000 is a 10\" Figure 400 hammer union with line pipe threaded ends, standard service. Size codes run 0200, 0300, 0400, 0500, 0600, 1000 and 1200 for 2\" to 12\"."
+        },
+        {
+          "slot": "E",
+          "q": "What is the Figure 400 hammer union pressure rating by size?",
+          "a": "The Figure 400 is rated 4,000 psi (276 bar) at 2\", 3\" and 4\", tested at 6,000 psi; the 5\", 6\", 10\" and 12\" are reduced to 2,500 psi (172 bar), tested at 3,750 psi. Read the size table, as our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) warns."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 400 hammer union come in?",
+          "a": "The Figure 400 is listed in 2\", 3\", 4\", 5\", 6\", 10\" and 12\" with line pipe threaded ends. No dimension table is published for this figure; ask us for a dimensioned drawing."
+        },
+        {
+          "slot": "D",
+          "q": "Is a 6\" Figure 400 hammer union rated 4,000 psi?",
+          "a": "No. The 6\" Figure 400 is rated 2,500 psi, like the 5\", 10\" and 12\" sizes; only 2\" to 4\" carry 4,000 psi. Size your line on the per-size rating, not the figure number."
+        },
+        {
+          "slot": "F",
+          "q": "What material and seal does the Figure 400 use?",
+          "a": "The Figure 400 is made from heavy steel forgings and seals metal-to-metal on a ball and cone seat, which makes it easy to align and dependable to seal on mud and suction service."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 400 hammer union be used in sour gas service?",
+          "a": "No sour gas rating is published for the Figure 400, so keep it to standard service. For H2S lines choose a sour-rated figure from the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Which unions mate with a Figure 400 hammer union?",
+          "a": "A Figure 400 mates only with Figure 400 halves of the same size. Never join it to a union of a different figure number: unions of different figures can look alike and partly thread together, then separate at pressure."
+        },
+        {
+          "slot": "I",
+          "q": "How do you align and make up a Figure 400 ball and cone union?",
+          "a": "Bring the Figure 400 halves together so the ball seats in the cone, which self-aligns the joint, then hammer the wing nut tight. Check the seat for scoring and bleed the line before breaking out."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 400 vs Figure 602 for mud lines: which should I use?",
+          "a": "Use the Figure 400 for mud and suction lines up to 4,000 psi (2,500 psi above 4\"), and the [Figure 602 threaded union](/p/hammer-union-set-602-series-lip-seal-npt-npt-6-000-psi-standard-service) where the line needs 6,000 psi. The figures do not mate."
+        },
+        {
+          "slot": "G",
+          "q": "What test records should I request for a Figure 400 union?",
+          "a": "Request the hydrostatic test record (6,000 psi for 2\" to 4\", 3,750 psi for larger sizes) and the material test report for the forgings. The listing claims no third-party mark."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep Figure 400 hammer unions in stock in Dubai?",
+          "a": "Yes. Figure 400 hammer unions are kept in stock at our warehouse in Dubai, UAE, and shipped worldwide with the best lead times; UAE delivery takes 3 working days. Send sizes and quantities through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-50-series-npt-npt-500-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a Figure 50 hammer union used for?",
+          "a": "A Figure 50 is a 500 psi suction and low-pressure hammer union, built in steel throughout, with threaded or socket weld ends in 4\" and 5\". It is used on suction lines and low-pressure line connections."
+        },
+        {
+          "slot": "B",
+          "q": "What does the part number IH-HU-50-SW-STD-0400 mean?",
+          "a": "IH-HU-50-SW-STD-0400 is a 4\" Figure 50 union with socket weld ends, standard service. THD means line pipe threaded ends, and 0500 marks the 5\" size."
+        },
+        {
+          "slot": "E",
+          "q": "What is the working pressure of a Figure 50 hammer union?",
+          "a": "The Figure 50 is rated 500 psi (35 bar) cold working pressure in 4\" and 5\"; the figure number is the rating. The [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) shows the same pattern across other figures."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and ends does the Figure 50 hammer union come in?",
+          "a": "The Figure 50 is listed in 4\" and 5\", each with line pipe threaded or socket weld ends. One nut and one O-ring serve both sizes, which simplifies spares."
+        },
+        {
+          "slot": "D",
+          "q": "Threaded or socket weld Figure 50: which should I choose?",
+          "a": "Choose threaded Figure 50 ends to screw onto line pipe and socket weld ends for a welded suction line. Both carry 500 psi; the socket weld union is shorter, for example 103.1 mm against 152.4 mm at 4\"."
+        },
+        {
+          "slot": "F",
+          "q": "What seal and material does the Figure 50 union use?",
+          "a": "The Figure 50 is steel throughout and seals on an O-ring. Because one O-ring fits both the 4\" and 5\" sizes, a single spare covers the whole range."
+        },
+        {
+          "slot": "F",
+          "q": "Can a Figure 50 hammer union be used in sour gas service?",
+          "a": "No sour gas rating is published for the Figure 50; it is a 500 psi suction union for standard service. For H2S lines see the [sour gas service hammer unions](/c/hammer-unions-sour-gas-service) shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Are blanking caps available for the Figure 50 union?",
+          "a": "Yes. Male and female blanking caps are available for the Figure 50 connection; ask for them with your order. Join a Figure 50 only to Figure 50 halves of the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do you service a Figure 50 suction union?",
+          "a": "Service a Figure 50 by replacing the O-ring when it is cut, flattened or hardened and checking the seat at each break-out. Bleed the line before hammering the nut loose."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 50 vs Figure 100: which do I need?",
+          "a": "Use the Figure 50 for suction and lines up to 500 psi in 4\" or 5\", and the [Figure 100 threaded union](/p/hammer-union-set-100-series-npt-npt-1-000-psi-standard-service) for general service up to 1,000 psi from 2\" to 8\". The two do not interconnect."
+        },
+        {
+          "slot": "G",
+          "q": "What documentation should I ask for with Figure 50 unions?",
+          "a": "Ask for the material test report and the pressure test record with your Figure 50 order. The listing claims no third-party mark; state any specification your client requires."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have Figure 50 hammer unions in stock in Dubai?",
+          "a": "Yes. We keep Figure 50 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery is within 3 working days. Send size, ends and quantity through [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "hammer-union-set-602-series-lip-seal-npt-npt-6-000-psi-standard-service",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is a fig 602 threaded hammer union used for?",
+          "a": "A Figure 602 threaded hammer union is a 6,000 psi union for line connections, manifolds, mud and service systems, with line pipe threaded ends from 1\" to 4\". It carries a nitrile seal ring over steel-to-steel seating."
+        },
+        {
+          "slot": "B",
+          "q": "What does the Figure 602 part number IH-HU-602-THD-STD-0150 mean?",
+          "a": "IH-HU-602-THD-STD-0150 is a 1-1/2\" Figure 602 hammer union with line pipe threaded ends, standard service. Size codes run 0100, 0150, 0200, 0300 and 0400 for 1\" to 4\"."
+        },
+        {
+          "slot": "E",
+          "q": "What is the figure 602 hammer union pressure rating?",
+          "a": "The Figure 602 is rated 6,000 psi (414 bar) cold working pressure and tested at 9,000 psi, in every threaded size from 1\" to 4\". Our [hammer union figure numbers guide](/blog/hammer-union-figure-numbers) explains how this compares with 1502 and 1002."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the Figure 602 threaded union come in?",
+          "a": "The threaded Figure 602 is listed in 1\", 1-1/2\", 2\", 3\" and 4\". For Sch 80 or Sch XXS weld ends, see the [Figure 602 butt weld union](/p/figure-602-hammer-union-butt-weld-standard-service-6000-psi)."
+        },
+        {
+          "slot": "D",
+          "q": "What are the dimensions of a 2\" Figure 602 threaded hammer union?",
+          "a": "The 2\" threaded Figure 602 (IH-HU-602-THD-STD-0200) is 88.9 mm across A, 133.3 mm long (B) and 77.7 mm at C. Every size's dimensions and weight are in the size table."
+        },
+        {
+          "slot": "F",
+          "q": "What seal does a Figure 602 threaded hammer union use?",
+          "a": "The Figure 602 uses a resilient nitrile seal ring that assists the seal and protects the steel-to-steel seating. It is also available in different materials to suit well testing company specifications."
+        },
+        {
+          "slot": "F",
+          "q": "Is there a figure 602 hammer union for sour service?",
+          "a": "Yes. A sour gas service Figure 602 threaded union is listed and keeps the 6,000 psi rating. Use it rather than this standard trim on H2S lines; see the sour gas service hammer unions shelf."
+        },
+        {
+          "slot": "H",
+          "q": "Can a 2\" Figure 602 be joined to a 2\" Figure 1502 or 1002?",
+          "a": "No. A 2\" Figure 602 male half will make up into a 2\" Figure 1502 wing nut, and safety alerts record a fatality from exactly that mismatch. Join a Figure 602 only to Figure 602 halves of the same size."
+        },
+        {
+          "slot": "I",
+          "q": "How do you make up and service a Figure 602 threaded union?",
+          "a": "Screw the subs onto line pipe, fit the nitrile seal ring and hammer the wing nut until the seats meet. Replace the ring when cut, flattened or hardened, and never strike a pressurised union."
+        },
+        {
+          "slot": "K",
+          "q": "Figure 602 vs Figure 600: what is the difference?",
+          "a": "Both are 6,000 psi, but the Figure 602 seals with a nitrile ring for mud and manifold service, while the [Figure 600 union](/p/figure-600-hammer-union-bronze-seated-threaded-6000-psi) has a bronze seat for steam and condensate lines. They do not mate."
+        },
+        {
+          "slot": "G",
+          "q": "What records should I request for a Figure 602 threaded union?",
+          "a": "Request the 9,000 psi hydrostatic test record and the material test report, and give any well testing company material specification on the enquiry. The listing claims no third-party mark."
+        },
+        {
+          "slot": "M",
+          "q": "Do you have fig 602 threaded hammer unions in stock?",
+          "a": "Yes. We keep threaded Figure 602 hammer unions in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times; UAE delivery takes 3 working days. Send sizes through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

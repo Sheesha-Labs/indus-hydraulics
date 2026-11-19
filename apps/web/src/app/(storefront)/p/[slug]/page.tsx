@@ -13,6 +13,7 @@ import {
   buildAlternateNames,
   buildBreadcrumbLd,
   buildFaqLd,
+  faqAnswerPlainText,
   buildProductLd,
   equivalenceSentence,
   equivalentsByPartNumber,
@@ -514,7 +515,7 @@ export default async function ProductPage({ params }: Props) {
     ],
   })
   const faqLd = buildFaqLd({
-    faqs: product.faqs.map((f) => ({ question: f.question, answer: f.answer })),
+    faqs: product.faqs.map((f) => ({ question: f.question, answer: faqAnswerPlainText(f.answer) })),
   })
 
   return (
