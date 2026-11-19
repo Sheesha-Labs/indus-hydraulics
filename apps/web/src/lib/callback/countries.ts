@@ -7,8 +7,9 @@ import type { CallbackCountry } from './rules'
  * The dial-code select's options: every export market that has a dialling
  * prefix on its market page, plus the UAE, sorted by country name.
  *
- * Built on the server and handed to the prompt as a compact [ISO, dial] list
- * (about a kilobyte) so the browser never loads the market records. The
+ * Built on the server and handed to the prompt as a compact
+ * [ISO, dial, name] list (a few kilobytes) so the browser never loads the
+ * market records. Each ISO has a 3:2 flag in public/flags. The
  * client then moves the visitor's market and the GCC to the top
  * (`orderCountries`).
  */
@@ -23,7 +24,7 @@ export function callbackCountries(): CallbackCountry[] {
   }
   return [...rows.entries()]
     .sort((a, b) => a[1].name.localeCompare(b[1].name, 'en'))
-    .map(([iso, r]) => [iso, r.dial] as const)
+    .map(([iso, r]) => [iso, r.dial, r.name] as const)
 }
 
 /** ISO code for a market slug — the default dial code on /markets/{slug}. */
