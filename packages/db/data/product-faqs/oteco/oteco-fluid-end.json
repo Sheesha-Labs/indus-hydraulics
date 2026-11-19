@@ -1,0 +1,401 @@
+{
+ "family": "oteco-fluid-end",
+ "extraFacts": [
+  {
+   "fact": "The Oteco valve and seat selection table is taken from Oteco's 1997 fluid-end product sheet.",
+   "source": "Indus Hydraulics Oteco catalogue notes: Oteco fluid-end product sheet (1997)"
+  }
+ ],
+ "products": [
+  {
+   "slug": "oteco-double-acting-mud-pump-pistons",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco double-acting mud pump pistons?",
+     "a": "Oteco double-acting mud pump pistons are premium piston assemblies for duplex mud pumps, built on a steel hub with a fabric-reinforced rubber piston. The listing covers series A, B, K and L with API 3 to 6 or GD1 taper bores, in 82 part numbers by liner size, series and rod fit."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco piston part IH-OTC-640045 and the I44 code?",
+     "a": "IH-OTC-640045 is a premium double-acting piston assembly, series B, API 3 taper, for a 4-1/2\" liner. In Oteco part codes I44 is a 4-1/2-inch piston (inches plus eighths), B is the series and the last digits are the taper or bore. We confirm the exact piston against your pump and rod."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco piston series do I need for my liner size?",
+     "a": "The series is the hub size and follows the liner. In the Oteco table series A has a 2\" snap ring and lists 2-3/4\" to 5\" liners, K lists 3-1/2\" to 4-1/2\", B lists 4-1/2\" to 7-3/4\" and L lists 6\" to 9\". For double-acting parts the listing runs from 3\" to 8\" liners. We confirm the series against your pump."
+    },
+    {
+     "slot": "D",
+     "q": "What API taper does a double-acting Oteco piston use: API 3, 4, 5, 6 or GD1?",
+     "a": "The taper is the rod bore: series A uses API 1, 2 or 3 or a GD1 taper, series K uses API 3 or 4, series B uses API 3, 4 or 5, and series L uses API 6. For example, IH-OTC-640046 is series B, API 4 taper, 4-1/2\" liner. Check the rod end of your pump and confirm the taper with us."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco series L piston fits a 7\" or 8\" liner?",
+     "a": "Series L is the large hub: IH-OTC-640094 is a 7\" liner and IH-OTC-640098 is an 8\" liner, both premium double-acting with API 6 taper. Series L double-acting parts run from 5\" to 8\" liners, 12 part numbers in all. We confirm the liner and rod against your pump before shipping."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco premium pistons made of, and when is bonded urethane used?",
+     "a": "Premium pistons use rubbers with a multi-ply, fabric-reinforced backing that gives wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Bonded urethane pistons are a harder, denser polyurethane bonded to the hub; they are listed on the single-acting page, not here. See the [single-acting and bonded urethane pistons](/p/oteco-single-acting-mud-pump-pistons)."
+    },
+    {
+     "slot": "H",
+     "q": "What spares go with an Oteco double-acting piston?",
+     "a": "A piston assembly is a hub, a rubber, a retainer plate and a snap ring, and Oteco lists each separately. See the [piston rubbers and replacement kits](/p/oteco-mud-pump-piston-rubbers-kits) for rubber kits and the [piston hubs, plates and snap rings](/p/oteco-mud-pump-piston-hubs-parts) for hubs, plates and snap rings. Order by series and liner size."
+    },
+    {
+     "slot": "I",
+     "q": "How do I order the right Oteco piston for my pump and rod?",
+     "a": "Send the pump make and model, the liner size and the rod end detail, and we match the series and taper. Liner sizes and hub codes are decoded from Oteco part codes, so we confirm the piston against your pump and rod before shipping. A worn rubber alone can be replaced with a rubber kit, so check the hub condition first."
+    },
+    {
+     "slot": "J",
+     "q": "Which pumps use Oteco double-acting premium pistons?",
+     "a": "They are for duplex mud pumps, where the piston works on both strokes and the liner sizes run from 3\" to 8\" in this listing. The spec describes them as fitting duplex and triplex mud pumps with API-design pistons. Send the pump model and liner size so we confirm the part."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between double-acting and single-acting Oteco pistons?",
+     "a": "A double-acting piston is bored with an API or GD1 taper, while a single-acting piston has a 1\", 1-1/2\" or 1-5/8\" straight bore. Double-acting parts are for duplex pumps and single-acting parts are for triplex pumps. See the [single-acting pistons](/p/oteco-single-acting-mud-pump-pistons) for the straight bore range."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco double-acting mud pump pistons?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. Browse the [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) for the other fluid-end parts."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco double-acting piston in the UAE?",
+     "a": "We keep Oteco double-acting mud pump pistons in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the pump make and model, the liner size, the series or part number and the rod taper. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-single-acting-mud-pump-pistons",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco single-acting mud pump pistons?",
+     "a": "Oteco single-acting pistons are premium and bonded urethane piston assemblies for triplex mud pumps, in 2-3/4\" to 9\" liners with 1\" or 1-1/2\" and 1-5/8\" straight bores. The listing has 46 part numbers across series A, B, K and L."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco piston part IH-OTC-640038 and series codes A, B, K and L?",
+     "a": "IH-OTC-640038 is a bonded urethane single-acting piston assembly, series L, 1-1/2\" or 1-5/8\" straight bore, for a 6-1/2\" liner. The series letter is the hub size: A, K, B and L. In Oteco part codes I44 is a 4-1/2-inch piston. We confirm the exact piston against your pump and rod."
+    },
+    {
+     "slot": "D",
+     "q": "What liner sizes does each single-acting Oteco piston series cover?",
+     "a": "In this listing series A covers 2-3/4\" to 3-1/4\", K covers 3-1/2\" to 4-1/2\", B covers 4-1/2\" to 6\" and L covers 6-1/4\" to 9\". The Oteco series table gives A as 2-3/4\" to 5\", K as 3-1/2\" to 4-1/2\", B as 4-1/2\" to 7-3/4\" and L as 6\" to 9\". We confirm the series for your pump."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco single-acting piston has a 1\" bore and which has a 1-1/2\" or 1-5/8\" bore?",
+     "a": "Series K parts come in both: IH-OTC-640005 is a 1\" bore for a 4\" liner and IH-OTC-640007 is a 1-1/2\" or 1-5/8\" bore for a 4\" liner. Series A parts are mostly 1\" bore, IH-OTC-640000 being 3\". The bore is the rod fit, so check the rod before ordering."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco piston do I need for a large 8\" or 9\" triplex liner?",
+     "a": "Take series L: IH-OTC-640131 is a premium piston for an 8\" liner with a 1-1/2\" or 1-5/8\" straight bore, and IH-OTC-640137 and IH-OTC-640138 are bonded urethane pistons for 8\" and 9\" liners. We confirm the liner size and rod fit before shipping."
+    },
+    {
+     "slot": "F",
+     "q": "When should I choose a bonded urethane Oteco piston over a premium piston?",
+     "a": "Bonded urethane is a harder, denser polyurethane bonded to the hub, and it resists abrasive fluids, chemicals and oil-based muds of varying aniline point. Oteco says it gives long life in triplex pumps that have ample liner cooling water. The premium piston is the fabric-reinforced rubber version; both are listed here."
+    },
+    {
+     "slot": "G",
+     "q": "Does Oteco publish a standard for its mud pump pistons?",
+     "a": "Oteco describes its pistons as premium or bonded urethane assemblies and lists them by series, liner size and bore. Its literature makes no API licence claim for these parts, so we do not make one either; we confirm the part number against your pump and rod instead."
+    },
+    {
+     "slot": "H",
+     "q": "What replacement parts fit an Oteco single-acting piston?",
+     "a": "Hubs, piston bodies for bonded rubber, rubbers, retainer plates and snap rings are listed separately. See the [piston rubbers and replacement kits](/p/oteco-mud-pump-piston-rubbers-kits) and the [piston hubs, plates and snap rings](/p/oteco-mud-pump-piston-hubs-parts). The piston body for bonded rubber is the steel body that the urethane is bonded to."
+    },
+    {
+     "slot": "I",
+     "q": "How do I confirm the right single-acting Oteco piston for my pump?",
+     "a": "Send the pump model, the liner size and the rod bore. Liner sizes and hub codes are decoded from Oteco part codes, so we confirm the piston against your pump and rod before shipping. The 1-1/2\" and 1-5/8\" straight bore parts share a listing, so the rod fit has to be confirmed."
+    },
+    {
+     "slot": "J",
+     "q": "Which pumps use Oteco single-acting pistons?",
+     "a": "Single-acting pistons are for triplex mud pumps, in the 2-3/4\" to 9\" liner range of this listing. Bonded urethane parts suit triplex pumps that have ample liner cooling water. Send the pump make and model so we confirm the part."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco single-acting mud pump pistons?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. The [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) has the other fluid-end parts, including the [double-acting pistons](/p/oteco-double-acting-mud-pump-pistons)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco single-acting piston in Dubai?",
+     "a": "We keep Oteco single-acting mud pump pistons in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the pump model, liner size, series or part number and rod bore. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mud-pump-piston-rubbers-kits",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco mud pump piston rubbers and replacement kits?",
+     "a": "Oteco piston rubbers and rubber replacement kits are the wearing seal parts for single-acting and double-acting pistons, in series A, B, K and L. The listing covers 104 part numbers, made up of plain piston rubbers and rubber replacement kits, for liners from 2-3/4\" to 8\"."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read part IH-OTC-650024 and the difference from IH-OTC-650120?",
+     "a": "IH-OTC-650024 is a piston rubber replacement kit, double acting, series B, for a 6\" liner. IH-OTC-650120 is a plain piston rubber, series L, for a 6\" liner. We confirm the series and liner against your pump."
+    },
+    {
+     "slot": "D",
+     "q": "Which series rubber do I need for my liner size?",
+     "a": "The series follows the hub: A covers 2-3/4\" to 5\", K covers 3-1/2\" to 4-1/2\", B covers 4-1/2\" to 7-3/4\" and L covers 5\" to 8\" in this listing. For example the 4-1/2\" liner has a series K, a series B and a series A rubber, so the hub series has to be confirmed."
+    },
+    {
+     "slot": "D",
+     "q": "What is the difference between a piston rubber and a rubber replacement kit?",
+     "a": "A piston rubber is the rubber alone, for example IH-OTC-650113 for series B, 7\" liner. A replacement kit is listed for double-acting and for single-acting pistons, for example IH-OTC-650213 (series B, single acting, 7\" liner). Choose the kit for the pump type, and confirm what it contains before ordering."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco rubber kit fits a series L double-acting piston for a 7\" liner?",
+     "a": "Series L double-acting kits are listed from 5\" to 8\" liners, and the 7\" liner kit is IH-OTC-650039, with the plain rubber IH-OTC-650124. We confirm the exact kit and series against your pump and rod before shipping. Send the pump model and liner size."
+    },
+    {
+     "slot": "F",
+     "q": "What compound are Oteco piston rubbers made from?",
+     "a": "Premium rubbers have a multi-ply, fabric-reinforced backing that gives wear-resistant seals with high tensile strength and resistance to chemicals, hydrocarbons and abrasion. Oteco also makes bonded urethane pistons, a harder polyurethane bonded to the hub. The kits here are premium rubber kits; send the mud type if you need the urethane option."
+    },
+    {
+     "slot": "H",
+     "q": "What else do I fit when changing an Oteco piston rubber?",
+     "a": "Check the hub, the retainer plate and the snap ring, since they wear with the rubber. They are listed under [piston hubs, plates and snap rings](/p/oteco-mud-pump-piston-hubs-parts), and complete assemblies under [double-acting](/p/oteco-double-acting-mud-pump-pistons) and [single-acting](/p/oteco-single-acting-mud-pump-pistons) pistons."
+    },
+    {
+     "slot": "I",
+     "q": "When should I replace an Oteco piston rubber with a kit?",
+     "a": "Replace the rubber when the sealing lip is cut, hardened or worn, since a worn piston rubber lets mud pass and wears the liner. A kit is the convenient choice when changing several parts at once. We confirm the exact kit against your pump and rod before shipping."
+    },
+    {
+     "slot": "J",
+     "q": "Which pumps use Oteco piston rubber kits?",
+     "a": "The kits suit duplex and triplex mud pumps with API-design pistons: double-acting kits for duplex pumps and single-acting kits for triplex pumps. The listing covers 2-3/4\" to 8\" liners. Send the pump make, model and liner size so we confirm the part."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco piston rubbers and replacement kits?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, and the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. See the [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) for the full set of fluid-end parts."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order Oteco piston rubbers in the UAE?",
+     "a": "We keep Oteco piston rubbers and replacement kits in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the pump model, liner size, series and whether you need the rubber or the kit. We confirm the part and the delivery before you order."
+    },
+    {
+     "slot": "K",
+     "q": "Should I buy a rubber kit or a complete Oteco piston assembly?",
+     "a": "Buy the kit if the hub is sound and only the rubber has worn, and a complete assembly if the hub is damaged. Complete assemblies are on the [double-acting](/p/oteco-double-acting-mud-pump-pistons) and [single-acting](/p/oteco-single-acting-mud-pump-pistons) piston pages. We confirm which one suits your pump before shipping."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mud-pump-piston-hubs-parts",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco mud pump piston hubs, retainer plates and snap rings?",
+     "a": "These are the steel parts of an Oteco mud pump piston: hubs for single- and double-acting pistons, piston bodies for bonded rubber, rubber retainer plates, snap rings and a bore insert, in series A, B, K and L. The listing has 92 part numbers, of which 58 are piston hubs."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read hub IH-OTC-650068 and snap ring SR30?",
+     "a": "IH-OTC-650068 is a double-acting piston hub, series B, API 3 taper, for a 4-1/2\" liner. Snap rings are named by series: SR20 for series A, SR24 for K, SR30 for B and SR36 for L. Hub codes are decoded from Oteco part codes, so we confirm the hub against your pump and rod."
+    },
+    {
+     "slot": "D",
+     "q": "Which snap ring and retainer plate bore go with each Oteco series?",
+     "a": "The Oteco series table gives series A a SR20 snap ring and 2\" bore, K a SR24 and 2-1/2\", B a SR30 and 3\", and L a SR36 and 3-3/4\". Retainer plates follow the same bores, for example IH-OTC-650156 is series B, 4\" × 3\". Snap rings are IH-OTC-650175 to 650178."
+    },
+    {
+     "slot": "D",
+     "q": "What taper or bore do Oteco hubs come in?",
+     "a": "Double-acting hubs are bored with an API taper (3 to 6) or a GD1 taper, for example IH-OTC-650082 is series L, API 6 taper, 5\" liner. Single-acting hubs have a straight bore of 1\" or 1-1/2\". The bore insert IH-OTC-650179 adapts a 1-5/8\" bore to 1-1/2\". Confirm the rod fit before ordering."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco hub suits a 6-1/2\" series L single-acting liner?",
+     "a": "IH-OTC-650058 is a series L single-acting hub with a 1-1/2\" straight bore for a 6-1/2\" liner. IH-OTC-650001 is the same hub, water cooled. Larger L liners have hubs too, for example IH-OTC-650060 at 7\". We confirm the series and bore with your pump before shipping."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco piston bodies for bonded rubber?",
+     "a": "A piston body for bonded rubber is the steel body that the polyurethane is bonded to, in place of a hub plus fabric-reinforced rubber. Eight are listed, for example IH-OTC-302284, series B, 1-1/2\" straight bore, for a 4-1/2\" liner. Bonded urethane resists abrasive fluids, chemicals and oil-based muds."
+    },
+    {
+     "slot": "H",
+     "q": "What rubbers and kits go with an Oteco piston hub?",
+     "a": "The hub carries the rubber, which Oteco lists as a piston rubber or a replacement kit; see the [piston rubbers and replacement kits](/p/oteco-mud-pump-piston-rubbers-kits). For a complete piston assembly, see the [double-acting](/p/oteco-double-acting-mud-pump-pistons) or [single-acting](/p/oteco-single-acting-mud-pump-pistons) pistons."
+    },
+    {
+     "slot": "I",
+     "q": "When should an Oteco piston hub be replaced?",
+     "a": "Replace a hub if the taper or bore is worn or the sealing seat is damaged, because a new rubber on a worn hub will not seal. Check the retainer plate and snap ring at the same time. Liner sizes and hub codes are decoded from Oteco part codes, so we confirm the piston against your pump and rod before shipping."
+    },
+    {
+     "slot": "J",
+     "q": "Which pumps use Oteco piston hubs and retainer plates?",
+     "a": "They suit duplex and triplex mud pumps with API-design pistons, in liner sizes from 2-3/4\" to 8\". Double-acting hubs are for duplex pumps and single-acting hubs for triplex pumps. Send the pump model and liner size."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes Oteco piston hubs and parts?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. The [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) lists the rest of the fluid-end range."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco piston hub or retainer plate?",
+     "a": "We keep Oteco piston hubs, retainer plates and snap rings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the pump model, liner size, series and the part number if you have it. We confirm the part and the delivery before you order."
+    },
+    {
+     "slot": "K",
+     "q": "Should I replace the hub or buy a complete Oteco piston?",
+     "a": "Replace the hub alone if only the steel is damaged and the rubber is serviceable. Buy a complete assembly if both are worn; see the [double-acting](/p/oteco-double-acting-mud-pump-pistons) or [single-acting](/p/oteco-single-acting-mud-pump-pistons) pages. We confirm the combination against your pump."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mud-pump-valves-seats",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco mud pump valves and seats?",
+     "a": "Oteco mud pump valves and seats are premium wing-guided valves and full-open seats in API 6 and API 7 series, made for popular mud pumps. A valve is a uni-body with a snap-on polyurethane insert and a carburised body; each valve is used with its matching full-open spring."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read the Oteco selection table: O-U7VL-1, O-7SL-1 and O-5710-90?",
+     "a": "For each pump model the table gives a valve, a seat and a spring. For a National 12-P-160 it is valve O-U7VL-1, seat O-7SL-2 and spring O-5710-90. For a Continental Emsco D-125 it is valve O-U6VL-1, seat O-6SL-1 and spring O-5710-15. We confirm the current part number for your pump."
+    },
+    {
+     "slot": "C",
+     "q": "Which Oteco valve, seat and spring fit a Gardner Denver PZ-10 pump?",
+     "a": "The Oteco table lists the API 7 valve O-U7VL-1, the seat O-7SL-1 and the spring O-5710-90 for the Gardner Denver PZ-10 and PZ-10-K. Oteco parts are replacement parts made to fit that equipment, and Indus Hydraulics is not affiliated with the pump maker. We confirm the current part number before shipping."
+    },
+    {
+     "slot": "D",
+     "q": "Is my pump API 6 or API 7 for the Oteco valve and seat?",
+     "a": "Check the pump model against the table: an Ideco T-500, T-800 or T-1000 is API 6 (valve O-U6VL-1, seat O-6SL-1), while an Ideco T-1300 or T-1600 is API 7 (valve O-U7VL-1, seat O-7SL-1). The National 8-P-80 is API 6 and the National K-180 is API 7. We confirm the part for your pump."
+    },
+    {
+     "slot": "D",
+     "q": "Which spring goes with which Oteco valve?",
+     "a": "The spring depends on the pump: O-5710-15 for Continental Emsco D-125 and D-225, O-5710-84 for D-375, O-5710-91 for the Emsco F series, O-5710-93 for National K-180, K-280 and K-380, and O-5710-90 for most others. Each valve must be used with its matching full-open spring."
+    },
+    {
+     "slot": "F",
+     "q": "What is the Oteco wing-guided valve made of?",
+     "a": "The valve is a uni-body with a carburised body for longer life and lower maintenance, and a snap-on polyurethane insert, so there are no snap rings, plates or keepers to fail. The seat is steel. Inserts are listed separately: OU-23310 for API 6 valves and OU-23315 for API 7 valves."
+    },
+    {
+     "slot": "H",
+     "q": "What spares and tools go with an Oteco valve and seat?",
+     "a": "Oteco lists polyurethane inserts (IH-OTC-OU-23310 for API 6, IH-OTC-OU-23315 for API 7), seat puller heads (IH-OTC-OP1700-6 and IH-OTC-OP1700-7) and the full-open springs. Piston parts for the same pump are on the [double-acting](/p/oteco-double-acting-mud-pump-pistons) and [single-acting](/p/oteco-single-acting-mud-pump-pistons) piston pages."
+    },
+    {
+     "slot": "I",
+     "q": "How do I remove an Oteco full-open seat from the fluid end?",
+     "a": "Use the seat puller head for the series: IH-OTC-OP1700-6 for API 6 seats and IH-OTC-OP1700-7 for API 7 seats. The full-open seat is easier to service in valve-over-valve fluid ends and carries a heavy bearing load. We confirm the current part number for your pump before quoting."
+    },
+    {
+     "slot": "J",
+     "q": "What is the Oteco wing-guided valve better at in service?",
+     "a": "Oteco says the seating angle and full-open seat improve flow through the seat and pass lost-circulation material better than conventional valves and seats. This suits pumps that handle lost-circulation material in the mud. The selection table covers Continental Emsco, Gardner Denver, Ideco, National, OPI-Gist, Oilwell and Skytop Brewster pumps."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between wing-guided and stem-guided Oteco valves?",
+     "a": "The listed valves are premium wing-guided with a full-open seat. Oteco also makes premium stem-guided valves and seats with an extra-wide metal-to-metal seal and a serrated upper face. We confirm the current part number for your pump before quoting, so tell us which guide style you are replacing."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco mud pump valves and seats?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, and the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. See the [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) for the other fluid-end parts."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order Oteco mud pump valves and seats?",
+     "a": "We keep Oteco mud pump valves and seats in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the pump make and model, and whether you need the valve, seat, spring, insert or puller head. We confirm the part and the delivery before you order."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-pulsation-dampener-diaphragms-parts",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco pulsation dampener diaphragms and parts?",
+     "a": "Oteco makes most replacement parts for Hydril and Mattco K-10 (10 gallon) and K-20 (20 gallon) pulsation dampeners on the mud pump discharge. The listing has 15 part numbers: diaphragms, stabilizer parts, a gauge, a charging valve, a gasket and a bottom plate."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read the Oteco dampener part numbers IH-OTC-230010 and IH-OTC-230110?",
+     "a": "IH-OTC-230010 is the nitrile (NBR) diaphragm, 0 to 5,000 psi, for the Hydril and Mattco K-20 (20 gallon). IH-OTC-230110 is the same nitrile diaphragm for the K-10 (10 gallon). IH-OTC-230012 is the hydrogenated nitrile (HNBR) K-20 diaphragm, 0 to 7,500 psi."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco diaphragm fits a K-10 and which fits a K-20 dampener?",
+     "a": "The K-10 takes IH-OTC-230110 (nitrile, 0 to 5,000 psi) and the K-20 takes IH-OTC-230010 (nitrile) or IH-OTC-230012 (HNBR, 0 to 7,500 psi). IH-OTC-230085 is a diaphragm for the Continental Emsco PD-55 dampener. Check the dampener model plate before ordering."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco dampener diaphragm do I choose for my working pressure?",
+     "a": "Oteco makes diaphragms for 1,500, 3,000, 5,000 and 7,500 psi service; the part numbers listed here are nitrile (NBR) to 5,000 psi for the K-10 and K-20, and HNBR to 7,500 psi for the K-20. Choose the rating at or above your pump discharge pressure. Send the dampener model and the working pressure and we confirm the part."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure ratings do Oteco K-10 and K-20 diaphragms have?",
+     "a": "Nitrile (NBR) diaphragms are rated 0 to 5,000 psi and hydrogenated nitrile (HNBR) diaphragms 0 to 7,500 psi. The range of the listing is 1,500 to 7,500 psi. The stainless gauge, IH-OTC-230060, reads 0 to 6,000 psi, so it covers the NBR range but not the full HNBR range."
+    },
+    {
+     "slot": "F",
+     "q": "Should I choose an NBR or HNBR Oteco dampener diaphragm?",
+     "a": "Choose nitrile (NBR) for pressures up to 5,000 psi and hydrogenated nitrile (HNBR) for pressures up to 7,500 psi. Oteco moulds the diaphragm in one piece down to the bottom flange, with a metal insert in the bottom so the rubber cannot extrude into the bottom-flange connection."
+    },
+    {
+     "slot": "H",
+     "q": "What other Oteco parts go with a K-20 dampener diaphragm?",
+     "a": "The listing has the bottom plate (IH-OTC-123754, 4-1/16\" 5,000 psi R-39), bottom plate gasket (IH-OTC-230080), brass charging valve with bull plug (IH-OTC-230070) and a 316 stainless 0 to 6,000 psi gauge (IH-OTC-230060). The stabilizer, plate, screw and lock washer are needed only for the 1,500 psi range."
+    },
+    {
+     "slot": "I",
+     "q": "How should an Oteco K-20 dampener be pre-charged?",
+     "a": "Pre-charge the dampener with nitrogen only, to the pressure the pump maker specifies for the operating pressure; never use air or oxygen. Check the pre-charge with the gauge, IH-OTC-230060, before the pump starts, and inspect the diaphragm whenever the bottom plate is removed."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco dampener diaphragm used?",
+     "a": "It sits in a pulsation dampener on the mud pump discharge, smoothing the pressure pulses from the pump. The K-10 holds 10 gallons and the K-20 holds 20 gallons. The listing covers Hydril and Mattco K-10 and K-20 dampeners and the Continental Emsco PD-55. Oteco parts are replacement parts made to fit that equipment."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between the K-10 and K-20 parts in this Oteco listing?",
+     "a": "They are the 10 gallon and 20 gallon dampener sizes, and the diaphragms are different part numbers: IH-OTC-230110 for the K-10 and IH-OTC-230010 for the K-20. Several parts, such as the gauge, the charging valve and the gasket, fit both. The bottom plate listed is for the K-20 only."
+    },
+    {
+     "slot": "L",
+     "q": "Who makes the Oteco pulsation dampener diaphragms and parts?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, so the country of origin is the United States. We are an authorised Oteco distributor for the Middle East. The [Mud Pump Fluid-End Parts shelf](/c/mud-pump-fluid-end-parts) lists the other fluid-end parts, such as the [valves and seats](/p/oteco-mud-pump-valves-seats)."
+    },
+    {
+     "slot": "M",
+     "q": "How do I order an Oteco dampener diaphragm in the UAE?",
+     "a": "We keep Oteco pulsation dampener diaphragms and parts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To [request a quotation](/quote), send the dampener make and model (K-10, K-20 or PD-55), the working pressure and the part number. We confirm the part and the delivery before you order."
+    }
+   ]
+  }
+ ]
+}

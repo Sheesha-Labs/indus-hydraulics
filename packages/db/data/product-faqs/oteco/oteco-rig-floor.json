@@ -1,0 +1,786 @@
+{
+ "family": "oteco-rig-floor",
+ "extraFacts": [],
+ "products": [
+  {
+   "slug": "oteco-double-solid-pipe-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco double solid pipe wipers?",
+     "a": "Oteco double solid pipe wipers are double-thickness, one-piece wipers in 14\", 17\" and 19\" diameters for 2-3/8\" to 6-5/8\" pipe, moulded in Houston with an insert for tear resistance. They strip drilling fluid off the pipe as it is pulled. The listing has 53 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco double solid pipe wiper numbers such as 252173223?",
+     "a": "In the size table the number runs 252, then the wiper diameter (17), then 3 for double solid, then a compound digit and the pipe size: 252173223 is the 17\" double solid in red nitrile for 2-3/8\" pipe, and 252173123 is the same size in black natural rubber. Send the pipe OD and compound and we confirm the number."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco double solid wiper diameters are listed, 14\", 17\" or 19\"?",
+     "a": "Oteco lists double solid wipers in 14\", 17\" and 19\" diameters. The 14\" is listed in black natural rubber from 2-3/8\" to 6-5/8\" pipe, while the 17\" and 19\" also come in red nitrile and, for some sizes, neoprene. Choose the diameter to suit your bushing or table opening."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco double solid pipe wiper do I order for 5\" drill pipe?",
+     "a": "For 5\" pipe Oteco lists 252143150 in 14\" natural rubber, 252173250 in 17\" red nitrile and 252173350 in 17\" neoprene, among others. Choose the diameter, then the compound for your mud. The size table gives every combination, so send the OD and diameter."
+    },
+    {
+     "slot": "F",
+     "q": "Should I choose natural rubber, nitrile or neoprene Oteco double solid pipe wipers?",
+     "a": "Oteco says black natural rubber suits water-based mud and red nitrile (NBR) suits oil-based mud. Neoprene (CR) is listed for some sizes only, for example 5\" pipe in the 17\" and 19\" diameters. Choose by your mud system and confirm the size is offered in that compound."
+    },
+    {
+     "slot": "E",
+     "q": "What pipe sizes do Oteco double solid pipe wipers cover?",
+     "a": "In the double solid table the sizes run from 2-3/8\" through 3\", 3-1/2\", 4\", 4-1/2\", 5\", 5-1/2\", 5-7/8\", 6\" and 6-5/8\". A 7\" size is listed in the split and rap-a-round double wipers. Match the wiper to the pipe OD."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between Oteco double solid and double split pipe wipers?",
+     "a": "A solid wiper is a one-piece moulding, while a split wiper fits round the pipe without pulling the string. Both are double thickness. For split wipers see [Oteco double split pipe wipers](/p/oteco-double-split-pipe-wipers) and for a wrap-and-close design [Oteco double split rap-a-round wipers](/p/oteco-double-split-rap-a-round-pipe-wipers)."
+    },
+    {
+     "slot": "I",
+     "q": "Why use an Oteco pipe wiper when pulling pipe?",
+     "a": "Oteco pipe wipers strip drilling fluid off the pipe as it is pulled, which saves mud, keeps the rig floor clean and safer underfoot, and stops debris falling down the hole. Each is reinforced with an insert moulded into the rubber for tear resistance and bonded for long life."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco double solid pipe wipers used?",
+     "a": "They are used on the rig floor when pulling drill pipe or tubing out of the hole. They complement a mud guard; see [Oteco MG-600 mud guard](/p/oteco-mg-600-mud-guard). Spare wipers are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco double solid pipe wipers made?",
+     "a": "Oteco moulds its pipe wipers in Houston, Texas, USA, from Oteco's own compounds. The country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "H",
+     "q": "What other Oteco wipers sit alongside the double solid range?",
+     "a": "Oteco also makes single hard-core wipers, steel-reinforced handle-bar wipers, oval wipers and kelly wipers. See [Oteco single pipe wipers](/p/oteco-single-pipe-wipers), [Oteco oval and handle-bar wipers](/p/oteco-oval-handle-bar-pipe-wipers) and [Oteco square kelly wipers](/p/oteco-square-kelly-wipers)."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco double solid pipe wipers?",
+     "a": "We keep Oteco double solid pipe wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the wiper diameter, pipe OD and compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-double-split-pipe-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco double split pipe wipers?",
+     "a": "Oteco double split pipe wipers are double-thickness wipers that fit round the pipe without pulling the string, in 14\", 17\" and 19\" diameters for pipe from 2-3/8\" to 7\". They are moulded in Houston with an insert for tear resistance. The listing has 63 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco double split pipe wiper numbers such as 252171223 or 252141123?",
+     "a": "In the size table 252 is followed by the diameter, 14, 17 or 19, then 1 for double split, then a compound digit and the pipe size. 252141123 is the 14\" in black natural rubber for 2-3/8\" pipe and 252171223 is the 17\" in red nitrile for 2-3/8\" pipe."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco double split wiper fits 7\" pipe?",
+     "a": "The 17\" double split in black natural rubber, 252171170, is listed for 7\" pipe. The brochure gives the 17\" double wiper range as reaching 7\", while other diameters stop at 6-5/8\". Check the diameter against your rotary opening."
+    },
+    {
+     "slot": "D",
+     "q": "What diameters and pipe sizes do Oteco double split wipers cover?",
+     "a": "They come in 14\", 17\" and 19\" diameters. The 14\" is listed for 2-3/8\" to 6-5/8\" pipe in natural rubber and in limited nitrile sizes, and the 17\" and 19\" add more nitrile and neoprene sizes, including 5-7/8\". The size table has every combination."
+    },
+    {
+     "slot": "F",
+     "q": "Which compound do I choose for Oteco double split pipe wipers?",
+     "a": "Black natural rubber suits water-based mud and red nitrile (NBR) suits oil-based mud. Neoprene (CR) is listed for some sizes, for example 252171323, 252171328, 252171335 and 252171350 in the 17\" diameter. Confirm the size you need is offered in the compound."
+    },
+    {
+     "slot": "I",
+     "q": "How are split Oteco pipe wipers fitted to the pipe?",
+     "a": "A split wiper fits round the pipe without pulling the string, so it can be changed with pipe in the hole. Oteco says its wipers strip drilling fluid off the pipe as it is pulled, saving mud and keeping the floor clean."
+    },
+    {
+     "slot": "K",
+     "q": "When would I choose a double split wiper rather than a double solid?",
+     "a": "Choose split when the wiper must be fitted without pulling the string; choose solid for a one-piece wiper. See [Oteco double solid pipe wipers](/p/oteco-double-solid-pipe-wipers) for those, and [Oteco double split rap-a-round wipers](/p/oteco-double-split-rap-a-round-pipe-wipers) for the wrap-and-close pattern."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco double split pipe wipers used?",
+     "a": "On the rig floor while pulling pipe, to strip drilling fluid back into the hole. Together with [an Oteco mud guard](/p/oteco-mg-600-mud-guard), they limit mud on the floor. Other wipers are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "E",
+     "q": "Which pipe sizes can Oteco double split wipers handle?",
+     "a": "The double range covers 2-3/8\" to 6-5/8\" pipe, with the 17\" reaching 7\". In the split table that includes 3\", 4\", 5-1/2\", 5-7/8\" and 6\" sizes in natural rubber. Match the pipe OD and wiper diameter to your rotary opening."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco double split pipe wipers made?",
+     "a": "Oteco Inc. moulds its pipe wipers in Houston, Texas, USA, from its own compounds. The country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "Which Oteco pipe wiper types are related to the double split range?",
+     "a": "Oteco makes double solid, double split rap-a-round, single hard-core, oval and handle-bar pipe wipers. See [Oteco single pipe wipers](/p/oteco-single-pipe-wipers) for single wipers and [Oteco oval and handle-bar wipers](/p/oteco-oval-handle-bar-pipe-wipers)."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco double split pipe wipers?",
+     "a": "We keep Oteco double split pipe wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the wiper diameter, pipe OD and compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-double-split-rap-a-round-pipe-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco double split rap-a-round pipe wipers?",
+     "a": "They are double-thickness split wipers that wrap round the pipe and close, in 14\", 17\", 19\" and 22\" diameters, the only Oteco double wiper offered in 22\". The listing has 97 part numbers by diameter, pipe size and compound."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco rap-a-round wiper numbers such as 252172250 or 252222123?",
+     "a": "In the size table 252 is followed by the diameter, 14, 17, 19 or 22, then 2 for rap-a-round, then a compound digit and the pipe size. 252172250 is the 17\" in red nitrile for 5\" pipe, and 252222123 is the 22\" in black natural rubber for 2-3/8\" pipe."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco rap-a-round wipers are available in 22\" diameter?",
+     "a": "Oteco lists the 22\" diameter in rap-a-round only, in natural rubber from 2-3/8\" to 6-5/8\" pipe, in nitrile including 8-3/4\" and 11\" sizes, and in neoprene from 2-3/8\" to 6-5/8\". The 22\" parts start at 252222123."
+    },
+    {
+     "slot": "D",
+     "q": "What pipe sizes do Oteco rap-a-round wipers cover?",
+     "a": "They cover 2-3/8\" to 6-5/8\" pipe, with the 17\" reaching 7\". The size table also lists 3-7/8\" for the 19\" and 22\" diameters, 4-3/4\" and 6-3/4\" in nitrile for the 19\", and 8-3/4\" and 11\" in nitrile for the 22\"."
+    },
+    {
+     "slot": "F",
+     "q": "Which compound do I choose for Oteco rap-a-round pipe wipers?",
+     "a": "Black natural rubber suits water-based mud and red nitrile (NBR) suits oil-based mud; neoprene (CR) is listed for some sizes. The 17\" to 22\" rap-a-round has the widest choice, including neoprene from 2-3/8\" to 6-5/8\" in 22\"."
+    },
+    {
+     "slot": "I",
+     "q": "How do Oteco rap-a-round wipers differ in fitting from solid wipers?",
+     "a": "A rap-a-round wiper wraps round the pipe and closes, so it can be fitted without pulling the string. Oteco reinforces each wiper with a moulded insert for tear resistance and bonds it for long life."
+    },
+    {
+     "slot": "K",
+     "q": "Which Oteco wiper should I choose: rap-a-round or double split?",
+     "a": "Both fit without pulling the string; a rap-a-round wiper wraps round the pipe and closes, while a double split wiper is split to fit round the pipe. See [Oteco double split pipe wipers](/p/oteco-double-split-pipe-wipers) and [Oteco double solid pipe wipers](/p/oteco-double-solid-pipe-wipers) for the other double designs."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco rap-a-round pipe wipers used?",
+     "a": "They are used on the rig floor to wipe drilling fluid off pipe as it is pulled. The larger 19\" and 22\" diameters suit wider openings. For mud collection see [Oteco MG-800 mud guard](/p/oteco-mg-800-mud-guard)."
+    },
+    {
+     "slot": "E",
+     "q": "What is the largest Oteco double wiper diameter?",
+     "a": "The 22\" rap-a-round is the largest double wiper in the Oteco range, and it is listed in rap-a-round only. Other double wipers stop at 19\". Single wipers go to 24\"."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco rap-a-round wipers made?",
+     "a": "Oteco Inc. moulds them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "What other wipers does Oteco list beside rap-a-round?",
+     "a": "Oteco lists double solid, double split, single hard-core, oval, handle-bar and kelly wipers. See [Oteco single pipe wipers](/p/oteco-single-pipe-wipers) and [Oteco hexagonal kelly wipers](/p/oteco-hexagonal-kelly-wipers). Spares are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco double split rap-a-round pipe wipers?",
+     "a": "We keep Oteco double split rap-a-round pipe wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the diameter, pipe OD and compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-single-pipe-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco single pipe wipers, hard core and soft core?",
+     "a": "Oteco single pipe wipers are single-thickness solid wipers, mostly hard core with some soft-core sizes, from 9\" to 24\" diameter, including blind wipers. The listing has 122 part numbers by wiper diameter, pipe size and compound."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco single wiper numbers such as 251170223 or 251090100?",
+     "a": "In the size table 251 is followed by the diameter code (09, 12, 14, 17, 19 or 24), then a compound digit and the pipe size. 251170223 is the 17\" in red nitrile for 2-3/8\" pipe, and 251090100 is the 9\" blind wiper in natural rubber, with no bore."
+    },
+    {
+     "slot": "D",
+     "q": "What diameters do Oteco single pipe wipers come in?",
+     "a": "Oteco lists single hard-core wipers in 9\", 12\", 14\", 17\", 19\" and 24\" diameters. The 9\" and 17\" are also listed as blind wipers. Choose the diameter for your rotary or bushing opening."
+    },
+    {
+     "slot": "D",
+     "q": "What pipe sizes do Oteco single pipe wipers cover?",
+     "a": "They cover 2-3/8\" to 6-5/8\" pipe, plus 1\" in the 12\", 14\" and 17\" diameters, and blind wipers with no bore. The 9\" is limited to 2-3/8\" to 4-1/2\" pipe in the size table."
+    },
+    {
+     "slot": "F",
+     "q": "Which compound should I choose for Oteco single pipe wipers?",
+     "a": "Oteco lists black natural rubber for water-based mud, red nitrile for oil-based mud and neoprene for some sizes, plus a few soft-core natural rubber 9\" parts. The 17\" and 24\" single wipers have the widest choice of compounds."
+    },
+    {
+     "slot": "H",
+     "q": "What is a blind Oteco single pipe wiper?",
+     "a": "A blind wiper has no bore, for example 251090100 in 9\" and 251170200 in 17\" nitrile. It is listed for the 9\" and 17\" diameters."
+    },
+    {
+     "slot": "I",
+     "q": "Why does Oteco give single wipers a hard core?",
+     "a": "Most single wipers in this listing are single-thickness solid with a hard core, reinforced with an insert moulded into the rubber and bonded for long life. The size table also lists some 9\" wipers with a soft core."
+    },
+    {
+     "slot": "K",
+     "q": "How does an Oteco single wiper differ from a double wiper?",
+     "a": "A single wiper is single thickness and one piece; the double wipers are double thickness in 14\", 17\" and 19\". See [Oteco double solid pipe wipers](/p/oteco-double-solid-pipe-wipers) and [Oteco double split pipe wipers](/p/oteco-double-split-pipe-wipers)."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco single pipe wipers used?",
+     "a": "On the rig floor to strip mud off the pipe as it is pulled, which saves mud and keeps the floor clean. Pair them with a mud guard, see [Oteco MG-600 mud guard](/p/oteco-mg-600-mud-guard). Related consumables are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "E",
+     "q": "What is the largest Oteco single pipe wiper?",
+     "a": "The largest single wiper is 24\" in diameter, listed in natural rubber, nitrile and neoprene. Double wipers reach 19\" and the 22\" rap-a-round is listed in rap-a-round only."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco single pipe wipers made?",
+     "a": "Oteco Inc. moulds them in Houston, Texas, USA, from its own compounds, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco single hard-core pipe wipers?",
+     "a": "We keep Oteco single pipe wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the diameter, pipe OD and compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-oval-handle-bar-pipe-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco oval and handle-bar pipe wipers?",
+     "a": "Oteco oval wipers are 17\" by 14\" and steel-reinforced handle-bar wipers are 10\" diameter, with the oval listed for 2-3/8\" to 6-5/8\" pipe and the handle-bar for 2-3/8\" to 4-1/2\". The listing has 17 part numbers, all in black natural rubber."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco oval and handle-bar wiper numbers 253170123 and 254100123?",
+     "a": "253170 is the 17\" × 14\" oval wiper and 254100 is the 10\" steel-reinforced handle-bar wiper, followed by the pipe size: 123 is 2-3/8\", 128 is 2-7/8\" and 130 is 3\". 254100100 is the blind handle-bar wiper with no bore."
+    },
+    {
+     "slot": "D",
+     "q": "What pipe sizes do Oteco oval wipers fit?",
+     "a": "The 17\" × 14\" oval wiper is listed for pipe from 2-3/8\" to 6-5/8\" in black natural rubber, parts 253170123 to 253170166. Handle-bar wipers go to 4-1/2\". Check the pipe OD in the size table."
+    },
+    {
+     "slot": "D",
+     "q": "What pipe sizes do Oteco 10\" handle-bar wipers fit?",
+     "a": "The 10\" steel-reinforced handle-bar wiper is listed for 2-3/8\" to 4-1/2\" pipe, parts 254100123 to 254100145, plus a blind version, 254100100. The brochure range for handle-bar wipers is 2-3/8\" to 4-1/2\"."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco oval and handle-bar wipers made from?",
+     "a": "The listed parts are black natural rubber, which Oteco says suits water-based mud, with steel reinforcement in the handle-bar version. Ask us if you need a nitrile compound for oil-based mud."
+    },
+    {
+     "slot": "I",
+     "q": "What is a handle-bar pipe wiper?",
+     "a": "It is Oteco's 10\" steel-reinforced wiper, listed for 2-3/8\" to 4-1/2\" pipe. The brochure lists it separately from the double and single wipers. Send the pipe OD and we confirm the part."
+    },
+    {
+     "slot": "E",
+     "q": "Does the Oteco brochure give a size range for the oval wiper?",
+     "a": "The brochure shows the oval wiper as on request, while the size table lists 253170123 to 253170166 for 2-3/8\" to 6-5/8\" pipe. Send your pipe OD and application and we confirm the part with Oteco."
+    },
+    {
+     "slot": "K",
+     "q": "How do Oteco oval wipers compare with round double wipers?",
+     "a": "The oval wiper is 17\" × 14\" and is listed only in black natural rubber, while the round double wipers are 14\", 17\" and 19\" and come in several compounds. See [Oteco double solid pipe wipers](/p/oteco-double-solid-pipe-wipers) and [Oteco single pipe wipers](/p/oteco-single-pipe-wipers)."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco oval and handle-bar wipers used?",
+     "a": "On the rig floor, to strip drilling fluid off pipe as it is pulled. They are one of several Oteco wiper styles in [rig floor consumables](/c/rig-floor-consumables). For mud collection see [Oteco MG-600 mud guard](/p/oteco-mg-600-mud-guard)."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco oval and handle-bar wipers made?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "Which Oteco wipers are related to the oval and handle-bar range?",
+     "a": "Oteco makes double solid, double split, rap-a-round and single wipers. See [Oteco double split pipe wipers](/p/oteco-double-split-pipe-wipers) and [Oteco double split rap-a-round wipers](/p/oteco-double-split-rap-a-round-pipe-wipers)."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco oval and handle-bar pipe wipers?",
+     "a": "We keep Oteco oval and handle-bar pipe wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the pipe OD and wiper style, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-square-kelly-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco square kelly wipers, 8-3/8\" and 10\"?",
+     "a": "Oteco square kelly wipers are 8-3/8\" and 10\" OD wipers for square kellys from 2-1/2\" to 6\", with a bonded metal ring, in black natural rubber, red nitrile or neoprene. The listing has 14 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco square kelly wiper numbers such as 255142 and 256136?",
+     "a": "The 255 numbers are the 8-3/8\" square wipers and the 256 numbers the 10\" square wipers, then a size code: 255142 is the 8-3/8\" for a 4-1/4\" square kelly in natural rubber, 255143 is neoprene and 255146 is nitrile. 256136 is the 10\" nitrile for a 3-1/2\" kelly."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco square kelly wiper fits a 3-1/2\" kelly?",
+     "a": "Oteco 255135 is the 8-3/8\" in natural rubber and 256135 the 10\" in natural rubber for a 3-1/2\" square kelly; 256136 is the 10\" in nitrile. Choose the OD and compound for your kelly drive bushing."
+    },
+    {
+     "slot": "D",
+     "q": "What square kelly sizes do Oteco kelly wipers cover?",
+     "a": "They cover 2-1/2\", 3\", 3-1/2\", 4-1/4\" and 5-1/4\" square kellys in both 8-3/8\" and 10\" sizes, and the 10\" also covers 6\". The 4-1/4\" square kelly is listed in natural rubber, neoprene and nitrile in the 8-3/8\"."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco kelly wipers made from?",
+     "a": "Oteco moulds kelly wipers from the same rubber as its pipe wipers and reinforces them with a bonded metal ring. Black natural rubber suits water-based mud and red nitrile suits oil-based mud; neoprene is listed for the 4-1/4\" size."
+    },
+    {
+     "slot": "I",
+     "q": "How tight is an Oteco kelly wiper on the kelly?",
+     "a": "Each wiper interferes 1/2\" with the kelly, so it wipes the flats as the kelly is pulled. That keeps fluid off the floor and extends the life of the kelly drive bushing."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco square kelly wiper used?",
+     "a": "It fits on a square kelly and wipes mud off as the kelly is pulled, which keeps fluid off the rig floor and extends the life of the kelly drive bushing. Related items are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "K",
+     "q": "How do Oteco square and hexagonal kelly wipers differ?",
+     "a": "The square wipers are for square kellys from 2-1/2\" to 6\" and the hexagonal wipers are for hex kellys from 2-1/2\" to 6\". Both come in 8-3/8\" and 10\" OD. See [Oteco hexagonal kelly wipers](/p/oteco-hexagonal-kelly-wipers)."
+    },
+    {
+     "slot": "E",
+     "q": "What outside diameters do Oteco kelly wipers come in?",
+     "a": "They come in 8-3/8\" and 10\" OD. The size table lists seven 8-3/8\" square wipers and seven 10\" square wipers. Match the OD to your kelly bushing."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco kelly wipers made?",
+     "a": "Oteco Inc. moulds them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "What other Oteco wipers go with the square kelly wiper?",
+     "a": "Oteco pipe wipers handle the drill pipe, while the kelly wiper handles the kelly. See [Oteco double solid pipe wipers](/p/oteco-double-solid-pipe-wipers) and [Oteco single pipe wipers](/p/oteco-single-pipe-wipers)."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco square kelly wipers?",
+     "a": "We keep Oteco square kelly wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the kelly size, wiper OD and compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-hexagonal-kelly-wipers",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco hexagonal kelly wipers, 8-3/8\" and 10\"?",
+     "a": "Oteco hexagonal kelly wipers are 8-3/8\" and 10\" OD wipers for hex kellys from 2-1/2\" to 6\", with a bonded metal ring, in black natural rubber, red nitrile or neoprene. The listing has 17 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco hex kelly wiper numbers such as 255248 and 256253?",
+     "a": "The 255 numbers are the 8-3/8\" hex wipers and the 256 numbers are the 10\" hex wipers, then a size code: 255248 is the 8-3/8\" in natural rubber for a 4-27/32\" hex kelly, and 256253 is the 10\" in nitrile for a 5-1/4\" hex kelly."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco hex kelly wiper fits a 4-27/32\" kelly?",
+     "a": "Oteco 255248 is the 8-3/8\" and 256248 the 10\", both in black natural rubber, for a 4-27/32\" hex kelly. Send the kelly size and the bushing opening if you are unsure which OD you need."
+    },
+    {
+     "slot": "D",
+     "q": "What hex kelly sizes do Oteco kelly wipers cover?",
+     "a": "They cover 3\", 3-1/2\", 3-3/4\", 4-1/4\", 4-27/32\" and 5-1/4\" hex kellys in the 8-3/8\" and 10\" OD, with 6\" in the 10\". Nitrile is listed for 3-1/2\", 4-1/4\" and 5-1/4\"."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco hex kelly wipers made from?",
+     "a": "Oteco moulds kelly wipers from the same rubber as its pipe wipers and bonds a metal ring in. Black natural rubber suits water-based mud, red nitrile oil-based mud. Neoprene is described for the range but the hex table lists natural rubber and nitrile."
+    },
+    {
+     "slot": "I",
+     "q": "How should an Oteco hex kelly wiper be sized to the kelly?",
+     "a": "Each wiper interferes 1/2\" with the kelly, so choose the size listed for your kelly across the hex flats. The wipers wipe mud off as the kelly is pulled and extend the life of the kelly drive bushing."
+    },
+    {
+     "slot": "J",
+     "q": "Where is an Oteco hexagonal kelly wiper used?",
+     "a": "On a hexagonal kelly at the rotary, to wipe mud off the kelly as it is pulled, keeping fluid off the floor. Related items are in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "K",
+     "q": "How do Oteco hexagonal and square kelly wipers differ?",
+     "a": "They differ in the kelly shape they fit: hex wipers for hex kellys and square wipers for square kellys, both in 8-3/8\" and 10\". See [Oteco square kelly wipers](/p/oteco-square-kelly-wipers)."
+    },
+    {
+     "slot": "E",
+     "q": "What outside diameters do Oteco hex kelly wipers have?",
+     "a": "The hex kelly wipers are 8-3/8\" and 10\" OD. The 255 numbers are the 8-3/8\" and the 256 numbers the 10\", as listed in the size table."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco hex kelly wipers made?",
+     "a": "Oteco Inc. moulds them in Houston, Texas, USA, from its own compounds. The country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "What other Oteco wipers work with a hex kelly wiper?",
+     "a": "The kelly wiper cleans the kelly, while the pipe wipers clean the drill pipe as it is pulled: see [Oteco double split pipe wipers](/p/oteco-double-split-pipe-wipers) and [Oteco single pipe wipers](/p/oteco-single-pipe-wipers). Send the kelly size and we match the pair."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco hexagonal kelly wipers?",
+     "a": "We keep Oteco hexagonal kelly wipers in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the kelly size and OD, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mg-500-oil-guard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco MG-500 oil guard?",
+     "a": "The Oteco MG-500 is a lightweight hinged oil guard for 1\" to 3-1/2\" tubing, 6-1/4\" wide by 48\" long with a 3\" outlet. It clamps round the pipe at the rotary table and returns fluid through its discharge hose to the mud system. The listing has 20 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco MG-500 part numbers such as 433510 and 433520?",
+     "a": "The 43351x and 43352x numbers are mainly MG-500 complete assemblies, one per tubing size, in neoprene (CR) seals and in nitrile (NBR) respectively. 433510 is the neoprene assembly for 2-3/8\" tubing and 433520 is the nitrile one. 433519 is the guard without hose, elbow or end seals."
+    },
+    {
+     "slot": "D",
+     "q": "Which MG-500 oil guard do I order for 2-7/8\" tubing?",
+     "a": "Oteco 433511 is the complete assembly with neoprene seals for 2-7/8\" OD tubing, 433521 the nitrile one. Complete assemblies are also listed for 1\", 1-1/2\", 2-1/16\", 2-3/8\", 3\" and 3-1/2\" tubing."
+    },
+    {
+     "slot": "D",
+     "q": "What are the MG-500 dimensions and weight?",
+     "a": "The Oteco MG-500 is 6-1/4\" wide by 48\" long, weighs 85 lb (39 kg) and has a 3\" outlet. It is the lightest of the three Oteco guards; the MG-600 is 10-3/4\" by 72-1/4\" and the MG-800 16\" by 72-1/4\"."
+    },
+    {
+     "slot": "F",
+     "q": "What seal material does the MG-500 oil guard use?",
+     "a": "The end and side seals are neoprene (CR), the standard, or nitrile (NBR) for oil-based mud, on a steel body. Oteco lists a complete assembly in each compound for every tubing size."
+    },
+    {
+     "slot": "I",
+     "q": "How does the Oteco MG-500 oil guard work?",
+     "a": "It is hinged and clamps round the pipe at the rotary table when a wet string is pulled, catching the fluid inside the pipe and in the joint as it breaks out. It returns the fluid through its discharge hose to the mud system. That saves drilling fluid and cuts wash-down labour."
+    },
+    {
+     "slot": "H",
+     "q": "Which spare parts fit the Oteco MG-500 oil guard?",
+     "a": "End seal sets, side seals, metal side seal brackets, nut-and-bolt kits, discharge hose and the outlet elbow are listed. See [Oteco mud guard seals and spare parts](/p/oteco-mud-guard-seals-spare-parts)."
+    },
+    {
+     "slot": "K",
+     "q": "How does the MG-500 differ from the MG-600 and MG-800?",
+     "a": "The MG-500 is the lightweight tubing guard at 85 lb (39 kg) with a 3\" outlet. The MG-600 is the full-size guard at 330 lb (150 kg) and the MG-800 the large-capacity guard at 529 lb (240 kg). See [Oteco MG-600 mud guard](/p/oteco-mg-600-mud-guard) and [Oteco MG-800 mud guard](/p/oteco-mg-800-mud-guard)."
+    },
+    {
+     "slot": "J",
+     "q": "Where is the Oteco MG-500 oil guard used?",
+     "a": "On a rig pulling tubing, 1\" to 3-1/2\", it catches the wet string at the rotary table so fluid is not lost across the floor. That keeps the floor safer underfoot. It sits in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "E",
+     "q": "What outlet size does the Oteco MG-500 have?",
+     "a": "The MG-500 has a 3\" outlet, the smallest of the three Oteco guards. The discharge hose and outlet elbow, with or without chain, are in the spares range; see [Oteco mud guard seals and spare parts](/p/oteco-mud-guard-seals-spare-parts)."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco MG-500 made?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco MG-500 oil guard?",
+     "a": "We keep the Oteco MG-500 oil guard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the tubing OD and seal compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mg-600-mud-guard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco MG-600 mud guard?",
+     "a": "The Oteco MG-600 is a full-size hinged mud guard, 10-3/4\" wide by 72-1/4\" long, for 2-3/8\" to 5-1/2\" drill pipe, with a 4\" or 5\" outlet. It catches fluid at the rotary table and returns it through a discharge hose to the mud system. The listing has 32 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco MG-600 part numbers such as 433616 and 433663?",
+     "a": "The MG-600 complete assemblies are listed by outlet, seal compound and pipe OD. 433616 is the 5\" outlet with neoprene seals for 5\" drill pipe, and 433663 is the 4\" outlet with nitrile seals for 5\" drill pipe. 433609 and 433629 are the guard only, without seals."
+    },
+    {
+     "slot": "D",
+     "q": "What are the MG-600 mud guard dimensions and weight?",
+     "a": "The MG-600 is 10-3/4\" wide by 72-1/4\" long and weighs 330 lb (150 kg). It has a 4\" or 5\" outlet. The MG-500 is 85 lb (39 kg) and the MG-800 is 529 lb (240 kg)."
+    },
+    {
+     "slot": "D",
+     "q": "Which MG-600 do I order for 5-1/2\" drill pipe?",
+     "a": "Oteco lists 433617 with a 5\" outlet and neoprene seals, 433627 with a 5\" outlet and nitrile seals, 433628 and 433750 with a 4\" outlet and neoprene seals, and 433664 with a 4\" outlet and nitrile seals, all for 5-1/2\" drill pipe. Choose the outlet and compound."
+    },
+    {
+     "slot": "F",
+     "q": "What seal material does the MG-600 mud guard use?",
+     "a": "The end and side seals are neoprene (CR), the standard, or nitrile (NBR) for oil-based mud, on a steel body. The guard is listed as assemblies for each drill pipe OD in either compound."
+    },
+    {
+     "slot": "E",
+     "q": "What outlet size does the Oteco MG-600 have?",
+     "a": "The MG-600 has a 4\" or 5\" outlet, and Oteco lists assemblies in both. A discharge hose and elbows, with or without chain, are listed in the spares range."
+    },
+    {
+     "slot": "I",
+     "q": "How does the Oteco MG-600 mud guard work?",
+     "a": "It is a hinged guard that clamps round the pipe at the rotary table when a wet string is pulled. It catches the fluid inside the pipe and in the joint as it breaks out and returns it through its discharge hose to the mud system. It saves drilling fluid and cuts wash-down labour."
+    },
+    {
+     "slot": "H",
+     "q": "Which spare parts fit the Oteco MG-600 mud guard?",
+     "a": "Oteco lists end seal sets, side seals, metal side seal brackets, nut-and-bolt kits, a discharge hose and elbows for the MG-600. See [Oteco mud guard seals and spare parts](/p/oteco-mud-guard-seals-spare-parts)."
+    },
+    {
+     "slot": "K",
+     "q": "How does the MG-600 compare with the MG-500 and MG-800?",
+     "a": "The MG-600 sits between the lightweight [MG-500 oil guard](/p/oteco-mg-500-oil-guard) and the large-capacity [MG-800 mud guard](/p/oteco-mg-800-mud-guard). It is 10-3/4\" wide against 6-1/4\" and 16\"."
+    },
+    {
+     "slot": "J",
+     "q": "Where is the Oteco MG-600 mud guard used?",
+     "a": "On a rig pulling drill pipe from 2-3/8\" to 5-1/2\". It keeps fluid off the floor and the floor safer underfoot. It is listed in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco MG-600 made?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco MG-600 mud guard?",
+     "a": "We keep the Oteco MG-600 mud guard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the drill pipe OD, outlet and seal compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mg-800-mud-guard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco MG-800 mud guard?",
+     "a": "The Oteco MG-800 is the large-capacity hinged mud guard, 16\" wide by 72-1/4\" long, with a 6\" outlet, for 2-3/8\" to 7-1/4\" drill pipe. It returns fluid through its discharge hose to the mud system. The listing has 26 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco MG-800 part numbers such as 433817 and 433964?",
+     "a": "433810 to 433818 are complete assemblies in neoprene seals and 433820 to 433828 are nitrile, one per drill pipe OD; 433817 is neoprene for 5-1/2\" pipe. 433964, 433965 and 433968 are the shorty 4' versions with a 4\" fig. 200 outlet. 433806 and 433829 are the guard without seals."
+    },
+    {
+     "slot": "D",
+     "q": "What are the MG-800 dimensions and weight?",
+     "a": "The MG-800 is 16\" wide by 72-1/4\" long, weighs 529 lb (240 kg) and has a 6\" outlet. That makes it the largest of the Oteco guards, ahead of the MG-600 and MG-500."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco MG-800 do I order for 6-5/8\" drill pipe?",
+     "a": "Oteco 433818 is the complete assembly with a 6\" outlet and neoprene seals for 6-5/8\" OD drill pipe, and 433828 is the nitrile one. For 5-7/8\" pipe use 433953 or 433947."
+    },
+    {
+     "slot": "F",
+     "q": "What seal material does the MG-800 mud guard use?",
+     "a": "The end and side seals are neoprene (CR), the standard, or nitrile (NBR) for oil-based mud, on a steel body. The guard is listed as complete assemblies in each compound for each drill pipe OD."
+    },
+    {
+     "slot": "E",
+     "q": "What pipe sizes does the Oteco MG-800 cover?",
+     "a": "The MG-800 covers 2-3/8\" to 7-1/4\" drill pipe, listing complete assemblies for 2-3/8\", 2-7/8\", 3\", 3-1/2\", 4\", 4-1/2\", 5\", 5-1/2\", 5-7/8\" and 6-5/8\". The shorty versions are for 5\", 5-7/8\" with 7\" bottom, and 5-1/2\" with 7-1/4\" bottom."
+    },
+    {
+     "slot": "I",
+     "q": "How does the Oteco MG-800 mud guard work?",
+     "a": "It clamps round the pipe at the rotary table when a wet string is pulled, catches the fluid inside the pipe and in the joint as it breaks out, and returns it through the discharge hose to the mud system. That saves mud and keeps the floor safer underfoot."
+    },
+    {
+     "slot": "H",
+     "q": "Which spare parts fit the Oteco MG-800 mud guard?",
+     "a": "Side seals, metal side seal brackets and nut-and-bolt kits are listed for both the MG-600 and MG-800. See [Oteco mud guard seals and spare parts](/p/oteco-mud-guard-seals-spare-parts) for end seals by pipe OD."
+    },
+    {
+     "slot": "K",
+     "q": "When should I choose the MG-800 rather than the MG-600?",
+     "a": "The MG-800 has a 6\" outlet and goes to 7-1/4\" drill pipe on the shorty at 529 lb (240 kg), while the MG-600 has a 4\" or 5\" outlet for pipe to 5-1/2\" at 330 lb (150 kg). See [Oteco MG-600 mud guard](/p/oteco-mg-600-mud-guard) and [Oteco MG-500 oil guard](/p/oteco-mg-500-oil-guard)."
+    },
+    {
+     "slot": "J",
+     "q": "Where is the Oteco MG-800 mud guard used?",
+     "a": "On a rig pulling larger drill pipe, up to 7-1/4\", where a high-volume return to the mud system is needed. It is listed in [rig floor consumables](/c/rig-floor-consumables)."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco MG-800 made?",
+     "a": "Oteco Inc. makes it in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco MG-800 mud guard?",
+     "a": "We keep the Oteco MG-800 mud guard in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the drill pipe OD and seal compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-mud-guard-seals-spare-parts",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco mud guard and oil guard seals and spare parts?",
+     "a": "They are replacement end seals, side seals, metal seal brackets, nut-and-bolt kits, discharge hoses and outlet elbows for Oteco MG-500, MG-600 and MG-800 guards. The listing has 189 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco end seal part numbers such as 433530 or 433640?",
+     "a": "The end seal sets are numbered by guard and compound: 43353x are MG-500 neoprene, 43354x are MG-500 nitrile, 43363x are MG-600 neoprene and 43364x are MG-600 nitrile, with the last digit varying with the pipe size. 433530 is the MG-500 neoprene set for 2-3/8\" pipe."
+    },
+    {
+     "slot": "D",
+     "q": "Which end seals fit the MG-600 for 5\" drill pipe?",
+     "a": "Oteco 433636 is the neoprene end seal set for the MG-600 and 5\" OD pipe. End seals are moulded to the pipe OD and sold as a set or as right-hand and left-hand halves, in neoprene (CR) or nitrile (NBR)."
+    },
+    {
+     "slot": "D",
+     "q": "What side seals does Oteco list for the mud guards?",
+     "a": "Oteco lists side seal sets 301534 (MG-600 neoprene), 301535 (MG-600 nitrile), 301536 (MG-500 neoprene) and 301537 (MG-500 nitrile), plus 433602 for the MG-600 and MG-800 in neoprene. Match the set to the guard model and compound."
+    },
+    {
+     "slot": "F",
+     "q": "What seal compounds are the Oteco mud guard spares made from?",
+     "a": "End and side seals are neoprene (CR), the standard, or nitrile (NBR) for oil-based mud. Metal brackets and nut-and-bolt kits make up the hardware."
+    },
+    {
+     "slot": "H",
+     "q": "Which discharge hose and elbow fit the Oteco mud guards?",
+     "a": "Oteco lists a discharge hose for the MG-500 as 433503 and for the MG-600 as 433603, in standard and long lengths, and elbows with or without chain: 433504 and 433505 for the MG-500, 433604 and 433605 for the MG-600."
+    },
+    {
+     "slot": "I",
+     "q": "How are Oteco mud guard end seals sized?",
+     "a": "They are moulded to the pipe OD and sold as a set or as right-hand and left-hand halves. Tell us the guard model and the pipe OD, and the compound, and we confirm the part. The guards themselves are [the MG-600](/p/oteco-mg-600-mud-guard) and others."
+    },
+    {
+     "slot": "J",
+     "q": "When do rigs replace the end seals of a mud guard?",
+     "a": "When the seals no longer close on the pipe and fluid leaks past, or when a different pipe OD is run. Check the guard model and pipe OD before ordering. See [the MG-500 oil guard](/p/oteco-mg-500-oil-guard) for tubing."
+    },
+    {
+     "slot": "E",
+     "q": "Do the Oteco spares cover all three guards?",
+     "a": "Yes: MG-500, MG-600 and MG-800 are covered. Some parts are shared, for example the side seals 433602, metal side seal brackets 433606 and nut-and-bolt kits 433607 fit both the MG-600 and MG-800. See [the MG-800](/p/oteco-mg-800-mud-guard)."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco mud guard seals made?",
+     "a": "Oteco Inc. moulds them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "K",
+     "q": "Do the MG-500 and MG-600 share end seals?",
+     "a": "No, end seals are listed by guard and pipe OD. For example, 433530 is the MG-500 set for 2-3/8\" pipe and 433630 the MG-600 set for the same pipe. Order by guard model."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco mud guard seals and spare parts?",
+     "a": "We keep Oteco mud guard seals and spares in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the guard model, the pipe OD and the compound, or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-balancing-tong-pull-back-straps",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco elevator balancing straps and tong pull-back straps?",
+     "a": "Oteco balancing straps keep a centre-latch elevator balanced in any position, and the tong pull-back strap acts as a rubber spring that pulls a manual tong back to the side of the floor after each make-up or break-out. The listing has 8 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco strap part numbers such as 280101 and 280121?",
+     "a": "280101 is the balancing strap assembly, with strap, clamp and U-bolt, for links up to 2-3/4\", and 280105 is the same for links up to 3-1/2\". 280102 is the strap only, 280103 and 280104 are the 2-3/4\" clamp and U-bolt, 280106 and 280107 the 3-1/2\" ones, and 280121 is the tong pull-back strap."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco balancing strap fits 2-3/4\" elevator links?",
+     "a": "Oteco 280101 is the assembly for links up to 2-3/4\", for 150, 250 and 350 ton bales. The 2-3/4\" clamp is 280103 and the U-bolt with nuts and lock washers is 280104, with 4-1/4\" centres. 280102 is the strap on its own."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco balancing strap fits 3-1/2\" links and 500 ton bales?",
+     "a": "Oteco 280105 is the assembly for links up to 3-1/2\", for 500 ton bales. The 3-1/2\" clamp is 280106 and the U-bolt with nuts and lock washers is 280107, with 5-1/4\" centres. The clamps and U-bolts are sold separately from the strap."
+    },
+    {
+     "slot": "E",
+     "q": "What is the maximum pull of the Oteco tong pull-back strap?",
+     "a": "Maximum pull is 500 lb tensile. The strap needs only a slight stretch to work. It acts as a rubber spring to return a manual tong."
+    },
+    {
+     "slot": "F",
+     "q": "What are Oteco balancing straps and pull-back straps made from?",
+     "a": "The strap is rubber, with a steel clamp and U-bolt on the balancing assembly and a twisted metal loop that hooks to the elevator handle. The pull-back strap is a rubber strap rated 500 lb tensile."
+    },
+    {
+     "slot": "I",
+     "q": "How do I install an Oteco tong pull-back strap?",
+     "a": "Hook one loop over the tong line pin at the end of the tong arm and tie the other to a fixed point with a mooring line. The strap needs only a slight stretch to work. It then pulls the manual tong back to the side of the floor after each make-up or break-out."
+    },
+    {
+     "slot": "I",
+     "q": "How is an Oteco balancing strap fitted to a centre-latch elevator?",
+     "a": "The strap clamps to the link with a U-bolt, and its twisted metal loop hooks to the elevator handle. Choose the clamp for 2-3/4\" or 3-1/2\" links. It keeps the elevator balanced in any position, making it easier to handle and less tiring for the floor crew."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco balancing and pull-back straps used?",
+     "a": "On the rig floor: the balancing strap on centre-latch elevators and the pull-back strap on manual tongs. They are among the [rig floor consumables](/c/rig-floor-consumables) we stock."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco balancing straps made?",
+     "a": "Oteco Inc. makes them in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East; [contact us](/contact) for documentation."
+    },
+    {
+     "slot": "H",
+     "q": "Are balancing straps sold with the clamp and U-bolt?",
+     "a": "The assemblies 280101 and 280105 include strap, clamp and U-bolt, while 280102 is the strap only, less clamp and U-bolt assembly. Clamps and U-bolts are also sold singly for replacement."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco balancing straps and tong pull-back straps?",
+     "a": "We keep Oteco balancing straps and tong pull-back straps in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the link size or the Oteco part number, and [request a quote](/quote)."
+    }
+   ]
+  }
+ ]
+}
