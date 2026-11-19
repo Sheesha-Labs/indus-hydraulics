@@ -1,0 +1,1778 @@
+{
+  "family": "brass-bsp-metric-adapters",
+  "extraFacts": [
+    {
+      "fact": "A hose or tube size code is in sixteenths of an inch: 02 is 1/8 inch, 03 is 3/16 inch, 04 is 1/4 inch, 05 is 5/16 inch, 06 is 3/8 inch, 08 is 1/2 inch, 10 is 5/8 inch, 12 is 3/4 inch, 14 is 7/8 inch and 16 is 1 inch.",
+      "source": "SAE J517 / SAE J1131 dash-size convention used across brass fitting makers"
+    },
+    {
+      "fact": "Brass tube fittings, couplings and hose barbs are normally classified under HS subheading 7412.20 (copper-alloy tube or pipe fittings); the importer's customs broker has the final say.",
+      "source": "WCO Harmonized System, heading 7412"
+    },
+    {
+      "fact": "ISO 7-1 covers pipe threads where the pressure-tight joint is made on the thread, such as the BSP taper (R) thread; ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread; ASME B1.20.1 is the general-purpose NPT pipe thread standard; ASME B1.20.3 covers Dryseal pipe threads, including NPTF; SAE J512 covers automotive tube fittings including flareless compression.",
+      "source": "ISO 7-1, ISO 228-1, ASME B1.20.1, ASME B1.20.3, SAE J512"
+    },
+    {
+      "fact": "SAE J2494 covers push-to-connect fittings for air brake tubing and FMVSS 571.106 covers brake hoses and their end fittings; the maker of the DOT push-in fittings states compliance with both. SAE J844 covers nonmetallic air brake tubing. DOT-approved air brake fittings are for compressed-air brake systems.",
+      "source": "SAE J2494, SAE J844, FMVSS 571.106 (as stated on the listing)"
+    }
+  ],
+  "products": [
+    {
+      "slug": "aluminium-sealing-washer-for-bsp-threads",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is an aluminium sealing washer for BSP threads used for?",
+          "a": "The Aluminium Sealing Washer for BSP Threads seals a BSP parallel-thread male stud against the face of the port, under the hex of the fitting. It is an aluminium washer in 4 sizes, from 1/8\" to 1/2\", and it is the seal that a parallel G thread needs, because that thread does not seal on its flanks."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8400-06 on the aluminium BSP sealing washer?",
+          "a": "The base number IH-BR-8400 is followed by one size code, in sixteenths of an inch: 06 is 3/8\" BSPP (G3/8-19). The same rule holds on every row, so IH-BR-8400-02 is 1/8\" BSPP (G1/8-28), IH-BR-8400-04 is 1/4\" and IH-BR-8400-08 is 1/2\" (G1/2-14)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the aluminium sealing washer for BSP threads come in?",
+          "a": "The washer comes in 4 part numbers, one for each of 1/8\" (IH-BR-8400-02), 1/4\" (IH-BR-8400-04), 3/8\" (IH-BR-8400-06) and 1/2\" (IH-BR-8400-08) BSPP. Larger washers are quoted on request; send the thread size of the stud."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right BSP sealing washer for a male stud?",
+          "a": "Read the thread size on the stud, for example G3/8-19, and choose the row with the same size: IH-BR-8400-06 for G3/8-19. The washer sits under the hex of the stud, so its inside diameter must clear the thread and its outside diameter must fit the port face."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure can an aluminium BSP sealing washer hold?",
+          "a": "The manufacturer publishes no pressure rating for the washer, because the joint rating belongs to the fitting and port. Tell us the medium, working pressure and temperature and we confirm the washer before you order the Aluminium Sealing Washer for BSP Threads."
+        },
+        {
+          "slot": "F",
+          "q": "Why is the BSP sealing washer made of aluminium?",
+          "a": "The listing gives the material as aluminium. A soft aluminium washer crushes slightly between the stud hex and the port face to seal, and it is replaced each time the joint is remade. Tell us the fluid if aluminium could be a problem."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard applies to the aluminium washer for BSP threads?",
+          "a": "The listing names ISO 228-1, which covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. The washer is the seal for that kind of thread. Ask us for any other document you need and we ask the maker."
+        },
+        {
+          "slot": "H",
+          "q": "Which fittings use the aluminium sealing washer for BSP threads?",
+          "a": "Any BSP parallel-thread male stud that seals on the port face, such as a BSPP male adapter. See the [brass BSPP male × BSPP male adapter](/p/brass-bspp-male-x-bspp-male-adapter) and the [brass BSP and metric adapters shelf](/c/brass-bsp-metric-adapters); the washer is not for taper (BSPT) threads, which seal on the thread."
+        },
+        {
+          "slot": "I",
+          "q": "How should an aluminium BSP sealing washer be fitted?",
+          "a": "Fit a new washer under the hex of the BSPP male stud every time the joint is made, seat it flat on the port face and tighten until the washer is crushed evenly. Do not reuse a flattened washer; our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp) explains parallel and taper BSP threads."
+        },
+        {
+          "slot": "K",
+          "q": "Aluminium washer or a bonded seal on a BSPP joint: which should I use?",
+          "a": "The listing's seal options for a BSPP joint are a bonded seal, a washer or a cone seat; this aluminium washer is the washer option, sold loose in 4 sizes. A bonded seal combines the metal ring and rubber, and a cone seat seals on the fitting itself, so choose by what the stud was made for."
+        },
+        {
+          "slot": "L",
+          "q": "Can the aluminium BSP sealing washer be exported from Dubai?",
+          "a": "Yes. We export the Aluminium Sealing Washer for BSP Threads from Dubai, UAE to the GCC, Africa, Asia and beyond, with the invoice and packing list prepared for your destination. The listing states no country of origin, so it is confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the aluminium sealing washer for BSP threads in stock in Dubai?",
+          "a": "Yes, the Aluminium Sealing Washer for BSP Threads is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-BR-8400-04 or IH-BR-8400-08) and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female 90° Elbow used for?",
+          "a": "The Brass BSP Female 90° Elbow is a 90° elbow in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has two BSP female ends. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8075-06-06 on the Brass BSP Female 90° Elbow?",
+          "a": "The base number IH-BR-8075 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSP, 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8075-02-02 is 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female 90° Elbow come in?",
+          "a": "The Brass BSP Female 90° Elbow has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8075-02-02, IH-BR-8075-06-06, IH-BR-8075-12-12 (1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) to 3/4\" BSP (3/4-14) x 3/4\" BSP (3/4-14)). End 1: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female 90° Elbow?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8075-06-06 is 3/8\" BSP (3/8-19) x 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female 90° Elbow. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female 90° Elbow made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female 90° Elbow."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Brass BSP Female 90° Elbow follow a standard?",
+          "a": "The listing names no standard for the Brass BSP Female 90° Elbow, only its material, form and sizes. If your project needs a specific standard or a material certificate, say so in the enquiry and we ask the maker what it can document for IH-BR-8075-06-06."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female 90° Elbow connect to?",
+          "a": "The Brass BSP Female 90° Elbow connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female 90° Elbow be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female 90° Elbow: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female 90° Elbow differ from Brass BSPT Male 90° Elbow?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female 90° Elbow is a 90° elbow in brass. See [Brass BSPT Male 90° Elbow](/p/brass-bspt-male-90-elbow) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female 90° Elbow be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female 90° Elbow from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female 90° Elbow in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSP Female 90° Elbow in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8075-02-02 or IH-BR-8075-12-12) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-cap",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female Cap used for?",
+          "a": "The Brass BSP Female Cap is a cap in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has one BSP female end. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8033-06 on the Brass BSP Female Cap?",
+          "a": "The base number IH-BR-8033 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8033-02 is 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female Cap come in?",
+          "a": "The Brass BSP Female Cap has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8033-02, IH-BR-8033-06, IH-BR-8033-12 (1/8\" BSP (1/8-28) to 3/4\" BSP (3/4-14))."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female Cap?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8033-06 is 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female Cap rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female Cap. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female Cap made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female Cap."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Brass BSP Female Cap follow a standard?",
+          "a": "The listing names no standard for the Brass BSP Female Cap, only its material, form and sizes. If your project needs a specific standard or a material certificate, say so in the enquiry and we ask the maker what it can document for IH-BR-8033-06."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female Cap connect to?",
+          "a": "The Brass BSP Female Cap connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female Cap be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female Cap: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female Cap differ from Brass BSP Female Cross?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female Cap is a cap in brass. See [Brass BSP Female Cross](/p/brass-bsp-female-cross) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female Cap be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female Cap from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female Cap in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSP Female Cap in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8033-02 or IH-BR-8033-12) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-coupling",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female Coupling used for?",
+          "a": "The Brass BSP Female Coupling is a straight coupling in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has two BSP female ends. The listing has 6 part numbers, 1/8\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8043-08-08 on the Brass BSP Female Coupling?",
+          "a": "The base number IH-BR-8043 is followed by one code per end, each a size in sixteenths of an inch. Here 08 is 1/2\" BSP, 08 is 1/2\" BSP. The same rule holds on every row of this listing, so IH-BR-8043-02-02 is 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female Coupling come in?",
+          "a": "The Brass BSP Female Coupling has 6 part numbers, 1/8\" to 2\". For example IH-BR-8043-02-02, IH-BR-8043-08-04, IH-BR-8043-32-32 (1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) to 2\" BSP (2-11) x 2\" BSP (2-11)). End 1: BSP, 1/8\" to 2\" (1/8-28 to 2-11); End 2: BSP, 1/8\" to 2\" (1/8-28 to 2-11)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female Coupling?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8043-08-08 is 1/2\" BSP (1/2-14) x 1/2\" BSP (1/2-14). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female Coupling rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female Coupling. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female Coupling made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female Coupling."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Brass BSP Female Coupling follow a standard?",
+          "a": "The listing names no standard for the Brass BSP Female Coupling, only its material, form and sizes. If your project needs a specific standard or a material certificate, say so in the enquiry and we ask the maker what it can document for IH-BR-8043-08-08."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female Coupling connect to?",
+          "a": "The Brass BSP Female Coupling connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female Coupling be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female Coupling: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female Coupling differ from Brass BSP Female Cap?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female Coupling is a straight coupling in brass. See [Brass BSP Female Cap](/p/brass-bsp-female-cap) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female Coupling be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female Coupling from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female Coupling in stock in Dubai?",
+          "a": "Yes. The Brass BSP Female Coupling sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8043-02-02 or IH-BR-8043-32-32) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-cross",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female Cross used for?",
+          "a": "The Brass BSP Female Cross is a cross in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has four BSP female ends. The listing has 1 part number, 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8097-04-04-04-04 on the Brass BSP Female Cross?",
+          "a": "The base number IH-BR-8097 is followed by the size codes 04-04-04-04, one per end. This listing has one part number, so every row of the size table is 1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19). Quote the part number in full."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female Cross come in?",
+          "a": "The Brass BSP Female Cross has 1 part number, 1/4\". For example IH-BR-8097-04-04-04-04 (1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19)). End 1: BSP, 1/4\" (1/4-19); End 2: BSP, 1/4\" (1/4-19); End 3: BSP, 1/4\" (1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female Cross?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8097-04-04-04-04 is 1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSP (1/4-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female Cross rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female Cross. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female Cross made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female Cross."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Brass BSP Female Cross follow a standard?",
+          "a": "The listing names no standard for the Brass BSP Female Cross, only its material, form and sizes. If your project needs a specific standard or a material certificate, say so in the enquiry and we ask the maker what it can document for IH-BR-8097-04-04-04-04."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female Cross connect to?",
+          "a": "The Brass BSP Female Cross connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female Cross be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female Cross: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female Cross differ from Brass BSP Female Cap?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female Cross is a cross in brass. See [Brass BSP Female Cap](/p/brass-bsp-female-cap) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female Cross be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female Cross from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female Cross in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSP Female Cross in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8097-04-04-04-04) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female Tee used for?",
+          "a": "The Brass BSP Female Tee is a tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has three BSP female ends. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8085-06-06-06 on the Brass BSP Female Tee?",
+          "a": "The base number IH-BR-8085 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSP, 06 is 3/8\" BSP, 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8085-02-02-02 is 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female Tee come in?",
+          "a": "The Brass BSP Female Tee has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8085-02-02-02, IH-BR-8085-06-06-06, IH-BR-8085-12-12-12 (1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) to 3/4\" BSP (3/4-14) x 3/4\" BSP (3/4-14) x 3/4\" BSP (3/4-14)). End 1: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14); End 3: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8085-06-06-06 is 3/8\" BSP (3/8-19) x 3/8\" BSP (3/8-19) x 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Does the Brass BSP Female Tee follow a standard?",
+          "a": "The listing names no standard for the Brass BSP Female Tee, only its material, form and sizes. If your project needs a specific standard or a material certificate, say so in the enquiry and we ask the maker what it can document for IH-BR-8085-06-06-06."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female Tee connect to?",
+          "a": "The Brass BSP Female Tee connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female Tee differ from Brass BSPT Male Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female Tee is a tee in brass. See [Brass BSPT Male Tee](/p/brass-bspt-male-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female Tee in stock in Dubai?",
+          "a": "Yes. The Brass BSP Female Tee sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8085-02-02-02 or IH-BR-8085-12-12-12) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-x-bspt-male-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female × BSPT Male Branch Tee used for?",
+          "a": "The Brass BSP Female × BSPT Male Branch Tee is a branch tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSP female, BSP female and BSPT male. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8093-06-06-06 on the Brass BSP Female × BSPT Male Branch Tee?",
+          "a": "The base number IH-BR-8093 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSP, 06 is 3/8\" BSP, 06 is 3/8\" BSPT. The same rule holds on every row of this listing, so IH-BR-8093-02-02-02 is 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female × BSPT Male Branch Tee come in?",
+          "a": "The Brass BSP Female × BSPT Male Branch Tee has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8093-02-02-02, IH-BR-8093-06-06-06, IH-BR-8093-12-12-12 (1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSPT (R1/8-28) to 3/4\" BSP (3/4-14) x 3/4\" BSP (3/4-14) x 3/4\" BSPT (R3/4-14)). End 1: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14); End 3: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female × BSPT Male Branch Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8093-06-06-06 is 3/8\" BSP (3/8-19) x 3/8\" BSP (3/8-19) x 3/8\" BSPT (R3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female × BSPT Male Branch Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female × BSPT Male Branch Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female × BSPT Male Branch Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female × BSPT Male Branch Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSP Female × BSPT Male Branch Tee follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSP Female × BSPT Male Branch Tee. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female × BSPT Male Branch Tee connect to?",
+          "a": "The Brass BSP Female × BSPT Male Branch Tee connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. On its other end it takes a female BSP port; the taper (R) thread seals on the thread flanks. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female × BSPT Male Branch Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female × BSPT Male Branch Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female × BSPT Male Branch Tee differ from Brass BSP Female × BSPT Male Run Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female × BSPT Male Branch Tee is a branch tee in brass. See [Brass BSP Female × BSPT Male Run Tee](/p/brass-bsp-female-x-bspt-male-run-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female × BSPT Male Branch Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female × BSPT Male Branch Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female × BSPT Male Branch Tee in stock in Dubai?",
+          "a": "Yes. The Brass BSP Female × BSPT Male Branch Tee sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8093-02-02-02 or IH-BR-8093-12-12-12) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-x-bspt-male-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female × BSPT Male Run Tee used for?",
+          "a": "The Brass BSP Female × BSPT Male Run Tee is a run tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male, BSP female and BSP female. The listing has 4 part numbers, 1/8\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8095-06-06-06 on the Brass BSP Female × BSPT Male Run Tee?",
+          "a": "The base number IH-BR-8095 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 06 is 3/8\" BSP, 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8095-02-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female × BSPT Male Run Tee come in?",
+          "a": "The Brass BSP Female × BSPT Male Run Tee has 4 part numbers, 1/8\" to 1/2\". For example IH-BR-8095-02-02-02, IH-BR-8095-06-06-06, IH-BR-8095-08-08-08 (1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28) x 1/8\" BSP (1/8-28) to 1/2\" BSPT (R1/2-14) x 1/2\" BSP (1/2-14) x 1/2\" BSP (1/2-14)). End 1: BSPT, 1/8\" to 1/2\" (R1/8-28 to R1/2-14); End 2: BSP, 1/8\" to 1/2\" (1/8-28 to 1/2-14); End 3: BSP, 1/8\" to 1/2\" (1/8-28 to 1/2-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female × BSPT Male Run Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8095-06-06-06 is 3/8\" BSPT (R3/8-19) x 3/8\" BSP (3/8-19) x 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female × BSPT Male Run Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female × BSPT Male Run Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female × BSPT Male Run Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female × BSPT Male Run Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSP Female × BSPT Male Run Tee follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSP Female × BSPT Male Run Tee. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female × BSPT Male Run Tee connect to?",
+          "a": "The Brass BSP Female × BSPT Male Run Tee connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. On its other end it takes a female BSP port; the taper (R) thread seals on the thread flanks. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female × BSPT Male Run Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female × BSPT Male Run Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female × BSPT Male Run Tee differ from Brass BSP Female × BSPT Male Branch Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female × BSPT Male Run Tee is a run tee in brass. See [Brass BSP Female × BSPT Male Branch Tee](/p/brass-bsp-female-x-bspt-male-branch-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female × BSPT Male Run Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female × BSPT Male Run Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female × BSPT Male Run Tee in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSP Female × BSPT Male Run Tee in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8095-02-02-02 or IH-BR-8095-08-08-08) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bsp-female-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSP Female × NPT Female Adapter used for?",
+          "a": "The Brass BSP Female × NPT Female Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSP female and NPT female. The listing has 9 part numbers, 1/8\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8044-08-04 on the Brass BSP Female × NPT Female Adapter?",
+          "a": "The base number IH-BR-8044 is followed by one code per end, each a size in sixteenths of an inch. Here 08 is 1/2\" BSP, 04 is 1/4\" NPT. The same rule holds on every row of this listing, so IH-BR-8044-02-02 is 1/8\" BSP (1/8-28) x 1/8\" NPT (1/8-27)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSP Female × NPT Female Adapter come in?",
+          "a": "The Brass BSP Female × NPT Female Adapter has 9 part numbers, 1/8\" to 1-1/2\". For example IH-BR-8044-02-02, IH-BR-8044-08-04, IH-BR-8044-24-24 (1/8\" BSP (1/8-28) x 1/8\" NPT (1/8-27) to 1-1/2\" BSP (1-1/2-11) x 1-1/2\" NPT (1-1/2-11.5)). End 1: BSP, 1/8\" to 1-1/2\" (1/8-28 to 1-1/2-11); End 2: NPT, 1/8\" to 1-1/2\" (1/8-27 to 1-1/2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSP Female × NPT Female Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8044-08-04 is 1/2\" BSP (1/2-14) x 1/4\" NPT (1/4-18). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSP Female × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSP Female × NPT Female Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSP Female × NPT Female Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSP Female × NPT Female Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSP Female × NPT Female Adapter follow?",
+          "a": "The listing names ASME B1.20.1 for the Brass BSP Female × NPT Female Adapter. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSP Female × NPT Female Adapter connect to?",
+          "a": "The Brass BSP Female × NPT Female Adapter connects to a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. On its other end it takes a male NPT pipe nipple, plug or adapter. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSP Female × NPT Female Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass BSP Female × NPT Female Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSP Female × NPT Female Adapter differ from Brass BSPP Male × NPT Male Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSP Female × NPT Female Adapter is a straight adapter in brass. See [Brass BSPP Male × NPT Male Adapter](/p/brass-bspp-male-x-npt-male-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSP Female × NPT Female Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSP Female × NPT Female Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSP Female × NPT Female Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSP Female × NPT Female Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8044-02-02 or IH-BR-8044-24-24) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspp-countersunk-sealed-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPP Countersunk Sealed Plug used for?",
+          "a": "The Brass BSPP Countersunk Sealed Plug is a plug in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has one BSPP male end. The listing has 4 part numbers, 1/8\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8028-06 on the Brass BSPP Countersunk Sealed Plug?",
+          "a": "The base number IH-BR-8028 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPP. The same rule holds on every row of this listing, so IH-BR-8028-02 is 1/8\" BSPP (G1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPP Countersunk Sealed Plug come in?",
+          "a": "The Brass BSPP Countersunk Sealed Plug has 4 part numbers, 1/8\" to 1/2\". For example IH-BR-8028-02, IH-BR-8028-06, IH-BR-8028-08 (1/8\" BSPP (G1/8-28) to 1/2\" BSPP (G1/2-14))."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPP Countersunk Sealed Plug?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8028-06 is 3/8\" BSPP (G3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPP Countersunk Sealed Plug rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPP Countersunk Sealed Plug. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPP Countersunk Sealed Plug made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPP Countersunk Sealed Plug."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPP Countersunk Sealed Plug follow?",
+          "a": "The listing names ISO 228-1 for the Brass BSPP Countersunk Sealed Plug. ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPP Countersunk Sealed Plug connect to?",
+          "a": "The Brass BSPP Countersunk Sealed Plug connects to a mating part of the same thread and size. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPP Countersunk Sealed Plug be installed?",
+          "a": "Check each thread form before fitting the Brass BSPP Countersunk Sealed Plug: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPP Countersunk Sealed Plug differ from Brass BSPT Countersunk Plug?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPP Countersunk Sealed Plug is a plug in brass. See [Brass BSPT Countersunk Plug](/p/brass-bspt-countersunk-plug) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPP Countersunk Sealed Plug be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPP Countersunk Sealed Plug from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPP Countersunk Sealed Plug in stock in Dubai?",
+          "a": "Yes, the Brass BSPP Countersunk Sealed Plug is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-BR-8028-02 or IH-BR-8028-08) and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspp-male-x-bsp-female-bushing",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPP Male × BSP Female Bushing used for?",
+          "a": "The Brass BSPP Male × BSP Female Bushing is a bushing in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPP male and BSP female. The listing has 16 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8039-06-08 on the Brass BSPP Male × BSP Female Bushing?",
+          "a": "The base number IH-BR-8039 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPP, 08 is 1/2\" BSP. The same rule holds on every row of this listing, so IH-BR-8039-02-02 is 1/8\" BSPP (G1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPP Male × BSP Female Bushing come in?",
+          "a": "The Brass BSPP Male × BSP Female Bushing has 16 part numbers, 1/8\" to 3/4\". For example IH-BR-8039-02-02, IH-BR-8039-06-08, IH-BR-8039-12-08 (1/8\" BSPP (G1/8-28) x 1/8\" BSP (1/8-28) to 3/4\" BSPP (G3/4-14) x 1/2\" BSP (1/2-14)). End 1: BSPP, 1/8\" to 3/4\" (G1/8-28 to G3/4-14); End 2: BSP, 1/8\" to 1/2\" (1/8-28 to 1/2-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPP Male × BSP Female Bushing?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8039-06-08 is 3/8\" BSPP (G3/8-19) x 1/2\" BSP (1/2-14). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPP Male × BSP Female Bushing rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPP Male × BSP Female Bushing. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPP Male × BSP Female Bushing made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPP Male × BSP Female Bushing."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPP Male × BSP Female Bushing follow?",
+          "a": "The listing names ISO 228-1 for the Brass BSPP Male × BSP Female Bushing. ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPP Male × BSP Female Bushing connect to?",
+          "a": "The Brass BSPP Male × BSP Female Bushing connects to a female BSP parallel port, sealed by a bonded seal, washer or cone seat and not on the thread. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPP Male × BSP Female Bushing be installed?",
+          "a": "Check each thread form before fitting the Brass BSPP Male × BSP Female Bushing: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPP Male × BSP Female Bushing differ from Brass BSPT Male × BSP Female Run Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPP Male × BSP Female Bushing is a bushing in brass. See [Brass BSPT Male × BSP Female Run Tee](/p/brass-bspt-male-x-bsp-female-run-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPP Male × BSP Female Bushing be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPP Male × BSP Female Bushing from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPP Male × BSP Female Bushing in stock in Dubai?",
+          "a": "Yes. The Brass BSPP Male × BSP Female Bushing sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8039-02-02 or IH-BR-8039-12-08) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspp-male-x-bspp-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPP Male × BSPP Male Adapter used for?",
+          "a": "The Brass BSPP Male × BSPP Male Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has two BSPP male ends. The listing has 14 part numbers, 1/8\" to 1-1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8000-08-06 on the Brass BSPP Male × BSPP Male Adapter?",
+          "a": "The base number IH-BR-8000 is followed by one code per end, each a size in sixteenths of an inch. Here 08 is 1/2\" BSPP, 06 is 3/8\" BSPP. The same rule holds on every row of this listing, so IH-BR-8000-02-02 is 1/8\" BSPP (G1/8-28) x 1/8\" BSPP (G1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPP Male × BSPP Male Adapter come in?",
+          "a": "The Brass BSPP Male × BSPP Male Adapter has 14 part numbers, 1/8\" to 1-1/2\". For example IH-BR-8000-02-02, IH-BR-8000-08-04, IH-BR-8000-24-20 (1/8\" BSPP (G1/8-28) x 1/8\" BSPP (G1/8-28) to 1-1/2\" BSPP (G1-1/2-11) x 1-1/4\" BSPP (G1-1/4-11)). End 1: BSPP, 1/8\" to 1-1/2\" (G1/8-28 to G1-1/2-11); End 2: BSPP, 1/8\" to 1-1/4\" (G1/8-28 to G1-1/4-11)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPP Male × BSPP Male Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8000-08-06 is 1/2\" BSPP (G1/2-14) x 3/8\" BSPP (G3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPP Male × BSPP Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPP Male × BSPP Male Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPP Male × BSPP Male Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPP Male × BSPP Male Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPP Male × BSPP Male Adapter follow?",
+          "a": "The listing names ISO 228-1 for the Brass BSPP Male × BSPP Male Adapter. ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPP Male × BSPP Male Adapter connect to?",
+          "a": "The Brass BSPP Male × BSPP Male Adapter connects to a female BSP parallel port, sealed by a bonded seal, washer or cone seat and not on the thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPP Male × BSPP Male Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass BSPP Male × BSPP Male Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPP Male × BSPP Male Adapter differ from Brass BSPT Male × BSP Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPP Male × BSPP Male Adapter is a straight adapter in brass. See [Brass BSPT Male × BSP Female Adapter](/p/brass-bspt-male-x-bsp-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPP Male × BSPP Male Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPP Male × BSPP Male Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPP Male × BSPP Male Adapter in stock in Dubai?",
+          "a": "Yes, the Brass BSPP Male × BSPP Male Adapter is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-BR-8000-02-02 or IH-BR-8000-24-20) and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspp-male-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPP Male × NPT Male Adapter used for?",
+          "a": "The Brass BSPP Male × NPT Male Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPP male and NPT male. The listing has 5 part numbers, 1/4\" to 2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8007-06-06 on the Brass BSPP Male × NPT Male Adapter?",
+          "a": "The base number IH-BR-8007 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPP, 06 is 3/8\" NPT. The same rule holds on every row of this listing, so IH-BR-8007-04-04 is 1/4\" BSPP (G1/4-19) x 1/4\" NPT (1/4-18)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPP Male × NPT Male Adapter come in?",
+          "a": "The Brass BSPP Male × NPT Male Adapter has 5 part numbers, 1/4\" to 2\". For example IH-BR-8007-04-04, IH-BR-8007-06-06, IH-BR-8007-32-32 (1/4\" BSPP (G1/4-19) x 1/4\" NPT (1/4-18) to 2\" BSPP (G2-11) x 2\" NPT (2-11.5)). End 1: BSPP, 1/4\" to 2\" (G1/4-19 to G2-11); End 2: NPT, 1/4\" to 2\" (1/4-18 to 2-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPP Male × NPT Male Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8007-06-06 is 3/8\" BSPP (G3/8-19) x 3/8\" NPT (3/8-18). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPP Male × NPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPP Male × NPT Male Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPP Male × NPT Male Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPP Male × NPT Male Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPP Male × NPT Male Adapter follow?",
+          "a": "The listing names ISO 228-1, ASME B1.20.1 for the Brass BSPP Male × NPT Male Adapter. ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPP Male × NPT Male Adapter connect to?",
+          "a": "The Brass BSPP Male × NPT Male Adapter connects to a female BSP parallel port, sealed by a bonded seal, washer or cone seat and not on the thread. On its other end it takes a female NPT port, which seals on the thread with sealant or tape. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPP Male × NPT Male Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass BSPP Male × NPT Male Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPP Male × NPT Male Adapter differ from Brass BSPT Male × NPT Male Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPP Male × NPT Male Adapter is a straight adapter in brass. See [Brass BSPT Male × NPT Male Adapter](/p/brass-bspt-male-x-npt-male-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPP Male × NPT Male Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPP Male × NPT Male Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPP Male × NPT Male Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSPP Male × NPT Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8007-04-04 or IH-BR-8007-32-32) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-countersunk-plug",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Countersunk Plug used for?",
+          "a": "The Brass BSPT Countersunk Plug is a plug in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has one BSPT male end. The listing has 6 part numbers, 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8030CSP-08 on the Brass BSPT Countersunk Plug?",
+          "a": "The base number IH-BR-8030CSP is followed by one code per end, each a size in sixteenths of an inch. Here 08 is 1/2\" BSPT. The same rule holds on every row of this listing, so IH-BR-8030CSP-02 is 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Countersunk Plug come in?",
+          "a": "The Brass BSPT Countersunk Plug has 6 part numbers, 1/8\" to 1\". For example IH-BR-8030CSP-02, IH-BR-8030CSP-06, IH-BR-8030CSP-16 (1/8\" BSPT (R1/8-28) to 1\" BSPT (R1-11))."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Countersunk Plug?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8030CSP-08 is 1/2\" BSPT (R1/2-14). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Countersunk Plug rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Countersunk Plug. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Countersunk Plug made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Countersunk Plug."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Countersunk Plug follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Countersunk Plug. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Countersunk Plug connect to?",
+          "a": "The Brass BSPT Countersunk Plug connects to a mating part of the same thread and size. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Countersunk Plug be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Countersunk Plug: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Countersunk Plug differ from Brass BSPP Countersunk Sealed Plug?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Countersunk Plug is a plug in brass. See [Brass BSPP Countersunk Sealed Plug](/p/brass-bspp-countersunk-sealed-plug) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Countersunk Plug be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Countersunk Plug from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Countersunk Plug in stock in Dubai?",
+          "a": "Yes. We keep the Brass BSPT Countersunk Plug in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8030CSP-02 or IH-BR-8030CSP-16) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male 90° Elbow used for?",
+          "a": "The Brass BSPT Male 90° Elbow is a 90° elbow in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has two BSPT male ends. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8055-06-06 on the Brass BSPT Male 90° Elbow?",
+          "a": "The base number IH-BR-8055 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 06 is 3/8\" BSPT. The same rule holds on every row of this listing, so IH-BR-8055-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male 90° Elbow come in?",
+          "a": "The Brass BSPT Male 90° Elbow has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8055-02-02, IH-BR-8055-06-06, IH-BR-8055-12-12 (1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28) to 3/4\" BSPT (R3/4-14) x 3/4\" BSPT (R3/4-14)). End 1: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14); End 2: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male 90° Elbow?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8055-06-06 is 3/8\" BSPT (R3/8-19) x 3/8\" BSPT (R3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male 90° Elbow. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male 90° Elbow made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male 90° Elbow."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male 90° Elbow follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male 90° Elbow. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male 90° Elbow connect to?",
+          "a": "The Brass BSPT Male 90° Elbow connects to a female BSP port; the taper (R) thread seals on the thread flanks. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male 90° Elbow be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male 90° Elbow: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male 90° Elbow differ from Brass BSP Female 90° Elbow?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male 90° Elbow is a 90° elbow in brass. See [Brass BSP Female 90° Elbow](/p/brass-bsp-female-90-elbow) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male 90° Elbow be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male 90° Elbow from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male 90° Elbow in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male 90° Elbow in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8055-02-02 or IH-BR-8055-12-12) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male Tee used for?",
+          "a": "The Brass BSPT Male Tee is a tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. It has three BSPT male ends. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8080-06-06-06 on the Brass BSPT Male Tee?",
+          "a": "The base number IH-BR-8080 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 06 is 3/8\" BSPT, 06 is 3/8\" BSPT. The same rule holds on every row of this listing, so IH-BR-8080-02-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male Tee come in?",
+          "a": "The Brass BSPT Male Tee has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8080-02-02-02, IH-BR-8080-06-06-06, IH-BR-8080-12-12-12 (1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28) to 3/4\" BSPT (R3/4-14) x 3/4\" BSPT (R3/4-14) x 3/4\" BSPT (R3/4-14)). End 1: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14); End 2: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14); End 3: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8080-06-06-06 is 3/8\" BSPT (R3/8-19) x 3/8\" BSPT (R3/8-19) x 3/8\" BSPT (R3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male Tee follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male Tee. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male Tee connect to?",
+          "a": "The Brass BSPT Male Tee connects to a female BSP port; the taper (R) thread seals on the thread flanks. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male Tee differ from Brass BSP Female Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male Tee is a tee in brass. See [Brass BSP Female Tee](/p/brass-bsp-female-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male Tee in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male Tee in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8080-02-02-02 or IH-BR-8080-12-12-12) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-bsp-female-90-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × BSP Female 90° Elbow used for?",
+          "a": "The Brass BSPT Male × BSP Female 90° Elbow is a 90° elbow in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male and BSP female. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8060-06-06 on the Brass BSPT Male × BSP Female 90° Elbow?",
+          "a": "The base number IH-BR-8060 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8060-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × BSP Female 90° Elbow come in?",
+          "a": "The Brass BSPT Male × BSP Female 90° Elbow has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8060-02-02, IH-BR-8060-06-06, IH-BR-8060-12-12 (1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28) to 3/4\" BSPT (R3/4-14) x 3/4\" BSP (3/4-14)). End 1: BSPT, 1/8\" to 3/4\" (R1/8-28 to R3/4-14); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × BSP Female 90° Elbow?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8060-06-06 is 3/8\" BSPT (R3/8-19) x 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × BSP Female 90° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × BSP Female 90° Elbow. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × BSP Female 90° Elbow made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × BSP Female 90° Elbow."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × BSP Female 90° Elbow follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male × BSP Female 90° Elbow. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × BSP Female 90° Elbow connect to?",
+          "a": "The Brass BSPT Male × BSP Female 90° Elbow connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × BSP Female 90° Elbow be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × BSP Female 90° Elbow: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × BSP Female 90° Elbow differ from Brass BSPT Male × BSPT Female 45° Elbow?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × BSP Female 90° Elbow is a 90° elbow in brass. See [Brass BSPT Male × BSPT Female 45° Elbow](/p/brass-bspt-male-x-bspt-female-45-elbow) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × BSP Female 90° Elbow be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × BSP Female 90° Elbow from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × BSP Female 90° Elbow in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male × BSP Female 90° Elbow in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8060-02-02 or IH-BR-8060-12-12) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-bsp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × BSP Female Adapter used for?",
+          "a": "The Brass BSPT Male × BSP Female Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male and BSP female. The listing has 12 part numbers, 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8038-06-04 on the Brass BSPT Male × BSP Female Adapter?",
+          "a": "The base number IH-BR-8038 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 04 is 1/4\" BSP. The same rule holds on every row of this listing, so IH-BR-8038-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × BSP Female Adapter come in?",
+          "a": "The Brass BSPT Male × BSP Female Adapter has 12 part numbers, 1/8\" to 1\". For example IH-BR-8038-02-02, IH-BR-8038-06-04, IH-BR-8038-16-12 (1/8\" BSPT (R1/8-28) x 1/8\" BSP (1/8-28) to 1\" BSPT (R1-11) x 3/4\" BSP (3/4-14)). End 1: BSPT, 1/8\" to 1\" (R1/8-28 to R1-11); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × BSP Female Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8038-06-04 is 3/8\" BSPT (R3/8-19) x 1/4\" BSP (1/4-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × BSP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × BSP Female Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × BSP Female Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × BSP Female Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × BSP Female Adapter follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male × BSP Female Adapter. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × BSP Female Adapter connect to?",
+          "a": "The Brass BSPT Male × BSP Female Adapter connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × BSP Female Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × BSP Female Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × BSP Female Adapter differ from Brass NPT Male × BSP Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × BSP Female Adapter is a straight adapter in brass. See [Brass NPT Male × BSP Female Adapter](/p/brass-npt-male-x-bsp-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × BSP Female Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × BSP Female Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × BSP Female Adapter in stock in Dubai?",
+          "a": "Yes, the Brass BSPT Male × BSP Female Adapter is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times. Share the part numbers (for example IH-BR-8038-02-02 or IH-BR-8038-16-12) and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-bsp-female-branch-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × BSP Female Branch Tee used for?",
+          "a": "The Brass BSPT Male × BSP Female Branch Tee is a branch tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male, BSPT male and BSP female. The listing has 1 part number, 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8087-04-04-04 on the Brass BSPT Male × BSP Female Branch Tee?",
+          "a": "The base number IH-BR-8087 is followed by one code per end, each a size in sixteenths of an inch. Here 04 is 1/4\" BSPT, 04 is 1/4\" BSPT, 04 is 1/4\" BSP. The same rule holds on every row of this listing, so IH-BR-8087-04-04-04 is 1/4\" BSPT (R1/4-19) x 1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × BSP Female Branch Tee come in?",
+          "a": "The Brass BSPT Male × BSP Female Branch Tee has 1 part number, 1/4\". For example IH-BR-8087-04-04-04 (1/4\" BSPT (R1/4-19) x 1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19)). End 1: BSPT, 1/4\" (R1/4-19); End 2: BSPT, 1/4\" (R1/4-19); End 3: BSP, 1/4\" (1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × BSP Female Branch Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8087-04-04-04 is 1/4\" BSPT (R1/4-19) x 1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × BSP Female Branch Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × BSP Female Branch Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × BSP Female Branch Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × BSP Female Branch Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × BSP Female Branch Tee follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male × BSP Female Branch Tee. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × BSP Female Branch Tee connect to?",
+          "a": "The Brass BSPT Male × BSP Female Branch Tee connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × BSP Female Branch Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × BSP Female Branch Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × BSP Female Branch Tee differ from Brass BSPT Male × BSP Female Run Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × BSP Female Branch Tee is a branch tee in brass. See [Brass BSPT Male × BSP Female Run Tee](/p/brass-bspt-male-x-bsp-female-run-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × BSP Female Branch Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × BSP Female Branch Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × BSP Female Branch Tee in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male × BSP Female Branch Tee in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8087-04-04-04) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-bsp-female-run-tee",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × BSP Female Run Tee used for?",
+          "a": "The Brass BSPT Male × BSP Female Run Tee is a run tee in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male, BSP female and BSPT male. The listing has 1 part number, 1/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8090-04-04-04 on the Brass BSPT Male × BSP Female Run Tee?",
+          "a": "The base number IH-BR-8090 is followed by one code per end, each a size in sixteenths of an inch. Here 04 is 1/4\" BSPT, 04 is 1/4\" BSP, 04 is 1/4\" BSPT. The same rule holds on every row of this listing, so IH-BR-8090-04-04-04 is 1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSPT (R1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × BSP Female Run Tee come in?",
+          "a": "The Brass BSPT Male × BSP Female Run Tee has 1 part number, 1/4\". For example IH-BR-8090-04-04-04 (1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSPT (R1/4-19)). End 1: BSPT, 1/4\" (R1/4-19); End 2: BSP, 1/4\" (1/4-19); End 3: BSPT, 1/4\" (R1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × BSP Female Run Tee?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8090-04-04-04 is 1/4\" BSPT (R1/4-19) x 1/4\" BSP (1/4-19) x 1/4\" BSPT (R1/4-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × BSP Female Run Tee rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × BSP Female Run Tee. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × BSP Female Run Tee made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × BSP Female Run Tee."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × BSP Female Run Tee follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male × BSP Female Run Tee. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × BSP Female Run Tee connect to?",
+          "a": "The Brass BSPT Male × BSP Female Run Tee connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × BSP Female Run Tee be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × BSP Female Run Tee: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × BSP Female Run Tee differ from Brass BSPT Male × BSP Female Branch Tee?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × BSP Female Run Tee is a run tee in brass. See [Brass BSPT Male × BSP Female Branch Tee](/p/brass-bspt-male-x-bsp-female-branch-tee) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × BSP Female Run Tee be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × BSP Female Run Tee from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × BSP Female Run Tee in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male × BSP Female Run Tee in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8090-04-04-04) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-bspt-female-45-elbow",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × BSPT Female 45° Elbow used for?",
+          "a": "The Brass BSPT Male × BSPT Female 45° Elbow is a 45° elbow in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male and BSPT female. The listing has 1 part number, 1/8\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8047-02-02 on the Brass BSPT Male × BSPT Female 45° Elbow?",
+          "a": "The base number IH-BR-8047 is followed by one code per end, each a size in sixteenths of an inch. Here 02 is 1/8\" BSPT, 02 is 1/8\" BSPT. The same rule holds on every row of this listing, so IH-BR-8047-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × BSPT Female 45° Elbow come in?",
+          "a": "The Brass BSPT Male × BSPT Female 45° Elbow has 1 part number, 1/8\". For example IH-BR-8047-02-02 (1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28)). End 1: BSPT, 1/8\" (R1/8-28); End 2: BSPT, 1/8\" (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × BSPT Female 45° Elbow?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8047-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" BSPT (R1/8-28). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × BSPT Female 45° Elbow rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × BSPT Female 45° Elbow. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × BSPT Female 45° Elbow made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × BSPT Female 45° Elbow."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × BSPT Female 45° Elbow follow?",
+          "a": "The listing names ISO 7-1 for the Brass BSPT Male × BSPT Female 45° Elbow. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × BSPT Female 45° Elbow connect to?",
+          "a": "The Brass BSPT Male × BSPT Female 45° Elbow connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass BSP and metric adapters](/c/brass-bsp-metric-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × BSPT Female 45° Elbow be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × BSPT Female 45° Elbow: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × BSPT Female 45° Elbow differ from Brass BSPT Male × BSP Female 90° Elbow?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × BSPT Female 45° Elbow is a 45° elbow in brass. See [Brass BSPT Male × BSP Female 90° Elbow](/p/brass-bspt-male-x-bsp-female-90-elbow) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × BSPT Female 45° Elbow be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × BSPT Female 45° Elbow from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × BSPT Female 45° Elbow in stock in Dubai?",
+          "a": "Yes. The Brass BSPT Male × BSPT Female 45° Elbow sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8047-02-02) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-bspt-male-x-npt-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass BSPT Male × NPT Male Adapter used for?",
+          "a": "The Brass BSPT Male × NPT Male Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are BSPT male and NPT male. The listing has 7 part numbers, 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8008-06-06 on the Brass BSPT Male × NPT Male Adapter?",
+          "a": "The base number IH-BR-8008 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" BSPT, 06 is 3/8\" NPT. The same rule holds on every row of this listing, so IH-BR-8008-02-02 is 1/8\" BSPT (R1/8-28) x 1/8\" NPT (1/8-27)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass BSPT Male × NPT Male Adapter come in?",
+          "a": "The Brass BSPT Male × NPT Male Adapter has 7 part numbers, 1/8\" to 1\". For example IH-BR-8008-02-02, IH-BR-8008-06-06, IH-BR-8008-16-16 (1/8\" BSPT (R1/8-28) x 1/8\" NPT (1/8-27) to 1\" BSPT (R1-11) x 1\" NPT (1-11.5)). End 1: BSPT, 1/8\" to 1\" (R1/8-28 to R1-11); End 2: NPT, 1/8\" to 1\" (1/8-27 to 1-11.5)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass BSPT Male × NPT Male Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8008-06-06 is 3/8\" BSPT (R3/8-19) x 3/8\" NPT (3/8-18). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass BSPT Male × NPT Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass BSPT Male × NPT Male Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass BSPT Male × NPT Male Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass BSPT Male × NPT Male Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass BSPT Male × NPT Male Adapter follow?",
+          "a": "The listing names ISO 7-1, ASME B1.20.1 for the Brass BSPT Male × NPT Male Adapter. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass BSPT Male × NPT Male Adapter connect to?",
+          "a": "The Brass BSPT Male × NPT Male Adapter connects to a female BSP port; the taper (R) thread seals on the thread flanks. On its other end it takes a female NPT port, which seals on the thread with sealant or tape. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass BSPT Male × NPT Male Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass BSPT Male × NPT Male Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass BSPT Male × NPT Male Adapter differ from Brass BSPP Male × NPT Male Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass BSPT Male × NPT Male Adapter is a straight adapter in brass. See [Brass BSPP Male × NPT Male Adapter](/p/brass-bspp-male-x-npt-male-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass BSPT Male × NPT Male Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass BSPT Male × NPT Male Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass BSPT Male × NPT Male Adapter in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass BSPT Male × NPT Male Adapter in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8008-02-02 or IH-BR-8008-16-16) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-jic-37-male-x-bspp-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass JIC 37° Male × BSPP Male Adapter used for?",
+          "a": "The Brass JIC 37° Male × BSPP Male Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are 37° JIC male and BSPP male. The listing has 2 part numbers, 3/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8005-12-12 on the Brass JIC 37° Male × BSPP Male Adapter?",
+          "a": "The base number IH-BR-8005 is followed by one code per end, each a size in sixteenths of an inch. Here 12 is 3/4\" JIC 37°, 12 is 3/4\" BSPP. The same rule holds on every row of this listing, so IH-BR-8005-06-04 is 3/8\" JIC 37° (9/16-18) x 1/4\" BSPP (G1/4-19)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass JIC 37° Male × BSPP Male Adapter come in?",
+          "a": "The Brass JIC 37° Male × BSPP Male Adapter has 2 part numbers, 3/8\" to 3/4\". For example IH-BR-8005-06-04, IH-BR-8005-12-12 (3/8\" JIC 37° (9/16-18) x 1/4\" BSPP (G1/4-19) to 3/4\" JIC 37° (1-1/16-12) x 3/4\" BSPP (G3/4-14)). End 1: 37° JIC, 3/8\" to 3/4\" (9/16-18 to 1-1/16-12); End 2: BSPP, 1/4\" to 3/4\" (G1/4-19 to G3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass JIC 37° Male × BSPP Male Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8005-12-12 is 3/4\" JIC 37° (1-1/16-12) x 3/4\" BSPP (G3/4-14). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass JIC 37° Male × BSPP Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass JIC 37° Male × BSPP Male Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass JIC 37° Male × BSPP Male Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass JIC 37° Male × BSPP Male Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass JIC 37° Male × BSPP Male Adapter follow?",
+          "a": "The listing names SAE J514, ISO 8434-2, ISO 228-1 for the Brass JIC 37° Male × BSPP Male Adapter. ISO 228-1 covers pipe threads where the joint is not made on the thread, such as the BSP parallel (G) thread. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass JIC 37° Male × BSPP Male Adapter connect to?",
+          "a": "The Brass JIC 37° Male × BSPP Male Adapter connects to a male JIC 37° flare fitting. On its other end it takes a female BSP parallel port, sealed by a bonded seal, washer or cone seat and not on the thread. Matching parts are on our [JIC adapters](/c/jic-adapters) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass JIC 37° Male × BSPP Male Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass JIC 37° Male × BSPP Male Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass JIC 37° Male × BSPP Male Adapter differ from Brass BSPP Male × BSPP Male Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass JIC 37° Male × BSPP Male Adapter is a straight adapter in brass. See [Brass BSPP Male × BSPP Male Adapter](/p/brass-bspp-male-x-bspp-male-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass JIC 37° Male × BSPP Male Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass JIC 37° Male × BSPP Male Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass JIC 37° Male × BSPP Male Adapter in stock in Dubai?",
+          "a": "Yes. We keep the Brass JIC 37° Male × BSPP Male Adapter in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers (for example IH-BR-8005-06-04 or IH-BR-8005-12-12) and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "brass-metric-male-x-npt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass Metric Male × NPT Female Adapter used for?",
+          "a": "The Brass Metric Male × NPT Female Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are metric male and NPT female. The listing has 2 part numbers, 14 mm."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Brass Metric Male × NPT Female Adapter?",
+          "a": "Each part number is the base number IH-BR-8235 plus size codes. IH-BR-8235-14-02 is 14 mm metric x 1/8\" NPT (1/8-27), and IH-BR-8235-14-04 is 14 mm metric x 1/4\" NPT (1/4-18). The Sizes tab gives the size on every end; quote the part number in full when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass Metric Male × NPT Female Adapter come in?",
+          "a": "The Brass Metric Male × NPT Female Adapter has 2 part numbers, 14 mm. For example IH-BR-8235-14-02, IH-BR-8235-14-04 (14 mm metric x 1/8\" NPT (1/8-27) to 14 mm metric x 1/4\" NPT (1/4-18)). End 1: metric, 14 mm; End 2: NPT, 1/8\" to 1/4\" (1/8-27 to 1/4-18)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass Metric Male × NPT Female Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8235-14-04 is 14 mm metric x 1/4\" NPT (1/4-18). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass Metric Male × NPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass Metric Male × NPT Female Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass Metric Male × NPT Female Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass Metric Male × NPT Female Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass Metric Male × NPT Female Adapter follow?",
+          "a": "The listing names ASME B1.20.1 for the Brass Metric Male × NPT Female Adapter. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass Metric Male × NPT Female Adapter connect to?",
+          "a": "The Brass Metric Male × NPT Female Adapter connects to a metric port; the diameter is given but not the pitch, so confirm the pitch. On its other end it takes a male NPT pipe nipple, plug or adapter. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass Metric Male × NPT Female Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass Metric Male × NPT Female Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass Metric Male × NPT Female Adapter differ from Brass NPT Male × BSPT Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass Metric Male × NPT Female Adapter is a straight adapter in brass. See [Brass NPT Male × BSPT Female Adapter](/p/brass-npt-male-x-bspt-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass Metric Male × NPT Female Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass Metric Male × NPT Female Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass Metric Male × NPT Female Adapter in stock in Dubai?",
+          "a": "Yes. The Brass Metric Male × NPT Female Adapter sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8235-14-02 or IH-BR-8235-14-04) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-npt-male-x-bsp-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass NPT Male × BSP Female Adapter used for?",
+          "a": "The Brass NPT Male × BSP Female Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are NPT male and BSP female. The listing has 5 part numbers, 1/8\" to 3/4\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8037-06-06 on the Brass NPT Male × BSP Female Adapter?",
+          "a": "The base number IH-BR-8037 is followed by one code per end, each a size in sixteenths of an inch. Here 06 is 3/8\" NPT, 06 is 3/8\" BSP. The same rule holds on every row of this listing, so IH-BR-8037-02-02 is 1/8\" NPT (1/8-27) x 1/8\" BSP (1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass NPT Male × BSP Female Adapter come in?",
+          "a": "The Brass NPT Male × BSP Female Adapter has 5 part numbers, 1/8\" to 3/4\". For example IH-BR-8037-02-02, IH-BR-8037-06-06, IH-BR-8037-12-12 (1/8\" NPT (1/8-27) x 1/8\" BSP (1/8-28) to 3/4\" NPT (3/4-14) x 3/4\" BSP (3/4-14)). End 1: NPT, 1/8\" to 3/4\" (1/8-27 to 3/4-14); End 2: BSP, 1/8\" to 3/4\" (1/8-28 to 3/4-14)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass NPT Male × BSP Female Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8037-06-06 is 3/8\" NPT (3/8-18) x 3/8\" BSP (3/8-19). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass NPT Male × BSP Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass NPT Male × BSP Female Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass NPT Male × BSP Female Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass NPT Male × BSP Female Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass NPT Male × BSP Female Adapter follow?",
+          "a": "The listing names ASME B1.20.1 for the Brass NPT Male × BSP Female Adapter. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass NPT Male × BSP Female Adapter connect to?",
+          "a": "The Brass NPT Male × BSP Female Adapter connects to a female NPT port, which seals on the thread with sealant or tape. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass NPT Male × BSP Female Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass NPT Male × BSP Female Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass NPT Male × BSP Female Adapter differ from Brass NPT Male × BSPT Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass NPT Male × BSP Female Adapter is a straight adapter in brass. See [Brass NPT Male × BSPT Female Adapter](/p/brass-npt-male-x-bspt-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass NPT Male × BSP Female Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass NPT Male × BSP Female Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass NPT Male × BSP Female Adapter in stock in Dubai?",
+          "a": "Yes. Our warehouse in Dubai, UAE keeps the Brass NPT Male × BSP Female Adapter in stock, and we ship worldwide with the best lead times. Put the part numbers (for example IH-BR-8037-02-02 or IH-BR-8037-12-12) and quantities in an enquiry on [the contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-npt-male-x-bspt-female-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass NPT Male × BSPT Female Adapter used for?",
+          "a": "The Brass NPT Male × BSPT Female Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are NPT male and BSPT female. The listing has 6 part numbers, 1/8\" to 1\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part number IH-BR-8037T-08-08 on the Brass NPT Male × BSPT Female Adapter?",
+          "a": "The base number IH-BR-8037T is followed by one code per end, each a size in sixteenths of an inch. Here 08 is 1/2\" NPT, 08 is 1/2\" BSPT. The same rule holds on every row of this listing, so IH-BR-8037T-02-02 is 1/8\" NPT (1/8-27) x 1/8\" BSPT (R1/8-28)."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass NPT Male × BSPT Female Adapter come in?",
+          "a": "The Brass NPT Male × BSPT Female Adapter has 6 part numbers, 1/8\" to 1\". For example IH-BR-8037T-02-02, IH-BR-8037T-06-06, IH-BR-8037T-16-16 (1/8\" NPT (1/8-27) x 1/8\" BSPT (R1/8-28) to 1\" NPT (1-11.5) x 1\" BSPT (R1-11)). End 1: NPT, 1/8\" to 1\" (1/8-27 to 1-11.5); End 2: BSPT, 1/8\" to 1\" (R1/8-28 to R1-11)."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass NPT Male × BSPT Female Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8037T-08-08 is 1/2\" NPT (1/2-14) x 1/2\" BSPT (R1/2-14). Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass NPT Male × BSPT Female Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass NPT Male × BSPT Female Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass NPT Male × BSPT Female Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass NPT Male × BSPT Female Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass NPT Male × BSPT Female Adapter follow?",
+          "a": "The listing names ASME B1.20.1, ISO 7-1 for the Brass NPT Male × BSPT Female Adapter. ISO 7-1 covers pipe threads where the joint is made on the thread, such as the BSP taper (R) thread. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass NPT Male × BSPT Female Adapter connect to?",
+          "a": "The Brass NPT Male × BSPT Female Adapter connects to a female NPT port, which seals on the thread with sealant or tape. On its other end it takes a male BSP fitting; the female BSP thread is not stated as parallel or taper, so confirm the mating thread. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass NPT Male × BSPT Female Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass NPT Male × BSPT Female Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass NPT Male × BSPT Female Adapter differ from Brass NPT Male × BSP Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass NPT Male × BSPT Female Adapter is a straight adapter in brass. See [Brass NPT Male × BSP Female Adapter](/p/brass-npt-male-x-bsp-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass NPT Male × BSPT Female Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass NPT Male × BSPT Female Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass NPT Male × BSPT Female Adapter in stock in Dubai?",
+          "a": "Yes. The Brass NPT Male × BSPT Female Adapter sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8037T-02-02 or IH-BR-8037T-16-16) and quantities via [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "brass-npt-male-x-metric-male-adapter",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Brass NPT Male × Metric Male Adapter used for?",
+          "a": "The Brass NPT Male × Metric Male Adapter is a straight adapter in brass for joining BSP and metric ports to NPT and JIC threads on air, water, fuel and low-pressure oil lines. Its ends are NPT male and metric male. The listing has 2 part numbers, 1/8\" to 1/2\"."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Brass NPT Male × Metric Male Adapter?",
+          "a": "Each part number is the base number IH-BR-8607 plus size codes. IH-BR-8607-02-10 is 1/8\" NPT (1/8-27) x 10 mm metric, and IH-BR-8607-08-16 is 1/2\" NPT (1/2-14) x 16 mm metric. The Sizes tab gives the size on every end; quote the part number in full when you order."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Brass NPT Male × Metric Male Adapter come in?",
+          "a": "The Brass NPT Male × Metric Male Adapter has 2 part numbers, 1/8\" to 1/2\". For example IH-BR-8607-02-10, IH-BR-8607-08-16 (1/8\" NPT (1/8-27) x 10 mm metric to 1/2\" NPT (1/2-14) x 16 mm metric). End 1: NPT, 1/8\" to 1/2\" (1/8-27 to 1/2-14); End 2: metric, 10 mm to 16 mm."
+        },
+        {
+          "slot": "D",
+          "q": "How do I pick the right size of the Brass NPT Male × Metric Male Adapter?",
+          "a": "Match each end to the thread on the part it joins, in size and in form: a taper thread cannot be swapped for a parallel one. For example IH-BR-8607-08-16 is 1/2\" NPT (1/2-14) x 16 mm metric. Where the listing does not say parallel or taper, check the port before ordering; our [guide on what to send for a fittings quote](/blog/what-to-send-for-a-fittings-quote) lists what helps."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure and temperature is the Brass NPT Male × Metric Male Adapter rated for?",
+          "a": "The manufacturer publishes no pressure rating for this family, so there is no figure to quote for the Brass NPT Male × Metric Male Adapter. Tell us the medium, working pressure and temperature and we confirm the fitting before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Brass NPT Male × Metric Male Adapter made of?",
+          "a": "The body is brass. Brass suits air, water and fuel lines but not strong acids or ammonia. Ask us if you need another metal for the Brass NPT Male × Metric Male Adapter."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Brass NPT Male × Metric Male Adapter follow?",
+          "a": "The listing names ASME B1.20.1 for the Brass NPT Male × Metric Male Adapter. ASME B1.20.1 is the general-purpose NPT pipe thread standard. Say which certificate or declaration you need and we ask the maker what it can supply."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Brass NPT Male × Metric Male Adapter connect to?",
+          "a": "The Brass NPT Male × Metric Male Adapter connects to a female NPT port, which seals on the thread with sealant or tape. On its other end it takes a metric port; the diameter is given but not the pitch, so confirm the pitch. Matching parts are on our [brass NPTF pipe fittings](/c/brass-nptf-pipe-fittings) shelf."
+        },
+        {
+          "slot": "I",
+          "q": "How should the Brass NPT Male × Metric Male Adapter be installed?",
+          "a": "Check each thread form before fitting the Brass NPT Male × Metric Male Adapter: a taper thread seals on the flanks, with sealant or tape on NPT, and a parallel thread seals on a washer, bonded seal or cone seat. Do not over-tighten brass; see our [guide to brass pipe fittings, NPTF and BSP](/blog/brass-pipe-fittings-nptf-and-bsp)."
+        },
+        {
+          "slot": "K",
+          "q": "How does the Brass NPT Male × Metric Male Adapter differ from Brass NPT Male × BSPT Female Adapter?",
+          "a": "They are neighbouring parts on the same shelf with different ends or body: the Brass NPT Male × Metric Male Adapter is a straight adapter in brass. See [Brass NPT Male × BSPT Female Adapter](/p/brass-npt-male-x-bspt-female-adapter) for the other and pick by the ends your line needs."
+        },
+        {
+          "slot": "L",
+          "q": "Can the Brass NPT Male × Metric Male Adapter be exported from Dubai, and which HS code applies?",
+          "a": "Yes. We export the Brass NPT Male × Metric Male Adapter from Dubai, UAE to the GCC, Africa, Asia and beyond. The listing states no country of origin, so it is confirmed on the quotation and invoice, and brass fittings normally fall under HS 7412.20."
+        },
+        {
+          "slot": "M",
+          "q": "Do you keep the Brass NPT Male × Metric Male Adapter in stock in Dubai?",
+          "a": "Yes. The Brass NPT Male × Metric Male Adapter sits in our Dubai, UAE stock and goes out worldwide with the best lead times. For a quotation, send the part numbers (for example IH-BR-8607-02-10 or IH-BR-8607-08-16) and quantities via [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

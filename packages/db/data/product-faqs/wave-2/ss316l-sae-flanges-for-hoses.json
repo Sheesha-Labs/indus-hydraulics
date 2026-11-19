@@ -1,0 +1,275 @@
+{
+  "family": "ss316l-sae-flanges-for-hoses",
+  "extraFacts": [
+    {
+      "fact": "SAE J518 and ISO 6162 cover four-bolt split-flange connections in two pressure series: Code 61 (the 3000 psi series, ISO 6162-1) and Code 62 (the 6000 psi series, ISO 6162-2). A Code 61 flange head is not interchangeable with a Code 62 clamp, because the bolt spacing differs for the same nominal size.",
+      "source": "SAE J518 and ISO 6162-1/-2 scope"
+    },
+    {
+      "fact": "316L is the low-carbon grade of 316 austenitic stainless steel (carbon 0.03 % maximum), which is why it can be welded without carbide precipitation at the grain boundaries; it contains molybdenum for resistance to chloride pitting.",
+      "source": "ASTM A240 / A276 chemical composition limits for UNS S31603"
+    }
+  ],
+  "products": [
+    {
+      "slug": "sae-counter-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE counter-flange used for?",
+          "a": "The SAE counter-flange is a 316L stainless-steel SAE J518 four-bolt flange, the mating piece for an SAE flange head, in sizes from 1/2\" to 2\" and listed as Code 62. It is the flange half that bolts to the flange head on a hose end or port, so a hose assembly can be fitted to a pump, valve or manifold with split-flange bolting."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE counter-flange come in?",
+          "a": "The SAE counter-flange is listed from 1/2\" to 2\". The listing has no part-number table, so send the SAE flange size and code (61 or 62) on the equipment side, and we confirm the right counter-flange."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right SAE counter-flange for a port?",
+          "a": "Match the flange size and the code to the equipment port: the listing says Code 62, and a Code 61 head will not fit a Code 62 counter-flange. Send us the port's size and code, or the pump or valve model, and we confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SAE counter-flange rated for?",
+          "a": "The listing gives L-series 210 bar (3000 psi) and S-series 415 bar (6000 psi) for the SAE counter-flange. The rating of a flange joint is set by the SAE J518 code and the host port, so confirm the port's code and pressure, and keep the assembly within the hose rating as well."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SAE counter-flange made from, and where does stainless suit it?",
+          "a": "The SAE counter-flange is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the SAE counter-flange follow?",
+          "a": "The SAE counter-flange is listed to SAE J518 and ISO 6162. They cover four-bolt split-flange connections in Code 61 (3000 psi) and Code 62 (6000 psi), with the bolt pattern fixed by the code and size."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE counter-flange connect to?",
+          "a": "It mates with an SAE flange head, such as the [SAE flange](/p/sae-flange), using the O-ring from the [seals for 3000-6000 psi flanges](/p/seals-for-3000-6000-psi-flange). For fully stainless assemblies pair it with 316L bolts and an SS316L hose end; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How is an SAE counter-flange bolted up?",
+          "a": "Fit the O-ring in the groove of the flange head, offer the counter-flange square and tighten the four bolts evenly in a cross pattern. Use stainless bolts on a stainless joint, and replace the O-ring whenever the joint is opened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless SAE counter-flange used?",
+          "a": "It is used on stainless hydraulic and process lines with SAE flange ports in marine, chemical and washdown plant, where plated steel flanges would corrode. The [galvanic corrosion in fittings](/blog/galvanic-corrosion-in-fittings) guide covers mixing metals."
+        },
+        {
+          "slot": "K",
+          "q": "SAE counter-flange or SAE split flange: what is the difference?",
+          "a": "The SAE counter-flange is the mating flange half, while the [SAE split flange](/p/sae-split-flange) is the clamp-style flange that holds a flange head to the port. Both are for SAE J518 joints, so check which half the joint needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE counter-flange supplied from, and can it be exported from Dubai?",
+          "a": "The SAE counter-flange ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the SAE counter-flange in stock in Dubai?",
+          "a": "Yes. We keep the SAE counter-flange in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the sizes and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "sae-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE flange used for?",
+          "a": "The SAE flange is a 316L stainless-steel straight SAE J518 four-bolt flange fitting, listed as Code 62, with a hose end and a flange head, in sizes from 1/2\" to 2\". It connects a stainless hose to an SAE flange port on a pump, valve or cylinder, and is held with split-flange clamps and sealed by an O-ring under the flange head."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE flange come in?",
+          "a": "The SAE flange is listed from 1/2\" to 2\". The listing has no part-number table, so send the flange size and code on the equipment, and the hose size, and we confirm the part."
+        },
+        {
+          "slot": "D",
+          "q": "Is the SAE flange Code 61 or Code 62, and how do I tell?",
+          "a": "The listing gives it as Code 62, the 6000 psi series, but the pressure line quotes both L-series and S-series ratings. Measure the bolt spacing against the SAE J518 table or read the code from the port, and confirm with us; [3000 psi SAE straight flange, Code 61](/p/3000-psi-sae-straight-flange-code-61) is the Code 61 alternative."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure is the SAE flange rated for?",
+          "a": "The listing gives L-series 210 bar (3000 psi) and S-series 415 bar (6000 psi) for the SAE flange. The rating of a flange joint is set by the SAE J518 code and the host port, so confirm the port's code and pressure, and keep the assembly within the hose rating as well."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SAE flange made from, and where does stainless suit it?",
+          "a": "The SAE flange is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the SAE flange follow?",
+          "a": "The SAE flange is listed to SAE J518 and ISO 6162, which cover four-bolt split-flange connections in Code 61 (3000 psi) and Code 62 (6000 psi). The bolt grade follows the series."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE flange connect to?",
+          "a": "It bolts to an SAE port with the [SAE split flange](/p/sae-split-flange) clamps and an O-ring from the [seals for 3000-6000 psi flanges](/p/seals-for-3000-6000-psi-flange). The hose side takes an SS316L crimp ferrule; see our [stainless crimp hose fittings](/c/stainless-crimp-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit an SAE flange and keep the O-ring from leaking?",
+          "a": "Check the O-ring is seated in its groove and undamaged, seat the flange head square on the port and tighten the four bolts evenly in a cross pattern. Do not reuse a flattened O-ring, and replace it whenever the joint is opened."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless SAE flange used?",
+          "a": "It is used on stainless high-pressure hose lines to SAE flange ports on pumps, valves and cylinders in marine, process and washdown plant. The [stainless 316L hose fittings](/blog/stainless-316l-hose-fittings) guide explains when the hose end must be stainless."
+        },
+        {
+          "slot": "K",
+          "q": "SAE flange or the 6000 psi SAE straight flange Code 62: which listing?",
+          "a": "The SAE flange has no size table and is listed generically, while the [6000 psi SAE straight flange, Code 62](/p/6000-psi-sae-straight-flange-code-62) gives part numbers by size for the same code. Use the size table listing when you know the sizes."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE flange supplied from, and can it be exported from Dubai?",
+          "a": "The SAE flange ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the SAE flange in stock in Dubai?",
+          "a": "Yes, the SAE flange is held in stock at our Dubai, UAE warehouse and ships worldwide with the best lead times; delivery inside the UAE is within 3 working days. Request a quotation on [our contact page](/contact)."
+        }
+      ]
+    },
+    {
+      "slug": "sae-split-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the SAE split flange used for?",
+          "a": "The SAE split flange is a 316L stainless-steel split-clamp flange for SAE J518 four-bolt joints, listed as Code 62 in sizes from 1/2\" to 2\", used to hold a flange head to its port. It is the clamp half that bolts around a flange head, so the head can be secured to a pump, valve or manifold port with four bolts and sealed by an O-ring."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the SAE split flange come in?",
+          "a": "The SAE split flange is listed from 1/2\" to 2\". The listing has no part-number table, so send the flange size and code on the equipment and we confirm the clamp."
+        },
+        {
+          "slot": "D",
+          "q": "How do I match an SAE split flange to the flange head?",
+          "a": "Match the size and the code: the listing gives Code 62, and a Code 61 clamp will not fit a Code 62 head because the bolt spacing differs. Send us the flange head part number or the port size and code and we confirm it."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating applies to the SAE split flange?",
+          "a": "The listing gives L-series 210 bar (3000 psi) and S-series 415 bar (6000 psi) for the SAE split flange. The rating of a flange joint is set by the SAE J518 code and the host port, so confirm the port's code and pressure, and keep the assembly within the hose rating as well."
+        },
+        {
+          "slot": "F",
+          "q": "What is the SAE split flange made from, and where does stainless suit it?",
+          "a": "The SAE split flange is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. It suits marine, chemical, food-grade and washdown service where zinc-plated carbon steel corrodes. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the SAE split flange follow?",
+          "a": "The SAE split flange is listed to SAE J518 and ISO 6162. They cover four-bolt split-flange connections in Code 61 (3000 psi) and Code 62 (6000 psi), and the clamp must be of the same code as the head."
+        },
+        {
+          "slot": "H",
+          "q": "What does the SAE split flange connect to?",
+          "a": "It clamps a flange head, such as the [SAE flange](/p/sae-flange), to an SAE port using an O-ring from the [seals for 3000-6000 psi flanges](/p/seals-for-3000-6000-psi-flange). Use stainless bolts to keep the joint corrosion-resistant."
+        },
+        {
+          "slot": "I",
+          "q": "How should SAE split flange bolts be tightened?",
+          "a": "Fit the clamp halves around the head, start all four bolts by hand and tighten them evenly in a cross pattern, so the head seats flat on the O-ring. Use stainless bolts on a stainless joint and lubricate them to avoid galling."
+        },
+        {
+          "slot": "J",
+          "q": "Where is a stainless SAE split flange used?",
+          "a": "It is used on stainless hydraulic and process lines with SAE flange ports in marine, chemical and washdown plant. The [stainless 316L hose fittings](/blog/stainless-316l-hose-fittings) guide covers the forms available."
+        },
+        {
+          "slot": "K",
+          "q": "SAE split flange or SAE counter-flange: how do they differ?",
+          "a": "The SAE split flange is the clamp-style half that holds a flange head, while the [SAE counter-flange](/p/sae-counter-flange) is the one-piece mating flange. Both are listed for SAE J518 Code 62 in 1/2\" to 2\", so check which half your joint uses."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the SAE split flange supplied from, and can it be exported from Dubai?",
+          "a": "The SAE split flange ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the SAE split flange in stock in Dubai?",
+          "a": "Yes. The SAE split flange is a stock line at our warehouse in Dubai, UAE, with worldwide shipping and the best lead times we can offer. Tell us the sizes and quantities on [our contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "seals-for-3000-6000-psi-flange",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Seals for 3000-6000 psi flange used for?",
+          "a": "The seals for 3000-6000 psi flange are a spare O-ring seal kit for SAE J518 four-bolt flange connections, in sizes from 1/2\" to 2\", whose pressure rating is set by the host flange. They replace the O-ring that sits under the flange head, and should be changed whenever an SAE flange joint is opened, whether the joint is Code 61 or Code 62."
+        },
+        {
+          "slot": "D",
+          "q": "Which sizes does the Seals for 3000-6000 psi flange come in?",
+          "a": "The seals are listed for flange sizes from 1/2\" to 2\". The listing gives no part-number table, so send the flange size and code and we confirm the seal kit."
+        },
+        {
+          "slot": "D",
+          "q": "How do I choose the right seal kit for an SAE flange?",
+          "a": "Choose by the flange size and the code of the joint, 61 or 62, since the groove differs. The listing covers 3000 to 6000 psi flanges, so send us the flange head size and we confirm the kit."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure do the seals for a 3000-6000 psi flange handle?",
+          "a": "The listing gives no pressure of its own for the seal kit: the rating is set by the host flange, which is 3000 psi for Code 61 and 6000 psi for Code 62. Fit the seal only to a flange whose rating covers the line."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Seals for 3000-6000 psi flange made from, and where does stainless suit it?",
+          "a": "The Seals for 3000-6000 psi flange is machined from 316L stainless steel, passivated with no plating, so its corrosion resistance comes from the native oxide layer. The listing gives the seals as an O-ring kit and does not name the elastomer. The temperature limit is set by the O-ring material, so tell us the fluid and temperature when you ask for a quote. The listing gives -40°C to +200°C, limited by the hose and any O-ring."
+        },
+        {
+          "slot": "G",
+          "q": "Which standards does the Seals for 3000-6000 psi flange follow?",
+          "a": "The seals are listed to SAE J518 and ISO 6162 for the four-bolt flange connections they serve. The standards set the groove and flange series, so the seal must match the flange size and code."
+        },
+        {
+          "slot": "H",
+          "q": "What does the Seals for 3000-6000 psi flange connect to?",
+          "a": "They seat in the groove of an SAE flange head such as the [SAE flange](/p/sae-flange) and are clamped by the [SAE split flange](/p/sae-split-flange). Confirm the flange code with us before ordering, because the seal must match it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I replace a flange O-ring without damaging it?",
+          "a": "Remove the old O-ring, clean the groove and sealing faces, fit the new O-ring without twisting or stretching it, and tighten the four flange bolts evenly in a cross pattern. Replace the seal every time the joint is opened."
+        },
+        {
+          "slot": "J",
+          "q": "When should the seals for an SAE flange be replaced?",
+          "a": "Replace the seal every time the flange is opened and whenever it weeps, is flattened or has hardened. They are used on stainless and carbon-steel SAE flange joints alike."
+        },
+        {
+          "slot": "K",
+          "q": "Seals for SAE flange or the SAE flange itself: which do I need?",
+          "a": "The seals are the spare O-ring, while the [SAE flange](/p/sae-flange) is the flange fitting that carries it. If a joint weeps, the seal is usually the part to change."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Seals for 3000-6000 psi flange supplied from, and can it be exported from Dubai?",
+          "a": "The Seals for 3000-6000 psi flange ships from our warehouse in Dubai, UAE to the GCC, Africa, Asia and beyond; the listing shows UAE as the country of origin and does not publish an HS code. We confirm origin and the customs code on the quotation and prepare the commercial invoice and packing list for the destination."
+        },
+        {
+          "slot": "M",
+          "q": "Is the Seals for 3000-6000 psi flange in stock in Dubai?",
+          "a": "Yes. Our Dubai, UAE warehouse keeps the Seals for 3000-6000 psi flange in stock, and we ship it worldwide with the best lead times. Send your size list and quantities through [our contact page](/contact)."
+        }
+      ]
+    }
+  ]
+}

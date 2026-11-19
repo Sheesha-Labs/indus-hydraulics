@@ -1,0 +1,860 @@
+{
+  "family": "orfs-hose-fittings",
+  "extraFacts": [
+    {
+      "fact": "The O-ring face seal (ORFS, SAE J1453 / ISO 8434-3) uses a flat-faced male end whose face carries an O-ring, sealed against the flat face of a female swivel nut; ORS is Eaton Aeroquip's name for it and flat face is Dixon's.",
+      "source": "SAE J1453 / ISO 8434-3; Eaton Aeroquip and Dixon catalogues"
+    },
+    {
+      "fact": "ASME B1.20.3 (Dryseal NPTF) is the pipe thread standard for NPTF threads, which seal on the taper with sealant.",
+      "source": "ASME B1.20.3"
+    }
+  ],
+  "products": [
+    {
+      "slug": "dixon-flat-face-male-x-female-swivel-nut-90-degree-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows and what hose does it fit?",
+          "a": "The Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows is a 90° elbow in steel with a male flat face end and a female flat face swivel nut, listed in 5 part numbers from 9/16-18 to 1 7/16-12. The listing treats it as a hose-end elbow and says the maker states 6,000 psi (414 bar). A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows, such as FS6500-4-4?",
+          "a": "Dixon numbers such as FS6500-4-4, FS6500-10-10 and FS6500-16-16 give the series and the dash size of each end, and in the rows both codes match: 4 is 9/16-18, 6 is 11/16-16, 10 is 1-14, 12 is 1 3/16-12 and 16 is 1 7/16-12 flat face. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows?",
+          "a": "The listing has 5 Dixon part numbers: FS6500-4-4, FS6500-6-6, FS6500-10-10, FS6500-12-12 and FS6500-16-16, from 9/16-18 to 1 7/16-12 flat face threads."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows have?",
+          "a": "The maker states 6,000 psi (414 bar) for all five sizes. That is the rating of the elbow alone, so the hose, tube or port it joins may limit the assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows made of?",
+          "a": "The listing gives steel for the elbow. It does not state a finish or a seal material, so ask on the RFQ for the O-ring material if you need it."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows?",
+          "a": "The listing for the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows to?",
+          "a": "The male flat face end screws into a female flat face port or swivel nut, and the female swivel nut takes a male flat face end. Flat face is the O-ring face seal; see the [45° ORFS Female Hose Fitting](/p/45-orfs-female-hose-fitting) for ORFS hose fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows installed on a hose?",
+          "a": "Crimp the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows used?",
+          "a": "Right-angle O-ring face seal connections on hydraulic hose or tube lines. Send the hose type, size and port so we can confirm the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows over the Dixon Flat Face Male x Male NPTF 90 Degree Elbows?",
+          "a": "This elbow has a female swivel nut on the second end and states 6,000 psi, while the [Dixon Flat Face Male x Male NPTF 90 Degree Elbows](/p/dixon-flat-face-male-x-male-nptf-90-degree-elbows) has a male NPTF end and states its pressure by size. Choose by the thread on the second connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows made and how does it ship from Dubai?",
+          "a": "The listing shows the United States as the country of origin for the Dixon flat face elbows. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows in Dubai?",
+          "a": "Yes. We keep the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "dixon-flat-face-male-x-male-nptf-90-degree-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Dixon Flat Face Male x Male NPTF 90 Degree Elbows and what hose does it fit?",
+          "a": "The Dixon Flat Face Male x Male NPTF 90 Degree Elbows is a 90° elbow in steel with a male flat face end and a male NPTF end, listed in 5 part numbers. The listing treats it as a hose-end elbow, with the maker's pressure stated by size. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Dixon Flat Face Male x Male NPTF 90 Degree Elbows, such as FS2501-16-16?",
+          "a": "Dixon numbers such as FS2501-4-4, FS2501-12-12 and FS2501-16-16 give the series and the dash size of each end, and the pressure follows the dash size in the rows: -4 is 345 bar, -6 276 bar, -8 207 bar, -12 172 bar and -16 138 bar. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Dixon Flat Face Male x Male NPTF 90 Degree Elbows?",
+          "a": "The listing has 5 Dixon part numbers, FS2501-4-4, FS2501-6-6, FS2501-8-8, FS2501-12-12 and FS2501-16-16, pairing flat face ends from 9/16-18 to 1 7/16-12 with NPTF ends."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Dixon Flat Face Male x Male NPTF 90 Degree Elbows have?",
+          "a": "The maker states 2,000 to 5,000 psi (138 to 345 bar) by size: 345 bar on FS2501-4-4, 276 bar on FS2501-6-6, 207 bar on FS2501-8-8, 172 bar on FS2501-12-12 and 138 bar on FS2501-16-16. The pipe thread can limit the assembly further."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Dixon Flat Face Male x Male NPTF 90 Degree Elbows made of?",
+          "a": "The listing gives steel for the elbow. It does not state a finish or a seal material, so ask on the RFQ for both if the line carries an aggressive fluid or runs outdoors."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Dixon Flat Face Male x Male NPTF 90 Degree Elbows?",
+          "a": "The listing for the Dixon Flat Face Male x Male NPTF 90 Degree Elbows carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Dixon Flat Face Male x Male NPTF 90 Degree Elbows to?",
+          "a": "The male flat face end screws into a female flat face port or swivel nut, and the male NPTF end screws into an NPT pipe port with sealant. See the [NPT, NPSM and SAE hose fittings](/c/npt-npsm-sae-hose-fittings) for other pipe-threaded hose fittings."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Dixon Flat Face Male x Male NPTF 90 Degree Elbows installed on a hose?",
+          "a": "Crimp the Dixon Flat Face Male x Male NPTF 90 Degree Elbows onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Dixon Flat Face Male x Male NPTF 90 Degree Elbows used?",
+          "a": "Right-angle connections from an O-ring face seal line into an NPT-threaded port. Send the hose type, size and port so we can confirm the Dixon Flat Face Male x Male NPTF 90 Degree Elbows suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Dixon Flat Face Male x Male NPTF 90 Degree Elbows over the Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows?",
+          "a": "This elbow has a male NPTF end and pressure by size, while the [Dixon Flat Face Male x Female Swivel Nut 90 Degree Elbows](/p/dixon-flat-face-male-x-female-swivel-nut-90-degree-elbows) has a female swivel nut and a single stated rating. Choose by the second connection."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Dixon Flat Face Male x Male NPTF 90 Degree Elbows made and how does it ship from Dubai?",
+          "a": "The listing shows the United States as the country of origin for the Dixon flat face NPTF elbows. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Dixon Flat Face Male x Male NPTF 90 Degree Elbows in Dubai?",
+          "a": "Yes, the Dixon Flat Face Male x Male NPTF 90 Degree Elbows is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-1a-series-female-ors-swivel-45-deg-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows and what hose does it fit?",
+          "a": "The Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows is a 45° female ORS swivel crimp elbow in carbon steel with a Dura Kote finish, listed in 35 part numbers from 9/16 inch to 1 7/16 inch. The listing names the 2661, FC310, FC510, FC579, FC611, FC619, FC639/FC839B, EC110 and EC115 hose series, among others. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows, such as 1AA8FRA6?",
+          "a": "Aeroquip 1A numbers give the ORS dash size, then FR, then the hose dash size, for example 1AA4FRA4 has a 9/16 inch ORS end, 1AA8FRA6 a 13/16 inch ORS end and 1AA10FRA12 a 1 inch ORS end. The letters A or B after FR appear in the rows and differ between numbers of the same size, so quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows?",
+          "a": "The listing has 35 Aeroquip part numbers, with ORS female ends of 9/16 inch, 11/16 inch, 13/16 inch, 1 inch, 1 3/16 inch and 1 7/16 inch and a crimp end sized to the hose. The size table gives both ends and the part number of each row."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows have?",
+          "a": "The listing gives no pressure for these elbows and the maker's ratings vary with size and hose. It describes them as general purpose low and medium pressure hydraulics and says to use H277 or H435 hose where shock hazards exist. Tell us the working pressure and the hose, and we confirm the match."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows made of?",
+          "a": "The listing gives steel with a Dura Kote finish, in carbon steel, with a swivel nut. It is a crimp fitting and is not reusable."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows?",
+          "a": "The listing for the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows to?",
+          "a": "The female ORS swivel nut screws onto a male ORS end, and the crimp end takes the hose. For a straight version see the [Aeroquip 1A Series Female ORS Swivels](/p/aeroquip-1a-series-female-ors-swivels)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows installed on a hose?",
+          "a": "Crimp the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows used?",
+          "a": "General purpose low and medium pressure hydraulics, according to the listing. Send the hose type, size and port so we can confirm the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows over the Aeroquip 1A Series Female ORS Swivels?",
+          "a": "This listing has 45° elbows, while the [Aeroquip 1A Series Female ORS Swivels](/p/aeroquip-1a-series-female-ors-swivels) is the straight version. Choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows made and how does it ship from Dubai?",
+          "a": "The listing shows the United States as the country of origin and HS code 7307929000 for the Aeroquip 1A 45° elbows. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows in Dubai?",
+          "a": "Yes. The Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-1a-series-female-ors-swivels",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 1A Series Female ORS Swivels and what hose does it fit?",
+          "a": "The Aeroquip 1A Series Female ORS Swivels is a straight female ORS swivel crimp fitting in carbon steel with a Dura Kote finish, listed in 18 part numbers from 9/16 inch to 1 11/16 inch. The listing names the 2661, FC310, FC510, FC579, FC611, FC619, FC639/FC839B, EC110 and EC115 hose series, among others. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Aeroquip 1A Series Female ORS Swivels, such as 1AA12FR16?",
+          "a": "Aeroquip 1A numbers give the ORS dash size, then FR, then the hose dash size, for example 1AA12FR16 is a 1 3/16 inch ORS with a 1 inch crimp and 1AA12FR10 a 1 3/16 inch ORS with a 5/8 inch crimp. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Aeroquip 1A Series Female ORS Swivels?",
+          "a": "The listing has 18 Aeroquip part numbers, with ORS female ends from 9/16 inch to 1 11/16 inch and crimp ends sized to the hose. The size table gives both ends of each row."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Aeroquip 1A Series Female ORS Swivels have?",
+          "a": "The listing gives no pressure for these swivels and the maker's ratings vary with size and hose. It describes them as general purpose low and medium pressure hydraulics and says to use H277 or H435 hose where shock hazards exist. Tell us the working pressure and hose and we confirm the match."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 1A Series Female ORS Swivels made of?",
+          "a": "The listing gives carbon steel with a Dura Kote finish and a swivel nut. It is a crimp fitting and is not reusable, and it needs the specified ferrule and die for the hose series it is used on."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Aeroquip 1A Series Female ORS Swivels?",
+          "a": "The listing for the Aeroquip 1A Series Female ORS Swivels carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Aeroquip 1A Series Female ORS Swivels to?",
+          "a": "The female ORS swivel nut screws onto a male ORS end, and the crimp end takes the hose. For a 45° version see the [Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows](/p/aeroquip-1a-series-female-ors-swivel-45-deg-elbows)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Aeroquip 1A Series Female ORS Swivels installed on a hose?",
+          "a": "Crimp the Aeroquip 1A Series Female ORS Swivels onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 1A Series Female ORS Swivels used?",
+          "a": "General purpose low and medium pressure hydraulics, according to the listing. Send the hose type, size and port so we can confirm the Aeroquip 1A Series Female ORS Swivels suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Aeroquip 1A Series Female ORS Swivels over the Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows?",
+          "a": "This listing is straight, while the [Aeroquip 1A Series Female ORS Swivel 45 Deg. Elbows](/p/aeroquip-1a-series-female-ors-swivel-45-deg-elbows) turns 45°. Choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 1A Series Female ORS Swivels made and how does it ship from Dubai?",
+          "a": "The listing shows the United States as the country of origin and HS code 7307929000 for the Aeroquip 1A swivels. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 1A Series Female ORS Swivels in Dubai?",
+          "a": "Yes. Indus stocks the Aeroquip 1A Series Female ORS Swivels at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-45-degree-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 45 Degree Elbows and what hose does it fit?",
+          "a": "The Aeroquip 45 Degree Elbows is a range of Aeroquip 45° swivel crimp elbows in steel, listed in 46 part numbers from 7/16 inch to 1 7/8 inch with ORS and JIC female ends. The listing names the EC525, EC600, EC810, FC254, FC273B, FC500, FC636 and FC736 hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Aeroquip 45 Degree Elbows, such as 4SA8FRA8?",
+          "a": "Aeroquip numbers such as 4SA8FRA8 and 4SA16FRA16 give a series prefix, the end size, a code for the end type (FR for ORS and FJ for JIC in the rows) and the hose dash size. 4SA24FJA24 is a 1 7/8 inch JIC with a 1 1/2 inch crimp. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Aeroquip 45 Degree Elbows?",
+          "a": "The listing has 46 Aeroquip part numbers, with female ORS and JIC ends from 7/16 inch to 1 7/8 inch and crimp ends sized to the hose. Some rows, such as 4S16FHA16, carry the hose end only, so check the row for the part you order."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Aeroquip 45 Degree Elbows have?",
+          "a": "The listing gives no pressure for these elbows and the maker's ratings vary with size and hose series. Tell us the working pressure and the hose, and we confirm the match with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 45 Degree Elbows made of?",
+          "a": "The listing gives steel to Grade 12L14 and Grade 12L15. The fittings are not reusable and are not rated for vacuum, so they are not suited to suction lines."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Aeroquip 45 Degree Elbows?",
+          "a": "The listing for the Aeroquip 45 Degree Elbows carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Aeroquip 45 Degree Elbows to?",
+          "a": "The female ORS or JIC swivel nut screws onto a male end of the same type, and the crimp end takes the hose. For the 90° version see the [Aeroquip 90 Degree Elbows](/p/aeroquip-90-degree-elbows); for JIC ports see the [JIC 37° hose fittings](/c/jic-37-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Aeroquip 45 Degree Elbows installed on a hose?",
+          "a": "Crimp the Aeroquip 45 Degree Elbows onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 45 Degree Elbows used?",
+          "a": "Hydraulic hose assemblies that need a shallow bend at an ORS or JIC port. Send the hose type, size and port so we can confirm the Aeroquip 45 Degree Elbows suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Aeroquip 45 Degree Elbows over the Aeroquip 90 Degree Elbows?",
+          "a": "This listing turns 45° in 46 part numbers, while the [Aeroquip 90 Degree Elbows](/p/aeroquip-90-degree-elbows) turns 90°. Choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 45 Degree Elbows made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Aeroquip 45 degree elbows. We ship from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 45 Degree Elbows in Dubai?",
+          "a": "Yes. We keep the Aeroquip 45 Degree Elbows in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-90-degree-elbows",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip 90 Degree Elbows and what hose does it fit?",
+          "a": "The Aeroquip 90 Degree Elbows is a range of Aeroquip 90° swivel crimp elbows in steel, listed in 65 part numbers from 7/16 inch to 1 7/8 inch with ORS and other female ends. The listing names the EC525, EC600, EC810, FC254, FC273B, FC500, FC636 and FC736 hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Aeroquip 90 Degree Elbows, such as 4SA20FRC20?",
+          "a": "Aeroquip numbers such as 4SA20FRC20 and 4SA20FRB20 give a series prefix, the end size, a code for the end type and the hose dash size, and the letters before the last size differ between numbers of the same size. 4S8FLB8 is listed as a 90 degree elbow for -8 hose. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Aeroquip 90 Degree Elbows?",
+          "a": "The listing has 65 Aeroquip part numbers, with female ORS ends such as 1 11/16 inch with a 1 1/4 inch crimp, and other end types, from 7/16 inch to 1 7/8 inch. The size table gives the connection of each row."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Aeroquip 90 Degree Elbows have?",
+          "a": "The listing gives no pressure for these elbows and the maker's ratings vary with size and hose series. Tell us the working pressure and the hose, and we confirm the match with the quotation before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip 90 Degree Elbows made of?",
+          "a": "The listing gives steel to Grade 12L14 and Grade 12L15. The fittings are not reusable and are not rated for vacuum, so they are not suited to suction lines."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Aeroquip 90 Degree Elbows?",
+          "a": "The listing for the Aeroquip 90 Degree Elbows carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Aeroquip 90 Degree Elbows to?",
+          "a": "The female ORS swivel nut screws onto a male ORS end, and the crimp end takes the hose. For the 45° version see the [Aeroquip 45 Degree Elbows](/p/aeroquip-45-degree-elbows)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Aeroquip 90 Degree Elbows installed on a hose?",
+          "a": "Crimp the Aeroquip 90 Degree Elbows onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip 90 Degree Elbows used?",
+          "a": "Hydraulic hose assemblies that need a right-angle bend at a swivel port. Send the hose type, size and port so we can confirm the Aeroquip 90 Degree Elbows suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Aeroquip 90 Degree Elbows over the Aeroquip 45 Degree Elbows?",
+          "a": "This listing turns 90° in 65 part numbers, while the [Aeroquip 45 Degree Elbows](/p/aeroquip-45-degree-elbows) turns 45°. Choose by the bend the hose needs."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip 90 Degree Elbows made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Aeroquip 90 degree elbows. We ship from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip 90 Degree Elbows in Dubai?",
+          "a": "Yes, the Aeroquip 90 Degree Elbows is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "aeroquip-crimp-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Aeroquip Crimp Hose Fittings and what hose does it fit?",
+          "a": "The Aeroquip Crimp Hose Fittings is a family of straight female by female swivel Aeroquip crimp fittings with ORS ends in carbon steel, listed in 3 part numbers. The listing names the 3TR18CT, 3TR7, 3TR7N, 3TR8 and 3TR8N hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Aeroquip Crimp Hose Fittings, such as 4TA8FR8?",
+          "a": "The three numbers are 4TA4FR4, 4TA6FR6 and 4TA8FR8: the first digits give the ORS size and the last the crimp size, so 4TA4FR4 is a 9/16 inch ORS with a 1/4 inch crimp and 4TA8FR8 a 13/16 inch ORS with a 1/2 inch crimp. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Aeroquip Crimp Hose Fittings?",
+          "a": "The listing has 3 part numbers from 9/16 inch to 13/16 inch: 4TA4FR4, 4TA6FR6 and 4TA8FR8. Each row gives the ORS female end and the crimp end."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Aeroquip Crimp Hose Fittings have?",
+          "a": "The maker states 3,000 psi (207 bar) for all three part numbers. The assembly is limited by the hose it is crimped to, so check the hose series rating as well."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Aeroquip Crimp Hose Fittings made of?",
+          "a": "The listing gives carbon steel with a swivel nut, in a straight shape. It does not state a finish, so ask on the RFQ if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Aeroquip Crimp Hose Fittings?",
+          "a": "The listing for the Aeroquip Crimp Hose Fittings carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Aeroquip Crimp Hose Fittings to?",
+          "a": "The ORS swivel nut screws onto a male ORS end, and the crimp end takes the 3TR series hose. For larger elbow versions see the [Aeroquip 90 Degree Elbows](/p/aeroquip-90-degree-elbows)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Aeroquip Crimp Hose Fittings installed on a hose?",
+          "a": "Crimp the Aeroquip Crimp Hose Fittings onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Aeroquip Crimp Hose Fittings used?",
+          "a": "Hose assemblies built on the 3TR hose series with an ORS swivel end, in sizes from 1/4 inch to 1/2 inch. Send the hose type, size and port so we can confirm the Aeroquip Crimp Hose Fittings suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Aeroquip Crimp Hose Fittings over the Aeroquip 1A Series Female ORS Swivels?",
+          "a": "This listing is for the 3TR hose series and states 3,000 psi, while the [Aeroquip 1A Series Female ORS Swivels](/p/aeroquip-1a-series-female-ors-swivels) is for the other Aeroquip hose series and gives no pressure. Choose by the hose series you use."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Aeroquip Crimp Hose Fittings made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin or HS code for the Aeroquip crimp hose fittings. We ship from Dubai worldwide, and the origin and commodity code for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Aeroquip Crimp Hose Fittings in Dubai?",
+          "a": "Yes. The Aeroquip Crimp Hose Fittings sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "45-orfs-female-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 45° ORFS Female Hose Fitting used for?",
+          "a": "The 45° ORFS Female Hose Fitting is a 45° elbow hose fitting with a female ORFS swivel nut, in UN/UNF threads from 9/16-18 to 1-7/16-12. It turns the hose through 45° at an ORFS port and the swivel nut seats the flat face onto the O-ring of the male end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-ORFS-FEM-45-0404 on the 45° ORFS Female Hose Fitting?",
+          "a": "The last four digits of each part number carry two size codes. The last two give the port size, and in the rows IH-ORFS-FEM-45-0404 has a 9/16\"×18 port; IH-ORFS-FEM-45-1012 has a 1-3/16\"×12 port; IH-ORFS-FEM-45-2424 has a 2\"×12 port. The size table lists every part number with its port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 45° ORFS Female Hose Fitting come in?",
+          "a": "The 45° ORFS Female Hose Fitting is listed in the size table for hoses from 1/4\" to 1-1/2\" (dash -4 to -24), and the thread range is UN/UNF (9/16-18 to 1-7/16-12). Choose the thread by the ORFS port it screws onto, from 9/16-18 at the small end up to 1-7/16-12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 45° ORFS Female Hose Fitting have?",
+          "a": "The listing gives no rating for the 45° ORFS Female Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 45° ORFS Female Hose Fitting have?",
+          "a": "The 45° ORFS Female Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 45° ORFS Female Hose Fitting follow?",
+          "a": "The listing names SAE J1453 and ISO 8434-3, the standards for the O-ring face seal. Quote the standard together with the thread size on your RFQ, so the 45° ORFS Female Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 45° ORFS Female Hose Fitting connect to?",
+          "a": "The swivel nut screws onto a male ORFS end. The [ORFS Male Hose Fitting](/p/orfs-male-hose-fitting) is the male half. Tell us the port on your equipment and we confirm the 45° ORFS Female Hose Fitting fits it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 45° ORFS Female Hose Fitting so it seals?",
+          "a": "To fit the 45° ORFS Female Hose Fitting, check that the O-ring in the flat face of the male end it mates with is present, then seat the swivel nut square and tighten it to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The make-up torque guide gives the turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 45° ORFS Female Hose Fitting typically used?",
+          "a": "ORFS hose connections where a shallow bend clears a frame, bracket or neighbouring hose. Tell us the machine or system and the port thread, and we will confirm the 45° ORFS Female Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 45° ORFS Female Hose Fitting differ from the 90° ORFS Female Hose Fitting?",
+          "a": "This elbow turns 45°, while the [90° ORFS Female Hose Fitting](/p/90-orfs-female-hose-fitting) turns 90°. Choose the 45° elbow when the hose has room to run at a shallow angle."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 45° ORFS Female Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 45° ORFS Female Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 45° ORFS Female Hose Fitting in Dubai?",
+          "a": "Yes. Indus stocks the 45° ORFS Female Hose Fitting at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "90-orfs-female-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the 90° ORFS Female Hose Fitting used for?",
+          "a": "The 90° ORFS Female Hose Fitting is a 90° elbow hose fitting with a female ORFS swivel nut, in UN/UNF threads from 9/16-18 to 1-7/16-12, common sizes. It takes the hose around a right-angle bend at an ORFS port and the swivel nut seats the flat face onto the O-ring of the male end."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-ORFS-FEM-90-0404 on the 90° ORFS Female Hose Fitting?",
+          "a": "The last four digits of each part number carry two size codes. The last two give the port size, and in the rows IH-ORFS-FEM-90-0404 has a 9/16\"×18 port; IH-ORFS-FEM-90-1012 has a 1-3/16\"×12 port; IH-ORFS-FEM-90-2420 has a 1-11/16\"×12 port. The size table lists every part number with its port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the 90° ORFS Female Hose Fitting come in?",
+          "a": "The 90° ORFS Female Hose Fitting is listed in the size table for hoses from 1/4\" to 1-1/2\" (dash -4 to -24), and the thread range is UN/UNF (9/16-18 to 1-7/16-12 — common sizes). Choose the thread by the ORFS port it screws onto, from 9/16-18 at the small end up to 1-7/16-12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the 90° ORFS Female Hose Fitting have?",
+          "a": "The listing gives no rating for the 90° ORFS Female Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the 90° ORFS Female Hose Fitting have?",
+          "a": "The 90° ORFS Female Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the 90° ORFS Female Hose Fitting follow?",
+          "a": "The listing names SAE J1453 and ISO 8434-3, the standards for the O-ring face seal. Quote the standard together with the thread size on your RFQ, so the 90° ORFS Female Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the 90° ORFS Female Hose Fitting connect to?",
+          "a": "The swivel nut screws onto a male ORFS end. The [ORFS Male Hose Fitting](/p/orfs-male-hose-fitting) is the male half. Tell us the port on your equipment and we confirm the 90° ORFS Female Hose Fitting fits it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the 90° ORFS Female Hose Fitting so it seals?",
+          "a": "To fit the 90° ORFS Female Hose Fitting, check that the O-ring in the flat face of the male end it mates with is present, then seat the swivel nut square and tighten it to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The make-up torque guide gives the turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the 90° ORFS Female Hose Fitting typically used?",
+          "a": "ORFS hose connections in tight spaces where a right-angle elbow saves hose length. Tell us the machine or system and the port thread, and we will confirm the 90° ORFS Female Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the 90° ORFS Female Hose Fitting differ from the 45° ORFS Female Hose Fitting?",
+          "a": "This elbow turns 90°, while the [45° ORFS Female Hose Fitting](/p/45-orfs-female-hose-fitting) turns 45°. Choose the 90° elbow where the port faces straight into the hose run."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the 90° ORFS Female Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the 90° ORFS Female Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the 90° ORFS Female Hose Fitting in Dubai?",
+          "a": "Yes. We keep the 90° ORFS Female Hose Fitting in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-female-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Female Hose Fitting used for?",
+          "a": "The ORFS Female Hose Fitting is a straight hose fitting with a female ORFS swivel nut, in UN/UNF threads from 9/16-18 to 1-7/16-12. The swivel nut draws the flat face of a male ORFS end onto its O-ring, so it connects a hose to an ORFS port without twisting the hose."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-ORFS-FEM-0404 on the ORFS Female Hose Fitting?",
+          "a": "The last four digits of each part number carry two size codes. The last two give the port size, and in the rows IH-ORFS-FEM-0404 has a 9/16\"×18 port; IH-ORFS-FEM-1010 has a 1\"×14 port; IH-ORFS-FEM-2424 has a 2\"×12 port. The size table lists every part number with its port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Female Hose Fitting come in?",
+          "a": "The ORFS Female Hose Fitting is listed in 27 part numbers for hoses from 1/4\" to 1-1/2\" (dash -4 to -24), and the thread range is UN/UNF (9/16-18 to 1-7/16-12). Choose the thread by the ORFS port it screws onto, from 9/16-18 at the small end up to 1-7/16-12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the ORFS Female Hose Fitting have?",
+          "a": "The listing gives no rating for the ORFS Female Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the ORFS Female Hose Fitting have?",
+          "a": "The ORFS Female Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the ORFS Female Hose Fitting follow?",
+          "a": "The listing names SAE J1453 and ISO 8434-3, the standards for the O-ring face seal. Quote the standard together with the thread size on your RFQ, so the ORFS Female Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Female Hose Fitting connect to?",
+          "a": "The swivel nut screws onto a male ORFS end. For other thread families see the [JIC 37° hose fittings](/c/jic-37-hose-fittings) and the [BSP hose fittings](/c/bsp-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the ORFS Female Hose Fitting so it seals?",
+          "a": "To fit the ORFS Female Hose Fitting, check that the O-ring in the flat face of the male end it mates with is present, then seat the swivel nut square and tighten it to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The make-up torque guide gives the turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Female Hose Fitting typically used?",
+          "a": "Hydraulic hose lines that end in an ORFS port, where a leak-free flat-face seal is wanted under vibration. Tell us the machine or system and the port thread, and we will confirm the ORFS Female Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Female Hose Fitting differ from the ORFS Male Hose Fitting?",
+          "a": "This is the female swivel that screws onto a male ORFS end, while the [ORFS Male Hose Fitting](/p/orfs-male-hose-fitting) is the male end whose face carries the O-ring. They are the two halves of one ORFS joint."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ORFS Female Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the ORFS Female Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Female Hose Fitting in Dubai?",
+          "a": "Yes, the ORFS Female Hose Fitting is held in stock at our warehouse in Dubai, UAE, and ships worldwide with the best lead times. Tell us the part numbers and quantities on [the contact page](/contact) and we will quote."
+        }
+      ]
+    },
+    {
+      "slug": "orfs-male-hose-fitting",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the ORFS Male Hose Fitting used for?",
+          "a": "The ORFS Male Hose Fitting is a straight hose fitting with a male ORFS end, in UN/UNF threads from 9/16-18 to 1-7/16-12. Its flat face carries the O-ring that seals against the face of a female ORFS swivel nut on the mating part."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read part numbers like IH-ORFS-MAL-0404 on the ORFS Male Hose Fitting?",
+          "a": "The last four digits of each part number carry two size codes. The last two give the port size, and in the rows IH-ORFS-MAL-0404 has a 9/16\"×18 port; IH-ORFS-MAL-1008 has a 13/16\"×16 port; IH-ORFS-MAL-2424 has a 2\"×13 port. The size table lists every part number with its port thread."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes does the ORFS Male Hose Fitting come in?",
+          "a": "The ORFS Male Hose Fitting is listed in 15 part numbers for hoses from 1/4\" to 1-1/2\" (dash -4 to -24), and the thread range is UN/UNF (9/16-18 to 1-7/16-12). Choose the thread by the ORFS port it screws onto, from 9/16-18 at the small end up to 1-7/16-12."
+        },
+        {
+          "slot": "E",
+          "q": "What pressure rating does the ORFS Male Hose Fitting have?",
+          "a": "The listing gives no rating for the ORFS Male Hose Fitting on its own: the assembly takes the rating of the hose grade and crimp ferrule it is crimped to, and Indus confirms the working pressure when it quotes the assembly. Operating temperature is -40°C to +120°C, and the fluid compatibility chart applies to aggressive media."
+        },
+        {
+          "slot": "F",
+          "q": "What material and finish does the ORFS Male Hose Fitting have?",
+          "a": "The ORFS Male Hose Fitting is made from carbon steel with stainless steel on request, finished zinc-plated, Cr3+ passivated, RoHS-compliant."
+        },
+        {
+          "slot": "G",
+          "q": "Which standard does the ORFS Male Hose Fitting follow?",
+          "a": "The listing names SAE J1453 and ISO 8434-3, the standards for the O-ring face seal. Quote the standard together with the thread size on your RFQ, so the ORFS Male Hose Fitting is matched to the port it screws into."
+        },
+        {
+          "slot": "H",
+          "q": "What does the ORFS Male Hose Fitting connect to?",
+          "a": "It mates with a female ORFS swivel nut. For 37° ports see the [JIC 37° hose fittings](/c/jic-37-hose-fittings). Tell us the port on your equipment and we confirm the ORFS Male Hose Fitting fits it."
+        },
+        {
+          "slot": "I",
+          "q": "How do I fit the ORFS Male Hose Fitting so it seals?",
+          "a": "To fit the ORFS Male Hose Fitting, check that the O-ring in the flat face of the male end it mates with is present, then seat the swivel nut square and tighten it to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque). The O-ring does the sealing, so a nicked face or a missing O-ring leaks. The make-up torque guide gives the turns."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the ORFS Male Hose Fitting typically used?",
+          "a": "Hose connections to ORFS ports and swivel nuts on pumps, manifolds and cylinders. Tell us the machine or system and the port thread, and we will confirm the ORFS Male Hose Fitting suits it before supply."
+        },
+        {
+          "slot": "K",
+          "q": "How does the ORFS Male Hose Fitting differ from the ORFS Female Hose Fitting?",
+          "a": "This is the male end that carries the O-ring in its face, while the [ORFS Female Hose Fitting](/p/orfs-female-hose-fitting) is the female swivel nut that draws onto it. Choose by which half your port or mating line already has."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the ORFS Male Hose Fitting made and how is it exported from Dubai?",
+          "a": "The listing shows the United Arab Emirates as the country of origin for the ORFS Male Hose Fitting. We ship from Dubai worldwide, and the origin, commodity code and documents for your order are confirmed on the quotation and export paperwork."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the ORFS Male Hose Fitting in Dubai?",
+          "a": "Yes. The ORFS Male Hose Fitting sits in stock at our Dubai, UAE warehouse and we ship it worldwide with the best lead times. Use [our contact page](/contact) to send the part numbers and quantities you need priced."
+        }
+      ]
+    },
+    {
+      "slug": "kurt-crimp-hydraulic-hose-fittings-with-ors-connection",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with ORS Connection and what hose does it fit?",
+          "a": "The Kurt Crimp Hydraulic Hose Fittings with ORS Connection is a family of Kurt crimp hose fittings with ORS connections in carbon steel with a clear zinc finish, listed in 27 part numbers. The listing names the H017, H104, H145, H190, H245 and H513 hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Kurt Crimp Hydraulic Hose Fittings with ORS Connection, such as FFX90-16-16?",
+          "a": "Kurt ORS numbers start with FFX, FFX45 or FFX90 and carry two size codes, such as FFX-16-16, FFX45-08-08 and FFX90-20-20. The first size code sets the listed pressure in the rows: -08 is 241 bar, -16 138 bar and -20 103 bar. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Kurt Crimp Hydraulic Hose Fittings with ORS Connection?",
+          "a": "The listing holds 27 Kurt part numbers, from FFX-08-08 to FFX90-20-20, with the FFX, FFX45 and FFX90 prefixes. The size table gives the pressure of each number but not the end thread."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Kurt Crimp Hydraulic Hose Fittings with ORS Connection have?",
+          "a": "The pressure is stated by the maker per size, falling from 241 bar on the -08 numbers to 138 bar on the -16 numbers and 103 bar on FFX90-20-20, and the first size code in the number sets it. The hose limits the assembly."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Kurt Crimp Hydraulic Hose Fittings with ORS Connection made of?",
+          "a": "The listing gives carbon steel with a clear zinc plating finish and a crimpable connection. It does not state a material grade, so ask on the RFQ if you need one."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Kurt Crimp Hydraulic Hose Fittings with ORS Connection?",
+          "a": "The listing for the Kurt Crimp Hydraulic Hose Fittings with ORS Connection carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Kurt Crimp Hydraulic Hose Fittings with ORS Connection to?",
+          "a": "The ORS end screws onto a male ORS end and the crimp end takes the hose series named in the listing. For NPT ports see the [Weatherhead E Series Crimp Hose Fittings](/p/weatherhead-e-series-crimp-hose-fittings) comparison or the [NPT, NPSM and SAE hose fittings](/c/npt-npsm-sae-hose-fittings)."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Kurt Crimp Hydraulic Hose Fittings with ORS Connection installed on a hose?",
+          "a": "Crimp the Kurt Crimp Hydraulic Hose Fittings with ORS Connection onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with ORS Connection used?",
+          "a": "Hose assemblies on Kurt hose series with ORS connections, in sizes from -08 to -20. Send the hose type, size and port so we can confirm the Kurt Crimp Hydraulic Hose Fittings with ORS Connection suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Kurt Crimp Hydraulic Hose Fittings with ORS Connection over the Weatherhead E Series Crimp Hose Fittings?",
+          "a": "This listing is built for the Kurt hose series and states pressure by size, while the [Weatherhead E Series Crimp Hose Fittings](/p/weatherhead-e-series-crimp-hose-fittings) is for the Weatherhead hose series and gives none. Choose by the hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Kurt Crimp Hydraulic Hose Fittings with ORS Connection made and how does it ship from Dubai?",
+          "a": "The listing gives no country of origin for the Kurt ORS crimp fittings. We ship from Dubai worldwide, and the origin and export documents for your order are stated on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Kurt Crimp Hydraulic Hose Fittings with ORS Connection in Dubai?",
+          "a": "Yes. Indus stocks the Kurt Crimp Hydraulic Hose Fittings with ORS Connection at its warehouse in Dubai, UAE and ships worldwide with the best lead times. Send your part numbers and quantities through [the contact page](/contact) for a quotation."
+        }
+      ]
+    },
+    {
+      "slug": "weatherhead-e-series-crimp-hose-fittings",
+      "faqs": [
+        {
+          "slot": "A",
+          "q": "What is the Weatherhead E Series Crimp Hose Fittings and what hose does it fit?",
+          "a": "The Weatherhead E Series Crimp Hose Fittings is a Weatherhead E Series female swivel crimp fitting in carbon steel, listed in 10 part numbers from 1/2 inch to 2 1/2 inch with ORS and JIC ends. The listing names the H009, H209, H243, H265, H275, H277, H285, H435, H436, S-TW and SC-TW hose series. A crimp fitting is rated only on the hose series it is designed for, so quote the hose type and size with the part number and the fitting, ferrule and crimp specification can be checked before supply."
+        },
+        {
+          "slot": "B",
+          "q": "How do I read the part numbers on the Weatherhead E Series Crimp Hose Fittings, such as 08E-S70?",
+          "a": "Weatherhead numbers show two patterns: ORS rows such as 08E-S70, 04E-S64 and 12E-S72 start with the hose size and carry an S code, while JIC rows such as 06910E-608 and 06932E-632 start with 06 and a port code. Quote the full number."
+        },
+        {
+          "slot": "D",
+          "q": "What sizes and part numbers are listed for the Weatherhead E Series Crimp Hose Fittings?",
+          "a": "The listing has 10 part numbers from 1/2 inch to 2 1/2 inch, with ORS female ends such as 1 inch, 9/16 inch and 1 3/16 inch and JIC female ends such as 9/16 inch and 2 1/2 inch. Each row gives the end and the hose size."
+        },
+        {
+          "slot": "E",
+          "q": "What working pressure does the Weatherhead E Series Crimp Hose Fittings have?",
+          "a": "The listing gives no pressure for the Weatherhead E Series fittings and the ratings depend on the hose series they are crimped to. Tell us the working pressure and the hose, and we confirm the match before you order."
+        },
+        {
+          "slot": "F",
+          "q": "What is the Weatherhead E Series Crimp Hose Fittings made of?",
+          "a": "The listing gives steel to Grade 12L14 and Grade 12L15, plated with zinc and a clear trivalent chromate finish, with a swivel nut. The fittings are not reusable and are not rated for vacuum."
+        },
+        {
+          "slot": "G",
+          "q": "What documents or standards should I ask for with the Weatherhead E Series Crimp Hose Fittings?",
+          "a": "The listing for the Weatherhead E Series Crimp Hose Fittings carries no standard or certificate, so state what you need on the RFQ: a material certificate, a pressure test record or the crimp specification for your hose. We confirm what the maker supplies with the quotation."
+        },
+        {
+          "slot": "H",
+          "q": "What do I connect the Weatherhead E Series Crimp Hose Fittings to?",
+          "a": "The female swivel nut screws onto a male end of the same type, ORS or JIC, and the crimp end takes the hose. See the [JIC 37° hose fittings](/c/jic-37-hose-fittings) for other 37° parts."
+        },
+        {
+          "slot": "I",
+          "q": "How is the Weatherhead E Series Crimp Hose Fittings installed on a hose?",
+          "a": "Crimp the Weatherhead E Series Crimp Hose Fittings onto the hose series it is designed for with the specified ferrule and die, because the listing warns that a crimp fitting is rated only on its own hose series. For an O-ring face seal swivel, check the O-ring on the mating end and tighten to the figure in the [make-up torque guide](/blog/hydraulic-fitting-make-up-torque)."
+        },
+        {
+          "slot": "J",
+          "q": "Where is the Weatherhead E Series Crimp Hose Fittings used?",
+          "a": "Hose assemblies on the Weatherhead hose series with a swivel ORS or JIC end. Send the hose type, size and port so we can confirm the Weatherhead E Series Crimp Hose Fittings suits the line."
+        },
+        {
+          "slot": "K",
+          "q": "When would I choose the Weatherhead E Series Crimp Hose Fittings over the Kurt Crimp Hydraulic Hose Fittings with ORS Connection?",
+          "a": "This listing is for the Weatherhead hose series, while the [Kurt Crimp Hydraulic Hose Fittings with ORS Connection](/p/kurt-crimp-hydraulic-hose-fittings-with-ors-connection) is for the Kurt hose series. Choose by the hose."
+        },
+        {
+          "slot": "L",
+          "q": "Where is the Weatherhead E Series Crimp Hose Fittings made and how does it ship from Dubai?",
+          "a": "The listing shows the United States as the country of origin and HS code 7307929000 for the Weatherhead E Series fittings. We ship from Dubai worldwide, and the origin and export documents for your order are confirmed on the quotation."
+        },
+        {
+          "slot": "M",
+          "q": "Do you stock the Weatherhead E Series Crimp Hose Fittings in Dubai?",
+          "a": "Yes. We keep the Weatherhead E Series Crimp Hose Fittings in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. Send the part numbers and quantities through [our contact page](/contact) for a quotation."
+        }
+      ]
+    }
+  ]
+}
